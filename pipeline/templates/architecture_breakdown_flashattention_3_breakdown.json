@@ -7,7 +7,7 @@
   "beats": [
     {
       "beat_id": 1,
-      "text": "Before you train your next model, see how FlashAttention-3 cuts 85% of memory overhead.",
+      "text": "Before you train your next model, see how FlashAttention-3 cuts 1.8x of memory overhead.",
       "visual_focus": "System architecture schematic illustrating FlashAttention highlighted in pulsing cyan.",
       "highlight_words": {
         "FlashAttention": "#38BDF8",
@@ -21,17 +21,29 @@
         "semantic_role": "state_transition"
       },
       "visual_blueprint": {
-        "layout": "grid_memory",
+        "layout": "horizontal_race_bars",
         "title": "FLASHATTENTION",
         "sub": "Core Architectural Premise",
-        "accent_color": "#38BDF8",
-        "params": {}
+        "accent_color": "#EF4444",
+        "params": {
+          "metric_name": "Compute Efficiency",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "Standard Attention",
+              "value": 40.0,
+              "display_val": "40% Peak",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ]
+        }
       },
       "thriller_role": "pattern_interrupt_hook",
       "act": 1,
       "hook_score": 71,
       "hook_band": "WORKABLE",
-      "hook_formula": "The Statistic"
+      "hook_formula": "The Warning"
     },
     {
       "beat_id": 2,
@@ -54,9 +66,9 @@
         "sub": "Resource contention halts throughput",
         "accent_color": "#EF4444",
         "params": {
-          "grid_title": "Attention Matrix Dependency",
-          "active_cell_label": "Synchronous Lock",
-          "efficiency_label": "Low TFLOPS"
+          "grid_title": "Memory Access Latency",
+          "active_cell_label": "High Latency Cache Miss",
+          "efficiency_label": "Throughput = 0.4x"
         }
       },
       "thriller_role": "villain_bottleneck",
@@ -83,12 +95,12 @@
         "sub": "Decoupled execution paths",
         "accent_color": "#34D399",
         "params": {
-          "input_label": "Attention Input",
-          "router_label": "Async Router",
-          "branch_a_label": "Compute Stream",
-          "branch_a_sub": "FP8 MMA",
-          "branch_b_label": "Data IO",
-          "branch_b_sub": "HBM Prefetch"
+          "input_label": "Raw QKV Tiles",
+          "router_label": "Async Controller",
+          "branch_a_label": "Compute Pipe",
+          "branch_a_sub": "Tensor Cores",
+          "branch_b_label": "Memory Pipe",
+          "branch_b_sub": "SRAM Fetch"
         }
       },
       "thriller_role": "eureka_mechanism",
@@ -115,8 +127,14 @@
         "sub": "Zero-stall execution kernel",
         "accent_color": "#F59E0B",
         "params": {
-          "param_key_1": "Tensor-Core Execution",
-          "param_key_2": "Memory-Transfer Overlap"
+          "filename": "flash_attn_v3.cu",
+          "lines": [
+            "__global__ void flash_kernel(fp8* q, fp8* k, fp8* v) {",
+            "async_copy(shared_mem, global_mem);",
+            "__syncthreads();",
+            "tensor_core_gemm(q, k, v);",
+            "}"
+          ]
         }
       },
       "thriller_role": "technical_secret_sauce",
@@ -142,7 +160,7 @@
         "sub": "Verified speedup with zero accuracy loss",
         "accent_color": "#34D399",
         "params": {
-          "metric_name": "Throughput (TFLOPS)",
+          "metric_name": "TFLOPS",
           "unit": "TFLOPS",
           "contestants": [
             {
@@ -160,7 +178,7 @@
               "color": "#EF4444"
             }
           ],
-          "delta_badge": "\u26a1 +85% SOTA GAIN"
+          "delta_badge": "\u26a1 1.8x SPEEDUP"
         }
       },
       "thriller_role": "empirical_payoff",
@@ -187,8 +205,8 @@
         "sub": "Daily AI Architecture & Research Breakdowns",
         "accent_color": "#34D399",
         "params": {
-          "input_1_label": "Hardware",
-          "input_2_label": "Math",
+          "input_1_label": "Research",
+          "input_2_label": "Hardware",
           "input_3_label": "Code",
           "fused_label": "The Model Verse"
         }
@@ -200,74 +218,74 @@
   "math_formulas": [
     {
       "beat_id": 1,
-      "latex": "$T_{\\mathrm{total}} = T_{\\mathrm{comp}} + T_{\\mathrm{mem}}$",
+      "latex": "$U = \\frac{T_{\\mathrm{compute}}}{T_{\\mathrm{total}}} \\approx 0.4$",
       "filename": "flashattention_3_breakdown_beat1_formula.svg",
       "fontsize": 24,
       "color": "#38BDF8",
       "term_annotations": [
         {
-          "term": "T_{\\mathrm{comp}}",
-          "label": "Compute Time"
+          "term": "U",
+          "label": "Utilization"
         },
         {
-          "term": "T_{\\mathrm{mem}}",
-          "label": "Memory IO Time"
+          "term": "T",
+          "label": "Time"
         }
       ],
       "svg_filename": "flashattention_3_breakdown_beat1_formula.svg"
     },
     {
       "beat_id": 2,
-      "latex": "$\\mathcal{O}(N^2 \\cdot d)$",
+      "latex": "$B = \\frac{\\text{Data Volume}}{\\text{Bandwidth Capacity}}$",
       "filename": "flashattention_3_breakdown_beat2_formula.svg",
       "fontsize": 24,
       "color": "#EF4444",
       "term_annotations": [
         {
-          "term": "N^2",
-          "label": "Sequence Complexity"
+          "term": "B",
+          "label": "Bottleneck Delay"
         }
       ],
       "svg_filename": "flashattention_3_breakdown_beat2_formula.svg"
     },
     {
       "beat_id": 3,
-      "latex": "$\\mathrm{Async}(Q, K, V) = \\| \\sum_{i} \\mathcal{F}_i(Q, K, V) \\|$",
+      "latex": "$O(N) = \\text{Compute} \\parallel \\text{IO}$",
       "filename": "flashattention_3_breakdown_beat3_formula.svg",
       "fontsize": 24,
       "color": "#34D399",
       "term_annotations": [
         {
-          "term": "\\mathcal{F}_i",
-          "label": "Fragmented Execution"
+          "term": "\\parallel",
+          "label": "Parallel Overlap"
         }
       ],
       "svg_filename": "flashattention_3_breakdown_beat3_formula.svg"
     },
     {
       "beat_id": 4,
-      "latex": "$\\mathrm{Softmax}(\\frac{QK^T}{\\sqrt{d}})V \\in \\mathbb{F}_{8}$",
+      "latex": "$\\text{Tile} = \\text{FP8}(QK^T)V$",
       "filename": "flashattention_3_breakdown_beat4_formula.svg",
       "fontsize": 24,
       "color": "#F59E0B",
       "term_annotations": [
         {
-          "term": "\\mathbb{F}_{8}",
-          "label": "FP8 Tensor Core Logic"
+          "term": "FP8",
+          "label": "Low Precision"
         }
       ],
       "svg_filename": "flashattention_3_breakdown_beat4_formula.svg"
     },
     {
       "beat_id": 5,
-      "latex": "$\\mathrm{Throughput} > 1.2 \\times 10^{15} \\mathrm{FLOP/s}$",
+      "latex": "$\\text{Gain} = \\frac{1.2 \\mathrm{TFLOPS}}{0.65 \\mathrm{TFLOPS}} \\approx 1.84$",
       "filename": "flashattention_3_breakdown_beat5_formula.svg",
       "fontsize": 24,
       "color": "#34D399",
       "term_annotations": [
         {
-          "term": "1.2 \\times 10^{15}",
-          "label": "PetaFLOPS Peak"
+          "term": "Gain",
+          "label": "Throughput Multiplier"
         }
       ],
       "svg_filename": "flashattention_3_breakdown_beat5_formula.svg"
@@ -315,99 +333,87 @@
     "visual_entities": {
       "clusters": [
         {
-          "name": "Compute",
+          "name": "CORE",
           "color": "#38BDF8",
           "items": [
-            "Tensor Cores",
-            "FP8",
-            "Matrix Units"
+            "Compute",
+            "Tensor Cores"
           ]
         },
         {
-          "name": "Memory",
+          "name": "MEMORY",
           "color": "#10B981",
           "items": [
-            "HBM",
             "SRAM",
-            "Prefetch"
+            "VRAM"
           ]
         },
         {
-          "name": "System",
+          "name": "CONTROL",
           "color": "#F59E0B",
           "items": [
-            "Kernel",
             "Async",
-            "Overlap"
+            "Fusion"
           ]
         }
       ],
       "incoming_token": {
-        "label": "Token: \"Query\"",
-        "target_cluster": "Compute",
-        "token": "\"Query\""
+        "label": "QKV Block",
+        "target_cluster": "CORE",
+        "token": "Block_n"
       },
       "bottleneck_tokens": [
         {
-          "word": "Token 'Wait'",
+          "word": "VRAM Fetch",
           "color": "#EF4444"
-        },
-        {
-          "word": "Token 'Idle'",
-          "color": "#F59E0B"
         }
       ]
     },
     "model_a": "FlashAttention-3",
     "model_a_specs": [
-      "Asynchronous Pipeline",
-      "FP8 Acceleration",
-      "Overlapped Compute"
+      "FP8 Support",
+      "Async Pipelining",
+      "H100 Optimized"
     ],
-    "model_b": "Standard Attention",
+    "model_b": "FlashAttention-2",
     "model_b_specs": [
-      "Sequential Execution",
-      "High Precision",
-      "Memory Bound"
+      "Standard IO",
+      "Synchronous",
+      "Baseline"
     ],
-    "divide_title": "ASYNC VS SYNC DIVIDE",
-    "model_a_stat": "1.2 Peta",
+    "divide_title": "ASYNC PIPELINE DIVIDE",
+    "model_a_stat": "1.2 TFLOPS",
     "model_a_stat_label": "PEAK THROUGHPUT",
-    "model_b_stat": "0.6 Peta",
+    "model_b_stat": "0.6 TFLOPS",
     "model_b_stat_label": "BASELINE THROUGHPUT",
-    "efficiency_badge": "\u26a1 2X HARDWARE UTILIZATION",
+    "efficiency_badge": "\u26a1 1.8x SPEEDUP",
     "benchmarks": [
       {
-        "name": "FP8 Throughput",
-        "score_a": "1.2P",
-        "score_b": "0.6P"
+        "name": "Throughput",
+        "score_a": "1200",
+        "score_b": "650"
       },
       {
-        "name": "Memory Latency",
-        "score_a": "Low",
-        "score_b": "High"
-      },
-      {
-        "name": "Compute Utilization",
-        "score_a": "95%",
-        "score_b": "50%"
+        "name": "Efficiency",
+        "score_a": "High",
+        "score_b": "Low"
       }
     ],
-    "scale_metric": "1.2P",
-    "scale_label": "Peak TFLOPS",
-    "bottleneck_title": "MEMORY IO WALL",
-    "bottleneck_desc": "Sequential blocking bottlenecks",
-    "solution_title": "ASYNC KERNEL OVERLAP",
-    "solution_components": "FP8 and Async Scheduling",
-    "mechanism_title": "HARDWARE-AWARE TENSOR OVERLAP",
-    "payoff_stat": "85%",
-    "payoff_label": "SOTA SPEEDUP",
-    "payoff_sub": "Outperforming standard kernels on H100",
-    "payoff_hero_stat": 1200.0,
-    "payoff_hero_label": "FA3 Performance",
-    "payoff_base_stat": 650.0,
-    "payoff_base_label": "FA2 Baseline",
-    "payoff_delta_badge": "\u26a1 +85% THROUGHPUT GAIN",
+    "scale_metric": "1.2",
+    "scale_label": "TFLOPS Peak",
+    "bottleneck_title": "MEMORY WALL",
+    "bottleneck_desc": "Hardware idle time",
+    "solution_title": "ASYNC KERNEL FUSION",
+    "solution_components": "FP8 + Parallel I/O",
+    "mechanism_title": "BLOCK-LEVEL OVERLAP",
+    "payoff_stat": "1.8x",
+    "payoff_label": "THROUGHPUT GAIN",
+    "payoff_sub": "Over baseline kernels",
+    "payoff_hero_stat": 1.2,
+    "payoff_hero_label": "FA-3",
+    "payoff_base_stat": 0.6,
+    "payoff_base_label": "FA-2",
+    "payoff_delta_badge": "\u26a1 +84.6% THROUGHPUT",
     "challenger": "FlashAttention-3",
     "incumbent": "FlashAttention-2"
   },
@@ -418,15 +424,15 @@
     "contestants": [
       {
         "name": "FlashAttention-3",
-        "value": 1200.0,
-        "display_val": "1,200 TFLOPS",
+        "value": 1180.0,
+        "display_val": "1,180 TFLOPS",
         "is_hero": true,
         "color": "#10B981"
       },
       {
         "name": "FlashAttention-2",
-        "value": 650.0,
-        "display_val": "650 TFLOPS",
+        "value": 660.0,
+        "display_val": "660 TFLOPS",
         "is_hero": false,
         "color": "#38BDF8"
       },
@@ -438,31 +444,33 @@
         "color": "#EF4444"
       }
     ],
-    "delta_badge": "\u26a1 +85% SOTA EFFICIENCY GAIN",
+    "delta_badge": "\u26a1 +78.8% SOTA EFFICIENCY GAIN",
     "radar_axes": [
       "Throughput",
       "VRAM Efficiency",
-      "Accuracy",
-      "Context Length",
-      "Cost Efficiency"
+      "Latency",
+      "Precision Scaling",
+      "Hardware utilization"
     ]
   },
   "code_snippet": {
-    "filename": "flash_attn_3.cu",
+    "filename": "flash_attn_v3.cu",
     "language": "cpp",
     "lines": [
-      "__global__ void flash_kernel_fp8(float* q, float* k, float* v) {",
-      "// Asynchronous overlap of MMA and Load",
-      "cp_async_wait_group(0);",
-      "wgmma_execute(q, k, v);",
+      "__global__ void flash_kernel(fp8* q, fp8* k, fp8* v) {",
+      "// Async copy triggered",
+      "cp_async(shared, global);",
+      "__syncthreads();",
+      "// Compute overlapped",
+      "gemm(q, k, v);",
       "}"
     ],
     "highlight_lines": [
-      3,
-      4
+      2,
+      5
     ],
-    "trace_register": "\u26a1 ASYNCHRONOUS TENSOR CORE EXECUTION",
-    "explanation": "Hardware-level asynchronous memory loading and computation"
+    "trace_register": "\u26a1 ASYNC KERNEL EXECUTION",
+    "explanation": "Zero-overhead compute-memory overlap"
   },
   "arxiv_id": "2407.08608",
   "paper_figures": [
@@ -486,18 +494,6 @@
       "source_file": "/Users/raviranjan/Documents/personal/Automated-video-Generation/public/arxiv_cache/2407.08608/source/figs/pingpong_pipelining.png",
       "svg_path": null,
       "image_path": "/Users/raviranjan/Documents/personal/Automated-video-Generation/public/arxiv_cache/2407.08608/chalkboard_figures/fig_2_pingpong_pipelining.png",
-      "original_type": "png",
-      "type": "raster_image",
-      "score": 140
-    },
-    {
-      "figure_id": "fig_3",
-      "stem": "2_stage_pipelining",
-      "caption": "2 Stage Pipelining",
-      "page_num": 0,
-      "source_file": "/Users/raviranjan/Documents/personal/Automated-video-Generation/public/arxiv_cache/2407.08608/source/figs/2_stage_pipelining.png",
-      "svg_path": null,
-      "image_path": "/Users/raviranjan/Documents/personal/Automated-video-Generation/public/arxiv_cache/2407.08608/chalkboard_figures/fig_3_2_stage_pipelining.png",
       "original_type": "png",
       "type": "raster_image",
       "score": 140
@@ -539,10 +535,10 @@
     }
   },
   "hook_gating": {
-    "selected_hook": "Before you train your next model, see how FlashAttention-3 cuts 85% of memory overhead.",
+    "selected_hook": "Before you train your next model, see how FlashAttention-3 cuts 1.8x of memory overhead.",
     "verdict": 71,
     "band": "WORKABLE",
-    "formula": "The Statistic",
+    "formula": "The Warning",
     "properties": {
       "SPECIFICITY": 84,
       "ADDRESS": 96,
@@ -554,13 +550,13 @@
     "candidates_evaluated": 10,
     "rankings": [
       {
-        "hook": "Before you train your next model, see how FlashAttention-3 cuts 85% of memory overhead.",
+        "hook": "Before you train your next model, see how FlashAttention-3 cuts 1.8x of memory overhead.",
         "verdict": 71,
         "band": "WORKABLE",
-        "formula": "The Statistic"
+        "formula": "The Warning"
       },
       {
-        "hook": "Do not scale your next training run before you see how FlashAttention-3 delivers 85%.",
+        "hook": "Do not scale your next training run before you see how FlashAttention-3 delivers 1.8x.",
         "verdict": 71,
         "band": "WORKABLE",
         "formula": "The Warning"
@@ -578,22 +574,22 @@
         "formula": "The Warning"
       },
       {
-        "hook": "Why do standard transformer architectures hit a memory wall before FlashAttention-3 unlocks 85% gains?",
+        "hook": "Why do standard transformer architectures hit a memory wall before FlashAttention-3 unlocks 1.8x gains?",
         "verdict": 52,
         "band": "WEAK",
         "formula": "The Question"
       },
       {
-        "hook": "You might be leaving 85% of your hardware performance on the table without FlashAttention-3.",
+        "hook": "You might be leaving 1.8x of your hardware performance on the table without FlashAttention-3.",
         "verdict": 50,
         "band": "WEAK",
-        "formula": "The Statistic"
+        "formula": "The Impossible Claim"
       },
       {
-        "hook": "Everyone assumed standard attention was optimal, until FlashAttention-3 proved a 85% leap.",
+        "hook": "Everyone assumed standard attention was optimal, until FlashAttention-3 proved a 1.8x leap.",
         "verdict": 45,
         "band": "WEAK",
-        "formula": "The Statistic"
+        "formula": "Unclassified"
       },
       {
         "hook": "Did you know why are top AI researchers watching FlashAttention?. Because standard architectures hit a bottleneck?",

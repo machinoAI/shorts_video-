@@ -25,6 +25,7 @@ from pipeline.auto_produce import auto_produce
 from pipeline.script_critic import ScriptCritic
 from pipeline.json_utils import robust_json_loads
 from pipeline.config import (
+    CHANNEL_NAME,
     WORKSPACE_ROOT,
     BROADCAST_WIDTH,
     BROADCAST_HEIGHT,
@@ -477,7 +478,7 @@ class DailyShortsDaemon:
         """Executes discovery, production, and publishing for `count` reels aligned with YouTube audience analytics."""
         timestamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
         print("\n" + "=" * 80)
-        print(f"🤖 THE MODEL VERSE — AUTONOMOUS DAILY SHORTS DAEMON")
+        print(f"🤖 {CHANNEL_NAME.upper()} — AUTONOMOUS DAILY SHORTS DAEMON")
         print(f"⏰ Cycle Triggered: {timestamp} | Target Quota: {count} Reel(s) | Source: {source.upper()}")
         if target_slot_hour is not None and target_slot_hour in SLOT_SCHEDULE:
             slot_info = SLOT_SCHEDULE[target_slot_hour]
@@ -773,7 +774,7 @@ class DailyShortsDaemon:
 """)
 
             with open(md_file, "w", encoding="utf-8") as f:
-                f.write(f"""# 🤖 The Model Verse — Daily Shorts Production Report
+                f.write(f"""# 🤖 {CHANNEL_NAME} — Daily Shorts Production Report
 **Date:** {today_str} | **Timestamp:** {timestamp}
 **Total Reels Produced:** {len(reports)} / {count}
 

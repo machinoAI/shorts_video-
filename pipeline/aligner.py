@@ -8,6 +8,7 @@ import re
 import numpy as np
 import scipy.signal
 from typing import List, Dict, Any, Optional
+from pipeline.config import CHANNEL_NAME
 
 class WordTiming:
     """Represents an acoustic word-level timing interval."""
@@ -238,7 +239,7 @@ def generate_kinetic_sfx_cues(
         v_blueprint = b_spec.get("visual_blueprint", {})
         layout = v_blueprint.get("layout", "")
 
-        is_outro = (beat_id == 6 or beat_id == total_beats or "Follow The Model Verse" in td.get("text", ""))
+        is_outro = (beat_id == 6 or beat_id == total_beats or "follow" in td.get("text", "").lower() or CHANNEL_NAME.lower() in td.get("text", "").lower() or "the model verse" in td.get("text", "").lower())
 
         if not is_outro:
             # 1. Motif & Scene Transition Whoosh: exactly synchronized with visual scene cut and entrance!
