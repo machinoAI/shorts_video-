@@ -18,7 +18,7 @@ sys.path.append(str(PROJECT_ROOT))
 
 from pipeline.config import (
     VIDEO_WIDTH, VIDEO_HEIGHT, FRAME_WIDTH, FRAME_HEIGHT, BG_CARBON,
-    FONT_HELVETICA
+    FONT_HELVETICA, CHANNEL_NAME, CHANNEL_HANDLE, CHANNEL_TAGLINE
 )
 from manim_engine.primitives.typography import clean_text
 
@@ -150,7 +150,7 @@ class DynamicCompositeScene(Scene):
         """Places subtle brand watermark in the topmost safe zone, preserving pure canvas space."""
         hook_text = self.storyboard.hook_tag.upper()
         watermark = VGroup(
-            clean_text("THE MODEL VERSE", font_size=20, font=FONT_HELVETICA, color="#10B981", weight=BOLD),
+            clean_text((CHANNEL_NAME or "machinoAI").upper(), font_size=20, font=FONT_HELVETICA, color="#10B981", weight=BOLD),
             clean_text(" // ", font_size=18, font=FONT_HELVETICA, color="#64748B"),
             clean_text(hook_text, font_size=18, font=FONT_HELVETICA, color="#CBD5E1", weight=MEDIUM)
         ).arrange(RIGHT, buff=0.12).move_to([0, 7.1, 0])
@@ -1338,9 +1338,9 @@ class DynamicCompositeScene(Scene):
         logo_ring_inner = Circle(radius=0.58, color="#34D399", stroke_width=1.5).move_to([0, 0.95, 0])
         logo_dot = Dot(point=[0, 0.95, 0], radius=0.10, color=WHITE)
         
-        channel_title = Text("THE MODEL VERSE", font_size=26, font="Helvetica", color=WHITE, weight=BOLD).move_to([0, -0.15, 0])
-        tagline = Text("themodelverse.in", font_size=15, font="Helvetica", color="#94A3B8").next_to(channel_title, DOWN, buff=0.20)
-        cta = Text("SUBSCRIBE FOR ARCHITECTURE DEEP DIVES", font_size=12, font="Helvetica", color="#38BDF8", weight=BOLD).next_to(tagline, DOWN, buff=0.45)
+        channel_title = Text((CHANNEL_NAME or "machinoAI").upper(), font_size=26, font="Helvetica", color=WHITE, weight=BOLD).move_to([0, -0.15, 0])
+        tagline = Text(CHANNEL_HANDLE or "@machinoai-in", font_size=15, font="Helvetica", color="#94A3B8").next_to(channel_title, DOWN, buff=0.20)
+        cta = Text("SUBSCRIBE FOR PRECISION AI INSIGHTS", font_size=12, font="Helvetica", color="#38BDF8", weight=BOLD).next_to(tagline, DOWN, buff=0.45)
         
         brand_card = VGroup(logo_ring, logo_ring_inner, logo_dot, channel_title, tagline, cta)
         

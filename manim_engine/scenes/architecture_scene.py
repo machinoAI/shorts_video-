@@ -24,7 +24,7 @@ from manim_engine.primitives.chalkboard_captions import ChalkboardCaptions
 from manim_engine.primitives.leaderboard import create_dual_accuracy_bar_chart
 from pipeline.config import (
     FONT_HELVETICA, COLOR_MINT, COLOR_DANGER, COLOR_GOLD, COLOR_SLATE,
-    FRAME_WIDTH, FRAME_HEIGHT
+    FRAME_WIDTH, FRAME_HEIGHT, CHANNEL_NAME, CHANNEL_HANDLE, CHANNEL_TAGLINE
 )
 
 class ArchitectureBreakdownScene(BaseShortScene):
@@ -657,16 +657,16 @@ class ArchitectureBreakdownScene(BaseShortScene):
             # Beat 7: Outro
             b7_parts, b7_hl = get_beat_parts(
                 7, 2,
-                ["Follow The Model Verse", "for more deep architecture breakdowns."],
-                {"The Model Verse": COLOR_MINT, "architecture breakdowns": WHITE}
+                [f"Follow {CHANNEL_NAME}", "for more deep architecture breakdowns."],
+                {CHANNEL_NAME: COLOR_MINT, "architecture breakdowns": WHITE}
             )
             b7_dur = get_beat_duration(7, 3.86)
             t7 = scale_times(b7_dur, [1.4, 1.7, 0.76])
 
             logo_icon, brand_text, outro_sub = create_chalkboard_brand_outro(
-                logo_title="THE MODEL VERSE",
+                logo_title=(CHANNEL_NAME or "machinoAI").upper(),
                 tagline="Follow for more deep architecture breakdowns",
-                url="themodelverse.in",
+                url=CHANNEL_HANDLE or "@machinoai-in",
                 y_center=0.4
             )
             self.play(Create(logo_icon, lag_ratio=0.08), FadeIn(brand_text, shift=DOWN * 0.3), FadeIn(outro_sub, shift=UP * 0.2), captions.show(b7_parts[0], b7_hl), run_time=t7[0])
@@ -935,16 +935,16 @@ class ArchitectureBreakdownScene(BaseShortScene):
             # Beat 6: Chalkboard Brand Outro
             b6_parts, b6_hl = get_beat_parts(
                 6, 2,
-                ["Follow The Model Verse", "for the engineering behind modern AI architectures."],
-                {"The Model Verse": COLOR_MINT, "modern AI architectures": WHITE}
+                [f"Follow {CHANNEL_NAME}", "for the engineering behind modern AI architectures."],
+                {CHANNEL_NAME: COLOR_MINT, "modern AI architectures": WHITE}
             )
             b6_dur = get_beat_duration(6, 4.2)
             t6 = scale_times(b6_dur, [1.4, 2.0, 0.8])
 
             logo_icon, brand_text, outro_sub = create_chalkboard_brand_outro(
-                logo_title="THE MODEL VERSE",
+                logo_title=(CHANNEL_NAME or "machinoAI").upper(),
                 tagline="Follow for more deep architecture breakdowns",
-                url="themodelverse.in",
+                url=CHANNEL_HANDLE or "@machinoai-in",
                 y_center=0.4
             )
             self.play(Create(logo_icon, lag_ratio=0.08), FadeIn(brand_text, shift=DOWN * 0.3), FadeIn(outro_sub, shift=UP * 0.2), captions.show(b6_parts[0], b6_hl), run_time=t6[0])

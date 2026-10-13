@@ -17,7 +17,10 @@ from manim_engine.primitives.tech_card import create_tech_card, create_badge
 from manim_engine.primitives.split_screen import create_model_showdown_panels
 from manim_engine.primitives.outro_card import create_chalkboard_brand_outro
 from manim_engine.primitives.chalkboard_captions import ChalkboardCaptions
-from pipeline.config import FONT_HELVETICA, COLOR_MINT, COLOR_DANGER, COLOR_GOLD, COLOR_SLATE
+from pipeline.config import (
+    FONT_HELVETICA, COLOR_MINT, COLOR_DANGER, COLOR_GOLD, COLOR_SLATE,
+    CHANNEL_NAME, CHANNEL_HANDLE, CHANNEL_TAGLINE
+)
 
 class ModelShowdownScene(BaseShortScene):
     def construct(self):
@@ -380,17 +383,17 @@ class ModelShowdownScene(BaseShortScene):
         # -----------------------------------------------------------------
         b6_parts, b6_hl = get_beat_parts(
             6, 2,
-            ["Which model are you building with?", "Follow The Model Verse for more AI showdowns."],
-            {"Which model": WHITE, "The Model Verse": COLOR_MINT}
+            ["Which model are you building with?", f"Follow {CHANNEL_NAME} for more AI showdowns."],
+            {"Which model": WHITE, CHANNEL_NAME: COLOR_MINT}
         )
 
         b6_dur = get_beat_duration(6, 5.30)
         t6 = scale_times(b6_dur, [1.4, 2.4, 1.5])
 
         logo_icon, brand_text, outro_sub = create_chalkboard_brand_outro(
-            logo_title="THE MODEL VERSE",
+            logo_title=(CHANNEL_NAME or "machinoAI").upper(),
             tagline="Follow for more AI showdowns & comparisons",
-            url="themodelverse.in",
+            url=CHANNEL_HANDLE or "@machinoai-in",
             y_center=0.4
         )
 

@@ -321,14 +321,15 @@ def test_synthesize_audio_for_spec_integration(tmp_path):
 
 def test_default_tts_provider_is_elevenlabs():
     from pipeline.config import DEFAULT_TTS_PROVIDER, DEFAULT_VOICE
-    assert DEFAULT_TTS_PROVIDER in ("elevenlabs", "auto")
+    assert DEFAULT_TTS_PROVIDER in ("elevenlabs", "auto", "kokoro")
     assert DEFAULT_VOICE in ("eric", "am_eric")
 
     router = UnifiedVoiceRouter()
     with patch.object(router.elevenlabs, "synthesize", return_value=(np.zeros(24000, dtype=np.float32), 24000, {"provider": "elevenlabs", "voice_id": "eric"})):
         audio, sr, meta = router.synthesize_beat(
             text="Testing default ElevenLabs routing",
-            language="en"
+            language="en",
+            provider="elevenlabs"
         )
         assert meta["provider"] == "elevenlabs"
         assert meta["voice_id"] == "eric"

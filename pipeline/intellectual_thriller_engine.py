@@ -28,6 +28,7 @@ with warnings.catch_warnings():
         genai = None
 
 from pipeline.json_utils import robust_json_loads
+from pipeline.config import CHANNEL_NAME, CHANNEL_HANDLE
 try:
     from pipeline.ollama_client import OllamaClient
 except ImportError:
@@ -45,7 +46,7 @@ TEXTBOOK_LECTURE_CLICHES = [
 ]
 
 INTELLECTUAL_THRILLER_SYSTEM_PROMPT = """
-You are the Lead Creative Director and Principal Scriptwriter for 'The Model Verse' (themodelverse.in).
+You are the Lead Creative Director and Principal Scriptwriter for '{{CHANNEL_NAME}}' ({{CHANNEL_HANDLE}}).
 Your mission is to craft viral, high-retention short scripts that explain frontier AI architectures as an INTELLECTUAL THRILLER.
 Style: Fireship's snappy developer realism and witty sarcasm + 3Blue1Brown's mechanical geometric intuition + Veritasium's high-stakes narrative tension.
 
@@ -97,7 +98,7 @@ THE 4-ACT INTELLECTUAL THRILLER NARRATIVE ARC (EXACTLY 6 BEATS, 125-155 WORDS TO
 - ACT 4: THE PARADIGM SHIFT / OPEN LOOP (Beats 5 & 6, 40-50s):
   * Beat 5 (Empirical Victory Payoff, 18-24 words): Hard benchmark numbers proving the paradigm shift.
   * Beat 6 (The Paradigm Shift & Seamless Loop, 15-20 words): Mind-expanding takeaway that naturally loops back to Beat 1.
-    Example: "Follow The Model Verse for daily deep-dives into how modern AI actually works under the hood."
+    Example: "Follow {{CHANNEL_NAME}} for daily deep-dives into how modern AI actually works under the hood."
 
 JSON OUTPUT SCHEMA:
 Return ONLY valid JSON matching this specification:
@@ -140,7 +141,7 @@ Return ONLY valid JSON matching this specification:
     }
   ]
 }
-"""
+""".replace("{{CHANNEL_NAME}}", CHANNEL_NAME).replace("{{CHANNEL_HANDLE}}", CHANNEL_HANDLE)
 
 
 class IntellectualThrillerEngine:
@@ -214,7 +215,7 @@ class IntellectualThrillerEngine:
         ])
 
         # Check Beat 6: Loop / Follow Outro
-        has_outro_loop = any(w in b6_text for w in ["follow", "the model verse", "daily", "under the hood", "next"])
+        has_outro_loop = any(w in b6_text for w in ["follow", "the model verse", CHANNEL_NAME.lower(), "daily", "under the hood", "next"])
 
         # Compute Thriller Score
         score = 8.5
@@ -494,13 +495,13 @@ CRITICAL GROUND TRUTH RULES:
         b6 = beats[5]
         b6_raw = b6.get("text", "").strip()
         if not b6_raw or len(b6_raw.split()) < 3:
-            b6["text"] = "Follow The Model Verse for daily deep-dives into how modern AI actually works under the hood."
+            b6["text"] = f"Follow {CHANNEL_NAME} for daily deep-dives into how modern AI actually works under the hood."
         else:
             b6["text"] = b6_raw
         b6["thriller_role"] = "open_loop_outro"
         b6["act"] = 4
         if "highlight_words" not in b6 or not b6["highlight_words"]:
-            b6["highlight_words"] = {"The Model Verse": "#34D399"}
+            b6["highlight_words"] = {CHANNEL_NAME: "#34D399"}
 
         # --- Sanitize any lingering textbook clichés across all beats ---
         for b in beats:
@@ -566,7 +567,7 @@ CRITICAL GROUND TRUTH RULES:
             t3 = f"Enter {clean_topic}: {s2[0].lower() + s2[1:]}."
             t4 = f"Under the hood, {s3[0].lower() + s3[1:]}."
             t5 = f"The result? {s4}."
-            t6 = "Follow The Model Verse for daily deep-dives into how modern AI actually works under the hood."
+            t6 = f"Follow {CHANNEL_NAME} for daily deep-dives into how modern AI actually works under the hood."
 
             defaults = {
                 1: {
@@ -612,10 +613,10 @@ CRITICAL GROUND TRUTH RULES:
                 6: {
                     "beat_id": 6, "act": 4, "thriller_role": "open_loop_outro",
                     "text": t6,
-                    "visual_focus": "Chalkboard brand logo with glowing cyan rings, subscribe badge, and loop transition.",
-                    "highlight_words": {"The Model Verse": "#34D399"},
-                    "svo_action": {"subject": "Viewer", "action_verb": "follows", "direct_object": "The Model Verse", "anchor_word": "daily", "semantic_role": "loop"},
-                    "visual_blueprint": {"layout": "neural_activation_wave", "title": "THE MODEL VERSE", "sub": "Daily AI Research Breakdowns", "accent_color": "#34D399", "params": {}}
+                    "visual_focus": f"Chalkboard brand logo with glowing cyan rings, subscribe badge, and loop transition for {CHANNEL_NAME}.",
+                    "highlight_words": {CHANNEL_NAME: "#34D399"},
+                    "svo_action": {"subject": "Viewer", "action_verb": "follows", "direct_object": CHANNEL_NAME, "anchor_word": "daily", "semantic_role": "loop"},
+                    "visual_blueprint": {"layout": "neural_activation_wave", "title": CHANNEL_NAME.upper(), "sub": "Daily AI Research Breakdowns", "accent_color": "#34D399", "params": {}}
                 }
             }
             return defaults.get(beat_id, defaults[1])
@@ -664,11 +665,11 @@ CRITICAL GROUND TRUTH RULES:
                 },
                 6: {
                     "beat_id": 6, "act": 4, "thriller_role": "open_loop_outro",
-                    "text": "Follow The Model Verse for daily updates on free developer perks, tools, and frontier AI models.",
-                    "visual_focus": "Chalkboard brand signature with subscribe indicator.",
-                    "highlight_words": {"The Model Verse": "#34D399"},
-                    "svo_action": {"subject": "The Model Verse", "action_verb": "curates", "direct_object": "Developer Perks", "anchor_word": "Model", "semantic_role": "loop"},
-                    "visual_blueprint": {"layout": "neural_activation_wave", "title": "THE MODEL VERSE", "sub": "Daily Developer Perks & Research", "accent_color": "#34D399", "params": {}}
+                    "text": f"Follow {CHANNEL_NAME} for daily updates on free developer perks, tools, and frontier AI models.",
+                    "visual_focus": f"Chalkboard brand signature with subscribe indicator for {CHANNEL_NAME}.",
+                    "highlight_words": {CHANNEL_NAME: "#34D399"},
+                    "svo_action": {"subject": CHANNEL_NAME, "action_verb": "curates", "direct_object": "Developer Perks", "anchor_word": "Perks", "semantic_role": "loop"},
+                    "visual_blueprint": {"layout": "neural_activation_wave", "title": CHANNEL_NAME.upper(), "sub": "Daily Developer Perks & Research", "accent_color": "#34D399", "params": {}}
                 }
             }
             return defaults.get(beat_id, defaults[1])
@@ -716,11 +717,11 @@ CRITICAL GROUND TRUTH RULES:
             },
             6: {
                 "beat_id": 6, "act": 4, "thriller_role": "open_loop_outro",
-                "text": "Follow The Model Verse for daily deep-dives into how modern AI actually works under the hood.",
-                "visual_focus": "Chalkboard brand logo with glowing cyan rings, subscribe badge, and loop transition.",
-                "highlight_words": {"The Model Verse": "#34D399"},
-                "svo_action": {"subject": "Viewer", "action_verb": "follows", "direct_object": "The Model Verse", "anchor_word": "daily", "semantic_role": "loop"},
-                "visual_blueprint": {"layout": "neural_activation_wave", "title": "THE MODEL VERSE", "sub": "Daily AI Architecture & Research Breakdowns", "accent_color": "#34D399", "params": {}}
+                "text": f"Follow {CHANNEL_NAME} for daily deep-dives into how modern AI actually works under the hood.",
+                "visual_focus": f"Chalkboard brand logo with glowing cyan rings, subscribe badge, and loop transition for {CHANNEL_NAME}.",
+                "highlight_words": {CHANNEL_NAME: "#34D399"},
+                "svo_action": {"subject": "Viewer", "action_verb": "follows", "direct_object": CHANNEL_NAME, "anchor_word": "daily", "semantic_role": "loop"},
+                "visual_blueprint": {"layout": "neural_activation_wave", "title": CHANNEL_NAME.upper(), "sub": "Daily AI Architecture & Research Breakdowns", "accent_color": "#34D399", "params": {}}
             }
         }
         return defaults.get(beat_id, defaults[1])

@@ -465,6 +465,7 @@ def test_script_generator_gemini_none_no_crash(mock_ollama_cls, monkeypatch):
     monkeypatch.setattr(sg, "genai", None)
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     monkeypatch.delenv("GOOGLE_API_KEY", raising=False)
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
 
     mock_inst = MagicMock()
     mock_inst.generate_completion.return_value = OllamaResponse(
@@ -488,6 +489,7 @@ def test_script_generator_gemini_429_immediate_fallback(mock_ollama_cls, monkeyp
 
     monkeypatch.setenv("LLM_PROVIDER", "gemini")
     monkeypatch.setenv("GEMINI_API_KEY", "fake_key")
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
 
     mock_genai = MagicMock()
     mock_model = MagicMock()

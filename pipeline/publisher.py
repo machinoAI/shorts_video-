@@ -27,6 +27,10 @@ from pipeline.config import (
     TRACK_ACADEMIC,
     TRACK_TECH_NEWS,
     TRACK_DEVELOPER_PERKS,
+    CHANNEL_NAME,
+    CHANNEL_HANDLE,
+    CHANNEL_URL,
+    CHANNEL_TAGLINE,
 )
 
 SCOPES = [
@@ -95,7 +99,10 @@ def get_authenticated_service(
 
             print(f"🔐 Starting OAuth 2.0 browser authorization using {client_secrets_file}...")
             flow = InstalledAppFlow.from_client_secrets_file(client_secrets_file, SCOPES)
-            creds = flow.run_local_server(port=8080, prompt="consent")
+            try:
+                creds = flow.run_local_server(port=0, prompt="consent")
+            except Exception:
+                creds = flow.run_local_server(port=8080, prompt="consent")
 
             # Persist token for future headless runs
             os.makedirs(os.path.dirname(os.path.abspath(token_file)), exist_ok=True)
@@ -185,7 +192,7 @@ def generate_shorts_metadata(spec: Dict[str, Any], video_path: str) -> Dict[str,
         if m:
             arxiv_url = f"https://arxiv.org/abs/{m.group(0)}"
         else:
-            arxiv_url = "https://themodelverse.in"
+            arxiv_url = CHANNEL_URL
 
     # 4. Canonical track resolution and references block
     track = resolve_track(spec.get("category") or spec.get("metadata", {}).get("category", ""))
@@ -197,20 +204,20 @@ def generate_shorts_metadata(spec: Dict[str, Any], video_path: str) -> Dict[str,
 • Breakthrough: {title_raw}
 • Source Link: {source_url}
 • Track: {track_meta['display_name']} // {track_meta['badge']}
-• Visuals: Powered by The Model Verse Engine"""
+• Visuals: Powered by {CHANNEL_NAME} Engine"""
     elif track == TRACK_DEVELOPER_PERKS:
         perk_url = spec.get("claim_url") or spec.get("canonical_url") or spec.get("metadata", {}).get("claim_url") or arxiv_url
         ref_block = f"""🎁 DEVELOPER PERK DETAILS:
 • Program: {title_raw}
 • Claim Portal: {perk_url}
 • Track: {track_meta['display_name']} // {track_meta['badge']}
-• Verification: Ground-truth audited by The Model Verse"""
+• Verification: Ground-truth audited by {CHANNEL_NAME}"""
     else:
         ref_block = f"""📄 PAPER & REFERENCES:
 • Title: {title_raw}
 • Paper link: {arxiv_url}
 • Track: {track_meta['display_name']} // {track_meta['badge']}
-• Visuals: Powered by The Model Verse Engine"""
+• Visuals: Powered by {CHANNEL_NAME} Engine"""
 
     # 5. Hashtags construction (dynamically category-aware)
     tag_set = set(track_meta.get("default_tags", ["AI", "MachineLearning", "Shorts"]))
@@ -244,8 +251,8 @@ def generate_shorts_metadata(spec: Dict[str, Any], video_path: str) -> Dict[str,
 {ref_block}
 
 🌐 CONNECT WITH US:
-• Website: https://themodelverse.in
-• Subscribe for daily engineering deep dives into frontier AI models!
+• Channel: {CHANNEL_URL} ({CHANNEL_HANDLE})
+• {CHANNEL_TAGLINE}
 
 {hashtags_str}
 """
@@ -436,14 +443,48 @@ def main():
     parser.add_argument("--linkedin", action="store_true", help="Also publish as video post to LinkedIn")
     parser.add_argument("--dry-run", action="store_true", help="Print generated metadata, title, description, and tags without uploading")
 
-    parser.add_argument("--auth-only", action="store_true", help="Run interactive OAuth2 flow and exit")
+    parser.add_argument("--auth-only", "--setup-oauth", dest="setup_oauth", action="store_true", help="Run interactive OAuth2 flow, verify channel, and display GitHub secrets instructions")
     args = parser.parse_args()
 
+    if args.setup_oauth:
+        import base64
+        print(f"🔐 Authenticating with YouTube Data API for channel '{CHANNEL_NAME}'...")
+        service = get_authenticated_service(interactive=True)
+        try:
+            ch_resp = service.channels().list(part="snippet,statistics", mine=True).execute()
+            items = ch_resp.get("items", [])
+            if items:
+                channel = items[0]
+                ch_title = channel.get("snippet", {}).get("title", "Unknown")
+                ch_id = channel.get("id", "Unknown")
+                ch_subs = channel.get("statistics", {}).get("subscriberCount", "N/A")
+                print("\n=======================================================")
+                print(f"🎉 Successfully authenticated YouTube channel!")
+                print(f"   Channel Title: {ch_title}")
+                print(f"   Channel ID:    {ch_id}")
+                print(f"   Subscribers:   {ch_subs}")
+                print(f"   Target Handle: {CHANNEL_HANDLE}")
+                print("=======================================================")
+            else:
+                print("⚠️ Authenticated successfully, but no YouTube channel found for this Google account.")
+        except Exception as e_verify:
+            print(f"⚠️ Channel verification warning: {e_verify}")
 
-    if args.auth_only:
-        print("🔐 Authenticating with YouTube Data API...")
-        get_authenticated_service()
-        print("✅ OAuth2 authentication verified and saved.")
+        print(f"\n✅ OAuth2 token saved to: {YOUTUBE_TOKEN_PATH}")
+        print("\n📋 GITHUB ACTIONS SECRETS (Base64 Encoded):")
+        print("To enable autonomous production on GitHub Actions, copy these repository secrets:")
+
+        if os.path.exists(YOUTUBE_CLIENT_SECRETS_PATH):
+            with open(YOUTUBE_CLIENT_SECRETS_PATH, "rb") as f_cs:
+                cs_b64 = base64.b64encode(f_cs.read()).decode("utf-8")
+            print(f"\n1. Secret name: YOUTUBE_CLIENT_SECRETS_BASE64\n{cs_b64}")
+
+        if os.path.exists(YOUTUBE_TOKEN_PATH):
+            with open(YOUTUBE_TOKEN_PATH, "rb") as f_tok:
+                tok_b64 = base64.b64encode(f_tok.read()).decode("utf-8")
+            print(f"\n2. Secret name: YOUTUBE_TOKEN_JSON_BASE64\n{tok_b64}")
+
+        print("\n=======================================================\n")
         return
 
     spec = {}

@@ -23,7 +23,10 @@ from manim_engine.primitives.leaderboard import (
 )
 from manim_engine.primitives.outro_card import create_chalkboard_brand_outro
 from manim_engine.primitives.chalkboard_captions import ChalkboardCaptions
-from pipeline.config import FONT_HELVETICA, COLOR_MINT, COLOR_DANGER, COLOR_GOLD, COLOR_SLATE
+from pipeline.config import (
+    FONT_HELVETICA, COLOR_MINT, COLOR_DANGER, COLOR_GOLD, COLOR_SLATE,
+    CHANNEL_NAME, CHANNEL_HANDLE, CHANNEL_TAGLINE
+)
 
 class BenchmarkNewsScene(BaseShortScene):
     def construct(self):
@@ -401,16 +404,16 @@ class BenchmarkNewsScene(BaseShortScene):
         # -----------------------------------------------------------------
         b6_parts, b6_hl = get_beat_parts(
             6, 2,
-            ["Follow The Model Verse", "for the engineering behind frontier AI."],
-            {"The Model Verse": COLOR_MINT, "frontier AI": WHITE}
+            [f"Follow {CHANNEL_NAME}", "for the engineering behind frontier AI."],
+            {CHANNEL_NAME: COLOR_MINT, "frontier AI": WHITE}
         )
         b6_dur = get_beat_duration(6, 3.98)
         t6 = scale_times(b6_dur, [1.0, 1.8, 0.8])
 
         logo_icon, brand_text, outro_sub = create_chalkboard_brand_outro(
-            logo_title="THE MODEL VERSE",
-            tagline="Engineering Behind Frontier AI Architectures",
-            url="themodelverse.in",
+            logo_title=(CHANNEL_NAME or "machinoAI").upper(),
+            tagline=CHANNEL_TAGLINE or "Engineering Behind Frontier AI Architectures",
+            url=CHANNEL_HANDLE or "@machinoai-in",
             y_center=0.4
         )
 

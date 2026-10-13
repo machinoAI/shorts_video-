@@ -25,7 +25,6 @@ from typing import Dict, Any, List, Optional
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(PROJECT_ROOT))
-
 from pipeline.config import FFMPEG_BIN
 
 DRAFT_CACHE_DIR = PROJECT_ROOT / "pipeline" / ".draft_render_cache"
@@ -56,7 +55,10 @@ def _render_draft_video(
 
     env = os.environ.copy()
     env["ACTIVE_SPEC_PATH"] = str(tmp_spec_path)
-    env["PATH"] = f"/Users/amankumar/bin:{env.get('PATH', '')}"
+    extra_paths = ["/opt/homebrew/bin", "/usr/local/bin"]
+    if FFMPEG_BIN and os.path.exists(FFMPEG_BIN):
+        extra_paths.insert(0, os.path.dirname(FFMPEG_BIN))
+    env["PATH"] = f"{':'.join(extra_paths)}:{env.get('PATH', '')}"
 
     cmd = [
         sys.executable, "-m", "manim",

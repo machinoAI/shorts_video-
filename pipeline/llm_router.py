@@ -29,6 +29,7 @@ import requests
 from pipeline.json_utils import robust_json_loads
 from pipeline.ollama_client import OllamaClient, strip_thinking_tags
 from pipeline.quota_tracker import is_quota_error, quota_tracker
+from pipeline.config import CHANNEL_NAME, CHANNEL_URL
 
 logger = logging.getLogger("llm_router")
 if not logger.handlers:
@@ -212,8 +213,8 @@ def enforce_script_schema(
 
     # If beat 6 was an empty outro, enforce crisp brand outro
     if beats[5]["text"].startswith("Beat 6"):
-        beats[5]["text"] = "Follow The Model Verse for daily deep-dives into how modern AI actually works under the hood."
-        beats[5]["highlight_words"] = {"The Model Verse": "#34D399"}
+        beats[5]["text"] = f"Follow {CHANNEL_NAME} for daily deep-dives into how modern AI actually works under the hood."
+        beats[5]["highlight_words"] = {CHANNEL_NAME: "#34D399"}
 
     clean_spec["beats"] = beats
 
@@ -436,11 +437,11 @@ def generate_deterministic_fallback_script(
             },
             {
                 "beat_id": 6,
-                "text": "Follow The Model Verse for daily deep-dives into how modern AI actually works under the hood.",
-                "visual_focus": "Minimalist chalkboard outro with The Model Verse branding.",
-                "highlight_words": {"The Model Verse": "#34D399"},
-                "svo_action": {"subject": "The Model Verse", "action_verb": "demystifies", "direct_object": "Modern AI", "anchor_word": "Model", "semantic_role": "metric_evaluation"},
-                "visual_blueprint": {"layout": "paper_figure", "title": "THE MODEL VERSE", "sub": "Autonomous Architectural Analysis", "accent_color": "#34D399", "params": {"title": "Outro"}}
+                "text": f"Follow {CHANNEL_NAME} for daily deep-dives into how modern AI actually works under the hood.",
+                "visual_focus": f"Minimalist chalkboard outro with {CHANNEL_NAME} branding.",
+                "highlight_words": {CHANNEL_NAME: "#34D399"},
+                "svo_action": {"subject": CHANNEL_NAME, "action_verb": "demystifies", "direct_object": "Modern AI", "anchor_word": CHANNEL_NAME.split()[0], "semantic_role": "metric_evaluation"},
+                "visual_blueprint": {"layout": "paper_figure", "title": CHANNEL_NAME.upper(), "sub": "Autonomous Architectural Analysis", "accent_color": "#34D399", "params": {"title": "Outro"}}
             }
         ]
     elif cat == "developer_perks":
@@ -487,11 +488,11 @@ def generate_deterministic_fallback_script(
             },
             {
                 "beat_id": 6,
-                "text": "Follow The Model Verse for daily updates on free developer perks, tools, and frontier AI research.",
+                "text": f"Follow {CHANNEL_NAME} for daily updates on free developer perks, tools, and frontier AI research.",
                 "visual_focus": "Chalkboard brand signature with subscribe indicator.",
-                "highlight_words": {"The Model Verse": "#34D399"},
-                "svo_action": {"subject": "The Model Verse", "action_verb": "curates", "direct_object": "Developer Perks", "anchor_word": "Model", "semantic_role": "metric_evaluation"},
-                "visual_blueprint": {"layout": "paper_figure", "title": "THE MODEL VERSE", "sub": "Daily Developer Perks & Research", "accent_color": "#34D399", "params": {"title": "Outro"}}
+                "highlight_words": {CHANNEL_NAME: "#34D399"},
+                "svo_action": {"subject": CHANNEL_NAME, "action_verb": "curates", "direct_object": "Developer Perks", "anchor_word": CHANNEL_NAME.split()[0], "semantic_role": "metric_evaluation"},
+                "visual_blueprint": {"layout": "paper_figure", "title": CHANNEL_NAME.upper(), "sub": "Daily Developer Perks & Research", "accent_color": "#34D399", "params": {"title": "Outro"}}
             }
         ]
     elif cat in ("tech_news", "blogs", "news"):
@@ -538,11 +539,11 @@ def generate_deterministic_fallback_script(
             },
             {
                 "beat_id": 6,
-                "text": "Follow The Model Verse for daily breakdowns of major AI drops and architectural breakthroughs.",
-                "visual_focus": "Minimalist chalkboard outro with The Model Verse branding.",
-                "highlight_words": {"The Model Verse": "#34D399"},
-                "svo_action": {"subject": "The Model Verse", "action_verb": "breaks down", "direct_object": "AI Drops", "anchor_word": "Model", "semantic_role": "metric_evaluation"},
-                "visual_blueprint": {"layout": "paper_figure", "title": "THE MODEL VERSE", "sub": "Daily AI News & Analysis", "accent_color": "#34D399", "params": {"title": "Outro"}}
+                "text": f"Follow {CHANNEL_NAME} for daily breakdowns of major AI drops and architectural breakthroughs.",
+                "visual_focus": f"Minimalist chalkboard outro with {CHANNEL_NAME} branding.",
+                "highlight_words": {CHANNEL_NAME: "#34D399"},
+                "svo_action": {"subject": CHANNEL_NAME, "action_verb": "breaks down", "direct_object": "AI Drops", "anchor_word": CHANNEL_NAME.split()[0], "semantic_role": "metric_evaluation"},
+                "visual_blueprint": {"layout": "paper_figure", "title": CHANNEL_NAME.upper(), "sub": "Daily AI News & Analysis", "accent_color": "#34D399", "params": {"title": "Outro"}}
             }
         ]
     elif cat in ("model_showdown", "benchmark_news"):
@@ -589,11 +590,11 @@ def generate_deterministic_fallback_script(
             },
             {
                 "beat_id": 6,
-                "text": "Follow The Model Verse for daily head-to-head model showdowns and engineering deep-dives.",
-                "visual_focus": "Minimalist chalkboard outro with The Model Verse branding.",
-                "highlight_words": {"The Model Verse": "#34D399"},
-                "svo_action": {"subject": "The Model Verse", "action_verb": "evaluates", "direct_object": "Model Showdowns", "anchor_word": "Model", "semantic_role": "metric_evaluation"},
-                "visual_blueprint": {"layout": "paper_figure", "title": "THE MODEL VERSE", "sub": "Daily AI Benchmark Showdowns", "accent_color": "#34D399", "params": {"title": "Outro"}}
+                "text": f"Follow {CHANNEL_NAME} for daily head-to-head model showdowns and engineering deep-dives.",
+                "visual_focus": f"Minimalist chalkboard outro with {CHANNEL_NAME} branding.",
+                "highlight_words": {CHANNEL_NAME: "#34D399"},
+                "svo_action": {"subject": CHANNEL_NAME, "action_verb": "evaluates", "direct_object": "Model Showdowns", "anchor_word": CHANNEL_NAME.split()[0], "semantic_role": "metric_evaluation"},
+                "visual_blueprint": {"layout": "paper_figure", "title": CHANNEL_NAME.upper(), "sub": "Daily AI Benchmark Showdowns", "accent_color": "#34D399", "params": {"title": "Outro"}}
             }
         ]
     else:
@@ -641,11 +642,11 @@ def generate_deterministic_fallback_script(
             },
             {
                 "beat_id": 6,
-                "text": "Follow The Model Verse for daily deep-dives into how modern AI actually works under the hood.",
-                "visual_focus": "Minimalist chalkboard outro with The Model Verse branding.",
-                "highlight_words": {"The Model Verse": "#34D399"},
-                "svo_action": {"subject": "The Model Verse", "action_verb": "demystifies", "direct_object": "Modern AI", "anchor_word": "Model", "semantic_role": "metric_evaluation"},
-                "visual_blueprint": {"layout": "paper_figure", "title": "THE MODEL VERSE", "sub": "Autonomous Architectural Analysis", "accent_color": "#34D399", "params": {"title": "Outro"}}
+                "text": f"Follow {CHANNEL_NAME} for daily deep-dives into how modern AI actually works under the hood.",
+                "visual_focus": f"Minimalist chalkboard outro with {CHANNEL_NAME} branding.",
+                "highlight_words": {CHANNEL_NAME: "#34D399"},
+                "svo_action": {"subject": CHANNEL_NAME, "action_verb": "demystifies", "direct_object": "Modern AI", "anchor_word": CHANNEL_NAME.split()[0], "semantic_role": "metric_evaluation"},
+                "visual_blueprint": {"layout": "paper_figure", "title": CHANNEL_NAME.upper(), "sub": "Autonomous Architectural Analysis", "accent_color": "#34D399", "params": {"title": "Outro"}}
             }
         ]
 
@@ -668,15 +669,18 @@ class LLMRouter:
 
     def __init__(self) -> None:
         self.gemini_models = [
-            os.getenv("GEMINI_MODEL_NAME", "gemini-2.5-flash"),
-            "gemini-2.5-flash",
-            "gemini-2.5-flash-lite",
-            "gemini-2.0-flash",
-            "gemini-1.5-flash",
-            "gemini-flash-latest",
+            os.getenv("GEMINI_MODEL_NAME", "gemini-3.5-flash"),
+            "gemini-3.5-flash",
+            "gemini-3.8-flash",
+            "gemini-3.7-flash",
+            "gemini-3.6-flash",
             "gemini-3.1-flash-lite",
+            "gemini-flash-latest",
         ]
         self.groq_models = [
+            "openai/gpt-oss-120b",
+            "qwen/qwen3.8-27b",
+            "openai/gpt-oss-20b",
             "llama-3.3-70b-versatile",
             "llama-3.1-8b-instant",
         ]
@@ -727,7 +731,7 @@ class LLMRouter:
                     model_name,
                     generation_config={"response_mime_type": "application/json"}
                 )
-                resp = model.generate_content(prompt)
+                resp = model.generate_content(prompt, request_options={"timeout": 25})
                 if resp and resp.text:
                     sanitized = sanitize_markdown_json(resp.text)
                     parsed = robust_json_loads(sanitized)
@@ -840,8 +844,8 @@ class LLMRouter:
         headers = {
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
-            "HTTP-Referer": "https://themodelverse.in",
-            "X-Title": "The Model Verse Shorts"
+            "HTTP-Referer": CHANNEL_URL,
+            "X-Title": f"{CHANNEL_NAME} Shorts"
         }
 
         for model_name in self.openrouter_models:
@@ -1026,14 +1030,14 @@ class LLMRouter:
         models_to_try: List[str] = []
         if preferred_model:
             models_to_try.append(preferred_model)
+        if os.getenv("GEMINI_MODEL_NAME"):
+            models_to_try.append(os.getenv("GEMINI_MODEL_NAME"))
         models_to_try.extend(getattr(self, "gemini_models", []))
         models_to_try.extend([
-            os.getenv("GEMINI_MODEL_NAME", "gemini-2.5-flash"),
-            "gemini-2.5-flash",
-            "gemini-2.5-flash-lite",
-            "gemini-2.0-flash",
-            "gemini-1.5-flash",
-            "gemini-flash-latest",
+            "gemini-3.5-flash",
+            "gemini-3.8-flash",
+            "gemini-3.7-flash",
+            "gemini-3.6-flash",
         ])
         unique_models: List[str] = []
         for m in models_to_try:
@@ -1050,7 +1054,7 @@ class LLMRouter:
                     )
                 else:
                     model = active_genai.GenerativeModel(model_name)
-                resp = model.generate_content(prompt)
+                resp = model.generate_content(prompt, request_options={"timeout": 20})
                 if resp and resp.text:
                     quota_tracker.record_success("gemini")
                     quota_tracker.record_success("gemini_vision")
@@ -1164,8 +1168,8 @@ class LLMRouter:
         headers = {
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
-            "HTTP-Referer": "https://themodelverse.in",
-            "X-Title": "The Model Verse Shorts"
+            "HTTP-Referer": CHANNEL_URL,
+            "X-Title": f"{CHANNEL_NAME} Shorts"
         }
 
         messages = []

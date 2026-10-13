@@ -18,7 +18,8 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from pipeline.config import (
     WORKSPACE_ROOT, BG_CARBON, COLOR_MINT, COLOR_CYAN,
-    COLOR_GOLD, COLOR_DANGER, COLOR_SLATE, COLOR_CARD_BG
+    COLOR_GOLD, COLOR_DANGER, COLOR_SLATE, COLOR_CARD_BG,
+    CHANNEL_NAME, CHANNEL_HANDLE
 )
 
 # Output directory for thumbnails
@@ -458,7 +459,8 @@ class ShortsThumbnailGenerator:
 
         draw.line([(60, 1545), (W - 60, 1545)], fill=(31, 41, 55, 255), width=2)
         arxiv_id = spec.get("arxiv_id", "")
-        cite_str = f"themodelverse.in • arXiv:{arxiv_id}" if arxiv_id else "themodelverse.in • Full Breakdown"
+        cite_brand = CHANNEL_HANDLE or "@machinoai-in"
+        cite_str = f"{cite_brand} • arXiv:{arxiv_id}" if arxiv_id else f"{cite_brand} • Full Breakdown"
         draw.text((60, 1565), cite_str, font=font_meta, fill=(100, 116, 139, 255))
 
         # --- Final Composite & Export ---

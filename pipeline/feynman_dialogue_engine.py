@@ -28,6 +28,7 @@ with warnings.catch_warnings():
     import google.generativeai as genai
 
 from pipeline.json_utils import robust_json_loads
+from pipeline.config import CHANNEL_NAME, CHANNEL_HANDLE
 
 API_KEY = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
 if API_KEY:
@@ -65,8 +66,8 @@ TEXTBOOK_LECTURE_CLICHES = [
 
 
 SCRIPTWRITER_SYSTEM_PROMPT = """
-You are the Lead Creative Director & Principal Technical Scriptwriter for 'The Model Verse' (themodelverse.in).
-Your style is a fusion of Fireship (punchy dev realism, real-world tools, snappy pacing),
+You are the Lead Creative Director & Principal Technical Scriptwriter for '{{CHANNEL_NAME}}' ({{CHANNEL_HANDLE}}).
+You are writing high-retention short explainer scripts explaining frontier AI architectures.
 3Blue1Brown (crystal-clear geometric and physical intuition), and Veritasium (high-stakes tension).
 
 CRITICAL INTELLECTUAL THRILLER DIRECTIVES (ENGINE 7.0):
@@ -109,7 +110,7 @@ CRITICAL INTELLECTUAL THRILLER DIRECTIVES (ENGINE 7.0):
    - ACT 4: The Paradigm Shift / Open Loop (Beats 5 & 6, 40-50s):
      * Beat 5 (Empirical Victory Payoff, 18-24 words): Hard benchmark numbers proving the win.
      * Beat 6 (Paradigm Shift & Seamless Loop, 15-20 words): Crisp outro naturally looping back to Beat 1.
-       Example: "Follow The Model Verse for daily deep-dives into how modern AI actually works under the hood."
+       Example: "Follow {{CHANNEL_NAME}} for daily deep-dives into how modern AI actually works under the hood."
 6. FIRESHIP PACING & SHORT PUNCHY SENTENCES (GRADE 7-8.5 READING LEVEL):
    - Real developers and everyday viewers need short, punchy sentences.
    - Break each beat into 2 to 3 short sentences (5-10 words per sentence) instead of one long run-on sentence.
@@ -164,7 +165,7 @@ Return ONLY valid JSON matching this schema:
     }
   ]
 }
-"""
+""".replace("{{CHANNEL_NAME}}", CHANNEL_NAME).replace("{{CHANNEL_HANDLE}}", CHANNEL_HANDLE)
 
 
 LISTENER_SYSTEM_PROMPT = """
@@ -468,11 +469,11 @@ Elevate clarity, sharpen the analogy, eliminate any detected slop, and ensure th
                 },
                 {
                     "beat_id": 6,
-                    "text": "Follow The Model Verse for daily deep-dives into how modern AI actually works under the hood.",
-                    "visual_focus": "Brand chalkboard logo with glowing cyan rings, subscribe badge, and loop transition arrow.",
-                    "highlight_words": {"The Model Verse": "#10B981", "under the hood": "#38BDF8"},
-                    "svo_action": {"subject": "Viewer", "action_verb": "follows", "direct_object": "The Model Verse", "anchor_word": "daily", "semantic_role": "loop"},
-                    "visual_blueprint": {"layout": "neural_activation_wave", "title": "THE MODEL VERSE", "sub": "Daily AI Architecture & Research Breakdowns", "accent_color": "#10B981", "params": {}}
+                    "text": f"Follow {CHANNEL_NAME} for daily deep-dives into how modern AI actually works under the hood.",
+                    "visual_focus": f"Brand chalkboard logo with glowing cyan rings, subscribe badge, and loop transition arrow for {CHANNEL_NAME}.",
+                    "highlight_words": {CHANNEL_NAME: "#10B981", "under the hood": "#38BDF8"},
+                    "svo_action": {"subject": "Viewer", "action_verb": "follows", "direct_object": CHANNEL_NAME, "anchor_word": "daily", "semantic_role": "loop"},
+                    "visual_blueprint": {"layout": "neural_activation_wave", "title": CHANNEL_NAME.upper(), "sub": "Daily AI Architecture & Research Breakdowns", "accent_color": "#10B981", "params": {}}
                 }
             ]
         elif cat == "developer_perks":
@@ -519,11 +520,11 @@ Elevate clarity, sharpen the analogy, eliminate any detected slop, and ensure th
                 },
                 {
                     "beat_id": 6,
-                    "text": "Follow The Model Verse for daily deep-dives into developer perks, tools, and frontier AI models.",
-                    "visual_focus": "Brand chalkboard logo with glowing cyan rings, subscribe badge, and loop transition.",
-                    "highlight_words": {"The Model Verse": "#10B981"},
-                    "svo_action": {"subject": "Viewer", "action_verb": "follows", "direct_object": "The Model Verse", "anchor_word": "daily", "semantic_role": "loop"},
-                    "visual_blueprint": {"layout": "neural_activation_wave", "title": "THE MODEL VERSE", "sub": "Daily Developer Perks & Research", "accent_color": "#10B981", "params": {}}
+                    "text": f"Follow {CHANNEL_NAME} for daily deep-dives into developer perks, tools, and frontier AI models.",
+                    "visual_focus": f"Brand chalkboard logo with glowing cyan rings, subscribe badge, and loop transition for {CHANNEL_NAME}.",
+                    "highlight_words": {CHANNEL_NAME: "#10B981"},
+                    "svo_action": {"subject": "Viewer", "action_verb": "follows", "direct_object": CHANNEL_NAME, "anchor_word": "daily", "semantic_role": "loop"},
+                    "visual_blueprint": {"layout": "neural_activation_wave", "title": CHANNEL_NAME.upper(), "sub": "Daily Developer Perks & Research", "accent_color": "#10B981", "params": {}}
                 }
             ]
         else:
@@ -570,11 +571,11 @@ Elevate clarity, sharpen the analogy, eliminate any detected slop, and ensure th
                 },
                 {
                     "beat_id": 6,
-                    "text": "Follow The Model Verse for daily deep-dives into how modern AI actually works under the hood.",
-                    "visual_focus": "Brand chalkboard logo with glowing cyan rings, subscribe badge, and loop transition arrow.",
-                    "highlight_words": {"The Model Verse": "#10B981", "under the hood": "#38BDF8"},
-                    "svo_action": {"subject": "Viewer", "action_verb": "follows", "direct_object": "The Model Verse", "anchor_word": "daily", "semantic_role": "loop"},
-                    "visual_blueprint": {"layout": "neural_activation_wave", "title": "THE MODEL VERSE", "sub": "Daily AI Architecture & Research Breakdowns", "accent_color": "#10B981", "params": {}}
+                    "text": f"Follow {CHANNEL_NAME} for daily deep-dives into how modern AI actually works under the hood.",
+                    "visual_focus": f"Brand chalkboard logo with glowing cyan rings, subscribe badge, and loop transition arrow for {CHANNEL_NAME}.",
+                    "highlight_words": {CHANNEL_NAME: "#10B981", "under the hood": "#38BDF8"},
+                    "svo_action": {"subject": "Viewer", "action_verb": "follows", "direct_object": CHANNEL_NAME, "anchor_word": "daily", "semantic_role": "loop"},
+                    "visual_blueprint": {"layout": "neural_activation_wave", "title": CHANNEL_NAME.upper(), "sub": "Daily AI Architecture & Research Breakdowns", "accent_color": "#10B981", "params": {}}
                 }
             ]
 

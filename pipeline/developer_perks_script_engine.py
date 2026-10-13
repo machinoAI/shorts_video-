@@ -17,7 +17,10 @@ import json
 from typing import Dict, Any, Optional, List
 from pathlib import Path
 
+import sys
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.append(str(PROJECT_ROOT))
+from pipeline.config import CHANNEL_NAME, CHANNEL_HANDLE
 
 COLOR_MINT = "#34D399"
 COLOR_DANGER = "#EF4444"
@@ -66,7 +69,7 @@ class DeveloperPerksScriptEngine:
         val_str = f"${val_usd:,}" if isinstance(val_usd, (int, float)) and val_usd > 0 else "$1,000+"
         abstract = (perk_meta.get("abstract") if perk_meta else None) or context or ""
 
-        return f"""You are the Host & Lead Producer of 'The Model Verse' (themodelverse.in), creating an Actionable Developer Perks & Credits Guide.
+        return f"""You are the Host & Lead Producer of '{CHANNEL_NAME}' ({CHANNEL_HANDLE}), creating an Actionable Developer Perks & Credits Guide.
 Generate a fast-paced, highly practical 6-beat YouTube Shorts script matching the style of Alex Bowers:
 Provider: {prov}
 Program: {headline}
@@ -171,11 +174,11 @@ Output ONLY valid JSON matching this schema:
             {
                 "beat_id": 6,
                 "name": "b6_save_bookmark_cta",
-                "text": "Save this reel before the program cohort caps, and follow The Model Verse for daily developer perks and AI tools.",
-                "visual_focus": "Actionable save bookmark banner and The Model Verse brand signature.",
-                "highlight_words": {"Save this reel": COLOR_GOLD, "The Model Verse": COLOR_MINT},
-                "svo_action": {"subject": "The Model Verse", "action_verb": "curates", "direct_object": "Developer Perks", "anchor_word": "Model", "semantic_role": "metric_evaluation"},
-                "visual_blueprint": {"layout": "perks_action_outro", "title": "THE MODEL VERSE", "sub": "Daily Developer Perks & Tools", "params": {}}
+                "text": f"Save this reel before the program cohort caps, and follow {CHANNEL_NAME} for daily developer perks and AI tools.",
+                "visual_focus": f"Actionable save bookmark banner and {CHANNEL_NAME} brand signature.",
+                "highlight_words": {"Save this reel": COLOR_GOLD, CHANNEL_NAME: COLOR_MINT},
+                "svo_action": {"subject": CHANNEL_NAME, "action_verb": "curates", "direct_object": "Developer Perks", "anchor_word": "Perks", "semantic_role": "metric_evaluation"},
+                "visual_blueprint": {"layout": "perks_action_outro", "title": CHANNEL_NAME.upper(), "sub": "Daily Developer Perks & Tools", "params": {}}
             }
         ]
 
@@ -193,7 +196,7 @@ Output ONLY valid JSON matching this schema:
                 {"type": "eligibility_checklist", "title": "ELIGIBILITY CHECKLIST"},
                 {"type": "console_walkthrough", "title": "CONSOLE APPLICATION"},
                 {"type": "social_proof_receipts", "title": "COMMUNITY SOCIAL PROOF"},
-                {"type": "save_bookmark_cta", "title": "THE MODEL VERSE"}
+                {"type": "save_bookmark_cta", "title": CHANNEL_NAME.upper()}
             ],
             "domain_taxonomy": "developer_perks",
             "beats": beats,

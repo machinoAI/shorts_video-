@@ -13,12 +13,42 @@ from dotenv import load_dotenv
 WORKSPACE_ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(WORKSPACE_ROOT / ".env")
 
-FFMPEG_BIN = os.environ.get("FFMPEG_BIN") or shutil.which("ffmpeg") or "/Users/amankumar/bin/ffmpeg"
+try:
+    import certifi
+    os.environ.setdefault("SSL_CERT_FILE", certifi.where())
+    os.environ.setdefault("REQUESTS_CA_BUNDLE", certifi.where())
+except Exception:
+    pass
+
+def _find_ffmpeg() -> str:
+    env_bin = os.environ.get("FFMPEG_BIN")
+    if env_bin and os.path.exists(env_bin):
+        return env_bin
+    which_bin = shutil.which("ffmpeg")
+    if which_bin:
+        return which_bin
+    for candidate in ("/opt/homebrew/bin/ffmpeg", "/usr/local/bin/ffmpeg", "/usr/bin/ffmpeg"):
+        if os.path.exists(candidate):
+            return candidate
+    return shutil.which("ffmpeg") or "ffmpeg"
+
+FFMPEG_BIN = _find_ffmpeg()
 KOKORO_MODEL_PATH = str(WORKSPACE_ROOT / "kokoro_models" / "kokoro-v1.0.onnx")
 KOKORO_VOICES_PATH = str(WORKSPACE_ROOT / "kokoro_models" / "voices-v1.0.bin")
 PUBLIC_DIR = str(WORKSPACE_ROOT / "public")
 OUTPUT_DIR = str(WORKSPACE_ROOT / "output")
 GEMINI_MODEL_NAME = os.environ.get("GEMINI_MODEL_NAME", "gemini-flash-latest")
+
+# Channel Branding Configuration
+CHANNEL_NAME = os.environ.get("CHANNEL_NAME", "machinoAI")
+CHANNEL_HANDLE = os.environ.get("CHANNEL_HANDLE", "@machinoai-in")
+CHANNEL_URL = os.environ.get("CHANNEL_URL", "https://www.youtube.com/@machinoai-in")
+CHANNEL_TAGLINE = os.environ.get("CHANNEL_TAGLINE", "Precision Tools & AI Insights")
+CHANNEL_DESCRIPTION = os.environ.get(
+    "CHANNEL_DESCRIPTION",
+    "We're building the future of tools and technology insights, one precision-crafted solution at a time."
+)
+CHANNEL_BRAND_COLOR = os.environ.get("CHANNEL_BRAND_COLOR", "#10B981")
 
 # Typography & Visual Design Tokens
 FONT_HELVETICA = "Helvetica Neue"
@@ -61,7 +91,7 @@ SAMPLE_RATE = 24000
 DEFAULT_VOICE = os.environ.get("ELEVENLABS_VOICE") or "eric"
 DEFAULT_KOKORO_VOICE = os.environ.get("KOKORO_VOICE", "am_eric")
 DEFAULT_SPEED = 1.12
-DEFAULT_TTS_PROVIDER = os.environ.get("TTS_PROVIDER", "auto")
+DEFAULT_TTS_PROVIDER = os.environ.get("TTS_PROVIDER", "kokoro")
 TTS_CACHE_DIR = os.path.join(PUBLIC_DIR, "audio_cache")
 
 # ElevenLabs Configuration (English Neural Voice)

@@ -318,7 +318,7 @@ def test_run_pipeline_bypasses_arxiv_figure_extraction_for_blogs(monkeypatch):
         figure_extraction_called = True
         return []
 
-    monkeypatch.setattr("sys.argv", ["run_pipeline.py", "--blog", "blog_openai_o3_mini", "--dry-run"])
+    monkeypatch.setattr("sys.argv", ["run_pipeline.py", "--blog", "blog_openai_o3_mini", "--dry-run", "--allow-stale"])
     monkeypatch.setattr("pipeline.run_pipeline.generate_script", lambda **kwargs: mock_spec)
     monkeypatch.setattr("pipeline.run_pipeline.synthesize_audio_for_spec", lambda *args, **kwargs: mock_audio)
     monkeypatch.setattr("pipeline.arxiv_vector_extractor.extract_paper_figures", mock_extract_figures)

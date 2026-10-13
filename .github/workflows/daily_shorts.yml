@@ -145,10 +145,14 @@ jobs:
           LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
         run: |
+          echo "CHANNEL_NAME=${{ secrets.CHANNEL_NAME || 'machinoAI' }}" >> .env
+          echo "CHANNEL_HANDLE=${{ secrets.CHANNEL_HANDLE || '@machinoai-in' }}" >> .env
+          echo "CHANNEL_URL=${{ secrets.CHANNEL_URL || 'https://www.youtube.com/@machinoai-in' }}" >> .env
+          echo "CHANNEL_TAGLINE=${{ secrets.CHANNEL_TAGLINE || 'Precision Tools & AI Insights' }}" >> .env
           echo "GEMINI_API_KEY=$GEMINI_API_KEY" >> .env
-          echo "GEMINI_MODEL_NAME=gemini-2.5-flash" >> .env
-          echo "TTS_PROVIDER=auto" >> .env
-          echo "ELEVENLABS_VOICE=eric" >> .env
+          echo "GEMINI_MODEL_NAME=gemini-flash-latest" >> .env
+          echo "TTS_PROVIDER=kokoro" >> .env
+          echo "KOKORO_VOICE=am_eric" >> .env
 
           if [ -n "$GROQ_API_KEY" ]; then
             echo "GROQ_API_KEY=$GROQ_API_KEY" >> .env
@@ -196,7 +200,14 @@ jobs:
 
       - name: Run Daily Shorts Daemon
         env:
+          CHANNEL_NAME: ${{ secrets.CHANNEL_NAME || 'machinoAI' }}
+          CHANNEL_HANDLE: ${{ secrets.CHANNEL_HANDLE || '@machinoai-in' }}
+          CHANNEL_URL: ${{ secrets.CHANNEL_URL || 'https://www.youtube.com/@machinoai-in' }}
+          CHANNEL_TAGLINE: ${{ secrets.CHANNEL_TAGLINE || 'Precision Tools & AI Insights' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          TTS_PROVIDER: "kokoro"
+          KOKORO_VOICE: "am_eric"
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}

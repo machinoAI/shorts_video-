@@ -9,17 +9,27 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(PROJECT_ROOT))
 
-from pipeline.config import FONT_HELVETICA, COLOR_MINT
+from typing import Optional
+from pipeline.config import (
+    FONT_HELVETICA, COLOR_MINT,
+    CHANNEL_NAME, CHANNEL_HANDLE, CHANNEL_TAGLINE
+)
 from manim_engine.primitives.typography import CleanText
 
 
 def create_chalkboard_brand_outro(
-    logo_title: str = "THE MODEL VERSE",
-    tagline: str = "Follow for the architecture behind modern AI",
-    url: str = "themodelverse.in",
+    logo_title: Optional[str] = None,
+    tagline: Optional[str] = None,
+    url: Optional[str] = None,
     y_center: float = 0.5
 ) -> tuple[VGroup, VGroup, VGroup]:
     """Creates the signature 3Blue1Brown mathematical chalkboard brand signature with official logo."""
+    if logo_title is None:
+        logo_title = (CHANNEL_NAME or "machinoAI").upper()
+    if tagline is None:
+        tagline = CHANNEL_TAGLINE or "Precision Tools & AI Insights"
+    if url is None:
+        url = CHANNEL_HANDLE or "@machinoai-in"
     # 1. Official Modelverse vector logo
     logo_svg_path = PROJECT_ROOT / "public" / "brand" / "modelverse_logo.svg"
     avatar_png_path = PROJECT_ROOT / "public" / "brand" / "modelverse_avatar.png"

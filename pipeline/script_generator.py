@@ -30,6 +30,7 @@ from pipeline.json_utils import robust_json_loads
 from pipeline.arxiv_fetcher import fetch_arxiv_paper
 from scripts.generate_math_svgs import render_math_to_svg
 from pipeline.ollama_client import OllamaClient
+from pipeline.config import CHANNEL_NAME, CHANNEL_HANDLE, CHANNEL_TAGLINE
 
 API_KEY = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
 MODEL_NAME = os.getenv("GEMINI_MODEL_NAME", "gemini-flash-latest")
@@ -47,7 +48,7 @@ CATEGORIES = [
 ]
 
 SCRIPT_DIRECTIVES = """
-You are the Lead Creative Director & Principal Technical Scriptwriter for 'The Model Verse' (themodelverse.in).
+You are the Lead Creative Director & Principal Technical Scriptwriter for '{{CHANNEL_NAME}}' ({{CHANNEL_HANDLE}}).
 Your job is to craft high-retention, educational short scripts explaining frontier AI architectures as an INTELLECTUAL THRILLER.
 
 Aesthetic & Pedagogical Philosophy (Fireship meets 3Blue1Brown & Veritasium):
@@ -194,7 +195,7 @@ DEDICATED FULL-SCREEN VISUAL BLUEPRINTS (CRITICAL ARCHITECTURAL DIRECTIVE):
   * If mathematical or state-space convergence: use "optimization_landscape" or "vector_flow_field".
   * If executable implementation: use "chalkboard_code_block".
 - STRICT BAN ON CARTOON X AND CHECKMARKS: Never draw crude red 'X' and green checkmark boxes like cheap clickbait. All visuals must feature real scientific hardware telemetry, mathematical equations, and technical flow mechanics!
-"""
+""".replace("{{CHANNEL_NAME}}", CHANNEL_NAME).replace("{{CHANNEL_HANDLE}}", CHANNEL_HANDLE)
 
 def _persist_and_finalize_spec(spec: Dict[str, Any], topic: str, default_category: str) -> Dict[str, Any]:
     clean_id = re.sub(r"[^a-zA-Z0-9_\-]", "_", spec.get("id", topic)).lower()
@@ -494,14 +495,14 @@ Generate the complete JSON specification strictly adhering to this structure:
     if len(spec.get("beats", [])) == 5:
         spec["beats"].append({
             "beat_id": 6,
-            "text": "Follow The Model Verse for simple explanations of how modern AI actually works.",
-            "visual_focus": "Minimalist chalkboard outro with The Model Verse branding.",
-            "highlight_words": {"The Model Verse": "#34D399"},
+            "text": f"Follow {CHANNEL_NAME} for simple explanations of how modern AI actually works.",
+            "visual_focus": f"Minimalist chalkboard outro with {CHANNEL_NAME} branding.",
+            "highlight_words": {CHANNEL_NAME: "#34D399"},
             "svo_action": {
-                "subject": "The Model Verse",
+                "subject": CHANNEL_NAME,
                 "action_verb": "demystifies",
                 "direct_object": "Modern AI",
-                "anchor_word": "Model",
+                "anchor_word": "AI",
                 "semantic_role": "metric_evaluation"
             }
         })

@@ -298,7 +298,11 @@ class TestTier2BoundaryAndCornerCases:
 
         # 1. Raster-only scenario
         raster_spec = copy.deepcopy(mock_base_6beat_spec)
-        test_png = str(PROJECT_ROOT / "public" / "arxiv_cache" / "2407.08608" / "chalkboard_figures" / "fig_1_3_stage_pipelining.png")
+        png_path = PROJECT_ROOT / "public" / "arxiv_cache" / "2407.08608" / "chalkboard_figures" / "fig_1_3_stage_pipelining.png"
+        png_path.parent.mkdir(parents=True, exist_ok=True)
+        if not png_path.exists():
+            png_path.write_bytes(b"\x89PNG\r\n\x1a\n")
+        test_png = str(png_path)
         raster_spec["paper_figures"] = [{
             "figure_id": "fig_raster_only",
             "svg_path": None,
@@ -311,7 +315,11 @@ class TestTier2BoundaryAndCornerCases:
 
         # 2. Vector scenario (with valid SVG)
         vector_spec = copy.deepcopy(mock_base_6beat_spec)
-        test_svg = str(PROJECT_ROOT / "public" / "arxiv_cache" / "2407.08608" / "chalkboard_figures" / "fig_4_flash3_h100_causal_False_hdim_128_fwd_speed.svg")
+        svg_path = PROJECT_ROOT / "public" / "arxiv_cache" / "2407.08608" / "chalkboard_figures" / "fig_4_flash3_h100_causal_False_hdim_128_fwd_speed.svg"
+        svg_path.parent.mkdir(parents=True, exist_ok=True)
+        if not svg_path.exists():
+            svg_path.write_text("<svg></svg>", encoding="utf-8")
+        test_svg = str(svg_path)
         vector_spec["paper_figures"] = [{
             "figure_id": "fig_vector_only",
             "svg_path": test_svg,
@@ -423,9 +431,11 @@ class TestTier4RealWorldApplicationScenario:
             "--category", "architecture_breakdown",
             "--skip-render",
             "--no-music",
+            "--allow-stale",
         ]
 
         with patch("sys.argv", test_args), \
+             patch.dict(os.environ, {"LLM_PROVIDER": "ollama"}), \
              patch("pipeline.run_pipeline.synthesize_audio_for_spec", return_value=mock_audio_res), \
              patch("pipeline.script_generator.OllamaClient") as mock_ollama_cls, \
              patch("subprocess.run") as mock_subproc:

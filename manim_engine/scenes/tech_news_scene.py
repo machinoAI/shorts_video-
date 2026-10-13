@@ -25,7 +25,8 @@ from manim_engine.primitives.chalkboard_captions import ChalkboardCaptions
 from manim_engine.primitives.outro_card import create_chalkboard_brand_outro
 from manim_engine.primitives.lab_branding import get_lab_logo, create_lab_hero_badge
 from pipeline.config import (
-    FONT_HELVETICA, COLOR_MINT, COLOR_DANGER, COLOR_GOLD, COLOR_SLATE
+    FONT_HELVETICA, COLOR_MINT, COLOR_DANGER, COLOR_GOLD, COLOR_SLATE,
+    CHANNEL_NAME, CHANNEL_HANDLE, CHANNEL_TAGLINE
 )
 from manim_engine.primitives.typography import clean_text
 
@@ -351,14 +352,14 @@ class TechNewsScene(BaseShortScene):
         # -----------------------------------------------------------------
         b6_text, b6_dur, b6_hl, _, _ = get_beat(
             6,
-            "Follow The Model Verse for instant breakdowns of every major AI lab release.",
+            f"Follow {CHANNEL_NAME} for instant breakdowns of every major AI lab release.",
             5.0,
-            {"The Model Verse": COLOR_MINT}
+            {CHANNEL_NAME: COLOR_MINT}
         )
         logo_icon, brand_text, sub = create_chalkboard_brand_outro(
-            logo_title="THE MODEL VERSE",
-            tagline="Follow for Daily AI Lab Drops",
-            url="themodelverse.in",
+            logo_title=(CHANNEL_NAME or "machinoAI").upper(),
+            tagline=CHANNEL_TAGLINE or "Follow for Daily AI Lab Drops",
+            url=CHANNEL_HANDLE or "@machinoai-in",
             y_center=0.8
         )
         outro = Group(logo_icon, brand_text, sub)

@@ -10,6 +10,7 @@ Key Optimization Rules:
   5. 3-5 high-relevance technical hashtags
 """
 
+import os
 import re
 import sys
 import json
@@ -22,8 +23,9 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from pipeline.llm_router import llm_router
 from pipeline.json_utils import robust_json_loads
+from pipeline.config import CHANNEL_NAME, CHANNEL_URL, CHANNEL_HANDLE
 
-LINKEDIN_SYSTEM_PROMPT = """You are the Principal AI Research Scientist & Lead Technical Architect for The Model Verse (https://www.themodelverse.in).
+LINKEDIN_SYSTEM_PROMPT = """You are the Principal AI Research Scientist & Lead Technical Architect for {{CHANNEL_NAME}} ({{CHANNEL_URL}}).
 Your audience on LinkedIn consists of senior ML engineers, research scientists, AI founders, and engineering leaders.
 
 Craft an authoritative, technically rigorous LinkedIn post breaking down a breakthrough foundation model or AI architecture.
@@ -52,7 +54,7 @@ Output ONLY a valid JSON object matching this schema:
   "first_comment": "First comment containing paper link, TheModelverse link, and an engaging technical discussion prompt",
   "hashtags": ["#MachineLearning", "#LLMs", "#DeepLearning"]
 }
-"""
+""".replace("{{CHANNEL_NAME}}", CHANNEL_NAME).replace("{{CHANNEL_URL}}", CHANNEL_URL)
 
 LINKEDIN_USER_PROMPT_TEMPLATE = """Generate an authoritative technical LinkedIn post for this breakthrough:
 
@@ -105,9 +107,9 @@ def build_fallback_linkedin_post(spec: Dict[str, Any]) -> Dict[str, Any]:
     elif canonical_url:
         source_url = canonical_url
     else:
-        source_url = "https://themodelverse.in"
+        source_url = CHANNEL_URL
 
-    modelverse_url = f"https://themodelverse.in/models/{spec_id}"
+    modelverse_url = os.environ.get("CATALOG_URL", f"https://themodelverse.in/models/{spec_id}")
 
     hook = b1 if b1 else f"Why conventional approaches to {clean_title} fail when scaling to production."
 
@@ -160,9 +162,9 @@ def generate_linkedin_post(spec: Dict[str, Any], use_llm: bool = True) -> Dict[s
     elif canonical_url:
         source_url = canonical_url
     else:
-        source_url = "https://themodelverse.in"
+        source_url = CHANNEL_URL
 
-    modelverse_url = f"https://themodelverse.in/models/{spec_id}"
+    modelverse_url = os.environ.get("CATALOG_URL", f"https://themodelverse.in/models/{spec_id}")
 
     if use_llm:
         def _get_text(idx: int) -> str:

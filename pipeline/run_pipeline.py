@@ -116,7 +116,10 @@ def render_scene(scene_file: str, scene_class: str, quality: str = "-qh", spec_p
     import time
     start_time = time.time()
     env = os.environ.copy()
-    env["PATH"] = f"/Users/amankumar/bin:{env.get('PATH', '')}"
+    extra_paths = ["/opt/homebrew/bin", "/usr/local/bin"]
+    if FFMPEG_BIN and os.path.exists(FFMPEG_BIN):
+        extra_paths.insert(0, os.path.dirname(FFMPEG_BIN))
+    env["PATH"] = f"{':'.join(extra_paths)}:{env.get('PATH', '')}"
     if quality in ("draft", "low", "ql", "l", "-l"):
         quality = "-ql"
     elif quality in ("medium", "mid", "qm", "m", "-m"):
@@ -476,12 +479,12 @@ def main():
         except Exception as e_synth:
             print(f"⚠️ Bespoke visual synthesis notice: {e_synth}")
 
+    scene_info = CATEGORY_SCENE_MAP.get(category, CATEGORY_SCENE_MAP["mechanism_deepdive"])
     if not args.legacy_engine:
         scene_file = track_meta["scene_file"]
         scene_class = track_meta["scene_class"]
         engine_label = f"{track_meta['display_name']} ({track_meta['badge']})"
     else:
-        scene_info = CATEGORY_SCENE_MAP.get(category, CATEGORY_SCENE_MAP["mechanism_deepdive"])
         scene_file = scene_info["file"]
         scene_class = scene_info["class"]
         engine_label = f"Legacy Template ({scene_class})"

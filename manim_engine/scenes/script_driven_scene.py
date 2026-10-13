@@ -20,7 +20,7 @@ sys.path.append(str(PROJECT_ROOT))
 
 from pipeline.config import (
     VIDEO_WIDTH, VIDEO_HEIGHT, FRAME_WIDTH, FRAME_HEIGHT, BG_CARBON,
-    FONT_HELVETICA
+    FONT_HELVETICA, CHANNEL_NAME, CHANNEL_HANDLE, CHANNEL_TAGLINE
 )
 from manim_engine.primitives.typography import CleanText, clean_text
 
@@ -169,7 +169,7 @@ class ScriptDrivenScene(MovingCameraScene):
         )
         badge_grp = VGroup(badge_pill, badge_txt)
 
-        brand_txt = clean_text("THE MODEL VERSE", font_size=18, font=FONT_HELVETICA, color="#10B981", weight=BOLD)
+        brand_txt = clean_text((CHANNEL_NAME or "machinoAI").upper(), font_size=18, font=FONT_HELVETICA, color="#10B981", weight=BOLD)
         divider = clean_text(" // ", font_size=15, font=FONT_HELVETICA, color="#475569")
 
         watermark = VGroup(brand_txt, divider, badge_grp).arrange(RIGHT, buff=0.14).move_to([0, 7.1, 0])
@@ -818,9 +818,9 @@ class ScriptDrivenScene(MovingCameraScene):
                 pass
 
         logo_icon, brand_text, sub = create_chalkboard_brand_outro(
-            logo_title="THE MODEL VERSE",
-            tagline="Follow for Daily AI Breakthroughs",
-            url="themodelverse.in",
+            logo_title=(CHANNEL_NAME or "machinoAI").upper(),
+            tagline=CHANNEL_TAGLINE or "Precision Tools & AI Insights",
+            url=CHANNEL_HANDLE or "@machinoai-in",
             y_center=0.0
         )
         outro_group = VGroup(logo_icon, brand_text, sub)

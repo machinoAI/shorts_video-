@@ -16,7 +16,10 @@ from manim_engine.base_scene import BaseShortScene
 from manim_engine.primitives.tech_card import create_tech_card, create_badge
 from manim_engine.primitives.outro_card import create_chalkboard_brand_outro
 from manim_engine.primitives.chalkboard_captions import ChalkboardCaptions
-from pipeline.config import FONT_HELVETICA, COLOR_MINT, COLOR_DANGER, COLOR_GOLD, COLOR_SLATE
+from pipeline.config import (
+    FONT_HELVETICA, COLOR_MINT, COLOR_DANGER, COLOR_GOLD, COLOR_SLATE,
+    CHANNEL_NAME, CHANNEL_HANDLE, CHANNEL_TAGLINE
+)
 
 class MechanismDeepDiveScene(BaseShortScene):
     def construct(self):
@@ -444,17 +447,17 @@ class MechanismDeepDiveScene(BaseShortScene):
         # -----------------------------------------------------------------
         b6_parts, b6_hl = get_beat_parts(
             6, 2,
-            ["Follow The Model Verse", "for modern AI architecture deep dives."],
-            {"The Model Verse": COLOR_MINT, "deep dives": WHITE}
+            [f"Follow {CHANNEL_NAME}", "for modern AI architecture deep dives."],
+            {CHANNEL_NAME: COLOR_MINT, "deep dives": WHITE}
         )
 
         b6_dur = get_beat_duration(6, 4.80)
         t6 = scale_times(b6_dur, [1.3, 2.2, 1.3])
 
         logo_icon, brand_text, outro_sub = create_chalkboard_brand_outro(
-            logo_title="THE MODEL VERSE",
-            tagline="Engineering Behind Modern AI Architectures",
-            url="themodelverse.in",
+            logo_title=(CHANNEL_NAME or "machinoAI").upper(),
+            tagline=CHANNEL_TAGLINE or "Engineering Behind Modern AI Architectures",
+            url=CHANNEL_HANDLE or "@machinoai-in",
             y_center=0.4
         )
 

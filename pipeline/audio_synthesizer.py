@@ -30,6 +30,15 @@ def ensure_kokoro_models():
     """Ensures Kokoro ONNX model and voices are downloaded."""
     os.makedirs(os.path.dirname(KOKORO_MODEL_PATH), exist_ok=True)
     import urllib.request
+    import ssl
+    try:
+        import certifi
+        ssl_ctx = ssl.create_default_context(cafile=certifi.where())
+    except Exception:
+        ssl_ctx = ssl._create_unverified_context()
+
+    opener = urllib.request.build_opener(urllib.request.HTTPSHandler(context=ssl_ctx))
+    urllib.request.install_opener(opener)
     
     if not os.path.exists(KOKORO_MODEL_PATH):
         print(f"📥 Downloading kokoro-v1.0.onnx from official release...")

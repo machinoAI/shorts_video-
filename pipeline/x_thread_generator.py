@@ -20,6 +20,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from pipeline.llm_router import llm_router
 from pipeline.json_utils import robust_json_loads
+from pipeline.config import CHANNEL_NAME, CHANNEL_HANDLE, CHANNEL_URL
 
 # X (Twitter) Character Limits & Weights
 TWITTER_MAX_CHARS = 280
@@ -27,7 +28,7 @@ TWITTER_URL_LENGTH = 23  # All URLs count as 23 characters on X via t.co
 
 URL_REGEX = re.compile(r"https?://\S+")
 
-X_THREAD_SYSTEM_PROMPT = """You are the Principal AI Research Scientist & Lead Technical Writer for The Model Verse (@themodelverrse).
+X_THREAD_SYSTEM_PROMPT = """You are the Principal AI Research Scientist & Lead Technical Writer for {{CHANNEL_NAME}} ({{CHANNEL_HANDLE}}).
 Your audience consists of senior ML engineers, research scientists, and AI founders on X (Twitter).
 
 You craft high-signal, punchy, 4-tweet technical breakdown threads accompanying 60-second animated video explainers.
@@ -51,8 +52,8 @@ You craft high-signal, punchy, 4-tweet technical breakdown threads accompanying 
    - STRICT LIMIT: <= 270 characters.
 
 4. TWEET 4 (PRIMARY SOURCES & CTA):
-   - Direct link to paper/source and interactive model card on TheModelVerse.
-   - Clear call to action: "Follow @themodelverrse for daily breakdowns of frontier AI papers."
+   - Direct link to paper/source and interactive model card on {{CHANNEL_NAME}}.
+   - Clear call to action: "Follow {{CHANNEL_HANDLE}} for daily breakdowns of frontier AI papers."
    - STRICT LIMIT: <= 270 characters (accounting for 23 chars per link).
 
 OUTPUT FORMAT:
@@ -65,7 +66,7 @@ Output ONLY a valid JSON object matching this schema:
     "Tweet 4 text..."
   ]
 }
-"""
+""".replace("{{CHANNEL_NAME}}", CHANNEL_NAME).replace("{{CHANNEL_HANDLE}}", CHANNEL_HANDLE)
 
 X_USER_PROMPT_TEMPLATE = """Generate a 4-tweet technical thread for this breakthrough:
 
@@ -157,9 +158,9 @@ def build_fallback_thread(spec: Dict[str, Any]) -> List[str]:
     elif canonical_url:
         source_url = canonical_url
     else:
-        source_url = "https://themodelverse.in"
+        source_url = CHANNEL_URL
 
-    modelverse_url = f"https://themodelverse.in/models/{spec_id}"
+    modelverse_url = CHANNEL_URL
 
     # Tweet 1: Hook + Core Question + Video Lead (ZERO external URLs!)
     hook_lead = b1_clean if b1_clean else f"Why current approaches to {clean_title} fail at scale."
@@ -208,9 +209,9 @@ def generate_x_thread(spec: Dict[str, Any], use_llm: bool = True) -> List[str]:
     elif canonical_url:
         source_url = canonical_url
     else:
-        source_url = "https://themodelverse.in"
+        source_url = CHANNEL_URL
 
-    modelverse_url = f"https://themodelverse.in/models/{spec_id}"
+    modelverse_url = CHANNEL_URL
 
     if use_llm:
         beat_texts = [b.get("text") or b.get("narration") or b.get("script") or "" for b in beats]

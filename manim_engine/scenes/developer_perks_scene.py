@@ -31,7 +31,8 @@ from manim_engine.primitives.social_proof_card import (
     create_social_proof_card, create_partner_app_tile
 )
 from pipeline.config import (
-    FONT_HELVETICA, COLOR_MINT, COLOR_DANGER, COLOR_GOLD, COLOR_SLATE
+    FONT_HELVETICA, COLOR_MINT, COLOR_DANGER, COLOR_GOLD, COLOR_SLATE,
+    CHANNEL_NAME, CHANNEL_HANDLE, CHANNEL_TAGLINE
 )
 from manim_engine.primitives.typography import clean_text
 
@@ -455,9 +456,9 @@ class DeveloperPerksScene(BaseShortScene):
         # -----------------------------------------------------------------
         b6_text, b6_dur, b6_hl = get_beat(
             6,
-            "Save this video before the program caps, and follow The Model Verse for daily developer perks.",
+            f"Save this video before the program caps, and follow {CHANNEL_NAME} for daily developer perks.",
             5.0,
-            {"Save this video": COLOR_GOLD, "The Model Verse": COLOR_MINT}
+            {"Save this video": COLOR_GOLD, CHANNEL_NAME: COLOR_MINT}
         )
 
         # Actionable Save Bookmark Banner
@@ -466,9 +467,9 @@ class DeveloperPerksScene(BaseShortScene):
         save_grp = VGroup(save_banner, save_txt)
 
         logo_icon, brand_text, sub = create_chalkboard_brand_outro(
-            logo_title="THE MODEL VERSE",
-            tagline="Follow for Daily Developer Perks",
-            url="themodelverse.in",
+            logo_title=(CHANNEL_NAME or "machinoAI").upper(),
+            tagline=CHANNEL_TAGLINE or "Follow for Daily Developer Perks",
+            url=CHANNEL_HANDLE or "@machinoai-in",
             y_center=-0.8
         )
         outro = Group(logo_icon, brand_text, sub)

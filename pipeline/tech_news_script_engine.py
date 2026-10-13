@@ -11,11 +11,14 @@ Produces breaking newsroom reporter scripts focusing on:
 
 import os
 import re
+import sys
 import json
 from typing import Dict, Any, Optional, List
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.append(str(PROJECT_ROOT))
+from pipeline.config import CHANNEL_NAME, CHANNEL_HANDLE
 
 COLOR_MINT = "#34D399"
 COLOR_DANGER = "#EF4444"
@@ -62,7 +65,7 @@ class TechNewsScriptEngine:
         headline = (blog_meta.get("title") if blog_meta else None) or topic
         abstract = (blog_meta.get("abstract") if blog_meta else None) or context or ""
 
-        return f"""You are the Principal Breaking Tech News Reporter for 'The Model Verse' (themodelverse.in).
+        return f"""You are the Principal Breaking Tech News Reporter for '{CHANNEL_NAME}' ({CHANNEL_HANDLE}).
 Generate a fast-paced, high-retention 6-beat YouTube Shorts script covering an official frontier AI lab drop:
 Provider: {prov}
 Headline: {headline}
@@ -79,7 +82,7 @@ Beat 2 (3-12s, Predecessor Ceiling): Why prior models failed, cost too much, or 
 Beat 3 (12-24s, Architectural Secret Sauce): How the new distillation/routing engine delivers speed.
 Beat 4 (24-35s, Verified Benchmarks): Concrete scores on SWE-bench Verified, AIME, GPQA vs baselines.
 Beat 5 (35-44s, Pricing & Availability Deltas): Input/Output token pricing, % cost drop, and release tiers (API, Web).
-Beat 6 (44-50s, Outro & Loop): Urgent takeaway + 'Follow The Model Verse for instant breakdowns of every major AI lab drop.'
+Beat 6 (44-50s, Outro & Loop): Urgent takeaway + 'Follow {CHANNEL_NAME} for instant breakdowns of every major AI lab drop.'
 
 Output ONLY valid JSON matching this schema:
 {{
@@ -167,11 +170,11 @@ Output ONLY valid JSON matching this schema:
             {
                 "beat_id": 6,
                 "name": "b6_brand_outro",
-                "text": "Follow The Model Verse for instant breakdowns of every major AI lab release and architectural leap.",
-                "visual_focus": "Minimalist tech newsroom outro with The Model Verse branding.",
-                "highlight_words": {"The Model Verse": COLOR_MINT},
-                "svo_action": {"subject": "The Model Verse", "action_verb": "breaks down", "direct_object": "AI Lab Releases", "anchor_word": "Model", "semantic_role": "metric_evaluation"},
-                "visual_blueprint": {"layout": "news_outro_summary", "title": "THE MODEL VERSE", "sub": "Official AI Lab Releases", "params": {}}
+                "text": f"Follow {CHANNEL_NAME} for instant breakdowns of every major AI lab release and architectural leap.",
+                "visual_focus": f"Minimalist tech newsroom outro with {CHANNEL_NAME} branding.",
+                "highlight_words": {CHANNEL_NAME: COLOR_MINT},
+                "svo_action": {"subject": CHANNEL_NAME, "action_verb": "breaks down", "direct_object": "AI Lab Releases", "anchor_word": "AI", "semantic_role": "metric_evaluation"},
+                "visual_blueprint": {"layout": "news_outro_summary", "title": CHANNEL_NAME.upper(), "sub": "Official AI Lab Releases", "params": {}}
             }
         ]
 
@@ -189,7 +192,7 @@ Output ONLY valid JSON matching this schema:
                 {"type": "core_breakthrough", "title": "DISTILLED REASONING ENGINE"},
                 {"type": "benchmark_comparison", "title": "VERIFIED BENCHMARKS"},
                 {"type": "pricing_and_availability", "title": "TOKEN PRICING DELTAS"},
-                {"type": "brand_outro", "title": "THE MODEL VERSE"}
+                {"type": "brand_outro", "title": CHANNEL_NAME.upper()}
             ],
             "domain_taxonomy": "reasoning_models",
             "beats": beats,

@@ -14,6 +14,7 @@ from pipeline.config import (
     TRACK_ALIASES,
     TRACK_METADATA,
     resolve_track,
+    CHANNEL_NAME,
 )
 from pipeline.publisher import generate_shorts_metadata
 from pipeline.bespoke_visual_synthesizer import (
@@ -209,5 +210,5 @@ def test_script_driven_scene_background_and_header():
             extract_texts(sub)
     extract_texts(scene.header_group)
     joined_text = " ".join(all_texts).upper()
-    assert "MODEL" in joined_text or "VERSE" in joined_text
+    assert any(t in joined_text for t in ("MODEL", "VERSE", CHANNEL_NAME.upper()))
     assert "PAPER" in joined_text or "BREAKDOWN" in joined_text

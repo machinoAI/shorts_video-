@@ -4,6 +4,7 @@ Generates high-converting, viral, technical Instagram captions and post metadata
 using the official TheModelverse prompt guidelines and OmniRoute LLM cascading.
 """
 
+import os
 import json
 import re
 import sys
@@ -16,8 +17,9 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from pipeline.llm_router import llm_router
 from pipeline.json_utils import robust_json_loads
+from pipeline.config import CHANNEL_NAME, CHANNEL_URL, CHANNEL_HANDLE
 
-INSTAGRAM_SYSTEM_PROMPT = """You are the Lead Social Media Strategist & Technical AI Content Creator for TheModelverse (https://www.themodelverse.in), the definitive foundation model benchmark catalog and technical database.
+INSTAGRAM_SYSTEM_PROMPT = f"""You are the Lead Social Media Strategist & Technical AI Content Creator for {CHANNEL_NAME} ({CHANNEL_URL}), the definitive technical insights channel.
 Your task is to take structured technical model metadata and turn it into high-converting, viral, technical Instagram captions.
 
 ### INSTAGRAM POSTING RULES:
@@ -144,7 +146,7 @@ def extract_template_variables_from_spec(spec: Dict[str, Any]) -> Dict[str, str]
     model_url = (
         meta.get("model_url") or
         meta.get("canonical_url") or
-        f"https://www.themodelverse.in/models/{slug}"
+        f"{os.environ.get('CATALOG_URL', 'https://www.themodelverse.in')}/models/{slug}"
     )
 
     return {
