@@ -1,5 +1,5 @@
 [Script Info]
-Title: FlashAttention-3: The Hardware Bottleneck Kinetic Captions
+Title: FlashAttention-3: Memory Throughput King Kinetic Captions
 ScriptType: v4.00+
 WrapStyle: 0
 ScaledBorderAndShadow: yes
@@ -13,18 +13,18 @@ Style: KineticPill, Montserrat, 58, &H00FFFFFF, &H0047E0FD, &H00140C08, &HCC080C
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.01,0:00:01.29,KineticPill,,0,0,0,,{\c&H47E0FD&}Before{\c&HFFFFFF&} you train your next
-Dialogue: 0,0:00:01.29,0:00:03.18,KineticPill,,0,0,0,,model, see how {\c&HF8BD38&}FlashAttention-3{\c&HFFFFFF&}
-Dialogue: 0,0:00:03.18,0:00:05.03,KineticPill,,0,0,0,,cuts {\c&H47E0FD&}2.0x{\c&HFFFFFF&} of memory overhead.
-Dialogue: 0,0:00:05.33,0:00:07.29,KineticPill,,0,0,0,,The problem? Scaling {\c&HF8BD38&}workloads{\c&HFFFFFF&} triggers
-Dialogue: 0,0:00:07.29,0:00:09.67,KineticPill,,0,0,0,,severe resource {\c&H47E0FD&}contention{\c&HFFFFFF&} and execution delays.
-Dialogue: 0,0:00:09.92,0:00:11.55,KineticPill,,0,0,0,,Enter {\c&H47E0FD&}FlashAttention{\c&HFFFFFF&}. It breaks the
-Dialogue: 0,0:00:11.55,0:00:14.12,KineticPill,,0,0,0,,bottleneck with a decoupled, {\c&HF8BD38&}high-throughput{\c&HFFFFFF&} pipeline.
-Dialogue: 0,0:00:14.43,0:00:14.99,KineticPill,,0,0,0,,{\c&HF8BD38&}Under{\c&HFFFFFF&} the hood.
-Dialogue: 0,0:00:14.99,0:00:16.71,KineticPill,,0,0,0,,It {\c&H47E0FD&}coordinates{\c&HFFFFFF&} operations in
-Dialogue: 0,0:00:16.71,0:00:19.36,KineticPill,,0,0,0,,parallel. {\c&HF8BD38&}Eliminating{\c&HFFFFFF&} idle wait states entirely.
-Dialogue: 0,0:00:19.69,0:00:21.34,KineticPill,,0,0,0,,The result? Big {\c&HF8BD38&}benchmark{\c&HFFFFFF&} speedups
-Dialogue: 0,0:00:21.34,0:00:23.37,KineticPill,,0,0,0,,across standard tasks for {\c&H47E0FD&}FlashAttention{\c&HFFFFFF&}.
-Dialogue: 0,0:00:23.66,0:00:25.40,KineticPill,,0,0,0,,Follow {\c&HF8BD38&}machinoAI{\c&HFFFFFF&} for daily
-Dialogue: 0,0:00:25.40,0:00:26.94,KineticPill,,0,0,0,,deep-dives into how modern {\c&HF8BD38&}AI{\c&HFFFFFF&}
-Dialogue: 0,0:00:26.94,0:00:28.33,KineticPill,,0,0,0,,{\c&HF8BD38&}actually{\c&HFFFFFF&} works under the hood.
+Dialogue: 0,0:00:00.02,0:00:01.30,KineticPill,,0,0,0,,{\c&H47E0FD&}Before{\c&HFFFFFF&} you train your next
+Dialogue: 0,0:00:01.30,0:00:03.10,KineticPill,,0,0,0,,model, see how {\c&HF8BD38&}FlashAttention-3{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.10,0:00:04.95,KineticPill,,0,0,0,,cuts {\c&H47E0FD&}78%{\c&HFFFFFF&} of memory overhead.
+Dialogue: 0,0:00:05.24,0:00:07.20,KineticPill,,0,0,0,,The problem? Scaling {\c&HF8BD38&}workloads{\c&HFFFFFF&} triggers
+Dialogue: 0,0:00:07.20,0:00:09.58,KineticPill,,0,0,0,,severe resource {\c&H47E0FD&}contention{\c&HFFFFFF&} and execution delays.
+Dialogue: 0,0:00:09.84,0:00:11.47,KineticPill,,0,0,0,,Enter {\c&H47E0FD&}FlashAttention{\c&HFFFFFF&}. It breaks the
+Dialogue: 0,0:00:11.47,0:00:14.04,KineticPill,,0,0,0,,bottleneck with a decoupled, {\c&HF8BD38&}high-throughput{\c&HFFFFFF&} pipeline.
+Dialogue: 0,0:00:14.35,0:00:14.91,KineticPill,,0,0,0,,{\c&HF8BD38&}Under{\c&HFFFFFF&} the hood.
+Dialogue: 0,0:00:14.91,0:00:16.62,KineticPill,,0,0,0,,It {\c&H47E0FD&}coordinates{\c&HFFFFFF&} operations in
+Dialogue: 0,0:00:16.62,0:00:19.27,KineticPill,,0,0,0,,parallel. {\c&HF8BD38&}Eliminating{\c&HFFFFFF&} idle wait states entirely.
+Dialogue: 0,0:00:19.61,0:00:21.26,KineticPill,,0,0,0,,The result? Big {\c&HF8BD38&}benchmark{\c&HFFFFFF&} speedups
+Dialogue: 0,0:00:21.26,0:00:23.29,KineticPill,,0,0,0,,across standard tasks for {\c&H47E0FD&}FlashAttention{\c&HFFFFFF&}.
+Dialogue: 0,0:00:23.58,0:00:25.31,KineticPill,,0,0,0,,Follow {\c&HF8BD38&}machinoAI{\c&HFFFFFF&} for daily
+Dialogue: 0,0:00:25.31,0:00:26.86,KineticPill,,0,0,0,,deep-dives into how modern {\c&HF8BD38&}AI{\c&HFFFFFF&}
+Dialogue: 0,0:00:26.86,0:00:28.24,KineticPill,,0,0,0,,{\c&HF8BD38&}actually{\c&HFFFFFF&} works under the hood.
