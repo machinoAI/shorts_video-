@@ -30,9 +30,11 @@ def create_chalkboard_brand_outro(
         tagline = CHANNEL_TAGLINE or "Precision Tools & AI Insights"
     if url is None:
         url = CHANNEL_HANDLE or "@machinoai-in"
-    # 1. Official Modelverse vector logo
-    logo_svg_path = PROJECT_ROOT / "public" / "brand" / "modelverse_logo.svg"
-    avatar_png_path = PROJECT_ROOT / "public" / "brand" / "modelverse_avatar.png"
+    # 1. Official machinoAI vector logo
+    logo_svg_path = PROJECT_ROOT / "public" / "brand" / "machinoai_logo.svg"
+    if not logo_svg_path.exists():
+        logo_svg_path = PROJECT_ROOT / "public" / "brand" / "modelverse_logo.svg"
+    avatar_png_path = PROJECT_ROOT / "public" / "brand" / "machinoai_card.png"
 
     if logo_svg_path.exists():
         logo_icon = SVGMobject(str(logo_svg_path)).scale_to_fit_height(2.6).move_to([0, y_center + 1.8, 0])
@@ -58,7 +60,7 @@ def create_chalkboard_brand_outro(
 
     # 2. Brand Name & Website (Clean Typography)
     title = CleanText(logo_title, font=FONT_HELVETICA, font_size=26, color=WHITE, weight=BOLD, max_width=6.8).next_to(logo_icon, DOWN, buff=0.45)
-    site = CleanText(url, font=FONT_HELVETICA, font_size=18, color=COLOR_MINT, weight=BOLD, max_width=6.8).next_to(title, DOWN, buff=0.22)
+    site = CleanText(url, font=FONT_HELVETICA, font_size=18, color="#38BDF8", weight=BOLD, max_width=6.8).next_to(title, DOWN, buff=0.22)
     brand_text_group = VGroup(title, site)
 
     # 3. Call to Action / Subtitle
