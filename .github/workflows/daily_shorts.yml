@@ -144,83 +144,12 @@ jobs:
           LINKEDIN_CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
           LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          CHANNEL_NAME: ${{ secrets.CHANNEL_NAME || 'machinoAI' }}
+          CHANNEL_HANDLE: ${{ secrets.CHANNEL_HANDLE || '@machinoai-in' }}
+          CHANNEL_URL: ${{ secrets.CHANNEL_URL || 'https://www.youtube.com/@machinoai-in' }}
+          CHANNEL_TAGLINE: ${{ secrets.CHANNEL_TAGLINE || 'Precision Tools & AI Insights' }}
         run: |
-          echo "CHANNEL_NAME=${{ secrets.CHANNEL_NAME || 'machinoAI' }}" >> .env
-          echo "CHANNEL_HANDLE=${{ secrets.CHANNEL_HANDLE || '@machinoai-in' }}" >> .env
-          echo "CHANNEL_URL=${{ secrets.CHANNEL_URL || 'https://www.youtube.com/@machinoai-in' }}" >> .env
-          echo "CHANNEL_TAGLINE=${{ secrets.CHANNEL_TAGLINE || 'Precision Tools & AI Insights' }}" >> .env
-          echo "GEMINI_API_KEY=$GEMINI_API_KEY" >> .env
-          echo "GEMINI_MODEL_NAME=gemini-flash-latest" >> .env
-          echo "TTS_PROVIDER=kokoro" >> .env
-          echo "KOKORO_VOICE=am_eric" >> .env
-
-          if [ -n "$GROQ_API_KEY" ]; then
-            echo "GROQ_API_KEY=$GROQ_API_KEY" >> .env
-          fi
-
-          if [ -n "$OPENROUTER_API_KEY" ]; then
-            echo "OPENROUTER_API_KEY=$OPENROUTER_API_KEY" >> .env
-          fi
-
-          if [ -n "$ELEVENLABS_API_KEY" ]; then
-            echo "ELEVENLABS_API_KEY=$ELEVENLABS_API_KEY" >> .env
-          fi
-
-          if [ -n "$SARVAM_API_KEY" ]; then
-            echo "SARVAM_API_KEY=$SARVAM_API_KEY" >> .env
-          fi
-
-          if [ -n "$INSTAGRAM_ACCESS_TOKEN" ]; then
-            echo "INSTAGRAM_ACCESS_TOKEN=$INSTAGRAM_ACCESS_TOKEN" >> .env
-            echo "INSTAGRAM_ACCOUNT_ID=${INSTAGRAM_ACCOUNT_ID:-17841425926885618}" >> .env
-          fi
-
-          if [ -n "$TWITTER_API_KEY" ]; then
-            echo "TWITTER_API_KEY=$TWITTER_API_KEY" >> .env
-            echo "TWITTER_API_SECRET=$TWITTER_API_SECRET" >> .env
-            echo "TWITTER_ACCESS_TOKEN=$TWITTER_ACCESS_TOKEN" >> .env
-            echo "TWITTER_ACCESS_TOKEN_SECRET=$TWITTER_ACCESS_TOKEN_SECRET" >> .env
-            echo "TWITTER_CLIENT_ID=$TWITTER_CLIENT_ID" >> .env
-            echo "TWITTER_CLIENT_SECRET=$TWITTER_CLIENT_SECRET" >> .env
-          fi
-
-          if [ -n "$LINKEDIN_ACCESS_TOKEN" ]; then
-            echo "LINKEDIN_ACCESS_TOKEN=$LINKEDIN_ACCESS_TOKEN" >> .env
-            echo "LINKEDIN_CLIENT_ID=$LINKEDIN_CLIENT_ID" >> .env
-            echo "LINKEDIN_CLIENT_SECRET=$LINKEDIN_CLIENT_SECRET" >> .env
-          fi
-
-          python3 - << 'PYEOF'
-          import os, base64, json
-
-          def decode_secret(val, dest):
-              if not val:
-                  return
-              val = val.strip().strip("\"'")
-              # If already direct JSON, save directly
-              if val.startswith("{"):
-                  with open(dest, "w", encoding="utf-8") as f:
-                      f.write(val)
-                  print(f"✅ Saved direct JSON to {dest}")
-                  return
-              try:
-                  cleaned = "".join(val.split())
-                  missing = len(cleaned) % 4
-                  if missing:
-                      cleaned += "=" * (4 - missing)
-                  decoded = base64.b64decode(cleaned).decode("utf-8")
-                  json.loads(decoded)
-                  with open(dest, "w", encoding="utf-8") as f:
-                      f.write(decoded)
-                  print(f"✅ Decoded base64 JSON to {dest}")
-              except Exception as e:
-                  print(f"⚠️ Notice decoding {dest}: {e}. Writing raw input directly.")
-                  with open(dest, "w", encoding="utf-8") as f:
-                      f.write(val)
-
-          decode_secret(os.environ.get("YOUTUBE_TOKEN_JSON_BASE64", ""), "pipeline/youtube_token.json")
-          decode_secret(os.environ.get("YOUTUBE_CLIENT_SECRETS_BASE64", ""), "pipeline/client_secrets.json")
-PYEOF
+          python3 pipeline/setup_credentials.py
 
       - name: Run Daily Shorts Daemon
         env:
