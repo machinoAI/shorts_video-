@@ -509,6 +509,19 @@ def auto_produce(
             try:
                 upload_res = upload_short(final_output, metadata, privacy_status=privacy)
                 spec["youtube_upload"] = upload_res
+                # Save companion upload info file for caller inspection
+                try:
+                    upload_info_path = Path(final_output).with_suffix(".upload_info.json")
+                    with open(upload_info_path, "w", encoding="utf-8") as uf:
+                        json.dump(upload_res, uf, indent=2)
+                except Exception:
+                    pass
+                if template_path:
+                    try:
+                        with open(template_path, "w", encoding="utf-8") as tf:
+                            json.dump(spec, tf, indent=2)
+                    except Exception:
+                        pass
             except Exception as e:
                 import traceback
                 print("\n" + "=" * 60)

@@ -725,6 +725,16 @@ class DailyShortsDaemon:
             if video_out:
                 record_paper_production(arxiv_id, title, category, video_out, source=cand_source)
 
+                # Extract YouTube upload metadata if published
+                yt_meta = {}
+                upload_info_path = Path(video_out).with_suffix(".upload_info.json")
+                if upload_info_path.exists():
+                    try:
+                        with open(upload_info_path, "r", encoding="utf-8") as uif:
+                            yt_meta = json.load(uif)
+                    except Exception:
+                        pass
+
                 report_item = {
                     "reel_index": idx + 1,
                     "timestamp": timestamp,
@@ -735,6 +745,9 @@ class DailyShortsDaemon:
                     "taxonomy": top_paper.get("taxonomy", "general"),
                     "analytics_multiplier": top_paper.get("analytics_multiplier", 1.0),
                     "video_path": video_out,
+                    "youtube_id": yt_meta.get("video_id"),
+                    "youtube_url": yt_meta.get("shorts_url"),
+                    "youtube_privacy": self.privacy,
                     "resolution": f"{BROADCAST_WIDTH}x{BROADCAST_HEIGHT} @ {BROADCAST_FPS}fps",
                     "editorial_notes": notes
                 }
@@ -762,8 +775,17 @@ class DailyShortsDaemon:
                     link_line = f"- **Official Lab Drop:** {r['title']}"
                 else:
                     link_line = f"- **arXiv ID:** [{pid}](https://arxiv.org/abs/{pid})"
+
+                yt_url = r.get("youtube_url")
+                yt_id = r.get("youtube_id")
+                if yt_url:
+                    yt_line = f"- **YouTube Shorts:** 🚀 [{yt_url}]({yt_url}) (`{yt_id}`)"
+                else:
+                    yt_line = f"- **YouTube Upload Privacy:** `{self.privacy}`"
+
                 reels_md.append(f"""### Reel {r['reel_index']}: {r['title']}
 {link_line}
+{yt_line}
 - **Content Pillar:** `{r_source}`
 - **Domain Taxonomy:** `{r.get('taxonomy', 'general')}` ({r.get('analytics_multiplier', 1.0):.2f}x velocity)
 - **Category:** `{r['category']}`

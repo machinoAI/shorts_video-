@@ -4,6 +4,7 @@
 
 ### Reel 1: CineRecon: Benchmarking Frontier Models for Agentic Cinematic Reconstruction
 - **arXiv ID:** [2610.16577](https://arxiv.org/abs/2610.16577)
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/LTVtF0WqSdg](https://youtube.com/shorts/LTVtF0WqSdg) (`LTVtF0WqSdg`)
 - **Content Pillar:** `perks`
 - **Domain Taxonomy:** `developer_perks` (1.25x velocity)
 - **Category:** `architecture_breakdown`

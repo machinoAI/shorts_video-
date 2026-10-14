@@ -210,6 +210,15 @@ jobs:
             python3 pipeline/daily_shorts_daemon.py --run-now --count "$COUNT" --privacy "$PRIVACY" --quality "$QUALITY" $EXTRA_ARGS
           fi
 
+      - name: Publish Production Report to GitHub Actions Summary
+        if: always()
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          REPORT="public/daemon_logs/daemon_report_${TODAY}.md"
+          if [ -f "$REPORT" ]; then
+            cat "$REPORT" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Commit & Push Daily Production Logs
         if: always()
         run: |

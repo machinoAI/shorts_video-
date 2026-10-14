@@ -441,6 +441,14 @@ def test_daemon_run_daily_cycle_fallback_when_pillar_exhausted(monkeypatch):
         return real_fetch(pillar, limit=limit, history=history)
 
     monkeypatch.setattr("pipeline.daily_shorts_daemon.fetch_candidates_for_pillar", mock_fetch)
+    mock_hist = {
+        "processed_papers": {
+            "2401.00001": {"source": "arxiv", "produced_at": "2026-10-14T00:00:00+00:00"},
+            "perk_aws": {"source": "perks", "produced_at": "2026-10-13T00:00:00+00:00"},
+            "blog_openai": {"source": "blogs", "produced_at": "2026-10-12T00:00:00+00:00"}
+        }
+    }
+    monkeypatch.setattr("pipeline.daily_shorts_daemon.load_history", lambda: mock_hist)
 
     daemon = DailyShortsDaemon()
     res = daemon.run_daily_cycle(
