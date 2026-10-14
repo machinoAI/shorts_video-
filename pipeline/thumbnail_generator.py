@@ -279,8 +279,9 @@ class ShortsThumbnailGenerator:
 
         # --- Top Brand Bar (Y = 60 to 110) ---
         draw.rounded_rectangle([60, 60, 96, 96], radius=8, fill=(16, 185, 129, 255))
-        draw.text((68, 65), "M", font=font_brand, fill=(10, 13, 20, 255))
-        draw.text((110, 68), "THE MODEL VERSE", font=font_brand, fill=(248, 250, 252, 255))
+        initial = CHANNEL_NAME[0].upper() if CHANNEL_NAME else "M"
+        draw.text((68, 65), initial, font=font_brand, fill=(10, 13, 20, 255))
+        draw.text((110, 68), CHANNEL_NAME.upper(), font=font_brand, fill=(248, 250, 252, 255))
 
         # Category Pill
         cat_text = profile["pill_label"]
@@ -444,7 +445,7 @@ class ShortsThumbnailGenerator:
         )
         if not stat_l2.endswith(":"):
             stat_l2 += ":"
-        stat_v2 = meta.get("scale_metric") or meta.get("solution_title") or profile.get("stat_val_2", "THE MODEL VERSE")
+        stat_v2 = meta.get("scale_metric") or meta.get("solution_title") or profile.get("stat_val_2", CHANNEL_NAME)
 
         # Format label and val neatly with dynamic offset
         bb_l1 = font_meta.getbbox(stat_l1)

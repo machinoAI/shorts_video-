@@ -748,6 +748,8 @@ class DailyShortsDaemon:
                     "youtube_id": yt_meta.get("video_id"),
                     "youtube_url": yt_meta.get("shorts_url"),
                     "youtube_privacy": self.privacy,
+                    "poster_path": yt_meta.get("poster_path"),
+                    "custom_thumbnail_set": yt_meta.get("custom_thumbnail_set", False),
                     "resolution": f"{BROADCAST_WIDTH}x{BROADCAST_HEIGHT} @ {BROADCAST_FPS}fps",
                     "editorial_notes": notes
                 }
@@ -783,9 +785,18 @@ class DailyShortsDaemon:
                 else:
                     yt_line = f"- **YouTube Upload Privacy:** `{self.privacy}`"
 
+                poster = r.get("poster_path")
+                poster_line = ""
+                if poster:
+                    try:
+                        rel_poster = os.path.relpath(poster, str(PROJECT_ROOT))
+                        poster_line = f"\n- **High-CTR Poster:** [{Path(poster).name}]({rel_poster})"
+                    except Exception:
+                        poster_line = f"\n- **High-CTR Poster:** `{poster}`"
+
                 reels_md.append(f"""### Reel {r['reel_index']}: {r['title']}
 {link_line}
-{yt_line}
+{yt_line}{poster_line}
 - **Content Pillar:** `{r_source}`
 - **Domain Taxonomy:** `{r.get('taxonomy', 'general')}` ({r.get('analytics_multiplier', 1.0):.2f}x velocity)
 - **Category:** `{r['category']}`

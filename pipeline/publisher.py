@@ -390,15 +390,33 @@ def upload_short(
             if any(part in p.name for part in stem_clean.split("_") if len(part) >= 4):
                 poster_cands.append(p)
 
+        thumbnail_set = False
         poster_to_upload = next((p for p in poster_cands if p.exists()), None)
         if poster_to_upload:
             print(f"🖼️ Uploading custom high-CTR poster: {poster_to_upload.name}...")
             mime = "image/jpeg" if poster_to_upload.suffix == ".jpg" else "image/png"
-            youtube.thumbnails().set(
-                videoId=video_id,
-                media_body=MediaFileUpload(str(poster_to_upload), mimetype=mime)
-            ).execute()
-            print("✅ Custom poster thumbnail set successfully!")
+            try:
+                youtube.thumbnails().set(
+                    videoId=video_id,
+                    media_body=MediaFileUpload(str(poster_to_upload), mimetype=mime)
+                ).execute()
+                print("✅ Custom poster thumbnail set successfully!")
+                thumbnail_set = True
+            except Exception as e_thumb:
+                err_str = str(e_thumb)
+                if "permissions" in err_str or "forbidden" in err_str.lower():
+                    print("\n" + "=" * 60)
+                    print("💡 THUMBNAIL PERMISSION NOTICE:")
+                    print("   YouTube API rejected custom thumbnail because 'Intermediate Features'")
+                    print("   (Phone Number Verification) are not enabled on this channel.")
+                    print("   To enable custom thumbnails across your channel:")
+                    print("   1. Visit: https://studio.youtube.com")
+                    print("   2. Go to: Settings ⚙️ -> Channel -> Feature eligibility")
+                    print("   3. Under 'Intermediate features', click 'Verify phone number'.")
+                    print(f"   In the meantime, the high-CTR poster is saved at:\n   {poster_to_upload}")
+                    print("=" * 60 + "\n")
+                else:
+                    print(f"⚠️ Could not set custom thumbnail: {e_thumb}")
     except Exception as e:
         print(f"⚠️ Could not set custom thumbnail: {e}")
 
@@ -428,7 +446,9 @@ def upload_short(
         "video_id": video_id,
         "shorts_url": shorts_url,
         "studio_url": studio_url,
-        "title": metadata["title"]
+        "title": metadata["title"],
+        "poster_path": str(poster_to_upload) if poster_to_upload else None,
+        "custom_thumbnail_set": thumbnail_set
     }
 
 
