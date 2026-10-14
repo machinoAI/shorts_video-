@@ -27,7 +27,7 @@ def create_chalkboard_brand_outro(
     if logo_title is None:
         logo_title = (CHANNEL_NAME or "machinoAI").upper()
     if tagline is None:
-        tagline = CHANNEL_TAGLINE or "Precision Tools & AI Insights"
+        tagline = CHANNEL_TAGLINE or "Learn from research papers"
     if url is None:
         url = CHANNEL_HANDLE or "@machinoai-in"
     # 1. Official machinoAI vector logo

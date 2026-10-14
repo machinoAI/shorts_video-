@@ -819,7 +819,7 @@ class ScriptDrivenScene(MovingCameraScene):
 
         logo_icon, brand_text, sub = create_chalkboard_brand_outro(
             logo_title=(CHANNEL_NAME or "machinoAI").upper(),
-            tagline=CHANNEL_TAGLINE or "Precision Tools & AI Insights",
+            tagline=CHANNEL_TAGLINE or "Learn from research papers",
             url=CHANNEL_HANDLE or "@machinoai-in",
             y_center=0.0
         )

@@ -127,7 +127,7 @@ def main():
         "CHANNEL_HANDLE": os.environ.get("CHANNEL_HANDLE", "@machinoai-in"),
         "CHANNEL_URL": os.environ.get("CHANNEL_URL", "https://www.youtube.com/@machinoai-in"),
         "CHANNEL_WEBSITE": os.environ.get("CHANNEL_WEBSITE", "https://machinoai.in"),
-        "CHANNEL_TAGLINE": os.environ.get("CHANNEL_TAGLINE", "Precision Tools & AI Insights"),
+        "CHANNEL_TAGLINE": os.environ.get("CHANNEL_TAGLINE", "Learn from research papers"),
         "GEMINI_MODEL_NAME": os.environ.get("GEMINI_MODEL_NAME", "gemini-flash-latest"),
         "TTS_PROVIDER": os.environ.get("TTS_PROVIDER", "kokoro"),
         "KOKORO_VOICE": os.environ.get("KOKORO_VOICE", "am_eric"),
