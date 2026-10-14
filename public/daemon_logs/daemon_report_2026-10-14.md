@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-14 | **Timestamp:** 2026-10-14 14:23:34 UTC
+**Date:** 2026-10-14 | **Timestamp:** 2026-10-14 17:26:19 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: GraphRAG: Part 1 - Why Naive RAG Fails on Global Corpus Summarization
-- **Topic Queue Part:** `graphrag_part_1_global_context_trap` (arXiv: [2404.16130](https://arxiv.org/abs/2404.16130))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/ZfF8ryTpv7k](https://youtube.com/shorts/ZfF8ryTpv7k) (`ZfF8ryTpv7k`)
-- **High-CTR Poster:** [graphrag_global_summarization_poster.png](public/thumbnails/graphrag_global_summarization_poster.png)
+### Reel 1: GraphRAG: Part 2 - Extracting Entities and Knowledge Graphs from Text
+- **Topic Queue Part:** `graphrag_part_2_entity_knowledge_graphs` (arXiv: [2404.16130](https://arxiv.org/abs/2404.16130))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/tBIrHihtA8c](https://youtube.com/shorts/tBIrHihtA8c) (`tBIrHihtA8c`)
+- **High-CTR Poster:** [graph_rag_part2_poster.png](public/thumbnails/graph_rag_part2_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GraphRAG Mini-Series 1/5: GraphRAG: Part 1 - Why Naive RAG Fails on Global Corpus Summarization*
-- **Everyday Analogy:** *The context fragmentation trap: why standard chunk-based vector search finds local facts but cannot summarize an entire corpus.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_graphrag_global_summarization_architecture_breakdown.mp4`
+- **Category:** `mechanism_deepdive`
+- **Editorial Hook:** *GraphRAG Mini-Series 2/5: GraphRAG: Part 2 - Extracting Entities and Knowledge Graphs from Text*
+- **Everyday Analogy:** *How LLMs extract entity nodes, relational edges, and claims to transform unstructured text into a semantic knowledge graph.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_graph_rag_part2_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
