@@ -1,9 +1,9 @@
 # 📈 The Model Verse — YouTube Performance & Retention Intelligence
 
-**Generated:** 2026-10-14T04:28:34.929651+00:00  
-**Videos Analyzed:** 50 | **Autopsies Performed:** 22  
-**Top Domain:** `robotics_tamp`  
-**Recommended Pacing:** `1.12x` TTS Speed | Hook $\le$ `7.2s`
+**Generated:** 2026-10-14T06:44:52.054922+00:00  
+**Videos Analyzed:** 18 | **Autopsies Performed:** 1  
+**Top Domain:** `general_breakthroughs`  
+**Recommended Pacing:** `1.08x` TTS Speed | Hook $\le$ `7.5s`
 
 ---
 
@@ -13,13 +13,13 @@ The autonomous pipeline continuously evolves these visual and narrative recipes 
 | Visual Blueprint | Evolutionary Multiplier | Avg Retention | Win/Loss Track | Action Directive |
 | :--- | :--- | :--- | :--- | :--- |
 | `bespoke_code` | **1.5x** | 50.17% | 1825W / 181L | Auto-discovered layout. |
-| `chalkboard_code_block` | **1.5x** | 59.56% | 511W / 0L | Auto-discovered layout. |
+| `chalkboard_code_block` | **1.5x** | 60.56% | 512W / 0L | Auto-discovered layout. |
 | `barrier_separation` | **1.5x** | 71.26% | 163W / 24L | Auto-discovered layout. |
 | `ast_tree` | **1.5x** | 66.11% | 102W / 0L | Auto-discovered layout. |
 | `chalkboard_code` | **1.5x** | 54.77% | 253W / 0L | Auto-discovered layout. |
 | `horizontal_race_bars` | **1.5x** | 53.43% | 421W / 0L | Auto-discovered layout. |
 | `paper_figure` | **1.5x** | 64.93% | 217W / 0L | Auto-discovered layout. |
-| `convergence_funnel` | **1.5x** | 63.97% | 105W / 0L | Auto-discovered layout. |
+| `convergence_funnel` | **1.5x** | 59.06% | 106W / 0L | Auto-discovered layout. |
 | `side_by_side` | **1.5x** | 48.07% | 36W / 0L | Auto-discovered layout. |
 | `layer_stack` | **1.5x** | 66.9% | 30W / 3L | Auto-discovered layout. |
 | `projection_rays` | **1.5x** | 48.81% | 22W / 0L | Auto-discovered layout. |
@@ -64,13 +64,8 @@ The paper selector (`daily_shorts_daemon.py`) automatically scales candidate sel
 
 | Research Domain | Selection Multiplier | Avg Views | Sample Size |
 | :--- | :--- | :--- | :--- |
-| `robotics_tamp` | **1.3x** | 561.0 | 11 videos |
-| `hardware_efficiency` | **1.14x** | 491.8 | 28 videos |
-| `mechanistic_interpretability` | **1.27x** | 550.0 | 1 videos |
-| `developer_perks` | **0.6x** | 136.8 | 4 videos |
-| `multimodal_diffusion` | **0.6x** | 180.0 | 3 videos |
-| `reasoning_models` | **0.6x** | 48.0 | 1 videos |
-| `general_breakthroughs` | **0.6x** | 1.0 | 2 videos |
+| `hardware_efficiency` | **0.6x** | 46.0 | 1 videos |
+| `general_breakthroughs` | **1.06x** | 1044.5 | 17 videos |
 
 ---
 
@@ -78,61 +73,29 @@ The paper selector (`daily_shorts_daemon.py`) automatically scales candidate sel
 
 | Video Title | Domain | Views | Likes | Comments | Views/Hr | Hours Live |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [OTRetarget Explained #Shorts...](https://youtube.com/shorts/npUUPfIcr54) | `robotics_tamp` | **1048** | 17 | 3 | 5.07 | 206.8h |
-| [TRACE Explained #Shorts...](https://youtube.com/shorts/Q6FslrlWH24) | `hardware_efficiency` | **969** | 20 | 2 | 6.63 | 146.2h |
-| [QuantWM Explained #Shorts...](https://youtube.com/shorts/TIFyFFGwR4I) | `hardware_efficiency` | **968** | 15 | 1 | 5.32 | 181.9h |
-| [Scaling Multi-Task Robot RL on GPUs #Sho...](https://youtube.com/shorts/ZqB0aSJ1H3Y) | `robotics_tamp` | **961** | 7 | 1 | 14.03 | 68.5h |
-| [Learning Functional Subspaces for Compr....](https://youtube.com/shorts/Hm36K6MjqSM) | `hardware_efficiency` | **960** | 9 | 8 | 7.1 | 135.3h |
-| [FlashAttention-3: How GPUs Hit 1.2 PFLOP...](https://youtube.com/shorts/eusZFOfRN-g) | `hardware_efficiency` | **945** | 23 | 1 | 4.45 | 212.2h |
-| [Hybrid Linear Attention Explained #Short...](https://youtube.com/shorts/7KqHJmRiNPs) | `robotics_tamp` | **940** | 12 | 1 | 6.52 | 144.2h |
-| [TIDES Explained #Shorts...](https://youtube.com/shorts/rgr8t51vjVM) | `hardware_efficiency` | **921** | 9 | 2 | 8.49 | 108.4h |
-| [How STEPQuant Cuts 68.7% GPU Memory #Sho...](https://youtube.com/shorts/OeFwND0Ybnc) | `hardware_efficiency` | **918** | 14 | 1 | 13.03 | 70.5h |
-| [SlimWise Explained #Shorts...](https://youtube.com/shorts/dRuv4P90AYA) | `hardware_efficiency` | **879** | 18 | 1 | 6.39 | 137.6h |
-| [Skill2Real Explained #Shorts...](https://youtube.com/shorts/BZKCaKwQhCM) | `robotics_tamp` | **796** | 8 | 1 | 4.14 | 192.1h |
-| [OuroWorld Explained #Shorts...](https://youtube.com/shorts/3H-bKiEOD-w) | `hardware_efficiency` | **735** | 10 | 1 | 7.52 | 97.7h |
-| [HelixWorld Explained #Shorts...](https://youtube.com/shorts/STlt0NDjrgg) | `hardware_efficiency` | **698** | 14 | 1 | 3.73 | 187.1h |
-| [Embodied Turing Machines Explained #Shor...](https://youtube.com/shorts/mN9MinEjBOY) | `robotics_tamp` | **664** | 10 | 1 | 13.72 | 48.4h |
-| [NeMo-DCR Explained #Shorts...](https://youtube.com/shorts/KATg_YlLDrM) | `hardware_efficiency` | **659** | 11 | 1 | 5.04 | 130.7h |
-| [Ego2Act Explained #Shorts...](https://youtube.com/shorts/QtEXdvEWykY) | `hardware_efficiency` | **655** | 8 | 1 | 3.16 | 207.3h |
-| [reViT Explained #Shorts...](https://youtube.com/shorts/D_vZ001HNn4) | `hardware_efficiency` | **602** | 5 | 1 | 7.22 | 83.4h |
-| [STEPQuant Explained #Shorts...](https://youtube.com/shorts/EX1mI8xF93k) | `hardware_efficiency` | **600** | 11 | 1 | 5.39 | 111.4h |
-| [Do Sparse Autoencoders Learn Grammar? #S...](https://youtube.com/shorts/HkdSmP5cALg) | `mechanistic_interpretability` | **550** | 11 | 1 | 3.1 | 177.4h |
-| [Speculative Decoding Explained #Shorts...](https://youtube.com/shorts/Ch6mBsPbtDo) | `robotics_tamp` | **497** | 8 | 1 | 13.02 | 38.2h |
-| [KV Cache Explained: How LLMs Generate Fa...](https://youtube.com/shorts/4Odfi7qk1LI) | `hardware_efficiency` | **470** | 10 | 1 | 2.17 | 216.4h |
-| [OuroWorld Explained #Shorts...](https://youtube.com/shorts/XLANPt85Zno) | `hardware_efficiency` | **404** | 5 | 1 | 4.13 | 97.8h |
-| [Coding Agents for Robotic Task & Motion ...](https://youtube.com/shorts/3-qU2X-aAVs) | `robotics_tamp` | **382** | 5 | 1 | 5.21 | 73.4h |
-| [TIDES Explained #Shorts...](https://youtube.com/shorts/hYMOf2Z8geU) | `hardware_efficiency` | **360** | 9 | 2 | 3.18 | 113.3h |
-| [DLoop Explained #Shorts...](https://youtube.com/shorts/zCmpnULj4bc) | `robotics_tamp` | **349** | 8 | 1 | 2.91 | 120.0h |
-| [Embodied Turing Machines Explained #Shor...](https://youtube.com/shorts/eZ2AakclFKw) | `robotics_tamp` | **311** | 4 | 0 | 6.43 | 48.4h |
-| [LLM Deception Token Spikes Explained #Sh...](https://youtube.com/shorts/iX13EJt710Y) | `hardware_efficiency` | **292** | 9 | 1 | 2.5 | 116.7h |
-| [Anthropic Startup Program $2800 Credits ...](https://youtube.com/shorts/O93GiawHsOk) | `developer_perks` | **276** | 9 | 1 | 7.24 | 38.1h |
-| [How AI Creates Images From TV Static #Sh...](https://youtube.com/shorts/LYQScc9rhE4) | `multimodal_diffusion` | **267** | 5 | 1 | 3.03 | 88.0h |
-| [How Impactful Scheduling Fixes Idle #Sho...](https://youtube.com/shorts/69KwLEXII4E) | `hardware_efficiency` | **263** | 2 | 2 | 6.09 | 43.2h |
-| [OpenAI o3-mini Explained #Shorts...](https://youtube.com/shorts/XIy902og3aQ) | `hardware_efficiency` | **261** | 7 | 1 | 6.84 | 38.2h |
-| [SparseEngine Explained #Shorts...](https://youtube.com/shorts/7o8S4WM8Jjc) | `hardware_efficiency` | **245** | 4 | 1 | 2.67 | 91.8h |
-| [TokenRouter Explained #Shorts...](https://youtube.com/shorts/36zAPcbEjTA) | `hardware_efficiency` | **232** | 1 | 1 | 2.42 | 95.9h |
-| [Pollo AI Explained #Shorts...](https://youtube.com/shorts/BOdrfW-kYb0) | `hardware_efficiency` | **212** | 5 | 1 | 4.79 | 44.3h |
-| [GitHub Copilot app for Beginners Explain...](https://youtube.com/shorts/mvtQoCM3OfA) | `developer_perks` | **187** | 1 | 1 | 13.97 | 13.4h |
-| [Scaling Startups with Azure Credits #Sho...](https://youtube.com/shorts/FfDCKm5MOhY) | `multimodal_diffusion` | **184** | 5 | 1 | 4.53 | 40.6h |
-| [SpecFold Explained #Shorts...](https://youtube.com/shorts/c5i6YBuuODU) | `hardware_efficiency` | **173** | 1 | 1 | 2.03 | 85.2h |
-| [U-Space Explained #Shorts...](https://youtube.com/shorts/VvtUoW_dDD8) | `robotics_tamp` | **170** | 1 | 1 | 2.36 | 72.0h |
-| [Honeycomb Explained #Shorts...](https://youtube.com/shorts/gPGaf8XLbOo) | `hardware_efficiency` | **108** | 5 | 1 | 0.5 | 216.5h |
-| [How AI Creates Images From TV Static #Sh...](https://youtube.com/shorts/ExyKbhLvuSg) | `multimodal_diffusion` | **89** | 4 | 1 | 0.43 | 208.0h |
-| [ME-WORLD Explained #Shorts...](https://youtube.com/shorts/nu8t4wyZKrY) | `hardware_efficiency` | **86** | 3 | 1 | 2.26 | 38.1h |
-| [AWS Activate Explained #Shorts...](https://youtube.com/shorts/wxcGYEFAHAE) | `developer_perks` | **84** | 3 | 1 | 3.46 | 24.3h |
-| [Reflex Explained #Shorts...](https://youtube.com/shorts/l44t9mFo0FM) | `hardware_efficiency` | **58** | 4 | 1 | 4.13 | 14.1h |
-| [TouchScale Explained #Shorts...](https://youtube.com/shorts/yancQ81sRcI) | `robotics_tamp` | **53** | 1 | 1 | 5.8 | 9.1h |
-| [KV Cache Explained: How LLMs Generate Fa...](https://youtube.com/shorts/Wzs17dG1-yo) | `hardware_efficiency` | **53** | 2 | 1 | 0.25 | 216.2h |
-| [Jev Decision Models for Edge Orchestrati...](https://youtube.com/shorts/lt9K1Cf93_s) | `reasoning_models` | **48** | 2 | 1 | 0.21 | 228.6h |
-| [Cloudflare for Startups Explained #Short...](https://youtube.com/shorts/kdGNgLXCFRg) | `hardware_efficiency` | **43** | 1 | 1 | 4.09 | 10.5h |
-| [Introducing Dots Explained #Shorts...](https://youtube.com/shorts/QlE3pYkeSXM) | `general_breakthroughs` | **1** | 0 | 1 | 2.0 | 0.5h |
-| [The Economy of Synthetic Labor Explained...](https://youtube.com/shorts/oP68bM9nixc) | `general_breakthroughs` | **1** | 0 | 1 | 2.0 | 0.5h |
-| [AI Startup Credits 2026 Explained #Short...](https://youtube.com/shorts/gzKY5KZxzOk) | `developer_perks` | **0** | 0 | 1 | 0.0 | 0.5h |
+| [#ganeshchaturthi #shorts...](https://youtube.com/shorts/2UoU6cPOuzo) | `general_breakthroughs` | **12902** | 58 | 0 | 1.28 | 10107.6h |
+| [Journey to become a millionaire $$$ #jou...](https://youtube.com/shorts/6bY9hOz-0M8) | `general_breakthroughs` | **1070** | 8 | 0 | 0.1 | 10555.7h |
+| [ॐ नमः शिवाय !! #travel #shiva #travelvlo...](https://youtube.com/shorts/Y6_wLloJWwc) | `general_breakthroughs` | **1066** | 16 | 0 | 0.1 | 10586.9h |
+| [#waterfall #monsoon #travel #shorts #mys...](https://youtube.com/shorts/NAXq7xsp44w) | `general_breakthroughs` | **686** | 6 | 0 | 0.07 | 10479.3h |
+| [कार्य सिद्धि मंत्र वंदना! #ganeshchaturt...](https://youtube.com/shorts/5Y2lGBzVeKA) | `general_breakthroughs` | **576** | 21 | 0 | 0.05 | 10529.2h |
+| [Most visited from #bangalore #travel #ka...](https://youtube.com/shorts/moTVYDJV_RA) | `general_breakthroughs` | **462** | 6 | 0 | 0.04 | 10540.3h |
+| [Jai Shri Ram🙏🏻🙏🏻...](https://youtube.com/shorts/ijPxbS5XIeU) | `general_breakthroughs` | **333** | 4 | 0 | 0.03 | 10658.3h |
+| [Jai Shri Krishna 🙏🏻🙏🏻 #flute #music #kri...](https://youtube.com/shorts/Q3CnQORjjiU) | `general_breakthroughs` | **135** | 5 | 0 | 0.01 | 10658.1h |
+| [9 Millions Shiva Linga! Truly Mind boggl...](https://youtube.com/shorts/8ehXB3RwdOE) | `general_breakthroughs` | **132** | 0 | 0 | 0.01 | 11077.8h |
+| [smoke shells || wafer filled with chocol...](https://youtube.com/shorts/O7kPD8NNviY) | `general_breakthroughs` | **68** | 8 | 0 | 0.0 | 62703.2h |
+| [The beauty of Himalaya village! #shorts ...](https://youtube.com/shorts/2aepNB1tTXY) | `general_breakthroughs` | **61** | 5 | 0 | 0.0 | 19237.2h |
+| [Long drive from #delhi to #gurugram #ind...](https://youtube.com/shorts/KUnALFn1rUk) | `general_breakthroughs` | **55** | 6 | 0 | 0.0 | 19263.8h |
+| [Just the nature vibe! #mountains #nature...](https://youtube.com/shorts/q5F9mXttCsg) | `general_breakthroughs` | **53** | 2 | 0 | 0.0 | 19263.2h |
+| [View of dharmsala mountains#exploreworld...](https://youtube.com/shorts/CfQahKQU12A) | `general_breakthroughs` | **47** | 7 | 0 | 0.0 | 19313.3h |
+| [FlashAttention-3: How GPUs Hit 1.2 PFLOP...](https://youtube.com/shorts/shTYdJIdGQ0) | `hardware_efficiency` | **46** | 2 | 1 | 2.92 | 15.7h |
+| [#aajkiraat #dharamshala #art #party #str...](https://youtube.com/shorts/V3uTBQtZqXM) | `general_breakthroughs` | **46** | 3 | 0 | 0.0 | 19285.6h |
+| [#triundtop #triund #dharamshala #himacha...](https://youtube.com/shorts/_XbLQP4Fmn0) | `general_breakthroughs` | **41** | 6 | 0 | 0.0 | 19313.4h |
+| [#taubatauba #resortreview  #macleodganj ...](https://youtube.com/shorts/OIYfdRxTETg) | `general_breakthroughs` | **24** | 3 | 0 | 0.0 | 19285.5h |
 
 ---
 
 ## 🧠 Algorithmic Action Directives
-1. **Prioritize robotics_tamp**: Audience engagement is highest here; prioritize papers with concrete programmatic or physical analogies.
+1. **Prioritize general_breakthroughs**: Audience engagement is highest here; prioritize papers with concrete programmatic or physical analogies.
 2. **Prioritize High-Retention Blueprints**: Favor `bespoke_code, chalkboard_code_block, barrier_separation` in visual storyboarding.
-3. **Dynamic TTS Pacing**: Set narration delivery speed to `1.12x` to minimize early swipe-away drop-off.
-4. **Hook Target**: Cap the opening hook beat at `7.2s` before transitioning into the physical analogy.
+3. **Dynamic TTS Pacing**: Set narration delivery speed to `1.08x` to minimize early swipe-away drop-off.
+4. **Hook Target**: Cap the opening hook beat at `7.5s` before transitioning into the physical analogy.
