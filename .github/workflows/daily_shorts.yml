@@ -190,13 +190,37 @@ jobs:
             echo "LINKEDIN_CLIENT_SECRET=$LINKEDIN_CLIENT_SECRET" >> .env
           fi
 
-          if [ -n "$YOUTUBE_TOKEN_JSON_BASE64" ]; then
-            echo "$YOUTUBE_TOKEN_JSON_BASE64" | base64 -d > pipeline/youtube_token.json
-          fi
+          python3 - << 'PYEOF'
+          import os, base64, json
 
-          if [ -n "$YOUTUBE_CLIENT_SECRETS_BASE64" ]; then
-            echo "$YOUTUBE_CLIENT_SECRETS_BASE64" | base64 -d > pipeline/client_secrets.json
-          fi
+          def decode_secret(val, dest):
+              if not val:
+                  return
+              val = val.strip().strip("\"'")
+              # If already direct JSON, save directly
+              if val.startswith("{"):
+                  with open(dest, "w", encoding="utf-8") as f:
+                      f.write(val)
+                  print(f"✅ Saved direct JSON to {dest}")
+                  return
+              try:
+                  cleaned = "".join(val.split())
+                  missing = len(cleaned) % 4
+                  if missing:
+                      cleaned += "=" * (4 - missing)
+                  decoded = base64.b64decode(cleaned).decode("utf-8")
+                  json.loads(decoded)
+                  with open(dest, "w", encoding="utf-8") as f:
+                      f.write(decoded)
+                  print(f"✅ Decoded base64 JSON to {dest}")
+              except Exception as e:
+                  print(f"⚠️ Notice decoding {dest}: {e}. Writing raw input directly.")
+                  with open(dest, "w", encoding="utf-8") as f:
+                      f.write(val)
+
+          decode_secret(os.environ.get("YOUTUBE_TOKEN_JSON_BASE64", ""), "pipeline/youtube_token.json")
+          decode_secret(os.environ.get("YOUTUBE_CLIENT_SECRETS_BASE64", ""), "pipeline/client_secrets.json")
+PYEOF
 
       - name: Run Daily Shorts Daemon
         env:
