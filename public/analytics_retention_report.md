@@ -1,51 +1,59 @@
 # 📈 The Model Verse — YouTube Performance & Retention Intelligence
 
-**Generated:** 2026-10-13T08:00:00.590892+00:00  
-**Videos Analyzed:** 50 | **Autopsies Performed:** 19  
+**Generated:** 2026-10-14T04:28:34.929651+00:00  
+**Videos Analyzed:** 50 | **Autopsies Performed:** 22  
 **Top Domain:** `robotics_tamp`  
 **Recommended Pacing:** `1.12x` TTS Speed | Hook $\le$ `7.2s`
 
 ---
 
-## 🧬 Closed-Loop Retention Genome Evolution (Engine 7.0 - Gen 192)
+## 🧬 Closed-Loop Retention Genome Evolution (Engine 7.0 - Gen 197)
 The autonomous pipeline continuously evolves these visual and narrative recipes based on real viewer drop-offs:
 
 | Visual Blueprint | Evolutionary Multiplier | Avg Retention | Win/Loss Track | Action Directive |
 | :--- | :--- | :--- | :--- | :--- |
-| `chalkboard_code_block` | **1.5x** | 61.97% | 493W / 0L | Auto-discovered layout. |
-| `ast_tree` | **1.5x** | 66.05% | 100W / 0L | Auto-discovered layout. |
-| `chalkboard_code` | **1.5x** | 55.49% | 249W / 0L | Auto-discovered layout. |
-| `horizontal_race_bars` | **1.5x** | 59.45% | 405W / 0L | Auto-discovered layout. |
-| `paper_figure` | **1.5x** | 64.83% | 212W / 0L | Auto-discovered layout. |
-| `convergence_funnel` | **1.5x** | 63.15% | 104W / 0L | Auto-discovered layout. |
+| `bespoke_code` | **1.5x** | 50.17% | 1825W / 181L | Auto-discovered layout. |
+| `chalkboard_code_block` | **1.5x** | 59.56% | 511W / 0L | Auto-discovered layout. |
+| `barrier_separation` | **1.5x** | 71.26% | 163W / 24L | Auto-discovered layout. |
+| `ast_tree` | **1.5x** | 66.11% | 102W / 0L | Auto-discovered layout. |
+| `chalkboard_code` | **1.5x** | 54.77% | 253W / 0L | Auto-discovered layout. |
+| `horizontal_race_bars` | **1.5x** | 53.43% | 421W / 0L | Auto-discovered layout. |
+| `paper_figure` | **1.5x** | 64.93% | 217W / 0L | Auto-discovered layout. |
+| `convergence_funnel` | **1.5x** | 63.97% | 105W / 0L | Auto-discovered layout. |
 | `side_by_side` | **1.5x** | 48.07% | 36W / 0L | Auto-discovered layout. |
-| `layer_stack` | **1.5x** | 67.05% | 28W / 3L | Auto-discovered layout. |
-| `split_flow` | **1.5x** | 67.42% | 129W / 6L | Auto-discovered layout. |
-| `projection_rays` | **1.5x** | 48.62% | 20W / 0L | Auto-discovered layout. |
-| `pipeline_stages` | **1.5x** | 49.48% | 10W / 0L | Auto-discovered layout. |
-| `optimization_landscape` | **1.45x** | 56.39% | 9W / 0L | Auto-discovered layout. |
-| `neural_activation_wave` | **1.45x** | 50.03% | 9W / 0L | Auto-discovered layout. |
-| `barrier_separation` | **1.44x** | 73.43% | 158W / 22L | Auto-discovered layout. |
-| `bespoke_code` | **1.42x** | 51.2% | 1817W / 180L | Auto-discovered layout. |
+| `layer_stack` | **1.5x** | 66.9% | 30W / 3L | Auto-discovered layout. |
+| `projection_rays` | **1.5x** | 48.81% | 22W / 0L | Auto-discovered layout. |
+| `optimization_landscape` | **1.5x** | 56.29% | 10W / 0L | Auto-discovered layout. |
+| `neural_activation_wave` | **1.5x** | 49.88% | 10W / 0L | Auto-discovered layout. |
+| `pipeline_stages` | **1.5x** | 53.87% | 11W / 0L | Auto-discovered layout. |
+| `split_flow` | **1.42x** | 60.61% | 134W / 7L | Auto-discovered layout. |
 | `BlueprintHorizontalRaceBars` | **1.3x** | 78.5% | 6W / 0L | PRIORITIZE for Act 4 benchmark showdown. |
 | `catalog_routing` | **1.3x** | 70.1% | 6W / 0L | Auto-discovered layout. |
+| `vector_flow_field` | **1.27x** | 58.1% | 7W / 1L | Auto-discovered layout. |
 | `BlueprintSplitFlow` | **1.25x** | 76.0% | 5W / 1L | EXCELLENT for bifurcated flows, dual-pass verification, or router dispatch. |
 | `BlueprintChalkboardCodeBlock` | **1.22x** | 75.0% | 4W / 0L | HIGH RETENTION with developer audiences when active line sweep is synced to audio. |
 | `BlueprintGridMemory` | **1.2x** | 74.5% | 5W / 1L | STRONG for VRAM, SRAM, KV cache tiling, and matrix memory walls. |
-| `grid_memory` | **1.19x** | 56.54% | 110W / 71L | Auto-discovered layout. |
+| `split_comparison_latency` | **1.2x** | 63.99% | 4W / 0L | Auto-discovered layout. |
+| `benchmark_metric_grid` | **1.2x** | 57.05% | 4W / 0L | Auto-discovered layout. |
+| `call_to_action_loop` | **1.2x** | 53.32% | 4W / 0L | Auto-discovered layout. |
 | `BlueprintPipelineStages` | **1.15x** | 71.0% | 4W / 1L | SOLID for multistage pipelines (prefill, decode, verify). |
-| `split_comparison_latency` | **1.15x** | 64.69% | 3W / 0L | Auto-discovered layout. |
-| `benchmark_metric_grid` | **1.15x** | 58.57% | 3W / 0L | Auto-discovered layout. |
-| `call_to_action_loop` | **1.15x** | 55.27% | 3W / 0L | Auto-discovered layout. |
-| `vector_flow_field` | **1.12x** | 54.24% | 4W / 1L | Auto-discovered layout. |
+| `stacked_benefits_list` | **1.15x** | 68.14% | 3W / 0L | Auto-discovered layout. |
+| `steps_process_bar` | **1.15x** | 59.22% | 3W / 0L | Auto-discovered layout. |
+| `cta_final_screen` | **1.15x** | 54.86% | 3W / 0L | Auto-discovered layout. |
+| `grid_memory` | **1.13x** | 57.54% | 112W / 73L | Auto-discovered layout. |
 | `BlueprintTreeHierarchy` | **1.1x** | 69.5% | 3W / 1L | GOOD for speculative verification trees and Monte Carlo search. |
 | `metric_comparison_grid` | **1.1x** | 68.15% | 2W / 0L | Auto-discovered layout. |
 | `benchmark_delta_cards` | **1.1x** | 63.01% | 2W / 0L | Auto-discovered layout. |
 | `channel_outro_loop` | **1.1x** | 58.37% | 2W / 0L | Auto-discovered layout. |
-| `news_hero_announcement` | **0.76x** | 50.0% | 0W / 3L | Auto-discovered layout. |
-| `tree_hierarchy` | **0.75x** | 63.11% | 92W / 15L | Auto-discovered layout. |
+| `attention_prism_refraction` | **1.05x** | 68.93% | 1W / 0L | Auto-discovered layout. |
+| `split_screen_comparison` | **1.05x** | 67.86% | 1W / 0L | Auto-discovered layout. |
+| `data_visualization_chart` | **1.05x** | 65.26% | 1W / 0L | Auto-discovered layout. |
+| `outro_social_call` | **1.05x** | 62.71% | 1W / 0L | Auto-discovered layout. |
+| `perks_hero_value` | **0.92x** | 50.0% | 0W / 1L | Auto-discovered layout. |
+| `tree_hierarchy` | **0.77x** | 57.9% | 94W / 16L | Auto-discovered layout. |
+| `news_hero_announcement` | **0.68x** | 50.0% | 0W / 4L | Auto-discovered layout. |
 | `generic_sine_wave` | **0.5x** | 46.0% | 0W / 4L | BANNED: Flat generic animation trigger. Causes immediate cognitive drop-off. |
-| `comparison_side_by_side` | **0.4x** | 49.69% | 111W / 28L | Auto-discovered layout. |
+| `comparison_side_by_side` | **0.4x** | 49.69% | 111W / 30L | Auto-discovered layout. |
 
 **Top Performing Hook Archetype:** `ARCHITECTURE_BREAKDOWN` — *Auto-discovered hook archetype: architecture_breakdown*
 
@@ -56,13 +64,13 @@ The paper selector (`daily_shorts_daemon.py`) automatically scales candidate sel
 
 | Research Domain | Selection Multiplier | Avg Views | Sample Size |
 | :--- | :--- | :--- | :--- |
-| `developer_perks` | **0.6x** | 136.8 | 4 videos |
-| `general_breakthroughs` | **0.6x** | 1.0 | 2 videos |
 | `robotics_tamp` | **1.3x** | 561.0 | 11 videos |
 | `hardware_efficiency` | **1.14x** | 491.8 | 28 videos |
-| `multimodal_diffusion` | **0.6x** | 180.0 | 3 videos |
 | `mechanistic_interpretability` | **1.27x** | 550.0 | 1 videos |
+| `developer_perks` | **0.6x** | 136.8 | 4 videos |
+| `multimodal_diffusion` | **0.6x** | 180.0 | 3 videos |
 | `reasoning_models` | **0.6x** | 48.0 | 1 videos |
+| `general_breakthroughs` | **0.6x** | 1.0 | 2 videos |
 
 ---
 
@@ -125,6 +133,6 @@ The paper selector (`daily_shorts_daemon.py`) automatically scales candidate sel
 
 ## 🧠 Algorithmic Action Directives
 1. **Prioritize robotics_tamp**: Audience engagement is highest here; prioritize papers with concrete programmatic or physical analogies.
-2. **Prioritize High-Retention Blueprints**: Favor `chalkboard_code_block, ast_tree, chalkboard_code` in visual storyboarding.
+2. **Prioritize High-Retention Blueprints**: Favor `bespoke_code, chalkboard_code_block, barrier_separation` in visual storyboarding.
 3. **Dynamic TTS Pacing**: Set narration delivery speed to `1.12x` to minimize early swipe-away drop-off.
 4. **Hook Target**: Cap the opening hook beat at `7.2s` before transitioning into the physical analogy.
