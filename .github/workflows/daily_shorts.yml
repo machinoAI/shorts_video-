@@ -147,6 +147,7 @@ jobs:
           CHANNEL_NAME: ${{ secrets.CHANNEL_NAME || 'machinoAI' }}
           CHANNEL_HANDLE: ${{ secrets.CHANNEL_HANDLE || '@machinoai-in' }}
           CHANNEL_URL: ${{ secrets.CHANNEL_URL || 'https://www.youtube.com/@machinoai-in' }}
+          CHANNEL_WEBSITE: ${{ secrets.CHANNEL_WEBSITE || 'https://machinoai.in' }}
           CHANNEL_TAGLINE: ${{ secrets.CHANNEL_TAGLINE || 'Precision Tools & AI Insights' }}
         run: |
           python3 pipeline/setup_credentials.py
@@ -156,6 +157,7 @@ jobs:
           CHANNEL_NAME: ${{ secrets.CHANNEL_NAME || 'machinoAI' }}
           CHANNEL_HANDLE: ${{ secrets.CHANNEL_HANDLE || '@machinoai-in' }}
           CHANNEL_URL: ${{ secrets.CHANNEL_URL || 'https://www.youtube.com/@machinoai-in' }}
+          CHANNEL_WEBSITE: ${{ secrets.CHANNEL_WEBSITE || 'https://machinoai.in' }}
           CHANNEL_TAGLINE: ${{ secrets.CHANNEL_TAGLINE || 'Precision Tools & AI Insights' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}

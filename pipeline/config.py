@@ -43,6 +43,7 @@ GEMINI_MODEL_NAME = os.environ.get("GEMINI_MODEL_NAME", "gemini-flash-latest")
 CHANNEL_NAME = os.environ.get("CHANNEL_NAME", "machinoAI")
 CHANNEL_HANDLE = os.environ.get("CHANNEL_HANDLE", "@machinoai-in")
 CHANNEL_URL = os.environ.get("CHANNEL_URL", "https://www.youtube.com/@machinoai-in")
+CHANNEL_WEBSITE = os.environ.get("CHANNEL_WEBSITE", "https://machinoai.in")
 CHANNEL_TAGLINE = os.environ.get("CHANNEL_TAGLINE", "Precision Tools & AI Insights")
 CHANNEL_DESCRIPTION = os.environ.get(
     "CHANNEL_DESCRIPTION",

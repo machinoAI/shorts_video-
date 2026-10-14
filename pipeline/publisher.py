@@ -30,6 +30,7 @@ from pipeline.config import (
     CHANNEL_NAME,
     CHANNEL_HANDLE,
     CHANNEL_URL,
+    CHANNEL_WEBSITE,
     CHANNEL_TAGLINE,
 )
 
@@ -217,7 +218,7 @@ def generate_shorts_metadata(spec: Dict[str, Any], video_path: str) -> Dict[str,
 • Title: {title_raw}
 • Paper link: {arxiv_url}
 • Track: {track_meta['display_name']} // {track_meta['badge']}
-• Visuals: Powered by {CHANNEL_NAME} Engine"""
+• Visuals: Powered by {CHANNEL_NAME} Engine ({CHANNEL_WEBSITE})"""
 
     # 5. Hashtags construction (dynamically category-aware)
     tag_set = set(track_meta.get("default_tags", ["AI", "MachineLearning", "Shorts"]))
@@ -251,6 +252,7 @@ def generate_shorts_metadata(spec: Dict[str, Any], video_path: str) -> Dict[str,
 {ref_block}
 
 🌐 CONNECT WITH US:
+• Website: {CHANNEL_WEBSITE}
 • Channel: {CHANNEL_URL} ({CHANNEL_HANDLE})
 • {CHANNEL_TAGLINE}
 
