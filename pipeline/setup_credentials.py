@@ -88,6 +88,28 @@ def main():
     else:
         print("⚠️ YouTube Client Secrets: Neither YOUTUBE_CLIENT_SECRETS_BASE64 nor local file found.")
 
+    # 1.5 Live OAuth Validation
+    if token_path.exists():
+        try:
+            from google.oauth2.credentials import Credentials
+            from google.auth.transport.requests import Request
+            scopes = [
+                "https://www.googleapis.com/auth/youtube.upload",
+                "https://www.googleapis.com/auth/youtube.force-ssl",
+                "https://www.googleapis.com/auth/youtube"
+            ]
+            creds = Credentials.from_authorized_user_file(str(token_path), scopes)
+            if not creds.valid and creds.expired and creds.refresh_token:
+                print("🔄 Testing refresh of YouTube OAuth token...")
+                creds.refresh(Request())
+                with open(token_path, "w", encoding="utf-8") as f:
+                    f.write(creds.to_json())
+            print(f"✅ Verified YouTube OAuth token: Active & authenticated as client {getattr(creds, 'client_id', '')[:20]}...")
+        except Exception as e:
+            print(f"❌ YouTube Token Verification Error: {e}")
+            if os.environ.get("CI") == "true" or os.environ.get("GITHUB_ACTIONS") == "true":
+                raise RuntimeError(f"Invalid YouTube token in CI environment: {e}")
+
     # 2. Configure .env file
     env_path = PROJECT_ROOT / ".env"
     existing_env = {}

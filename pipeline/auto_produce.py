@@ -507,9 +507,14 @@ def auto_produce(
             print("=======================================================\n")
         else:
             try:
-                upload_short(final_output, metadata, privacy_status=privacy)
+                upload_res = upload_short(final_output, metadata, privacy_status=privacy)
+                spec["youtube_upload"] = upload_res
             except Exception as e:
-                print(f"\n⚠️ YouTube automated upload skipped or failed: {e}")
+                import traceback
+                print("\n" + "=" * 60)
+                print(f"❌ CRITICAL ERROR: YouTube automated upload failed: {e}")
+                traceback.print_exc()
+                print("=" * 60 + "\n")
                 print(f"💡 The produced broadcast video is saved and ready at:\n   {final_output}")
                 meta_dump_path = Path(final_output).with_suffix(".youtube_metadata.json")
                 try:
@@ -518,6 +523,8 @@ def auto_produce(
                     print(f"📄 Saved YouTube metadata for manual upload to:\n   {meta_dump_path}")
                 except Exception:
                     pass
+                if os.environ.get("CI") == "true" or os.environ.get("GITHUB_ACTIONS") == "true":
+                    raise e
 
     # Step 8: Automated Instagram Reels Distribution
     should_publish_ig = publish_instagram or (publish and os.getenv("PUBLISH_INSTAGRAM", "false").lower() == "true")
