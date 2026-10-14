@@ -84,8 +84,92 @@ CONTENT_PILLARS = ["arxiv", "blogs", "perks"]
 PILLAR_DISPLAY_NAMES: Dict[str, str] = {
     "arxiv": "Academic Mechanism Deep Dives (arXiv / HF)",
     "blogs": "Official AI Lab Releases & Tech News (OpenAI, Anthropic, Google DeepMind, HF)",
-    "perks": "Actionable Developer Perks & Startup Credits (Anthropic, Microsoft, Google, AWS)"
+    "perks": "Actionable Developer Perks & Startup Credits (Anthropic, Microsoft, Google, AWS)",
+    "queue": "Custom Scheduled Topic Queue (data/topic_queue.json)"
 }
+
+TOPIC_QUEUE_FILE = PROJECT_ROOT / "data" / "topic_queue.json"
+
+
+def load_topic_queue() -> List[Dict[str, Any]]:
+    """Loads custom topic queue from data/topic_queue.json."""
+    if TOPIC_QUEUE_FILE.exists():
+        try:
+            with open(TOPIC_QUEUE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"⚠️ Error reading {TOPIC_QUEUE_FILE}: {e}")
+    return []
+
+
+def save_topic_queue(queue_data: List[Dict[str, Any]]) -> None:
+    """Persists topic queue to data/topic_queue.json."""
+    TOPIC_QUEUE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(TOPIC_QUEUE_FILE, "w", encoding="utf-8") as f:
+        json.dump(queue_data, f, indent=2)
+
+
+def mark_queue_item_completed(item_id: str, video_path: str, yt_meta: Optional[Dict[str, Any]] = None) -> bool:
+    """Marks a topic queue item as completed with timestamps and video metadata."""
+    queue = load_topic_queue()
+    updated = False
+    for item in queue:
+        if item.get("id") == item_id:
+            item["status"] = "completed"
+            item["completed_at"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+            item["video_path"] = str(video_path)
+            if yt_meta:
+                item["youtube_id"] = yt_meta.get("video_id")
+                item["youtube_url"] = yt_meta.get("shorts_url")
+            updated = True
+            break
+    if updated:
+        save_topic_queue(queue)
+        print(f"✅ Topic queue updated: marked '{item_id}' as completed in {TOPIC_QUEUE_FILE.name}")
+    return updated
+
+
+def build_candidate_from_queue_item(
+    q_item: Dict[str, Any],
+    preferred_category: Optional[str] = None
+) -> Dict[str, Any]:
+    """Converts a topic_queue.json entry into a candidate specification for production."""
+    from pipeline.arxiv_fetcher import fetch_arxiv_paper
+    arxiv_id = q_item.get("arxiv_id")
+    abstract = q_item.get("angle", "")
+    authors = []
+    p_data = None
+    paper_title = q_item.get("topic")
+    if arxiv_id:
+        try:
+            p_data = fetch_arxiv_paper(arxiv_id)
+            if p_data:
+                abstract = p_data.get("abstract", abstract)
+                authors = p_data.get("authors", [])
+                paper_title = p_data.get("title", paper_title)
+        except Exception as e:
+            print(f"   ⚠️ Could not fetch metadata for arXiv {arxiv_id}: {e}")
+
+    cat = preferred_category or q_item.get("category", "architecture_breakdown")
+    return {
+        "id": q_item["id"],
+        "queue_id": q_item["id"],
+        "arxiv_id": arxiv_id,
+        "title": q_item["topic"],
+        "recommended_category": cat,
+        "category": cat,
+        "taxonomy": "rag_architectures",
+        "analytics_multiplier": 1.35,
+        "abstract": abstract,
+        "authors": authors,
+        "editorial_notes": {
+            "recommended_hook": f"{q_item.get('series', '')} {q_item.get('part', '')}: {q_item.get('topic')}",
+            "suggested_everyday_analogy": q_item.get("angle", "")
+        },
+        "paper_title": paper_title,
+        "source": "queue",
+        "is_from_queue": True
+    }
 
 
 def parse_iso_datetime(dt_str: Optional[str]) -> Optional[datetime.datetime]:
@@ -103,8 +187,10 @@ def parse_iso_datetime(dt_str: Optional[str]) -> Optional[datetime.datetime]:
 
 
 def classify_history_entry_pillar(paper_id: str, record: Dict[str, Any]) -> str:
-    """Classifies a history or candidate record into one of the content pillars: 'arxiv', 'blogs', 'perks', or 'github'."""
+    """Classifies a history or candidate record into one of the content pillars: 'arxiv', 'blogs', 'perks', 'github', or 'queue'."""
     src = str(record.get("source", "")).lower()
+    if src in ("queue", "topic_queue"):
+        return "queue"
     if src in ("perks", "verified_perks"):
         return "perks"
     if src in ("blogs", "news", "official_blogs"):
@@ -470,6 +556,7 @@ class DailyShortsDaemon:
         target_perk: Optional[str] = None,
         target_blog: Optional[str] = None,
         target_news: Optional[str] = None,
+        target_queue_id: Optional[str] = None,
         target_slot_hour: Optional[int] = None,
         preferred_taxonomy: Optional[str] = None,
         preferred_category: Optional[str] = None,
@@ -499,7 +586,15 @@ class DailyShortsDaemon:
         except Exception as e:
             print(f"   ⚠️ Could not refresh retention ledger: {e}")
 
-        if target_perk:
+        if target_queue_id:
+            print(f"\n📋 Direct Target Topic Queue Item Specified: {target_queue_id}")
+            queue = load_topic_queue()
+            matched = [item for item in queue if item.get("id") == target_queue_id]
+            if not matched:
+                print(f"⚠️ Could not find queue item with id '{target_queue_id}' in {TOPIC_QUEUE_FILE}")
+                return []
+            selected_papers = [build_candidate_from_queue_item(matched[0], preferred_category=preferred_category)]
+        elif target_perk:
             print(f"\n🎁 Direct Target Developer Perk Specified: {target_perk}")
             from pipeline.tech_perks_fetcher import tech_perks_fetcher
             perk_rec = tech_perks_fetcher.get_verified_perk(target_perk)
@@ -627,6 +722,21 @@ class DailyShortsDaemon:
                     print("ℹ️ All trending candidates across all content pillars have already been produced. Daily quota satisfied.")
                     return []
 
+            elif normalized_source == "queue":
+                print(f"\n📋 Step 1: Loading next pending topics from topic queue (data/topic_queue.json)...")
+                queue = load_topic_queue()
+                pending = [item for item in queue if item.get("status") not in ("completed", "done")]
+                if not pending:
+                    print("🎉 All queued topics in data/topic_queue.json have already been completed!")
+                    return []
+
+                selected_queue_items = pending[:count]
+                selected_papers = [
+                    build_candidate_from_queue_item(item, preferred_category=preferred_category)
+                    for item in selected_queue_items
+                ]
+                print(f"   Selected {len(selected_papers)} queued topic(s) to produce.")
+
             else:
                 target_pillar = "blogs" if normalized_source == "news" else normalized_source
                 print(f"\n🔍 Step 1: Scanning trending breakthrough candidates (Source: {target_pillar.upper()})...")
@@ -674,7 +784,9 @@ class DailyShortsDaemon:
             print(f"   arXiv: {arxiv_id} | Category: {category.upper()}")
             print("-" * 70)
 
-            cand_source = classify_history_entry_pillar(arxiv_id, top_paper)
+            target_arxiv_id = top_paper.get("arxiv_id") or arxiv_id
+            record_id = top_paper.get("queue_id") or arxiv_id
+            cand_source = top_paper.get("source") or classify_history_entry_pillar(arxiv_id, top_paper)
 
             if dry_run:
                 print("🔍 [DRY-RUN] Simulating script generation and pedagogy evaluation...")
@@ -702,7 +814,8 @@ class DailyShortsDaemon:
             active_voice = os.environ.get("ELEVENLABS_VOICE", "eric")
             try:
                 video_out = auto_produce(
-                    arxiv=arxiv_id,
+                    topic=title,
+                    arxiv=target_arxiv_id,
                     category=category,
                     speed=rec_speed,
                     quality=self.quality,
@@ -723,7 +836,7 @@ class DailyShortsDaemon:
                 video_out = None
 
             if video_out:
-                record_paper_production(arxiv_id, title, category, video_out, source=cand_source)
+                record_paper_production(record_id, title, category, video_out, source=cand_source)
 
                 # Extract YouTube upload metadata if published
                 yt_meta = {}
@@ -735,10 +848,18 @@ class DailyShortsDaemon:
                     except Exception:
                         pass
 
+                if top_paper.get("is_from_queue"):
+                    mark_queue_item_completed(
+                        item_id=top_paper.get("queue_id") or top_paper["id"],
+                        video_path=video_out,
+                        yt_meta=yt_meta
+                    )
+
                 report_item = {
                     "reel_index": idx + 1,
                     "timestamp": timestamp,
-                    "paper_id": arxiv_id,
+                    "paper_id": record_id,
+                    "arxiv_id": top_paper.get("arxiv_id"),
                     "title": title,
                     "category": category,
                     "source": cand_source,
@@ -768,7 +889,11 @@ class DailyShortsDaemon:
                 ed = r.get("editorial_notes", {})
                 pid = str(r.get("paper_id", ""))
                 r_source = r.get("source") or classify_history_entry_pillar(pid, {"category": r.get("category", "")})
-                if pid.startswith("gh_"):
+                if r_source == "queue":
+                    clean_arx = r.get("arxiv_id")
+                    arx_link = f" (arXiv: [{clean_arx}](https://arxiv.org/abs/{clean_arx}))" if clean_arx else ""
+                    link_line = f"- **Topic Queue Part:** `{pid}`{arx_link}"
+                elif pid.startswith("gh_"):
                     clean_repo = pid.replace("gh_", "").replace("_", "/")
                     link_line = f"- **GitHub Repo:** [{clean_repo}](https://github.com/{clean_repo})"
                 elif pid.startswith("perk_"):
@@ -869,7 +994,8 @@ def main():
     parser.add_argument("--run-now", action="store_true", help="Execute production cycle immediately")
     parser.add_argument("--count", type=int, default=1, help="Number of reels to produce (default: 1, e.g. 5)")
     parser.add_argument("--dry-run", action="store_true", help="Test paper discovery and script generation without rendering")
-    parser.add_argument("--source", choices=["arxiv", "github", "perks", "blogs", "news", "mixed", "auto"], default="mixed", help="Candidate source: 'mixed' (auto-rotate between arxiv, blogs, perks), 'arxiv', 'blogs', 'perks', 'github', or 'auto' (default: mixed)")
+    parser.add_argument("--source", choices=["queue", "arxiv", "github", "perks", "blogs", "news", "mixed", "auto"], default="mixed", help="Candidate source: 'queue' (pull from data/topic_queue.json), 'mixed' (auto-rotate between arxiv, blogs, perks), 'arxiv', 'blogs', 'perks', 'github', or 'auto' (default: mixed)")
+    parser.add_argument("--queue-id", type=str, default="", help="Specific queue ID from data/topic_queue.json to produce")
     parser.add_argument("--daemon", action="store_true", help="Run standing daemon in continuous background loop across 5 daily slots")
     parser.add_argument("--slot-hour", type=int, choices=[1, 5, 9, 12, 16], help="Simulate a specific automated upload window (1, 5, 9, 12, 16)")
     parser.add_argument("--preferred-taxonomy", choices=["multimodal_diffusion", "hardware_efficiency", "developer_perks", "reasoning_models", "efficient_architectures", "robotics_tamp", "mechanistic_interpretability"], help="Override preferred domain taxonomy for selection")
@@ -902,6 +1028,7 @@ def main():
             target_arxiv=args.arxiv or None,
             target_perk=args.perk or None,
             target_blog=args.blog or args.news or None,
+            target_queue_id=args.queue_id or None,
             target_slot_hour=args.slot_hour,
             preferred_taxonomy=args.preferred_taxonomy,
             preferred_category=args.category or None,
@@ -918,6 +1045,7 @@ def main():
             target_arxiv=args.arxiv or None,
             target_perk=args.perk or None,
             target_blog=args.blog or args.news or None,
+            target_queue_id=args.queue_id or None,
             target_slot_hour=args.slot_hour,
             preferred_taxonomy=args.preferred_taxonomy,
             preferred_category=args.category or None,

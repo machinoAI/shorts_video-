@@ -31,6 +31,11 @@ on:
         required: false
         default: ''
         type: string
+      queue_id:
+        description: 'Specific Topic Queue ID (optional, e.g. graphrag_part_1_global_context_trap from data/topic_queue.json)'
+        required: false
+        default: ''
+        type: string
       quality:
         description: 'Render quality profile'
         required: false
@@ -70,12 +75,12 @@ on:
         default: true
         type: boolean
       source:
-
-        description: 'Candidate source: mixed (auto-rotates between academic mechanism deep dives, official lab drops, and developer perks), arxiv, blogs, perks'
+        description: 'Candidate source: queue (custom 36-part sequence in data/topic_queue.json), mixed, arxiv, blogs, perks, github'
         required: false
-        default: 'mixed'
+        default: 'queue'
         type: choice
         options:
+          - queue
           - mixed
           - arxiv
           - blogs
@@ -179,13 +184,17 @@ jobs:
           COUNT="${{ github.event.inputs.count || '1' }}"
           QUALITY="${{ github.event.inputs.quality || 'qm' }}"
           ARXIV_ID="${{ github.event.inputs.arxiv_id || '' }}"
+          QUEUE_ID="${{ github.event.inputs.queue_id || '' }}"
           PRIVACY="${{ github.event.inputs.privacy || 'public' }}"
           PUBLISH_INSTAGRAM="${{ github.event.inputs.publish_instagram }}"
           PUBLISH_X="${{ github.event.inputs.publish_x }}"
           PUBLISH_LINKEDIN="${{ github.event.inputs.publish_linkedin }}"
-          SOURCE="${{ github.event.inputs.source || 'mixed' }}"
+          SOURCE="${{ github.event.inputs.source || 'queue' }}"
 
           EXTRA_ARGS="--source $SOURCE"
+          if [ -n "$QUEUE_ID" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --queue-id $QUEUE_ID"
+          fi
           if [ -n "$ARXIV_ID" ]; then
             EXTRA_ARGS="$EXTRA_ARGS --arxiv $ARXIV_ID"
           fi

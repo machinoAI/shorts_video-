@@ -277,11 +277,12 @@ def generate_script(
 
     paper_context = ""
     if arxiv_meta:
+        p_title = arxiv_meta.get("paper_title") or arxiv_meta.get("title", "")
         paper_context = f"""
 ArXiv Paper Details:
-Title: {arxiv_meta['title']}
+Title: {p_title}
 Authors: {', '.join(arxiv_meta.get('authors', []))}
-Abstract: {arxiv_meta['abstract']}
+Abstract: {arxiv_meta.get('abstract', '')}
 """
 
     # Retention Genome Memory Injection (Engine 7.0)

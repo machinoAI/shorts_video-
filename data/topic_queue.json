@@ -1,0 +1,362 @@
+[
+  {
+    "id": "graphrag_part_1_global_context_trap",
+    "arxiv_id": "2404.16130",
+    "topic": "GraphRAG: Part 1 - Why Naive RAG Fails on Global Corpus Summarization",
+    "category": "architecture_breakdown",
+    "series": "GraphRAG Mini-Series",
+    "part": "1/5",
+    "angle": "The context fragmentation trap: why standard chunk-based vector search finds local facts but cannot summarize an entire corpus.",
+    "status": "pending"
+  },
+  {
+    "id": "graphrag_part_2_entity_knowledge_graphs",
+    "arxiv_id": "2404.16130",
+    "topic": "GraphRAG: Part 2 - Extracting Entities and Knowledge Graphs from Text",
+    "category": "mechanism_deepdive",
+    "series": "GraphRAG Mini-Series",
+    "part": "2/5",
+    "angle": "How LLMs extract entity nodes, relational edges, and claims to transform unstructured text into a semantic knowledge graph.",
+    "status": "pending"
+  },
+  {
+    "id": "graphrag_part_3_leiden_community_clustering",
+    "arxiv_id": "2404.16130",
+    "topic": "GraphRAG: Part 3 - Hierarchical Community Detection with Leiden Algorithm",
+    "category": "mechanism_deepdive",
+    "series": "GraphRAG Mini-Series",
+    "part": "3/5",
+    "angle": "Hierarchical community detection: using the Leiden algorithm to recursively partition dense knowledge graph clusters.",
+    "status": "pending"
+  },
+  {
+    "id": "graphrag_part_4_community_summaries_pipeline",
+    "arxiv_id": "2404.16130",
+    "topic": "GraphRAG: Part 4 - Generating Multi-Level Community Summaries",
+    "category": "architecture_breakdown",
+    "series": "GraphRAG Mini-Series",
+    "part": "4/5",
+    "angle": "Bottom-up summarization architecture: synthesizing low-level graph clusters into high-level global topic reports.",
+    "status": "pending"
+  },
+  {
+    "id": "graphrag_part_5_benchmark_showdown",
+    "arxiv_id": "2404.16130",
+    "topic": "GraphRAG: Part 5 - GraphRAG vs Vector RAG vs Long-Context LLMs",
+    "category": "benchmark_news",
+    "series": "GraphRAG Mini-Series",
+    "part": "5/5",
+    "angle": "Empirical showdown: 70%+ improvement in comprehensiveness and diversity on global query benchmarks.",
+    "status": "pending"
+  },
+  {
+    "id": "raptor_part_1_context_fragmentation",
+    "arxiv_id": "2401.18059",
+    "topic": "RAPTOR: Part 1 - The Context Fragmentation Trap in Standard RAG",
+    "category": "architecture_breakdown",
+    "series": "RAPTOR Mini-Series",
+    "part": "1/5",
+    "angle": "Why chopping documents into isolated 500-token chunks destroys the thematic big picture in technical papers.",
+    "status": "pending"
+  },
+  {
+    "id": "raptor_part_2_gaussian_mixture_clustering",
+    "arxiv_id": "2401.18059",
+    "topic": "RAPTOR: Part 2 - Gaussian Mixture Models & Soft Clustering",
+    "category": "mechanism_deepdive",
+    "series": "RAPTOR Mini-Series",
+    "part": "2/5",
+    "angle": "Soft clustering with GMMs: allowing text chunks to belong to multiple semantic parent themes simultaneously without boundary cuts.",
+    "status": "pending"
+  },
+  {
+    "id": "raptor_part_3_recursive_tree_abstraction",
+    "arxiv_id": "2401.18059",
+    "topic": "RAPTOR: Part 3 - Recursive Tree Construction & Abstraction",
+    "category": "mechanism_deepdive",
+    "series": "RAPTOR Mini-Series",
+    "part": "3/5",
+    "angle": "Recursive bottom-up summarization: building multi-tier abstraction trees from raw sentence leaves to root themes.",
+    "status": "pending"
+  },
+  {
+    "id": "raptor_part_4_tree_retrieval_traversal",
+    "arxiv_id": "2401.18059",
+    "topic": "RAPTOR: Part 4 - Collapsed Tree Retrieval vs Tree Traversal",
+    "category": "architecture_breakdown",
+    "series": "RAPTOR Mini-Series",
+    "part": "4/5",
+    "angle": "Retrieval strategies: flattening all tree layers into a unified search index versus traversing top-down from root to leaf.",
+    "status": "pending"
+  },
+  {
+    "id": "raptor_part_5_qasper_narrativeqa_benchmarks",
+    "arxiv_id": "2401.18059",
+    "topic": "RAPTOR: Part 5 - Breaking SOTA on QASPER and NarrativeQA",
+    "category": "benchmark_news",
+    "series": "RAPTOR Mini-Series",
+    "part": "5/5",
+    "angle": "Empirical victory: 20% accuracy jumps over baseline dense retrievers on complex multi-page document QA.",
+    "status": "pending"
+  },
+  {
+    "id": "self_rag_part_1_retrieval_noise_paradox",
+    "arxiv_id": "2310.11511",
+    "topic": "Self-RAG: Part 1 - Why Indiscriminate Retrieval Ruins LLM Answers",
+    "category": "architecture_breakdown",
+    "series": "Self-RAG Mini-Series",
+    "part": "1/4",
+    "angle": "The retrieval noise paradox: why fetching irrelevant external context actually degrades model accuracy.",
+    "status": "pending"
+  },
+  {
+    "id": "self_rag_part_2_reflection_tokens",
+    "arxiv_id": "2310.11511",
+    "topic": "Self-RAG: Part 2 - The 4 Reflection Tokens: Retrieve, IsRel, IsSup, IsUse",
+    "category": "mechanism_deepdive",
+    "series": "Self-RAG Mini-Series",
+    "part": "2/4",
+    "angle": "The reflection token grammar: teaching LLMs to generate [Retrieve], [IsRel], [IsSup], and [IsUse] tokens dynamically.",
+    "status": "pending"
+  },
+  {
+    "id": "self_rag_part_3_self_critique_thresholding",
+    "arxiv_id": "2310.11511",
+    "topic": "Self-RAG: Part 3 - Self-Critique & Adaptive Retrieval Thresholding",
+    "category": "mechanism_deepdive",
+    "series": "Self-RAG Mini-Series",
+    "part": "3/4",
+    "angle": "Critique-guided beam search: decoding with probabilities weighted by factual support tokens to prune hallucinations.",
+    "status": "pending"
+  },
+  {
+    "id": "self_rag_part_4_benchmark_payoff",
+    "arxiv_id": "2310.11511",
+    "topic": "Self-RAG: Part 4 - Outperforming ChatGPT & Standard RAG on Factuality",
+    "category": "benchmark_news",
+    "series": "Self-RAG Mini-Series",
+    "part": "4/4",
+    "angle": "Dramatic hallucination drops on PopQA, TriviaQA, and BioASQ while using fewer retrieval calls.",
+    "status": "pending"
+  },
+  {
+    "id": "original_rag_part_1_open_book_revolution",
+    "arxiv_id": "2005.11401",
+    "topic": "Original RAG: Part 1 - The Open-Book Exam Revolution in AI",
+    "category": "architecture_breakdown",
+    "series": "Original RAG Mini-Series",
+    "part": "1/4",
+    "angle": "Parametric weights vs non-parametric external memory: the foundational breakthrough that birthed RAG in 2020.",
+    "status": "pending"
+  },
+  {
+    "id": "original_rag_part_2_dense_passage_retrieval",
+    "arxiv_id": "2005.11401",
+    "topic": "Original RAG: Part 2 - Dense Passage Retrieval (DPR) & Dual Encoders",
+    "category": "mechanism_deepdive",
+    "series": "Original RAG Mini-Series",
+    "part": "2/4",
+    "angle": "Dual BERT encoders mapping queries and 21 million Wikipedia passages into a continuous embedding space.",
+    "status": "pending"
+  },
+  {
+    "id": "original_rag_part_3_sequence_vs_token_models",
+    "arxiv_id": "2005.11401",
+    "topic": "Original RAG: Part 3 - RAG-Sequence vs RAG-Token Marginalization",
+    "category": "mechanism_deepdive",
+    "series": "Original RAG Mini-Series",
+    "part": "3/4",
+    "angle": "The mathematical formulation: marginalizing over top-K retrieved documents per complete sequence versus per token.",
+    "status": "pending"
+  },
+  {
+    "id": "original_rag_part_4_benchmark_milestones",
+    "arxiv_id": "2005.11401",
+    "topic": "Original RAG: Part 4 - Slashing Hallucinations on Open-Domain QA",
+    "category": "benchmark_news",
+    "series": "Original RAG Mini-Series",
+    "part": "4/4",
+    "angle": "Groundbreaking accuracy on Jeopardy questions and Natural Questions without ballooning model parameter count.",
+    "status": "pending"
+  },
+  {
+    "id": "crag_part_1_retrieval_evaluator_branching",
+    "arxiv_id": "2401.15884",
+    "topic": "CRAG: Part 1 - The Retrieval Evaluator: Correct, Incorrect, or Ambiguous",
+    "category": "architecture_breakdown",
+    "series": "CRAG Mini-Series",
+    "part": "1/3",
+    "angle": "Self-correcting bad retrieval: adding a confidence evaluator that triggers 3 distinct execution branches.",
+    "status": "pending"
+  },
+  {
+    "id": "crag_part_2_web_search_decompose_filter",
+    "arxiv_id": "2401.15884",
+    "topic": "CRAG: Part 2 - Web Search Fallback & Document Decompose-and-Filter",
+    "category": "mechanism_deepdive",
+    "series": "CRAG Mini-Series",
+    "part": "2/3",
+    "angle": "Automatic web search fallback when internal retrieval fails, plus fine-grained sentence striping to remove noise.",
+    "status": "pending"
+  },
+  {
+    "id": "crag_part_3_multihop_benchmarks",
+    "arxiv_id": "2401.15884",
+    "topic": "CRAG: Part 3 - CRAG Accuracy Gains across Multi-Hop Benchmarks",
+    "category": "benchmark_news",
+    "series": "CRAG Mini-Series",
+    "part": "3/3",
+    "angle": "Consistent 15-30% performance gains over standard RAG and Self-RAG across open-domain tasks.",
+    "status": "pending"
+  },
+  {
+    "id": "flare_part_1_active_retrieval_paradigm",
+    "arxiv_id": "2305.06983",
+    "topic": "FLARE: Part 1 - Passive RAG vs Active Forward-Looking Retrieval",
+    "category": "architecture_breakdown",
+    "series": "FLARE Mini-Series",
+    "part": "1/3",
+    "angle": "Why retrieve before generating when you can retrieve only when the model gets stuck during generation?",
+    "status": "pending"
+  },
+  {
+    "id": "flare_part_2_anticipating_sentences",
+    "arxiv_id": "2305.06983",
+    "topic": "FLARE: Part 2 - Anticipating Next Sentences to Fetch Evidence",
+    "category": "mechanism_deepdive",
+    "series": "FLARE Mini-Series",
+    "part": "2/3",
+    "angle": "Forward-looking search: generating draft sentences, measuring token confidence, and querying only when uncertainty strikes.",
+    "status": "pending"
+  },
+  {
+    "id": "flare_part_3_longform_benchmarks",
+    "arxiv_id": "2305.06983",
+    "topic": "FLARE: Part 3 - Long-Form Knowledge Synthesis Benchmarks",
+    "category": "benchmark_news",
+    "series": "FLARE Mini-Series",
+    "part": "3/3",
+    "angle": "Substantial accuracy gains on 2WikiMultihopQA and long-form Wikipedia generation over conventional RAG.",
+    "status": "pending"
+  },
+  {
+    "id": "raft_part_1_studying_vs_open_book",
+    "arxiv_id": "2403.10131",
+    "topic": "RAFT: Part 1 - Studying for the Exam vs Answering Open-Book",
+    "category": "architecture_breakdown",
+    "series": "RAFT Mini-Series",
+    "part": "1/3",
+    "angle": "Why standard general LLMs struggle with specialized RAG: training models to ignore distractor noise in domain datasets.",
+    "status": "pending"
+  },
+  {
+    "id": "raft_part_2_distractor_documents_cot",
+    "arxiv_id": "2403.10131",
+    "topic": "RAFT: Part 2 - Training with Distractor Documents & Citation Chains",
+    "category": "mechanism_deepdive",
+    "series": "RAFT Mini-Series",
+    "part": "2/3",
+    "angle": "Co-training with oracle docs and distractor docs: forcing the model to generate chain-of-thought verbatim quotes.",
+    "status": "pending"
+  },
+  {
+    "id": "raft_part_3_medical_code_benchmarks",
+    "arxiv_id": "2403.10131",
+    "topic": "RAFT: Part 3 - Outperforming Llama 3 & GPT-4 on Medical and Code Tasks",
+    "category": "benchmark_news",
+    "series": "RAFT Mini-Series",
+    "part": "3/3",
+    "angle": "Massive accuracy jumps across PubMed, HotpotQA, and Gorilla API calling benchmarks.",
+    "status": "pending"
+  },
+  {
+    "id": "realm_part_1_retrieval_pretraining",
+    "arxiv_id": "2002.08909",
+    "topic": "REALM: Part 1 - Learning to Retrieve During Pre-Training",
+    "category": "architecture_breakdown",
+    "series": "REALM Mini-Series",
+    "part": "1/3",
+    "angle": "Augmenting language models with retrieval before pre-training instead of fine-tuning afterward.",
+    "status": "pending"
+  },
+  {
+    "id": "realm_part_2_differentiable_mips",
+    "arxiv_id": "2002.08909",
+    "topic": "REALM: Part 2 - Asynchronous Maximum Inner Product Search (MIPS)",
+    "category": "mechanism_deepdive",
+    "series": "REALM Mini-Series",
+    "part": "2/3",
+    "angle": "Backpropagating gradients through an external document index with asynchronous MIPS refreshes during training.",
+    "status": "pending"
+  },
+  {
+    "id": "realm_part_3_zeroshot_benchmarks",
+    "arxiv_id": "2002.08909",
+    "topic": "REALM: Part 3 - Zero-Shot Open-Domain QA Benchmarks",
+    "category": "benchmark_news",
+    "series": "REALM Mini-Series",
+    "part": "3/3",
+    "angle": "Early landmark results demonstrating that retrieval outperforms models with 3x more parameters.",
+    "status": "pending"
+  },
+  {
+    "id": "paperqa_part_1_scientific_agent",
+    "arxiv_id": "2312.07559",
+    "topic": "PaperQA: Part 1 - The Scientific Research Generative Agent",
+    "category": "architecture_breakdown",
+    "series": "PaperQA Mini-Series",
+    "part": "1/3",
+    "angle": "An autonomous agent architecture designed specifically for technical papers and zero-hallucination citations.",
+    "status": "pending"
+  },
+  {
+    "id": "paperqa_part_2_relevance_scoring_citations",
+    "arxiv_id": "2312.07559",
+    "topic": "PaperQA: Part 2 - Context Relevance Scoring & Chain Citations",
+    "category": "mechanism_deepdive",
+    "series": "PaperQA Mini-Series",
+    "part": "2/3",
+    "angle": "Two-phase retrieval: scoring chunk relevance against the query, then synthesizing with strict paragraph-level attribution.",
+    "status": "pending"
+  },
+  {
+    "id": "paperqa_part_3_litqa_superhuman_benchmark",
+    "arxiv_id": "2312.07559",
+    "topic": "PaperQA: Part 3 - Beating Human Experts on LitQA Scientific QA",
+    "category": "benchmark_news",
+    "series": "PaperQA Mini-Series",
+    "part": "3/3",
+    "angle": "High precision and near-zero hallucination rates evaluated against peer-reviewed biomedical literature.",
+    "status": "pending"
+  },
+  {
+    "id": "rag_survey_part_1_three_generations",
+    "arxiv_id": "2312.10997",
+    "topic": "RAG Survey: Part 1 - The 3 Generations: Naive, Advanced, and Modular RAG",
+    "category": "architecture_breakdown",
+    "series": "RAG Survey Mini-Series",
+    "part": "1/3",
+    "angle": "The evolution of retrieval architectures from simple cosine lookup to complex routing systems.",
+    "status": "pending"
+  },
+  {
+    "id": "rag_survey_part_2_optimization_taxonomy",
+    "arxiv_id": "2312.10997",
+    "topic": "RAG Survey: Part 2 - Pre-Retrieval, In-Retrieval, and Post-Retrieval Paradigms",
+    "category": "mechanism_deepdive",
+    "series": "RAG Survey Mini-Series",
+    "part": "2/3",
+    "angle": "The complete optimization taxonomy: query rewrites, hybrid search, reranking, and context compression.",
+    "status": "pending"
+  },
+  {
+    "id": "rag_survey_part_3_rag_triad_evaluation",
+    "arxiv_id": "2312.10997",
+    "topic": "RAG Survey: Part 3 - The RAG Triad: Evaluating Groundedness & Relevance",
+    "category": "benchmark_news",
+    "series": "RAG Survey Mini-Series",
+    "part": "3/3",
+    "angle": "How top production AI systems measure and debug RAG quality using TruLens and RAGAS metrics.",
+    "status": "pending"
+  }
+]
