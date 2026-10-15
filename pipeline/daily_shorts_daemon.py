@@ -1016,6 +1016,7 @@ def main():
     parser.add_argument("--quality", default="qh", help="Render quality (default: qh)")
     parser.add_argument("--arxiv", type=str, default="", help="Specific arXiv ID or URL to produce (e.g. 2401.12345)")
     parser.add_argument("--voice", type=str, default="", help="Neural voice name (e.g. am_adam, am_eric, am_michael, af_heart, bm_george)")
+    parser.add_argument("--no-publish", action="store_true", help="Produce video locally without uploading to YouTube")
     args = parser.parse_args()
 
     daemon = DailyShortsDaemon(
@@ -1049,7 +1050,7 @@ def main():
         produced = daemon.run_daily_cycle(
             count=args.count,
             dry_run=False,
-            publish=True,
+            publish=not args.no_publish,
             target_arxiv=args.arxiv or None,
             target_perk=args.perk or None,
             target_blog=args.blog or args.news or None,

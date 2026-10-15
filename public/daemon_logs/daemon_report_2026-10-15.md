@@ -1,17 +1,16 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-15 | **Timestamp:** 2026-10-15 14:00:26 UTC
+**Date:** 2026-10-15 | **Timestamp:** 2026-10-15 15:13:57 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: RAPTOR: Part 1 - The Context Fragmentation Trap in Standard RAG
-- **Topic Queue Part:** `raptor_part_1_context_fragmentation` (arXiv: [2401.18059](https://arxiv.org/abs/2401.18059))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/3VTnbE5mobs](https://youtube.com/shorts/3VTnbE5mobs) (`3VTnbE5mobs`)
-- **High-CTR Poster:** [raptor_context_fragmentation_trap_poster.png](public/thumbnails/raptor_context_fragmentation_trap_poster.png)
+### Reel 1: RAPTOR: Part 2 - Gaussian Mixture Models & Soft Clustering
+- **Topic Queue Part:** `raptor_part_2_gaussian_mixture_clustering` (arXiv: [2401.18059](https://arxiv.org/abs/2401.18059))
+- **YouTube Upload Privacy:** `public`
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `architecture_breakdown`
-- **Editorial Hook:** *RAPTOR Mini-Series 1/5: RAPTOR: Part 1 - The Context Fragmentation Trap in Standard RAG*
-- **Everyday Analogy:** *Why chopping documents into isolated 500-token chunks destroys the thematic big picture in technical papers.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_raptor_context_fragmentation_trap_architecture_breakdown.mp4`
+- **Category:** `mechanism_deepdive`
+- **Editorial Hook:** *RAPTOR Mini-Series 2/5: RAPTOR: Part 2 - Gaussian Mixture Models & Soft Clustering*
+- **Everyday Analogy:** *Soft clustering with GMMs: allowing text chunks to belong to multiple semantic parent themes simultaneously without boundary cuts.*
+- **Local Master Video:** `/Users/raviranjan/Documents/personal/Automated-video-Generation/final_raptor_gmm_soft_clustering_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
