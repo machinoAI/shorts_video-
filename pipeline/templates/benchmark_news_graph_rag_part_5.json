@@ -1,0 +1,1862 @@
+{
+  "id": "graph_rag_part_5",
+  "title": "From Local to Global: GraphRAG",
+  "category": "benchmark_news",
+  "domain_taxonomy": "quantitative_benchmark",
+  "hook_tag": "ARCHITECTURE BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "How did researchers use From Local to Global to achieve a 92% leap in retrieval accuracy?",
+      "visual_focus": "A search bar asking 'What are the main themes?' resulting in scattered, isolated paper scraps floating with red question marks.",
+      "highlight_words": {
+        "panics": "#EF4444",
+        "disconnected paragraphs": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Vector RAG",
+        "action_verb": "panics",
+        "direct_object": "disconnected chunks",
+        "anchor_word": "isolated",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "split_flow",
+        "title": "THE LOCAL SEARCH FAILURE",
+        "sub": "Vector embeddings fail on global sensemaking queries",
+        "accent_color": "#EF4444",
+        "params": {
+          "left_label": "Global Query",
+          "right_label": "Scattered Chunks",
+          "flow_status": "disconnected"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 55,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "split_flow",
+        "title": "THE LOCAL SEARCH FAILURE",
+        "sub": "Vector embeddings fail on global sensemaking queries",
+        "accent_color": "#EF4444",
+        "left_label": "Global Query",
+        "right_label": "Scattered Chunks",
+        "flow_status": "disconnected"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.76,
+      "duration": 5.76,
+      "word_timings": [
+        {
+          "word": "How",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 0.02,
+          "end": 0.27,
+          "duration": 0.25,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "did",
+          "clean_word": "did",
+          "phonemes": "d\u02c8\u026ad",
+          "start": 0.27,
+          "end": 0.42,
+          "duration": 0.15,
+          "frame_ahead_trigger": 0.23
+        },
+        {
+          "word": "researchers",
+          "clean_word": "researchers",
+          "phonemes": "\u0279\u1d7bs\u02c8\u025c\u02d0t\u0283\u025az",
+          "start": 0.42,
+          "end": 1.061,
+          "duration": 0.641,
+          "frame_ahead_trigger": 0.38
+        },
+        {
+          "word": "use",
+          "clean_word": "use",
+          "phonemes": "j\u02c8u\u02d0s",
+          "start": 1.061,
+          "end": 1.38,
+          "duration": 0.319,
+          "frame_ahead_trigger": 1.021
+        },
+        {
+          "word": "From",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 1.38,
+          "end": 1.565,
+          "duration": 0.185,
+          "frame_ahead_trigger": 1.34
+        },
+        {
+          "word": "Local",
+          "clean_word": "local",
+          "phonemes": "l\u02c8o\u028ak\u0259l",
+          "start": 1.565,
+          "end": 1.875,
+          "duration": 0.31,
+          "frame_ahead_trigger": 1.525
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 1.875,
+          "end": 2.125,
+          "duration": 0.25,
+          "frame_ahead_trigger": 1.835
+        },
+        {
+          "word": "Global",
+          "clean_word": "global",
+          "phonemes": "\u0261l\u02c8o\u028ab\u0259l",
+          "start": 2.125,
+          "end": 2.69,
+          "duration": 0.565,
+          "frame_ahead_trigger": 2.085
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 2.69,
+          "end": 2.795,
+          "duration": 0.105,
+          "frame_ahead_trigger": 2.65
+        },
+        {
+          "word": "achieve",
+          "clean_word": "achieve",
+          "phonemes": "\u0250t\u0283\u02c8i\u02d0v",
+          "start": 2.795,
+          "end": 3.295,
+          "duration": 0.5,
+          "frame_ahead_trigger": 2.755
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 3.295,
+          "end": 3.43,
+          "duration": 0.135,
+          "frame_ahead_trigger": 3.255
+        },
+        {
+          "word": "92%",
+          "clean_word": "92",
+          "phonemes": "n\u02c8a\u026anti t\u02c8u\u02d0",
+          "start": 3.43,
+          "end": 3.995,
+          "duration": 0.565,
+          "frame_ahead_trigger": 3.39
+        },
+        {
+          "word": "leap",
+          "clean_word": "leap",
+          "phonemes": "l\u02c8i\u02d0p",
+          "start": 3.995,
+          "end": 4.455,
+          "duration": 0.46,
+          "frame_ahead_trigger": 3.955
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 4.455,
+          "end": 4.595,
+          "duration": 0.14,
+          "frame_ahead_trigger": 4.415
+        },
+        {
+          "word": "retrieval",
+          "clean_word": "retrieval",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259l",
+          "start": 4.595,
+          "end": 5.095,
+          "duration": 0.5,
+          "frame_ahead_trigger": 4.555
+        },
+        {
+          "word": "accuracy?",
+          "clean_word": "accuracy",
+          "phonemes": "\u02c8\u00e6kj\u028a\u0279\u0259si",
+          "start": 5.095,
+          "end": 5.63,
+          "duration": 0.535,
+          "frame_ahead_trigger": 5.055
+        }
+      ],
+      "audio_duration": 5.76,
+      "slot_duration": 5.91
+    },
+    {
+      "beat_id": 2,
+      "text": "Vector search is like peering through a tiny soda straw. It retrieves pinpoint facts brilliantly. But stays completely blind to overarching concepts.",
+      "visual_focus": "A narrow spotlight cone illuminating a single keyword while dark, massive thematic networks remain completely unseen outside the beam.",
+      "highlight_words": {
+        "soda straw": "#EF4444",
+        "completely blind": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Vector search",
+        "action_verb": "misses",
+        "direct_object": "global concepts",
+        "anchor_word": "blind",
+        "semantic_role": "bottleneck"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "THE SODA-STRAW BOTTLENECK",
+        "sub": "Local similarity cannot capture corpus-wide structure",
+        "accent_color": "#38BDF8",
+        "params": {
+          "grid_title": "Information Landscape",
+          "active_cell_label": "Missing Synthesis",
+          "efficiency_label": "Fragmented State"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "THE SODA-STRAW BOTTLENECK",
+        "sub": "Local similarity cannot capture corpus-wide structure",
+        "accent_color": "#38BDF8",
+        "grid_title": "Information Landscape",
+        "active_cell_label": "Missing Synthesis",
+        "efficiency_label": "Fragmented State"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 5.91,
+      "end": 14.57,
+      "duration": 8.66,
+      "word_timings": [
+        {
+          "word": "Vector",
+          "clean_word": "vector",
+          "phonemes": "v\u02c8\u025bkt\u025a",
+          "start": 5.925,
+          "end": 6.22,
+          "duration": 0.295,
+          "frame_ahead_trigger": 6.035
+        },
+        {
+          "word": "search",
+          "clean_word": "search",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283",
+          "start": 6.22,
+          "end": 6.63,
+          "duration": 0.41,
+          "frame_ahead_trigger": 6.33
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 6.63,
+          "end": 6.764,
+          "duration": 0.134,
+          "frame_ahead_trigger": 6.74
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 6.764,
+          "end": 7.11,
+          "duration": 0.346,
+          "frame_ahead_trigger": 6.874
+        },
+        {
+          "word": "peering",
+          "clean_word": "peering",
+          "phonemes": "p\u02c8\u026a\u0279\u026a\u014b",
+          "start": 7.11,
+          "end": 7.535,
+          "duration": 0.425,
+          "frame_ahead_trigger": 7.22
+        },
+        {
+          "word": "through",
+          "clean_word": "through",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0",
+          "start": 7.535,
+          "end": 7.805,
+          "duration": 0.27,
+          "frame_ahead_trigger": 7.645
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 7.805,
+          "end": 7.935,
+          "duration": 0.13,
+          "frame_ahead_trigger": 7.915
+        },
+        {
+          "word": "tiny",
+          "clean_word": "tiny",
+          "phonemes": "t\u02c8a\u026ani",
+          "start": 7.935,
+          "end": 8.3,
+          "duration": 0.365,
+          "frame_ahead_trigger": 8.045
+        },
+        {
+          "word": "soda",
+          "clean_word": "soda",
+          "phonemes": "s\u02c8o\u028ad\u0259",
+          "start": 8.3,
+          "end": 8.622,
+          "duration": 0.322,
+          "frame_ahead_trigger": 8.41
+        },
+        {
+          "word": "straw.",
+          "clean_word": "straw",
+          "phonemes": "st\u0279\u02c8\u0254\u02d0",
+          "start": 8.622,
+          "end": 9.065,
+          "duration": 0.443,
+          "frame_ahead_trigger": 8.732
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 9.065,
+          "end": 9.101,
+          "duration": 0.036,
+          "frame_ahead_trigger": 9.175
+        },
+        {
+          "word": "retrieves",
+          "clean_word": "retrieves",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0vz",
+          "start": 9.101,
+          "end": 9.675,
+          "duration": 0.574,
+          "frame_ahead_trigger": 9.211
+        },
+        {
+          "word": "pinpoint",
+          "clean_word": "pinpoint",
+          "phonemes": "p\u02c8\u026anp\u0254\u026ant",
+          "start": 9.675,
+          "end": 10.225,
+          "duration": 0.55,
+          "frame_ahead_trigger": 9.785
+        },
+        {
+          "word": "facts",
+          "clean_word": "facts",
+          "phonemes": "f\u02c8\u00e6kts",
+          "start": 10.225,
+          "end": 10.565,
+          "duration": 0.34,
+          "frame_ahead_trigger": 10.335
+        },
+        {
+          "word": "brilliantly.",
+          "clean_word": "brilliantly",
+          "phonemes": "b\u0279\u02c8\u026ali\u0259ntli",
+          "start": 10.565,
+          "end": 11.199,
+          "duration": 0.634,
+          "frame_ahead_trigger": 10.675
+        },
+        {
+          "word": "But",
+          "clean_word": "but",
+          "phonemes": "b\u02cc\u028ct",
+          "start": 11.199,
+          "end": 11.439,
+          "duration": 0.24,
+          "frame_ahead_trigger": 11.309
+        },
+        {
+          "word": "stays",
+          "clean_word": "stays",
+          "phonemes": "st\u02c8e\u026az",
+          "start": 11.439,
+          "end": 11.77,
+          "duration": 0.331,
+          "frame_ahead_trigger": 11.549
+        },
+        {
+          "word": "completely",
+          "clean_word": "completely",
+          "phonemes": "k\u0259mpl\u02c8i\u02d0tli",
+          "start": 11.77,
+          "end": 12.435,
+          "duration": 0.665,
+          "frame_ahead_trigger": 11.88
+        },
+        {
+          "word": "blind",
+          "clean_word": "blind",
+          "phonemes": "bl\u02c8a\u026and",
+          "start": 12.435,
+          "end": 12.877,
+          "duration": 0.442,
+          "frame_ahead_trigger": 12.545
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 12.877,
+          "end": 13.085,
+          "duration": 0.208,
+          "frame_ahead_trigger": 12.987
+        },
+        {
+          "word": "overarching",
+          "clean_word": "overarching",
+          "phonemes": "\u02cco\u028av\u025a\u0279\u02c8\u0251\u02d0\u0279t\u0283\u026a\u014b",
+          "start": 13.085,
+          "end": 13.855,
+          "duration": 0.77,
+          "frame_ahead_trigger": 13.195
+        },
+        {
+          "word": "concepts.",
+          "clean_word": "concepts",
+          "phonemes": "k\u02c8\u0251\u02d0ns\u025bpts",
+          "start": 13.855,
+          "end": 14.495,
+          "duration": 0.64,
+          "frame_ahead_trigger": 13.965
+        }
+      ],
+      "audio_duration": 8.66,
+      "slot_duration": 8.81
+    },
+    {
+      "beat_id": 3,
+      "text": "Enter GraphRAG. Instead of raw text chunks. An LLM extracts an entity knowledge graph. Grouping closely related nodes into semantic communities.",
+      "visual_focus": "Raw text documents morphing into glowing nodes, with lines connecting entities into modular, color-coded clusters.",
+      "highlight_words": {
+        "GraphRAG": "#10B981",
+        "entity knowledge graph": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "GraphRAG",
+        "action_verb": "clusters",
+        "direct_object": "entity graph",
+        "anchor_word": "communities",
+        "semantic_role": "eureka"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "FROM LOCAL TO GLOB ARCHITECTURE",
+        "sub": "Raw text documents morphing into glowing nodes, with lines connec",
+        "params": {
+          "svg_path": null,
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.16130/chalkboard_figures/fig_1_Level0Multihop.png",
+          "arxiv_id": "2404.16130",
+          "title": "FROM LOCAL TO GLOB ARCHITECTURE",
+          "sub": "Raw text documents morphing into glowing nodes, with lines connec",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Level0Multihop",
+          "preferred_renderer": "raster"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": null,
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.16130/chalkboard_figures/fig_1_Level0Multihop.png",
+        "arxiv_id": "2404.16130",
+        "title": "FROM LOCAL TO GLOB ARCHITECTURE",
+        "sub": "Raw text documents morphing into glowing nodes, with lines connec",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Level0Multihop",
+        "preferred_renderer": "raster"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 14.72,
+      "end": 24.04,
+      "duration": 9.32,
+      "word_timings": [
+        {
+          "word": "Enter",
+          "clean_word": "enter",
+          "phonemes": "\u02c8\u025bnt\u025a",
+          "start": 14.731,
+          "end": 14.961,
+          "duration": 0.23,
+          "frame_ahead_trigger": 14.991
+        },
+        {
+          "word": "GraphRAG.",
+          "clean_word": "graphrag",
+          "phonemes": "\u0261\u0279\u02c8\u00e6f \u02cc\u0251\u02d0\u0279\u0279\u02cce\u026ad\u0292\u02c8i\u02d0",
+          "start": 14.961,
+          "end": 16.306,
+          "duration": 1.345,
+          "frame_ahead_trigger": 15.221
+        },
+        {
+          "word": "Instead",
+          "clean_word": "instead",
+          "phonemes": "\u026anst\u02c8\u025bd",
+          "start": 16.306,
+          "end": 16.601,
+          "duration": 0.295,
+          "frame_ahead_trigger": 16.566
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 16.601,
+          "end": 16.691,
+          "duration": 0.09,
+          "frame_ahead_trigger": 16.861
+        },
+        {
+          "word": "raw",
+          "clean_word": "raw",
+          "phonemes": "\u0279\u02c8\u0254\u02d0",
+          "start": 16.691,
+          "end": 16.946,
+          "duration": 0.255,
+          "frame_ahead_trigger": 16.951
+        },
+        {
+          "word": "text",
+          "clean_word": "text",
+          "phonemes": "t\u02c8\u025bkst",
+          "start": 16.946,
+          "end": 17.376,
+          "duration": 0.43,
+          "frame_ahead_trigger": 17.206
+        },
+        {
+          "word": "chunks.",
+          "clean_word": "chunks",
+          "phonemes": "t\u0283\u02c8\u028c\u014bks",
+          "start": 17.376,
+          "end": 17.806,
+          "duration": 0.43,
+          "frame_ahead_trigger": 17.636
+        },
+        {
+          "word": "An",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 17.806,
+          "end": 17.929,
+          "duration": 0.123,
+          "frame_ahead_trigger": 18.066
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 17.929,
+          "end": 18.476,
+          "duration": 0.547,
+          "frame_ahead_trigger": 18.189
+        },
+        {
+          "word": "extracts",
+          "clean_word": "extracts",
+          "phonemes": "\u02c8\u025bkst\u0279\u00e6kts",
+          "start": 18.476,
+          "end": 19.091,
+          "duration": 0.615,
+          "frame_ahead_trigger": 18.736
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 19.091,
+          "end": 19.206,
+          "duration": 0.115,
+          "frame_ahead_trigger": 19.351
+        },
+        {
+          "word": "entity",
+          "clean_word": "entity",
+          "phonemes": "\u02c8\u025bnt\u1d7b\u027ei",
+          "start": 19.206,
+          "end": 19.716,
+          "duration": 0.51,
+          "frame_ahead_trigger": 19.466
+        },
+        {
+          "word": "knowledge",
+          "clean_word": "knowledge",
+          "phonemes": "n\u02c8\u0251\u02d0l\u026ad\u0292",
+          "start": 19.716,
+          "end": 20.121,
+          "duration": 0.405,
+          "frame_ahead_trigger": 19.976
+        },
+        {
+          "word": "graph.",
+          "clean_word": "graph",
+          "phonemes": "\u0261\u0279\u02c8\u00e6f",
+          "start": 20.121,
+          "end": 20.331,
+          "duration": 0.21,
+          "frame_ahead_trigger": 20.381
+        },
+        {
+          "word": "Grouping",
+          "clean_word": "grouping",
+          "phonemes": "\u0261\u0279\u02c8u\u02d0p\u026a\u014b",
+          "start": 20.331,
+          "end": 21.031,
+          "duration": 0.7,
+          "frame_ahead_trigger": 20.591
+        },
+        {
+          "word": "closely",
+          "clean_word": "closely",
+          "phonemes": "kl\u02c8o\u028asli",
+          "start": 21.031,
+          "end": 21.446,
+          "duration": 0.415,
+          "frame_ahead_trigger": 21.291
+        },
+        {
+          "word": "related",
+          "clean_word": "related",
+          "phonemes": "\u0279\u1d7bl\u02c8e\u026a\u027e\u1d7bd",
+          "start": 21.446,
+          "end": 21.956,
+          "duration": 0.51,
+          "frame_ahead_trigger": 21.706
+        },
+        {
+          "word": "nodes",
+          "clean_word": "nodes",
+          "phonemes": "n\u02c8o\u028adz",
+          "start": 21.956,
+          "end": 22.357,
+          "duration": 0.401,
+          "frame_ahead_trigger": 22.216
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 22.357,
+          "end": 22.591,
+          "duration": 0.234,
+          "frame_ahead_trigger": 22.617
+        },
+        {
+          "word": "semantic",
+          "clean_word": "semantic",
+          "phonemes": "s\u0259m\u02c8\u00e6nt\u026ak",
+          "start": 22.591,
+          "end": 23.211,
+          "duration": 0.62,
+          "frame_ahead_trigger": 22.851
+        },
+        {
+          "word": "communities.",
+          "clean_word": "communities",
+          "phonemes": "k\u0259mj\u02c8u\u02d0n\u1d7b\u027eiz",
+          "start": 23.211,
+          "end": 23.956,
+          "duration": 0.745,
+          "frame_ahead_trigger": 23.471
+        }
+      ],
+      "audio_duration": 9.32,
+      "slot_duration": 9.47
+    },
+    {
+      "beat_id": 4,
+      "text": "Pre-generated community summaries compress these clusters. When you ask broad questions. The model summarizes those partial summaries into one coherent picture.",
+      "visual_focus": "Hierarchical summary cards stacking upward from entity clusters, converging into a single unified global insight card.",
+      "highlight_words": {
+        "community summaries": "#38BDF8",
+        "coherent picture": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Community summaries",
+        "action_verb": "synthesize",
+        "direct_object": "macro insights",
+        "anchor_word": "hierarchical",
+        "semantic_role": "mechanism"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: FROM LOCAL TO GLOB",
+        "sub": "Hierarchical summary cards stacking upward from entity clusters, ",
+        "params": {
+          "title": "KERNEL CODE: FROM LOCAL TO GLOB",
+          "sub": "Hierarchical summary cards stacking upward from entity clusters, ",
+          "filename": "graph_rag_index.py",
+          "language": "python",
+          "lines": [
+            "def build_community_summary(community_nodes):",
+            "graph = extract_entities(community_nodes)",
+            "summary = summarize_community(graph)",
+            "return summary"
+          ],
+          "highlight_lines": [
+            2,
+            3
+          ],
+          "trace_register": "\u26a1 HIERARCHICAL GRAPH SUMMARIZATION",
+          "delta_badge": "Summarizing entity communities for global context"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: FROM LOCAL TO GLOB",
+        "sub": "Hierarchical summary cards stacking upward from entity clusters, ",
+        "filename": "graph_rag_index.py",
+        "language": "python",
+        "lines": [
+          "def build_community_summary(community_nodes):",
+          "graph = extract_entities(community_nodes)",
+          "summary = summarize_community(graph)",
+          "return summary"
+        ],
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "trace_register": "\u26a1 HIERARCHICAL GRAPH SUMMARIZATION",
+        "delta_badge": "Summarizing entity communities for global context"
+      },
+      "start": 24.19,
+      "end": 33.28,
+      "duration": 9.09,
+      "word_timings": [
+        {
+          "word": "Pre-generated",
+          "clean_word": "pregenerated",
+          "phonemes": "p\u0279\u026ad\u0292\u02c8\u025bn\u025a\u0279\u02cce\u026a\u027e\u1d7bd",
+          "start": 24.224,
+          "end": 25.214,
+          "duration": 0.99,
+          "frame_ahead_trigger": 24.634
+        },
+        {
+          "word": "community",
+          "clean_word": "community",
+          "phonemes": "k\u0259mj\u02c8u\u02d0n\u1d7b\u027ei",
+          "start": 25.214,
+          "end": 25.889,
+          "duration": 0.675,
+          "frame_ahead_trigger": 25.624
+        },
+        {
+          "word": "summaries",
+          "clean_word": "summaries",
+          "phonemes": "s\u02c8\u028cm\u025a\u0279iz",
+          "start": 25.889,
+          "end": 26.279,
+          "duration": 0.39,
+          "frame_ahead_trigger": 26.299
+        },
+        {
+          "word": "compress",
+          "clean_word": "compress",
+          "phonemes": "k\u0259mp\u0279\u02c8\u025bs",
+          "start": 26.279,
+          "end": 26.799,
+          "duration": 0.52,
+          "frame_ahead_trigger": 26.689
+        },
+        {
+          "word": "these",
+          "clean_word": "these",
+          "phonemes": "\u00f0\u02c8i\u02d0z",
+          "start": 26.799,
+          "end": 27.044,
+          "duration": 0.245,
+          "frame_ahead_trigger": 27.209
+        },
+        {
+          "word": "clusters.",
+          "clean_word": "clusters",
+          "phonemes": "kl\u02c8\u028cst\u025az",
+          "start": 27.044,
+          "end": 27.579,
+          "duration": 0.535,
+          "frame_ahead_trigger": 27.454
+        },
+        {
+          "word": "When",
+          "clean_word": "when",
+          "phonemes": "w\u02cc\u025bn",
+          "start": 27.579,
+          "end": 27.879,
+          "duration": 0.3,
+          "frame_ahead_trigger": 27.989
+        },
+        {
+          "word": "you",
+          "clean_word": "you",
+          "phonemes": "ju\u02d0",
+          "start": 27.879,
+          "end": 27.959,
+          "duration": 0.08,
+          "frame_ahead_trigger": 28.289
+        },
+        {
+          "word": "ask",
+          "clean_word": "ask",
+          "phonemes": "\u02c8\u00e6sk",
+          "start": 27.959,
+          "end": 28.195,
+          "duration": 0.236,
+          "frame_ahead_trigger": 28.369
+        },
+        {
+          "word": "broad",
+          "clean_word": "broad",
+          "phonemes": "b\u0279\u02c8\u0254\u02d0d",
+          "start": 28.195,
+          "end": 28.654,
+          "duration": 0.459,
+          "frame_ahead_trigger": 28.605
+        },
+        {
+          "word": "questions.",
+          "clean_word": "questions",
+          "phonemes": "kw\u02c8\u025bst\u0283\u0259nz",
+          "start": 28.654,
+          "end": 29.144,
+          "duration": 0.49,
+          "frame_ahead_trigger": 29.064
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 29.144,
+          "end": 29.262,
+          "duration": 0.119,
+          "frame_ahead_trigger": 29.554
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 29.262,
+          "end": 29.684,
+          "duration": 0.422,
+          "frame_ahead_trigger": 29.672
+        },
+        {
+          "word": "summarizes",
+          "clean_word": "summarizes",
+          "phonemes": "s\u02c8\u028cm\u025a\u0279\u02cca\u026az\u1d7bz",
+          "start": 29.684,
+          "end": 30.349,
+          "duration": 0.665,
+          "frame_ahead_trigger": 30.094
+        },
+        {
+          "word": "those",
+          "clean_word": "those",
+          "phonemes": "\u00f0\u02c8o\u028az",
+          "start": 30.349,
+          "end": 30.779,
+          "duration": 0.43,
+          "frame_ahead_trigger": 30.759
+        },
+        {
+          "word": "partial",
+          "clean_word": "partial",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279\u0283\u0259l",
+          "start": 30.779,
+          "end": 31.194,
+          "duration": 0.415,
+          "frame_ahead_trigger": 31.189
+        },
+        {
+          "word": "summaries",
+          "clean_word": "summaries",
+          "phonemes": "s\u02c8\u028cm\u025a\u0279iz",
+          "start": 31.194,
+          "end": 31.709,
+          "duration": 0.515,
+          "frame_ahead_trigger": 31.604
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 31.709,
+          "end": 31.869,
+          "duration": 0.16,
+          "frame_ahead_trigger": 32.119
+        },
+        {
+          "word": "one",
+          "clean_word": "one",
+          "phonemes": "w\u02cc\u028cn",
+          "start": 31.869,
+          "end": 32.279,
+          "duration": 0.41,
+          "frame_ahead_trigger": 32.279
+        },
+        {
+          "word": "coherent",
+          "clean_word": "coherent",
+          "phonemes": "ko\u028ah\u02c8\u026a\u0279\u0259nt",
+          "start": 32.279,
+          "end": 32.784,
+          "duration": 0.505,
+          "frame_ahead_trigger": 32.689
+        },
+        {
+          "word": "picture.",
+          "clean_word": "picture",
+          "phonemes": "p\u02c8\u026akt\u0283\u025a",
+          "start": 32.784,
+          "end": 33.174,
+          "duration": 0.39,
+          "frame_ahead_trigger": 33.194
+        }
+      ],
+      "audio_duration": 9.09,
+      "slot_duration": 9.24
+    },
+    {
+      "beat_id": 5,
+      "text": "On complex million-token sensemaking datasets. GraphRAG scored ninety-two percent quality. That is a crushing forty-one percent leap over vector search.",
+      "visual_focus": "Horizontal benchmark bars showing GraphRAG surging to 92% quality score while traditional vector RAG stagnates at 65%.",
+      "highlight_words": {
+        "ninety-two percent": "#10B981",
+        "forty-one percent leap": "#34D399"
+      },
+      "svo_action": {
+        "subject": "GraphRAG",
+        "action_verb": "outperforms",
+        "direct_object": "vector baseline",
+        "anchor_word": "leap",
+        "semantic_role": "payoff"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: GLOBAL SENSEMAKING",
+        "sub": "Horizontal benchmark bars showing GraphRAG surging to",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: GLOBAL SENSEMAKING",
+          "sub": "Horizontal benchmark bars showing GraphRAG surging to",
+          "metric_name": "Quality Score",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "GraphRAG",
+              "value": 92.0,
+              "display_val": "92%",
+              "is_hero": true,
+              "color": "#34D399"
+            },
+            {
+              "name": "Vector RAG",
+              "value": 65.0,
+              "display_val": "65%",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +41% QUALITY IMPROVEMENT"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: GLOBAL SENSEMAKING",
+        "sub": "Horizontal benchmark bars showing GraphRAG surging to",
+        "metric_name": "Quality Score",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "GraphRAG",
+            "value": 92.0,
+            "display_val": "92%",
+            "is_hero": true,
+            "color": "#34D399"
+          },
+          {
+            "name": "Vector RAG",
+            "value": 65.0,
+            "display_val": "65%",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +41% QUALITY IMPROVEMENT"
+      },
+      "start": 33.43,
+      "end": 42.8,
+      "duration": 9.37,
+      "word_timings": [
+        {
+          "word": "On",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 33.437,
+          "end": 33.557,
+          "duration": 0.12,
+          "frame_ahead_trigger": 33.997
+        },
+        {
+          "word": "complex",
+          "clean_word": "complex",
+          "phonemes": "k\u02c8\u0251\u02d0mpl\u025bks",
+          "start": 33.557,
+          "end": 34.267,
+          "duration": 0.71,
+          "frame_ahead_trigger": 34.117
+        },
+        {
+          "word": "million-token",
+          "clean_word": "milliontoken",
+          "phonemes": "m\u02c8\u026ali\u0259nt\u02cco\u028ak\u0259n",
+          "start": 34.267,
+          "end": 34.972,
+          "duration": 0.705,
+          "frame_ahead_trigger": 34.827
+        },
+        {
+          "word": "sensemaking",
+          "clean_word": "sensemaking",
+          "phonemes": "s\u02c8\u025bns\u026am\u02cce\u026ak\u026a\u014b",
+          "start": 34.972,
+          "end": 35.812,
+          "duration": 0.84,
+          "frame_ahead_trigger": 35.532
+        },
+        {
+          "word": "datasets.",
+          "clean_word": "datasets",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259s\u02cc\u025bts",
+          "start": 35.812,
+          "end": 36.41,
+          "duration": 0.598,
+          "frame_ahead_trigger": 36.372
+        },
+        {
+          "word": "GraphRAG",
+          "clean_word": "graphrag",
+          "phonemes": "\u0261\u0279\u02c8\u00e6f \u02cc\u0251\u02d0\u0279\u0279\u02cce\u026ad\u0292\u02c8i\u02d0",
+          "start": 36.41,
+          "end": 37.422,
+          "duration": 1.012,
+          "frame_ahead_trigger": 36.97
+        },
+        {
+          "word": "scored",
+          "clean_word": "scored",
+          "phonemes": "sk\u02c8\u0254\u02d0\u0279d",
+          "start": 37.422,
+          "end": 38.027,
+          "duration": 0.605,
+          "frame_ahead_trigger": 37.982
+        },
+        {
+          "word": "ninety-two",
+          "clean_word": "ninetytwo",
+          "phonemes": "n\u02cca\u026ant\u026at\u02c8u\u02d0",
+          "start": 38.027,
+          "end": 38.642,
+          "duration": 0.615,
+          "frame_ahead_trigger": 38.587
+        },
+        {
+          "word": "percent",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 38.642,
+          "end": 38.977,
+          "duration": 0.335,
+          "frame_ahead_trigger": 39.202
+        },
+        {
+          "word": "quality.",
+          "clean_word": "quality",
+          "phonemes": "kw\u02c8\u0254l\u1d7b\u027ei",
+          "start": 38.977,
+          "end": 39.442,
+          "duration": 0.465,
+          "frame_ahead_trigger": 39.537
+        },
+        {
+          "word": "That",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 39.442,
+          "end": 39.675,
+          "duration": 0.233,
+          "frame_ahead_trigger": 40.002
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 39.675,
+          "end": 39.832,
+          "duration": 0.157,
+          "frame_ahead_trigger": 40.235
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 39.832,
+          "end": 39.972,
+          "duration": 0.14,
+          "frame_ahead_trigger": 40.392
+        },
+        {
+          "word": "crushing",
+          "clean_word": "crushing",
+          "phonemes": "k\u0279\u02c8\u028c\u0283\u026a\u014b",
+          "start": 39.972,
+          "end": 40.387,
+          "duration": 0.415,
+          "frame_ahead_trigger": 40.532
+        },
+        {
+          "word": "forty-one",
+          "clean_word": "fortyone",
+          "phonemes": "f\u02cc\u0254\u02d0\u0279\u027e\u026aw\u02c8\u028cn",
+          "start": 40.387,
+          "end": 40.997,
+          "duration": 0.61,
+          "frame_ahead_trigger": 40.947
+        },
+        {
+          "word": "percent",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 40.997,
+          "end": 41.362,
+          "duration": 0.365,
+          "frame_ahead_trigger": 41.557
+        },
+        {
+          "word": "leap",
+          "clean_word": "leap",
+          "phonemes": "l\u02c8i\u02d0p",
+          "start": 41.362,
+          "end": 41.762,
+          "duration": 0.4,
+          "frame_ahead_trigger": 41.922
+        },
+        {
+          "word": "over",
+          "clean_word": "over",
+          "phonemes": "\u02c8o\u028av\u025a",
+          "start": 41.762,
+          "end": 42.017,
+          "duration": 0.255,
+          "frame_ahead_trigger": 42.322
+        },
+        {
+          "word": "vector",
+          "clean_word": "vector",
+          "phonemes": "v\u02c8\u025bkt\u025a",
+          "start": 42.017,
+          "end": 42.397,
+          "duration": 0.38,
+          "frame_ahead_trigger": 42.577
+        },
+        {
+          "word": "search.",
+          "clean_word": "search",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283",
+          "start": 42.397,
+          "end": 42.707,
+          "duration": 0.31,
+          "frame_ahead_trigger": 42.957
+        }
+      ],
+      "audio_duration": 9.37,
+      "slot_duration": 9.52
+    },
+    {
+      "beat_id": 6,
+      "text": "Never let your search pipeline miss the forest for the trees. Follow machinoAI for daily breakdowns of frontier AI architectures.",
+      "visual_focus": "The entire knowledge graph illuminating like a connected constellation with the machinoAI brand emblem pulsing in the center.",
+      "highlight_words": {
+        "forest for the trees": "#38BDF8",
+        "machinoAI": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Graph networks",
+        "action_verb": "illuminate",
+        "direct_object": "entire corpus",
+        "anchor_word": "forest",
+        "semantic_role": "resolution"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "THE COMPLETE PICTURE",
+        "sub": "From Local Embeddings to Global Understanding",
+        "accent_color": "#38BDF8",
+        "params": {
+          "field_title": "Model Discovery",
+          "source_label": "RAG Input",
+          "target_label": "Final Intelligence",
+          "stream_formula": "d/dt(Knowledge) = GraphRAG"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 42.95,
+      "end": 50.84,
+      "duration": 7.89,
+      "word_timings": [
+        {
+          "word": "Never",
+          "clean_word": "never",
+          "phonemes": "n\u02c8\u025bv\u025a",
+          "start": 42.962,
+          "end": 43.207,
+          "duration": 0.245,
+          "frame_ahead_trigger": 43.672
+        },
+        {
+          "word": "let",
+          "clean_word": "let",
+          "phonemes": "l\u02c8\u025bt",
+          "start": 43.207,
+          "end": 43.447,
+          "duration": 0.24,
+          "frame_ahead_trigger": 43.917
+        },
+        {
+          "word": "your",
+          "clean_word": "your",
+          "phonemes": "j\u028a\u0279",
+          "start": 43.447,
+          "end": 43.652,
+          "duration": 0.205,
+          "frame_ahead_trigger": 44.157
+        },
+        {
+          "word": "search",
+          "clean_word": "search",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283",
+          "start": 43.652,
+          "end": 44.007,
+          "duration": 0.355,
+          "frame_ahead_trigger": 44.362
+        },
+        {
+          "word": "pipeline",
+          "clean_word": "pipeline",
+          "phonemes": "p\u02c8a\u026apla\u026an",
+          "start": 44.007,
+          "end": 44.567,
+          "duration": 0.56,
+          "frame_ahead_trigger": 44.717
+        },
+        {
+          "word": "miss",
+          "clean_word": "miss",
+          "phonemes": "m\u02c8\u026as",
+          "start": 44.567,
+          "end": 44.865,
+          "duration": 0.298,
+          "frame_ahead_trigger": 45.277
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 44.865,
+          "end": 45.027,
+          "duration": 0.162,
+          "frame_ahead_trigger": 45.575
+        },
+        {
+          "word": "forest",
+          "clean_word": "forest",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279\u026ast",
+          "start": 45.027,
+          "end": 45.447,
+          "duration": 0.42,
+          "frame_ahead_trigger": 45.737
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 45.447,
+          "end": 45.737,
+          "duration": 0.29,
+          "frame_ahead_trigger": 46.157
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 45.737,
+          "end": 45.847,
+          "duration": 0.11,
+          "frame_ahead_trigger": 46.447
+        },
+        {
+          "word": "trees.",
+          "clean_word": "trees",
+          "phonemes": "t\u0279\u02c8i\u02d0z",
+          "start": 45.847,
+          "end": 46.215,
+          "duration": 0.368,
+          "frame_ahead_trigger": 46.557
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 46.215,
+          "end": 46.672,
+          "duration": 0.457,
+          "frame_ahead_trigger": 46.925
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 46.672,
+          "end": 47.627,
+          "duration": 0.955,
+          "frame_ahead_trigger": 47.382
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 47.627,
+          "end": 47.907,
+          "duration": 0.28,
+          "frame_ahead_trigger": 48.337
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 47.907,
+          "end": 48.242,
+          "duration": 0.335,
+          "frame_ahead_trigger": 48.617
+        },
+        {
+          "word": "breakdowns",
+          "clean_word": "breakdowns",
+          "phonemes": "b\u0279\u02c8e\u026akda\u028anz",
+          "start": 48.242,
+          "end": 48.932,
+          "duration": 0.69,
+          "frame_ahead_trigger": 48.952
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 48.932,
+          "end": 49.137,
+          "duration": 0.205,
+          "frame_ahead_trigger": 49.642
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 49.137,
+          "end": 49.612,
+          "duration": 0.475,
+          "frame_ahead_trigger": 49.847
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 49.612,
+          "end": 49.862,
+          "duration": 0.25,
+          "frame_ahead_trigger": 50.322
+        },
+        {
+          "word": "architectures.",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 49.862,
+          "end": 50.757,
+          "duration": 0.895,
+          "frame_ahead_trigger": 50.572
+        }
+      ],
+      "audio_duration": 7.89,
+      "slot_duration": 7.89
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$N_{\\mathrm{tokens}} = 1 \\times 10^6 \\implies \\mathrm{Loss}_{\\mathrm{context}} \\approx 0.82$",
+      "filename": "graph_rag_part_5_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "N_{tokens}",
+          "label": "Dataset Size"
+        },
+        {
+          "term": "Loss_{context}",
+          "label": "Contextual Coherence"
+        }
+      ],
+      "svg_filename": "graph_rag_part_5_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(\\mathrm{Retrival}) \\ll \\mathrm{Query}_{\\mathrm{global}}$",
+      "filename": "graph_rag_part_5_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "Retrival",
+          "label": "Na\u00efve Search"
+        },
+        {
+          "term": "Query_{global}",
+          "label": "GlobalSense Task"
+        }
+      ],
+      "svg_filename": "graph_rag_part_5_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathcal{G} = \\{V, E\\} \\to \\mathrm{Comm}_{i} \\subset \\mathcal{G}$",
+      "filename": "graph_rag_part_5_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\mathcal{G}",
+          "label": "Entity Knowledge Graph"
+        },
+        {
+          "term": "Comm_{i}",
+          "label": "Community Summaries"
+        }
+      ],
+      "svg_filename": "graph_rag_part_5_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$R_{\\mathrm{final}} = \\mathrm{LLM}(\\sum_{i} \\mathrm{Summary}(\\mathrm{Comm}_{i}))$",
+      "filename": "graph_rag_part_5_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "R_{final}",
+          "label": "GlobalResponse"
+        },
+        {
+          "term": "Comm_{i}",
+          "label": "Community Input"
+        }
+      ],
+      "svg_filename": "graph_rag_part_5_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\Delta \\mathrm{Diversity} = \\frac{\\mathrm{Score}_{GRAG} - \\mathrm{Score}_{V-RAG}}{\\mathrm{Score}_{V-RAG}}$",
+      "filename": "graph_rag_part_5_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\Delta Diversity",
+          "label": "Performance Boost"
+        }
+      ],
+      "svg_filename": "graph_rag_part_5_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "semantic_clusters",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "VECTOR",
+          "color": "#EF4444",
+          "items": [
+            "embeddings",
+            "chunks",
+            "noise"
+          ]
+        },
+        {
+          "name": "GRAPH",
+          "color": "#34D399",
+          "items": [
+            "entities",
+            "nodes",
+            "relations"
+          ]
+        },
+        {
+          "name": "SUMMARY",
+          "color": "#F59E0B",
+          "items": [
+            "global",
+            "coherence",
+            "themes"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Theme\"",
+        "target_cluster": "GRAPH",
+        "token": "\"Theme\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Context Loss",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Fragmented Retrieval",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "GraphRAG",
+    "model_a_specs": [
+      "Entity-Graph Extraction",
+      "Hierarchical Summarization",
+      "Query-Focused"
+    ],
+    "model_b": "Vector RAG",
+    "model_b_specs": [
+      "Chunk Retrieval",
+      "Cosine Similarity",
+      "Point-in-Time"
+    ],
+    "divide_title": "SEARCH VS SYNTHESIS DIVIDE",
+    "model_a_stat": "92%",
+    "model_a_stat_label": "Comprehensiveness Score",
+    "model_b_stat": "65%",
+    "model_b_stat_label": "Baseline Baseline Score",
+    "efficiency_badge": "\u26a1 +41% QUALITATIVE GAIN",
+    "benchmarks": [
+      {
+        "name": "Comprehensiveness",
+        "score_a": "92%",
+        "score_b": "65%"
+      },
+      {
+        "name": "Diversity",
+        "score_a": "High",
+        "score_b": "Low"
+      },
+      {
+        "name": "Scaling",
+        "score_a": "Global",
+        "score_b": "Local"
+      }
+    ],
+    "scale_metric": "1,000,000",
+    "scale_label": "Token Context Window",
+    "bottleneck_title": "MONOLITHIC VECTOR BRUTE-FORCE",
+    "bottleneck_desc": "Fragmented semantic understanding",
+    "solution_title": "HIERARCHICAL GRAPH INDEXING",
+    "solution_components": "Community-based knowledge extraction",
+    "mechanism_title": "COMMUNITY SUMMARIZATION KERNELS",
+    "payoff_stat": "92%",
+    "payoff_label": "COMPREHENSIVENESS",
+    "payoff_sub": "Outperforming traditional vector RAG baselines",
+    "payoff_hero_stat": 92.0,
+    "payoff_hero_label": "GraphRAG Synthesis",
+    "payoff_base_stat": 65.0,
+    "payoff_base_label": "Dense Retrieval",
+    "payoff_delta_badge": "\u26a1 +41% THEMATIC RECOVERY",
+    "challenger": "GraphRAG",
+    "incumbent": "Vector RAG"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: GLOBAL SENSEMAKING",
+    "metric_name": "Quality Score",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "GraphRAG",
+        "value": 92.0,
+        "display_val": "92%",
+        "is_hero": true,
+        "color": "#34D399"
+      },
+      {
+        "name": "Vector RAG",
+        "value": 65.0,
+        "display_val": "65%",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +41% QUALITY IMPROVEMENT",
+    "radar_axes": [
+      "Comprehensiveness",
+      "Diversity",
+      "Global Reasoning",
+      "Contextual Depth",
+      "Syntactic Accuracy"
+    ]
+  },
+  "code_snippet": {
+    "filename": "graph_rag_index.py",
+    "language": "python",
+    "lines": [
+      "def build_community_summary(community_nodes):",
+      "graph = extract_entities(community_nodes)",
+      "summary = summarize_community(graph)",
+      "return summary"
+    ],
+    "highlight_lines": [
+      2,
+      3
+    ],
+    "trace_register": "\u26a1 HIERARCHICAL GRAPH SUMMARIZATION",
+    "explanation": "Summarizing entity communities for global context"
+  },
+  "arxiv_id": "2404.16130",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "Level0Multihop",
+      "caption": "Level0Multihop",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.16130/source/Level0Multihop.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.16130/chalkboard_figures/fig_1_Level0Multihop.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 25
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "Level1Multihop",
+      "caption": "Level1Multihop",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.16130/source/Level1Multihop.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.16130/chalkboard_figures/fig_2_Level1Multihop.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 25
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 9.3,
+    "final_retention_hook_score": 9.1,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Dude, this actually clicked immediately. I've personally run into that exact issue where I ask a naive RAG setup 'summarize the main conflict' across 50 uploaded docs and it just pulls random chunks with high cosine similarity that don't answer the question at all. The soda straw metaphor works because you immediately ground it with real terms like knowledge graphs and community summaries instead of dumbing it down into magic fairy dust."
+  },
+  "thriller_metadata": {
+    "engine_version": "7.0",
+    "narrative_style": "intellectual_thriller",
+    "acts": {
+      "act_1_hook": {
+        "beat": 1,
+        "role": "pattern_interrupt_hook"
+      },
+      "act_2_villain": {
+        "beat": 2,
+        "role": "villain_bottleneck"
+      },
+      "act_3_eureka": {
+        "beats": [
+          3,
+          4
+        ],
+        "role": "eureka_mechanism"
+      },
+      "act_4_paradigm_shift": {
+        "beats": [
+          5,
+          6
+        ],
+        "role": "paradigm_shift_open_loop"
+      }
+    }
+  },
+  "hook_gating": {
+    "selected_hook": "How did researchers use From Local to Global to achieve a 92% leap in retrieval accuracy?",
+    "verdict": 55,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 68,
+      "STAKES": 36,
+      "CURIOSITY": 59,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 10,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "How did researchers use From Local to Global to achieve a 92% leap in retrieval accuracy?",
+        "verdict": 55,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when your vector database only sees isolated chunks? From Local to Global fixes retrieval with a 92% boost.",
+        "verdict": 54,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Does From Local to Global actually outperform standard vector retrieval by 92%, or is it just hype?",
+        "verdict": 54,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard RAG has a fatal context fragmentation flaw, but From Local to Global delivers a 92% lead.",
+        "verdict": 53,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Why does standard vector search break down when summarizing an entire corpus? Enter From Local to Global.",
+        "verdict": 43,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Ask standard vector RAG for the main themes of your dataset. It panics, returning five completely disconnected paragraphs.",
+        "verdict": 40,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why should engineers care about From Local to Global? Because ask standard vector RAG for the main themes of your dataset. It panics, returning five completely disconnected paragraphs.",
+        "verdict": 37,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until From Local to Global proved: however, RAG fails on global questions directed at an entire text corpus, such as \"What are the main themes in the dataset?\", since this is inherently a query-focused summarization (QFS) task, rather than an explicit retrieval task.",
+        "verdict": 29,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is From Local to Global a major breakthrough? Because the use of retrieval-augmented generation (RAG) to retrieve relevant information from an external knowledge source enables large language models (LLMs) to answer questions over private and/or previously unseen document collections.",
+        "verdict": 25,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: The use of retrieval-augmented generation (RAG) to retrieve relevant information from an external knowledge source enables large language models (LLMs) to answer questions over private and/or previously unseen document collections.",
+        "verdict": 24,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "GraphRAG",
+        "model_a_score": "92%",
+        "model_b_name": "Vector RAG",
+        "model_b_score": "65%",
+        "delta_label": "\u26a1 +41% QUALITATIVE GAIN"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "oG82W8MDqT0",
+    "shorts_url": "https://youtube.com/shorts/oG82W8MDqT0",
+    "studio_url": "https://studio.youtube.com/video/oG82W8MDqT0/edit",
+    "title": "From Local to Global Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/graph_rag_part_5_poster.png",
+    "custom_thumbnail_set": false
+  }
+}

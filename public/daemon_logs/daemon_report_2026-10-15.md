@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-15 | **Timestamp:** 2026-10-15 06:20:24 UTC
+**Date:** 2026-10-15 | **Timestamp:** 2026-10-15 10:14:31 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: GraphRAG: Part 4 - Generating Multi-Level Community Summaries
-- **Topic Queue Part:** `graphrag_part_4_community_summaries_pipeline` (arXiv: [2404.16130](https://arxiv.org/abs/2404.16130))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/hsNHlSEWjTc](https://youtube.com/shorts/hsNHlSEWjTc) (`hsNHlSEWjTc`)
-- **High-CTR Poster:** [graph_rag_community_summaries_poster.png](public/thumbnails/graph_rag_community_summaries_poster.png)
+### Reel 1: GraphRAG: Part 5 - GraphRAG vs Vector RAG vs Long-Context LLMs
+- **Topic Queue Part:** `graphrag_part_5_benchmark_showdown` (arXiv: [2404.16130](https://arxiv.org/abs/2404.16130))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/oG82W8MDqT0](https://youtube.com/shorts/oG82W8MDqT0) (`oG82W8MDqT0`)
+- **High-CTR Poster:** [graph_rag_part_5_poster.png](public/thumbnails/graph_rag_part_5_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GraphRAG Mini-Series 4/5: GraphRAG: Part 4 - Generating Multi-Level Community Summaries*
-- **Everyday Analogy:** *Bottom-up summarization architecture: synthesizing low-level graph clusters into high-level global topic reports.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_graph_rag_community_summaries_architecture_breakdown.mp4`
+- **Category:** `benchmark_news`
+- **Editorial Hook:** *GraphRAG Mini-Series 5/5: GraphRAG: Part 5 - GraphRAG vs Vector RAG vs Long-Context LLMs*
+- **Everyday Analogy:** *Empirical showdown: 70%+ improvement in comprehensiveness and diversity on global query benchmarks.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_graph_rag_part_5_benchmark_news.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
