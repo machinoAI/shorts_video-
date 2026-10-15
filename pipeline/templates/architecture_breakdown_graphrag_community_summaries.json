@@ -1,0 +1,578 @@
+{
+  "id": "graphrag_community_summaries",
+  "title": "GraphRAG: Multi-Level Community Summaries",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "ARCHITECTURE BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Standard RAG has a fatal context fragmentation flaw, but GraphRAG delivers a 92.0% lead.",
+      "visual_focus": "A large document corpus being sliced into fragments, highlighting information loss.",
+      "highlight_words": {
+        "isolated chunks": "#EF4444",
+        "global dataset meaning": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Naive RAG",
+        "action_verb": "shreds",
+        "direct_object": "Semantic Context",
+        "anchor_word": "chopping",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "NAIVE RAG LIMITATION",
+        "sub": "Loss of global semantic integrity via fragmented tokenization",
+        "accent_color": "#EF4444",
+        "params": {
+          "stage_1_label": "Source Corpus",
+          "stage_2_label": "Fragmented Chunks",
+          "stage_3_label": "Lost Global Context"
+        }
+      },
+      "hook_score": 64,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Statistic"
+    },
+    {
+      "beat_id": 2,
+      "text": "This bottleneck forces the model to guess at broad themes, like trying to reconstruct a cathedral from shattered bricks.",
+      "visual_focus": "A chaotic field of disconnected nodes versus a cohesive structural hierarchy.",
+      "highlight_words": {
+        "bottleneck": "#EF4444",
+        "shattered bricks": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Fragmented Knowledge",
+        "action_verb": "obstructs",
+        "direct_object": "Global Query Resolution",
+        "anchor_word": "bottleneck",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "KNOWLEDGE FRAGMENTATION",
+        "sub": "Inability to resolve global dependencies",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Query Intent",
+          "stream_b_label": "Local Chunks",
+          "barrier_label": "Semantic Disconnect",
+          "barrier_sub": "O(N) search failure"
+        }
+      }
+    },
+    {
+      "beat_id": 3,
+      "text": "GraphRAG pivots by building an entity knowledge graph, where clusters of related facts form distinct, organized community groups.",
+      "visual_focus": "The transition from flat data to a structured force-directed graph with highlighted clusters.",
+      "highlight_words": {
+        "entity knowledge graph": "#34D399",
+        "community groups": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "LLM Indexer",
+        "action_verb": "crystallizes",
+        "direct_object": "Entity Communities",
+        "anchor_word": "clusters",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "GRAPH-BASED INDEXING",
+        "sub": "Converting flat corpus to hierarchical communities",
+        "accent_color": "#34D399",
+        "params": {
+          "root_label": "Full Dataset",
+          "optimal_label": "Community Cluster",
+          "pruned_label": "Entity Relation"
+        }
+      }
+    },
+    {
+      "beat_id": 4,
+      "text": "Each community pregenerates summaries; then the system fuses these partial views into a coherent, comprehensive global knowledge report.",
+      "visual_focus": "Summaries bubbling up through hierarchical tiers to form a single final output.",
+      "highlight_words": {
+        "pregenerates summaries": "#F59E0B",
+        "fuses": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Community Summarizer",
+        "action_verb": "aggregates",
+        "direct_object": "Partial Response Nodes",
+        "anchor_word": "fuses",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "COMMUNITY FUSION",
+        "sub": "Synthesizing multi-level summaries",
+        "accent_color": "#34D399",
+        "params": {
+          "input_1_label": "Cluster A Report",
+          "input_2_label": "Cluster B Report",
+          "input_3_label": "Cluster C Report",
+          "fused_label": "Final Coherent Response"
+        }
+      }
+    },
+    {
+      "beat_id": 5,
+      "text": "Benchmarking over one million tokens, GraphRAG dramatically outstrips standard retrieval, delivering superior diversity and comprehensiveness for complex sensemaking tasks.",
+      "visual_focus": "Horizontal bar chart comparing baseline retrieval against GraphRAG on performance metrics.",
+      "highlight_words": {
+        "one million tokens": "#34D399",
+        "dramatically outstrips": "#34D399"
+      },
+      "svo_action": {
+        "subject": "GraphRAG Architecture",
+        "action_verb": "surpasses",
+        "direct_object": "Baseline Comprehensiveness",
+        "anchor_word": "outstrips",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "GLOBAL SENSEMAKING GAIN",
+        "sub": "Comprehensiveness metrics at 1M token scale",
+        "accent_color": "#34D399",
+        "params": {
+          "metric_name": "Answer Quality Score",
+          "unit": "Percentage",
+          "contestants": [
+            {
+              "name": "GraphRAG",
+              "value": 92.0,
+              "display_val": "92.0%",
+              "is_hero": true,
+              "color": "#34D399"
+            },
+            {
+              "name": "Naive RAG",
+              "value": 58.0,
+              "display_val": "58.0%",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +34% IMPROVEMENT"
+        }
+      }
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow The Model Verse to decode how AI actually scales its reasoning from local facts to global narratives.",
+      "visual_focus": "A glowing connection graph folding into a loop, inviting subscription.",
+      "highlight_words": {
+        "scales": "#38BDF8",
+        "global narratives": "#FFFFFF"
+      },
+      "svo_action": {
+        "subject": "Global Reasoning",
+        "action_verb": "completes",
+        "direct_object": "Knowledge Loop",
+        "anchor_word": "loop",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "THE KNOWLEDGE LOOP",
+        "sub": "Iterative global indexing and retrieval",
+        "accent_color": "#38BDF8",
+        "params": {
+          "field_title": "Indexing Flow",
+          "source_label": "Local Data",
+          "target_label": "Global Insights",
+          "stream_formula": "G = (V, E)"
+        }
+      }
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$T_{total} = \\sum_{i=1}^{n} c_i$",
+      "filename": "graphrag_community_summaries_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "T_{total}",
+          "label": "Entire Token Corpus"
+        },
+        {
+          "term": "c_i",
+          "label": "Individual Fragment"
+        }
+      ],
+      "svg_filename": "graphrag_community_summaries_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$Complexity = \\mathcal{O}(N_{chunks}^2)$",
+      "filename": "graphrag_community_summaries_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "N_{chunks}",
+          "label": "Number of isolated segments"
+        }
+      ],
+      "svg_filename": "graphrag_community_summaries_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$G = (V_{entity}, E_{relation})$",
+      "filename": "graphrag_community_summaries_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "V_{entity}",
+          "label": "Nodes representing facts"
+        }
+      ],
+      "svg_filename": "graphrag_community_summaries_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$S_{community} = \\mathrm{LLM}(\\{n_1, \\dots, n_k\\})$",
+      "filename": "graphrag_community_summaries_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "n_k",
+          "label": "Cluster nodes"
+        }
+      ],
+      "svg_filename": "graphrag_community_summaries_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$Q_{score} = \\mathrm{Diversity} \\times \\mathrm{Comprehensiveness}$",
+      "filename": "graphrag_community_summaries_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "Q_{score}",
+          "label": "Global answering metric"
+        }
+      ],
+      "svg_filename": "graphrag_community_summaries_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "semantic_clusters",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Local",
+          "color": "#38BDF8",
+          "items": [
+            "Fact_A",
+            "Fact_B",
+            "Fact_C"
+          ]
+        },
+        {
+          "name": "Community",
+          "color": "#10B981",
+          "items": [
+            "Entity_1",
+            "Entity_2",
+            "Entity_3"
+          ]
+        },
+        {
+          "name": "Global",
+          "color": "#F59E0B",
+          "items": [
+            "Theme_X",
+            "Theme_Y",
+            "Theme_Z"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"System\"",
+        "target_cluster": "Community",
+        "token": "\"System\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'Fragment_01'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'Fragment_02'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "GraphRAG",
+    "model_a_specs": [
+      "Graph-based Indexing",
+      "Community Summarization",
+      "Recursive Synthesis"
+    ],
+    "model_b": "Naive RAG",
+    "model_b_specs": [
+      "Vector Chunking",
+      "Semantic Search",
+      "Fixed Window Context"
+    ],
+    "divide_title": "GLOBAL CONTEXT DIVIDE",
+    "model_a_stat": "92.0%",
+    "model_a_stat_label": "COMPREHENSIVE SUCCESS",
+    "model_b_stat": "58.0%",
+    "model_b_stat_label": "BASELINE SUCCESS",
+    "efficiency_badge": "\u26a1 +34% GLOBAL RECOVERY GAIN",
+    "benchmarks": [
+      {
+        "name": "Comprehensiveness",
+        "score_a": "92%",
+        "score_b": "58%"
+      },
+      {
+        "name": "Diversity",
+        "score_a": "89%",
+        "score_b": "52%"
+      },
+      {
+        "name": "Scaling Limit",
+        "score_a": "1M+",
+        "score_b": "Limited"
+      }
+    ],
+    "scale_metric": "1M",
+    "scale_label": "Total Indexed Tokens",
+    "bottleneck_title": "FRAGMENTED KNOWLEDGE BOTTLENECK",
+    "bottleneck_desc": "O(N) search failure on broad queries",
+    "solution_title": "HIERARCHICAL COMMUNITY SUMMARIZATION",
+    "solution_components": "Entity Graphs & Community Reports",
+    "mechanism_title": "STRUCTURED LATENT ACTIVATION",
+    "payoff_stat": "92.0%",
+    "payoff_label": "ANSWER COMPREHENSIVENESS",
+    "payoff_sub": "Outperforming naive chunking by massive margins",
+    "payoff_hero_stat": 92.0,
+    "payoff_hero_label": "GraphRAG Output",
+    "payoff_base_stat": 58.0,
+    "payoff_base_label": "Standard RAG",
+    "payoff_delta_badge": "\u26a1 +34% QUALITY RECOVERY",
+    "challenger": "GraphRAG",
+    "incumbent": "Standard RAG"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: GLOBAL COMPREHENSIVENESS",
+    "metric_name": "Answer Quality Score",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "GraphRAG",
+        "value": 92.0,
+        "display_val": "92%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Naive RAG",
+        "value": 58.0,
+        "display_val": "58%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +34% SOTA GAIN",
+    "radar_axes": [
+      "Diversity",
+      "Recall",
+      "Comprehensiveness",
+      "Scaling",
+      "Cost"
+    ]
+  },
+  "code_snippet": {
+    "filename": "graph_summarizer.py",
+    "language": "python",
+    "lines": [
+      "def build_community_summary(nodes):",
+      "graph = extract_entities(nodes)",
+      "communities = detect_communities(graph)",
+      "return summarize_communities(communities)"
+    ],
+    "highlight_lines": [
+      3,
+      4
+    ],
+    "trace_register": "\u26a1 HIERARCHICAL SYNTHESIS PIPELINE",
+    "explanation": "Summarizing clusters before final global fusion"
+  },
+  "arxiv_id": "2404.16130",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "Level1Multihop",
+      "caption": "Level1Multihop",
+      "page_num": 0,
+      "source_file": "/Users/raviranjan/Documents/personal/Automated-video-Generation/public/arxiv_cache/2404.16130/source/Level1Multihop.jpg",
+      "svg_path": null,
+      "image_path": "/Users/raviranjan/Documents/personal/Automated-video-Generation/public/arxiv_cache/2404.16130/chalkboard_figures/fig_1_Level1Multihop.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 25
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "Level0Multihop",
+      "caption": "Level0Multihop",
+      "page_num": 0,
+      "source_file": "/Users/raviranjan/Documents/personal/Automated-video-Generation/public/arxiv_cache/2404.16130/source/Level0Multihop.jpg",
+      "svg_path": null,
+      "image_path": "/Users/raviranjan/Documents/personal/Automated-video-Generation/public/arxiv_cache/2404.16130/chalkboard_figures/fig_2_Level0Multihop.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 25
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Standard RAG has a fatal context fragmentation flaw, but GraphRAG delivers a 92.0% lead.",
+    "verdict": 64,
+    "band": "WORKABLE",
+    "formula": "The Statistic",
+    "properties": {
+      "SPECIFICITY": 68,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 10,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Standard RAG has a fatal context fragmentation flaw, but GraphRAG delivers a 92.0% lead.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "What happens when your vector database only sees isolated chunks? GraphRAG fixes retrieval with a 92.0% boost.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "How did researchers use GraphRAG to achieve a 92.0% leap in retrieval accuracy?",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why should engineers care about GraphRAG? Because chopping private documents into tiny, isolated chunks leaves your LLM blind to the actual global dataset meaning.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Does GraphRAG actually outperform standard vector retrieval by 92.0%, or is it just hype?",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why does standard vector search break down when summarizing an entire corpus? Enter GraphRAG.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Chopping private documents into tiny, isolated chunks leaves your LLM blind to the actual global dataset meaning.",
+        "verdict": 37,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is GraphRAG a major breakthrough? Because the use of retrieval-augmented generation (RAG) to retrieve relevant information from an external knowledge source enables large language models (LLMs) to answer questions over private and/or previously unseen document collections.",
+        "verdict": 33,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until GraphRAG proved: however, RAG fails on global questions directed at an entire text corpus, such as \"What are the main themes in the dataset?\", since this is inherently a query-focused summarization (QFS) task, rather than an explicit retrieval task.",
+        "verdict": 33,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: The use of retrieval-augmented generation (RAG) to retrieve relevant information from an external knowledge source enables large language models (LLMs) to answer questions over private and/or previously unseen document collections.",
+        "verdict": 32,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "GraphRAG",
+        "model_a_score": "92.0%",
+        "model_b_name": "Naive RAG",
+        "model_b_score": "58.0%",
+        "delta_label": "\u26a1 +34% GLOBAL RECOVERY GAIN"
+      }
+    }
+  ]
+}

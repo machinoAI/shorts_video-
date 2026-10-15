@@ -281,11 +281,16 @@ def generate_script(
     paper_context = ""
     if arxiv_meta:
         p_title = arxiv_meta.get("paper_title") or arxiv_meta.get("title", "")
+        angle = arxiv_meta.get("angle") or (arxiv_meta.get("editorial_notes", {}).get("suggested_everyday_analogy") if isinstance(arxiv_meta.get("editorial_notes"), dict) else "")
+        series_info = ""
+        if arxiv_meta.get("series") and arxiv_meta.get("part"):
+            series_info = f"\nSeries Context: {arxiv_meta.get('series')} ({arxiv_meta.get('part')})"
+        angle_info = f"\nSpecific Video Topic Focus / Angle: {angle}" if angle else ""
         paper_context = f"""
 ArXiv Paper Details:
 Title: {p_title}
 Authors: {', '.join(arxiv_meta.get('authors', []))}
-Abstract: {arxiv_meta.get('abstract', '')}
+Abstract: {arxiv_meta.get('abstract', '')}{angle_info}{series_info}
 """
 
     # Retention Genome Memory Injection (Engine 7.0)
@@ -567,7 +572,7 @@ Generate the complete JSON specification strictly adhering to this structure:
             verbose=True
         )
 
-        if vetted_script and vetted_script.get("beats"):
+        if vetted_script and vetted_script.get("beats") and not vetted_script.get("is_fallback"):
             vetted_beats = vetted_script["beats"]
             for idx, approved_beat in enumerate(vetted_beats):
                 if idx < len(spec["beats"]):
@@ -604,7 +609,9 @@ Generate the complete JSON specification strictly adhering to this structure:
     try:
         from pipeline.intellectual_thriller_engine import intellectual_thriller_engine
         print("\n🎬 Applying Intellectual Thriller Narrative Rewrite (Engine 7.0)...")
-        spec = intellectual_thriller_engine.rewrite_script_to_thriller(spec, paper_meta=arxiv_meta, use_llm=True)
+        rewritten = intellectual_thriller_engine.rewrite_script_to_thriller(spec, paper_meta=arxiv_meta, use_llm=True)
+        if rewritten and not rewritten.get("is_fallback") and rewritten.get("beats"):
+            spec = rewritten
         thriller_audit = intellectual_thriller_engine.audit_thriller_compliance(spec)
         print(f"   ⚡ Thriller Compliance Score: {thriller_audit['score']}/10 | Hook Passed: {thriller_audit['hook_passed']} | {thriller_audit['verdict']}")
     except Exception as e:

@@ -7,39 +7,41 @@
   "beats": [
     {
       "beat_id": 1,
-      "text": "Before you train your next model, see how FlashAttention-3 cuts 98.2% of memory overhead.",
-      "visual_focus": "System architecture schematic illustrating FlashAttention highlighted in pulsing cyan.",
+      "text": "Why do GPUs sit idle during LLM inference until FlashAttention-3 unlocks 98.2% throughput?",
+      "visual_focus": "Hardware stall heat map showing idle tensor cores",
       "highlight_words": {
-        "FlashAttention": "#38BDF8",
-        "bottleneck": "#EF4444"
+        "forty percent": "#EF4444"
       },
       "camera_action": "dolly_in",
       "expected_duration": 4.5,
       "visual_blueprint": {
-        "layout": "grid_memory",
-        "title": "FLASHATTENTION",
-        "sub": "Core Architectural Premise",
+        "layout": "default",
+        "title": "MEMORY BOTTLENECK",
+        "sub": "Baseline vs Frontier",
         "accent_color": "#38BDF8",
-        "params": {}
+        "params": {
+          "label": "Active Component"
+        }
       },
       "svo_action": {
-        "subject": "FlashAttention",
-        "action_verb": "disrupts",
-        "direct_object": "Standard Architecture",
-        "anchor_word": "watching",
+        "subject": "Neural Kernel",
+        "action_verb": "optimizes",
+        "direct_object": "Hardware Latency",
+        "anchor_word": "GPUs",
         "semantic_role": "state_transition"
       },
       "thriller_role": "pattern_interrupt_hook",
       "act": 1,
-      "hook_score": 71,
-      "hook_band": "WORKABLE",
-      "hook_formula": "The Statistic",
+      "hook_score": 70,
+      "hook_band": "STRONG",
+      "hook_formula": "The Question",
       "motif_type": "visual_composition",
       "motif_params": {
-        "layout": "grid_memory",
-        "title": "FLASHATTENTION",
-        "sub": "Core Architectural Premise",
-        "accent_color": "#38BDF8"
+        "layout": "default",
+        "title": "MEMORY BOTTLENECK",
+        "sub": "Baseline vs Frontier",
+        "accent_color": "#38BDF8",
+        "label": "Active Component"
       },
       "kinetic_action": "blueprint_transform",
       "audio_duration": 5.0,
@@ -50,36 +52,38 @@
     },
     {
       "beat_id": 2,
-      "text": "The problem? Scaling workloads triggers severe resource contention and execution delays.",
-      "visual_focus": "Bottleneck diagram showing resource stall and execution queue backup.",
+      "text": "Standard attention kernels serialize matrix multiplication and softmax.",
+      "visual_focus": "Sequential pipeline timeline blocking execution queue",
       "highlight_words": {
-        "resource contention": "#EF4444",
-        "delays": "#F59E0B"
+        "serialize": "#F59E0B"
       },
       "camera_action": "orbit",
       "expected_duration": 5.0,
       "visual_blueprint": {
-        "layout": "vector_flow_field",
-        "title": "SYSTEM BOTTLENECK",
-        "sub": "Resource contention halts throughput",
-        "accent_color": "#EF4444",
-        "params": {}
+        "layout": "pipeline_stages",
+        "title": "SERIALIZED QUEUE",
+        "sub": "Memory Bandwidth Limits",
+        "accent_color": "#38BDF8",
+        "params": {
+          "label": "Active Component"
+        }
       },
       "svo_action": {
-        "subject": "Resource Contention",
-        "action_verb": "stalls",
-        "direct_object": "Pipeline Execution",
-        "anchor_word": "triggers",
-        "semantic_role": "bottleneck"
+        "subject": "Neural Kernel",
+        "action_verb": "optimizes",
+        "direct_object": "Hardware Latency",
+        "anchor_word": "Standard",
+        "semantic_role": "state_transition"
       },
       "thriller_role": "villain_bottleneck",
       "act": 2,
       "motif_type": "visual_composition",
       "motif_params": {
-        "layout": "vector_flow_field",
-        "title": "SYSTEM BOTTLENECK",
-        "sub": "Resource contention halts throughput",
-        "accent_color": "#EF4444"
+        "layout": "pipeline_stages",
+        "title": "SERIALIZED QUEUE",
+        "sub": "Memory Bandwidth Limits",
+        "accent_color": "#38BDF8",
+        "label": "Active Component"
       },
       "kinetic_action": "blueprint_transform",
       "audio_duration": 5.0,
@@ -90,35 +94,34 @@
     },
     {
       "beat_id": 3,
-      "text": "Enter FlashAttention. It breaks the bottleneck with a decoupled, high-throughput pipeline.",
-      "visual_focus": "Parallel pipeline splitting heavy operations away from the critical execution path.",
+      "text": "FlashAttention-3 overlaps computation with asynchronous tensor core pipelining.",
+      "visual_focus": "Official architecture diagram illustrating 3-stage asynchronous pipeline",
       "highlight_words": {
-        "FlashAttention": "#10B981",
-        "decoupled": "#38BDF8"
+        "asynchronous": "#10B981"
       },
       "camera_action": "pan",
       "expected_duration": 6.0,
       "visual_blueprint": {
         "layout": "paper_figure",
         "title": "FLASHATTENTION-3 ARCHITECTURE",
-        "sub": "Parallel pipeline splitting heavy operations away from the critic",
+        "sub": "Official architecture diagram illustrating 3-stage asynchronous p",
         "params": {
           "svg_path": null,
           "image_path": "/Users/raviranjan/Documents/personal/Automated-video-Generation/public/arxiv_cache/2407.08608/chalkboard_figures/fig_1_3_stage_pipelining.png",
           "arxiv_id": "2407.08608",
           "title": "FLASHATTENTION-3 ARCHITECTURE",
-          "sub": "Parallel pipeline splitting heavy operations away from the critic",
+          "sub": "Official architecture diagram illustrating 3-stage asynchronous p",
           "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
           "caption": "3 Stage Pipelining",
           "preferred_renderer": "raster"
         }
       },
       "svo_action": {
-        "subject": "FlashAttention",
-        "action_verb": "bypasses",
-        "direct_object": "Execution Bottleneck",
-        "anchor_word": "breaks",
-        "semantic_role": "mechanism"
+        "subject": "Neural Kernel",
+        "action_verb": "optimizes",
+        "direct_object": "Hardware Latency",
+        "anchor_word": "FlashAttention-3",
+        "semantic_role": "state_transition"
       },
       "thriller_role": "eureka_mechanism",
       "act": 3,
@@ -128,7 +131,7 @@
         "image_path": "/Users/raviranjan/Documents/personal/Automated-video-Generation/public/arxiv_cache/2407.08608/chalkboard_figures/fig_1_3_stage_pipelining.png",
         "arxiv_id": "2407.08608",
         "title": "FLASHATTENTION-3 ARCHITECTURE",
-        "sub": "Parallel pipeline splitting heavy operations away from the critic",
+        "sub": "Official architecture diagram illustrating 3-stage asynchronous p",
         "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
         "caption": "3 Stage Pipelining",
         "preferred_renderer": "raster"
@@ -142,21 +145,20 @@
     },
     {
       "beat_id": 4,
-      "text": "Under the hood. It coordinates operations in parallel. Eliminating idle wait states entirely.",
-      "visual_focus": "Asynchronous coordinate graph demonstrating zero idle wait states.",
+      "text": "Under thirty lines of fused CUDA kernel orchestrates zero-copy shared memory.",
+      "visual_focus": "Fused CUDA kernel scanning asynchronous TMA load sweeps",
       "highlight_words": {
-        "in parallel": "#38BDF8",
-        "idle wait states": "#10B981"
+        "fused CUDA": "#38BDF8"
       },
       "camera_action": "static",
       "expected_duration": 5.0,
       "visual_blueprint": {
         "layout": "chalkboard_code_block",
         "title": "KERNEL CODE: FLASHATTENTION-3: ",
-        "sub": "Asynchronous coordinate graph demonstrating zero idle wait states",
+        "sub": "Fused CUDA kernel scanning asynchronous TMA load sweeps",
         "params": {
           "title": "KERNEL CODE: FLASHATTENTION-3: ",
-          "sub": "Asynchronous coordinate graph demonstrating zero idle wait states",
+          "sub": "Fused CUDA kernel scanning asynchronous TMA load sweeps",
           "filename": "kernel.py",
           "language": "python",
           "lines": [
@@ -171,11 +173,11 @@
         }
       },
       "svo_action": {
-        "subject": "Async Engine",
-        "action_verb": "coordinates",
-        "direct_object": "Workload Streams",
-        "anchor_word": "parallel",
-        "semantic_role": "innovation"
+        "subject": "Neural Kernel",
+        "action_verb": "optimizes",
+        "direct_object": "Hardware Latency",
+        "anchor_word": "Under",
+        "semantic_role": "state_transition"
       },
       "thriller_role": "technical_secret_sauce",
       "act": 3,
@@ -183,7 +185,7 @@
       "kinetic_action": "pulse",
       "motif_params": {
         "title": "KERNEL CODE: FLASHATTENTION-3: ",
-        "sub": "Asynchronous coordinate graph demonstrating zero idle wait states",
+        "sub": "Fused CUDA kernel scanning asynchronous TMA load sweeps",
         "filename": "kernel.py",
         "language": "python",
         "lines": [
@@ -204,20 +206,20 @@
     },
     {
       "beat_id": 5,
-      "text": "The result? Big benchmark speedups across standard tasks for FlashAttention.",
-      "visual_focus": "Comparative benchmark race bars showing massive performance gains.",
+      "text": "Reaching up to seventy-five percent of H100 hardware theoretical peak.",
+      "visual_focus": "Horizontal Drag-Race benchmark bars comparing TFLOPS",
       "highlight_words": {
-        "speedups": "#10B981"
+        "seventy-five percent": "#10B981"
       },
       "camera_action": "crane",
       "expected_duration": 5.5,
       "visual_blueprint": {
         "layout": "horizontal_race_bars",
         "title": "BENCHMARK PERFORMANCE COMPARISON",
-        "sub": "Comparative benchmark race bars showing massive",
+        "sub": "Horizontal Drag-Race benchmark bars comparing TFLOPS",
         "params": {
           "title": "BENCHMARK PERFORMANCE COMPARISON",
-          "sub": "Comparative benchmark race bars showing massive",
+          "sub": "Horizontal Drag-Race benchmark bars comparing TFLOPS",
           "metric_name": "Throughput",
           "unit": "TFLOPS",
           "contestants": [
@@ -240,11 +242,11 @@
         }
       },
       "svo_action": {
-        "subject": "FlashAttention",
-        "action_verb": "accelerates",
-        "direct_object": "Throughput",
-        "anchor_word": "speedups",
-        "semantic_role": "victory"
+        "subject": "Neural Kernel",
+        "action_verb": "optimizes",
+        "direct_object": "Hardware Latency",
+        "anchor_word": "Reaching",
+        "semantic_role": "state_transition"
       },
       "thriller_role": "empirical_payoff",
       "act": 4,
@@ -252,7 +254,7 @@
       "kinetic_action": "bar_fill",
       "motif_params": {
         "title": "BENCHMARK PERFORMANCE COMPARISON",
-        "sub": "Comparative benchmark race bars showing massive",
+        "sub": "Horizontal Drag-Race benchmark bars comparing TFLOPS",
         "metric_name": "Throughput",
         "unit": "TFLOPS",
         "contestants": [
@@ -281,27 +283,28 @@
     },
     {
       "beat_id": 6,
-      "text": "Follow machinoAI for daily deep-dives into how modern AI actually works under the hood.",
-      "visual_focus": "Brand chalkboard logo with glowing cyan rings, subscribe badge, and loop transition arrow for machinoAI.",
+      "text": "This breakthrough unlocks million-token contexts at unprecedented inference speed.",
+      "visual_focus": "Contemplative horizon of neural models processing infinite token streams",
       "highlight_words": {
-        "machinoAI": "#10B981",
-        "under the hood": "#38BDF8"
+        "million-token": "#A855F7"
       },
       "camera_action": "dolly_out",
       "expected_duration": 4.5,
       "visual_blueprint": {
-        "layout": "neural_activation_wave",
-        "title": "MACHINOAI",
-        "sub": "Daily AI Architecture & Research Breakdowns",
-        "accent_color": "#10B981",
-        "params": {}
+        "layout": "default",
+        "title": "FUTURE HORIZON",
+        "sub": "Closing Outro & Continuity",
+        "accent_color": "#38BDF8",
+        "params": {
+          "label": "Active Component"
+        }
       },
       "svo_action": {
-        "subject": "Viewer",
-        "action_verb": "follows",
-        "direct_object": "machinoAI",
-        "anchor_word": "daily",
-        "semantic_role": "loop"
+        "subject": "Neural Kernel",
+        "action_verb": "optimizes",
+        "direct_object": "Hardware Latency",
+        "anchor_word": "This",
+        "semantic_role": "state_transition"
       },
       "thriller_role": "open_loop_outro",
       "act": 4,
@@ -523,115 +526,87 @@
       "score": 135
     }
   ],
-  "feynman_certification": {
-    "converged_turn": 1,
-    "final_comprehension_score": 9.0,
-    "final_retention_hook_score": 9.0,
-    "ai_slop_eliminated": true,
-    "listener_verdict": "Approved! Clear real-world developer terms and intuitive physical analogy."
-  },
-  "thriller_metadata": {
-    "engine_version": "7.0",
-    "narrative_style": "intellectual_thriller",
-    "acts": {
-      "act_1_hook": {
-        "beat": 1,
-        "role": "pattern_interrupt_hook"
-      },
-      "act_2_villain": {
-        "beat": 2,
-        "role": "villain_bottleneck"
-      },
-      "act_3_eureka": {
-        "beats": [
-          3,
-          4
-        ],
-        "role": "eureka_mechanism"
-      },
-      "act_4_paradigm_shift": {
-        "beats": [
-          5,
-          6
-        ],
-        "role": "paradigm_shift_open_loop"
-      }
-    }
-  },
   "hook_gating": {
-    "selected_hook": "Before you train your next model, see how FlashAttention-3 cuts 98.2% of memory overhead.",
-    "verdict": 71,
-    "band": "WORKABLE",
-    "formula": "The Statistic",
+    "selected_hook": "Why do GPUs sit idle during LLM inference until FlashAttention-3 unlocks 98.2% throughput?",
+    "verdict": 70,
+    "band": "STRONG",
+    "formula": "The Question",
     "properties": {
-      "SPECIFICITY": 84,
-      "ADDRESS": 96,
-      "STAKES": 62,
-      "CURIOSITY": 58,
+      "SPECIFICITY": 96,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
       "BREVITY": 100
     },
-    "weakest_property": "CURIOSITY",
-    "candidates_evaluated": 10,
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
     "rankings": [
       {
-        "hook": "Before you train your next model, see how FlashAttention-3 cuts 98.2% of memory overhead.",
-        "verdict": 71,
-        "band": "WORKABLE",
-        "formula": "The Statistic"
-      },
-      {
-        "hook": "Do not scale your next training run before you see how FlashAttention-3 delivers 98.2%.",
-        "verdict": 71,
-        "band": "WORKABLE",
-        "formula": "The Warning"
-      },
-      {
-        "hook": "Before you build your next system, see how why are top AI researchers watching FlashAttention?. Because standard architectures hit a bottleneck.",
-        "verdict": 62,
-        "band": "WORKABLE",
-        "formula": "The Warning"
-      },
-      {
-        "hook": "Before you deploy your next architecture, consider this: src/abstract.tex.",
-        "verdict": 52,
-        "band": "WEAK",
-        "formula": "The Warning"
-      },
-      {
-        "hook": "Why do standard transformer architectures hit a memory wall before FlashAttention-3 unlocks 98.2% gains?",
-        "verdict": 52,
-        "band": "WEAK",
+        "hook": "Why do GPUs sit idle during LLM inference until FlashAttention-3 unlocks 98.2% throughput?",
+        "verdict": 70,
+        "band": "STRONG",
         "formula": "The Question"
-      },
-      {
-        "hook": "You might be leaving 98.2% of your hardware performance on the table without FlashAttention-3.",
-        "verdict": 50,
-        "band": "WEAK",
-        "formula": "The Statistic"
       },
       {
         "hook": "Everyone assumed standard attention was optimal, until FlashAttention-3 proved a 98.2% leap.",
-        "verdict": 45,
+        "verdict": 66,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Why is FlashAttention-3 a major breakthrough? Because src/abstract.tex.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that FlashAttention-3 finally breaks.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? FlashAttention-3 reveals the solution.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Did you know gPUs spend forty percent of their cycles waiting for memory transfers?",
+        "verdict": 53,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when gPUs spend forty percent of their cycles waiting for memory transfers?",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: src/abstract.tex.",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 98.2% speedup using FlashAttention-3.",
+        "verdict": 41,
         "band": "WEAK",
         "formula": "The Statistic"
       },
       {
-        "hook": "Did you know why are top AI researchers watching FlashAttention?. Because standard architectures hit a bottleneck?",
-        "verdict": 44,
+        "hook": "GPUs spend forty percent of their cycles waiting for memory transfers.",
+        "verdict": 34,
         "band": "WEAK",
-        "formula": "The Question"
+        "formula": "Unclassified"
       },
       {
-        "hook": "Why is FlashAttention-3 a major breakthrough? Because src/abstract.tex.",
-        "verdict": 40,
+        "hook": "src/abstract.tex.",
+        "verdict": 25,
         "band": "WEAK",
-        "formula": "The Question"
-      },
-      {
-        "hook": "Why are top AI researchers watching FlashAttention?. Because standard architectures hit a bottleneck.",
-        "verdict": 36,
-        "band": "WEAK",
-        "formula": "The Question"
+        "formula": "Unclassified"
       }
     ]
   },

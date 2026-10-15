@@ -586,7 +586,8 @@ Elevate clarity, sharpen the analogy, eliminate any detected slop, and ensure th
             "domain_taxonomy": domain,
             "hook_tag": hook_tag,
             "analogy_theme": "parallel pipeline synchronization",
-            "beats": beats
+            "beats": beats,
+            "is_fallback": True
         }
 
 

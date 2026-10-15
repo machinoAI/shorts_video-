@@ -523,6 +523,7 @@ CRITICAL GROUND TRUTH RULES:
                 "act_4_paradigm_shift": {"beats": [5, 6], "role": "paradigm_shift_open_loop"}
             }
         }
+        updated["is_fallback"] = True
         return updated
 
     def _get_act_number(self, beat_id: int) -> int:

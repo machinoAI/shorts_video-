@@ -787,7 +787,7 @@ class DailyShortsDaemon:
 
             target_arxiv_id = top_paper.get("arxiv_id") or arxiv_id
             record_id = top_paper.get("queue_id") or arxiv_id
-            cand_source = top_paper.get("source") or classify_history_entry_pillar(arxiv_id, top_paper)
+            cand_source = classify_history_entry_pillar(arxiv_id, top_paper)
 
             if dry_run:
                 print("🔍 [DRY-RUN] Simulating script generation and pedagogy evaluation...")

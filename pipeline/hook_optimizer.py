@@ -51,7 +51,7 @@ def words(text: str) -> List[str]:
 # Banned textbook lecture openings
 BANNED_INTRO_PATTERNS = [
     r"^(in this (paper|video|research|study|work|short))",
-    r"^(today we('re| will| are| shall| explore))",
+    r"^(today (we('re| will| are| shall)?|you|I)\b)",
     r"^(welcome (back|to))",
     r"^(the authors (propose|present|introduce|investigate|explore))",
     r"^(we (propose|present|introduce|investigate|explore))",
@@ -125,20 +125,22 @@ def score_hook(text: str) -> Dict[str, Any]:
     # A technical explainer does not need the literal word 'you' in the first 6 words to be compelling.
     # Questions, paradoxes, flaws, dilemmas, and systemic contrasts engage viewers just as effectively.
     ENGAGEMENT_INDICATORS = re.compile(
-        r"\b(why|how|what|when|where|does|is|are|every|most|nobody|everyone|standard|traditional|naive|breakdown|breaks|fails|flaw|wall|bottleneck|secret|reveals|disaster|trap|shocking|crisis|limit|blindspot|chunk|ruins)\b|\?",
+        r"\b(why|how|what|when|where|does|is|are|every|most|nobody|everyone|standard|traditional|naive|breakdown|breaks|fails|flaw|wall|bottleneck|secret|reveals|disaster|trap|shocking|crisis|limit|blindspot|chunk|ruins|gives|unlocked|credits?|claims?|replaces?|saves?|beats?|fixes?|eliminates?|solves?)\b|\?",
         re.I
     )
     if ENGAGEMENT_INDICATORS.search(t):
-        parts["ADDRESS"] = max(parts.get("ADDRESS", 0), 68)
+        parts["ADDRESS"] = max(parts.get("ADDRESS", 0), 70)
+        parts["CURIOSITY"] = max(parts.get("CURIOSITY", 0), 60)
+        parts["STAKES"] = max(parts.get("STAKES", 0), 55)
 
     # Recompute verdict based on normalized parts (60% mean, 40% weakest link)
     vals = list(parts.values())
     verdict = round(0.6 * (sum(vals) / len(vals)) + 0.4 * min(vals))
 
-    # 2. Anti-Monotony Penalty:
+    # 2. Strict Anti-Monotony Penalty:
     # Heavily penalize any hook that starts with "before you" to stop repetitive formulaic spam across the channel.
     if t.lower().startswith("before you"):
-        verdict = max(10, verdict - 30)
+        verdict = max(10, verdict - 40)
 
     band_name = "STRONG" if verdict >= 70 else "WORKABLE" if verdict >= 50 else "WEAK"
 
@@ -168,6 +170,45 @@ def clean_display_topic(topic: str) -> str:
     if t.islower():
         t = t.title()
     return t or "Frontier AI"
+
+
+def sanitize_hook_text(text: str, topic: str = "") -> str:
+    """
+    Sanitizes hook text in-place by removing accidental lecture cliches,
+    banned openings, and repetitive 'Before you...' wrappers while preserving
+    the authentic paper topic and technical insight.
+    """
+    if not text:
+        return f"Why are top AI researchers paying attention to {clean_display_topic(topic)}?"
+
+    cleaned = text.strip().strip('"\'')
+
+    # 1. Strip repetitive 'Before you [verb] [clause], (see how/look at how)?'
+    m_before = re.match(r"^before you\s+[^,]+,\s*(?:(?:see|look at|consider)\s+(?:how|this:?)\s*)?(.*)$", cleaned, re.I)
+    if m_before:
+        remainder = m_before.group(1).strip()
+        if len(remainder) > 10:
+            cleaned = remainder
+
+    # 2. Strip textbook / lecture intro prefixes:
+    for pat in [
+        r"^in this (?:paper|video|research|study|work|short),?\s*(?:we\s+(?:propose|present|introduce|investigate|explore)\s*)?",
+        r"^today (?:we('re| will| are| shall)?|you|I)\s+(?:going to\s+)?(?:explore|look at|discuss|cover)\s*",
+        r"^welcome (?:back\s+)?to [^,]+,?\s*",
+        r"^(?:the authors|we)\s+(?:propose|present|introduce|investigate|explore)\s*",
+    ]:
+        cleaned = re.sub(pat, "", cleaned, flags=re.I).strip()
+
+    # 3. Capitalize first letter if valid
+    if cleaned and len(cleaned) > 1:
+        cleaned = cleaned[0].upper() + cleaned[1:]
+
+    # 4. Fallback if emptied
+    if len(cleaned.split()) < 4:
+        clean_t = clean_display_topic(topic)
+        cleaned = f"Why are top AI researchers paying attention to {clean_t}?"
+
+    return cleaned
 
 
 def extract_metric_from_context(
@@ -567,18 +608,20 @@ def optimize_script_hook(
     domain_taxonomy = spec.get("domain_taxonomy")
 
     # 1. First-Class Bespoke Narrative Preservation:
-    # If the LLM has already generated an authentic, paper-specific hook, check if it meets
-    # quality standards (non-slop, not repetitive "Before you...", reasonable length).
-    clean_base = base_hook.strip()
-    is_lecture_slop = any(re.search(pat, clean_base, re.I) for pat in BANNED_INTRO_PATTERNS)
+    # If the LLM has already generated an authentic, paper-specific hook, sanitize it
+    # and preserve it if it meets quality standards (non-slop, not repetitive, workable score).
+    clean_base = sanitize_hook_text(base_hook, topic)
+    raw_lecture_slop = any(re.search(pat, base_hook.strip(), re.I) for pat in BANNED_INTRO_PATTERNS)
+    is_lecture_slop = raw_lecture_slop or any(re.search(pat, clean_base, re.I) for pat in BANNED_INTRO_PATTERNS)
     is_canned_repetitive = clean_base.lower().startswith("before you")
-    is_good_length = 7 <= len(clean_base.split()) <= 32
+    is_good_length = 6 <= len(clean_base.split()) <= 32
 
     if clean_base and not is_lecture_slop and not is_canned_repetitive and is_good_length:
         base_eval = score_hook(clean_base)
-        # If the LLM's bespoke hook has acceptable quality (>= 45) and is not slop: PRESERVE IT!
-        if base_eval["verdict"] >= 45:
+        # If the LLM's bespoke hook has acceptable quality (>= 50, WORKABLE/STRONG) and is not slop: PRESERVE IT!
+        if base_eval["verdict"] >= 50:
             print(f"🎯 [Hook Scoring Gating] Keeping authentic bespoke paper hook ({base_eval['verdict']}/100, {base_eval['band']}): \"{clean_base}\"")
+            beats[0]["text"] = clean_base
             beats[0]["hook_score"] = base_eval["verdict"]
             beats[0]["hook_band"] = base_eval["band"]
             beats[0]["hook_formula"] = base_eval.get("formula", "Bespoke Paper Narrative")
@@ -586,8 +629,9 @@ def optimize_script_hook(
                 "selected_hook": clean_base,
                 "verdict": base_eval["verdict"],
                 "band": base_eval["band"],
-                "formula": "Bespoke Paper Narrative",
-                "kept_bespoke": True
+                "formula": base_eval.get("formula", "Bespoke Paper Narrative"),
+                "kept_bespoke": True,
+                "candidates_evaluated": 1
             }
             return spec
 
