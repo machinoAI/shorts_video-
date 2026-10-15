@@ -1,0 +1,1520 @@
+{
+  "id": "raptor_retrieval_analysis",
+  "title": "RAPTOR: Recursive Tree vs Flattened Search",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "algorithmic_search",
+  "hook_tag": "ARCHITECTURE BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Standard RAG has a fatal context fragmentation flaw, but RAPTOR delivers a 20% lead.",
+      "visual_focus": "A sea of scattered, disconnected text chunks glowing red.",
+      "highlight_words": {
+        "flat chunks": "#EF4444",
+        "blind": "#FFFFFF"
+      },
+      "svo_action": {
+        "subject": "Retriever",
+        "action_verb": "scans",
+        "direct_object": "disconnected text fragments",
+        "anchor_word": "flat",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "FLAT RETRIEVAL BLINDSPOT",
+        "sub": "Standard chunking fails to capture holistic document structure",
+        "accent_color": "#EF4444",
+        "params": {
+          "grid_title": "Unstructured Chunk Index",
+          "active_cell_label": "Local Context",
+          "efficiency_label": "Global Context Loss"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 64,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Statistic",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "FLAT RETRIEVAL BLINDSPOT",
+        "sub": "Standard chunking fails to capture holistic document structure",
+        "accent_color": "#EF4444",
+        "grid_title": "Unstructured Chunk Index",
+        "active_cell_label": "Local Context",
+        "efficiency_label": "Global Context Loss"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.02,
+      "duration": 6.02,
+      "word_timings": [
+        {
+          "word": "Standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 0.015,
+          "end": 0.595,
+          "duration": 0.58,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 0.595,
+          "end": 0.825,
+          "duration": 0.23,
+          "frame_ahead_trigger": 0.555
+        },
+        {
+          "word": "has",
+          "clean_word": "has",
+          "phonemes": "h\u02c8\u00e6z",
+          "start": 0.825,
+          "end": 1.15,
+          "duration": 0.325,
+          "frame_ahead_trigger": 0.785
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 1.15,
+          "end": 1.27,
+          "duration": 0.12,
+          "frame_ahead_trigger": 1.11
+        },
+        {
+          "word": "fatal",
+          "clean_word": "fatal",
+          "phonemes": "f\u02c8e\u026a\u027e\u0259l",
+          "start": 1.27,
+          "end": 1.775,
+          "duration": 0.505,
+          "frame_ahead_trigger": 1.23
+        },
+        {
+          "word": "context",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 1.775,
+          "end": 2.365,
+          "duration": 0.59,
+          "frame_ahead_trigger": 1.735
+        },
+        {
+          "word": "fragmentation",
+          "clean_word": "fragmentation",
+          "phonemes": "f\u0279\u02cc\u00e6\u0261m\u0259nt\u02c8e\u026a\u0283\u0259n",
+          "start": 2.365,
+          "end": 3.35,
+          "duration": 0.985,
+          "frame_ahead_trigger": 2.325
+        },
+        {
+          "word": "flaw,",
+          "clean_word": "flaw",
+          "phonemes": "fl\u02c8\u0254\u02d0",
+          "start": 3.35,
+          "end": 3.677,
+          "duration": 0.327,
+          "frame_ahead_trigger": 3.31
+        },
+        {
+          "word": "but",
+          "clean_word": "but",
+          "phonemes": "b\u02cc\u028ct",
+          "start": 3.677,
+          "end": 3.97,
+          "duration": 0.293,
+          "frame_ahead_trigger": 3.637
+        },
+        {
+          "word": "RAPTOR",
+          "clean_word": "raptor",
+          "phonemes": "\u0279\u02c8\u00e6pt\u025a",
+          "start": 3.97,
+          "end": 4.435,
+          "duration": 0.465,
+          "frame_ahead_trigger": 3.93
+        },
+        {
+          "word": "delivers",
+          "clean_word": "delivers",
+          "phonemes": "d\u1d7bl\u02c8\u026av\u025az",
+          "start": 4.435,
+          "end": 4.795,
+          "duration": 0.36,
+          "frame_ahead_trigger": 4.395
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 4.795,
+          "end": 4.995,
+          "duration": 0.2,
+          "frame_ahead_trigger": 4.755
+        },
+        {
+          "word": "20%",
+          "clean_word": "20",
+          "phonemes": "tw\u02c8\u025bnti",
+          "start": 4.995,
+          "end": 5.56,
+          "duration": 0.565,
+          "frame_ahead_trigger": 4.955
+        },
+        {
+          "word": "lead.",
+          "clean_word": "lead",
+          "phonemes": "l\u02c8i\u02d0d",
+          "start": 5.56,
+          "end": 5.835,
+          "duration": 0.275,
+          "frame_ahead_trigger": 5.52
+        }
+      ],
+      "audio_duration": 6.02,
+      "slot_duration": 6.17
+    },
+    {
+      "beat_id": 2,
+      "text": "This monolithic search is a performance villain, forcing the model to swim through irrelevant noise.",
+      "visual_focus": "A search query icon struggling through a thick, murky liquid of noise.",
+      "highlight_words": {
+        "monolithic": "#EF4444",
+        "noise": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "SearchQuery",
+        "action_verb": "struggles",
+        "direct_object": "irrelevant document noise",
+        "anchor_word": "noise",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "MONOLITHIC SEARCH BOTTLENECK",
+        "sub": "Forcing models to traverse linear noise layers",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Relevant Data",
+          "stream_b_label": "Irrelevant Noise",
+          "barrier_label": "Semantic Filter",
+          "barrier_sub": "O(N) Complexity"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "MONOLITHIC SEARCH BOTTLENECK",
+        "sub": "Forcing models to traverse linear noise layers",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Relevant Data",
+        "stream_b_label": "Irrelevant Noise",
+        "barrier_label": "Semantic Filter",
+        "barrier_sub": "O(N) Complexity"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.17,
+      "end": 11.5,
+      "duration": 5.33,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 6.181,
+          "end": 6.496,
+          "duration": 0.315,
+          "frame_ahead_trigger": 6.291
+        },
+        {
+          "word": "monolithic",
+          "clean_word": "monolithic",
+          "phonemes": "m\u02cc\u0251\u02d0no\u028al\u02c8\u026a\u03b8\u026ak",
+          "start": 6.496,
+          "end": 7.221,
+          "duration": 0.725,
+          "frame_ahead_trigger": 6.606
+        },
+        {
+          "word": "search",
+          "clean_word": "search",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283",
+          "start": 7.221,
+          "end": 7.526,
+          "duration": 0.305,
+          "frame_ahead_trigger": 7.331
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 7.526,
+          "end": 7.706,
+          "duration": 0.18,
+          "frame_ahead_trigger": 7.636
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 7.706,
+          "end": 7.871,
+          "duration": 0.165,
+          "frame_ahead_trigger": 7.816
+        },
+        {
+          "word": "performance",
+          "clean_word": "performance",
+          "phonemes": "p\u025af\u02c8\u0254\u02d0\u0279m\u0259ns",
+          "start": 7.871,
+          "end": 8.452,
+          "duration": 0.581,
+          "frame_ahead_trigger": 7.981
+        },
+        {
+          "word": "villain,",
+          "clean_word": "villain",
+          "phonemes": "v\u02c8\u026al\u0259n",
+          "start": 8.452,
+          "end": 8.756,
+          "duration": 0.304,
+          "frame_ahead_trigger": 8.562
+        },
+        {
+          "word": "forcing",
+          "clean_word": "forcing",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u026a\u014b",
+          "start": 8.756,
+          "end": 9.301,
+          "duration": 0.545,
+          "frame_ahead_trigger": 8.866
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 9.301,
+          "end": 9.421,
+          "duration": 0.12,
+          "frame_ahead_trigger": 9.411
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 9.421,
+          "end": 9.816,
+          "duration": 0.395,
+          "frame_ahead_trigger": 9.531
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 9.816,
+          "end": 9.965,
+          "duration": 0.149,
+          "frame_ahead_trigger": 9.926
+        },
+        {
+          "word": "swim",
+          "clean_word": "swim",
+          "phonemes": "sw\u02c8\u026am",
+          "start": 9.965,
+          "end": 10.361,
+          "duration": 0.396,
+          "frame_ahead_trigger": 10.075
+        },
+        {
+          "word": "through",
+          "clean_word": "through",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0",
+          "start": 10.361,
+          "end": 10.506,
+          "duration": 0.145,
+          "frame_ahead_trigger": 10.471
+        },
+        {
+          "word": "irrelevant",
+          "clean_word": "irrelevant",
+          "phonemes": "\u026a\u0279\u02c8\u025bl\u1d7bv\u0259nt",
+          "start": 10.506,
+          "end": 11.13,
+          "duration": 0.624,
+          "frame_ahead_trigger": 10.616
+        },
+        {
+          "word": "noise.",
+          "clean_word": "noise",
+          "phonemes": "n\u02c8\u0254\u026az",
+          "start": 11.13,
+          "end": 11.421,
+          "duration": 0.291,
+          "frame_ahead_trigger": 11.24
+        }
+      ],
+      "audio_duration": 5.33,
+      "slot_duration": 5.48
+    },
+    {
+      "beat_id": 3,
+      "text": "RAPTOR pivots the game by recursively clustering text into a multi-level abstraction tree.",
+      "visual_focus": "Nodes merging upwards into higher-level, dense summarization layers.",
+      "highlight_words": {
+        "recursively clustering": "#34D399",
+        "abstraction tree": "#34D399"
+      },
+      "svo_action": {
+        "subject": "RAPTOR Algorithm",
+        "action_verb": "synthesizes",
+        "direct_object": "hierarchical summary nodes",
+        "anchor_word": "tree",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "RAPTOR ARCHITECTURE",
+        "sub": "Nodes merging upwards into higher-level, dense summarization laye",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/chalkboard_figures/fig_1_raptor_formation.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/chalkboard_figures/fig_1_raptor_formation.png",
+          "arxiv_id": "2401.18059",
+          "title": "RAPTOR ARCHITECTURE",
+          "sub": "Nodes merging upwards into higher-level, dense summarization laye",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Raptor Formation",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/chalkboard_figures/fig_1_raptor_formation.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/chalkboard_figures/fig_1_raptor_formation.png",
+        "arxiv_id": "2401.18059",
+        "title": "RAPTOR ARCHITECTURE",
+        "sub": "Nodes merging upwards into higher-level, dense summarization laye",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Raptor Formation",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 11.65,
+      "end": 16.92,
+      "duration": 5.27,
+      "word_timings": [
+        {
+          "word": "RAPTOR",
+          "clean_word": "raptor",
+          "phonemes": "\u0279\u02c8\u00e6pt\u025a",
+          "start": 11.659,
+          "end": 12.049,
+          "duration": 0.39,
+          "frame_ahead_trigger": 11.919
+        },
+        {
+          "word": "pivots",
+          "clean_word": "pivots",
+          "phonemes": "p\u02c8\u026av\u0259ts",
+          "start": 12.049,
+          "end": 12.379,
+          "duration": 0.33,
+          "frame_ahead_trigger": 12.309
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 12.379,
+          "end": 12.484,
+          "duration": 0.105,
+          "frame_ahead_trigger": 12.639
+        },
+        {
+          "word": "game",
+          "clean_word": "game",
+          "phonemes": "\u0261\u02c8e\u026am",
+          "start": 12.484,
+          "end": 12.799,
+          "duration": 0.315,
+          "frame_ahead_trigger": 12.744
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 12.799,
+          "end": 13.124,
+          "duration": 0.325,
+          "frame_ahead_trigger": 13.059
+        },
+        {
+          "word": "recursively",
+          "clean_word": "recursively",
+          "phonemes": "\u0279\u1d7bk\u02c8\u025c\u02d0s\u026avli",
+          "start": 13.124,
+          "end": 13.634,
+          "duration": 0.51,
+          "frame_ahead_trigger": 13.384
+        },
+        {
+          "word": "clustering",
+          "clean_word": "clustering",
+          "phonemes": "kl\u02c8\u028cst\u025a\u0279\u026a\u014b",
+          "start": 13.634,
+          "end": 14.399,
+          "duration": 0.765,
+          "frame_ahead_trigger": 13.894
+        },
+        {
+          "word": "text",
+          "clean_word": "text",
+          "phonemes": "t\u02c8\u025bkst",
+          "start": 14.399,
+          "end": 14.667,
+          "duration": 0.267,
+          "frame_ahead_trigger": 14.659
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 14.667,
+          "end": 14.924,
+          "duration": 0.258,
+          "frame_ahead_trigger": 14.927
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 14.924,
+          "end": 15.069,
+          "duration": 0.145,
+          "frame_ahead_trigger": 15.184
+        },
+        {
+          "word": "multi-level",
+          "clean_word": "multilevel",
+          "phonemes": "m\u02cc\u028clt\u026al\u02c8\u025bv\u0259l",
+          "start": 15.069,
+          "end": 15.834,
+          "duration": 0.765,
+          "frame_ahead_trigger": 15.329
+        },
+        {
+          "word": "abstraction",
+          "clean_word": "abstraction",
+          "phonemes": "\u0250bst\u0279\u02c8\u00e6k\u0283\u0259n",
+          "start": 15.834,
+          "end": 16.534,
+          "duration": 0.7,
+          "frame_ahead_trigger": 16.094
+        },
+        {
+          "word": "tree.",
+          "clean_word": "tree",
+          "phonemes": "t\u0279\u02c8i\u02d0",
+          "start": 16.534,
+          "end": 16.789,
+          "duration": 0.255,
+          "frame_ahead_trigger": 16.794
+        }
+      ],
+      "audio_duration": 5.27,
+      "slot_duration": 5.42
+    },
+    {
+      "beat_id": 4,
+      "text": "Inference traverses top-down, dynamically pruning irrelevant branches to zoom into the required semantic depth.",
+      "visual_focus": "A glowing path cutting through the tree, igniting only relevant high-level nodes.",
+      "highlight_words": {
+        "top-down": "#38BDF8",
+        "pruning": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Search Traversal",
+        "action_verb": "prunes",
+        "direct_object": "low-relevance branches",
+        "anchor_word": "pruning",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: RAPTOR: RECURSIVE ",
+        "sub": "A glowing path cutting through the tree, igniting only relevant h",
+        "params": {
+          "title": "KERNEL CODE: RAPTOR: RECURSIVE ",
+          "sub": "A glowing path cutting through the tree, igniting only relevant h",
+          "filename": "raptor_engine.py",
+          "language": "python",
+          "lines": [
+            "def cluster_and_summarize(nodes):",
+            "tree = build_recursive_levels(nodes)",
+            "return tree.traversal(query_embedding)"
+          ],
+          "highlight_lines": [
+            1,
+            2
+          ],
+          "trace_register": "\u26a1 RECURSIVE TREE SYNTHESIS",
+          "delta_badge": "Constructing multi-level abstraction tree"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: RAPTOR: RECURSIVE ",
+        "sub": "A glowing path cutting through the tree, igniting only relevant h",
+        "filename": "raptor_engine.py",
+        "language": "python",
+        "lines": [
+          "def cluster_and_summarize(nodes):",
+          "tree = build_recursive_levels(nodes)",
+          "return tree.traversal(query_embedding)"
+        ],
+        "highlight_lines": [
+          1,
+          2
+        ],
+        "trace_register": "\u26a1 RECURSIVE TREE SYNTHESIS",
+        "delta_badge": "Constructing multi-level abstraction tree"
+      },
+      "start": 17.07,
+      "end": 23.47,
+      "duration": 6.4,
+      "word_timings": [
+        {
+          "word": "Inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 17.074,
+          "end": 17.669,
+          "duration": 0.595,
+          "frame_ahead_trigger": 17.484
+        },
+        {
+          "word": "traverses",
+          "clean_word": "traverses",
+          "phonemes": "t\u0279\u0250v\u02c8\u025c\u02d0s\u1d7bz",
+          "start": 17.669,
+          "end": 18.139,
+          "duration": 0.47,
+          "frame_ahead_trigger": 18.079
+        },
+        {
+          "word": "top-down,",
+          "clean_word": "topdown",
+          "phonemes": "t\u02c8\u0251\u02d0pda\u028an",
+          "start": 18.139,
+          "end": 18.742,
+          "duration": 0.603,
+          "frame_ahead_trigger": 18.549
+        },
+        {
+          "word": "dynamically",
+          "clean_word": "dynamically",
+          "phonemes": "da\u026an\u02c8\u00e6m\u026akli",
+          "start": 18.742,
+          "end": 19.459,
+          "duration": 0.717,
+          "frame_ahead_trigger": 19.152
+        },
+        {
+          "word": "pruning",
+          "clean_word": "pruning",
+          "phonemes": "p\u0279\u02c8u\u02d0n\u026a\u014b",
+          "start": 19.459,
+          "end": 19.944,
+          "duration": 0.485,
+          "frame_ahead_trigger": 19.869
+        },
+        {
+          "word": "irrelevant",
+          "clean_word": "irrelevant",
+          "phonemes": "\u026a\u0279\u02c8\u025bl\u1d7bv\u0259nt",
+          "start": 19.944,
+          "end": 20.464,
+          "duration": 0.52,
+          "frame_ahead_trigger": 20.354
+        },
+        {
+          "word": "branches",
+          "clean_word": "branches",
+          "phonemes": "b\u0279\u02c8\u00e6nt\u0283\u1d7bz",
+          "start": 20.464,
+          "end": 20.914,
+          "duration": 0.45,
+          "frame_ahead_trigger": 20.874
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 20.914,
+          "end": 21.224,
+          "duration": 0.31,
+          "frame_ahead_trigger": 21.324
+        },
+        {
+          "word": "zoom",
+          "clean_word": "zoom",
+          "phonemes": "z\u02c8u\u02d0m",
+          "start": 21.224,
+          "end": 21.394,
+          "duration": 0.17,
+          "frame_ahead_trigger": 21.634
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 21.394,
+          "end": 21.804,
+          "duration": 0.41,
+          "frame_ahead_trigger": 21.804
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 21.804,
+          "end": 21.874,
+          "duration": 0.07,
+          "frame_ahead_trigger": 22.214
+        },
+        {
+          "word": "required",
+          "clean_word": "required",
+          "phonemes": "\u0279\u1d7bkw\u02c8a\u026a\u025ad",
+          "start": 21.874,
+          "end": 22.399,
+          "duration": 0.525,
+          "frame_ahead_trigger": 22.284
+        },
+        {
+          "word": "semantic",
+          "clean_word": "semantic",
+          "phonemes": "s\u0259m\u02c8\u00e6nt\u026ak",
+          "start": 22.399,
+          "end": 22.909,
+          "duration": 0.51,
+          "frame_ahead_trigger": 22.809
+        },
+        {
+          "word": "depth.",
+          "clean_word": "depth",
+          "phonemes": "d\u02c8\u025bp\u03b8",
+          "start": 22.909,
+          "end": 23.269,
+          "duration": 0.36,
+          "frame_ahead_trigger": 23.319
+        }
+      ],
+      "audio_duration": 6.4,
+      "slot_duration": 6.55
+    },
+    {
+      "beat_id": 5,
+      "text": "Results confirm this hierarchy delivers a 20 percent jump in absolute benchmark accuracy.",
+      "visual_focus": "A performance bar chart showing the RAPTOR lead against baseline.",
+      "highlight_words": {
+        "20 percent": "#34D399",
+        "accuracy": "#34D399"
+      },
+      "svo_action": {
+        "subject": "RAPTOR Model",
+        "action_verb": "outperforms",
+        "direct_object": "flat retrieval baselines",
+        "anchor_word": "accuracy",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: QUality",
+        "sub": "A performance bar chart showing the RAPTOR lead",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: QUality",
+          "sub": "A performance bar chart showing the RAPTOR lead",
+          "metric_name": "Accuracy",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "RAPTOR",
+              "value": 20.0,
+              "display_val": "+20%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Flat Chunking",
+              "value": 0.0,
+              "display_val": "0%",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +20% SOTA GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: QUality",
+        "sub": "A performance bar chart showing the RAPTOR lead",
+        "metric_name": "Accuracy",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "RAPTOR",
+            "value": 20.0,
+            "display_val": "+20%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Flat Chunking",
+            "value": 0.0,
+            "display_val": "0%",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +20% SOTA GAIN"
+      },
+      "start": 23.62,
+      "end": 29.38,
+      "duration": 5.76,
+      "word_timings": [
+        {
+          "word": "Results",
+          "clean_word": "results",
+          "phonemes": "\u0279\u026az\u02c8\u028clts",
+          "start": 23.629,
+          "end": 24.034,
+          "duration": 0.405,
+          "frame_ahead_trigger": 24.189
+        },
+        {
+          "word": "confirm",
+          "clean_word": "confirm",
+          "phonemes": "k\u0259nf\u02c8\u025c\u02d0m",
+          "start": 24.034,
+          "end": 24.549,
+          "duration": 0.515,
+          "frame_ahead_trigger": 24.594
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 24.549,
+          "end": 24.734,
+          "duration": 0.185,
+          "frame_ahead_trigger": 25.109
+        },
+        {
+          "word": "hierarchy",
+          "clean_word": "hierarchy",
+          "phonemes": "h\u02c8a\u026a\u025a\u0279\u0251\u02d0\u0279ki",
+          "start": 24.734,
+          "end": 25.463,
+          "duration": 0.729,
+          "frame_ahead_trigger": 25.294
+        },
+        {
+          "word": "delivers",
+          "clean_word": "delivers",
+          "phonemes": "d\u1d7bl\u02c8\u026av\u025az",
+          "start": 25.463,
+          "end": 25.969,
+          "duration": 0.506,
+          "frame_ahead_trigger": 26.023
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 25.969,
+          "end": 26.099,
+          "duration": 0.13,
+          "frame_ahead_trigger": 26.529
+        },
+        {
+          "word": "20",
+          "clean_word": "20",
+          "phonemes": "tw\u02c8\u025bnti",
+          "start": 26.099,
+          "end": 26.569,
+          "duration": 0.47,
+          "frame_ahead_trigger": 26.659
+        },
+        {
+          "word": "percent",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 26.569,
+          "end": 26.942,
+          "duration": 0.373,
+          "frame_ahead_trigger": 27.129
+        },
+        {
+          "word": "jump",
+          "clean_word": "jump",
+          "phonemes": "d\u0292\u02c8\u028cmp",
+          "start": 26.942,
+          "end": 27.379,
+          "duration": 0.437,
+          "frame_ahead_trigger": 27.502
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 27.379,
+          "end": 27.539,
+          "duration": 0.16,
+          "frame_ahead_trigger": 27.939
+        },
+        {
+          "word": "absolute",
+          "clean_word": "absolute",
+          "phonemes": "\u02c8\u00e6bs\u0259l\u02ccu\u02d0t",
+          "start": 27.539,
+          "end": 28.134,
+          "duration": 0.595,
+          "frame_ahead_trigger": 28.099
+        },
+        {
+          "word": "benchmark",
+          "clean_word": "benchmark",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279k",
+          "start": 28.134,
+          "end": 28.619,
+          "duration": 0.485,
+          "frame_ahead_trigger": 28.694
+        },
+        {
+          "word": "accuracy.",
+          "clean_word": "accuracy",
+          "phonemes": "\u02c8\u00e6kj\u028a\u0279\u0259si",
+          "start": 28.619,
+          "end": 29.249,
+          "duration": 0.63,
+          "frame_ahead_trigger": 29.179
+        }
+      ],
+      "audio_duration": 5.76,
+      "slot_duration": 5.91
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow The Model Verse to keep your retrieval architecture from collapsing under document weight.",
+      "visual_focus": "The tree structure rotating, emphasizing the modular design loop.",
+      "highlight_words": {
+        "The Model Verse": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Viewers",
+        "action_verb": "optimize",
+        "direct_object": "retrieval workflow",
+        "anchor_word": "collapsing",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "THE MODEL VERSE LOOP",
+        "sub": "Daily deep-dives into frontier architectures",
+        "accent_color": "#34D399",
+        "params": {
+          "input_1_label": "Mechanism",
+          "input_2_label": "Metric",
+          "input_3_label": "Code",
+          "fused_label": "Deep Dive"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 29.53,
+      "end": 34.41,
+      "duration": 4.89,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 29.529,
+          "end": 29.919,
+          "duration": 0.39,
+          "frame_ahead_trigger": 30.239
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 29.919,
+          "end": 30.009,
+          "duration": 0.09,
+          "frame_ahead_trigger": 30.629
+        },
+        {
+          "word": "Model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 30.009,
+          "end": 30.414,
+          "duration": 0.405,
+          "frame_ahead_trigger": 30.719
+        },
+        {
+          "word": "Verse",
+          "clean_word": "verse",
+          "phonemes": "v\u02c8\u025c\u02d0s",
+          "start": 30.414,
+          "end": 30.614,
+          "duration": 0.2,
+          "frame_ahead_trigger": 31.124
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 30.614,
+          "end": 30.844,
+          "duration": 0.23,
+          "frame_ahead_trigger": 31.324
+        },
+        {
+          "word": "keep",
+          "clean_word": "keep",
+          "phonemes": "k\u02c8i\u02d0p",
+          "start": 30.844,
+          "end": 30.964,
+          "duration": 0.12,
+          "frame_ahead_trigger": 31.554
+        },
+        {
+          "word": "your",
+          "clean_word": "your",
+          "phonemes": "j\u028a\u0279",
+          "start": 30.964,
+          "end": 31.154,
+          "duration": 0.19,
+          "frame_ahead_trigger": 31.674
+        },
+        {
+          "word": "retrieval",
+          "clean_word": "retrieval",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259l",
+          "start": 31.154,
+          "end": 31.819,
+          "duration": 0.665,
+          "frame_ahead_trigger": 31.864
+        },
+        {
+          "word": "architecture",
+          "clean_word": "architecture",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025a",
+          "start": 31.819,
+          "end": 32.425,
+          "duration": 0.607,
+          "frame_ahead_trigger": 32.529
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 32.425,
+          "end": 32.704,
+          "duration": 0.278,
+          "frame_ahead_trigger": 33.135
+        },
+        {
+          "word": "collapsing",
+          "clean_word": "collapsing",
+          "phonemes": "k\u0259l\u02c8\u00e6ps\u026a\u014b",
+          "start": 32.704,
+          "end": 33.134,
+          "duration": 0.43,
+          "frame_ahead_trigger": 33.414
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 33.134,
+          "end": 33.309,
+          "duration": 0.175,
+          "frame_ahead_trigger": 33.844
+        },
+        {
+          "word": "document",
+          "clean_word": "document",
+          "phonemes": "d\u02c8\u0251\u02d0kju\u02d0m\u0259nt",
+          "start": 33.309,
+          "end": 33.944,
+          "duration": 0.635,
+          "frame_ahead_trigger": 34.019
+        },
+        {
+          "word": "weight.",
+          "clean_word": "weight",
+          "phonemes": "w\u02c8e\u026at",
+          "start": 33.944,
+          "end": 34.269,
+          "duration": 0.325,
+          "frame_ahead_trigger": 34.654
+        }
+      ],
+      "audio_duration": 4.89,
+      "slot_duration": 4.88
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$L_{\\mathrm{total}} = \\sum_{i=1}^{N} C_i$",
+      "filename": "raptor_retrieval_analysis_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "L",
+          "label": "Linear Document Content"
+        },
+        {
+          "term": "C_i",
+          "label": "Flat Chunks"
+        }
+      ],
+      "svg_filename": "raptor_retrieval_analysis_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(N^2) \\text{ search complexity}$",
+      "filename": "raptor_retrieval_analysis_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "N",
+          "label": "Total Tokens in Corpus"
+        }
+      ],
+      "svg_filename": "raptor_retrieval_analysis_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$T_{l} = \\mathrm{Cluster}(\\mathrm{Summarize}(T_{l-1}))$",
+      "filename": "raptor_retrieval_analysis_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "T",
+          "label": "Recursive Tree Level"
+        }
+      ],
+      "svg_filename": "raptor_retrieval_analysis_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathcal{C}_{\\mathrm{traversal}} = \\{k \\mid f(k) > \\tau\\}$",
+      "filename": "raptor_retrieval_analysis_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "f(k)",
+          "label": "Relevance Score"
+        },
+        {
+          "term": "\\tau",
+          "label": "Pruning Threshold"
+        }
+      ],
+      "svg_filename": "raptor_retrieval_analysis_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\Delta\\mathrm{Acc} = 20\\% \\text{ absolute gain}$",
+      "filename": "raptor_retrieval_analysis_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\Delta",
+          "label": "Performance Delta"
+        }
+      ],
+      "svg_filename": "raptor_retrieval_analysis_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "reasoning_tree",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "ROOT",
+          "color": "#38BDF8",
+          "items": [
+            "Summary",
+            "Concept"
+          ]
+        },
+        {
+          "name": "BRANCH",
+          "color": "#10B981",
+          "items": [
+            "Context",
+            "Entity"
+          ]
+        },
+        {
+          "name": "LEAF",
+          "color": "#F59E0B",
+          "items": [
+            "Token",
+            "Fragment"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Reasoning\"",
+        "target_cluster": "BRANCH",
+        "token": "\"Reasoning\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'noise'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'flat'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "RAPTOR Retrieval",
+    "model_a_specs": [
+      "Recursive",
+      "Abstractive",
+      "Tree-Organized"
+    ],
+    "model_b": "Flat Chunking",
+    "model_b_specs": [
+      "Linear",
+      "Contiguous",
+      "Blind"
+    ],
+    "divide_title": "SEARCH VS HIERARCHY DIVIDE",
+    "model_a_stat": "20%",
+    "model_a_stat_label": "ACCURACY JUMP",
+    "model_b_stat": "0%",
+    "model_b_stat_label": "BASELINE",
+    "efficiency_badge": "\u26a1 +20% ABSOLUTE GAIN",
+    "benchmarks": [
+      {
+        "name": "QuALITY",
+        "score_a": "20% Gain",
+        "score_b": "Baseline"
+      }
+    ],
+    "scale_metric": "Recursion",
+    "scale_label": "Tree Levels",
+    "bottleneck_title": "FLAT RETRIEVAL BOTTLENECK",
+    "bottleneck_desc": "Linear search noise",
+    "solution_title": "HIERARCHICAL TREE INDEX",
+    "solution_components": "Recursive Clusters",
+    "mechanism_title": "TOP-DOWN TRAVERSAL",
+    "payoff_stat": "20%",
+    "payoff_label": "ACCURACY JUMP",
+    "payoff_sub": "Outperforming traditional retrieval",
+    "payoff_hero_stat": 20.0,
+    "payoff_hero_label": "RAPTOR Gain",
+    "payoff_base_stat": 0.0,
+    "payoff_base_label": "Standard",
+    "payoff_delta_badge": "\u26a1 +20% SOTA RECOVERY",
+    "challenger": "RAPTOR",
+    "incumbent": "Linear Chunking"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: QUality",
+    "metric_name": "Accuracy",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "RAPTOR",
+        "value": 20.0,
+        "display_val": "+20%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Flat Chunking",
+        "value": 0.0,
+        "display_val": "0%",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +20% SOTA GAIN",
+    "radar_axes": [
+      "Depth",
+      "Clarity",
+      "Context",
+      "Speed",
+      "Reasoning"
+    ]
+  },
+  "code_snippet": {
+    "filename": "raptor_engine.py",
+    "language": "python",
+    "lines": [
+      "def cluster_and_summarize(nodes):",
+      "tree = build_recursive_levels(nodes)",
+      "return tree.traversal(query_embedding)"
+    ],
+    "highlight_lines": [
+      1,
+      2
+    ],
+    "trace_register": "\u26a1 RECURSIVE TREE SYNTHESIS",
+    "explanation": "Constructing multi-level abstraction tree"
+  },
+  "arxiv_id": "2401.18059",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "raptor_formation",
+      "caption": "Raptor Formation",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/source/images/raptor_formation.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/chalkboard_figures/fig_1_raptor_formation.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/chalkboard_figures/fig_1_raptor_formation.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "querying",
+      "caption": "Querying",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/source/images/querying.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/chalkboard_figures/fig_2_querying.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "build_time",
+      "caption": "Build Time",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/source/images/build_time.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/chalkboard_figures/fig_3_build_time.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "build_construction",
+      "caption": "Build Construction",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/source/images/build_construction.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/chalkboard_figures/fig_4_build_construction.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "beam_and_collapsed",
+      "caption": "Beam And Collapsed",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/source/images/beam_and_collapsed.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.18059/chalkboard_figures/fig_5_beam_and_collapsed.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 95
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Standard RAG has a fatal context fragmentation flaw, but RAPTOR delivers a 20% lead.",
+    "verdict": 64,
+    "band": "WORKABLE",
+    "formula": "The Statistic",
+    "properties": {
+      "SPECIFICITY": 68,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Standard RAG has a fatal context fragmentation flaw, but RAPTOR delivers a 20% lead.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "What happens when your vector database only sees isolated chunks? RAPTOR fixes retrieval with a 20% boost.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "How did researchers use RAPTOR to achieve a 20% leap in retrieval accuracy?",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Does RAPTOR actually outperform standard vector retrieval by 20%, or is it just hype?",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why is RAPTOR a major breakthrough? Because retrieval-augmented language models can better adapt to changes in world state and incorporate long-tail knowledge.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why does standard vector search break down when summarizing an entire corpus? Enter RAPTOR.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Retrieval-augmented language models can better adapt to changes in world state and incorporate long-tail knowledge.",
+        "verdict": 54,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until RAPTOR proved: however, most existing methods retrieve only short contiguous chunks from a retrieval corpus, limiting holistic understanding of the overall document context.",
+        "verdict": 50,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "What happens when retrieving from raw, flat chunks leaves LLMs blind to the global context of massive documents?",
+        "verdict": 47,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Did you know retrieving from raw, flat chunks leaves LLMs blind to the global context of massive documents?",
+        "verdict": 47,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Retrieving from raw, flat chunks leaves LLMs blind to the global context of massive documents.",
+        "verdict": 32,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "search_tree",
+      "entity_type": "search_tree",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        1.2,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    },
+    {
+      "entity_id": "branch_bound_laser",
+      "entity_type": "branch_bound",
+      "z_index": 12,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "fmE3eiCefH4",
+    "shorts_url": "https://youtube.com/shorts/fmE3eiCefH4",
+    "studio_url": "https://studio.youtube.com/video/fmE3eiCefH4/edit",
+    "title": "RAPTOR Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/raptor_retrieval_analysis_poster.png",
+    "custom_thumbnail_set": false
+  }
+}
