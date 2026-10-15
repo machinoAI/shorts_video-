@@ -79,7 +79,7 @@ class TechNewsScene(BaseShortScene):
         # -----------------------------------------------------------------
         b1_text, b1_dur, b1_hl, b1_bp, _ = get_beat(
             1,
-            f"Before you update your stack, see what just dropped with {model_name}.",
+            f"{provider.capitalize()} just officially dropped {model_name}, and it changes everything.",
             7.5,
             {model_name: COLOR_CYAN, "dropped": COLOR_GOLD}
         )

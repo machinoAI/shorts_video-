@@ -560,7 +560,8 @@ class DailyShortsDaemon:
         target_slot_hour: Optional[int] = None,
         preferred_taxonomy: Optional[str] = None,
         preferred_category: Optional[str] = None,
-        source: str = "mixed"
+        source: str = "mixed",
+        voice: Optional[str] = None
     ) -> List[Dict[str, Any]]:
         """Executes discovery, production, and publishing for `count` reels aligned with YouTube audience analytics."""
         timestamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
@@ -811,7 +812,12 @@ class DailyShortsDaemon:
             pacing = get_recommended_pacing()
             rec_speed = pacing.get("tts_speed", 1.12)
             active_prov = os.environ.get("TTS_PROVIDER", "auto")
-            active_voice = os.environ.get("ELEVENLABS_VOICE", "eric")
+            if voice:
+                active_voice = voice
+            elif active_prov == "kokoro" or os.environ.get("TTS_PROVIDER") == "kokoro":
+                active_voice = os.environ.get("KOKORO_VOICE", "am_adam")
+            else:
+                active_voice = os.environ.get("KOKORO_VOICE") or os.environ.get("ELEVENLABS_VOICE", "eric")
             try:
                 video_out = auto_produce(
                     topic=title,
@@ -1009,6 +1015,7 @@ def main():
     parser.add_argument("--publish-linkedin", action="store_true", help="Cross-post produced videos to LinkedIn")
     parser.add_argument("--quality", default="qh", help="Render quality (default: qh)")
     parser.add_argument("--arxiv", type=str, default="", help="Specific arXiv ID or URL to produce (e.g. 2401.12345)")
+    parser.add_argument("--voice", type=str, default="", help="Neural voice name (e.g. am_adam, am_eric, am_michael, af_heart, bm_george)")
     args = parser.parse_args()
 
     daemon = DailyShortsDaemon(
@@ -1032,7 +1039,8 @@ def main():
             target_slot_hour=args.slot_hour,
             preferred_taxonomy=args.preferred_taxonomy,
             preferred_category=args.category or None,
-            source=args.source
+            source=args.source,
+            voice=args.voice or None
         )
     elif args.daemon:
         daemon.start_standing_daemon()
@@ -1049,7 +1057,8 @@ def main():
             target_slot_hour=args.slot_hour,
             preferred_taxonomy=args.preferred_taxonomy,
             preferred_category=args.category or None,
-            source=args.source
+            source=args.source,
+            voice=args.voice or None
         )
         if not produced:
             print("❌ Production cycle completed with 0 reels produced. Marking run as failed.")

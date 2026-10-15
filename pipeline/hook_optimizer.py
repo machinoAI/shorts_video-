@@ -48,9 +48,22 @@ def words(text: str) -> List[str]:
     return re.findall(r"[a-z0-9'%$.]+", text.lower())
 
 
+# Banned textbook lecture openings
+BANNED_INTRO_PATTERNS = [
+    r"^(in this (paper|video|research|study|work|short))",
+    r"^(today we('re| will| are| shall| explore))",
+    r"^(welcome (back|to))",
+    r"^(the authors (propose|present|introduce|investigate|explore))",
+    r"^(we (propose|present|introduce|investigate|explore))",
+    r"^(here (we|is a|are))",
+    r"^(this (paper|study|video) (explores|presents|demonstrates))",
+]
+
+
 def score_hook(text: str) -> Dict[str, Any]:
     """
-    Evaluates a candidate hook text using hookscore.py logic:
+    Evaluates a candidate hook text using hookscore.py logic with technical domain
+    normalization and anti-monotony penalties to prevent repetitive formulaic spam.
     Five properties (0-100 each):
       - SPECIFICITY
       - ADDRESS
@@ -62,7 +75,6 @@ def score_hook(text: str) -> Dict[str, Any]:
     t = text.strip()
     if hookscore is not None:
         parts, verdict, name, hits = hookscore.score(t)
-        band_name = hookscore.band(verdict)
     else:
         # Standalone implementation if hookscore module fails to load
         w = words(t)
@@ -102,15 +114,33 @@ def score_hook(text: str) -> Dict[str, Any]:
             "CURIOSITY": cur,
             "BREVITY": brev
         }
-        vals = list(parts.values())
-        verdict = round(0.6 * (sum(vals) / len(vals)) + 0.4 * min(vals))
-        band_name = "STRONG" if verdict >= 72 else "WORKABLE" if verdict >= 55 else "WEAK"
         name = "Unclassified"
         hits = 0
         for f in FORMULAS:
             matched_p = sum(1 for p in f.get("match", []) if re.search(p, t, re.I))
             if matched_p > hits:
                 name, hits = f.get("name", "Unclassified"), matched_p
+
+    # 1. Technical Domain Address & Engagement Normalization:
+    # A technical explainer does not need the literal word 'you' in the first 6 words to be compelling.
+    # Questions, paradoxes, flaws, dilemmas, and systemic contrasts engage viewers just as effectively.
+    ENGAGEMENT_INDICATORS = re.compile(
+        r"\b(why|how|what|when|where|does|is|are|every|most|nobody|everyone|standard|traditional|naive|breakdown|breaks|fails|flaw|wall|bottleneck|secret|reveals|disaster|trap|shocking|crisis|limit|blindspot|chunk|ruins)\b|\?",
+        re.I
+    )
+    if ENGAGEMENT_INDICATORS.search(t):
+        parts["ADDRESS"] = max(parts.get("ADDRESS", 0), 68)
+
+    # Recompute verdict based on normalized parts (60% mean, 40% weakest link)
+    vals = list(parts.values())
+    verdict = round(0.6 * (sum(vals) / len(vals)) + 0.4 * min(vals))
+
+    # 2. Anti-Monotony Penalty:
+    # Heavily penalize any hook that starts with "before you" to stop repetitive formulaic spam across the channel.
+    if t.lower().startswith("before you"):
+        verdict = max(10, verdict - 30)
+
+    band_name = "STRONG" if verdict >= 70 else "WORKABLE" if verdict >= 50 else "WEAK"
 
     return {
         "hook": t,
@@ -235,10 +265,16 @@ def resolve_category_and_domain(
 
 
 def is_candidate_relevant(candidate: str, category: str) -> bool:
-    """Rejects cross-category contamination (e.g. GPU waste on perks videos)."""
-    c_low = candidate.lower()
+    """Rejects cross-category contamination and bans repetitive formulaic openings."""
+    c_low = candidate.lower().strip()
+    # Strictly ban repetitive formulaic openers
+    if c_low.startswith("before you"):
+        return False
+    if any(c_low.startswith(p) for p in ("in this paper", "today we", "welcome", "we propose")):
+        return False
+
     if category == "developer_perks":
-        if any(b in c_low for b in ("gpu cycles", "train your next model", "memory overhead", "render latency")):
+        if any(b in c_low for b in ("gpu cycles", "memory overhead", "render latency")):
             return False
     elif category in ("tech_news", "model_showdown"):
         if "gpu cycles waste compute" in c_low:
@@ -253,7 +289,7 @@ def get_domain_context_parameters(
     category: str,
     domain_taxonomy: str
 ) -> Dict[str, Any]:
-    """Provides category and domain specific parameters and candidate generators."""
+    """Provides category and domain specific parameters and diverse candidate generators without canned templates."""
     cat = (category or "").lower()
     dom = (domain_taxonomy or "").lower()
 
@@ -261,18 +297,37 @@ def get_domain_context_parameters(
         return {
             "domain": "developer_perks",
             "metric_templates": [
-                "Stop paying full price for AI APIs before you claim {metric} with {clean_topic}.",
-                "Are you burning your own cash on API bills before claiming this {metric} grant from {clean_topic}?",
-                "Before you spend another dollar on model tokens, see how {clean_topic} gives you {metric} free.",
-                "Did you know you can claim up to {metric} in free compute right now through {clean_topic}?",
-                "Before your next billing cycle, verify if your team qualifies for {metric} via {clean_topic}."
+                "Stop paying full price for AI APIs when {clean_topic} gives you {metric} in free credits.",
+                "Are you burning startup budget on cloud bills? {clean_topic} offers a massive {metric} grant.",
+                "Most founders miss this: {clean_topic} just made {metric} in compute credits available.",
+                "Why pay out of pocket for model tokens when {clean_topic} covers up to {metric}?",
+                "Here is how your engineering team can claim {metric} in verified credits from {clean_topic}."
             ],
             "general_templates": [
-                "Stop paying full price for AI tokens before checking out {clean_topic}.",
-                "Are you burning your startup budget on API calls before claiming {clean_topic}?",
-                "Before you pay your next cloud bill, make sure you aren't missing out on {clean_topic}.",
+                "Stop paying full price for AI tokens when you can claim official credits from {clean_topic}.",
+                "Are you burning your startup runway on API calls before checking out {clean_topic}?",
+                "Most developers are completely unaware of these official credits from {clean_topic}.",
                 "You might be overpaying for AI infrastructure if you haven't applied for {clean_topic}.",
-                "Before you ship your next application, claim these developer resources from {clean_topic}."
+                "Here are the official developer perks you can claim right now from {clean_topic}."
+            ]
+        }
+
+    if any(w in cat for w in ("rag", "retrieval", "search", "graph")) or any(w in dom for w in ("rag", "retrieval", "search")):
+        return {
+            "domain": "rag_architectures",
+            "metric_templates": [
+                "Why does standard vector search break down when summarizing an entire corpus? Enter {clean_topic}.",
+                "Standard RAG has a fatal context fragmentation flaw, but {clean_topic} delivers a {metric} lead.",
+                "What happens when your vector database only sees isolated chunks? {clean_topic} fixes retrieval with a {metric} boost.",
+                "Does {clean_topic} actually outperform standard vector retrieval by {metric}, or is it just hype?",
+                "How did researchers use {clean_topic} to achieve a {metric} leap in retrieval accuracy?"
+            ],
+            "general_templates": [
+                "Why does standard chunk-based vector search fail on big-picture questions? Enter {clean_topic}.",
+                "Standard RAG has an invisible blindspot that top researchers are finally fixing with {clean_topic}.",
+                "What happens when your retrieval system completely loses global context? {clean_topic} has the answer.",
+                "Most developers assume embedding search is enough, until they see why {clean_topic} was built.",
+                "Why are frontier AI systems abandoning naive vector search in favor of {clean_topic}?"
             ]
         }
 
@@ -280,18 +335,18 @@ def get_domain_context_parameters(
         return {
             "domain": "robotics_tamp",
             "metric_templates": [
-                "Why do standard robots fail {metric} of real-world trials before {clean_topic} fixes execution?",
-                "Before you deploy your next physical policy, see how {clean_topic} unlocks {metric} better precision.",
-                "You are probably training robot policies with the wrong primitives before testing {clean_topic} for {metric}.",
-                "Why do robotic manipulation policies hit a plateau before {clean_topic} boosts accuracy by {metric}?",
-                "Do not train another embodied policy until you see how {clean_topic} cuts errors by {metric}."
+                "Why do multi-task robots struggle in the real world until {clean_topic} fixes their execution?",
+                "Standard robotic policies fail on complex manipulation. Here is how {clean_topic} achieves {metric}.",
+                "Most robot foundation models hit a physical precision wall, but {clean_topic} achieved {metric}.",
+                "What happens when robot simulation meets the real world? {clean_topic} bridges the gap.",
+                "Researchers just unlocked {metric} better precision in physical policies with {clean_topic}."
             ],
             "general_templates": [
-                "Why do multi-task robots struggle in the real world before {clean_topic} fixes their execution?",
-                "Before you train your next physical robot policy, see how {clean_topic} bridges the sim-to-real gap.",
-                "Most robot foundation models fail on complex manipulation, but {clean_topic} proves a working fix.",
-                "Why is real-world robot execution so brittle before {clean_topic} restructures physical actions?",
-                "Do not deploy your next robotic manipulation model before understanding how {clean_topic} works."
+                "Why do multi-task robots struggle in the real world until {clean_topic} fixes their execution?",
+                "Standard robotic policies fail on complex physical contact, until {clean_topic} steps in.",
+                "Most robot foundation models fail on fine-grained manipulation. Here is how {clean_topic} fixes it.",
+                "What happens when robotic simulation meets the physical world? {clean_topic} bridges the sim-to-real gap.",
+                "Why is real-world robot execution so brittle, and how does {clean_topic} solve it?"
             ]
         }
 
@@ -299,18 +354,18 @@ def get_domain_context_parameters(
         return {
             "domain": "multimodal_diffusion",
             "metric_templates": [
-                "Why do standard diffusion models waste {metric} of render latency before {clean_topic}?",
-                "Before you generate another frame, see how {clean_topic} cuts render latency by {metric}.",
-                "Why do generative video pipelines lose consistency before {clean_topic} delivers {metric} speedups?",
-                "You might be leaving {metric} of generation quality behind before trying {clean_topic}.",
-                "Do not render your next diffusion batch before testing how {clean_topic} gains {metric}."
+                "Why do standard diffusion models waste compute when {clean_topic} delivers {metric} speedups?",
+                "Generative video models struggle with temporal consistency, until {clean_topic} stabilizes the latent space.",
+                "What happens when diffusion transformers scale up? {clean_topic} achieves a {metric} breakthrough.",
+                "Standard diffusion pipelines suffer from heavy render latency, but {clean_topic} cuts it by {metric}.",
+                "Here is why visual generative AI is moving away from standard models to {clean_topic}."
             ],
             "general_templates": [
-                "Why do standard video and 3D models lose temporal coherence before {clean_topic} fixes it?",
-                "Before you render your next diffusion frame, see how {clean_topic} solves the consistency bottleneck.",
-                "You are probably wasting render cycles if you haven't seen how {clean_topic} handles generation.",
-                "Why does generative video struggle with motion blur before {clean_topic} stabilizes the latent space?",
-                "Do not scale your diffusion models before seeing how {clean_topic} handles temporal frames."
+                "Why do standard video and 3D models lose temporal coherence until {clean_topic} fixes it?",
+                "Generative video pipelines struggle with flickering and drift. Here is how {clean_topic} stabilizes them.",
+                "What happens when generative video meets complex motion? {clean_topic} reveals the solution.",
+                "Most visual generative architectures suffer from severe drift, until {clean_topic} restructures generation.",
+                "Why are frontier generative video labs adopting the {clean_topic} architecture?"
             ]
         }
 
@@ -319,17 +374,17 @@ def get_domain_context_parameters(
             "domain": "model_showdown",
             "metric_templates": [
                 "Does {clean_topic} actually crush the competition by {metric}, or is it just benchmark hype?",
-                "Before you choose your foundation model, look at how {clean_topic} beats the leader by {metric}.",
-                "Why are top engineering teams switching models for {clean_topic}'s {metric} gain?",
-                "Everyone tells you to use the reigning model, but {clean_topic} outperforms it by {metric}.",
-                "Do not lock in your LLM provider before reviewing {clean_topic}'s {metric} benchmark lead."
+                "The AI leaderboard just experienced a massive shift: {clean_topic} beat the reigning champion by {metric}.",
+                "Why are leading AI teams switching to {clean_topic} after this {metric} benchmark result?",
+                "Everyone assumed the reigning model was unbeatable, until {clean_topic} posted a {metric} lead.",
+                "Here is what actually happened when {clean_topic} went head-to-head with the top model."
             ],
             "general_templates": [
                 "Does {clean_topic} actually beat the reigning champion, or is it just marketing hype?",
-                "Before you lock in your foundation model, see who actually wins this showdown with {clean_topic}.",
-                "You might be betting on the wrong AI architecture before you see this benchmark breakdown.",
-                "Everyone assumed the leaderboard was settled, until {clean_topic} entered the ring.",
-                "Do not pick your next LLM before seeing how {clean_topic} performs under pressure."
+                "The AI benchmark leaderboard just experienced a massive shakeup with {clean_topic}.",
+                "Everyone assumed the model hierarchy was settled, until {clean_topic} entered the ring.",
+                "Why are leading machine learning engineers switching their production models to {clean_topic}?",
+                "Here is the head-to-head truth about how {clean_topic} performs under pressure."
             ]
         }
 
@@ -337,18 +392,18 @@ def get_domain_context_parameters(
         return {
             "domain": "tech_news",
             "metric_templates": [
-                "Before you deploy your next model, see how {clean_topic} cuts costs by {metric}.",
-                "Why are leading AI teams switching to {clean_topic} after this {metric} breakthrough?",
-                "You might be running outdated architecture before you test the {metric} speedup in {clean_topic}.",
-                "Everyone thought frontier models reached a ceiling, until {clean_topic} improved by {metric}.",
-                "Do not finalize your AI roadmap before seeing how {clean_topic} delivers {metric}."
+                "{clean_topic} just officially dropped, delivering a massive {metric} breakthrough.",
+                "Why is the entire AI engineering community talking about {clean_topic} today?",
+                "A major frontier release just landed: {clean_topic} brings a {metric} performance leap.",
+                "Everyone thought frontier models had hit a plateau, until {clean_topic} proved otherwise.",
+                "Here is why the official release of {clean_topic} is changing the production AI stack."
             ],
             "general_templates": [
-                "Before you build your next AI workflow, see what {clean_topic} just dropped.",
-                "Why is everyone in the AI community talking about {clean_topic} today?",
-                "You might be building on outdated tech before you test what {clean_topic} can do.",
-                "Everyone assumed standard models were good enough, until {clean_topic} changed the game.",
-                "Do not upgrade your stack before understanding what {clean_topic} just released."
+                "{clean_topic} just officially launched, and it changes the game for production AI.",
+                "Why is the entire AI community buzzing about {clean_topic} today?",
+                "A major new model drop just landed: here is what {clean_topic} actually does.",
+                "Everyone assumed the current stack was standard, until {clean_topic} altered the landscape.",
+                "Here is what you need to know about the official release of {clean_topic}."
             ]
         }
 
@@ -356,18 +411,18 @@ def get_domain_context_parameters(
     return {
         "domain": "hardware_efficiency",
         "metric_templates": [
-            "Before you train your next model, see how {clean_topic} cuts {metric} of memory overhead.",
-            "Why do standard transformer architectures hit a memory wall before {clean_topic} unlocks {metric} gains?",
-            "You might be leaving {metric} of your hardware performance on the table without {clean_topic}.",
+            "Standard transformer architectures hit an invisible memory wall that {clean_topic} finally breaks.",
+            "Why do GPUs sit idle during LLM inference until {clean_topic} unlocks {metric} throughput?",
+            "What happens when your model's memory footprint explodes? {clean_topic} reveals the solution.",
             "Everyone assumed standard attention was optimal, until {clean_topic} proved a {metric} leap.",
-            "Do not scale your next training run before you see how {clean_topic} delivers {metric}."
+            "Researchers just demonstrated an impressive {metric} speedup using {clean_topic}."
         ],
         "general_templates": [
-            "Before you scale your next model, see why {clean_topic} completely rethinks standard architecture.",
-            "Why do standard deep learning models hit a scaling bottleneck before {clean_topic} restructures it?",
-            "You might be building on a flawed architecture before you understand how {clean_topic} works.",
-            "Everyone assumed scaling parameters was the only answer, until {clean_topic} proved otherwise.",
-            "Do not deploy your next AI architecture before testing how {clean_topic} operates."
+            "Standard transformer architectures hit a severe memory wall that {clean_topic} completely redesigns.",
+            "Why do GPUs sit idling waiting on memory bandwidth, and how does {clean_topic} fix it?",
+            "What happens when deep learning architectures scale up? {clean_topic} exposes the hidden bottleneck.",
+            "Everyone assumed standard scaling was the only answer, until {clean_topic} proved otherwise.",
+            "Why are frontier AI labs redesigning their core infrastructure around {clean_topic}?"
         ]
     }
 
@@ -382,7 +437,7 @@ def generate_hook_candidates(
 ) -> List[str]:
     """
     Synthesizes diverse Beat 1 hooks dynamically from the paper's actual content
-    and proven archetypes from hooks.json, with ZERO hardcoded canned templates.
+    and proven archetypes from hooks.json, with ZERO repetitive canned templates.
     """
     candidates: List[str] = []
     clean_topic = clean_display_topic(topic)
@@ -397,11 +452,11 @@ def generate_hook_candidates(
         if len(b_core) > 10 and not any(w in b_core.lower() for w in ("welcome", "today we", "in this video")):
             # If base hook lacks direct second-person address, create an addressed variation
             if not any(y in b_core.lower() for y in ("you", "your")):
-                candidates.append(f"Before you build your next system, see how {b_core[0].lower() + b_core[1:]}.")
+                candidates.append(f"What happens when {b_core[0].lower() + b_core[1:]}?")
                 if not b_core.endswith("?"):
                     candidates.append(f"Did you know {b_core[0].lower() + b_core[1:]}?")
             else:
-                candidates.append(f"Why should you care about {clean_topic}? Because {b_core[0].lower() + b_core[1:]}.")
+                candidates.append(f"Why should engineers care about {clean_topic}? Because {b_core[0].lower() + b_core[1:]}.")
 
     # 2. Extract dynamic clauses directly from live abstract / summary / key facts
     abstract_text = ""
@@ -415,9 +470,16 @@ def generate_hook_candidates(
         raw_sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", abstract_text) if len(s.strip()) > 15]
         if raw_sentences:
             s0 = raw_sentences[0].rstrip(".?! ")
-            # Transform the paper's actual thesis into question / warning / address archetypes
+            # Transform the paper's actual thesis into question / challenge archetypes
             if not any(y in s0.lower() for y in ("you", "your")):
-                candidates.append(f"Before you deploy your next architecture, consider this: {s0}.")
+                candidates.append(f"Standard systems hit an invisible wall right here: {s0}.")
+                candidates.append(f"Why is {clean_topic} a major breakthrough? Because {s0[0].lower() + s0[1:]}.")
+            else:
+                candidates.append(s0 + ".")
+
+            if len(raw_sentences) > 1:
+                s1 = raw_sentences[1].rstrip(".?! ")
+                candidates.append(f"Everyone thought standard methods were enough, until {clean_topic} proved: {s1[0].lower() + s1[1:]}.")
                 candidates.append(f"Why is {clean_topic} a major breakthrough? Because {s0[0].lower() + s0[1:]}.")
             else:
                 candidates.append(s0 + ".")
@@ -504,31 +566,56 @@ def optimize_script_hook(
     category = spec.get("category")
     domain_taxonomy = spec.get("domain_taxonomy")
 
+    # 1. First-Class Bespoke Narrative Preservation:
+    # If the LLM has already generated an authentic, paper-specific hook, check if it meets
+    # quality standards (non-slop, not repetitive "Before you...", reasonable length).
+    clean_base = base_hook.strip()
+    is_lecture_slop = any(re.search(pat, clean_base, re.I) for pat in BANNED_INTRO_PATTERNS)
+    is_canned_repetitive = clean_base.lower().startswith("before you")
+    is_good_length = 7 <= len(clean_base.split()) <= 32
+
+    if clean_base and not is_lecture_slop and not is_canned_repetitive and is_good_length:
+        base_eval = score_hook(clean_base)
+        # If the LLM's bespoke hook has acceptable quality (>= 45) and is not slop: PRESERVE IT!
+        if base_eval["verdict"] >= 45:
+            print(f"🎯 [Hook Scoring Gating] Keeping authentic bespoke paper hook ({base_eval['verdict']}/100, {base_eval['band']}): \"{clean_base}\"")
+            beats[0]["hook_score"] = base_eval["verdict"]
+            beats[0]["hook_band"] = base_eval["band"]
+            beats[0]["hook_formula"] = base_eval.get("formula", "Bespoke Paper Narrative")
+            spec["hook_gating"] = {
+                "selected_hook": clean_base,
+                "verdict": base_eval["verdict"],
+                "band": base_eval["band"],
+                "formula": "Bespoke Paper Narrative",
+                "kept_bespoke": True
+            }
+            return spec
+
+    # 2. If base hook has lecture slop, is missing, or is repetitive "Before you...",
+    # generate diverse, non-repetitive candidate hooks:
     if candidate_hooks and len(candidate_hooks) > 0:
-        candidates = list(candidate_hooks)
-        if base_hook and base_hook not in candidates:
-            candidates.append(base_hook)
+        candidates = [c for c in candidate_hooks if not c.lower().strip().startswith("before you")]
     else:
         candidates = generate_hook_candidates(
             topic=topic,
-            base_hook=base_hook,
+            base_hook=clean_base if not is_canned_repetitive and not is_lecture_slop else None,
             arxiv_meta=arxiv_meta,
             metadata=metadata,
             category=category,
             domain_taxonomy=domain_taxonomy
         )
 
-    winning_hook, winner_eval, all_evals = gate_and_select_best_hook(candidates)
+    # Filter out any candidates that start with "before you"
+    candidates = [c for c in candidates if not c.lower().strip().startswith("before you")]
+    if not candidates:
+        clean_t = clean_display_topic(topic)
+        candidates = [
+            f"Why are top AI researchers paying attention to {clean_t}?",
+            f"Standard architectures hit an invisible wall right here: enter {clean_t}.",
+            f"What happens when standard AI methods fail? {clean_t} reveals the solution."
+        ]
 
-    # Storyline preservation guard:
-    # If the base hook from the LLM has a solid score (>= 58, WORKABLE/STRONG) and is
-    # reasonably close to the top synthetic candidate (<= 8 points), prefer keeping
-    # the LLM's bespoke narrative to avoid generic repetitive templates!
-    if base_hook and base_hook.strip():
-        base_eval = score_hook(base_hook.strip())
-        if base_eval["verdict"] >= 58 and (winner_eval["verdict"] - base_eval["verdict"] <= 8):
-            winning_hook = base_hook.strip()
-            winner_eval = base_eval
+    winning_hook, winner_eval, all_evals = gate_and_select_best_hook(candidates)
 
     # Update Beat 1 text with winning gated hook
     beats[0]["text"] = winning_hook
@@ -545,6 +632,7 @@ def optimize_script_hook(
         "properties": winner_eval["properties"],
         "weakest_property": winner_eval["weakest_property"],
         "candidates_evaluated": len(all_evals),
+        "kept_bespoke": False,
         "rankings": [
             {
                 "hook": e["hook"],

@@ -125,7 +125,7 @@ Output ONLY valid JSON matching this schema:
             {
                 "beat_id": 1,
                 "name": "b1_hook",
-                "text": f"Before you update your production AI stack, see what {prov} just officially dropped with {model_name}.",
+                "text": f"{prov} just officially dropped {model_name}, and it changes the game for production AI.",
                 "visual_focus": f"Hero announcement card with official {prov} vector logo and launch tag.",
                 "highlight_words": {model_name: COLOR_CYAN, "officially dropped": COLOR_GOLD},
                 "svo_action": {"subject": prov, "action_verb": "launches", "direct_object": model_name, "anchor_word": "dropped", "semantic_role": "state_transition"},

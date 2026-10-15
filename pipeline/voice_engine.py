@@ -461,7 +461,7 @@ class KokoroVoiceProvider(BaseVoiceProvider):
         if not voice_name:
             if DEFAULT_KOKORO_VOICE in available_voices:
                 return DEFAULT_KOKORO_VOICE
-            return "am_eric" if "am_eric" in available_voices else (list(available_voices)[0] if available_voices else "am_adam")
+            return "am_adam" if "am_adam" in available_voices else (list(available_voices)[0] if available_voices else "am_adam")
 
         clean = voice_name.lower().strip()
         # Direct match in Kokoro
@@ -560,7 +560,7 @@ class UnifiedVoiceRouter:
         else:
             target_provider = "kokoro"
             resolved_model = "kokoro-v1.0"
-            resolved_voice = voice or DEFAULT_VOICE
+            resolved_voice = self.kokoro.resolve_voice(voice or DEFAULT_KOKORO_VOICE)
             active_speed = float(speed) if speed is not None else DEFAULT_SPEED
 
         # 1. Check Disk Cache

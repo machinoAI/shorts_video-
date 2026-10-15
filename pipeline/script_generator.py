@@ -64,8 +64,9 @@ Aesthetic & Pedagogical Philosophy (Fireship meets 3Blue1Brown & Veritasium):
   * Inject smart, wry, relatable developer humor highlighting the authentic irony or frustration behind the paper's core challenge.
   * Point out the real-world absurdity (e.g., in robotics: AI solving differential equations but getting defeated by an egg; in hardware: spending millions on GPUs that sit idling waiting on RAM; in vision: melting data centers to draw hands with eleven fingers).
   * Keep the humor dry, sharp, and grounded directly in the paper's actual friction—never silly slapstick.
-- STRICTLY BAN TEXTBOOK SUMMARIES & LECTURE INTROS:
+- STRICTLY BAN TEXTBOOK SUMMARIES & REPETITIVE HOOKS:
   * NEVER start with "Today we explore...", "In this paper...", "In this video...", or "The authors propose...".
+  * STRICT BAN ON "Before you..." CLICHES: NEVER start Beat 1 with "Before you...". Every video on this channel must feature a unique, fresh, and surprising opening line.
   * The first 3 seconds must be an ABSURD PARADOX or PATTERN INTERRUPT grounded in the paper that stops the viewer from swiping away.
 - Ground abstract AI in real developer tools and crisp physical analogies relevant to the paper:
   * Name REAL models, frameworks, and hardware when appropriate.
@@ -83,11 +84,13 @@ Aesthetic & Pedagogical Philosophy (Fireship meets 3Blue1Brown & Veritasium):
 
 The 4-Act Intellectual Thriller Narrative Arc:
 1. ACT 1: Absurd Paradox / Pattern Interrupt Hook (Beat 1, 0-3s, 12-18 words):
-   * Start with a bold, high-stakes curiosity loop or shocking inefficiency from the paper. No textbook greetings!
+   * Start with a bold, high-stakes curiosity loop or shocking inefficiency from the paper. No textbook greetings and NO "Before you..." clichés!
    * Illustrative Grounded Examples (DO NOT COPY VERBATIM; DRAFT SPECIFICALLY FOR THE PAPER):
-     - Robotics: "Most humanoid robots freeze the moment they drop an object in an unfamiliar room."
+     - RAG / Search: "Chopping technical papers into 500-token chunks completely blinds LLMs from seeing the big picture."
      - Hardware: "Scaling context windows beyond eight thousand tokens causes standard models to hit an insurmountable memory wall."
+     - Robotics: "Most humanoid robots freeze the moment they drop an object in an unfamiliar room."
      - Diffusion: "Generating 10 seconds of high-fidelity video used to require hundreds of repetitive diffusion passes."
+     - Reasoning / RL: "Standard models can solve complex calculus, but collapse into repetitive loops on basic verification."
 2. ACT 2: The Villain & Bottleneck (Beat 2, 3-15s, 20-26 words):
    * Personify the villain/bottleneck and explain WHY it happens using ONE clear, relatable physical analogy.
 3. ACT 3: The Eureka Geometric Mechanism (Beats 3 & 4, 15-40s):
