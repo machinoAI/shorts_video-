@@ -88,7 +88,7 @@ Beat 2 (3-12s, Deal Breakdown): Exact benefits (e.g. $1,000 API credits + 1 year
 Beat 3 (12-24s, Eligibility Checklist): Clear 3-part qualification criteria (early stage, domain, working code/GitHub).
 Beat 4 (24-35s, Console Walkthrough): Exact steps to apply (console URL, linking GitHub, filling 3 fields).
 Beat 5 (35-44s, Social Proof Receipts): Community proof (founders on Twitter/Reddit getting approved in 24-48 hours).
-Beat 6 (44-50s, Urgent Save CTA): 'Save this video before the program caps, and follow The Model Verse for daily developer perks.'
+Beat 6 (44-50s, Urgent Save CTA): 'Save this video before the program caps, and follow {CHANNEL_NAME} for daily developer perks.'
 
 Output ONLY valid JSON matching this schema:
 {{

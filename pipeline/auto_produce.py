@@ -21,7 +21,8 @@ sys.path.append(str(PROJECT_ROOT))
 
 from pipeline.config import (
     OUTPUT_DIR, FFMPEG_BIN, DEFAULT_VOICE,
-    resolve_track, TRACK_ACADEMIC, TRACK_METADATA
+    resolve_track, TRACK_ACADEMIC, TRACK_METADATA,
+    select_production_voice
 )
 from pipeline.arxiv_fetcher import fetch_arxiv_paper
 from pipeline.script_generator import generate_script
@@ -298,10 +299,7 @@ def auto_produce(
     resolved_prov = provider or spec.get("tts_provider") or os.environ.get("TTS_PROVIDER") or "elevenlabs"
     if resolved_prov == "auto":
         resolved_prov = "sarvam" if resolved_lang in ("hi", "hindi") else "elevenlabs"
-    resolved_voice = voice or spec.get("voice") or (
-        os.environ.get("KOKORO_VOICE", "am_adam") if resolved_prov == "kokoro"
-        else ("eric" if resolved_prov == "elevenlabs" else None)
-    )
+    resolved_voice = select_production_voice(voice or spec.get("voice"), provider=resolved_prov)
     print(f"🎙️ Narration: {resolved_prov.upper()} ({resolved_lang}, {resolved_voice or 'default'}) at {speed}x speed")
 
     # Step 3: Synthesize Audio & Procedural SFX

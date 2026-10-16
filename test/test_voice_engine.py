@@ -400,8 +400,8 @@ def test_kokoro_voice_provider_resolve_voice():
 def test_unified_voice_router_fallback_maps_eric_to_am_eric(tmp_path):
     router = UnifiedVoiceRouter(cache_dir=str(tmp_path))
     # Simulate ElevenLabs quota failure
+    dummy_audio = np.zeros(24000, dtype=np.float32)
     with patch.object(router.elevenlabs, "synthesize", side_effect=VoiceQuotaExceededError("Quota exceeded")):
-        dummy_audio = np.zeros(24000, dtype=np.float32)
         with patch.object(router.kokoro, "synthesize", return_value=(dummy_audio, 24000, {"provider": "kokoro", "voice": "am_eric"})) as mock_kokoro:
             audio, sr, meta = router.synthesize_beat(
                 text="Testing fallback from ElevenLabs to Kokoro",
@@ -412,5 +412,56 @@ def test_unified_voice_router_fallback_maps_eric_to_am_eric(tmp_path):
             _, kwargs = mock_kokoro.call_args
             assert kwargs["voice"] == "am_eric"
             assert meta["fallback_from"] == "elevenlabs"
+
+
+def test_select_production_voice_5_voice_pool():
+    from pipeline.config import (
+        select_production_voice,
+        KOKORO_VOICES_FEMALE,
+        KOKORO_VOICES_MALE,
+        KOKORO_VOICE_POOL,
+        ELEVENLABS_VOICES_FEMALE,
+        ELEVENLABS_VOICES_MALE,
+        ELEVENLABS_VOICE_POOL,
+    )
+
+    # 1. Verify pool composition (2 Ladies, 3 Men)
+    assert len(KOKORO_VOICES_FEMALE) == 2
+    assert len(KOKORO_VOICES_MALE) == 3
+    assert set(KOKORO_VOICES_FEMALE) == {"af_heart", "af_bella"}
+    assert set(KOKORO_VOICES_MALE) == {"am_adam", "am_eric", "am_michael"}
+    assert len(KOKORO_VOICE_POOL) == 5
+
+    assert len(ELEVENLABS_VOICES_FEMALE) == 2
+    assert len(ELEVENLABS_VOICES_MALE) == 3
+    assert set(ELEVENLABS_VOICES_FEMALE) == {"sarah", "alice"}
+    assert set(ELEVENLABS_VOICES_MALE) == {"eric", "adam", "brian"}
+    assert len(ELEVENLABS_VOICE_POOL) == 5
+
+    # 2. Explicit voice overrides random
+    assert select_production_voice("af_heart", provider="kokoro") == "af_heart"
+    assert select_production_voice("am_michael", provider="kokoro") == "am_michael"
+
+    # 3. Random selection for Kokoro selects from the 5-voice pool
+    kokoro_selections = set()
+    for _ in range(50):
+        v = select_production_voice("random", provider="kokoro")
+        assert v in KOKORO_VOICE_POOL
+        kokoro_selections.add(v)
+
+    # Over 50 random iterations, both female and male voices should be hit
+    assert any(v in KOKORO_VOICES_FEMALE for v in kokoro_selections)
+    assert any(v in KOKORO_VOICES_MALE for v in kokoro_selections)
+
+    # 4. Random selection for ElevenLabs selects from the 5-voice pool
+    el_selections = set()
+    for _ in range(50):
+        v = select_production_voice("random", provider="elevenlabs")
+        assert v in ELEVENLABS_VOICE_POOL
+        el_selections.add(v)
+
+    assert any(v in ELEVENLABS_VOICES_FEMALE for v in el_selections)
+    assert any(v in ELEVENLABS_VOICES_MALE for v in el_selections)
+
 
 

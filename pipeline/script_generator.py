@@ -99,12 +99,12 @@ The 4-Act Intellectual Thriller Narrative Arc:
 4. ACT 4: The Paradigm Shift / Open Loop (Beats 5 & 6, 40-50s):
    * Beat 5 (Empirical Victory Payoff, 18-24 words): Deliver the concrete payoff with numbers from the paper.
    * Beat 6 (Paradigm Shift & Seamless Loop, 15-20 words): Crisp outro that naturally loops back to Beat 1.
-     Example: 'Follow The Model Verse for daily deep-dives into how modern AI actually works under the hood.'
+     Example: 'Follow {{CHANNEL_NAME}} for daily deep-dives into how modern AI actually works under the hood.'
 
 Highlight Words Rules:
 - For each beat, select 1 to 3 critical technical keywords from the beat text to highlight.
 - Map them to one of these exact hex colors:
-  * Mint (efficiency/success/The Model Verse): "#34D399"
+  * Mint (efficiency/success/{{CHANNEL_NAME}}): "#34D399"
   * Danger Red (bottlenecks/explosions/costs): "#EF4444"
   * Cyan (routing/queries/weights): "#38BDF8"
   * Gold (key metrics/numbers/shared): "#F59E0B"
@@ -200,7 +200,76 @@ DEDICATED FULL-SCREEN VISUAL BLUEPRINTS (CRITICAL ARCHITECTURAL DIRECTIVE):
 - STRICT BAN ON CARTOON X AND CHECKMARKS: Never draw crude red 'X' and green checkmark boxes like cheap clickbait. All visuals must feature real scientific hardware telemetry, mathematical equations, and technical flow mechanics!
 """.replace("{{CHANNEL_NAME}}", CHANNEL_NAME).replace("{{CHANNEL_HANDLE}}", CHANNEL_HANDLE)
 
+def sanitize_spec_channel_branding(spec: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Enforces active CHANNEL_NAME branding across all text, SVO actions, highlights,
+    and visual blueprints in the spec, replacing legacy/default channel names.
+    """
+    if not isinstance(spec, dict):
+        return spec
+
+    target_brand = CHANNEL_NAME or "machinoAI"
+    legacy_patterns = [
+        (re.compile(r"\bthe\s+model\s+verse\b", re.IGNORECASE), target_brand),
+        (re.compile(r"\bmodel\s+verse\b", re.IGNORECASE), target_brand),
+        (re.compile(r"\bmodelverse\b", re.IGNORECASE), target_brand),
+    ]
+
+    def _replace_text(text: str) -> str:
+        if not isinstance(text, str):
+            return text
+        res = text
+        for pat, repl in legacy_patterns:
+            res = pat.sub(repl, res)
+        return res
+
+    # 1. Spec Title if legacy
+    if "title" in spec and isinstance(spec["title"], str):
+        if spec["title"].strip().lower() in ("the model verse", "model verse", "modelverse"):
+            spec["title"] = target_brand
+
+    # 2. Beats cleanup
+    for beat in spec.get("beats", []):
+        if not isinstance(beat, dict):
+            continue
+        if "text" in beat:
+            beat["text"] = _replace_text(beat["text"])
+        if "visual_focus" in beat:
+            beat["visual_focus"] = _replace_text(beat["visual_focus"])
+
+        # Highlight words
+        if "highlight_words" in beat and isinstance(beat["highlight_words"], dict):
+            new_highlights = {}
+            for k, v in beat["highlight_words"].items():
+                new_key = _replace_text(k)
+                new_highlights[new_key] = v
+            beat["highlight_words"] = new_highlights
+
+        # SVO action
+        if "svo_action" in beat and isinstance(beat["svo_action"], dict):
+            svo = beat["svo_action"]
+            for field in ("subject", "direct_object", "anchor_word"):
+                if field in svo and isinstance(svo[field], str):
+                    svo[field] = _replace_text(svo[field])
+
+        # Visual blueprint
+        if "visual_blueprint" in beat and isinstance(beat["visual_blueprint"], dict):
+            bp = beat["visual_blueprint"]
+            if "title" in bp and isinstance(bp["title"], str):
+                if any(p.search(bp["title"]) for p, _ in legacy_patterns):
+                    bp["title"] = target_brand.upper()
+            if "sub" in bp and isinstance(bp["sub"], str):
+                bp["sub"] = _replace_text(bp["sub"])
+            if "params" in bp and isinstance(bp["params"], dict):
+                for pk, pv in bp["params"].items():
+                    if isinstance(pv, str):
+                        bp["params"][pk] = _replace_text(pv)
+
+    return spec
+
+
 def _persist_and_finalize_spec(spec: Dict[str, Any], topic: str, default_category: str) -> Dict[str, Any]:
+    spec = sanitize_spec_channel_branding(spec)
     clean_id = re.sub(r"[^a-zA-Z0-9_\-]", "_", spec.get("id", topic)).lower()
     spec["id"] = clean_id
     cat_slug = spec.get("category") or default_category
@@ -495,6 +564,7 @@ Generate the complete JSON specification strictly adhering to this structure:
         arxiv_meta=arxiv_meta
     )
     print(f"✅ Script generated successfully via provider '{provider_used}'")
+    spec = sanitize_spec_channel_branding(spec)
 
     # Ensure ID slug is filesystem safe
     clean_id = re.sub(r"[^a-zA-Z0-9_\-]", "_", spec.get("id", "short_topic")).lower()
@@ -659,6 +729,9 @@ Generate the complete JSON specification strictly adhering to this structure:
                 render_math_to_svg(latex, clean_fname, fontsize=fontsize, color=color)
             except Exception as e:
                 print(f"⚠️ Warning: Could not render math SVG '{clean_fname}': {e}")
+
+    # Final channel branding sanitization pass
+    spec = sanitize_spec_channel_branding(spec)
 
     # Save to templates directory
     templates_dir = PROJECT_ROOT / "pipeline" / "templates"

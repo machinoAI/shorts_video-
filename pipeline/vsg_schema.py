@@ -10,6 +10,7 @@ Defines the Pydantic v2 data models for:
 from enum import Enum
 from typing import List, Dict, Any, Optional, Literal, Union
 from pydantic import BaseModel, Field, model_validator
+from pipeline.config import CHANNEL_NAME
 
 
 # =============================================================================
@@ -268,7 +269,7 @@ def convert_legacy_spec_to_vsg(spec: Dict[str, Any]) -> VisualStoryboard:
     VisualStoryboard specification. Enables backwards compatibility without code duplication.
     """
     spec_id = spec.get("id", "untitled_spec")
-    title = spec.get("title", "The Model Verse")
+    title = spec.get("title", CHANNEL_NAME or "machinoAI")
     category = spec.get("category", "dynamic_pedagogy")
     hook_tag = spec.get("hook_tag", "AI ARCHITECTURE")
     meta = spec.get("metadata", {})

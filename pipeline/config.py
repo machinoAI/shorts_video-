@@ -5,6 +5,7 @@ The Model Verse — Configuration & Design Tokens
 import os
 import shutil
 import datetime
+import random
 from typing import Optional, Dict, Any, List
 from pathlib import Path
 from dotenv import load_dotenv
@@ -118,6 +119,55 @@ ELEVENLABS_VOICES = {
     "lily": "pFZP5JQG7iQjIQuC4Bku",
     "bill": "pqHfZKP75CvOlQylNhV4",
 }
+
+# Curated 5-Voice Production Pools (2 Ladies, 3 Men)
+# Kokoro-82M Offline Voice Pool (Zero Cost, Native 24kHz)
+KOKORO_VOICES_FEMALE = ["af_heart", "af_bella"]
+KOKORO_VOICES_MALE = ["am_adam", "am_eric", "am_michael"]
+KOKORO_VOICE_POOL = KOKORO_VOICES_FEMALE + KOKORO_VOICES_MALE
+
+# ElevenLabs Neural Voice Pool (Studio API)
+ELEVENLABS_VOICES_FEMALE = ["sarah", "alice"]
+ELEVENLABS_VOICES_MALE = ["eric", "adam", "brian"]
+ELEVENLABS_VOICE_POOL = ELEVENLABS_VOICES_FEMALE + ELEVENLABS_VOICES_MALE
+
+ENABLE_RANDOM_VOICE = os.environ.get("ENABLE_RANDOM_VOICE", "false").lower() in ("true", "1", "yes")
+
+
+def select_production_voice(
+    requested_voice: Optional[str] = None,
+    provider: Optional[str] = None
+) -> str:
+    """
+    Selects a voice for production:
+    - If requested_voice is explicitly provided (and not 'random'), returns it.
+    - If requested_voice is 'random' or ENABLE_RANDOM_VOICE=True or KOKORO_VOICE='random',
+      randomly chooses from the curated 5-voice pool (2 female, 3 male).
+    - Otherwise returns the configured provider default.
+    """
+    clean_req = str(requested_voice or "").strip().lower()
+    is_random = (
+        clean_req in ("random", "shuffle", "any")
+        or ENABLE_RANDOM_VOICE
+        or os.environ.get("KOKORO_VOICE", "").strip().lower() == "random"
+    )
+
+    prov = (provider or os.environ.get("TTS_PROVIDER") or DEFAULT_TTS_PROVIDER or "kokoro").lower()
+
+    if prov == "elevenlabs":
+        if clean_req and clean_req not in ("random", "shuffle", "any"):
+            return requested_voice
+        if is_random:
+            return random.choice(ELEVENLABS_VOICE_POOL)
+        return DEFAULT_VOICE
+
+    # Kokoro (default offline engine)
+    if clean_req and clean_req not in ("random", "shuffle", "any"):
+        return requested_voice
+    if is_random:
+        return random.choice(KOKORO_VOICE_POOL)
+    return DEFAULT_KOKORO_VOICE
+
 
 # Sarvam AI Configuration (Hindi Neural Voice)
 SARVAM_API_KEY = os.environ.get("SARVAM_API_KEY", "")

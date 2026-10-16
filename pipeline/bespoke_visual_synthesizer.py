@@ -28,7 +28,7 @@ with warnings.catch_warnings():
     except ImportError:
         genai = None
 
-from pipeline.config import GEMINI_MODEL_NAME
+from pipeline.config import GEMINI_MODEL_NAME, CHANNEL_NAME
 from pipeline.code_sandbox import validate_synthesized_visual_code
 from pipeline.llm_router import llm_router, generate_text_with_cascade
 from pipeline.quota_tracker import quota_tracker
@@ -44,8 +44,8 @@ GENERATED_VISUALS_DIR = PROJECT_ROOT / "manim_engine" / "generated"
 GENERATED_VISUALS_DIR.mkdir(parents=True, exist_ok=True)
 
 
-BESPOKE_SYNTHESIZER_SYSTEM_PROMPT = """
-You are the Lead Visual Animator and Computational Geometer at 3Blue1Brown and 'The Model Verse'.
+BESPOKE_SYNTHESIZER_SYSTEM_PROMPT = f"""
+You are the Lead Visual Animator and Computational Geometer at 3Blue1Brown and '{CHANNEL_NAME or "machinoAI"}'.
 Your mission: Write pure, executable Python Manim Community Edition code that builds a HIGH-DENSITY, PUBLICATION-GRADE geometric visual for a short-form video beat explaining an AI/Computer Science breakthrough.
 
 CRITICAL DESIGN & QUALITY PRINCIPLES:

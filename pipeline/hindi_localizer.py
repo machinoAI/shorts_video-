@@ -13,15 +13,15 @@ import json
 import copy
 from typing import Dict, Any, List
 import google.generativeai as genai
-from pipeline.config import GEMINI_MODEL_NAME
+from pipeline.config import GEMINI_MODEL_NAME, CHANNEL_NAME
 
 API_KEY = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
 if API_KEY:
     genai.configure(api_key=API_KEY)
 
 
-HINDI_LOCALIZATION_PROMPT = """
-You are the Lead Technical Scriptwriter for 'The Model Verse' tech channel in India.
+HINDI_LOCALIZATION_PROMPT = f"""
+You are the Lead Technical Scriptwriter for '{CHANNEL_NAME or "machinoAI"}' tech channel in India.
 Your mission: Localize these 6 English technical short beats into natural, conversational, high-retention Conversational Hindi/Hinglish for YouTube Shorts.
 
 CRITICAL RULES:
@@ -41,7 +41,7 @@ CRITICAL RULES:
    - Beat 3: The Breakthrough Mechanism
    - Beat 4: Technical Deep-Dive
    - Beat 5: Benchmark / Speedup Payoff
-   - Beat 6: Outro (e.g. "Modern AI architectures ki engineering samajhne ke liye The Model Verse ko follow karein.")
+   - Beat 6: Outro (e.g. "Modern AI architectures ki engineering samajhne ke liye {CHANNEL_NAME or 'machinoAI'} ko follow karein.")
 
 Return ONLY a JSON array of 6 strings, one for each beat:
 ["Beat 1 text", "Beat 2 text", "Beat 3 text", "Beat 4 text", "Beat 5 text", "Beat 6 text"]

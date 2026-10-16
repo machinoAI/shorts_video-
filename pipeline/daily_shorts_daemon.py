@@ -34,6 +34,7 @@ from pipeline.config import (
     MAX_PERK_VERIFICATION_AGE_DAYS,
     is_content_recent,
     calculate_content_age_days,
+    select_production_voice,
 )
 from pipeline.analytics_feedback import (
     retention_analytics,
@@ -812,12 +813,8 @@ class DailyShortsDaemon:
             pacing = get_recommended_pacing()
             rec_speed = pacing.get("tts_speed", 1.12)
             active_prov = os.environ.get("TTS_PROVIDER", "auto")
-            if voice:
-                active_voice = voice
-            elif active_prov == "kokoro" or os.environ.get("TTS_PROVIDER") == "kokoro":
-                active_voice = os.environ.get("KOKORO_VOICE", "am_adam")
-            else:
-                active_voice = os.environ.get("KOKORO_VOICE") or os.environ.get("ELEVENLABS_VOICE", "eric")
+            active_voice = select_production_voice(voice, provider=active_prov)
+            print(f"🎙️ Voice Selection: Active Voice '{active_voice}' via provider '{active_prov}'")
             try:
                 video_out = auto_produce(
                     topic=title,

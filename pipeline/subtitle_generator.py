@@ -8,6 +8,7 @@ import os
 import re
 from pathlib import Path
 from typing import List, Dict, Any, Optional
+from pipeline.config import CHANNEL_NAME
 
 COMMON_STOPWORDS = {
     "a", "an", "the", "in", "on", "at", "to", "for", "of", "with", "by", "from",
@@ -172,11 +173,13 @@ def export_srt(chunks: List[Dict[str, Any]], output_path: str) -> str:
     return output_path
 
 
-def export_ass(chunks: List[Dict[str, Any]], output_path: str, title: str = "The Model Verse") -> str:
+def export_ass(chunks: List[Dict[str, Any]], output_path: str, title: Optional[str] = None) -> str:
     """
     Exports kinetic phrase chunks to a styled Advanced SubStation Alpha (.ass) file,
     optimized specifically for 9:16 mobile vertical Shorts (1440x2560 canvas).
     """
+    if not title:
+        title = CHANNEL_NAME or "machinoAI"
     os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
     header = f"""[Script Info]
 Title: {title} Kinetic Captions
