@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-16 | **Timestamp:** 2026-10-16 16:52:10 UTC
+**Date:** 2026-10-16 | **Timestamp:** 2026-10-16 19:19:47 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Self-RAG: Part 3 - Self-Critique & Adaptive Retrieval Thresholding
-- **Topic Queue Part:** `self_rag_part_3_self_critique_thresholding` (arXiv: [2310.11511](https://arxiv.org/abs/2310.11511))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/OYDq5o5A-to](https://youtube.com/shorts/OYDq5o5A-to) (`OYDq5o5A-to`)
-- **High-CTR Poster:** [self_rag_critique_guided_beam_poster.png](public/thumbnails/self_rag_critique_guided_beam_poster.png)
+### Reel 1: Self-RAG: Part 4 - Outperforming ChatGPT & Standard RAG on Factuality
+- **Topic Queue Part:** `self_rag_part_4_benchmark_payoff` (arXiv: [2310.11511](https://arxiv.org/abs/2310.11511))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/eaxKSb-1mGE](https://youtube.com/shorts/eaxKSb-1mGE) (`eaxKSb-1mGE`)
+- **High-CTR Poster:** [self_rag_factuality_poster.png](public/thumbnails/self_rag_factuality_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *Self-RAG Mini-Series 3/4: Self-RAG: Part 3 - Self-Critique & Adaptive Retrieval Thresholding*
-- **Everyday Analogy:** *Critique-guided beam search: decoding with probabilities weighted by factual support tokens to prune hallucinations.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_self_rag_critique_guided_beam_mechanism_deepdive.mp4`
+- **Category:** `benchmark_news`
+- **Editorial Hook:** *Self-RAG Mini-Series 4/4: Self-RAG: Part 4 - Outperforming ChatGPT & Standard RAG on Factuality*
+- **Everyday Analogy:** *Dramatic hallucination drops on PopQA, TriviaQA, and BioASQ while using fewer retrieval calls.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_self_rag_factuality_benchmark_news.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs

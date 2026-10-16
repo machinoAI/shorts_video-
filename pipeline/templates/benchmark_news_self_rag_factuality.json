@@ -1,0 +1,1665 @@
+{
+  "id": "self_rag_factuality",
+  "title": "Self\u2011RAG: Outperforming ChatGPT on Factuality",
+  "category": "benchmark_news",
+  "domain_taxonomy": "quantitative_benchmark",
+  "hook_tag": "BENCHMARK NEWS",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "What happens when a 13\u2011billion\u2011parameter LLM refuses to answer a simple fact until it summons a hidden library?",
+      "visual_focus": "Blackboard shows a massive parameter tower beside a tiny library icon that lights up when summoned.",
+      "highlight_words": {
+        "13\u2011billion\u2011parameter": "#F59E0B",
+        "summons": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Self\u2011RAG LM",
+        "action_verb": "calls",
+        "direct_object": "Knowledge Base",
+        "anchor_word": "summons",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "UNSEEN KNOWLEDGE CALL",
+        "sub": "Latent prompt vector flows toward retrieved passage",
+        "accent_color": "#38BDF8",
+        "params": {
+          "field_title": "Retrieval Flow",
+          "source_label": "Prompt",
+          "target_label": "Passage",
+          "stream_formula": "v = f(prompt)"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 66,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "UNSEEN KNOWLEDGE CALL",
+        "sub": "Latent prompt vector flows toward retrieved passage",
+        "accent_color": "#38BDF8",
+        "field_title": "Retrieval Flow",
+        "source_label": "Prompt",
+        "target_label": "Passage",
+        "stream_formula": "v = f(prompt)"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.25,
+      "duration": 7.25,
+      "word_timings": [
+        {
+          "word": "What",
+          "clean_word": "what",
+          "phonemes": "w\u02cc\u028ct",
+          "start": 0.005,
+          "end": 0.3,
+          "duration": 0.295,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "happens",
+          "clean_word": "happens",
+          "phonemes": "h\u02c8\u00e6p\u0259nz",
+          "start": 0.3,
+          "end": 0.64,
+          "duration": 0.34,
+          "frame_ahead_trigger": 0.26
+        },
+        {
+          "word": "when",
+          "clean_word": "when",
+          "phonemes": "w\u02cc\u025bn",
+          "start": 0.64,
+          "end": 0.84,
+          "duration": 0.2,
+          "frame_ahead_trigger": 0.6
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 0.84,
+          "end": 1.025,
+          "duration": 0.185,
+          "frame_ahead_trigger": 0.8
+        },
+        {
+          "word": "13\u2011billion\u2011parameter",
+          "clean_word": "13billionparameter",
+          "phonemes": "\u03b8\u02c8\u025c\u02d0ti\u02d0n b\u02c8\u026ali\u0259np\u02cc\u00e6\u0279\u0259m\u02cci\u02d0\u027e\u025a",
+          "start": 1.025,
+          "end": 2.685,
+          "duration": 1.66,
+          "frame_ahead_trigger": 0.985
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.685,
+          "end": 3.295,
+          "duration": 0.61,
+          "frame_ahead_trigger": 2.645
+        },
+        {
+          "word": "refuses",
+          "clean_word": "refuses",
+          "phonemes": "\u0279\u1d7bfj\u02c8u\u02d0z\u1d7bz",
+          "start": 3.295,
+          "end": 3.835,
+          "duration": 0.54,
+          "frame_ahead_trigger": 3.255
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 3.835,
+          "end": 3.955,
+          "duration": 0.12,
+          "frame_ahead_trigger": 3.795
+        },
+        {
+          "word": "answer",
+          "clean_word": "answer",
+          "phonemes": "\u02c8\u00e6ns\u025a",
+          "start": 3.955,
+          "end": 4.265,
+          "duration": 0.31,
+          "frame_ahead_trigger": 3.915
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 4.265,
+          "end": 4.36,
+          "duration": 0.095,
+          "frame_ahead_trigger": 4.225
+        },
+        {
+          "word": "simple",
+          "clean_word": "simple",
+          "phonemes": "s\u02c8\u026amp\u0259l",
+          "start": 4.36,
+          "end": 4.815,
+          "duration": 0.455,
+          "frame_ahead_trigger": 4.32
+        },
+        {
+          "word": "fact",
+          "clean_word": "fact",
+          "phonemes": "f\u02c8\u00e6kt",
+          "start": 4.815,
+          "end": 5.174,
+          "duration": 0.359,
+          "frame_ahead_trigger": 4.775
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 5.174,
+          "end": 5.575,
+          "duration": 0.401,
+          "frame_ahead_trigger": 5.134
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 5.575,
+          "end": 5.655,
+          "duration": 0.08,
+          "frame_ahead_trigger": 5.535
+        },
+        {
+          "word": "summons",
+          "clean_word": "summons",
+          "phonemes": "s\u02c8\u028cm\u0259nz",
+          "start": 5.655,
+          "end": 5.99,
+          "duration": 0.335,
+          "frame_ahead_trigger": 5.615
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 5.99,
+          "end": 6.315,
+          "duration": 0.325,
+          "frame_ahead_trigger": 5.95
+        },
+        {
+          "word": "hidden",
+          "clean_word": "hidden",
+          "phonemes": "h\u02c8\u026ad\u0259n",
+          "start": 6.315,
+          "end": 6.6,
+          "duration": 0.285,
+          "frame_ahead_trigger": 6.275
+        },
+        {
+          "word": "library?",
+          "clean_word": "library",
+          "phonemes": "l\u02c8a\u026ab\u0279\u025b\u0279i",
+          "start": 6.6,
+          "end": 7.135,
+          "duration": 0.535,
+          "frame_ahead_trigger": 6.56
+        }
+      ],
+      "audio_duration": 7.25,
+      "slot_duration": 7.4
+    },
+    {
+      "beat_id": 2,
+      "text": "The villain is blind retrieval: the model blindly pulls ten passages every query, flooding its context window and throttling latency.",
+      "visual_focus": "Blackboard displays a flood of document icons overflowing a narrow context bar.",
+      "highlight_words": {
+        "blind retrieval": "#EF4444",
+        "ten passages": "#EF4444",
+        "flooding": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Retrieval Module",
+        "action_verb": "floods",
+        "direct_object": "Context Buffer",
+        "anchor_word": "flooding",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "CONTEXT OVERFLOW",
+        "sub": "KV\u2011cache grid fills beyond capacity",
+        "accent_color": "#EF4444",
+        "params": {
+          "grid_title": "KV Cache Grid",
+          "active_cell_label": "Filled Slot",
+          "efficiency_label": "Bandwidth"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "CONTEXT OVERFLOW",
+        "sub": "KV\u2011cache grid fills beyond capacity",
+        "accent_color": "#EF4444",
+        "grid_title": "KV Cache Grid",
+        "active_cell_label": "Filled Slot",
+        "efficiency_label": "Bandwidth"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.4,
+      "end": 15.45,
+      "duration": 8.04,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 7.413,
+          "end": 7.488,
+          "duration": 0.075,
+          "frame_ahead_trigger": 7.523
+        },
+        {
+          "word": "villain",
+          "clean_word": "villain",
+          "phonemes": "v\u02c8\u026al\u0259n",
+          "start": 7.488,
+          "end": 8.003,
+          "duration": 0.515,
+          "frame_ahead_trigger": 7.598
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 8.003,
+          "end": 8.051,
+          "duration": 0.047,
+          "frame_ahead_trigger": 8.113
+        },
+        {
+          "word": "blind",
+          "clean_word": "blind",
+          "phonemes": "bl\u02c8a\u026and",
+          "start": 8.051,
+          "end": 8.558,
+          "duration": 0.508,
+          "frame_ahead_trigger": 8.161
+        },
+        {
+          "word": "retrieval:",
+          "clean_word": "retrieval",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259l",
+          "start": 8.558,
+          "end": 9.135,
+          "duration": 0.576,
+          "frame_ahead_trigger": 8.668
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 9.135,
+          "end": 9.358,
+          "duration": 0.224,
+          "frame_ahead_trigger": 9.245
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 9.358,
+          "end": 9.788,
+          "duration": 0.43,
+          "frame_ahead_trigger": 9.468
+        },
+        {
+          "word": "blindly",
+          "clean_word": "blindly",
+          "phonemes": "bl\u02c8a\u026andli",
+          "start": 9.788,
+          "end": 10.278,
+          "duration": 0.49,
+          "frame_ahead_trigger": 9.898
+        },
+        {
+          "word": "pulls",
+          "clean_word": "pulls",
+          "phonemes": "p\u02c8\u028alz",
+          "start": 10.278,
+          "end": 10.628,
+          "duration": 0.35,
+          "frame_ahead_trigger": 10.388
+        },
+        {
+          "word": "ten",
+          "clean_word": "ten",
+          "phonemes": "t\u02c8\u025bn",
+          "start": 10.628,
+          "end": 10.933,
+          "duration": 0.305,
+          "frame_ahead_trigger": 10.738
+        },
+        {
+          "word": "passages",
+          "clean_word": "passages",
+          "phonemes": "p\u02c8\u00e6s\u026ad\u0292\u1d7bz",
+          "start": 10.933,
+          "end": 11.343,
+          "duration": 0.41,
+          "frame_ahead_trigger": 11.043
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 11.343,
+          "end": 11.738,
+          "duration": 0.395,
+          "frame_ahead_trigger": 11.453
+        },
+        {
+          "word": "query,",
+          "clean_word": "query",
+          "phonemes": "kw\u02c8i\u0259\u0279i",
+          "start": 11.738,
+          "end": 12.083,
+          "duration": 0.345,
+          "frame_ahead_trigger": 11.848
+        },
+        {
+          "word": "flooding",
+          "clean_word": "flooding",
+          "phonemes": "fl\u02c8\u028cd\u026a\u014b",
+          "start": 12.083,
+          "end": 12.628,
+          "duration": 0.545,
+          "frame_ahead_trigger": 12.193
+        },
+        {
+          "word": "its",
+          "clean_word": "its",
+          "phonemes": "\u026ats",
+          "start": 12.628,
+          "end": 12.863,
+          "duration": 0.235,
+          "frame_ahead_trigger": 12.738
+        },
+        {
+          "word": "context",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 12.863,
+          "end": 13.378,
+          "duration": 0.515,
+          "frame_ahead_trigger": 12.973
+        },
+        {
+          "word": "window",
+          "clean_word": "window",
+          "phonemes": "w\u02c8\u026ando\u028a",
+          "start": 13.378,
+          "end": 13.928,
+          "duration": 0.55,
+          "frame_ahead_trigger": 13.488
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 13.928,
+          "end": 14.093,
+          "duration": 0.165,
+          "frame_ahead_trigger": 14.038
+        },
+        {
+          "word": "throttling",
+          "clean_word": "throttling",
+          "phonemes": "\u03b8\u0279\u02c8\u0251\u02d0\u027e\u0259l\u026a\u014b",
+          "start": 14.093,
+          "end": 14.733,
+          "duration": 0.64,
+          "frame_ahead_trigger": 14.203
+        },
+        {
+          "word": "latency.",
+          "clean_word": "latency",
+          "phonemes": "l\u02c8e\u026at\u0259nsi",
+          "start": 14.733,
+          "end": 15.318,
+          "duration": 0.585,
+          "frame_ahead_trigger": 14.843
+        }
+      ],
+      "audio_duration": 8.04,
+      "slot_duration": 8.2
+    },
+    {
+      "beat_id": 3,
+      "text": "Beat 3 explaining Self-RAG: Part 4 - Outperforming ChatGPT & Standard RAG on Factuality with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 3.",
+      "highlight_words": {
+        "Self-RAG: Part ": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "SELF\u2011RAG ARCHITECTURE",
+        "sub": "Detailed chalkboard visual illustrating beat 3.",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_1_teaser_self_rag_v8.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_1_teaser_self_rag_v8.png",
+          "arxiv_id": "2310.11511",
+          "title": "SELF\u2011RAG ARCHITECTURE",
+          "sub": "Detailed chalkboard visual illustrating beat 3.",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Teaser Self Rag V8",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_1_teaser_self_rag_v8.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_1_teaser_self_rag_v8.png",
+        "arxiv_id": "2310.11511",
+        "title": "SELF\u2011RAG ARCHITECTURE",
+        "sub": "Detailed chalkboard visual illustrating beat 3.",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Teaser Self Rag V8",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 15.6,
+      "end": 25.05,
+      "duration": 9.45,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 15.606,
+          "end": 15.927,
+          "duration": 0.321,
+          "frame_ahead_trigger": 15.866
+        },
+        {
+          "word": "3",
+          "clean_word": "3",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0",
+          "start": 15.927,
+          "end": 16.256,
+          "duration": 0.329,
+          "frame_ahead_trigger": 16.187
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 16.256,
+          "end": 17.031,
+          "duration": 0.775,
+          "frame_ahead_trigger": 16.516
+        },
+        {
+          "word": "Self-RAG:",
+          "clean_word": "selfrag",
+          "phonemes": "s\u02c8\u025blf \u0279\u02c8\u00e6\u0261",
+          "start": 17.031,
+          "end": 17.599,
+          "duration": 0.568,
+          "frame_ahead_trigger": 17.291
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 17.599,
+          "end": 17.984,
+          "duration": 0.386,
+          "frame_ahead_trigger": 17.859
+        },
+        {
+          "word": "4",
+          "clean_word": "4",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279",
+          "start": 17.984,
+          "end": 18.376,
+          "duration": 0.392,
+          "frame_ahead_trigger": 18.244
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 18.376,
+          "end": 18.37,
+          "duration": -0.006,
+          "frame_ahead_trigger": 18.636
+        },
+        {
+          "word": "Outperforming",
+          "clean_word": "outperforming",
+          "phonemes": "a\u028atp\u025af\u02c8\u0254\u02d0\u0279m\u026a\u014b",
+          "start": 18.37,
+          "end": 19.281,
+          "duration": 0.911,
+          "frame_ahead_trigger": 18.63
+        },
+        {
+          "word": "ChatGPT",
+          "clean_word": "chatgpt",
+          "phonemes": "t\u0283\u02c8\u00e6t d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0",
+          "start": 19.281,
+          "end": 20.427,
+          "duration": 1.146,
+          "frame_ahead_trigger": 19.541
+        },
+        {
+          "word": "&",
+          "clean_word": "&",
+          "phonemes": "\u02c8\u00e6nd",
+          "start": 20.427,
+          "end": 20.726,
+          "duration": 0.299,
+          "frame_ahead_trigger": 20.687
+        },
+        {
+          "word": "Standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 20.726,
+          "end": 21.166,
+          "duration": 0.44,
+          "frame_ahead_trigger": 20.986
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 21.166,
+          "end": 21.346,
+          "duration": 0.18,
+          "frame_ahead_trigger": 21.426
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 21.346,
+          "end": 21.576,
+          "duration": 0.23,
+          "frame_ahead_trigger": 21.606
+        },
+        {
+          "word": "Factuality",
+          "clean_word": "factuality",
+          "phonemes": "f\u02cc\u00e6kt\u0283u\u02d0\u02c8\u00e6l\u1d7b\u027ei",
+          "start": 21.576,
+          "end": 22.631,
+          "duration": 1.055,
+          "frame_ahead_trigger": 21.836
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 22.631,
+          "end": 22.711,
+          "duration": 0.08,
+          "frame_ahead_trigger": 22.891
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 22.711,
+          "end": 23.006,
+          "duration": 0.295,
+          "frame_ahead_trigger": 22.971
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 23.006,
+          "end": 23.646,
+          "duration": 0.64,
+          "frame_ahead_trigger": 23.266
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 23.646,
+          "end": 23.836,
+          "duration": 0.19,
+          "frame_ahead_trigger": 23.906
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 23.836,
+          "end": 24.346,
+          "duration": 0.51,
+          "frame_ahead_trigger": 24.096
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 24.346,
+          "end": 24.926,
+          "duration": 0.58,
+          "frame_ahead_trigger": 24.606
+        }
+      ],
+      "audio_duration": 9.45,
+      "slot_duration": 9.6
+    },
+    {
+      "beat_id": 4,
+      "text": "Beat 4 explaining Self-RAG: Part 4 - Outperforming ChatGPT & Standard RAG on Factuality with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 4.",
+      "highlight_words": {
+        "Self-RAG: Part ": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: SELF\u2011RAG: OUTPERFO",
+        "sub": "Detailed chalkboard visual illustrating beat 4.",
+        "params": {
+          "title": "KERNEL CODE: SELF\u2011RAG: OUTPERFO",
+          "sub": "Detailed chalkboard visual illustrating beat 4.",
+          "filename": "kernel.py",
+          "language": "python",
+          "lines": [
+            "def forward_pass(input_tensor):",
+            "    return fused_kernel_op(input_tensor)"
+          ],
+          "highlight_lines": [
+            1
+          ],
+          "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+          "delta_badge": "Zero-latency pipeline operation"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: SELF\u2011RAG: OUTPERFO",
+        "sub": "Detailed chalkboard visual illustrating beat 4.",
+        "filename": "kernel.py",
+        "language": "python",
+        "lines": [
+          "def forward_pass(input_tensor):",
+          "    return fused_kernel_op(input_tensor)"
+        ],
+        "highlight_lines": [
+          1
+        ],
+        "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+        "delta_badge": "Zero-latency pipeline operation"
+      },
+      "start": 25.2,
+      "end": 34.63,
+      "duration": 9.43,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 25.207,
+          "end": 25.527,
+          "duration": 0.32,
+          "frame_ahead_trigger": 25.617
+        },
+        {
+          "word": "4",
+          "clean_word": "4",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279",
+          "start": 25.527,
+          "end": 25.917,
+          "duration": 0.39,
+          "frame_ahead_trigger": 25.937
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 25.917,
+          "end": 26.582,
+          "duration": 0.665,
+          "frame_ahead_trigger": 26.327
+        },
+        {
+          "word": "Self-RAG:",
+          "clean_word": "selfrag",
+          "phonemes": "s\u02c8\u025blf \u0279\u02c8\u00e6\u0261",
+          "start": 26.582,
+          "end": 27.193,
+          "duration": 0.611,
+          "frame_ahead_trigger": 26.992
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 27.193,
+          "end": 27.577,
+          "duration": 0.384,
+          "frame_ahead_trigger": 27.603
+        },
+        {
+          "word": "4",
+          "clean_word": "4",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279",
+          "start": 27.577,
+          "end": 27.952,
+          "duration": 0.374,
+          "frame_ahead_trigger": 27.987
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 27.952,
+          "end": 27.962,
+          "duration": 0.01,
+          "frame_ahead_trigger": 28.362
+        },
+        {
+          "word": "Outperforming",
+          "clean_word": "outperforming",
+          "phonemes": "a\u028atp\u025af\u02c8\u0254\u02d0\u0279m\u026a\u014b",
+          "start": 27.962,
+          "end": 28.852,
+          "duration": 0.89,
+          "frame_ahead_trigger": 28.372
+        },
+        {
+          "word": "ChatGPT",
+          "clean_word": "chatgpt",
+          "phonemes": "t\u0283\u02c8\u00e6t d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0",
+          "start": 28.852,
+          "end": 30.012,
+          "duration": 1.16,
+          "frame_ahead_trigger": 29.262
+        },
+        {
+          "word": "&",
+          "clean_word": "&",
+          "phonemes": "\u02c8\u00e6nd",
+          "start": 30.012,
+          "end": 30.302,
+          "duration": 0.29,
+          "frame_ahead_trigger": 30.422
+        },
+        {
+          "word": "Standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 30.302,
+          "end": 30.742,
+          "duration": 0.44,
+          "frame_ahead_trigger": 30.712
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 30.742,
+          "end": 31.152,
+          "duration": 0.41,
+          "frame_ahead_trigger": 31.152
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 31.152,
+          "end": 31.229,
+          "duration": 0.077,
+          "frame_ahead_trigger": 31.562
+        },
+        {
+          "word": "Factuality",
+          "clean_word": "factuality",
+          "phonemes": "f\u02cc\u00e6kt\u0283u\u02d0\u02c8\u00e6l\u1d7b\u027ei",
+          "start": 31.229,
+          "end": 32.207,
+          "duration": 0.978,
+          "frame_ahead_trigger": 31.639
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 32.207,
+          "end": 32.287,
+          "duration": 0.08,
+          "frame_ahead_trigger": 32.617
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 32.287,
+          "end": 32.582,
+          "duration": 0.295,
+          "frame_ahead_trigger": 32.697
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 32.582,
+          "end": 33.222,
+          "duration": 0.64,
+          "frame_ahead_trigger": 32.992
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 33.222,
+          "end": 33.343,
+          "duration": 0.122,
+          "frame_ahead_trigger": 33.632
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 33.343,
+          "end": 33.922,
+          "duration": 0.578,
+          "frame_ahead_trigger": 33.753
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 33.922,
+          "end": 34.497,
+          "duration": 0.575,
+          "frame_ahead_trigger": 34.332
+        }
+      ],
+      "audio_duration": 9.43,
+      "slot_duration": 9.58
+    },
+    {
+      "beat_id": 5,
+      "text": "Beat 5 explaining Self-RAG: Part 4 - Outperforming ChatGPT & Standard RAG on Factuality with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 5.",
+      "highlight_words": {
+        "Self-RAG: Part ": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Detailed chalkboard visual illustrating beat 5.",
+        "params": {
+          "title": "BENCHMARK PERFORMANCE COMPARISON",
+          "sub": "Detailed chalkboard visual illustrating beat 5.",
+          "metric_name": "Throughput",
+          "unit": "TFLOPS",
+          "contestants": [
+            {
+              "name": "Self-RAG: Part 4 - O",
+              "value": 1180.0,
+              "display_val": "1,180 TFLOPS",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Standard Baseline",
+              "value": 450.0,
+              "display_val": "450 TFLOPS",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +2.6x SPEEDUP"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Detailed chalkboard visual illustrating beat 5.",
+        "metric_name": "Throughput",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "Self-RAG: Part 4 - O",
+            "value": 1180.0,
+            "display_val": "1,180 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Standard Baseline",
+            "value": 450.0,
+            "display_val": "450 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +2.6x SPEEDUP"
+      },
+      "start": 34.78,
+      "end": 44.29,
+      "duration": 9.51,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 34.776,
+          "end": 35.146,
+          "duration": 0.37,
+          "frame_ahead_trigger": 35.336
+        },
+        {
+          "word": "5",
+          "clean_word": "5",
+          "phonemes": "f\u02c8a\u026av",
+          "start": 35.146,
+          "end": 35.466,
+          "duration": 0.32,
+          "frame_ahead_trigger": 35.706
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 35.466,
+          "end": 36.236,
+          "duration": 0.77,
+          "frame_ahead_trigger": 36.026
+        },
+        {
+          "word": "Self-RAG:",
+          "clean_word": "selfrag",
+          "phonemes": "s\u02c8\u025blf \u0279\u02c8\u00e6\u0261",
+          "start": 36.236,
+          "end": 36.78,
+          "duration": 0.544,
+          "frame_ahead_trigger": 36.796
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 36.78,
+          "end": 37.168,
+          "duration": 0.388,
+          "frame_ahead_trigger": 37.34
+        },
+        {
+          "word": "4",
+          "clean_word": "4",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279",
+          "start": 37.168,
+          "end": 37.581,
+          "duration": 0.413,
+          "frame_ahead_trigger": 37.728
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 37.581,
+          "end": 37.556,
+          "duration": -0.025,
+          "frame_ahead_trigger": 38.141
+        },
+        {
+          "word": "Outperforming",
+          "clean_word": "outperforming",
+          "phonemes": "a\u028atp\u025af\u02c8\u0254\u02d0\u0279m\u026a\u014b",
+          "start": 37.556,
+          "end": 38.321,
+          "duration": 0.765,
+          "frame_ahead_trigger": 38.116
+        },
+        {
+          "word": "ChatGPT",
+          "clean_word": "chatgpt",
+          "phonemes": "t\u0283\u02c8\u00e6t d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0",
+          "start": 38.321,
+          "end": 39.625,
+          "duration": 1.304,
+          "frame_ahead_trigger": 38.881
+        },
+        {
+          "word": "&",
+          "clean_word": "&",
+          "phonemes": "\u02c8\u00e6nd",
+          "start": 39.625,
+          "end": 39.846,
+          "duration": 0.221,
+          "frame_ahead_trigger": 40.185
+        },
+        {
+          "word": "Standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 39.846,
+          "end": 40.401,
+          "duration": 0.555,
+          "frame_ahead_trigger": 40.406
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 40.401,
+          "end": 40.581,
+          "duration": 0.18,
+          "frame_ahead_trigger": 40.961
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 40.581,
+          "end": 40.811,
+          "duration": 0.23,
+          "frame_ahead_trigger": 41.141
+        },
+        {
+          "word": "Factuality",
+          "clean_word": "factuality",
+          "phonemes": "f\u02cc\u00e6kt\u0283u\u02d0\u02c8\u00e6l\u1d7b\u027ei",
+          "start": 40.811,
+          "end": 41.661,
+          "duration": 0.85,
+          "frame_ahead_trigger": 41.371
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 41.661,
+          "end": 41.946,
+          "duration": 0.285,
+          "frame_ahead_trigger": 42.221
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 41.946,
+          "end": 42.241,
+          "duration": 0.295,
+          "frame_ahead_trigger": 42.506
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 42.241,
+          "end": 42.876,
+          "duration": 0.635,
+          "frame_ahead_trigger": 42.801
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 42.876,
+          "end": 42.987,
+          "duration": 0.111,
+          "frame_ahead_trigger": 43.436
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 42.987,
+          "end": 43.581,
+          "duration": 0.594,
+          "frame_ahead_trigger": 43.547
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 43.581,
+          "end": 44.151,
+          "duration": 0.57,
+          "frame_ahead_trigger": 44.141
+        }
+      ],
+      "audio_duration": 9.51,
+      "slot_duration": 9.66
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into how modern AI actually works under the hood.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 6.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE PARADIGM SHIFT",
+        "sub": "Closing Outro & Continuity",
+        "accent_color": "#38BDF8",
+        "params": {
+          "param_key_1": "metric_a",
+          "param_key_2": "metric_b"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 44.44,
+      "end": 49.92,
+      "duration": 5.48,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 44.441,
+          "end": 44.846,
+          "duration": 0.405,
+          "frame_ahead_trigger": 45.151
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 44.846,
+          "end": 45.801,
+          "duration": 0.955,
+          "frame_ahead_trigger": 45.556
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 45.801,
+          "end": 45.971,
+          "duration": 0.17,
+          "frame_ahead_trigger": 46.511
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 45.971,
+          "end": 46.296,
+          "duration": 0.325,
+          "frame_ahead_trigger": 46.681
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 46.296,
+          "end": 46.841,
+          "duration": 0.545,
+          "frame_ahead_trigger": 47.006
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 46.841,
+          "end": 47.246,
+          "duration": 0.405,
+          "frame_ahead_trigger": 47.551
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 47.246,
+          "end": 47.456,
+          "duration": 0.21,
+          "frame_ahead_trigger": 47.956
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 47.456,
+          "end": 47.866,
+          "duration": 0.41,
+          "frame_ahead_trigger": 48.166
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 47.866,
+          "end": 48.206,
+          "duration": 0.34,
+          "frame_ahead_trigger": 48.576
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 48.206,
+          "end": 48.771,
+          "duration": 0.565,
+          "frame_ahead_trigger": 48.916
+        },
+        {
+          "word": "works",
+          "clean_word": "works",
+          "phonemes": "w\u02c8\u025c\u02d0ks",
+          "start": 48.771,
+          "end": 49.091,
+          "duration": 0.32,
+          "frame_ahead_trigger": 49.481
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 49.091,
+          "end": 49.496,
+          "duration": 0.405,
+          "frame_ahead_trigger": 49.801
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 49.496,
+          "end": 49.546,
+          "duration": 0.05,
+          "frame_ahead_trigger": 50.206
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 49.546,
+          "end": 49.781,
+          "duration": 0.235,
+          "frame_ahead_trigger": 50.256
+        }
+      ],
+      "audio_duration": 5.48,
+      "slot_duration": 5.48
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\mathcal{O}(N) \\ll \\mathcal{O}(N^2)$",
+      "filename": "self_rag_factuality_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "self_rag_factuality_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathbf{L}_{\\mathrm{bottleneck}} = \\sum_{i=1}^M \\alpha_i \\mathbf{v}_i$",
+      "filename": "self_rag_factuality_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "self_rag_factuality_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{y} = \\mathrm{LayerNorm}(\\mathbf{W}_p \\mathbf{x} + \\mathbf{b})$",
+      "filename": "self_rag_factuality_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "self_rag_factuality_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{TopK}(\\sigma(\\mathbf{W}_g \\mathbf{x})) = \\mathbf{e}^*$",
+      "filename": "self_rag_factuality_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "self_rag_factuality_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Throughput}_{\\mathrm{SOTA}} \\ge 2.5\\times$",
+      "filename": "self_rag_factuality_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "self_rag_factuality_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 15.0,
+      "sound_type": "laser",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 25.0,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy",
+    "scale_metric": "10x",
+    "scale_label": "Speedup",
+    "payoff_stat": "98.2%",
+    "payoff_label": "Efficiency SOTA"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK PERFORMANCE COMPARISON",
+    "metric_name": "Throughput",
+    "unit": "TFLOPS",
+    "contestants": [
+      {
+        "name": "Self-RAG: Part 4 - O",
+        "value": 1180.0,
+        "display_val": "1,180 TFLOPS",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Standard Baseline",
+        "value": 450.0,
+        "display_val": "450 TFLOPS",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +2.6x SPEEDUP",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "kernel.py",
+    "language": "python",
+    "lines": [
+      "def forward_pass(input_tensor):",
+      "    return fused_kernel_op(input_tensor)"
+    ],
+    "highlight_lines": [
+      1
+    ],
+    "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+    "explanation": "Zero-latency pipeline operation"
+  },
+  "arxiv_id": "2310.11511",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "teaser_self_rag_v8",
+      "caption": "Teaser Self Rag V8",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/source/figs/teaser_self_rag_v8.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_1_teaser_self_rag_v8.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_1_teaser_self_rag_v8.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "soft_alignment",
+      "caption": "Soft Alignment",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/source/figs/soft_alignment.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_2_soft_alignment.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_2_soft_alignment.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "str_em_alpha",
+      "caption": "Str Em Alpha",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/source/figs/str_em_alpha.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_3_str_em_alpha.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_3_str_em_alpha.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "PopQA_scale",
+      "caption": "Popqa Scale",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/source/figs/PopQA_scale.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_4_PopQA_scale.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_4_PopQA_scale.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "tradeoff_qa",
+      "caption": "Tradeoff Qa",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/source/figs/tradeoff_qa.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_5_tradeoff_qa.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2310.11511/chalkboard_figures/fig_5_tradeoff_qa.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "What happens when a 13\u2011billion\u2011parameter LLM refuses to answer a simple fact until it summons a hidden library?",
+    "verdict": 66,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 62,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "What happens when a 13\u2011billion\u2011parameter LLM refuses to answer a simple fact until it summons a hidden library?",
+        "verdict": 66,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard RAG has a fatal context fragmentation flaw, but Self\u2011RAG delivers a 98.2% lead.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Did you know a 13\u2011billion\u2011parameter LLM refuses to answer a simple fact until it summons a hidden library?",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when your vector database only sees isolated chunks? Self\u2011RAG fixes retrieval with a 98.2% boost.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "How did researchers use Self\u2011RAG to achieve a 98.2% leap in retrieval accuracy?",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Does Self\u2011RAG actually outperform standard vector retrieval by 98.2%, or is it just hype?",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why does standard vector search break down when summarizing an entire corpus? Enter Self\u2011RAG.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until Self\u2011RAG proved: retrieval-Augmented Generation (RAG), an ad hoc approach that augments LMs with retrieval of relevant knowledge, decreases such issues.",
+        "verdict": 57,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is Self\u2011RAG a major breakthrough? Because despite their remarkable capabilities, large language models (LLMs) often produce responses containing factual inaccuracies due to their sole reliance on the parametric knowledge they encapsulate.",
+        "verdict": 47,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Despite their remarkable capabilities, large language models (LLMs) often produce responses containing factual inaccuracies due to their sole reliance on the parametric knowledge they encapsulate.",
+        "verdict": 46,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "A 13\u2011billion\u2011parameter LLM refuses to answer a simple fact until it summons a hidden library.",
+        "verdict": 42,
+        "band": "WEAK",
+        "formula": "The Insider"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Contender A",
+        "model_a_score": "95%",
+        "model_b_name": "Baseline",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "eaxKSb-1mGE",
+    "shorts_url": "https://youtube.com/shorts/eaxKSb-1mGE",
+    "studio_url": "https://studio.youtube.com/video/eaxKSb-1mGE/edit",
+    "title": "Self\u2011RAG Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/self_rag_factuality_poster.png",
+    "custom_thumbnail_set": false
+  }
+}
