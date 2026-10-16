@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-16 | **Timestamp:** 2026-10-16 06:16:32 UTC
+**Date:** 2026-10-16 | **Timestamp:** 2026-10-16 10:05:52 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: RAPTOR: Part 5 - Breaking SOTA on QASPER and NarrativeQA
-- **Topic Queue Part:** `raptor_part_5_qasper_narrativeqa_benchmarks` (arXiv: [2401.18059](https://arxiv.org/abs/2401.18059))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/YF19j-VxoSU](https://youtube.com/shorts/YF19j-VxoSU) (`YF19j-VxoSU`)
-- **High-CTR Poster:** [raptor_20pct_accuracy_poster.png](public/thumbnails/raptor_20pct_accuracy_poster.png)
+### Reel 1: Self-RAG: Part 1 - Why Indiscriminate Retrieval Ruins LLM Answers
+- **Topic Queue Part:** `self_rag_part_1_retrieval_noise_paradox` (arXiv: [2310.11511](https://arxiv.org/abs/2310.11511))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/Fz9aotKrYkc](https://youtube.com/shorts/Fz9aotKrYkc) (`Fz9aotKrYkc`)
+- **High-CTR Poster:** [self_rag_retrieval_noise_paradox_poster.png](public/thumbnails/self_rag_retrieval_noise_paradox_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `benchmark_news`
-- **Editorial Hook:** *RAPTOR Mini-Series 5/5: RAPTOR: Part 5 - Breaking SOTA on QASPER and NarrativeQA*
-- **Everyday Analogy:** *Empirical victory: 20% accuracy jumps over baseline dense retrievers on complex multi-page document QA.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_raptor_20pct_accuracy_benchmark_news.mp4`
+- **Category:** `architecture_breakdown`
+- **Editorial Hook:** *Self-RAG Mini-Series 1/4: Self-RAG: Part 1 - Why Indiscriminate Retrieval Ruins LLM Answers*
+- **Everyday Analogy:** *The retrieval noise paradox: why fetching irrelevant external context actually degrades model accuracy.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_self_rag_retrieval_noise_paradox_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs

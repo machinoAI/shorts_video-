@@ -1,32 +1,32 @@
 # 📈 The Model Verse — YouTube Performance & Retention Intelligence
 
-**Generated:** 2026-10-16T06:16:33.375497+00:00  
-**Videos Analyzed:** 30 | **Autopsies Performed:** 8  
+**Generated:** 2026-10-16T10:05:53.576830+00:00  
+**Videos Analyzed:** 31 | **Autopsies Performed:** 8  
 **Top Domain:** `general_breakthroughs`  
 **Recommended Pacing:** `1.08x` TTS Speed | Hook $\le$ `7.5s`
 
 ---
 
-## 🧬 Closed-Loop Retention Genome Evolution (Engine 7.0 - Gen 207)
+## 🧬 Closed-Loop Retention Genome Evolution (Engine 7.0 - Gen 208)
 The autonomous pipeline continuously evolves these visual and narrative recipes based on real viewer drop-offs:
 
 | Visual Blueprint | Evolutionary Multiplier | Avg Retention | Win/Loss Track | Action Directive |
 | :--- | :--- | :--- | :--- | :--- |
 | `bespoke_code` | **1.5x** | 50.17% | 1825W / 181L | Auto-discovered layout. |
-| `chalkboard_code_block` | **1.5x** | 60.12% | 557W / 0L | Auto-discovered layout. |
-| `barrier_separation` | **1.5x** | 64.6% | 178W / 24L | Auto-discovered layout. |
+| `chalkboard_code_block` | **1.5x** | 60.12% | 564W / 0L | Auto-discovered layout. |
+| `barrier_separation` | **1.5x** | 64.59% | 181W / 24L | Auto-discovered layout. |
 | `ast_tree` | **1.5x** | 66.11% | 102W / 0L | Auto-discovered layout. |
 | `chalkboard_code` | **1.5x** | 54.77% | 253W / 0L | Auto-discovered layout. |
-| `horizontal_race_bars` | **1.5x** | 55.2% | 461W / 0L | Auto-discovered layout. |
-| `paper_figure` | **1.5x** | 59.01% | 261W / 0L | Auto-discovered layout. |
-| `convergence_funnel` | **1.5x** | 54.88% | 124W / 0L | Auto-discovered layout. |
+| `horizontal_race_bars` | **1.5x** | 55.26% | 468W / 0L | Auto-discovered layout. |
+| `grid_memory` | **1.5x** | 72.17% | 128W / 77L | Auto-discovered layout. |
+| `paper_figure` | **1.5x** | 59.01% | 268W / 0L | Auto-discovered layout. |
+| `convergence_funnel` | **1.5x** | 55.64% | 126W / 0L | Auto-discovered layout. |
 | `side_by_side` | **1.5x** | 48.07% | 36W / 0L | Auto-discovered layout. |
 | `layer_stack` | **1.5x** | 66.9% | 30W / 3L | Auto-discovered layout. |
-| `vector_flow_field` | **1.5x** | 63.18% | 29W / 1L | Auto-discovered layout. |
+| `vector_flow_field` | **1.5x** | 63.29% | 33W / 1L | Auto-discovered layout. |
 | `projection_rays` | **1.5x** | 48.81% | 22W / 0L | Auto-discovered layout. |
-| `neural_activation_wave` | **1.5x** | 49.9% | 25W / 0L | Auto-discovered layout. |
+| `neural_activation_wave` | **1.5x** | 49.9% | 28W / 0L | Auto-discovered layout. |
 | `pipeline_stages` | **1.5x** | 53.87% | 11W / 0L | Auto-discovered layout. |
-| `grid_memory` | **1.46x** | 70.95% | 125W / 77L | Auto-discovered layout. |
 | `BlueprintHorizontalRaceBars` | **1.3x** | 78.5% | 6W / 0L | PRIORITIZE for Act 4 benchmark showdown. |
 | `catalog_routing` | **1.3x** | 70.1% | 6W / 0L | Auto-discovered layout. |
 | `BlueprintSplitFlow` | **1.25x** | 76.0% | 5W / 1L | EXCELLENT for bifurcated flows, dual-pass verification, or router dispatch. |
@@ -43,17 +43,17 @@ The autonomous pipeline continuously evolves these visual and narrative recipes 
 | `metric_comparison_grid` | **1.1x** | 68.15% | 2W / 0L | Auto-discovered layout. |
 | `benchmark_delta_cards` | **1.1x** | 63.01% | 2W / 0L | Auto-discovered layout. |
 | `channel_outro_loop` | **1.1x** | 58.37% | 2W / 0L | Auto-discovered layout. |
+| `tree_hierarchy` | **1.07x** | 66.27% | 100W / 16L | Auto-discovered layout. |
 | `attention_prism_refraction` | **1.05x** | 68.93% | 1W / 0L | Auto-discovered layout. |
 | `split_screen_comparison` | **1.05x** | 67.86% | 1W / 0L | Auto-discovered layout. |
 | `data_visualization_chart` | **1.05x** | 65.26% | 1W / 0L | Auto-discovered layout. |
 | `outro_social_call` | **1.05x** | 62.71% | 1W / 0L | Auto-discovered layout. |
-| `tree_hierarchy` | **1.02x** | 63.89% | 99W / 16L | Auto-discovered layout. |
 | `perks_hero_value` | **0.92x** | 50.0% | 0W / 1L | Auto-discovered layout. |
-| `split_flow` | **0.86x** | 60.61% | 134W / 14L | Auto-discovered layout. |
+| `split_flow` | **0.78x** | 60.61% | 134W / 15L | Auto-discovered layout. |
 | `news_hero_announcement` | **0.68x** | 50.0% | 0W / 4L | Auto-discovered layout. |
 | `generic_sine_wave` | **0.5x** | 46.0% | 0W / 4L | BANNED: Flat generic animation trigger. Causes immediate cognitive drop-off. |
 | `comparison_side_by_side` | **0.4x** | 49.69% | 111W / 30L | Auto-discovered layout. |
-| `optimization_landscape` | **0.4x** | 61.81% | 13W / 15L | Auto-discovered layout. |
+| `optimization_landscape` | **0.4x** | 61.81% | 13W / 18L | Auto-discovered layout. |
 
 **Top Performing Hook Archetype:** `ARCHITECTURE_BREAKDOWN` — *Auto-discovered hook archetype: architecture_breakdown*
 
@@ -64,7 +64,7 @@ The paper selector (`daily_shorts_daemon.py`) automatically scales candidate sel
 
 | Research Domain | Selection Multiplier | Avg Views | Sample Size |
 | :--- | :--- | :--- | :--- |
-| `general_breakthroughs` | **1.03x** | 630.9 | 29 videos |
+| `general_breakthroughs` | **1.03x** | 612.1 | 30 videos |
 | `hardware_efficiency` | **0.6x** | 60.0 | 1 videos |
 
 ---
@@ -73,36 +73,37 @@ The paper selector (`daily_shorts_daemon.py`) automatically scales candidate sel
 
 | Video Title | Domain | Views | Likes | Comments | Views/Hr | Hours Live |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [#ganeshchaturthi #shorts...](https://youtube.com/shorts/2UoU6cPOuzo) | `general_breakthroughs` | **12902** | 58 | 0 | 1.27 | 10155.1h |
-| [Journey to become a millionaire $$$ #jou...](https://youtube.com/shorts/6bY9hOz-0M8) | `general_breakthroughs` | **1070** | 8 | 0 | 0.1 | 10603.2h |
-| [ॐ नमः शिवाय !! #travel #shiva #travelvlo...](https://youtube.com/shorts/Y6_wLloJWwc) | `general_breakthroughs` | **1066** | 16 | 0 | 0.1 | 10634.5h |
-| [#waterfall #monsoon #travel #shorts #mys...](https://youtube.com/shorts/NAXq7xsp44w) | `general_breakthroughs` | **686** | 6 | 0 | 0.07 | 10526.8h |
-| [कार्य सिद्धि मंत्र वंदना! #ganeshchaturt...](https://youtube.com/shorts/5Y2lGBzVeKA) | `general_breakthroughs` | **576** | 21 | 0 | 0.05 | 10576.7h |
-| [Most visited from #bangalore #travel #ka...](https://youtube.com/shorts/moTVYDJV_RA) | `general_breakthroughs` | **462** | 6 | 0 | 0.04 | 10587.8h |
-| [Jai Shri Ram🙏🏻🙏🏻...](https://youtube.com/shorts/ijPxbS5XIeU) | `general_breakthroughs` | **333** | 4 | 0 | 0.03 | 10705.8h |
-| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/3VTnbE5mobs) | `general_breakthroughs` | **293** | 4 | 1 | 18.13 | 16.2h |
-| [Jai Shri Krishna 🙏🏻🙏🏻 #flute #music #kri...](https://youtube.com/shorts/Q3CnQORjjiU) | `general_breakthroughs` | **135** | 5 | 0 | 0.01 | 10705.6h |
-| [9 Millions Shiva Linga! Truly Mind boggl...](https://youtube.com/shorts/8ehXB3RwdOE) | `general_breakthroughs` | **132** | 0 | 0 | 0.01 | 11125.3h |
-| [smoke shells || wafer filled with chocol...](https://youtube.com/shorts/O7kPD8NNviY) | `general_breakthroughs` | **68** | 8 | 0 | 0.0 | 62750.7h |
-| [The beauty of Himalaya village! #shorts ...](https://youtube.com/shorts/2aepNB1tTXY) | `general_breakthroughs` | **61** | 5 | 0 | 0.0 | 19284.7h |
-| [FlashAttention-3: How GPUs Hit 1.2 PFLOP...](https://youtube.com/shorts/shTYdJIdGQ0) | `hardware_efficiency` | **60** | 2 | 1 | 0.95 | 63.3h |
-| [Long drive from #delhi to #gurugram #ind...](https://youtube.com/shorts/KUnALFn1rUk) | `general_breakthroughs` | **55** | 6 | 0 | 0.0 | 19311.3h |
-| [Just the nature vibe! #mountains #nature...](https://youtube.com/shorts/q5F9mXttCsg) | `general_breakthroughs` | **53** | 2 | 0 | 0.0 | 19310.8h |
-| [CineRecon Explained #Shorts...](https://youtube.com/shorts/LTVtF0WqSdg) | `general_breakthroughs` | **47** | 0 | 1 | 0.99 | 47.4h |
-| [View of dharmsala mountains#exploreworld...](https://youtube.com/shorts/CfQahKQU12A) | `general_breakthroughs` | **47** | 7 | 0 | 0.0 | 19360.9h |
-| [#aajkiraat #dharamshala #art #party #str...](https://youtube.com/shorts/V3uTBQtZqXM) | `general_breakthroughs` | **46** | 3 | 0 | 0.0 | 19333.1h |
-| [#triundtop #triund #dharamshala #himacha...](https://youtube.com/shorts/_XbLQP4Fmn0) | `general_breakthroughs` | **41** | 6 | 0 | 0.0 | 19360.9h |
-| [Why Naive RAG Fails Explained #Shorts...](https://youtube.com/shorts/-yYQqT3Vk4c) | `general_breakthroughs` | **31** | 1 | 1 | 0.71 | 43.6h |
-| [From Local to Global Explained #Shorts...](https://youtube.com/shorts/oG82W8MDqT0) | `general_breakthroughs` | **30** | 1 | 1 | 1.52 | 19.8h |
-| [Hierarchical Graph RAG Explained #Shorts...](https://youtube.com/shorts/y16O4t9hxjQ) | `general_breakthroughs` | **28** | 0 | 1 | 0.82 | 34.1h |
-| [GraphRAG Explained #Shorts...](https://youtube.com/shorts/hsNHlSEWjTc) | `general_breakthroughs` | **27** | 0 | 1 | 1.13 | 23.8h |
-| [GraphRAG Explained #Shorts...](https://youtube.com/shorts/ZfF8ryTpv7k) | `general_breakthroughs` | **26** | 0 | 1 | 0.65 | 39.7h |
-| [#taubatauba #resortreview  #macleodganj ...](https://youtube.com/shorts/OIYfdRxTETg) | `general_breakthroughs` | **24** | 3 | 0 | 0.0 | 19333.0h |
-| [Learning How to Remember Explained #Shor...](https://youtube.com/shorts/4ja7Qu2Io4k) | `general_breakthroughs` | **20** | 1 | 1 | 0.43 | 46.6h |
-| [From Local to Global Explained #Shorts...](https://youtube.com/shorts/tBIrHihtA8c) | `general_breakthroughs` | **16** | 0 | 1 | 0.44 | 36.7h |
-| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/KRODn0RgyyQ) | `general_breakthroughs` | **9** | 0 | 1 | 0.61 | 14.9h |
-| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/X21oglSTV2A) | `general_breakthroughs` | **8** | 1 | 1 | 0.62 | 12.9h |
-| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/fmE3eiCefH4) | `general_breakthroughs` | **4** | 0 | 1 | 0.38 | 10.4h |
+| [#ganeshchaturthi #shorts...](https://youtube.com/shorts/2UoU6cPOuzo) | `general_breakthroughs` | **12902** | 58 | 0 | 1.27 | 10158.9h |
+| [Journey to become a millionaire $$$ #jou...](https://youtube.com/shorts/6bY9hOz-0M8) | `general_breakthroughs` | **1070** | 8 | 0 | 0.1 | 10607.0h |
+| [ॐ नमः शिवाय !! #travel #shiva #travelvlo...](https://youtube.com/shorts/Y6_wLloJWwc) | `general_breakthroughs` | **1066** | 16 | 0 | 0.1 | 10638.3h |
+| [#waterfall #monsoon #travel #shorts #mys...](https://youtube.com/shorts/NAXq7xsp44w) | `general_breakthroughs` | **686** | 6 | 0 | 0.07 | 10530.6h |
+| [कार्य सिद्धि मंत्र वंदना! #ganeshchaturt...](https://youtube.com/shorts/5Y2lGBzVeKA) | `general_breakthroughs` | **576** | 21 | 0 | 0.05 | 10580.5h |
+| [Most visited from #bangalore #travel #ka...](https://youtube.com/shorts/moTVYDJV_RA) | `general_breakthroughs` | **462** | 6 | 0 | 0.04 | 10591.6h |
+| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/3VTnbE5mobs) | `general_breakthroughs` | **343** | 7 | 1 | 17.17 | 20.0h |
+| [Jai Shri Ram🙏🏻🙏🏻...](https://youtube.com/shorts/ijPxbS5XIeU) | `general_breakthroughs` | **333** | 4 | 0 | 0.03 | 10709.7h |
+| [Jai Shri Krishna 🙏🏻🙏🏻 #flute #music #kri...](https://youtube.com/shorts/Q3CnQORjjiU) | `general_breakthroughs` | **135** | 5 | 0 | 0.01 | 10709.4h |
+| [9 Millions Shiva Linga! Truly Mind boggl...](https://youtube.com/shorts/8ehXB3RwdOE) | `general_breakthroughs` | **132** | 0 | 0 | 0.01 | 11129.1h |
+| [smoke shells || wafer filled with chocol...](https://youtube.com/shorts/O7kPD8NNviY) | `general_breakthroughs` | **68** | 8 | 0 | 0.0 | 62754.5h |
+| [The beauty of Himalaya village! #shorts ...](https://youtube.com/shorts/2aepNB1tTXY) | `general_breakthroughs` | **61** | 5 | 0 | 0.0 | 19288.6h |
+| [FlashAttention-3: How GPUs Hit 1.2 PFLOP...](https://youtube.com/shorts/shTYdJIdGQ0) | `hardware_efficiency` | **60** | 2 | 1 | 0.89 | 67.1h |
+| [Long drive from #delhi to #gurugram #ind...](https://youtube.com/shorts/KUnALFn1rUk) | `general_breakthroughs` | **55** | 6 | 0 | 0.0 | 19315.1h |
+| [Just the nature vibe! #mountains #nature...](https://youtube.com/shorts/q5F9mXttCsg) | `general_breakthroughs` | **53** | 2 | 0 | 0.0 | 19314.6h |
+| [CineRecon Explained #Shorts...](https://youtube.com/shorts/LTVtF0WqSdg) | `general_breakthroughs` | **47** | 0 | 1 | 0.92 | 51.2h |
+| [View of dharmsala mountains#exploreworld...](https://youtube.com/shorts/CfQahKQU12A) | `general_breakthroughs` | **47** | 7 | 0 | 0.0 | 19364.7h |
+| [#aajkiraat #dharamshala #art #party #str...](https://youtube.com/shorts/V3uTBQtZqXM) | `general_breakthroughs` | **46** | 3 | 0 | 0.0 | 19337.0h |
+| [#triundtop #triund #dharamshala #himacha...](https://youtube.com/shorts/_XbLQP4Fmn0) | `general_breakthroughs` | **41** | 6 | 0 | 0.0 | 19364.8h |
+| [From Local to Global Explained #Shorts...](https://youtube.com/shorts/oG82W8MDqT0) | `general_breakthroughs` | **32** | 1 | 1 | 1.36 | 23.6h |
+| [GraphRAG Explained #Shorts...](https://youtube.com/shorts/hsNHlSEWjTc) | `general_breakthroughs` | **32** | 0 | 1 | 1.16 | 27.6h |
+| [Why Naive RAG Fails Explained #Shorts...](https://youtube.com/shorts/-yYQqT3Vk4c) | `general_breakthroughs` | **32** | 1 | 1 | 0.67 | 47.4h |
+| [Hierarchical Graph RAG Explained #Shorts...](https://youtube.com/shorts/y16O4t9hxjQ) | `general_breakthroughs` | **28** | 0 | 1 | 0.74 | 37.9h |
+| [GraphRAG Explained #Shorts...](https://youtube.com/shorts/ZfF8ryTpv7k) | `general_breakthroughs` | **27** | 0 | 1 | 0.62 | 43.5h |
+| [#taubatauba #resortreview  #macleodganj ...](https://youtube.com/shorts/OIYfdRxTETg) | `general_breakthroughs` | **24** | 3 | 0 | 0.0 | 19336.9h |
+| [Learning How to Remember Explained #Shor...](https://youtube.com/shorts/4ja7Qu2Io4k) | `general_breakthroughs` | **20** | 1 | 1 | 0.4 | 50.5h |
+| [From Local to Global Explained #Shorts...](https://youtube.com/shorts/tBIrHihtA8c) | `general_breakthroughs` | **16** | 0 | 1 | 0.39 | 40.5h |
+| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/KRODn0RgyyQ) | `general_breakthroughs` | **10** | 0 | 1 | 0.54 | 18.7h |
+| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/fmE3eiCefH4) | `general_breakthroughs` | **9** | 0 | 1 | 0.63 | 14.3h |
+| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/X21oglSTV2A) | `general_breakthroughs` | **8** | 1 | 1 | 0.48 | 16.7h |
+| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/YF19j-VxoSU) | `general_breakthroughs` | **1** | 0 | 1 | 0.27 | 3.8h |
 
 ---
 
