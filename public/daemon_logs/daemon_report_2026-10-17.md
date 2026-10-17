@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-17 | **Timestamp:** 2026-10-17 11:29:51 UTC
+**Date:** 2026-10-17 | **Timestamp:** 2026-10-17 12:44:41 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Original RAG: Part 1 - The Open-Book Exam Revolution in AI
-- **Topic Queue Part:** `original_rag_part_1_open_book_revolution` (arXiv: [2005.11401](https://arxiv.org/abs/2005.11401))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/rqL6gaga9ic](https://youtube.com/shorts/rqL6gaga9ic) (`rqL6gaga9ic`)
-- **High-CTR Poster:** [rag_foundations_2020_poster.png](public/thumbnails/rag_foundations_2020_poster.png)
+### Reel 1: Original RAG: Part 2 - Dense Passage Retrieval (DPR) & Dual Encoders
+- **Topic Queue Part:** `original_rag_part_2_dense_passage_retrieval` (arXiv: [2005.11401](https://arxiv.org/abs/2005.11401))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/mSTrJiYfOU8](https://youtube.com/shorts/mSTrJiYfOU8) (`mSTrJiYfOU8`)
+- **High-CTR Poster:** [rag_dpr_dual_encoder_poster.png](public/thumbnails/rag_dpr_dual_encoder_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `architecture_breakdown`
-- **Editorial Hook:** *Original RAG Mini-Series 1/4: Original RAG: Part 1 - The Open-Book Exam Revolution in AI*
-- **Everyday Analogy:** *Parametric weights vs non-parametric external memory: the foundational breakthrough that birthed RAG in 2020.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_rag_foundations_2020_architecture_breakdown.mp4`
+- **Category:** `mechanism_deepdive`
+- **Editorial Hook:** *Original RAG Mini-Series 2/4: Original RAG: Part 2 - Dense Passage Retrieval (DPR) & Dual Encoders*
+- **Everyday Analogy:** *Dual BERT encoders mapping queries and 21 million Wikipedia passages into a continuous embedding space.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_rag_dpr_dual_encoder_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs

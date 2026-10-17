@@ -1,8 +1,8 @@
 {
   "version": "7.0",
-  "generation": 218,
-  "last_evolved_at": "2026-10-17T11:29:52.942394+00:00",
-  "total_autopsies_recorded": 1087,
+  "generation": 220,
+  "last_evolved_at": "2026-10-17T12:44:43.082643+00:00",
+  "total_autopsies_recorded": 1096,
   "pacing": {
     "recommended_tts_speed": 1.12,
     "recommended_wpm": 165,
@@ -43,7 +43,7 @@
     "architecture_breakdown": {
       "score": 9.49,
       "avg_3s_retention": 82.66,
-      "sample_count": 107,
+      "sample_count": 110,
       "description": "Auto-discovered hook archetype: architecture_breakdown"
     },
     "hardware_efficiency_breakdown": {
@@ -127,7 +127,7 @@
     "memory_bandwidth_bottleneck": {
       "score": 9.49,
       "avg_3s_retention": 87.99,
-      "sample_count": 101,
+      "sample_count": 102,
       "description": "Auto-discovered hook archetype: memory_bandwidth_bottleneck"
     },
     "context_compaction": {
@@ -181,7 +181,7 @@
     "gui_agent_architecture": {
       "score": 9.49,
       "avg_3s_retention": 88.0,
-      "sample_count": 16,
+      "sample_count": 17,
       "description": "Auto-discovered hook archetype: gui_agent_architecture"
     },
     "knowledge_graph_rag": {
@@ -192,9 +192,15 @@
     },
     "hierarchical_graph_rag": {
       "score": 9.49,
-      "avg_3s_retention": 73.99,
-      "sample_count": 36,
+      "avg_3s_retention": 73.89,
+      "sample_count": 39,
       "description": "Auto-discovered hook archetype: hierarchical_graph_rag"
+    },
+    "rag_explained": {
+      "score": 8.2,
+      "avg_3s_retention": 88.0,
+      "sample_count": 1,
+      "description": "Auto-discovered hook archetype: rag_explained"
     }
   },
   "visual_blueprints": {
@@ -263,22 +269,22 @@
     },
     "chalkboard_code_block": {
       "multiplier": 1.5,
-      "avg_retention": 60.35,
-      "win_count": 606,
+      "avg_retention": 60.34,
+      "win_count": 614,
       "loss_count": 0,
       "recommendation": "Auto-discovered layout."
     },
     "barrier_separation": {
       "multiplier": 1.5,
-      "avg_retention": 66.69,
-      "win_count": 199,
+      "avg_retention": 66.62,
+      "win_count": 202,
       "loss_count": 24,
       "recommendation": "Auto-discovered layout."
     },
     "tree_hierarchy": {
-      "multiplier": 1.37,
-      "avg_retention": 70.37,
-      "win_count": 106,
+      "multiplier": 1.42,
+      "avg_retention": 70.49,
+      "win_count": 107,
       "loss_count": 16,
       "recommendation": "Auto-discovered layout."
     },
@@ -298,29 +304,29 @@
     },
     "horizontal_race_bars": {
       "multiplier": 1.5,
-      "avg_retention": 55.37,
-      "win_count": 510,
+      "avg_retention": 55.3,
+      "win_count": 518,
       "loss_count": 0,
       "recommendation": "Auto-discovered layout."
     },
     "grid_memory": {
       "multiplier": 1.5,
-      "avg_retention": 72.63,
-      "win_count": 146,
+      "avg_retention": 72.84,
+      "win_count": 150,
       "loss_count": 77,
       "recommendation": "Auto-discovered layout."
     },
     "paper_figure": {
       "multiplier": 1.5,
-      "avg_retention": 59.37,
-      "win_count": 310,
+      "avg_retention": 59.49,
+      "win_count": 318,
       "loss_count": 0,
       "recommendation": "Auto-discovered layout."
     },
     "convergence_funnel": {
       "multiplier": 1.5,
-      "avg_retention": 56.19,
-      "win_count": 138,
+      "avg_retention": 54.99,
+      "win_count": 141,
       "loss_count": 0,
       "recommendation": "Auto-discovered layout."
     },
@@ -348,7 +354,7 @@
     "vector_flow_field": {
       "multiplier": 1.5,
       "avg_retention": 63.32,
-      "win_count": 57,
+      "win_count": 61,
       "loss_count": 1,
       "recommendation": "Auto-discovered layout."
     },
@@ -356,7 +362,7 @@
       "multiplier": 0.4,
       "avg_retention": 60.61,
       "win_count": 134,
-      "loss_count": 21,
+      "loss_count": 22,
       "recommendation": "Auto-discovered layout."
     },
     "projection_rays": {
@@ -370,13 +376,13 @@
       "multiplier": 0.4,
       "avg_retention": 61.81,
       "win_count": 13,
-      "loss_count": 33,
+      "loss_count": 35,
       "recommendation": "Auto-discovered layout."
     },
     "neural_activation_wave": {
       "multiplier": 1.5,
-      "avg_retention": 50.17,
-      "win_count": 46,
+      "avg_retention": 50.16,
+      "win_count": 49,
       "loss_count": 0,
       "recommendation": "Auto-discovered layout."
     },
