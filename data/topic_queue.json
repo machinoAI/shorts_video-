@@ -418,5 +418,1005 @@
     "part": "5/5",
     "angle": "The benchmark leakage crisis: how token perplexity dips uncover memorized test sets vs genuine generalization in modern frontier LLMs.",
     "status": "pending"
+  },
+  {
+    "id": "goat_transformer_part_1",
+    "arxiv_id": "1706.03762",
+    "topic": "Attention Is All You Need: Part 1 - The Death of Recurrence: Why LSTMs Hit the Parallelism Wall",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: Attention Is All You Need Mini-Series",
+    "part": "1/5",
+    "angle": "Why sequential token passing throttled GPU parallelism, and how self-attention unlocked simultaneous matrix computation across entire documents.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_transformer_part_2",
+    "arxiv_id": "1706.03762",
+    "topic": "Attention Is All You Need: Part 2 - The Scaled Dot-Product Engine: Mathematical Derivation of QK^T / sqrt(d_k)",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: Attention Is All You Need Mini-Series",
+    "part": "2/5",
+    "angle": "Why the square root scaling factor prevents softmax gradient collapse into barren regions in high dimensional embedding spaces.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_transformer_part_3",
+    "arxiv_id": "1706.03762",
+    "topic": "Attention Is All You Need: Part 3 - Multi-Head Projection: Subspace Geometry and Positional Frequency Encodings",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: Attention Is All You Need Mini-Series",
+    "part": "3/5",
+    "angle": "How multi-head linear projections split representations into orthogonal semantic subspaces, and why sinusoidal frequencies encode relative order.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_transformer_part_4",
+    "arxiv_id": "1706.03762",
+    "topic": "Attention Is All You Need: Part 4 - The 28.4 BLEU Translation Shockwave That Shattered Academic Benchmarks",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: Attention Is All You Need Mini-Series",
+    "part": "4/5",
+    "angle": "How the 8-layer base and 65-million parameter big Transformer crushed WMT English-to-German and English-to-French translation records in 2017.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_transformer_part_5",
+    "arxiv_id": "1706.03762",
+    "topic": "Attention Is All You Need: Part 5 - The Universal Architecture: How One Paper Birthed GPT, Claude, Gemini, and Modern AI",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: Attention Is All You Need Mini-Series",
+    "part": "5/5",
+    "angle": "How the identical attention building block scaled across text, vision, protein folding, audio, and robotics over seven years.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_resnet_part_1",
+    "arxiv_id": "1512.03385",
+    "topic": "ResNet: Deep Residual Learning: Part 1 - The Degradation Paradox: Why Deeper Networks Became Stupider",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: ResNet: Deep Residual Learning Mini-Series",
+    "part": "1/5",
+    "angle": "The counter-intuitive discovery that deeper vanilla networks had higher training error than shallow ones, and why vanishing gradients were the culprit.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_resnet_part_2",
+    "arxiv_id": "1512.03385",
+    "topic": "ResNet: Deep Residual Learning: Part 2 - The Superconducting Gradient Wire: Mathematical Anatomy of F(x) + x",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: ResNet: Deep Residual Learning Mini-Series",
+    "part": "2/5",
+    "angle": "How identity shortcut skip connections allow gradient vectors to propagate backward across hundreds of layers without attenuation.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_resnet_part_3",
+    "arxiv_id": "1512.03385",
+    "topic": "ResNet: Deep Residual Learning: Part 3 - The 152-Layer Architecture: Bottleneck Residual Blocks and Dimension Projections",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: ResNet: Deep Residual Learning Mini-Series",
+    "part": "3/5",
+    "angle": "Designing 1x1, 3x3, and 1x1 bottleneck layers to drastically reduce parameter count while scaling layer depth to unprecedented heights.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_resnet_part_4",
+    "arxiv_id": "1512.03385",
+    "topic": "ResNet: Deep Residual Learning: Part 4 - Crushing ImageNet 2015: 3.57% Error Rate and 5 Clean Sweep Competitions",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: ResNet: Deep Residual Learning Mini-Series",
+    "part": "4/5",
+    "angle": "How ResNet crushed human-level vision performance on ImageNet classification, localization, detection, and COCO benchmarks.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_resnet_part_5",
+    "arxiv_id": "1512.03385",
+    "topic": "ResNet: Deep Residual Learning: Part 5 - The Indestructible Skeleton: Why Every Modern Transformer Still Relies on Residual Connections",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: ResNet: Deep Residual Learning Mini-Series",
+    "part": "5/5",
+    "angle": "How the residual stream remains the primary communication bus inside modern LLMs from GPT-4 to Llama 3.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alexnet_part_1",
+    "arxiv_id": "alexnet_imagenet_2012",
+    "topic": "AlexNet: Deep Learning Ignition: Part 1 - The Great Vision Schism: Handcrafted SIFT Features vs Raw Pixel Learning",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: AlexNet: Deep Learning Ignition Mini-Series",
+    "part": "1/5",
+    "angle": "Why the computer vision community resisted neural networks for decades until raw pixel convolutions proved handcrafted features obsolete.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alexnet_part_2",
+    "arxiv_id": "alexnet_imagenet_2012",
+    "topic": "AlexNet: Deep Learning Ignition: Part 2 - The 3 Pillars of Modern AI: GPUs, ReLU Activations, and Dropout Regularization",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: AlexNet: Deep Learning Ignition Mini-Series",
+    "part": "2/5",
+    "angle": "Replacing slow Sigmoid with piecewise linear ReLU to defeat vanishing gradients, paired with random node dropout to prevent co-adaptation.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alexnet_part_3",
+    "arxiv_id": "alexnet_imagenet_2012",
+    "topic": "AlexNet: Deep Learning Ignition: Part 3 - The Dual-GTX-580 Split Pipeline: Model Parallelism Before It Had a Name",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: AlexNet: Deep Learning Ignition Mini-Series",
+    "part": "3/5",
+    "angle": "How Alex Krizhevsky split 60 million parameters across two 3GB gaming GPUs using cross-GPU communication layers.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alexnet_part_4",
+    "arxiv_id": "alexnet_imagenet_2012",
+    "topic": "AlexNet: Deep Learning Ignition: Part 4 - The 15.3% Shock: How AlexNet Demolished ImageNet and Changed History",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: AlexNet: Deep Learning Ignition Mini-Series",
+    "part": "4/5",
+    "angle": "The dramatic moment at ECCV 2012 when AlexNet outperformed the second-place handcrafted model by an unthinkable 10.8 percentage points.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alexnet_part_5",
+    "arxiv_id": "alexnet_imagenet_2012",
+    "topic": "AlexNet: Deep Learning Ignition: Part 5 - The Deep Learning Big Bang: How Three Researchers Sparked the Trillion-Dollar AI Boom",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: AlexNet: Deep Learning Ignition Mini-Series",
+    "part": "5/5",
+    "angle": "How AlexNet triggered the worldwide pivot of Google, Facebook, Microsoft, and academic labs into deep neural networks.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_gpt3_part_1",
+    "arxiv_id": "2005.14165",
+    "topic": "GPT-3: Few-Shot In-Context Learners: Part 1 - The Death of Fine-Tuning: Moving from Weight Updates to Natural Language Prompts",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: GPT-3: Few-Shot In-Context Learners Mini-Series",
+    "part": "1/5",
+    "angle": "Why training separate fine-tuned heads per task was obsolete, and how scaling models turned English into a universal programming language.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_gpt3_part_2",
+    "arxiv_id": "2005.14165",
+    "topic": "GPT-3: Few-Shot In-Context Learners: Part 2 - The Geometry of In-Context Learning: How Frozen Weights Simulate Gradient Descent",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: GPT-3: Few-Shot In-Context Learners Mini-Series",
+    "part": "2/5",
+    "angle": "The mathematical phenomenon where few-shot prompt tokens act as steering vectors that navigate latent manifolds without weight updates.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_gpt3_part_3",
+    "arxiv_id": "2005.14165",
+    "topic": "GPT-3: Few-Shot In-Context Learners: Part 3 - The 175-Billion Parameter Monster: Megatron Tensor Slicing and Sparse Alternation",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: GPT-3: Few-Shot In-Context Learners Mini-Series",
+    "part": "3/5",
+    "angle": "The engineering breakthrough of training 175B parameters across thousands of V100 GPUs using Megatron-style tensor and pipeline parallelism.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_gpt3_part_4",
+    "arxiv_id": "2005.14165",
+    "topic": "GPT-3: Few-Shot In-Context Learners: Part 4 - The Few-Shot Benchmark Surge: TriviaQA, LAMBADA, Arithmetic, and Real-Time Translation",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: GPT-3: Few-Shot In-Context Learners Mini-Series",
+    "part": "4/5",
+    "angle": "Systematic evaluation demonstrating that few-shot performance scales steadily across dozens of diverse linguistic benchmarks.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_gpt3_part_5",
+    "arxiv_id": "2005.14165",
+    "topic": "GPT-3: Few-Shot In-Context Learners: Part 5 - The Emergence Horizon: How Scale Discovered Abilities No Human Programmed",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: GPT-3: Few-Shot In-Context Learners Mini-Series",
+    "part": "5/5",
+    "angle": "How scaling autoregressive next-token prediction induced qualitative phase transitions in reasoning, code generation, and translation.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alphago_part_1",
+    "arxiv_id": "alphago_nature_2016",
+    "topic": "AlphaGo: Mastering the Game of Go: Part 1 - The 10^170 Complexity Trap: Why Classical Brute-Force Search Was Dead in Go",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: AlphaGo: Mastering the Game of Go Mini-Series",
+    "part": "1/5",
+    "angle": "Why the game of Go has more legal board states than atoms in the universe, making traditional minimax search impossible.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alphago_part_2",
+    "arxiv_id": "alphago_nature_2016",
+    "topic": "AlphaGo: Mastering the Game of Go: Part 2 - Policy vs Value Networks: Fusing Grandmaster Intuition with Cold Calculation",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: AlphaGo: Mastering the Game of Go Mini-Series",
+    "part": "2/5",
+    "angle": "How policy networks prune the search space to high-probability moves while value networks evaluate board position without exhaustive rollouts.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alphago_part_3",
+    "arxiv_id": "alphago_nature_2016",
+    "topic": "AlphaGo: Mastering the Game of Go: Part 3 - Monte Carlo Tree Search Integration: Upper Confidence Bounds and Neural Rollouts",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: AlphaGo: Mastering the Game of Go Mini-Series",
+    "part": "3/5",
+    "angle": "Balancing exploration and exploitation using PUCT equations to guide dynamic tree expansion toward winning branches.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alphago_part_4",
+    "arxiv_id": "alphago_nature_2016",
+    "topic": "AlphaGo: Mastering the Game of Go: Part 4 - Move 37: The Moment an Algorithm Played a Move No Human Had Seen in 3,000 Years",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: AlphaGo: Mastering the Game of Go Mini-Series",
+    "part": "4/5",
+    "angle": "Analyzing Move 37 in Game 2 against Lee Sedol: how a 1-in-10,000 probability move redefined human understanding of Go strategy.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alphago_part_5",
+    "arxiv_id": "alphago_nature_2016",
+    "topic": "AlphaGo: Mastering the Game of Go: Part 5 - From Expert Bootstrapping to Pure Self-Play: The AlphaZero Legacy",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: AlphaGo: Mastering the Game of Go Mini-Series",
+    "part": "5/5",
+    "angle": "How AlphaGo evolved into AlphaZero and MuZero, discovering superhuman strategies in chess, shogi, and Go entirely from scratch.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_gans_part_1",
+    "arxiv_id": "1406.2661",
+    "topic": "GANs: Generative Adversarial Networks: Part 1 - The Counterfeiter and the Cop: Zero-Sum Game Theory in Deep Learning",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: GANs: Generative Adversarial Networks Mini-Series",
+    "part": "1/5",
+    "angle": "Formulating generative AI as a minimax game between a Generator forging fake data and a Discriminator detecting authentic samples.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_gans_part_2",
+    "arxiv_id": "1406.2661",
+    "topic": "GANs: Generative Adversarial Networks: Part 2 - The Minimax Equation: Mathematical Proof of Jensen-Shannon Divergence Convergence",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: GANs: Generative Adversarial Networks Mini-Series",
+    "part": "2/5",
+    "angle": "The theoretical derivation proving that the optimal discriminator is D*(x) = p_data / (p_data + p_g), leading to global minimum p_g = p_data.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_gans_part_3",
+    "arxiv_id": "1406.2661",
+    "topic": "GANs: Generative Adversarial Networks: Part 3 - Mode Collapse and Vanishing Gradients: Why Training Early GANs Was Like Walking a Tightrope",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: GANs: Generative Adversarial Networks Mini-Series",
+    "part": "3/5",
+    "angle": "Analyzing failure modes where generators memorize single sample clusters or discriminators overpower generators with zero gradient signals.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_gans_part_4",
+    "arxiv_id": "1406.2661",
+    "topic": "GANs: Generative Adversarial Networks: Part 4 - The Photorealism Revolution: From 28x28 MNIST Blobs to High-Res Face Synthesis",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: GANs: Generative Adversarial Networks Mini-Series",
+    "part": "4/5",
+    "angle": "The progression through DCGAN, WGAN, and StyleGAN that produced faces indistinguishable from real human photographs.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_gans_part_5",
+    "arxiv_id": "1406.2661",
+    "topic": "GANs: Generative Adversarial Networks: Part 5 - The Generative Legacy: How Adversarial Modeling Paved the Way for Modern Diffusion",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: GANs: Generative Adversarial Networks Mini-Series",
+    "part": "5/5",
+    "angle": "How GAN latent space interpolation, perceptual loss, and adversarial discriminators laid the groundwork for modern media synthesis.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_ddpm_part_1",
+    "arxiv_id": "2006.11239",
+    "topic": "DDPM: Denoising Diffusion Probabilistic Models: Part 1 - Statistical Thermodynamics in AI: Turning Non-Equilibrium Physics into Generative Art",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: DDPM: Denoising Diffusion Probabilistic Models Mini-Series",
+    "part": "1/5",
+    "angle": "Why reversing physical entropy and noise diffusion fundamentally outperforms adversarial min-max games for stable image synthesis.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_ddpm_part_2",
+    "arxiv_id": "2006.11239",
+    "topic": "DDPM: Denoising Diffusion Probabilistic Models: Part 2 - The Forward-Reverse Markov Chain: Reparameterization Trick and Closed-Form Noise Addition",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: DDPM: Denoising Diffusion Probabilistic Models Mini-Series",
+    "part": "2/5",
+    "angle": "The mathematical magic of sampling noisy image x_t directly from x_0 at any arbitrary timestep using Gaussian schedules without step-by-step iteration.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_ddpm_part_3",
+    "arxiv_id": "2006.11239",
+    "topic": "DDPM: Denoising Diffusion Probabilistic Models: Part 3 - The Denoising U-Net: Time-Step Embeddings, Skip Connections, and Score Matching",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: DDPM: Denoising Diffusion Probabilistic Models Mini-Series",
+    "part": "3/5",
+    "angle": "How a U-Net architecture predicts the exact noise vector epsilon added to each pixel rather than predicting the clean image directly.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_ddpm_part_4",
+    "arxiv_id": "2006.11239",
+    "topic": "DDPM: Denoising Diffusion Probabilistic Models: Part 4 - Toppling GANs on ImageNet: Lower FID Scores and True Distribution Coverage",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: DDPM: Denoising Diffusion Probabilistic Models Mini-Series",
+    "part": "4/5",
+    "angle": "The landmark empirical demonstration that diffusion models achieve superior Fr\u00e9chet Inception Distance without mode collapse.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_ddpm_part_5",
+    "arxiv_id": "2006.11239",
+    "topic": "DDPM: Denoising Diffusion Probabilistic Models: Part 5 - The Latent Diffusion Explosion: How DDPM Formed the Foundation of Stable Diffusion, Midjourney and Sora",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: DDPM: Denoising Diffusion Probabilistic Models Mini-Series",
+    "part": "5/5",
+    "angle": "How compressing pixel diffusion into latent space via VAEs enabled real-time high-definition video and image generation worldwide.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_instructgpt_part_1",
+    "arxiv_id": "2203.02155",
+    "topic": "InstructGPT: RLHF Alignment: Part 1 - The Alignment Gap: Why Pure Next-Token Autocomplete Was Dangerous and Toxic",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: InstructGPT: RLHF Alignment Mini-Series",
+    "part": "1/5",
+    "angle": "Why standard language models prioritize internet frequency over human truthfulness, frequently generating offensive, biased, or evasive outputs.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_instructgpt_part_2",
+    "arxiv_id": "2203.02155",
+    "topic": "InstructGPT: RLHF Alignment: Part 2 - The Bradley-Terry Reward Engine: Converting Human Pairwise Preferences into Scalar Loss",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: InstructGPT: RLHF Alignment Mini-Series",
+    "part": "2/5",
+    "angle": "The mathematical formulation training a reward model to score responses based on human thumbs-up comparisons using sigmoid cross-entropy.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_instructgpt_part_3",
+    "arxiv_id": "2203.02155",
+    "topic": "InstructGPT: RLHF Alignment: Part 3 - PPO Policy Optimization: Balancing Human Rewards with KL-Divergence Anchors",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: InstructGPT: RLHF Alignment Mini-Series",
+    "part": "3/5",
+    "angle": "How Proximal Policy Optimization steers model weights toward high reward while a KL-divergence penalty prevents policy collapse into gibberish.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_instructgpt_part_4",
+    "arxiv_id": "2203.02155",
+    "topic": "InstructGPT: RLHF Alignment: Part 4 - The 1.3B Beats 175B Miracle: How Alignment Trumped 100x Parameter Scale",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: InstructGPT: RLHF Alignment Mini-Series",
+    "part": "4/5",
+    "angle": "The empirical benchmark proving that a 1.3-billion parameter InstructGPT model was rated vastly superior to a 175-billion unaligned GPT-3.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_instructgpt_part_5",
+    "arxiv_id": "2203.02155",
+    "topic": "InstructGPT: RLHF Alignment: Part 5 - The ChatGPT Ignition: The Single Paper That Brought AI to 100 Million Consumers",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: InstructGPT: RLHF Alignment Mini-Series",
+    "part": "5/5",
+    "angle": "How the 3-stage alignment blueprint (SFT -> Reward Model -> PPO) unlocked conversational AI and catalyzed modern LLM products.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_scaling_laws_part_1",
+    "arxiv_id": "2001.08361",
+    "topic": "Scaling Laws for Neural Language Models: Part 1 - From Trial-and-Error to Predictable Physics: The Discovery of Neural Power Laws",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: Scaling Laws for Neural Language Models Mini-Series",
+    "part": "1/5",
+    "angle": "How researchers discovered that model loss decreases smoothly as a power-law function of compute, data, and parameters over orders of magnitude.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_scaling_laws_part_2",
+    "arxiv_id": "2001.08361",
+    "topic": "Scaling Laws for Neural Language Models: Part 2 - The Triad Exponents: Compute (C), Parameters (N), and Dataset Size (D)",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: Scaling Laws for Neural Language Models Mini-Series",
+    "part": "2/5",
+    "angle": "The mathematical derivation of power-law exponents alpha_N, alpha_D, and alpha_C, proving that network depth vs width matters far less than raw scale.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_scaling_laws_part_3",
+    "arxiv_id": "2001.08361",
+    "topic": "Scaling Laws for Neural Language Models: Part 3 - The Overfitting Mirage: Why Larger Models Are Always More Sample-Efficient",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: Scaling Laws for Neural Language Models Mini-Series",
+    "part": "3/5",
+    "angle": "Proving mathematically that bigger models achieve lower cross-entropy loss with fewer training tokens and fewer optimization steps than smaller models.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_scaling_laws_part_4",
+    "arxiv_id": "2001.08361",
+    "topic": "Scaling Laws for Neural Language Models: Part 4 - Predicting Frontier Performance Across 4 Orders of Magnitude: The Billion-Dollar Graph",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: Scaling Laws for Neural Language Models Mini-Series",
+    "part": "4/5",
+    "angle": "How small-scale compute runs accurately predicted the exact performance curves of multi-thousand GPU clusters months before training completed.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_scaling_laws_part_5",
+    "arxiv_id": "2001.08361",
+    "topic": "Scaling Laws for Neural Language Models: Part 5 - The Capital Supercycle: How One Empirical Paper Justified the Trillion-Dollar Data Center Boom",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: Scaling Laws for Neural Language Models Mini-Series",
+    "part": "5/5",
+    "angle": "How the scaling law equations gave cloud providers and venture capital the mathematical confidence to invest hundreds of billions into AI hardware.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_flashattention_part_1",
+    "arxiv_id": "2205.14135",
+    "topic": "FlashAttention: Fast & Memory-Efficient Exact Attention: Part 1 - The Memory Wall: Why Modern GPUs Were Idling While Computing Attention",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: FlashAttention: Fast & Memory-Efficient Exact Attention Mini-Series",
+    "part": "1/5",
+    "angle": "Why standard attention was memory-bandwidth bound rather than compute bound, leaving high-performance tensor cores starved of data.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_flashattention_part_2",
+    "arxiv_id": "2205.14135",
+    "topic": "FlashAttention: Fast & Memory-Efficient Exact Attention: Part 2 - IO-Aware Hardware Tiling: Bypassing Slow HBM by Exploiting 20 TB/s On-Chip SRAM",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: FlashAttention: Fast & Memory-Efficient Exact Attention Mini-Series",
+    "part": "2/5",
+    "angle": "Re-engineering transformer attention to load matrix blocks into ultra-fast SRAM tiles, computing intermediate values without spilling to slow HBM memory.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_flashattention_part_3",
+    "arxiv_id": "2205.14135",
+    "topic": "FlashAttention: Fast & Memory-Efficient Exact Attention: Part 3 - The Online Softmax Breakthrough: Exact Normalization Without Storing N x N Matrices",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: FlashAttention: Fast & Memory-Efficient Exact Attention Mini-Series",
+    "part": "3/5",
+    "angle": "The clever mathematical reformulation of the softmax normalization constant that allows exact attention output accumulation across incremental tiles.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_flashattention_part_4",
+    "arxiv_id": "2205.14135",
+    "topic": "FlashAttention: Fast & Memory-Efficient Exact Attention: Part 4 - The 4x Speedup: Slashing Training Time and Unlocking 64K to 1M Context Windows",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: FlashAttention: Fast & Memory-Efficient Exact Attention Mini-Series",
+    "part": "4/5",
+    "angle": "Benchmarking FlashAttention across BERT, GPT-2, and long-sequence models, proving 2-4x end-to-end wall-clock speedups with zero loss in mathematical precision.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_flashattention_part_5",
+    "arxiv_id": "2205.14135",
+    "topic": "FlashAttention: Fast & Memory-Efficient Exact Attention: Part 5 - The Universal Hardware Standard: How FlashAttention Rewrote Every Frontier AI Kernel",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: FlashAttention: Fast & Memory-Efficient Exact Attention Mini-Series",
+    "part": "5/5",
+    "angle": "How FlashAttention-2 and FlashAttention-3 became the mandatory low-level execution engine across PyTorch, vLLM, DeepSeek, and modern LLM serving.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_word2vec_part_1",
+    "arxiv_id": "1301.3781",
+    "topic": "Word2Vec: Semantic Vector Spaces: Part 1 - The Curse of Discrete Tokens: Why Early NLP Treated Dog and Cat as Orthogonal",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: Word2Vec: Semantic Vector Spaces Mini-Series",
+    "part": "1/5",
+    "angle": "Why 50,000-dimensional sparse one-hot encodings failed to capture synonymy or semantic similarity, and the need for dense continuous embeddings.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_word2vec_part_2",
+    "arxiv_id": "1301.3781",
+    "topic": "Word2Vec: Semantic Vector Spaces: Part 2 - Skip-Gram with Negative Sampling: Turning Text Co-Occurrence into Logistic Dot Products",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: Word2Vec: Semantic Vector Spaces Mini-Series",
+    "part": "2/5",
+    "angle": "The efficient neural objective maximizing dot products of observed word-context pairs while pushing away random negative noise words.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_word2vec_part_3",
+    "arxiv_id": "1301.3781",
+    "topic": "Word2Vec: Semantic Vector Spaces: Part 3 - Distributed Vector Algebra: The Magic of King - Man + Woman = Queen",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: Word2Vec: Semantic Vector Spaces Mini-Series",
+    "part": "3/5",
+    "angle": "How linear vector offsets in a 300-dimensional space encode abstract semantic, syntactic, and relational concepts without explicit supervision.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_word2vec_part_4",
+    "arxiv_id": "1301.3781",
+    "topic": "Word2Vec: Semantic Vector Spaces: Part 4 - Crushing Word Analogy Benchmarks: Semantic and Syntactic Accuracy Milestones",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: Word2Vec: Semantic Vector Spaces Mini-Series",
+    "part": "4/5",
+    "angle": "Evaluating Word2Vec on thousands of complex semantic and grammatical analogies, setting historical state-of-the-art benchmarks in 2013.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_word2vec_part_5",
+    "arxiv_id": "1301.3781",
+    "topic": "Word2Vec: Semantic Vector Spaces: Part 5 - The Vector Database Genesis: How Word2Vec Built the Foundation for Dense Retrieval and RAG",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: Word2Vec: Semantic Vector Spaces Mini-Series",
+    "part": "5/5",
+    "angle": "Tracing the lineage from Word2Vec through GloVe and Sentence-Transformers to modern dense vector search and RAG retrieval systems.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_dqn_part_1",
+    "arxiv_id": "1312.5602",
+    "topic": "Deep Q-Networks (DQN): Deep Reinforcement Learning: Part 1 - The High-Dimensional RL Barrier: Why Reinforcement Learning Failed on Video Games",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: Deep Q-Networks (DQN): Deep Reinforcement Learning Mini-Series",
+    "part": "1/5",
+    "angle": "Why classical reinforcement learning relied on hand-crafted state features and collapsed when confronted with continuous 210x160 pixel screens.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_dqn_part_2",
+    "arxiv_id": "1312.5602",
+    "topic": "Deep Q-Networks (DQN): Deep Reinforcement Learning: Part 2 - The Bellman Loss Equation: Approximating High-Dimensional Action-Value Functions",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: Deep Q-Networks (DQN): Deep Reinforcement Learning Mini-Series",
+    "part": "2/5",
+    "angle": "Formulating deep Q-learning where a convolutional neural network directly maps raw RGB frames to expected discounted future rewards Q(s, a).",
+    "status": "pending"
+  },
+  {
+    "id": "goat_dqn_part_3",
+    "arxiv_id": "1312.5602",
+    "topic": "Deep Q-Networks (DQN): Deep Reinforcement Learning: Part 3 - Experience Replay and Target Networks: Taming Deadly Feedback Instabilities",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: Deep Q-Networks (DQN): Deep Reinforcement Learning Mini-Series",
+    "part": "3/5",
+    "angle": "How randomizing historical transitions from an experience replay buffer breaks temporal correlation, and fixed target weights prevent runaway divergence.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_dqn_part_4",
+    "arxiv_id": "1312.5602",
+    "topic": "Deep Q-Networks (DQN): Deep Reinforcement Learning: Part 4 - The Atari Breakout Tunnel: When an Artificial Agent Discovered Long-Term Strategy",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: Deep Q-Networks (DQN): Deep Reinforcement Learning Mini-Series",
+    "part": "4/5",
+    "angle": "The historic moment when DQN autonomously discovered the strategy of digging a tunnel through the side wall to bounce the ball endlessly behind the blocks.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_dqn_part_5",
+    "arxiv_id": "1312.5602",
+    "topic": "Deep Q-Networks (DQN): Deep Reinforcement Learning: Part 5 - The Deep RL Revolution: From 8-Bit Cartridges to Robotics and Autonomous Systems",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: Deep Q-Networks (DQN): Deep Reinforcement Learning Mini-Series",
+    "part": "5/5",
+    "angle": "How DQN sparked modern Deep RL, leading directly to AlphaGo, robotic manipulation, and reinforcement learning alignment for frontier LLMs.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_bert_part_1",
+    "arxiv_id": "1810.04805",
+    "topic": "BERT: Deep Bidirectional Transformers: Part 1 - The Unidirectional Trap: Why Autoregressive Models Missed Half the Sentence Context",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: BERT: Deep Bidirectional Transformers Mini-Series",
+    "part": "1/5",
+    "angle": "Why left-to-right language models like GPT-1 could not incorporate future context into current representations, crippling performance on classification and QA.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_bert_part_2",
+    "arxiv_id": "1810.04805",
+    "topic": "BERT: Deep Bidirectional Transformers: Part 2 - Masked Language Modeling: The 15% Cloze Task That Unlocked Deep Bidirectional Context",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: BERT: Deep Bidirectional Transformers Mini-Series",
+    "part": "2/5",
+    "angle": "The mathematical design behind replacing 15% of tokens with [MASK] or random words, forcing the Transformer encoder to attend to both left and right context simultaneously.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_bert_part_3",
+    "arxiv_id": "1810.04805",
+    "topic": "BERT: Deep Bidirectional Transformers: Part 3 - Next Sentence Prediction & Cross-Attention: Teaching Transformers Inter-Sentence Cohesion",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: BERT: Deep Bidirectional Transformers Mini-Series",
+    "part": "3/5",
+    "angle": "Training multi-task objectives on sentence pair relationships [CLS] A [SEP] B [SEP] to power complex reading comprehension and semantic entailment.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_bert_part_4",
+    "arxiv_id": "1810.04805",
+    "topic": "BERT: Deep Bidirectional Transformers: Part 4 - The GLUE Benchmark Decimation: Shattering State-of-the-Art on 11 NLP Tasks in One Shot",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: BERT: Deep Bidirectional Transformers Mini-Series",
+    "part": "4/5",
+    "angle": "How BERT-Base and BERT-Large swept SQuAD, MultiNLI, and GLUE leaderboards, outperforming human baselines on several language benchmarks.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_bert_part_5",
+    "arxiv_id": "1810.04805",
+    "topic": "BERT: Deep Bidirectional Transformers: Part 5 - The Search Engine Transformation: How BERT Rewrote the Architecture of Google Search",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: BERT: Deep Bidirectional Transformers Mini-Series",
+    "part": "5/5",
+    "angle": "How Google integrated BERT into its core search ranking algorithm to understand conversational, multi-word queries for billions of daily users.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_vit_part_1",
+    "arxiv_id": "2010.11929",
+    "topic": "Vision Transformer (ViT): Attention for Visual Recognition: Part 1 - The Inductive Bias Myth: Do We Actually Need Convolutions for Computer Vision?",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: Vision Transformer (ViT): Attention for Visual Recognition Mini-Series",
+    "part": "1/5",
+    "angle": "Questioning the dogma of translation invariance and local connectivity, asking if a pure Transformer could learn visual geometry from data alone.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_vit_part_2",
+    "arxiv_id": "2010.11929",
+    "topic": "Vision Transformer (ViT): Attention for Visual Recognition: Part 2 - An Image is Worth 16x16 Words: Flattening Pixel Patches into Standard Transformer Tokens",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: Vision Transformer (ViT): Attention for Visual Recognition Mini-Series",
+    "part": "2/5",
+    "angle": "The elegant mathematical projection chopping 2D images into 16x16 pixel patches, flattening them into 1D vectors, and prepending a learnable [CLS] token.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_vit_part_3",
+    "arxiv_id": "2010.11929",
+    "topic": "Vision Transformer (ViT): Attention for Visual Recognition: Part 3 - Global Self-Attention Across Pixels: Why Patch Mixing Beats Local Receptive Fields",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: Vision Transformer (ViT): Attention for Visual Recognition Mini-Series",
+    "part": "3/5",
+    "angle": "How self-attention allows early visual layers to integrate context from opposite corners of the image instantly, unlike CNNs that expand slowly across layers.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_vit_part_4",
+    "arxiv_id": "2010.11929",
+    "topic": "Vision Transformer (ViT): Attention for Visual Recognition: Part 4 - The JFT-300M Scaling Breakthrough: When Transformers Surpassed CNNs at Massive Scale",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: Vision Transformer (ViT): Attention for Visual Recognition Mini-Series",
+    "part": "4/5",
+    "angle": "Proving that while CNNs win on small datasets, ViT systematically outperforms SOTA ResNets and EfficientNets when pre-trained on hundreds of millions of images.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_vit_part_5",
+    "arxiv_id": "2010.11929",
+    "topic": "Vision Transformer (ViT): Attention for Visual Recognition: Part 5 - The Multimodal Unification: How ViT Collapsed NLP and Computer Vision into One Architecture",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: Vision Transformer (ViT): Attention for Visual Recognition Mini-Series",
+    "part": "5/5",
+    "angle": "How ViT eliminated specialized vision backbones, paving the way for unified multimodal models (CLIP, Flamingo, GPT-4V, Gemini).",
+    "status": "pending"
+  },
+  {
+    "id": "goat_clip_part_1",
+    "arxiv_id": "2103.00020",
+    "topic": "CLIP: Contrastive Language-Image Pretraining: Part 1 - The Closed-World Trap: Why 1,000 Fixed ImageNet Labels Stunted Computer Vision",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: CLIP: Contrastive Language-Image Pretraining Mini-Series",
+    "part": "1/5",
+    "angle": "Why training models to classify images into rigid category labels prevented zero-shot generalization to real-world visual concepts.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_clip_part_2",
+    "arxiv_id": "2103.00020",
+    "topic": "CLIP: Contrastive Language-Image Pretraining: Part 2 - Contrastive Dual-Encoder Alignment: Maximizing Diagonal Dot-Products in Shared Latent Space",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: CLIP: Contrastive Language-Image Pretraining Mini-Series",
+    "part": "2/5",
+    "angle": "The symmetric cross-entropy loss aligning N image embeddings with N text embeddings across an N x N similarity matrix with learnable temperature tau.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_clip_part_3",
+    "arxiv_id": "2103.00020",
+    "topic": "CLIP: Contrastive Language-Image Pretraining: Part 3 - Zero-Shot Visual Inference: Classifying Any Object by Prompting Text Encoders",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: CLIP: Contrastive Language-Image Pretraining Mini-Series",
+    "part": "3/5",
+    "angle": "How prompting the text encoder with 'a photo of a {label}' allows instant visual classification across thousands of unseen categories without fine-tuning.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_clip_part_4",
+    "arxiv_id": "2103.00020",
+    "topic": "CLIP: Contrastive Language-Image Pretraining: Part 4 - The Adversarial Robustness Shield: Outperforming ResNet-50 on Real-World Distribution Shifts",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: CLIP: Contrastive Language-Image Pretraining Mini-Series",
+    "part": "4/5",
+    "angle": "Demonstrating that CLIP matches ImageNet accuracy while performing radically better on sketches, ObjectNet, ImageNet-R, and adversarial perturbations.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_clip_part_5",
+    "arxiv_id": "2103.00020",
+    "topic": "CLIP: Contrastive Language-Image Pretraining: Part 5 - The Text-to-Image Steering Wheel: The Guiding Engine Behind DALL-E, Stable Diffusion and Midjourney",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: CLIP: Contrastive Language-Image Pretraining Mini-Series",
+    "part": "5/5",
+    "angle": "How CLIP cosine similarity embeddings served as the foundational guidance mechanism that steered early diffusion models toward user prompts.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alphafold2_part_1",
+    "arxiv_id": "alphafold2_nature_2021",
+    "topic": "AlphaFold 2: The Protein Folding Revolution: Part 1 - The 50-Year Biological Enigma: Why Predicting 3D Protein Folding Was Thought Impossible",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: AlphaFold 2: The Protein Folding Revolution Mini-Series",
+    "part": "1/5",
+    "angle": "The grand challenge of molecular biology: deciphering how a 1D sequence of amino acids folds into complex 3D functional structures in microseconds.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alphafold2_part_2",
+    "arxiv_id": "alphafold2_nature_2021",
+    "topic": "AlphaFold 2: The Protein Folding Revolution: Part 2 - The Evoformer Engine: Dual-Attention Over Multiple Sequence Alignments and Pair Representations",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: AlphaFold 2: The Protein Folding Revolution Mini-Series",
+    "part": "2/5",
+    "angle": "How the Evoformer processes evolutionary co-variation across species while updating 2D residue-residue distance matrices in tandem.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alphafold2_part_3",
+    "arxiv_id": "alphafold2_nature_2021",
+    "topic": "AlphaFold 2: The Protein Folding Revolution: Part 3 - SE(3)-Equivariant Structure Module: Predicting 3D Rigid Rotations and Backbone Torsions",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: AlphaFold 2: The Protein Folding Revolution Mini-Series",
+    "part": "3/5",
+    "angle": "Operating directly on 3D Euclidean coordinates using rotation matrices and invariant point attention to fold proteins with atomic precision.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alphafold2_part_4",
+    "arxiv_id": "alphafold2_nature_2021",
+    "topic": "AlphaFold 2: The Protein Folding Revolution: Part 4 - CASP14 Decimation: Sub-Angstrom GDT Accuracy That Stunned the Global Scientific Community",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: AlphaFold 2: The Protein Folding Revolution Mini-Series",
+    "part": "4/5",
+    "angle": "The historic moment at the CASP14 competition when AlphaFold 2 achieved an average score of 92.4 GDT, matching experimental X-ray crystallography accuracy.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_alphafold2_part_5",
+    "arxiv_id": "alphafold2_nature_2021",
+    "topic": "AlphaFold 2: The Protein Folding Revolution: Part 5 - The Nobel Prize in Chemistry: Mapping 200 Million Known Proteins to Transform Medicine",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: AlphaFold 2: The Protein Folding Revolution Mini-Series",
+    "part": "5/5",
+    "angle": "How DeepMind open-sourced the 3D structures of virtually all known proteins, accelerating structural biology, drug design, and enzyme engineering.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_lora_part_1",
+    "arxiv_id": "2106.09685",
+    "topic": "LoRA: Low-Rank Adaptation of Large Language Models: Part 1 - The Full Fine-Tuning Storage Crisis: Why Saving 100GB Checkpoints Per Task Was Dead",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: LoRA: Low-Rank Adaptation of Large Language Models Mini-Series",
+    "part": "1/5",
+    "angle": "Why duplicating all weights for every downstream task created an impossible storage and deployment bottleneck as models scaled to hundreds of billions of parameters.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_lora_part_2",
+    "arxiv_id": "2106.09685",
+    "topic": "LoRA: Low-Rank Adaptation of Large Language Models: Part 2 - The Intrinsic Rank Hypothesis: Decomposing Delta W into Thin Bottleneck Matrices B x A",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: LoRA: Low-Rank Adaptation of Large Language Models Mini-Series",
+    "part": "2/5",
+    "angle": "The mathematical hypothesis that weight updates live on a low-dimensional manifold, proving that rank r=8 or r=16 captures full adaptation capacity.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_lora_part_3",
+    "arxiv_id": "2106.09685",
+    "topic": "LoRA: Low-Rank Adaptation of Large Language Models: Part 3 - Zero Inference Latency Overhead: The Mathematical Elegance of Merging W = W_0 + BA",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: LoRA: Low-Rank Adaptation of Large Language Models Mini-Series",
+    "part": "3/5",
+    "angle": "How adapter weights can be linearly added directly into frozen base matrices for deployment, adding zero compute latency or memory overhead at inference.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_lora_part_4",
+    "arxiv_id": "2106.09685",
+    "topic": "LoRA: Low-Rank Adaptation of Large Language Models: Part 4 - Benchmark Parity: Matching Full Fine-Tuning on RoBERTa, DeBERTa, and GPT-3",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: LoRA: Low-Rank Adaptation of Large Language Models Mini-Series",
+    "part": "4/5",
+    "angle": "Empirical validation showing that LoRA matches or exceeds full fine-tuning performance across GLUE, SQuAD, and WikiSQL with 10,000x fewer trainable weights.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_lora_part_5",
+    "arxiv_id": "2106.09685",
+    "topic": "LoRA: Low-Rank Adaptation of Large Language Models: Part 5 - The Open-Source Fine-Tuning Boom: How LoRA Empowered Millions to Train LLMs on Consumer Hardware",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: LoRA: Low-Rank Adaptation of Large Language Models Mini-Series",
+    "part": "5/5",
+    "angle": "How LoRA and QLoRA democratized custom AI fine-tuning, allowing developers to adapt 70B models on modest single-GPU workstations.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_chinchilla_part_1",
+    "arxiv_id": "2203.15556",
+    "topic": "Chinchilla: Compute-Optimal Large Language Models: Part 1 - The Gopher & GPT-3 Blunder: Why the World Was Training Undertrained Giant Models",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: Chinchilla: Compute-Optimal Large Language Models Mini-Series",
+    "part": "1/5",
+    "angle": "The eye-opening discovery that leading AI labs were scaling model parameters too aggressively while starving them of sufficient training tokens.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_chinchilla_part_2",
+    "arxiv_id": "2203.15556",
+    "topic": "Chinchilla: Compute-Optimal Large Language Models: Part 2 - IsoFLOP Contour Hyperbolas: The 1:1 Mathematical Balance of Parameters and Tokens",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: Chinchilla: Compute-Optimal Large Language Models Mini-Series",
+    "part": "2/5",
+    "angle": "Fitting parametric loss surfaces across over 400 training runs to prove that compute-optimal scaling requires parameters and tokens to scale in equal 1:1 proportion.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_chinchilla_part_3",
+    "arxiv_id": "2203.15556",
+    "topic": "Chinchilla: Compute-Optimal Large Language Models: Part 3 - 70B Outperforms 280B: The Dense Model Revolution That Defied Conventional Wisdom",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: Chinchilla: Compute-Optimal Large Language Models Mini-Series",
+    "part": "3/5",
+    "angle": "The demonstration that a 70B parameter model trained on 1.4 trillion tokens systematically beats a 280B model trained on 300 billion tokens while cutting inference costs by 4x.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_chinchilla_part_4",
+    "arxiv_id": "2203.15556",
+    "topic": "Chinchilla: Compute-Optimal Large Language Models: Part 4 - The Comprehensive Benchmark Sweep: Setting SOTA on MMLU, Big-Bench, and Reasoning",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: Chinchilla: Compute-Optimal Large Language Models Mini-Series",
+    "part": "4/5",
+    "angle": "Proving Chinchilla's superiority across diverse reasoning, reading comprehension, and commonsense benchmarks over Gopher, GPT-3, Megatron, and Jurassic-1.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_chinchilla_part_5",
+    "arxiv_id": "2203.15556",
+    "topic": "Chinchilla: Compute-Optimal Large Language Models: Part 5 - The Blueprint for Llama and Mistral: How Chinchilla Shaped Modern Open-Weights AI",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: Chinchilla: Compute-Optimal Large Language Models Mini-Series",
+    "part": "5/5",
+    "angle": "How Meta and Mistral adopted Chinchilla scaling principles to train over-tokenized compact models (Llama 1, 2, 3), sparking the open-source LLM revolution.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_dpo_part_1",
+    "arxiv_id": "2305.18290",
+    "topic": "DPO: Direct Preference Optimization: Part 1 - The RLHF Fragility Trap: Why Training Actor, Critic, and Reward Models Concurrently Failed",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: DPO: Direct Preference Optimization Mini-Series",
+    "part": "1/5",
+    "angle": "Why 3-model PPO pipelines suffered from severe training instability, hyperparameter sensitivity, and high GPU memory footprints.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_dpo_part_2",
+    "arxiv_id": "2305.18290",
+    "topic": "DPO: Direct Preference Optimization: Part 2 - The Closed-Form Analytic Derivation: Turning the Optimal Policy into an Implicit Reward",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: DPO: Direct Preference Optimization Mini-Series",
+    "part": "2/5",
+    "angle": "The mathematical breakthrough deriving the exact analytical relationship between optimal policy probabilities and the underlying Bradley-Terry ground-truth reward.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_dpo_part_3",
+    "arxiv_id": "2305.18290",
+    "topic": "DPO: Direct Preference Optimization: Part 3 - The Binary Cross-Entropy Alignment Loss: Replacing Policy Gradients with Stable Optimization",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: DPO: Direct Preference Optimization Mini-Series",
+    "part": "3/5",
+    "angle": "How DPO condenses the entire RLHF pipeline into a single, clean classification loss that pulls winning responses up and pushes losing responses down.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_dpo_part_4",
+    "arxiv_id": "2305.18290",
+    "topic": "DPO: Direct Preference Optimization: Part 4 - Benchmarking Preference Alignment: Beating PPO on TL;DR Summarization and Anthropic HH",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: DPO: Direct Preference Optimization Mini-Series",
+    "part": "4/5",
+    "angle": "Demonstrating that DPO matches or exceeds PPO in human preference evaluations while training radically faster with zero reinforcement learning overhead.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_dpo_part_5",
+    "arxiv_id": "2305.18290",
+    "topic": "DPO: Direct Preference Optimization: Part 5 - The Post-RLHF Paradigm: How DPO Became the Universal Finetuning Standard for Modern LLMs",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: DPO: Direct Preference Optimization Mini-Series",
+    "part": "5/5",
+    "angle": "How Zephyr, Starling, Llama 3, and DeepSeek adopted DPO and its variants (KTO, ORPO) as the primary alignment engine for open-weights models.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_nerf_part_1",
+    "arxiv_id": "2003.08934",
+    "topic": "NeRF: Neural Radiance Fields for View Synthesis: Part 1 - The Death of Polygons: Why Classical 3D Meshes Failed on Fog, Glass, and Complex Lighting",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: NeRF: Neural Radiance Fields for View Synthesis Mini-Series",
+    "part": "1/5",
+    "angle": "Why triangular polygon meshes struggle with fine geometric details, transparent refractions, and specular highlights in real-world scenes.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_nerf_part_2",
+    "arxiv_id": "2003.08934",
+    "topic": "NeRF: Neural Radiance Fields for View Synthesis: Part 2 - The 5D Continuous Function: Mapping (x, y, z, theta, phi) to (RGB, sigma) with an 8-Layer MLP",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: NeRF: Neural Radiance Fields for View Synthesis Mini-Series",
+    "part": "2/5",
+    "angle": "Representing continuous 3D scenes inside the weights of a simple neural network that predicts emitted color and volume density along camera sightlines.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_nerf_part_3",
+    "arxiv_id": "2003.08934",
+    "topic": "NeRF: Neural Radiance Fields for View Synthesis: Part 3 - Positional Frequency Encoding and Hierarchical Sampling: Capturing Micro-Textures Without Aliasing",
+    "category": "mechanism_deepdive",
+    "series": "GOAT Papers: NeRF: Neural Radiance Fields for View Synthesis Mini-Series",
+    "part": "3/5",
+    "angle": "Applying sinusoidal frequency projections to input coordinates to allow standard MLPs to learn high-frequency textures and geometric edges.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_nerf_part_4",
+    "arxiv_id": "2003.08934",
+    "topic": "NeRF: Neural Radiance Fields for View Synthesis: Part 4 - Photorealistic Novel View Synthesis: Generating Unseen 360-Degree Trajectories from Sparse Photos",
+    "category": "benchmark_news",
+    "series": "GOAT Papers: NeRF: Neural Radiance Fields for View Synthesis Mini-Series",
+    "part": "4/5",
+    "angle": "Evaluating NeRF across synthetic Blender objects and real forward-facing scenes, setting unprecedented PSNR and SSIM visual quality records.",
+    "status": "pending"
+  },
+  {
+    "id": "goat_nerf_part_5",
+    "arxiv_id": "2003.08934",
+    "topic": "NeRF: Neural Radiance Fields for View Synthesis: Part 5 - The 3D Gaussian Splatting Genesis: How NeRF Sparked the Modern Spatial Computing Revolution",
+    "category": "architecture_breakdown",
+    "series": "GOAT Papers: NeRF: Neural Radiance Fields for View Synthesis Mini-Series",
+    "part": "5/5",
+    "angle": "How neural volumetric rendering evolved into instant 3D capture, Gaussian splatting, and neural spatial computing for virtual reality.",
+    "status": "pending"
   }
 ]
