@@ -20,6 +20,7 @@ import os
 import sys
 from pathlib import Path
 from typing import Optional, List, Dict, Any
+import manim_engine.pillow_compat
 from manim import *
 import numpy as np
 

@@ -13,10 +13,10 @@ import importlib.util
 import numpy as np
 from pathlib import Path
 from typing import Optional, List, Dict, Any, Tuple
-from manim import *
-
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(PROJECT_ROOT))
+import manim_engine.pillow_compat
+from manim import *
 
 from pipeline.config import (
     VIDEO_WIDTH, VIDEO_HEIGHT, FRAME_WIDTH, FRAME_HEIGHT, BG_CARBON,
