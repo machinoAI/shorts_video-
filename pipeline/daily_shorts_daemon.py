@@ -90,10 +90,11 @@ PILLAR_DISPLAY_NAMES: Dict[str, str] = {
 }
 
 TOPIC_QUEUE_FILE = PROJECT_ROOT / "data" / "topic_queue.json"
+TOPIC_QUEUE_ARCHIVE_FILE = PROJECT_ROOT / "data" / "topic_queue_archive.json"
 
 
 def load_topic_queue() -> List[Dict[str, Any]]:
-    """Loads custom topic queue from data/topic_queue.json."""
+    """Loads active topic queue from data/topic_queue.json."""
     if TOPIC_QUEUE_FILE.exists():
         try:
             with open(TOPIC_QUEUE_FILE, "r", encoding="utf-8") as f:
@@ -110,10 +111,31 @@ def save_topic_queue(queue_data: List[Dict[str, Any]]) -> None:
         json.dump(queue_data, f, indent=2)
 
 
+def load_topic_queue_archive() -> List[Dict[str, Any]]:
+    """Loads completed topic queue history from data/topic_queue_archive.json."""
+    if TOPIC_QUEUE_ARCHIVE_FILE.exists():
+        try:
+            with open(TOPIC_QUEUE_ARCHIVE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"⚠️ Error reading {TOPIC_QUEUE_ARCHIVE_FILE}: {e}")
+    return []
+
+
+def save_topic_queue_archive(archive_data: List[Dict[str, Any]]) -> None:
+    """Persists completed topic queue history to data/topic_queue_archive.json."""
+    TOPIC_QUEUE_ARCHIVE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(TOPIC_QUEUE_ARCHIVE_FILE, "w", encoding="utf-8") as f:
+        json.dump(archive_data, f, indent=2)
+
+
 def mark_queue_item_completed(item_id: str, video_path: str, yt_meta: Optional[Dict[str, Any]] = None) -> bool:
-    """Marks a topic queue item as completed with timestamps and video metadata."""
+    """Marks a topic queue item as completed, archives it to topic_queue_archive.json, and removes it from active topic_queue.json."""
     queue = load_topic_queue()
-    updated = False
+    archive = load_topic_queue_archive()
+    matched_item = None
+    remaining_queue = []
+
     for item in queue:
         if item.get("id") == item_id:
             item["status"] = "completed"
@@ -122,12 +144,27 @@ def mark_queue_item_completed(item_id: str, video_path: str, yt_meta: Optional[D
             if yt_meta:
                 item["youtube_id"] = yt_meta.get("video_id")
                 item["youtube_url"] = yt_meta.get("shorts_url")
-            updated = True
-            break
-    if updated:
-        save_topic_queue(queue)
-        print(f"✅ Topic queue updated: marked '{item_id}' as completed in {TOPIC_QUEUE_FILE.name}")
-    return updated
+            matched_item = item
+        else:
+            remaining_queue.append(item)
+
+    if matched_item:
+        # Avoid duplicate entries in archive
+        existing_arch_ids = {x.get("id") for x in archive}
+        if matched_item["id"] not in existing_arch_ids:
+            archive.append(matched_item)
+        else:
+            for idx, old in enumerate(archive):
+                if old.get("id") == matched_item["id"]:
+                    archive[idx] = matched_item
+                    break
+
+        save_topic_queue(remaining_queue)
+        save_topic_queue_archive(archive)
+        print(f"✅ Topic queue updated: archived '{item_id}' to {TOPIC_QUEUE_ARCHIVE_FILE.name} and removed from active {TOPIC_QUEUE_FILE.name}")
+        return True
+
+    return False
 
 
 def build_candidate_from_queue_item(
@@ -593,7 +630,10 @@ class DailyShortsDaemon:
             queue = load_topic_queue()
             matched = [item for item in queue if item.get("id") == target_queue_id]
             if not matched:
-                print(f"⚠️ Could not find queue item with id '{target_queue_id}' in {TOPIC_QUEUE_FILE}")
+                archive = load_topic_queue_archive()
+                matched = [item for item in archive if item.get("id") == target_queue_id]
+            if not matched:
+                print(f"⚠️ Could not find queue item with id '{target_queue_id}' in {TOPIC_QUEUE_FILE.name} or {TOPIC_QUEUE_ARCHIVE_FILE.name}")
                 return []
             selected_papers = [build_candidate_from_queue_item(matched[0], preferred_category=preferred_category)]
         elif target_perk:
