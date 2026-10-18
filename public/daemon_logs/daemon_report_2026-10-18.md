@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-18 | **Timestamp:** 2026-10-18 13:01:06 UTC
+**Date:** 2026-10-18 | **Timestamp:** 2026-10-18 13:16:03 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: CRAG: Part 3 - CRAG Accuracy Gains across Multi-Hop Benchmarks
-- **Topic Queue Part:** `crag_part_3_multihop_benchmarks` (arXiv: [2401.15884](https://arxiv.org/abs/2401.15884))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/xv_KXKa6UlI](https://youtube.com/shorts/xv_KXKa6UlI) (`xv_KXKa6UlI`)
-- **High-CTR Poster:** [crag_accuracy_gains_poster.png](public/thumbnails/crag_accuracy_gains_poster.png)
+### Reel 1: FLARE: Part 1 - Passive RAG vs Active Forward-Looking Retrieval
+- **Topic Queue Part:** `flare_part_1_active_retrieval_paradigm` (arXiv: [2305.06983](https://arxiv.org/abs/2305.06983))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/i15exM0SJHo](https://youtube.com/shorts/i15exM0SJHo) (`i15exM0SJHo`)
+- **High-CTR Poster:** [flare_active_retrieval_poster.png](public/thumbnails/flare_active_retrieval_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `benchmark_news`
-- **Editorial Hook:** *CRAG Mini-Series 3/3: CRAG: Part 3 - CRAG Accuracy Gains across Multi-Hop Benchmarks*
-- **Everyday Analogy:** *Consistent 15-30% performance gains over standard RAG and Self-RAG across open-domain tasks.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_crag_accuracy_gains_benchmark_news.mp4`
+- **Category:** `architecture_breakdown`
+- **Editorial Hook:** *FLARE Mini-Series 1/3: FLARE: Part 1 - Passive RAG vs Active Forward-Looking Retrieval*
+- **Everyday Analogy:** *Why retrieve before generating when you can retrieve only when the model gets stuck during generation?*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_flare_active_retrieval_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs

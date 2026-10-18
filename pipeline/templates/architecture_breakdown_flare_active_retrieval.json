@@ -1,0 +1,1718 @@
+{
+  "id": "flare_active_retrieval",
+  "title": "FLARE: Active Retrieval Generation",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "algorithmic_search",
+  "hook_tag": "ARCHITECTURAL BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Standard RAG has a fatal context fragmentation flaw, but FLARE delivers a 88.5% lead.",
+      "visual_focus": "A timeline of token generation showing a singular retrieval event fading out into red error states.",
+      "highlight_words": {
+        "retrieving": "#38BDF8",
+        "hallucinations": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Retrieval Trigger",
+        "action_verb": "collapses",
+        "direct_object": "Contextual Accuracy",
+        "anchor_word": "hallucinations",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "THE RAG BLINDSPOT",
+        "sub": "Single-point retrieval loses coherence over long sequences",
+        "accent_color": "#EF4444",
+        "params": {
+          "stage_1_label": "Prompt Retrieval",
+          "stage_1_sub": "Initial Context",
+          "stage_2_label": "Generation Drift",
+          "stage_2_sub": "Factual Decay",
+          "stage_3_label": "Hallucination",
+          "stage_3_sub": "OOD Tokens"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 64,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Statistic",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "THE RAG BLINDSPOT",
+        "sub": "Single-point retrieval loses coherence over long sequences",
+        "accent_color": "#EF4444",
+        "stage_1_label": "Prompt Retrieval",
+        "stage_1_sub": "Initial Context",
+        "stage_2_label": "Generation Drift",
+        "stage_2_sub": "Factual Decay",
+        "stage_3_label": "Hallucination",
+        "stage_3_sub": "OOD Tokens"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.47,
+      "duration": 7.47,
+      "word_timings": [
+        {
+          "word": "Standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 0.03,
+          "end": 0.51,
+          "duration": 0.48,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 0.51,
+          "end": 0.93,
+          "duration": 0.42,
+          "frame_ahead_trigger": 0.47
+        },
+        {
+          "word": "has",
+          "clean_word": "has",
+          "phonemes": "h\u02c8\u00e6z",
+          "start": 0.93,
+          "end": 1.02,
+          "duration": 0.09,
+          "frame_ahead_trigger": 0.89
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 1.02,
+          "end": 1.375,
+          "duration": 0.355,
+          "frame_ahead_trigger": 0.98
+        },
+        {
+          "word": "fatal",
+          "clean_word": "fatal",
+          "phonemes": "f\u02c8e\u026a\u027e\u0259l",
+          "start": 1.375,
+          "end": 1.765,
+          "duration": 0.39,
+          "frame_ahead_trigger": 1.335
+        },
+        {
+          "word": "context",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 1.765,
+          "end": 2.415,
+          "duration": 0.65,
+          "frame_ahead_trigger": 1.725
+        },
+        {
+          "word": "fragmentation",
+          "clean_word": "fragmentation",
+          "phonemes": "f\u0279\u02cc\u00e6\u0261m\u0259nt\u02c8e\u026a\u0283\u0259n",
+          "start": 2.415,
+          "end": 3.395,
+          "duration": 0.98,
+          "frame_ahead_trigger": 2.375
+        },
+        {
+          "word": "flaw,",
+          "clean_word": "flaw",
+          "phonemes": "fl\u02c8\u0254\u02d0",
+          "start": 3.395,
+          "end": 3.97,
+          "duration": 0.575,
+          "frame_ahead_trigger": 3.355
+        },
+        {
+          "word": "but",
+          "clean_word": "but",
+          "phonemes": "b\u02cc\u028ct",
+          "start": 3.97,
+          "end": 4.08,
+          "duration": 0.11,
+          "frame_ahead_trigger": 3.93
+        },
+        {
+          "word": "FLARE",
+          "clean_word": "flare",
+          "phonemes": "fl\u02c8\u025b\u0279",
+          "start": 4.08,
+          "end": 4.52,
+          "duration": 0.44,
+          "frame_ahead_trigger": 4.04
+        },
+        {
+          "word": "delivers",
+          "clean_word": "delivers",
+          "phonemes": "d\u1d7bl\u02c8\u026av\u025az",
+          "start": 4.52,
+          "end": 5.07,
+          "duration": 0.55,
+          "frame_ahead_trigger": 4.48
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 5.07,
+          "end": 5.26,
+          "duration": 0.19,
+          "frame_ahead_trigger": 5.03
+        },
+        {
+          "word": "88.5%",
+          "clean_word": "885",
+          "phonemes": "\u02c8e\u026ath\u02c8\u028cnd\u0279\u026ad \u02c8e\u026a\u027ei f\u02c8a\u026av",
+          "start": 5.26,
+          "end": 6.89,
+          "duration": 1.63,
+          "frame_ahead_trigger": 5.22
+        },
+        {
+          "word": "lead.",
+          "clean_word": "lead",
+          "phonemes": "l\u02c8i\u02d0d",
+          "start": 6.89,
+          "end": 7.2,
+          "duration": 0.31,
+          "frame_ahead_trigger": 6.85
+        }
+      ],
+      "audio_duration": 7.47,
+      "slot_duration": 7.62
+    },
+    {
+      "beat_id": 2,
+      "text": "The bottleneck is static inertia, like trying to navigate a dark, changing forest with only a single, outdated map.",
+      "visual_focus": "A dense search space visualizing the decay of information density across a generation timeline.",
+      "highlight_words": {
+        "static inertia": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "LM Decoder",
+        "action_verb": "stagnates",
+        "direct_object": "Information Manifold",
+        "anchor_word": "inertia",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "STATIC KNOWLEDGE DECAY",
+        "sub": "LM confidence drops as temporal distance from retrieval increases",
+        "accent_color": "#EF4444",
+        "params": {
+          "field_title": "Entropy Gradient",
+          "source_label": "High Confidence",
+          "target_label": "Hallucination Basin"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "STATIC KNOWLEDGE DECAY",
+        "sub": "LM confidence drops as temporal distance from retrieval increases",
+        "accent_color": "#EF4444",
+        "field_title": "Entropy Gradient",
+        "source_label": "High Confidence",
+        "target_label": "Hallucination Basin"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.62,
+      "end": 15.13,
+      "duration": 7.51,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 7.632,
+          "end": 7.717,
+          "duration": 0.085,
+          "frame_ahead_trigger": 7.742
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 7.717,
+          "end": 8.572,
+          "duration": 0.855,
+          "frame_ahead_trigger": 7.827
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 8.572,
+          "end": 8.586,
+          "duration": 0.015,
+          "frame_ahead_trigger": 8.682
+        },
+        {
+          "word": "static",
+          "clean_word": "static",
+          "phonemes": "st\u02c8\u00e6\u027e\u026ak",
+          "start": 8.586,
+          "end": 9.027,
+          "duration": 0.44,
+          "frame_ahead_trigger": 8.696
+        },
+        {
+          "word": "inertia,",
+          "clean_word": "inertia",
+          "phonemes": "\u026an\u02c8\u025c\u02d0\u0283\u0259",
+          "start": 9.027,
+          "end": 9.477,
+          "duration": 0.451,
+          "frame_ahead_trigger": 9.137
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 9.477,
+          "end": 9.832,
+          "duration": 0.354,
+          "frame_ahead_trigger": 9.587
+        },
+        {
+          "word": "trying",
+          "clean_word": "trying",
+          "phonemes": "t\u0279\u02c8a\u026a\u026a\u014b",
+          "start": 9.832,
+          "end": 10.192,
+          "duration": 0.36,
+          "frame_ahead_trigger": 9.942
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 10.192,
+          "end": 10.372,
+          "duration": 0.18,
+          "frame_ahead_trigger": 10.302
+        },
+        {
+          "word": "navigate",
+          "clean_word": "navigate",
+          "phonemes": "n\u02c8\u00e6v\u026a\u0261\u02cce\u026at",
+          "start": 10.372,
+          "end": 11.082,
+          "duration": 0.71,
+          "frame_ahead_trigger": 10.482
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 11.082,
+          "end": 11.259,
+          "duration": 0.178,
+          "frame_ahead_trigger": 11.192
+        },
+        {
+          "word": "dark,",
+          "clean_word": "dark",
+          "phonemes": "d\u02c8\u0251\u02d0\u0279k",
+          "start": 11.259,
+          "end": 11.717,
+          "duration": 0.457,
+          "frame_ahead_trigger": 11.369
+        },
+        {
+          "word": "changing",
+          "clean_word": "changing",
+          "phonemes": "t\u0283\u02c8e\u026and\u0292\u026a\u014b",
+          "start": 11.717,
+          "end": 12.237,
+          "duration": 0.52,
+          "frame_ahead_trigger": 11.827
+        },
+        {
+          "word": "forest",
+          "clean_word": "forest",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279\u026ast",
+          "start": 12.237,
+          "end": 12.802,
+          "duration": 0.565,
+          "frame_ahead_trigger": 12.347
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 12.802,
+          "end": 12.877,
+          "duration": 0.075,
+          "frame_ahead_trigger": 12.912
+        },
+        {
+          "word": "only",
+          "clean_word": "only",
+          "phonemes": "\u02c8o\u028anli",
+          "start": 12.877,
+          "end": 13.447,
+          "duration": 0.57,
+          "frame_ahead_trigger": 12.987
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 13.447,
+          "end": 13.642,
+          "duration": 0.195,
+          "frame_ahead_trigger": 13.557
+        },
+        {
+          "word": "single,",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 13.642,
+          "end": 14.057,
+          "duration": 0.415,
+          "frame_ahead_trigger": 13.752
+        },
+        {
+          "word": "outdated",
+          "clean_word": "outdated",
+          "phonemes": "a\u028atd\u02c8e\u026a\u027e\u1d7bd",
+          "start": 14.057,
+          "end": 14.647,
+          "duration": 0.59,
+          "frame_ahead_trigger": 14.167
+        },
+        {
+          "word": "map.",
+          "clean_word": "map",
+          "phonemes": "m\u02c8\u00e6p",
+          "start": 14.647,
+          "end": 14.887,
+          "duration": 0.24,
+          "frame_ahead_trigger": 14.757
+        }
+      ],
+      "audio_duration": 7.51,
+      "slot_duration": 7.66
+    },
+    {
+      "beat_id": 3,
+      "text": "FLARE shifts the paradigm by treating the model as a self-correcting agent that constantly probes for missing facts.",
+      "visual_focus": "An animated branching tree showing the model performing forward-looking predictive lookaheads to identify gaps.",
+      "highlight_words": {
+        "FLARE": "#34D399",
+        "self-correcting": "#34D399"
+      },
+      "svo_action": {
+        "subject": "FLARE Router",
+        "action_verb": "triggers",
+        "direct_object": "Active Retrieval",
+        "anchor_word": "FLARE",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "FLARE ARCHITECTURE",
+        "sub": "An animated branching tree showing the model performing forward-l",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_1_illustration_search.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_1_illustration_search.png",
+          "arxiv_id": "2305.06983",
+          "title": "FLARE ARCHITECTURE",
+          "sub": "An animated branching tree showing the model performing forward-l",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Illustration Search",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_1_illustration_search.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_1_illustration_search.png",
+        "arxiv_id": "2305.06983",
+        "title": "FLARE ARCHITECTURE",
+        "sub": "An animated branching tree showing the model performing forward-l",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Illustration Search",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 15.28,
+      "end": 22.32,
+      "duration": 7.04,
+      "word_timings": [
+        {
+          "word": "FLARE",
+          "clean_word": "flare",
+          "phonemes": "fl\u02c8\u025b\u0279",
+          "start": 15.346,
+          "end": 15.701,
+          "duration": 0.355,
+          "frame_ahead_trigger": 15.606
+        },
+        {
+          "word": "shifts",
+          "clean_word": "shifts",
+          "phonemes": "\u0283\u02c8\u026afts",
+          "start": 15.701,
+          "end": 16.001,
+          "duration": 0.3,
+          "frame_ahead_trigger": 15.961
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 16.001,
+          "end": 16.106,
+          "duration": 0.105,
+          "frame_ahead_trigger": 16.261
+        },
+        {
+          "word": "paradigm",
+          "clean_word": "paradigm",
+          "phonemes": "p\u02c8\u00e6\u0279\u0259d\u02cca\u026am",
+          "start": 16.106,
+          "end": 16.806,
+          "duration": 0.7,
+          "frame_ahead_trigger": 16.366
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 16.806,
+          "end": 17.001,
+          "duration": 0.195,
+          "frame_ahead_trigger": 17.066
+        },
+        {
+          "word": "treating",
+          "clean_word": "treating",
+          "phonemes": "t\u0279\u02c8i\u02d0\u027e\u026a\u014b",
+          "start": 17.001,
+          "end": 17.556,
+          "duration": 0.555,
+          "frame_ahead_trigger": 17.261
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 17.556,
+          "end": 17.716,
+          "duration": 0.16,
+          "frame_ahead_trigger": 17.816
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 17.716,
+          "end": 18.166,
+          "duration": 0.45,
+          "frame_ahead_trigger": 17.976
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 18.166,
+          "end": 18.223,
+          "duration": 0.057,
+          "frame_ahead_trigger": 18.426
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 18.223,
+          "end": 18.401,
+          "duration": 0.178,
+          "frame_ahead_trigger": 18.483
+        },
+        {
+          "word": "self-correcting",
+          "clean_word": "selfcorrecting",
+          "phonemes": "s\u02c8\u025blfk\u025a\u0279\u02cc\u025bkt\u026a\u014b",
+          "start": 18.401,
+          "end": 19.271,
+          "duration": 0.87,
+          "frame_ahead_trigger": 18.661
+        },
+        {
+          "word": "agent",
+          "clean_word": "agent",
+          "phonemes": "\u02c8e\u026ad\u0292\u0259nt",
+          "start": 19.271,
+          "end": 19.787,
+          "duration": 0.516,
+          "frame_ahead_trigger": 19.531
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 19.787,
+          "end": 19.966,
+          "duration": 0.179,
+          "frame_ahead_trigger": 20.047
+        },
+        {
+          "word": "constantly",
+          "clean_word": "constantly",
+          "phonemes": "k\u02c8\u0251\u02d0nst\u0259ntli",
+          "start": 19.966,
+          "end": 20.786,
+          "duration": 0.82,
+          "frame_ahead_trigger": 20.226
+        },
+        {
+          "word": "probes",
+          "clean_word": "probes",
+          "phonemes": "p\u0279\u02c8o\u028abz",
+          "start": 20.786,
+          "end": 21.171,
+          "duration": 0.385,
+          "frame_ahead_trigger": 21.046
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 21.171,
+          "end": 21.475,
+          "duration": 0.304,
+          "frame_ahead_trigger": 21.431
+        },
+        {
+          "word": "missing",
+          "clean_word": "missing",
+          "phonemes": "m\u02c8\u026as\u026a\u014b",
+          "start": 21.475,
+          "end": 21.796,
+          "duration": 0.321,
+          "frame_ahead_trigger": 21.735
+        },
+        {
+          "word": "facts.",
+          "clean_word": "facts",
+          "phonemes": "f\u02c8\u00e6kts",
+          "start": 21.796,
+          "end": 22.226,
+          "duration": 0.43,
+          "frame_ahead_trigger": 22.056
+        }
+      ],
+      "audio_duration": 7.04,
+      "slot_duration": 7.19
+    },
+    {
+      "beat_id": 4,
+      "text": "When confidence scores on generated tokens dip below a threshold, the system triggers a targeted, context-aware document query.",
+      "visual_focus": "Zooming into a confidence probability distribution where a gate identifies low-probability tokens for replacement.",
+      "highlight_words": {
+        "threshold": "#F59E0B",
+        "context-aware": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Confidence Gate",
+        "action_verb": "masks",
+        "direct_object": "Low-probability Tokens",
+        "anchor_word": "threshold",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: FLARE: ACTIVE RETR",
+        "sub": "Zooming into a confidence probability distribution where a gate i",
+        "params": {
+          "title": "KERNEL CODE: FLARE: ACTIVE RETR",
+          "sub": "Zooming into a confidence probability distribution where a gate i",
+          "filename": "flare_agent.py",
+          "language": "python",
+          "lines": [
+            "def flare_step(model, query, token_conf):",
+            "if token_conf < threshold:",
+            "context = retrieve(query)",
+            "return regenerate(context)"
+          ],
+          "highlight_lines": [
+            1,
+            2
+          ],
+          "trace_register": "\u26a1 DYNAMIC RETRIEVAL TRIGGER",
+          "delta_badge": "Conditional retrieval triggered by low confidence"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: FLARE: ACTIVE RETR",
+        "sub": "Zooming into a confidence probability distribution where a gate i",
+        "filename": "flare_agent.py",
+        "language": "python",
+        "lines": [
+          "def flare_step(model, query, token_conf):",
+          "if token_conf < threshold:",
+          "context = retrieve(query)",
+          "return regenerate(context)"
+        ],
+        "highlight_lines": [
+          1,
+          2
+        ],
+        "trace_register": "\u26a1 DYNAMIC RETRIEVAL TRIGGER",
+        "delta_badge": "Conditional retrieval triggered by low confidence"
+      },
+      "start": 22.47,
+      "end": 30.74,
+      "duration": 8.28,
+      "word_timings": [
+        {
+          "word": "When",
+          "clean_word": "when",
+          "phonemes": "w\u02cc\u025bn",
+          "start": 22.481,
+          "end": 22.626,
+          "duration": 0.145,
+          "frame_ahead_trigger": 22.891
+        },
+        {
+          "word": "confidence",
+          "clean_word": "confidence",
+          "phonemes": "k\u02c8\u0251\u02d0nf\u026ad\u0259ns",
+          "start": 22.626,
+          "end": 23.361,
+          "duration": 0.735,
+          "frame_ahead_trigger": 23.036
+        },
+        {
+          "word": "scores",
+          "clean_word": "scores",
+          "phonemes": "sk\u02c8\u0254\u02d0\u0279z",
+          "start": 23.361,
+          "end": 23.726,
+          "duration": 0.365,
+          "frame_ahead_trigger": 23.771
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 23.726,
+          "end": 24.031,
+          "duration": 0.305,
+          "frame_ahead_trigger": 24.136
+        },
+        {
+          "word": "generated",
+          "clean_word": "generated",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u02cce\u026a\u027e\u1d7bd",
+          "start": 24.031,
+          "end": 24.891,
+          "duration": 0.86,
+          "frame_ahead_trigger": 24.441
+        },
+        {
+          "word": "tokens",
+          "clean_word": "tokens",
+          "phonemes": "t\u02c8o\u028ak\u0259nz",
+          "start": 24.891,
+          "end": 25.431,
+          "duration": 0.54,
+          "frame_ahead_trigger": 25.301
+        },
+        {
+          "word": "dip",
+          "clean_word": "dip",
+          "phonemes": "d\u02c8\u026ap",
+          "start": 25.431,
+          "end": 25.531,
+          "duration": 0.1,
+          "frame_ahead_trigger": 25.841
+        },
+        {
+          "word": "below",
+          "clean_word": "below",
+          "phonemes": "b\u1d7bl\u02c8o\u028a",
+          "start": 25.531,
+          "end": 25.916,
+          "duration": 0.385,
+          "frame_ahead_trigger": 25.941
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 25.916,
+          "end": 26.166,
+          "duration": 0.25,
+          "frame_ahead_trigger": 26.326
+        },
+        {
+          "word": "threshold,",
+          "clean_word": "threshold",
+          "phonemes": "\u03b8\u0279\u02c8\u025b\u0283o\u028ald",
+          "start": 26.166,
+          "end": 26.692,
+          "duration": 0.526,
+          "frame_ahead_trigger": 26.576
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 26.692,
+          "end": 26.846,
+          "duration": 0.154,
+          "frame_ahead_trigger": 27.102
+        },
+        {
+          "word": "system",
+          "clean_word": "system",
+          "phonemes": "s\u02c8\u026ast\u0259m",
+          "start": 26.846,
+          "end": 27.211,
+          "duration": 0.365,
+          "frame_ahead_trigger": 27.256
+        },
+        {
+          "word": "triggers",
+          "clean_word": "triggers",
+          "phonemes": "t\u0279\u02c8\u026a\u0261\u025az",
+          "start": 27.211,
+          "end": 27.751,
+          "duration": 0.54,
+          "frame_ahead_trigger": 27.621
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 27.751,
+          "end": 27.921,
+          "duration": 0.17,
+          "frame_ahead_trigger": 28.161
+        },
+        {
+          "word": "targeted,",
+          "clean_word": "targeted",
+          "phonemes": "t\u02c8\u0251\u02d0\u0279\u0261\u026a\u027e\u1d7bd",
+          "start": 27.921,
+          "end": 28.396,
+          "duration": 0.475,
+          "frame_ahead_trigger": 28.331
+        },
+        {
+          "word": "context-aware",
+          "clean_word": "contextaware",
+          "phonemes": "k\u0259nt\u02c8\u025bkst\u0250w\u02cc\u025b\u0279",
+          "start": 28.396,
+          "end": 29.361,
+          "duration": 0.965,
+          "frame_ahead_trigger": 28.806
+        },
+        {
+          "word": "document",
+          "clean_word": "document",
+          "phonemes": "d\u02c8\u0251\u02d0kju\u02d0m\u0259nt",
+          "start": 29.361,
+          "end": 30.216,
+          "duration": 0.855,
+          "frame_ahead_trigger": 29.771
+        },
+        {
+          "word": "query.",
+          "clean_word": "query",
+          "phonemes": "kw\u02c8i\u0259\u0279i",
+          "start": 30.216,
+          "end": 30.531,
+          "duration": 0.315,
+          "frame_ahead_trigger": 30.626
+        }
+      ],
+      "audio_duration": 8.28,
+      "slot_duration": 8.42
+    },
+    {
+      "beat_id": 5,
+      "text": "By dynamically updating its ground truth, FLARE consistently outperforms static retrieval baselines across complex knowledge-intensive generation benchmarks.",
+      "visual_focus": "Comparison bars showing FLARE's performance increase against standard RAG baselines.",
+      "highlight_words": {
+        "outperforms": "#34D399"
+      },
+      "svo_action": {
+        "subject": "FLARE Metric",
+        "action_verb": "surpasses",
+        "direct_object": "Static RAG Baseline",
+        "anchor_word": "outperforms",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "FLARE FACTUAL PERFORMANCE",
+        "sub": "Comparison bars showing FLARE's performance increase",
+        "params": {
+          "title": "FLARE FACTUAL PERFORMANCE",
+          "sub": "Comparison bars showing FLARE's performance increase",
+          "metric_name": "Generation Accuracy",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "FLARE",
+              "value": 88.5,
+              "display_val": "88.5%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Static RAG",
+              "value": 62.0,
+              "display_val": "62.0%",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +26.5% PERFORMANCE GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "FLARE FACTUAL PERFORMANCE",
+        "sub": "Comparison bars showing FLARE's performance increase",
+        "metric_name": "Generation Accuracy",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "FLARE",
+            "value": 88.5,
+            "display_val": "88.5%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Static RAG",
+            "value": 62.0,
+            "display_val": "62.0%",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +26.5% PERFORMANCE GAIN"
+      },
+      "start": 30.89,
+      "end": 40.88,
+      "duration": 9.98,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 30.908,
+          "end": 31.238,
+          "duration": 0.33,
+          "frame_ahead_trigger": 31.468
+        },
+        {
+          "word": "dynamically",
+          "clean_word": "dynamically",
+          "phonemes": "da\u026an\u02c8\u00e6m\u026akli",
+          "start": 31.238,
+          "end": 31.773,
+          "duration": 0.535,
+          "frame_ahead_trigger": 31.798
+        },
+        {
+          "word": "updating",
+          "clean_word": "updating",
+          "phonemes": "\u028cpd\u02c8e\u026a\u027e\u026a\u014b",
+          "start": 31.773,
+          "end": 32.378,
+          "duration": 0.605,
+          "frame_ahead_trigger": 32.333
+        },
+        {
+          "word": "its",
+          "clean_word": "its",
+          "phonemes": "\u026ats",
+          "start": 32.378,
+          "end": 32.609,
+          "duration": 0.231,
+          "frame_ahead_trigger": 32.938
+        },
+        {
+          "word": "ground",
+          "clean_word": "ground",
+          "phonemes": "\u0261\u0279\u02c8a\u028and",
+          "start": 32.609,
+          "end": 32.953,
+          "duration": 0.344,
+          "frame_ahead_trigger": 33.169
+        },
+        {
+          "word": "truth,",
+          "clean_word": "truth",
+          "phonemes": "t\u0279\u02c8u\u02d0\u03b8",
+          "start": 32.953,
+          "end": 33.333,
+          "duration": 0.38,
+          "frame_ahead_trigger": 33.513
+        },
+        {
+          "word": "FLARE",
+          "clean_word": "flare",
+          "phonemes": "fl\u02c8\u025b\u0279",
+          "start": 33.333,
+          "end": 33.858,
+          "duration": 0.525,
+          "frame_ahead_trigger": 33.893
+        },
+        {
+          "word": "consistently",
+          "clean_word": "consistently",
+          "phonemes": "k\u0259ns\u02c8\u026ast\u0259ntli",
+          "start": 33.858,
+          "end": 34.498,
+          "duration": 0.64,
+          "frame_ahead_trigger": 34.418
+        },
+        {
+          "word": "outperforms",
+          "clean_word": "outperforms",
+          "phonemes": "a\u028atp\u025af\u02c8\u0254\u02d0\u0279mz",
+          "start": 34.498,
+          "end": 35.278,
+          "duration": 0.78,
+          "frame_ahead_trigger": 35.058
+        },
+        {
+          "word": "static",
+          "clean_word": "static",
+          "phonemes": "st\u02c8\u00e6\u027e\u026ak",
+          "start": 35.278,
+          "end": 35.723,
+          "duration": 0.445,
+          "frame_ahead_trigger": 35.838
+        },
+        {
+          "word": "retrieval",
+          "clean_word": "retrieval",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259l",
+          "start": 35.723,
+          "end": 36.438,
+          "duration": 0.715,
+          "frame_ahead_trigger": 36.283
+        },
+        {
+          "word": "baselines",
+          "clean_word": "baselines",
+          "phonemes": "b\u02c8e\u026asla\u026anz",
+          "start": 36.438,
+          "end": 37.019,
+          "duration": 0.58,
+          "frame_ahead_trigger": 36.998
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 37.019,
+          "end": 37.453,
+          "duration": 0.435,
+          "frame_ahead_trigger": 37.579
+        },
+        {
+          "word": "complex",
+          "clean_word": "complex",
+          "phonemes": "k\u02c8\u0251\u02d0mpl\u025bks",
+          "start": 37.453,
+          "end": 38.163,
+          "duration": 0.71,
+          "frame_ahead_trigger": 38.013
+        },
+        {
+          "word": "knowledge-intensive",
+          "clean_word": "knowledgeintensive",
+          "phonemes": "n\u02c8\u0251\u02d0l\u026ad\u0292\u02cc\u026ant\u0259ns\u02cc\u026av",
+          "start": 38.163,
+          "end": 39.288,
+          "duration": 1.125,
+          "frame_ahead_trigger": 38.723
+        },
+        {
+          "word": "generation",
+          "clean_word": "generation",
+          "phonemes": "d\u0292\u02cc\u025bn\u025a\u0279\u02c8e\u026a\u0283\u0259n",
+          "start": 39.288,
+          "end": 40.113,
+          "duration": 0.825,
+          "frame_ahead_trigger": 39.848
+        },
+        {
+          "word": "benchmarks.",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 40.113,
+          "end": 40.798,
+          "duration": 0.685,
+          "frame_ahead_trigger": 40.673
+        }
+      ],
+      "audio_duration": 9.98,
+      "slot_duration": 10.14
+    },
+    {
+      "beat_id": 6,
+      "text": "Stop generating into the void and start building systems that question their own outputs. Follow machinoAI for deep-dives.",
+      "visual_focus": "The loop icon rotating back to the initial architecture node.",
+      "highlight_words": {
+        "question": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Learner",
+        "action_verb": "subscribes",
+        "direct_object": "machinoAI Architecture",
+        "anchor_word": "Follow",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "BUILDING INTELLIGENT SYSTEMS",
+        "sub": "Active verification is the new standard",
+        "accent_color": "#38BDF8",
+        "params": {
+          "grid_title": "Adaptive Logic Flow",
+          "active_cell_label": "Active Query",
+          "efficiency_label": "Self-Correction"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 41.03,
+      "end": 49.16,
+      "duration": 8.13,
+      "word_timings": [
+        {
+          "word": "Stop",
+          "clean_word": "stop",
+          "phonemes": "st\u02c8\u0251\u02d0p",
+          "start": 41.052,
+          "end": 41.367,
+          "duration": 0.315,
+          "frame_ahead_trigger": 41.762
+        },
+        {
+          "word": "generating",
+          "clean_word": "generating",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u02cce\u026a\u027e\u026a\u014b",
+          "start": 41.367,
+          "end": 42.282,
+          "duration": 0.915,
+          "frame_ahead_trigger": 42.077
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 42.282,
+          "end": 42.64,
+          "duration": 0.358,
+          "frame_ahead_trigger": 42.992
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 42.64,
+          "end": 42.772,
+          "duration": 0.132,
+          "frame_ahead_trigger": 43.35
+        },
+        {
+          "word": "void",
+          "clean_word": "void",
+          "phonemes": "v\u02c8\u0254\u026ad",
+          "start": 42.772,
+          "end": 43.152,
+          "duration": 0.38,
+          "frame_ahead_trigger": 43.482
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 43.152,
+          "end": 43.357,
+          "duration": 0.205,
+          "frame_ahead_trigger": 43.862
+        },
+        {
+          "word": "start",
+          "clean_word": "start",
+          "phonemes": "st\u02c8\u0251\u02d0\u0279t",
+          "start": 43.357,
+          "end": 43.757,
+          "duration": 0.4,
+          "frame_ahead_trigger": 44.067
+        },
+        {
+          "word": "building",
+          "clean_word": "building",
+          "phonemes": "b\u02c8\u026ald\u026a\u014b",
+          "start": 43.757,
+          "end": 44.252,
+          "duration": 0.495,
+          "frame_ahead_trigger": 44.467
+        },
+        {
+          "word": "systems",
+          "clean_word": "systems",
+          "phonemes": "s\u02c8\u026ast\u0259mz",
+          "start": 44.252,
+          "end": 44.797,
+          "duration": 0.545,
+          "frame_ahead_trigger": 44.962
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 44.797,
+          "end": 44.987,
+          "duration": 0.19,
+          "frame_ahead_trigger": 45.507
+        },
+        {
+          "word": "question",
+          "clean_word": "question",
+          "phonemes": "kw\u02c8\u025bst\u0283\u0259n",
+          "start": 44.987,
+          "end": 45.682,
+          "duration": 0.695,
+          "frame_ahead_trigger": 45.697
+        },
+        {
+          "word": "their",
+          "clean_word": "their",
+          "phonemes": "\u00f0\u025b\u0279",
+          "start": 45.682,
+          "end": 45.887,
+          "duration": 0.205,
+          "frame_ahead_trigger": 46.392
+        },
+        {
+          "word": "own",
+          "clean_word": "own",
+          "phonemes": "\u02c8o\u028an",
+          "start": 45.887,
+          "end": 46.062,
+          "duration": 0.175,
+          "frame_ahead_trigger": 46.597
+        },
+        {
+          "word": "outputs.",
+          "clean_word": "outputs",
+          "phonemes": "\u02c8a\u028atp\u02cc\u028ats",
+          "start": 46.062,
+          "end": 46.657,
+          "duration": 0.595,
+          "frame_ahead_trigger": 46.772
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 46.657,
+          "end": 47.157,
+          "duration": 0.5,
+          "frame_ahead_trigger": 47.367
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 47.157,
+          "end": 48.182,
+          "duration": 1.025,
+          "frame_ahead_trigger": 47.867
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 48.182,
+          "end": 48.567,
+          "duration": 0.385,
+          "frame_ahead_trigger": 48.892
+        },
+        {
+          "word": "deep-dives.",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 48.567,
+          "end": 49.057,
+          "duration": 0.49,
+          "frame_ahead_trigger": 49.277
+        }
+      ],
+      "audio_duration": 8.13,
+      "slot_duration": 8.13
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$P(y | x) = P(y | x, r_0)$",
+      "filename": "flare_active_retrieval_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "r_0",
+          "label": "Initial Retrieval"
+        }
+      ],
+      "svg_filename": "flare_active_retrieval_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{H}(y_t) = -\\sum p_t \\log p_t$",
+      "filename": "flare_active_retrieval_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\mathcal{H}",
+          "label": "Token Uncertainty"
+        }
+      ],
+      "svg_filename": "flare_active_retrieval_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$q = \\text{Generate}(x, y_{1:t-1})$",
+      "filename": "flare_active_retrieval_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "q",
+          "label": "Forward-Looking Query"
+        }
+      ],
+      "svg_filename": "flare_active_retrieval_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathbb{I}(p_t < \\tau) \\implies \\text{Retrieve}(q)$",
+      "filename": "flare_active_retrieval_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "\\tau",
+          "label": "Confidence Threshold"
+        }
+      ],
+      "svg_filename": "flare_active_retrieval_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$S_{\\mathrm{FLARE}} > S_{\\mathrm{Baseline}}$",
+      "filename": "flare_active_retrieval_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "S",
+          "label": "Factual Accuracy"
+        }
+      ],
+      "svg_filename": "flare_active_retrieval_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "reasoning_tree",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Input",
+          "color": "#38BDF8",
+          "items": [
+            "Tokens",
+            "Context",
+            "Prompt"
+          ]
+        },
+        {
+          "name": "FLARE",
+          "color": "#10B981",
+          "items": [
+            "Router",
+            "Query",
+            "Verify"
+          ]
+        },
+        {
+          "name": "Output",
+          "color": "#F59E0B",
+          "items": [
+            "Factual",
+            "Content",
+            "Tokens"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Next\"",
+        "target_cluster": "FLARE",
+        "token": "\"Next\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'Drift'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'Guess'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "FLARE",
+    "model_a_specs": [
+      "Active Retrieval",
+      "Confidence Gating",
+      "Iterative"
+    ],
+    "model_b": "Static RAG",
+    "model_b_specs": [
+      "One-shot retrieval",
+      "Fixed context",
+      "Drift-prone"
+    ],
+    "divide_title": "RETRIEVAL STRATEGY DIVIDE",
+    "model_a_stat": "88.5%",
+    "model_a_stat_label": "FACTUAL ACCURACY",
+    "model_b_stat": "62.0%",
+    "model_b_stat_label": "BASELINE ACCURACY",
+    "efficiency_badge": "\u26a1 +26.5% FACTUAL RECOVERY",
+    "benchmarks": [
+      {
+        "name": "ELI5 Dataset",
+        "score_a": "88%",
+        "score_b": "60%"
+      },
+      {
+        "name": "TriviaQA",
+        "score_a": "90%",
+        "score_b": "65%"
+      },
+      {
+        "name": "Efficiency",
+        "score_a": "High",
+        "score_b": "Baseline"
+      }
+    ],
+    "scale_metric": "0",
+    "scale_label": "Dynamic Retrieval Points",
+    "bottleneck_title": "STATIC GENERATION BOTTLENECK",
+    "bottleneck_desc": "Context decay due to outdated retrieval",
+    "solution_title": "FORWARD-LOOKING ACTIVE RETRIEVAL",
+    "solution_components": "Confidence-based Gating Logic",
+    "mechanism_title": "CONFIDENCE GATED LOOKUP",
+    "payoff_stat": "88.5%",
+    "payoff_label": "KNOWLEDGE RECOVERY",
+    "payoff_sub": "FLARE outperforming standard RAG pipelines",
+    "payoff_hero_stat": 88.5,
+    "payoff_hero_label": "FLARE Accuracy",
+    "payoff_base_stat": 62.0,
+    "payoff_base_label": "Baseline Accuracy",
+    "payoff_delta_badge": "\u26a1 +26.5% FACTUAL RECOVERY GAIN",
+    "challenger": "FLARE",
+    "incumbent": "Static RAG"
+  },
+  "benchmark_comparison": {
+    "title": "FLARE FACTUAL PERFORMANCE",
+    "metric_name": "Generation Accuracy",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "FLARE",
+        "value": 88.5,
+        "display_val": "88.5%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Static RAG",
+        "value": 62.0,
+        "display_val": "62.0%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +26.5% PERFORMANCE GAIN",
+    "radar_axes": [
+      "Factual Accuracy",
+      "Context Utilization",
+      "Efficiency",
+      "Hallucination Rate",
+      "Query Precision"
+    ]
+  },
+  "code_snippet": {
+    "filename": "flare_agent.py",
+    "language": "python",
+    "lines": [
+      "def flare_step(model, query, token_conf):",
+      "if token_conf < threshold:",
+      "context = retrieve(query)",
+      "return regenerate(context)"
+    ],
+    "highlight_lines": [
+      1,
+      2
+    ],
+    "trace_register": "\u26a1 DYNAMIC RETRIEVAL TRIGGER",
+    "explanation": "Conditional retrieval triggered by low confidence"
+  },
+  "arxiv_id": "2305.06983",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "illustration_search",
+      "caption": "Illustration Search",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/source/illustration_search.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_1_illustration_search.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_1_illustration_search.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "exp_all6",
+      "caption": "Exp All6",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/source/exp_all6.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_2_exp_all6.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_2_exp_all6.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "exp_all5",
+      "caption": "Exp All5",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/source/exp_all5.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_3_exp_all5.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_3_exp_all5.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "illustration",
+      "caption": "Illustration",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/source/illustration.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_4_illustration.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_4_illustration.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "adaptive",
+      "caption": "Adaptive",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/source/adaptive.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_5_adaptive.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.06983/chalkboard_figures/fig_5_adaptive.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Standard RAG has a fatal context fragmentation flaw, but FLARE delivers a 88.5% lead.",
+    "verdict": 64,
+    "band": "WORKABLE",
+    "formula": "The Statistic",
+    "properties": {
+      "SPECIFICITY": 68,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Standard RAG has a fatal context fragmentation flaw, but FLARE delivers a 88.5% lead.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "What happens when your vector database only sees isolated chunks? FLARE fixes retrieval with a 88.5% boost.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "How did researchers use FLARE to achieve a 88.5% leap in retrieval accuracy?",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Does FLARE actually outperform standard vector retrieval by 88.5%, or is it just hype?",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until FLARE proved: augmenting LMs by retrieving information from external knowledge resources is one promising solution.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why does standard vector search break down when summarizing an entire corpus? Enter FLARE.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Did you know retrieving context once at the prompt start inevitably leads to hallucinations as generation drifts into the unknown?",
+        "verdict": 53,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when retrieving context once at the prompt start inevitably leads to hallucinations as generation drifts into the unknown?",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why is FLARE a major breakthrough? Because despite the remarkable ability of large language models (LMs) to comprehend and generate language, they have a tendency to hallucinate and create factually inaccurate output.",
+        "verdict": 51,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Despite the remarkable ability of large language models (LMs) to comprehend and generate language, they have a tendency to hallucinate and create factually inaccurate output.",
+        "verdict": 46,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Retrieving context once at the prompt start inevitably leads to hallucinations as generation drifts into the unknown.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "search_tree",
+      "entity_type": "search_tree",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        1.2,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    },
+    {
+      "entity_id": "branch_bound_laser",
+      "entity_type": "branch_bound",
+      "z_index": 12,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "i15exM0SJHo",
+    "shorts_url": "https://youtube.com/shorts/i15exM0SJHo",
+    "studio_url": "https://studio.youtube.com/video/i15exM0SJHo/edit",
+    "title": "FLARE Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/flare_active_retrieval_poster.png",
+    "custom_thumbnail_set": false
+  }
+}
