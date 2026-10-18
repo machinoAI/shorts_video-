@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-18 | **Timestamp:** 2026-10-18 06:30:02 UTC
+**Date:** 2026-10-18 | **Timestamp:** 2026-10-18 09:51:27 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: CRAG: Part 1 - The Retrieval Evaluator: Correct, Incorrect, or Ambiguous
-- **Topic Queue Part:** `crag_part_1_retrieval_evaluator_branching` (arXiv: [2401.15884](https://arxiv.org/abs/2401.15884))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/bcTISkUnK8U](https://youtube.com/shorts/bcTISkUnK8U) (`bcTISkUnK8U`)
-- **High-CTR Poster:** [crag_retrieval_evaluator_poster.png](public/thumbnails/crag_retrieval_evaluator_poster.png)
+### Reel 1: CRAG: Part 2 - Web Search Fallback & Document Decompose-and-Filter
+- **Topic Queue Part:** `crag_part_2_web_search_decompose_filter` (arXiv: [2401.15884](https://arxiv.org/abs/2401.15884))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/2BT5LjOWFZw](https://youtube.com/shorts/2BT5LjOWFZw) (`2BT5LjOWFZw`)
+- **High-CTR Poster:** [crag_search_fallback_poster.png](public/thumbnails/crag_search_fallback_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `architecture_breakdown`
-- **Editorial Hook:** *CRAG Mini-Series 1/3: CRAG: Part 1 - The Retrieval Evaluator: Correct, Incorrect, or Ambiguous*
-- **Everyday Analogy:** *Self-correcting bad retrieval: adding a confidence evaluator that triggers 3 distinct execution branches.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_crag_retrieval_evaluator_architecture_breakdown.mp4`
+- **Category:** `mechanism_deepdive`
+- **Editorial Hook:** *CRAG Mini-Series 2/3: CRAG: Part 2 - Web Search Fallback & Document Decompose-and-Filter*
+- **Everyday Analogy:** *Automatic web search fallback when internal retrieval fails, plus fine-grained sentence striping to remove noise.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_crag_search_fallback_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs

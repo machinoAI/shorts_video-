@@ -1,0 +1,1785 @@
+{
+  "id": "crag_search_fallback",
+  "title": "Corrective RAG: Intelligent Search Fallback",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "algorithmic_search",
+  "hook_tag": "RAG FAILURE FIX",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Standard RAG models blindly swallow whatever junk their vector database returns, hallucinating answers with supreme confidence.",
+      "visual_focus": "Vector database returning contaminated chunks directly into an unsuspecting LLM prompt window",
+      "highlight_words": {
+        "blindly swallow": "#EF4444",
+        "hallucinating": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Standard RAG Models",
+        "action_verb": "swallow",
+        "direct_object": "Corrupted Vector Context",
+        "anchor_word": "hallucinating",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE RETRIEVAL BLIND SPOT",
+        "sub": "Vector DB -> Unfiltered Injection -> Hallucinated Token Stream",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Parametric Memory",
+          "stream_b_label": "Distorted Context",
+          "barrier_label": "Hallucination Wall"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 55,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE RETRIEVAL BLIND SPOT",
+        "sub": "Vector DB -> Unfiltered Injection -> Hallucinated Token Stream",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Parametric Memory",
+        "stream_b_label": "Distorted Context",
+        "barrier_label": "Hallucination Wall"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.79,
+      "duration": 7.79,
+      "word_timings": [
+        {
+          "word": "Standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 0.025,
+          "end": 0.595,
+          "duration": 0.57,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 0.595,
+          "end": 0.815,
+          "duration": 0.22,
+          "frame_ahead_trigger": 0.555
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 0.815,
+          "end": 1.185,
+          "duration": 0.37,
+          "frame_ahead_trigger": 0.775
+        },
+        {
+          "word": "blindly",
+          "clean_word": "blindly",
+          "phonemes": "bl\u02c8a\u026andli",
+          "start": 1.185,
+          "end": 1.89,
+          "duration": 0.705,
+          "frame_ahead_trigger": 1.145
+        },
+        {
+          "word": "swallow",
+          "clean_word": "swallow",
+          "phonemes": "sw\u02c8\u0254lo\u028a",
+          "start": 1.89,
+          "end": 2.311,
+          "duration": 0.421,
+          "frame_ahead_trigger": 1.85
+        },
+        {
+          "word": "whatever",
+          "clean_word": "whatever",
+          "phonemes": "w\u028ct\u02c8\u025bv\u025a",
+          "start": 2.311,
+          "end": 2.71,
+          "duration": 0.399,
+          "frame_ahead_trigger": 2.271
+        },
+        {
+          "word": "junk",
+          "clean_word": "junk",
+          "phonemes": "d\u0292\u02c8\u028c\u014bk",
+          "start": 2.71,
+          "end": 3.137,
+          "duration": 0.427,
+          "frame_ahead_trigger": 2.67
+        },
+        {
+          "word": "their",
+          "clean_word": "their",
+          "phonemes": "\u00f0\u025b\u0279",
+          "start": 3.137,
+          "end": 3.33,
+          "duration": 0.193,
+          "frame_ahead_trigger": 3.097
+        },
+        {
+          "word": "vector",
+          "clean_word": "vector",
+          "phonemes": "v\u02c8\u025bkt\u025a",
+          "start": 3.33,
+          "end": 3.665,
+          "duration": 0.335,
+          "frame_ahead_trigger": 3.29
+        },
+        {
+          "word": "database",
+          "clean_word": "database",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259b\u02cce\u026as",
+          "start": 3.665,
+          "end": 4.365,
+          "duration": 0.7,
+          "frame_ahead_trigger": 3.625
+        },
+        {
+          "word": "returns,",
+          "clean_word": "returns",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025c\u02d0nz",
+          "start": 4.365,
+          "end": 4.855,
+          "duration": 0.49,
+          "frame_ahead_trigger": 4.325
+        },
+        {
+          "word": "hallucinating",
+          "clean_word": "hallucinating",
+          "phonemes": "h\u0250l\u02c8u\u02d0s\u1d7bn\u02cce\u026a\u027e\u026a\u014b",
+          "start": 4.855,
+          "end": 5.855,
+          "duration": 1.0,
+          "frame_ahead_trigger": 4.815
+        },
+        {
+          "word": "answers",
+          "clean_word": "answers",
+          "phonemes": "\u02c8\u00e6ns\u025az",
+          "start": 5.855,
+          "end": 6.23,
+          "duration": 0.375,
+          "frame_ahead_trigger": 5.815
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 6.23,
+          "end": 6.51,
+          "duration": 0.28,
+          "frame_ahead_trigger": 6.19
+        },
+        {
+          "word": "supreme",
+          "clean_word": "supreme",
+          "phonemes": "su\u02d0p\u0279\u02c8i\u02d0m",
+          "start": 6.51,
+          "end": 7.115,
+          "duration": 0.605,
+          "frame_ahead_trigger": 6.47
+        },
+        {
+          "word": "confidence.",
+          "clean_word": "confidence",
+          "phonemes": "k\u02c8\u0251\u02d0nf\u026ad\u0259ns",
+          "start": 7.115,
+          "end": 7.71,
+          "duration": 0.595,
+          "frame_ahead_trigger": 7.075
+        }
+      ],
+      "audio_duration": 7.79,
+      "slot_duration": 7.94
+    },
+    {
+      "beat_id": 2,
+      "text": "It is like an analyst blindly trusting unverified memos\u2014if static corpus retrieval serves contaminated text, the model treats pure noise as objective truth.",
+      "visual_focus": "Contaminated text chunks highlighted in red slipping past safety filters into generation attention heads",
+      "highlight_words": {
+        "unverified memos": "#EF4444",
+        "pure noise": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Static Retrieval",
+        "action_verb": "poisons",
+        "direct_object": "Model Attention",
+        "anchor_word": "noise",
+        "semantic_role": "bottleneck"
+      },
+      "visual_blueprint": {
+        "layout": "catalog_routing",
+        "title": "NOISE PROPAGATION",
+        "sub": "Low Similarity Chunks Masked as Valid Knowledge",
+        "accent_color": "#38BDF8",
+        "params": {
+          "index_label": "User Query",
+          "drawer_a_label": "Empty Hits",
+          "drawer_b_label": "Missing Docs",
+          "drawer_c_label": "Guessing Failure"
+        }
+      },
+      "thriller_role": "villain_and_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "catalog_routing",
+        "title": "NOISE PROPAGATION",
+        "sub": "Low Similarity Chunks Masked as Valid Knowledge",
+        "accent_color": "#38BDF8",
+        "index_label": "User Query",
+        "drawer_a_label": "Empty Hits",
+        "drawer_b_label": "Missing Docs",
+        "drawer_c_label": "Guessing Failure"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.94,
+      "end": 17.58,
+      "duration": 9.64,
+      "word_timings": [
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 7.952,
+          "end": 8.027,
+          "duration": 0.075,
+          "frame_ahead_trigger": 8.062
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 8.027,
+          "end": 8.157,
+          "duration": 0.13,
+          "frame_ahead_trigger": 8.137
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 8.157,
+          "end": 8.512,
+          "duration": 0.355,
+          "frame_ahead_trigger": 8.267
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 8.512,
+          "end": 8.687,
+          "duration": 0.175,
+          "frame_ahead_trigger": 8.622
+        },
+        {
+          "word": "analyst",
+          "clean_word": "analyst",
+          "phonemes": "\u02c8\u00e6n\u0250l\u02cc\u026ast",
+          "start": 8.687,
+          "end": 9.17,
+          "duration": 0.484,
+          "frame_ahead_trigger": 8.797
+        },
+        {
+          "word": "blindly",
+          "clean_word": "blindly",
+          "phonemes": "bl\u02c8a\u026andli",
+          "start": 9.17,
+          "end": 9.662,
+          "duration": 0.491,
+          "frame_ahead_trigger": 9.28
+        },
+        {
+          "word": "trusting",
+          "clean_word": "trusting",
+          "phonemes": "t\u0279\u02c8\u028cst\u026a\u014b",
+          "start": 9.662,
+          "end": 10.237,
+          "duration": 0.575,
+          "frame_ahead_trigger": 9.772
+        },
+        {
+          "word": "unverified",
+          "clean_word": "unverified",
+          "phonemes": "\u028cnv\u02c8\u025b\u0279\u1d7bf\u02cca\u026ad",
+          "start": 10.237,
+          "end": 10.938,
+          "duration": 0.701,
+          "frame_ahead_trigger": 10.347
+        },
+        {
+          "word": "memos\u2014if",
+          "clean_word": "memosif",
+          "phonemes": "m\u02c8\u025bm\u0259s\u02cc\u026af",
+          "start": 10.938,
+          "end": 11.486,
+          "duration": 0.548,
+          "frame_ahead_trigger": 11.048
+        },
+        {
+          "word": "static",
+          "clean_word": "static",
+          "phonemes": "st\u02c8\u00e6\u027e\u026ak",
+          "start": 11.486,
+          "end": 11.857,
+          "duration": 0.371,
+          "frame_ahead_trigger": 11.596
+        },
+        {
+          "word": "corpus",
+          "clean_word": "corpus",
+          "phonemes": "k\u02c8\u0254\u02d0\u0279p\u0259s",
+          "start": 11.857,
+          "end": 12.427,
+          "duration": 0.57,
+          "frame_ahead_trigger": 11.967
+        },
+        {
+          "word": "retrieval",
+          "clean_word": "retrieval",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259l",
+          "start": 12.427,
+          "end": 12.967,
+          "duration": 0.54,
+          "frame_ahead_trigger": 12.537
+        },
+        {
+          "word": "serves",
+          "clean_word": "serves",
+          "phonemes": "s\u02c8\u025c\u02d0vz",
+          "start": 12.967,
+          "end": 13.392,
+          "duration": 0.425,
+          "frame_ahead_trigger": 13.077
+        },
+        {
+          "word": "contaminated",
+          "clean_word": "contaminated",
+          "phonemes": "k\u0259nt\u02c8\u00e6m\u1d7bn\u02cce\u026a\u027e\u1d7bd",
+          "start": 13.392,
+          "end": 14.197,
+          "duration": 0.805,
+          "frame_ahead_trigger": 13.502
+        },
+        {
+          "word": "text,",
+          "clean_word": "text",
+          "phonemes": "t\u02c8\u025bkst",
+          "start": 14.197,
+          "end": 14.655,
+          "duration": 0.458,
+          "frame_ahead_trigger": 14.307
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 14.655,
+          "end": 14.892,
+          "duration": 0.237,
+          "frame_ahead_trigger": 14.765
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 14.892,
+          "end": 15.152,
+          "duration": 0.26,
+          "frame_ahead_trigger": 15.002
+        },
+        {
+          "word": "treats",
+          "clean_word": "treats",
+          "phonemes": "t\u0279\u02c8i\u02d0ts",
+          "start": 15.152,
+          "end": 15.652,
+          "duration": 0.5,
+          "frame_ahead_trigger": 15.262
+        },
+        {
+          "word": "pure",
+          "clean_word": "pure",
+          "phonemes": "pj\u02c8\u028a\u0279",
+          "start": 15.652,
+          "end": 15.942,
+          "duration": 0.29,
+          "frame_ahead_trigger": 15.762
+        },
+        {
+          "word": "noise",
+          "clean_word": "noise",
+          "phonemes": "n\u02c8\u0254\u026az",
+          "start": 15.942,
+          "end": 16.312,
+          "duration": 0.37,
+          "frame_ahead_trigger": 16.052
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 16.312,
+          "end": 16.361,
+          "duration": 0.049,
+          "frame_ahead_trigger": 16.422
+        },
+        {
+          "word": "objective",
+          "clean_word": "objective",
+          "phonemes": "\u0251\u02d0bd\u0292\u02c8\u025bkt\u026av",
+          "start": 16.361,
+          "end": 16.977,
+          "duration": 0.616,
+          "frame_ahead_trigger": 16.471
+        },
+        {
+          "word": "truth.",
+          "clean_word": "truth",
+          "phonemes": "t\u0279\u02c8u\u02d0\u03b8",
+          "start": 16.977,
+          "end": 17.397,
+          "duration": 0.42,
+          "frame_ahead_trigger": 17.087
+        }
+      ],
+      "audio_duration": 9.64,
+      "slot_duration": 9.79
+    },
+    {
+      "beat_id": 3,
+      "text": "Corrective RAG fixes this by inserting an ultra-lightweight evaluator right between the retriever and generator to assign an objective quality score.",
+      "visual_focus": "A glowing inspection gate intercepting retrieved documents and stamping confidence ratings",
+      "highlight_words": {
+        "Corrective RAG": "#10B981",
+        "evaluator": "#3B82F6"
+      },
+      "svo_action": {
+        "subject": "Lightweight Evaluator",
+        "action_verb": "scores",
+        "direct_object": "Retrieved Documents",
+        "anchor_word": "evaluator",
+        "semantic_role": "intervention"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "CORRECTIVE RAG ARCHITECTURE",
+        "sub": "A glowing inspection gate intercepting retrieved documents and st",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.15884/chalkboard_figures/fig_1_method.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.15884/chalkboard_figures/fig_1_method.png",
+          "arxiv_id": "2401.15884",
+          "title": "CORRECTIVE RAG ARCHITECTURE",
+          "sub": "A glowing inspection gate intercepting retrieved documents and st",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Method",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_pivot",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.15884/chalkboard_figures/fig_1_method.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.15884/chalkboard_figures/fig_1_method.png",
+        "arxiv_id": "2401.15884",
+        "title": "CORRECTIVE RAG ARCHITECTURE",
+        "sub": "A glowing inspection gate intercepting retrieved documents and st",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Method",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 17.73,
+      "end": 26.16,
+      "duration": 8.43,
+      "word_timings": [
+        {
+          "word": "Corrective",
+          "clean_word": "corrective",
+          "phonemes": "k\u025a\u0279\u02c8\u025bkt\u026av",
+          "start": 17.744,
+          "end": 18.204,
+          "duration": 0.46,
+          "frame_ahead_trigger": 18.004
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 18.204,
+          "end": 18.604,
+          "duration": 0.4,
+          "frame_ahead_trigger": 18.464
+        },
+        {
+          "word": "fixes",
+          "clean_word": "fixes",
+          "phonemes": "f\u02c8\u026aks\u1d7bz",
+          "start": 18.604,
+          "end": 18.939,
+          "duration": 0.335,
+          "frame_ahead_trigger": 18.864
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 18.939,
+          "end": 19.139,
+          "duration": 0.2,
+          "frame_ahead_trigger": 19.199
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 19.139,
+          "end": 19.324,
+          "duration": 0.185,
+          "frame_ahead_trigger": 19.399
+        },
+        {
+          "word": "inserting",
+          "clean_word": "inserting",
+          "phonemes": "\u026ans\u02c8\u025c\u02d0\u027e\u026a\u014b",
+          "start": 19.324,
+          "end": 19.919,
+          "duration": 0.595,
+          "frame_ahead_trigger": 19.584
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 19.919,
+          "end": 20.064,
+          "duration": 0.145,
+          "frame_ahead_trigger": 20.179
+        },
+        {
+          "word": "ultra-lightweight",
+          "clean_word": "ultralightweight",
+          "phonemes": "\u02cc\u028alt\u0279\u0250l\u02c8a\u026atwe\u026at",
+          "start": 20.064,
+          "end": 20.919,
+          "duration": 0.855,
+          "frame_ahead_trigger": 20.324
+        },
+        {
+          "word": "evaluator",
+          "clean_word": "evaluator",
+          "phonemes": "\u026av\u02c8\u00e6lju\u02d0\u02cce\u026a\u027e\u025a",
+          "start": 20.919,
+          "end": 21.594,
+          "duration": 0.675,
+          "frame_ahead_trigger": 21.179
+        },
+        {
+          "word": "right",
+          "clean_word": "right",
+          "phonemes": "\u0279\u02c8a\u026at",
+          "start": 21.594,
+          "end": 21.834,
+          "duration": 0.24,
+          "frame_ahead_trigger": 21.854
+        },
+        {
+          "word": "between",
+          "clean_word": "between",
+          "phonemes": "b\u1d7btw\u02c8i\u02d0n",
+          "start": 21.834,
+          "end": 22.404,
+          "duration": 0.57,
+          "frame_ahead_trigger": 22.094
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 22.404,
+          "end": 22.499,
+          "duration": 0.095,
+          "frame_ahead_trigger": 22.664
+        },
+        {
+          "word": "retriever",
+          "clean_word": "retriever",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u025a",
+          "start": 22.499,
+          "end": 23.084,
+          "duration": 0.585,
+          "frame_ahead_trigger": 22.759
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 23.084,
+          "end": 23.189,
+          "duration": 0.105,
+          "frame_ahead_trigger": 23.344
+        },
+        {
+          "word": "generator",
+          "clean_word": "generator",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u02cce\u026a\u027e\u025a",
+          "start": 23.189,
+          "end": 23.914,
+          "duration": 0.725,
+          "frame_ahead_trigger": 23.449
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 23.914,
+          "end": 24.049,
+          "duration": 0.135,
+          "frame_ahead_trigger": 24.174
+        },
+        {
+          "word": "assign",
+          "clean_word": "assign",
+          "phonemes": "\u0250s\u02c8a\u026an",
+          "start": 24.049,
+          "end": 24.459,
+          "duration": 0.41,
+          "frame_ahead_trigger": 24.309
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 24.459,
+          "end": 24.594,
+          "duration": 0.135,
+          "frame_ahead_trigger": 24.719
+        },
+        {
+          "word": "objective",
+          "clean_word": "objective",
+          "phonemes": "\u0251\u02d0bd\u0292\u02c8\u025bkt\u026av",
+          "start": 24.594,
+          "end": 25.149,
+          "duration": 0.555,
+          "frame_ahead_trigger": 24.854
+        },
+        {
+          "word": "quality",
+          "clean_word": "quality",
+          "phonemes": "kw\u02c8\u0254l\u1d7b\u027ei",
+          "start": 25.149,
+          "end": 25.684,
+          "duration": 0.535,
+          "frame_ahead_trigger": 25.409
+        },
+        {
+          "word": "score.",
+          "clean_word": "score",
+          "phonemes": "sk\u02c8\u0254\u02d0\u0279",
+          "start": 25.684,
+          "end": 26.009,
+          "duration": 0.325,
+          "frame_ahead_trigger": 25.944
+        }
+      ],
+      "audio_duration": 8.43,
+      "slot_duration": 8.58
+    },
+    {
+      "beat_id": 4,
+      "text": "Low confidence immediately triggers an automated web search fallback, while high confidence activates decompose-then-recompose filtering to purge irrelevant sentences from the prompt.",
+      "visual_focus": "Bifurcated pipeline: low confidence branches to live web scraper, high confidence chunks get shredded into sentence-level filters",
+      "highlight_words": {
+        "web search fallback": "#3B82F6",
+        "decompose-then-recompose": "#10B981"
+      },
+      "svo_action": {
+        "subject": "CRAG Engine",
+        "action_verb": "branches",
+        "direct_object": "Dynamic Fallback Paths",
+        "anchor_word": "decompose",
+        "semantic_role": "execution"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: CORRECTIVE RAG: IN",
+        "sub": "Bifurcated pipeline: low confidence branches to live web scraper,",
+        "params": {
+          "title": "KERNEL CODE: CORRECTIVE RAG: IN",
+          "sub": "Bifurcated pipeline: low confidence branches to live web scraper,",
+          "filename": "crag_evaluator.py",
+          "language": "python",
+          "lines": [
+            "def evaluate_retrieval(query, docs):",
+            "conf = confidence_score(query, docs)",
+            "if conf < threshold:",
+            "return web_search_fallback(query)",
+            "return decompose_and_filter(docs)"
+          ],
+          "highlight_lines": [
+            3,
+            4,
+            5
+          ],
+          "trace_register": "\u26a1 DYNAMIC SEARCH FALLBACK ENGINE",
+          "delta_badge": "Corrective logic triggers web search based on docume"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: CORRECTIVE RAG: IN",
+        "sub": "Bifurcated pipeline: low confidence branches to live web scraper,",
+        "filename": "crag_evaluator.py",
+        "language": "python",
+        "lines": [
+          "def evaluate_retrieval(query, docs):",
+          "conf = confidence_score(query, docs)",
+          "if conf < threshold:",
+          "return web_search_fallback(query)",
+          "return decompose_and_filter(docs)"
+        ],
+        "highlight_lines": [
+          3,
+          4,
+          5
+        ],
+        "trace_register": "\u26a1 DYNAMIC SEARCH FALLBACK ENGINE",
+        "delta_badge": "Corrective logic triggers web search based on docume"
+      },
+      "start": 26.31,
+      "end": 36.25,
+      "duration": 9.94,
+      "word_timings": [
+        {
+          "word": "Low",
+          "clean_word": "low",
+          "phonemes": "l\u02c8o\u028a",
+          "start": 26.316,
+          "end": 26.486,
+          "duration": 0.17,
+          "frame_ahead_trigger": 26.726
+        },
+        {
+          "word": "confidence",
+          "clean_word": "confidence",
+          "phonemes": "k\u02c8\u0251\u02d0nf\u026ad\u0259ns",
+          "start": 26.486,
+          "end": 27.131,
+          "duration": 0.645,
+          "frame_ahead_trigger": 26.896
+        },
+        {
+          "word": "immediately",
+          "clean_word": "immediately",
+          "phonemes": "\u026am\u02c8i\u02d0d\u026a\u0259tli",
+          "start": 27.131,
+          "end": 27.741,
+          "duration": 0.61,
+          "frame_ahead_trigger": 27.541
+        },
+        {
+          "word": "triggers",
+          "clean_word": "triggers",
+          "phonemes": "t\u0279\u02c8\u026a\u0261\u025az",
+          "start": 27.741,
+          "end": 28.191,
+          "duration": 0.45,
+          "frame_ahead_trigger": 28.151
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 28.191,
+          "end": 28.341,
+          "duration": 0.15,
+          "frame_ahead_trigger": 28.601
+        },
+        {
+          "word": "automated",
+          "clean_word": "automated",
+          "phonemes": "\u02c8\u0254\u02d0\u027e\u0259m\u02cce\u026a\u027e\u1d7bd",
+          "start": 28.341,
+          "end": 28.911,
+          "duration": 0.57,
+          "frame_ahead_trigger": 28.751
+        },
+        {
+          "word": "web",
+          "clean_word": "web",
+          "phonemes": "w\u02c8\u025bb",
+          "start": 28.911,
+          "end": 29.166,
+          "duration": 0.255,
+          "frame_ahead_trigger": 29.321
+        },
+        {
+          "word": "search",
+          "clean_word": "search",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283",
+          "start": 29.166,
+          "end": 29.501,
+          "duration": 0.335,
+          "frame_ahead_trigger": 29.576
+        },
+        {
+          "word": "fallback,",
+          "clean_word": "fallback",
+          "phonemes": "f\u02c8\u0254\u02d0lb\u00e6k",
+          "start": 29.501,
+          "end": 29.947,
+          "duration": 0.446,
+          "frame_ahead_trigger": 29.911
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 29.947,
+          "end": 30.306,
+          "duration": 0.359,
+          "frame_ahead_trigger": 30.357
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 30.306,
+          "end": 30.566,
+          "duration": 0.26,
+          "frame_ahead_trigger": 30.716
+        },
+        {
+          "word": "confidence",
+          "clean_word": "confidence",
+          "phonemes": "k\u02c8\u0251\u02d0nf\u026ad\u0259ns",
+          "start": 30.566,
+          "end": 31.066,
+          "duration": 0.5,
+          "frame_ahead_trigger": 30.976
+        },
+        {
+          "word": "activates",
+          "clean_word": "activates",
+          "phonemes": "\u02c8\u00e6kt\u1d7bv\u02cce\u026ats",
+          "start": 31.066,
+          "end": 31.666,
+          "duration": 0.6,
+          "frame_ahead_trigger": 31.476
+        },
+        {
+          "word": "decompose-then-recompose",
+          "clean_word": "decomposethenrecompose",
+          "phonemes": "d\u02cci\u02d0k\u0259mp\u02c8o\u028as\u03b8\u0259n\u0279\u02cc\u025bk\u0259mp\u02cco\u028az",
+          "start": 31.666,
+          "end": 33.131,
+          "duration": 1.465,
+          "frame_ahead_trigger": 32.076
+        },
+        {
+          "word": "filtering",
+          "clean_word": "filtering",
+          "phonemes": "f\u02c8\u026alt\u025a\u0279\u026a\u014b",
+          "start": 33.131,
+          "end": 33.634,
+          "duration": 0.503,
+          "frame_ahead_trigger": 33.541
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 33.634,
+          "end": 33.896,
+          "duration": 0.262,
+          "frame_ahead_trigger": 34.044
+        },
+        {
+          "word": "purge",
+          "clean_word": "purge",
+          "phonemes": "p\u02c8\u025c\u02d0d\u0292",
+          "start": 33.896,
+          "end": 34.036,
+          "duration": 0.14,
+          "frame_ahead_trigger": 34.306
+        },
+        {
+          "word": "irrelevant",
+          "clean_word": "irrelevant",
+          "phonemes": "\u026a\u0279\u02c8\u025bl\u1d7bv\u0259nt",
+          "start": 34.036,
+          "end": 34.731,
+          "duration": 0.695,
+          "frame_ahead_trigger": 34.446
+        },
+        {
+          "word": "sentences",
+          "clean_word": "sentences",
+          "phonemes": "s\u02c8\u025bnt\u0259ns\u1d7bz",
+          "start": 34.731,
+          "end": 35.266,
+          "duration": 0.535,
+          "frame_ahead_trigger": 35.141
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 35.266,
+          "end": 35.451,
+          "duration": 0.185,
+          "frame_ahead_trigger": 35.676
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 35.451,
+          "end": 35.551,
+          "duration": 0.1,
+          "frame_ahead_trigger": 35.861
+        },
+        {
+          "word": "prompt.",
+          "clean_word": "prompt",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0mpt",
+          "start": 35.551,
+          "end": 36.036,
+          "duration": 0.485,
+          "frame_ahead_trigger": 35.961
+        }
+      ],
+      "audio_duration": 9.94,
+      "slot_duration": 10.09
+    },
+    {
+      "beat_id": 5,
+      "text": "Evaluated across four demanding short- and long-form generation tasks, CRAG consistently rescues failed retrievals and supercharges downstream answer accuracy.",
+      "visual_focus": "Horizontal comparative benchmark bars showing CRAG dominating standard RAG across diverse datasets",
+      "highlight_words": {
+        "rescues failed retrievals": "#10B981",
+        "supercharges": "#3B82F6"
+      },
+      "svo_action": {
+        "subject": "CRAG Framework",
+        "action_verb": "outperforms",
+        "direct_object": "Baseline RAG Systems",
+        "anchor_word": "accuracy",
+        "semantic_role": "validation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: RECOVERY ACCURACY",
+        "sub": "Horizontal comparative benchmark bars showing CRAG",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: RECOVERY ACCURACY",
+          "sub": "Horizontal comparative benchmark bars showing CRAG",
+          "metric_name": "Retrieval Recovery",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "CRAG",
+              "value": 85.0,
+              "display_val": "85.0%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Incumbent RAG",
+              "value": 62.0,
+              "display_val": "62.0%",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +23% ACCURACY GAIN"
+        }
+      },
+      "thriller_role": "empirical_victory",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: RECOVERY ACCURACY",
+        "sub": "Horizontal comparative benchmark bars showing CRAG",
+        "metric_name": "Retrieval Recovery",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "CRAG",
+            "value": 85.0,
+            "display_val": "85.0%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Incumbent RAG",
+            "value": 62.0,
+            "display_val": "62.0%",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +23% ACCURACY GAIN"
+      },
+      "start": 36.4,
+      "end": 45.91,
+      "duration": 9.51,
+      "word_timings": [
+        {
+          "word": "Evaluated",
+          "clean_word": "evaluated",
+          "phonemes": "\u026av\u02c8\u00e6lju\u02d0\u02cce\u026a\u027e\u1d7bd",
+          "start": 36.402,
+          "end": 37.287,
+          "duration": 0.885,
+          "frame_ahead_trigger": 36.962
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 37.287,
+          "end": 37.577,
+          "duration": 0.29,
+          "frame_ahead_trigger": 37.847
+        },
+        {
+          "word": "four",
+          "clean_word": "four",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279",
+          "start": 37.577,
+          "end": 37.927,
+          "duration": 0.35,
+          "frame_ahead_trigger": 38.137
+        },
+        {
+          "word": "demanding",
+          "clean_word": "demanding",
+          "phonemes": "d\u1d7bm\u02c8\u00e6nd\u026a\u014b",
+          "start": 37.927,
+          "end": 38.407,
+          "duration": 0.48,
+          "frame_ahead_trigger": 38.487
+        },
+        {
+          "word": "short-",
+          "clean_word": "short",
+          "phonemes": "\u0283\u02c8\u0254\u02d0\u0279t",
+          "start": 38.407,
+          "end": 38.902,
+          "duration": 0.495,
+          "frame_ahead_trigger": 38.967
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 38.902,
+          "end": 38.985,
+          "duration": 0.082,
+          "frame_ahead_trigger": 39.462
+        },
+        {
+          "word": "long-form",
+          "clean_word": "longform",
+          "phonemes": "l\u02c8\u0254\u014bf\u0254\u02d0\u0279m",
+          "start": 38.985,
+          "end": 39.587,
+          "duration": 0.603,
+          "frame_ahead_trigger": 39.545
+        },
+        {
+          "word": "generation",
+          "clean_word": "generation",
+          "phonemes": "d\u0292\u02cc\u025bn\u025a\u0279\u02c8e\u026a\u0283\u0259n",
+          "start": 39.587,
+          "end": 40.162,
+          "duration": 0.575,
+          "frame_ahead_trigger": 40.147
+        },
+        {
+          "word": "tasks,",
+          "clean_word": "tasks",
+          "phonemes": "t\u02c8\u00e6sks",
+          "start": 40.162,
+          "end": 40.687,
+          "duration": 0.525,
+          "frame_ahead_trigger": 40.722
+        },
+        {
+          "word": "CRAG",
+          "clean_word": "crag",
+          "phonemes": "k\u0279\u02c8\u00e6\u0261",
+          "start": 40.687,
+          "end": 41.027,
+          "duration": 0.34,
+          "frame_ahead_trigger": 41.247
+        },
+        {
+          "word": "consistently",
+          "clean_word": "consistently",
+          "phonemes": "k\u0259ns\u02c8\u026ast\u0259ntli",
+          "start": 41.027,
+          "end": 41.702,
+          "duration": 0.675,
+          "frame_ahead_trigger": 41.587
+        },
+        {
+          "word": "rescues",
+          "clean_word": "rescues",
+          "phonemes": "\u0279\u02c8\u025bskju\u02d0z",
+          "start": 41.702,
+          "end": 42.262,
+          "duration": 0.56,
+          "frame_ahead_trigger": 42.262
+        },
+        {
+          "word": "failed",
+          "clean_word": "failed",
+          "phonemes": "f\u02c8e\u026ald",
+          "start": 42.262,
+          "end": 42.502,
+          "duration": 0.24,
+          "frame_ahead_trigger": 42.822
+        },
+        {
+          "word": "retrievals",
+          "clean_word": "retrievals",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259lz",
+          "start": 42.502,
+          "end": 43.312,
+          "duration": 0.81,
+          "frame_ahead_trigger": 43.062
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 43.312,
+          "end": 43.386,
+          "duration": 0.074,
+          "frame_ahead_trigger": 43.872
+        },
+        {
+          "word": "supercharges",
+          "clean_word": "supercharges",
+          "phonemes": "s\u02c8u\u02d0p\u025at\u0283\u02cc\u0251\u02d0\u0279d\u0292\u1d7bz",
+          "start": 43.386,
+          "end": 44.227,
+          "duration": 0.841,
+          "frame_ahead_trigger": 43.946
+        },
+        {
+          "word": "downstream",
+          "clean_word": "downstream",
+          "phonemes": "d\u02c8a\u028anst\u0279i\u02d0m",
+          "start": 44.227,
+          "end": 45.017,
+          "duration": 0.79,
+          "frame_ahead_trigger": 44.787
+        },
+        {
+          "word": "answer",
+          "clean_word": "answer",
+          "phonemes": "\u02c8\u00e6ns\u025a",
+          "start": 45.017,
+          "end": 45.217,
+          "duration": 0.2,
+          "frame_ahead_trigger": 45.577
+        },
+        {
+          "word": "accuracy.",
+          "clean_word": "accuracy",
+          "phonemes": "\u02c8\u00e6kj\u028a\u0279\u0259si",
+          "start": 45.217,
+          "end": 45.792,
+          "duration": 0.575,
+          "frame_ahead_trigger": 45.777
+        }
+      ],
+      "audio_duration": 9.51,
+      "slot_duration": 9.66
+    },
+    {
+      "beat_id": 6,
+      "text": "Never let bad context poison your generation again. Follow machinoAI for deep-dives into real frontier AI architectures.",
+      "visual_focus": "Circular transition resetting to vector index, now guarded by an impenetrable CRAG evaluator gate",
+      "highlight_words": {
+        "bad context": "#EF4444",
+        "machinoAI": "#3B82F6"
+      },
+      "svo_action": {
+        "subject": "machinoAI",
+        "action_verb": "decodes",
+        "direct_object": "Frontier AI Architectures",
+        "anchor_word": "architectures",
+        "semantic_role": "loop_closure"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "THE VERIFIED INFERENCE LOOP",
+        "sub": "Follow @machinoai-in for Daily Technical Deep-Dives",
+        "accent_color": "#34D399",
+        "params": {
+          "input_1_label": "Queries",
+          "input_2_label": "Web Search",
+          "input_3_label": "Filtered Info",
+          "fused_label": "Final Output"
+        }
+      },
+      "thriller_role": "paradigm_shift_loop",
+      "act": 4,
+      "start": 46.06,
+      "end": 54.0,
+      "duration": 7.94,
+      "word_timings": [
+        {
+          "word": "Never",
+          "clean_word": "never",
+          "phonemes": "n\u02c8\u025bv\u025a",
+          "start": 46.072,
+          "end": 46.302,
+          "duration": 0.23,
+          "frame_ahead_trigger": 46.782
+        },
+        {
+          "word": "let",
+          "clean_word": "let",
+          "phonemes": "l\u02c8\u025bt",
+          "start": 46.302,
+          "end": 46.633,
+          "duration": 0.331,
+          "frame_ahead_trigger": 47.012
+        },
+        {
+          "word": "bad",
+          "clean_word": "bad",
+          "phonemes": "b\u02c8\u00e6d",
+          "start": 46.633,
+          "end": 46.767,
+          "duration": 0.134,
+          "frame_ahead_trigger": 47.343
+        },
+        {
+          "word": "context",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 46.767,
+          "end": 47.505,
+          "duration": 0.738,
+          "frame_ahead_trigger": 47.477
+        },
+        {
+          "word": "poison",
+          "clean_word": "poison",
+          "phonemes": "p\u02c8\u0254\u026az\u0259n",
+          "start": 47.505,
+          "end": 47.937,
+          "duration": 0.432,
+          "frame_ahead_trigger": 48.215
+        },
+        {
+          "word": "your",
+          "clean_word": "your",
+          "phonemes": "j\u028a\u0279",
+          "start": 47.937,
+          "end": 48.072,
+          "duration": 0.135,
+          "frame_ahead_trigger": 48.647
+        },
+        {
+          "word": "generation",
+          "clean_word": "generation",
+          "phonemes": "d\u0292\u02cc\u025bn\u025a\u0279\u02c8e\u026a\u0283\u0259n",
+          "start": 48.072,
+          "end": 48.938,
+          "duration": 0.866,
+          "frame_ahead_trigger": 48.782
+        },
+        {
+          "word": "again.",
+          "clean_word": "again",
+          "phonemes": "\u0250\u0261\u02c8\u025bn",
+          "start": 48.938,
+          "end": 49.287,
+          "duration": 0.349,
+          "frame_ahead_trigger": 49.648
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 49.287,
+          "end": 49.702,
+          "duration": 0.415,
+          "frame_ahead_trigger": 49.997
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 49.702,
+          "end": 50.657,
+          "duration": 0.955,
+          "frame_ahead_trigger": 50.412
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 50.657,
+          "end": 50.842,
+          "duration": 0.185,
+          "frame_ahead_trigger": 51.367
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 50.842,
+          "end": 51.532,
+          "duration": 0.69,
+          "frame_ahead_trigger": 51.552
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 51.532,
+          "end": 51.812,
+          "duration": 0.28,
+          "frame_ahead_trigger": 52.242
+        },
+        {
+          "word": "real",
+          "clean_word": "real",
+          "phonemes": "\u0279\u02c8i\u02d0\u0259l",
+          "start": 51.812,
+          "end": 52.197,
+          "duration": 0.385,
+          "frame_ahead_trigger": 52.522
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 52.197,
+          "end": 52.662,
+          "duration": 0.465,
+          "frame_ahead_trigger": 52.907
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 52.662,
+          "end": 53.052,
+          "duration": 0.39,
+          "frame_ahead_trigger": 53.372
+        },
+        {
+          "word": "architectures.",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 53.052,
+          "end": 53.922,
+          "duration": 0.87,
+          "frame_ahead_trigger": 53.762
+        }
+      ],
+      "audio_duration": 7.94,
+      "slot_duration": 7.94
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$P(\\mathrm{Hallucination}) \\propto 1 - \\mathrm{Sim}(Q, D_{ret})$",
+      "filename": "crag_search_fallback_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "Sim",
+          "label": "Retrieval Similarity"
+        },
+        {
+          "term": "D_{ret}",
+          "label": "Retrieved Document"
+        }
+      ],
+      "svg_filename": "crag_search_fallback_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(D_{\\mathrm{static}}) \\ll \\mathcal{O}(D_{\\mathrm{web}})$",
+      "filename": "crag_search_fallback_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "D_{\\mathrm{static}}",
+          "label": "Limited Corpus"
+        },
+        {
+          "term": "D_{\\mathrm{web}}",
+          "label": "Global Web Search"
+        }
+      ],
+      "svg_filename": "crag_search_fallback_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$A = \\mathrm{f}_{eval}(D) \\in \\{\\mathrm{Correct}, \\mathrm{Incorrect}, \\mathrm{Ambiguous}\\}$",
+      "filename": "crag_search_fallback_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "f_{eval}",
+          "label": "Confidence Evaluator"
+        },
+        {
+          "term": "A",
+          "label": "Action Selection"
+        }
+      ],
+      "svg_filename": "crag_search_fallback_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$D_{clean} = \\mathrm{Decompose}(D_{raw}) \\setminus \\mathrm{Noise}$",
+      "filename": "crag_search_fallback_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "Decompose",
+          "label": "Information Filter"
+        },
+        {
+          "term": "Noise",
+          "label": "Irrelevant Tokens"
+        }
+      ],
+      "svg_filename": "crag_search_fallback_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Gain} = \\frac{\\mathrm{Acc}_{CRAG} - \\mathrm{Acc}_{RAG}}{\\mathrm{Acc}_{RAG}}$",
+      "filename": "crag_search_fallback_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\mathrm{Acc}_{CRAG}",
+          "label": "CRAG Performance"
+        },
+        {
+          "term": "\\mathrm{Acc}_{RAG}",
+          "label": "Base RAG"
+        }
+      ],
+      "svg_filename": "crag_search_fallback_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "CORE",
+          "color": "#38BDF8",
+          "items": [
+            "Query",
+            "Docs",
+            "Confidence"
+          ]
+        },
+        {
+          "name": "SEARCH",
+          "color": "#10B981",
+          "items": [
+            "Web",
+            "API",
+            "Retrieval"
+          ]
+        },
+        {
+          "name": "FILTER",
+          "color": "#F59E0B",
+          "items": [
+            "Decompose",
+            "Purge",
+            "Clean"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Confidence\"",
+        "target_cluster": "CORE",
+        "token": "\"Confidence\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'noise'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'hallucination'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "CRAG (Corrective RAG)",
+    "model_a_specs": [
+      "Web Search Fallback",
+      "Confidence Evaluator",
+      "Decompose-Filter"
+    ],
+    "model_b": "Standard RAG",
+    "model_b_specs": [
+      "Static Indexing",
+      "Fixed Retrieval",
+      "No Confidence Check"
+    ],
+    "divide_title": "SEARCH FALLBACK VS STATIC INDEXING",
+    "model_a_stat": "85%",
+    "model_a_stat_label": "TASK RECOVERY",
+    "model_b_stat": "62%",
+    "model_b_stat_label": "BASELINE SUCCESS",
+    "efficiency_badge": "\u26a1 23% PERFORMANCE BOOST",
+    "benchmarks": [
+      {
+        "name": "Recovery Accuracy",
+        "score_a": "85%",
+        "score_b": "62%"
+      },
+      {
+        "name": "Hallucination Rate",
+        "score_a": "Low",
+        "score_b": "High"
+      },
+      {
+        "name": "Context Purity",
+        "score_a": "High",
+        "score_b": "Baseline"
+      }
+    ],
+    "scale_metric": "85",
+    "scale_label": "Recovery Accuracy",
+    "bottleneck_title": "STATIC RETRIEVAL LIMITS",
+    "bottleneck_desc": "Information gaps cause hallucinations",
+    "solution_title": "WEB FALLBACK MECHANISM",
+    "solution_components": "Lightweight Confidence Evaluator",
+    "mechanism_title": "DOCUMENT DECOMPOSITION",
+    "payoff_stat": "85%",
+    "payoff_label": "RECOVERY ACCURACY",
+    "payoff_sub": "Outperforming static RAG baselines",
+    "payoff_hero_stat": 85.0,
+    "payoff_hero_label": "CRAG Accuracy",
+    "payoff_base_stat": 62.0,
+    "payoff_base_label": "Baseline RAG",
+    "payoff_delta_badge": "\u26a1 +23% ACCURACY IMPROVEMENT",
+    "challenger": "CRAG",
+    "incumbent": "Standard RAG"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: RECOVERY ACCURACY",
+    "metric_name": "Retrieval Recovery",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "CRAG",
+        "value": 85.0,
+        "display_val": "85.0%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Incumbent RAG",
+        "value": 62.0,
+        "display_val": "62.0%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +23% ACCURACY GAIN",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "crag_evaluator.py",
+    "language": "python",
+    "lines": [
+      "def evaluate_retrieval(query, docs):",
+      "conf = confidence_score(query, docs)",
+      "if conf < threshold:",
+      "return web_search_fallback(query)",
+      "return decompose_and_filter(docs)"
+    ],
+    "highlight_lines": [
+      3,
+      4,
+      5
+    ],
+    "trace_register": "\u26a1 DYNAMIC SEARCH FALLBACK ENGINE",
+    "explanation": "Corrective logic triggers web search based on document quality"
+  },
+  "arxiv_id": "2401.15884",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "method",
+      "caption": "Method",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.15884/source/fig/method.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.15884/chalkboard_figures/fig_1_method.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.15884/chalkboard_figures/fig_1_method.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "demonstration",
+      "caption": "Demonstration",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.15884/source/fig/demonstration.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.15884/chalkboard_figures/fig_2_demonstration.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.15884/chalkboard_figures/fig_2_demonstration.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "plot",
+      "caption": "Plot",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.15884/source/fig/plot.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.15884/chalkboard_figures/fig_3_plot.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2401.15884/chalkboard_figures/fig_3_plot.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 9.2,
+    "final_retention_hook_score": 9.1,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Dude, this is actually solid. Beat 1 immediately hooked me because every dev who has built a basic RAG pipeline knows the pain of the vector DB returning irrelevant junk. Beat 3 explains CRAG cleanly in plain English without treating me like a toddler or hiding behind 5-dollar math words. Beat 4 had a tiny bump with 'fine-grained chunk decomposition'\u2014it sounds slightly copy-pasted from the paper abstract\u2014but the concept of web fallback vs filtering noise still completely lands."
+  },
+  "thriller_metadata": {
+    "engine_version": "7.0",
+    "narrative_style": "intellectual_thriller",
+    "villain_entity": "Noisy Static Context Swallowing",
+    "physical_analogy": "An analyst blindly presenting unverified memos to executive leadership",
+    "eureka_mechanism": "Evaluator-Gated Web Search Fallback & Chunk Decomposition",
+    "paradigm_shift": "Dynamic confidence evaluation replacing blind vector database trust"
+  },
+  "hook_gating": {
+    "selected_hook": "Standard RAG models blindly swallow whatever junk their vector database returns, hallucinating answers with supreme confidence.",
+    "verdict": 55,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "search_tree",
+      "entity_type": "search_tree",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        1.2,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    },
+    {
+      "entity_id": "branch_bound_laser",
+      "entity_type": "branch_bound",
+      "z_index": 12,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "2BT5LjOWFZw",
+    "shorts_url": "https://youtube.com/shorts/2BT5LjOWFZw",
+    "studio_url": "https://studio.youtube.com/video/2BT5LjOWFZw/edit",
+    "title": "Corrective RAG Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/crag_search_fallback_poster.png",
+    "custom_thumbnail_set": false
+  }
+}
