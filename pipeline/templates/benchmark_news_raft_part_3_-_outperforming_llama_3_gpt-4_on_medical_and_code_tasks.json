@@ -1,0 +1,1622 @@
+{
+  "id": "raft_part_3_-_outperforming_llama_3_gpt-4_on_medical_and_code_tasks",
+  "title": "RAFT: Part 3 - Outperforming Llama 3 & GPT-4 on Medical and Code Tasks",
+  "category": "benchmark_news",
+  "domain_taxonomy": "quantitative_benchmark",
+  "hook_tag": "BENCHMARK NEWS",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why are leading AI teams switching to RAFT after this 98.2% benchmark result?",
+      "visual_focus": "A glowing query vector enters a vector database and retrieves four documents, three of which glow red with toxic noise.",
+      "highlight_words": {
+        "hallucinate more": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Search retrieval",
+        "action_verb": "poisons",
+        "direct_object": "model context",
+        "anchor_word": "hallucination",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "THE RAG PARADOX",
+        "sub": "Retrieved noise blinds pretrained transformers",
+        "accent_color": "#38BDF8",
+        "params": {}
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 64,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "THE RAG PARADOX",
+        "sub": "Retrieved noise blinds pretrained transformers",
+        "accent_color": "#38BDF8"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.31,
+      "duration": 5.31,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.005,
+          "end": 0.31,
+          "duration": 0.305,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "are",
+          "clean_word": "are",
+          "phonemes": "\u0251\u02d0\u0279",
+          "start": 0.31,
+          "end": 0.395,
+          "duration": 0.085,
+          "frame_ahead_trigger": 0.27
+        },
+        {
+          "word": "leading",
+          "clean_word": "leading",
+          "phonemes": "l\u02c8i\u02d0d\u026a\u014b",
+          "start": 0.395,
+          "end": 0.805,
+          "duration": 0.41,
+          "frame_ahead_trigger": 0.355
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 0.805,
+          "end": 1.115,
+          "duration": 0.31,
+          "frame_ahead_trigger": 0.765
+        },
+        {
+          "word": "teams",
+          "clean_word": "teams",
+          "phonemes": "t\u02c8i\u02d0mz",
+          "start": 1.115,
+          "end": 1.44,
+          "duration": 0.325,
+          "frame_ahead_trigger": 1.075
+        },
+        {
+          "word": "switching",
+          "clean_word": "switching",
+          "phonemes": "sw\u02c8\u026at\u0283\u026a\u014b",
+          "start": 1.44,
+          "end": 1.905,
+          "duration": 0.465,
+          "frame_ahead_trigger": 1.4
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 1.905,
+          "end": 2.1,
+          "duration": 0.195,
+          "frame_ahead_trigger": 1.865
+        },
+        {
+          "word": "RAFT",
+          "clean_word": "raft",
+          "phonemes": "\u0279\u02c8\u00e6ft",
+          "start": 2.1,
+          "end": 2.333,
+          "duration": 0.233,
+          "frame_ahead_trigger": 2.06
+        },
+        {
+          "word": "after",
+          "clean_word": "after",
+          "phonemes": "\u02c8\u00e6ft\u025a",
+          "start": 2.333,
+          "end": 2.545,
+          "duration": 0.212,
+          "frame_ahead_trigger": 2.293
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 2.545,
+          "end": 2.79,
+          "duration": 0.245,
+          "frame_ahead_trigger": 2.505
+        },
+        {
+          "word": "98.2%",
+          "clean_word": "982",
+          "phonemes": "n\u02c8a\u026anh\u02c8\u028cnd\u0279\u026ad \u02c8e\u026a\u027ei t\u02c8u\u02d0",
+          "start": 2.79,
+          "end": 4.075,
+          "duration": 1.285,
+          "frame_ahead_trigger": 2.75
+        },
+        {
+          "word": "benchmark",
+          "clean_word": "benchmark",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279k",
+          "start": 4.075,
+          "end": 4.81,
+          "duration": 0.735,
+          "frame_ahead_trigger": 4.035
+        },
+        {
+          "word": "result?",
+          "clean_word": "result",
+          "phonemes": "\u0279\u026az\u02c8\u028clt",
+          "start": 4.81,
+          "end": 5.16,
+          "duration": 0.35,
+          "frame_ahead_trigger": 4.77
+        }
+      ],
+      "audio_duration": 5.31,
+      "slot_duration": 5.46
+    },
+    {
+      "beat_id": 2,
+      "text": "Standard RAG injects top search snippets into prompts. But when irrelevant distractor texts sneak in. Models fixate on false clues.",
+      "visual_focus": "Transformer attention map spreading probability weights across junk documents instead of the one correct medical paragraph.",
+      "highlight_words": {
+        "distractor texts": "#EF4444",
+        "false clues": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Distractor snippets",
+        "action_verb": "derail",
+        "direct_object": "attention weights",
+        "anchor_word": "distractor",
+        "semantic_role": "bottleneck"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "ATTENTION HIJACKING",
+        "sub": "Models fail to differentiate noise from ground truth",
+        "accent_color": "#EF4444",
+        "params": {}
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "ATTENTION HIJACKING",
+        "sub": "Models fail to differentiate noise from ground truth",
+        "accent_color": "#EF4444"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 5.46,
+      "end": 13.31,
+      "duration": 7.85,
+      "word_timings": [
+        {
+          "word": "Standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 5.542,
+          "end": 6.057,
+          "duration": 0.515,
+          "frame_ahead_trigger": 5.652
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 6.057,
+          "end": 6.277,
+          "duration": 0.22,
+          "frame_ahead_trigger": 6.167
+        },
+        {
+          "word": "injects",
+          "clean_word": "injects",
+          "phonemes": "\u026and\u0292\u02c8\u025bkts",
+          "start": 6.277,
+          "end": 6.862,
+          "duration": 0.585,
+          "frame_ahead_trigger": 6.387
+        },
+        {
+          "word": "top",
+          "clean_word": "top",
+          "phonemes": "t\u02c8\u0251\u02d0p",
+          "start": 6.862,
+          "end": 7.104,
+          "duration": 0.242,
+          "frame_ahead_trigger": 6.972
+        },
+        {
+          "word": "search",
+          "clean_word": "search",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283",
+          "start": 7.104,
+          "end": 7.512,
+          "duration": 0.408,
+          "frame_ahead_trigger": 7.214
+        },
+        {
+          "word": "snippets",
+          "clean_word": "snippets",
+          "phonemes": "sn\u02c8\u026ap\u026ats",
+          "start": 7.512,
+          "end": 7.922,
+          "duration": 0.41,
+          "frame_ahead_trigger": 7.622
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 7.922,
+          "end": 8.202,
+          "duration": 0.28,
+          "frame_ahead_trigger": 8.032
+        },
+        {
+          "word": "prompts.",
+          "clean_word": "prompts",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0mpts",
+          "start": 8.202,
+          "end": 8.786,
+          "duration": 0.584,
+          "frame_ahead_trigger": 8.312
+        },
+        {
+          "word": "But",
+          "clean_word": "but",
+          "phonemes": "b\u02cc\u028ct",
+          "start": 8.786,
+          "end": 9.007,
+          "duration": 0.221,
+          "frame_ahead_trigger": 8.896
+        },
+        {
+          "word": "when",
+          "clean_word": "when",
+          "phonemes": "w\u02cc\u025bn",
+          "start": 9.007,
+          "end": 9.322,
+          "duration": 0.315,
+          "frame_ahead_trigger": 9.117
+        },
+        {
+          "word": "irrelevant",
+          "clean_word": "irrelevant",
+          "phonemes": "\u026a\u0279\u02c8\u025bl\u1d7bv\u0259nt",
+          "start": 9.322,
+          "end": 9.892,
+          "duration": 0.57,
+          "frame_ahead_trigger": 9.432
+        },
+        {
+          "word": "distractor",
+          "clean_word": "distractor",
+          "phonemes": "d\u026ast\u0279\u02c8\u00e6kt\u025a",
+          "start": 9.892,
+          "end": 10.452,
+          "duration": 0.56,
+          "frame_ahead_trigger": 10.002
+        },
+        {
+          "word": "texts",
+          "clean_word": "texts",
+          "phonemes": "t\u02c8\u025bksts",
+          "start": 10.452,
+          "end": 10.847,
+          "duration": 0.395,
+          "frame_ahead_trigger": 10.562
+        },
+        {
+          "word": "sneak",
+          "clean_word": "sneak",
+          "phonemes": "sn\u02c8i\u02d0k",
+          "start": 10.847,
+          "end": 11.249,
+          "duration": 0.402,
+          "frame_ahead_trigger": 10.957
+        },
+        {
+          "word": "in.",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 11.249,
+          "end": 11.507,
+          "duration": 0.258,
+          "frame_ahead_trigger": 11.359
+        },
+        {
+          "word": "Models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 11.507,
+          "end": 11.942,
+          "duration": 0.435,
+          "frame_ahead_trigger": 11.617
+        },
+        {
+          "word": "fixate",
+          "clean_word": "fixate",
+          "phonemes": "f\u02c8\u026akse\u026at",
+          "start": 11.942,
+          "end": 12.292,
+          "duration": 0.35,
+          "frame_ahead_trigger": 12.052
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 12.292,
+          "end": 12.522,
+          "duration": 0.23,
+          "frame_ahead_trigger": 12.402
+        },
+        {
+          "word": "false",
+          "clean_word": "false",
+          "phonemes": "f\u02c8\u0254ls",
+          "start": 12.522,
+          "end": 12.797,
+          "duration": 0.275,
+          "frame_ahead_trigger": 12.632
+        },
+        {
+          "word": "clues.",
+          "clean_word": "clues",
+          "phonemes": "kl\u02c8u\u02d0z",
+          "start": 12.797,
+          "end": 13.232,
+          "duration": 0.435,
+          "frame_ahead_trigger": 12.907
+        }
+      ],
+      "audio_duration": 7.85,
+      "slot_duration": 8.0
+    },
+    {
+      "beat_id": 3,
+      "text": "Researchers created RAFT. Retrieval Augmented Fine-Tuning. Instead of assuming perfect inputs. They intentionally train models on noisy document batches.",
+      "visual_focus": "Chalkboard training pipeline showing training instances populated with curated target answers alongside adversarial distractor documents.",
+      "highlight_words": {
+        "RAFT": "#10B981",
+        "noisy document batches": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "RAFT recipe",
+        "action_verb": "conditions",
+        "direct_object": "training prompts",
+        "anchor_word": "fine-tuning",
+        "semantic_role": "eureka"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "RAFT ARCHITECTURE",
+        "sub": "Chalkboard training pipeline showing training instances populated",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_1_squad.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_1_squad.png",
+          "arxiv_id": "2403.10131",
+          "title": "RAFT ARCHITECTURE",
+          "sub": "Chalkboard training pipeline showing training instances populated",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Squad",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_1_squad.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_1_squad.png",
+        "arxiv_id": "2403.10131",
+        "title": "RAFT ARCHITECTURE",
+        "sub": "Chalkboard training pipeline showing training instances populated",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Squad",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 13.46,
+      "end": 22.57,
+      "duration": 9.11,
+      "word_timings": [
+        {
+          "word": "Researchers",
+          "clean_word": "researchers",
+          "phonemes": "\u0279\u1d7bs\u02c8\u025c\u02d0t\u0283\u025az",
+          "start": 13.473,
+          "end": 14.033,
+          "duration": 0.56,
+          "frame_ahead_trigger": 13.733
+        },
+        {
+          "word": "created",
+          "clean_word": "created",
+          "phonemes": "k\u0279i\u02d0\u02c8e\u026a\u027e\u1d7bd",
+          "start": 14.033,
+          "end": 14.7,
+          "duration": 0.667,
+          "frame_ahead_trigger": 14.293
+        },
+        {
+          "word": "RAFT.",
+          "clean_word": "raft",
+          "phonemes": "\u0279\u02c8\u00e6ft",
+          "start": 14.7,
+          "end": 15.007,
+          "duration": 0.307,
+          "frame_ahead_trigger": 14.96
+        },
+        {
+          "word": "Retrieval",
+          "clean_word": "retrieval",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259l",
+          "start": 15.007,
+          "end": 15.588,
+          "duration": 0.581,
+          "frame_ahead_trigger": 15.267
+        },
+        {
+          "word": "Augmented",
+          "clean_word": "augmented",
+          "phonemes": "\u0254\u02d0\u0261m\u02c8\u025bnt\u1d7bd",
+          "start": 15.588,
+          "end": 16.138,
+          "duration": 0.55,
+          "frame_ahead_trigger": 15.848
+        },
+        {
+          "word": "Fine-Tuning.",
+          "clean_word": "finetuning",
+          "phonemes": "f\u02c8a\u026an t\u02c8u\u02d0n\u026a\u014b",
+          "start": 16.138,
+          "end": 17.032,
+          "duration": 0.894,
+          "frame_ahead_trigger": 16.398
+        },
+        {
+          "word": "Instead",
+          "clean_word": "instead",
+          "phonemes": "\u026anst\u02c8\u025bd",
+          "start": 17.032,
+          "end": 17.483,
+          "duration": 0.451,
+          "frame_ahead_trigger": 17.292
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 17.483,
+          "end": 17.593,
+          "duration": 0.11,
+          "frame_ahead_trigger": 17.743
+        },
+        {
+          "word": "assuming",
+          "clean_word": "assuming",
+          "phonemes": "\u0250s\u02c8u\u02d0m\u026a\u014b",
+          "start": 17.593,
+          "end": 18.133,
+          "duration": 0.54,
+          "frame_ahead_trigger": 17.853
+        },
+        {
+          "word": "perfect",
+          "clean_word": "perfect",
+          "phonemes": "p\u02c8\u025c\u02d0f\u025bkt",
+          "start": 18.133,
+          "end": 18.533,
+          "duration": 0.4,
+          "frame_ahead_trigger": 18.393
+        },
+        {
+          "word": "inputs.",
+          "clean_word": "inputs",
+          "phonemes": "\u02c8\u026anp\u028ats",
+          "start": 18.533,
+          "end": 18.918,
+          "duration": 0.385,
+          "frame_ahead_trigger": 18.793
+        },
+        {
+          "word": "They",
+          "clean_word": "they",
+          "phonemes": "\u00f0e\u026a",
+          "start": 18.918,
+          "end": 19.179,
+          "duration": 0.262,
+          "frame_ahead_trigger": 19.178
+        },
+        {
+          "word": "intentionally",
+          "clean_word": "intentionally",
+          "phonemes": "\u026ant\u02c8\u025bn\u0283\u0259n\u0259li",
+          "start": 19.179,
+          "end": 19.913,
+          "duration": 0.733,
+          "frame_ahead_trigger": 19.439
+        },
+        {
+          "word": "train",
+          "clean_word": "train",
+          "phonemes": "t\u0279\u02c8e\u026an",
+          "start": 19.913,
+          "end": 20.263,
+          "duration": 0.35,
+          "frame_ahead_trigger": 20.173
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 20.263,
+          "end": 20.743,
+          "duration": 0.48,
+          "frame_ahead_trigger": 20.523
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 20.743,
+          "end": 20.893,
+          "duration": 0.15,
+          "frame_ahead_trigger": 21.003
+        },
+        {
+          "word": "noisy",
+          "clean_word": "noisy",
+          "phonemes": "n\u02c8\u0254\u026azi",
+          "start": 20.893,
+          "end": 21.358,
+          "duration": 0.465,
+          "frame_ahead_trigger": 21.153
+        },
+        {
+          "word": "document",
+          "clean_word": "document",
+          "phonemes": "d\u02c8\u0251\u02d0kju\u02d0m\u0259nt",
+          "start": 21.358,
+          "end": 22.013,
+          "duration": 0.655,
+          "frame_ahead_trigger": 21.618
+        },
+        {
+          "word": "batches.",
+          "clean_word": "batches",
+          "phonemes": "b\u02c8\u00e6t\u0283\u1d7bz",
+          "start": 22.013,
+          "end": 22.493,
+          "duration": 0.48,
+          "frame_ahead_trigger": 22.273
+        }
+      ],
+      "audio_duration": 9.11,
+      "slot_duration": 9.26
+    },
+    {
+      "beat_id": 4,
+      "text": "The model learns to ignore distractor decoys. Cite verbatim evidence from the ground-truth text. And reason step-by-step before answering.",
+      "visual_focus": "Laser extraction mechanism highlighting an exact verbatim sentence from Doc B while graying out Docs A, C, and D.",
+      "highlight_words": {
+        "cite verbatim evidence": "#10B981",
+        "step-by-step": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Target model",
+        "action_verb": "extracts",
+        "direct_object": "verbatim citation",
+        "anchor_word": "reasoning",
+        "semantic_role": "mechanism"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: RAFT: PART 3 - OUT",
+        "sub": "Laser extraction mechanism highlighting an exact verbatim sentenc",
+        "params": {
+          "title": "KERNEL CODE: RAFT: PART 3 - OUT",
+          "sub": "Laser extraction mechanism highlighting an exact verbatim sentenc",
+          "filename": "kernel.py",
+          "language": "python",
+          "lines": [
+            "def forward_pass(input_tensor):",
+            "    return fused_kernel_op(input_tensor)"
+          ],
+          "highlight_lines": [
+            1
+          ],
+          "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+          "delta_badge": "Zero-latency pipeline operation"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: RAFT: PART 3 - OUT",
+        "sub": "Laser extraction mechanism highlighting an exact verbatim sentenc",
+        "filename": "kernel.py",
+        "language": "python",
+        "lines": [
+          "def forward_pass(input_tensor):",
+          "    return fused_kernel_op(input_tensor)"
+        ],
+        "highlight_lines": [
+          1
+        ],
+        "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+        "delta_badge": "Zero-latency pipeline operation"
+      },
+      "start": 22.72,
+      "end": 30.51,
+      "duration": 7.79,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 22.732,
+          "end": 22.872,
+          "duration": 0.14,
+          "frame_ahead_trigger": 23.142
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 22.872,
+          "end": 23.275,
+          "duration": 0.403,
+          "frame_ahead_trigger": 23.282
+        },
+        {
+          "word": "learns",
+          "clean_word": "learns",
+          "phonemes": "l\u02c8\u025c\u02d0nz",
+          "start": 23.275,
+          "end": 23.672,
+          "duration": 0.397,
+          "frame_ahead_trigger": 23.685
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 23.672,
+          "end": 23.837,
+          "duration": 0.165,
+          "frame_ahead_trigger": 24.082
+        },
+        {
+          "word": "ignore",
+          "clean_word": "ignore",
+          "phonemes": "\u026a\u0261n\u02c8\u0254\u02d0\u0279",
+          "start": 23.837,
+          "end": 24.152,
+          "duration": 0.315,
+          "frame_ahead_trigger": 24.247
+        },
+        {
+          "word": "distractor",
+          "clean_word": "distractor",
+          "phonemes": "d\u026ast\u0279\u02c8\u00e6kt\u025a",
+          "start": 24.152,
+          "end": 24.942,
+          "duration": 0.79,
+          "frame_ahead_trigger": 24.562
+        },
+        {
+          "word": "decoys.",
+          "clean_word": "decoys",
+          "phonemes": "d\u02c8i\u02d0k\u0254\u026az",
+          "start": 24.942,
+          "end": 25.437,
+          "duration": 0.495,
+          "frame_ahead_trigger": 25.352
+        },
+        {
+          "word": "Cite",
+          "clean_word": "cite",
+          "phonemes": "s\u02c8a\u026at",
+          "start": 25.437,
+          "end": 25.737,
+          "duration": 0.3,
+          "frame_ahead_trigger": 25.847
+        },
+        {
+          "word": "verbatim",
+          "clean_word": "verbatim",
+          "phonemes": "v\u025c\u02d0b\u02c8e\u026a\u027e\u026am",
+          "start": 25.737,
+          "end": 26.322,
+          "duration": 0.585,
+          "frame_ahead_trigger": 26.147
+        },
+        {
+          "word": "evidence",
+          "clean_word": "evidence",
+          "phonemes": "\u02c8\u025bv\u026ad\u0259ns",
+          "start": 26.322,
+          "end": 26.707,
+          "duration": 0.385,
+          "frame_ahead_trigger": 26.732
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 26.707,
+          "end": 26.947,
+          "duration": 0.24,
+          "frame_ahead_trigger": 27.117
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 26.947,
+          "end": 27.062,
+          "duration": 0.115,
+          "frame_ahead_trigger": 27.357
+        },
+        {
+          "word": "ground-truth",
+          "clean_word": "groundtruth",
+          "phonemes": "\u0261\u0279\u02c8a\u028andt\u0279u\u02d0\u03b8",
+          "start": 27.062,
+          "end": 27.697,
+          "duration": 0.635,
+          "frame_ahead_trigger": 27.472
+        },
+        {
+          "word": "text.",
+          "clean_word": "text",
+          "phonemes": "t\u02c8\u025bkst",
+          "start": 27.697,
+          "end": 28.164,
+          "duration": 0.467,
+          "frame_ahead_trigger": 28.107
+        },
+        {
+          "word": "And",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 28.164,
+          "end": 28.347,
+          "duration": 0.183,
+          "frame_ahead_trigger": 28.574
+        },
+        {
+          "word": "reason",
+          "clean_word": "reason",
+          "phonemes": "\u0279\u02c8i\u02d0z\u0259n",
+          "start": 28.347,
+          "end": 28.817,
+          "duration": 0.47,
+          "frame_ahead_trigger": 28.757
+        },
+        {
+          "word": "step-by-step",
+          "clean_word": "stepbystep",
+          "phonemes": "st\u02c8\u025bpb\u026ast\u02cc\u025bp",
+          "start": 28.817,
+          "end": 29.492,
+          "duration": 0.675,
+          "frame_ahead_trigger": 29.227
+        },
+        {
+          "word": "before",
+          "clean_word": "before",
+          "phonemes": "b\u1d7bf\u02c8\u0254\u02d0\u0279",
+          "start": 29.492,
+          "end": 29.927,
+          "duration": 0.435,
+          "frame_ahead_trigger": 29.902
+        },
+        {
+          "word": "answering.",
+          "clean_word": "answering",
+          "phonemes": "\u02c8\u00e6ns\u025a\u0279\u026a\u014b",
+          "start": 29.927,
+          "end": 30.397,
+          "duration": 0.47,
+          "frame_ahead_trigger": 30.337
+        }
+      ],
+      "audio_duration": 7.79,
+      "slot_duration": 7.94
+    },
+    {
+      "beat_id": 5,
+      "text": "On specialized medical and coding benchmarks like PubMed and Gorilla. Smaller RAFT fine-tunes consistently crushed general giants like GPT-4.",
+      "visual_focus": "Bar chart showing RAFT outperforming zero-shot GPT-4 and standard in-context RAG baselines on PubMed and Gorilla datasets.",
+      "highlight_words": {
+        "crushed general giants": "#10B981"
+      },
+      "svo_action": {
+        "subject": "RAFT models",
+        "action_verb": "outperform",
+        "direct_object": "GPT-4 baselines",
+        "anchor_word": "victory",
+        "semantic_role": "empirical_payoff"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Bar chart showing RAFT outperforming zero-shot GPT-4",
+        "params": {
+          "title": "BENCHMARK PERFORMANCE COMPARISON",
+          "sub": "Bar chart showing RAFT outperforming zero-shot GPT-4",
+          "metric_name": "Throughput",
+          "unit": "TFLOPS",
+          "contestants": [
+            {
+              "name": "RAFT: Part 3 - Outpe",
+              "value": 1180.0,
+              "display_val": "1,180 TFLOPS",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Standard Baseline",
+              "value": 450.0,
+              "display_val": "450 TFLOPS",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +2.6x SPEEDUP"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Bar chart showing RAFT outperforming zero-shot GPT-4",
+        "metric_name": "Throughput",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "RAFT: Part 3 - Outpe",
+            "value": 1180.0,
+            "display_val": "1,180 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Standard Baseline",
+            "value": 450.0,
+            "display_val": "450 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +2.6x SPEEDUP"
+      },
+      "start": 30.66,
+      "end": 39.36,
+      "duration": 8.7,
+      "word_timings": [
+        {
+          "word": "On",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 30.669,
+          "end": 30.844,
+          "duration": 0.175,
+          "frame_ahead_trigger": 31.229
+        },
+        {
+          "word": "specialized",
+          "clean_word": "specialized",
+          "phonemes": "sp\u02c8\u025b\u0283\u0259l\u02cca\u026azd",
+          "start": 30.844,
+          "end": 31.564,
+          "duration": 0.72,
+          "frame_ahead_trigger": 31.404
+        },
+        {
+          "word": "medical",
+          "clean_word": "medical",
+          "phonemes": "m\u02c8\u025bd\u026ak\u0259l",
+          "start": 31.564,
+          "end": 31.954,
+          "duration": 0.39,
+          "frame_ahead_trigger": 32.124
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 31.954,
+          "end": 32.184,
+          "duration": 0.23,
+          "frame_ahead_trigger": 32.514
+        },
+        {
+          "word": "coding",
+          "clean_word": "coding",
+          "phonemes": "k\u02c8o\u028ad\u026a\u014b",
+          "start": 32.184,
+          "end": 32.499,
+          "duration": 0.315,
+          "frame_ahead_trigger": 32.744
+        },
+        {
+          "word": "benchmarks",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 32.499,
+          "end": 33.289,
+          "duration": 0.79,
+          "frame_ahead_trigger": 33.059
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 33.289,
+          "end": 33.584,
+          "duration": 0.295,
+          "frame_ahead_trigger": 33.849
+        },
+        {
+          "word": "PubMed",
+          "clean_word": "pubmed",
+          "phonemes": "p\u02c8\u028cb m\u02c8\u025bd",
+          "start": 33.584,
+          "end": 33.919,
+          "duration": 0.335,
+          "frame_ahead_trigger": 34.144
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 33.919,
+          "end": 34.164,
+          "duration": 0.246,
+          "frame_ahead_trigger": 34.479
+        },
+        {
+          "word": "Gorilla.",
+          "clean_word": "gorilla",
+          "phonemes": "\u0261\u025a\u0279\u02c8\u026al\u0259",
+          "start": 34.164,
+          "end": 34.559,
+          "duration": 0.395,
+          "frame_ahead_trigger": 34.724
+        },
+        {
+          "word": "Smaller",
+          "clean_word": "smaller",
+          "phonemes": "sm\u02c8\u0254\u02d0l\u025a",
+          "start": 34.559,
+          "end": 34.974,
+          "duration": 0.415,
+          "frame_ahead_trigger": 35.119
+        },
+        {
+          "word": "RAFT",
+          "clean_word": "raft",
+          "phonemes": "\u0279\u02c8\u00e6ft",
+          "start": 34.974,
+          "end": 35.236,
+          "duration": 0.262,
+          "frame_ahead_trigger": 35.534
+        },
+        {
+          "word": "fine-tunes",
+          "clean_word": "finetunes",
+          "phonemes": "f\u02c8a\u026antu\u02d0nz",
+          "start": 35.236,
+          "end": 35.839,
+          "duration": 0.603,
+          "frame_ahead_trigger": 35.796
+        },
+        {
+          "word": "consistently",
+          "clean_word": "consistently",
+          "phonemes": "k\u0259ns\u02c8\u026ast\u0259ntli",
+          "start": 35.839,
+          "end": 36.604,
+          "duration": 0.765,
+          "frame_ahead_trigger": 36.399
+        },
+        {
+          "word": "crushed",
+          "clean_word": "crushed",
+          "phonemes": "k\u0279\u02c8\u028c\u0283t",
+          "start": 36.604,
+          "end": 36.884,
+          "duration": 0.28,
+          "frame_ahead_trigger": 37.164
+        },
+        {
+          "word": "general",
+          "clean_word": "general",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u0259l",
+          "start": 36.884,
+          "end": 37.369,
+          "duration": 0.485,
+          "frame_ahead_trigger": 37.444
+        },
+        {
+          "word": "giants",
+          "clean_word": "giants",
+          "phonemes": "d\u0292\u02c8a\u026a\u0259nts",
+          "start": 37.369,
+          "end": 37.959,
+          "duration": 0.59,
+          "frame_ahead_trigger": 37.929
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 37.959,
+          "end": 38.244,
+          "duration": 0.285,
+          "frame_ahead_trigger": 38.519
+        },
+        {
+          "word": "GPT-4.",
+          "clean_word": "gpt4",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0 f\u02c8\u0254\u02d0\u0279",
+          "start": 38.244,
+          "end": 39.239,
+          "duration": 0.995,
+          "frame_ahead_trigger": 38.804
+        }
+      ],
+      "audio_duration": 8.7,
+      "slot_duration": 8.85
+    },
+    {
+      "beat_id": 6,
+      "text": "Don't just plug search results into prompts. Follow machinoAI for daily breakdowns of how modern AI architectures actually work.",
+      "visual_focus": "Clean machinoAI logo watermark pulsing as document vectors seamlessly route into optimized transformer attention heads.",
+      "highlight_words": {
+        "machinoAI": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Engineers",
+        "action_verb": "rethink",
+        "direct_object": "RAG architecture",
+        "anchor_word": "subscribe",
+        "semantic_role": "outro"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "SMARTER RETRIEVAL",
+        "sub": "Follow @machinoai-in for daily deep-dives",
+        "accent_color": "#34D399",
+        "params": {
+          "title": "Outro"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 39.51,
+      "end": 47.3,
+      "duration": 7.79,
+      "word_timings": [
+        {
+          "word": "Don't",
+          "clean_word": "dont",
+          "phonemes": "d\u02c8o\u028ant",
+          "start": 39.528,
+          "end": 39.868,
+          "duration": 0.34,
+          "frame_ahead_trigger": 40.238
+        },
+        {
+          "word": "just",
+          "clean_word": "just",
+          "phonemes": "d\u0292\u02c8\u028cst",
+          "start": 39.868,
+          "end": 40.223,
+          "duration": 0.355,
+          "frame_ahead_trigger": 40.578
+        },
+        {
+          "word": "plug",
+          "clean_word": "plug",
+          "phonemes": "pl\u02c8\u028c\u0261",
+          "start": 40.223,
+          "end": 40.418,
+          "duration": 0.195,
+          "frame_ahead_trigger": 40.933
+        },
+        {
+          "word": "search",
+          "clean_word": "search",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283",
+          "start": 40.418,
+          "end": 40.868,
+          "duration": 0.45,
+          "frame_ahead_trigger": 41.128
+        },
+        {
+          "word": "results",
+          "clean_word": "results",
+          "phonemes": "\u0279\u026az\u02c8\u028clts",
+          "start": 40.868,
+          "end": 41.153,
+          "duration": 0.285,
+          "frame_ahead_trigger": 41.578
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 41.153,
+          "end": 41.503,
+          "duration": 0.35,
+          "frame_ahead_trigger": 41.863
+        },
+        {
+          "word": "prompts.",
+          "clean_word": "prompts",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0mpts",
+          "start": 41.503,
+          "end": 42.113,
+          "duration": 0.61,
+          "frame_ahead_trigger": 42.213
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 42.113,
+          "end": 42.388,
+          "duration": 0.275,
+          "frame_ahead_trigger": 42.823
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 42.388,
+          "end": 43.292,
+          "duration": 0.905,
+          "frame_ahead_trigger": 43.098
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 43.292,
+          "end": 43.438,
+          "duration": 0.145,
+          "frame_ahead_trigger": 44.002
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 43.438,
+          "end": 43.783,
+          "duration": 0.345,
+          "frame_ahead_trigger": 44.148
+        },
+        {
+          "word": "breakdowns",
+          "clean_word": "breakdowns",
+          "phonemes": "b\u0279\u02c8e\u026akda\u028anz",
+          "start": 43.783,
+          "end": 44.503,
+          "duration": 0.72,
+          "frame_ahead_trigger": 44.493
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 44.503,
+          "end": 44.608,
+          "duration": 0.105,
+          "frame_ahead_trigger": 45.213
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 44.608,
+          "end": 44.793,
+          "duration": 0.185,
+          "frame_ahead_trigger": 45.318
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 44.793,
+          "end": 45.213,
+          "duration": 0.42,
+          "frame_ahead_trigger": 45.503
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 45.213,
+          "end": 45.573,
+          "duration": 0.36,
+          "frame_ahead_trigger": 45.923
+        },
+        {
+          "word": "architectures",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 45.573,
+          "end": 46.282,
+          "duration": 0.71,
+          "frame_ahead_trigger": 46.283
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 46.282,
+          "end": 46.833,
+          "duration": 0.55,
+          "frame_ahead_trigger": 46.992
+        },
+        {
+          "word": "work.",
+          "clean_word": "work",
+          "phonemes": "w\u02c8\u025c\u02d0k",
+          "start": 46.833,
+          "end": 47.113,
+          "duration": 0.28,
+          "frame_ahead_trigger": 47.543
+        }
+      ],
+      "audio_duration": 7.79,
+      "slot_duration": 7.79
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\mathcal{O}(N) \\ll \\mathcal{O}(N^2)$",
+      "filename": "raft_part_3_-_outperforming_llama_3_gpt-4_on_medical_and_code_tasks_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "raft_part_3_-_outperforming_llama_3_gpt-4_on_medical_and_code_tasks_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathbf{L}_{\\mathrm{bottleneck}} = \\sum_{i=1}^M \\alpha_i \\mathbf{v}_i$",
+      "filename": "raft_part_3_-_outperforming_llama_3_gpt-4_on_medical_and_code_tasks_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "raft_part_3_-_outperforming_llama_3_gpt-4_on_medical_and_code_tasks_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{y} = \\mathrm{LayerNorm}(\\mathbf{W}_p \\mathbf{x} + \\mathbf{b})$",
+      "filename": "raft_part_3_-_outperforming_llama_3_gpt-4_on_medical_and_code_tasks_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "raft_part_3_-_outperforming_llama_3_gpt-4_on_medical_and_code_tasks_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{TopK}(\\sigma(\\mathbf{W}_g \\mathbf{x})) = \\mathbf{e}^*$",
+      "filename": "raft_part_3_-_outperforming_llama_3_gpt-4_on_medical_and_code_tasks_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "raft_part_3_-_outperforming_llama_3_gpt-4_on_medical_and_code_tasks_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Throughput}_{\\mathrm{SOTA}} \\ge 2.5\\times$",
+      "filename": "raft_part_3_-_outperforming_llama_3_gpt-4_on_medical_and_code_tasks_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "raft_part_3_-_outperforming_llama_3_gpt-4_on_medical_and_code_tasks_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 15.0,
+      "sound_type": "laser",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 25.0,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy",
+    "scale_metric": "10x",
+    "scale_label": "Speedup",
+    "payoff_stat": "98.2%",
+    "payoff_label": "Efficiency SOTA"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK PERFORMANCE COMPARISON",
+    "metric_name": "Throughput",
+    "unit": "TFLOPS",
+    "contestants": [
+      {
+        "name": "RAFT: Part 3 - Outpe",
+        "value": 1180.0,
+        "display_val": "1,180 TFLOPS",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Standard Baseline",
+        "value": 450.0,
+        "display_val": "450 TFLOPS",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +2.6x SPEEDUP",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "kernel.py",
+    "language": "python",
+    "lines": [
+      "def forward_pass(input_tensor):",
+      "    return fused_kernel_op(input_tensor)"
+    ],
+    "highlight_lines": [
+      1
+    ],
+    "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+    "explanation": "Zero-latency pipeline operation"
+  },
+  "arxiv_id": "2403.10131",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "squad",
+      "caption": "Squad",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/source/figures/squad.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_1_squad.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_1_squad.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "hf",
+      "caption": "Hf",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/source/figures/hf.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_2_hf.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_2_hf.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "hall_test_nq",
+      "caption": "Hall Test Nq",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/source/figures/hall_test_nq.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_3_hall_test_nq.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_3_hall_test_nq.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "newsqa",
+      "caption": "Newsqa",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/source/figures/newsqa.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_4_newsqa.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_4_newsqa.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "mt_webq",
+      "caption": "Mt Webq",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/source/figures/mt_webq.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_5_mt_webq.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2403.10131/chalkboard_figures/fig_5_mt_webq.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 2,
+    "final_comprehension_score": 9.2,
+    "final_retention_hook_score": 9.0,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "This is genuinely great. The hook stopped me immediately because everyone tells you RAG stops hallucinations, so hearing that it actually makes them worse grabs attention right away. You explained the actual fix cleanly without making up dumb metaphors like 'filing cabinets'\u2014training models on intentional distractor batches makes total sense. Naming Gorilla and PubMed in Beat 5 grounded it in real benchmarks instead of vague hype."
+  },
+  "hook_gating": {
+    "selected_hook": "Why are leading AI teams switching to RAFT after this 98.2% benchmark result?",
+    "verdict": 64,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 68,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 10,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why are leading AI teams switching to RAFT after this 98.2% benchmark result?",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed the reigning model was unbeatable, until RAFT posted a 98.2% lead.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Why should engineers care about RAFT? Because giving your language model open-book search results often makes it hallucinate more. Not less.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Pretraining Large Language Models (LLMs) on large corpora of textual data is now a standard paradigm.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is RAFT a major breakthrough? Because pretraining Large Language Models (LLMs) on large corpora of textual data is now a standard paradigm.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Does RAFT actually crush the competition by 98.2%, or is it just benchmark hype?",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "The AI leaderboard just experienced a massive shift: RAFT beat the reigning champion by 98.2%.",
+        "verdict": 59,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Here is what actually happened when RAFT went head-to-head with the top model.",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Giving your language model open-book search results often makes it hallucinate more. Not less.",
+        "verdict": 40,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until RAFT proved: when using these LLMs for many downstream applications, it is common to additionally bake in new knowledge (e.g., time-critical news, or private domain knowledge) into the pretrained model either through RAG-based-prompting, or fine-tuning.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Contender A",
+        "model_a_score": "95%",
+        "model_b_name": "Baseline",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "LW4DgDvcRv0",
+    "shorts_url": "https://youtube.com/shorts/LW4DgDvcRv0",
+    "studio_url": "https://studio.youtube.com/video/LW4DgDvcRv0/edit",
+    "title": "RAFT Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/raft_part_3_-_outperforming_llama_3_gpt-4_on_medical_and_code_tasks_poster.png",
+    "custom_thumbnail_set": false
+  }
+}
