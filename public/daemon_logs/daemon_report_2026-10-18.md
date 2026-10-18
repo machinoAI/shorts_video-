@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-18 | **Timestamp:** 2026-10-18 13:55:09 UTC
+**Date:** 2026-10-18 | **Timestamp:** 2026-10-18 14:10:54 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: FLARE: Part 3 - Long-Form Knowledge Synthesis Benchmarks
-- **Topic Queue Part:** `flare_part_3_longform_benchmarks` (arXiv: [2305.06983](https://arxiv.org/abs/2305.06983))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/A5XJp0vXDKw](https://youtube.com/shorts/A5XJp0vXDKw) (`A5XJp0vXDKw`)
-- **High-CTR Poster:** [flare_active_retrieval_gen_poster.png](public/thumbnails/flare_active_retrieval_gen_poster.png)
+### Reel 1: RAFT: Part 1 - Studying for the Exam vs Answering Open-Book
+- **Topic Queue Part:** `raft_part_1_studying_vs_open_book` (arXiv: [2403.10131](https://arxiv.org/abs/2403.10131))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/dv_rbFaWxlo](https://youtube.com/shorts/dv_rbFaWxlo) (`dv_rbFaWxlo`)
+- **High-CTR Poster:** [raft_rag_architecture_poster.png](public/thumbnails/raft_rag_architecture_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `benchmark_news`
-- **Editorial Hook:** *FLARE Mini-Series 3/3: FLARE: Part 3 - Long-Form Knowledge Synthesis Benchmarks*
-- **Everyday Analogy:** *Substantial accuracy gains on 2WikiMultihopQA and long-form Wikipedia generation over conventional RAG.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_flare_active_retrieval_gen_benchmark_news.mp4`
+- **Category:** `architecture_breakdown`
+- **Editorial Hook:** *RAFT Mini-Series 1/3: RAFT: Part 1 - Studying for the Exam vs Answering Open-Book*
+- **Everyday Analogy:** *Why standard general LLMs struggle with specialized RAG: training models to ignore distractor noise in domain datasets.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_raft_rag_architecture_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
