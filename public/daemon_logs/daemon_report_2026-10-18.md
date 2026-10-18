@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-18 | **Timestamp:** 2026-10-18 13:16:03 UTC
+**Date:** 2026-10-18 | **Timestamp:** 2026-10-18 13:29:05 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: FLARE: Part 1 - Passive RAG vs Active Forward-Looking Retrieval
-- **Topic Queue Part:** `flare_part_1_active_retrieval_paradigm` (arXiv: [2305.06983](https://arxiv.org/abs/2305.06983))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/i15exM0SJHo](https://youtube.com/shorts/i15exM0SJHo) (`i15exM0SJHo`)
-- **High-CTR Poster:** [flare_active_retrieval_poster.png](public/thumbnails/flare_active_retrieval_poster.png)
+### Reel 1: FLARE: Part 2 - Anticipating Next Sentences to Fetch Evidence
+- **Topic Queue Part:** `flare_part_2_anticipating_sentences` (arXiv: [2305.06983](https://arxiv.org/abs/2305.06983))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/5GBsEc0wSpc](https://youtube.com/shorts/5GBsEc0wSpc) (`5GBsEc0wSpc`)
+- **High-CTR Poster:** [flare_forward_looking_poster.png](public/thumbnails/flare_forward_looking_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `architecture_breakdown`
-- **Editorial Hook:** *FLARE Mini-Series 1/3: FLARE: Part 1 - Passive RAG vs Active Forward-Looking Retrieval*
-- **Everyday Analogy:** *Why retrieve before generating when you can retrieve only when the model gets stuck during generation?*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_flare_active_retrieval_architecture_breakdown.mp4`
+- **Category:** `mechanism_deepdive`
+- **Editorial Hook:** *FLARE Mini-Series 2/3: FLARE: Part 2 - Anticipating Next Sentences to Fetch Evidence*
+- **Everyday Analogy:** *Forward-looking search: generating draft sentences, measuring token confidence, and querying only when uncertainty strikes.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_flare_forward_looking_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
