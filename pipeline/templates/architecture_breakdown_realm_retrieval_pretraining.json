@@ -1,0 +1,1705 @@
+{
+  "id": "realm_retrieval_pretraining",
+  "title": "REALM: Learning to Retrieve Before You Pre-Train",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "ARCHITECTURE BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Forcing models to cram all world knowledge into raw network weights is an absolute computational nightmare.",
+      "visual_focus": "A massive neural network mesh expanding uncontrollably as text facts overload each individual floating-point weight.",
+      "highlight_words": {
+        "computational nightmare": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Dense weights",
+        "action_verb": "choke on",
+        "direct_object": "encyclopedic facts",
+        "anchor_word": "nightmare",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "layer_stack",
+        "title": "PARAMETRIC OVERLOAD",
+        "sub": "Dense networks forced to memorize factual corpora",
+        "accent_color": "#EF4444",
+        "params": {
+          "bottom_layer": "Parameter Capacity",
+          "mid_layer": "Implicit Knowledge",
+          "top_layer": "Data Saturation"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 52,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "layer_stack",
+        "title": "PARAMETRIC OVERLOAD",
+        "sub": "Dense networks forced to memorize factual corpora",
+        "accent_color": "#EF4444",
+        "bottom_layer": "Parameter Capacity",
+        "mid_layer": "Implicit Knowledge",
+        "top_layer": "Data Saturation"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.1,
+      "duration": 6.1,
+      "word_timings": [
+        {
+          "word": "Forcing",
+          "clean_word": "forcing",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u026a\u014b",
+          "start": 0.0,
+          "end": 0.455,
+          "duration": 0.455,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 0.455,
+          "end": 0.855,
+          "duration": 0.4,
+          "frame_ahead_trigger": 0.415
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 0.855,
+          "end": 1.083,
+          "duration": 0.228,
+          "frame_ahead_trigger": 0.815
+        },
+        {
+          "word": "cram",
+          "clean_word": "cram",
+          "phonemes": "k\u0279\u02c8\u00e6m",
+          "start": 1.083,
+          "end": 1.368,
+          "duration": 0.285,
+          "frame_ahead_trigger": 1.043
+        },
+        {
+          "word": "all",
+          "clean_word": "all",
+          "phonemes": "\u02c8\u0254\u02d0l",
+          "start": 1.368,
+          "end": 1.59,
+          "duration": 0.222,
+          "frame_ahead_trigger": 1.328
+        },
+        {
+          "word": "world",
+          "clean_word": "world",
+          "phonemes": "w\u02c8\u025c\u02d0ld",
+          "start": 1.59,
+          "end": 1.938,
+          "duration": 0.348,
+          "frame_ahead_trigger": 1.55
+        },
+        {
+          "word": "knowledge",
+          "clean_word": "knowledge",
+          "phonemes": "n\u02c8\u0251\u02d0l\u026ad\u0292",
+          "start": 1.938,
+          "end": 2.395,
+          "duration": 0.457,
+          "frame_ahead_trigger": 1.898
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 2.395,
+          "end": 2.765,
+          "duration": 0.37,
+          "frame_ahead_trigger": 2.355
+        },
+        {
+          "word": "raw",
+          "clean_word": "raw",
+          "phonemes": "\u0279\u02c8\u0254\u02d0",
+          "start": 2.765,
+          "end": 2.945,
+          "duration": 0.18,
+          "frame_ahead_trigger": 2.725
+        },
+        {
+          "word": "network",
+          "clean_word": "network",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0k",
+          "start": 2.945,
+          "end": 3.42,
+          "duration": 0.475,
+          "frame_ahead_trigger": 2.905
+        },
+        {
+          "word": "weights",
+          "clean_word": "weights",
+          "phonemes": "w\u02c8e\u026ats",
+          "start": 3.42,
+          "end": 3.705,
+          "duration": 0.285,
+          "frame_ahead_trigger": 3.38
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 3.705,
+          "end": 3.855,
+          "duration": 0.15,
+          "frame_ahead_trigger": 3.665
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 3.855,
+          "end": 3.945,
+          "duration": 0.09,
+          "frame_ahead_trigger": 3.815
+        },
+        {
+          "word": "absolute",
+          "clean_word": "absolute",
+          "phonemes": "\u02c8\u00e6bs\u0259l\u02ccu\u02d0t",
+          "start": 3.945,
+          "end": 4.46,
+          "duration": 0.515,
+          "frame_ahead_trigger": 3.905
+        },
+        {
+          "word": "computational",
+          "clean_word": "computational",
+          "phonemes": "k\u02cc\u0251\u02d0mpju\u02d0t\u02c8e\u026a\u0283\u0259n\u0259l",
+          "start": 4.46,
+          "end": 5.5,
+          "duration": 1.04,
+          "frame_ahead_trigger": 4.42
+        },
+        {
+          "word": "nightmare.",
+          "clean_word": "nightmare",
+          "phonemes": "n\u02c8a\u026atm\u025b\u0279",
+          "start": 5.5,
+          "end": 5.985,
+          "duration": 0.485,
+          "frame_ahead_trigger": 5.46
+        }
+      ],
+      "audio_duration": 6.1,
+      "slot_duration": 6.25
+    },
+    {
+      "beat_id": 2,
+      "text": "Dense transformers act like students forced to memorize an entire library. Scaling model weights just to recall trivial facts burns massive GPU memory.",
+      "visual_focus": "A GPU core surrounded by gigabytes of static VRAM weights holding trivia strings, stalled while querying internal parameters.",
+      "highlight_words": {
+        "memorize an entire library": "#F59E0B",
+        "burns massive GPU memory": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Transformers",
+        "action_verb": "memorize",
+        "direct_object": "static facts",
+        "anchor_word": "burns",
+        "semantic_role": "bottleneck_reveal"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE MEMORY WALL",
+        "sub": "Implicit knowledge storage bloating network capacity",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Pre-trained Weights",
+          "stream_b_label": "Dynamic Knowledge",
+          "barrier_label": "Static Bottleneck",
+          "barrier_sub": "No live retrieval"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE MEMORY WALL",
+        "sub": "Implicit knowledge storage bloating network capacity",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Pre-trained Weights",
+        "stream_b_label": "Dynamic Knowledge",
+        "barrier_label": "Static Bottleneck",
+        "barrier_sub": "No live retrieval"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.25,
+      "end": 15.47,
+      "duration": 9.22,
+      "word_timings": [
+        {
+          "word": "Dense",
+          "clean_word": "dense",
+          "phonemes": "d\u02c8\u025bns",
+          "start": 6.266,
+          "end": 6.526,
+          "duration": 0.26,
+          "frame_ahead_trigger": 6.376
+        },
+        {
+          "word": "transformers",
+          "clean_word": "transformers",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279m\u025az",
+          "start": 6.526,
+          "end": 7.256,
+          "duration": 0.73,
+          "frame_ahead_trigger": 6.636
+        },
+        {
+          "word": "act",
+          "clean_word": "act",
+          "phonemes": "\u02c8\u00e6kt",
+          "start": 7.256,
+          "end": 7.436,
+          "duration": 0.18,
+          "frame_ahead_trigger": 7.366
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 7.436,
+          "end": 7.746,
+          "duration": 0.31,
+          "frame_ahead_trigger": 7.546
+        },
+        {
+          "word": "students",
+          "clean_word": "students",
+          "phonemes": "st\u02c8u\u02d0d\u0259nts",
+          "start": 7.746,
+          "end": 8.381,
+          "duration": 0.635,
+          "frame_ahead_trigger": 7.856
+        },
+        {
+          "word": "forced",
+          "clean_word": "forced",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279st",
+          "start": 8.381,
+          "end": 8.766,
+          "duration": 0.385,
+          "frame_ahead_trigger": 8.491
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 8.766,
+          "end": 9.016,
+          "duration": 0.25,
+          "frame_ahead_trigger": 8.876
+        },
+        {
+          "word": "memorize",
+          "clean_word": "memorize",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279\u02cca\u026az",
+          "start": 9.016,
+          "end": 9.576,
+          "duration": 0.56,
+          "frame_ahead_trigger": 9.126
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 9.576,
+          "end": 9.637,
+          "duration": 0.061,
+          "frame_ahead_trigger": 9.686
+        },
+        {
+          "word": "entire",
+          "clean_word": "entire",
+          "phonemes": "\u025bnt\u02c8a\u026a\u025a",
+          "start": 9.637,
+          "end": 9.941,
+          "duration": 0.304,
+          "frame_ahead_trigger": 9.747
+        },
+        {
+          "word": "library.",
+          "clean_word": "library",
+          "phonemes": "l\u02c8a\u026ab\u0279\u025b\u0279i",
+          "start": 9.941,
+          "end": 10.552,
+          "duration": 0.61,
+          "frame_ahead_trigger": 10.051
+        },
+        {
+          "word": "Scaling",
+          "clean_word": "scaling",
+          "phonemes": "sk\u02c8e\u026al\u026a\u014b",
+          "start": 10.552,
+          "end": 11.021,
+          "duration": 0.47,
+          "frame_ahead_trigger": 10.662
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 11.021,
+          "end": 11.376,
+          "duration": 0.355,
+          "frame_ahead_trigger": 11.131
+        },
+        {
+          "word": "weights",
+          "clean_word": "weights",
+          "phonemes": "w\u02c8e\u026ats",
+          "start": 11.376,
+          "end": 11.826,
+          "duration": 0.45,
+          "frame_ahead_trigger": 11.486
+        },
+        {
+          "word": "just",
+          "clean_word": "just",
+          "phonemes": "d\u0292\u02c8\u028cst",
+          "start": 11.826,
+          "end": 12.141,
+          "duration": 0.315,
+          "frame_ahead_trigger": 11.936
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 12.141,
+          "end": 12.246,
+          "duration": 0.105,
+          "frame_ahead_trigger": 12.251
+        },
+        {
+          "word": "recall",
+          "clean_word": "recall",
+          "phonemes": "\u0279\u02c8i\u02d0k\u0254\u02d0l",
+          "start": 12.246,
+          "end": 12.731,
+          "duration": 0.485,
+          "frame_ahead_trigger": 12.356
+        },
+        {
+          "word": "trivial",
+          "clean_word": "trivial",
+          "phonemes": "t\u0279\u02c8\u026av\u026a\u0259l",
+          "start": 12.731,
+          "end": 13.116,
+          "duration": 0.385,
+          "frame_ahead_trigger": 12.841
+        },
+        {
+          "word": "facts",
+          "clean_word": "facts",
+          "phonemes": "f\u02c8\u00e6kts",
+          "start": 13.116,
+          "end": 13.511,
+          "duration": 0.395,
+          "frame_ahead_trigger": 13.226
+        },
+        {
+          "word": "burns",
+          "clean_word": "burns",
+          "phonemes": "b\u02c8\u025c\u02d0nz",
+          "start": 13.511,
+          "end": 13.916,
+          "duration": 0.405,
+          "frame_ahead_trigger": 13.621
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 13.916,
+          "end": 14.186,
+          "duration": 0.27,
+          "frame_ahead_trigger": 14.026
+        },
+        {
+          "word": "GPU",
+          "clean_word": "gpu",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 14.186,
+          "end": 15.001,
+          "duration": 0.815,
+          "frame_ahead_trigger": 14.296
+        },
+        {
+          "word": "memory.",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 15.001,
+          "end": 15.351,
+          "duration": 0.35,
+          "frame_ahead_trigger": 15.111
+        }
+      ],
+      "audio_duration": 9.22,
+      "slot_duration": 9.37
+    },
+    {
+      "beat_id": 3,
+      "text": "Enter REALM. Instead of brute-force memorization. It gives the transformer an external knowledge retriever before it ever begins pre-training.",
+      "visual_focus": "The transformer core detaching from static memory and linking via high-speed vector rays to an external Wikipedia document bank.",
+      "highlight_words": {
+        "REALM": "#10B981",
+        "external knowledge retriever": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "REALM",
+        "action_verb": "couples",
+        "direct_object": "document retriever",
+        "anchor_word": "retriever",
+        "semantic_role": "pivot_introduction"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: REALM: LEARNING TO",
+        "sub": "The transformer core detaching from static memory and linking via",
+        "params": {
+          "title": "KERNEL CODE: REALM: LEARNING TO",
+          "sub": "The transformer core detaching from static memory and linking via",
+          "filename": "realm_retrieval.py",
+          "language": "python",
+          "lines": [
+            "def get_retrieved_context(query):",
+            "# Backprop through retrieval",
+            "z = index.search(query)",
+            "return model.forward(query, z)"
+          ],
+          "highlight_lines": [
+            3,
+            4
+          ],
+          "trace_register": "\u26a1 DIFFERENTIABLE SEARCH KERNEL",
+          "delta_badge": "Retrieval step learned via gradient descent"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: REALM: LEARNING TO",
+        "sub": "The transformer core detaching from static memory and linking via",
+        "filename": "realm_retrieval.py",
+        "language": "python",
+        "lines": [
+          "def get_retrieved_context(query):",
+          "# Backprop through retrieval",
+          "z = index.search(query)",
+          "return model.forward(query, z)"
+        ],
+        "highlight_lines": [
+          3,
+          4
+        ],
+        "trace_register": "\u26a1 DIFFERENTIABLE SEARCH KERNEL",
+        "delta_badge": "Retrieval step learned via gradient descent"
+      },
+      "start": 15.62,
+      "end": 23.19,
+      "duration": 7.57,
+      "word_timings": [
+        {
+          "word": "Enter",
+          "clean_word": "enter",
+          "phonemes": "\u02c8\u025bnt\u025a",
+          "start": 15.627,
+          "end": 15.892,
+          "duration": 0.265,
+          "frame_ahead_trigger": 15.887
+        },
+        {
+          "word": "REALM.",
+          "clean_word": "realm",
+          "phonemes": "\u0279\u02c8\u025blm",
+          "start": 15.892,
+          "end": 16.212,
+          "duration": 0.319,
+          "frame_ahead_trigger": 16.152
+        },
+        {
+          "word": "Instead",
+          "clean_word": "instead",
+          "phonemes": "\u026anst\u02c8\u025bd",
+          "start": 16.212,
+          "end": 16.682,
+          "duration": 0.471,
+          "frame_ahead_trigger": 16.472
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 16.682,
+          "end": 16.757,
+          "duration": 0.075,
+          "frame_ahead_trigger": 16.942
+        },
+        {
+          "word": "brute-force",
+          "clean_word": "bruteforce",
+          "phonemes": "b\u0279\u02c8u\u02d0\u027e\u026af\u02cc\u0254\u02d0\u0279s",
+          "start": 16.757,
+          "end": 17.522,
+          "duration": 0.765,
+          "frame_ahead_trigger": 17.017
+        },
+        {
+          "word": "memorization.",
+          "clean_word": "memorization",
+          "phonemes": "m\u02cc\u025bm\u025a\u0279\u1d7bz\u02c8e\u026a\u0283\u0259n",
+          "start": 17.522,
+          "end": 18.315,
+          "duration": 0.793,
+          "frame_ahead_trigger": 17.782
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 18.315,
+          "end": 18.432,
+          "duration": 0.117,
+          "frame_ahead_trigger": 18.575
+        },
+        {
+          "word": "gives",
+          "clean_word": "gives",
+          "phonemes": "\u0261\u02c8\u026avz",
+          "start": 18.432,
+          "end": 18.817,
+          "duration": 0.386,
+          "frame_ahead_trigger": 18.692
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 18.817,
+          "end": 18.841,
+          "duration": 0.023,
+          "frame_ahead_trigger": 19.077
+        },
+        {
+          "word": "transformer",
+          "clean_word": "transformer",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279m\u025a",
+          "start": 18.841,
+          "end": 19.537,
+          "duration": 0.697,
+          "frame_ahead_trigger": 19.101
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 19.537,
+          "end": 19.707,
+          "duration": 0.17,
+          "frame_ahead_trigger": 19.797
+        },
+        {
+          "word": "external",
+          "clean_word": "external",
+          "phonemes": "\u025bkst\u02c8\u025c\u02d0n\u0259l",
+          "start": 19.707,
+          "end": 20.167,
+          "duration": 0.46,
+          "frame_ahead_trigger": 19.967
+        },
+        {
+          "word": "knowledge",
+          "clean_word": "knowledge",
+          "phonemes": "n\u02c8\u0251\u02d0l\u026ad\u0292",
+          "start": 20.167,
+          "end": 20.692,
+          "duration": 0.525,
+          "frame_ahead_trigger": 20.427
+        },
+        {
+          "word": "retriever",
+          "clean_word": "retriever",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u025a",
+          "start": 20.692,
+          "end": 21.227,
+          "duration": 0.535,
+          "frame_ahead_trigger": 20.952
+        },
+        {
+          "word": "before",
+          "clean_word": "before",
+          "phonemes": "b\u1d7bf\u02c8\u0254\u02d0\u0279",
+          "start": 21.227,
+          "end": 21.747,
+          "duration": 0.52,
+          "frame_ahead_trigger": 21.487
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 21.747,
+          "end": 21.762,
+          "duration": 0.015,
+          "frame_ahead_trigger": 22.007
+        },
+        {
+          "word": "ever",
+          "clean_word": "ever",
+          "phonemes": "\u02c8\u025bv\u025a",
+          "start": 21.762,
+          "end": 22.022,
+          "duration": 0.26,
+          "frame_ahead_trigger": 22.022
+        },
+        {
+          "word": "begins",
+          "clean_word": "begins",
+          "phonemes": "b\u026a\u0261\u02c8\u026anz",
+          "start": 22.022,
+          "end": 22.427,
+          "duration": 0.405,
+          "frame_ahead_trigger": 22.282
+        },
+        {
+          "word": "pre-training.",
+          "clean_word": "pretraining",
+          "phonemes": "p\u0279\u026at\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 22.427,
+          "end": 23.047,
+          "duration": 0.62,
+          "frame_ahead_trigger": 22.687
+        }
+      ],
+      "audio_duration": 7.57,
+      "slot_duration": 7.72
+    },
+    {
+      "beat_id": 4,
+      "text": "It routes queries through an indexed Wikipedia corpus. Backpropagating masked language modeling loss straight through the document retrieval step.",
+      "visual_focus": "Chalkboard schematic showing gradient arrows traveling backwards from masked text tokens straight through document search probabilities into the retriever.",
+      "highlight_words": {
+        "backpropagating": "#38BDF8",
+        "masked language modeling loss": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Gradients",
+        "action_verb": "backpropagate through",
+        "direct_object": "retrieval index",
+        "anchor_word": "loss",
+        "semantic_role": "mechanism_operation"
+      },
+      "visual_blueprint": {
+        "layout": "catalog_routing",
+        "title": "CENTRAL INDEX DISPATCH: GRADIENTS",
+        "sub": "Chalkboard schematic showing gradient arrows traveling backwards ",
+        "accent_color": "#38BDF8",
+        "index_label": "REALM: LEARNING TO INDEX DESK",
+        "drawer_a_label": "EXPERT 1: Gradients",
+        "drawer_b_label": "EXPERT 2: retrieval in",
+        "drawer_c_label": "EXPERT 3: REASONING"
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "catalog_routing",
+        "title": "CENTRAL INDEX DISPATCH: GRADIENTS",
+        "sub": "Chalkboard schematic showing gradient arrows traveling backwards ",
+        "accent_color": "#38BDF8",
+        "index_label": "REALM: LEARNING TO INDEX DESK",
+        "drawer_a_label": "EXPERT 1: Gradients",
+        "drawer_b_label": "EXPERT 2: retrieval in",
+        "drawer_c_label": "EXPERT 3: REASONING"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 23.34,
+      "end": 31.0,
+      "duration": 7.66,
+      "word_timings": [
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 23.346,
+          "end": 23.426,
+          "duration": 0.08,
+          "frame_ahead_trigger": 23.756
+        },
+        {
+          "word": "routes",
+          "clean_word": "routes",
+          "phonemes": "\u0279\u02c8a\u028ats",
+          "start": 23.426,
+          "end": 23.816,
+          "duration": 0.39,
+          "frame_ahead_trigger": 23.836
+        },
+        {
+          "word": "queries",
+          "clean_word": "queries",
+          "phonemes": "kw\u02c8i\u0259\u0279\u026az",
+          "start": 23.816,
+          "end": 24.276,
+          "duration": 0.46,
+          "frame_ahead_trigger": 24.226
+        },
+        {
+          "word": "through",
+          "clean_word": "through",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0",
+          "start": 24.276,
+          "end": 24.591,
+          "duration": 0.315,
+          "frame_ahead_trigger": 24.686
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 24.591,
+          "end": 24.613,
+          "duration": 0.023,
+          "frame_ahead_trigger": 25.001
+        },
+        {
+          "word": "indexed",
+          "clean_word": "indexed",
+          "phonemes": "\u02c8\u026and\u025bkst",
+          "start": 24.613,
+          "end": 25.026,
+          "duration": 0.412,
+          "frame_ahead_trigger": 25.023
+        },
+        {
+          "word": "Wikipedia",
+          "clean_word": "wikipedia",
+          "phonemes": "w\u02cc\u026akip\u02c8i\u02d0di\u0259",
+          "start": 25.026,
+          "end": 25.656,
+          "duration": 0.63,
+          "frame_ahead_trigger": 25.436
+        },
+        {
+          "word": "corpus.",
+          "clean_word": "corpus",
+          "phonemes": "k\u02c8\u0254\u02d0\u0279p\u0259s",
+          "start": 25.656,
+          "end": 26.156,
+          "duration": 0.501,
+          "frame_ahead_trigger": 26.066
+        },
+        {
+          "word": "Backpropagating",
+          "clean_word": "backpropagating",
+          "phonemes": "b\u02c8\u00e6kp\u0279\u0259p\u02cc\u00e6\u0261e\u026a\u027e\u026a\u014b",
+          "start": 26.156,
+          "end": 27.011,
+          "duration": 0.854,
+          "frame_ahead_trigger": 26.566
+        },
+        {
+          "word": "masked",
+          "clean_word": "masked",
+          "phonemes": "m\u02c8\u00e6skt",
+          "start": 27.011,
+          "end": 27.376,
+          "duration": 0.365,
+          "frame_ahead_trigger": 27.421
+        },
+        {
+          "word": "language",
+          "clean_word": "language",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292",
+          "start": 27.376,
+          "end": 27.776,
+          "duration": 0.4,
+          "frame_ahead_trigger": 27.786
+        },
+        {
+          "word": "modeling",
+          "clean_word": "modeling",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l\u026a\u014b",
+          "start": 27.776,
+          "end": 28.321,
+          "duration": 0.545,
+          "frame_ahead_trigger": 28.186
+        },
+        {
+          "word": "loss",
+          "clean_word": "loss",
+          "phonemes": "l\u02c8\u0254s",
+          "start": 28.321,
+          "end": 28.651,
+          "duration": 0.33,
+          "frame_ahead_trigger": 28.731
+        },
+        {
+          "word": "straight",
+          "clean_word": "straight",
+          "phonemes": "st\u0279\u02c8e\u026at",
+          "start": 28.651,
+          "end": 29.046,
+          "duration": 0.395,
+          "frame_ahead_trigger": 29.061
+        },
+        {
+          "word": "through",
+          "clean_word": "through",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0",
+          "start": 29.046,
+          "end": 29.316,
+          "duration": 0.27,
+          "frame_ahead_trigger": 29.456
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 29.316,
+          "end": 29.353,
+          "duration": 0.037,
+          "frame_ahead_trigger": 29.726
+        },
+        {
+          "word": "document",
+          "clean_word": "document",
+          "phonemes": "d\u02c8\u0251\u02d0kju\u02d0m\u0259nt",
+          "start": 29.353,
+          "end": 30.006,
+          "duration": 0.653,
+          "frame_ahead_trigger": 29.763
+        },
+        {
+          "word": "retrieval",
+          "clean_word": "retrieval",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259l",
+          "start": 30.006,
+          "end": 30.571,
+          "duration": 0.565,
+          "frame_ahead_trigger": 30.416
+        },
+        {
+          "word": "step.",
+          "clean_word": "step",
+          "phonemes": "st\u02c8\u025bp",
+          "start": 30.571,
+          "end": 30.841,
+          "duration": 0.27,
+          "frame_ahead_trigger": 30.981
+        }
+      ],
+      "audio_duration": 7.66,
+      "slot_duration": 7.81
+    },
+    {
+      "beat_id": 5,
+      "text": "On Open-QA benchmarks. REALM beats dense baselines by up to sixteen percent absolute accuracy. With transparent modularity and instant document updates.",
+      "visual_focus": "Horizontal benchmark bars where REALM leaps ahead of standard dense architectures, highlighting modular plug-and-play document slots.",
+      "highlight_words": {
+        "sixteen percent absolute accuracy": "#10B981"
+      },
+      "svo_action": {
+        "subject": "REALM",
+        "action_verb": "outperforms",
+        "direct_object": "dense baselines",
+        "anchor_word": "sixteen percent",
+        "semantic_role": "benchmark_win"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: OPEN-QA",
+        "sub": "Horizontal benchmark bars where REALM leaps ahead of",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: OPEN-QA",
+          "sub": "Horizontal benchmark bars where REALM leaps ahead of",
+          "metric_name": "Absolute Accuracy",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "REALM",
+              "value": 16.0,
+              "display_val": "+16%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Dense Baseline",
+              "value": 0.0,
+              "display_val": "Baseline",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +16% SOTA EFFICIENCY GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: OPEN-QA",
+        "sub": "Horizontal benchmark bars where REALM leaps ahead of",
+        "metric_name": "Absolute Accuracy",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "REALM",
+            "value": 16.0,
+            "display_val": "+16%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Dense Baseline",
+            "value": 0.0,
+            "display_val": "Baseline",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +16% SOTA EFFICIENCY GAIN"
+      },
+      "start": 31.15,
+      "end": 40.37,
+      "duration": 9.22,
+      "word_timings": [
+        {
+          "word": "On",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 31.154,
+          "end": 31.254,
+          "duration": 0.1,
+          "frame_ahead_trigger": 31.714
+        },
+        {
+          "word": "Open-QA",
+          "clean_word": "openqa",
+          "phonemes": "\u02c8o\u028ap\u0259n k\u02c8\u0251\u02d0",
+          "start": 31.254,
+          "end": 31.974,
+          "duration": 0.72,
+          "frame_ahead_trigger": 31.814
+        },
+        {
+          "word": "benchmarks.",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 31.974,
+          "end": 32.655,
+          "duration": 0.681,
+          "frame_ahead_trigger": 32.534
+        },
+        {
+          "word": "REALM",
+          "clean_word": "realm",
+          "phonemes": "\u0279\u02c8\u025blm",
+          "start": 32.655,
+          "end": 33.054,
+          "duration": 0.399,
+          "frame_ahead_trigger": 33.215
+        },
+        {
+          "word": "beats",
+          "clean_word": "beats",
+          "phonemes": "b\u02c8i\u02d0ts",
+          "start": 33.054,
+          "end": 33.304,
+          "duration": 0.25,
+          "frame_ahead_trigger": 33.614
+        },
+        {
+          "word": "dense",
+          "clean_word": "dense",
+          "phonemes": "d\u02c8\u025bns",
+          "start": 33.304,
+          "end": 33.579,
+          "duration": 0.275,
+          "frame_ahead_trigger": 33.864
+        },
+        {
+          "word": "baselines",
+          "clean_word": "baselines",
+          "phonemes": "b\u02c8e\u026asla\u026anz",
+          "start": 33.579,
+          "end": 34.189,
+          "duration": 0.61,
+          "frame_ahead_trigger": 34.139
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 34.189,
+          "end": 34.399,
+          "duration": 0.21,
+          "frame_ahead_trigger": 34.749
+        },
+        {
+          "word": "up",
+          "clean_word": "up",
+          "phonemes": "\u02c8\u028cp",
+          "start": 34.399,
+          "end": 34.619,
+          "duration": 0.22,
+          "frame_ahead_trigger": 34.959
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 34.619,
+          "end": 34.704,
+          "duration": 0.085,
+          "frame_ahead_trigger": 35.179
+        },
+        {
+          "word": "sixteen",
+          "clean_word": "sixteen",
+          "phonemes": "s\u02c8\u026aksti\u02d0n",
+          "start": 34.704,
+          "end": 35.294,
+          "duration": 0.59,
+          "frame_ahead_trigger": 35.264
+        },
+        {
+          "word": "percent",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 35.294,
+          "end": 35.649,
+          "duration": 0.355,
+          "frame_ahead_trigger": 35.854
+        },
+        {
+          "word": "absolute",
+          "clean_word": "absolute",
+          "phonemes": "\u02c8\u00e6bs\u0259l\u02ccu\u02d0t",
+          "start": 35.649,
+          "end": 36.194,
+          "duration": 0.545,
+          "frame_ahead_trigger": 36.209
+        },
+        {
+          "word": "accuracy.",
+          "clean_word": "accuracy",
+          "phonemes": "\u02c8\u00e6kj\u028a\u0279\u0259si",
+          "start": 36.194,
+          "end": 36.784,
+          "duration": 0.59,
+          "frame_ahead_trigger": 36.754
+        },
+        {
+          "word": "With",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 36.784,
+          "end": 36.926,
+          "duration": 0.142,
+          "frame_ahead_trigger": 37.344
+        },
+        {
+          "word": "transparent",
+          "clean_word": "transparent",
+          "phonemes": "t\u0279\u00e6nsp\u02c8\u00e6\u0279\u0259nt",
+          "start": 36.926,
+          "end": 37.619,
+          "duration": 0.693,
+          "frame_ahead_trigger": 37.486
+        },
+        {
+          "word": "modularity",
+          "clean_word": "modularity",
+          "phonemes": "m\u02cc\u0251\u02d0d\u0292u\u02d0l\u02c8\u00e6\u0279\u1d7b\u027ei",
+          "start": 37.619,
+          "end": 38.414,
+          "duration": 0.795,
+          "frame_ahead_trigger": 38.179
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 38.414,
+          "end": 38.689,
+          "duration": 0.275,
+          "frame_ahead_trigger": 38.974
+        },
+        {
+          "word": "instant",
+          "clean_word": "instant",
+          "phonemes": "\u02c8\u026anst\u0259nt",
+          "start": 38.689,
+          "end": 39.099,
+          "duration": 0.41,
+          "frame_ahead_trigger": 39.249
+        },
+        {
+          "word": "document",
+          "clean_word": "document",
+          "phonemes": "d\u02c8\u0251\u02d0kju\u02d0m\u0259nt",
+          "start": 39.099,
+          "end": 39.819,
+          "duration": 0.72,
+          "frame_ahead_trigger": 39.659
+        },
+        {
+          "word": "updates.",
+          "clean_word": "updates",
+          "phonemes": "\u02c8\u028cpde\u026ats",
+          "start": 39.819,
+          "end": 40.274,
+          "duration": 0.455,
+          "frame_ahead_trigger": 40.379
+        }
+      ],
+      "audio_duration": 9.22,
+      "slot_duration": 9.37
+    },
+    {
+      "beat_id": 6,
+      "text": "Stop inflating parameter counts. Follow machinoAI for daily deep-dives into how frontier AI architectures actually work under the hood.",
+      "visual_focus": "Glowing machinoAI geometric signature pulsing above the clean, modular retrieval pipeline.",
+      "highlight_words": {
+        "machinoAI": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Engineers",
+        "action_verb": "follow",
+        "direct_object": "machinoAI",
+        "anchor_word": "frontier",
+        "semantic_role": "loop_retention"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "FRONTIER AI DEEP-DIVES",
+        "sub": "Daily architectural breakdowns @machinoai-in",
+        "accent_color": "#38BDF8",
+        "params": {
+          "input_1_label": "Explicit Knowledge",
+          "input_2_label": "Implicit Weights",
+          "input_3_label": "Latent Search",
+          "fused_label": "REALM Core"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 40.52,
+      "end": 48.62,
+      "duration": 8.11,
+      "word_timings": [
+        {
+          "word": "Stop",
+          "clean_word": "stop",
+          "phonemes": "st\u02c8\u0251\u02d0p",
+          "start": 40.53,
+          "end": 40.945,
+          "duration": 0.415,
+          "frame_ahead_trigger": 41.24
+        },
+        {
+          "word": "inflating",
+          "clean_word": "inflating",
+          "phonemes": "\u026anfl\u02c8e\u026a\u027e\u026a\u014b",
+          "start": 40.945,
+          "end": 41.38,
+          "duration": 0.435,
+          "frame_ahead_trigger": 41.655
+        },
+        {
+          "word": "parameter",
+          "clean_word": "parameter",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025a",
+          "start": 41.38,
+          "end": 42.05,
+          "duration": 0.67,
+          "frame_ahead_trigger": 42.09
+        },
+        {
+          "word": "counts.",
+          "clean_word": "counts",
+          "phonemes": "k\u02c8a\u028ants",
+          "start": 42.05,
+          "end": 42.387,
+          "duration": 0.337,
+          "frame_ahead_trigger": 42.76
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 42.387,
+          "end": 42.785,
+          "duration": 0.398,
+          "frame_ahead_trigger": 43.097
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 42.785,
+          "end": 43.61,
+          "duration": 0.825,
+          "frame_ahead_trigger": 43.495
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 43.61,
+          "end": 44.01,
+          "duration": 0.4,
+          "frame_ahead_trigger": 44.32
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 44.01,
+          "end": 44.355,
+          "duration": 0.345,
+          "frame_ahead_trigger": 44.72
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 44.355,
+          "end": 44.715,
+          "duration": 0.36,
+          "frame_ahead_trigger": 45.065
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 44.715,
+          "end": 45.165,
+          "duration": 0.45,
+          "frame_ahead_trigger": 45.425
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 45.165,
+          "end": 45.37,
+          "duration": 0.205,
+          "frame_ahead_trigger": 45.875
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 45.37,
+          "end": 45.84,
+          "duration": 0.47,
+          "frame_ahead_trigger": 46.08
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 45.84,
+          "end": 46.23,
+          "duration": 0.39,
+          "frame_ahead_trigger": 46.55
+        },
+        {
+          "word": "architectures",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 46.23,
+          "end": 47.005,
+          "duration": 0.775,
+          "frame_ahead_trigger": 46.94
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 47.005,
+          "end": 47.515,
+          "duration": 0.51,
+          "frame_ahead_trigger": 47.715
+        },
+        {
+          "word": "work",
+          "clean_word": "work",
+          "phonemes": "w\u02c8\u025c\u02d0k",
+          "start": 47.515,
+          "end": 47.835,
+          "duration": 0.32,
+          "frame_ahead_trigger": 48.225
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 47.835,
+          "end": 48.195,
+          "duration": 0.36,
+          "frame_ahead_trigger": 48.545
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 48.195,
+          "end": 48.3,
+          "duration": 0.105,
+          "frame_ahead_trigger": 48.905
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 48.3,
+          "end": 48.48,
+          "duration": 0.18,
+          "frame_ahead_trigger": 49.01
+        }
+      ],
+      "audio_duration": 8.11,
+      "slot_duration": 8.1
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$d_{\\mathrm{model}} \\to \\infty \\implies \\mathrm{Capacity} = \\mathcal{O}(N)$",
+      "filename": "realm_retrieval_pretraining_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "d_{model}",
+          "label": "Model Dimension"
+        },
+        {
+          "term": "N",
+          "label": "Parameters"
+        }
+      ],
+      "svg_filename": "realm_retrieval_pretraining_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{K}_{\\mathrm{fixed}} = \\{w \\in \\mathbb{R}^d \\mid \\nabla_w = 0\\}$",
+      "filename": "realm_retrieval_pretraining_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "K_{fixed}",
+          "label": "Static Storage"
+        },
+        {
+          "term": "w",
+          "label": "Weights"
+        }
+      ],
+      "svg_filename": "realm_retrieval_pretraining_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathrm{score}(q, k) = \\mathrm{embed}(q)^\\top \\mathrm{embed}(k)$",
+      "filename": "realm_retrieval_pretraining_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "q",
+          "label": "Query"
+        },
+        {
+          "term": "k",
+          "label": "Key"
+        }
+      ],
+      "svg_filename": "realm_retrieval_pretraining_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathcal{L} = \\sum \\log P(y \\mid x, z) \\cdot P(z \\mid x)$",
+      "filename": "realm_retrieval_pretraining_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "z",
+          "label": "Retrieved Document"
+        },
+        {
+          "term": "P(z|x)",
+          "label": "Retrieval Prob"
+        }
+      ],
+      "svg_filename": "realm_retrieval_pretraining_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\Delta \\mathrm{Acc} = \\mathrm{Acc}_{\\mathrm{REALM}} - \\mathrm{Acc}_{\\mathrm{Base}} \\geq 16\\%$",
+      "filename": "realm_retrieval_pretraining_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "Acc_{REALM}",
+          "label": "New Accuracy"
+        },
+        {
+          "term": "Acc_{Base}",
+          "label": "Baseline Accuracy"
+        }
+      ],
+      "svg_filename": "realm_retrieval_pretraining_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "semantic_clusters",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "WEIGHTS",
+          "color": "#38BDF8",
+          "items": [
+            "Params",
+            "Dense"
+          ]
+        },
+        {
+          "name": "RETRIEVAL",
+          "color": "#10B981",
+          "items": [
+            "Wikipedia",
+            "Latent"
+          ]
+        },
+        {
+          "name": "OUTPUT",
+          "color": "#F59E0B",
+          "items": [
+            "Accuracy",
+            "QA"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Retrieval\"",
+        "target_cluster": "RETRIEVAL",
+        "token": "\"Retrieval\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Static",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Monolith",
+          "color": "#EF4444"
+        }
+      ]
+    },
+    "model_a": "REALM",
+    "model_a_specs": [
+      "Latent Indexing",
+      "Pre-training Augmentation",
+      "Open-Domain QA"
+    ],
+    "model_b": "Dense Baseline",
+    "model_b_specs": [
+      "Implicit Knowledge",
+      "Frozen Weights",
+      "Closed Context"
+    ],
+    "divide_title": "MODULAR VS DENSE DIVIDE",
+    "model_a_stat": "16%",
+    "model_a_stat_label": "ABSOLUTE ACCURACY GAIN",
+    "model_b_stat": "0%",
+    "model_b_stat_label": "BASELINE PERFORMANCE",
+    "efficiency_badge": "\u26a1 RETRIEVAL-AUGMENTED GAIN",
+    "benchmarks": [
+      {
+        "name": "Open-QA",
+        "score_a": "16%",
+        "score_b": "0%"
+      },
+      {
+        "name": "Interpretability",
+        "score_a": "High",
+        "score_b": "None"
+      },
+      {
+        "name": "Modularity",
+        "score_a": "High",
+        "score_b": "None"
+      }
+    ],
+    "scale_metric": "16%",
+    "scale_label": "Accuracy Improvement",
+    "bottleneck_title": "STATIC KNOWLEDGE CAP",
+    "bottleneck_desc": "Dense parameters cannot scale to global knowledge.",
+    "solution_title": "REALM RETRIEVAL ARCHITECTURE",
+    "solution_components": "Latent Knowledge Retriever",
+    "mechanism_title": "DIFFERENTIABLE RETRIEVAL FLOW",
+    "payoff_stat": "16%",
+    "payoff_label": "ACCURACY GAIN",
+    "payoff_sub": "Outperforming traditional implicit knowledge models",
+    "payoff_hero_stat": 16.0,
+    "payoff_hero_label": "REALM Performance",
+    "payoff_base_stat": 0.0,
+    "payoff_base_label": "Implicit Baseline",
+    "payoff_delta_badge": "\u26a1 +16% SOTA MARGIN",
+    "challenger": "REALM",
+    "incumbent": "Dense Transformer"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: OPEN-QA",
+    "metric_name": "Absolute Accuracy",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "REALM",
+        "value": 16.0,
+        "display_val": "+16%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Dense Baseline",
+        "value": 0.0,
+        "display_val": "Baseline",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +16% SOTA EFFICIENCY GAIN",
+    "radar_axes": [
+      "Accuracy",
+      "Modularity",
+      "Interpretability",
+      "Scalability"
+    ]
+  },
+  "code_snippet": {
+    "filename": "realm_retrieval.py",
+    "language": "python",
+    "lines": [
+      "def get_retrieved_context(query):",
+      "# Backprop through retrieval",
+      "z = index.search(query)",
+      "return model.forward(query, z)"
+    ],
+    "highlight_lines": [
+      3,
+      4
+    ],
+    "trace_register": "\u26a1 DIFFERENTIABLE SEARCH KERNEL",
+    "explanation": "Retrieval step learned via gradient descent"
+  },
+  "arxiv_id": "2002.08909",
+  "feynman_certification": {
+    "converged_turn": 3,
+    "final_comprehension_score": 8.5,
+    "final_retention_hook_score": 9.0,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Approved! Clear real-world developer terms and intuitive physical analogy."
+  },
+  "hook_gating": {
+    "selected_hook": "Forcing models to cram all world knowledge into raw network weights is an absolute computational nightmare.",
+    "verdict": 52,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "REALM",
+        "model_a_score": "16%",
+        "model_b_name": "Dense Baseline",
+        "model_b_score": "0%",
+        "delta_label": "\u26a1 RETRIEVAL-AUGMENTED GAIN"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "WVtsmm8EcUo",
+    "shorts_url": "https://youtube.com/shorts/WVtsmm8EcUo",
+    "studio_url": "https://studio.youtube.com/video/WVtsmm8EcUo/edit",
+    "title": "REALM Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/realm_retrieval_pretraining_poster.png",
+    "custom_thumbnail_set": false
+  }
+}
