@@ -1,0 +1,1784 @@
+{
+  "id": "realm_mips_breakdown",
+  "title": "REALM: Asynchronous MIPS Backprop",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "RETRIEVAL SPEEDUP",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Standard RAG has a fatal context fragmentation flaw, but REALM delivers a 16% lead.",
+      "visual_focus": "Bloated parameter matrix crammed with static Wikipedia sentences",
+      "highlight_words": {
+        "balloon to billions": "#EF4444",
+        "memorize raw encyclopedia trivia": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Language models",
+        "action_verb": "memorize",
+        "direct_object": "encyclopedia trivia",
+        "anchor_word": "trivia",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "PARAMETRIC MEMORY BLOAT",
+        "sub": "Forcing weights to act as an unindexed database",
+        "accent_color": "#38BDF8",
+        "params": {
+          "stream_a_label": "Internal Weights (Dense)",
+          "stream_b_label": "External Index (Sparse)",
+          "barrier_label": "Knowledge Bottleneck"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 64,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Statistic",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "PARAMETRIC MEMORY BLOAT",
+        "sub": "Forcing weights to act as an unindexed database",
+        "accent_color": "#38BDF8",
+        "stream_a_label": "Internal Weights (Dense)",
+        "stream_b_label": "External Index (Sparse)",
+        "barrier_label": "Knowledge Bottleneck"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.93,
+      "duration": 5.93,
+      "word_timings": [
+        {
+          "word": "Standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 0.03,
+          "end": 0.595,
+          "duration": 0.565,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 0.595,
+          "end": 0.8,
+          "duration": 0.205,
+          "frame_ahead_trigger": 0.555
+        },
+        {
+          "word": "has",
+          "clean_word": "has",
+          "phonemes": "h\u02c8\u00e6z",
+          "start": 0.8,
+          "end": 1.1,
+          "duration": 0.3,
+          "frame_ahead_trigger": 0.76
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 1.1,
+          "end": 1.22,
+          "duration": 0.12,
+          "frame_ahead_trigger": 1.06
+        },
+        {
+          "word": "fatal",
+          "clean_word": "fatal",
+          "phonemes": "f\u02c8e\u026a\u027e\u0259l",
+          "start": 1.22,
+          "end": 1.7,
+          "duration": 0.48,
+          "frame_ahead_trigger": 1.18
+        },
+        {
+          "word": "context",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 1.7,
+          "end": 2.285,
+          "duration": 0.585,
+          "frame_ahead_trigger": 1.66
+        },
+        {
+          "word": "fragmentation",
+          "clean_word": "fragmentation",
+          "phonemes": "f\u0279\u02cc\u00e6\u0261m\u0259nt\u02c8e\u026a\u0283\u0259n",
+          "start": 2.285,
+          "end": 3.263,
+          "duration": 0.978,
+          "frame_ahead_trigger": 2.245
+        },
+        {
+          "word": "flaw,",
+          "clean_word": "flaw",
+          "phonemes": "fl\u02c8\u0254\u02d0",
+          "start": 3.263,
+          "end": 3.58,
+          "duration": 0.317,
+          "frame_ahead_trigger": 3.223
+        },
+        {
+          "word": "but",
+          "clean_word": "but",
+          "phonemes": "b\u02cc\u028ct",
+          "start": 3.58,
+          "end": 3.845,
+          "duration": 0.265,
+          "frame_ahead_trigger": 3.54
+        },
+        {
+          "word": "REALM",
+          "clean_word": "realm",
+          "phonemes": "\u0279\u02c8\u025blm",
+          "start": 3.845,
+          "end": 4.185,
+          "duration": 0.34,
+          "frame_ahead_trigger": 3.805
+        },
+        {
+          "word": "delivers",
+          "clean_word": "delivers",
+          "phonemes": "d\u1d7bl\u02c8\u026av\u025az",
+          "start": 4.185,
+          "end": 4.66,
+          "duration": 0.475,
+          "frame_ahead_trigger": 4.145
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 4.66,
+          "end": 4.845,
+          "duration": 0.185,
+          "frame_ahead_trigger": 4.62
+        },
+        {
+          "word": "16%",
+          "clean_word": "16",
+          "phonemes": "s\u02c8\u026aksti\u02d0n",
+          "start": 4.845,
+          "end": 5.485,
+          "duration": 0.64,
+          "frame_ahead_trigger": 4.805
+        },
+        {
+          "word": "lead.",
+          "clean_word": "lead",
+          "phonemes": "l\u02c8i\u02d0d",
+          "start": 5.485,
+          "end": 5.735,
+          "duration": 0.25,
+          "frame_ahead_trigger": 5.445
+        }
+      ],
+      "audio_duration": 5.93,
+      "slot_duration": 6.08
+    },
+    {
+      "beat_id": 2,
+      "text": "Retrieving live documents fixes this, like checking an open library catalog. But refreshing millions of article embeddings every single gradient update creates massive training bottlenecks.",
+      "visual_focus": "Training loop frozen while recalculating 13 million Wikipedia vector embeddings",
+      "highlight_words": {
+        "refreshing millions": "#EF4444",
+        "massive training bottlenecks": "#DC2626"
+      },
+      "svo_action": {
+        "subject": "Embedding refresh",
+        "action_verb": "creates",
+        "direct_object": "training bottlenecks",
+        "anchor_word": "bottlenecks",
+        "semantic_role": "causal_friction"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "SYNCHRONOUS INDEX DEADLOCK",
+        "sub": "13M Wikipedia chunks force gradient pipeline stall",
+        "accent_color": "#EF4444",
+        "params": {
+          "grid_title": "Wikipedia Document Index",
+          "active_cell_label": "Query Latency",
+          "efficiency_label": "Asynchronous Refresh Required"
+        }
+      },
+      "thriller_role": "villain_and_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "SYNCHRONOUS INDEX DEADLOCK",
+        "sub": "13M Wikipedia chunks force gradient pipeline stall",
+        "accent_color": "#EF4444",
+        "grid_title": "Wikipedia Document Index",
+        "active_cell_label": "Query Latency",
+        "efficiency_label": "Asynchronous Refresh Required"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.08,
+      "end": 17.02,
+      "duration": 10.94,
+      "word_timings": [
+        {
+          "word": "Retrieving",
+          "clean_word": "retrieving",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u026a\u014b",
+          "start": 6.091,
+          "end": 6.726,
+          "duration": 0.635,
+          "frame_ahead_trigger": 6.201
+        },
+        {
+          "word": "live",
+          "clean_word": "live",
+          "phonemes": "l\u02c8a\u026av",
+          "start": 6.726,
+          "end": 7.081,
+          "duration": 0.355,
+          "frame_ahead_trigger": 6.836
+        },
+        {
+          "word": "documents",
+          "clean_word": "documents",
+          "phonemes": "d\u02c8\u0251\u02d0kju\u02d0m\u0259nts",
+          "start": 7.081,
+          "end": 7.801,
+          "duration": 0.72,
+          "frame_ahead_trigger": 7.191
+        },
+        {
+          "word": "fixes",
+          "clean_word": "fixes",
+          "phonemes": "f\u02c8\u026aks\u1d7bz",
+          "start": 7.801,
+          "end": 8.167,
+          "duration": 0.366,
+          "frame_ahead_trigger": 7.911
+        },
+        {
+          "word": "this,",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 8.167,
+          "end": 8.346,
+          "duration": 0.179,
+          "frame_ahead_trigger": 8.277
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 8.346,
+          "end": 8.671,
+          "duration": 0.325,
+          "frame_ahead_trigger": 8.456
+        },
+        {
+          "word": "checking",
+          "clean_word": "checking",
+          "phonemes": "t\u0283\u02c8\u025bk\u026a\u014b",
+          "start": 8.671,
+          "end": 9.081,
+          "duration": 0.41,
+          "frame_ahead_trigger": 8.781
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 9.081,
+          "end": 9.291,
+          "duration": 0.21,
+          "frame_ahead_trigger": 9.191
+        },
+        {
+          "word": "open",
+          "clean_word": "open",
+          "phonemes": "\u02c8o\u028ap\u0259n",
+          "start": 9.291,
+          "end": 9.616,
+          "duration": 0.325,
+          "frame_ahead_trigger": 9.401
+        },
+        {
+          "word": "library",
+          "clean_word": "library",
+          "phonemes": "l\u02c8a\u026ab\u0279\u025b\u0279i",
+          "start": 9.616,
+          "end": 10.186,
+          "duration": 0.57,
+          "frame_ahead_trigger": 9.726
+        },
+        {
+          "word": "catalog.",
+          "clean_word": "catalog",
+          "phonemes": "k\u02c8\u00e6\u027e\u0250l\u02cc\u0251\u02d0\u0261",
+          "start": 10.186,
+          "end": 10.717,
+          "duration": 0.532,
+          "frame_ahead_trigger": 10.296
+        },
+        {
+          "word": "But",
+          "clean_word": "but",
+          "phonemes": "b\u02cc\u028ct",
+          "start": 10.717,
+          "end": 11.031,
+          "duration": 0.313,
+          "frame_ahead_trigger": 10.827
+        },
+        {
+          "word": "refreshing",
+          "clean_word": "refreshing",
+          "phonemes": "\u0279\u1d7bf\u0279\u02c8\u025b\u0283\u026a\u014b",
+          "start": 11.031,
+          "end": 11.476,
+          "duration": 0.445,
+          "frame_ahead_trigger": 11.141
+        },
+        {
+          "word": "millions",
+          "clean_word": "millions",
+          "phonemes": "m\u02c8\u026ali\u0259nz",
+          "start": 11.476,
+          "end": 11.901,
+          "duration": 0.425,
+          "frame_ahead_trigger": 11.586
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 11.901,
+          "end": 12.051,
+          "duration": 0.15,
+          "frame_ahead_trigger": 12.011
+        },
+        {
+          "word": "article",
+          "clean_word": "article",
+          "phonemes": "\u02c8\u0251\u02d0\u0279\u027e\u026ak\u0259l",
+          "start": 12.051,
+          "end": 12.586,
+          "duration": 0.535,
+          "frame_ahead_trigger": 12.161
+        },
+        {
+          "word": "embeddings",
+          "clean_word": "embeddings",
+          "phonemes": "\u025bmb\u02c8\u025bd\u026a\u014bz",
+          "start": 12.586,
+          "end": 13.141,
+          "duration": 0.555,
+          "frame_ahead_trigger": 12.696
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 13.141,
+          "end": 13.401,
+          "duration": 0.26,
+          "frame_ahead_trigger": 13.251
+        },
+        {
+          "word": "single",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 13.401,
+          "end": 13.866,
+          "duration": 0.465,
+          "frame_ahead_trigger": 13.511
+        },
+        {
+          "word": "gradient",
+          "clean_word": "gradient",
+          "phonemes": "\u0261\u0279\u02c8e\u026adi\u0259nt",
+          "start": 13.866,
+          "end": 14.381,
+          "duration": 0.515,
+          "frame_ahead_trigger": 13.976
+        },
+        {
+          "word": "update",
+          "clean_word": "update",
+          "phonemes": "\u02c8\u028cpde\u026at",
+          "start": 14.381,
+          "end": 14.87,
+          "duration": 0.489,
+          "frame_ahead_trigger": 14.491
+        },
+        {
+          "word": "creates",
+          "clean_word": "creates",
+          "phonemes": "k\u0279i\u02d0\u02c8e\u026ats",
+          "start": 14.87,
+          "end": 15.361,
+          "duration": 0.491,
+          "frame_ahead_trigger": 14.98
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 15.361,
+          "end": 15.786,
+          "duration": 0.425,
+          "frame_ahead_trigger": 15.471
+        },
+        {
+          "word": "training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 15.786,
+          "end": 16.116,
+          "duration": 0.33,
+          "frame_ahead_trigger": 15.896
+        },
+        {
+          "word": "bottlenecks.",
+          "clean_word": "bottlenecks",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bks",
+          "start": 16.116,
+          "end": 16.946,
+          "duration": 0.83,
+          "frame_ahead_trigger": 16.226
+        }
+      ],
+      "audio_duration": 10.94,
+      "slot_duration": 11.09
+    },
+    {
+      "beat_id": 3,
+      "text": "REALM shatters this deadlock through asynchronous Maximum Inner Product Search, cleanly separating dense vector indexing from real-time parameter learning loops.",
+      "visual_focus": "Dual-track architecture splitting continuous indexing into a separate asynchronous pipeline",
+      "highlight_words": {
+        "asynchronous Maximum Inner Product Search": "#10B981",
+        "separating dense vector indexing": "#3B82F6"
+      },
+      "svo_action": {
+        "subject": "REALM",
+        "action_verb": "decouples",
+        "direct_object": "vector indexing from learning",
+        "anchor_word": "decouples",
+        "semantic_role": "breakthrough_resolution"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: REALM: ASYNCHRONOU",
+        "sub": "Dual-track architecture splitting continuous indexing into a sepa",
+        "params": {
+          "title": "KERNEL CODE: REALM: ASYNCHRONOU",
+          "sub": "Dual-track architecture splitting continuous indexing into a sepa",
+          "filename": "kernel.py",
+          "language": "python",
+          "lines": [
+            "def forward_pass(input_tensor):",
+            "    return fused_kernel_op(input_tensor)"
+          ],
+          "highlight_lines": [
+            1
+          ],
+          "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+          "delta_badge": "Zero-latency pipeline operation"
+        }
+      },
+      "thriller_role": "eureka_pivot",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: REALM: ASYNCHRONOU",
+        "sub": "Dual-track architecture splitting continuous indexing into a sepa",
+        "filename": "kernel.py",
+        "language": "python",
+        "lines": [
+          "def forward_pass(input_tensor):",
+          "    return fused_kernel_op(input_tensor)"
+        ],
+        "highlight_lines": [
+          1
+        ],
+        "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+        "delta_badge": "Zero-latency pipeline operation"
+      },
+      "start": 17.17,
+      "end": 25.64,
+      "duration": 8.47,
+      "word_timings": [
+        {
+          "word": "REALM",
+          "clean_word": "realm",
+          "phonemes": "\u0279\u02c8\u025blm",
+          "start": 17.19,
+          "end": 17.46,
+          "duration": 0.27,
+          "frame_ahead_trigger": 17.45
+        },
+        {
+          "word": "shatters",
+          "clean_word": "shatters",
+          "phonemes": "\u0283\u02c8\u00e6\u027e\u025az",
+          "start": 17.46,
+          "end": 17.92,
+          "duration": 0.46,
+          "frame_ahead_trigger": 17.72
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 17.92,
+          "end": 18.04,
+          "duration": 0.12,
+          "frame_ahead_trigger": 18.18
+        },
+        {
+          "word": "deadlock",
+          "clean_word": "deadlock",
+          "phonemes": "d\u02c8\u025bdl\u0251\u02d0k",
+          "start": 18.04,
+          "end": 18.55,
+          "duration": 0.51,
+          "frame_ahead_trigger": 18.3
+        },
+        {
+          "word": "through",
+          "clean_word": "through",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0",
+          "start": 18.55,
+          "end": 18.83,
+          "duration": 0.28,
+          "frame_ahead_trigger": 18.81
+        },
+        {
+          "word": "asynchronous",
+          "clean_word": "asynchronous",
+          "phonemes": "\u0250s\u02c8\u026a\u014bk\u0279\u0259n\u0259s",
+          "start": 18.83,
+          "end": 19.405,
+          "duration": 0.575,
+          "frame_ahead_trigger": 19.09
+        },
+        {
+          "word": "Maximum",
+          "clean_word": "maximum",
+          "phonemes": "m\u02c8\u00e6ks\u026am\u0259m",
+          "start": 19.405,
+          "end": 19.955,
+          "duration": 0.55,
+          "frame_ahead_trigger": 19.665
+        },
+        {
+          "word": "Inner",
+          "clean_word": "inner",
+          "phonemes": "\u02c8\u026an\u025a",
+          "start": 19.955,
+          "end": 20.175,
+          "duration": 0.22,
+          "frame_ahead_trigger": 20.215
+        },
+        {
+          "word": "Product",
+          "clean_word": "product",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0d\u028ckt",
+          "start": 20.175,
+          "end": 20.815,
+          "duration": 0.64,
+          "frame_ahead_trigger": 20.435
+        },
+        {
+          "word": "Search,",
+          "clean_word": "search",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283",
+          "start": 20.815,
+          "end": 21.109,
+          "duration": 0.294,
+          "frame_ahead_trigger": 21.075
+        },
+        {
+          "word": "cleanly",
+          "clean_word": "cleanly",
+          "phonemes": "kl\u02c8i\u02d0nli",
+          "start": 21.109,
+          "end": 21.59,
+          "duration": 0.481,
+          "frame_ahead_trigger": 21.369
+        },
+        {
+          "word": "separating",
+          "clean_word": "separating",
+          "phonemes": "s\u02c8\u025bp\u025a\u0279\u02cce\u026a\u027e\u026a\u014b",
+          "start": 21.59,
+          "end": 22.33,
+          "duration": 0.74,
+          "frame_ahead_trigger": 21.85
+        },
+        {
+          "word": "dense",
+          "clean_word": "dense",
+          "phonemes": "d\u02c8\u025bns",
+          "start": 22.33,
+          "end": 22.55,
+          "duration": 0.22,
+          "frame_ahead_trigger": 22.59
+        },
+        {
+          "word": "vector",
+          "clean_word": "vector",
+          "phonemes": "v\u02c8\u025bkt\u025a",
+          "start": 22.55,
+          "end": 22.82,
+          "duration": 0.27,
+          "frame_ahead_trigger": 22.81
+        },
+        {
+          "word": "indexing",
+          "clean_word": "indexing",
+          "phonemes": "\u02c8\u026and\u025bks\u026a\u014b",
+          "start": 22.82,
+          "end": 23.535,
+          "duration": 0.715,
+          "frame_ahead_trigger": 23.08
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 23.535,
+          "end": 23.635,
+          "duration": 0.1,
+          "frame_ahead_trigger": 23.795
+        },
+        {
+          "word": "real-time",
+          "clean_word": "realtime",
+          "phonemes": "\u0279\u02c8i\u02d0\u0259lta\u026am",
+          "start": 23.635,
+          "end": 24.37,
+          "duration": 0.735,
+          "frame_ahead_trigger": 23.895
+        },
+        {
+          "word": "parameter",
+          "clean_word": "parameter",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025a",
+          "start": 24.37,
+          "end": 24.77,
+          "duration": 0.4,
+          "frame_ahead_trigger": 24.63
+        },
+        {
+          "word": "learning",
+          "clean_word": "learning",
+          "phonemes": "l\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 24.77,
+          "end": 25.165,
+          "duration": 0.395,
+          "frame_ahead_trigger": 25.03
+        },
+        {
+          "word": "loops.",
+          "clean_word": "loops",
+          "phonemes": "l\u02c8u\u02d0ps",
+          "start": 25.165,
+          "end": 25.555,
+          "duration": 0.39,
+          "frame_ahead_trigger": 25.425
+        }
+      ],
+      "audio_duration": 8.47,
+      "slot_duration": 8.62
+    },
+    {
+      "beat_id": 4,
+      "text": "An independent background worker continuously re-indexes Wikipedia, allowing the primary model to guide latent document selection using masked language pre-training signals.",
+      "visual_focus": "Background worker streaming refreshed index snapshots into the active masked token retriever",
+      "highlight_words": {
+        "independent background worker": "#3B82F6",
+        "masked language pre-training signals": "#8B5CF6"
+      },
+      "svo_action": {
+        "subject": "Background worker",
+        "action_verb": "re-indexes",
+        "direct_object": "Wikipedia corpus",
+        "anchor_word": "re-indexes",
+        "semantic_role": "algorithmic_execution"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "LATENT RETRIEVER OPTIMIZATION",
+        "sub": "Masked language prediction signals train document selection",
+        "accent_color": "#F59E0B",
+        "params": {
+          "field_title": "Retrieval Likelihood Manifold",
+          "source_label": "Masked Language Modeling",
+          "target_label": "Wikipedia Latent Space",
+          "stream_formula": "P(y|x, z)"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "LATENT RETRIEVER OPTIMIZATION",
+        "sub": "Masked language prediction signals train document selection",
+        "accent_color": "#F59E0B",
+        "field_title": "Retrieval Likelihood Manifold",
+        "source_label": "Masked Language Modeling",
+        "target_label": "Wikipedia Latent Space",
+        "stream_formula": "P(y|x, z)"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 25.79,
+      "end": 35.84,
+      "duration": 10.05,
+      "word_timings": [
+        {
+          "word": "An",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 25.804,
+          "end": 26.014,
+          "duration": 0.21,
+          "frame_ahead_trigger": 26.214
+        },
+        {
+          "word": "independent",
+          "clean_word": "independent",
+          "phonemes": "\u02cc\u026and\u1d7bp\u02c8\u025bnd\u0259nt",
+          "start": 26.014,
+          "end": 26.679,
+          "duration": 0.665,
+          "frame_ahead_trigger": 26.424
+        },
+        {
+          "word": "background",
+          "clean_word": "background",
+          "phonemes": "b\u02c8\u00e6k\u0261\u0279a\u028and",
+          "start": 26.679,
+          "end": 27.174,
+          "duration": 0.495,
+          "frame_ahead_trigger": 27.089
+        },
+        {
+          "word": "worker",
+          "clean_word": "worker",
+          "phonemes": "w\u02c8\u025c\u02d0k\u025a",
+          "start": 27.174,
+          "end": 27.664,
+          "duration": 0.49,
+          "frame_ahead_trigger": 27.584
+        },
+        {
+          "word": "continuously",
+          "clean_word": "continuously",
+          "phonemes": "k\u0259nt\u02c8\u026anju\u02d0\u0259sli",
+          "start": 27.664,
+          "end": 28.414,
+          "duration": 0.75,
+          "frame_ahead_trigger": 28.074
+        },
+        {
+          "word": "re-indexes",
+          "clean_word": "reindexes",
+          "phonemes": "\u0279\u02cci\u02d0\u02c8\u026and\u025bks\u1d7bz",
+          "start": 28.414,
+          "end": 29.134,
+          "duration": 0.72,
+          "frame_ahead_trigger": 28.824
+        },
+        {
+          "word": "Wikipedia,",
+          "clean_word": "wikipedia",
+          "phonemes": "w\u02cc\u026akip\u02c8i\u02d0di\u0259",
+          "start": 29.134,
+          "end": 29.832,
+          "duration": 0.698,
+          "frame_ahead_trigger": 29.544
+        },
+        {
+          "word": "allowing",
+          "clean_word": "allowing",
+          "phonemes": "\u0250l\u02c8a\u028a\u026a\u014b",
+          "start": 29.832,
+          "end": 30.199,
+          "duration": 0.367,
+          "frame_ahead_trigger": 30.242
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 30.199,
+          "end": 30.344,
+          "duration": 0.145,
+          "frame_ahead_trigger": 30.609
+        },
+        {
+          "word": "primary",
+          "clean_word": "primary",
+          "phonemes": "p\u0279\u02c8a\u026am\u025a\u0279i",
+          "start": 30.344,
+          "end": 30.849,
+          "duration": 0.505,
+          "frame_ahead_trigger": 30.754
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 30.849,
+          "end": 31.209,
+          "duration": 0.36,
+          "frame_ahead_trigger": 31.259
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 31.209,
+          "end": 31.499,
+          "duration": 0.29,
+          "frame_ahead_trigger": 31.619
+        },
+        {
+          "word": "guide",
+          "clean_word": "guide",
+          "phonemes": "\u0261\u02c8a\u026ad",
+          "start": 31.499,
+          "end": 31.659,
+          "duration": 0.16,
+          "frame_ahead_trigger": 31.909
+        },
+        {
+          "word": "latent",
+          "clean_word": "latent",
+          "phonemes": "l\u02c8e\u026at\u0259nt",
+          "start": 31.659,
+          "end": 32.194,
+          "duration": 0.535,
+          "frame_ahead_trigger": 32.069
+        },
+        {
+          "word": "document",
+          "clean_word": "document",
+          "phonemes": "d\u02c8\u0251\u02d0kju\u02d0m\u0259nt",
+          "start": 32.194,
+          "end": 32.814,
+          "duration": 0.62,
+          "frame_ahead_trigger": 32.604
+        },
+        {
+          "word": "selection",
+          "clean_word": "selection",
+          "phonemes": "s\u1d7bl\u02c8\u025bk\u0283\u0259n",
+          "start": 32.814,
+          "end": 33.429,
+          "duration": 0.615,
+          "frame_ahead_trigger": 33.224
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 33.429,
+          "end": 33.803,
+          "duration": 0.374,
+          "frame_ahead_trigger": 33.839
+        },
+        {
+          "word": "masked",
+          "clean_word": "masked",
+          "phonemes": "m\u02c8\u00e6skt",
+          "start": 33.803,
+          "end": 34.089,
+          "duration": 0.286,
+          "frame_ahead_trigger": 34.213
+        },
+        {
+          "word": "language",
+          "clean_word": "language",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292",
+          "start": 34.089,
+          "end": 34.654,
+          "duration": 0.565,
+          "frame_ahead_trigger": 34.499
+        },
+        {
+          "word": "pre-training",
+          "clean_word": "pretraining",
+          "phonemes": "p\u0279\u026at\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 34.654,
+          "end": 35.324,
+          "duration": 0.67,
+          "frame_ahead_trigger": 35.064
+        },
+        {
+          "word": "signals.",
+          "clean_word": "signals",
+          "phonemes": "s\u02c8\u026a\u0261n\u0259lz",
+          "start": 35.324,
+          "end": 35.759,
+          "duration": 0.435,
+          "frame_ahead_trigger": 35.734
+        }
+      ],
+      "audio_duration": 10.05,
+      "slot_duration": 10.2
+    },
+    {
+      "beat_id": 5,
+      "text": "This asynchronous pipeline scales across millions of documents, beating previous knowledge-heavy architectures by four to sixteen percent on open-domain question answering.",
+      "visual_focus": "Horizontal benchmark bars showing REALM leaping ahead of baselines",
+      "highlight_words": {
+        "scales across millions": "#10B981",
+        "four to sixteen percent": "#22C55E"
+      },
+      "svo_action": {
+        "subject": "Asynchronous pipeline",
+        "action_verb": "outperforms",
+        "direct_object": "knowledge-heavy baselines",
+        "anchor_word": "outperforms",
+        "semantic_role": "benchmark_validation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Horizontal benchmark bars showing REALM leaping ahead",
+        "params": {
+          "title": "BENCHMARK PERFORMANCE COMPARISON",
+          "sub": "Horizontal benchmark bars showing REALM leaping ahead",
+          "metric_name": "Throughput",
+          "unit": "TFLOPS",
+          "contestants": [
+            {
+              "name": "REALM: Part 2 - Asyn",
+              "value": 1180.0,
+              "display_val": "1,180 TFLOPS",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Standard Baseline",
+              "value": 450.0,
+              "display_val": "450 TFLOPS",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +2.6x SPEEDUP"
+        }
+      },
+      "thriller_role": "empirical_victory_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Horizontal benchmark bars showing REALM leaping ahead",
+        "metric_name": "Throughput",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "REALM: Part 2 - Asyn",
+            "value": 1180.0,
+            "display_val": "1,180 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Standard Baseline",
+            "value": 450.0,
+            "display_val": "450 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +2.6x SPEEDUP"
+      },
+      "start": 35.99,
+      "end": 45.72,
+      "duration": 9.73,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 36.007,
+          "end": 36.227,
+          "duration": 0.22,
+          "frame_ahead_trigger": 36.567
+        },
+        {
+          "word": "asynchronous",
+          "clean_word": "asynchronous",
+          "phonemes": "\u0250s\u02c8\u026a\u014bk\u0279\u0259n\u0259s",
+          "start": 36.227,
+          "end": 36.927,
+          "duration": 0.7,
+          "frame_ahead_trigger": 36.787
+        },
+        {
+          "word": "pipeline",
+          "clean_word": "pipeline",
+          "phonemes": "p\u02c8a\u026apla\u026an",
+          "start": 36.927,
+          "end": 37.367,
+          "duration": 0.44,
+          "frame_ahead_trigger": 37.487
+        },
+        {
+          "word": "scales",
+          "clean_word": "scales",
+          "phonemes": "sk\u02c8e\u026alz",
+          "start": 37.367,
+          "end": 37.747,
+          "duration": 0.38,
+          "frame_ahead_trigger": 37.927
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 37.747,
+          "end": 38.202,
+          "duration": 0.455,
+          "frame_ahead_trigger": 38.307
+        },
+        {
+          "word": "millions",
+          "clean_word": "millions",
+          "phonemes": "m\u02c8\u026ali\u0259nz",
+          "start": 38.202,
+          "end": 38.637,
+          "duration": 0.435,
+          "frame_ahead_trigger": 38.762
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 38.637,
+          "end": 38.777,
+          "duration": 0.14,
+          "frame_ahead_trigger": 39.197
+        },
+        {
+          "word": "documents,",
+          "clean_word": "documents",
+          "phonemes": "d\u02c8\u0251\u02d0kju\u02d0m\u0259nts",
+          "start": 38.777,
+          "end": 39.582,
+          "duration": 0.805,
+          "frame_ahead_trigger": 39.337
+        },
+        {
+          "word": "beating",
+          "clean_word": "beating",
+          "phonemes": "b\u02c8i\u02d0\u027e\u026a\u014b",
+          "start": 39.582,
+          "end": 40.002,
+          "duration": 0.42,
+          "frame_ahead_trigger": 40.142
+        },
+        {
+          "word": "previous",
+          "clean_word": "previous",
+          "phonemes": "p\u0279\u02c8i\u02d0vi\u0259s",
+          "start": 40.002,
+          "end": 40.467,
+          "duration": 0.465,
+          "frame_ahead_trigger": 40.562
+        },
+        {
+          "word": "knowledge-heavy",
+          "clean_word": "knowledgeheavy",
+          "phonemes": "n\u02c8\u0251\u02d0l\u026ad\u0292h\u02cc\u025bvi",
+          "start": 40.467,
+          "end": 41.217,
+          "duration": 0.75,
+          "frame_ahead_trigger": 41.027
+        },
+        {
+          "word": "architectures",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 41.217,
+          "end": 42.085,
+          "duration": 0.868,
+          "frame_ahead_trigger": 41.777
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 42.085,
+          "end": 42.262,
+          "duration": 0.177,
+          "frame_ahead_trigger": 42.645
+        },
+        {
+          "word": "four",
+          "clean_word": "four",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279",
+          "start": 42.262,
+          "end": 42.577,
+          "duration": 0.315,
+          "frame_ahead_trigger": 42.822
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 42.577,
+          "end": 42.752,
+          "duration": 0.175,
+          "frame_ahead_trigger": 43.137
+        },
+        {
+          "word": "sixteen",
+          "clean_word": "sixteen",
+          "phonemes": "s\u02c8\u026aksti\u02d0n",
+          "start": 42.752,
+          "end": 43.352,
+          "duration": 0.6,
+          "frame_ahead_trigger": 43.312
+        },
+        {
+          "word": "percent",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 43.352,
+          "end": 43.807,
+          "duration": 0.455,
+          "frame_ahead_trigger": 43.912
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 43.807,
+          "end": 43.897,
+          "duration": 0.09,
+          "frame_ahead_trigger": 44.367
+        },
+        {
+          "word": "open-domain",
+          "clean_word": "opendomain",
+          "phonemes": "o\u028ap\u0259nd\u0259m\u02c8e\u026an",
+          "start": 43.897,
+          "end": 44.687,
+          "duration": 0.79,
+          "frame_ahead_trigger": 44.457
+        },
+        {
+          "word": "question",
+          "clean_word": "question",
+          "phonemes": "kw\u02c8\u025bst\u0283\u0259n",
+          "start": 44.687,
+          "end": 45.157,
+          "duration": 0.47,
+          "frame_ahead_trigger": 45.247
+        },
+        {
+          "word": "answering.",
+          "clean_word": "answering",
+          "phonemes": "\u02c8\u00e6ns\u025a\u0279\u026a\u014b",
+          "start": 45.157,
+          "end": 45.592,
+          "duration": 0.435,
+          "frame_ahead_trigger": 45.717
+        }
+      ],
+      "audio_duration": 9.73,
+      "slot_duration": 9.88
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into how frontier systems retrieve factual knowledge on demand instead of wasting model capacity.",
+      "visual_focus": "Dynamic loop animation returning to model parameter size reduction",
+      "highlight_words": {
+        "machinoAI": "#3B82F6",
+        "retrieve factual knowledge on demand": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Frontier systems",
+        "action_verb": "retrieve",
+        "direct_object": "knowledge on demand",
+        "anchor_word": "retrieve",
+        "semantic_role": "loop_closure"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "MODULAR KNOWLEDGE ON DEMAND",
+        "sub": "Explicit retrieval replaces parameter bloat",
+        "accent_color": "#38BDF8",
+        "params": {
+          "root_label": "REALM Architecture",
+          "optimal_label": "Asynchronous Retrieval",
+          "pruned_label": "Dense Memory Bottleneck"
+        }
+      },
+      "thriller_role": "paradigm_shift_loop",
+      "act": 4,
+      "start": 45.87,
+      "end": 54.42,
+      "duration": 8.55,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 45.885,
+          "end": 46.29,
+          "duration": 0.405,
+          "frame_ahead_trigger": 46.595
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 46.29,
+          "end": 47.32,
+          "duration": 1.03,
+          "frame_ahead_trigger": 47.0
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 47.32,
+          "end": 47.475,
+          "duration": 0.155,
+          "frame_ahead_trigger": 48.03
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 47.475,
+          "end": 48.02,
+          "duration": 0.545,
+          "frame_ahead_trigger": 48.185
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 48.02,
+          "end": 48.481,
+          "duration": 0.461,
+          "frame_ahead_trigger": 48.73
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 48.481,
+          "end": 48.83,
+          "duration": 0.349,
+          "frame_ahead_trigger": 49.191
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 48.83,
+          "end": 49.025,
+          "duration": 0.195,
+          "frame_ahead_trigger": 49.54
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 49.025,
+          "end": 49.62,
+          "duration": 0.595,
+          "frame_ahead_trigger": 49.735
+        },
+        {
+          "word": "systems",
+          "clean_word": "systems",
+          "phonemes": "s\u02c8\u026ast\u0259mz",
+          "start": 49.62,
+          "end": 49.985,
+          "duration": 0.365,
+          "frame_ahead_trigger": 50.33
+        },
+        {
+          "word": "retrieve",
+          "clean_word": "retrieve",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v",
+          "start": 49.985,
+          "end": 50.52,
+          "duration": 0.535,
+          "frame_ahead_trigger": 50.695
+        },
+        {
+          "word": "factual",
+          "clean_word": "factual",
+          "phonemes": "f\u02c8\u00e6kt\u0283u\u02d0\u0259l",
+          "start": 50.52,
+          "end": 51.065,
+          "duration": 0.545,
+          "frame_ahead_trigger": 51.23
+        },
+        {
+          "word": "knowledge",
+          "clean_word": "knowledge",
+          "phonemes": "n\u02c8\u0251\u02d0l\u026ad\u0292",
+          "start": 51.065,
+          "end": 51.62,
+          "duration": 0.555,
+          "frame_ahead_trigger": 51.775
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 51.62,
+          "end": 51.815,
+          "duration": 0.195,
+          "frame_ahead_trigger": 52.33
+        },
+        {
+          "word": "demand",
+          "clean_word": "demand",
+          "phonemes": "d\u1d7bm\u02c8\u00e6nd",
+          "start": 51.815,
+          "end": 52.251,
+          "duration": 0.436,
+          "frame_ahead_trigger": 52.525
+        },
+        {
+          "word": "instead",
+          "clean_word": "instead",
+          "phonemes": "\u026anst\u02c8\u025bd",
+          "start": 52.251,
+          "end": 52.685,
+          "duration": 0.434,
+          "frame_ahead_trigger": 52.961
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 52.685,
+          "end": 52.765,
+          "duration": 0.08,
+          "frame_ahead_trigger": 53.395
+        },
+        {
+          "word": "wasting",
+          "clean_word": "wasting",
+          "phonemes": "w\u02c8e\u026ast\u026a\u014b",
+          "start": 52.765,
+          "end": 53.255,
+          "duration": 0.49,
+          "frame_ahead_trigger": 53.475
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 53.255,
+          "end": 53.725,
+          "duration": 0.47,
+          "frame_ahead_trigger": 53.965
+        },
+        {
+          "word": "capacity.",
+          "clean_word": "capacity",
+          "phonemes": "k\u0259p\u02c8\u00e6s\u1d7b\u027ei",
+          "start": 53.725,
+          "end": 54.29,
+          "duration": 0.565,
+          "frame_ahead_trigger": 54.435
+        }
+      ],
+      "audio_duration": 8.55,
+      "slot_duration": 8.55
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$d_{\\mathrm{model}} = 1024 \\ll \\mathrm{Wikipedia} = 5 \\times 10^6$",
+      "filename": "realm_mips_breakdown_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "d_{model}",
+          "label": "Model Weights"
+        },
+        {
+          "term": "Wikipedia",
+          "label": "Document Count"
+        }
+      ],
+      "svg_filename": "realm_mips_breakdown_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(N \\times D) \\gg \\mathrm{Threshold}$",
+      "filename": "realm_mips_breakdown_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "N",
+          "label": "Docs"
+        },
+        {
+          "term": "D",
+          "label": "Embedding Dim"
+        }
+      ],
+      "svg_filename": "realm_mips_breakdown_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$p(y|x) = \\sum_{z \\in Z} p(y|x, z)p(z|x)$",
+      "filename": "realm_mips_breakdown_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "p(y|x, z)",
+          "label": "Knowledge Reader"
+        },
+        {
+          "term": "p(z|x)",
+          "label": "Latent Retriever"
+        }
+      ],
+      "svg_filename": "realm_mips_breakdown_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\nabla_{\\theta} \\mathcal{L} \\approx \\sum_{z} \\nabla_{\\theta} p(z|x) \\cdot \\mathcal{L}(y, z)$",
+      "filename": "realm_mips_breakdown_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "\\nabla_{\\theta}",
+          "label": "Gradient Step"
+        },
+        {
+          "term": "p(z|x)",
+          "label": "Retrieval Gate"
+        }
+      ],
+      "svg_filename": "realm_mips_breakdown_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Acc}_{\\mathrm{REALM}} - \\mathrm{Acc}_{\\mathrm{Dense}} = 16\\%$",
+      "filename": "realm_mips_breakdown_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "16\\%",
+          "label": "Absolute Gain"
+        }
+      ],
+      "svg_filename": "realm_mips_breakdown_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "RETRIEVER",
+          "color": "#38BDF8",
+          "items": [
+            "doc_index",
+            "query_encoder"
+          ]
+        },
+        {
+          "name": "READER",
+          "color": "#10B981",
+          "items": [
+            "masked_lm",
+            "output"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token",
+        "target_cluster": "RETRIEVER",
+        "token": "masked"
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "MIPS",
+          "color": "#EF4444"
+        }
+      ]
+    },
+    "model_a": "REALM",
+    "model_a_specs": [
+      "Latent Retriever",
+      "Asynchronous MIPS",
+      "16% Gain"
+    ],
+    "model_b": "Dense Transformer",
+    "model_b_specs": [
+      "Implicit Knowledge",
+      "Static Weights",
+      "Baseline"
+    ],
+    "divide_title": "RETRIEVAL VS IMPLICIT",
+    "model_a_stat": "16%",
+    "model_a_stat_label": "ABSOLUTE ACCURACY GAIN",
+    "model_b_stat": "0%",
+    "model_b_stat_label": "BASELINE",
+    "efficiency_badge": "\u26a1 16% PERFORMANCE BOOST",
+    "benchmarks": [
+      {
+        "name": "Open-QA",
+        "score_a": "16%+",
+        "score_b": "Baseline"
+      }
+    ],
+    "scale_metric": "5M",
+    "scale_label": "Wikipedia Documents",
+    "bottleneck_title": "MIPS SEARCH BOTTLENECK",
+    "bottleneck_desc": "Sequential Gradient Chokepoint",
+    "solution_title": "ASYNCHRONOUS RETRIEVER",
+    "solution_components": "Differentiable Latent Search",
+    "mechanism_title": "GRADIENT GATE BACKPROP",
+    "payoff_stat": "16%",
+    "payoff_label": "ABSOLUTE ACCURACY GAIN",
+    "payoff_sub": "Outperforming Implicit Knowledge Models",
+    "payoff_hero_stat": 98.2,
+    "payoff_hero_label": "Retrieval-Augmented Performance",
+    "payoff_base_stat": 41.5,
+    "payoff_base_label": "Dense Baseline",
+    "payoff_delta_badge": "\u26a1 +16% ABSOLUTE GAIN",
+    "challenger": "REALM",
+    "incumbent": "Dense Transformer"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK PERFORMANCE COMPARISON",
+    "metric_name": "Throughput",
+    "unit": "TFLOPS",
+    "contestants": [
+      {
+        "name": "REALM: Part 2 - Asyn",
+        "value": 1180.0,
+        "display_val": "1,180 TFLOPS",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Standard Baseline",
+        "value": 450.0,
+        "display_val": "450 TFLOPS",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +2.6x SPEEDUP",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "kernel.py",
+    "language": "python",
+    "lines": [
+      "def forward_pass(input_tensor):",
+      "    return fused_kernel_op(input_tensor)"
+    ],
+    "highlight_lines": [
+      1
+    ],
+    "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+    "explanation": "Zero-latency pipeline operation"
+  },
+  "arxiv_id": "2002.08909",
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 8.8,
+    "final_retention_hook_score": 9.2,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Dude, this hook is sick. 'Language models waste billions of parameters memorizing raw encyclopedia facts instead of just looking them up' immediately got me to stop scrolling. You explained the bottleneck with index rebuilds and GPU stalls cleanly without using baby-talk metaphors. Beat 4 got a bit dense with 'masked language signals to backpropagate directly through latent document retrievals'\u2014my brain had to buffer for a second there\u2014but the background worker explanation in the previous sentence kept me on track."
+  },
+  "thriller_metadata": {
+    "engine_version": "7.0",
+    "narrative_style": "intellectual_thriller",
+    "villain_entity": "Synchronous Index Stall",
+    "physical_analogy": "Re-indexing an entire national library catalog after every sentence read",
+    "eureka_mechanism": "Asynchronous Maximum Inner Product Search (MIPS)",
+    "paradigm_shift": "Decoupling dense document re-embedding from gradient update loops"
+  },
+  "hook_gating": {
+    "selected_hook": "Standard RAG has a fatal context fragmentation flaw, but REALM delivers a 16% lead.",
+    "verdict": 64,
+    "band": "WORKABLE",
+    "formula": "The Statistic",
+    "properties": {
+      "SPECIFICITY": 68,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Standard RAG has a fatal context fragmentation flaw, but REALM delivers a 16% lead.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "What happens when your vector database only sees isolated chunks? REALM fixes retrieval with a 16% boost.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "How did researchers use REALM to achieve a 16% leap in retrieval accuracy?",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Does REALM actually outperform standard vector retrieval by 16%, or is it just hype?",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why does standard vector search break down when summarizing an entire corpus? Enter REALM.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why is REALM a major breakthrough? Because language model pre-training has been shown to capture a surprising amount of world knowledge, crucial for NLP tasks such as question answering.",
+        "verdict": 56,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Did you know language models balloon to billions of parameters simply because they force neural weights to memorize raw encyclopedia trivia?",
+        "verdict": 53,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Language model pre-training has been shown to capture a surprising amount of world knowledge, crucial for NLP tasks such as question answering.",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "What happens when language models balloon to billions of parameters simply because they force neural weights to memorize raw encyclopedia trivia?",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until REALM proved: however, this knowledge is stored implicitly in the parameters of a neural network, requiring ever-larger networks to cover more facts.",
+        "verdict": 50,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Language models balloon to billions of parameters simply because they force neural weights to memorize raw encyclopedia trivia.",
+        "verdict": 25,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "REALM",
+        "model_a_score": "16%",
+        "model_b_name": "Dense Transformer",
+        "model_b_score": "0%",
+        "delta_label": "\u26a1 16% PERFORMANCE BOOST"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "NVKd1WWnVi0",
+    "shorts_url": "https://youtube.com/shorts/NVKd1WWnVi0",
+    "studio_url": "https://studio.youtube.com/video/NVKd1WWnVi0/edit",
+    "title": "REALM Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/realm_mips_breakdown_poster.png",
+    "custom_thumbnail_set": false
+  }
+}
