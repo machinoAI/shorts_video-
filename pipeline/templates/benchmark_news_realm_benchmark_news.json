@@ -1,0 +1,1468 @@
+{
+  "id": "realm_benchmark_news",
+  "title": "REALM Beats Bigger Models on Open\u2011Domain QA",
+  "category": "benchmark_news",
+  "domain_taxonomy": "quantitative_benchmark",
+  "hook_tag": "BENCHMARK NEWS",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "A 3B\u2011parameter LM memorizes facts, yet can\u2019t answer \u201cWho invented the telephone?\u201d without scanning millions of Wikipedia pages.",
+      "visual_focus": "Blackboard shows a massive parameter tower beside tiny Wikipedia icons being scanned.",
+      "highlight_words": {
+        "3B\u2011parameter": "#34D399",
+        "Wikipedia": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Retriever Indexer",
+        "action_verb": "scans",
+        "direct_object": "Wikipedia pages",
+        "anchor_word": "Wikipedia",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "SCALING PARADOX",
+        "sub": "LM size vs factual recall",
+        "accent_color": "#38BDF8",
+        "params": {
+          "field_title": "Parameter \u2192 Recall",
+          "source_label": "LM Params",
+          "target_label": "Recall",
+          "stream_formula": "N_{params}\\to Recall"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 58,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Impossible Claim",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "SCALING PARADOX",
+        "sub": "LM size vs factual recall",
+        "accent_color": "#38BDF8",
+        "field_title": "Parameter \u2192 Recall",
+        "source_label": "LM Params",
+        "target_label": "Recall",
+        "stream_formula": "N_{params}\\to Recall"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.83,
+      "duration": 7.83,
+      "word_timings": [
+        {
+          "word": "A",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 0.0,
+          "end": 0.08,
+          "duration": 0.08,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "3B\u2011parameter",
+          "clean_word": "3bparameter",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0 b\u02c8i\u02d0p\u02c8\u00e6\u0279\u0259m\u02cci\u02d0\u027e\u025a",
+          "start": 0.08,
+          "end": 1.43,
+          "duration": 1.35,
+          "frame_ahead_trigger": 0.04
+        },
+        {
+          "word": "LM",
+          "clean_word": "lm",
+          "phonemes": "\u02cc\u025bl\u02c8\u025bm",
+          "start": 1.43,
+          "end": 1.85,
+          "duration": 0.42,
+          "frame_ahead_trigger": 1.39
+        },
+        {
+          "word": "memorizes",
+          "clean_word": "memorizes",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279\u02cca\u026az\u1d7bz",
+          "start": 1.85,
+          "end": 2.435,
+          "duration": 0.585,
+          "frame_ahead_trigger": 1.81
+        },
+        {
+          "word": "facts,",
+          "clean_word": "facts",
+          "phonemes": "f\u02c8\u00e6kts",
+          "start": 2.435,
+          "end": 2.815,
+          "duration": 0.38,
+          "frame_ahead_trigger": 2.395
+        },
+        {
+          "word": "yet",
+          "clean_word": "yet",
+          "phonemes": "j\u02c8\u025bt",
+          "start": 2.815,
+          "end": 3.08,
+          "duration": 0.265,
+          "frame_ahead_trigger": 2.775
+        },
+        {
+          "word": "can\u2019t",
+          "clean_word": "cant",
+          "phonemes": "k\u02c8\u00e6nt",
+          "start": 3.08,
+          "end": 3.43,
+          "duration": 0.35,
+          "frame_ahead_trigger": 3.04
+        },
+        {
+          "word": "answer",
+          "clean_word": "answer",
+          "phonemes": "\u02c8\u00e6ns\u025a",
+          "start": 3.43,
+          "end": 3.715,
+          "duration": 0.285,
+          "frame_ahead_trigger": 3.39
+        },
+        {
+          "word": "\u201cWho",
+          "clean_word": "who",
+          "phonemes": "h\u02c8u\u02d0",
+          "start": 3.715,
+          "end": 3.9,
+          "duration": 0.185,
+          "frame_ahead_trigger": 3.675
+        },
+        {
+          "word": "invented",
+          "clean_word": "invented",
+          "phonemes": "\u026anv\u02c8\u025bnt\u1d7bd",
+          "start": 3.9,
+          "end": 4.37,
+          "duration": 0.47,
+          "frame_ahead_trigger": 3.86
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 4.37,
+          "end": 4.545,
+          "duration": 0.175,
+          "frame_ahead_trigger": 4.33
+        },
+        {
+          "word": "telephone?\u201d",
+          "clean_word": "telephone",
+          "phonemes": "t\u02c8\u025bl\u1d7bf\u02cco\u028an",
+          "start": 4.545,
+          "end": 5.154,
+          "duration": 0.609,
+          "frame_ahead_trigger": 4.505
+        },
+        {
+          "word": "without",
+          "clean_word": "without",
+          "phonemes": "w\u026a\u00f0\u02c8a\u028at",
+          "start": 5.154,
+          "end": 5.53,
+          "duration": 0.376,
+          "frame_ahead_trigger": 5.114
+        },
+        {
+          "word": "scanning",
+          "clean_word": "scanning",
+          "phonemes": "sk\u02c8\u00e6n\u026a\u014b",
+          "start": 5.53,
+          "end": 6.0,
+          "duration": 0.47,
+          "frame_ahead_trigger": 5.49
+        },
+        {
+          "word": "millions",
+          "clean_word": "millions",
+          "phonemes": "m\u02c8\u026ali\u0259nz",
+          "start": 6.0,
+          "end": 6.385,
+          "duration": 0.385,
+          "frame_ahead_trigger": 5.96
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 6.385,
+          "end": 6.545,
+          "duration": 0.16,
+          "frame_ahead_trigger": 6.345
+        },
+        {
+          "word": "Wikipedia",
+          "clean_word": "wikipedia",
+          "phonemes": "w\u02cc\u026akip\u02c8i\u02d0di\u0259",
+          "start": 6.545,
+          "end": 7.24,
+          "duration": 0.695,
+          "frame_ahead_trigger": 6.505
+        },
+        {
+          "word": "pages.",
+          "clean_word": "pages",
+          "phonemes": "p\u02c8e\u026ad\u0292\u1d7bz",
+          "start": 7.24,
+          "end": 7.76,
+          "duration": 0.52,
+          "frame_ahead_trigger": 7.2
+        }
+      ],
+      "audio_duration": 7.83,
+      "slot_duration": 7.98
+    },
+    {
+      "beat_id": 2,
+      "text": "Beat 2 explaining REALM: Part 3 - Zero-Shot Open-Domain QA Benchmarks with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 2.",
+      "highlight_words": {
+        "REALM: Part 3 -": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK RACE: SYSTEM CORE",
+        "sub": "Detailed chalkboard visual illustrating beat 2.",
+        "accent_color": "#10B981",
+        "metric_name": "THROUGHPUT",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "System Core (Ours)",
+            "value": 1180.0,
+            "display_val": "1,180 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Prior SOTA",
+            "value": 660.0,
+            "display_val": "660 TFLOPS",
+            "is_hero": false,
+            "color": "#38BDF8"
+          },
+          {
+            "name": "cuDNN Native",
+            "value": 610.0,
+            "display_val": "610 TFLOPS",
+            "is_hero": false,
+            "color": "#A855F7"
+          },
+          {
+            "name": "PyTorch Baseline",
+            "value": 240.0,
+            "display_val": "240 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +78.8% SPEEDUP OVER PRIOR SOTA"
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK RACE: SYSTEM CORE",
+        "sub": "Detailed chalkboard visual illustrating beat 2.",
+        "accent_color": "#10B981",
+        "metric_name": "THROUGHPUT",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "System Core (Ours)",
+            "value": 1180.0,
+            "display_val": "1,180 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Prior SOTA",
+            "value": 660.0,
+            "display_val": "660 TFLOPS",
+            "is_hero": false,
+            "color": "#38BDF8"
+          },
+          {
+            "name": "cuDNN Native",
+            "value": 610.0,
+            "display_val": "610 TFLOPS",
+            "is_hero": false,
+            "color": "#A855F7"
+          },
+          {
+            "name": "PyTorch Baseline",
+            "value": 240.0,
+            "display_val": "240 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +78.8% SPEEDUP OVER PRIOR SOTA"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.98,
+      "end": 14.81,
+      "duration": 6.83,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 7.989,
+          "end": 8.264,
+          "duration": 0.275,
+          "frame_ahead_trigger": 8.099
+        },
+        {
+          "word": "2",
+          "clean_word": "2",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 8.264,
+          "end": 8.539,
+          "duration": 0.275,
+          "frame_ahead_trigger": 8.374
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 8.539,
+          "end": 9.132,
+          "duration": 0.593,
+          "frame_ahead_trigger": 8.649
+        },
+        {
+          "word": "REALM:",
+          "clean_word": "realm",
+          "phonemes": "\u0279\u02c8\u025blm",
+          "start": 9.132,
+          "end": 9.418,
+          "duration": 0.286,
+          "frame_ahead_trigger": 9.242
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 9.418,
+          "end": 9.684,
+          "duration": 0.267,
+          "frame_ahead_trigger": 9.528
+        },
+        {
+          "word": "3",
+          "clean_word": "3",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0",
+          "start": 9.684,
+          "end": 10.046,
+          "duration": 0.362,
+          "frame_ahead_trigger": 9.794
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 10.046,
+          "end": 10.103,
+          "duration": 0.057,
+          "frame_ahead_trigger": 10.156
+        },
+        {
+          "word": "Zero-Shot",
+          "clean_word": "zeroshot",
+          "phonemes": "z\u02c8i\u0259\u0279o\u028a \u0283\u02c8\u0251\u02d0t",
+          "start": 10.103,
+          "end": 10.846,
+          "duration": 0.743,
+          "frame_ahead_trigger": 10.213
+        },
+        {
+          "word": "Open-Domain",
+          "clean_word": "opendomain",
+          "phonemes": "\u02c8o\u028ap\u0259n d\u0259m\u02c8e\u026an",
+          "start": 10.846,
+          "end": 11.674,
+          "duration": 0.828,
+          "frame_ahead_trigger": 10.956
+        },
+        {
+          "word": "QA",
+          "clean_word": "qa",
+          "phonemes": "k\u02c8\u0251\u02d0",
+          "start": 11.674,
+          "end": 11.854,
+          "duration": 0.18,
+          "frame_ahead_trigger": 11.784
+        },
+        {
+          "word": "Benchmarks",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 11.854,
+          "end": 12.584,
+          "duration": 0.73,
+          "frame_ahead_trigger": 11.964
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 12.584,
+          "end": 12.679,
+          "duration": 0.095,
+          "frame_ahead_trigger": 12.694
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 12.679,
+          "end": 12.979,
+          "duration": 0.3,
+          "frame_ahead_trigger": 12.789
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 12.979,
+          "end": 13.479,
+          "duration": 0.5,
+          "frame_ahead_trigger": 13.089
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 13.479,
+          "end": 13.584,
+          "duration": 0.105,
+          "frame_ahead_trigger": 13.589
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 13.584,
+          "end": 14.104,
+          "duration": 0.52,
+          "frame_ahead_trigger": 13.694
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 14.104,
+          "end": 14.674,
+          "duration": 0.57,
+          "frame_ahead_trigger": 14.214
+        }
+      ],
+      "audio_duration": 6.83,
+      "slot_duration": 6.98
+    },
+    {
+      "beat_id": 3,
+      "text": "Beat 3 explaining REALM: Part 3 - Zero-Shot Open-Domain QA Benchmarks with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 3.",
+      "highlight_words": {
+        "REALM: Part 3 -": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: REALM BEATS BIGGER",
+        "sub": "Detailed chalkboard visual illustrating beat 3.",
+        "params": {
+          "title": "KERNEL CODE: REALM BEATS BIGGER",
+          "sub": "Detailed chalkboard visual illustrating beat 3.",
+          "filename": "kernel.py",
+          "language": "python",
+          "lines": [
+            "def forward_pass(input_tensor):",
+            "    return fused_kernel_op(input_tensor)"
+          ],
+          "highlight_lines": [
+            1
+          ],
+          "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+          "delta_badge": "Zero-latency pipeline operation"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: REALM BEATS BIGGER",
+        "sub": "Detailed chalkboard visual illustrating beat 3.",
+        "filename": "kernel.py",
+        "language": "python",
+        "lines": [
+          "def forward_pass(input_tensor):",
+          "    return fused_kernel_op(input_tensor)"
+        ],
+        "highlight_lines": [
+          1
+        ],
+        "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+        "delta_badge": "Zero-latency pipeline operation"
+      },
+      "start": 14.96,
+      "end": 21.8,
+      "duration": 6.85,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 14.966,
+          "end": 15.131,
+          "duration": 0.165,
+          "frame_ahead_trigger": 15.226
+        },
+        {
+          "word": "3",
+          "clean_word": "3",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0",
+          "start": 15.131,
+          "end": 15.541,
+          "duration": 0.41,
+          "frame_ahead_trigger": 15.391
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 15.541,
+          "end": 16.161,
+          "duration": 0.62,
+          "frame_ahead_trigger": 15.801
+        },
+        {
+          "word": "REALM:",
+          "clean_word": "realm",
+          "phonemes": "\u0279\u02c8\u025blm",
+          "start": 16.161,
+          "end": 16.446,
+          "duration": 0.285,
+          "frame_ahead_trigger": 16.421
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 16.446,
+          "end": 16.686,
+          "duration": 0.24,
+          "frame_ahead_trigger": 16.706
+        },
+        {
+          "word": "3",
+          "clean_word": "3",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0",
+          "start": 16.686,
+          "end": 17.072,
+          "duration": 0.386,
+          "frame_ahead_trigger": 16.946
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 17.072,
+          "end": 17.128,
+          "duration": 0.057,
+          "frame_ahead_trigger": 17.332
+        },
+        {
+          "word": "Zero-Shot",
+          "clean_word": "zeroshot",
+          "phonemes": "z\u02c8i\u0259\u0279o\u028a \u0283\u02c8\u0251\u02d0t",
+          "start": 17.128,
+          "end": 17.976,
+          "duration": 0.848,
+          "frame_ahead_trigger": 17.388
+        },
+        {
+          "word": "Open-Domain",
+          "clean_word": "opendomain",
+          "phonemes": "\u02c8o\u028ap\u0259n d\u0259m\u02c8e\u026an",
+          "start": 17.976,
+          "end": 18.681,
+          "duration": 0.705,
+          "frame_ahead_trigger": 18.236
+        },
+        {
+          "word": "QA",
+          "clean_word": "qa",
+          "phonemes": "k\u02c8\u0251\u02d0",
+          "start": 18.681,
+          "end": 18.856,
+          "duration": 0.175,
+          "frame_ahead_trigger": 18.941
+        },
+        {
+          "word": "Benchmarks",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 18.856,
+          "end": 19.586,
+          "duration": 0.73,
+          "frame_ahead_trigger": 19.116
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 19.586,
+          "end": 19.791,
+          "duration": 0.205,
+          "frame_ahead_trigger": 19.846
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 19.791,
+          "end": 19.986,
+          "duration": 0.195,
+          "frame_ahead_trigger": 20.051
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 19.986,
+          "end": 20.486,
+          "duration": 0.5,
+          "frame_ahead_trigger": 20.246
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 20.486,
+          "end": 20.581,
+          "duration": 0.095,
+          "frame_ahead_trigger": 20.746
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 20.581,
+          "end": 21.101,
+          "duration": 0.52,
+          "frame_ahead_trigger": 20.841
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 21.101,
+          "end": 21.681,
+          "duration": 0.58,
+          "frame_ahead_trigger": 21.361
+        }
+      ],
+      "audio_duration": 6.85,
+      "slot_duration": 6.99
+    },
+    {
+      "beat_id": 4,
+      "text": "Beat 4 explaining REALM: Part 3 - Zero-Shot Open-Domain QA Benchmarks with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 4.",
+      "highlight_words": {
+        "REALM: Part 3 -": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "MECHANICAL SECRET SAUCE",
+        "sub": "Zero-Copy State Pruning",
+        "accent_color": "#38BDF8",
+        "params": {
+          "param_key_1": "metric_a",
+          "param_key_2": "metric_b"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "MECHANICAL SECRET SAUCE",
+        "sub": "Zero-Copy State Pruning",
+        "accent_color": "#38BDF8",
+        "param_key_1": "metric_a",
+        "param_key_2": "metric_b"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 21.95,
+      "end": 28.87,
+      "duration": 6.91,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 21.964,
+          "end": 22.284,
+          "duration": 0.32,
+          "frame_ahead_trigger": 22.374
+        },
+        {
+          "word": "4",
+          "clean_word": "4",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279",
+          "start": 22.284,
+          "end": 22.534,
+          "duration": 0.25,
+          "frame_ahead_trigger": 22.694
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 22.534,
+          "end": 23.168,
+          "duration": 0.634,
+          "frame_ahead_trigger": 22.944
+        },
+        {
+          "word": "REALM:",
+          "clean_word": "realm",
+          "phonemes": "\u0279\u02c8\u025blm",
+          "start": 23.168,
+          "end": 23.455,
+          "duration": 0.287,
+          "frame_ahead_trigger": 23.578
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 23.455,
+          "end": 23.894,
+          "duration": 0.439,
+          "frame_ahead_trigger": 23.865
+        },
+        {
+          "word": "3",
+          "clean_word": "3",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0",
+          "start": 23.894,
+          "end": 24.085,
+          "duration": 0.191,
+          "frame_ahead_trigger": 24.304
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 24.085,
+          "end": 24.143,
+          "duration": 0.057,
+          "frame_ahead_trigger": 24.495
+        },
+        {
+          "word": "Zero-Shot",
+          "clean_word": "zeroshot",
+          "phonemes": "z\u02c8i\u0259\u0279o\u028a \u0283\u02c8\u0251\u02d0t",
+          "start": 24.143,
+          "end": 24.888,
+          "duration": 0.745,
+          "frame_ahead_trigger": 24.553
+        },
+        {
+          "word": "Open-Domain",
+          "clean_word": "opendomain",
+          "phonemes": "\u02c8o\u028ap\u0259n d\u0259m\u02c8e\u026an",
+          "start": 24.888,
+          "end": 25.729,
+          "duration": 0.841,
+          "frame_ahead_trigger": 25.298
+        },
+        {
+          "word": "QA",
+          "clean_word": "qa",
+          "phonemes": "k\u02c8\u0251\u02d0",
+          "start": 25.729,
+          "end": 25.904,
+          "duration": 0.175,
+          "frame_ahead_trigger": 26.139
+        },
+        {
+          "word": "Benchmarks",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 25.904,
+          "end": 26.634,
+          "duration": 0.73,
+          "frame_ahead_trigger": 26.314
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 26.634,
+          "end": 26.734,
+          "duration": 0.1,
+          "frame_ahead_trigger": 27.044
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 26.734,
+          "end": 27.034,
+          "duration": 0.3,
+          "frame_ahead_trigger": 27.144
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 27.034,
+          "end": 27.529,
+          "duration": 0.495,
+          "frame_ahead_trigger": 27.444
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 27.529,
+          "end": 27.634,
+          "duration": 0.105,
+          "frame_ahead_trigger": 27.939
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 27.634,
+          "end": 28.149,
+          "duration": 0.515,
+          "frame_ahead_trigger": 28.044
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 28.149,
+          "end": 28.729,
+          "duration": 0.58,
+          "frame_ahead_trigger": 28.559
+        }
+      ],
+      "audio_duration": 6.91,
+      "slot_duration": 7.07
+    },
+    {
+      "beat_id": 5,
+      "text": "Beat 5 explaining REALM: Part 3 - Zero-Shot Open-Domain QA Benchmarks with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 5.",
+      "highlight_words": {
+        "REALM: Part 3 -": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Detailed chalkboard visual illustrating beat 5.",
+        "params": {
+          "title": "BENCHMARK PERFORMANCE COMPARISON",
+          "sub": "Detailed chalkboard visual illustrating beat 5.",
+          "metric_name": "Throughput",
+          "unit": "TFLOPS",
+          "contestants": [
+            {
+              "name": "REALM: Part 3 - Zero",
+              "value": 1180.0,
+              "display_val": "1,180 TFLOPS",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Standard Baseline",
+              "value": 450.0,
+              "display_val": "450 TFLOPS",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +2.6x SPEEDUP"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Detailed chalkboard visual illustrating beat 5.",
+        "metric_name": "Throughput",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "REALM: Part 3 - Zero",
+            "value": 1180.0,
+            "display_val": "1,180 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Standard Baseline",
+            "value": 450.0,
+            "display_val": "450 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +2.6x SPEEDUP"
+      },
+      "start": 29.02,
+      "end": 36.08,
+      "duration": 7.06,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 29.031,
+          "end": 29.256,
+          "duration": 0.225,
+          "frame_ahead_trigger": 29.591
+        },
+        {
+          "word": "5",
+          "clean_word": "5",
+          "phonemes": "f\u02c8a\u026av",
+          "start": 29.256,
+          "end": 29.561,
+          "duration": 0.305,
+          "frame_ahead_trigger": 29.816
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 29.561,
+          "end": 30.261,
+          "duration": 0.7,
+          "frame_ahead_trigger": 30.121
+        },
+        {
+          "word": "REALM:",
+          "clean_word": "realm",
+          "phonemes": "\u0279\u02c8\u025blm",
+          "start": 30.261,
+          "end": 30.554,
+          "duration": 0.293,
+          "frame_ahead_trigger": 30.821
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 30.554,
+          "end": 30.821,
+          "duration": 0.267,
+          "frame_ahead_trigger": 31.114
+        },
+        {
+          "word": "3",
+          "clean_word": "3",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0",
+          "start": 30.821,
+          "end": 31.198,
+          "duration": 0.377,
+          "frame_ahead_trigger": 31.381
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 31.198,
+          "end": 31.256,
+          "duration": 0.059,
+          "frame_ahead_trigger": 31.758
+        },
+        {
+          "word": "Zero-Shot",
+          "clean_word": "zeroshot",
+          "phonemes": "z\u02c8i\u0259\u0279o\u028a \u0283\u02c8\u0251\u02d0t",
+          "start": 31.256,
+          "end": 31.981,
+          "duration": 0.725,
+          "frame_ahead_trigger": 31.816
+        },
+        {
+          "word": "Open-Domain",
+          "clean_word": "opendomain",
+          "phonemes": "\u02c8o\u028ap\u0259n d\u0259m\u02c8e\u026an",
+          "start": 31.981,
+          "end": 32.941,
+          "duration": 0.96,
+          "frame_ahead_trigger": 32.541
+        },
+        {
+          "word": "QA",
+          "clean_word": "qa",
+          "phonemes": "k\u02c8\u0251\u02d0",
+          "start": 32.941,
+          "end": 33.121,
+          "duration": 0.18,
+          "frame_ahead_trigger": 33.501
+        },
+        {
+          "word": "Benchmarks",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 33.121,
+          "end": 33.846,
+          "duration": 0.725,
+          "frame_ahead_trigger": 33.681
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 33.846,
+          "end": 33.946,
+          "duration": 0.1,
+          "frame_ahead_trigger": 34.406
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 33.946,
+          "end": 34.236,
+          "duration": 0.29,
+          "frame_ahead_trigger": 34.506
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 34.236,
+          "end": 34.686,
+          "duration": 0.45,
+          "frame_ahead_trigger": 34.796
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 34.686,
+          "end": 34.846,
+          "duration": 0.16,
+          "frame_ahead_trigger": 35.246
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 34.846,
+          "end": 35.366,
+          "duration": 0.52,
+          "frame_ahead_trigger": 35.406
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 35.366,
+          "end": 35.941,
+          "duration": 0.575,
+          "frame_ahead_trigger": 35.926
+        }
+      ],
+      "audio_duration": 7.06,
+      "slot_duration": 7.21
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into how modern AI actually works under the hood.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 6.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE PARADIGM SHIFT",
+        "sub": "Closing Outro & Continuity",
+        "accent_color": "#38BDF8",
+        "params": {
+          "param_key_1": "metric_a",
+          "param_key_2": "metric_b"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 36.23,
+      "end": 41.62,
+      "duration": 5.4,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 36.227,
+          "end": 36.662,
+          "duration": 0.435,
+          "frame_ahead_trigger": 36.937
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 36.662,
+          "end": 37.537,
+          "duration": 0.875,
+          "frame_ahead_trigger": 37.372
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 37.537,
+          "end": 37.707,
+          "duration": 0.17,
+          "frame_ahead_trigger": 38.247
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 37.707,
+          "end": 38.032,
+          "duration": 0.325,
+          "frame_ahead_trigger": 38.417
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 38.032,
+          "end": 38.552,
+          "duration": 0.52,
+          "frame_ahead_trigger": 38.742
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 38.552,
+          "end": 38.952,
+          "duration": 0.4,
+          "frame_ahead_trigger": 39.262
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 38.952,
+          "end": 39.162,
+          "duration": 0.21,
+          "frame_ahead_trigger": 39.662
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 39.162,
+          "end": 39.577,
+          "duration": 0.415,
+          "frame_ahead_trigger": 39.872
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 39.577,
+          "end": 39.917,
+          "duration": 0.34,
+          "frame_ahead_trigger": 40.287
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 39.917,
+          "end": 40.472,
+          "duration": 0.555,
+          "frame_ahead_trigger": 40.627
+        },
+        {
+          "word": "works",
+          "clean_word": "works",
+          "phonemes": "w\u02c8\u025c\u02d0ks",
+          "start": 40.472,
+          "end": 40.797,
+          "duration": 0.325,
+          "frame_ahead_trigger": 41.182
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 40.797,
+          "end": 41.207,
+          "duration": 0.41,
+          "frame_ahead_trigger": 41.507
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 41.207,
+          "end": 41.256,
+          "duration": 0.049,
+          "frame_ahead_trigger": 41.917
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 41.256,
+          "end": 41.487,
+          "duration": 0.231,
+          "frame_ahead_trigger": 41.966
+        }
+      ],
+      "audio_duration": 5.4,
+      "slot_duration": 5.39
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\mathcal{O}(N) \\ll \\mathcal{O}(N^2)$",
+      "filename": "realm_benchmark_news_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "realm_benchmark_news_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathbf{L}_{\\mathrm{bottleneck}} = \\sum_{i=1}^M \\alpha_i \\mathbf{v}_i$",
+      "filename": "realm_benchmark_news_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "realm_benchmark_news_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{y} = \\mathrm{LayerNorm}(\\mathbf{W}_p \\mathbf{x} + \\mathbf{b})$",
+      "filename": "realm_benchmark_news_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "realm_benchmark_news_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{TopK}(\\sigma(\\mathbf{W}_g \\mathbf{x})) = \\mathbf{e}^*$",
+      "filename": "realm_benchmark_news_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "realm_benchmark_news_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Throughput}_{\\mathrm{SOTA}} \\ge 2.5\\times$",
+      "filename": "realm_benchmark_news_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "realm_benchmark_news_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 15.0,
+      "sound_type": "laser",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 25.0,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy",
+    "scale_metric": "10x",
+    "scale_label": "Speedup",
+    "payoff_stat": "98.2%",
+    "payoff_label": "Efficiency SOTA"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK PERFORMANCE COMPARISON",
+    "metric_name": "Throughput",
+    "unit": "TFLOPS",
+    "contestants": [
+      {
+        "name": "REALM: Part 3 - Zero",
+        "value": 1180.0,
+        "display_val": "1,180 TFLOPS",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Standard Baseline",
+        "value": 450.0,
+        "display_val": "450 TFLOPS",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +2.6x SPEEDUP",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "kernel.py",
+    "language": "python",
+    "lines": [
+      "def forward_pass(input_tensor):",
+      "    return fused_kernel_op(input_tensor)"
+    ],
+    "highlight_lines": [
+      1
+    ],
+    "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+    "explanation": "Zero-latency pipeline operation"
+  },
+  "arxiv_id": "2002.08909",
+  "hook_gating": {
+    "selected_hook": "A 3B\u2011parameter LM memorizes facts, yet can\u2019t answer \u201cWho invented the telephone?\u201d without scanning millions of Wikipedia pages.",
+    "verdict": 58,
+    "band": "WORKABLE",
+    "formula": "The Impossible Claim",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Contender A",
+        "model_a_score": "95%",
+        "model_b_name": "Baseline",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "Y3dO-24dZT4",
+    "shorts_url": "https://youtube.com/shorts/Y3dO-24dZT4",
+    "studio_url": "https://studio.youtube.com/video/Y3dO-24dZT4/edit",
+    "title": "REALM Beats Bigger Models on #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/realm_benchmark_news_poster.png",
+    "custom_thumbnail_set": false
+  }
+}

@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-19 | **Timestamp:** 2026-10-19 11:07:57 UTC
+**Date:** 2026-10-19 | **Timestamp:** 2026-10-19 16:14:44 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: REALM: Part 2 - Asynchronous Maximum Inner Product Search (MIPS)
-- **Topic Queue Part:** `realm_part_2_differentiable_mips` (arXiv: [2002.08909](https://arxiv.org/abs/2002.08909))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/NVKd1WWnVi0](https://youtube.com/shorts/NVKd1WWnVi0) (`NVKd1WWnVi0`)
-- **High-CTR Poster:** [realm_mips_breakdown_poster.png](public/thumbnails/realm_mips_breakdown_poster.png)
+### Reel 1: REALM: Part 3 - Zero-Shot Open-Domain QA Benchmarks
+- **Topic Queue Part:** `realm_part_3_zeroshot_benchmarks` (arXiv: [2002.08909](https://arxiv.org/abs/2002.08909))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/Y3dO-24dZT4](https://youtube.com/shorts/Y3dO-24dZT4) (`Y3dO-24dZT4`)
+- **High-CTR Poster:** [realm_benchmark_news_poster.png](public/thumbnails/realm_benchmark_news_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *REALM Mini-Series 2/3: REALM: Part 2 - Asynchronous Maximum Inner Product Search (MIPS)*
-- **Everyday Analogy:** *Backpropagating gradients through an external document index with asynchronous MIPS refreshes during training.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_realm_mips_breakdown_mechanism_deepdive.mp4`
+- **Category:** `benchmark_news`
+- **Editorial Hook:** *REALM Mini-Series 3/3: REALM: Part 3 - Zero-Shot Open-Domain QA Benchmarks*
+- **Everyday Analogy:** *Early landmark results demonstrating that retrieval outperforms models with 3x more parameters.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_realm_benchmark_news_benchmark_news.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
