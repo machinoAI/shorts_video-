@@ -1,0 +1,1286 @@
+{
+  "id": "toolformer_self_supervised_api",
+  "title": "Toolformer: LLMs Teaching Themselves to Use Tools",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "MECHANISM DEEP DIVE",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "A 175B parameter model fails basic arithmetic, yet a tiny calculator solves it instantly.",
+      "visual_focus": "Split screen: Left shows a massive neural network struggling with '2+2', right shows a simple calculator icon.",
+      "highlight_words": {
+        "175B": "#EF4444",
+        "calculator": "#34D399"
+      },
+      "svo_action": {
+        "subject": "LLM",
+        "action_verb": "fails",
+        "direct_object": "Arithmetic Task",
+        "anchor_word": "fails",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "comparison_side_by_side",
+        "title": "THE PARADOX OF SCALE",
+        "sub": "Massive parameters vs. Simple Tools",
+        "accent_color": "#EF4444",
+        "params": {
+          "col_a_title": "LLM (175B)",
+          "col_a_stat": "Fails 2+2",
+          "col_b_title": "Calculator",
+          "col_b_stat": "Solves 2+2",
+          "col_a_specs": [
+            "High Cost",
+            "Low Precision"
+          ],
+          "col_b_specs": [
+            "Low Cost",
+            "High Precision"
+          ]
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 52,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "comparison_side_by_side",
+        "title": "THE PARADOX OF SCALE",
+        "sub": "Massive parameters vs. Simple Tools",
+        "accent_color": "#EF4444",
+        "col_a_title": "LLM (175B)",
+        "col_a_stat": "Fails 2+2",
+        "col_b_title": "Calculator",
+        "col_b_stat": "Solves 2+2",
+        "col_a_specs": [
+          "High Cost",
+          "Low Precision"
+        ],
+        "col_b_specs": [
+          "Low Cost",
+          "High Precision"
+        ]
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.14,
+      "duration": 6.14,
+      "word_timings": [
+        {
+          "word": "A",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 0.02,
+          "end": 0.225,
+          "duration": 0.205,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "175B",
+          "clean_word": "175b",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad s\u02c8\u025bv\u0259nti f\u02c8a\u026av b\u02c8i\u02d0",
+          "start": 0.225,
+          "end": 1.71,
+          "duration": 1.485,
+          "frame_ahead_trigger": 0.185
+        },
+        {
+          "word": "parameter",
+          "clean_word": "parameter",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025a",
+          "start": 1.71,
+          "end": 2.295,
+          "duration": 0.585,
+          "frame_ahead_trigger": 1.67
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 2.295,
+          "end": 2.61,
+          "duration": 0.315,
+          "frame_ahead_trigger": 2.255
+        },
+        {
+          "word": "fails",
+          "clean_word": "fails",
+          "phonemes": "f\u02c8e\u026alz",
+          "start": 2.61,
+          "end": 2.83,
+          "duration": 0.22,
+          "frame_ahead_trigger": 2.57
+        },
+        {
+          "word": "basic",
+          "clean_word": "basic",
+          "phonemes": "b\u02c8e\u026as\u026ak",
+          "start": 2.83,
+          "end": 3.195,
+          "duration": 0.365,
+          "frame_ahead_trigger": 2.79
+        },
+        {
+          "word": "arithmetic,",
+          "clean_word": "arithmetic",
+          "phonemes": "\u025a\u0279\u02c8\u026a\u03b8m\u0259t\u02cc\u026ak",
+          "start": 3.195,
+          "end": 3.751,
+          "duration": 0.556,
+          "frame_ahead_trigger": 3.155
+        },
+        {
+          "word": "yet",
+          "clean_word": "yet",
+          "phonemes": "j\u02c8\u025bt",
+          "start": 3.751,
+          "end": 3.92,
+          "duration": 0.169,
+          "frame_ahead_trigger": 3.711
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 3.92,
+          "end": 4.12,
+          "duration": 0.2,
+          "frame_ahead_trigger": 3.88
+        },
+        {
+          "word": "tiny",
+          "clean_word": "tiny",
+          "phonemes": "t\u02c8a\u026ani",
+          "start": 4.12,
+          "end": 4.465,
+          "duration": 0.345,
+          "frame_ahead_trigger": 4.08
+        },
+        {
+          "word": "calculator",
+          "clean_word": "calculator",
+          "phonemes": "k\u02c8\u00e6lkj\u028al\u02cce\u026a\u027e\u025a",
+          "start": 4.465,
+          "end": 5.035,
+          "duration": 0.57,
+          "frame_ahead_trigger": 4.425
+        },
+        {
+          "word": "solves",
+          "clean_word": "solves",
+          "phonemes": "s\u02c8\u0251\u02d0lvz",
+          "start": 5.035,
+          "end": 5.385,
+          "duration": 0.35,
+          "frame_ahead_trigger": 4.995
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 5.385,
+          "end": 5.525,
+          "duration": 0.14,
+          "frame_ahead_trigger": 5.345
+        },
+        {
+          "word": "instantly.",
+          "clean_word": "instantly",
+          "phonemes": "\u02c8\u026anst\u0259ntli",
+          "start": 5.525,
+          "end": 5.99,
+          "duration": 0.465,
+          "frame_ahead_trigger": 5.485
+        }
+      ],
+      "audio_duration": 6.14,
+      "slot_duration": 6.29
+    },
+    {
+      "beat_id": 2,
+      "text": "The bottleneck is hallucination: the model guesses tokens instead of querying external truth.",
+      "visual_focus": "A token stream where '4' is generated with low confidence, surrounded by red noise.",
+      "highlight_words": {
+        "hallucination": "#EF4444",
+        "guesses": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Model",
+        "action_verb": "hallucinates",
+        "direct_object": "Token Sequence",
+        "anchor_word": "hallucination",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "neural_activation_wave",
+        "title": "HALLUCINATION NOISE",
+        "sub": "Internal guessing vs. External Truth",
+        "accent_color": "#EF4444",
+        "params": {
+          "input_label": "Query: 2+2",
+          "hidden_label": "Confidence Drop",
+          "output_label": "Wrong Token"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "neural_activation_wave",
+        "title": "HALLUCINATION NOISE",
+        "sub": "Internal guessing vs. External Truth",
+        "accent_color": "#EF4444",
+        "input_label": "Query: 2+2",
+        "hidden_label": "Confidence Drop",
+        "output_label": "Wrong Token"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.29,
+      "end": 11.14,
+      "duration": 4.84,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 6.309,
+          "end": 6.414,
+          "duration": 0.105,
+          "frame_ahead_trigger": 6.419
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 6.414,
+          "end": 6.969,
+          "duration": 0.555,
+          "frame_ahead_trigger": 6.524
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 6.969,
+          "end": 7.139,
+          "duration": 0.17,
+          "frame_ahead_trigger": 7.079
+        },
+        {
+          "word": "hallucination:",
+          "clean_word": "hallucination",
+          "phonemes": "h\u0250l\u02ccu\u02d0s\u1d7bn\u02c8e\u026a\u0283\u0259n",
+          "start": 7.139,
+          "end": 7.904,
+          "duration": 0.765,
+          "frame_ahead_trigger": 7.249
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 7.904,
+          "end": 8.01,
+          "duration": 0.106,
+          "frame_ahead_trigger": 8.014
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 8.01,
+          "end": 8.354,
+          "duration": 0.344,
+          "frame_ahead_trigger": 8.12
+        },
+        {
+          "word": "guesses",
+          "clean_word": "guesses",
+          "phonemes": "\u0261\u02c8\u025bs\u1d7bz",
+          "start": 8.354,
+          "end": 8.749,
+          "duration": 0.395,
+          "frame_ahead_trigger": 8.464
+        },
+        {
+          "word": "tokens",
+          "clean_word": "tokens",
+          "phonemes": "t\u02c8o\u028ak\u0259nz",
+          "start": 8.749,
+          "end": 9.154,
+          "duration": 0.405,
+          "frame_ahead_trigger": 8.859
+        },
+        {
+          "word": "instead",
+          "clean_word": "instead",
+          "phonemes": "\u026anst\u02c8\u025bd",
+          "start": 9.154,
+          "end": 9.584,
+          "duration": 0.43,
+          "frame_ahead_trigger": 9.264
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 9.584,
+          "end": 9.605,
+          "duration": 0.021,
+          "frame_ahead_trigger": 9.694
+        },
+        {
+          "word": "querying",
+          "clean_word": "querying",
+          "phonemes": "kw\u02c8i\u0259\u0279\u026a\u026a\u014b",
+          "start": 9.605,
+          "end": 10.083,
+          "duration": 0.478,
+          "frame_ahead_trigger": 9.715
+        },
+        {
+          "word": "external",
+          "clean_word": "external",
+          "phonemes": "\u025bkst\u02c8\u025c\u02d0n\u0259l",
+          "start": 10.083,
+          "end": 10.699,
+          "duration": 0.616,
+          "frame_ahead_trigger": 10.193
+        },
+        {
+          "word": "truth.",
+          "clean_word": "truth",
+          "phonemes": "t\u0279\u02c8u\u02d0\u03b8",
+          "start": 10.699,
+          "end": 10.934,
+          "duration": 0.235,
+          "frame_ahead_trigger": 10.809
+        }
+      ],
+      "audio_duration": 4.84,
+      "slot_duration": 5.0
+    },
+    {
+      "beat_id": 3,
+      "text": "Toolformer inserts API calls directly into the token stream as special tokens.",
+      "visual_focus": "A text stream where a special token <CALC> appears, triggering a side-channel.",
+      "highlight_words": {
+        "API calls": "#38BDF8",
+        "special tokens": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Toolformer",
+        "action_verb": "inserts",
+        "direct_object": "API Token",
+        "anchor_word": "inserts",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "TOOLFORMER ARCHITECTURE",
+        "sub": "A text stream where a special token <CALC> appears, triggering a ",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/chalkboard_figures/fig_1_example.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/chalkboard_figures/fig_1_example.png",
+          "arxiv_id": "2302.04761",
+          "title": "TOOLFORMER ARCHITECTURE",
+          "sub": "A text stream where a special token <CALC> appears, triggering a ",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Example",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/chalkboard_figures/fig_1_example.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/chalkboard_figures/fig_1_example.png",
+        "arxiv_id": "2302.04761",
+        "title": "TOOLFORMER ARCHITECTURE",
+        "sub": "A text stream where a special token <CALC> appears, triggering a ",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Example",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 11.29,
+      "end": 15.85,
+      "duration": 4.57,
+      "word_timings": [
+        {
+          "word": "Toolformer",
+          "clean_word": "toolformer",
+          "phonemes": "t\u02c8u\u02d0lf\u0254\u02d0\u0279m\u025a",
+          "start": 11.287,
+          "end": 11.987,
+          "duration": 0.7,
+          "frame_ahead_trigger": 11.547
+        },
+        {
+          "word": "inserts",
+          "clean_word": "inserts",
+          "phonemes": "\u02c8\u026ans\u025c\u02d0ts",
+          "start": 11.987,
+          "end": 12.272,
+          "duration": 0.285,
+          "frame_ahead_trigger": 12.247
+        },
+        {
+          "word": "API",
+          "clean_word": "api",
+          "phonemes": "\u02cce\u026ap\u02cci\u02d0\u02c8a\u026a",
+          "start": 12.272,
+          "end": 12.937,
+          "duration": 0.665,
+          "frame_ahead_trigger": 12.532
+        },
+        {
+          "word": "calls",
+          "clean_word": "calls",
+          "phonemes": "k\u02c8\u0254\u02d0lz",
+          "start": 12.937,
+          "end": 13.262,
+          "duration": 0.325,
+          "frame_ahead_trigger": 13.197
+        },
+        {
+          "word": "directly",
+          "clean_word": "directly",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bktli",
+          "start": 13.262,
+          "end": 13.691,
+          "duration": 0.429,
+          "frame_ahead_trigger": 13.522
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 13.691,
+          "end": 13.922,
+          "duration": 0.231,
+          "frame_ahead_trigger": 13.951
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 13.922,
+          "end": 14.062,
+          "duration": 0.14,
+          "frame_ahead_trigger": 14.182
+        },
+        {
+          "word": "token",
+          "clean_word": "token",
+          "phonemes": "t\u02c8o\u028ak\u0259n",
+          "start": 14.062,
+          "end": 14.477,
+          "duration": 0.415,
+          "frame_ahead_trigger": 14.322
+        },
+        {
+          "word": "stream",
+          "clean_word": "stream",
+          "phonemes": "st\u0279\u02c8i\u02d0m",
+          "start": 14.477,
+          "end": 14.777,
+          "duration": 0.3,
+          "frame_ahead_trigger": 14.737
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 14.777,
+          "end": 14.972,
+          "duration": 0.195,
+          "frame_ahead_trigger": 15.037
+        },
+        {
+          "word": "special",
+          "clean_word": "special",
+          "phonemes": "sp\u02c8\u025b\u0283\u0259l",
+          "start": 14.972,
+          "end": 15.262,
+          "duration": 0.29,
+          "frame_ahead_trigger": 15.232
+        },
+        {
+          "word": "tokens.",
+          "clean_word": "tokens",
+          "phonemes": "t\u02c8o\u028ak\u0259nz",
+          "start": 15.262,
+          "end": 15.767,
+          "duration": 0.505,
+          "frame_ahead_trigger": 15.522
+        }
+      ],
+      "audio_duration": 4.57,
+      "slot_duration": 4.71
+    },
+    {
+      "beat_id": 4,
+      "text": "It self-supervises by keeping only calls that strictly reduce the next-token perplexity.",
+      "visual_focus": "A filter gate where high-perplexity paths are pruned, leaving only low-perplexity API calls.",
+      "highlight_words": {
+        "self-supervises": "#34D399",
+        "perplexity": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Filter",
+        "action_verb": "prunes",
+        "direct_object": "High Perplexity Calls",
+        "anchor_word": "prunes",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: TOOLFORMER: LLMS T",
+        "sub": "A filter gate where high-perplexity paths are pruned, leaving onl",
+        "params": {
+          "title": "KERNEL CODE: TOOLFORMER: LLMS T",
+          "sub": "A filter gate where high-perplexity paths are pruned, leaving onl",
+          "filename": "kernel.py",
+          "language": "python",
+          "lines": [
+            "def forward_pass(input_tensor):",
+            "    return fused_kernel_op(input_tensor)"
+          ],
+          "highlight_lines": [
+            1
+          ],
+          "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+          "delta_badge": "Zero-latency pipeline operation"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: TOOLFORMER: LLMS T",
+        "sub": "A filter gate where high-perplexity paths are pruned, leaving onl",
+        "filename": "kernel.py",
+        "language": "python",
+        "lines": [
+          "def forward_pass(input_tensor):",
+          "    return fused_kernel_op(input_tensor)"
+        ],
+        "highlight_lines": [
+          1
+        ],
+        "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+        "delta_badge": "Zero-latency pipeline operation"
+      },
+      "start": 16.0,
+      "end": 20.61,
+      "duration": 4.61,
+      "word_timings": [
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 16.017,
+          "end": 16.107,
+          "duration": 0.09,
+          "frame_ahead_trigger": 16.427
+        },
+        {
+          "word": "self-supervises",
+          "clean_word": "selfsupervises",
+          "phonemes": "s\u02c8\u025blfsu\u02d0p\u025av\u02cca\u026az\u1d7bz",
+          "start": 16.107,
+          "end": 16.917,
+          "duration": 0.81,
+          "frame_ahead_trigger": 16.517
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 16.917,
+          "end": 17.127,
+          "duration": 0.21,
+          "frame_ahead_trigger": 17.327
+        },
+        {
+          "word": "keeping",
+          "clean_word": "keeping",
+          "phonemes": "k\u02c8i\u02d0p\u026a\u014b",
+          "start": 17.127,
+          "end": 17.622,
+          "duration": 0.495,
+          "frame_ahead_trigger": 17.537
+        },
+        {
+          "word": "only",
+          "clean_word": "only",
+          "phonemes": "\u02c8o\u028anli",
+          "start": 17.622,
+          "end": 17.892,
+          "duration": 0.27,
+          "frame_ahead_trigger": 18.032
+        },
+        {
+          "word": "calls",
+          "clean_word": "calls",
+          "phonemes": "k\u02c8\u0254\u02d0lz",
+          "start": 17.892,
+          "end": 18.19,
+          "duration": 0.298,
+          "frame_ahead_trigger": 18.302
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 18.19,
+          "end": 18.442,
+          "duration": 0.252,
+          "frame_ahead_trigger": 18.6
+        },
+        {
+          "word": "strictly",
+          "clean_word": "strictly",
+          "phonemes": "st\u0279\u02c8\u026aktli",
+          "start": 18.442,
+          "end": 18.837,
+          "duration": 0.395,
+          "frame_ahead_trigger": 18.852
+        },
+        {
+          "word": "reduce",
+          "clean_word": "reduce",
+          "phonemes": "\u0279\u1d7bd\u02c8u\u02d0s",
+          "start": 18.837,
+          "end": 19.242,
+          "duration": 0.405,
+          "frame_ahead_trigger": 19.247
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 19.242,
+          "end": 19.329,
+          "duration": 0.087,
+          "frame_ahead_trigger": 19.652
+        },
+        {
+          "word": "next-token",
+          "clean_word": "nexttoken",
+          "phonemes": "n\u02c8\u025bksto\u028ak\u0259n",
+          "start": 19.329,
+          "end": 19.967,
+          "duration": 0.638,
+          "frame_ahead_trigger": 19.739
+        },
+        {
+          "word": "perplexity.",
+          "clean_word": "perplexity",
+          "phonemes": "p\u025apl\u02c8\u025bks\u1d7b\u027ei",
+          "start": 19.967,
+          "end": 20.467,
+          "duration": 0.5,
+          "frame_ahead_trigger": 20.377
+        }
+      ],
+      "audio_duration": 4.61,
+      "slot_duration": 4.76
+    },
+    {
+      "beat_id": 5,
+      "text": "Result: Zero-shot performance matches much larger models, without sacrificing core language skills.",
+      "visual_focus": "A bar chart showing Toolformer outperforming larger baselines on factual tasks.",
+      "highlight_words": {
+        "Zero-shot": "#34D399",
+        "larger models": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Toolformer",
+        "action_verb": "outperforms",
+        "direct_object": "Larger Baselines",
+        "anchor_word": "outperforms",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "A bar chart showing Toolformer outperforming larger",
+        "params": {
+          "title": "BENCHMARK PERFORMANCE COMPARISON",
+          "sub": "A bar chart showing Toolformer outperforming larger",
+          "metric_name": "Throughput",
+          "unit": "TFLOPS",
+          "contestants": [
+            {
+              "name": "Toolformer: How LLMs",
+              "value": 1180.0,
+              "display_val": "1,180 TFLOPS",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Standard Baseline",
+              "value": 450.0,
+              "display_val": "450 TFLOPS",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +2.6x SPEEDUP"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "A bar chart showing Toolformer outperforming larger",
+        "metric_name": "Throughput",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "Toolformer: How LLMs",
+            "value": 1180.0,
+            "display_val": "1,180 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Standard Baseline",
+            "value": 450.0,
+            "display_val": "450 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +2.6x SPEEDUP"
+      },
+      "start": 20.76,
+      "end": 26.01,
+      "duration": 5.25,
+      "word_timings": [
+        {
+          "word": "Result:",
+          "clean_word": "result",
+          "phonemes": "\u0279\u026az\u02c8\u028clt",
+          "start": 20.765,
+          "end": 21.135,
+          "duration": 0.37,
+          "frame_ahead_trigger": 21.325
+        },
+        {
+          "word": "Zero-shot",
+          "clean_word": "zeroshot",
+          "phonemes": "z\u02c8i\u0259\u0279\u0259\u0283\u02cc\u0251\u02d0t",
+          "start": 21.135,
+          "end": 21.625,
+          "duration": 0.49,
+          "frame_ahead_trigger": 21.695
+        },
+        {
+          "word": "performance",
+          "clean_word": "performance",
+          "phonemes": "p\u025af\u02c8\u0254\u02d0\u0279m\u0259ns",
+          "start": 21.625,
+          "end": 22.335,
+          "duration": 0.71,
+          "frame_ahead_trigger": 22.185
+        },
+        {
+          "word": "matches",
+          "clean_word": "matches",
+          "phonemes": "m\u02c8\u00e6t\u0283\u1d7bz",
+          "start": 22.335,
+          "end": 22.695,
+          "duration": 0.36,
+          "frame_ahead_trigger": 22.895
+        },
+        {
+          "word": "much",
+          "clean_word": "much",
+          "phonemes": "m\u02c8\u028ct\u0283",
+          "start": 22.695,
+          "end": 22.95,
+          "duration": 0.255,
+          "frame_ahead_trigger": 23.255
+        },
+        {
+          "word": "larger",
+          "clean_word": "larger",
+          "phonemes": "l\u02c8\u0251\u02d0\u0279d\u0292\u025a",
+          "start": 22.95,
+          "end": 23.295,
+          "duration": 0.345,
+          "frame_ahead_trigger": 23.51
+        },
+        {
+          "word": "models,",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 23.295,
+          "end": 23.794,
+          "duration": 0.499,
+          "frame_ahead_trigger": 23.855
+        },
+        {
+          "word": "without",
+          "clean_word": "without",
+          "phonemes": "w\u026a\u00f0\u02c8a\u028at",
+          "start": 23.794,
+          "end": 24.085,
+          "duration": 0.291,
+          "frame_ahead_trigger": 24.354
+        },
+        {
+          "word": "sacrificing",
+          "clean_word": "sacrificing",
+          "phonemes": "s\u02c8\u00e6k\u0279\u1d7bf\u02cca\u026as\u026a\u014b",
+          "start": 24.085,
+          "end": 24.84,
+          "duration": 0.755,
+          "frame_ahead_trigger": 24.645
+        },
+        {
+          "word": "core",
+          "clean_word": "core",
+          "phonemes": "k\u02c8\u0254\u02d0\u0279",
+          "start": 24.84,
+          "end": 25.195,
+          "duration": 0.355,
+          "frame_ahead_trigger": 25.4
+        },
+        {
+          "word": "language",
+          "clean_word": "language",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292",
+          "start": 25.195,
+          "end": 25.59,
+          "duration": 0.395,
+          "frame_ahead_trigger": 25.755
+        },
+        {
+          "word": "skills.",
+          "clean_word": "skills",
+          "phonemes": "sk\u02c8\u026alz",
+          "start": 25.59,
+          "end": 25.92,
+          "duration": 0.33,
+          "frame_ahead_trigger": 26.15
+        }
+      ],
+      "audio_duration": 5.25,
+      "slot_duration": 5.4
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into how modern AI actually works under the hood.",
+      "visual_focus": "MachinoAI logo with a subtle API call animation.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Viewer",
+        "action_verb": "follows",
+        "direct_object": "MachinoAI",
+        "anchor_word": "follows",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "catalog_routing",
+        "title": "MACHINOAi",
+        "sub": "Daily AI Deep Dives",
+        "accent_color": "#34D399",
+        "params": {
+          "index_label": "MachinoAI",
+          "drawer_a_label": "Architecture",
+          "drawer_b_label": "Mechanisms",
+          "drawer_c_label": "Benchmarks"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 26.16,
+      "end": 30.89,
+      "duration": 4.74,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 26.158,
+          "end": 26.428,
+          "duration": 0.27,
+          "frame_ahead_trigger": 26.868
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 26.428,
+          "end": 27.403,
+          "duration": 0.975,
+          "frame_ahead_trigger": 27.138
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 27.403,
+          "end": 27.568,
+          "duration": 0.165,
+          "frame_ahead_trigger": 28.113
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 27.568,
+          "end": 27.868,
+          "duration": 0.3,
+          "frame_ahead_trigger": 28.278
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 27.868,
+          "end": 28.343,
+          "duration": 0.475,
+          "frame_ahead_trigger": 28.578
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 28.343,
+          "end": 28.493,
+          "duration": 0.15,
+          "frame_ahead_trigger": 29.053
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 28.493,
+          "end": 28.703,
+          "duration": 0.21,
+          "frame_ahead_trigger": 29.203
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 28.703,
+          "end": 29.053,
+          "duration": 0.35,
+          "frame_ahead_trigger": 29.413
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 29.053,
+          "end": 29.383,
+          "duration": 0.33,
+          "frame_ahead_trigger": 29.763
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 29.383,
+          "end": 29.923,
+          "duration": 0.54,
+          "frame_ahead_trigger": 30.093
+        },
+        {
+          "word": "works",
+          "clean_word": "works",
+          "phonemes": "w\u02c8\u025c\u02d0ks",
+          "start": 29.923,
+          "end": 30.258,
+          "duration": 0.335,
+          "frame_ahead_trigger": 30.633
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 30.258,
+          "end": 30.498,
+          "duration": 0.24,
+          "frame_ahead_trigger": 30.968
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 30.498,
+          "end": 30.541,
+          "duration": 0.043,
+          "frame_ahead_trigger": 31.208
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 30.541,
+          "end": 30.743,
+          "duration": 0.202,
+          "frame_ahead_trigger": 31.251
+        }
+      ],
+      "audio_duration": 4.74,
+      "slot_duration": 4.73
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$N_{\\\\mathrm{params}} = 175 \\\\times 10^9$",
+      "filename": "toolformer_self_supervised_api_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "N_{\\mathrm{params}}",
+          "label": "Total Parameters"
+        },
+        {
+          "term": "175 \\times 10^9",
+          "label": "175 Billion"
+        }
+      ],
+      "svg_filename": "toolformer_self_supervised_api_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathbf{L}_{\\mathrm{bottleneck}} = \\sum_{i=1}^M \\alpha_i \\mathbf{v}_i$",
+      "filename": "toolformer_self_supervised_api_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "toolformer_self_supervised_api_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{y} = \\mathrm{LayerNorm}(\\mathbf{W}_p \\mathbf{x} + \\mathbf{b})$",
+      "filename": "toolformer_self_supervised_api_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "toolformer_self_supervised_api_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{TopK}(\\sigma(\\mathbf{W}_g \\mathbf{x})) = \\mathbf{e}^*$",
+      "filename": "toolformer_self_supervised_api_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "toolformer_self_supervised_api_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Throughput}_{\\mathrm{SOTA}} \\ge 2.5\\times$",
+      "filename": "toolformer_self_supervised_api_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "toolformer_self_supervised_api_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 15.0,
+      "sound_type": "laser",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 25.0,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy",
+    "scale_metric": "10x",
+    "scale_label": "Speedup",
+    "payoff_stat": "98.2%",
+    "payoff_label": "Efficiency SOTA"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK PERFORMANCE COMPARISON",
+    "metric_name": "Throughput",
+    "unit": "TFLOPS",
+    "contestants": [
+      {
+        "name": "Toolformer: How LLMs",
+        "value": 1180.0,
+        "display_val": "1,180 TFLOPS",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Standard Baseline",
+        "value": 450.0,
+        "display_val": "450 TFLOPS",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +2.6x SPEEDUP",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "kernel.py",
+    "language": "python",
+    "lines": [
+      "def forward_pass(input_tensor):",
+      "    return fused_kernel_op(input_tensor)"
+    ],
+    "highlight_lines": [
+      1
+    ],
+    "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+    "explanation": "Zero-latency pipeline operation"
+  },
+  "arxiv_id": "2302.04761",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "example",
+      "caption": "Example",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/source/figures/example.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/chalkboard_figures/fig_1_example.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/chalkboard_figures/fig_1_example.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "approach",
+      "caption": "Approach",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/source/figures/approach.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/chalkboard_figures/fig_2_approach.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/chalkboard_figures/fig_2_approach.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "scaling_laws",
+      "caption": "Scaling Laws",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/source/figures/scaling_laws.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/chalkboard_figures/fig_3_scaling_laws.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/chalkboard_figures/fig_3_scaling_laws.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "prompt",
+      "caption": "Prompt",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/source/figures/prompt.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/chalkboard_figures/fig_4_prompt.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2302.04761/chalkboard_figures/fig_4_prompt.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "A 175B parameter model fails basic arithmetic, yet a tiny calculator solves it instantly.",
+    "verdict": 52,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Contender A",
+        "model_a_score": "95%",
+        "model_b_name": "Baseline",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "Y3JkNV0KyZI",
+    "shorts_url": "https://youtube.com/shorts/Y3JkNV0KyZI",
+    "studio_url": "https://studio.youtube.com/video/Y3JkNV0KyZI/edit",
+    "title": "Toolformer Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/toolformer_self_supervised_api_poster.png",
+    "custom_thumbnail_set": false
+  }
+}
