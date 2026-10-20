@@ -1,33 +1,33 @@
 # 📈 The Model Verse — YouTube Performance & Retention Intelligence
 
-**Generated:** 2026-10-20T14:09:31.403617+00:00  
+**Generated:** 2026-10-20T14:18:49.068399+00:00  
 **Videos Analyzed:** 44 | **Autopsies Performed:** 17  
 **Top Domain:** `general_breakthroughs`  
 **Recommended Pacing:** `1.15x` TTS Speed | Hook $\le$ `6.8s`
 
 ---
 
-## 🧬 Closed-Loop Retention Genome Evolution (Engine 7.0 - Gen 291)
+## 🧬 Closed-Loop Retention Genome Evolution (Engine 7.0 - Gen 294)
 The autonomous pipeline continuously evolves these visual and narrative recipes based on real viewer drop-offs:
 
 | Visual Blueprint | Evolutionary Multiplier | Avg Retention | Win/Loss Track | Action Directive |
 | :--- | :--- | :--- | :--- | :--- |
 | `bespoke_code` | **1.5x** | 50.17% | 1825W / 181L | Auto-discovered layout. |
-| `chalkboard_code_block` | **1.5x** | 63.2% | 946W / 0L | Auto-discovered layout. |
-| `barrier_separation` | **1.5x** | 74.28% | 286W / 45L | Auto-discovered layout. |
-| `tree_hierarchy` | **1.5x** | 70.69% | 131W / 16L | Auto-discovered layout. |
+| `chalkboard_code_block` | **1.5x** | 63.2% | 962W / 0L | Auto-discovered layout. |
+| `barrier_separation` | **1.5x** | 74.28% | 290W / 46L | Auto-discovered layout. |
+| `tree_hierarchy` | **1.5x** | 70.69% | 132W / 16L | Auto-discovered layout. |
 | `ast_tree` | **1.5x** | 66.11% | 102W / 0L | Auto-discovered layout. |
 | `chalkboard_code` | **1.5x** | 54.77% | 253W / 0L | Auto-discovered layout. |
-| `horizontal_race_bars` | **1.5x** | 56.0% | 876W / 0L | Auto-discovered layout. |
-| `grid_memory` | **1.5x** | 74.72% | 276W / 124L | Auto-discovered layout. |
-| `paper_figure` | **1.5x** | 67.7% | 669W / 0L | Auto-discovered layout. |
-| `convergence_funnel` | **1.5x** | 52.7% | 228W / 0L | Auto-discovered layout. |
+| `horizontal_race_bars` | **1.5x** | 56.0% | 895W / 0L | Auto-discovered layout. |
+| `grid_memory` | **1.5x** | 74.72% | 283W / 126L | Auto-discovered layout. |
+| `paper_figure` | **1.5x** | 67.7% | 685W / 0L | Auto-discovered layout. |
+| `convergence_funnel` | **1.5x** | 52.7% | 232W / 0L | Auto-discovered layout. |
 | `side_by_side` | **1.5x** | 48.07% | 36W / 0L | Auto-discovered layout. |
-| `catalog_routing` | **1.5x** | 68.8% | 80W / 0L | Auto-discovered layout. |
+| `catalog_routing` | **1.5x** | 68.8% | 84W / 0L | Auto-discovered layout. |
 | `layer_stack` | **1.5x** | 68.43% | 33W / 3L | Auto-discovered layout. |
-| `vector_flow_field` | **1.5x** | 55.21% | 190W / 9L | Auto-discovered layout. |
+| `vector_flow_field` | **1.5x** | 55.21% | 195W / 10L | Auto-discovered layout. |
 | `projection_rays` | **1.5x** | 48.81% | 22W / 0L | Auto-discovered layout. |
-| `neural_activation_wave` | **1.5x** | 50.03% | 183W / 0L | Auto-discovered layout. |
+| `neural_activation_wave` | **1.5x** | 50.03% | 189W / 0L | Auto-discovered layout. |
 | `pipeline_stages` | **1.5x** | 53.87% | 11W / 0L | Auto-discovered layout. |
 | `BlueprintHorizontalRaceBars` | **1.3x** | 78.5% | 6W / 0L | PRIORITIZE for Act 4 benchmark showdown. |
 | `BlueprintSplitFlow` | **1.25x** | 76.0% | 5W / 1L | EXCELLENT for bifurcated flows, dual-pass verification, or router dispatch. |
@@ -64,7 +64,7 @@ The paper selector (`daily_shorts_daemon.py`) automatically scales candidate sel
 
 | Research Domain | Selection Multiplier | Avg Views | Sample Size |
 | :--- | :--- | :--- | :--- |
-| `general_breakthroughs` | **1.01x** | 188.0 | 43 videos |
+| `general_breakthroughs` | **1.01x** | 188.6 | 43 videos |
 | `hardware_efficiency` | **0.6x** | 67.0 | 1 videos |
 
 ---
@@ -73,48 +73,48 @@ The paper selector (`daily_shorts_daemon.py`) automatically scales candidate sel
 
 | Video Title | Domain | Views | Likes | Comments | Views/Hr | Hours Live |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/3VTnbE5mobs) | `general_breakthroughs` | **1158** | 15 | 1 | 9.65 | 120.0h |
-| [RAFT Explained #Shorts...](https://youtube.com/shorts/dv_rbFaWxlo) | `general_breakthroughs` | **1012** | 14 | 1 | 21.16 | 47.8h |
-| [Self‑RAG Explained #Shorts...](https://youtube.com/shorts/OYDq5o5A-to) | `general_breakthroughs` | **931** | 8 | 1 | 10.01 | 93.0h |
-| [Original RAG Explained #Shorts...](https://youtube.com/shorts/0y6HiNiI6Ag) | `general_breakthroughs` | **686** | 7 | 1 | 10.12 | 67.8h |
-| [Corrective Retrieval Augmented Generatio...](https://youtube.com/shorts/bcTISkUnK8U) | `general_breakthroughs` | **611** | 18 | 1 | 11.02 | 55.5h |
-| [RAFT Explained #Shorts...](https://youtube.com/shorts/LW4DgDvcRv0) | `general_breakthroughs` | **432** | 9 | 3 | 9.92 | 43.5h |
-| [REALM Explained #Shorts...](https://youtube.com/shorts/WVtsmm8EcUo) | `general_breakthroughs` | **379** | 11 | 2 | 12.1 | 31.3h |
-| [Original RAG Explained #Shorts...](https://youtube.com/shorts/iUfuyBcHCDU) | `general_breakthroughs` | **345** | 3 | 1 | 4.91 | 70.2h |
-| [Retrieval Augmented Generation Explained...](https://youtube.com/shorts/mSTrJiYfOU8) | `general_breakthroughs` | **255** | 7 | 1 | 3.48 | 73.2h |
-| [RAFT Explained #Shorts...](https://youtube.com/shorts/P1vYCHo5Fnk) | `general_breakthroughs` | **199** | 7 | 1 | 4.33 | 45.9h |
-| [The Open-Book Exam Revolution Explained ...](https://youtube.com/shorts/rqL6gaga9ic) | `general_breakthroughs` | **188** | 6 | 1 | 2.52 | 74.5h |
-| [REALM Explained #Shorts...](https://youtube.com/shorts/NVKd1WWnVi0) | `general_breakthroughs` | **179** | 4 | 1 | 6.7 | 26.7h |
-| [FLARE Explained #Shorts...](https://youtube.com/shorts/A5XJp0vXDKw) | `general_breakthroughs` | **172** | 1 | 1 | 3.57 | 48.1h |
-| [Corrective RAG Explained #Shorts...](https://youtube.com/shorts/2BT5LjOWFZw) | `general_breakthroughs` | **151** | 2 | 1 | 2.91 | 51.9h |
-| [Self-RAG Explained #Shorts...](https://youtube.com/shorts/8RYUC-ktuA0) | `general_breakthroughs` | **128** | 6 | 1 | 1.33 | 96.2h |
-| [FLARE Explained #Shorts...](https://youtube.com/shorts/5GBsEc0wSpc) | `general_breakthroughs` | **116** | 2 | 1 | 2.39 | 48.5h |
-| [CRAG Explained #Shorts...](https://youtube.com/shorts/xv_KXKa6UlI) | `general_breakthroughs` | **116** | 2 | 1 | 2.37 | 49.0h |
-| [PaperQA Explained #Shorts...](https://youtube.com/shorts/XOmvyC6HO-A) | `general_breakthroughs` | **104** | 2 | 1 | 6.08 | 17.1h |
-| [PAPERQA Explained #Shorts...](https://youtube.com/shorts/Mhe9nm0j_1I) | `general_breakthroughs` | **87** | 2 | 1 | 4.53 | 19.2h |
-| [REALM Beats Bigger Models on #Shorts...](https://youtube.com/shorts/Y3dO-24dZT4) | `general_breakthroughs` | **76** | 1 | 1 | 3.51 | 21.7h |
-| [FLARE Explained #Shorts...](https://youtube.com/shorts/i15exM0SJHo) | `general_breakthroughs` | **68** | 2 | 1 | 1.39 | 48.8h |
-| [smoke shells || wafer filled with chocol...](https://youtube.com/shorts/O7kPD8NNviY) | `general_breakthroughs` | **68** | 8 | 0 | 0.0 | 62854.6h |
-| [FlashAttention-3: How GPUs Hit 1.2 PFLOP...](https://youtube.com/shorts/shTYdJIdGQ0) | `hardware_efficiency` | **67** | 3 | 1 | 0.4 | 167.2h |
-| [RAG Survey Explained #Shorts...](https://youtube.com/shorts/-NY-xfPOQHw) | `general_breakthroughs` | **58** | 1 | 1 | 16.27 | 3.6h |
-| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/YF19j-VxoSU) | `general_breakthroughs` | **52** | 3 | 1 | 0.5 | 103.8h |
-| [From Local to Global Explained #Shorts...](https://youtube.com/shorts/oG82W8MDqT0) | `general_breakthroughs` | **52** | 5 | 1 | 0.42 | 123.7h |
-| [CineRecon Explained #Shorts...](https://youtube.com/shorts/LTVtF0WqSdg) | `general_breakthroughs` | **49** | 1 | 1 | 0.32 | 151.3h |
-| [GraphRAG Explained #Shorts...](https://youtube.com/shorts/hsNHlSEWjTc) | `general_breakthroughs` | **47** | 2 | 1 | 0.37 | 127.7h |
-| [Hierarchical Graph RAG Explained #Shorts...](https://youtube.com/shorts/y16O4t9hxjQ) | `general_breakthroughs` | **45** | 1 | 1 | 0.33 | 138.0h |
-| [Self‑RAG Explained #Shorts...](https://youtube.com/shorts/eaxKSb-1mGE) | `general_breakthroughs` | **44** | 2 | 1 | 0.49 | 90.7h |
-| [GraphRAG Explained #Shorts...](https://youtube.com/shorts/ZfF8ryTpv7k) | `general_breakthroughs` | **43** | 1 | 1 | 0.3 | 143.6h |
-| [Why Naive RAG Fails Explained #Shorts...](https://youtube.com/shorts/-yYQqT3Vk4c) | `general_breakthroughs` | **33** | 2 | 1 | 0.22 | 147.5h |
-| [Self‑RAG Explained #Shorts...](https://youtube.com/shorts/Fz9aotKrYkc) | `general_breakthroughs` | **30** | 2 | 1 | 0.3 | 99.9h |
-| [RAG Survey Explained #Shorts...](https://youtube.com/shorts/dwnEEc0-C88) | `general_breakthroughs` | **26** | 1 | 1 | 11.73 | 2.2h |
-| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/KRODn0RgyyQ) | `general_breakthroughs` | **21** | 1 | 1 | 0.18 | 118.7h |
-| [From Local to Global Explained #Shorts...](https://youtube.com/shorts/tBIrHihtA8c) | `general_breakthroughs` | **21** | 1 | 1 | 0.15 | 140.6h |
-| [Learning How to Remember Explained #Shor...](https://youtube.com/shorts/4ja7Qu2Io4k) | `general_breakthroughs` | **21** | 2 | 1 | 0.14 | 150.5h |
-| [The RAG Triad Explained #Shorts...](https://youtube.com/shorts/vqYCztWVuI0) | `general_breakthroughs` | **18** | 0 | 1 | 8.98 | 2.0h |
-| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/X21oglSTV2A) | `general_breakthroughs` | **17** | 2 | 1 | 0.15 | 116.8h |
-| [PaperQA Explained #Shorts...](https://youtube.com/shorts/0DILvNESziE) | `general_breakthroughs` | **14** | 1 | 1 | 1.86 | 7.5h |
-| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/fmE3eiCefH4) | `general_breakthroughs` | **14** | 1 | 1 | 0.12 | 114.3h |
-| [ReAct Explained #Shorts...](https://youtube.com/shorts/dkgGmYq0PIg) | `general_breakthroughs` | **12** | 1 | 1 | 16.89 | 0.7h |
+| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/3VTnbE5mobs) | `general_breakthroughs` | **1158** | 15 | 1 | 9.63 | 120.2h |
+| [RAFT Explained #Shorts...](https://youtube.com/shorts/dv_rbFaWxlo) | `general_breakthroughs` | **1012** | 14 | 1 | 21.1 | 48.0h |
+| [Self‑RAG Explained #Shorts...](https://youtube.com/shorts/OYDq5o5A-to) | `general_breakthroughs` | **931** | 8 | 1 | 9.99 | 93.2h |
+| [Original RAG Explained #Shorts...](https://youtube.com/shorts/0y6HiNiI6Ag) | `general_breakthroughs` | **686** | 7 | 1 | 10.1 | 67.9h |
+| [Corrective Retrieval Augmented Generatio...](https://youtube.com/shorts/bcTISkUnK8U) | `general_breakthroughs` | **611** | 18 | 1 | 10.99 | 55.6h |
+| [RAFT Explained #Shorts...](https://youtube.com/shorts/LW4DgDvcRv0) | `general_breakthroughs` | **432** | 9 | 3 | 9.89 | 43.7h |
+| [REALM Explained #Shorts...](https://youtube.com/shorts/WVtsmm8EcUo) | `general_breakthroughs` | **403** | 11 | 2 | 12.8 | 31.5h |
+| [Original RAG Explained #Shorts...](https://youtube.com/shorts/iUfuyBcHCDU) | `general_breakthroughs` | **345** | 3 | 1 | 4.9 | 70.4h |
+| [Retrieval Augmented Generation Explained...](https://youtube.com/shorts/mSTrJiYfOU8) | `general_breakthroughs` | **255** | 7 | 1 | 3.47 | 73.4h |
+| [RAFT Explained #Shorts...](https://youtube.com/shorts/P1vYCHo5Fnk) | `general_breakthroughs` | **199** | 7 | 1 | 4.32 | 46.1h |
+| [The Open-Book Exam Revolution Explained ...](https://youtube.com/shorts/rqL6gaga9ic) | `general_breakthroughs` | **188** | 6 | 1 | 2.52 | 74.6h |
+| [REALM Explained #Shorts...](https://youtube.com/shorts/NVKd1WWnVi0) | `general_breakthroughs` | **179** | 4 | 1 | 6.67 | 26.9h |
+| [FLARE Explained #Shorts...](https://youtube.com/shorts/A5XJp0vXDKw) | `general_breakthroughs` | **173** | 1 | 1 | 3.58 | 48.3h |
+| [Corrective RAG Explained #Shorts...](https://youtube.com/shorts/2BT5LjOWFZw) | `general_breakthroughs` | **151** | 2 | 1 | 2.9 | 52.0h |
+| [Self-RAG Explained #Shorts...](https://youtube.com/shorts/8RYUC-ktuA0) | `general_breakthroughs` | **128** | 6 | 1 | 1.33 | 96.4h |
+| [CRAG Explained #Shorts...](https://youtube.com/shorts/xv_KXKa6UlI) | `general_breakthroughs` | **117** | 2 | 1 | 2.38 | 49.1h |
+| [FLARE Explained #Shorts...](https://youtube.com/shorts/5GBsEc0wSpc) | `general_breakthroughs` | **116** | 2 | 1 | 2.38 | 48.7h |
+| [PaperQA Explained #Shorts...](https://youtube.com/shorts/XOmvyC6HO-A) | `general_breakthroughs` | **104** | 2 | 1 | 6.03 | 17.3h |
+| [PAPERQA Explained #Shorts...](https://youtube.com/shorts/Mhe9nm0j_1I) | `general_breakthroughs` | **87** | 2 | 1 | 4.5 | 19.4h |
+| [REALM Beats Bigger Models on #Shorts...](https://youtube.com/shorts/Y3dO-24dZT4) | `general_breakthroughs` | **76** | 1 | 1 | 3.48 | 21.8h |
+| [FLARE Explained #Shorts...](https://youtube.com/shorts/i15exM0SJHo) | `general_breakthroughs` | **68** | 2 | 1 | 1.39 | 48.9h |
+| [smoke shells || wafer filled with chocol...](https://youtube.com/shorts/O7kPD8NNviY) | `general_breakthroughs` | **68** | 8 | 0 | 0.0 | 62854.7h |
+| [FlashAttention-3: How GPUs Hit 1.2 PFLOP...](https://youtube.com/shorts/shTYdJIdGQ0) | `hardware_efficiency` | **67** | 3 | 1 | 0.4 | 167.3h |
+| [RAG Survey Explained #Shorts...](https://youtube.com/shorts/-NY-xfPOQHw) | `general_breakthroughs` | **59** | 1 | 1 | 15.86 | 3.7h |
+| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/YF19j-VxoSU) | `general_breakthroughs` | **52** | 3 | 1 | 0.5 | 104.0h |
+| [From Local to Global Explained #Shorts...](https://youtube.com/shorts/oG82W8MDqT0) | `general_breakthroughs` | **52** | 5 | 1 | 0.42 | 123.8h |
+| [CineRecon Explained #Shorts...](https://youtube.com/shorts/LTVtF0WqSdg) | `general_breakthroughs` | **49** | 1 | 1 | 0.32 | 151.5h |
+| [GraphRAG Explained #Shorts...](https://youtube.com/shorts/hsNHlSEWjTc) | `general_breakthroughs` | **47** | 2 | 1 | 0.37 | 127.8h |
+| [Hierarchical Graph RAG Explained #Shorts...](https://youtube.com/shorts/y16O4t9hxjQ) | `general_breakthroughs` | **45** | 1 | 1 | 0.33 | 138.2h |
+| [Self‑RAG Explained #Shorts...](https://youtube.com/shorts/eaxKSb-1mGE) | `general_breakthroughs` | **44** | 2 | 1 | 0.48 | 90.8h |
+| [GraphRAG Explained #Shorts...](https://youtube.com/shorts/ZfF8ryTpv7k) | `general_breakthroughs` | **43** | 1 | 1 | 0.3 | 143.8h |
+| [Why Naive RAG Fails Explained #Shorts...](https://youtube.com/shorts/-yYQqT3Vk4c) | `general_breakthroughs` | **33** | 2 | 1 | 0.22 | 147.6h |
+| [Self‑RAG Explained #Shorts...](https://youtube.com/shorts/Fz9aotKrYkc) | `general_breakthroughs` | **30** | 2 | 1 | 0.3 | 100.1h |
+| [RAG Survey Explained #Shorts...](https://youtube.com/shorts/dwnEEc0-C88) | `general_breakthroughs` | **26** | 1 | 1 | 10.96 | 2.4h |
+| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/KRODn0RgyyQ) | `general_breakthroughs` | **21** | 1 | 1 | 0.18 | 118.9h |
+| [From Local to Global Explained #Shorts...](https://youtube.com/shorts/tBIrHihtA8c) | `general_breakthroughs` | **21** | 1 | 1 | 0.15 | 140.8h |
+| [Learning How to Remember Explained #Shor...](https://youtube.com/shorts/4ja7Qu2Io4k) | `general_breakthroughs` | **21** | 2 | 1 | 0.14 | 150.7h |
+| [The RAG Triad Explained #Shorts...](https://youtube.com/shorts/vqYCztWVuI0) | `general_breakthroughs` | **18** | 0 | 1 | 8.34 | 2.2h |
+| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/X21oglSTV2A) | `general_breakthroughs` | **17** | 2 | 1 | 0.15 | 116.9h |
+| [PaperQA Explained #Shorts...](https://youtube.com/shorts/0DILvNESziE) | `general_breakthroughs` | **15** | 1 | 1 | 1.95 | 7.7h |
+| [RAPTOR Explained #Shorts...](https://youtube.com/shorts/fmE3eiCefH4) | `general_breakthroughs` | **14** | 1 | 1 | 0.12 | 114.5h |
+| [ReAct Explained #Shorts...](https://youtube.com/shorts/dkgGmYq0PIg) | `general_breakthroughs` | **12** | 1 | 1 | 13.87 | 0.9h |
 | [ReAct Explained #Shorts...](https://youtube.com/shorts/adS7_-alK6o) | `general_breakthroughs` | **4** | 0 | 1 | 8.0 | 0.5h |
 | [Toolformer Explained #Shorts...](https://youtube.com/shorts/Y3JkNV0KyZI) | `general_breakthroughs` | **0** | 0 | 0 | 0.0 | 0.5h |
 
