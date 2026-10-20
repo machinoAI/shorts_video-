@@ -1,0 +1,1701 @@
+{
+  "id": "react_thought_action_loop",
+  "title": "ReAct: The Thought\u2011Action\u2011Observation Loop",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "THOUGHT\u2011ACTION LOOP",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Language models can write flawless essays. Yet fail completely when asked to interact with a live database.",
+      "visual_focus": "Chalkboard showing an LLM outputting fluent prose on the left, but abruptly crashing into a red blocked API wall on the right.",
+      "highlight_words": {
+        "fail completely": "#EF4444",
+        "live database": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Language models",
+        "action_verb": "fail",
+        "direct_object": "database interaction",
+        "anchor_word": "database",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "THE INTERACTION GAP",
+        "sub": "Fluent generation decoupled from live state",
+        "accent_color": "#38BDF8",
+        "params": {
+          "field_title": "Reasoning \u2192 Action \u2192 Observation",
+          "source_label": "Generated Text",
+          "target_label": "API Query",
+          "stream_formula": "x_{t+1}=f(x_t)"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 55,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "THE INTERACTION GAP",
+        "sub": "Fluent generation decoupled from live state",
+        "accent_color": "#38BDF8",
+        "field_title": "Reasoning \u2192 Action \u2192 Observation",
+        "source_label": "Generated Text",
+        "target_label": "API Query",
+        "stream_formula": "x_{t+1}=f(x_t)"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.5,
+      "duration": 5.5,
+      "word_timings": [
+        {
+          "word": "Language",
+          "clean_word": "language",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292",
+          "start": 0.01,
+          "end": 0.465,
+          "duration": 0.455,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 0.465,
+          "end": 0.955,
+          "duration": 0.49,
+          "frame_ahead_trigger": 0.425
+        },
+        {
+          "word": "can",
+          "clean_word": "can",
+          "phonemes": "k\u02c8\u00e6n",
+          "start": 0.955,
+          "end": 1.03,
+          "duration": 0.075,
+          "frame_ahead_trigger": 0.915
+        },
+        {
+          "word": "write",
+          "clean_word": "write",
+          "phonemes": "\u0279\u02c8a\u026at",
+          "start": 1.03,
+          "end": 1.395,
+          "duration": 0.365,
+          "frame_ahead_trigger": 0.99
+        },
+        {
+          "word": "flawless",
+          "clean_word": "flawless",
+          "phonemes": "fl\u02c8\u0254\u02d0l\u0259s",
+          "start": 1.395,
+          "end": 1.85,
+          "duration": 0.455,
+          "frame_ahead_trigger": 1.355
+        },
+        {
+          "word": "essays.",
+          "clean_word": "essays",
+          "phonemes": "\u02c8\u025bse\u026az",
+          "start": 1.85,
+          "end": 2.055,
+          "duration": 0.205,
+          "frame_ahead_trigger": 1.81
+        },
+        {
+          "word": "Yet",
+          "clean_word": "yet",
+          "phonemes": "j\u02c8\u025bt",
+          "start": 2.055,
+          "end": 2.295,
+          "duration": 0.24,
+          "frame_ahead_trigger": 2.015
+        },
+        {
+          "word": "fail",
+          "clean_word": "fail",
+          "phonemes": "f\u02c8e\u026al",
+          "start": 2.295,
+          "end": 2.495,
+          "duration": 0.2,
+          "frame_ahead_trigger": 2.255
+        },
+        {
+          "word": "completely",
+          "clean_word": "completely",
+          "phonemes": "k\u0259mpl\u02c8i\u02d0tli",
+          "start": 2.495,
+          "end": 3.16,
+          "duration": 0.665,
+          "frame_ahead_trigger": 2.455
+        },
+        {
+          "word": "when",
+          "clean_word": "when",
+          "phonemes": "w\u02cc\u025bn",
+          "start": 3.16,
+          "end": 3.315,
+          "duration": 0.155,
+          "frame_ahead_trigger": 3.12
+        },
+        {
+          "word": "asked",
+          "clean_word": "asked",
+          "phonemes": "\u02c8\u00e6skt",
+          "start": 3.315,
+          "end": 3.55,
+          "duration": 0.235,
+          "frame_ahead_trigger": 3.275
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 3.55,
+          "end": 3.805,
+          "duration": 0.255,
+          "frame_ahead_trigger": 3.51
+        },
+        {
+          "word": "interact",
+          "clean_word": "interact",
+          "phonemes": "\u02cc\u026ant\u025a\u0279\u02c8\u00e6kt",
+          "start": 3.805,
+          "end": 4.375,
+          "duration": 0.57,
+          "frame_ahead_trigger": 3.765
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 4.375,
+          "end": 4.423,
+          "duration": 0.048,
+          "frame_ahead_trigger": 4.335
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 4.423,
+          "end": 4.56,
+          "duration": 0.137,
+          "frame_ahead_trigger": 4.383
+        },
+        {
+          "word": "live",
+          "clean_word": "live",
+          "phonemes": "l\u02c8a\u026av",
+          "start": 4.56,
+          "end": 4.87,
+          "duration": 0.31,
+          "frame_ahead_trigger": 4.52
+        },
+        {
+          "word": "database.",
+          "clean_word": "database",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259b\u02cce\u026as",
+          "start": 4.87,
+          "end": 5.41,
+          "duration": 0.54,
+          "frame_ahead_trigger": 4.83
+        }
+      ],
+      "audio_duration": 5.5,
+      "slot_duration": 5.65
+    },
+    {
+      "beat_id": 2,
+      "text": "Chain-of-thought models hallucinate inside an isolated vacuum. Pure action agents stumble blindly without an internal plan. Neither can self-correct when API calls break.",
+      "visual_focus": "Split chalkboard showing CoT spinning in an endless speculative spiral on top, and an Action-only agent blindly firing invalid commands into an error log below.",
+      "highlight_words": {
+        "hallucinate": "#EF4444",
+        "stumble blindly": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Reasoning models",
+        "action_verb": "hallucinate",
+        "direct_object": "isolated vacuum",
+        "anchor_word": "vacuum",
+        "semantic_role": "causal_flow"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE DUAL FAILURE MODES",
+        "sub": "Internal delusion vs unguided execution",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Internal Thought",
+          "stream_b_label": "External Fact",
+          "barrier_label": "Knowledge Gap",
+          "barrier_sub": "No grounding"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE DUAL FAILURE MODES",
+        "sub": "Internal delusion vs unguided execution",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Internal Thought",
+        "stream_b_label": "External Fact",
+        "barrier_label": "Knowledge Gap",
+        "barrier_sub": "No grounding"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 5.65,
+      "end": 15.0,
+      "duration": 9.34,
+      "word_timings": [
+        {
+          "word": "Chain-of-thought",
+          "clean_word": "chainofthought",
+          "phonemes": "t\u0283\u02c8e\u026an\u0254f\u03b8\u02cc\u0254\u02d0t",
+          "start": 5.669,
+          "end": 6.334,
+          "duration": 0.665,
+          "frame_ahead_trigger": 5.779
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 6.334,
+          "end": 6.844,
+          "duration": 0.51,
+          "frame_ahead_trigger": 6.444
+        },
+        {
+          "word": "hallucinate",
+          "clean_word": "hallucinate",
+          "phonemes": "h\u0250l\u02c8u\u02d0s\u1d7bn\u02cce\u026at",
+          "start": 6.844,
+          "end": 7.454,
+          "duration": 0.61,
+          "frame_ahead_trigger": 6.954
+        },
+        {
+          "word": "inside",
+          "clean_word": "inside",
+          "phonemes": "\u026ans\u02c8a\u026ad",
+          "start": 7.454,
+          "end": 7.959,
+          "duration": 0.505,
+          "frame_ahead_trigger": 7.564
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 7.959,
+          "end": 7.965,
+          "duration": 0.006,
+          "frame_ahead_trigger": 8.069
+        },
+        {
+          "word": "isolated",
+          "clean_word": "isolated",
+          "phonemes": "\u02c8a\u026as\u0259l\u02cce\u026a\u027e\u1d7bd",
+          "start": 7.965,
+          "end": 8.494,
+          "duration": 0.529,
+          "frame_ahead_trigger": 8.075
+        },
+        {
+          "word": "vacuum.",
+          "clean_word": "vacuum",
+          "phonemes": "v\u02c8\u00e6kju\u02d0m",
+          "start": 8.494,
+          "end": 9.074,
+          "duration": 0.58,
+          "frame_ahead_trigger": 8.604
+        },
+        {
+          "word": "Pure",
+          "clean_word": "pure",
+          "phonemes": "pj\u02c8\u028a\u0279",
+          "start": 9.074,
+          "end": 9.334,
+          "duration": 0.26,
+          "frame_ahead_trigger": 9.184
+        },
+        {
+          "word": "action",
+          "clean_word": "action",
+          "phonemes": "\u02c8\u00e6k\u0283\u0259n",
+          "start": 9.334,
+          "end": 9.689,
+          "duration": 0.355,
+          "frame_ahead_trigger": 9.444
+        },
+        {
+          "word": "agents",
+          "clean_word": "agents",
+          "phonemes": "\u02c8e\u026ad\u0292\u0259nts",
+          "start": 9.689,
+          "end": 10.139,
+          "duration": 0.45,
+          "frame_ahead_trigger": 9.799
+        },
+        {
+          "word": "stumble",
+          "clean_word": "stumble",
+          "phonemes": "st\u02c8\u028cmb\u0259l",
+          "start": 10.139,
+          "end": 10.594,
+          "duration": 0.455,
+          "frame_ahead_trigger": 10.249
+        },
+        {
+          "word": "blindly",
+          "clean_word": "blindly",
+          "phonemes": "bl\u02c8a\u026andli",
+          "start": 10.594,
+          "end": 11.024,
+          "duration": 0.43,
+          "frame_ahead_trigger": 10.704
+        },
+        {
+          "word": "without",
+          "clean_word": "without",
+          "phonemes": "w\u026a\u00f0\u02c8a\u028at",
+          "start": 11.024,
+          "end": 11.374,
+          "duration": 0.35,
+          "frame_ahead_trigger": 11.134
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 11.374,
+          "end": 11.439,
+          "duration": 0.065,
+          "frame_ahead_trigger": 11.484
+        },
+        {
+          "word": "internal",
+          "clean_word": "internal",
+          "phonemes": "\u026ant\u02c8\u025c\u02d0n\u0259l",
+          "start": 11.439,
+          "end": 11.969,
+          "duration": 0.53,
+          "frame_ahead_trigger": 11.549
+        },
+        {
+          "word": "plan.",
+          "clean_word": "plan",
+          "phonemes": "pl\u02c8\u00e6n",
+          "start": 11.969,
+          "end": 12.236,
+          "duration": 0.267,
+          "frame_ahead_trigger": 12.079
+        },
+        {
+          "word": "Neither",
+          "clean_word": "neither",
+          "phonemes": "n\u02c8i\u02d0\u00f0\u025a",
+          "start": 12.236,
+          "end": 12.489,
+          "duration": 0.253,
+          "frame_ahead_trigger": 12.346
+        },
+        {
+          "word": "can",
+          "clean_word": "can",
+          "phonemes": "k\u02c8\u00e6n",
+          "start": 12.489,
+          "end": 12.789,
+          "duration": 0.3,
+          "frame_ahead_trigger": 12.599
+        },
+        {
+          "word": "self-correct",
+          "clean_word": "selfcorrect",
+          "phonemes": "s\u02c8\u025blfk\u025a\u0279\u02cc\u025bkt",
+          "start": 12.789,
+          "end": 13.411,
+          "duration": 0.622,
+          "frame_ahead_trigger": 12.899
+        },
+        {
+          "word": "when",
+          "clean_word": "when",
+          "phonemes": "w\u02cc\u025bn",
+          "start": 13.411,
+          "end": 13.694,
+          "duration": 0.283,
+          "frame_ahead_trigger": 13.521
+        },
+        {
+          "word": "API",
+          "clean_word": "api",
+          "phonemes": "\u02cce\u026ap\u02cci\u02d0\u02c8a\u026a",
+          "start": 13.694,
+          "end": 14.134,
+          "duration": 0.44,
+          "frame_ahead_trigger": 13.804
+        },
+        {
+          "word": "calls",
+          "clean_word": "calls",
+          "phonemes": "k\u02c8\u0254\u02d0lz",
+          "start": 14.134,
+          "end": 14.479,
+          "duration": 0.345,
+          "frame_ahead_trigger": 14.244
+        },
+        {
+          "word": "break.",
+          "clean_word": "break",
+          "phonemes": "b\u0279\u02c8e\u026ak",
+          "start": 14.479,
+          "end": 14.799,
+          "duration": 0.32,
+          "frame_ahead_trigger": 14.589
+        }
+      ],
+      "audio_duration": 9.34,
+      "slot_duration": 9.5
+    },
+    {
+      "beat_id": 3,
+      "text": "The ReAct framework unifies them. It interleaves reasoning traces directly with real-world tool execution in a continuous feedback cycle.",
+      "visual_focus": "A glowing nexus pulling the speculative chain of thought and the concrete execution tool into an interlocking triad.",
+      "highlight_words": {
+        "ReAct framework": "#10B981",
+        "feedback cycle": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "ReAct framework",
+        "action_verb": "interleaves",
+        "direct_object": "reasoning and tools",
+        "anchor_word": "interleaves",
+        "semantic_role": "structural_pivot"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "REACT ARCHITECTURE",
+        "sub": "A glowing nexus pulling the speculative chain of thought and the ",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_1_fever_cots_scale.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_1_fever_cots_scale.png",
+          "arxiv_id": "2210.03629",
+          "title": "REACT ARCHITECTURE",
+          "sub": "A glowing nexus pulling the speculative chain of thought and the ",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Fever Cots Scale",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_1_fever_cots_scale.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_1_fever_cots_scale.png",
+        "arxiv_id": "2210.03629",
+        "title": "REACT ARCHITECTURE",
+        "sub": "A glowing nexus pulling the speculative chain of thought and the ",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Fever Cots Scale",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 15.15,
+      "end": 22.25,
+      "duration": 7.1,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 15.158,
+          "end": 15.343,
+          "duration": 0.185,
+          "frame_ahead_trigger": 15.418
+        },
+        {
+          "word": "ReAct",
+          "clean_word": "react",
+          "phonemes": "\u0279\u02cci\u02d0 \u02c8\u00e6kt",
+          "start": 15.343,
+          "end": 15.788,
+          "duration": 0.445,
+          "frame_ahead_trigger": 15.603
+        },
+        {
+          "word": "framework",
+          "clean_word": "framework",
+          "phonemes": "f\u0279\u02c8e\u026amw\u025c\u02d0k",
+          "start": 15.788,
+          "end": 16.148,
+          "duration": 0.36,
+          "frame_ahead_trigger": 16.048
+        },
+        {
+          "word": "unifies",
+          "clean_word": "unifies",
+          "phonemes": "j\u02c8u\u02d0n\u026af\u02cca\u026az",
+          "start": 16.148,
+          "end": 16.747,
+          "duration": 0.599,
+          "frame_ahead_trigger": 16.408
+        },
+        {
+          "word": "them.",
+          "clean_word": "them",
+          "phonemes": "\u00f0\u02cc\u025bm",
+          "start": 16.747,
+          "end": 16.945,
+          "duration": 0.199,
+          "frame_ahead_trigger": 17.007
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 16.945,
+          "end": 17.044,
+          "duration": 0.099,
+          "frame_ahead_trigger": 17.205
+        },
+        {
+          "word": "interleaves",
+          "clean_word": "interleaves",
+          "phonemes": "\u02cc\u026ant\u025al\u02c8i\u02d0vz",
+          "start": 17.044,
+          "end": 17.553,
+          "duration": 0.509,
+          "frame_ahead_trigger": 17.304
+        },
+        {
+          "word": "reasoning",
+          "clean_word": "reasoning",
+          "phonemes": "\u0279\u02c8i\u02d0z\u0259n\u026a\u014b",
+          "start": 17.553,
+          "end": 18.083,
+          "duration": 0.53,
+          "frame_ahead_trigger": 17.813
+        },
+        {
+          "word": "traces",
+          "clean_word": "traces",
+          "phonemes": "t\u0279\u02c8e\u026as\u1d7bz",
+          "start": 18.083,
+          "end": 18.373,
+          "duration": 0.29,
+          "frame_ahead_trigger": 18.343
+        },
+        {
+          "word": "directly",
+          "clean_word": "directly",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bktli",
+          "start": 18.373,
+          "end": 18.828,
+          "duration": 0.455,
+          "frame_ahead_trigger": 18.633
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 18.828,
+          "end": 19.013,
+          "duration": 0.185,
+          "frame_ahead_trigger": 19.088
+        },
+        {
+          "word": "real-world",
+          "clean_word": "realworld",
+          "phonemes": "\u0279\u02c8i\u02d0\u0259lw\u025c\u02d0ld",
+          "start": 19.013,
+          "end": 19.678,
+          "duration": 0.665,
+          "frame_ahead_trigger": 19.273
+        },
+        {
+          "word": "tool",
+          "clean_word": "tool",
+          "phonemes": "t\u02c8u\u02d0l",
+          "start": 19.678,
+          "end": 19.913,
+          "duration": 0.235,
+          "frame_ahead_trigger": 19.938
+        },
+        {
+          "word": "execution",
+          "clean_word": "execution",
+          "phonemes": "\u02cc\u025bks\u026akj\u02c8u\u02d0\u0283\u0259n",
+          "start": 19.913,
+          "end": 20.373,
+          "duration": 0.46,
+          "frame_ahead_trigger": 20.173
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 20.373,
+          "end": 20.588,
+          "duration": 0.215,
+          "frame_ahead_trigger": 20.633
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 20.588,
+          "end": 20.738,
+          "duration": 0.15,
+          "frame_ahead_trigger": 20.848
+        },
+        {
+          "word": "continuous",
+          "clean_word": "continuous",
+          "phonemes": "k\u0259nt\u02c8\u026anju\u02d0\u0259s",
+          "start": 20.738,
+          "end": 21.463,
+          "duration": 0.725,
+          "frame_ahead_trigger": 20.998
+        },
+        {
+          "word": "feedback",
+          "clean_word": "feedback",
+          "phonemes": "f\u02c8i\u02d0db\u00e6k",
+          "start": 21.463,
+          "end": 21.748,
+          "duration": 0.285,
+          "frame_ahead_trigger": 21.723
+        },
+        {
+          "word": "cycle.",
+          "clean_word": "cycle",
+          "phonemes": "s\u02c8a\u026ak\u0259l",
+          "start": 21.748,
+          "end": 22.108,
+          "duration": 0.36,
+          "frame_ahead_trigger": 22.008
+        }
+      ],
+      "audio_duration": 7.1,
+      "slot_duration": 7.25
+    },
+    {
+      "beat_id": 4,
+      "text": "First, the model emits a Thought to strategize. Next, it fires an Action to query external APIs. Finally. It ingests the Observation to update its next step.",
+      "visual_focus": "Three glowing sequential blocks cycling on a loop: Thought -> Action -> Observation, showing incoming API data correcting the trajectory.",
+      "highlight_words": {
+        "Thought": "#38BDF8",
+        "Action": "#F59E0B",
+        "Observation": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Model",
+        "action_verb": "ingests",
+        "direct_object": "observation tokens",
+        "anchor_word": "Observation",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: REACT: THE THOUGHT",
+        "sub": "Three glowing sequential blocks cycling on a loop: Thought -> Act",
+        "params": {
+          "title": "KERNEL CODE: REACT: THE THOUGHT",
+          "sub": "Three glowing sequential blocks cycling on a loop: Thought -> Act",
+          "filename": "kernel.py",
+          "language": "python",
+          "lines": [
+            "def forward_pass(input_tensor):",
+            "    return fused_kernel_op(input_tensor)"
+          ],
+          "highlight_lines": [
+            1
+          ],
+          "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+          "delta_badge": "Zero-latency pipeline operation"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: REACT: THE THOUGHT",
+        "sub": "Three glowing sequential blocks cycling on a loop: Thought -> Act",
+        "filename": "kernel.py",
+        "language": "python",
+        "lines": [
+          "def forward_pass(input_tensor):",
+          "    return fused_kernel_op(input_tensor)"
+        ],
+        "highlight_lines": [
+          1
+        ],
+        "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+        "delta_badge": "Zero-latency pipeline operation"
+      },
+      "start": 22.4,
+      "end": 30.76,
+      "duration": 8.36,
+      "word_timings": [
+        {
+          "word": "First,",
+          "clean_word": "first",
+          "phonemes": "f\u02c8\u025c\u02d0st",
+          "start": 22.402,
+          "end": 22.692,
+          "duration": 0.29,
+          "frame_ahead_trigger": 22.812
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 22.692,
+          "end": 22.882,
+          "duration": 0.19,
+          "frame_ahead_trigger": 23.102
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 22.882,
+          "end": 23.237,
+          "duration": 0.355,
+          "frame_ahead_trigger": 23.292
+        },
+        {
+          "word": "emits",
+          "clean_word": "emits",
+          "phonemes": "\u026am\u02c8\u026ats",
+          "start": 23.237,
+          "end": 23.432,
+          "duration": 0.195,
+          "frame_ahead_trigger": 23.647
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 23.432,
+          "end": 23.612,
+          "duration": 0.18,
+          "frame_ahead_trigger": 23.842
+        },
+        {
+          "word": "Thought",
+          "clean_word": "thought",
+          "phonemes": "\u03b8\u02c8\u0254\u02d0t",
+          "start": 23.612,
+          "end": 23.947,
+          "duration": 0.335,
+          "frame_ahead_trigger": 24.022
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 23.947,
+          "end": 24.082,
+          "duration": 0.135,
+          "frame_ahead_trigger": 24.357
+        },
+        {
+          "word": "strategize.",
+          "clean_word": "strategize",
+          "phonemes": "st\u0279\u02c8\u00e6\u027e\u026ad\u0292\u02cca\u026az",
+          "start": 24.082,
+          "end": 24.767,
+          "duration": 0.685,
+          "frame_ahead_trigger": 24.492
+        },
+        {
+          "word": "Next,",
+          "clean_word": "next",
+          "phonemes": "n\u02c8\u025bkst",
+          "start": 24.767,
+          "end": 25.032,
+          "duration": 0.265,
+          "frame_ahead_trigger": 25.177
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 25.032,
+          "end": 25.182,
+          "duration": 0.15,
+          "frame_ahead_trigger": 25.442
+        },
+        {
+          "word": "fires",
+          "clean_word": "fires",
+          "phonemes": "f\u02c8a\u026a\u025az",
+          "start": 25.182,
+          "end": 25.427,
+          "duration": 0.245,
+          "frame_ahead_trigger": 25.592
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 25.427,
+          "end": 25.707,
+          "duration": 0.28,
+          "frame_ahead_trigger": 25.837
+        },
+        {
+          "word": "Action",
+          "clean_word": "action",
+          "phonemes": "\u02c8\u00e6k\u0283\u0259n",
+          "start": 25.707,
+          "end": 25.992,
+          "duration": 0.285,
+          "frame_ahead_trigger": 26.117
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 25.992,
+          "end": 26.222,
+          "duration": 0.23,
+          "frame_ahead_trigger": 26.402
+        },
+        {
+          "word": "query",
+          "clean_word": "query",
+          "phonemes": "kw\u02c8i\u0259\u0279i",
+          "start": 26.222,
+          "end": 26.442,
+          "duration": 0.22,
+          "frame_ahead_trigger": 26.632
+        },
+        {
+          "word": "external",
+          "clean_word": "external",
+          "phonemes": "\u025bkst\u02c8\u025c\u02d0n\u0259l",
+          "start": 26.442,
+          "end": 26.992,
+          "duration": 0.55,
+          "frame_ahead_trigger": 26.852
+        },
+        {
+          "word": "APIs.",
+          "clean_word": "apis",
+          "phonemes": "\u02cce\u026ap\u02cci\u02d0\u02c8a\u026az",
+          "start": 26.992,
+          "end": 27.582,
+          "duration": 0.59,
+          "frame_ahead_trigger": 27.402
+        },
+        {
+          "word": "Finally.",
+          "clean_word": "finally",
+          "phonemes": "f\u02c8a\u026an\u0259li",
+          "start": 27.582,
+          "end": 28.017,
+          "duration": 0.435,
+          "frame_ahead_trigger": 27.992
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 28.017,
+          "end": 28.123,
+          "duration": 0.106,
+          "frame_ahead_trigger": 28.427
+        },
+        {
+          "word": "ingests",
+          "clean_word": "ingests",
+          "phonemes": "\u026and\u0292\u02c8\u025bsts",
+          "start": 28.123,
+          "end": 28.602,
+          "duration": 0.479,
+          "frame_ahead_trigger": 28.533
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 28.602,
+          "end": 28.705,
+          "duration": 0.103,
+          "frame_ahead_trigger": 29.012
+        },
+        {
+          "word": "Observation",
+          "clean_word": "observation",
+          "phonemes": "\u0251\u02d0bz\u025av\u02c8e\u026a\u0283\u0259n",
+          "start": 28.705,
+          "end": 29.267,
+          "duration": 0.562,
+          "frame_ahead_trigger": 29.115
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 29.267,
+          "end": 29.567,
+          "duration": 0.3,
+          "frame_ahead_trigger": 29.677
+        },
+        {
+          "word": "update",
+          "clean_word": "update",
+          "phonemes": "\u02c8\u028cpde\u026at",
+          "start": 29.567,
+          "end": 29.932,
+          "duration": 0.365,
+          "frame_ahead_trigger": 29.977
+        },
+        {
+          "word": "its",
+          "clean_word": "its",
+          "phonemes": "\u026ats",
+          "start": 29.932,
+          "end": 30.027,
+          "duration": 0.095,
+          "frame_ahead_trigger": 30.342
+        },
+        {
+          "word": "next",
+          "clean_word": "next",
+          "phonemes": "n\u02c8\u025bkst",
+          "start": 30.027,
+          "end": 30.277,
+          "duration": 0.25,
+          "frame_ahead_trigger": 30.437
+        },
+        {
+          "word": "step.",
+          "clean_word": "step",
+          "phonemes": "st\u02c8\u025bp",
+          "start": 30.277,
+          "end": 30.612,
+          "duration": 0.335,
+          "frame_ahead_trigger": 30.687
+        }
+      ],
+      "audio_duration": 8.36,
+      "slot_duration": 8.51
+    },
+    {
+      "beat_id": 5,
+      "text": "On complex interactive benchmarks like ALFWorld. ReAct crushed traditional reinforcement learning baselines by an absolute thirty-four percent higher success rate.",
+      "visual_focus": "Horizontal bar graph shooting upward, highlighting ReAct's massive margin over pure RL and imitation baselines.",
+      "highlight_words": {
+        "crushed": "#10B981",
+        "thirty-four percent": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "ReAct",
+        "action_verb": "crushed",
+        "direct_object": "RL baselines",
+        "anchor_word": "thirty-four percent",
+        "semantic_role": "metric_comparison"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Horizontal bar graph shooting upward, highlighting",
+        "params": {
+          "title": "BENCHMARK PERFORMANCE COMPARISON",
+          "sub": "Horizontal bar graph shooting upward, highlighting",
+          "metric_name": "Throughput",
+          "unit": "TFLOPS",
+          "contestants": [
+            {
+              "name": "ReAct: Part 1 - The ",
+              "value": 1180.0,
+              "display_val": "1,180 TFLOPS",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Standard Baseline",
+              "value": 450.0,
+              "display_val": "450 TFLOPS",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +2.6x SPEEDUP"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Horizontal bar graph shooting upward, highlighting",
+        "metric_name": "Throughput",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "ReAct: Part 1 - The ",
+            "value": 1180.0,
+            "display_val": "1,180 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Standard Baseline",
+            "value": 450.0,
+            "display_val": "450 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +2.6x SPEEDUP"
+      },
+      "start": 30.91,
+      "end": 39.64,
+      "duration": 8.73,
+      "word_timings": [
+        {
+          "word": "On",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 30.925,
+          "end": 31.065,
+          "duration": 0.14,
+          "frame_ahead_trigger": 31.485
+        },
+        {
+          "word": "complex",
+          "clean_word": "complex",
+          "phonemes": "k\u02c8\u0251\u02d0mpl\u025bks",
+          "start": 31.065,
+          "end": 31.535,
+          "duration": 0.47,
+          "frame_ahead_trigger": 31.625
+        },
+        {
+          "word": "interactive",
+          "clean_word": "interactive",
+          "phonemes": "\u02cc\u026ant\u025a\u0279\u02c8\u00e6kt\u026av",
+          "start": 31.535,
+          "end": 32.305,
+          "duration": 0.77,
+          "frame_ahead_trigger": 32.095
+        },
+        {
+          "word": "benchmarks",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 32.305,
+          "end": 32.81,
+          "duration": 0.505,
+          "frame_ahead_trigger": 32.865
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 32.81,
+          "end": 33.035,
+          "duration": 0.225,
+          "frame_ahead_trigger": 33.37
+        },
+        {
+          "word": "ALFWorld.",
+          "clean_word": "alfworld",
+          "phonemes": "\u02cce\u026a\u02cc\u025bl\u02c8\u025bf w\u02c8\u025c\u02d0ld",
+          "start": 33.035,
+          "end": 33.882,
+          "duration": 0.847,
+          "frame_ahead_trigger": 33.595
+        },
+        {
+          "word": "ReAct",
+          "clean_word": "react",
+          "phonemes": "\u0279\u02cci\u02d0 \u02c8\u00e6kt",
+          "start": 33.882,
+          "end": 34.445,
+          "duration": 0.563,
+          "frame_ahead_trigger": 34.442
+        },
+        {
+          "word": "crushed",
+          "clean_word": "crushed",
+          "phonemes": "k\u0279\u02c8\u028c\u0283t",
+          "start": 34.445,
+          "end": 34.646,
+          "duration": 0.202,
+          "frame_ahead_trigger": 35.005
+        },
+        {
+          "word": "traditional",
+          "clean_word": "traditional",
+          "phonemes": "t\u0279\u0250d\u02c8\u026a\u0283\u0259n\u0259l",
+          "start": 34.646,
+          "end": 35.135,
+          "duration": 0.488,
+          "frame_ahead_trigger": 35.206
+        },
+        {
+          "word": "reinforcement",
+          "clean_word": "reinforcement",
+          "phonemes": "\u0279\u02cci\u02d0\u026anf\u02c8\u0254\u02d0\u0279sm\u0259nt",
+          "start": 35.135,
+          "end": 35.905,
+          "duration": 0.77,
+          "frame_ahead_trigger": 35.695
+        },
+        {
+          "word": "learning",
+          "clean_word": "learning",
+          "phonemes": "l\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 35.905,
+          "end": 36.49,
+          "duration": 0.585,
+          "frame_ahead_trigger": 36.465
+        },
+        {
+          "word": "baselines",
+          "clean_word": "baselines",
+          "phonemes": "b\u02c8e\u026asla\u026anz",
+          "start": 36.49,
+          "end": 36.835,
+          "duration": 0.345,
+          "frame_ahead_trigger": 37.05
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 36.835,
+          "end": 37.085,
+          "duration": 0.25,
+          "frame_ahead_trigger": 37.395
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 37.085,
+          "end": 37.305,
+          "duration": 0.22,
+          "frame_ahead_trigger": 37.645
+        },
+        {
+          "word": "absolute",
+          "clean_word": "absolute",
+          "phonemes": "\u02c8\u00e6bs\u0259l\u02ccu\u02d0t",
+          "start": 37.305,
+          "end": 37.825,
+          "duration": 0.52,
+          "frame_ahead_trigger": 37.865
+        },
+        {
+          "word": "thirty-four",
+          "clean_word": "thirtyfour",
+          "phonemes": "\u03b8\u02cc\u025c\u02d0\u027e\u026af\u02c8\u0254\u02d0\u0279",
+          "start": 37.825,
+          "end": 38.31,
+          "duration": 0.485,
+          "frame_ahead_trigger": 38.385
+        },
+        {
+          "word": "percent",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 38.31,
+          "end": 38.66,
+          "duration": 0.35,
+          "frame_ahead_trigger": 38.87
+        },
+        {
+          "word": "higher",
+          "clean_word": "higher",
+          "phonemes": "h\u02c8a\u026a\u025a",
+          "start": 38.66,
+          "end": 38.93,
+          "duration": 0.27,
+          "frame_ahead_trigger": 39.22
+        },
+        {
+          "word": "success",
+          "clean_word": "success",
+          "phonemes": "s\u0259ks\u02c8\u025bs",
+          "start": 38.93,
+          "end": 39.33,
+          "duration": 0.4,
+          "frame_ahead_trigger": 39.49
+        },
+        {
+          "word": "rate.",
+          "clean_word": "rate",
+          "phonemes": "\u0279\u02c8e\u026at",
+          "start": 39.33,
+          "end": 39.49,
+          "duration": 0.16,
+          "frame_ahead_trigger": 39.89
+        }
+      ],
+      "audio_duration": 8.73,
+      "slot_duration": 8.88
+    },
+    {
+      "beat_id": 6,
+      "text": "Reasoning grounds the action. Action grounds the reasoning. Follow machinoAI for daily deep-dives into modern AI architectures.",
+      "visual_focus": "Circular infinity symbol cycling between internal neuron traces and external environment icons, snapping shut as the machinoAI brand mark appears.",
+      "highlight_words": {
+        "grounds the action": "#10B981",
+        "machinoAI": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Action",
+        "action_verb": "grounds",
+        "direct_object": "reasoning traces",
+        "anchor_word": "grounds",
+        "semantic_role": "loop_closure"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE GROUNDED INTELLIGENCE PARADIGM",
+        "sub": "From pure generation to embodied execution",
+        "accent_color": "#38BDF8",
+        "params": {
+          "param_key_1": "metric_a",
+          "param_key_2": "metric_b"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 39.79,
+      "end": 46.92,
+      "duration": 7.13,
+      "word_timings": [
+        {
+          "word": "Reasoning",
+          "clean_word": "reasoning",
+          "phonemes": "\u0279\u02c8i\u02d0z\u0259n\u026a\u014b",
+          "start": 39.8,
+          "end": 40.35,
+          "duration": 0.55,
+          "frame_ahead_trigger": 40.51
+        },
+        {
+          "word": "grounds",
+          "clean_word": "grounds",
+          "phonemes": "\u0261\u0279\u02c8a\u028andz",
+          "start": 40.35,
+          "end": 40.775,
+          "duration": 0.425,
+          "frame_ahead_trigger": 41.06
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 40.775,
+          "end": 40.87,
+          "duration": 0.095,
+          "frame_ahead_trigger": 41.485
+        },
+        {
+          "word": "action.",
+          "clean_word": "action",
+          "phonemes": "\u02c8\u00e6k\u0283\u0259n",
+          "start": 40.87,
+          "end": 41.218,
+          "duration": 0.348,
+          "frame_ahead_trigger": 41.58
+        },
+        {
+          "word": "Action",
+          "clean_word": "action",
+          "phonemes": "\u02c8\u00e6k\u0283\u0259n",
+          "start": 41.218,
+          "end": 41.52,
+          "duration": 0.302,
+          "frame_ahead_trigger": 41.928
+        },
+        {
+          "word": "grounds",
+          "clean_word": "grounds",
+          "phonemes": "\u0261\u0279\u02c8a\u028andz",
+          "start": 41.52,
+          "end": 42.045,
+          "duration": 0.525,
+          "frame_ahead_trigger": 42.23
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 42.045,
+          "end": 42.135,
+          "duration": 0.09,
+          "frame_ahead_trigger": 42.755
+        },
+        {
+          "word": "reasoning.",
+          "clean_word": "reasoning",
+          "phonemes": "\u0279\u02c8i\u02d0z\u0259n\u026a\u014b",
+          "start": 42.135,
+          "end": 42.637,
+          "duration": 0.502,
+          "frame_ahead_trigger": 42.845
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 42.637,
+          "end": 43.13,
+          "duration": 0.493,
+          "frame_ahead_trigger": 43.347
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 43.13,
+          "end": 43.942,
+          "duration": 0.812,
+          "frame_ahead_trigger": 43.84
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 43.942,
+          "end": 44.175,
+          "duration": 0.233,
+          "frame_ahead_trigger": 44.652
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 44.175,
+          "end": 44.455,
+          "duration": 0.28,
+          "frame_ahead_trigger": 44.885
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 44.455,
+          "end": 45.11,
+          "duration": 0.655,
+          "frame_ahead_trigger": 45.165
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 45.11,
+          "end": 45.24,
+          "duration": 0.13,
+          "frame_ahead_trigger": 45.82
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 45.24,
+          "end": 45.685,
+          "duration": 0.445,
+          "frame_ahead_trigger": 45.95
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 45.685,
+          "end": 46.06,
+          "duration": 0.375,
+          "frame_ahead_trigger": 46.395
+        },
+        {
+          "word": "architectures.",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 46.06,
+          "end": 46.835,
+          "duration": 0.775,
+          "frame_ahead_trigger": 46.77
+        }
+      ],
+      "audio_duration": 7.13,
+      "slot_duration": 7.13
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\mathcal{O}(N) \\ll \\mathcal{O}(N^2)$",
+      "filename": "react_thought_action_loop_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "react_thought_action_loop_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathbf{L}_{\\mathrm{bottleneck}} = \\sum_{i=1}^M \\alpha_i \\mathbf{v}_i$",
+      "filename": "react_thought_action_loop_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "react_thought_action_loop_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{y} = \\mathrm{LayerNorm}(\\mathbf{W}_p \\mathbf{x} + \\mathbf{b})$",
+      "filename": "react_thought_action_loop_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "react_thought_action_loop_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{TopK}(\\sigma(\\mathbf{W}_g \\mathbf{x})) = \\mathbf{e}^*$",
+      "filename": "react_thought_action_loop_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "react_thought_action_loop_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Throughput}_{\\mathrm{SOTA}} \\ge 2.5\\times$",
+      "filename": "react_thought_action_loop_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "react_thought_action_loop_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 15.0,
+      "sound_type": "laser",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 25.0,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy",
+    "scale_metric": "10x",
+    "scale_label": "Speedup",
+    "payoff_stat": "98.2%",
+    "payoff_label": "Efficiency SOTA"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK PERFORMANCE COMPARISON",
+    "metric_name": "Throughput",
+    "unit": "TFLOPS",
+    "contestants": [
+      {
+        "name": "ReAct: Part 1 - The ",
+        "value": 1180.0,
+        "display_val": "1,180 TFLOPS",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Standard Baseline",
+        "value": 450.0,
+        "display_val": "450 TFLOPS",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +2.6x SPEEDUP",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "kernel.py",
+    "language": "python",
+    "lines": [
+      "def forward_pass(input_tensor):",
+      "    return fused_kernel_op(input_tensor)"
+    ],
+    "highlight_lines": [
+      1
+    ],
+    "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+    "explanation": "Zero-latency pipeline operation"
+  },
+  "arxiv_id": "2210.03629",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "fever_cots_scale",
+      "caption": "Fever Cots Scale",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/source/iclr2023/figure/fever_cots_scale.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_1_fever_cots_scale.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_1_fever_cots_scale.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "hotpot_finetune",
+      "caption": "Hotpot Finetune",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/source/iclr2023/figure/hotpot_finetune.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_2_hotpot_finetune.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_2_hotpot_finetune.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "cots_scale",
+      "caption": "Cots Scale",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/source/iclr2023/figure/cots_scale.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_3_cots_scale.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_3_cots_scale.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "teaser-new",
+      "caption": "Teaser-New",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/source/iclr2023/figure/teaser-new.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_4_teaser-new.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_4_teaser-new.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "date",
+      "caption": "Date",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/source/iclr2023/figure/date.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_5_date.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2210.03629/chalkboard_figures/fig_5_date.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 9.0,
+    "final_retention_hook_score": 8.7,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "This was super clean and hit straight to the point. The contrast in Beat 1 between writing essays and failing on a live database is something every dev playing with LLMs has actually experienced. Beat 4 breaks down the Thought-Action-Observation loop clearly without resorting to weird cartoon metaphors or dumbing it down. You kept real terms like 'APIs', 'hallucinate', and 'reinforcement learning baselines' which made it feel legit."
+  },
+  "hook_gating": {
+    "selected_hook": "Language models can write flawless essays. Yet fail completely when asked to interact with a live database.",
+    "verdict": 55,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Contender A",
+        "model_a_score": "95%",
+        "model_b_name": "Baseline",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "dkgGmYq0PIg",
+    "shorts_url": "https://youtube.com/shorts/dkgGmYq0PIg",
+    "studio_url": "https://studio.youtube.com/video/dkgGmYq0PIg/edit",
+    "title": "ReAct Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/react_thought_action_loop_poster.png",
+    "custom_thumbnail_set": false
+  }
+}

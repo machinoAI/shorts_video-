@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-20 | **Timestamp:** 2026-10-20 12:00:17 UTC
+**Date:** 2026-10-20 | **Timestamp:** 2026-10-20 13:14:33 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: RAG Survey: Part 3 - The RAG Triad: Evaluating Groundedness & Relevance
-- **Topic Queue Part:** `rag_survey_part_3_rag_triad_evaluation` (arXiv: [2312.10997](https://arxiv.org/abs/2312.10997))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/vqYCztWVuI0](https://youtube.com/shorts/vqYCztWVuI0) (`vqYCztWVuI0`)
-- **High-CTR Poster:** [rag_triad_evaluation_poster.png](public/thumbnails/rag_triad_evaluation_poster.png)
+### Reel 1: ReAct: Part 1 - The Thought-Action Loop That Saved AI Agents
+- **Topic Queue Part:** `react_part_1_thought_action_loop` (arXiv: [2210.03629](https://arxiv.org/abs/2210.03629))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/dkgGmYq0PIg](https://youtube.com/shorts/dkgGmYq0PIg) (`dkgGmYq0PIg`)
+- **High-CTR Poster:** [react_thought_action_loop_poster.png](public/thumbnails/react_thought_action_loop_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `benchmark_news`
-- **Editorial Hook:** *RAG Survey Mini-Series 3/3: RAG Survey: Part 3 - The RAG Triad: Evaluating Groundedness & Relevance*
-- **Everyday Analogy:** *How top production AI systems measure and debug RAG quality using TruLens and RAGAS metrics.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_rag_triad_evaluation_benchmark_news.mp4`
+- **Category:** `architecture_breakdown`
+- **Editorial Hook:** *AI Agents: ReAct Mini-Series 1/2: ReAct: Part 1 - The Thought-Action Loop That Saved AI Agents*
+- **Everyday Analogy:** *Why pure reasoning hallucinates and pure action acts blindly: how the Thought-Action-Observation loop bridges internal deliberation with external API execution.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_react_thought_action_loop_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
