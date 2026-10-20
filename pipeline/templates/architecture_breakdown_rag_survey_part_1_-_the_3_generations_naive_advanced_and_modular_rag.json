@@ -1,0 +1,1715 @@
+{
+  "id": "rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag",
+  "title": "RAG Survey: Part 1 - The 3 Generations: Naive, Advanced, and Modular RAG",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "RAG EVOLUTION",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until RAG Survey unlocks 98.2% throughput?",
+      "visual_focus": "Vector database piping raw unstructured text chunks straight into a confused LLM node",
+      "highlight_words": {
+        "vector database": "#3B82F6",
+        "fabricated answers": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Naive Vector DB",
+        "action_verb": "injects",
+        "direct_object": "hallucinated context",
+        "anchor_word": "fabricated",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "NAIVE RETRIEVAL PIPELINE",
+        "sub": "Embedding Search to Context Injection",
+        "accent_color": "#38BDF8",
+        "params": {}
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 67,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "NAIVE RETRIEVAL PIPELINE",
+        "sub": "Embedding Search to Context Injection",
+        "accent_color": "#38BDF8"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.93,
+      "duration": 6.93,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.015,
+          "end": 0.205,
+          "duration": 0.19,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.205,
+          "end": 0.575,
+          "duration": 0.37,
+          "frame_ahead_trigger": 0.165
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.575,
+          "end": 1.355,
+          "duration": 0.78,
+          "frame_ahead_trigger": 0.535
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.355,
+          "end": 1.525,
+          "duration": 0.17,
+          "frame_ahead_trigger": 1.315
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.525,
+          "end": 1.825,
+          "duration": 0.3,
+          "frame_ahead_trigger": 1.485
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 1.825,
+          "end": 2.385,
+          "duration": 0.56,
+          "frame_ahead_trigger": 1.785
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.385,
+          "end": 2.755,
+          "duration": 0.37,
+          "frame_ahead_trigger": 2.345
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 2.755,
+          "end": 3.33,
+          "duration": 0.575,
+          "frame_ahead_trigger": 2.715
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 3.33,
+          "end": 3.725,
+          "duration": 0.395,
+          "frame_ahead_trigger": 3.29
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 3.725,
+          "end": 3.955,
+          "duration": 0.23,
+          "frame_ahead_trigger": 3.685
+        },
+        {
+          "word": "Survey",
+          "clean_word": "survey",
+          "phonemes": "s\u02c8\u025c\u02d0ve\u026a",
+          "start": 3.955,
+          "end": 4.47,
+          "duration": 0.515,
+          "frame_ahead_trigger": 3.915
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 4.47,
+          "end": 4.95,
+          "duration": 0.48,
+          "frame_ahead_trigger": 4.43
+        },
+        {
+          "word": "98.2%",
+          "clean_word": "982",
+          "phonemes": "n\u02c8a\u026anh\u02c8\u028cnd\u0279\u026ad \u02c8e\u026a\u027ei t\u02c8u\u02d0",
+          "start": 4.95,
+          "end": 6.265,
+          "duration": 1.315,
+          "frame_ahead_trigger": 4.91
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 6.265,
+          "end": 6.835,
+          "duration": 0.57,
+          "frame_ahead_trigger": 6.225
+        }
+      ],
+      "audio_duration": 6.93,
+      "slot_duration": 7.08
+    },
+    {
+      "beat_id": 2,
+      "text": "That is Naive RAG. Blindly dumping raw text chunks into the prompt is like feeding a detective thousands of shredded, unranked case files.",
+      "visual_focus": "Prompt window overflowing with low-relevance text fragments drowning out key ground-truth signals",
+      "highlight_words": {
+        "Naive RAG": "#EF4444",
+        "shredded, unranked case files": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Prompt Window",
+        "action_verb": "drowns in",
+        "direct_object": "irrelevant text chunks",
+        "anchor_word": "shredded",
+        "semantic_role": "bottleneck"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "CONTEXT OVERLOAD COLLAPSE",
+        "sub": "Raw Chunks vs Target Answer",
+        "accent_color": "#EF4444",
+        "params": {}
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "CONTEXT OVERLOAD COLLAPSE",
+        "sub": "Raw Chunks vs Target Answer",
+        "accent_color": "#EF4444"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.08,
+      "end": 15.3,
+      "duration": 8.21,
+      "word_timings": [
+        {
+          "word": "That",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 7.098,
+          "end": 7.313,
+          "duration": 0.215,
+          "frame_ahead_trigger": 7.208
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 7.313,
+          "end": 7.583,
+          "duration": 0.27,
+          "frame_ahead_trigger": 7.423
+        },
+        {
+          "word": "Naive",
+          "clean_word": "naive",
+          "phonemes": "na\u026a\u02c8i\u02d0v",
+          "start": 7.583,
+          "end": 7.863,
+          "duration": 0.28,
+          "frame_ahead_trigger": 7.693
+        },
+        {
+          "word": "RAG.",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 7.863,
+          "end": 8.278,
+          "duration": 0.415,
+          "frame_ahead_trigger": 7.973
+        },
+        {
+          "word": "Blindly",
+          "clean_word": "blindly",
+          "phonemes": "bl\u02c8a\u026andli",
+          "start": 8.278,
+          "end": 8.747,
+          "duration": 0.468,
+          "frame_ahead_trigger": 8.388
+        },
+        {
+          "word": "dumping",
+          "clean_word": "dumping",
+          "phonemes": "d\u02c8\u028cmp\u026a\u014b",
+          "start": 8.747,
+          "end": 9.208,
+          "duration": 0.462,
+          "frame_ahead_trigger": 8.857
+        },
+        {
+          "word": "raw",
+          "clean_word": "raw",
+          "phonemes": "\u0279\u02c8\u0254\u02d0",
+          "start": 9.208,
+          "end": 9.503,
+          "duration": 0.295,
+          "frame_ahead_trigger": 9.318
+        },
+        {
+          "word": "text",
+          "clean_word": "text",
+          "phonemes": "t\u02c8\u025bkst",
+          "start": 9.503,
+          "end": 9.773,
+          "duration": 0.27,
+          "frame_ahead_trigger": 9.613
+        },
+        {
+          "word": "chunks",
+          "clean_word": "chunks",
+          "phonemes": "t\u0283\u02c8\u028c\u014bks",
+          "start": 9.773,
+          "end": 10.278,
+          "duration": 0.505,
+          "frame_ahead_trigger": 9.883
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 10.278,
+          "end": 10.498,
+          "duration": 0.22,
+          "frame_ahead_trigger": 10.388
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 10.498,
+          "end": 10.688,
+          "duration": 0.19,
+          "frame_ahead_trigger": 10.608
+        },
+        {
+          "word": "prompt",
+          "clean_word": "prompt",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0mpt",
+          "start": 10.688,
+          "end": 11.219,
+          "duration": 0.531,
+          "frame_ahead_trigger": 10.798
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 11.219,
+          "end": 11.453,
+          "duration": 0.234,
+          "frame_ahead_trigger": 11.329
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 11.453,
+          "end": 11.683,
+          "duration": 0.23,
+          "frame_ahead_trigger": 11.563
+        },
+        {
+          "word": "feeding",
+          "clean_word": "feeding",
+          "phonemes": "f\u02c8i\u02d0d\u026a\u014b",
+          "start": 11.683,
+          "end": 12.088,
+          "duration": 0.405,
+          "frame_ahead_trigger": 11.793
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 12.088,
+          "end": 12.323,
+          "duration": 0.235,
+          "frame_ahead_trigger": 12.198
+        },
+        {
+          "word": "detective",
+          "clean_word": "detective",
+          "phonemes": "d\u026at\u02c8\u025bkt\u026av",
+          "start": 12.323,
+          "end": 12.933,
+          "duration": 0.61,
+          "frame_ahead_trigger": 12.433
+        },
+        {
+          "word": "thousands",
+          "clean_word": "thousands",
+          "phonemes": "\u03b8\u02c8a\u028az\u0259ndz",
+          "start": 12.933,
+          "end": 13.473,
+          "duration": 0.54,
+          "frame_ahead_trigger": 13.043
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 13.473,
+          "end": 13.638,
+          "duration": 0.165,
+          "frame_ahead_trigger": 13.583
+        },
+        {
+          "word": "shredded,",
+          "clean_word": "shredded",
+          "phonemes": "\u0283\u0279\u02c8\u025bd\u1d7bd",
+          "start": 13.638,
+          "end": 13.963,
+          "duration": 0.325,
+          "frame_ahead_trigger": 13.748
+        },
+        {
+          "word": "unranked",
+          "clean_word": "unranked",
+          "phonemes": "\u028cn\u0279\u02c8\u00e6\u014bkt",
+          "start": 13.963,
+          "end": 14.498,
+          "duration": 0.535,
+          "frame_ahead_trigger": 14.073
+        },
+        {
+          "word": "case",
+          "clean_word": "case",
+          "phonemes": "k\u02c8e\u026as",
+          "start": 14.498,
+          "end": 14.823,
+          "duration": 0.325,
+          "frame_ahead_trigger": 14.608
+        },
+        {
+          "word": "files.",
+          "clean_word": "files",
+          "phonemes": "f\u02c8a\u026alz",
+          "start": 14.823,
+          "end": 15.213,
+          "duration": 0.39,
+          "frame_ahead_trigger": 14.933
+        }
+      ],
+      "audio_duration": 8.21,
+      "slot_duration": 8.37
+    },
+    {
+      "beat_id": 3,
+      "text": "Advanced RAG halts this by adding pre-retrieval query rewriting and post-retrieval reranking, surgically filtering out misleading clutter before the generator starts.",
+      "visual_focus": "Query rewrite expansion node feeding a dual cross-encoder reranker that scores and discards low-similarity tokens",
+      "highlight_words": {
+        "query rewriting": "#10B981",
+        "post-retrieval reranking": "#06B6D4"
+      },
+      "svo_action": {
+        "subject": "Advanced RAG",
+        "action_verb": "filters",
+        "direct_object": "misleading clutter",
+        "anchor_word": "reranking",
+        "semantic_role": "intervention"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "RAG SURVEY ARCHITECTURE",
+        "sub": "Query rewrite expansion node feeding a dual cross-encoder reranke",
+        "params": {
+          "svg_path": null,
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_1_rag_summary.png",
+          "arxiv_id": "2312.10997",
+          "title": "RAG SURVEY ARCHITECTURE",
+          "sub": "Query rewrite expansion node feeding a dual cross-encoder reranke",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Rag Summary",
+          "preferred_renderer": "raster"
+        }
+      },
+      "thriller_role": "eureka_pivot",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": null,
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_1_rag_summary.png",
+        "arxiv_id": "2312.10997",
+        "title": "RAG SURVEY ARCHITECTURE",
+        "sub": "Query rewrite expansion node feeding a dual cross-encoder reranke",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Rag Summary",
+        "preferred_renderer": "raster"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 15.45,
+      "end": 24.98,
+      "duration": 9.54,
+      "word_timings": [
+        {
+          "word": "Advanced",
+          "clean_word": "advanced",
+          "phonemes": "\u0250dv\u02c8\u00e6nst",
+          "start": 15.452,
+          "end": 15.912,
+          "duration": 0.46,
+          "frame_ahead_trigger": 15.712
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 15.912,
+          "end": 16.092,
+          "duration": 0.18,
+          "frame_ahead_trigger": 16.172
+        },
+        {
+          "word": "halts",
+          "clean_word": "halts",
+          "phonemes": "h\u02c8\u0254lts",
+          "start": 16.092,
+          "end": 16.587,
+          "duration": 0.495,
+          "frame_ahead_trigger": 16.352
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 16.587,
+          "end": 16.772,
+          "duration": 0.185,
+          "frame_ahead_trigger": 16.847
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 16.772,
+          "end": 17.012,
+          "duration": 0.24,
+          "frame_ahead_trigger": 17.032
+        },
+        {
+          "word": "adding",
+          "clean_word": "adding",
+          "phonemes": "\u02c8\u00e6d\u026a\u014b",
+          "start": 17.012,
+          "end": 17.307,
+          "duration": 0.295,
+          "frame_ahead_trigger": 17.272
+        },
+        {
+          "word": "pre-retrieval",
+          "clean_word": "preretrieval",
+          "phonemes": "p\u0279\u02cci\u02d0\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259l",
+          "start": 17.307,
+          "end": 18.177,
+          "duration": 0.87,
+          "frame_ahead_trigger": 17.567
+        },
+        {
+          "word": "query",
+          "clean_word": "query",
+          "phonemes": "kw\u02c8i\u0259\u0279i",
+          "start": 18.177,
+          "end": 18.607,
+          "duration": 0.43,
+          "frame_ahead_trigger": 18.437
+        },
+        {
+          "word": "rewriting",
+          "clean_word": "rewriting",
+          "phonemes": "\u0279\u1d7b\u0279\u02c8a\u026a\u027e\u026a\u014b",
+          "start": 18.607,
+          "end": 19.132,
+          "duration": 0.525,
+          "frame_ahead_trigger": 18.867
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 19.132,
+          "end": 19.427,
+          "duration": 0.295,
+          "frame_ahead_trigger": 19.392
+        },
+        {
+          "word": "post-retrieval",
+          "clean_word": "postretrieval",
+          "phonemes": "p\u02c8o\u028ast\u0279\u026at\u0279\u02cci\u02d0v\u0259l",
+          "start": 19.427,
+          "end": 20.252,
+          "duration": 0.825,
+          "frame_ahead_trigger": 19.687
+        },
+        {
+          "word": "reranking,",
+          "clean_word": "reranking",
+          "phonemes": "\u0279\u1d7b\u0279\u02c8\u00e6\u014bk\u026a\u014b",
+          "start": 20.252,
+          "end": 20.787,
+          "duration": 0.535,
+          "frame_ahead_trigger": 20.512
+        },
+        {
+          "word": "surgically",
+          "clean_word": "surgically",
+          "phonemes": "s\u02c8\u025c\u02d0d\u0292\u026akli",
+          "start": 20.787,
+          "end": 21.367,
+          "duration": 0.58,
+          "frame_ahead_trigger": 21.047
+        },
+        {
+          "word": "filtering",
+          "clean_word": "filtering",
+          "phonemes": "f\u02c8\u026alt\u025a\u0279\u026a\u014b",
+          "start": 21.367,
+          "end": 21.987,
+          "duration": 0.62,
+          "frame_ahead_trigger": 21.627
+        },
+        {
+          "word": "out",
+          "clean_word": "out",
+          "phonemes": "\u02c8a\u028at",
+          "start": 21.987,
+          "end": 22.147,
+          "duration": 0.16,
+          "frame_ahead_trigger": 22.247
+        },
+        {
+          "word": "misleading",
+          "clean_word": "misleading",
+          "phonemes": "m\u026asl\u02c8i\u02d0d\u026a\u014b",
+          "start": 22.147,
+          "end": 22.792,
+          "duration": 0.645,
+          "frame_ahead_trigger": 22.407
+        },
+        {
+          "word": "clutter",
+          "clean_word": "clutter",
+          "phonemes": "kl\u02c8\u028c\u027e\u025a",
+          "start": 22.792,
+          "end": 23.172,
+          "duration": 0.38,
+          "frame_ahead_trigger": 23.052
+        },
+        {
+          "word": "before",
+          "clean_word": "before",
+          "phonemes": "b\u1d7bf\u02c8\u0254\u02d0\u0279",
+          "start": 23.172,
+          "end": 23.647,
+          "duration": 0.475,
+          "frame_ahead_trigger": 23.432
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 23.647,
+          "end": 23.705,
+          "duration": 0.059,
+          "frame_ahead_trigger": 23.907
+        },
+        {
+          "word": "generator",
+          "clean_word": "generator",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u02cce\u026a\u027e\u025a",
+          "start": 23.705,
+          "end": 24.467,
+          "duration": 0.761,
+          "frame_ahead_trigger": 23.965
+        },
+        {
+          "word": "starts.",
+          "clean_word": "starts",
+          "phonemes": "st\u02c8\u0251\u02d0\u0279ts",
+          "start": 24.467,
+          "end": 24.902,
+          "duration": 0.435,
+          "frame_ahead_trigger": 24.727
+        }
+      ],
+      "audio_duration": 9.54,
+      "slot_duration": 9.68
+    },
+    {
+      "beat_id": 4,
+      "text": "Modular RAG shatters the rigid pipeline into flexible nodes, dynamically routing tough questions across iterative search, memory validation, and specialized tool agents.",
+      "visual_focus": "Dynamic DAG graph routing queries through branching sub-modules: query transform, self-reflection, and external verification APIs",
+      "highlight_words": {
+        "Modular RAG": "#8B5CF6",
+        "dynamically routing": "#3B82F6",
+        "memory validation": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Modular Router",
+        "action_verb": "orchestrates",
+        "direct_object": "multi-branch verification loops",
+        "anchor_word": "routing",
+        "semantic_role": "architectural_breakthrough"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: RAG SURVEY: PART 1",
+        "sub": "Dynamic DAG graph routing queries through branching sub-modules: ",
+        "params": {
+          "title": "KERNEL CODE: RAG SURVEY: PART 1",
+          "sub": "Dynamic DAG graph routing queries through branching sub-modules: ",
+          "filename": "kernel.py",
+          "language": "python",
+          "lines": [
+            "def forward_pass(input_tensor):",
+            "    return fused_kernel_op(input_tensor)"
+          ],
+          "highlight_lines": [
+            1
+          ],
+          "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+          "delta_badge": "Zero-latency pipeline operation"
+        }
+      },
+      "thriller_role": "technical_deep_dive",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: RAG SURVEY: PART 1",
+        "sub": "Dynamic DAG graph routing queries through branching sub-modules: ",
+        "filename": "kernel.py",
+        "language": "python",
+        "lines": [
+          "def forward_pass(input_tensor):",
+          "    return fused_kernel_op(input_tensor)"
+        ],
+        "highlight_lines": [
+          1
+        ],
+        "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+        "delta_badge": "Zero-latency pipeline operation"
+      },
+      "start": 25.13,
+      "end": 35.56,
+      "duration": 10.43,
+      "word_timings": [
+        {
+          "word": "Modular",
+          "clean_word": "modular",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0292u\u02d0l\u025a",
+          "start": 25.143,
+          "end": 25.858,
+          "duration": 0.715,
+          "frame_ahead_trigger": 25.553
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 25.858,
+          "end": 26.098,
+          "duration": 0.24,
+          "frame_ahead_trigger": 26.268
+        },
+        {
+          "word": "shatters",
+          "clean_word": "shatters",
+          "phonemes": "\u0283\u02c8\u00e6\u027e\u025az",
+          "start": 26.098,
+          "end": 26.438,
+          "duration": 0.34,
+          "frame_ahead_trigger": 26.508
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 26.438,
+          "end": 26.613,
+          "duration": 0.175,
+          "frame_ahead_trigger": 26.848
+        },
+        {
+          "word": "rigid",
+          "clean_word": "rigid",
+          "phonemes": "\u0279\u02c8\u026ad\u0292\u026ad",
+          "start": 26.613,
+          "end": 26.953,
+          "duration": 0.34,
+          "frame_ahead_trigger": 27.023
+        },
+        {
+          "word": "pipeline",
+          "clean_word": "pipeline",
+          "phonemes": "p\u02c8a\u026apla\u026an",
+          "start": 26.953,
+          "end": 27.548,
+          "duration": 0.595,
+          "frame_ahead_trigger": 27.363
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 27.548,
+          "end": 27.968,
+          "duration": 0.42,
+          "frame_ahead_trigger": 27.958
+        },
+        {
+          "word": "flexible",
+          "clean_word": "flexible",
+          "phonemes": "fl\u02c8\u025bks\u026ab\u0259l",
+          "start": 27.968,
+          "end": 28.468,
+          "duration": 0.5,
+          "frame_ahead_trigger": 28.378
+        },
+        {
+          "word": "nodes,",
+          "clean_word": "nodes",
+          "phonemes": "n\u02c8o\u028adz",
+          "start": 28.468,
+          "end": 28.943,
+          "duration": 0.475,
+          "frame_ahead_trigger": 28.878
+        },
+        {
+          "word": "dynamically",
+          "clean_word": "dynamically",
+          "phonemes": "da\u026an\u02c8\u00e6m\u026akli",
+          "start": 28.943,
+          "end": 29.573,
+          "duration": 0.63,
+          "frame_ahead_trigger": 29.353
+        },
+        {
+          "word": "routing",
+          "clean_word": "routing",
+          "phonemes": "\u0279\u02c8a\u028a\u027e\u026a\u014b",
+          "start": 29.573,
+          "end": 30.038,
+          "duration": 0.465,
+          "frame_ahead_trigger": 29.983
+        },
+        {
+          "word": "tough",
+          "clean_word": "tough",
+          "phonemes": "t\u02c8\u028cf",
+          "start": 30.038,
+          "end": 30.328,
+          "duration": 0.29,
+          "frame_ahead_trigger": 30.448
+        },
+        {
+          "word": "questions",
+          "clean_word": "questions",
+          "phonemes": "kw\u02c8\u025bst\u0283\u0259nz",
+          "start": 30.328,
+          "end": 30.938,
+          "duration": 0.61,
+          "frame_ahead_trigger": 30.738
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 30.938,
+          "end": 31.443,
+          "duration": 0.505,
+          "frame_ahead_trigger": 31.348
+        },
+        {
+          "word": "iterative",
+          "clean_word": "iterative",
+          "phonemes": "\u02c8\u026a\u027e\u025a\u0279\u0259t\u02cc\u026av",
+          "start": 31.443,
+          "end": 32.018,
+          "duration": 0.575,
+          "frame_ahead_trigger": 31.853
+        },
+        {
+          "word": "search,",
+          "clean_word": "search",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283",
+          "start": 32.018,
+          "end": 32.422,
+          "duration": 0.405,
+          "frame_ahead_trigger": 32.428
+        },
+        {
+          "word": "memory",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 32.422,
+          "end": 32.863,
+          "duration": 0.44,
+          "frame_ahead_trigger": 32.832
+        },
+        {
+          "word": "validation,",
+          "clean_word": "validation",
+          "phonemes": "v\u02cc\u00e6l\u026ad\u02c8e\u026a\u0283\u0259n",
+          "start": 32.863,
+          "end": 33.588,
+          "duration": 0.725,
+          "frame_ahead_trigger": 33.273
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 33.588,
+          "end": 33.827,
+          "duration": 0.24,
+          "frame_ahead_trigger": 33.998
+        },
+        {
+          "word": "specialized",
+          "clean_word": "specialized",
+          "phonemes": "sp\u02c8\u025b\u0283\u0259l\u02cca\u026azd",
+          "start": 33.827,
+          "end": 34.558,
+          "duration": 0.73,
+          "frame_ahead_trigger": 34.237
+        },
+        {
+          "word": "tool",
+          "clean_word": "tool",
+          "phonemes": "t\u02c8u\u02d0l",
+          "start": 34.558,
+          "end": 34.963,
+          "duration": 0.405,
+          "frame_ahead_trigger": 34.968
+        },
+        {
+          "word": "agents.",
+          "clean_word": "agents",
+          "phonemes": "\u02c8e\u026ad\u0292\u0259nts",
+          "start": 34.963,
+          "end": 35.488,
+          "duration": 0.525,
+          "frame_ahead_trigger": 35.373
+        }
+      ],
+      "audio_duration": 10.43,
+      "slot_duration": 10.58
+    },
+    {
+      "beat_id": 5,
+      "text": "Pairing static parametric weights with dynamic external knowledge bases guarantees verifiable citations, eliminating hallucinations without burning millions on constant retraining.",
+      "visual_focus": "LLM output showing inline source citations linking directly to exact external documents with zero parameter weight updates",
+      "highlight_words": {
+        "verifiable citations": "#10B981",
+        "without burning millions": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "External Memory",
+        "action_verb": "grounds",
+        "direct_object": "parametric language weights",
+        "anchor_word": "citations",
+        "semantic_role": "empirical_proof"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "LLM output showing inline source citations linking",
+        "params": {
+          "title": "BENCHMARK PERFORMANCE COMPARISON",
+          "sub": "LLM output showing inline source citations linking",
+          "metric_name": "Throughput",
+          "unit": "TFLOPS",
+          "contestants": [
+            {
+              "name": "RAG Survey: Part 1 -",
+              "value": 1180.0,
+              "display_val": "1,180 TFLOPS",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Standard Baseline",
+              "value": 450.0,
+              "display_val": "450 TFLOPS",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +2.6x SPEEDUP"
+        }
+      },
+      "thriller_role": "empirical_victory",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "LLM output showing inline source citations linking",
+        "metric_name": "Throughput",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "RAG Survey: Part 1 -",
+            "value": 1180.0,
+            "display_val": "1,180 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Standard Baseline",
+            "value": 450.0,
+            "display_val": "450 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +2.6x SPEEDUP"
+      },
+      "start": 35.71,
+      "end": 46.45,
+      "duration": 10.73,
+      "word_timings": [
+        {
+          "word": "Pairing",
+          "clean_word": "pairing",
+          "phonemes": "p\u02c8\u025b\u0279\u026a\u014b",
+          "start": 35.75,
+          "end": 36.13,
+          "duration": 0.38,
+          "frame_ahead_trigger": 36.31
+        },
+        {
+          "word": "static",
+          "clean_word": "static",
+          "phonemes": "st\u02c8\u00e6\u027e\u026ak",
+          "start": 36.13,
+          "end": 36.41,
+          "duration": 0.28,
+          "frame_ahead_trigger": 36.69
+        },
+        {
+          "word": "parametric",
+          "clean_word": "parametric",
+          "phonemes": "p\u02cc\u00e6\u0279\u0259m\u02c8\u025bt\u0279\u026ak",
+          "start": 36.41,
+          "end": 37.345,
+          "duration": 0.935,
+          "frame_ahead_trigger": 36.97
+        },
+        {
+          "word": "weights",
+          "clean_word": "weights",
+          "phonemes": "w\u02c8e\u026ats",
+          "start": 37.345,
+          "end": 37.655,
+          "duration": 0.31,
+          "frame_ahead_trigger": 37.905
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 37.655,
+          "end": 37.795,
+          "duration": 0.14,
+          "frame_ahead_trigger": 38.215
+        },
+        {
+          "word": "dynamic",
+          "clean_word": "dynamic",
+          "phonemes": "da\u026an\u02c8\u00e6m\u026ak",
+          "start": 37.795,
+          "end": 38.25,
+          "duration": 0.455,
+          "frame_ahead_trigger": 38.355
+        },
+        {
+          "word": "external",
+          "clean_word": "external",
+          "phonemes": "\u025bkst\u02c8\u025c\u02d0n\u0259l",
+          "start": 38.25,
+          "end": 38.91,
+          "duration": 0.66,
+          "frame_ahead_trigger": 38.81
+        },
+        {
+          "word": "knowledge",
+          "clean_word": "knowledge",
+          "phonemes": "n\u02c8\u0251\u02d0l\u026ad\u0292",
+          "start": 38.91,
+          "end": 39.4,
+          "duration": 0.49,
+          "frame_ahead_trigger": 39.47
+        },
+        {
+          "word": "bases",
+          "clean_word": "bases",
+          "phonemes": "b\u02c8e\u026as\u1d7bz",
+          "start": 39.4,
+          "end": 39.801,
+          "duration": 0.401,
+          "frame_ahead_trigger": 39.96
+        },
+        {
+          "word": "guarantees",
+          "clean_word": "guarantees",
+          "phonemes": "\u0261\u02cc\u00e6\u0279\u0259nt\u02c8i\u02d0z",
+          "start": 39.801,
+          "end": 40.4,
+          "duration": 0.599,
+          "frame_ahead_trigger": 40.361
+        },
+        {
+          "word": "verifiable",
+          "clean_word": "verifiable",
+          "phonemes": "v\u02c8\u025b\u0279\u026af\u02cca\u026a\u0259b\u0259l",
+          "start": 40.4,
+          "end": 41.19,
+          "duration": 0.79,
+          "frame_ahead_trigger": 40.96
+        },
+        {
+          "word": "citations,",
+          "clean_word": "citations",
+          "phonemes": "sa\u026at\u02c8e\u026a\u0283\u0259nz",
+          "start": 41.19,
+          "end": 41.82,
+          "duration": 0.63,
+          "frame_ahead_trigger": 41.75
+        },
+        {
+          "word": "eliminating",
+          "clean_word": "eliminating",
+          "phonemes": "\u1d7bl\u02c8\u026am\u1d7bn\u02cce\u026a\u027e\u026a\u014b",
+          "start": 41.82,
+          "end": 42.62,
+          "duration": 0.8,
+          "frame_ahead_trigger": 42.38
+        },
+        {
+          "word": "hallucinations",
+          "clean_word": "hallucinations",
+          "phonemes": "h\u0250l\u02ccu\u02d0s\u1d7bn\u02c8e\u026a\u0283\u0259nz",
+          "start": 42.62,
+          "end": 43.635,
+          "duration": 1.015,
+          "frame_ahead_trigger": 43.18
+        },
+        {
+          "word": "without",
+          "clean_word": "without",
+          "phonemes": "w\u026a\u00f0\u02c8a\u028at",
+          "start": 43.635,
+          "end": 44.005,
+          "duration": 0.37,
+          "frame_ahead_trigger": 44.195
+        },
+        {
+          "word": "burning",
+          "clean_word": "burning",
+          "phonemes": "b\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 44.005,
+          "end": 44.46,
+          "duration": 0.455,
+          "frame_ahead_trigger": 44.565
+        },
+        {
+          "word": "millions",
+          "clean_word": "millions",
+          "phonemes": "m\u02c8\u026ali\u0259nz",
+          "start": 44.46,
+          "end": 44.924,
+          "duration": 0.465,
+          "frame_ahead_trigger": 45.02
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 44.924,
+          "end": 45.075,
+          "duration": 0.15,
+          "frame_ahead_trigger": 45.484
+        },
+        {
+          "word": "constant",
+          "clean_word": "constant",
+          "phonemes": "k\u02c8\u0251\u02d0nst\u0259nt",
+          "start": 45.075,
+          "end": 45.76,
+          "duration": 0.685,
+          "frame_ahead_trigger": 45.635
+        },
+        {
+          "word": "retraining.",
+          "clean_word": "retraining",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 45.76,
+          "end": 46.295,
+          "duration": 0.535,
+          "frame_ahead_trigger": 46.32
+        }
+      ],
+      "audio_duration": 10.73,
+      "slot_duration": 10.89
+    },
+    {
+      "beat_id": 6,
+      "text": "Smarter retrieval pipelines defeat brute-force context stuffing every time. Follow machinoAI for daily deep-dives into modern AI architectures.",
+      "visual_focus": "Chalkboard summary transitioning from linear context stuffing to modular intelligent routing, snapping cleanly into the machinoAI brand loop",
+      "highlight_words": {
+        "Smarter retrieval": "#3B82F6",
+        "machinoAI": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Modular Architecture",
+        "action_verb": "supersedes",
+        "direct_object": "brute-force context stuffing",
+        "anchor_word": "retrieval",
+        "semantic_role": "paradigm_shift"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE PARADIGM SHIFT",
+        "sub": "Structured Routing > Raw Context Dumping",
+        "accent_color": "#34D399",
+        "params": {
+          "title": "Outro"
+        }
+      },
+      "thriller_role": "paradigm_shift_loop",
+      "act": 4,
+      "start": 46.6,
+      "end": 55.68,
+      "duration": 9.09,
+      "word_timings": [
+        {
+          "word": "Smarter",
+          "clean_word": "smarter",
+          "phonemes": "sm\u02c8\u0251\u02d0\u0279\u027e\u025a",
+          "start": 46.65,
+          "end": 47.035,
+          "duration": 0.385,
+          "frame_ahead_trigger": 47.36
+        },
+        {
+          "word": "retrieval",
+          "clean_word": "retrieval",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259l",
+          "start": 47.035,
+          "end": 47.732,
+          "duration": 0.696,
+          "frame_ahead_trigger": 47.745
+        },
+        {
+          "word": "pipelines",
+          "clean_word": "pipelines",
+          "phonemes": "p\u02c8a\u026apla\u026anz",
+          "start": 47.732,
+          "end": 48.33,
+          "duration": 0.599,
+          "frame_ahead_trigger": 48.442
+        },
+        {
+          "word": "defeat",
+          "clean_word": "defeat",
+          "phonemes": "d\u1d7bf\u02c8i\u02d0t",
+          "start": 48.33,
+          "end": 48.775,
+          "duration": 0.445,
+          "frame_ahead_trigger": 49.04
+        },
+        {
+          "word": "brute-force",
+          "clean_word": "bruteforce",
+          "phonemes": "b\u0279\u02c8u\u02d0\u027e\u026af\u02cc\u0254\u02d0\u0279s",
+          "start": 48.775,
+          "end": 49.534,
+          "duration": 0.758,
+          "frame_ahead_trigger": 49.485
+        },
+        {
+          "word": "context",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 49.534,
+          "end": 50.17,
+          "duration": 0.637,
+          "frame_ahead_trigger": 50.244
+        },
+        {
+          "word": "stuffing",
+          "clean_word": "stuffing",
+          "phonemes": "st\u02c8\u028cf\u026a\u014b",
+          "start": 50.17,
+          "end": 50.555,
+          "duration": 0.384,
+          "frame_ahead_trigger": 50.88
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 50.555,
+          "end": 50.855,
+          "duration": 0.3,
+          "frame_ahead_trigger": 51.265
+        },
+        {
+          "word": "time.",
+          "clean_word": "time",
+          "phonemes": "t\u02c8a\u026am",
+          "start": 50.855,
+          "end": 51.265,
+          "duration": 0.41,
+          "frame_ahead_trigger": 51.565
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 51.265,
+          "end": 51.57,
+          "duration": 0.305,
+          "frame_ahead_trigger": 51.975
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 51.57,
+          "end": 52.64,
+          "duration": 1.07,
+          "frame_ahead_trigger": 52.28
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 52.64,
+          "end": 52.8,
+          "duration": 0.16,
+          "frame_ahead_trigger": 53.35
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 52.8,
+          "end": 53.12,
+          "duration": 0.32,
+          "frame_ahead_trigger": 53.51
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 53.12,
+          "end": 53.685,
+          "duration": 0.565,
+          "frame_ahead_trigger": 53.83
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 53.685,
+          "end": 53.93,
+          "duration": 0.245,
+          "frame_ahead_trigger": 54.395
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 53.93,
+          "end": 54.355,
+          "duration": 0.425,
+          "frame_ahead_trigger": 54.64
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 54.355,
+          "end": 54.695,
+          "duration": 0.34,
+          "frame_ahead_trigger": 55.065
+        },
+        {
+          "word": "architectures.",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 54.695,
+          "end": 55.6,
+          "duration": 0.905,
+          "frame_ahead_trigger": 55.405
+        }
+      ],
+      "audio_duration": 9.09,
+      "slot_duration": 9.08
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\mathcal{O}(N) \\ll \\mathcal{O}(N^2)$",
+      "filename": "rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathbf{L}_{\\mathrm{bottleneck}} = \\sum_{i=1}^M \\alpha_i \\mathbf{v}_i$",
+      "filename": "rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{y} = \\mathrm{LayerNorm}(\\mathbf{W}_p \\mathbf{x} + \\mathbf{b})$",
+      "filename": "rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{TopK}(\\sigma(\\mathbf{W}_g \\mathbf{x})) = \\mathbf{e}^*$",
+      "filename": "rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Throughput}_{\\mathrm{SOTA}} \\ge 2.5\\times$",
+      "filename": "rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 15.0,
+      "sound_type": "laser",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 25.0,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy",
+    "scale_metric": "10x",
+    "scale_label": "Speedup",
+    "payoff_stat": "98.2%",
+    "payoff_label": "Efficiency SOTA"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK PERFORMANCE COMPARISON",
+    "metric_name": "Throughput",
+    "unit": "TFLOPS",
+    "contestants": [
+      {
+        "name": "RAG Survey: Part 1 -",
+        "value": 1180.0,
+        "display_val": "1,180 TFLOPS",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Standard Baseline",
+        "value": 450.0,
+        "display_val": "450 TFLOPS",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +2.6x SPEEDUP",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "kernel.py",
+    "language": "python",
+    "lines": [
+      "def forward_pass(input_tensor):",
+      "    return fused_kernel_op(input_tensor)"
+    ],
+    "highlight_lines": [
+      1
+    ],
+    "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+    "explanation": "Zero-latency pipeline operation"
+  },
+  "arxiv_id": "2312.10997",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "rag_summary",
+      "caption": "Rag Summary",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/source/images/rag_summary.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_1_rag_summary.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "RAG_case",
+      "caption": "Rag Case",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/source/images/RAG_case.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_2_RAG_case.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "rag_tech_tree",
+      "caption": "Rag Tech Tree",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/source/images/rag_tech_tree.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_3_rag_tech_tree.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "rag_FT",
+      "caption": "Rag Ft",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/source/images/rag_FT.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_4_rag_FT.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "RAG_FrameCompre_eng",
+      "caption": "Rag Framecompre Eng",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/source/images/RAG_FrameCompre_eng.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_5_RAG_FrameCompre_eng.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 95
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 8.8,
+    "final_retention_hook_score": 9.0,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Dude, this was actually really solid. You hit me right in Beat 1 with something I've literally dealt with while messing around with LangChain: hooking up Pinecone and getting back garbage hallucinations. You explained Advanced RAG with actual dev terms (query expansion, reranking) without dumbing it down into baby talk. The only bump was in Beat 5 when you suddenly said 'Structured RAG' after spending Beat 4 hyping up 'Modular RAG'."
+  },
+  "thriller_metadata": {
+    "engine_version": "7.0",
+    "narrative_style": "intellectual_thriller",
+    "villain_entity": "Naive Context Dumping & Retrieval Noise",
+    "physical_analogy": "feeding a detective thousands of shredded, unranked case files",
+    "eureka_mechanism": "Modular Multi-Stage Routing and Reranking",
+    "paradigm_shift": "Decoupling parametric model weights from verifiable non-parametric external memory"
+  },
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until RAG Survey unlocks 98.2% throughput?",
+    "verdict": 67,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 10,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until RAG Survey unlocks 98.2% throughput?",
+        "verdict": 67,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until RAG Survey proved a 98.2% leap.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Why should engineers care about RAG Survey? Because hooking a vector database directly to your language model still triggers confident, fabricated answers.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? RAG Survey reveals the solution.",
+        "verdict": 59,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that RAG Survey finally breaks.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until RAG Survey proved: retrieval-Augmented Generation (RAG) refers to the retrieval of relevant information from external knowledge bases before answering questions with LLMs.",
+        "verdict": 56,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 98.2% speedup using RAG Survey.",
+        "verdict": 39,
+        "band": "WEAK",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Why is RAG Survey a major breakthrough? Because large language models (LLMs) demonstrate powerful capabilities, but they still face challenges in practical applications, such as hallucinations, slow knowledge updates, and lack of transparency in answers.",
+        "verdict": 38,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Large language models (LLMs) demonstrate powerful capabilities, but they still face challenges in practical applications, such as hallucinations, slow knowledge updates, and lack of transparency in answers.",
+        "verdict": 37,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Hooking a vector database directly to your language model still triggers confident, fabricated answers.",
+        "verdict": 36,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Contender A",
+        "model_a_score": "95%",
+        "model_b_name": "Baseline",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "-NY-xfPOQHw",
+    "shorts_url": "https://youtube.com/shorts/-NY-xfPOQHw",
+    "studio_url": "https://studio.youtube.com/video/-NY-xfPOQHw/edit",
+    "title": "RAG Survey Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_poster.png",
+    "custom_thumbnail_set": false
+  }
+}
