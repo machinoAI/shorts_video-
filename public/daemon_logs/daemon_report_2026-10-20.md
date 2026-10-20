@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-20 | **Timestamp:** 2026-10-20 10:20:38 UTC
+**Date:** 2026-10-20 | **Timestamp:** 2026-10-20 11:41:46 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: RAG Survey: Part 1 - The 3 Generations: Naive, Advanced, and Modular RAG
-- **Topic Queue Part:** `rag_survey_part_1_three_generations` (arXiv: [2312.10997](https://arxiv.org/abs/2312.10997))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/-NY-xfPOQHw](https://youtube.com/shorts/-NY-xfPOQHw) (`-NY-xfPOQHw`)
-- **High-CTR Poster:** [rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_poster.png](public/thumbnails/rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_poster.png)
+### Reel 1: RAG Survey: Part 2 - Pre-Retrieval, In-Retrieval, and Post-Retrieval Paradigms
+- **Topic Queue Part:** `rag_survey_part_2_optimization_taxonomy` (arXiv: [2312.10997](https://arxiv.org/abs/2312.10997))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/dwnEEc0-C88](https://youtube.com/shorts/dwnEEc0-C88) (`dwnEEc0-C88`)
+- **High-CTR Poster:** [rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_poster.png](public/thumbnails/rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `architecture_breakdown`
-- **Editorial Hook:** *RAG Survey Mini-Series 1/3: RAG Survey: Part 1 - The 3 Generations: Naive, Advanced, and Modular RAG*
-- **Everyday Analogy:** *The evolution of retrieval architectures from simple cosine lookup to complex routing systems.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_rag_survey_part_1_-_the_3_generations_naive_advanced_and_modular_rag_architecture_breakdown.mp4`
+- **Category:** `mechanism_deepdive`
+- **Editorial Hook:** *RAG Survey Mini-Series 2/3: RAG Survey: Part 2 - Pre-Retrieval, In-Retrieval, and Post-Retrieval Paradigms*
+- **Everyday Analogy:** *The complete optimization taxonomy: query rewrites, hybrid search, reranking, and context compression.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs

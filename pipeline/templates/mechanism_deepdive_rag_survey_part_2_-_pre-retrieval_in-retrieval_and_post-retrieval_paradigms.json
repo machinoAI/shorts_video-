@@ -1,0 +1,1723 @@
+{
+  "id": "rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms",
+  "title": "RAG Survey: Part 2 - Pre-Retrieval, In-Retrieval, and Post-Retrieval Paradigms",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "RAG PARADIGM SHIFT",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until RAG Survey unlocks 98.2% throughput?",
+      "visual_focus": "A glowing neural network outputting an authoritative claim, suddenly stamped with a red hallucination warning symbol as static weights freeze.",
+      "highlight_words": {
+        "confidently hallucinates": "#EF4444",
+        "weights go stale": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Frozen Weights",
+        "action_verb": "triggers",
+        "direct_object": "Factual Hallucination",
+        "anchor_word": "hallucinates",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "STATIC MEMORY COLLAPSE",
+        "sub": "Pretrained LLMs Fail on Dynamic & Domain Knowledge",
+        "accent_color": "#38BDF8",
+        "params": {}
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 67,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "STATIC MEMORY COLLAPSE",
+        "sub": "Pretrained LLMs Fail on Dynamic & Domain Knowledge",
+        "accent_color": "#38BDF8"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.98,
+      "duration": 7.98,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.025,
+          "end": 0.25,
+          "duration": 0.225,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.25,
+          "end": 0.54,
+          "duration": 0.29,
+          "frame_ahead_trigger": 0.21
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.54,
+          "end": 1.41,
+          "duration": 0.87,
+          "frame_ahead_trigger": 0.5
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.41,
+          "end": 1.79,
+          "duration": 0.38,
+          "frame_ahead_trigger": 1.37
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.79,
+          "end": 2.14,
+          "duration": 0.35,
+          "frame_ahead_trigger": 1.75
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 2.14,
+          "end": 2.54,
+          "duration": 0.4,
+          "frame_ahead_trigger": 2.1
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.54,
+          "end": 3.29,
+          "duration": 0.75,
+          "frame_ahead_trigger": 2.5
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 3.29,
+          "end": 3.985,
+          "duration": 0.695,
+          "frame_ahead_trigger": 3.25
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 3.985,
+          "end": 4.25,
+          "duration": 0.265,
+          "frame_ahead_trigger": 3.945
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 4.25,
+          "end": 4.605,
+          "duration": 0.355,
+          "frame_ahead_trigger": 4.21
+        },
+        {
+          "word": "Survey",
+          "clean_word": "survey",
+          "phonemes": "s\u02c8\u025c\u02d0ve\u026a",
+          "start": 4.605,
+          "end": 5.07,
+          "duration": 0.465,
+          "frame_ahead_trigger": 4.565
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 5.07,
+          "end": 5.54,
+          "duration": 0.47,
+          "frame_ahead_trigger": 5.03
+        },
+        {
+          "word": "98.2%",
+          "clean_word": "982",
+          "phonemes": "n\u02c8a\u026anh\u02c8\u028cnd\u0279\u026ad \u02c8e\u026a\u027ei t\u02c8u\u02d0",
+          "start": 5.54,
+          "end": 7.255,
+          "duration": 1.715,
+          "frame_ahead_trigger": 5.5
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 7.255,
+          "end": 7.81,
+          "duration": 0.555,
+          "frame_ahead_trigger": 7.215
+        }
+      ],
+      "audio_duration": 7.98,
+      "slot_duration": 8.13
+    },
+    {
+      "beat_id": 2,
+      "text": "Naive vector searches dump raw top-k chunks into prompts like throwing shredded encyclopedias onto a messy desk, drowning the generator in noisy distractors.",
+      "visual_focus": "A vector database blasting noisy, overlapping textual chunks directly into a narrow context window, causing transformer attention weights to disperse and blur.",
+      "highlight_words": {
+        "dump raw top-k chunks": "#EF4444",
+        "drowning the generator": "#DC2626"
+      },
+      "svo_action": {
+        "subject": "Naive Vector Search",
+        "action_verb": "contaminates",
+        "direct_object": "Prompt Context Window",
+        "anchor_word": "distractors",
+        "semantic_role": "bottleneck"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "THE NAIVE RAG TRAP",
+        "sub": "Raw Semantic Chunks Inject High Noise & Redundancy",
+        "accent_color": "#EF4444",
+        "params": {}
+      },
+      "thriller_role": "villain_and_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "THE NAIVE RAG TRAP",
+        "sub": "Raw Semantic Chunks Inject High Noise & Redundancy",
+        "accent_color": "#EF4444"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 8.13,
+      "end": 18.67,
+      "duration": 10.54,
+      "word_timings": [
+        {
+          "word": "Naive",
+          "clean_word": "naive",
+          "phonemes": "na\u026a\u02c8i\u02d0v",
+          "start": 8.159,
+          "end": 8.594,
+          "duration": 0.435,
+          "frame_ahead_trigger": 8.269
+        },
+        {
+          "word": "vector",
+          "clean_word": "vector",
+          "phonemes": "v\u02c8\u025bkt\u025a",
+          "start": 8.594,
+          "end": 9.029,
+          "duration": 0.435,
+          "frame_ahead_trigger": 8.704
+        },
+        {
+          "word": "searches",
+          "clean_word": "searches",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283\u1d7bz",
+          "start": 9.029,
+          "end": 9.554,
+          "duration": 0.525,
+          "frame_ahead_trigger": 9.139
+        },
+        {
+          "word": "dump",
+          "clean_word": "dump",
+          "phonemes": "d\u02c8\u028cmp",
+          "start": 9.554,
+          "end": 9.907,
+          "duration": 0.354,
+          "frame_ahead_trigger": 9.664
+        },
+        {
+          "word": "raw",
+          "clean_word": "raw",
+          "phonemes": "\u0279\u02c8\u0254\u02d0",
+          "start": 9.907,
+          "end": 10.174,
+          "duration": 0.266,
+          "frame_ahead_trigger": 10.017
+        },
+        {
+          "word": "top-k",
+          "clean_word": "topk",
+          "phonemes": "t\u02c8\u0251\u02d0pk",
+          "start": 10.174,
+          "end": 10.58,
+          "duration": 0.406,
+          "frame_ahead_trigger": 10.284
+        },
+        {
+          "word": "chunks",
+          "clean_word": "chunks",
+          "phonemes": "t\u0283\u02c8\u028c\u014bks",
+          "start": 10.58,
+          "end": 11.004,
+          "duration": 0.424,
+          "frame_ahead_trigger": 10.69
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 11.004,
+          "end": 11.359,
+          "duration": 0.355,
+          "frame_ahead_trigger": 11.114
+        },
+        {
+          "word": "prompts",
+          "clean_word": "prompts",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0mpts",
+          "start": 11.359,
+          "end": 11.874,
+          "duration": 0.515,
+          "frame_ahead_trigger": 11.469
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 11.874,
+          "end": 12.329,
+          "duration": 0.455,
+          "frame_ahead_trigger": 11.984
+        },
+        {
+          "word": "throwing",
+          "clean_word": "throwing",
+          "phonemes": "\u03b8\u0279\u02c8o\u028a\u026a\u014b",
+          "start": 12.329,
+          "end": 12.744,
+          "duration": 0.415,
+          "frame_ahead_trigger": 12.439
+        },
+        {
+          "word": "shredded",
+          "clean_word": "shredded",
+          "phonemes": "\u0283\u0279\u02c8\u025bd\u1d7bd",
+          "start": 12.744,
+          "end": 13.259,
+          "duration": 0.515,
+          "frame_ahead_trigger": 12.854
+        },
+        {
+          "word": "encyclopedias",
+          "clean_word": "encyclopedias",
+          "phonemes": "\u025bns\u02cca\u026aklo\u028ap\u02c8i\u02d0di\u0259z",
+          "start": 13.259,
+          "end": 14.504,
+          "duration": 1.245,
+          "frame_ahead_trigger": 13.369
+        },
+        {
+          "word": "onto",
+          "clean_word": "onto",
+          "phonemes": "\u02c8\u0251\u02d0nt\u028a",
+          "start": 14.504,
+          "end": 14.904,
+          "duration": 0.4,
+          "frame_ahead_trigger": 14.614
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 14.904,
+          "end": 15.039,
+          "duration": 0.135,
+          "frame_ahead_trigger": 15.014
+        },
+        {
+          "word": "messy",
+          "clean_word": "messy",
+          "phonemes": "m\u02c8\u025bsi",
+          "start": 15.039,
+          "end": 15.404,
+          "duration": 0.365,
+          "frame_ahead_trigger": 15.149
+        },
+        {
+          "word": "desk,",
+          "clean_word": "desk",
+          "phonemes": "d\u02c8\u025bsk",
+          "start": 15.404,
+          "end": 15.759,
+          "duration": 0.355,
+          "frame_ahead_trigger": 15.514
+        },
+        {
+          "word": "drowning",
+          "clean_word": "drowning",
+          "phonemes": "d\u0279\u02c8a\u028an\u026a\u014b",
+          "start": 15.759,
+          "end": 16.364,
+          "duration": 0.605,
+          "frame_ahead_trigger": 15.869
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 16.364,
+          "end": 16.469,
+          "duration": 0.105,
+          "frame_ahead_trigger": 16.474
+        },
+        {
+          "word": "generator",
+          "clean_word": "generator",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u02cce\u026a\u027e\u025a",
+          "start": 16.469,
+          "end": 17.119,
+          "duration": 0.65,
+          "frame_ahead_trigger": 16.579
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 17.119,
+          "end": 17.399,
+          "duration": 0.28,
+          "frame_ahead_trigger": 17.229
+        },
+        {
+          "word": "noisy",
+          "clean_word": "noisy",
+          "phonemes": "n\u02c8\u0254\u026azi",
+          "start": 17.399,
+          "end": 17.799,
+          "duration": 0.4,
+          "frame_ahead_trigger": 17.509
+        },
+        {
+          "word": "distractors.",
+          "clean_word": "distractors",
+          "phonemes": "d\u026ast\u0279\u02c8\u00e6kt\u025az",
+          "start": 17.799,
+          "end": 18.584,
+          "duration": 0.785,
+          "frame_ahead_trigger": 17.909
+        }
+      ],
+      "audio_duration": 10.54,
+      "slot_duration": 10.69
+    },
+    {
+      "beat_id": 3,
+      "text": "Modular RAG shatters this bottleneck by decoupling retrieval into three distinct phases: pre-retrieval query expansion, precision in-retrieval fetching, and aggressive post-retrieval reranking.",
+      "visual_focus": "The monolithic pipeline snaps apart into three modular stages: Pre-Retrieval, In-Retrieval, and Post-Retrieval, each with dedicated filtering gates.",
+      "highlight_words": {
+        "Modular RAG": "#10B981",
+        "three distinct phases": "#3B82F6"
+      },
+      "svo_action": {
+        "subject": "Modular Pipeline",
+        "action_verb": "partitions",
+        "direct_object": "Monolithic Search Flow",
+        "anchor_word": "decoupling",
+        "semantic_role": "architectural_pivot"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "RAG SURVEY ARCHITECTURE",
+        "sub": "The monolithic pipeline snaps apart into three modular stages: Pr",
+        "params": {
+          "svg_path": null,
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_1_rag_summary.png",
+          "arxiv_id": "2312.10997",
+          "title": "RAG SURVEY ARCHITECTURE",
+          "sub": "The monolithic pipeline snaps apart into three modular stages: Pr",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Rag Summary",
+          "preferred_renderer": "raster"
+        }
+      },
+      "thriller_role": "eureka_pivot",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": null,
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_1_rag_summary.png",
+        "arxiv_id": "2312.10997",
+        "title": "RAG SURVEY ARCHITECTURE",
+        "sub": "The monolithic pipeline snaps apart into three modular stages: Pr",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Rag Summary",
+        "preferred_renderer": "raster"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 18.82,
+      "end": 31.89,
+      "duration": 13.08,
+      "word_timings": [
+        {
+          "word": "Modular",
+          "clean_word": "modular",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0292u\u02d0l\u025a",
+          "start": 18.852,
+          "end": 19.482,
+          "duration": 0.63,
+          "frame_ahead_trigger": 19.112
+        },
+        {
+          "word": "RAG",
+          "clean_word": "rag",
+          "phonemes": "\u0279\u02c8\u00e6\u0261",
+          "start": 19.482,
+          "end": 19.742,
+          "duration": 0.26,
+          "frame_ahead_trigger": 19.742
+        },
+        {
+          "word": "shatters",
+          "clean_word": "shatters",
+          "phonemes": "\u0283\u02c8\u00e6\u027e\u025az",
+          "start": 19.742,
+          "end": 20.317,
+          "duration": 0.575,
+          "frame_ahead_trigger": 20.002
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 20.317,
+          "end": 20.622,
+          "duration": 0.305,
+          "frame_ahead_trigger": 20.577
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 20.622,
+          "end": 21.317,
+          "duration": 0.695,
+          "frame_ahead_trigger": 20.882
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 21.317,
+          "end": 21.687,
+          "duration": 0.37,
+          "frame_ahead_trigger": 21.577
+        },
+        {
+          "word": "decoupling",
+          "clean_word": "decoupling",
+          "phonemes": "d\u1d7bk\u02c8\u028cpl\u026a\u014b",
+          "start": 21.687,
+          "end": 22.207,
+          "duration": 0.52,
+          "frame_ahead_trigger": 21.947
+        },
+        {
+          "word": "retrieval",
+          "clean_word": "retrieval",
+          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259l",
+          "start": 22.207,
+          "end": 23.012,
+          "duration": 0.805,
+          "frame_ahead_trigger": 22.467
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 23.012,
+          "end": 23.367,
+          "duration": 0.355,
+          "frame_ahead_trigger": 23.272
+        },
+        {
+          "word": "three",
+          "clean_word": "three",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0",
+          "start": 23.367,
+          "end": 23.677,
+          "duration": 0.31,
+          "frame_ahead_trigger": 23.627
+        },
+        {
+          "word": "distinct",
+          "clean_word": "distinct",
+          "phonemes": "d\u026ast\u02c8\u026a\u014bkt",
+          "start": 23.677,
+          "end": 24.325,
+          "duration": 0.648,
+          "frame_ahead_trigger": 23.937
+        },
+        {
+          "word": "phases:",
+          "clean_word": "phases",
+          "phonemes": "f\u02c8e\u026az\u1d7bz",
+          "start": 24.325,
+          "end": 24.823,
+          "duration": 0.498,
+          "frame_ahead_trigger": 24.585
+        },
+        {
+          "word": "pre-retrieval",
+          "clean_word": "preretrieval",
+          "phonemes": "p\u0279\u02cci\u02d0\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259l",
+          "start": 24.823,
+          "end": 25.952,
+          "duration": 1.13,
+          "frame_ahead_trigger": 25.083
+        },
+        {
+          "word": "query",
+          "clean_word": "query",
+          "phonemes": "kw\u02c8i\u0259\u0279i",
+          "start": 25.952,
+          "end": 26.477,
+          "duration": 0.525,
+          "frame_ahead_trigger": 26.212
+        },
+        {
+          "word": "expansion,",
+          "clean_word": "expansion",
+          "phonemes": "\u025bksp\u02c8\u00e6n\u0283\u0259n",
+          "start": 26.477,
+          "end": 27.097,
+          "duration": 0.62,
+          "frame_ahead_trigger": 26.737
+        },
+        {
+          "word": "precision",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 27.097,
+          "end": 27.792,
+          "duration": 0.695,
+          "frame_ahead_trigger": 27.357
+        },
+        {
+          "word": "in-retrieval",
+          "clean_word": "inretrieval",
+          "phonemes": "\u02c8\u026an\u0279\u026at\u0279\u02cci\u02d0v\u0259l",
+          "start": 27.792,
+          "end": 28.747,
+          "duration": 0.955,
+          "frame_ahead_trigger": 28.052
+        },
+        {
+          "word": "fetching,",
+          "clean_word": "fetching",
+          "phonemes": "f\u02c8\u025bt\u0283\u026a\u014b",
+          "start": 28.747,
+          "end": 29.159,
+          "duration": 0.411,
+          "frame_ahead_trigger": 29.007
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 29.159,
+          "end": 29.372,
+          "duration": 0.213,
+          "frame_ahead_trigger": 29.419
+        },
+        {
+          "word": "aggressive",
+          "clean_word": "aggressive",
+          "phonemes": "\u0250\u0261\u0279\u02c8\u025bs\u026av",
+          "start": 29.372,
+          "end": 29.94,
+          "duration": 0.569,
+          "frame_ahead_trigger": 29.632
+        },
+        {
+          "word": "post-retrieval",
+          "clean_word": "postretrieval",
+          "phonemes": "p\u02c8o\u028ast\u0279\u026at\u0279\u02cci\u02d0v\u0259l",
+          "start": 29.94,
+          "end": 31.062,
+          "duration": 1.122,
+          "frame_ahead_trigger": 30.2
+        },
+        {
+          "word": "reranking.",
+          "clean_word": "reranking",
+          "phonemes": "\u0279\u1d7b\u0279\u02c8\u00e6\u014bk\u026a\u014b",
+          "start": 31.062,
+          "end": 31.717,
+          "duration": 0.655,
+          "frame_ahead_trigger": 31.322
+        }
+      ],
+      "audio_duration": 13.08,
+      "slot_duration": 13.22
+    },
+    {
+      "beat_id": 4,
+      "text": "Pre-retrieval rewrites ambiguous user queries for semantic precision, while post-retrieval compression prunes irrelevant context chunks before they ever pollute the transformer.",
+      "visual_focus": "A vague natural-language query morphs into an optimized multi-aspect vector, while downstream documents pass through a reranker and contextual compressor, discarding 80% of filler text.",
+      "highlight_words": {
+        "rewrites ambiguous user queries": "#3B82F6",
+        "post-retrieval compression": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Contextual Compressor",
+        "action_verb": "filters",
+        "direct_object": "Candidate Document Chunks",
+        "anchor_word": "prunes",
+        "semantic_role": "filtering_mechanism"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: RAG SURVEY: PART 2",
+        "sub": "A vague natural-language query morphs into an optimized multi-asp",
+        "params": {
+          "title": "KERNEL CODE: RAG SURVEY: PART 2",
+          "sub": "A vague natural-language query morphs into an optimized multi-asp",
+          "filename": "kernel.py",
+          "language": "python",
+          "lines": [
+            "def forward_pass(input_tensor):",
+            "    return fused_kernel_op(input_tensor)"
+          ],
+          "highlight_lines": [
+            1
+          ],
+          "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+          "delta_badge": "Zero-latency pipeline operation"
+        }
+      },
+      "thriller_role": "technical_deep_dive",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: RAG SURVEY: PART 2",
+        "sub": "A vague natural-language query morphs into an optimized multi-asp",
+        "filename": "kernel.py",
+        "language": "python",
+        "lines": [
+          "def forward_pass(input_tensor):",
+          "    return fused_kernel_op(input_tensor)"
+        ],
+        "highlight_lines": [
+          1
+        ],
+        "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+        "delta_badge": "Zero-latency pipeline operation"
+      },
+      "start": 32.04,
+      "end": 43.03,
+      "duration": 10.99,
+      "word_timings": [
+        {
+          "word": "Pre-retrieval",
+          "clean_word": "preretrieval",
+          "phonemes": "p\u0279\u02cci\u02d0\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259l",
+          "start": 32.095,
+          "end": 32.93,
+          "duration": 0.835,
+          "frame_ahead_trigger": 32.505
+        },
+        {
+          "word": "rewrites",
+          "clean_word": "rewrites",
+          "phonemes": "\u0279\u1d7b\u0279\u02c8a\u026ats",
+          "start": 32.93,
+          "end": 33.58,
+          "duration": 0.65,
+          "frame_ahead_trigger": 33.34
+        },
+        {
+          "word": "ambiguous",
+          "clean_word": "ambiguous",
+          "phonemes": "\u00e6mb\u02c8\u026a\u0261ju\u02d0\u0259s",
+          "start": 33.58,
+          "end": 34.24,
+          "duration": 0.66,
+          "frame_ahead_trigger": 33.99
+        },
+        {
+          "word": "user",
+          "clean_word": "user",
+          "phonemes": "j\u02c8u\u02d0z\u025a",
+          "start": 34.24,
+          "end": 34.623,
+          "duration": 0.383,
+          "frame_ahead_trigger": 34.65
+        },
+        {
+          "word": "queries",
+          "clean_word": "queries",
+          "phonemes": "kw\u02c8i\u0259\u0279\u026az",
+          "start": 34.623,
+          "end": 35.12,
+          "duration": 0.497,
+          "frame_ahead_trigger": 35.033
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 35.12,
+          "end": 35.445,
+          "duration": 0.325,
+          "frame_ahead_trigger": 35.53
+        },
+        {
+          "word": "semantic",
+          "clean_word": "semantic",
+          "phonemes": "s\u0259m\u02c8\u00e6nt\u026ak",
+          "start": 35.445,
+          "end": 35.86,
+          "duration": 0.415,
+          "frame_ahead_trigger": 35.855
+        },
+        {
+          "word": "precision,",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 35.86,
+          "end": 36.625,
+          "duration": 0.765,
+          "frame_ahead_trigger": 36.27
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 36.625,
+          "end": 36.835,
+          "duration": 0.21,
+          "frame_ahead_trigger": 37.035
+        },
+        {
+          "word": "post-retrieval",
+          "clean_word": "postretrieval",
+          "phonemes": "p\u02c8o\u028ast\u0279\u026at\u0279\u02cci\u02d0v\u0259l",
+          "start": 36.835,
+          "end": 37.925,
+          "duration": 1.09,
+          "frame_ahead_trigger": 37.245
+        },
+        {
+          "word": "compression",
+          "clean_word": "compression",
+          "phonemes": "k\u0259mp\u0279\u02c8\u025b\u0283\u0259n",
+          "start": 37.925,
+          "end": 38.47,
+          "duration": 0.545,
+          "frame_ahead_trigger": 38.335
+        },
+        {
+          "word": "prunes",
+          "clean_word": "prunes",
+          "phonemes": "p\u0279\u02c8u\u02d0nz",
+          "start": 38.47,
+          "end": 38.87,
+          "duration": 0.4,
+          "frame_ahead_trigger": 38.88
+        },
+        {
+          "word": "irrelevant",
+          "clean_word": "irrelevant",
+          "phonemes": "\u026a\u0279\u02c8\u025bl\u1d7bv\u0259nt",
+          "start": 38.87,
+          "end": 39.48,
+          "duration": 0.61,
+          "frame_ahead_trigger": 39.28
+        },
+        {
+          "word": "context",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 39.48,
+          "end": 40.195,
+          "duration": 0.715,
+          "frame_ahead_trigger": 39.89
+        },
+        {
+          "word": "chunks",
+          "clean_word": "chunks",
+          "phonemes": "t\u0283\u02c8\u028c\u014bks",
+          "start": 40.195,
+          "end": 40.61,
+          "duration": 0.415,
+          "frame_ahead_trigger": 40.605
+        },
+        {
+          "word": "before",
+          "clean_word": "before",
+          "phonemes": "b\u1d7bf\u02c8\u0254\u02d0\u0279",
+          "start": 40.61,
+          "end": 41.09,
+          "duration": 0.48,
+          "frame_ahead_trigger": 41.02
+        },
+        {
+          "word": "they",
+          "clean_word": "they",
+          "phonemes": "\u00f0e\u026a",
+          "start": 41.09,
+          "end": 41.24,
+          "duration": 0.15,
+          "frame_ahead_trigger": 41.5
+        },
+        {
+          "word": "ever",
+          "clean_word": "ever",
+          "phonemes": "\u02c8\u025bv\u025a",
+          "start": 41.24,
+          "end": 41.555,
+          "duration": 0.315,
+          "frame_ahead_trigger": 41.65
+        },
+        {
+          "word": "pollute",
+          "clean_word": "pollute",
+          "phonemes": "p\u0259l\u02c8u\u02d0t",
+          "start": 41.555,
+          "end": 42.025,
+          "duration": 0.47,
+          "frame_ahead_trigger": 41.965
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 42.025,
+          "end": 42.081,
+          "duration": 0.057,
+          "frame_ahead_trigger": 42.435
+        },
+        {
+          "word": "transformer.",
+          "clean_word": "transformer",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279m\u025a",
+          "start": 42.081,
+          "end": 42.84,
+          "duration": 0.758,
+          "frame_ahead_trigger": 42.491
+        }
+      ],
+      "audio_duration": 10.99,
+      "slot_duration": 11.14
+    },
+    {
+      "beat_id": 5,
+      "text": "Coupling parameterized model memory with dynamic external knowledge bases systematically eliminates hallucinations, drastically cuts context waste, and delivers transparent, verifiable citations.",
+      "visual_focus": "A dual-source diagram showing the LLM synthesizer balancing internal parameters and external verified documents, producing generated responses with glowing inline citations.",
+      "highlight_words": {
+        "eliminates hallucinations": "#10B981",
+        "verifiable citations": "#3B82F6"
+      },
+      "svo_action": {
+        "subject": "Non-Parameterized Knowledge",
+        "action_verb": "grounds",
+        "direct_object": "Model Output Tokens",
+        "anchor_word": "citations",
+        "semantic_role": "verification"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "A dual-source diagram showing the LLM synthesizer",
+        "params": {
+          "title": "BENCHMARK PERFORMANCE COMPARISON",
+          "sub": "A dual-source diagram showing the LLM synthesizer",
+          "metric_name": "Throughput",
+          "unit": "TFLOPS",
+          "contestants": [
+            {
+              "name": "RAG Survey: Part 2 -",
+              "value": 1180.0,
+              "display_val": "1,180 TFLOPS",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Standard Baseline",
+              "value": 450.0,
+              "display_val": "450 TFLOPS",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +2.6x SPEEDUP"
+        }
+      },
+      "thriller_role": "empirical_victory",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "A dual-source diagram showing the LLM synthesizer",
+        "metric_name": "Throughput",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "RAG Survey: Part 2 -",
+            "value": 1180.0,
+            "display_val": "1,180 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Standard Baseline",
+            "value": 450.0,
+            "display_val": "450 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +2.6x SPEEDUP"
+      },
+      "start": 43.18,
+      "end": 56.77,
+      "duration": 13.59,
+      "word_timings": [
+        {
+          "word": "Coupling",
+          "clean_word": "coupling",
+          "phonemes": "k\u02c8\u028cpl\u026a\u014b",
+          "start": 43.201,
+          "end": 43.616,
+          "duration": 0.415,
+          "frame_ahead_trigger": 43.761
+        },
+        {
+          "word": "parameterized",
+          "clean_word": "parameterized",
+          "phonemes": "p\u02cc\u00e6\u0279\u0259m\u02c8\u025b\u027e\u025a\u0279\u02cca\u026azd",
+          "start": 43.616,
+          "end": 44.781,
+          "duration": 1.165,
+          "frame_ahead_trigger": 44.176
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 44.781,
+          "end": 45.201,
+          "duration": 0.42,
+          "frame_ahead_trigger": 45.341
+        },
+        {
+          "word": "memory",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 45.201,
+          "end": 45.781,
+          "duration": 0.58,
+          "frame_ahead_trigger": 45.761
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 45.781,
+          "end": 46.021,
+          "duration": 0.24,
+          "frame_ahead_trigger": 46.341
+        },
+        {
+          "word": "dynamic",
+          "clean_word": "dynamic",
+          "phonemes": "da\u026an\u02c8\u00e6m\u026ak",
+          "start": 46.021,
+          "end": 46.476,
+          "duration": 0.455,
+          "frame_ahead_trigger": 46.581
+        },
+        {
+          "word": "external",
+          "clean_word": "external",
+          "phonemes": "\u025bkst\u02c8\u025c\u02d0n\u0259l",
+          "start": 46.476,
+          "end": 47.276,
+          "duration": 0.8,
+          "frame_ahead_trigger": 47.036
+        },
+        {
+          "word": "knowledge",
+          "clean_word": "knowledge",
+          "phonemes": "n\u02c8\u0251\u02d0l\u026ad\u0292",
+          "start": 47.276,
+          "end": 47.896,
+          "duration": 0.62,
+          "frame_ahead_trigger": 47.836
+        },
+        {
+          "word": "bases",
+          "clean_word": "bases",
+          "phonemes": "b\u02c8e\u026as\u1d7bz",
+          "start": 47.896,
+          "end": 48.256,
+          "duration": 0.36,
+          "frame_ahead_trigger": 48.456
+        },
+        {
+          "word": "systematically",
+          "clean_word": "systematically",
+          "phonemes": "s\u02cc\u026ast\u0259m\u02c8\u00e6\u027e\u026akli",
+          "start": 48.256,
+          "end": 49.246,
+          "duration": 0.99,
+          "frame_ahead_trigger": 48.816
+        },
+        {
+          "word": "eliminates",
+          "clean_word": "eliminates",
+          "phonemes": "\u1d7bl\u02c8\u026am\u1d7bn\u02cce\u026ats",
+          "start": 49.246,
+          "end": 50.051,
+          "duration": 0.805,
+          "frame_ahead_trigger": 49.806
+        },
+        {
+          "word": "hallucinations,",
+          "clean_word": "hallucinations",
+          "phonemes": "h\u0250l\u02ccu\u02d0s\u1d7bn\u02c8e\u026a\u0283\u0259nz",
+          "start": 50.051,
+          "end": 51.127,
+          "duration": 1.076,
+          "frame_ahead_trigger": 50.611
+        },
+        {
+          "word": "drastically",
+          "clean_word": "drastically",
+          "phonemes": "d\u0279\u02c8\u00e6st\u026akli",
+          "start": 51.127,
+          "end": 51.871,
+          "duration": 0.744,
+          "frame_ahead_trigger": 51.687
+        },
+        {
+          "word": "cuts",
+          "clean_word": "cuts",
+          "phonemes": "k\u02c8\u028cts",
+          "start": 51.871,
+          "end": 52.051,
+          "duration": 0.18,
+          "frame_ahead_trigger": 52.431
+        },
+        {
+          "word": "context",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 52.051,
+          "end": 52.851,
+          "duration": 0.8,
+          "frame_ahead_trigger": 52.611
+        },
+        {
+          "word": "waste,",
+          "clean_word": "waste",
+          "phonemes": "w\u02c8e\u026ast",
+          "start": 52.851,
+          "end": 53.361,
+          "duration": 0.51,
+          "frame_ahead_trigger": 53.411
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 53.361,
+          "end": 53.511,
+          "duration": 0.15,
+          "frame_ahead_trigger": 53.921
+        },
+        {
+          "word": "delivers",
+          "clean_word": "delivers",
+          "phonemes": "d\u1d7bl\u02c8\u026av\u025az",
+          "start": 53.511,
+          "end": 53.986,
+          "duration": 0.475,
+          "frame_ahead_trigger": 54.071
+        },
+        {
+          "word": "transparent,",
+          "clean_word": "transparent",
+          "phonemes": "t\u0279\u00e6nsp\u02c8\u00e6\u0279\u0259nt",
+          "start": 53.986,
+          "end": 54.817,
+          "duration": 0.83,
+          "frame_ahead_trigger": 54.546
+        },
+        {
+          "word": "verifiable",
+          "clean_word": "verifiable",
+          "phonemes": "v\u02c8\u025b\u0279\u026af\u02cca\u026a\u0259b\u0259l",
+          "start": 54.817,
+          "end": 55.731,
+          "duration": 0.915,
+          "frame_ahead_trigger": 55.377
+        },
+        {
+          "word": "citations.",
+          "clean_word": "citations",
+          "phonemes": "sa\u026at\u02c8e\u026a\u0283\u0259nz",
+          "start": 55.731,
+          "end": 56.456,
+          "duration": 0.725,
+          "frame_ahead_trigger": 56.291
+        }
+      ],
+      "audio_duration": 13.59,
+      "slot_duration": 13.74
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily technical breakdowns of how frontier neural systems actually solve hard problems under the hood.",
+      "visual_focus": "machinoAI emblem glowing in chalk-drawn circuit lines with a circular loop arrow leading directly back to the initial prompt query.",
+      "highlight_words": {
+        "machinoAI": "#F59E0B",
+        "under the hood": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Viewer",
+        "action_verb": "explores",
+        "direct_object": "Frontier AI Systems",
+        "anchor_word": "breakdowns",
+        "semantic_role": "continuous_loop"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "MACHINOAI ARCHITECTURE BRIEF",
+        "sub": "Demystifying Frontier Deep Learning Mechanics",
+        "accent_color": "#34D399",
+        "params": {
+          "title": "Outro"
+        }
+      },
+      "thriller_role": "paradigm_shift_loop",
+      "act": 4,
+      "start": 56.92,
+      "end": 65.6,
+      "duration": 8.68,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 56.996,
+          "end": 57.416,
+          "duration": 0.42,
+          "frame_ahead_trigger": 57.706
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 57.416,
+          "end": 58.539,
+          "duration": 1.124,
+          "frame_ahead_trigger": 58.126
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 58.539,
+          "end": 58.891,
+          "duration": 0.351,
+          "frame_ahead_trigger": 59.249
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 58.891,
+          "end": 59.201,
+          "duration": 0.31,
+          "frame_ahead_trigger": 59.601
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 59.201,
+          "end": 59.721,
+          "duration": 0.52,
+          "frame_ahead_trigger": 59.911
+        },
+        {
+          "word": "breakdowns",
+          "clean_word": "breakdowns",
+          "phonemes": "b\u0279\u02c8e\u026akda\u028anz",
+          "start": 59.721,
+          "end": 60.553,
+          "duration": 0.832,
+          "frame_ahead_trigger": 60.431
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 60.553,
+          "end": 60.741,
+          "duration": 0.188,
+          "frame_ahead_trigger": 61.263
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 60.741,
+          "end": 60.856,
+          "duration": 0.115,
+          "frame_ahead_trigger": 61.451
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 60.856,
+          "end": 61.531,
+          "duration": 0.675,
+          "frame_ahead_trigger": 61.566
+        },
+        {
+          "word": "neural",
+          "clean_word": "neural",
+          "phonemes": "n\u02c8\u028a\u0279\u0279\u0259l",
+          "start": 61.531,
+          "end": 61.963,
+          "duration": 0.432,
+          "frame_ahead_trigger": 62.241
+        },
+        {
+          "word": "systems",
+          "clean_word": "systems",
+          "phonemes": "s\u02c8\u026ast\u0259mz",
+          "start": 61.963,
+          "end": 62.451,
+          "duration": 0.488,
+          "frame_ahead_trigger": 62.673
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 62.451,
+          "end": 63.216,
+          "duration": 0.765,
+          "frame_ahead_trigger": 63.161
+        },
+        {
+          "word": "solve",
+          "clean_word": "solve",
+          "phonemes": "s\u02c8\u0251\u02d0lv",
+          "start": 63.216,
+          "end": 63.621,
+          "duration": 0.405,
+          "frame_ahead_trigger": 63.926
+        },
+        {
+          "word": "hard",
+          "clean_word": "hard",
+          "phonemes": "h\u02c8\u0251\u02d0\u0279d",
+          "start": 63.621,
+          "end": 64.006,
+          "duration": 0.385,
+          "frame_ahead_trigger": 64.331
+        },
+        {
+          "word": "problems",
+          "clean_word": "problems",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0bl\u0259mz",
+          "start": 64.006,
+          "end": 64.621,
+          "duration": 0.615,
+          "frame_ahead_trigger": 64.716
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 64.621,
+          "end": 64.966,
+          "duration": 0.345,
+          "frame_ahead_trigger": 65.331
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 64.966,
+          "end": 65.081,
+          "duration": 0.115,
+          "frame_ahead_trigger": 65.676
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 65.081,
+          "end": 65.386,
+          "duration": 0.305,
+          "frame_ahead_trigger": 65.791
+        }
+      ],
+      "audio_duration": 8.68,
+      "slot_duration": 8.68
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\mathcal{O}(N) \\ll \\mathcal{O}(N^2)$",
+      "filename": "rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathbf{L}_{\\mathrm{bottleneck}} = \\sum_{i=1}^M \\alpha_i \\mathbf{v}_i$",
+      "filename": "rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{y} = \\mathrm{LayerNorm}(\\mathbf{W}_p \\mathbf{x} + \\mathbf{b})$",
+      "filename": "rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{TopK}(\\sigma(\\mathbf{W}_g \\mathbf{x})) = \\mathbf{e}^*$",
+      "filename": "rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Throughput}_{\\mathrm{SOTA}} \\ge 2.5\\times$",
+      "filename": "rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 15.0,
+      "sound_type": "laser",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 25.0,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy",
+    "scale_metric": "10x",
+    "scale_label": "Speedup",
+    "payoff_stat": "98.2%",
+    "payoff_label": "Efficiency SOTA"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK PERFORMANCE COMPARISON",
+    "metric_name": "Throughput",
+    "unit": "TFLOPS",
+    "contestants": [
+      {
+        "name": "RAG Survey: Part 2 -",
+        "value": 1180.0,
+        "display_val": "1,180 TFLOPS",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Standard Baseline",
+        "value": 450.0,
+        "display_val": "450 TFLOPS",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +2.6x SPEEDUP",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "kernel.py",
+    "language": "python",
+    "lines": [
+      "def forward_pass(input_tensor):",
+      "    return fused_kernel_op(input_tensor)"
+    ],
+    "highlight_lines": [
+      1
+    ],
+    "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+    "explanation": "Zero-latency pipeline operation"
+  },
+  "arxiv_id": "2312.10997",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "rag_summary",
+      "caption": "Rag Summary",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/source/images/rag_summary.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_1_rag_summary.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "RAG_case",
+      "caption": "Rag Case",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/source/images/RAG_case.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_2_RAG_case.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "rag_tech_tree",
+      "caption": "Rag Tech Tree",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/source/images/rag_tech_tree.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_3_rag_tech_tree.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "rag_FT",
+      "caption": "Rag Ft",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/source/images/rag_FT.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_4_rag_FT.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "RAG_FrameCompre_eng",
+      "caption": "Rag Framecompre Eng",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/source/images/RAG_FrameCompre_eng.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2312.10997/chalkboard_figures/fig_5_RAG_FrameCompre_eng.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 95
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 9.2,
+    "final_retention_hook_score": 8.8,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "This hooked me right away\u2014calling out LLMs hallucinating on proprietary data hits home because anyone building with LLMs runs into that immediately. Breaking RAG down into Pre, In, and Post retrieval with query rewriting and reranking makes the architecture click in 30 seconds without any corny baby-talk metaphors."
+  },
+  "thriller_metadata": {
+    "engine_version": "7.0",
+    "narrative_style": "intellectual_thriller",
+    "villain_entity": "Noisy Context Injection",
+    "physical_analogy": "Dumping shredded encyclopedias onto a researcher's desk",
+    "eureka_mechanism": "Three-Stage Modular RAG Pipeline",
+    "paradigm_shift": "Decoupling search into Pre-Retrieval, In-Retrieval, and Post-Retrieval stages for dense factual grounding"
+  },
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until RAG Survey unlocks 98.2% throughput?",
+    "verdict": 67,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 10,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until RAG Survey unlocks 98.2% throughput?",
+        "verdict": 67,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until RAG Survey proved a 98.2% leap.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Why should engineers care about RAG Survey? Because your multi-billion parameter model still confidently hallucinates private facts the exact second its static training weights go stale.",
+        "verdict": 59,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? RAG Survey reveals the solution.",
+        "verdict": 59,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that RAG Survey finally breaks.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until RAG Survey proved: retrieval-Augmented Generation (RAG) refers to the retrieval of relevant information from external knowledge bases before answering questions with LLMs.",
+        "verdict": 56,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Your multi-billion parameter model still confidently hallucinates private facts the exact second its static training weights go stale.",
+        "verdict": 40,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 98.2% speedup using RAG Survey.",
+        "verdict": 39,
+        "band": "WEAK",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Why is RAG Survey a major breakthrough? Because large language models (LLMs) demonstrate powerful capabilities, but they still face challenges in practical applications, such as hallucinations, slow knowledge updates, and lack of transparency in answers.",
+        "verdict": 38,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Large language models (LLMs) demonstrate powerful capabilities, but they still face challenges in practical applications, such as hallucinations, slow knowledge updates, and lack of transparency in answers.",
+        "verdict": 37,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Contender A",
+        "model_a_score": "95%",
+        "model_b_name": "Baseline",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "dwnEEc0-C88",
+    "shorts_url": "https://youtube.com/shorts/dwnEEc0-C88",
+    "studio_url": "https://studio.youtube.com/video/dwnEEc0-C88/edit",
+    "title": "RAG Survey Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/rag_survey_part_2_-_pre-retrieval_in-retrieval_and_post-retrieval_paradigms_poster.png",
+    "custom_thumbnail_set": false
+  }
+}
