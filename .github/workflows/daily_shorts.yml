@@ -4,15 +4,15 @@ on:
   schedule:
     # 4 Targeted Daily Upload Windows (2 Morning + 2 Evening IST / UTC):
     # --- Morning Batch (2 Shorts) ---
-    # Morning Slot 1: 06:00 AM IST (00:30 UTC)
+    # Morning Slot 1: 05:00 AM IST (23:30 UTC prev day)
+    - cron: '30 23 * * *'
+    # Morning Slot 2: 06:00 AM IST (00:30 UTC)
     - cron: '30 0 * * *'
-    # Morning Slot 2: 08:00 AM IST (02:30 UTC)
-    - cron: '30 2 * * *'
     # --- Evening Batch (2 Shorts) ---
     # Evening Slot 1: 05:00 PM IST (11:30 UTC)
     - cron: '30 11 * * *'
-    # Evening Slot 2: 07:00 PM IST (13:30 UTC)
-    - cron: '30 13 * * *'
+    # Evening Slot 2: 06:00 PM IST (12:30 UTC)
+    - cron: '30 12 * * *'
   workflow_dispatch:
     inputs:
       count:
