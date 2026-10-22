@@ -3,281 +3,225 @@
   "title": "Replacing Weight Updates with Verbal RL",
   "category": "architecture_breakdown",
   "domain_taxonomy": "algorithmic_search",
-  "hook_tag": "ARCHITECTURAL BREAKDOWN",
+  "hook_tag": "VERBAL REINFORCEMENT LEARNING",
   "beats": [
     {
       "beat_id": 1,
-      "text": "What happens when your vector database only sees isolated chunks? Replacing Weight Updates with Verbal RL fixes retrieval with a 91% boost.",
-      "visual_focus": "A mountain of GPUs spinning, then freezing, representing slow gradient updates.",
+      "text": "Most AI agents are goldfish. Resetting their entire brain every time they fail a simple task.",
+      "visual_focus": "A digital goldfish bowl where a neural network icon resets its weights to zero.",
       "highlight_words": {
-        "expensive": "#EF4444",
-        "unnecessary": "#EF4444"
+        "resetting": "#EF4444"
       },
       "svo_action": {
-        "subject": "Optimizer",
-        "action_verb": "stalls",
-        "direct_object": "Gradient Descent Loop",
-        "anchor_word": "nightmare",
-        "semantic_role": "causal_elimination"
+        "subject": "AI agents",
+        "action_verb": "reset",
+        "direct_object": "internal weights",
+        "anchor_word": "goldfish",
+        "semantic_role": "state_transition"
       },
       "visual_blueprint": {
-        "layout": "pipeline_stages",
-        "title": "THE GRADIENT BOTTLENECK",
-        "sub": "Traditional fine-tuning is computationally rigid and slow",
+        "layout": "neural_activation_wave",
+        "title": "THE MEMORY PARADOX",
+        "sub": "Why traditional fine-tuning fails at rapid adaptation",
         "accent_color": "#EF4444",
         "params": {
-          "stage_1_label": "Error Signal",
-          "stage_2_label": "Backpropagation",
-          "stage_3_label": "Weight Update"
+          "input_label": "Input Data",
+          "hidden_label": "Synaptic Updates",
+          "output_label": "High-Latency Learning"
         }
       },
       "thriller_role": "pattern_interrupt_hook",
       "act": 1,
-      "hook_score": 66,
+      "hook_score": 58,
       "hook_band": "WORKABLE",
-      "hook_formula": "The Statistic",
+      "hook_formula": "Unclassified",
       "motif_type": "visual_composition",
       "motif_params": {
-        "layout": "pipeline_stages",
-        "title": "THE GRADIENT BOTTLENECK",
-        "sub": "Traditional fine-tuning is computationally rigid and slow",
+        "layout": "neural_activation_wave",
+        "title": "THE MEMORY PARADOX",
+        "sub": "Why traditional fine-tuning fails at rapid adaptation",
         "accent_color": "#EF4444",
-        "stage_1_label": "Error Signal",
-        "stage_2_label": "Backpropagation",
-        "stage_3_label": "Weight Update"
+        "input_label": "Input Data",
+        "hidden_label": "Synaptic Updates",
+        "output_label": "High-Latency Learning"
       },
       "kinetic_action": "blueprint_transform",
       "start": 0.0,
-      "end": 9.34,
-      "duration": 9.34,
+      "end": 5.16,
+      "duration": 5.16,
       "word_timings": [
         {
-          "word": "What",
-          "clean_word": "what",
-          "phonemes": "w\u02cc\u028ct",
+          "word": "Most",
+          "clean_word": "most",
+          "phonemes": "m\u02c8o\u028ast",
           "start": 0.01,
-          "end": 0.325,
-          "duration": 0.315,
+          "end": 0.355,
+          "duration": 0.345,
           "frame_ahead_trigger": 0.0
         },
         {
-          "word": "happens",
-          "clean_word": "happens",
-          "phonemes": "h\u02c8\u00e6p\u0259nz",
-          "start": 0.325,
-          "end": 0.61,
-          "duration": 0.285,
-          "frame_ahead_trigger": 0.285
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 0.355,
+          "end": 0.62,
+          "duration": 0.265,
+          "frame_ahead_trigger": 0.315
         },
         {
-          "word": "when",
-          "clean_word": "when",
-          "phonemes": "w\u02cc\u025bn",
-          "start": 0.61,
-          "end": 1.015,
-          "duration": 0.405,
-          "frame_ahead_trigger": 0.57
+          "word": "agents",
+          "clean_word": "agents",
+          "phonemes": "\u02c8e\u026ad\u0292\u0259nts",
+          "start": 0.62,
+          "end": 1.19,
+          "duration": 0.57,
+          "frame_ahead_trigger": 0.58
         },
         {
-          "word": "your",
-          "clean_word": "your",
-          "phonemes": "j\u028a\u0279",
-          "start": 1.015,
-          "end": 1.165,
-          "duration": 0.15,
-          "frame_ahead_trigger": 0.975
+          "word": "are",
+          "clean_word": "are",
+          "phonemes": "\u0251\u02d0\u0279",
+          "start": 1.19,
+          "end": 1.343,
+          "duration": 0.153,
+          "frame_ahead_trigger": 1.15
         },
         {
-          "word": "vector",
-          "clean_word": "vector",
-          "phonemes": "v\u02c8\u025bkt\u025a",
-          "start": 1.165,
-          "end": 1.55,
+          "word": "goldfish.",
+          "clean_word": "goldfish",
+          "phonemes": "\u0261\u02c8o\u028aldf\u026a\u0283",
+          "start": 1.343,
+          "end": 1.843,
+          "duration": 0.5,
+          "frame_ahead_trigger": 1.303
+        },
+        {
+          "word": "Resetting",
+          "clean_word": "resetting",
+          "phonemes": "\u0279\u1d7bs\u02c8\u025b\u027e\u026a\u014b",
+          "start": 1.843,
+          "end": 2.345,
+          "duration": 0.502,
+          "frame_ahead_trigger": 1.803
+        },
+        {
+          "word": "their",
+          "clean_word": "their",
+          "phonemes": "\u00f0\u025b\u0279",
+          "start": 2.345,
+          "end": 2.44,
+          "duration": 0.095,
+          "frame_ahead_trigger": 2.305
+        },
+        {
+          "word": "entire",
+          "clean_word": "entire",
+          "phonemes": "\u025bnt\u02c8a\u026a\u025a",
+          "start": 2.44,
+          "end": 2.825,
           "duration": 0.385,
-          "frame_ahead_trigger": 1.125
+          "frame_ahead_trigger": 2.4
         },
         {
-          "word": "database",
-          "clean_word": "database",
-          "phonemes": "d\u02c8e\u026a\u027e\u0259b\u02cce\u026as",
-          "start": 1.55,
-          "end": 2.14,
-          "duration": 0.59,
-          "frame_ahead_trigger": 1.51
+          "word": "brain",
+          "clean_word": "brain",
+          "phonemes": "b\u0279\u02c8e\u026an",
+          "start": 2.825,
+          "end": 3.177,
+          "duration": 0.352,
+          "frame_ahead_trigger": 2.785
         },
         {
-          "word": "only",
-          "clean_word": "only",
-          "phonemes": "\u02c8o\u028anli",
-          "start": 2.14,
-          "end": 2.685,
-          "duration": 0.545,
-          "frame_ahead_trigger": 2.1
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 3.177,
+          "end": 3.485,
+          "duration": 0.308,
+          "frame_ahead_trigger": 3.137
         },
         {
-          "word": "sees",
-          "clean_word": "sees",
-          "phonemes": "s\u02c8i\u02d0z",
-          "start": 2.685,
-          "end": 2.905,
-          "duration": 0.22,
-          "frame_ahead_trigger": 2.645
+          "word": "time",
+          "clean_word": "time",
+          "phonemes": "t\u02c8a\u026am",
+          "start": 3.485,
+          "end": 3.785,
+          "duration": 0.3,
+          "frame_ahead_trigger": 3.445
         },
         {
-          "word": "isolated",
-          "clean_word": "isolated",
-          "phonemes": "\u02c8a\u026as\u0259l\u02cce\u026a\u027e\u1d7bd",
-          "start": 2.905,
-          "end": 3.664,
-          "duration": 0.759,
-          "frame_ahead_trigger": 2.865
+          "word": "they",
+          "clean_word": "they",
+          "phonemes": "\u00f0e\u026a",
+          "start": 3.785,
+          "end": 3.899,
+          "duration": 0.114,
+          "frame_ahead_trigger": 3.745
         },
         {
-          "word": "chunks?",
-          "clean_word": "chunks",
-          "phonemes": "t\u0283\u02c8\u028c\u014bks",
-          "start": 3.664,
-          "end": 4.14,
-          "duration": 0.476,
-          "frame_ahead_trigger": 3.624
-        },
-        {
-          "word": "Replacing",
-          "clean_word": "replacing",
-          "phonemes": "\u0279\u1d7bpl\u02c8e\u026as\u026a\u014b",
-          "start": 4.14,
-          "end": 4.765,
-          "duration": 0.625,
-          "frame_ahead_trigger": 4.1
-        },
-        {
-          "word": "Weight",
-          "clean_word": "weight",
-          "phonemes": "w\u02c8e\u026at",
-          "start": 4.765,
-          "end": 5.049,
-          "duration": 0.284,
-          "frame_ahead_trigger": 4.725
-        },
-        {
-          "word": "Updates",
-          "clean_word": "updates",
-          "phonemes": "\u02c8\u028cpde\u026ats",
-          "start": 5.049,
-          "end": 5.525,
-          "duration": 0.476,
-          "frame_ahead_trigger": 5.009
-        },
-        {
-          "word": "with",
-          "clean_word": "with",
-          "phonemes": "w\u026a\u00f0",
-          "start": 5.525,
-          "end": 5.695,
-          "duration": 0.17,
-          "frame_ahead_trigger": 5.485
-        },
-        {
-          "word": "Verbal",
-          "clean_word": "verbal",
-          "phonemes": "v\u02c8\u025c\u02d0b\u0259l",
-          "start": 5.695,
-          "end": 6.08,
-          "duration": 0.385,
-          "frame_ahead_trigger": 5.655
-        },
-        {
-          "word": "RL",
-          "clean_word": "rl",
-          "phonemes": "\u02cc\u0251\u02d0\u0279\u0279\u02c8\u025bl",
-          "start": 6.08,
-          "end": 6.79,
-          "duration": 0.71,
-          "frame_ahead_trigger": 6.04
-        },
-        {
-          "word": "fixes",
-          "clean_word": "fixes",
-          "phonemes": "f\u02c8\u026aks\u1d7bz",
-          "start": 6.79,
-          "end": 7.195,
-          "duration": 0.405,
-          "frame_ahead_trigger": 6.75
-        },
-        {
-          "word": "retrieval",
-          "clean_word": "retrieval",
-          "phonemes": "\u0279\u1d7bt\u0279\u02c8i\u02d0v\u0259l",
-          "start": 7.195,
-          "end": 7.68,
-          "duration": 0.485,
-          "frame_ahead_trigger": 7.155
-        },
-        {
-          "word": "with",
-          "clean_word": "with",
-          "phonemes": "w\u026a\u00f0",
-          "start": 7.68,
-          "end": 8.06,
-          "duration": 0.38,
-          "frame_ahead_trigger": 7.64
+          "word": "fail",
+          "clean_word": "fail",
+          "phonemes": "f\u02c8e\u026al",
+          "start": 3.899,
+          "end": 4.075,
+          "duration": 0.176,
+          "frame_ahead_trigger": 3.859
         },
         {
           "word": "a",
           "clean_word": "a",
           "phonemes": "\u02c8e\u026a",
-          "start": 8.06,
-          "end": 8.18,
-          "duration": 0.12,
-          "frame_ahead_trigger": 8.02
+          "start": 4.075,
+          "end": 4.385,
+          "duration": 0.31,
+          "frame_ahead_trigger": 4.035
         },
         {
-          "word": "91%",
-          "clean_word": "91",
-          "phonemes": "n\u02c8a\u026anti w\u02c8\u028cn",
-          "start": 8.18,
-          "end": 8.865,
-          "duration": 0.685,
-          "frame_ahead_trigger": 8.14
+          "word": "simple",
+          "clean_word": "simple",
+          "phonemes": "s\u02c8\u026amp\u0259l",
+          "start": 4.385,
+          "end": 4.655,
+          "duration": 0.27,
+          "frame_ahead_trigger": 4.345
         },
         {
-          "word": "boost.",
-          "clean_word": "boost",
-          "phonemes": "b\u02c8u\u02d0st",
-          "start": 8.865,
-          "end": 9.27,
-          "duration": 0.405,
-          "frame_ahead_trigger": 8.825
+          "word": "task.",
+          "clean_word": "task",
+          "phonemes": "t\u02c8\u00e6sk",
+          "start": 4.655,
+          "end": 5.01,
+          "duration": 0.355,
+          "frame_ahead_trigger": 4.615
         }
       ],
-      "audio_duration": 9.34,
-      "slot_duration": 9.49
+      "audio_duration": 5.16,
+      "slot_duration": 5.31
     },
     {
       "beat_id": 2,
-      "text": "Weight updates treat complex agent errors like noisy signal, forcing the whole network to rewire for one mistake.",
-      "visual_focus": "A monolithic brain glowing red while trying to adjust billions of weights simultaneously.",
+      "text": "The villain? Expensive gradient descent. It forces us to burn massive compute just to nudge a few parameters for one minor mistake.",
+      "visual_focus": "A massive GPU cluster glowing red, struggling to process a single tiny weight update.",
       "highlight_words": {
-        "monolithic": "#EF4444",
-        "rewire": "#EF4444"
+        "expensive backpropagation": "#EF4444"
       },
       "svo_action": {
-        "subject": "Error Signal",
-        "action_verb": "saturates",
-        "direct_object": "Neural Weights",
-        "anchor_word": "mistake",
-        "semantic_role": "state_transition"
+        "subject": "Backpropagation",
+        "action_verb": "stalls",
+        "direct_object": "compute efficiency",
+        "anchor_word": "bottleneck",
+        "semantic_role": "causality"
       },
       "visual_blueprint": {
         "layout": "barrier_separation",
-        "title": "THE ENTANGLEMENT TRAP",
-        "sub": "Forcing global updates for local failures",
+        "title": "THE COMPUTE WALL",
+        "sub": "Weight updates are slow and brittle",
         "accent_color": "#EF4444",
         "params": {
-          "stream_a_label": "Local Error",
-          "stream_b_label": "Global Weights",
-          "barrier_label": "Parameter Lock",
-          "barrier_sub": "Rigid Update Path"
+          "stream_a_label": "Trial Output",
+          "stream_b_label": "Reflective Buffer",
+          "barrier_label": "Logic Gap",
+          "barrier_sub": "Missing Feedback Loop"
         }
       },
       "thriller_role": "villain_bottleneck",
@@ -285,210 +229,245 @@
       "motif_type": "visual_composition",
       "motif_params": {
         "layout": "barrier_separation",
-        "title": "THE ENTANGLEMENT TRAP",
-        "sub": "Forcing global updates for local failures",
+        "title": "THE COMPUTE WALL",
+        "sub": "Weight updates are slow and brittle",
         "accent_color": "#EF4444",
-        "stream_a_label": "Local Error",
-        "stream_b_label": "Global Weights",
-        "barrier_label": "Parameter Lock",
-        "barrier_sub": "Rigid Update Path"
+        "stream_a_label": "Trial Output",
+        "stream_b_label": "Reflective Buffer",
+        "barrier_label": "Logic Gap",
+        "barrier_sub": "Missing Feedback Loop"
       },
       "kinetic_action": "blueprint_transform",
-      "start": 9.49,
-      "end": 16.11,
-      "duration": 6.61,
+      "start": 5.31,
+      "end": 12.12,
+      "duration": 6.81,
       "word_timings": [
         {
-          "word": "Weight",
-          "clean_word": "weight",
-          "phonemes": "w\u02c8e\u026at",
-          "start": 9.504,
-          "end": 9.859,
-          "duration": 0.355,
-          "frame_ahead_trigger": 9.614
-        },
-        {
-          "word": "updates",
-          "clean_word": "updates",
-          "phonemes": "\u02c8\u028cpde\u026ats",
-          "start": 9.859,
-          "end": 10.229,
-          "duration": 0.37,
-          "frame_ahead_trigger": 9.969
-        },
-        {
-          "word": "treat",
-          "clean_word": "treat",
-          "phonemes": "t\u0279\u02c8i\u02d0t",
-          "start": 10.229,
-          "end": 10.62,
-          "duration": 0.391,
-          "frame_ahead_trigger": 10.339
-        },
-        {
-          "word": "complex",
-          "clean_word": "complex",
-          "phonemes": "k\u02c8\u0251\u02d0mpl\u025bks",
-          "start": 10.62,
-          "end": 11.204,
-          "duration": 0.584,
-          "frame_ahead_trigger": 10.73
-        },
-        {
-          "word": "agent",
-          "clean_word": "agent",
-          "phonemes": "\u02c8e\u026ad\u0292\u0259nt",
-          "start": 11.204,
-          "end": 11.624,
-          "duration": 0.42,
-          "frame_ahead_trigger": 11.314
-        },
-        {
-          "word": "errors",
-          "clean_word": "errors",
-          "phonemes": "\u02c8\u025b\u0279\u025az",
-          "start": 11.624,
-          "end": 12.004,
-          "duration": 0.38,
-          "frame_ahead_trigger": 11.734
-        },
-        {
-          "word": "like",
-          "clean_word": "like",
-          "phonemes": "l\u02c8a\u026ak",
-          "start": 12.004,
-          "end": 12.319,
-          "duration": 0.315,
-          "frame_ahead_trigger": 12.114
-        },
-        {
-          "word": "noisy",
-          "clean_word": "noisy",
-          "phonemes": "n\u02c8\u0254\u026azi",
-          "start": 12.319,
-          "end": 12.649,
-          "duration": 0.33,
-          "frame_ahead_trigger": 12.429
-        },
-        {
-          "word": "signal,",
-          "clean_word": "signal",
-          "phonemes": "s\u02c8\u026a\u0261n\u0259l",
-          "start": 12.649,
-          "end": 13.119,
-          "duration": 0.47,
-          "frame_ahead_trigger": 12.759
-        },
-        {
-          "word": "forcing",
-          "clean_word": "forcing",
-          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u026a\u014b",
-          "start": 13.119,
-          "end": 13.497,
-          "duration": 0.378,
-          "frame_ahead_trigger": 13.229
-        },
-        {
-          "word": "the",
+          "word": "The",
           "clean_word": "the",
           "phonemes": "\u00f0\u0259",
-          "start": 13.497,
-          "end": 13.669,
-          "duration": 0.172,
-          "frame_ahead_trigger": 13.607
+          "start": 5.333,
+          "end": 5.428,
+          "duration": 0.095,
+          "frame_ahead_trigger": 5.443
         },
         {
-          "word": "whole",
-          "clean_word": "whole",
-          "phonemes": "h\u02c8o\u028al",
-          "start": 13.669,
-          "end": 13.924,
-          "duration": 0.255,
-          "frame_ahead_trigger": 13.779
+          "word": "villain?",
+          "clean_word": "villain",
+          "phonemes": "v\u02c8\u026al\u0259n",
+          "start": 5.428,
+          "end": 5.863,
+          "duration": 0.435,
+          "frame_ahead_trigger": 5.538
         },
         {
-          "word": "network",
-          "clean_word": "network",
-          "phonemes": "n\u02c8\u025btw\u025c\u02d0k",
-          "start": 13.924,
-          "end": 14.314,
-          "duration": 0.39,
-          "frame_ahead_trigger": 14.034
+          "word": "Expensive",
+          "clean_word": "expensive",
+          "phonemes": "\u025bksp\u02c8\u025bns\u026av",
+          "start": 5.863,
+          "end": 6.298,
+          "duration": 0.435,
+          "frame_ahead_trigger": 5.973
+        },
+        {
+          "word": "gradient",
+          "clean_word": "gradient",
+          "phonemes": "\u0261\u0279\u02c8e\u026adi\u0259nt",
+          "start": 6.298,
+          "end": 6.898,
+          "duration": 0.6,
+          "frame_ahead_trigger": 6.408
+        },
+        {
+          "word": "descent.",
+          "clean_word": "descent",
+          "phonemes": "d\u1d7bs\u02c8\u025bnt",
+          "start": 6.898,
+          "end": 7.058,
+          "duration": 0.16,
+          "frame_ahead_trigger": 7.008
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 7.058,
+          "end": 7.28,
+          "duration": 0.223,
+          "frame_ahead_trigger": 7.168
+        },
+        {
+          "word": "forces",
+          "clean_word": "forces",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u1d7bz",
+          "start": 7.28,
+          "end": 7.713,
+          "duration": 0.432,
+          "frame_ahead_trigger": 7.39
+        },
+        {
+          "word": "us",
+          "clean_word": "us",
+          "phonemes": "\u02cc\u028cs",
+          "start": 7.713,
+          "end": 7.878,
+          "duration": 0.165,
+          "frame_ahead_trigger": 7.823
         },
         {
           "word": "to",
           "clean_word": "to",
           "phonemes": "tu\u02d0",
-          "start": 14.314,
-          "end": 14.554,
-          "duration": 0.24,
-          "frame_ahead_trigger": 14.424
+          "start": 7.878,
+          "end": 8.073,
+          "duration": 0.195,
+          "frame_ahead_trigger": 7.988
         },
         {
-          "word": "rewire",
-          "clean_word": "rewire",
-          "phonemes": "\u0279\u1d7bw\u02c8a\u026a\u025a",
-          "start": 14.554,
-          "end": 14.965,
-          "duration": 0.411,
-          "frame_ahead_trigger": 14.664
+          "word": "burn",
+          "clean_word": "burn",
+          "phonemes": "b\u02c8\u025c\u02d0n",
+          "start": 8.073,
+          "end": 8.343,
+          "duration": 0.27,
+          "frame_ahead_trigger": 8.183
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 8.343,
+          "end": 8.498,
+          "duration": 0.155,
+          "frame_ahead_trigger": 8.453
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 8.498,
+          "end": 9.123,
+          "duration": 0.625,
+          "frame_ahead_trigger": 8.608
+        },
+        {
+          "word": "just",
+          "clean_word": "just",
+          "phonemes": "d\u0292\u02c8\u028cst",
+          "start": 9.123,
+          "end": 9.313,
+          "duration": 0.19,
+          "frame_ahead_trigger": 9.233
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 9.313,
+          "end": 9.498,
+          "duration": 0.185,
+          "frame_ahead_trigger": 9.423
+        },
+        {
+          "word": "nudge",
+          "clean_word": "nudge",
+          "phonemes": "n\u02c8\u028cd\u0292",
+          "start": 9.498,
+          "end": 9.698,
+          "duration": 0.2,
+          "frame_ahead_trigger": 9.608
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 9.698,
+          "end": 9.998,
+          "duration": 0.3,
+          "frame_ahead_trigger": 9.808
+        },
+        {
+          "word": "few",
+          "clean_word": "few",
+          "phonemes": "fj\u02c8u\u02d0",
+          "start": 9.998,
+          "end": 10.333,
+          "duration": 0.335,
+          "frame_ahead_trigger": 10.108
+        },
+        {
+          "word": "parameters",
+          "clean_word": "parameters",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025az",
+          "start": 10.333,
+          "end": 10.708,
+          "duration": 0.375,
+          "frame_ahead_trigger": 10.443
         },
         {
           "word": "for",
           "clean_word": "for",
           "phonemes": "f\u0254\u02d0\u0279",
-          "start": 14.965,
-          "end": 15.219,
-          "duration": 0.254,
-          "frame_ahead_trigger": 15.075
+          "start": 10.708,
+          "end": 10.958,
+          "duration": 0.25,
+          "frame_ahead_trigger": 10.818
         },
         {
           "word": "one",
           "clean_word": "one",
           "phonemes": "w\u02cc\u028cn",
-          "start": 15.219,
-          "end": 15.344,
+          "start": 10.958,
+          "end": 11.083,
           "duration": 0.125,
-          "frame_ahead_trigger": 15.329
+          "frame_ahead_trigger": 11.068
+        },
+        {
+          "word": "minor",
+          "clean_word": "minor",
+          "phonemes": "m\u02c8a\u026an\u025a",
+          "start": 11.083,
+          "end": 11.492,
+          "duration": 0.409,
+          "frame_ahead_trigger": 11.193
         },
         {
           "word": "mistake.",
           "clean_word": "mistake",
           "phonemes": "m\u026ast\u02c8e\u026ak",
-          "start": 15.344,
-          "end": 15.904,
-          "duration": 0.56,
-          "frame_ahead_trigger": 15.454
+          "start": 11.492,
+          "end": 11.913,
+          "duration": 0.421,
+          "frame_ahead_trigger": 11.602
         }
       ],
-      "audio_duration": 6.61,
-      "slot_duration": 6.77
+      "audio_duration": 6.81,
+      "slot_duration": 6.96
     },
     {
       "beat_id": 3,
-      "text": "Reflexion shifts the burden to linguistic feedback, allowing the model to analyze its own failure via text logs.",
-      "visual_focus": "An agent writing a reflective summary into an episodic memory buffer.",
+      "text": "Reflexion flips the script. Instead of changing weights. The agent writes a verbal critique of its own past failures.",
+      "visual_focus": "A text buffer filling with 'Self-Reflection' logs, acting as an external memory bank.",
       "highlight_words": {
-        "Reflexion": "#34D399",
-        "linguistic feedback": "#34D399"
+        "verbal critique": "#34D399"
       },
       "svo_action": {
-        "subject": "Reflexion Engine",
-        "action_verb": "extracts",
-        "direct_object": "Episodic Memory",
-        "anchor_word": "logs",
-        "semantic_role": "agent_action"
+        "subject": "Reflexion",
+        "action_verb": "writes",
+        "direct_object": "episodic memory",
+        "anchor_word": "critique",
+        "semantic_role": "innovation"
       },
       "visual_blueprint": {
         "layout": "paper_figure",
         "title": "REPLACING WEIGHT U ARCHITECTURE",
-        "sub": "An agent writing a reflective summary into an episodic memory buf",
+        "sub": "A text buffer filling with 'Self-Reflection' logs, acting as an e",
         "params": {
           "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2303.11366/chalkboard_figures/fig_1_reflexion_rl.svg",
           "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2303.11366/chalkboard_figures/fig_1_reflexion_rl.png",
           "arxiv_id": "2303.11366",
           "title": "REPLACING WEIGHT U ARCHITECTURE",
-          "sub": "An agent writing a reflective summary into an episodic memory buf",
+          "sub": "A text buffer filling with 'Self-Reflection' logs, acting as an e",
           "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
           "caption": "Reflexion Rl",
           "preferred_renderer": "vector"
@@ -502,218 +481,226 @@
         "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2303.11366/chalkboard_figures/fig_1_reflexion_rl.png",
         "arxiv_id": "2303.11366",
         "title": "REPLACING WEIGHT U ARCHITECTURE",
-        "sub": "An agent writing a reflective summary into an episodic memory buf",
+        "sub": "A text buffer filling with 'Self-Reflection' logs, acting as an e",
         "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
         "caption": "Reflexion Rl",
         "preferred_renderer": "vector"
       },
       "kinetic_action": "figure_scan",
-      "start": 16.26,
-      "end": 22.87,
-      "duration": 6.61,
+      "start": 12.27,
+      "end": 18.03,
+      "duration": 5.76,
       "word_timings": [
         {
           "word": "Reflexion",
           "clean_word": "reflexion",
           "phonemes": "\u0279i\u02d0fl\u02c8\u025bksi\u0259n",
-          "start": 16.267,
-          "end": 17.017,
-          "duration": 0.75,
-          "frame_ahead_trigger": 16.527
+          "start": 12.283,
+          "end": 12.913,
+          "duration": 0.63,
+          "frame_ahead_trigger": 12.543
         },
         {
-          "word": "shifts",
-          "clean_word": "shifts",
-          "phonemes": "\u0283\u02c8\u026afts",
-          "start": 17.017,
-          "end": 17.327,
-          "duration": 0.31,
-          "frame_ahead_trigger": 17.277
+          "word": "flips",
+          "clean_word": "flips",
+          "phonemes": "fl\u02c8\u026aps",
+          "start": 12.913,
+          "end": 13.208,
+          "duration": 0.295,
+          "frame_ahead_trigger": 13.173
         },
         {
           "word": "the",
           "clean_word": "the",
           "phonemes": "\u00f0\u0259",
-          "start": 17.327,
-          "end": 17.437,
-          "duration": 0.11,
-          "frame_ahead_trigger": 17.587
+          "start": 13.208,
+          "end": 13.398,
+          "duration": 0.19,
+          "frame_ahead_trigger": 13.468
         },
         {
-          "word": "burden",
-          "clean_word": "burden",
-          "phonemes": "b\u02c8\u025c\u02d0d\u0259n",
-          "start": 17.437,
-          "end": 17.942,
-          "duration": 0.505,
-          "frame_ahead_trigger": 17.697
+          "word": "script.",
+          "clean_word": "script",
+          "phonemes": "sk\u0279\u02c8\u026apt",
+          "start": 13.398,
+          "end": 13.703,
+          "duration": 0.305,
+          "frame_ahead_trigger": 13.658
         },
         {
-          "word": "to",
-          "clean_word": "to",
-          "phonemes": "tu\u02d0",
-          "start": 17.942,
-          "end": 18.162,
-          "duration": 0.22,
-          "frame_ahead_trigger": 18.202
+          "word": "Instead",
+          "clean_word": "instead",
+          "phonemes": "\u026anst\u02c8\u025bd",
+          "start": 13.703,
+          "end": 14.113,
+          "duration": 0.41,
+          "frame_ahead_trigger": 13.963
         },
         {
-          "word": "linguistic",
-          "clean_word": "linguistic",
-          "phonemes": "l\u026a\u014b\u0261w\u02c8\u026ast\u026ak",
-          "start": 18.162,
-          "end": 18.752,
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 14.113,
+          "end": 14.188,
+          "duration": 0.075,
+          "frame_ahead_trigger": 14.373
+        },
+        {
+          "word": "changing",
+          "clean_word": "changing",
+          "phonemes": "t\u0283\u02c8e\u026and\u0292\u026a\u014b",
+          "start": 14.188,
+          "end": 14.778,
           "duration": 0.59,
-          "frame_ahead_trigger": 18.422
+          "frame_ahead_trigger": 14.448
         },
         {
-          "word": "feedback,",
-          "clean_word": "feedback",
-          "phonemes": "f\u02c8i\u02d0db\u00e6k",
-          "start": 18.752,
-          "end": 19.253,
-          "duration": 0.501,
-          "frame_ahead_trigger": 19.012
+          "word": "weights.",
+          "clean_word": "weights",
+          "phonemes": "w\u02c8e\u026ats",
+          "start": 14.778,
+          "end": 14.999,
+          "duration": 0.221,
+          "frame_ahead_trigger": 15.038
         },
         {
-          "word": "allowing",
-          "clean_word": "allowing",
-          "phonemes": "\u0250l\u02c8a\u028a\u026a\u014b",
-          "start": 19.253,
-          "end": 19.722,
-          "duration": 0.469,
-          "frame_ahead_trigger": 19.513
-        },
-        {
-          "word": "the",
+          "word": "The",
           "clean_word": "the",
           "phonemes": "\u00f0\u0259",
-          "start": 19.722,
-          "end": 19.802,
-          "duration": 0.079,
-          "frame_ahead_trigger": 19.982
+          "start": 14.999,
+          "end": 15.103,
+          "duration": 0.104,
+          "frame_ahead_trigger": 15.259
         },
         {
-          "word": "model",
-          "clean_word": "model",
-          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
-          "start": 19.802,
-          "end": 20.202,
-          "duration": 0.401,
-          "frame_ahead_trigger": 20.062
+          "word": "agent",
+          "clean_word": "agent",
+          "phonemes": "\u02c8e\u026ad\u0292\u0259nt",
+          "start": 15.103,
+          "end": 15.593,
+          "duration": 0.49,
+          "frame_ahead_trigger": 15.363
         },
         {
-          "word": "to",
-          "clean_word": "to",
-          "phonemes": "tu\u02d0",
-          "start": 20.202,
-          "end": 20.337,
-          "duration": 0.135,
-          "frame_ahead_trigger": 20.462
+          "word": "writes",
+          "clean_word": "writes",
+          "phonemes": "\u0279\u02c8a\u026ats",
+          "start": 15.593,
+          "end": 15.913,
+          "duration": 0.32,
+          "frame_ahead_trigger": 15.853
         },
         {
-          "word": "analyze",
-          "clean_word": "analyze",
-          "phonemes": "\u02c8\u00e6n\u0250l\u02cca\u026az",
-          "start": 20.337,
-          "end": 20.932,
-          "duration": 0.595,
-          "frame_ahead_trigger": 20.597
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 15.913,
+          "end": 16.023,
+          "duration": 0.11,
+          "frame_ahead_trigger": 16.173
+        },
+        {
+          "word": "verbal",
+          "clean_word": "verbal",
+          "phonemes": "v\u02c8\u025c\u02d0b\u0259l",
+          "start": 16.023,
+          "end": 16.328,
+          "duration": 0.305,
+          "frame_ahead_trigger": 16.283
+        },
+        {
+          "word": "critique",
+          "clean_word": "critique",
+          "phonemes": "k\u0279\u026at\u02c8i\u02d0k",
+          "start": 16.328,
+          "end": 16.793,
+          "duration": 0.465,
+          "frame_ahead_trigger": 16.588
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 16.793,
+          "end": 16.898,
+          "duration": 0.105,
+          "frame_ahead_trigger": 17.053
         },
         {
           "word": "its",
           "clean_word": "its",
           "phonemes": "\u026ats",
-          "start": 20.932,
-          "end": 21.142,
-          "duration": 0.21,
-          "frame_ahead_trigger": 21.192
+          "start": 16.898,
+          "end": 16.978,
+          "duration": 0.08,
+          "frame_ahead_trigger": 17.158
         },
         {
           "word": "own",
           "clean_word": "own",
           "phonemes": "\u02c8o\u028an",
-          "start": 21.142,
-          "end": 21.417,
-          "duration": 0.275,
-          "frame_ahead_trigger": 21.402
+          "start": 16.978,
+          "end": 17.158,
+          "duration": 0.18,
+          "frame_ahead_trigger": 17.238
         },
         {
-          "word": "failure",
-          "clean_word": "failure",
-          "phonemes": "f\u02c8e\u026al\u026a\u0279",
-          "start": 21.417,
-          "end": 21.752,
-          "duration": 0.335,
-          "frame_ahead_trigger": 21.677
+          "word": "past",
+          "clean_word": "past",
+          "phonemes": "p\u02c8\u00e6st",
+          "start": 17.158,
+          "end": 17.453,
+          "duration": 0.295,
+          "frame_ahead_trigger": 17.418
         },
         {
-          "word": "via",
-          "clean_word": "via",
-          "phonemes": "v\u02c8a\u026a\u0259",
-          "start": 21.752,
-          "end": 22.082,
-          "duration": 0.33,
-          "frame_ahead_trigger": 22.012
-        },
-        {
-          "word": "text",
-          "clean_word": "text",
-          "phonemes": "t\u02c8\u025bkst",
-          "start": 22.082,
-          "end": 22.577,
-          "duration": 0.495,
-          "frame_ahead_trigger": 22.342
-        },
-        {
-          "word": "logs.",
-          "clean_word": "logs",
-          "phonemes": "l\u02c8\u0254\u0261z",
-          "start": 22.577,
-          "end": 22.787,
-          "duration": 0.21,
-          "frame_ahead_trigger": 22.837
+          "word": "failures.",
+          "clean_word": "failures",
+          "phonemes": "f\u02c8e\u026al\u026a\u0279z",
+          "start": 17.453,
+          "end": 17.923,
+          "duration": 0.47,
+          "frame_ahead_trigger": 17.713
         }
       ],
-      "audio_duration": 6.61,
-      "slot_duration": 6.76
+      "audio_duration": 5.76,
+      "slot_duration": 5.91
     },
     {
       "beat_id": 4,
-      "text": "By gating these reflections into episodic memory, the agent dynamically adjusts its next action sequence without touching gradients.",
-      "visual_focus": "A decision tree pruning away bad strategies using the reflective summaries as decision priors.",
+      "text": "It stores these reflections in an episodic buffer. The model then prompts itself with this wisdom to guide the next attempt.",
+      "visual_focus": "A loop diagram showing: Task -> Feedback -> Reflection -> Memory -> Improved Prompt.",
       "highlight_words": {
-        "episodic memory": "#F59E0B",
-        "dynamically adjusts": "#F59E0B"
+        "episodic buffer": "#38BDF8"
       },
       "svo_action": {
-        "subject": "Router",
-        "action_verb": "prunes",
-        "direct_object": "Decision Tree",
-        "anchor_word": "gradients",
-        "semantic_role": "agent_action"
+        "subject": "Agent",
+        "action_verb": "queries",
+        "direct_object": "past reflections",
+        "anchor_word": "wisdom",
+        "semantic_role": "mechanism"
       },
       "visual_blueprint": {
         "layout": "chalkboard_code_block",
         "title": "KERNEL CODE: REPLACING WEIGHT U",
-        "sub": "A decision tree pruning away bad strategies using the reflective ",
+        "sub": "A loop diagram showing: Task -> Feedback -> Reflection -> Memory ",
         "params": {
           "title": "KERNEL CODE: REPLACING WEIGHT U",
-          "sub": "A decision tree pruning away bad strategies using the reflective ",
+          "sub": "A loop diagram showing: Task -> Feedback -> Reflection -> Memory ",
           "filename": "reflexion_loop.py",
           "language": "python",
           "lines": [
-            "def reflect(feedback):",
-            "critique = analyze(feedback)",
-            "memory.append(critique)",
-            "return prompt_with_memory(memory)"
+            "def run_reflexion(task):",
+            "memory = retrieve_episodic(task)",
+            "thought = generate_reflection(task, memory)",
+            "return prompt_model(thought)"
           ],
           "highlight_lines": [
             2,
             3
           ],
-          "trace_register": "\u26a1 VERBAL REINFORCEMENT KERNEL",
-          "delta_badge": "Injecting critiques into context instead of weights"
+          "trace_register": "\u26a1 VERBAL REINFORCEMENT INJECTION",
+          "delta_badge": "Episodic memory buffers guiding logic"
         }
       },
       "thriller_role": "technical_secret_sauce",
@@ -722,233 +709,259 @@
       "kinetic_action": "pulse",
       "motif_params": {
         "title": "KERNEL CODE: REPLACING WEIGHT U",
-        "sub": "A decision tree pruning away bad strategies using the reflective ",
+        "sub": "A loop diagram showing: Task -> Feedback -> Reflection -> Memory ",
         "filename": "reflexion_loop.py",
         "language": "python",
         "lines": [
-          "def reflect(feedback):",
-          "critique = analyze(feedback)",
-          "memory.append(critique)",
-          "return prompt_with_memory(memory)"
+          "def run_reflexion(task):",
+          "memory = retrieve_episodic(task)",
+          "thought = generate_reflection(task, memory)",
+          "return prompt_model(thought)"
         ],
         "highlight_lines": [
           2,
           3
         ],
-        "trace_register": "\u26a1 VERBAL REINFORCEMENT KERNEL",
-        "delta_badge": "Injecting critiques into context instead of weights"
+        "trace_register": "\u26a1 VERBAL REINFORCEMENT INJECTION",
+        "delta_badge": "Episodic memory buffers guiding logic"
       },
-      "start": 23.02,
-      "end": 30.83,
-      "duration": 7.81,
+      "start": 18.18,
+      "end": 24.26,
+      "duration": 6.08,
       "word_timings": [
         {
-          "word": "By",
-          "clean_word": "by",
-          "phonemes": "b\u02c8a\u026a",
-          "start": 23.036,
-          "end": 23.196,
-          "duration": 0.16,
-          "frame_ahead_trigger": 23.446
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 18.193,
+          "end": 18.278,
+          "duration": 0.085,
+          "frame_ahead_trigger": 18.603
         },
         {
-          "word": "gating",
-          "clean_word": "gating",
-          "phonemes": "\u0261\u02c8e\u026a\u027e\u026a\u014b",
-          "start": 23.196,
-          "end": 23.646,
-          "duration": 0.45,
-          "frame_ahead_trigger": 23.606
+          "word": "stores",
+          "clean_word": "stores",
+          "phonemes": "st\u02c8\u0254\u02d0\u0279z",
+          "start": 18.278,
+          "end": 18.693,
+          "duration": 0.415,
+          "frame_ahead_trigger": 18.688
         },
         {
           "word": "these",
           "clean_word": "these",
           "phonemes": "\u00f0\u02c8i\u02d0z",
-          "start": 23.646,
-          "end": 23.976,
-          "duration": 0.33,
-          "frame_ahead_trigger": 24.056
+          "start": 18.693,
+          "end": 18.903,
+          "duration": 0.21,
+          "frame_ahead_trigger": 19.103
         },
         {
           "word": "reflections",
           "clean_word": "reflections",
           "phonemes": "\u0279\u1d7bfl\u02c8\u025bk\u0283\u0259nz",
-          "start": 23.976,
-          "end": 24.696,
-          "duration": 0.72,
-          "frame_ahead_trigger": 24.386
+          "start": 18.903,
+          "end": 19.578,
+          "duration": 0.675,
+          "frame_ahead_trigger": 19.313
         },
         {
-          "word": "into",
-          "clean_word": "into",
-          "phonemes": "\u02cc\u026ant\u028a",
-          "start": 24.696,
-          "end": 24.981,
-          "duration": 0.285,
-          "frame_ahead_trigger": 25.106
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 19.578,
+          "end": 19.662,
+          "duration": 0.084,
+          "frame_ahead_trigger": 19.988
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 19.662,
+          "end": 19.803,
+          "duration": 0.141,
+          "frame_ahead_trigger": 20.072
         },
         {
           "word": "episodic",
           "clean_word": "episodic",
           "phonemes": "\u02cc\u025bp\u026as\u02c8\u0251\u02d0d\u026ak",
-          "start": 24.981,
-          "end": 25.661,
-          "duration": 0.68,
-          "frame_ahead_trigger": 25.391
+          "start": 19.803,
+          "end": 20.398,
+          "duration": 0.595,
+          "frame_ahead_trigger": 20.213
         },
         {
-          "word": "memory,",
-          "clean_word": "memory",
-          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
-          "start": 25.661,
-          "end": 26.101,
-          "duration": 0.44,
-          "frame_ahead_trigger": 26.071
+          "word": "buffer.",
+          "clean_word": "buffer",
+          "phonemes": "b\u02c8\u028cf\u025a",
+          "start": 20.398,
+          "end": 20.588,
+          "duration": 0.19,
+          "frame_ahead_trigger": 20.808
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 20.588,
+          "end": 20.711,
+          "duration": 0.123,
+          "frame_ahead_trigger": 20.998
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 20.711,
+          "end": 21.103,
+          "duration": 0.392,
+          "frame_ahead_trigger": 21.121
+        },
+        {
+          "word": "then",
+          "clean_word": "then",
+          "phonemes": "\u00f0\u02c8\u025bn",
+          "start": 21.103,
+          "end": 21.358,
+          "duration": 0.255,
+          "frame_ahead_trigger": 21.513
+        },
+        {
+          "word": "prompts",
+          "clean_word": "prompts",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0mpts",
+          "start": 21.358,
+          "end": 21.693,
+          "duration": 0.335,
+          "frame_ahead_trigger": 21.768
+        },
+        {
+          "word": "itself",
+          "clean_word": "itself",
+          "phonemes": "\u026ats\u02c8\u025blf",
+          "start": 21.693,
+          "end": 22.118,
+          "duration": 0.425,
+          "frame_ahead_trigger": 22.103
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 22.118,
+          "end": 22.313,
+          "duration": 0.195,
+          "frame_ahead_trigger": 22.528
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 22.313,
+          "end": 22.438,
+          "duration": 0.125,
+          "frame_ahead_trigger": 22.723
+        },
+        {
+          "word": "wisdom",
+          "clean_word": "wisdom",
+          "phonemes": "w\u02c8\u026azd\u0259m",
+          "start": 22.438,
+          "end": 22.848,
+          "duration": 0.41,
+          "frame_ahead_trigger": 22.848
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 22.848,
+          "end": 23.033,
+          "duration": 0.185,
+          "frame_ahead_trigger": 23.258
+        },
+        {
+          "word": "guide",
+          "clean_word": "guide",
+          "phonemes": "\u0261\u02c8a\u026ad",
+          "start": 23.033,
+          "end": 23.263,
+          "duration": 0.23,
+          "frame_ahead_trigger": 23.443
         },
         {
           "word": "the",
           "clean_word": "the",
           "phonemes": "\u00f0\u0259",
-          "start": 26.101,
-          "end": 26.226,
-          "duration": 0.125,
-          "frame_ahead_trigger": 26.511
-        },
-        {
-          "word": "agent",
-          "clean_word": "agent",
-          "phonemes": "\u02c8e\u026ad\u0292\u0259nt",
-          "start": 26.226,
-          "end": 26.626,
-          "duration": 0.4,
-          "frame_ahead_trigger": 26.636
-        },
-        {
-          "word": "dynamically",
-          "clean_word": "dynamically",
-          "phonemes": "da\u026an\u02c8\u00e6m\u026akli",
-          "start": 26.626,
-          "end": 27.281,
-          "duration": 0.655,
-          "frame_ahead_trigger": 27.036
-        },
-        {
-          "word": "adjusts",
-          "clean_word": "adjusts",
-          "phonemes": "\u0250d\u0292\u02c8\u028csts",
-          "start": 27.281,
-          "end": 27.711,
-          "duration": 0.43,
-          "frame_ahead_trigger": 27.691
-        },
-        {
-          "word": "its",
-          "clean_word": "its",
-          "phonemes": "\u026ats",
-          "start": 27.711,
-          "end": 27.971,
-          "duration": 0.26,
-          "frame_ahead_trigger": 28.121
+          "start": 23.263,
+          "end": 23.423,
+          "duration": 0.16,
+          "frame_ahead_trigger": 23.673
         },
         {
           "word": "next",
           "clean_word": "next",
           "phonemes": "n\u02c8\u025bkst",
-          "start": 27.971,
-          "end": 28.396,
-          "duration": 0.425,
-          "frame_ahead_trigger": 28.381
+          "start": 23.423,
+          "end": 23.678,
+          "duration": 0.255,
+          "frame_ahead_trigger": 23.833
         },
         {
-          "word": "action",
-          "clean_word": "action",
-          "phonemes": "\u02c8\u00e6k\u0283\u0259n",
-          "start": 28.396,
-          "end": 28.776,
-          "duration": 0.38,
-          "frame_ahead_trigger": 28.806
-        },
-        {
-          "word": "sequence",
-          "clean_word": "sequence",
-          "phonemes": "s\u02c8i\u02d0kw\u0259ns",
-          "start": 28.776,
-          "end": 29.248,
-          "duration": 0.472,
-          "frame_ahead_trigger": 29.186
-        },
-        {
-          "word": "without",
-          "clean_word": "without",
-          "phonemes": "w\u026a\u00f0\u02c8a\u028at",
-          "start": 29.248,
-          "end": 29.721,
-          "duration": 0.473,
-          "frame_ahead_trigger": 29.658
-        },
-        {
-          "word": "touching",
-          "clean_word": "touching",
-          "phonemes": "t\u02c8\u028ct\u0283\u026a\u014b",
-          "start": 29.721,
-          "end": 30.186,
-          "duration": 0.465,
-          "frame_ahead_trigger": 30.131
-        },
-        {
-          "word": "gradients.",
-          "clean_word": "gradients",
-          "phonemes": "\u0261\u0279\u02c8e\u026adi\u0259nts",
-          "start": 30.186,
-          "end": 30.756,
-          "duration": 0.57,
-          "frame_ahead_trigger": 30.596
+          "word": "attempt.",
+          "clean_word": "attempt",
+          "phonemes": "\u0250t\u02c8\u025bmpt",
+          "start": 23.678,
+          "end": 24.068,
+          "duration": 0.39,
+          "frame_ahead_trigger": 24.088
         }
       ],
-      "audio_duration": 7.81,
-      "slot_duration": 7.96
+      "audio_duration": 6.08,
+      "slot_duration": 6.23
     },
     {
       "beat_id": 5,
-      "text": "This verbal pivot drives pass@1 coding success to 91%, soundly crushing the previous SOTA baseline of 80%.",
-      "visual_focus": "A bar chart comparing Reflexion's performance against standard fine-tuned models.",
+      "text": "The result? 91% accuracy on HumanEval. It crushes the GPT-4 baseline by simply remembering what went wrong before.",
+      "visual_focus": "A bar chart showing Reflexion at 91% vs GPT-4 at 80%.",
       "highlight_words": {
-        "91%": "#34D399",
-        "crushing": "#34D399"
+        "91% accuracy": "#34D399"
       },
       "svo_action": {
-        "subject": "Agent Success",
+        "subject": "Reflexion",
         "action_verb": "surpasses",
-        "direct_object": "HumanEval Benchmark",
-        "anchor_word": "80%",
-        "semantic_role": "metric_evaluation"
+        "direct_object": "GPT-4",
+        "anchor_word": "victory",
+        "semantic_role": "result"
       },
       "visual_blueprint": {
         "layout": "horizontal_race_bars",
-        "title": "BENCHMARK SHOWDOWN: HUMANEVAL PASS@1",
-        "sub": "A bar chart comparing Reflexion's performance against",
+        "title": "BENCHMARK SHOWDOWN: HUMANEVAL",
+        "sub": "A bar chart showing Reflexion at 91% vs GPT-4 at 80%.",
         "params": {
-          "title": "BENCHMARK SHOWDOWN: HUMANEVAL PASS@1",
-          "sub": "A bar chart comparing Reflexion's performance against",
-          "metric_name": "Accuracy",
+          "title": "BENCHMARK SHOWDOWN: HUMANEVAL",
+          "sub": "A bar chart showing Reflexion at 91% vs GPT-4 at 80%.",
+          "metric_name": "Pass@1 Accuracy",
           "unit": "%",
           "contestants": [
             {
-              "name": "Reflexion",
+              "name": "Reflexion Agent",
               "value": 91.0,
               "display_val": "91%",
               "is_hero": true,
               "color": "#34D399"
             },
             {
-              "name": "GPT-4 (Baseline)",
+              "name": "GPT-4 Baseline",
               "value": 80.0,
               "display_val": "80%",
               "is_hero": false,
               "color": "#38BDF8"
             }
           ],
-          "delta_badge": "\u26a1 +11% SOTA EFFICIENCY GAIN"
+          "delta_badge": "\u26a1 +11.0% PERFORMANCE GAIN"
         }
       },
       "thriller_role": "empirical_payoff",
@@ -956,449 +969,439 @@
       "motif_type": "horizontal_race_bars",
       "kinetic_action": "bar_fill",
       "motif_params": {
-        "title": "BENCHMARK SHOWDOWN: HUMANEVAL PASS@1",
-        "sub": "A bar chart comparing Reflexion's performance against",
-        "metric_name": "Accuracy",
+        "title": "BENCHMARK SHOWDOWN: HUMANEVAL",
+        "sub": "A bar chart showing Reflexion at 91% vs GPT-4 at 80%.",
+        "metric_name": "Pass@1 Accuracy",
         "unit": "%",
         "contestants": [
           {
-            "name": "Reflexion",
+            "name": "Reflexion Agent",
             "value": 91.0,
             "display_val": "91%",
             "is_hero": true,
             "color": "#34D399"
           },
           {
-            "name": "GPT-4 (Baseline)",
+            "name": "GPT-4 Baseline",
             "value": 80.0,
             "display_val": "80%",
             "is_hero": false,
             "color": "#38BDF8"
           }
         ],
-        "delta_badge": "\u26a1 +11% SOTA EFFICIENCY GAIN"
+        "delta_badge": "\u26a1 +11.0% PERFORMANCE GAIN"
       },
-      "start": 30.98,
-      "end": 38.94,
-      "duration": 7.96,
+      "start": 24.41,
+      "end": 31.41,
+      "duration": 7.0,
       "word_timings": [
         {
-          "word": "This",
-          "clean_word": "this",
-          "phonemes": "\u00f0\u02c8\u026as",
-          "start": 30.989,
-          "end": 31.314,
-          "duration": 0.325,
-          "frame_ahead_trigger": 31.549
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 24.418,
+          "end": 24.618,
+          "duration": 0.2,
+          "frame_ahead_trigger": 24.978
         },
         {
-          "word": "verbal",
-          "clean_word": "verbal",
-          "phonemes": "v\u02c8\u025c\u02d0b\u0259l",
-          "start": 31.314,
-          "end": 31.734,
-          "duration": 0.42,
-          "frame_ahead_trigger": 31.874
+          "word": "result?",
+          "clean_word": "result",
+          "phonemes": "\u0279\u026az\u02c8\u028clt",
+          "start": 24.618,
+          "end": 24.843,
+          "duration": 0.225,
+          "frame_ahead_trigger": 25.178
         },
         {
-          "word": "pivot",
-          "clean_word": "pivot",
-          "phonemes": "p\u02c8\u026av\u0259t",
-          "start": 31.734,
-          "end": 32.234,
-          "duration": 0.5,
-          "frame_ahead_trigger": 32.294
-        },
-        {
-          "word": "drives",
-          "clean_word": "drives",
-          "phonemes": "d\u0279\u02c8a\u026avz",
-          "start": 32.234,
-          "end": 32.654,
-          "duration": 0.42,
-          "frame_ahead_trigger": 32.794
-        },
-        {
-          "word": "pass@1",
-          "clean_word": "pass1",
-          "phonemes": "p\u02c8\u00e6s w\u02c8\u028cn",
-          "start": 32.654,
-          "end": 33.339,
-          "duration": 0.685,
-          "frame_ahead_trigger": 33.214
-        },
-        {
-          "word": "coding",
-          "clean_word": "coding",
-          "phonemes": "k\u02c8o\u028ad\u026a\u014b",
-          "start": 33.339,
-          "end": 33.734,
-          "duration": 0.395,
-          "frame_ahead_trigger": 33.899
-        },
-        {
-          "word": "success",
-          "clean_word": "success",
-          "phonemes": "s\u0259ks\u02c8\u025bs",
-          "start": 33.734,
-          "end": 34.404,
-          "duration": 0.67,
-          "frame_ahead_trigger": 34.294
-        },
-        {
-          "word": "to",
-          "clean_word": "to",
-          "phonemes": "tu\u02d0",
-          "start": 34.404,
-          "end": 34.529,
-          "duration": 0.125,
-          "frame_ahead_trigger": 34.964
-        },
-        {
-          "word": "91%,",
+          "word": "91%",
           "clean_word": "91",
           "phonemes": "n\u02c8a\u026anti w\u02c8\u028cn",
-          "start": 34.529,
-          "end": 35.529,
-          "duration": 1.0,
-          "frame_ahead_trigger": 35.089
+          "start": 24.843,
+          "end": 25.528,
+          "duration": 0.685,
+          "frame_ahead_trigger": 25.403
         },
         {
-          "word": "soundly",
-          "clean_word": "soundly",
-          "phonemes": "s\u02c8a\u028andli",
-          "start": 35.529,
-          "end": 35.964,
-          "duration": 0.435,
-          "frame_ahead_trigger": 36.089
+          "word": "accuracy",
+          "clean_word": "accuracy",
+          "phonemes": "\u02c8\u00e6kj\u028a\u0279\u0259si",
+          "start": 25.528,
+          "end": 26.038,
+          "duration": 0.51,
+          "frame_ahead_trigger": 26.088
         },
         {
-          "word": "crushing",
-          "clean_word": "crushing",
-          "phonemes": "k\u0279\u02c8\u028c\u0283\u026a\u014b",
-          "start": 35.964,
-          "end": 36.494,
-          "duration": 0.53,
-          "frame_ahead_trigger": 36.524
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 26.038,
+          "end": 26.233,
+          "duration": 0.195,
+          "frame_ahead_trigger": 26.598
+        },
+        {
+          "word": "HumanEval.",
+          "clean_word": "humaneval",
+          "phonemes": "hj\u02c8u\u02d0m\u0259n \u026av\u02c8\u00e6l",
+          "start": 26.233,
+          "end": 26.924,
+          "duration": 0.691,
+          "frame_ahead_trigger": 26.793
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 26.924,
+          "end": 27.031,
+          "duration": 0.107,
+          "frame_ahead_trigger": 27.484
+        },
+        {
+          "word": "crushes",
+          "clean_word": "crushes",
+          "phonemes": "k\u0279\u02c8\u028c\u0283\u1d7bz",
+          "start": 27.031,
+          "end": 27.463,
+          "duration": 0.432,
+          "frame_ahead_trigger": 27.591
         },
         {
           "word": "the",
           "clean_word": "the",
           "phonemes": "\u00f0\u0259",
-          "start": 36.494,
-          "end": 36.714,
-          "duration": 0.22,
-          "frame_ahead_trigger": 37.054
+          "start": 27.463,
+          "end": 27.511,
+          "duration": 0.048,
+          "frame_ahead_trigger": 28.023
         },
         {
-          "word": "previous",
-          "clean_word": "previous",
-          "phonemes": "p\u0279\u02c8i\u02d0vi\u0259s",
-          "start": 36.714,
-          "end": 37.324,
-          "duration": 0.61,
-          "frame_ahead_trigger": 37.274
-        },
-        {
-          "word": "SOTA",
-          "clean_word": "sota",
-          "phonemes": "s\u02c8o\u028a\u027e\u0259",
-          "start": 37.324,
-          "end": 37.689,
-          "duration": 0.365,
-          "frame_ahead_trigger": 37.884
+          "word": "GPT-4",
+          "clean_word": "gpt4",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0 f\u02c8\u0254\u02d0\u0279",
+          "start": 27.511,
+          "end": 28.518,
+          "duration": 1.007,
+          "frame_ahead_trigger": 28.071
         },
         {
           "word": "baseline",
           "clean_word": "baseline",
           "phonemes": "b\u02c8e\u026asla\u026an",
-          "start": 37.689,
-          "end": 38.389,
-          "duration": 0.7,
-          "frame_ahead_trigger": 38.249
+          "start": 28.518,
+          "end": 29.113,
+          "duration": 0.595,
+          "frame_ahead_trigger": 29.078
         },
         {
-          "word": "of",
-          "clean_word": "of",
-          "phonemes": "\u028cv",
-          "start": 38.389,
-          "end": 38.491,
-          "duration": 0.103,
-          "frame_ahead_trigger": 38.949
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 29.113,
+          "end": 29.217,
+          "duration": 0.104,
+          "frame_ahead_trigger": 29.673
         },
         {
-          "word": "80%.",
-          "clean_word": "80",
-          "phonemes": "\u02c8e\u026a\u027ei",
-          "start": 38.491,
-          "end": 38.849,
-          "duration": 0.357,
-          "frame_ahead_trigger": 39.051
+          "word": "simply",
+          "clean_word": "simply",
+          "phonemes": "s\u02c8\u026ampli",
+          "start": 29.217,
+          "end": 29.633,
+          "duration": 0.416,
+          "frame_ahead_trigger": 29.777
+        },
+        {
+          "word": "remembering",
+          "clean_word": "remembering",
+          "phonemes": "\u0279\u1d7bm\u02c8\u025bmb\u025a\u0279\u026a\u014b",
+          "start": 29.633,
+          "end": 30.183,
+          "duration": 0.55,
+          "frame_ahead_trigger": 30.193
+        },
+        {
+          "word": "what",
+          "clean_word": "what",
+          "phonemes": "w\u02cc\u028ct",
+          "start": 30.183,
+          "end": 30.488,
+          "duration": 0.305,
+          "frame_ahead_trigger": 30.743
+        },
+        {
+          "word": "went",
+          "clean_word": "went",
+          "phonemes": "w\u02c8\u025bnt",
+          "start": 30.488,
+          "end": 30.648,
+          "duration": 0.16,
+          "frame_ahead_trigger": 31.048
+        },
+        {
+          "word": "wrong",
+          "clean_word": "wrong",
+          "phonemes": "\u0279\u02c8\u0254\u014b",
+          "start": 30.648,
+          "end": 30.87,
+          "duration": 0.222,
+          "frame_ahead_trigger": 31.208
+        },
+        {
+          "word": "before.",
+          "clean_word": "before",
+          "phonemes": "b\u1d7bf\u02c8\u0254\u02d0\u0279",
+          "start": 30.87,
+          "end": 31.243,
+          "duration": 0.373,
+          "frame_ahead_trigger": 31.43
         }
       ],
-      "audio_duration": 7.96,
-      "slot_duration": 8.11
+      "audio_duration": 7.0,
+      "slot_duration": 7.15
     },
     {
       "beat_id": 6,
-      "text": "Follow machinoAI to see how we bypass weight bloat with smarter, verbal, and recursive agent architectures.",
-      "visual_focus": "The loop icon rotating back to the start.",
+      "text": "Follow machinoAI for daily deep-dives into how modern AI actually learns under the hood.",
+      "visual_focus": "A clean, minimalist logo animation with a 'Subscribe' prompt.",
       "highlight_words": {
-        "bypass": "#38BDF8",
-        "recursive": "#38BDF8"
+        "machinoAI": "#F59E0B"
       },
       "svo_action": {
         "subject": "Viewer",
-        "action_verb": "loops",
-        "direct_object": "System Feed",
-        "anchor_word": "architectures",
-        "semantic_role": "agent_action"
+        "action_verb": "follows",
+        "direct_object": "machinoAI",
+        "anchor_word": "deep-dives",
+        "semantic_role": "call_to_action"
       },
       "visual_blueprint": {
-        "layout": "neural_activation_wave",
-        "title": "JOIN THE RECURSION",
-        "sub": "Next-level agent architectures",
-        "accent_color": "#38BDF8",
-        "params": {
-          "input_label": "Concept",
-          "hidden_label": "Reflection",
-          "output_label": "Iteration"
-        }
+        "layout": "projection_rays",
+        "title": "STAY AHEAD",
+        "sub": "Daily architectural insights",
+        "accent_color": "#F59E0B",
+        "params": {}
       },
       "thriller_role": "open_loop_outro",
       "act": 4,
-      "start": 39.09,
-      "end": 45.93,
-      "duration": 6.85,
+      "start": 31.56,
+      "end": 36.31,
+      "duration": 4.76,
       "word_timings": [
         {
           "word": "Follow",
           "clean_word": "follow",
           "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
-          "start": 39.126,
-          "end": 39.636,
-          "duration": 0.51,
-          "frame_ahead_trigger": 39.836
+          "start": 31.555,
+          "end": 32.0,
+          "duration": 0.445,
+          "frame_ahead_trigger": 32.265
         },
         {
           "word": "machinoAI",
           "clean_word": "machinoai",
           "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
-          "start": 39.636,
-          "end": 40.574,
-          "duration": 0.938,
-          "frame_ahead_trigger": 40.346
+          "start": 32.0,
+          "end": 32.775,
+          "duration": 0.775,
+          "frame_ahead_trigger": 32.71
         },
         {
-          "word": "to",
-          "clean_word": "to",
-          "phonemes": "tu\u02d0",
-          "start": 40.574,
-          "end": 40.741,
-          "duration": 0.167,
-          "frame_ahead_trigger": 41.284
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 32.775,
+          "end": 32.94,
+          "duration": 0.165,
+          "frame_ahead_trigger": 33.485
         },
         {
-          "word": "see",
-          "clean_word": "see",
-          "phonemes": "s\u02c8i\u02d0",
-          "start": 40.741,
-          "end": 41.056,
-          "duration": 0.315,
-          "frame_ahead_trigger": 41.451
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 32.94,
+          "end": 33.24,
+          "duration": 0.3,
+          "frame_ahead_trigger": 33.65
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 33.24,
+          "end": 33.71,
+          "duration": 0.47,
+          "frame_ahead_trigger": 33.95
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 33.71,
+          "end": 33.97,
+          "duration": 0.26,
+          "frame_ahead_trigger": 34.42
         },
         {
           "word": "how",
           "clean_word": "how",
           "phonemes": "h\u02c8a\u028a",
-          "start": 41.056,
-          "end": 41.306,
+          "start": 33.97,
+          "end": 34.075,
+          "duration": 0.105,
+          "frame_ahead_trigger": 34.68
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 34.075,
+          "end": 34.425,
+          "duration": 0.35,
+          "frame_ahead_trigger": 34.785
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 34.425,
+          "end": 34.801,
+          "duration": 0.376,
+          "frame_ahead_trigger": 35.135
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 34.801,
+          "end": 35.295,
+          "duration": 0.494,
+          "frame_ahead_trigger": 35.511
+        },
+        {
+          "word": "learns",
+          "clean_word": "learns",
+          "phonemes": "l\u02c8\u025c\u02d0nz",
+          "start": 35.295,
+          "end": 35.612,
+          "duration": 0.317,
+          "frame_ahead_trigger": 36.005
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 35.612,
+          "end": 35.855,
+          "duration": 0.243,
+          "frame_ahead_trigger": 36.322
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 35.855,
+          "end": 35.92,
+          "duration": 0.065,
+          "frame_ahead_trigger": 36.565
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 35.92,
+          "end": 36.17,
           "duration": 0.25,
-          "frame_ahead_trigger": 41.766
-        },
-        {
-          "word": "we",
-          "clean_word": "we",
-          "phonemes": "wi\u02d0",
-          "start": 41.306,
-          "end": 41.516,
-          "duration": 0.21,
-          "frame_ahead_trigger": 42.016
-        },
-        {
-          "word": "bypass",
-          "clean_word": "bypass",
-          "phonemes": "b\u02c8a\u026ap\u00e6s",
-          "start": 41.516,
-          "end": 41.776,
-          "duration": 0.26,
-          "frame_ahead_trigger": 42.226
-        },
-        {
-          "word": "weight",
-          "clean_word": "weight",
-          "phonemes": "w\u02c8e\u026at",
-          "start": 41.776,
-          "end": 42.21,
-          "duration": 0.434,
-          "frame_ahead_trigger": 42.486
-        },
-        {
-          "word": "bloat",
-          "clean_word": "bloat",
-          "phonemes": "bl\u02c8o\u028at",
-          "start": 42.21,
-          "end": 42.626,
-          "duration": 0.416,
-          "frame_ahead_trigger": 42.92
-        },
-        {
-          "word": "with",
-          "clean_word": "with",
-          "phonemes": "w\u026a\u00f0",
-          "start": 42.626,
-          "end": 42.746,
-          "duration": 0.12,
-          "frame_ahead_trigger": 43.336
-        },
-        {
-          "word": "smarter,",
-          "clean_word": "smarter",
-          "phonemes": "sm\u02c8\u0251\u02d0\u0279\u027e\u025a",
-          "start": 42.746,
-          "end": 43.276,
-          "duration": 0.53,
-          "frame_ahead_trigger": 43.456
-        },
-        {
-          "word": "verbal,",
-          "clean_word": "verbal",
-          "phonemes": "v\u02c8\u025c\u02d0b\u0259l",
-          "start": 43.276,
-          "end": 43.721,
-          "duration": 0.445,
-          "frame_ahead_trigger": 43.986
-        },
-        {
-          "word": "and",
-          "clean_word": "and",
-          "phonemes": "\u00e6nd",
-          "start": 43.721,
-          "end": 43.91,
-          "duration": 0.189,
-          "frame_ahead_trigger": 44.431
-        },
-        {
-          "word": "recursive",
-          "clean_word": "recursive",
-          "phonemes": "\u0279\u1d7bk\u02c8\u025c\u02d0s\u026av",
-          "start": 43.91,
-          "end": 44.531,
-          "duration": 0.621,
-          "frame_ahead_trigger": 44.62
-        },
-        {
-          "word": "agent",
-          "clean_word": "agent",
-          "phonemes": "\u02c8e\u026ad\u0292\u0259nt",
-          "start": 44.531,
-          "end": 45.061,
-          "duration": 0.53,
-          "frame_ahead_trigger": 45.241
-        },
-        {
-          "word": "architectures.",
-          "clean_word": "architectures",
-          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
-          "start": 45.061,
-          "end": 45.861,
-          "duration": 0.8,
-          "frame_ahead_trigger": 45.771
+          "frame_ahead_trigger": 36.63
         }
       ],
-      "audio_duration": 6.85,
-      "slot_duration": 6.84
+      "audio_duration": 4.76,
+      "slot_duration": 4.75
     }
   ],
   "math_formulas": [
     {
       "beat_id": 1,
-      "latex": "$C = \\sum_{i=1}^{T} \\mathrm{grad}(w_i)$",
+      "latex": "$\\Delta \\mathcal{L} = \\frac{\\partial}{\\partial W} \\mathrm{Error}$",
       "filename": "reflexion_verbal_rl_beat1_formula.svg",
       "fontsize": 24,
       "color": "#EF4444",
       "term_annotations": [
         {
-          "term": "C",
-          "label": "Compute Cost"
+          "term": "W",
+          "label": "Model Weights"
         },
         {
-          "term": "grad",
-          "label": "Backprop Effort"
+          "term": "\\mathcal{L}",
+          "label": "Loss Function"
         }
       ],
       "svg_filename": "reflexion_verbal_rl_beat1_formula.svg"
     },
     {
       "beat_id": 2,
-      "latex": "$\\mathcal{L}_{\\theta} = \\mathrm{MSE}(\\hat{y}, y)$",
+      "latex": "$\\mathcal{M}_{i} = \\emptyset$",
       "filename": "reflexion_verbal_rl_beat2_formula.svg",
       "fontsize": 24,
       "color": "#EF4444",
       "term_annotations": [
         {
-          "term": "\\mathcal{L}_{\\theta}",
-          "label": "Weight Loss"
+          "term": "\\mathcal{M}_{i}",
+          "label": "Empty Memory Buffer"
         }
       ],
       "svg_filename": "reflexion_verbal_rl_beat2_formula.svg"
     },
     {
       "beat_id": 3,
-      "latex": "$\\mathrm{Mem}_{\\mathrm{t+1}} = [\\mathrm{Mem}_{\\mathrm{t}}, \\mathrm{Reflect}(\\mathrm{FB})]$",
+      "latex": "$\\mathcal{M}_{t+1} = \\mathrm{Update}(\\mathcal{M}_t, \\mathrm{Reflection}(f_t))$",
       "filename": "reflexion_verbal_rl_beat3_formula.svg",
       "fontsize": 24,
       "color": "#34D399",
       "term_annotations": [
         {
-          "term": "FB",
-          "label": "Feedback"
+          "term": "f_t",
+          "label": "Task Feedback"
         },
         {
-          "term": "Reflect",
-          "label": "Linguistic Analysis"
+          "term": "\\mathcal{M}",
+          "label": "Episodic Buffer"
         }
       ],
       "svg_filename": "reflexion_verbal_rl_beat3_formula.svg"
     },
     {
       "beat_id": 4,
-      "latex": "$a_t = \\pi(\\mathrm{Obs}, \\mathrm{Mem}_{\\mathrm{t}})$",
+      "latex": "$a_t = \\pi(s_t, \\mathcal{M}_t)$",
       "filename": "reflexion_verbal_rl_beat4_formula.svg",
       "fontsize": 24,
       "color": "#F59E0B",
       "term_annotations": [
         {
-          "term": "a_t",
-          "label": "Action"
+          "term": "\\pi",
+          "label": "Reflective Policy"
         },
         {
-          "term": "\\pi",
-          "label": "Policy"
+          "term": "a_t",
+          "label": "Corrected Action"
         }
       ],
       "svg_filename": "reflexion_verbal_rl_beat4_formula.svg"
     },
     {
       "beat_id": 5,
-      "latex": "$\\mathrm{Acc} = \\frac{1}{N} \\sum_{i=1}^N \\mathrm{Pass}(i)$",
+      "latex": "$\\mathrm{Pass@1} = 91\\% > 80\\%$",
       "filename": "reflexion_verbal_rl_beat5_formula.svg",
       "fontsize": 24,
       "color": "#34D399",
       "term_annotations": [
         {
-          "term": "Pass",
-          "label": "Binary Indicator"
+          "term": "91\\%",
+          "label": "Reflexion Agent"
+        },
+        {
+          "term": "80\\%",
+          "label": "Standard SOTA"
         }
       ],
       "svg_filename": "reflexion_verbal_rl_beat5_formula.svg"
@@ -1446,67 +1449,67 @@
     "visual_entities": {
       "clusters": [
         {
-          "name": "Agent State",
-          "color": "#38BDF8",
+          "name": "WEIGHTS",
+          "color": "#EF4444",
+          "items": [
+            "Backprop",
+            "Gradient",
+            "Training"
+          ]
+        },
+        {
+          "name": "VERBAL RL",
+          "color": "#34D399",
           "items": [
             "Prompt",
-            "Buffer",
-            "Action"
+            "Reflection",
+            "Memory"
           ]
         },
         {
-          "name": "Environment",
-          "color": "#10B981",
-          "items": [
-            "Compiler",
-            "API",
-            "Feedback"
-          ]
-        },
-        {
-          "name": "Memory",
+          "name": "AGENT",
           "color": "#F59E0B",
           "items": [
-            "Reflections",
-            "History",
-            "Context"
+            "Decision",
+            "Action",
+            "Goal"
           ]
         }
       ],
       "incoming_token": {
-        "label": "Token: \"error_msg\"",
-        "target_cluster": "Memory",
-        "token": "\"error_msg\""
+        "label": "Token: \"error_type\"",
+        "target_cluster": "VERBAL RL",
+        "token": "\"error_type\""
       },
       "bottleneck_tokens": [
         {
-          "word": "Token 'weights'",
+          "word": "Token 'NoMemory'",
           "color": "#EF4444"
         },
         {
-          "word": "Token 'grads'",
-          "color": "#EF4444"
+          "word": "Token 'HardReset'",
+          "color": "#F59E0B"
         }
       ]
     },
     "model_a": "Reflexion Agent",
     "model_a_specs": [
       "Verbal Memory",
-      "Prompt Engineering",
-      "No Fine-tuning"
+      "Self-Correction",
+      "Prompt-driven"
     ],
-    "model_b": "Classical TAMP / Fine-tuned LLM",
+    "model_b": "Standard Agent",
     "model_b_specs": [
-      "Weight Updates",
-      "Gradient Descent",
-      "High Compute"
+      "Weight-update reliant",
+      "Isolated Trials",
+      "Training Heavy"
     ],
-    "divide_title": "POLICY VS PROMPT DIVIDE",
+    "divide_title": "WEIGHT-BASED VS VERBAL RL DIVIDE",
     "model_a_stat": "91%",
-    "model_a_stat_label": "Pass@1 SUCCESS",
+    "model_a_stat_label": "TASK SUCCESS",
     "model_b_stat": "80%",
     "model_b_stat_label": "BASELINE SUCCESS",
-    "efficiency_badge": "\u26a1 100x FASTER ITERATION",
+    "efficiency_badge": "\u26a1 0x WEIGHT UPDATES",
     "benchmarks": [
       {
         "name": "HumanEval",
@@ -1515,77 +1518,77 @@
       },
       {
         "name": "Training Time",
-        "score_a": "Zero",
-        "score_b": "High"
+        "score_a": "0 hrs",
+        "score_b": "Many hrs"
       },
       {
-        "name": "Method",
-        "score_a": "Verbal",
-        "score_b": "Weight"
+        "name": "Logic Stability",
+        "score_a": "High",
+        "score_b": "Baseline"
       }
     ],
-    "scale_metric": "91",
-    "scale_label": "PASS@1 ACCURACY",
-    "bottleneck_title": "MONOLITHIC WEIGHT BRUTE-FORCE",
-    "bottleneck_desc": "Entangled gradient updates",
-    "solution_title": "VERBAL REFLECTION MEMORY",
-    "solution_components": "Episodic Linguistic Feedback",
-    "mechanism_title": "STRUCTURED ACTION REFINEMENT",
+    "scale_metric": "91%",
+    "scale_label": "Success Rate",
+    "bottleneck_title": "MONOLITHIC WEIGHT BOTTLENECK",
+    "bottleneck_desc": "Training overhead prevents rapid adaptation",
+    "solution_title": "VERBAL REFLECTION ARCHITECTURE",
+    "solution_components": "Monosemantic episodic memory",
+    "mechanism_title": "STRUCTURED PROMPT RECURSION",
     "payoff_stat": "91%",
-    "payoff_label": "PASS@1 SUCCESS",
-    "payoff_sub": "Outperforming GPT-4 on HumanEval",
+    "payoff_label": "SUCCESS RATE",
+    "payoff_sub": "Outperforming GPT-4 baseline",
     "payoff_hero_stat": 91.0,
     "payoff_hero_label": "Reflexion Agent",
     "payoff_base_stat": 80.0,
     "payoff_base_label": "GPT-4 Baseline",
-    "payoff_delta_badge": "\u26a1 +11% PERFORMANCE GAIN",
-    "challenger": "Reflexion",
-    "incumbent": "GPT-4"
+    "payoff_delta_badge": "\u26a1 +11% PASS@1 GAIN",
+    "challenger": "Reflexion Agent",
+    "incumbent": "GPT-4 Baseline"
   },
   "benchmark_comparison": {
-    "title": "BENCHMARK SHOWDOWN: HUMANEVAL PASS@1",
-    "metric_name": "Accuracy",
+    "title": "BENCHMARK SHOWDOWN: HUMANEVAL",
+    "metric_name": "Pass@1 Accuracy",
     "unit": "%",
     "contestants": [
       {
-        "name": "Reflexion",
+        "name": "Reflexion Agent",
         "value": 91.0,
         "display_val": "91%",
         "is_hero": true,
         "color": "#34D399"
       },
       {
-        "name": "GPT-4 (Baseline)",
+        "name": "GPT-4 Baseline",
         "value": 80.0,
         "display_val": "80%",
         "is_hero": false,
         "color": "#38BDF8"
       }
     ],
-    "delta_badge": "\u26a1 +11% SOTA EFFICIENCY GAIN",
+    "delta_badge": "\u26a1 +11.0% PERFORMANCE GAIN",
     "radar_axes": [
-      "Pass@1",
-      "Speed",
-      "Compute Cost",
-      "Flexibility",
-      "Stability"
+      "Accuracy",
+      "Adaptability",
+      "Training Cost",
+      "Latency",
+      "Episodic Recall"
     ]
   },
   "code_snippet": {
     "filename": "reflexion_loop.py",
     "language": "python",
     "lines": [
-      "def reflect(feedback):",
-      "critique = analyze(feedback)",
-      "memory.append(critique)",
-      "return prompt_with_memory(memory)"
+      "def run_reflexion(task):",
+      "memory = retrieve_episodic(task)",
+      "thought = generate_reflection(task, memory)",
+      "return prompt_model(thought)"
     ],
     "highlight_lines": [
       2,
       3
     ],
-    "trace_register": "\u26a1 VERBAL REINFORCEMENT KERNEL",
-    "explanation": "Injecting critiques into context instead of weights"
+    "trace_register": "\u26a1 VERBAL REINFORCEMENT INJECTION",
+    "explanation": "Episodic memory buffers guiding logic"
   },
   "arxiv_id": "2303.11366",
   "paper_figures": [
@@ -1650,89 +1653,20 @@
       "score": 105
     }
   ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 9.2,
+    "final_retention_hook_score": 9.0,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Dude, this was actually so clean. The goldfish opening immediately hooked me because it's punchy, funny, and instantly relatable if you've ever watched an LLM repeat the exact same dumb syntax error four times in a row. You explained Reflexion without dumbing it down into baby talk or drowning me in backprop math. Swapping weight updates for self-reflective prompting clicked right away."
+  },
   "hook_gating": {
-    "selected_hook": "What happens when your vector database only sees isolated chunks? Replacing Weight Updates with Verbal RL fixes retrieval with a 91% boost.",
-    "verdict": 66,
+    "selected_hook": "Most AI agents are goldfish. Resetting their entire brain every time they fail a simple task.",
+    "verdict": 58,
     "band": "WORKABLE",
-    "formula": "The Statistic",
-    "properties": {
-      "SPECIFICITY": 74,
-      "ADDRESS": 76,
-      "STAKES": 55,
-      "CURIOSITY": 60,
-      "BREVITY": 100
-    },
-    "weakest_property": "STAKES",
-    "candidates_evaluated": 11,
-    "kept_bespoke": false,
-    "rankings": [
-      {
-        "hook": "What happens when your vector database only sees isolated chunks? Replacing Weight Updates with Verbal RL fixes retrieval with a 91% boost.",
-        "verdict": 66,
-        "band": "WORKABLE",
-        "formula": "The Statistic"
-      },
-      {
-        "hook": "Standard RAG has a fatal context fragmentation flaw, but Replacing Weight Updates with Verbal RL delivers a 91% lead.",
-        "verdict": 65,
-        "band": "WORKABLE",
-        "formula": "The Statistic"
-      },
-      {
-        "hook": "How did researchers use Replacing Weight Updates with Verbal RL to achieve a 91% leap in retrieval accuracy?",
-        "verdict": 65,
-        "band": "WORKABLE",
-        "formula": "The Question"
-      },
-      {
-        "hook": "Does Replacing Weight Updates with Verbal RL actually outperform standard vector retrieval by 91%, or is it just hype?",
-        "verdict": 64,
-        "band": "WORKABLE",
-        "formula": "The Question"
-      },
-      {
-        "hook": "Why does standard vector search break down when summarizing an entire corpus? Enter Replacing Weight Updates with Verbal RL.",
-        "verdict": 61,
-        "band": "WORKABLE",
-        "formula": "The Question"
-      },
-      {
-        "hook": "Standard systems hit an invisible wall right here: Large language models (LLMs) have been increasingly used to interact with external environments (e.g., games, compilers, APIs) as goal-driven agents.",
-        "verdict": 54,
-        "band": "WORKABLE",
-        "formula": "Before and After"
-      },
-      {
-        "hook": "Why is Replacing Weight Updates with Verbal RL a major breakthrough? Because large language models (LLMs) have been increasingly used to interact with external environments (e.g., games, compilers, APIs) as goal-driven agents.",
-        "verdict": 48,
-        "band": "WEAK",
-        "formula": "The Question"
-      },
-      {
-        "hook": "Updating millions of parameters to learn from failure is a massive, expensive, and unnecessary compute nightmare.",
-        "verdict": 44,
-        "band": "WEAK",
-        "formula": "Unclassified"
-      },
-      {
-        "hook": "What happens when updating millions of parameters to learn from failure is a massive, expensive, and unnecessary compute nightmare?",
-        "verdict": 44,
-        "band": "WEAK",
-        "formula": "The Question"
-      },
-      {
-        "hook": "Did you know updating millions of parameters to learn from failure is a massive, expensive, and unnecessary compute nightmare?",
-        "verdict": 44,
-        "band": "WEAK",
-        "formula": "The Question"
-      },
-      {
-        "hook": "Everyone thought standard methods were enough, until Replacing Weight Updates with Verbal RL proved: however, it remains challenging for these language agents to quickly and efficiently learn from trial-and-error as traditional reinforcement learning methods require extensive training samples and expensive model fine-tuning.",
-        "verdict": 34,
-        "band": "WEAK",
-        "formula": "Unclassified"
-      }
-    ]
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
   },
   "entity_registry": [
     {
