@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-24 | **Timestamp:** 2026-10-24 01:50:52 UTC
+**Date:** 2026-10-24 | **Timestamp:** 2026-10-24 04:59:56 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: OSWorld: The Benchmark Powering Computer-Using AI Agents
-- **Topic Queue Part:** `osworld_part_1_computer_using_agents` (arXiv: [2404.07972](https://arxiv.org/abs/2404.07972))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/_uA209jryTI](https://youtube.com/shorts/_uA209jryTI) (`_uA209jryTI`)
-- **High-CTR Poster:** [osworld_benchmark_agents_poster.png](public/thumbnails/osworld_benchmark_agents_poster.png)
+### Reel 1: AI Agent Architecture: The Unified Brain, Perception & Action Triad
+- **Topic Queue Part:** `llm_agent_survey_part_1_unified_brain_perception_action` (arXiv: [2309.07864](https://arxiv.org/abs/2309.07864))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/EVHFsuHODR8](https://youtube.com/shorts/EVHFsuHODR8) (`EVHFsuHODR8`)
+- **High-CTR Poster:** [agent_architecture_unification_poster.png](public/thumbnails/agent_architecture_unification_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `benchmark_news`
-- **Editorial Hook:** *AI Agents: OSWorld Mini-Series 1/1: OSWorld: The Benchmark Powering Computer-Using AI Agents*
-- **Everyday Analogy:** *Operating system and GUI control: multimodal visual grounding, OS event dispatching, and navigating real-world desktop environments.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_osworld_benchmark_agents_benchmark_news.mp4`
+- **Category:** `architecture_breakdown`
+- **Editorial Hook:** *AI Agents: Foundation Survey Mini-Series 1/1: AI Agent Architecture: The Unified Brain, Perception & Action Triad*
+- **Everyday Analogy:** *The universal taxonomy of autonomous agents: how cognitive architectures unify profile memory, multimodal perception, and tool actuation.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_agent_architecture_unification_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
