@@ -1,0 +1,1841 @@
+{
+  "id": "osworld_benchmark_agents",
+  "title": "OSWorld: The Computer-Using Agent Benchmark",
+  "category": "benchmark_news",
+  "domain_taxonomy": "algorithmic_search",
+  "hook_tag": "BENCHMARK NEWS",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Your frontier AI can write quantum physics essays. But ask it to organize desktop files? It fails instantly.",
+      "visual_focus": "Split screen showing LLM acing an academic exam on one side, while clicking frantically on an empty desktop folder on the other.",
+      "highlight_words": {
+        "fails instantly": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Agent",
+        "action_verb": "fails",
+        "direct_object": "desktop files",
+        "anchor_word": "fails",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "THE DESKTOP PARADOX",
+        "sub": "Frontier models ace language tests but crumble on real OS tasks",
+        "accent_color": "#34D399",
+        "params": {
+          "metric_name": "Success Rate",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "Human Operator",
+              "value": 72.36,
+              "display_val": "72.36%",
+              "is_hero": true,
+              "color": "#34D399"
+            },
+            {
+              "name": "Best SOTA Agent",
+              "value": 12.24,
+              "display_val": "12.24%",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 60% GAP"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 62,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "horizontal_race_bars",
+        "title": "THE DESKTOP PARADOX",
+        "sub": "Frontier models ace language tests but crumble on real OS tasks",
+        "accent_color": "#34D399",
+        "metric_name": "Success Rate",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "Human Operator",
+            "value": 72.36,
+            "display_val": "72.36%",
+            "is_hero": true,
+            "color": "#34D399"
+          },
+          {
+            "name": "Best SOTA Agent",
+            "value": 12.24,
+            "display_val": "12.24%",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 60% GAP"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.42,
+      "duration": 6.42,
+      "word_timings": [
+        {
+          "word": "Your",
+          "clean_word": "your",
+          "phonemes": "j\u028a\u0279",
+          "start": 0.015,
+          "end": 0.135,
+          "duration": 0.12,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 0.135,
+          "end": 0.71,
+          "duration": 0.575,
+          "frame_ahead_trigger": 0.095
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 0.71,
+          "end": 1.07,
+          "duration": 0.36,
+          "frame_ahead_trigger": 0.67
+        },
+        {
+          "word": "can",
+          "clean_word": "can",
+          "phonemes": "k\u02c8\u00e6n",
+          "start": 1.07,
+          "end": 1.28,
+          "duration": 0.21,
+          "frame_ahead_trigger": 1.03
+        },
+        {
+          "word": "write",
+          "clean_word": "write",
+          "phonemes": "\u0279\u02c8a\u026at",
+          "start": 1.28,
+          "end": 1.675,
+          "duration": 0.395,
+          "frame_ahead_trigger": 1.24
+        },
+        {
+          "word": "quantum",
+          "clean_word": "quantum",
+          "phonemes": "kw\u02c8\u0254nt\u0259m",
+          "start": 1.675,
+          "end": 2.095,
+          "duration": 0.42,
+          "frame_ahead_trigger": 1.635
+        },
+        {
+          "word": "physics",
+          "clean_word": "physics",
+          "phonemes": "f\u02c8\u026az\u026aks",
+          "start": 2.095,
+          "end": 2.55,
+          "duration": 0.455,
+          "frame_ahead_trigger": 2.055
+        },
+        {
+          "word": "essays.",
+          "clean_word": "essays",
+          "phonemes": "\u02c8\u025bse\u026az",
+          "start": 2.55,
+          "end": 2.853,
+          "duration": 0.303,
+          "frame_ahead_trigger": 2.51
+        },
+        {
+          "word": "But",
+          "clean_word": "but",
+          "phonemes": "b\u02cc\u028ct",
+          "start": 2.853,
+          "end": 3.08,
+          "duration": 0.227,
+          "frame_ahead_trigger": 2.813
+        },
+        {
+          "word": "ask",
+          "clean_word": "ask",
+          "phonemes": "\u02c8\u00e6sk",
+          "start": 3.08,
+          "end": 3.325,
+          "duration": 0.245,
+          "frame_ahead_trigger": 3.04
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 3.325,
+          "end": 3.42,
+          "duration": 0.095,
+          "frame_ahead_trigger": 3.285
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 3.42,
+          "end": 3.72,
+          "duration": 0.3,
+          "frame_ahead_trigger": 3.38
+        },
+        {
+          "word": "organize",
+          "clean_word": "organize",
+          "phonemes": "\u02c8\u0254\u02d0\u0279\u0261\u0259n\u02cca\u026az",
+          "start": 3.72,
+          "end": 4.335,
+          "duration": 0.615,
+          "frame_ahead_trigger": 3.68
+        },
+        {
+          "word": "desktop",
+          "clean_word": "desktop",
+          "phonemes": "d\u02c8\u025bskt\u0251\u02d0p",
+          "start": 4.335,
+          "end": 4.846,
+          "duration": 0.511,
+          "frame_ahead_trigger": 4.295
+        },
+        {
+          "word": "files?",
+          "clean_word": "files",
+          "phonemes": "f\u02c8a\u026alz",
+          "start": 4.846,
+          "end": 5.325,
+          "duration": 0.479,
+          "frame_ahead_trigger": 4.806
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 5.325,
+          "end": 5.329,
+          "duration": 0.004,
+          "frame_ahead_trigger": 5.285
+        },
+        {
+          "word": "fails",
+          "clean_word": "fails",
+          "phonemes": "f\u02c8e\u026alz",
+          "start": 5.329,
+          "end": 5.755,
+          "duration": 0.426,
+          "frame_ahead_trigger": 5.289
+        },
+        {
+          "word": "instantly.",
+          "clean_word": "instantly",
+          "phonemes": "\u02c8\u026anst\u0259ntli",
+          "start": 5.755,
+          "end": 6.295,
+          "duration": 0.54,
+          "frame_ahead_trigger": 5.715
+        }
+      ],
+      "audio_duration": 6.42,
+      "slot_duration": 6.57
+    },
+    {
+      "beat_id": 2,
+      "text": "Past benchmarks evaluated agents in toy synthetic sandboxes. In reality. Actual computer work demands navigating chaotic operating systems. Messy file paths. And cross-app workflows.",
+      "visual_focus": "Chalkboard showing a clean mock web browser cracking open into an overwhelming tangled web of file directories, OS settings, and active windows.",
+      "highlight_words": {
+        "toy synthetic sandboxes": "#F59E0B",
+        "chaotic operating systems": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Synthetic sandboxes",
+        "action_verb": "hide",
+        "direct_object": "real complexity",
+        "anchor_word": "chaotic",
+        "semantic_role": "causal_link"
+      },
+      "visual_blueprint": {
+        "layout": "projection_rays",
+        "title": "THE SIMULATION GAP",
+        "sub": "Toy environments hide the mess of live operating systems",
+        "accent_color": "#EF4444",
+        "params": {
+          "camera_label": "VLM Vision Encoder",
+          "focal_plane_label": "Input GUI Pixels",
+          "target_label": "Click Target"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "projection_rays",
+        "title": "THE SIMULATION GAP",
+        "sub": "Toy environments hide the mess of live operating systems",
+        "accent_color": "#EF4444",
+        "camera_label": "VLM Vision Encoder",
+        "focal_plane_label": "Input GUI Pixels",
+        "target_label": "Click Target"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.57,
+      "end": 18.24,
+      "duration": 11.67,
+      "word_timings": [
+        {
+          "word": "Past",
+          "clean_word": "past",
+          "phonemes": "p\u02c8\u00e6st",
+          "start": 6.596,
+          "end": 6.801,
+          "duration": 0.205,
+          "frame_ahead_trigger": 6.706
+        },
+        {
+          "word": "benchmarks",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 6.801,
+          "end": 7.676,
+          "duration": 0.875,
+          "frame_ahead_trigger": 6.911
+        },
+        {
+          "word": "evaluated",
+          "clean_word": "evaluated",
+          "phonemes": "\u026av\u02c8\u00e6lju\u02d0\u02cce\u026a\u027e\u1d7bd",
+          "start": 7.676,
+          "end": 8.541,
+          "duration": 0.865,
+          "frame_ahead_trigger": 7.786
+        },
+        {
+          "word": "agents",
+          "clean_word": "agents",
+          "phonemes": "\u02c8e\u026ad\u0292\u0259nts",
+          "start": 8.541,
+          "end": 9.056,
+          "duration": 0.515,
+          "frame_ahead_trigger": 8.651
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 9.056,
+          "end": 9.271,
+          "duration": 0.215,
+          "frame_ahead_trigger": 9.166
+        },
+        {
+          "word": "toy",
+          "clean_word": "toy",
+          "phonemes": "t\u02c8\u0254\u026a",
+          "start": 9.271,
+          "end": 9.606,
+          "duration": 0.335,
+          "frame_ahead_trigger": 9.381
+        },
+        {
+          "word": "synthetic",
+          "clean_word": "synthetic",
+          "phonemes": "s\u026an\u03b8\u02c8\u025b\u027e\u026ak",
+          "start": 9.606,
+          "end": 10.001,
+          "duration": 0.395,
+          "frame_ahead_trigger": 9.716
+        },
+        {
+          "word": "sandboxes.",
+          "clean_word": "sandboxes",
+          "phonemes": "s\u02c8\u00e6ndb\u0251\u02d0ks\u1d7bz",
+          "start": 10.001,
+          "end": 10.826,
+          "duration": 0.825,
+          "frame_ahead_trigger": 10.111
+        },
+        {
+          "word": "In",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 10.826,
+          "end": 10.921,
+          "duration": 0.095,
+          "frame_ahead_trigger": 10.936
+        },
+        {
+          "word": "reality.",
+          "clean_word": "reality",
+          "phonemes": "\u0279\u026a\u02c8\u00e6l\u1d7b\u027ei",
+          "start": 10.921,
+          "end": 11.576,
+          "duration": 0.655,
+          "frame_ahead_trigger": 11.031
+        },
+        {
+          "word": "Actual",
+          "clean_word": "actual",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259l",
+          "start": 11.576,
+          "end": 11.986,
+          "duration": 0.41,
+          "frame_ahead_trigger": 11.686
+        },
+        {
+          "word": "computer",
+          "clean_word": "computer",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0\u027e\u025a",
+          "start": 11.986,
+          "end": 12.691,
+          "duration": 0.705,
+          "frame_ahead_trigger": 12.096
+        },
+        {
+          "word": "work",
+          "clean_word": "work",
+          "phonemes": "w\u02c8\u025c\u02d0k",
+          "start": 12.691,
+          "end": 12.961,
+          "duration": 0.27,
+          "frame_ahead_trigger": 12.801
+        },
+        {
+          "word": "demands",
+          "clean_word": "demands",
+          "phonemes": "d\u1d7bm\u02c8\u00e6ndz",
+          "start": 12.961,
+          "end": 13.466,
+          "duration": 0.505,
+          "frame_ahead_trigger": 13.071
+        },
+        {
+          "word": "navigating",
+          "clean_word": "navigating",
+          "phonemes": "n\u02c8\u00e6v\u026a\u0261\u02cce\u026a\u027e\u026a\u014b",
+          "start": 13.466,
+          "end": 14.216,
+          "duration": 0.75,
+          "frame_ahead_trigger": 13.576
+        },
+        {
+          "word": "chaotic",
+          "clean_word": "chaotic",
+          "phonemes": "ke\u026a\u02c8\u0251\u02d0\u027e\u026ak",
+          "start": 14.216,
+          "end": 14.781,
+          "duration": 0.565,
+          "frame_ahead_trigger": 14.326
+        },
+        {
+          "word": "operating",
+          "clean_word": "operating",
+          "phonemes": "\u02c8\u0251\u02d0p\u025a\u0279\u02cce\u026a\u027e\u026a\u014b",
+          "start": 14.781,
+          "end": 15.596,
+          "duration": 0.815,
+          "frame_ahead_trigger": 14.891
+        },
+        {
+          "word": "systems.",
+          "clean_word": "systems",
+          "phonemes": "s\u02c8\u026ast\u0259mz",
+          "start": 15.596,
+          "end": 15.961,
+          "duration": 0.365,
+          "frame_ahead_trigger": 15.706
+        },
+        {
+          "word": "Messy",
+          "clean_word": "messy",
+          "phonemes": "m\u02c8\u025bsi",
+          "start": 15.961,
+          "end": 16.276,
+          "duration": 0.315,
+          "frame_ahead_trigger": 16.071
+        },
+        {
+          "word": "file",
+          "clean_word": "file",
+          "phonemes": "f\u02c8a\u026al",
+          "start": 16.276,
+          "end": 16.566,
+          "duration": 0.29,
+          "frame_ahead_trigger": 16.386
+        },
+        {
+          "word": "paths.",
+          "clean_word": "paths",
+          "phonemes": "p\u02c8\u00e6\u03b8s",
+          "start": 16.566,
+          "end": 16.876,
+          "duration": 0.31,
+          "frame_ahead_trigger": 16.676
+        },
+        {
+          "word": "And",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 16.876,
+          "end": 17.021,
+          "duration": 0.145,
+          "frame_ahead_trigger": 16.986
+        },
+        {
+          "word": "cross-app",
+          "clean_word": "crossapp",
+          "phonemes": "k\u0279\u02c8\u0254s\u00e6p",
+          "start": 17.021,
+          "end": 17.496,
+          "duration": 0.475,
+          "frame_ahead_trigger": 17.131
+        },
+        {
+          "word": "workflows.",
+          "clean_word": "workflows",
+          "phonemes": "w\u02c8\u025c\u02d0kflo\u028az",
+          "start": 17.496,
+          "end": 18.151,
+          "duration": 0.655,
+          "frame_ahead_trigger": 17.606
+        }
+      ],
+      "audio_duration": 11.67,
+      "slot_duration": 11.82
+    },
+    {
+      "beat_id": 3,
+      "text": "Enter OSWorld. It establishes the first reproducible. Interactive evaluation harness deployed directly inside live Ubuntu. Windows. And macOS environments.",
+      "visual_focus": "A sleek virtual OS container boot sequence initializing live Ubuntu, Windows, and macOS desktops with interactive input hooks.",
+      "highlight_words": {
+        "OSWorld": "#10B981",
+        "live Ubuntu, Windows, and macOS": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "OSWorld",
+        "action_verb": "deploys",
+        "direct_object": "live operating environments",
+        "anchor_word": "reproducible",
+        "semantic_role": "mechanism_intro"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "OSWORLD ARCHITECTURE",
+        "sub": "A sleek virtual OS container boot sequence initializing live Ubun",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/chalkboard_figures/fig_1_arch_figure_w_config_new.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/chalkboard_figures/fig_1_arch_figure_w_config_new.png",
+          "arxiv_id": "2404.07972",
+          "title": "OSWORLD ARCHITECTURE",
+          "sub": "A sleek virtual OS container boot sequence initializing live Ubun",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Arch Figure W Config New",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/chalkboard_figures/fig_1_arch_figure_w_config_new.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/chalkboard_figures/fig_1_arch_figure_w_config_new.png",
+        "arxiv_id": "2404.07972",
+        "title": "OSWORLD ARCHITECTURE",
+        "sub": "A sleek virtual OS container boot sequence initializing live Ubun",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Arch Figure W Config New",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 18.39,
+      "end": 28.59,
+      "duration": 10.2,
+      "word_timings": [
+        {
+          "word": "Enter",
+          "clean_word": "enter",
+          "phonemes": "\u02c8\u025bnt\u025a",
+          "start": 18.401,
+          "end": 18.676,
+          "duration": 0.275,
+          "frame_ahead_trigger": 18.661
+        },
+        {
+          "word": "OSWorld.",
+          "clean_word": "osworld",
+          "phonemes": "\u02cco\u028a\u02c8\u025bs w\u02c8\u025c\u02d0ld",
+          "start": 18.676,
+          "end": 19.523,
+          "duration": 0.848,
+          "frame_ahead_trigger": 18.936
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 19.523,
+          "end": 19.696,
+          "duration": 0.172,
+          "frame_ahead_trigger": 19.783
+        },
+        {
+          "word": "establishes",
+          "clean_word": "establishes",
+          "phonemes": "\u026ast\u02c8\u00e6bl\u026a\u0283\u1d7bz",
+          "start": 19.696,
+          "end": 20.281,
+          "duration": 0.585,
+          "frame_ahead_trigger": 19.956
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 20.281,
+          "end": 20.486,
+          "duration": 0.205,
+          "frame_ahead_trigger": 20.541
+        },
+        {
+          "word": "first",
+          "clean_word": "first",
+          "phonemes": "f\u02c8\u025c\u02d0st",
+          "start": 20.486,
+          "end": 20.891,
+          "duration": 0.405,
+          "frame_ahead_trigger": 20.746
+        },
+        {
+          "word": "reproducible.",
+          "clean_word": "reproducible",
+          "phonemes": "\u0279\u1d7bp\u0279\u0259d\u02c8u\u02d0s\u1d7bb\u0259l",
+          "start": 20.891,
+          "end": 21.707,
+          "duration": 0.816,
+          "frame_ahead_trigger": 21.151
+        },
+        {
+          "word": "Interactive",
+          "clean_word": "interactive",
+          "phonemes": "\u02cc\u026ant\u025a\u0279\u02c8\u00e6kt\u026av",
+          "start": 21.707,
+          "end": 22.486,
+          "duration": 0.779,
+          "frame_ahead_trigger": 21.967
+        },
+        {
+          "word": "evaluation",
+          "clean_word": "evaluation",
+          "phonemes": "\u026av\u02cc\u00e6lju\u02d0\u02c8e\u026a\u0283\u0259n",
+          "start": 22.486,
+          "end": 23.306,
+          "duration": 0.82,
+          "frame_ahead_trigger": 22.746
+        },
+        {
+          "word": "harness",
+          "clean_word": "harness",
+          "phonemes": "h\u02c8\u0251\u02d0\u0279n\u026as",
+          "start": 23.306,
+          "end": 23.776,
+          "duration": 0.47,
+          "frame_ahead_trigger": 23.566
+        },
+        {
+          "word": "deployed",
+          "clean_word": "deployed",
+          "phonemes": "d\u1d7bpl\u02c8\u0254\u026ad",
+          "start": 23.776,
+          "end": 24.336,
+          "duration": 0.56,
+          "frame_ahead_trigger": 24.036
+        },
+        {
+          "word": "directly",
+          "clean_word": "directly",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bktli",
+          "start": 24.336,
+          "end": 24.866,
+          "duration": 0.53,
+          "frame_ahead_trigger": 24.596
+        },
+        {
+          "word": "inside",
+          "clean_word": "inside",
+          "phonemes": "\u026ans\u02c8a\u026ad",
+          "start": 24.866,
+          "end": 25.301,
+          "duration": 0.435,
+          "frame_ahead_trigger": 25.126
+        },
+        {
+          "word": "live",
+          "clean_word": "live",
+          "phonemes": "l\u02c8a\u026av",
+          "start": 25.301,
+          "end": 25.691,
+          "duration": 0.39,
+          "frame_ahead_trigger": 25.561
+        },
+        {
+          "word": "Ubuntu.",
+          "clean_word": "ubuntu",
+          "phonemes": "u\u02d0b\u02c8u\u02d0ntu\u02d0",
+          "start": 25.691,
+          "end": 26.191,
+          "duration": 0.5,
+          "frame_ahead_trigger": 25.951
+        },
+        {
+          "word": "Windows.",
+          "clean_word": "windows",
+          "phonemes": "w\u02c8\u026ando\u028az",
+          "start": 26.191,
+          "end": 26.671,
+          "duration": 0.48,
+          "frame_ahead_trigger": 26.451
+        },
+        {
+          "word": "And",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 26.671,
+          "end": 26.896,
+          "duration": 0.225,
+          "frame_ahead_trigger": 26.931
+        },
+        {
+          "word": "macOS",
+          "clean_word": "macos",
+          "phonemes": "m\u02c8\u00e6k \u02cco\u028a\u02c8\u025bs",
+          "start": 26.896,
+          "end": 27.676,
+          "duration": 0.78,
+          "frame_ahead_trigger": 27.156
+        },
+        {
+          "word": "environments.",
+          "clean_word": "environments",
+          "phonemes": "\u025bnv\u02c8a\u026a\u0279\u0259nm\u0259nts",
+          "start": 27.676,
+          "end": 28.506,
+          "duration": 0.83,
+          "frame_ahead_trigger": 27.936
+        }
+      ],
+      "audio_duration": 10.2,
+      "slot_duration": 10.35
+    },
+    {
+      "beat_id": 4,
+      "text": "Spanning 369 complex real-world workflows. OSWorld tracks mouse clicks and keystrokes. Running custom execution scripts to verify real operating system state.",
+      "visual_focus": "Code block schematic of evaluate_task checking desktop disk state, active process tree, and file outputs against ground truth assertions.",
+      "highlight_words": {
+        "369 complex real-world workflows": "#38BDF8",
+        "verify real operating system state": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Verification scripts",
+        "action_verb": "evaluate",
+        "direct_object": "final system state",
+        "anchor_word": "verify",
+        "semantic_role": "computation"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: OSWORLD: THE COMPU",
+        "sub": "Code block schematic of evaluate_task checking desktop disk state",
+        "params": {
+          "title": "KERNEL CODE: OSWORLD: THE COMPU",
+          "sub": "Code block schematic of evaluate_task checking desktop disk state",
+          "filename": "eval_osworld.py",
+          "language": "python",
+          "lines": [
+            "def evaluate_task(task_config):",
+            "env = OSWorld(task_config)",
+            "success = env.run_execution()",
+            "return verify_result(success)"
+          ],
+          "highlight_lines": [
+            2,
+            3
+          ],
+          "trace_register": "\u26a1 EXECUTION-BASED EVALUATION",
+          "delta_badge": "Validating real side-effect changes"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: OSWORLD: THE COMPU",
+        "sub": "Code block schematic of evaluate_task checking desktop disk state",
+        "filename": "eval_osworld.py",
+        "language": "python",
+        "lines": [
+          "def evaluate_task(task_config):",
+          "env = OSWorld(task_config)",
+          "success = env.run_execution()",
+          "return verify_result(success)"
+        ],
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "trace_register": "\u26a1 EXECUTION-BASED EVALUATION",
+        "delta_badge": "Validating real side-effect changes"
+      },
+      "start": 28.74,
+      "end": 38.98,
+      "duration": 10.24,
+      "word_timings": [
+        {
+          "word": "Spanning",
+          "clean_word": "spanning",
+          "phonemes": "sp\u02c8\u00e6n\u026a\u014b",
+          "start": 28.743,
+          "end": 29.053,
+          "duration": 0.31,
+          "frame_ahead_trigger": 29.153
+        },
+        {
+          "word": "369",
+          "clean_word": "369",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0h\u02c8\u028cnd\u0279\u026ad s\u02c8\u026aksti n\u02c8a\u026an",
+          "start": 29.053,
+          "end": 30.583,
+          "duration": 1.53,
+          "frame_ahead_trigger": 29.463
+        },
+        {
+          "word": "complex",
+          "clean_word": "complex",
+          "phonemes": "k\u02c8\u0251\u02d0mpl\u025bks",
+          "start": 30.583,
+          "end": 31.233,
+          "duration": 0.65,
+          "frame_ahead_trigger": 30.993
+        },
+        {
+          "word": "real-world",
+          "clean_word": "realworld",
+          "phonemes": "\u0279\u02c8i\u02d0\u0259lw\u025c\u02d0ld",
+          "start": 31.233,
+          "end": 31.798,
+          "duration": 0.565,
+          "frame_ahead_trigger": 31.643
+        },
+        {
+          "word": "workflows.",
+          "clean_word": "workflows",
+          "phonemes": "w\u02c8\u025c\u02d0kflo\u028az",
+          "start": 31.798,
+          "end": 32.298,
+          "duration": 0.5,
+          "frame_ahead_trigger": 32.208
+        },
+        {
+          "word": "OSWorld",
+          "clean_word": "osworld",
+          "phonemes": "\u02cco\u028a\u02c8\u025bs w\u02c8\u025c\u02d0ld",
+          "start": 32.298,
+          "end": 32.988,
+          "duration": 0.69,
+          "frame_ahead_trigger": 32.708
+        },
+        {
+          "word": "tracks",
+          "clean_word": "tracks",
+          "phonemes": "t\u0279\u02c8\u00e6ks",
+          "start": 32.988,
+          "end": 33.318,
+          "duration": 0.33,
+          "frame_ahead_trigger": 33.398
+        },
+        {
+          "word": "mouse",
+          "clean_word": "mouse",
+          "phonemes": "m\u02c8a\u028as",
+          "start": 33.318,
+          "end": 33.568,
+          "duration": 0.25,
+          "frame_ahead_trigger": 33.728
+        },
+        {
+          "word": "clicks",
+          "clean_word": "clicks",
+          "phonemes": "kl\u02c8\u026aks",
+          "start": 33.568,
+          "end": 33.888,
+          "duration": 0.32,
+          "frame_ahead_trigger": 33.978
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 33.888,
+          "end": 34.143,
+          "duration": 0.255,
+          "frame_ahead_trigger": 34.298
+        },
+        {
+          "word": "keystrokes.",
+          "clean_word": "keystrokes",
+          "phonemes": "k\u02c8i\u02d0st\u0279o\u028aks",
+          "start": 34.143,
+          "end": 34.668,
+          "duration": 0.525,
+          "frame_ahead_trigger": 34.553
+        },
+        {
+          "word": "Running",
+          "clean_word": "running",
+          "phonemes": "\u0279\u02c8\u028cn\u026a\u014b",
+          "start": 34.668,
+          "end": 35.012,
+          "duration": 0.344,
+          "frame_ahead_trigger": 35.078
+        },
+        {
+          "word": "custom",
+          "clean_word": "custom",
+          "phonemes": "k\u02c8\u028cst\u0259m",
+          "start": 35.012,
+          "end": 35.368,
+          "duration": 0.356,
+          "frame_ahead_trigger": 35.422
+        },
+        {
+          "word": "execution",
+          "clean_word": "execution",
+          "phonemes": "\u02cc\u025bks\u026akj\u02c8u\u02d0\u0283\u0259n",
+          "start": 35.368,
+          "end": 36.058,
+          "duration": 0.69,
+          "frame_ahead_trigger": 35.778
+        },
+        {
+          "word": "scripts",
+          "clean_word": "scripts",
+          "phonemes": "sk\u0279\u02c8\u026apts",
+          "start": 36.058,
+          "end": 36.478,
+          "duration": 0.42,
+          "frame_ahead_trigger": 36.468
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 36.478,
+          "end": 36.648,
+          "duration": 0.17,
+          "frame_ahead_trigger": 36.888
+        },
+        {
+          "word": "verify",
+          "clean_word": "verify",
+          "phonemes": "v\u02c8\u025b\u0279\u1d7bf\u02cca\u026a",
+          "start": 36.648,
+          "end": 37.193,
+          "duration": 0.545,
+          "frame_ahead_trigger": 37.058
+        },
+        {
+          "word": "real",
+          "clean_word": "real",
+          "phonemes": "\u0279\u02c8i\u02d0\u0259l",
+          "start": 37.193,
+          "end": 37.458,
+          "duration": 0.265,
+          "frame_ahead_trigger": 37.603
+        },
+        {
+          "word": "operating",
+          "clean_word": "operating",
+          "phonemes": "\u02c8\u0251\u02d0p\u025a\u0279\u02cce\u026a\u027e\u026a\u014b",
+          "start": 37.458,
+          "end": 38.193,
+          "duration": 0.735,
+          "frame_ahead_trigger": 37.868
+        },
+        {
+          "word": "system",
+          "clean_word": "system",
+          "phonemes": "s\u02c8\u026ast\u0259m",
+          "start": 38.193,
+          "end": 38.613,
+          "duration": 0.42,
+          "frame_ahead_trigger": 38.603
+        },
+        {
+          "word": "state.",
+          "clean_word": "state",
+          "phonemes": "st\u02c8e\u026at",
+          "start": 38.613,
+          "end": 38.883,
+          "duration": 0.27,
+          "frame_ahead_trigger": 39.023
+        }
+      ],
+      "audio_duration": 10.24,
+      "slot_duration": 10.39
+    },
+    {
+      "beat_id": 5,
+      "text": "The reality check is brutal. While human testers achieve 72.36% task success. Frontier vision agents crawl at just 12.24%.",
+      "visual_focus": "Horizontal race bar visual with a high green bar for Humans at 72.36% and a tiny blue bar for OSWorld Agents at 12.24% with a giant red 60% performance gap.",
+      "highlight_words": {
+        "72.36%": "#10B981",
+        "12.24%": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Frontier agents",
+        "action_verb": "crawl",
+        "direct_object": "success metrics",
+        "anchor_word": "12.24%",
+        "semantic_role": "benchmark_result"
+      },
+      "visual_blueprint": {
+        "layout": "radar_pareto_plot",
+        "title": "PARETO FRONTIER: OSWORLD: THE COMPU",
+        "sub": "Horizontal race bar visual with a high green bar for",
+        "params": {
+          "title": "PARETO FRONTIER: OSWORLD: THE COMPU",
+          "sub": "Horizontal race bar visual with a high green bar for",
+          "axes": [
+            "Web",
+            "File",
+            "Settings",
+            "App",
+            "Multi-task"
+          ],
+          "models": [
+            {
+              "name": "Humans",
+              "scores": [
+                0.94,
+                0.9,
+                0.92,
+                0.88,
+                0.96
+              ],
+              "is_hero": true,
+              "color": "#10B981",
+              "fill_opacity": 0.35
+            },
+            {
+              "name": "OSWorld Agents",
+              "scores": [
+                0.62,
+                0.48,
+                0.95,
+                0.85,
+                0.22
+              ],
+              "is_hero": false,
+              "color": "#EF4444",
+              "fill_opacity": 0.2
+            }
+          ],
+          "delta_badge": "\u26a1 60% PERFORMANCE GAP"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "radar_pareto_plot",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "PARETO FRONTIER: OSWORLD: THE COMPU",
+        "sub": "Horizontal race bar visual with a high green bar for",
+        "axes": [
+          "Web",
+          "File",
+          "Settings",
+          "App",
+          "Multi-task"
+        ],
+        "models": [
+          {
+            "name": "Humans",
+            "scores": [
+              0.94,
+              0.9,
+              0.92,
+              0.88,
+              0.96
+            ],
+            "is_hero": true,
+            "color": "#10B981",
+            "fill_opacity": 0.35
+          },
+          {
+            "name": "OSWorld Agents",
+            "scores": [
+              0.62,
+              0.48,
+              0.95,
+              0.85,
+              0.22
+            ],
+            "is_hero": false,
+            "color": "#EF4444",
+            "fill_opacity": 0.2
+          }
+        ],
+        "delta_badge": "\u26a1 60% PERFORMANCE GAP"
+      },
+      "start": 39.13,
+      "end": 48.32,
+      "duration": 9.19,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 39.138,
+          "end": 39.237,
+          "duration": 0.099,
+          "frame_ahead_trigger": 39.698
+        },
+        {
+          "word": "reality",
+          "clean_word": "reality",
+          "phonemes": "\u0279\u026a\u02c8\u00e6l\u1d7b\u027ei",
+          "start": 39.237,
+          "end": 39.643,
+          "duration": 0.406,
+          "frame_ahead_trigger": 39.797
+        },
+        {
+          "word": "check",
+          "clean_word": "check",
+          "phonemes": "t\u0283\u02c8\u025bk",
+          "start": 39.643,
+          "end": 39.848,
+          "duration": 0.205,
+          "frame_ahead_trigger": 40.203
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 39.848,
+          "end": 40.058,
+          "duration": 0.21,
+          "frame_ahead_trigger": 40.408
+        },
+        {
+          "word": "brutal.",
+          "clean_word": "brutal",
+          "phonemes": "b\u0279\u02c8u\u02d0\u027e\u0259l",
+          "start": 40.058,
+          "end": 40.263,
+          "duration": 0.205,
+          "frame_ahead_trigger": 40.618
+        },
+        {
+          "word": "While",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 40.263,
+          "end": 40.658,
+          "duration": 0.395,
+          "frame_ahead_trigger": 40.823
+        },
+        {
+          "word": "human",
+          "clean_word": "human",
+          "phonemes": "hj\u02c8u\u02d0m\u0259n",
+          "start": 40.658,
+          "end": 40.968,
+          "duration": 0.31,
+          "frame_ahead_trigger": 41.218
+        },
+        {
+          "word": "testers",
+          "clean_word": "testers",
+          "phonemes": "t\u02c8\u025bst\u025az",
+          "start": 40.968,
+          "end": 41.378,
+          "duration": 0.41,
+          "frame_ahead_trigger": 41.528
+        },
+        {
+          "word": "achieve",
+          "clean_word": "achieve",
+          "phonemes": "\u0250t\u0283\u02c8i\u02d0v",
+          "start": 41.378,
+          "end": 41.643,
+          "duration": 0.265,
+          "frame_ahead_trigger": 41.938
+        },
+        {
+          "word": "72.36%",
+          "clean_word": "7236",
+          "phonemes": "s\u02c8\u025bv\u0259n \u03b8\u02c8a\u028az\u0259nd t\u02c8u\u02d0h\u02c8\u028cnd\u0279\u026ad \u03b8\u02c8\u025c\u02d0\u027ei s\u02c8\u026aks",
+          "start": 41.643,
+          "end": 43.743,
+          "duration": 2.1,
+          "frame_ahead_trigger": 42.203
+        },
+        {
+          "word": "task",
+          "clean_word": "task",
+          "phonemes": "t\u02c8\u00e6sk",
+          "start": 43.743,
+          "end": 44.053,
+          "duration": 0.31,
+          "frame_ahead_trigger": 44.303
+        },
+        {
+          "word": "success.",
+          "clean_word": "success",
+          "phonemes": "s\u0259ks\u02c8\u025bs",
+          "start": 44.053,
+          "end": 44.359,
+          "duration": 0.306,
+          "frame_ahead_trigger": 44.613
+        },
+        {
+          "word": "Frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 44.359,
+          "end": 44.757,
+          "duration": 0.398,
+          "frame_ahead_trigger": 44.919
+        },
+        {
+          "word": "vision",
+          "clean_word": "vision",
+          "phonemes": "v\u02c8\u026a\u0292\u0259n",
+          "start": 44.757,
+          "end": 45.083,
+          "duration": 0.326,
+          "frame_ahead_trigger": 45.317
+        },
+        {
+          "word": "agents",
+          "clean_word": "agents",
+          "phonemes": "\u02c8e\u026ad\u0292\u0259nts",
+          "start": 45.083,
+          "end": 45.473,
+          "duration": 0.39,
+          "frame_ahead_trigger": 45.643
+        },
+        {
+          "word": "crawl",
+          "clean_word": "crawl",
+          "phonemes": "k\u0279\u02c8\u0254\u02d0l",
+          "start": 45.473,
+          "end": 45.793,
+          "duration": 0.32,
+          "frame_ahead_trigger": 46.033
+        },
+        {
+          "word": "at",
+          "clean_word": "at",
+          "phonemes": "\u00e6t",
+          "start": 45.793,
+          "end": 45.963,
+          "duration": 0.17,
+          "frame_ahead_trigger": 46.353
+        },
+        {
+          "word": "just",
+          "clean_word": "just",
+          "phonemes": "d\u0292\u02c8\u028cst",
+          "start": 45.963,
+          "end": 46.199,
+          "duration": 0.236,
+          "frame_ahead_trigger": 46.523
+        },
+        {
+          "word": "12.24%.",
+          "clean_word": "1224",
+          "phonemes": "w\u02c8\u028cn \u03b8\u02c8a\u028az\u0259nd t\u02c8u\u02d0h\u02c8\u028cnd\u0279\u026ad tw\u02c8\u025bnti f\u02c8\u0254\u02d0\u0279",
+          "start": 46.199,
+          "end": 48.188,
+          "duration": 1.989,
+          "frame_ahead_trigger": 46.759
+        }
+      ],
+      "audio_duration": 9.19,
+      "slot_duration": 9.34
+    },
+    {
+      "beat_id": 6,
+      "text": "Desktop autonomy has a massive 60% gap to close. Follow machinoAI for daily deep-dives into modern AI systems.",
+      "visual_focus": "Radar plot showing deep deficits across Web, File, Settings, App, and Multi-task axes transitioning smoothly into the machinoAI brand emblem.",
+      "highlight_words": {
+        "60% gap": "#EF4444",
+        "machinoAI": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Community",
+        "action_verb": "closes",
+        "direct_object": "autonomy gap",
+        "anchor_word": "gap",
+        "semantic_role": "loop_outro"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "AGENT CAPABILITY FRONTIER",
+        "sub": "Severe performance deficits across open OS dimensions",
+        "accent_color": "#34D399",
+        "params": {
+          "root_label": "Future Agents",
+          "optimal_label": "OSWorld Benchmark",
+          "pruned_label": "Outdated Metrics"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 48.47,
+      "end": 56.0,
+      "duration": 7.53,
+      "word_timings": [
+        {
+          "word": "Desktop",
+          "clean_word": "desktop",
+          "phonemes": "d\u02c8\u025bskt\u0251\u02d0p",
+          "start": 48.488,
+          "end": 49.063,
+          "duration": 0.575,
+          "frame_ahead_trigger": 49.198
+        },
+        {
+          "word": "autonomy",
+          "clean_word": "autonomy",
+          "phonemes": "\u0254\u02d0t\u02c8\u0251\u02d0n\u0259mi",
+          "start": 49.063,
+          "end": 49.693,
+          "duration": 0.63,
+          "frame_ahead_trigger": 49.773
+        },
+        {
+          "word": "has",
+          "clean_word": "has",
+          "phonemes": "h\u02c8\u00e6z",
+          "start": 49.693,
+          "end": 49.998,
+          "duration": 0.305,
+          "frame_ahead_trigger": 50.403
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 49.998,
+          "end": 50.168,
+          "duration": 0.17,
+          "frame_ahead_trigger": 50.708
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 50.168,
+          "end": 50.468,
+          "duration": 0.3,
+          "frame_ahead_trigger": 50.878
+        },
+        {
+          "word": "60%",
+          "clean_word": "60",
+          "phonemes": "s\u02c8\u026aksti",
+          "start": 50.468,
+          "end": 50.953,
+          "duration": 0.485,
+          "frame_ahead_trigger": 51.178
+        },
+        {
+          "word": "gap",
+          "clean_word": "gap",
+          "phonemes": "\u0261\u02c8\u00e6p",
+          "start": 50.953,
+          "end": 51.153,
+          "duration": 0.2,
+          "frame_ahead_trigger": 51.663
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 51.153,
+          "end": 51.323,
+          "duration": 0.17,
+          "frame_ahead_trigger": 51.863
+        },
+        {
+          "word": "close.",
+          "clean_word": "close",
+          "phonemes": "kl\u02c8o\u028as",
+          "start": 51.323,
+          "end": 51.693,
+          "duration": 0.37,
+          "frame_ahead_trigger": 52.033
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 51.693,
+          "end": 52.268,
+          "duration": 0.575,
+          "frame_ahead_trigger": 52.403
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 52.268,
+          "end": 53.113,
+          "duration": 0.845,
+          "frame_ahead_trigger": 52.978
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 53.113,
+          "end": 53.493,
+          "duration": 0.38,
+          "frame_ahead_trigger": 53.823
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 53.493,
+          "end": 53.793,
+          "duration": 0.3,
+          "frame_ahead_trigger": 54.203
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 53.793,
+          "end": 54.32,
+          "duration": 0.527,
+          "frame_ahead_trigger": 54.503
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 54.32,
+          "end": 54.638,
+          "duration": 0.318,
+          "frame_ahead_trigger": 55.03
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 54.638,
+          "end": 55.108,
+          "duration": 0.47,
+          "frame_ahead_trigger": 55.348
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 55.108,
+          "end": 55.463,
+          "duration": 0.355,
+          "frame_ahead_trigger": 55.818
+        },
+        {
+          "word": "systems.",
+          "clean_word": "systems",
+          "phonemes": "s\u02c8\u026ast\u0259mz",
+          "start": 55.463,
+          "end": 55.933,
+          "duration": 0.47,
+          "frame_ahead_trigger": 56.173
+        }
+      ],
+      "audio_duration": 7.53,
+      "slot_duration": 7.53
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$G = \\mathrm{Human} - \\mathrm{Agent} \\approx 0.60$",
+      "filename": "osworld_benchmark_agents_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "G",
+          "label": "Performance Gap"
+        }
+      ],
+      "svg_filename": "osworld_benchmark_agents_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{P}_{\\mathrm{grounding}} = \\sigma(W_g \\mathbf{x}_{pixel})$",
+      "filename": "osworld_benchmark_agents_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "x_{pixel}",
+          "label": "Screen Input"
+        }
+      ],
+      "svg_filename": "osworld_benchmark_agents_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathcal{E} = \\{Ubuntu, Windows, MacOS\\}$",
+      "filename": "osworld_benchmark_agents_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "E",
+          "label": "Operating Systems"
+        }
+      ],
+      "svg_filename": "osworld_benchmark_agents_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{Score} = \\sum_{i=1}^{369} \\mathbb{I}(\\mathrm{Success}_i)$",
+      "filename": "osworld_benchmark_agents_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "I",
+          "label": "Indicator Function"
+        }
+      ],
+      "svg_filename": "osworld_benchmark_agents_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Success}_{OS} = 12.24\\%$",
+      "filename": "osworld_benchmark_agents_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "12.24%",
+          "label": "Current SOTA"
+        }
+      ],
+      "svg_filename": "osworld_benchmark_agents_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "reasoning_tree",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "OPERATING SYSTEMS",
+          "color": "#38BDF8",
+          "items": [
+            "Ubuntu",
+            "Windows",
+            "macOS"
+          ]
+        },
+        {
+          "name": "METRIC VECTORS",
+          "color": "#10B981",
+          "items": [
+            "Grounding",
+            "Execution",
+            "Success"
+          ]
+        },
+        {
+          "name": "BOTTLENECKS",
+          "color": "#F59E0B",
+          "items": [
+            "Pixels",
+            "GUI",
+            "Latency"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"GUI\"",
+        "target_cluster": "BOTTLENECKS",
+        "token": "\"GUI\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'grounding'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'volatile'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "OSWorld SOTA Agents",
+    "model_a_specs": [
+      "VLM-based",
+      "GUI Grounded",
+      "Interactive"
+    ],
+    "model_b": "Classical TAMP Agents",
+    "model_b_specs": [
+      "Rule-based",
+      "Domain-Specific",
+      "Non-adaptive"
+    ],
+    "divide_title": "GUI GROUNDING DIVIDE",
+    "model_a_stat": "12.24%",
+    "model_a_stat_label": "SOTA SUCCESS RATE",
+    "model_b_stat": "0%",
+    "model_b_stat_label": "DOMAIN SPECIFIC",
+    "efficiency_badge": "\u26a1 OPEN-ENDED EVALUATION",
+    "benchmarks": [
+      {
+        "name": "OSWorld",
+        "score_a": "12.24%",
+        "score_b": "0%"
+      },
+      {
+        "name": "Humanity",
+        "score_a": "72.36%",
+        "score_b": "72.36%"
+      }
+    ],
+    "scale_metric": "369",
+    "scale_label": "Total Benchmarked Tasks",
+    "bottleneck_title": "RIGID PIXEL MISALIGNMENT",
+    "bottleneck_desc": "Agents fail at volatile GUI pixel interpretation.",
+    "solution_title": "SCALABLE EXECUTION BENCHMARK",
+    "solution_components": "Unified environment and custom evaluators.",
+    "mechanism_title": "STRUCTURED TASK EVALUATION",
+    "payoff_stat": "12.24%",
+    "payoff_label": "AGENT SUCCESS",
+    "payoff_sub": "Outperforming naive baseline agents.",
+    "payoff_hero_stat": 12.24,
+    "payoff_hero_label": "Agent Success",
+    "payoff_base_stat": 0,
+    "payoff_base_label": "Legacy Benchmarks",
+    "payoff_delta_badge": "\u26a1 FIRST SCALABLE OS BENCHMARK",
+    "challenger": "OSWorld Agents",
+    "incumbent": "Legacy Domain Benchmarks"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: TASK SUCCESS",
+    "metric_name": "Success Rate",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "Humans",
+        "value": 72.36,
+        "display_val": "72.36%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "OSWorld Agents",
+        "value": 12.24,
+        "display_val": "12.24%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 60% PERFORMANCE GAP",
+    "radar_axes": [
+      "Web",
+      "File",
+      "Settings",
+      "App",
+      "Multi-task"
+    ]
+  },
+  "code_snippet": {
+    "filename": "eval_osworld.py",
+    "language": "python",
+    "lines": [
+      "def evaluate_task(task_config):",
+      "env = OSWorld(task_config)",
+      "success = env.run_execution()",
+      "return verify_result(success)"
+    ],
+    "highlight_lines": [
+      2,
+      3
+    ],
+    "trace_register": "\u26a1 EXECUTION-BASED EVALUATION",
+    "explanation": "Validating real side-effect changes"
+  },
+  "arxiv_id": "2404.07972",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "arch_figure_w_config_new",
+      "caption": "Arch Figure W Config New",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/source/images/arch_figure_w_config_new.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/chalkboard_figures/fig_1_arch_figure_w_config_new.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/chalkboard_figures/fig_1_arch_figure_w_config_new.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "humaneval",
+      "caption": "Humaneval",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/source/images/humaneval.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/chalkboard_figures/fig_2_humaneval.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/chalkboard_figures/fig_2_humaneval.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "accerciser",
+      "caption": "Accerciser",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/source/images/environment/accerciser.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/chalkboard_figures/fig_3_accerciser.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 125
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "model_lack_knowledge",
+      "caption": "Model Lack Knowledge",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/source/images/qualititive_analysis/model_lack_knowledge.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/chalkboard_figures/fig_4_model_lack_knowledge.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/chalkboard_figures/fig_4_model_lack_knowledge.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 125
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "obs_length_distribution",
+      "caption": "Obs Length Distribution",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/source/images/obs_length_distribution.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/chalkboard_figures/fig_5_obs_length_distribution.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2404.07972/chalkboard_figures/fig_5_obs_length_distribution.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 8.5,
+    "final_retention_hook_score": 9.0,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Approved! Clear real-world developer terms and intuitive physical analogy."
+  },
+  "hook_gating": {
+    "selected_hook": "Your frontier AI can write quantum physics essays. But ask it to organize desktop files? It fails instantly.",
+    "verdict": 62,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "search_tree",
+      "entity_type": "search_tree",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        1.2,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    },
+    {
+      "entity_id": "branch_bound_laser",
+      "entity_type": "branch_bound",
+      "z_index": 12,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "_uA209jryTI",
+    "shorts_url": "https://youtube.com/shorts/_uA209jryTI",
+    "studio_url": "https://studio.youtube.com/video/_uA209jryTI/edit",
+    "title": "OSWorld Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/osworld_benchmark_agents_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
