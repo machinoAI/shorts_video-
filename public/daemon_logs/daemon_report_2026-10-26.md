@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-26 | **Timestamp:** 2026-10-26 01:35:52 UTC
+**Date:** 2026-10-26 | **Timestamp:** 2026-10-26 05:14:53 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Attention Is All You Need: Part 1 - The Death of Recurrence: Why LSTMs Hit the Parallelism Wall
-- **Topic Queue Part:** `goat_transformer_part_1` (arXiv: [1706.03762](https://arxiv.org/abs/1706.03762))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/OQicb4cuTUw](https://youtube.com/shorts/OQicb4cuTUw) (`OQicb4cuTUw`)
-- **High-CTR Poster:** [attention_is_all_you_need_pt1_poster.png](public/thumbnails/attention_is_all_you_need_pt1_poster.png)
+### Reel 1: ResNet: Deep Residual Learning: Part 1 - The Degradation Paradox: Why Deeper Networks Became Stupider
+- **Topic Queue Part:** `goat_resnet_part_1` (arXiv: [1512.03385](https://arxiv.org/abs/1512.03385))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/48SWZqhCRNs](https://youtube.com/shorts/48SWZqhCRNs) (`48SWZqhCRNs`)
+- **High-CTR Poster:** [resnet_degradation_paradox_poster.png](public/thumbnails/resnet_degradation_paradox_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: Attention Is All You Need Mini-Series 1/5: Attention Is All You Need: Part 1 - The Death of Recurrence: Why LSTMs Hit the Parallelism Wall*
-- **Everyday Analogy:** *Why sequential token passing throttled GPU parallelism, and how self-attention unlocked simultaneous matrix computation across entire documents.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_attention_is_all_you_need_pt1_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: ResNet: Deep Residual Learning Mini-Series 1/5: ResNet: Deep Residual Learning: Part 1 - The Degradation Paradox: Why Deeper Networks Became Stupider*
+- **Everyday Analogy:** *The counter-intuitive discovery that deeper vanilla networks had higher training error than shallow ones, and why vanishing gradients were the culprit.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_resnet_degradation_paradox_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs

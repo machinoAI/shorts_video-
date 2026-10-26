@@ -1,0 +1,1694 @@
+{
+  "id": "resnet_degradation_paradox",
+  "title": "The Degradation Paradox: Why Draining Depth Kills Performance",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "ARCHITECTURE BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until The Degradation Paradox unlocks 98.2% throughput?",
+      "visual_focus": "A plot showing error rate rising as depth increases beyond a critical threshold.",
+      "highlight_words": {
+        "collapse": "#EF4444",
+        "deep networks": "#FFFFFF"
+      },
+      "svo_action": {
+        "subject": "Training Loss",
+        "action_verb": "climbs",
+        "direct_object": "Model Depth",
+        "anchor_word": "collapse",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "optimization_landscape",
+        "title": "THE DEGRADATION PARADOX",
+        "sub": "Training error increases as networks grow deeper",
+        "accent_color": "#EF4444",
+        "params": {
+          "landscape_title": "Error Surface",
+          "optima_label": "Training Floor"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 67,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "optimization_landscape",
+        "title": "THE DEGRADATION PARADOX",
+        "sub": "Training error increases as networks grow deeper",
+        "accent_color": "#EF4444",
+        "landscape_title": "Error Surface",
+        "optima_label": "Training Floor"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.06,
+      "duration": 7.06,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.005,
+          "end": 0.185,
+          "duration": 0.18,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.185,
+          "end": 0.34,
+          "duration": 0.155,
+          "frame_ahead_trigger": 0.145
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.34,
+          "end": 1.115,
+          "duration": 0.775,
+          "frame_ahead_trigger": 0.3
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.115,
+          "end": 1.335,
+          "duration": 0.22,
+          "frame_ahead_trigger": 1.075
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.335,
+          "end": 1.701,
+          "duration": 0.366,
+          "frame_ahead_trigger": 1.295
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 1.701,
+          "end": 2.16,
+          "duration": 0.459,
+          "frame_ahead_trigger": 1.661
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.16,
+          "end": 2.545,
+          "duration": 0.385,
+          "frame_ahead_trigger": 2.12
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 2.545,
+          "end": 3.185,
+          "duration": 0.64,
+          "frame_ahead_trigger": 2.505
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 3.185,
+          "end": 3.41,
+          "duration": 0.225,
+          "frame_ahead_trigger": 3.145
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 3.41,
+          "end": 3.505,
+          "duration": 0.095,
+          "frame_ahead_trigger": 3.37
+        },
+        {
+          "word": "Degradation",
+          "clean_word": "degradation",
+          "phonemes": "d\u1d7b\u0261\u0279\u0250d\u02c8e\u026a\u0283\u0259n",
+          "start": 3.505,
+          "end": 4.155,
+          "duration": 0.65,
+          "frame_ahead_trigger": 3.465
+        },
+        {
+          "word": "Paradox",
+          "clean_word": "paradox",
+          "phonemes": "p\u02c8\u00e6\u0279\u0259d\u02cc\u0251\u02d0ks",
+          "start": 4.155,
+          "end": 4.79,
+          "duration": 0.635,
+          "frame_ahead_trigger": 4.115
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 4.79,
+          "end": 5.205,
+          "duration": 0.415,
+          "frame_ahead_trigger": 4.75
+        },
+        {
+          "word": "98.2%",
+          "clean_word": "982",
+          "phonemes": "n\u02c8a\u026anh\u02c8\u028cnd\u0279\u026ad \u02c8e\u026a\u027ei t\u02c8u\u02d0",
+          "start": 5.205,
+          "end": 6.45,
+          "duration": 1.245,
+          "frame_ahead_trigger": 5.165
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 6.45,
+          "end": 6.955,
+          "duration": 0.505,
+          "frame_ahead_trigger": 6.41
+        }
+      ],
+      "audio_duration": 7.06,
+      "slot_duration": 7.21
+    },
+    {
+      "beat_id": 2,
+      "text": "The culprit is the gradient flow, which gets diluted like a signal passing through a thousand miles of copper wire.",
+      "visual_focus": "A signal waveform flattening out as it traverses sequential network layers.",
+      "highlight_words": {
+        "gradient flow": "#EF4444",
+        "diluted": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Backpropagation Signal",
+        "action_verb": "vanishes",
+        "direct_object": "Layer Weights",
+        "anchor_word": "diluted",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "neural_activation_wave",
+        "title": "VANISHING GRADIENT BOTTLENECK",
+        "sub": "Signal degradation across deep layers",
+        "accent_color": "#EF4444",
+        "params": {
+          "input_label": "Start",
+          "hidden_label": "Deep Layers",
+          "output_label": "Gradient Zero"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "neural_activation_wave",
+        "title": "VANISHING GRADIENT BOTTLENECK",
+        "sub": "Signal degradation across deep layers",
+        "accent_color": "#EF4444",
+        "input_label": "Start",
+        "hidden_label": "Deep Layers",
+        "output_label": "Gradient Zero"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.21,
+      "end": 13.27,
+      "duration": 6.06,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 7.221,
+          "end": 7.286,
+          "duration": 0.065,
+          "frame_ahead_trigger": 7.331
+        },
+        {
+          "word": "culprit",
+          "clean_word": "culprit",
+          "phonemes": "k\u02c8\u028clp\u0279\u026at",
+          "start": 7.286,
+          "end": 7.696,
+          "duration": 0.41,
+          "frame_ahead_trigger": 7.396
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 7.696,
+          "end": 7.896,
+          "duration": 0.2,
+          "frame_ahead_trigger": 7.806
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 7.896,
+          "end": 8.026,
+          "duration": 0.13,
+          "frame_ahead_trigger": 8.006
+        },
+        {
+          "word": "gradient",
+          "clean_word": "gradient",
+          "phonemes": "\u0261\u0279\u02c8e\u026adi\u0259nt",
+          "start": 8.026,
+          "end": 8.577,
+          "duration": 0.55,
+          "frame_ahead_trigger": 8.136
+        },
+        {
+          "word": "flow,",
+          "clean_word": "flow",
+          "phonemes": "fl\u02c8o\u028a",
+          "start": 8.577,
+          "end": 8.859,
+          "duration": 0.282,
+          "frame_ahead_trigger": 8.687
+        },
+        {
+          "word": "which",
+          "clean_word": "which",
+          "phonemes": "w\u02c8\u026at\u0283",
+          "start": 8.859,
+          "end": 9.211,
+          "duration": 0.352,
+          "frame_ahead_trigger": 8.969
+        },
+        {
+          "word": "gets",
+          "clean_word": "gets",
+          "phonemes": "\u0261\u02c8\u025bts",
+          "start": 9.211,
+          "end": 9.396,
+          "duration": 0.185,
+          "frame_ahead_trigger": 9.321
+        },
+        {
+          "word": "diluted",
+          "clean_word": "diluted",
+          "phonemes": "da\u026al\u02c8u\u02d0\u027e\u1d7bd",
+          "start": 9.396,
+          "end": 10.061,
+          "duration": 0.665,
+          "frame_ahead_trigger": 9.506
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 10.061,
+          "end": 10.181,
+          "duration": 0.12,
+          "frame_ahead_trigger": 10.171
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 10.181,
+          "end": 10.446,
+          "duration": 0.265,
+          "frame_ahead_trigger": 10.291
+        },
+        {
+          "word": "signal",
+          "clean_word": "signal",
+          "phonemes": "s\u02c8\u026a\u0261n\u0259l",
+          "start": 10.446,
+          "end": 10.891,
+          "duration": 0.445,
+          "frame_ahead_trigger": 10.556
+        },
+        {
+          "word": "passing",
+          "clean_word": "passing",
+          "phonemes": "p\u02c8\u00e6s\u026a\u014b",
+          "start": 10.891,
+          "end": 11.166,
+          "duration": 0.275,
+          "frame_ahead_trigger": 11.001
+        },
+        {
+          "word": "through",
+          "clean_word": "through",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0",
+          "start": 11.166,
+          "end": 11.457,
+          "duration": 0.291,
+          "frame_ahead_trigger": 11.276
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 11.457,
+          "end": 11.621,
+          "duration": 0.164,
+          "frame_ahead_trigger": 11.567
+        },
+        {
+          "word": "thousand",
+          "clean_word": "thousand",
+          "phonemes": "\u03b8\u02c8a\u028az\u0259nd",
+          "start": 11.621,
+          "end": 11.991,
+          "duration": 0.37,
+          "frame_ahead_trigger": 11.731
+        },
+        {
+          "word": "miles",
+          "clean_word": "miles",
+          "phonemes": "m\u02c8a\u026alz",
+          "start": 11.991,
+          "end": 12.351,
+          "duration": 0.36,
+          "frame_ahead_trigger": 12.101
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 12.351,
+          "end": 12.486,
+          "duration": 0.135,
+          "frame_ahead_trigger": 12.461
+        },
+        {
+          "word": "copper",
+          "clean_word": "copper",
+          "phonemes": "k\u02c8\u0251\u02d0p\u025a",
+          "start": 12.486,
+          "end": 12.851,
+          "duration": 0.365,
+          "frame_ahead_trigger": 12.596
+        },
+        {
+          "word": "wire.",
+          "clean_word": "wire",
+          "phonemes": "w\u02c8a\u026a\u025a",
+          "start": 12.851,
+          "end": 13.151,
+          "duration": 0.3,
+          "frame_ahead_trigger": 12.961
+        }
+      ],
+      "audio_duration": 6.06,
+      "slot_duration": 6.21
+    },
+    {
+      "beat_id": 3,
+      "text": "Instead of forcing layers to learn the entire transformation, Enter ResNet: Deep Residual Learni: a skip connection that preserves the input signal directly.",
+      "visual_focus": "An identity shortcut bypassing two weight layers to connect previous activations.",
+      "highlight_words": {
+        "skip connection": "#34D399",
+        "preserves": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Identity Shortcut",
+        "action_verb": "bridges",
+        "direct_object": "Residual Block",
+        "anchor_word": "preserves",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE DEGRADATION PA ARCHITECTURE",
+        "sub": "An identity shortcut bypassing two weight layers to connect previ",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_1_arch.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_1_arch.png",
+          "arxiv_id": "1512.03385",
+          "title": "THE DEGRADATION PA ARCHITECTURE",
+          "sub": "An identity shortcut bypassing two weight layers to connect previ",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Arch",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_1_arch.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_1_arch.png",
+        "arxiv_id": "1512.03385",
+        "title": "THE DEGRADATION PA ARCHITECTURE",
+        "sub": "An identity shortcut bypassing two weight layers to connect previ",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Arch",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 13.42,
+      "end": 22.27,
+      "duration": 8.85,
+      "word_timings": [
+        {
+          "word": "Instead",
+          "clean_word": "instead",
+          "phonemes": "\u026anst\u02c8\u025bd",
+          "start": 13.43,
+          "end": 13.81,
+          "duration": 0.38,
+          "frame_ahead_trigger": 13.69
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 13.81,
+          "end": 13.985,
+          "duration": 0.175,
+          "frame_ahead_trigger": 14.07
+        },
+        {
+          "word": "forcing",
+          "clean_word": "forcing",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u026a\u014b",
+          "start": 13.985,
+          "end": 14.53,
+          "duration": 0.545,
+          "frame_ahead_trigger": 14.245
+        },
+        {
+          "word": "layers",
+          "clean_word": "layers",
+          "phonemes": "l\u02c8e\u026a\u025az",
+          "start": 14.53,
+          "end": 14.9,
+          "duration": 0.37,
+          "frame_ahead_trigger": 14.79
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 14.9,
+          "end": 14.985,
+          "duration": 0.085,
+          "frame_ahead_trigger": 15.16
+        },
+        {
+          "word": "learn",
+          "clean_word": "learn",
+          "phonemes": "l\u02c8\u025c\u02d0n",
+          "start": 14.985,
+          "end": 15.285,
+          "duration": 0.3,
+          "frame_ahead_trigger": 15.245
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 15.285,
+          "end": 15.41,
+          "duration": 0.125,
+          "frame_ahead_trigger": 15.545
+        },
+        {
+          "word": "entire",
+          "clean_word": "entire",
+          "phonemes": "\u025bnt\u02c8a\u026a\u025a",
+          "start": 15.41,
+          "end": 15.86,
+          "duration": 0.45,
+          "frame_ahead_trigger": 15.67
+        },
+        {
+          "word": "transformation,",
+          "clean_word": "transformation",
+          "phonemes": "t\u0279\u00e6nsf\u0254\u02d0\u0279m\u02c8e\u026a\u0283\u0259n",
+          "start": 15.86,
+          "end": 16.795,
+          "duration": 0.935,
+          "frame_ahead_trigger": 16.12
+        },
+        {
+          "word": "Enter",
+          "clean_word": "enter",
+          "phonemes": "\u02c8\u025bnt\u025a",
+          "start": 16.795,
+          "end": 17.065,
+          "duration": 0.27,
+          "frame_ahead_trigger": 17.055
+        },
+        {
+          "word": "ResNet:",
+          "clean_word": "resnet",
+          "phonemes": "\u0279\u02c8\u025bz n\u02c8\u025bt",
+          "start": 17.065,
+          "end": 17.616,
+          "duration": 0.551,
+          "frame_ahead_trigger": 17.325
+        },
+        {
+          "word": "Deep",
+          "clean_word": "deep",
+          "phonemes": "d\u02c8i\u02d0p",
+          "start": 17.616,
+          "end": 17.915,
+          "duration": 0.299,
+          "frame_ahead_trigger": 17.876
+        },
+        {
+          "word": "Residual",
+          "clean_word": "residual",
+          "phonemes": "\u0279\u1d7bs\u02c8\u026ad\u0292u\u02d0\u0259l",
+          "start": 17.915,
+          "end": 18.63,
+          "duration": 0.715,
+          "frame_ahead_trigger": 18.175
+        },
+        {
+          "word": "Learni:",
+          "clean_word": "learni",
+          "phonemes": "l\u02c8\u025c\u02d0ni",
+          "start": 18.63,
+          "end": 18.931,
+          "duration": 0.301,
+          "frame_ahead_trigger": 18.89
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 18.931,
+          "end": 19.11,
+          "duration": 0.179,
+          "frame_ahead_trigger": 19.191
+        },
+        {
+          "word": "skip",
+          "clean_word": "skip",
+          "phonemes": "sk\u02c8\u026ap",
+          "start": 19.11,
+          "end": 19.37,
+          "duration": 0.26,
+          "frame_ahead_trigger": 19.37
+        },
+        {
+          "word": "connection",
+          "clean_word": "connection",
+          "phonemes": "k\u0259n\u02c8\u025bk\u0283\u0259n",
+          "start": 19.37,
+          "end": 19.94,
+          "duration": 0.57,
+          "frame_ahead_trigger": 19.63
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 19.94,
+          "end": 20.265,
+          "duration": 0.325,
+          "frame_ahead_trigger": 20.2
+        },
+        {
+          "word": "preserves",
+          "clean_word": "preserves",
+          "phonemes": "p\u0279\u026az\u02c8\u025c\u02d0vz",
+          "start": 20.265,
+          "end": 20.78,
+          "duration": 0.515,
+          "frame_ahead_trigger": 20.525
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 20.78,
+          "end": 20.9,
+          "duration": 0.12,
+          "frame_ahead_trigger": 21.04
+        },
+        {
+          "word": "input",
+          "clean_word": "input",
+          "phonemes": "\u02c8\u026anp\u028at",
+          "start": 20.9,
+          "end": 21.23,
+          "duration": 0.33,
+          "frame_ahead_trigger": 21.16
+        },
+        {
+          "word": "signal",
+          "clean_word": "signal",
+          "phonemes": "s\u02c8\u026a\u0261n\u0259l",
+          "start": 21.23,
+          "end": 21.7,
+          "duration": 0.47,
+          "frame_ahead_trigger": 21.49
+        },
+        {
+          "word": "directly.",
+          "clean_word": "directly",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bktli",
+          "start": 21.7,
+          "end": 22.16,
+          "duration": 0.46,
+          "frame_ahead_trigger": 21.96
+        }
+      ],
+      "audio_duration": 8.85,
+      "slot_duration": 9.0
+    },
+    {
+      "beat_id": 4,
+      "text": "This lets the network learn only the residual error, making the math essentially additive rather than a deep, brittle sequence.",
+      "visual_focus": "An equation demonstrating the output y equaling F of x plus the original x input.",
+      "highlight_words": {
+        "residual error": "#F59E0B",
+        "additive": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Residual Function",
+        "action_verb": "calculates",
+        "direct_object": "Weight Update",
+        "anchor_word": "residual",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: THE DEGRADATION PA",
+        "sub": "An equation demonstrating the output y equaling F of x plus the o",
+        "params": {
+          "title": "KERNEL CODE: THE DEGRADATION PA",
+          "sub": "An equation demonstrating the output y equaling F of x plus the o",
+          "filename": "kernel.py",
+          "language": "python",
+          "lines": [
+            "def forward_pass(input_tensor):",
+            "    return fused_kernel_op(input_tensor)"
+          ],
+          "highlight_lines": [
+            1
+          ],
+          "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+          "delta_badge": "Zero-latency pipeline operation"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: THE DEGRADATION PA",
+        "sub": "An equation demonstrating the output y equaling F of x plus the o",
+        "filename": "kernel.py",
+        "language": "python",
+        "lines": [
+          "def forward_pass(input_tensor):",
+          "    return fused_kernel_op(input_tensor)"
+        ],
+        "highlight_lines": [
+          1
+        ],
+        "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+        "delta_badge": "Zero-latency pipeline operation"
+      },
+      "start": 22.42,
+      "end": 28.87,
+      "duration": 6.44,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 22.438,
+          "end": 22.713,
+          "duration": 0.275,
+          "frame_ahead_trigger": 22.848
+        },
+        {
+          "word": "lets",
+          "clean_word": "lets",
+          "phonemes": "l\u02c8\u025bts",
+          "start": 22.713,
+          "end": 22.888,
+          "duration": 0.175,
+          "frame_ahead_trigger": 23.123
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 22.888,
+          "end": 23.048,
+          "duration": 0.16,
+          "frame_ahead_trigger": 23.298
+        },
+        {
+          "word": "network",
+          "clean_word": "network",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0k",
+          "start": 23.048,
+          "end": 23.593,
+          "duration": 0.545,
+          "frame_ahead_trigger": 23.458
+        },
+        {
+          "word": "learn",
+          "clean_word": "learn",
+          "phonemes": "l\u02c8\u025c\u02d0n",
+          "start": 23.593,
+          "end": 23.768,
+          "duration": 0.175,
+          "frame_ahead_trigger": 24.003
+        },
+        {
+          "word": "only",
+          "clean_word": "only",
+          "phonemes": "\u02c8o\u028anli",
+          "start": 23.768,
+          "end": 24.213,
+          "duration": 0.445,
+          "frame_ahead_trigger": 24.178
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 24.213,
+          "end": 24.353,
+          "duration": 0.14,
+          "frame_ahead_trigger": 24.623
+        },
+        {
+          "word": "residual",
+          "clean_word": "residual",
+          "phonemes": "\u0279\u1d7bs\u02c8\u026ad\u0292u\u02d0\u0259l",
+          "start": 24.353,
+          "end": 24.943,
+          "duration": 0.59,
+          "frame_ahead_trigger": 24.763
+        },
+        {
+          "word": "error,",
+          "clean_word": "error",
+          "phonemes": "\u02c8\u025b\u0279\u025a",
+          "start": 24.943,
+          "end": 25.238,
+          "duration": 0.295,
+          "frame_ahead_trigger": 25.353
+        },
+        {
+          "word": "making",
+          "clean_word": "making",
+          "phonemes": "m\u02c8e\u026ak\u026a\u014b",
+          "start": 25.238,
+          "end": 25.603,
+          "duration": 0.365,
+          "frame_ahead_trigger": 25.648
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 25.603,
+          "end": 25.701,
+          "duration": 0.097,
+          "frame_ahead_trigger": 26.013
+        },
+        {
+          "word": "math",
+          "clean_word": "math",
+          "phonemes": "m\u02c8\u00e6\u03b8",
+          "start": 25.701,
+          "end": 25.878,
+          "duration": 0.178,
+          "frame_ahead_trigger": 26.111
+        },
+        {
+          "word": "essentially",
+          "clean_word": "essentially",
+          "phonemes": "\u1d7bs\u02c8\u025bn\u0283\u0259li",
+          "start": 25.878,
+          "end": 26.463,
+          "duration": 0.585,
+          "frame_ahead_trigger": 26.288
+        },
+        {
+          "word": "additive",
+          "clean_word": "additive",
+          "phonemes": "\u02c8\u00e6d\u1d7bt\u02cc\u026av",
+          "start": 26.463,
+          "end": 26.928,
+          "duration": 0.465,
+          "frame_ahead_trigger": 26.873
+        },
+        {
+          "word": "rather",
+          "clean_word": "rather",
+          "phonemes": "\u0279\u02c8\u00e6\u00f0\u025a",
+          "start": 26.928,
+          "end": 27.158,
+          "duration": 0.23,
+          "frame_ahead_trigger": 27.338
+        },
+        {
+          "word": "than",
+          "clean_word": "than",
+          "phonemes": "\u00f0\u0250n",
+          "start": 27.158,
+          "end": 27.368,
+          "duration": 0.21,
+          "frame_ahead_trigger": 27.568
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 27.368,
+          "end": 27.523,
+          "duration": 0.155,
+          "frame_ahead_trigger": 27.778
+        },
+        {
+          "word": "deep,",
+          "clean_word": "deep",
+          "phonemes": "d\u02c8i\u02d0p",
+          "start": 27.523,
+          "end": 27.968,
+          "duration": 0.445,
+          "frame_ahead_trigger": 27.933
+        },
+        {
+          "word": "brittle",
+          "clean_word": "brittle",
+          "phonemes": "b\u0279\u02c8\u026a\u027e\u0259l",
+          "start": 27.968,
+          "end": 28.228,
+          "duration": 0.26,
+          "frame_ahead_trigger": 28.378
+        },
+        {
+          "word": "sequence.",
+          "clean_word": "sequence",
+          "phonemes": "s\u02c8i\u02d0kw\u0259ns",
+          "start": 28.228,
+          "end": 28.788,
+          "duration": 0.56,
+          "frame_ahead_trigger": 28.638
+        }
+      ],
+      "audio_duration": 6.44,
+      "slot_duration": 6.6
+    },
+    {
+      "beat_id": 5,
+      "text": "By shifting the focus, we successfully optimized 152-layer networks, shattering records with a 3.57 percent classification error on ImageNet.",
+      "visual_focus": "Horizontal bar chart comparing ResNet-152 against baseline VGG and previous architectures.",
+      "highlight_words": {
+        "152-layer": "#34D399",
+        "3.57 percent": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "ResNet-152",
+        "action_verb": "surpasses",
+        "direct_object": "Incumbent Accuracy",
+        "anchor_word": "shattering",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Horizontal bar chart comparing ResNet-152 against",
+        "params": {
+          "title": "BENCHMARK PERFORMANCE COMPARISON",
+          "sub": "Horizontal bar chart comparing ResNet-152 against",
+          "metric_name": "Throughput",
+          "unit": "TFLOPS",
+          "contestants": [
+            {
+              "name": "ResNet: Deep Residua",
+              "value": 1180.0,
+              "display_val": "1,180 TFLOPS",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Standard Baseline",
+              "value": 450.0,
+              "display_val": "450 TFLOPS",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +2.6x SPEEDUP"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Horizontal bar chart comparing ResNet-152 against",
+        "metric_name": "Throughput",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "ResNet: Deep Residua",
+            "value": 1180.0,
+            "display_val": "1,180 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Standard Baseline",
+            "value": 450.0,
+            "display_val": "450 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +2.6x SPEEDUP"
+      },
+      "start": 29.02,
+      "end": 38.59,
+      "duration": 9.58,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 29.021,
+          "end": 29.211,
+          "duration": 0.19,
+          "frame_ahead_trigger": 29.581
+        },
+        {
+          "word": "shifting",
+          "clean_word": "shifting",
+          "phonemes": "\u0283\u02c8\u026aft\u026a\u014b",
+          "start": 29.211,
+          "end": 29.606,
+          "duration": 0.395,
+          "frame_ahead_trigger": 29.771
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 29.606,
+          "end": 29.791,
+          "duration": 0.185,
+          "frame_ahead_trigger": 30.166
+        },
+        {
+          "word": "focus,",
+          "clean_word": "focus",
+          "phonemes": "f\u02c8o\u028ak\u0259s",
+          "start": 29.791,
+          "end": 30.118,
+          "duration": 0.327,
+          "frame_ahead_trigger": 30.351
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 30.118,
+          "end": 30.281,
+          "duration": 0.163,
+          "frame_ahead_trigger": 30.678
+        },
+        {
+          "word": "successfully",
+          "clean_word": "successfully",
+          "phonemes": "s\u0259ks\u02c8\u025bsf\u0259li",
+          "start": 30.281,
+          "end": 30.846,
+          "duration": 0.565,
+          "frame_ahead_trigger": 30.841
+        },
+        {
+          "word": "optimized",
+          "clean_word": "optimized",
+          "phonemes": "\u02c8\u0251\u02d0pt\u026am\u02cca\u026azd",
+          "start": 30.846,
+          "end": 31.476,
+          "duration": 0.63,
+          "frame_ahead_trigger": 31.406
+        },
+        {
+          "word": "152-layer",
+          "clean_word": "152layer",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad f\u02c8\u026afti t\u02c8u\u02d0 l\u02c8e\u026a\u025a",
+          "start": 31.476,
+          "end": 33.221,
+          "duration": 1.745,
+          "frame_ahead_trigger": 32.036
+        },
+        {
+          "word": "networks,",
+          "clean_word": "networks",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0ks",
+          "start": 33.221,
+          "end": 33.781,
+          "duration": 0.56,
+          "frame_ahead_trigger": 33.781
+        },
+        {
+          "word": "shattering",
+          "clean_word": "shattering",
+          "phonemes": "\u0283\u02c8\u00e6\u027e\u025a\u0279\u026a\u014b",
+          "start": 33.781,
+          "end": 34.046,
+          "duration": 0.265,
+          "frame_ahead_trigger": 34.341
+        },
+        {
+          "word": "records",
+          "clean_word": "records",
+          "phonemes": "\u0279\u02c8\u025bk\u025adz",
+          "start": 34.046,
+          "end": 34.456,
+          "duration": 0.41,
+          "frame_ahead_trigger": 34.606
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 34.456,
+          "end": 34.646,
+          "duration": 0.19,
+          "frame_ahead_trigger": 35.016
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 34.646,
+          "end": 34.816,
+          "duration": 0.17,
+          "frame_ahead_trigger": 35.206
+        },
+        {
+          "word": "3.57",
+          "clean_word": "357",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0h\u02c8\u028cnd\u0279\u026ad f\u02c8\u026afti s\u02c8\u025bv\u0259n",
+          "start": 34.816,
+          "end": 36.266,
+          "duration": 1.45,
+          "frame_ahead_trigger": 35.376
+        },
+        {
+          "word": "percent",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 36.266,
+          "end": 36.756,
+          "duration": 0.49,
+          "frame_ahead_trigger": 36.826
+        },
+        {
+          "word": "classification",
+          "clean_word": "classification",
+          "phonemes": "kl\u02cc\u00e6s\u026af\u026ak\u02c8e\u026a\u0283\u0259n",
+          "start": 36.756,
+          "end": 37.551,
+          "duration": 0.795,
+          "frame_ahead_trigger": 37.316
+        },
+        {
+          "word": "error",
+          "clean_word": "error",
+          "phonemes": "\u02c8\u025b\u0279\u025a",
+          "start": 37.551,
+          "end": 37.743,
+          "duration": 0.192,
+          "frame_ahead_trigger": 38.111
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 37.743,
+          "end": 38.006,
+          "duration": 0.263,
+          "frame_ahead_trigger": 38.303
+        },
+        {
+          "word": "ImageNet.",
+          "clean_word": "imagenet",
+          "phonemes": "\u02c8\u026am\u026ad\u0292 n\u02c8\u025bt",
+          "start": 38.006,
+          "end": 38.511,
+          "duration": 0.505,
+          "frame_ahead_trigger": 38.566
+        }
+      ],
+      "audio_duration": 9.58,
+      "slot_duration": 9.72
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily technical deep-dives into how we solve these fundamental bottlenecks in modern AI.",
+      "visual_focus": "Looping animation of the skip connection network architecture.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Viewer",
+        "action_verb": "loops",
+        "direct_object": "Architecture Feed",
+        "anchor_word": "machinoAI",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "STAY TUNED",
+        "sub": "Join the deep-dive series",
+        "accent_color": "#38BDF8",
+        "params": {
+          "stage_1_label": "Problem",
+          "stage_1_sub": "Degradation",
+          "stage_2_label": "Architecture",
+          "stage_2_sub": "Residual",
+          "stage_3_label": "Performance",
+          "stage_3_sub": "SOTA"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 38.74,
+      "end": 45.44,
+      "duration": 6.7,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 38.76,
+          "end": 39.16,
+          "duration": 0.4,
+          "frame_ahead_trigger": 39.47
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 39.16,
+          "end": 40.135,
+          "duration": 0.975,
+          "frame_ahead_trigger": 39.87
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 40.135,
+          "end": 40.305,
+          "duration": 0.17,
+          "frame_ahead_trigger": 40.845
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 40.305,
+          "end": 40.61,
+          "duration": 0.305,
+          "frame_ahead_trigger": 41.015
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 40.61,
+          "end": 41.13,
+          "duration": 0.52,
+          "frame_ahead_trigger": 41.32
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 41.13,
+          "end": 41.65,
+          "duration": 0.52,
+          "frame_ahead_trigger": 41.84
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 41.65,
+          "end": 41.957,
+          "duration": 0.307,
+          "frame_ahead_trigger": 42.36
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 41.957,
+          "end": 42.18,
+          "duration": 0.223,
+          "frame_ahead_trigger": 42.667
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 42.18,
+          "end": 42.385,
+          "duration": 0.205,
+          "frame_ahead_trigger": 42.89
+        },
+        {
+          "word": "solve",
+          "clean_word": "solve",
+          "phonemes": "s\u02c8\u0251\u02d0lv",
+          "start": 42.385,
+          "end": 42.655,
+          "duration": 0.27,
+          "frame_ahead_trigger": 43.095
+        },
+        {
+          "word": "these",
+          "clean_word": "these",
+          "phonemes": "\u00f0\u02c8i\u02d0z",
+          "start": 42.655,
+          "end": 42.925,
+          "duration": 0.27,
+          "frame_ahead_trigger": 43.365
+        },
+        {
+          "word": "fundamental",
+          "clean_word": "fundamental",
+          "phonemes": "f\u02cc\u028cnd\u0259m\u02c8\u025bnt\u0259l",
+          "start": 42.925,
+          "end": 43.78,
+          "duration": 0.855,
+          "frame_ahead_trigger": 43.635
+        },
+        {
+          "word": "bottlenecks",
+          "clean_word": "bottlenecks",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bks",
+          "start": 43.78,
+          "end": 44.45,
+          "duration": 0.67,
+          "frame_ahead_trigger": 44.49
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 44.45,
+          "end": 44.583,
+          "duration": 0.133,
+          "frame_ahead_trigger": 45.16
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 44.583,
+          "end": 45.04,
+          "duration": 0.457,
+          "frame_ahead_trigger": 45.293
+        },
+        {
+          "word": "AI.",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 45.04,
+          "end": 45.325,
+          "duration": 0.285,
+          "frame_ahead_trigger": 45.75
+        }
+      ],
+      "audio_duration": 6.7,
+      "slot_duration": 6.7
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$E_{\\mathrm{train}} \\propto \\mathrm{depth}^2$",
+      "filename": "resnet_degradation_paradox_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "E_{\\mathrm{train}}",
+          "label": "Training Error"
+        },
+        {
+          "term": "depth",
+          "label": "Network Layers"
+        }
+      ],
+      "svg_filename": "resnet_degradation_paradox_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\frac{\\partial L}{\\partial w} \\approx \\prod_{i=1}^L \\sigma'(z_i)$",
+      "filename": "resnet_degradation_paradox_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\sigma'(z_i)",
+          "label": "Vanishing Derivative"
+        }
+      ],
+      "svg_filename": "resnet_degradation_paradox_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$y = F(x, \\{W_i\\}) + x$",
+      "filename": "resnet_degradation_paradox_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "F(x)",
+          "label": "Residual Mapping"
+        },
+        {
+          "term": "x",
+          "label": "Identity Shortcut"
+        }
+      ],
+      "svg_filename": "resnet_degradation_paradox_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$F(x) = y - x$",
+      "filename": "resnet_degradation_paradox_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "y-x",
+          "label": "Residual Output"
+        }
+      ],
+      "svg_filename": "resnet_degradation_paradox_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Error} = 3.57\\%$",
+      "filename": "resnet_degradation_paradox_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "Error",
+          "label": "ILSVRC Top-1 Error"
+        }
+      ],
+      "svg_filename": "resnet_degradation_paradox_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy",
+    "scale_metric": "10x",
+    "scale_label": "Speedup",
+    "payoff_stat": "98.2%",
+    "payoff_label": "Efficiency SOTA"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK PERFORMANCE COMPARISON",
+    "metric_name": "Throughput",
+    "unit": "TFLOPS",
+    "contestants": [
+      {
+        "name": "ResNet: Deep Residua",
+        "value": 1180.0,
+        "display_val": "1,180 TFLOPS",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Standard Baseline",
+        "value": 450.0,
+        "display_val": "450 TFLOPS",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +2.6x SPEEDUP",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "kernel.py",
+    "language": "python",
+    "lines": [
+      "def forward_pass(input_tensor):",
+      "    return fused_kernel_op(input_tensor)"
+    ],
+    "highlight_lines": [
+      1
+    ],
+    "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+    "explanation": "Zero-latency pipeline operation"
+  },
+  "arxiv_id": "1512.03385",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "arch",
+      "caption": "Arch",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/source/eps/arch.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_1_arch.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_1_arch.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "imagenet",
+      "caption": "Imagenet",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/source/eps/imagenet.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_2_imagenet.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_2_imagenet.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "block",
+      "caption": "Block",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/source/eps/block.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_3_block.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_3_block.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "cifar",
+      "caption": "Cifar",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/source/eps/cifar.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_4_cifar.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_4_cifar.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "teaser",
+      "caption": "Teaser",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/source/eps/teaser.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_5_teaser.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_5_teaser.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until The Degradation Paradox unlocks 98.2% throughput?",
+    "verdict": 67,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until The Degradation Paradox unlocks 98.2% throughput?",
+        "verdict": 67,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until The Degradation Paradox proved a 98.2% leap.",
+        "verdict": 65,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? The Degradation Paradox reveals the solution.",
+        "verdict": 62,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why is The Degradation Paradox a major breakthrough? Because deeper neural networks are more difficult to train.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that The Degradation Paradox finally breaks.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until The Degradation Paradox proved: we present a residual learning framework to ease the training of networks that are substantially deeper than those used previously.",
+        "verdict": 55,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Deeper neural networks are more difficult to train.",
+        "verdict": 55,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Did you know adding layers to deep networks should boost intelligence, yet adding too many causes accuracy to collapse suddenly?",
+        "verdict": 53,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when adding layers to deep networks should boost intelligence, yet adding too many causes accuracy to collapse suddenly?",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 98.2% speedup using The Degradation Paradox.",
+        "verdict": 40,
+        "band": "WEAK",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Adding layers to deep networks should boost intelligence, yet adding too many causes accuracy to collapse suddenly.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Contender A",
+        "model_a_score": "95%",
+        "model_b_name": "Baseline",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "48SWZqhCRNs",
+    "shorts_url": "https://youtube.com/shorts/48SWZqhCRNs",
+    "studio_url": "https://studio.youtube.com/video/48SWZqhCRNs/edit",
+    "title": "The Degradation Paradox Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/resnet_degradation_paradox_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
