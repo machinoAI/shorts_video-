@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-27 | **Timestamp:** 2026-10-27 05:31:41 UTC
+**Date:** 2026-10-27 | **Timestamp:** 2026-10-27 16:51:02 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: GANs: Generative Adversarial Networks: Part 1 - The Counterfeiter and the Cop: Zero-Sum Game Theory in Deep Learning
-- **Topic Queue Part:** `goat_gans_part_1` (arXiv: [1406.2661](https://arxiv.org/abs/1406.2661))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/3ey69h_9Twc](https://youtube.com/shorts/3ey69h_9Twc) (`3ey69h_9Twc`)
-- **High-CTR Poster:** [gan_minimax_game_poster.png](public/thumbnails/gan_minimax_game_poster.png)
+### Reel 1: DDPM: Denoising Diffusion Probabilistic Models: Part 1 - Statistical Thermodynamics in AI: Turning Non-Equilibrium Physics into Generative Art
+- **Topic Queue Part:** `goat_ddpm_part_1` (arXiv: [2006.11239](https://arxiv.org/abs/2006.11239))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/wX7z8RZFxLY](https://youtube.com/shorts/wX7z8RZFxLY) (`wX7z8RZFxLY`)
+- **High-CTR Poster:** [ddpm_diffusion_thermodynamics_poster.png](public/thumbnails/ddpm_diffusion_thermodynamics_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: GANs: Generative Adversarial Networks Mini-Series 1/5: GANs: Generative Adversarial Networks: Part 1 - The Counterfeiter and the Cop: Zero-Sum Game Theory in Deep Learning*
-- **Everyday Analogy:** *Formulating generative AI as a minimax game between a Generator forging fake data and a Discriminator detecting authentic samples.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_gan_minimax_game_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: DDPM: Denoising Diffusion Probabilistic Models Mini-Series 1/5: DDPM: Denoising Diffusion Probabilistic Models: Part 1 - Statistical Thermodynamics in AI: Turning Non-Equilibrium Physics into Generative Art*
+- **Everyday Analogy:** *Why reversing physical entropy and noise diffusion fundamentally outperforms adversarial min-max games for stable image synthesis.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_ddpm_diffusion_thermodynamics_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
