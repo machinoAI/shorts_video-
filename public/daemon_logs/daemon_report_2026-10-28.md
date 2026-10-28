@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-28 | **Timestamp:** 2026-10-28 17:20:14 UTC
+**Date:** 2026-10-28 | **Timestamp:** 2026-10-28 18:31:26 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 1 - The Memory Wall: Why Modern GPUs Were Idling While Computing Attention
-- **Topic Queue Part:** `goat_flashattention_part_1` (arXiv: [2205.14135](https://arxiv.org/abs/2205.14135))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/O0s59PsENSo](https://youtube.com/shorts/O0s59PsENSo) (`O0s59PsENSo`)
-- **High-CTR Poster:** [flash_attention_memory_wall_poster.png](public/thumbnails/flash_attention_memory_wall_poster.png)
+### Reel 1: Word2Vec: Semantic Vector Spaces: Part 1 - The Curse of Discrete Tokens: Why Early NLP Treated Dog and Cat as Orthogonal
+- **Topic Queue Part:** `goat_word2vec_part_1` (arXiv: [1301.3781](https://arxiv.org/abs/1301.3781))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/K2IWFJSRsm4](https://youtube.com/shorts/K2IWFJSRsm4) (`K2IWFJSRsm4`)
+- **High-CTR Poster:** [word2vec_semantic_curse_poster.png](public/thumbnails/word2vec_semantic_curse_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: FlashAttention: Fast & Memory-Efficient Exact Attention Mini-Series 1/5: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 1 - The Memory Wall: Why Modern GPUs Were Idling While Computing Attention*
-- **Everyday Analogy:** *Why standard attention was memory-bandwidth bound rather than compute bound, leaving high-performance tensor cores starved of data.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_flash_attention_memory_wall_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: Word2Vec: Semantic Vector Spaces Mini-Series 1/5: Word2Vec: Semantic Vector Spaces: Part 1 - The Curse of Discrete Tokens: Why Early NLP Treated Dog and Cat as Orthogonal*
+- **Everyday Analogy:** *Why 50,000-dimensional sparse one-hot encodings failed to capture synonymy or semantic similarity, and the need for dense continuous embeddings.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_word2vec_semantic_curse_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs

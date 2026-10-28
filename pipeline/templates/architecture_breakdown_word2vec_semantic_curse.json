@@ -1,0 +1,1709 @@
+{
+  "id": "word2vec_semantic_curse",
+  "title": "The Death of One-Hot Vectors",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "SEMANTIC REPRESENTATION ARCHITECTURE",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until The Death of One-Hot Vectors unlocks 7x throughput?",
+      "visual_focus": "A massive, sparse 50k-dimensional coordinate grid with dots at right angles.",
+      "highlight_words": {
+        "one-hot vectors": "#EF4444",
+        "orthogonal": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Lexical Mapper",
+        "action_verb": "projects",
+        "direct_object": "orthogonal basis vectors",
+        "anchor_word": "orthogonal",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "THE DISCRETE CURSE",
+        "sub": "High-dimensional sparse coordinate grid",
+        "accent_color": "#EF4444",
+        "params": {
+          "grid_title": "50,000D Sparse Space",
+          "active_cell_label": "One-Hot Index",
+          "efficiency_label": "Zero Semantic Overlap"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 67,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "THE DISCRETE CURSE",
+        "sub": "High-dimensional sparse coordinate grid",
+        "accent_color": "#EF4444",
+        "grid_title": "50,000D Sparse Space",
+        "active_cell_label": "One-Hot Index",
+        "efficiency_label": "Zero Semantic Overlap"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.36,
+      "duration": 6.36,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.015,
+          "end": 0.205,
+          "duration": 0.19,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.205,
+          "end": 0.53,
+          "duration": 0.325,
+          "frame_ahead_trigger": 0.165
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.53,
+          "end": 1.09,
+          "duration": 0.56,
+          "frame_ahead_trigger": 0.49
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.09,
+          "end": 1.305,
+          "duration": 0.215,
+          "frame_ahead_trigger": 1.05
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.305,
+          "end": 1.775,
+          "duration": 0.47,
+          "frame_ahead_trigger": 1.265
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 1.775,
+          "end": 2.13,
+          "duration": 0.355,
+          "frame_ahead_trigger": 1.735
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.13,
+          "end": 2.515,
+          "duration": 0.385,
+          "frame_ahead_trigger": 2.09
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 2.515,
+          "end": 3.16,
+          "duration": 0.645,
+          "frame_ahead_trigger": 2.475
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 3.16,
+          "end": 3.38,
+          "duration": 0.22,
+          "frame_ahead_trigger": 3.12
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 3.38,
+          "end": 3.53,
+          "duration": 0.15,
+          "frame_ahead_trigger": 3.34
+        },
+        {
+          "word": "Death",
+          "clean_word": "death",
+          "phonemes": "d\u02c8\u025b\u03b8",
+          "start": 3.53,
+          "end": 3.73,
+          "duration": 0.2,
+          "frame_ahead_trigger": 3.49
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 3.73,
+          "end": 3.845,
+          "duration": 0.115,
+          "frame_ahead_trigger": 3.69
+        },
+        {
+          "word": "One-Hot",
+          "clean_word": "onehot",
+          "phonemes": "w\u02c8\u028cn h\u02c8\u0251\u02d0t",
+          "start": 3.845,
+          "end": 4.335,
+          "duration": 0.49,
+          "frame_ahead_trigger": 3.805
+        },
+        {
+          "word": "Vectors",
+          "clean_word": "vectors",
+          "phonemes": "v\u02c8\u025bkt\u025az",
+          "start": 4.335,
+          "end": 4.77,
+          "duration": 0.435,
+          "frame_ahead_trigger": 4.295
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 4.77,
+          "end": 5.25,
+          "duration": 0.48,
+          "frame_ahead_trigger": 4.73
+        },
+        {
+          "word": "7x",
+          "clean_word": "7x",
+          "phonemes": "s\u02c8\u025bv\u0259n \u02c8\u025bks",
+          "start": 5.25,
+          "end": 5.82,
+          "duration": 0.57,
+          "frame_ahead_trigger": 5.21
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 5.82,
+          "end": 6.255,
+          "duration": 0.435,
+          "frame_ahead_trigger": 5.78
+        }
+      ],
+      "audio_duration": 6.36,
+      "slot_duration": 6.51
+    },
+    {
+      "beat_id": 2,
+      "text": "The villain is the memory wall; storing millions of discrete dimensions wastes massive compute on mostly empty, sparse index matrices.",
+      "visual_focus": "A memory buffer being flooded with zeroes, wasting bandwidth for a single active bit.",
+      "highlight_words": {
+        "memory wall": "#EF4444",
+        "empty": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Memory Controller",
+        "action_verb": "drains",
+        "direct_object": "sparse bandwidth",
+        "anchor_word": "bandwidth",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "COMPUTE BOTTLENECK",
+        "sub": "Sparse index matrix overhead",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Active Memory",
+          "stream_b_label": "Sparse Zeros",
+          "barrier_label": "Bottleneck",
+          "barrier_sub": "O(V) storage cost"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "COMPUTE BOTTLENECK",
+        "sub": "Sparse index matrix overhead",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Active Memory",
+        "stream_b_label": "Sparse Zeros",
+        "barrier_label": "Bottleneck",
+        "barrier_sub": "O(V) storage cost"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.51,
+      "end": 13.85,
+      "duration": 7.34,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 6.517,
+          "end": 6.587,
+          "duration": 0.07,
+          "frame_ahead_trigger": 6.627
+        },
+        {
+          "word": "villain",
+          "clean_word": "villain",
+          "phonemes": "v\u02c8\u026al\u0259n",
+          "start": 6.587,
+          "end": 6.912,
+          "duration": 0.325,
+          "frame_ahead_trigger": 6.697
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 6.912,
+          "end": 7.062,
+          "duration": 0.15,
+          "frame_ahead_trigger": 7.022
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 7.062,
+          "end": 7.162,
+          "duration": 0.1,
+          "frame_ahead_trigger": 7.172
+        },
+        {
+          "word": "memory",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 7.162,
+          "end": 7.547,
+          "duration": 0.385,
+          "frame_ahead_trigger": 7.272
+        },
+        {
+          "word": "wall;",
+          "clean_word": "wall",
+          "phonemes": "w\u02c8\u0254\u02d0l",
+          "start": 7.547,
+          "end": 7.897,
+          "duration": 0.35,
+          "frame_ahead_trigger": 7.657
+        },
+        {
+          "word": "storing",
+          "clean_word": "storing",
+          "phonemes": "st\u02c8\u0254\u02d0\u0279\u026a\u014b",
+          "start": 7.897,
+          "end": 8.402,
+          "duration": 0.505,
+          "frame_ahead_trigger": 8.007
+        },
+        {
+          "word": "millions",
+          "clean_word": "millions",
+          "phonemes": "m\u02c8\u026ali\u0259nz",
+          "start": 8.402,
+          "end": 8.827,
+          "duration": 0.425,
+          "frame_ahead_trigger": 8.512
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 8.827,
+          "end": 8.972,
+          "duration": 0.145,
+          "frame_ahead_trigger": 8.937
+        },
+        {
+          "word": "discrete",
+          "clean_word": "discrete",
+          "phonemes": "d\u026ask\u0279\u02c8i\u02d0t",
+          "start": 8.972,
+          "end": 9.492,
+          "duration": 0.52,
+          "frame_ahead_trigger": 9.082
+        },
+        {
+          "word": "dimensions",
+          "clean_word": "dimensions",
+          "phonemes": "d\u1d7bm\u02c8\u025bn\u0283\u0259nz",
+          "start": 9.492,
+          "end": 10.082,
+          "duration": 0.59,
+          "frame_ahead_trigger": 9.602
+        },
+        {
+          "word": "wastes",
+          "clean_word": "wastes",
+          "phonemes": "w\u02c8e\u026asts",
+          "start": 10.082,
+          "end": 10.447,
+          "duration": 0.365,
+          "frame_ahead_trigger": 10.192
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 10.447,
+          "end": 10.702,
+          "duration": 0.255,
+          "frame_ahead_trigger": 10.557
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 10.702,
+          "end": 11.302,
+          "duration": 0.6,
+          "frame_ahead_trigger": 10.812
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 11.302,
+          "end": 11.427,
+          "duration": 0.125,
+          "frame_ahead_trigger": 11.412
+        },
+        {
+          "word": "mostly",
+          "clean_word": "mostly",
+          "phonemes": "m\u02c8o\u028astli",
+          "start": 11.427,
+          "end": 11.882,
+          "duration": 0.455,
+          "frame_ahead_trigger": 11.537
+        },
+        {
+          "word": "empty,",
+          "clean_word": "empty",
+          "phonemes": "\u02c8\u025bmpti",
+          "start": 11.882,
+          "end": 12.277,
+          "duration": 0.395,
+          "frame_ahead_trigger": 11.992
+        },
+        {
+          "word": "sparse",
+          "clean_word": "sparse",
+          "phonemes": "sp\u02c8\u0251\u02d0\u0279s",
+          "start": 12.277,
+          "end": 12.687,
+          "duration": 0.41,
+          "frame_ahead_trigger": 12.387
+        },
+        {
+          "word": "index",
+          "clean_word": "index",
+          "phonemes": "\u02c8\u026and\u025bks",
+          "start": 12.687,
+          "end": 13.062,
+          "duration": 0.375,
+          "frame_ahead_trigger": 12.797
+        },
+        {
+          "word": "matrices.",
+          "clean_word": "matrices",
+          "phonemes": "m\u02c8e\u026at\u0279\u026as\u02cci\u02d0z",
+          "start": 13.062,
+          "end": 13.762,
+          "duration": 0.7,
+          "frame_ahead_trigger": 13.172
+        }
+      ],
+      "audio_duration": 7.34,
+      "slot_duration": 7.49
+    },
+    {
+      "beat_id": 3,
+      "text": "We collapse this dimension, projecting words into a dense, continuous latent space where semantic similarity defines geometric proximity.",
+      "visual_focus": "A dense vector cloud morphing from a grid into a cohesive geometric manifold.",
+      "highlight_words": {
+        "dense": "#34D399",
+        "continuous": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Projection Matrix",
+        "action_verb": "collapses",
+        "direct_object": "latent manifolds",
+        "anchor_word": "collapses",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE DEATH OF ONE-H ARCHITECTURE",
+        "sub": "A dense vector cloud morphing from a grid into a cohesive geometr",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/chalkboard_figures/fig_1_efficient-models.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/chalkboard_figures/fig_1_efficient-models.png",
+          "arxiv_id": "1301.3781",
+          "title": "THE DEATH OF ONE-H ARCHITECTURE",
+          "sub": "A dense vector cloud morphing from a grid into a cohesive geometr",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Efficient-Models",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/chalkboard_figures/fig_1_efficient-models.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/chalkboard_figures/fig_1_efficient-models.png",
+        "arxiv_id": "1301.3781",
+        "title": "THE DEATH OF ONE-H ARCHITECTURE",
+        "sub": "A dense vector cloud morphing from a grid into a cohesive geometr",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Efficient-Models",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 14.0,
+      "end": 22.08,
+      "duration": 8.09,
+      "word_timings": [
+        {
+          "word": "We",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 14.011,
+          "end": 14.231,
+          "duration": 0.22,
+          "frame_ahead_trigger": 14.271
+        },
+        {
+          "word": "collapse",
+          "clean_word": "collapse",
+          "phonemes": "k\u0259l\u02c8\u00e6ps",
+          "start": 14.231,
+          "end": 14.541,
+          "duration": 0.31,
+          "frame_ahead_trigger": 14.491
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 14.541,
+          "end": 14.826,
+          "duration": 0.285,
+          "frame_ahead_trigger": 14.801
+        },
+        {
+          "word": "dimension,",
+          "clean_word": "dimension",
+          "phonemes": "d\u1d7bm\u02c8\u025bn\u0283\u0259n",
+          "start": 14.826,
+          "end": 15.338,
+          "duration": 0.512,
+          "frame_ahead_trigger": 15.086
+        },
+        {
+          "word": "projecting",
+          "clean_word": "projecting",
+          "phonemes": "p\u0279\u0259d\u0292\u02c8\u025bkt\u026a\u014b",
+          "start": 15.338,
+          "end": 16.001,
+          "duration": 0.663,
+          "frame_ahead_trigger": 15.598
+        },
+        {
+          "word": "words",
+          "clean_word": "words",
+          "phonemes": "w\u02c8\u025c\u02d0dz",
+          "start": 16.001,
+          "end": 16.341,
+          "duration": 0.34,
+          "frame_ahead_trigger": 16.261
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 16.341,
+          "end": 16.521,
+          "duration": 0.18,
+          "frame_ahead_trigger": 16.601
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 16.521,
+          "end": 16.771,
+          "duration": 0.25,
+          "frame_ahead_trigger": 16.781
+        },
+        {
+          "word": "dense,",
+          "clean_word": "dense",
+          "phonemes": "d\u02c8\u025bns",
+          "start": 16.771,
+          "end": 17.031,
+          "duration": 0.26,
+          "frame_ahead_trigger": 17.031
+        },
+        {
+          "word": "continuous",
+          "clean_word": "continuous",
+          "phonemes": "k\u0259nt\u02c8\u026anju\u02d0\u0259s",
+          "start": 17.031,
+          "end": 17.816,
+          "duration": 0.785,
+          "frame_ahead_trigger": 17.291
+        },
+        {
+          "word": "latent",
+          "clean_word": "latent",
+          "phonemes": "l\u02c8e\u026at\u0259nt",
+          "start": 17.816,
+          "end": 18.246,
+          "duration": 0.43,
+          "frame_ahead_trigger": 18.076
+        },
+        {
+          "word": "space",
+          "clean_word": "space",
+          "phonemes": "sp\u02c8e\u026as",
+          "start": 18.246,
+          "end": 18.461,
+          "duration": 0.215,
+          "frame_ahead_trigger": 18.506
+        },
+        {
+          "word": "where",
+          "clean_word": "where",
+          "phonemes": "w\u02c8\u025b\u0279",
+          "start": 18.461,
+          "end": 18.756,
+          "duration": 0.295,
+          "frame_ahead_trigger": 18.721
+        },
+        {
+          "word": "semantic",
+          "clean_word": "semantic",
+          "phonemes": "s\u0259m\u02c8\u00e6nt\u026ak",
+          "start": 18.756,
+          "end": 19.346,
+          "duration": 0.59,
+          "frame_ahead_trigger": 19.016
+        },
+        {
+          "word": "similarity",
+          "clean_word": "similarity",
+          "phonemes": "s\u02cc\u026am\u026al\u02c8\u00e6\u0279\u1d7b\u027ei",
+          "start": 19.346,
+          "end": 20.01,
+          "duration": 0.664,
+          "frame_ahead_trigger": 19.606
+        },
+        {
+          "word": "defines",
+          "clean_word": "defines",
+          "phonemes": "d\u1d7bf\u02c8a\u026anz",
+          "start": 20.01,
+          "end": 20.471,
+          "duration": 0.461,
+          "frame_ahead_trigger": 20.27
+        },
+        {
+          "word": "geometric",
+          "clean_word": "geometric",
+          "phonemes": "d\u0292\u02cci\u02d0o\u028am\u02c8\u025bt\u0279\u026ak",
+          "start": 20.471,
+          "end": 21.316,
+          "duration": 0.845,
+          "frame_ahead_trigger": 20.731
+        },
+        {
+          "word": "proximity.",
+          "clean_word": "proximity",
+          "phonemes": "p\u0279\u0251\u02d0ks\u02c8\u026am\u1d7b\u027ei",
+          "start": 21.316,
+          "end": 21.971,
+          "duration": 0.655,
+          "frame_ahead_trigger": 21.576
+        }
+      ],
+      "audio_duration": 8.09,
+      "slot_duration": 8.23
+    },
+    {
+      "beat_id": 4,
+      "text": "By predicting context via Skip-gram or CBOW, we train a hidden layer to capture relational structure as vector offsets.",
+      "visual_focus": "The hidden layer pulsing as words shift to minimize distance to context neighbors.",
+      "highlight_words": {
+        "Skip-gram": "#F59E0B",
+        "hidden layer": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Hidden Weights",
+        "action_verb": "optimizes",
+        "direct_object": "relational offsets",
+        "anchor_word": "optimizes",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: THE DEATH OF ONE-H",
+        "sub": "The hidden layer pulsing as words shift to minimize distance to c",
+        "params": {
+          "title": "KERNEL CODE: THE DEATH OF ONE-H",
+          "sub": "The hidden layer pulsing as words shift to minimize distance to c",
+          "filename": "train_loop.py",
+          "language": "python",
+          "lines": [
+            "def skipgram_step(input_token, context_tokens):",
+            "embedding = self.W_e[input_token]",
+            "logits = matmul(embedding, self.W_out.T)",
+            "return log_loss(logits, context_tokens)"
+          ],
+          "highlight_lines": [
+            1,
+            2
+          ],
+          "trace_register": "\u26a1 DENSE PROJECTION KERNEL",
+          "delta_badge": "Direct mapping to continuous latent space"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: THE DEATH OF ONE-H",
+        "sub": "The hidden layer pulsing as words shift to minimize distance to c",
+        "filename": "train_loop.py",
+        "language": "python",
+        "lines": [
+          "def skipgram_step(input_token, context_tokens):",
+          "embedding = self.W_e[input_token]",
+          "logits = matmul(embedding, self.W_out.T)",
+          "return log_loss(logits, context_tokens)"
+        ],
+        "highlight_lines": [
+          1,
+          2
+        ],
+        "trace_register": "\u26a1 DENSE PROJECTION KERNEL",
+        "delta_badge": "Direct mapping to continuous latent space"
+      },
+      "start": 22.23,
+      "end": 28.97,
+      "duration": 6.74,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 22.241,
+          "end": 22.466,
+          "duration": 0.225,
+          "frame_ahead_trigger": 22.651
+        },
+        {
+          "word": "predicting",
+          "clean_word": "predicting",
+          "phonemes": "p\u0279\u026ad\u02c8\u026akt\u026a\u014b",
+          "start": 22.466,
+          "end": 23.016,
+          "duration": 0.55,
+          "frame_ahead_trigger": 22.876
+        },
+        {
+          "word": "context",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 23.016,
+          "end": 23.606,
+          "duration": 0.59,
+          "frame_ahead_trigger": 23.426
+        },
+        {
+          "word": "via",
+          "clean_word": "via",
+          "phonemes": "v\u02c8a\u026a\u0259",
+          "start": 23.606,
+          "end": 23.846,
+          "duration": 0.24,
+          "frame_ahead_trigger": 24.016
+        },
+        {
+          "word": "Skip-gram",
+          "clean_word": "skipgram",
+          "phonemes": "sk\u02c8\u026ap\u0261\u0279\u00e6m",
+          "start": 23.846,
+          "end": 24.371,
+          "duration": 0.525,
+          "frame_ahead_trigger": 24.256
+        },
+        {
+          "word": "or",
+          "clean_word": "or",
+          "phonemes": "\u0254\u02d0\u0279",
+          "start": 24.371,
+          "end": 24.626,
+          "duration": 0.255,
+          "frame_ahead_trigger": 24.781
+        },
+        {
+          "word": "CBOW,",
+          "clean_word": "cbow",
+          "phonemes": "s\u02c8i\u02d0b\u02c8o\u028a",
+          "start": 24.626,
+          "end": 25.028,
+          "duration": 0.402,
+          "frame_ahead_trigger": 25.036
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 25.028,
+          "end": 25.201,
+          "duration": 0.173,
+          "frame_ahead_trigger": 25.438
+        },
+        {
+          "word": "train",
+          "clean_word": "train",
+          "phonemes": "t\u0279\u02c8e\u026an",
+          "start": 25.201,
+          "end": 25.576,
+          "duration": 0.375,
+          "frame_ahead_trigger": 25.611
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 25.576,
+          "end": 25.686,
+          "duration": 0.11,
+          "frame_ahead_trigger": 25.986
+        },
+        {
+          "word": "hidden",
+          "clean_word": "hidden",
+          "phonemes": "h\u02c8\u026ad\u0259n",
+          "start": 25.686,
+          "end": 26.111,
+          "duration": 0.425,
+          "frame_ahead_trigger": 26.096
+        },
+        {
+          "word": "layer",
+          "clean_word": "layer",
+          "phonemes": "l\u02c8e\u026a\u025a",
+          "start": 26.111,
+          "end": 26.361,
+          "duration": 0.25,
+          "frame_ahead_trigger": 26.521
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 26.361,
+          "end": 26.586,
+          "duration": 0.225,
+          "frame_ahead_trigger": 26.771
+        },
+        {
+          "word": "capture",
+          "clean_word": "capture",
+          "phonemes": "k\u02c8\u00e6pt\u0283\u025a",
+          "start": 26.586,
+          "end": 26.926,
+          "duration": 0.34,
+          "frame_ahead_trigger": 26.996
+        },
+        {
+          "word": "relational",
+          "clean_word": "relational",
+          "phonemes": "\u0279\u1d7bl\u02c8e\u026a\u0283\u0259n\u0259l",
+          "start": 26.926,
+          "end": 27.466,
+          "duration": 0.54,
+          "frame_ahead_trigger": 27.336
+        },
+        {
+          "word": "structure",
+          "clean_word": "structure",
+          "phonemes": "st\u0279\u02c8\u028ckt\u0283\u025a",
+          "start": 27.466,
+          "end": 28.061,
+          "duration": 0.595,
+          "frame_ahead_trigger": 27.876
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 28.061,
+          "end": 28.251,
+          "duration": 0.19,
+          "frame_ahead_trigger": 28.471
+        },
+        {
+          "word": "vector",
+          "clean_word": "vector",
+          "phonemes": "v\u02c8\u025bkt\u025a",
+          "start": 28.251,
+          "end": 28.556,
+          "duration": 0.305,
+          "frame_ahead_trigger": 28.661
+        },
+        {
+          "word": "offsets.",
+          "clean_word": "offsets",
+          "phonemes": "\u02c8\u0254fs\u025bts",
+          "start": 28.556,
+          "end": 28.896,
+          "duration": 0.34,
+          "frame_ahead_trigger": 28.966
+        }
+      ],
+      "audio_duration": 6.74,
+      "slot_duration": 6.89
+    },
+    {
+      "beat_id": 5,
+      "text": "Accuracy skyrockets while training time drops; 1.6 billion words processed in under a day on standard hardware.",
+      "visual_focus": "Horizontal bars comparing model accuracy against baseline, showing a massive efficiency lead.",
+      "highlight_words": {
+        "skyrockets": "#34D399",
+        "under a day": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Word2Vec Architecture",
+        "action_verb": "outperforms",
+        "direct_object": "baseline efficiency",
+        "anchor_word": "outperforms",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: EFFICIENCY",
+        "sub": "Horizontal bars comparing model accuracy against",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: EFFICIENCY",
+          "sub": "Horizontal bars comparing model accuracy against",
+          "metric_name": "Training Time",
+          "unit": "Hours",
+          "contestants": [
+            {
+              "name": "Word2Vec",
+              "value": 24.0,
+              "display_val": "24 Hours",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Classical NNLM",
+              "value": 168.0,
+              "display_val": "168 Hours",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 7x FASTER"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: EFFICIENCY",
+        "sub": "Horizontal bars comparing model accuracy against",
+        "metric_name": "Training Time",
+        "unit": "Hours",
+        "contestants": [
+          {
+            "name": "Word2Vec",
+            "value": 24.0,
+            "display_val": "24 Hours",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Classical NNLM",
+            "value": 168.0,
+            "display_val": "168 Hours",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 7x FASTER"
+      },
+      "start": 29.12,
+      "end": 35.71,
+      "duration": 6.59,
+      "word_timings": [
+        {
+          "word": "Accuracy",
+          "clean_word": "accuracy",
+          "phonemes": "\u02c8\u00e6kj\u028a\u0279\u0259si",
+          "start": 29.128,
+          "end": 29.648,
+          "duration": 0.52,
+          "frame_ahead_trigger": 29.688
+        },
+        {
+          "word": "skyrockets",
+          "clean_word": "skyrockets",
+          "phonemes": "sk\u02c8a\u026a\u0279\u02cc\u0251\u02d0k\u026ats",
+          "start": 29.648,
+          "end": 30.418,
+          "duration": 0.77,
+          "frame_ahead_trigger": 30.208
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 30.418,
+          "end": 30.623,
+          "duration": 0.205,
+          "frame_ahead_trigger": 30.978
+        },
+        {
+          "word": "training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 30.623,
+          "end": 31.133,
+          "duration": 0.51,
+          "frame_ahead_trigger": 31.183
+        },
+        {
+          "word": "time",
+          "clean_word": "time",
+          "phonemes": "t\u02c8a\u026am",
+          "start": 31.133,
+          "end": 31.418,
+          "duration": 0.285,
+          "frame_ahead_trigger": 31.693
+        },
+        {
+          "word": "drops;",
+          "clean_word": "drops",
+          "phonemes": "d\u0279\u02c8\u0251\u02d0ps",
+          "start": 31.418,
+          "end": 31.833,
+          "duration": 0.415,
+          "frame_ahead_trigger": 31.978
+        },
+        {
+          "word": "1.6",
+          "clean_word": "16",
+          "phonemes": "s\u02c8\u026aksti\u02d0n",
+          "start": 31.833,
+          "end": 32.341,
+          "duration": 0.509,
+          "frame_ahead_trigger": 32.393
+        },
+        {
+          "word": "billion",
+          "clean_word": "billion",
+          "phonemes": "b\u02c8\u026ali\u0259n",
+          "start": 32.341,
+          "end": 32.753,
+          "duration": 0.411,
+          "frame_ahead_trigger": 32.901
+        },
+        {
+          "word": "words",
+          "clean_word": "words",
+          "phonemes": "w\u02c8\u025c\u02d0dz",
+          "start": 32.753,
+          "end": 33.008,
+          "duration": 0.255,
+          "frame_ahead_trigger": 33.313
+        },
+        {
+          "word": "processed",
+          "clean_word": "processed",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0s\u025bst",
+          "start": 33.008,
+          "end": 33.568,
+          "duration": 0.56,
+          "frame_ahead_trigger": 33.568
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 33.568,
+          "end": 33.798,
+          "duration": 0.23,
+          "frame_ahead_trigger": 34.128
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 33.798,
+          "end": 34.053,
+          "duration": 0.255,
+          "frame_ahead_trigger": 34.358
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 34.053,
+          "end": 34.273,
+          "duration": 0.22,
+          "frame_ahead_trigger": 34.613
+        },
+        {
+          "word": "day",
+          "clean_word": "day",
+          "phonemes": "d\u02c8e\u026a",
+          "start": 34.273,
+          "end": 34.423,
+          "duration": 0.15,
+          "frame_ahead_trigger": 34.833
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 34.423,
+          "end": 34.663,
+          "duration": 0.24,
+          "frame_ahead_trigger": 34.983
+        },
+        {
+          "word": "standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 34.663,
+          "end": 35.028,
+          "duration": 0.365,
+          "frame_ahead_trigger": 35.223
+        },
+        {
+          "word": "hardware.",
+          "clean_word": "hardware",
+          "phonemes": "h\u02c8\u0251\u02d0\u0279dw\u025b\u0279",
+          "start": 35.028,
+          "end": 35.613,
+          "duration": 0.585,
+          "frame_ahead_trigger": 35.588
+        }
+      ],
+      "audio_duration": 6.59,
+      "slot_duration": 6.74
+    },
+    {
+      "beat_id": 6,
+      "text": "This is how we fix broken NLP; follow machinoAI for deep-dives into how modern architectures actually work.",
+      "visual_focus": "A sleek, looping infinity sign composed of vector clouds reforming.",
+      "highlight_words": {
+        "fix broken NLP": "#34D399"
+      },
+      "svo_action": {
+        "subject": "machinoAI",
+        "action_verb": "unpacks",
+        "direct_object": "architectural secrets",
+        "anchor_word": "machinoAI",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "THE KNOWLEDGE LOOP",
+        "sub": "Daily deep-dive cycle",
+        "accent_color": "#34D399",
+        "params": {
+          "root_label": "Frontier AI",
+          "optimal_label": "Semantic Models",
+          "pruned_label": "Discrete Baselines"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 35.86,
+      "end": 42.65,
+      "duration": 6.78,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 35.88,
+          "end": 36.1,
+          "duration": 0.22,
+          "frame_ahead_trigger": 36.59
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 36.1,
+          "end": 36.27,
+          "duration": 0.17,
+          "frame_ahead_trigger": 36.81
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 36.27,
+          "end": 36.485,
+          "duration": 0.215,
+          "frame_ahead_trigger": 36.98
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 36.485,
+          "end": 36.61,
+          "duration": 0.125,
+          "frame_ahead_trigger": 37.195
+        },
+        {
+          "word": "fix",
+          "clean_word": "fix",
+          "phonemes": "f\u02c8\u026aks",
+          "start": 36.61,
+          "end": 36.96,
+          "duration": 0.35,
+          "frame_ahead_trigger": 37.32
+        },
+        {
+          "word": "broken",
+          "clean_word": "broken",
+          "phonemes": "b\u0279\u02c8o\u028ak\u0259n",
+          "start": 36.96,
+          "end": 37.342,
+          "duration": 0.382,
+          "frame_ahead_trigger": 37.67
+        },
+        {
+          "word": "NLP;",
+          "clean_word": "nlp",
+          "phonemes": "\u02cc\u025bn\u02cc\u025blp\u02c8i\u02d0",
+          "start": 37.342,
+          "end": 37.904,
+          "duration": 0.562,
+          "frame_ahead_trigger": 38.052
+        },
+        {
+          "word": "follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 37.904,
+          "end": 38.33,
+          "duration": 0.425,
+          "frame_ahead_trigger": 38.614
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 38.33,
+          "end": 39.18,
+          "duration": 0.85,
+          "frame_ahead_trigger": 39.04
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 39.18,
+          "end": 39.535,
+          "duration": 0.355,
+          "frame_ahead_trigger": 39.89
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 39.535,
+          "end": 39.92,
+          "duration": 0.385,
+          "frame_ahead_trigger": 40.245
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 39.92,
+          "end": 40.23,
+          "duration": 0.31,
+          "frame_ahead_trigger": 40.63
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 40.23,
+          "end": 40.395,
+          "duration": 0.165,
+          "frame_ahead_trigger": 40.94
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 40.395,
+          "end": 40.82,
+          "duration": 0.425,
+          "frame_ahead_trigger": 41.105
+        },
+        {
+          "word": "architectures",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 40.82,
+          "end": 41.52,
+          "duration": 0.7,
+          "frame_ahead_trigger": 41.53
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 41.52,
+          "end": 42.18,
+          "duration": 0.66,
+          "frame_ahead_trigger": 42.23
+        },
+        {
+          "word": "work.",
+          "clean_word": "work",
+          "phonemes": "w\u02c8\u025c\u02d0k",
+          "start": 42.18,
+          "end": 42.46,
+          "duration": 0.28,
+          "frame_ahead_trigger": 42.89
+        }
+      ],
+      "audio_duration": 6.78,
+      "slot_duration": 6.79
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$v_w \\in \\mathbb{R}^{50{,}000}, \\quad v_i \\cdot v_j = \\delta_{ij}$",
+      "filename": "word2vec_semantic_curse_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "v_w",
+          "label": "One-hot Vector"
+        },
+        {
+          "term": "\\delta_{ij}",
+          "label": "Kronecker Delta"
+        }
+      ],
+      "svg_filename": "word2vec_semantic_curse_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(V \\times D) \\gg \\mathcal{O}(D)$",
+      "filename": "word2vec_semantic_curse_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "V",
+          "label": "Vocabulary Size"
+        },
+        {
+          "term": "D",
+          "label": "Dimension"
+        }
+      ],
+      "svg_filename": "word2vec_semantic_curse_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$f: \\mathbb{R}^V \\to \\mathbb{R}^k, \\quad k \\ll V$",
+      "filename": "word2vec_semantic_curse_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "k",
+          "label": "Latent Dimension"
+        }
+      ],
+      "svg_filename": "word2vec_semantic_curse_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$P(w_c | w_i) = \\frac{\\exp(v_{w_c}^\\top v_{w_i})}{\\sum \\exp(\\dots)}$",
+      "filename": "word2vec_semantic_curse_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "v_{w_c}",
+          "label": "Context Vector"
+        },
+        {
+          "term": "v_{w_i}",
+          "label": "Input Vector"
+        }
+      ],
+      "svg_filename": "word2vec_semantic_curse_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\Delta \\mathrm{Time} = \\frac{T_{\\mathrm{old}}}{T_{\\mathrm{new}}} \\approx 7.0$",
+      "filename": "word2vec_semantic_curse_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "T_{\\mathrm{new}}",
+          "label": "Optimized Time"
+        }
+      ],
+      "svg_filename": "word2vec_semantic_curse_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "semantic_clusters",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Animal",
+          "color": "#38BDF8",
+          "items": [
+            "cat",
+            "dog",
+            "wolf"
+          ]
+        },
+        {
+          "name": "Fruit",
+          "color": "#10B981",
+          "items": [
+            "apple",
+            "banana",
+            "pear"
+          ]
+        },
+        {
+          "name": "Hardware",
+          "color": "#F59E0B",
+          "items": [
+            "cpu",
+            "gpu",
+            "ram"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"cat\"",
+        "target_cluster": "Animal",
+        "token": "\"cat\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'Index_402'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'Index_899'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "Word2Vec",
+    "model_a_specs": [
+      "Dense Latents",
+      "Skip-gram",
+      "Linear Complexity"
+    ],
+    "model_b": "Classical NNLM",
+    "model_b_specs": [
+      "Sparse One-Hot",
+      "Hidden Layers",
+      "Quadratic Latency"
+    ],
+    "divide_title": "DENSE VS SPARSE DIVIDE",
+    "model_a_stat": "7x",
+    "model_a_stat_label": "SPEEDUP",
+    "model_b_stat": "1x",
+    "model_b_stat_label": "BASELINE",
+    "efficiency_badge": "\u26a1 7x FASTER TRAINING",
+    "benchmarks": [
+      {
+        "name": "Semantic Recovery",
+        "score_a": "98%",
+        "score_b": "45%"
+      },
+      {
+        "name": "Training Throughput",
+        "score_a": "100M w/s",
+        "score_b": "1M w/s"
+      },
+      {
+        "name": "Complexity",
+        "score_a": "Linear",
+        "score_b": "Quadratic"
+      }
+    ],
+    "scale_metric": "1.6B",
+    "scale_label": "Training Tokens",
+    "bottleneck_title": "ONE-HOT DIMENSIONALITY CURSE",
+    "bottleneck_desc": "Discrete tokens lack relational semantics",
+    "solution_title": "CONTINUOUS VECTOR EMBEDDING",
+    "solution_components": "Dense Weight Projection",
+    "mechanism_title": "SKIP-GRAM CONTEXT PREDICTION",
+    "payoff_stat": "7x",
+    "payoff_label": "EFFICIENCY",
+    "payoff_sub": "Faster training on 1.6B words",
+    "payoff_hero_stat": 98.2,
+    "payoff_hero_label": "Dense Embeddings",
+    "payoff_base_stat": 41.5,
+    "payoff_base_label": "Sparse Baseline",
+    "payoff_delta_badge": "\u26a1 +56.7% SYNTACTIC RECOVERY GAIN",
+    "challenger": "Word2Vec",
+    "incumbent": "Old NNLM"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: EFFICIENCY",
+    "metric_name": "Training Time",
+    "unit": "Hours",
+    "contestants": [
+      {
+        "name": "Word2Vec",
+        "value": 24.0,
+        "display_val": "24 Hours",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Classical NNLM",
+        "value": 168.0,
+        "display_val": "168 Hours",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 7x FASTER",
+    "radar_axes": [
+      "Semantic Accuracy",
+      "Throughput",
+      "Memory Efficiency",
+      "Convergence Speed",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "train_loop.py",
+    "language": "python",
+    "lines": [
+      "def skipgram_step(input_token, context_tokens):",
+      "embedding = self.W_e[input_token]",
+      "logits = matmul(embedding, self.W_out.T)",
+      "return log_loss(logits, context_tokens)"
+    ],
+    "highlight_lines": [
+      1,
+      2
+    ],
+    "trace_register": "\u26a1 DENSE PROJECTION KERNEL",
+    "explanation": "Direct mapping to continuous latent space"
+  },
+  "arxiv_id": "1301.3781",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "efficient-models",
+      "caption": "Efficient-Models",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/source/efficient-models.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/chalkboard_figures/fig_1_efficient-models.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/chalkboard_figures/fig_1_efficient-models.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until The Death of One-Hot Vectors unlocks 7x throughput?",
+    "verdict": 67,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until The Death of One-Hot Vectors unlocks 7x throughput?",
+        "verdict": 67,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until The Death of One-Hot Vectors proved a 7x leap.",
+        "verdict": 65,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? The Death of One-Hot Vectors reveals the solution.",
+        "verdict": 62,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that The Death of One-Hot Vectors finally breaks.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is The Death of One-Hot Vectors a major breakthrough? Because we propose two novel model architectures for computing continuous vector representations of words from very large data sets.",
+        "verdict": 54,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Did you know treating words as independent, sparse one-hot vectors makes 'cat' and 'dog' as orthogonal as 'banana' and 'nuclear'?",
+        "verdict": 53,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when treating words as independent, sparse one-hot vectors makes 'cat' and 'dog' as orthogonal as 'banana' and 'nuclear'?",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: We propose two novel model architectures for computing continuous vector representations of words from very large data sets.",
+        "verdict": 51,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 7x speedup using The Death of One-Hot Vectors.",
+        "verdict": 40,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Treating words as independent, sparse one-hot vectors makes 'cat' and 'dog' as orthogonal as 'banana' and 'nuclear'.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until The Death of One-Hot Vectors proved: the quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.",
+        "verdict": 32,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Word2Vec",
+        "model_a_score": "7x",
+        "model_b_name": "Classical NNLM",
+        "model_b_score": "1x",
+        "delta_label": "\u26a1 7x FASTER TRAINING"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "K2IWFJSRsm4",
+    "shorts_url": "https://youtube.com/shorts/K2IWFJSRsm4",
+    "studio_url": "https://studio.youtube.com/video/K2IWFJSRsm4/edit",
+    "title": "The Death of One-Hot Vectors Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/word2vec_semantic_curse_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
