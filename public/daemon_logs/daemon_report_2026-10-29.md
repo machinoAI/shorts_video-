@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-29 | **Timestamp:** 2026-10-29 17:33:53 UTC
+**Date:** 2026-10-29 | **Timestamp:** 2026-10-29 18:40:51 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Vision Transformer (ViT): Attention for Visual Recognition: Part 1 - The Inductive Bias Myth: Do We Actually Need Convolutions for Computer Vision?
-- **Topic Queue Part:** `goat_vit_part_1` (arXiv: [2010.11929](https://arxiv.org/abs/2010.11929))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/J5NTrhHfPkI](https://youtube.com/shorts/J5NTrhHfPkI) (`J5NTrhHfPkI`)
-- **High-CTR Poster:** [vit_inductive_bias_poster.png](public/thumbnails/vit_inductive_bias_poster.png)
+### Reel 1: CLIP: Contrastive Language-Image Pretraining: Part 1 - The Closed-World Trap: Why 1,000 Fixed ImageNet Labels Stunted Computer Vision
+- **Topic Queue Part:** `goat_clip_part_1` (arXiv: [2103.00020](https://arxiv.org/abs/2103.00020))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/4z4gzwt9d5Q](https://youtube.com/shorts/4z4gzwt9d5Q) (`4z4gzwt9d5Q`)
+- **High-CTR Poster:** [clip_closed_world_trap_poster.png](public/thumbnails/clip_closed_world_trap_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: Vision Transformer (ViT): Attention for Visual Recognition Mini-Series 1/5: Vision Transformer (ViT): Attention for Visual Recognition: Part 1 - The Inductive Bias Myth: Do We Actually Need Convolutions for Computer Vision?*
-- **Everyday Analogy:** *Questioning the dogma of translation invariance and local connectivity, asking if a pure Transformer could learn visual geometry from data alone.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_vit_inductive_bias_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: CLIP: Contrastive Language-Image Pretraining Mini-Series 1/5: CLIP: Contrastive Language-Image Pretraining: Part 1 - The Closed-World Trap: Why 1,000 Fixed ImageNet Labels Stunted Computer Vision*
+- **Everyday Analogy:** *Why training models to classify images into rigid category labels prevented zero-shot generalization to real-world visual concepts.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_clip_closed_world_trap_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs

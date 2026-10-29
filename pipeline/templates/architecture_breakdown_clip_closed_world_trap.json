@@ -1,0 +1,1775 @@
+{
+  "id": "clip_closed_world_trap",
+  "title": "The Closed-World Trap: Why Fixed ImageNet Labels Stunted Vision",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "CLOSED-WORLD TRAP",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Training vision models on fixed labels is a relic; it forces the model to ignore everything outside that specific bucket.",
+      "visual_focus": "A rigid 1,000-cell grid filling with labels.",
+      "highlight_words": {
+        "fixed labels": "#EF4444",
+        "specific bucket": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Vision Model",
+        "action_verb": "constrains",
+        "direct_object": "Visual Concepts",
+        "anchor_word": "bucket",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "THE LABEL BOTTLENECK",
+        "sub": "Fixed categorization versus reality",
+        "accent_color": "#EF4444",
+        "params": {
+          "grid_title": "ImageNet Label Space",
+          "active_cell_label": "1 of 1,000 Categories",
+          "efficiency_label": "Zero-shot Capability: 0%"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 52,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "THE LABEL BOTTLENECK",
+        "sub": "Fixed categorization versus reality",
+        "accent_color": "#EF4444",
+        "grid_title": "ImageNet Label Space",
+        "active_cell_label": "1 of 1,000 Categories",
+        "efficiency_label": "Zero-shot Capability: 0%"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.76,
+      "duration": 6.76,
+      "word_timings": [
+        {
+          "word": "Training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 0.03,
+          "end": 0.495,
+          "duration": 0.465,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "vision",
+          "clean_word": "vision",
+          "phonemes": "v\u02c8\u026a\u0292\u0259n",
+          "start": 0.495,
+          "end": 0.835,
+          "duration": 0.34,
+          "frame_ahead_trigger": 0.455
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 0.835,
+          "end": 1.29,
+          "duration": 0.455,
+          "frame_ahead_trigger": 0.795
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 1.29,
+          "end": 1.53,
+          "duration": 0.24,
+          "frame_ahead_trigger": 1.25
+        },
+        {
+          "word": "fixed",
+          "clean_word": "fixed",
+          "phonemes": "f\u02c8\u026akst",
+          "start": 1.53,
+          "end": 1.775,
+          "duration": 0.245,
+          "frame_ahead_trigger": 1.49
+        },
+        {
+          "word": "labels",
+          "clean_word": "labels",
+          "phonemes": "l\u02c8e\u026ab\u0259lz",
+          "start": 1.775,
+          "end": 2.22,
+          "duration": 0.445,
+          "frame_ahead_trigger": 1.735
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 2.22,
+          "end": 2.35,
+          "duration": 0.13,
+          "frame_ahead_trigger": 2.18
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 2.35,
+          "end": 2.572,
+          "duration": 0.222,
+          "frame_ahead_trigger": 2.31
+        },
+        {
+          "word": "relic;",
+          "clean_word": "relic",
+          "phonemes": "\u0279\u02c8\u025bl\u026ak",
+          "start": 2.572,
+          "end": 2.919,
+          "duration": 0.347,
+          "frame_ahead_trigger": 2.532
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 2.919,
+          "end": 3.1,
+          "duration": 0.181,
+          "frame_ahead_trigger": 2.879
+        },
+        {
+          "word": "forces",
+          "clean_word": "forces",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u1d7bz",
+          "start": 3.1,
+          "end": 3.435,
+          "duration": 0.335,
+          "frame_ahead_trigger": 3.06
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 3.435,
+          "end": 3.63,
+          "duration": 0.195,
+          "frame_ahead_trigger": 3.395
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 3.63,
+          "end": 3.96,
+          "duration": 0.33,
+          "frame_ahead_trigger": 3.59
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 3.96,
+          "end": 4.105,
+          "duration": 0.145,
+          "frame_ahead_trigger": 3.92
+        },
+        {
+          "word": "ignore",
+          "clean_word": "ignore",
+          "phonemes": "\u026a\u0261n\u02c8\u0254\u02d0\u0279",
+          "start": 4.105,
+          "end": 4.51,
+          "duration": 0.405,
+          "frame_ahead_trigger": 4.065
+        },
+        {
+          "word": "everything",
+          "clean_word": "everything",
+          "phonemes": "\u02c8\u025bv\u0279\u026a\u03b8\u02cc\u026a\u014b",
+          "start": 4.51,
+          "end": 5.16,
+          "duration": 0.65,
+          "frame_ahead_trigger": 4.47
+        },
+        {
+          "word": "outside",
+          "clean_word": "outside",
+          "phonemes": "a\u028ats\u02c8a\u026ad",
+          "start": 5.16,
+          "end": 5.577,
+          "duration": 0.417,
+          "frame_ahead_trigger": 5.12
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 5.577,
+          "end": 5.875,
+          "duration": 0.298,
+          "frame_ahead_trigger": 5.537
+        },
+        {
+          "word": "specific",
+          "clean_word": "specific",
+          "phonemes": "sp\u0259s\u02c8\u026af\u026ak",
+          "start": 5.875,
+          "end": 6.245,
+          "duration": 0.37,
+          "frame_ahead_trigger": 5.835
+        },
+        {
+          "word": "bucket.",
+          "clean_word": "bucket",
+          "phonemes": "b\u02c8\u028ck\u026at",
+          "start": 6.245,
+          "end": 6.675,
+          "duration": 0.43,
+          "frame_ahead_trigger": 6.205
+        }
+      ],
+      "audio_duration": 6.76,
+      "slot_duration": 6.91
+    },
+    {
+      "beat_id": 2,
+      "text": "The villain is the 'Softmax wall'\u2014a gated threshold that forces a singular, discrete guess, blinding the system to any novel concept.",
+      "visual_focus": "A Softmax function collapsing complex probability distributions into a single, sharp spike.",
+      "highlight_words": {
+        "Softmax wall": "#EF4444",
+        "blinding": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Softmax Layer",
+        "action_verb": "collapses",
+        "direct_object": "Latent Distribution",
+        "anchor_word": "wall",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "optimization_landscape",
+        "title": "THE SOFTMAX WALL",
+        "sub": "Probabilistic collapse of latent space",
+        "accent_color": "#EF4444",
+        "params": {
+          "landscape_title": "Probability Density Landscape",
+          "optima_label": "Fixed Class Index"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "optimization_landscape",
+        "title": "THE SOFTMAX WALL",
+        "sub": "Probabilistic collapse of latent space",
+        "accent_color": "#EF4444",
+        "landscape_title": "Probability Density Landscape",
+        "optima_label": "Fixed Class Index"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.91,
+      "end": 14.25,
+      "duration": 7.34,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 6.923,
+          "end": 6.998,
+          "duration": 0.075,
+          "frame_ahead_trigger": 7.033
+        },
+        {
+          "word": "villain",
+          "clean_word": "villain",
+          "phonemes": "v\u02c8\u026al\u0259n",
+          "start": 6.998,
+          "end": 7.458,
+          "duration": 0.46,
+          "frame_ahead_trigger": 7.108
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 7.458,
+          "end": 7.563,
+          "duration": 0.105,
+          "frame_ahead_trigger": 7.568
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 7.563,
+          "end": 7.633,
+          "duration": 0.07,
+          "frame_ahead_trigger": 7.673
+        },
+        {
+          "word": "'Softmax",
+          "clean_word": "softmax",
+          "phonemes": "s\u02c8\u0254ftm\u00e6ks",
+          "start": 7.633,
+          "end": 8.138,
+          "duration": 0.505,
+          "frame_ahead_trigger": 7.743
+        },
+        {
+          "word": "wall'\u2014a",
+          "clean_word": "walla",
+          "phonemes": "w\u02c8\u0254l\u0259",
+          "start": 8.138,
+          "end": 8.472,
+          "duration": 0.334,
+          "frame_ahead_trigger": 8.248
+        },
+        {
+          "word": "gated",
+          "clean_word": "gated",
+          "phonemes": "\u0261\u02c8e\u026a\u027e\u1d7bd",
+          "start": 8.472,
+          "end": 8.843,
+          "duration": 0.371,
+          "frame_ahead_trigger": 8.582
+        },
+        {
+          "word": "threshold",
+          "clean_word": "threshold",
+          "phonemes": "\u03b8\u0279\u02c8\u025b\u0283o\u028ald",
+          "start": 8.843,
+          "end": 9.313,
+          "duration": 0.47,
+          "frame_ahead_trigger": 8.953
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 9.313,
+          "end": 9.588,
+          "duration": 0.275,
+          "frame_ahead_trigger": 9.423
+        },
+        {
+          "word": "forces",
+          "clean_word": "forces",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u1d7bz",
+          "start": 9.588,
+          "end": 10.178,
+          "duration": 0.59,
+          "frame_ahead_trigger": 9.698
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 10.178,
+          "end": 10.318,
+          "duration": 0.14,
+          "frame_ahead_trigger": 10.288
+        },
+        {
+          "word": "singular,",
+          "clean_word": "singular",
+          "phonemes": "s\u02c8\u026a\u014b\u0261j\u028al\u025a",
+          "start": 10.318,
+          "end": 10.833,
+          "duration": 0.515,
+          "frame_ahead_trigger": 10.428
+        },
+        {
+          "word": "discrete",
+          "clean_word": "discrete",
+          "phonemes": "d\u026ask\u0279\u02c8i\u02d0t",
+          "start": 10.833,
+          "end": 11.483,
+          "duration": 0.65,
+          "frame_ahead_trigger": 10.943
+        },
+        {
+          "word": "guess,",
+          "clean_word": "guess",
+          "phonemes": "\u0261\u02c8\u025bs",
+          "start": 11.483,
+          "end": 11.698,
+          "duration": 0.215,
+          "frame_ahead_trigger": 11.593
+        },
+        {
+          "word": "blinding",
+          "clean_word": "blinding",
+          "phonemes": "bl\u02c8a\u026and\u026a\u014b",
+          "start": 11.698,
+          "end": 12.098,
+          "duration": 0.4,
+          "frame_ahead_trigger": 11.808
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 12.098,
+          "end": 12.383,
+          "duration": 0.285,
+          "frame_ahead_trigger": 12.208
+        },
+        {
+          "word": "system",
+          "clean_word": "system",
+          "phonemes": "s\u02c8\u026ast\u0259m",
+          "start": 12.383,
+          "end": 12.808,
+          "duration": 0.425,
+          "frame_ahead_trigger": 12.493
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 12.808,
+          "end": 12.903,
+          "duration": 0.095,
+          "frame_ahead_trigger": 12.918
+        },
+        {
+          "word": "any",
+          "clean_word": "any",
+          "phonemes": "\u02cc\u025bni",
+          "start": 12.903,
+          "end": 13.158,
+          "duration": 0.255,
+          "frame_ahead_trigger": 13.013
+        },
+        {
+          "word": "novel",
+          "clean_word": "novel",
+          "phonemes": "n\u02c8\u0251\u02d0v\u0259l",
+          "start": 13.158,
+          "end": 13.493,
+          "duration": 0.335,
+          "frame_ahead_trigger": 13.268
+        },
+        {
+          "word": "concept.",
+          "clean_word": "concept",
+          "phonemes": "k\u02c8\u0251\u02d0ns\u025bpt",
+          "start": 13.493,
+          "end": 14.073,
+          "duration": 0.58,
+          "frame_ahead_trigger": 13.603
+        }
+      ],
+      "audio_duration": 7.34,
+      "slot_duration": 7.49
+    },
+    {
+      "beat_id": 3,
+      "text": "CLIP pivots by using natural language as a bridge; it maps images and captions into a shared, high-dimensional joint embedding space.",
+      "visual_focus": "Text and image vectors converging toward the same coordinate center.",
+      "highlight_words": {
+        "natural language": "#38BDF8",
+        "shared": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Contrastive Projection",
+        "action_verb": "aligns",
+        "direct_object": "Multi-modal Embedding",
+        "anchor_word": "bridge",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE CLOSED-WORLD T ARCHITECTURE",
+        "sub": "Text and image vectors converging toward the same coordinate cent",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_main-diagrams.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_main-diagrams.png",
+          "arxiv_id": "2103.00020",
+          "title": "THE CLOSED-WORLD T ARCHITECTURE",
+          "sub": "Text and image vectors converging toward the same coordinate cent",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Main-Diagrams",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_main-diagrams.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_main-diagrams.png",
+        "arxiv_id": "2103.00020",
+        "title": "THE CLOSED-WORLD T ARCHITECTURE",
+        "sub": "Text and image vectors converging toward the same coordinate cent",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Main-Diagrams",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 14.4,
+      "end": 21.61,
+      "duration": 7.21,
+      "word_timings": [
+        {
+          "word": "CLIP",
+          "clean_word": "clip",
+          "phonemes": "kl\u02c8\u026ap",
+          "start": 14.401,
+          "end": 14.571,
+          "duration": 0.17,
+          "frame_ahead_trigger": 14.661
+        },
+        {
+          "word": "pivots",
+          "clean_word": "pivots",
+          "phonemes": "p\u02c8\u026av\u0259ts",
+          "start": 14.571,
+          "end": 15.026,
+          "duration": 0.455,
+          "frame_ahead_trigger": 14.831
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 15.026,
+          "end": 15.331,
+          "duration": 0.305,
+          "frame_ahead_trigger": 15.286
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 15.331,
+          "end": 15.701,
+          "duration": 0.37,
+          "frame_ahead_trigger": 15.591
+        },
+        {
+          "word": "natural",
+          "clean_word": "natural",
+          "phonemes": "n\u02c8\u00e6t\u0283\u025a\u0279\u0259l",
+          "start": 15.701,
+          "end": 16.136,
+          "duration": 0.435,
+          "frame_ahead_trigger": 15.961
+        },
+        {
+          "word": "language",
+          "clean_word": "language",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292",
+          "start": 16.136,
+          "end": 16.811,
+          "duration": 0.675,
+          "frame_ahead_trigger": 16.396
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 16.811,
+          "end": 16.819,
+          "duration": 0.007,
+          "frame_ahead_trigger": 17.071
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 16.819,
+          "end": 16.987,
+          "duration": 0.169,
+          "frame_ahead_trigger": 17.079
+        },
+        {
+          "word": "bridge;",
+          "clean_word": "bridge",
+          "phonemes": "b\u0279\u02c8\u026ad\u0292",
+          "start": 16.987,
+          "end": 17.301,
+          "duration": 0.314,
+          "frame_ahead_trigger": 17.247
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 17.301,
+          "end": 17.411,
+          "duration": 0.11,
+          "frame_ahead_trigger": 17.561
+        },
+        {
+          "word": "maps",
+          "clean_word": "maps",
+          "phonemes": "m\u02c8\u00e6ps",
+          "start": 17.411,
+          "end": 17.756,
+          "duration": 0.345,
+          "frame_ahead_trigger": 17.671
+        },
+        {
+          "word": "images",
+          "clean_word": "images",
+          "phonemes": "\u02c8\u026am\u026ad\u0292\u1d7bz",
+          "start": 17.756,
+          "end": 18.206,
+          "duration": 0.45,
+          "frame_ahead_trigger": 18.016
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 18.206,
+          "end": 18.391,
+          "duration": 0.185,
+          "frame_ahead_trigger": 18.466
+        },
+        {
+          "word": "captions",
+          "clean_word": "captions",
+          "phonemes": "k\u02c8\u00e6p\u0283\u0259nz",
+          "start": 18.391,
+          "end": 18.856,
+          "duration": 0.465,
+          "frame_ahead_trigger": 18.651
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 18.856,
+          "end": 18.996,
+          "duration": 0.14,
+          "frame_ahead_trigger": 19.116
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 18.996,
+          "end": 19.276,
+          "duration": 0.28,
+          "frame_ahead_trigger": 19.256
+        },
+        {
+          "word": "shared,",
+          "clean_word": "shared",
+          "phonemes": "\u0283\u02c8\u025b\u0279d",
+          "start": 19.276,
+          "end": 19.517,
+          "duration": 0.241,
+          "frame_ahead_trigger": 19.536
+        },
+        {
+          "word": "high-dimensional",
+          "clean_word": "highdimensional",
+          "phonemes": "h\u02c8a\u026ad\u1d7bm\u02cc\u025bn\u0283\u0259n\u0259l",
+          "start": 19.517,
+          "end": 20.436,
+          "duration": 0.919,
+          "frame_ahead_trigger": 19.777
+        },
+        {
+          "word": "joint",
+          "clean_word": "joint",
+          "phonemes": "d\u0292\u02c8\u0254\u026ant",
+          "start": 20.436,
+          "end": 20.696,
+          "duration": 0.26,
+          "frame_ahead_trigger": 20.696
+        },
+        {
+          "word": "embedding",
+          "clean_word": "embedding",
+          "phonemes": "\u025bmb\u02c8\u025bd\u026a\u014b",
+          "start": 20.696,
+          "end": 21.226,
+          "duration": 0.53,
+          "frame_ahead_trigger": 20.956
+        },
+        {
+          "word": "space.",
+          "clean_word": "space",
+          "phonemes": "sp\u02c8e\u026as",
+          "start": 21.226,
+          "end": 21.541,
+          "duration": 0.315,
+          "frame_ahead_trigger": 21.486
+        }
+      ],
+      "audio_duration": 7.21,
+      "slot_duration": 7.36
+    },
+    {
+      "beat_id": 4,
+      "text": "Instead of classification, it performs a massive cross-modal match, selecting the text vector with the highest cosine similarity to the image.",
+      "visual_focus": "Cosine similarity matrix calculating inner products between N image-text pairs.",
+      "highlight_words": {
+        "cross-modal match": "#F59E0B",
+        "cosine similarity": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Similarity Matrix",
+        "action_verb": "computes",
+        "direct_object": "Correlation Scores",
+        "anchor_word": "similarity",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: THE CLOSED-WORLD T",
+        "sub": "Cosine similarity matrix calculating inner products between N ima",
+        "params": {
+          "title": "KERNEL CODE: THE CLOSED-WORLD T",
+          "sub": "Cosine similarity matrix calculating inner products between N ima",
+          "filename": "clip_similarity.py",
+          "language": "python",
+          "lines": [
+            "def compute_similarity(image_embed, text_embed):",
+            "# Normalized inner product",
+            "logits = (image_embed @ text_embed.T)",
+            "return logits"
+          ],
+          "highlight_lines": [
+            2,
+            3
+          ],
+          "trace_register": "\u26a1 COSINE SIMILARITY ALIGNMENT",
+          "delta_badge": "Compute projection into shared manifold"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: THE CLOSED-WORLD T",
+        "sub": "Cosine similarity matrix calculating inner products between N ima",
+        "filename": "clip_similarity.py",
+        "language": "python",
+        "lines": [
+          "def compute_similarity(image_embed, text_embed):",
+          "# Normalized inner product",
+          "logits = (image_embed @ text_embed.T)",
+          "return logits"
+        ],
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "trace_register": "\u26a1 COSINE SIMILARITY ALIGNMENT",
+        "delta_badge": "Compute projection into shared manifold"
+      },
+      "start": 21.76,
+      "end": 29.61,
+      "duration": 7.85,
+      "word_timings": [
+        {
+          "word": "Instead",
+          "clean_word": "instead",
+          "phonemes": "\u026anst\u02c8\u025bd",
+          "start": 21.772,
+          "end": 22.132,
+          "duration": 0.36,
+          "frame_ahead_trigger": 22.182
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 22.132,
+          "end": 22.322,
+          "duration": 0.19,
+          "frame_ahead_trigger": 22.542
+        },
+        {
+          "word": "classification,",
+          "clean_word": "classification",
+          "phonemes": "kl\u02cc\u00e6s\u026af\u026ak\u02c8e\u026a\u0283\u0259n",
+          "start": 22.322,
+          "end": 23.242,
+          "duration": 0.92,
+          "frame_ahead_trigger": 22.732
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 23.242,
+          "end": 23.362,
+          "duration": 0.12,
+          "frame_ahead_trigger": 23.652
+        },
+        {
+          "word": "performs",
+          "clean_word": "performs",
+          "phonemes": "p\u025af\u02c8\u0254\u02d0\u0279mz",
+          "start": 23.362,
+          "end": 23.892,
+          "duration": 0.53,
+          "frame_ahead_trigger": 23.772
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 23.892,
+          "end": 24.182,
+          "duration": 0.29,
+          "frame_ahead_trigger": 24.302
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 24.182,
+          "end": 24.402,
+          "duration": 0.22,
+          "frame_ahead_trigger": 24.592
+        },
+        {
+          "word": "cross-modal",
+          "clean_word": "crossmodal",
+          "phonemes": "k\u0279\u02c8\u0254sm\u0251\u02d0d\u0259l",
+          "start": 24.402,
+          "end": 25.092,
+          "duration": 0.69,
+          "frame_ahead_trigger": 24.812
+        },
+        {
+          "word": "match,",
+          "clean_word": "match",
+          "phonemes": "m\u02c8\u00e6t\u0283",
+          "start": 25.092,
+          "end": 25.377,
+          "duration": 0.285,
+          "frame_ahead_trigger": 25.502
+        },
+        {
+          "word": "selecting",
+          "clean_word": "selecting",
+          "phonemes": "s\u1d7bl\u02c8\u025bkt\u026a\u014b",
+          "start": 25.377,
+          "end": 25.972,
+          "duration": 0.595,
+          "frame_ahead_trigger": 25.787
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 25.972,
+          "end": 26.127,
+          "duration": 0.155,
+          "frame_ahead_trigger": 26.382
+        },
+        {
+          "word": "text",
+          "clean_word": "text",
+          "phonemes": "t\u02c8\u025bkst",
+          "start": 26.127,
+          "end": 26.537,
+          "duration": 0.41,
+          "frame_ahead_trigger": 26.537
+        },
+        {
+          "word": "vector",
+          "clean_word": "vector",
+          "phonemes": "v\u02c8\u025bkt\u025a",
+          "start": 26.537,
+          "end": 26.852,
+          "duration": 0.315,
+          "frame_ahead_trigger": 26.947
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 26.852,
+          "end": 27.097,
+          "duration": 0.245,
+          "frame_ahead_trigger": 27.262
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 27.097,
+          "end": 27.222,
+          "duration": 0.125,
+          "frame_ahead_trigger": 27.507
+        },
+        {
+          "word": "highest",
+          "clean_word": "highest",
+          "phonemes": "h\u02c8a\u026a\u026ast",
+          "start": 27.222,
+          "end": 27.497,
+          "duration": 0.275,
+          "frame_ahead_trigger": 27.632
+        },
+        {
+          "word": "cosine",
+          "clean_word": "cosine",
+          "phonemes": "k\u02c8o\u028asa\u026an",
+          "start": 27.497,
+          "end": 28.037,
+          "duration": 0.54,
+          "frame_ahead_trigger": 27.907
+        },
+        {
+          "word": "similarity",
+          "clean_word": "similarity",
+          "phonemes": "s\u02cc\u026am\u026al\u02c8\u00e6\u0279\u1d7b\u027ei",
+          "start": 28.037,
+          "end": 28.822,
+          "duration": 0.785,
+          "frame_ahead_trigger": 28.447
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 28.822,
+          "end": 29.027,
+          "duration": 0.205,
+          "frame_ahead_trigger": 29.232
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 29.027,
+          "end": 29.117,
+          "duration": 0.09,
+          "frame_ahead_trigger": 29.437
+        },
+        {
+          "word": "image.",
+          "clean_word": "image",
+          "phonemes": "\u02c8\u026am\u026ad\u0292",
+          "start": 29.117,
+          "end": 29.512,
+          "duration": 0.395,
+          "frame_ahead_trigger": 29.527
+        }
+      ],
+      "audio_duration": 7.85,
+      "slot_duration": 8.0
+    },
+    {
+      "beat_id": 5,
+      "text": "This delivers zero-shot performance competitive with fully supervised models, without needing a single label from the target dataset.",
+      "visual_focus": "Bar chart comparing ResNet-50 ImageNet accuracy vs Zero-shot CLIP.",
+      "highlight_words": {
+        "zero-shot": "#34D399",
+        "competitive": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Zero-shot CLIP",
+        "action_verb": "outperforms",
+        "direct_object": "Supervised Baseline",
+        "anchor_word": "competitive",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: ZERO-SHOT ACCURACY",
+        "sub": "Bar chart comparing ResNet-50 ImageNet accuracy vs",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: ZERO-SHOT ACCURACY",
+          "sub": "Bar chart comparing ResNet-50 ImageNet accuracy vs",
+          "metric_name": "Accuracy",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "CLIP Zero-Shot",
+              "value": 76.2,
+              "display_val": "76.2%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "ResNet-50 (Supervised)",
+              "value": 76.2,
+              "display_val": "76.2%",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 EQUIVALENT PERFORMANCE"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: ZERO-SHOT ACCURACY",
+        "sub": "Bar chart comparing ResNet-50 ImageNet accuracy vs",
+        "metric_name": "Accuracy",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "CLIP Zero-Shot",
+            "value": 76.2,
+            "display_val": "76.2%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "ResNet-50 (Supervised)",
+            "value": 76.2,
+            "display_val": "76.2%",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 EQUIVALENT PERFORMANCE"
+      },
+      "start": 29.76,
+      "end": 36.8,
+      "duration": 7.04,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 29.778,
+          "end": 30.028,
+          "duration": 0.25,
+          "frame_ahead_trigger": 30.338
+        },
+        {
+          "word": "delivers",
+          "clean_word": "delivers",
+          "phonemes": "d\u1d7bl\u02c8\u026av\u025az",
+          "start": 30.028,
+          "end": 30.358,
+          "duration": 0.33,
+          "frame_ahead_trigger": 30.588
+        },
+        {
+          "word": "zero-shot",
+          "clean_word": "zeroshot",
+          "phonemes": "z\u02c8i\u0259\u0279\u0259\u0283\u02cc\u0251\u02d0t",
+          "start": 30.358,
+          "end": 31.068,
+          "duration": 0.71,
+          "frame_ahead_trigger": 30.918
+        },
+        {
+          "word": "performance",
+          "clean_word": "performance",
+          "phonemes": "p\u025af\u02c8\u0254\u02d0\u0279m\u0259ns",
+          "start": 31.068,
+          "end": 31.598,
+          "duration": 0.53,
+          "frame_ahead_trigger": 31.628
+        },
+        {
+          "word": "competitive",
+          "clean_word": "competitive",
+          "phonemes": "k\u0259mp\u02c8\u025b\u027e\u1d7bt\u02cc\u026av",
+          "start": 31.598,
+          "end": 32.323,
+          "duration": 0.725,
+          "frame_ahead_trigger": 32.158
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 32.323,
+          "end": 32.408,
+          "duration": 0.085,
+          "frame_ahead_trigger": 32.883
+        },
+        {
+          "word": "fully",
+          "clean_word": "fully",
+          "phonemes": "f\u02c8\u028ali",
+          "start": 32.408,
+          "end": 32.688,
+          "duration": 0.28,
+          "frame_ahead_trigger": 32.968
+        },
+        {
+          "word": "supervised",
+          "clean_word": "supervised",
+          "phonemes": "s\u02c8u\u02d0p\u025av\u02cca\u026azd",
+          "start": 32.688,
+          "end": 33.388,
+          "duration": 0.7,
+          "frame_ahead_trigger": 33.248
+        },
+        {
+          "word": "models,",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 33.388,
+          "end": 33.808,
+          "duration": 0.42,
+          "frame_ahead_trigger": 33.948
+        },
+        {
+          "word": "without",
+          "clean_word": "without",
+          "phonemes": "w\u026a\u00f0\u02c8a\u028at",
+          "start": 33.808,
+          "end": 34.228,
+          "duration": 0.42,
+          "frame_ahead_trigger": 34.368
+        },
+        {
+          "word": "needing",
+          "clean_word": "needing",
+          "phonemes": "n\u02c8i\u02d0d\u026a\u014b",
+          "start": 34.228,
+          "end": 34.483,
+          "duration": 0.255,
+          "frame_ahead_trigger": 34.788
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 34.483,
+          "end": 34.643,
+          "duration": 0.16,
+          "frame_ahead_trigger": 35.043
+        },
+        {
+          "word": "single",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 34.643,
+          "end": 35.043,
+          "duration": 0.4,
+          "frame_ahead_trigger": 35.203
+        },
+        {
+          "word": "label",
+          "clean_word": "label",
+          "phonemes": "l\u02c8e\u026ab\u0259l",
+          "start": 35.043,
+          "end": 35.413,
+          "duration": 0.37,
+          "frame_ahead_trigger": 35.603
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 35.413,
+          "end": 35.608,
+          "duration": 0.195,
+          "frame_ahead_trigger": 35.973
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 35.608,
+          "end": 35.693,
+          "duration": 0.085,
+          "frame_ahead_trigger": 36.168
+        },
+        {
+          "word": "target",
+          "clean_word": "target",
+          "phonemes": "t\u02c8\u0251\u02d0\u0279\u0261\u026at",
+          "start": 35.693,
+          "end": 36.213,
+          "duration": 0.52,
+          "frame_ahead_trigger": 36.253
+        },
+        {
+          "word": "dataset.",
+          "clean_word": "dataset",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259s\u02cc\u025bt",
+          "start": 36.213,
+          "end": 36.703,
+          "duration": 0.49,
+          "frame_ahead_trigger": 36.773
+        }
+      ],
+      "audio_duration": 7.04,
+      "slot_duration": 7.19
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into the architectures that break the status quo of modern artificial intelligence.",
+      "visual_focus": "Abstract glowing geometric loop cycling back to the first frame.",
+      "highlight_words": {
+        "break the status quo": "#34D399"
+      },
+      "svo_action": {
+        "subject": "machinoAI",
+        "action_verb": "decodes",
+        "direct_object": "Next Architecture",
+        "anchor_word": "break",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "layer_stack",
+        "title": "THE FRONTIER",
+        "sub": "Beyond static paradigms",
+        "accent_color": "#34D399",
+        "params": {
+          "bottom_layer": "Data",
+          "mid_layer": "Architecture",
+          "top_layer": "Inference"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 36.95,
+      "end": 43.84,
+      "duration": 6.89,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 36.968,
+          "end": 37.368,
+          "duration": 0.4,
+          "frame_ahead_trigger": 37.678
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 37.368,
+          "end": 38.348,
+          "duration": 0.98,
+          "frame_ahead_trigger": 38.078
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 38.348,
+          "end": 38.483,
+          "duration": 0.135,
+          "frame_ahead_trigger": 39.058
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 38.483,
+          "end": 38.813,
+          "duration": 0.33,
+          "frame_ahead_trigger": 39.193
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 38.813,
+          "end": 39.348,
+          "duration": 0.535,
+          "frame_ahead_trigger": 39.523
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 39.348,
+          "end": 39.583,
+          "duration": 0.235,
+          "frame_ahead_trigger": 40.058
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 39.583,
+          "end": 39.693,
+          "duration": 0.11,
+          "frame_ahead_trigger": 40.293
+        },
+        {
+          "word": "architectures",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 39.693,
+          "end": 40.535,
+          "duration": 0.842,
+          "frame_ahead_trigger": 40.403
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 40.535,
+          "end": 40.793,
+          "duration": 0.258,
+          "frame_ahead_trigger": 41.245
+        },
+        {
+          "word": "break",
+          "clean_word": "break",
+          "phonemes": "b\u0279\u02c8e\u026ak",
+          "start": 40.793,
+          "end": 41.148,
+          "duration": 0.355,
+          "frame_ahead_trigger": 41.503
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 41.148,
+          "end": 41.238,
+          "duration": 0.09,
+          "frame_ahead_trigger": 41.858
+        },
+        {
+          "word": "status",
+          "clean_word": "status",
+          "phonemes": "st\u02c8\u00e6\u027e\u0259s",
+          "start": 41.238,
+          "end": 41.583,
+          "duration": 0.345,
+          "frame_ahead_trigger": 41.948
+        },
+        {
+          "word": "quo",
+          "clean_word": "quo",
+          "phonemes": "kw\u02c8o\u028a",
+          "start": 41.583,
+          "end": 42.008,
+          "duration": 0.425,
+          "frame_ahead_trigger": 42.293
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 42.008,
+          "end": 42.007,
+          "duration": -0.0,
+          "frame_ahead_trigger": 42.718
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 42.007,
+          "end": 42.398,
+          "duration": 0.39,
+          "frame_ahead_trigger": 42.717
+        },
+        {
+          "word": "artificial",
+          "clean_word": "artificial",
+          "phonemes": "\u02cc\u0251\u02d0\u0279\u027e\u026af\u02c8\u026a\u0283\u0259l",
+          "start": 42.398,
+          "end": 42.968,
+          "duration": 0.57,
+          "frame_ahead_trigger": 43.108
+        },
+        {
+          "word": "intelligence.",
+          "clean_word": "intelligence",
+          "phonemes": "\u026ant\u02c8\u025bl\u026ad\u0292\u0259ns",
+          "start": 42.968,
+          "end": 43.763,
+          "duration": 0.795,
+          "frame_ahead_trigger": 43.678
+        }
+      ],
+      "audio_duration": 6.89,
+      "slot_duration": 6.89
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$N_{\\mathrm{classes}} = 1000 \\to \\mathrm{Dist}(x) \\in \\Delta^{999}$",
+      "filename": "clip_closed_world_trap_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "N_{classes}",
+          "label": "Fixed Label Set"
+        },
+        {
+          "term": "\\Delta^{999}",
+          "label": "Probability Simplex"
+        }
+      ],
+      "svg_filename": "clip_closed_world_trap_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\sigma(z_i) = \\frac{e^{z_i}}{\\sum_{j=1}^K e^{z_j}}$",
+      "filename": "clip_closed_world_trap_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\sigma",
+          "label": "Softmax Gating"
+        },
+        {
+          "term": "K",
+          "label": "Class Count"
+        }
+      ],
+      "svg_filename": "clip_closed_world_trap_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$I_i \\cdot T_j = \\cos(\\theta_{ij})$",
+      "filename": "clip_closed_world_trap_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "I_i",
+          "label": "Image Embedding"
+        },
+        {
+          "term": "T_j",
+          "label": "Text Embedding"
+        }
+      ],
+      "svg_filename": "clip_closed_world_trap_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathcal{L} = -\\frac{1}{N} \\sum_{i=1}^N \\log \\frac{\\exp(I_i \\cdot T_i)}{\\sum_{j=1}^N \\exp(I_i \\cdot T_j)}$",
+      "filename": "clip_closed_world_trap_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "\\mathcal{L}",
+          "label": "Contrastive Loss"
+        },
+        {
+          "term": "I_i \\cdot T_i",
+          "label": "Positive Pairing"
+        }
+      ],
+      "svg_filename": "clip_closed_world_trap_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Acc}_{\\mathrm{zero-shot}} \\approx \\mathrm{Acc}_{\\mathrm{sup}}$",
+      "filename": "clip_closed_world_trap_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\mathrm{Acc}_{\\mathrm{zero-shot}}",
+          "label": "CLIP Performance"
+        },
+        {
+          "term": "\\mathrm{Acc}_{\\mathrm{sup}}",
+          "label": "Supervised Baseline"
+        }
+      ],
+      "svg_filename": "clip_closed_world_trap_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "semantic_clusters",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "IMAGES",
+          "color": "#38BDF8",
+          "items": [
+            "Pixels",
+            "Features",
+            "Latents"
+          ]
+        },
+        {
+          "name": "TEXT",
+          "color": "#10B981",
+          "items": [
+            "Tokens",
+            "Semantic Embeds",
+            "Captions"
+          ]
+        },
+        {
+          "name": "JOINT_SPACE",
+          "color": "#F59E0B",
+          "items": [
+            "Dot Product",
+            "Cosine Sim",
+            "Alignment"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"dog\"",
+        "target_cluster": "JOINT_SPACE",
+        "token": "\"dog\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Label 'Cat'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Label 'Dog'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "CLIP",
+    "model_a_specs": [
+      "400M (I,T) Pairs",
+      "Zero-Shot Inference",
+      "Transformer Architecture"
+    ],
+    "model_b": "ImageNet ResNet",
+    "model_b_specs": [
+      "1.2M Fixed Labels",
+      "Supervised Training",
+      "Rigid Categories"
+    ],
+    "divide_title": "CLOSED-WORLD VS NATURAL SUPERVISION",
+    "model_a_stat": "76.2%",
+    "model_a_stat_label": "ZERO-SHOT ACCURACY",
+    "model_b_stat": "76.2%",
+    "model_b_stat_label": "SUPERVISED ACCURACY",
+    "efficiency_badge": "\u26a1 +0% TRAINING DATA OVERHEAD",
+    "benchmarks": [
+      {
+        "name": "ImageNet (Zero-Shot)",
+        "score_a": "76.2%",
+        "score_b": "76.2%"
+      },
+      {
+        "name": "Data Efficiency",
+        "score_a": "Infinite",
+        "score_b": "Supervised"
+      },
+      {
+        "name": "Generalization",
+        "score_a": "High",
+        "score_b": "Low"
+      }
+    ],
+    "scale_metric": "400M",
+    "scale_label": "Training Image-Text Pairs",
+    "bottleneck_title": "SOFTMAX RIGIDITY",
+    "bottleneck_desc": "Collapse to fixed label sets",
+    "solution_title": "CONTRASTIVE ALIGNMENT",
+    "solution_components": "Visual & Textual Encoders",
+    "mechanism_title": "COSINE SIMILARITY MAPPING",
+    "payoff_stat": "76.2%",
+    "payoff_label": "IMAGE-ZERO-SHOT ACCURACY",
+    "payoff_sub": "Matching supervised benchmarks zero-shot",
+    "payoff_hero_stat": 76.2,
+    "payoff_hero_label": "CLIP (Zero-Shot)",
+    "payoff_base_stat": 76.2,
+    "payoff_base_label": "ResNet-50 (Supervised)",
+    "payoff_delta_badge": "\u26a1 PARITY ACHIEVED",
+    "challenger": "CLIP",
+    "incumbent": "ImageNet ResNet-50"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: ZERO-SHOT ACCURACY",
+    "metric_name": "Accuracy",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "CLIP Zero-Shot",
+        "value": 76.2,
+        "display_val": "76.2%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "ResNet-50 (Supervised)",
+        "value": 76.2,
+        "display_val": "76.2%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 EQUIVALENT PERFORMANCE",
+    "radar_axes": [
+      "Generalization",
+      "Training Speed",
+      "Zero-Shot Ability",
+      "Memory Efficiency",
+      "Cost"
+    ]
+  },
+  "code_snippet": {
+    "filename": "clip_similarity.py",
+    "language": "python",
+    "lines": [
+      "def compute_similarity(image_embed, text_embed):",
+      "# Normalized inner product",
+      "logits = (image_embed @ text_embed.T)",
+      "return logits"
+    ],
+    "highlight_lines": [
+      2,
+      3
+    ],
+    "trace_register": "\u26a1 COSINE SIMILARITY ALIGNMENT",
+    "explanation": "Compute projection into shared manifold"
+  },
+  "arxiv_id": "2103.00020",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "main-diagrams",
+      "caption": "Main-Diagrams",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/main-diagrams.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_main-diagrams.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_main-diagrams.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "zs-clip-vs-imagenet-robustness-datasets",
+      "caption": "Zs-Clip-Vs-Imagenet-Robustness-Datasets",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/zs-clip-vs-imagenet-robustness-datasets.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_2_zs-clip-vs-imagenet-robustness-datasets.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_2_zs-clip-vs-imagenet-robustness-datasets.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "zs-clip-vs-imagenet-robustness-plot",
+      "caption": "Zs-Clip-Vs-Imagenet-Robustness-Plot",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/zs-clip-vs-imagenet-robustness-plot.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_3_zs-clip-vs-imagenet-robustness-plot.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_3_zs-clip-vs-imagenet-robustness-plot.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "fs-clip-vs-imagenet-robustness-plot",
+      "caption": "Fs-Clip-Vs-Imagenet-Robustness-Plot",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/fs-clip-vs-imagenet-robustness-plot.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_4_fs-clip-vs-imagenet-robustness-plot.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_4_fs-clip-vs-imagenet-robustness-plot.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "efficiency-ablation",
+      "caption": "Efficiency-Ablation",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/efficiency-ablation.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_5_efficiency-ablation.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_5_efficiency-ablation.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Training vision models on fixed labels is a relic; it forces the model to ignore everything outside that specific bucket.",
+    "verdict": 52,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "CLIP",
+        "model_a_score": "76.2%",
+        "model_b_name": "ImageNet ResNet",
+        "model_b_score": "76.2%",
+        "delta_label": "\u26a1 +0% TRAINING DATA OVERHEAD"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "4z4gzwt9d5Q",
+    "shorts_url": "https://youtube.com/shorts/4z4gzwt9d5Q",
+    "studio_url": "https://studio.youtube.com/video/4z4gzwt9d5Q/edit",
+    "title": "The Closed-World Trap Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/clip_closed_world_trap_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
