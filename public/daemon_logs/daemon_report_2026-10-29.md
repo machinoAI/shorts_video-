@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-29 | **Timestamp:** 2026-10-29 02:47:10 UTC
+**Date:** 2026-10-29 | **Timestamp:** 2026-10-29 06:23:28 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Deep Q-Networks (DQN): Deep Reinforcement Learning: Part 1 - The High-Dimensional RL Barrier: Why Reinforcement Learning Failed on Video Games
-- **Topic Queue Part:** `goat_dqn_part_1` (arXiv: [1312.5602](https://arxiv.org/abs/1312.5602))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/c2frW0edd_M](https://youtube.com/shorts/c2frW0edd_M) (`c2frW0edd_M`)
-- **High-CTR Poster:** [dqn_atari_breakdown_poster.png](public/thumbnails/dqn_atari_breakdown_poster.png)
+### Reel 1: BERT: Deep Bidirectional Transformers: Part 1 - The Unidirectional Trap: Why Autoregressive Models Missed Half the Sentence Context
+- **Topic Queue Part:** `goat_bert_part_1` (arXiv: [1810.04805](https://arxiv.org/abs/1810.04805))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/nASNz82NsdU](https://youtube.com/shorts/nASNz82NsdU) (`nASNz82NsdU`)
+- **High-CTR Poster:** [bert_bidirectional_transformer_poster.png](public/thumbnails/bert_bidirectional_transformer_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: Deep Q-Networks (DQN): Deep Reinforcement Learning Mini-Series 1/5: Deep Q-Networks (DQN): Deep Reinforcement Learning: Part 1 - The High-Dimensional RL Barrier: Why Reinforcement Learning Failed on Video Games*
-- **Everyday Analogy:** *Why classical reinforcement learning relied on hand-crafted state features and collapsed when confronted with continuous 210x160 pixel screens.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_dqn_atari_breakdown_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: BERT: Deep Bidirectional Transformers Mini-Series 1/5: BERT: Deep Bidirectional Transformers: Part 1 - The Unidirectional Trap: Why Autoregressive Models Missed Half the Sentence Context*
+- **Everyday Analogy:** *Why left-to-right language models like GPT-1 could not incorporate future context into current representations, crippling performance on classification and QA.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_bert_bidirectional_transformer_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
