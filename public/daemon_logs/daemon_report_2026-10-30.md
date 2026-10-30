@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-30 | **Timestamp:** 2026-10-30 02:54:06 UTC
+**Date:** 2026-10-30 | **Timestamp:** 2026-10-30 06:23:19 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: AlphaFold 2: The Protein Folding Revolution: Part 1 - The 50-Year Biological Enigma: Why Predicting 3D Protein Folding Was Thought Impossible
-- **Topic Queue Part:** `goat_alphafold2_part_1` (arXiv: [alphafold2_nature_2021](https://arxiv.org/abs/alphafold2_nature_2021))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/5yhJxK6NHmY](https://youtube.com/shorts/5yhJxK6NHmY) (`5yhJxK6NHmY`)
-- **High-CTR Poster:** [alphafold2_protein_folding_poster.png](public/thumbnails/alphafold2_protein_folding_poster.png)
+### Reel 1: LoRA: Low-Rank Adaptation of Large Language Models: Part 1 - The Full Fine-Tuning Storage Crisis: Why Saving 100GB Checkpoints Per Task Was Dead
+- **Topic Queue Part:** `goat_lora_part_1` (arXiv: [2106.09685](https://arxiv.org/abs/2106.09685))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/gJ4MXi2YwOU](https://youtube.com/shorts/gJ4MXi2YwOU) (`gJ4MXi2YwOU`)
+- **High-CTR Poster:** [lora_storage_crisis_poster.png](public/thumbnails/lora_storage_crisis_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: AlphaFold 2: The Protein Folding Revolution Mini-Series 1/5: AlphaFold 2: The Protein Folding Revolution: Part 1 - The 50-Year Biological Enigma: Why Predicting 3D Protein Folding Was Thought Impossible*
-- **Everyday Analogy:** *The grand challenge of molecular biology: deciphering how a 1D sequence of amino acids folds into complex 3D functional structures in microseconds.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_alphafold2_protein_folding_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: LoRA: Low-Rank Adaptation of Large Language Models Mini-Series 1/5: LoRA: Low-Rank Adaptation of Large Language Models: Part 1 - The Full Fine-Tuning Storage Crisis: Why Saving 100GB Checkpoints Per Task Was Dead*
+- **Everyday Analogy:** *Why duplicating all weights for every downstream task created an impossible storage and deployment bottleneck as models scaled to hundreds of billions of parameters.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_lora_storage_crisis_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
