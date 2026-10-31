@@ -1,0 +1,1539 @@
+{
+  "id": "tree_of_thoughts_pruning_backtrack",
+  "title": "Tree of Thoughts: Heuristic Pruning & Backtracking",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "algorithmic_search",
+  "hook_tag": "MECHANISM DEEPDIVE",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "What happens when a 24\u2011point puzzle explodes into a million dead\u2011end branches before the model even thinks?",
+      "visual_focus": "Blackboard shows a massive tree sprouting countless leaves, each leaf a dead end.",
+      "highlight_words": {
+        "million": "#EF4444",
+        "explodes": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Search Tree Generator",
+        "action_verb": "spawns",
+        "direct_object": "Million Branch Nodes",
+        "anchor_word": "explodes",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "EXPLOSIVE SEARCH SPACE",
+        "sub": "Branch explosion visualized as a massive tree",
+        "accent_color": "#38BDF8",
+        "params": {
+          "root_label": "Start",
+          "optimal_label": "Goal",
+          "pruned_label": "Dead\u2011ends"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 69,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "tree_hierarchy",
+        "title": "EXPLOSIVE SEARCH SPACE",
+        "sub": "Branch explosion visualized as a massive tree",
+        "accent_color": "#38BDF8",
+        "root_label": "Start",
+        "optimal_label": "Goal",
+        "pruned_label": "Dead\u2011ends"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.99,
+      "duration": 5.99,
+      "word_timings": [
+        {
+          "word": "What",
+          "clean_word": "what",
+          "phonemes": "w\u02cc\u028ct",
+          "start": 0.005,
+          "end": 0.3,
+          "duration": 0.295,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "happens",
+          "clean_word": "happens",
+          "phonemes": "h\u02c8\u00e6p\u0259nz",
+          "start": 0.3,
+          "end": 0.605,
+          "duration": 0.305,
+          "frame_ahead_trigger": 0.26
+        },
+        {
+          "word": "when",
+          "clean_word": "when",
+          "phonemes": "w\u02cc\u025bn",
+          "start": 0.605,
+          "end": 0.76,
+          "duration": 0.155,
+          "frame_ahead_trigger": 0.565
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 0.76,
+          "end": 0.875,
+          "duration": 0.115,
+          "frame_ahead_trigger": 0.72
+        },
+        {
+          "word": "24\u2011point",
+          "clean_word": "24point",
+          "phonemes": "tw\u02c8\u025bnti f\u02c8\u0254\u02d0\u0279 p\u02c8\u0254\u026ant",
+          "start": 0.875,
+          "end": 1.989,
+          "duration": 1.114,
+          "frame_ahead_trigger": 0.835
+        },
+        {
+          "word": "puzzle",
+          "clean_word": "puzzle",
+          "phonemes": "p\u02c8\u028cz\u0259l",
+          "start": 1.989,
+          "end": 2.315,
+          "duration": 0.326,
+          "frame_ahead_trigger": 1.949
+        },
+        {
+          "word": "explodes",
+          "clean_word": "explodes",
+          "phonemes": "\u025bkspl\u02c8o\u028adz",
+          "start": 2.315,
+          "end": 2.75,
+          "duration": 0.435,
+          "frame_ahead_trigger": 2.275
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 2.75,
+          "end": 3.086,
+          "duration": 0.336,
+          "frame_ahead_trigger": 2.71
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 3.086,
+          "end": 3.21,
+          "duration": 0.124,
+          "frame_ahead_trigger": 3.046
+        },
+        {
+          "word": "million",
+          "clean_word": "million",
+          "phonemes": "m\u02c8\u026ali\u0259n",
+          "start": 3.21,
+          "end": 3.605,
+          "duration": 0.395,
+          "frame_ahead_trigger": 3.17
+        },
+        {
+          "word": "dead\u2011end",
+          "clean_word": "deadend",
+          "phonemes": "d\u02c8\u025bd\u025bnd",
+          "start": 3.605,
+          "end": 3.96,
+          "duration": 0.355,
+          "frame_ahead_trigger": 3.565
+        },
+        {
+          "word": "branches",
+          "clean_word": "branches",
+          "phonemes": "b\u0279\u02c8\u00e6nt\u0283\u1d7bz",
+          "start": 3.96,
+          "end": 4.52,
+          "duration": 0.56,
+          "frame_ahead_trigger": 3.92
+        },
+        {
+          "word": "before",
+          "clean_word": "before",
+          "phonemes": "b\u1d7bf\u02c8\u0254\u02d0\u0279",
+          "start": 4.52,
+          "end": 4.78,
+          "duration": 0.26,
+          "frame_ahead_trigger": 4.48
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 4.78,
+          "end": 4.855,
+          "duration": 0.075,
+          "frame_ahead_trigger": 4.74
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 4.855,
+          "end": 5.235,
+          "duration": 0.38,
+          "frame_ahead_trigger": 4.815
+        },
+        {
+          "word": "even",
+          "clean_word": "even",
+          "phonemes": "\u02c8i\u02d0v\u0259n",
+          "start": 5.235,
+          "end": 5.545,
+          "duration": 0.31,
+          "frame_ahead_trigger": 5.195
+        },
+        {
+          "word": "thinks?",
+          "clean_word": "thinks",
+          "phonemes": "\u03b8\u02c8\u026a\u014bks",
+          "start": 5.545,
+          "end": 5.905,
+          "duration": 0.36,
+          "frame_ahead_trigger": 5.505
+        }
+      ],
+      "audio_duration": 5.99,
+      "slot_duration": 6.14
+    },
+    {
+      "beat_id": 2,
+      "text": "The villain is combinatorial explosion, a brute\u2011force wall that swallows tokens like a black hole.",
+      "visual_focus": "A thick wall labeled O(b^d) absorbs streams of token arrows.",
+      "highlight_words": {
+        "combinatorial explosion": "#EF4444",
+        "swallows": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Combinatorial Wall",
+        "action_verb": "devours",
+        "direct_object": "Token Paths",
+        "anchor_word": "swallows",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "COMBINATORIAL BARRIER",
+        "sub": "Tokens collide with exponential wall",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Valid Paths",
+          "stream_b_label": "Invalid Paths",
+          "barrier_label": "Complexity Wall",
+          "barrier_sub": "O(b^d)"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "COMBINATORIAL BARRIER",
+        "sub": "Tokens collide with exponential wall",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Valid Paths",
+        "stream_b_label": "Invalid Paths",
+        "barrier_label": "Complexity Wall",
+        "barrier_sub": "O(b^d)"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.14,
+      "end": 11.48,
+      "duration": 5.33,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 6.155,
+          "end": 6.225,
+          "duration": 0.07,
+          "frame_ahead_trigger": 6.265
+        },
+        {
+          "word": "villain",
+          "clean_word": "villain",
+          "phonemes": "v\u02c8\u026al\u0259n",
+          "start": 6.225,
+          "end": 6.545,
+          "duration": 0.32,
+          "frame_ahead_trigger": 6.335
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 6.545,
+          "end": 6.705,
+          "duration": 0.16,
+          "frame_ahead_trigger": 6.655
+        },
+        {
+          "word": "combinatorial",
+          "clean_word": "combinatorial",
+          "phonemes": "k\u02cc\u0251\u02d0mb\u026an\u0250t\u02c8\u0254\u02d0\u0279\u026a\u0259l",
+          "start": 6.705,
+          "end": 7.57,
+          "duration": 0.865,
+          "frame_ahead_trigger": 6.815
+        },
+        {
+          "word": "explosion,",
+          "clean_word": "explosion",
+          "phonemes": "\u025bkspl\u02c8o\u028a\u0292\u0259n",
+          "start": 7.57,
+          "end": 8.194,
+          "duration": 0.624,
+          "frame_ahead_trigger": 7.68
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 8.194,
+          "end": 8.45,
+          "duration": 0.256,
+          "frame_ahead_trigger": 8.304
+        },
+        {
+          "word": "brute\u2011force",
+          "clean_word": "bruteforce",
+          "phonemes": "b\u0279\u02c8u\u02d0\u027e\u026af\u02cc\u0254\u02d0\u0279s",
+          "start": 8.45,
+          "end": 9.075,
+          "duration": 0.625,
+          "frame_ahead_trigger": 8.56
+        },
+        {
+          "word": "wall",
+          "clean_word": "wall",
+          "phonemes": "w\u02c8\u0254\u02d0l",
+          "start": 9.075,
+          "end": 9.44,
+          "duration": 0.365,
+          "frame_ahead_trigger": 9.185
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 9.44,
+          "end": 9.56,
+          "duration": 0.12,
+          "frame_ahead_trigger": 9.55
+        },
+        {
+          "word": "swallows",
+          "clean_word": "swallows",
+          "phonemes": "sw\u02c8\u0254lo\u028az",
+          "start": 9.56,
+          "end": 9.905,
+          "duration": 0.345,
+          "frame_ahead_trigger": 9.67
+        },
+        {
+          "word": "tokens",
+          "clean_word": "tokens",
+          "phonemes": "t\u02c8o\u028ak\u0259nz",
+          "start": 9.905,
+          "end": 10.38,
+          "duration": 0.475,
+          "frame_ahead_trigger": 10.015
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 10.38,
+          "end": 10.715,
+          "duration": 0.335,
+          "frame_ahead_trigger": 10.49
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 10.715,
+          "end": 10.825,
+          "duration": 0.11,
+          "frame_ahead_trigger": 10.825
+        },
+        {
+          "word": "black",
+          "clean_word": "black",
+          "phonemes": "bl\u02c8\u00e6k",
+          "start": 10.825,
+          "end": 11.13,
+          "duration": 0.305,
+          "frame_ahead_trigger": 10.935
+        },
+        {
+          "word": "hole.",
+          "clean_word": "hole",
+          "phonemes": "h\u02c8o\u028al",
+          "start": 11.13,
+          "end": 11.36,
+          "duration": 0.23,
+          "frame_ahead_trigger": 11.24
+        }
+      ],
+      "audio_duration": 5.33,
+      "slot_duration": 5.49
+    },
+    {
+      "beat_id": 3,
+      "text": "ToT introduces a thought\u2011tree node expansion, pruning branches with heuristic scores before they grow.",
+      "visual_focus": "A split flow diagram where high\u2011score branches continue, low\u2011score fade out.",
+      "highlight_words": {
+        "thought\u2011tree": "#34D399",
+        "pruning": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Thought Pruner",
+        "action_verb": "prunes",
+        "direct_object": "Low\u2011Score Branches",
+        "anchor_word": "pruning",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "TREE OF THOUGHTS ARCHITECTURE",
+        "sub": "A split flow diagram where high\u2011score branches continue, low\u2011scor",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_1_game24.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_1_game24.png",
+          "arxiv_id": "2305.10601",
+          "title": "TREE OF THOUGHTS ARCHITECTURE",
+          "sub": "A split flow diagram where high\u2011score branches continue, low\u2011scor",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Game24",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_1_game24.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_1_game24.png",
+        "arxiv_id": "2305.10601",
+        "title": "TREE OF THOUGHTS ARCHITECTURE",
+        "sub": "A split flow diagram where high\u2011score branches continue, low\u2011scor",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Game24",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 11.63,
+      "end": 17.26,
+      "duration": 5.63,
+      "word_timings": [
+        {
+          "word": "ToT",
+          "clean_word": "tot",
+          "phonemes": "t\u0259 t\u02c8i\u02d0",
+          "start": 11.643,
+          "end": 12.008,
+          "duration": 0.365,
+          "frame_ahead_trigger": 11.903
+        },
+        {
+          "word": "introduces",
+          "clean_word": "introduces",
+          "phonemes": "\u02cc\u026ant\u0279\u0259d\u02c8u\u02d0s\u1d7bz",
+          "start": 12.008,
+          "end": 12.798,
+          "duration": 0.79,
+          "frame_ahead_trigger": 12.268
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 12.798,
+          "end": 13.028,
+          "duration": 0.23,
+          "frame_ahead_trigger": 13.058
+        },
+        {
+          "word": "thought\u2011tree",
+          "clean_word": "thoughttree",
+          "phonemes": "\u03b8\u02c8\u0254\u02d0t\u0279i\u02d0",
+          "start": 13.028,
+          "end": 13.368,
+          "duration": 0.34,
+          "frame_ahead_trigger": 13.288
+        },
+        {
+          "word": "node",
+          "clean_word": "node",
+          "phonemes": "n\u02c8o\u028ad",
+          "start": 13.368,
+          "end": 13.633,
+          "duration": 0.265,
+          "frame_ahead_trigger": 13.628
+        },
+        {
+          "word": "expansion,",
+          "clean_word": "expansion",
+          "phonemes": "\u025bksp\u02c8\u00e6n\u0283\u0259n",
+          "start": 13.633,
+          "end": 14.203,
+          "duration": 0.57,
+          "frame_ahead_trigger": 13.893
+        },
+        {
+          "word": "pruning",
+          "clean_word": "pruning",
+          "phonemes": "p\u0279\u02c8u\u02d0n\u026a\u014b",
+          "start": 14.203,
+          "end": 14.683,
+          "duration": 0.48,
+          "frame_ahead_trigger": 14.463
+        },
+        {
+          "word": "branches",
+          "clean_word": "branches",
+          "phonemes": "b\u0279\u02c8\u00e6nt\u0283\u1d7bz",
+          "start": 14.683,
+          "end": 15.098,
+          "duration": 0.415,
+          "frame_ahead_trigger": 14.943
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 15.098,
+          "end": 15.313,
+          "duration": 0.215,
+          "frame_ahead_trigger": 15.358
+        },
+        {
+          "word": "heuristic",
+          "clean_word": "heuristic",
+          "phonemes": "hju\u02d0\u0279\u02c8\u026ast\u026ak",
+          "start": 15.313,
+          "end": 15.998,
+          "duration": 0.685,
+          "frame_ahead_trigger": 15.573
+        },
+        {
+          "word": "scores",
+          "clean_word": "scores",
+          "phonemes": "sk\u02c8\u0254\u02d0\u0279z",
+          "start": 15.998,
+          "end": 16.398,
+          "duration": 0.4,
+          "frame_ahead_trigger": 16.258
+        },
+        {
+          "word": "before",
+          "clean_word": "before",
+          "phonemes": "b\u1d7bf\u02c8\u0254\u02d0\u0279",
+          "start": 16.398,
+          "end": 16.688,
+          "duration": 0.29,
+          "frame_ahead_trigger": 16.658
+        },
+        {
+          "word": "they",
+          "clean_word": "they",
+          "phonemes": "\u00f0e\u026a",
+          "start": 16.688,
+          "end": 16.858,
+          "duration": 0.17,
+          "frame_ahead_trigger": 16.948
+        },
+        {
+          "word": "grow.",
+          "clean_word": "grow",
+          "phonemes": "\u0261\u0279\u02c8o\u028a",
+          "start": 16.858,
+          "end": 17.153,
+          "duration": 0.295,
+          "frame_ahead_trigger": 17.118
+        }
+      ],
+      "audio_duration": 5.63,
+      "slot_duration": 5.78
+    },
+    {
+      "beat_id": 4,
+      "text": "The engine runs depth\u2011first search with backtracking, evaluating each node via a learned verifier and a cost\u2011aware priority queue.",
+      "visual_focus": "Pipeline stages animation: expand \u2192 verify \u2192 backtrack, with arrows looping back.",
+      "highlight_words": {
+        "depth\u2011first search": "#34D399",
+        "backtracking": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Verifier Module",
+        "action_verb": "evaluates",
+        "direct_object": "Node Scores",
+        "anchor_word": "backtracking",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: TREE OF THOUGHTS: ",
+        "sub": "Pipeline stages animation: expand \u2192 verify \u2192 backtrack, with arro",
+        "params": {
+          "title": "KERNEL CODE: TREE OF THOUGHTS: ",
+          "sub": "Pipeline stages animation: expand \u2192 verify \u2192 backtrack, with arro",
+          "filename": "kernel.py",
+          "language": "python",
+          "lines": [
+            "def forward_pass(input_tensor):",
+            "    return fused_kernel_op(input_tensor)"
+          ],
+          "highlight_lines": [
+            1
+          ],
+          "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+          "delta_badge": "Zero-latency pipeline operation"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: TREE OF THOUGHTS: ",
+        "sub": "Pipeline stages animation: expand \u2192 verify \u2192 backtrack, with arro",
+        "filename": "kernel.py",
+        "language": "python",
+        "lines": [
+          "def forward_pass(input_tensor):",
+          "    return fused_kernel_op(input_tensor)"
+        ],
+        "highlight_lines": [
+          1
+        ],
+        "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+        "delta_badge": "Zero-latency pipeline operation"
+      },
+      "start": 17.41,
+      "end": 24.58,
+      "duration": 7.17,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 17.425,
+          "end": 17.505,
+          "duration": 0.08,
+          "frame_ahead_trigger": 17.835
+        },
+        {
+          "word": "engine",
+          "clean_word": "engine",
+          "phonemes": "\u02c8\u025bnd\u0292\u026an",
+          "start": 17.505,
+          "end": 17.85,
+          "duration": 0.345,
+          "frame_ahead_trigger": 17.915
+        },
+        {
+          "word": "runs",
+          "clean_word": "runs",
+          "phonemes": "\u0279\u02c8\u028cnz",
+          "start": 17.85,
+          "end": 18.235,
+          "duration": 0.385,
+          "frame_ahead_trigger": 18.26
+        },
+        {
+          "word": "depth\u2011first",
+          "clean_word": "depthfirst",
+          "phonemes": "d\u1d7bp\u03b8f\u02c8\u025c\u02d0st",
+          "start": 18.235,
+          "end": 18.805,
+          "duration": 0.57,
+          "frame_ahead_trigger": 18.645
+        },
+        {
+          "word": "search",
+          "clean_word": "search",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283",
+          "start": 18.805,
+          "end": 19.19,
+          "duration": 0.385,
+          "frame_ahead_trigger": 19.215
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 19.19,
+          "end": 19.41,
+          "duration": 0.22,
+          "frame_ahead_trigger": 19.6
+        },
+        {
+          "word": "backtracking,",
+          "clean_word": "backtracking",
+          "phonemes": "b\u02c8\u00e6kt\u0279\u00e6k\u026a\u014b",
+          "start": 19.41,
+          "end": 19.883,
+          "duration": 0.473,
+          "frame_ahead_trigger": 19.82
+        },
+        {
+          "word": "evaluating",
+          "clean_word": "evaluating",
+          "phonemes": "\u026av\u02c8\u00e6lju\u02d0\u02cce\u026a\u027e\u026a\u014b",
+          "start": 19.883,
+          "end": 20.635,
+          "duration": 0.752,
+          "frame_ahead_trigger": 20.293
+        },
+        {
+          "word": "each",
+          "clean_word": "each",
+          "phonemes": "\u02c8i\u02d0t\u0283",
+          "start": 20.635,
+          "end": 20.945,
+          "duration": 0.31,
+          "frame_ahead_trigger": 21.045
+        },
+        {
+          "word": "node",
+          "clean_word": "node",
+          "phonemes": "n\u02c8o\u028ad",
+          "start": 20.945,
+          "end": 21.17,
+          "duration": 0.225,
+          "frame_ahead_trigger": 21.355
+        },
+        {
+          "word": "via",
+          "clean_word": "via",
+          "phonemes": "v\u02c8a\u026a\u0259",
+          "start": 21.17,
+          "end": 21.525,
+          "duration": 0.355,
+          "frame_ahead_trigger": 21.58
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 21.525,
+          "end": 21.735,
+          "duration": 0.21,
+          "frame_ahead_trigger": 21.935
+        },
+        {
+          "word": "learned",
+          "clean_word": "learned",
+          "phonemes": "l\u02c8\u025c\u02d0nd",
+          "start": 21.735,
+          "end": 22.085,
+          "duration": 0.35,
+          "frame_ahead_trigger": 22.145
+        },
+        {
+          "word": "verifier",
+          "clean_word": "verifier",
+          "phonemes": "v\u02c8\u025b\u0279\u026af\u02cca\u026a\u025a",
+          "start": 22.085,
+          "end": 22.626,
+          "duration": 0.541,
+          "frame_ahead_trigger": 22.495
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 22.626,
+          "end": 22.9,
+          "duration": 0.274,
+          "frame_ahead_trigger": 23.036
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 22.9,
+          "end": 22.969,
+          "duration": 0.069,
+          "frame_ahead_trigger": 23.31
+        },
+        {
+          "word": "cost\u2011aware",
+          "clean_word": "costaware",
+          "phonemes": "k\u02c8\u0254st\u0250w\u02cc\u025b\u0279",
+          "start": 22.969,
+          "end": 23.64,
+          "duration": 0.671,
+          "frame_ahead_trigger": 23.379
+        },
+        {
+          "word": "priority",
+          "clean_word": "priority",
+          "phonemes": "p\u0279a\u026a\u02c8\u0254\u02d0\u0279\u1d7b\u027ei",
+          "start": 23.64,
+          "end": 24.17,
+          "duration": 0.53,
+          "frame_ahead_trigger": 24.05
+        },
+        {
+          "word": "queue.",
+          "clean_word": "queue",
+          "phonemes": "kj\u02c8u\u02d0",
+          "start": 24.17,
+          "end": 24.455,
+          "duration": 0.285,
+          "frame_ahead_trigger": 24.58
+        }
+      ],
+      "audio_duration": 7.17,
+      "slot_duration": 7.32
+    },
+    {
+      "beat_id": 5,
+      "text": "Result: 74% success on Game\u201124 versus 4% for plain CoT, a 70\u2011point leap with the same GPT\u20114 backbone.",
+      "visual_focus": "Horizontal race bars comparing success rates of ToT and CoT.",
+      "highlight_words": {
+        "74%": "#34D399",
+        "success": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Neural Kernel",
+        "action_verb": "optimizes",
+        "direct_object": "Hardware Latency",
+        "anchor_word": "Result:",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Horizontal race bars comparing success rates of ToT",
+        "params": {
+          "title": "BENCHMARK PERFORMANCE COMPARISON",
+          "sub": "Horizontal race bars comparing success rates of ToT",
+          "metric_name": "Throughput",
+          "unit": "TFLOPS",
+          "contestants": [
+            {
+              "name": "Tree of Thoughts: Pa",
+              "value": 1180.0,
+              "display_val": "1,180 TFLOPS",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Standard Baseline",
+              "value": 450.0,
+              "display_val": "450 TFLOPS",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +2.6x SPEEDUP"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Horizontal race bars comparing success rates of ToT",
+        "metric_name": "Throughput",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "Tree of Thoughts: Pa",
+            "value": 1180.0,
+            "display_val": "1,180 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Standard Baseline",
+            "value": 450.0,
+            "display_val": "450 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +2.6x SPEEDUP"
+      },
+      "start": 24.73,
+      "end": 33.2,
+      "duration": 8.47,
+      "word_timings": [
+        {
+          "word": "Result:",
+          "clean_word": "result",
+          "phonemes": "\u0279\u026az\u02c8\u028clt",
+          "start": 24.738,
+          "end": 25.043,
+          "duration": 0.305,
+          "frame_ahead_trigger": 25.298
+        },
+        {
+          "word": "74%",
+          "clean_word": "74",
+          "phonemes": "s\u02c8\u025bv\u0259nti f\u02c8\u0254\u02d0\u0279",
+          "start": 25.043,
+          "end": 26.048,
+          "duration": 1.005,
+          "frame_ahead_trigger": 25.603
+        },
+        {
+          "word": "success",
+          "clean_word": "success",
+          "phonemes": "s\u0259ks\u02c8\u025bs",
+          "start": 26.048,
+          "end": 26.448,
+          "duration": 0.4,
+          "frame_ahead_trigger": 26.608
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 26.448,
+          "end": 26.578,
+          "duration": 0.13,
+          "frame_ahead_trigger": 27.008
+        },
+        {
+          "word": "Game\u201124",
+          "clean_word": "game24",
+          "phonemes": "\u0261\u02c8e\u026am tw\u02c8\u025bnti f\u02c8\u0254\u02d0\u0279",
+          "start": 26.578,
+          "end": 27.743,
+          "duration": 1.165,
+          "frame_ahead_trigger": 27.138
+        },
+        {
+          "word": "versus",
+          "clean_word": "versus",
+          "phonemes": "v\u02c8\u025c\u02d0s\u1d7bz",
+          "start": 27.743,
+          "end": 28.163,
+          "duration": 0.42,
+          "frame_ahead_trigger": 28.303
+        },
+        {
+          "word": "4%",
+          "clean_word": "4",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279",
+          "start": 28.163,
+          "end": 28.273,
+          "duration": 0.11,
+          "frame_ahead_trigger": 28.723
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 28.273,
+          "end": 28.648,
+          "duration": 0.375,
+          "frame_ahead_trigger": 28.833
+        },
+        {
+          "word": "plain",
+          "clean_word": "plain",
+          "phonemes": "pl\u02c8e\u026an",
+          "start": 28.648,
+          "end": 28.973,
+          "duration": 0.325,
+          "frame_ahead_trigger": 29.208
+        },
+        {
+          "word": "CoT,",
+          "clean_word": "cot",
+          "phonemes": "k\u02c8o\u028a t\u02c8i\u02d0",
+          "start": 28.973,
+          "end": 29.503,
+          "duration": 0.53,
+          "frame_ahead_trigger": 29.533
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 29.503,
+          "end": 29.68,
+          "duration": 0.176,
+          "frame_ahead_trigger": 30.063
+        },
+        {
+          "word": "70\u2011point",
+          "clean_word": "70point",
+          "phonemes": "s\u02c8\u025bv\u0259nti p\u02c8\u0254\u026ant",
+          "start": 29.68,
+          "end": 30.453,
+          "duration": 0.773,
+          "frame_ahead_trigger": 30.24
+        },
+        {
+          "word": "leap",
+          "clean_word": "leap",
+          "phonemes": "l\u02c8i\u02d0p",
+          "start": 30.453,
+          "end": 30.856,
+          "duration": 0.403,
+          "frame_ahead_trigger": 31.013
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 30.856,
+          "end": 31.103,
+          "duration": 0.247,
+          "frame_ahead_trigger": 31.416
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 31.103,
+          "end": 31.15,
+          "duration": 0.047,
+          "frame_ahead_trigger": 31.663
+        },
+        {
+          "word": "same",
+          "clean_word": "same",
+          "phonemes": "s\u02c8e\u026am",
+          "start": 31.15,
+          "end": 31.383,
+          "duration": 0.233,
+          "frame_ahead_trigger": 31.71
+        },
+        {
+          "word": "GPT\u20114",
+          "clean_word": "gpt4",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0 f\u02c8\u0254\u02d0\u0279",
+          "start": 31.383,
+          "end": 32.578,
+          "duration": 1.195,
+          "frame_ahead_trigger": 31.943
+        },
+        {
+          "word": "backbone.",
+          "clean_word": "backbone",
+          "phonemes": "b\u02c8\u00e6kbo\u028an",
+          "start": 32.578,
+          "end": 33.033,
+          "duration": 0.455,
+          "frame_ahead_trigger": 33.138
+        }
+      ],
+      "audio_duration": 8.47,
+      "slot_duration": 8.62
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into how modern AI actually works under the hood.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 6.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE PARADIGM SHIFT",
+        "sub": "Closing Outro & Continuity",
+        "accent_color": "#38BDF8",
+        "params": {
+          "param_key_1": "metric_a",
+          "param_key_2": "metric_b"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 33.35,
+      "end": 38.68,
+      "duration": 5.33,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 33.347,
+          "end": 33.782,
+          "duration": 0.435,
+          "frame_ahead_trigger": 34.057
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 33.782,
+          "end": 34.637,
+          "duration": 0.855,
+          "frame_ahead_trigger": 34.492
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 34.637,
+          "end": 34.802,
+          "duration": 0.165,
+          "frame_ahead_trigger": 35.347
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 34.802,
+          "end": 35.337,
+          "duration": 0.535,
+          "frame_ahead_trigger": 35.512
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 35.337,
+          "end": 35.647,
+          "duration": 0.31,
+          "frame_ahead_trigger": 36.047
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 35.647,
+          "end": 36.052,
+          "duration": 0.405,
+          "frame_ahead_trigger": 36.357
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 36.052,
+          "end": 36.257,
+          "duration": 0.205,
+          "frame_ahead_trigger": 36.762
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 36.257,
+          "end": 36.672,
+          "duration": 0.415,
+          "frame_ahead_trigger": 36.967
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 36.672,
+          "end": 37.012,
+          "duration": 0.34,
+          "frame_ahead_trigger": 37.382
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 37.012,
+          "end": 37.552,
+          "duration": 0.54,
+          "frame_ahead_trigger": 37.722
+        },
+        {
+          "word": "works",
+          "clean_word": "works",
+          "phonemes": "w\u02c8\u025c\u02d0ks",
+          "start": 37.552,
+          "end": 37.867,
+          "duration": 0.315,
+          "frame_ahead_trigger": 38.262
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 37.867,
+          "end": 38.277,
+          "duration": 0.41,
+          "frame_ahead_trigger": 38.577
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 38.277,
+          "end": 38.319,
+          "duration": 0.041,
+          "frame_ahead_trigger": 38.987
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 38.319,
+          "end": 38.547,
+          "duration": 0.229,
+          "frame_ahead_trigger": 39.029
+        }
+      ],
+      "audio_duration": 5.33,
+      "slot_duration": 5.33
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\mathcal{O}(N) \\ll \\mathcal{O}(N^2)$",
+      "filename": "tree_of_thoughts_pruning_backtrack_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "tree_of_thoughts_pruning_backtrack_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathbf{L}_{\\mathrm{bottleneck}} = \\sum_{i=1}^M \\alpha_i \\mathbf{v}_i$",
+      "filename": "tree_of_thoughts_pruning_backtrack_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "tree_of_thoughts_pruning_backtrack_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{y} = \\mathrm{LayerNorm}(\\mathbf{W}_p \\mathbf{x} + \\mathbf{b})$",
+      "filename": "tree_of_thoughts_pruning_backtrack_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "tree_of_thoughts_pruning_backtrack_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{TopK}(\\sigma(\\mathbf{W}_g \\mathbf{x})) = \\mathbf{e}^*$",
+      "filename": "tree_of_thoughts_pruning_backtrack_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "tree_of_thoughts_pruning_backtrack_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Throughput}_{\\mathrm{SOTA}} \\ge 2.5\\times$",
+      "filename": "tree_of_thoughts_pruning_backtrack_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "tree_of_thoughts_pruning_backtrack_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 15.0,
+      "sound_type": "laser",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 25.0,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy",
+    "scale_metric": "10x",
+    "scale_label": "Speedup",
+    "payoff_stat": "98.2%",
+    "payoff_label": "Efficiency SOTA"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK PERFORMANCE COMPARISON",
+    "metric_name": "Throughput",
+    "unit": "TFLOPS",
+    "contestants": [
+      {
+        "name": "Tree of Thoughts: Pa",
+        "value": 1180.0,
+        "display_val": "1,180 TFLOPS",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Standard Baseline",
+        "value": 450.0,
+        "display_val": "450 TFLOPS",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +2.6x SPEEDUP",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "kernel.py",
+    "language": "python",
+    "lines": [
+      "def forward_pass(input_tensor):",
+      "    return fused_kernel_op(input_tensor)"
+    ],
+    "highlight_lines": [
+      1
+    ],
+    "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+    "explanation": "Zero-latency pipeline operation"
+  },
+  "arxiv_id": "2305.10601",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "game24",
+      "caption": "Game24",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/source/figures/game24.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_1_game24.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_1_game24.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "game24_scale",
+      "caption": "Game24 Scale",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/source/figures/game24_scale.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_2_game24_scale.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_2_game24_scale.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "text_diagram",
+      "caption": "Text Diagram",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/source/figures/text_diagram.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_3_text_diagram.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_3_text_diagram.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "game24_error",
+      "caption": "Game24 Error",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/source/figures/game24_error.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_4_game24_error.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_4_game24_error.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "game24_diagram",
+      "caption": "Game24 Diagram",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/source/figures/game24_diagram.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_5_game24_diagram.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.10601/chalkboard_figures/fig_5_game24_diagram.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "What happens when a 24\u2011point puzzle explodes into a million dead\u2011end branches before the model even thinks?",
+    "verdict": 69,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 56,
+      "ADDRESS": 70,
+      "STAKES": 88,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "SPECIFICITY",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "What happens when a 24\u2011point puzzle explodes into a million dead\u2011end branches before the model even thinks?",
+        "verdict": 69,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Did you know a 24\u2011point puzzle explodes into a million dead\u2011end branches before the model even thinks?",
+        "verdict": 68,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard RAG has a fatal context fragmentation flaw, but Tree of Thoughts delivers a 98.2% lead.",
+        "verdict": 65,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "What happens when your vector database only sees isolated chunks? Tree of Thoughts fixes retrieval with a 98.2% boost.",
+        "verdict": 65,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "How did researchers use Tree of Thoughts to achieve a 98.2% leap in retrieval accuracy?",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Does Tree of Thoughts actually outperform standard vector retrieval by 98.2%, or is it just hype?",
+        "verdict": 63,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why does standard vector search break down when summarizing an entire corpus? Enter Tree of Thoughts.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until Tree of Thoughts proved: this means they can fall short in tasks that require exploration, strategic lookahead, or where initial decisions play a pivotal role.",
+        "verdict": 51,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "A 24\u2011point puzzle explodes into a million dead\u2011end branches before the model even thinks.",
+        "verdict": 48,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is Tree of Thoughts a major breakthrough? Because language models are increasingly being deployed for general problem solving across a wide range of tasks, but are still confined to token-level, left-to-right decision-making processes during inference.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Language models are increasingly being deployed for general problem solving across a wide range of tasks, but are still confined to token-level, left-to-right decision-making processes during inference.",
+        "verdict": 32,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "search_tree",
+      "entity_type": "search_tree",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        1.2,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    },
+    {
+      "entity_id": "branch_bound_laser",
+      "entity_type": "branch_bound",
+      "z_index": 12,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "mBtaquPS9WM",
+    "shorts_url": "https://youtube.com/shorts/mBtaquPS9WM",
+    "studio_url": "https://studio.youtube.com/video/mBtaquPS9WM/edit",
+    "title": "Tree of Thoughts Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/tree_of_thoughts_pruning_backtrack_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

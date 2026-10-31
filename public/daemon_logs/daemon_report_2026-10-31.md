@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-10-31 | **Timestamp:** 2026-10-31 16:18:21 UTC
+**Date:** 2026-10-31 | **Timestamp:** 2026-10-31 17:27:03 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Generative Agents: Part 2 - How 25 AI Agents Formed Societies & Gossiped
-- **Topic Queue Part:** `generative_agents_part_2_social_emergence` (arXiv: [2304.03442](https://arxiv.org/abs/2304.03442))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/AovEQfgFNE8](https://youtube.com/shorts/AovEQfgFNE8) (`AovEQfgFNE8`)
-- **High-CTR Poster:** [generative_agents_part_2_-_how_25_ai_agents_formed_societies_gossiped_poster.png](public/thumbnails/generative_agents_part_2_-_how_25_ai_agents_formed_societies_gossiped_poster.png)
+### Reel 1: Tree of Thoughts: Part 2 - Deliberate Problem Solving & Branch Backtracking
+- **Topic Queue Part:** `tree_of_thoughts_part_2_backtracking_heuristics` (arXiv: [2305.10601](https://arxiv.org/abs/2305.10601))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/mBtaquPS9WM](https://youtube.com/shorts/mBtaquPS9WM) (`mBtaquPS9WM`)
+- **High-CTR Poster:** [tree_of_thoughts_pruning_backtrack_poster.png](public/thumbnails/tree_of_thoughts_pruning_backtrack_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *AI Agents: Generative Agents Mini-Series 2/2: Generative Agents: Part 2 - How 25 AI Agents Formed Societies & Gossiped*
-- **Everyday Analogy:** *Emergent social coordination: how recursive reflection and peer dialogues produced spontaneous party planning and information diffusion in a simulated town.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_generative_agents_part_2_-_how_25_ai_agents_formed_societies_gossiped_mechanism_deepdive.mp4`
+- **Editorial Hook:** *AI Agents: Tree of Thoughts Mini-Series 2/2: Tree of Thoughts: Part 2 - Deliberate Problem Solving & Branch Backtracking*
+- **Everyday Analogy:** *Heuristic pruning and depth-first/breadth-first backtracking: rescuing LLMs from dead ends in complex planning and mathematical puzzles.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_tree_of_thoughts_pruning_backtrack_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
