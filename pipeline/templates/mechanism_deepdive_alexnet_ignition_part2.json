@@ -1,0 +1,1616 @@
+{
+  "id": "alexnet_ignition_part2",
+  "title": "AlexNet: The Deep Learning Ignition",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "DEEP LEARNING IGNITION",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until AlexNet unlocks 6x throughput?",
+      "visual_focus": "A dying, flat gradient line fading into the x-axis.",
+      "highlight_words": {
+        "Sigmoid": "#EF4444",
+        "vanishing": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Sigmoid Function",
+        "action_verb": "saturates",
+        "direct_object": "Gradient Signal",
+        "anchor_word": "vanishing",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "optimization_landscape",
+        "title": "THE SIGMOID VANISHING WALL",
+        "sub": "Saturation of gradients in deep architectures",
+        "accent_color": "#EF4444",
+        "params": {
+          "landscape_title": "Gradient Descent Stagnation",
+          "optima_label": "Saturated Region"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 67,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "optimization_landscape",
+        "title": "THE SIGMOID VANISHING WALL",
+        "sub": "Saturation of gradients in deep architectures",
+        "accent_color": "#EF4444",
+        "landscape_title": "Gradient Descent Stagnation",
+        "optima_label": "Saturated Region"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.16,
+      "duration": 5.16,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.005,
+          "end": 0.18,
+          "duration": 0.175,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.18,
+          "end": 0.325,
+          "duration": 0.145,
+          "frame_ahead_trigger": 0.14
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.325,
+          "end": 1.075,
+          "duration": 0.75,
+          "frame_ahead_trigger": 0.285
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.075,
+          "end": 1.23,
+          "duration": 0.155,
+          "frame_ahead_trigger": 1.035
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.23,
+          "end": 1.695,
+          "duration": 0.465,
+          "frame_ahead_trigger": 1.19
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 1.695,
+          "end": 2.005,
+          "duration": 0.31,
+          "frame_ahead_trigger": 1.655
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.005,
+          "end": 2.39,
+          "duration": 0.385,
+          "frame_ahead_trigger": 1.965
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 2.39,
+          "end": 2.879,
+          "duration": 0.489,
+          "frame_ahead_trigger": 2.35
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 2.879,
+          "end": 3.125,
+          "duration": 0.246,
+          "frame_ahead_trigger": 2.839
+        },
+        {
+          "word": "AlexNet",
+          "clean_word": "alexnet",
+          "phonemes": "\u02c8\u00e6l\u026aks n\u02c8\u025bt",
+          "start": 3.125,
+          "end": 3.8,
+          "duration": 0.675,
+          "frame_ahead_trigger": 3.085
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 3.8,
+          "end": 4.15,
+          "duration": 0.35,
+          "frame_ahead_trigger": 3.76
+        },
+        {
+          "word": "6x",
+          "clean_word": "6x",
+          "phonemes": "s\u02c8\u026aks \u02c8\u025bks",
+          "start": 4.15,
+          "end": 4.64,
+          "duration": 0.49,
+          "frame_ahead_trigger": 4.11
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 4.64,
+          "end": 5.085,
+          "duration": 0.445,
+          "frame_ahead_trigger": 4.6
+        }
+      ],
+      "audio_duration": 5.16,
+      "slot_duration": 5.31
+    },
+    {
+      "beat_id": 2,
+      "text": "The bottleneck? Sigmoid's exponential curve forces every back-propagated error to multiply by fractions, crushing signal across deep, multi-layer stacks.",
+      "visual_focus": "Multiplication chain shrinking values toward zero.",
+      "highlight_words": {
+        "bottleneck": "#EF4444",
+        "exponential": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Gradient Chain",
+        "action_verb": "collapses",
+        "direct_object": "Synaptic Weights",
+        "anchor_word": "bottleneck",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "layer_stack",
+        "title": "MULTIPLICATIVE GRADIENT COLLAPSE",
+        "sub": "Signal decay across network depth",
+        "accent_color": "#EF4444",
+        "params": {
+          "bottom_layer": "Input Layer",
+          "mid_layer": "Hidden Layers (Decay)",
+          "top_layer": "Output Signal"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "layer_stack",
+        "title": "MULTIPLICATIVE GRADIENT COLLAPSE",
+        "sub": "Signal decay across network depth",
+        "accent_color": "#EF4444",
+        "bottom_layer": "Input Layer",
+        "mid_layer": "Hidden Layers (Decay)",
+        "top_layer": "Output Signal"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 5.31,
+      "end": 14.27,
+      "duration": 8.96,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 5.323,
+          "end": 5.393,
+          "duration": 0.07,
+          "frame_ahead_trigger": 5.433
+        },
+        {
+          "word": "bottleneck?",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 5.393,
+          "end": 6.129,
+          "duration": 0.736,
+          "frame_ahead_trigger": 5.503
+        },
+        {
+          "word": "Sigmoid's",
+          "clean_word": "sigmoids",
+          "phonemes": "s\u02c8\u026a\u0261m\u0254\u026adz",
+          "start": 6.129,
+          "end": 6.643,
+          "duration": 0.514,
+          "frame_ahead_trigger": 6.239
+        },
+        {
+          "word": "exponential",
+          "clean_word": "exponential",
+          "phonemes": "\u02cc\u025bksp\u0259n\u02c8\u025bn\u0283\u0259l",
+          "start": 6.643,
+          "end": 7.493,
+          "duration": 0.85,
+          "frame_ahead_trigger": 6.753
+        },
+        {
+          "word": "curve",
+          "clean_word": "curve",
+          "phonemes": "k\u02c8\u025c\u02d0v",
+          "start": 7.493,
+          "end": 7.893,
+          "duration": 0.4,
+          "frame_ahead_trigger": 7.603
+        },
+        {
+          "word": "forces",
+          "clean_word": "forces",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u1d7bz",
+          "start": 7.893,
+          "end": 8.288,
+          "duration": 0.395,
+          "frame_ahead_trigger": 8.003
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 8.288,
+          "end": 8.593,
+          "duration": 0.305,
+          "frame_ahead_trigger": 8.398
+        },
+        {
+          "word": "back-propagated",
+          "clean_word": "backpropagated",
+          "phonemes": "b\u02c8\u00e6kp\u0279\u0259p\u02cc\u00e6\u0261e\u026a\u027e\u1d7bd",
+          "start": 8.593,
+          "end": 9.6,
+          "duration": 1.008,
+          "frame_ahead_trigger": 8.703
+        },
+        {
+          "word": "error",
+          "clean_word": "error",
+          "phonemes": "\u02c8\u025b\u0279\u025a",
+          "start": 9.6,
+          "end": 9.753,
+          "duration": 0.152,
+          "frame_ahead_trigger": 9.71
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 9.753,
+          "end": 10.008,
+          "duration": 0.255,
+          "frame_ahead_trigger": 9.863
+        },
+        {
+          "word": "multiply",
+          "clean_word": "multiply",
+          "phonemes": "m\u02cc\u028clt\u026apl\u02c8a\u026a",
+          "start": 10.008,
+          "end": 10.663,
+          "duration": 0.655,
+          "frame_ahead_trigger": 10.118
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 10.663,
+          "end": 10.858,
+          "duration": 0.195,
+          "frame_ahead_trigger": 10.773
+        },
+        {
+          "word": "fractions,",
+          "clean_word": "fractions",
+          "phonemes": "f\u0279\u02c8\u00e6k\u0283\u0259nz",
+          "start": 10.858,
+          "end": 11.503,
+          "duration": 0.645,
+          "frame_ahead_trigger": 10.968
+        },
+        {
+          "word": "crushing",
+          "clean_word": "crushing",
+          "phonemes": "k\u0279\u02c8\u028c\u0283\u026a\u014b",
+          "start": 11.503,
+          "end": 11.958,
+          "duration": 0.455,
+          "frame_ahead_trigger": 11.613
+        },
+        {
+          "word": "signal",
+          "clean_word": "signal",
+          "phonemes": "s\u02c8\u026a\u0261n\u0259l",
+          "start": 11.958,
+          "end": 12.363,
+          "duration": 0.405,
+          "frame_ahead_trigger": 12.068
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 12.363,
+          "end": 12.824,
+          "duration": 0.461,
+          "frame_ahead_trigger": 12.473
+        },
+        {
+          "word": "deep,",
+          "clean_word": "deep",
+          "phonemes": "d\u02c8i\u02d0p",
+          "start": 12.824,
+          "end": 13.203,
+          "duration": 0.379,
+          "frame_ahead_trigger": 12.934
+        },
+        {
+          "word": "multi-layer",
+          "clean_word": "multilayer",
+          "phonemes": "m\u02c8\u028cltil\u02cce\u026a\u025a",
+          "start": 13.203,
+          "end": 13.828,
+          "duration": 0.625,
+          "frame_ahead_trigger": 13.313
+        },
+        {
+          "word": "stacks.",
+          "clean_word": "stacks",
+          "phonemes": "st\u02c8\u00e6ks",
+          "start": 13.828,
+          "end": 14.188,
+          "duration": 0.36,
+          "frame_ahead_trigger": 13.938
+        }
+      ],
+      "audio_duration": 8.96,
+      "slot_duration": 9.11
+    },
+    {
+      "beat_id": 3,
+      "text": "The ReLU pivot replaces non-linear curves with a piecewise linear switch, firing gradients forward at a constant rate.",
+      "visual_focus": "A sharp, angular activation function turning on inputs at zero.",
+      "highlight_words": {
+        "ReLU": "#34D399",
+        "pivot": "#34D399"
+      },
+      "svo_action": {
+        "subject": "ReLU Gate",
+        "action_verb": "projects",
+        "direct_object": "Linear Activation",
+        "anchor_word": "pivot",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: ALEXNET: THE DEEP ",
+        "sub": "A sharp, angular activation function turning on inputs at zero.",
+        "params": {
+          "title": "KERNEL CODE: ALEXNET: THE DEEP ",
+          "sub": "A sharp, angular activation function turning on inputs at zero.",
+          "filename": "relu_op.py",
+          "language": "python",
+          "lines": [
+            "def relu_forward(x):",
+            "# Piecewise linear switch",
+            "return np.maximum(0, x)",
+            "def apply_dropout(x, p=0.5):",
+            "mask = np.random.rand(*x.shape) > p",
+            "return x * mask"
+          ],
+          "highlight_lines": [
+            3,
+            6
+          ],
+          "trace_register": "\u26a1 RECTIFIED SIGNAL FLOW",
+          "delta_badge": "Gradient propagation bypasses vanishing bottleneck"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: ALEXNET: THE DEEP ",
+        "sub": "A sharp, angular activation function turning on inputs at zero.",
+        "filename": "relu_op.py",
+        "language": "python",
+        "lines": [
+          "def relu_forward(x):",
+          "# Piecewise linear switch",
+          "return np.maximum(0, x)",
+          "def apply_dropout(x, p=0.5):",
+          "mask = np.random.rand(*x.shape) > p",
+          "return x * mask"
+        ],
+        "highlight_lines": [
+          3,
+          6
+        ],
+        "trace_register": "\u26a1 RECTIFIED SIGNAL FLOW",
+        "delta_badge": "Gradient propagation bypasses vanishing bottleneck"
+      },
+      "start": 14.42,
+      "end": 20.97,
+      "duration": 6.55,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 14.433,
+          "end": 14.498,
+          "duration": 0.065,
+          "frame_ahead_trigger": 14.693
+        },
+        {
+          "word": "ReLU",
+          "clean_word": "relu",
+          "phonemes": "\u0279\u02cci\u02d0 l\u02c8u\u02d0",
+          "start": 14.498,
+          "end": 15.068,
+          "duration": 0.57,
+          "frame_ahead_trigger": 14.758
+        },
+        {
+          "word": "pivot",
+          "clean_word": "pivot",
+          "phonemes": "p\u02c8\u026av\u0259t",
+          "start": 15.068,
+          "end": 15.388,
+          "duration": 0.32,
+          "frame_ahead_trigger": 15.328
+        },
+        {
+          "word": "replaces",
+          "clean_word": "replaces",
+          "phonemes": "\u0279\u1d7bpl\u02c8e\u026as\u1d7bz",
+          "start": 15.388,
+          "end": 15.928,
+          "duration": 0.54,
+          "frame_ahead_trigger": 15.648
+        },
+        {
+          "word": "non-linear",
+          "clean_word": "nonlinear",
+          "phonemes": "n\u02cc\u0251\u02d0nl\u02c8\u026an\u026a\u0279",
+          "start": 15.928,
+          "end": 16.558,
+          "duration": 0.63,
+          "frame_ahead_trigger": 16.188
+        },
+        {
+          "word": "curves",
+          "clean_word": "curves",
+          "phonemes": "k\u02c8\u025c\u02d0vz",
+          "start": 16.558,
+          "end": 16.814,
+          "duration": 0.256,
+          "frame_ahead_trigger": 16.818
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 16.814,
+          "end": 17.013,
+          "duration": 0.199,
+          "frame_ahead_trigger": 17.074
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 17.013,
+          "end": 17.098,
+          "duration": 0.085,
+          "frame_ahead_trigger": 17.273
+        },
+        {
+          "word": "piecewise",
+          "clean_word": "piecewise",
+          "phonemes": "p\u02c8i\u02d0swa\u026az",
+          "start": 17.098,
+          "end": 17.713,
+          "duration": 0.615,
+          "frame_ahead_trigger": 17.358
+        },
+        {
+          "word": "linear",
+          "clean_word": "linear",
+          "phonemes": "l\u02c8\u026an\u026a\u0279",
+          "start": 17.713,
+          "end": 17.973,
+          "duration": 0.26,
+          "frame_ahead_trigger": 17.973
+        },
+        {
+          "word": "switch,",
+          "clean_word": "switch",
+          "phonemes": "sw\u02c8\u026at\u0283",
+          "start": 17.973,
+          "end": 18.298,
+          "duration": 0.325,
+          "frame_ahead_trigger": 18.233
+        },
+        {
+          "word": "firing",
+          "clean_word": "firing",
+          "phonemes": "f\u02c8a\u026a\u025a\u0279\u026a\u014b",
+          "start": 18.298,
+          "end": 18.813,
+          "duration": 0.515,
+          "frame_ahead_trigger": 18.558
+        },
+        {
+          "word": "gradients",
+          "clean_word": "gradients",
+          "phonemes": "\u0261\u0279\u02c8e\u026adi\u0259nts",
+          "start": 18.813,
+          "end": 19.283,
+          "duration": 0.47,
+          "frame_ahead_trigger": 19.073
+        },
+        {
+          "word": "forward",
+          "clean_word": "forward",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279w\u025ad",
+          "start": 19.283,
+          "end": 19.733,
+          "duration": 0.45,
+          "frame_ahead_trigger": 19.543
+        },
+        {
+          "word": "at",
+          "clean_word": "at",
+          "phonemes": "\u00e6t",
+          "start": 19.733,
+          "end": 19.913,
+          "duration": 0.18,
+          "frame_ahead_trigger": 19.993
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 19.913,
+          "end": 20.023,
+          "duration": 0.11,
+          "frame_ahead_trigger": 20.173
+        },
+        {
+          "word": "constant",
+          "clean_word": "constant",
+          "phonemes": "k\u02c8\u0251\u02d0nst\u0259nt",
+          "start": 20.023,
+          "end": 20.498,
+          "duration": 0.475,
+          "frame_ahead_trigger": 20.283
+        },
+        {
+          "word": "rate.",
+          "clean_word": "rate",
+          "phonemes": "\u0279\u02c8e\u026at",
+          "start": 20.498,
+          "end": 20.818,
+          "duration": 0.32,
+          "frame_ahead_trigger": 20.758
+        }
+      ],
+      "audio_duration": 6.55,
+      "slot_duration": 6.7
+    },
+    {
+      "beat_id": 4,
+      "text": "While dropout forces nodes to learn robust, redundant representations, preventing the co-adaptation that plagues narrow, brittle architectures.",
+      "visual_focus": "Nodes flickering on and off to reveal sparse, independent activation paths.",
+      "highlight_words": {
+        "dropout": "#38BDF8",
+        "redundant": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Dropout Layer",
+        "action_verb": "prunes",
+        "direct_object": "Co-adapted Synapses",
+        "anchor_word": "dropout",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "SYNAPTIC DROPOUT REGULARIZATION",
+        "sub": "Forcing independent feature extraction",
+        "accent_color": "#38BDF8",
+        "params": {
+          "stream_a_label": "Dense Co-adaptation",
+          "stream_b_label": "Sparse Robust Features",
+          "barrier_label": "Dropout Mask",
+          "barrier_sub": "0.5 Probability"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "SYNAPTIC DROPOUT REGULARIZATION",
+        "sub": "Forcing independent feature extraction",
+        "accent_color": "#38BDF8",
+        "stream_a_label": "Dense Co-adaptation",
+        "stream_b_label": "Sparse Robust Features",
+        "barrier_label": "Dropout Mask",
+        "barrier_sub": "0.5 Probability"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 21.12,
+      "end": 29.27,
+      "duration": 8.15,
+      "word_timings": [
+        {
+          "word": "While",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 21.132,
+          "end": 21.477,
+          "duration": 0.345,
+          "frame_ahead_trigger": 21.542
+        },
+        {
+          "word": "dropout",
+          "clean_word": "dropout",
+          "phonemes": "d\u0279\u02c8\u0251\u02d0pa\u028at",
+          "start": 21.477,
+          "end": 21.932,
+          "duration": 0.455,
+          "frame_ahead_trigger": 21.887
+        },
+        {
+          "word": "forces",
+          "clean_word": "forces",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u1d7bz",
+          "start": 21.932,
+          "end": 22.467,
+          "duration": 0.535,
+          "frame_ahead_trigger": 22.342
+        },
+        {
+          "word": "nodes",
+          "clean_word": "nodes",
+          "phonemes": "n\u02c8o\u028adz",
+          "start": 22.467,
+          "end": 22.697,
+          "duration": 0.23,
+          "frame_ahead_trigger": 22.877
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 22.697,
+          "end": 22.967,
+          "duration": 0.27,
+          "frame_ahead_trigger": 23.107
+        },
+        {
+          "word": "learn",
+          "clean_word": "learn",
+          "phonemes": "l\u02c8\u025c\u02d0n",
+          "start": 22.967,
+          "end": 23.207,
+          "duration": 0.24,
+          "frame_ahead_trigger": 23.377
+        },
+        {
+          "word": "robust,",
+          "clean_word": "robust",
+          "phonemes": "\u0279o\u028ab\u02c8\u028cst",
+          "start": 23.207,
+          "end": 23.762,
+          "duration": 0.555,
+          "frame_ahead_trigger": 23.617
+        },
+        {
+          "word": "redundant",
+          "clean_word": "redundant",
+          "phonemes": "\u0279\u1d7bd\u02c8\u028cnd\u0259nt",
+          "start": 23.762,
+          "end": 24.392,
+          "duration": 0.63,
+          "frame_ahead_trigger": 24.172
+        },
+        {
+          "word": "representations,",
+          "clean_word": "representations",
+          "phonemes": "\u0279\u02cc\u025bp\u0279\u1d7bz\u02c8\u025bnt\u02c8e\u026a\u0283\u0259nz",
+          "start": 24.392,
+          "end": 25.402,
+          "duration": 1.01,
+          "frame_ahead_trigger": 24.802
+        },
+        {
+          "word": "preventing",
+          "clean_word": "preventing",
+          "phonemes": "p\u0279\u026av\u02c8\u025bnt\u026a\u014b",
+          "start": 25.402,
+          "end": 26.002,
+          "duration": 0.6,
+          "frame_ahead_trigger": 25.812
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 26.002,
+          "end": 26.137,
+          "duration": 0.135,
+          "frame_ahead_trigger": 26.412
+        },
+        {
+          "word": "co-adaptation",
+          "clean_word": "coadaptation",
+          "phonemes": "k\u02cco\u028ad\u0250pt\u02c8e\u026a\u0283\u0259n",
+          "start": 26.137,
+          "end": 26.927,
+          "duration": 0.79,
+          "frame_ahead_trigger": 26.547
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 26.927,
+          "end": 27.237,
+          "duration": 0.31,
+          "frame_ahead_trigger": 27.337
+        },
+        {
+          "word": "plagues",
+          "clean_word": "plagues",
+          "phonemes": "pl\u02c8e\u026a\u0261z",
+          "start": 27.237,
+          "end": 27.587,
+          "duration": 0.35,
+          "frame_ahead_trigger": 27.647
+        },
+        {
+          "word": "narrow,",
+          "clean_word": "narrow",
+          "phonemes": "n\u02c8\u00e6\u0279o\u028a",
+          "start": 27.587,
+          "end": 27.857,
+          "duration": 0.27,
+          "frame_ahead_trigger": 27.997
+        },
+        {
+          "word": "brittle",
+          "clean_word": "brittle",
+          "phonemes": "b\u0279\u02c8\u026a\u027e\u0259l",
+          "start": 27.857,
+          "end": 28.432,
+          "duration": 0.575,
+          "frame_ahead_trigger": 28.267
+        },
+        {
+          "word": "architectures.",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 28.432,
+          "end": 29.197,
+          "duration": 0.765,
+          "frame_ahead_trigger": 28.842
+        }
+      ],
+      "audio_duration": 8.15,
+      "slot_duration": 8.3
+    },
+    {
+      "beat_id": 5,
+      "text": "This stack converged 6x faster on ImageNet, effectively igniting the modern deep learning revolution by leveraging raw GPU parallelism.",
+      "visual_focus": "Race bars showing dramatic speedup of ReLU + Dropout vs legacy Sigmoid.",
+      "highlight_words": {
+        "6x faster": "#F59E0B",
+        "GPU": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "AlexNet Architecture",
+        "action_verb": "outperforms",
+        "direct_object": "Sigmoid Baselines",
+        "anchor_word": "faster",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "CONVERGENCE SPEEDUP BENCHMARK",
+        "sub": "Race bars showing dramatic speedup of ReLU + Dropout",
+        "params": {
+          "title": "CONVERGENCE SPEEDUP BENCHMARK",
+          "sub": "Race bars showing dramatic speedup of ReLU + Dropout",
+          "metric_name": "Training Speedup",
+          "unit": "Speedup Factor",
+          "contestants": [
+            {
+              "name": "AlexNet (ReLU/Dropout)",
+              "value": 6.0,
+              "display_val": "6.0x",
+              "is_hero": true,
+              "color": "#34D399"
+            },
+            {
+              "name": "Standard Sigmoid",
+              "value": 1.0,
+              "display_val": "1.0x",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 6x SOTA EFFICIENCY GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "CONVERGENCE SPEEDUP BENCHMARK",
+        "sub": "Race bars showing dramatic speedup of ReLU + Dropout",
+        "metric_name": "Training Speedup",
+        "unit": "Speedup Factor",
+        "contestants": [
+          {
+            "name": "AlexNet (ReLU/Dropout)",
+            "value": 6.0,
+            "display_val": "6.0x",
+            "is_hero": true,
+            "color": "#34D399"
+          },
+          {
+            "name": "Standard Sigmoid",
+            "value": 1.0,
+            "display_val": "1.0x",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 6x SOTA EFFICIENCY GAIN"
+      },
+      "start": 29.42,
+      "end": 37.66,
+      "duration": 8.23,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 29.426,
+          "end": 29.611,
+          "duration": 0.185,
+          "frame_ahead_trigger": 29.986
+        },
+        {
+          "word": "stack",
+          "clean_word": "stack",
+          "phonemes": "st\u02c8\u00e6k",
+          "start": 29.611,
+          "end": 29.881,
+          "duration": 0.27,
+          "frame_ahead_trigger": 30.171
+        },
+        {
+          "word": "converged",
+          "clean_word": "converged",
+          "phonemes": "k\u0259nv\u02c8\u025c\u02d0d\u0292d",
+          "start": 29.881,
+          "end": 30.411,
+          "duration": 0.53,
+          "frame_ahead_trigger": 30.441
+        },
+        {
+          "word": "6x",
+          "clean_word": "6x",
+          "phonemes": "s\u02c8\u026aks \u02c8\u025bks",
+          "start": 30.411,
+          "end": 31.031,
+          "duration": 0.62,
+          "frame_ahead_trigger": 30.971
+        },
+        {
+          "word": "faster",
+          "clean_word": "faster",
+          "phonemes": "f\u02c8\u00e6st\u025a",
+          "start": 31.031,
+          "end": 31.301,
+          "duration": 0.27,
+          "frame_ahead_trigger": 31.591
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 31.301,
+          "end": 31.476,
+          "duration": 0.175,
+          "frame_ahead_trigger": 31.861
+        },
+        {
+          "word": "ImageNet,",
+          "clean_word": "imagenet",
+          "phonemes": "\u02c8\u026am\u026ad\u0292 n\u02c8\u025bt",
+          "start": 31.476,
+          "end": 32.141,
+          "duration": 0.665,
+          "frame_ahead_trigger": 32.036
+        },
+        {
+          "word": "effectively",
+          "clean_word": "effectively",
+          "phonemes": "\u026af\u02c8\u025bkt\u026avli",
+          "start": 32.141,
+          "end": 32.656,
+          "duration": 0.515,
+          "frame_ahead_trigger": 32.701
+        },
+        {
+          "word": "igniting",
+          "clean_word": "igniting",
+          "phonemes": "\u026a\u0261n\u02c8a\u026a\u027e\u026a\u014b",
+          "start": 32.656,
+          "end": 33.186,
+          "duration": 0.53,
+          "frame_ahead_trigger": 33.216
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 33.186,
+          "end": 33.305,
+          "duration": 0.119,
+          "frame_ahead_trigger": 33.746
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 33.305,
+          "end": 33.676,
+          "duration": 0.371,
+          "frame_ahead_trigger": 33.865
+        },
+        {
+          "word": "deep",
+          "clean_word": "deep",
+          "phonemes": "d\u02c8i\u02d0p",
+          "start": 33.676,
+          "end": 33.901,
+          "duration": 0.225,
+          "frame_ahead_trigger": 34.236
+        },
+        {
+          "word": "learning",
+          "clean_word": "learning",
+          "phonemes": "l\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 33.901,
+          "end": 34.261,
+          "duration": 0.36,
+          "frame_ahead_trigger": 34.461
+        },
+        {
+          "word": "revolution",
+          "clean_word": "revolution",
+          "phonemes": "\u0279\u02cc\u025bv\u0259l\u02c8u\u02d0\u0283\u0259n",
+          "start": 34.261,
+          "end": 34.986,
+          "duration": 0.725,
+          "frame_ahead_trigger": 34.821
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 34.986,
+          "end": 35.246,
+          "duration": 0.26,
+          "frame_ahead_trigger": 35.546
+        },
+        {
+          "word": "leveraging",
+          "clean_word": "leveraging",
+          "phonemes": "l\u02c8\u025bv\u025a\u0279\u026ad\u0292\u026a\u014b",
+          "start": 35.246,
+          "end": 35.786,
+          "duration": 0.54,
+          "frame_ahead_trigger": 35.806
+        },
+        {
+          "word": "raw",
+          "clean_word": "raw",
+          "phonemes": "\u0279\u02c8\u0254\u02d0",
+          "start": 35.786,
+          "end": 36.036,
+          "duration": 0.25,
+          "frame_ahead_trigger": 36.346
+        },
+        {
+          "word": "GPU",
+          "clean_word": "gpu",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 36.036,
+          "end": 36.721,
+          "duration": 0.685,
+          "frame_ahead_trigger": 36.596
+        },
+        {
+          "word": "parallelism.",
+          "clean_word": "parallelism",
+          "phonemes": "p\u02c8\u00e6\u0279\u0259l\u02cc\u025bl\u026az\u0259m",
+          "start": 36.721,
+          "end": 37.516,
+          "duration": 0.795,
+          "frame_ahead_trigger": 37.281
+        }
+      ],
+      "audio_duration": 8.23,
+      "slot_duration": 8.39
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI to see how frontier hardware architectures turn massive compute into intelligence.",
+      "visual_focus": "Logo pulse and looping flow.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Viewer",
+        "action_verb": "follows",
+        "direct_object": "Daily Architectural Deep-dives",
+        "anchor_word": "machinoAI",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "SUBSCRIBE FOR PART 3",
+        "sub": "Deep learning ignition continues",
+        "accent_color": "#FFFFFF",
+        "params": {
+          "stage_1_label": "Research",
+          "stage_1_sub": "Read Papers",
+          "stage_2_label": "Visualize",
+          "stage_2_sub": "Chalkboard Flow",
+          "stage_3_label": "Execute",
+          "stage_3_sub": "Neural Ignition"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 37.81,
+      "end": 43.84,
+      "duration": 6.04,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 37.821,
+          "end": 38.241,
+          "duration": 0.42,
+          "frame_ahead_trigger": 38.531
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 38.241,
+          "end": 39.162,
+          "duration": 0.921,
+          "frame_ahead_trigger": 38.951
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 39.162,
+          "end": 39.421,
+          "duration": 0.259,
+          "frame_ahead_trigger": 39.872
+        },
+        {
+          "word": "see",
+          "clean_word": "see",
+          "phonemes": "s\u02c8i\u02d0",
+          "start": 39.421,
+          "end": 39.57,
+          "duration": 0.149,
+          "frame_ahead_trigger": 40.131
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 39.57,
+          "end": 39.766,
+          "duration": 0.196,
+          "frame_ahead_trigger": 40.28
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 39.766,
+          "end": 40.366,
+          "duration": 0.6,
+          "frame_ahead_trigger": 40.476
+        },
+        {
+          "word": "hardware",
+          "clean_word": "hardware",
+          "phonemes": "h\u02c8\u0251\u02d0\u0279dw\u025b\u0279",
+          "start": 40.366,
+          "end": 40.796,
+          "duration": 0.43,
+          "frame_ahead_trigger": 41.076
+        },
+        {
+          "word": "architectures",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 40.796,
+          "end": 41.726,
+          "duration": 0.93,
+          "frame_ahead_trigger": 41.506
+        },
+        {
+          "word": "turn",
+          "clean_word": "turn",
+          "phonemes": "t\u02c8\u025c\u02d0n",
+          "start": 41.726,
+          "end": 41.961,
+          "duration": 0.235,
+          "frame_ahead_trigger": 42.436
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 41.961,
+          "end": 42.211,
+          "duration": 0.25,
+          "frame_ahead_trigger": 42.671
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 42.211,
+          "end": 42.786,
+          "duration": 0.575,
+          "frame_ahead_trigger": 42.921
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 42.786,
+          "end": 43.176,
+          "duration": 0.39,
+          "frame_ahead_trigger": 43.496
+        },
+        {
+          "word": "intelligence.",
+          "clean_word": "intelligence",
+          "phonemes": "\u026ant\u02c8\u025bl\u026ad\u0292\u0259ns",
+          "start": 43.176,
+          "end": 43.766,
+          "duration": 0.59,
+          "frame_ahead_trigger": 43.886
+        }
+      ],
+      "audio_duration": 6.04,
+      "slot_duration": 6.03
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\sigma(x) = \\frac{1}{1 + e^{-x}} \\approx 0 \\text{ as } x \\to \\infty$",
+      "filename": "alexnet_ignition_part2_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\sigma(x)",
+          "label": "Sigmoid Activation"
+        },
+        {
+          "term": "e^{-x}",
+          "label": "Exponential Decay"
+        }
+      ],
+      "svg_filename": "alexnet_ignition_part2_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\frac{\\partial L}{\\partial w_1} = \\prod_{i=1}^{L} \\frac{\\partial h_{i+1}}{\\partial h_i} \\cdot \\frac{\\partial h_i}{\\partial w_i}$",
+      "filename": "alexnet_ignition_part2_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\prod",
+          "label": "Multiplicative Bottleneck"
+        },
+        {
+          "term": "\\partial",
+          "label": "Gradient Product"
+        }
+      ],
+      "svg_filename": "alexnet_ignition_part2_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathrm{ReLU}(x) = \\max(0, x)$",
+      "filename": "alexnet_ignition_part2_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\max(0, x)",
+          "label": "Piecewise Linear Switch"
+        }
+      ],
+      "svg_filename": "alexnet_ignition_part2_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$h_{drop} = h \\odot \\mathrm{Bernoulli}(p)$",
+      "filename": "alexnet_ignition_part2_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "\\odot",
+          "label": "Element-wise Masking"
+        },
+        {
+          "term": "p",
+          "label": "Dropout Probability"
+        }
+      ],
+      "svg_filename": "alexnet_ignition_part2_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\Delta \\mathrm{Time} = \\frac{T_{\\mathrm{Sigmoid}}}{T_{\\mathrm{ReLU}}} \\approx 6.0$",
+      "filename": "alexnet_ignition_part2_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "T",
+          "label": "Training Epochs"
+        }
+      ],
+      "svg_filename": "alexnet_ignition_part2_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "SIGMOID",
+          "color": "#EF4444",
+          "items": [
+            "Saturation",
+            "Vanishing",
+            "Fractional"
+          ]
+        },
+        {
+          "name": "RELU",
+          "color": "#34D399",
+          "items": [
+            "Linear",
+            "Constant",
+            "Firing"
+          ]
+        },
+        {
+          "name": "DROPOUT",
+          "color": "#38BDF8",
+          "items": [
+            "Masking",
+            "Independent",
+            "Redundancy"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Layer\"",
+        "target_cluster": "RELU",
+        "token": "\"Layer\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'Saturate'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'Vanish'",
+          "color": "#EF4444"
+        }
+      ]
+    },
+    "model_a": "AlexNet (ReLU/Dropout)",
+    "model_a_specs": [
+      "ReLU Activations",
+      "Dropout Masking",
+      "GPU Parallelism"
+    ],
+    "model_b": "Classical CNN",
+    "model_b_specs": [
+      "Sigmoid Activations",
+      "No Regularization",
+      "Single-Thread CPU"
+    ],
+    "divide_title": "NON-LINEARITY IGNITION",
+    "model_a_stat": "6x",
+    "model_a_stat_label": "TRAINING SPEEDUP",
+    "model_b_stat": "1x",
+    "model_b_stat_label": "BASELINE EPOCHS",
+    "efficiency_badge": "\u26a1 6x CONVERGENCE SPEEDUP",
+    "benchmarks": [
+      {
+        "name": "Convergence",
+        "score_a": "6x",
+        "score_b": "1x"
+      },
+      {
+        "name": "Gradient Flow",
+        "score_a": "High",
+        "score_b": "Near Zero"
+      },
+      {
+        "name": "Feature Sparsity",
+        "score_a": "Robust",
+        "score_b": "Co-adapted"
+      }
+    ],
+    "scale_metric": "6x",
+    "scale_label": "Training Speedup",
+    "bottleneck_title": "GRADIENT VANISHING BOTTLENECK",
+    "bottleneck_desc": "Exponential signal decay",
+    "solution_title": "RECTIFIED LINEAR ARCHITECTURE",
+    "solution_components": "ReLU & Dropout",
+    "mechanism_title": "PIECEWISE LINEAR ACTIVATION",
+    "payoff_stat": "6x",
+    "payoff_label": "SPEEDUP",
+    "payoff_sub": "Empirical convergence efficiency",
+    "payoff_hero_stat": 6.0,
+    "payoff_hero_label": "ReLU Convergence",
+    "payoff_base_stat": 1.0,
+    "payoff_base_label": "Sigmoid Baseline",
+    "payoff_delta_badge": "\u26a1 6x CONVERGENCE GAIN",
+    "challenger": "AlexNet",
+    "incumbent": "Sigmoid-based CNN"
+  },
+  "benchmark_comparison": {
+    "title": "CONVERGENCE SPEEDUP BENCHMARK",
+    "metric_name": "Training Speedup",
+    "unit": "Speedup Factor",
+    "contestants": [
+      {
+        "name": "AlexNet (ReLU/Dropout)",
+        "value": 6.0,
+        "display_val": "6.0x",
+        "is_hero": true,
+        "color": "#34D399"
+      },
+      {
+        "name": "Standard Sigmoid",
+        "value": 1.0,
+        "display_val": "1.0x",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 6x SOTA EFFICIENCY GAIN",
+    "radar_axes": [
+      "Convergence",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Gradient Health",
+      "Feature Sparsity"
+    ]
+  },
+  "code_snippet": {
+    "filename": "relu_op.py",
+    "language": "python",
+    "lines": [
+      "def relu_forward(x):",
+      "# Piecewise linear switch",
+      "return np.maximum(0, x)",
+      "def apply_dropout(x, p=0.5):",
+      "mask = np.random.rand(*x.shape) > p",
+      "return x * mask"
+    ],
+    "highlight_lines": [
+      3,
+      6
+    ],
+    "trace_register": "\u26a1 RECTIFIED SIGNAL FLOW",
+    "explanation": "Gradient propagation bypasses vanishing bottleneck"
+  },
+  "arxiv_id": "alexnet_imagenet_2012",
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until AlexNet unlocks 6x throughput?",
+    "verdict": 67,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until AlexNet unlocks 6x throughput?",
+        "verdict": 67,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when deep neural networks of 2012 were suffocating, with classic Sigmoid activations vanishing their gradients into absolute nothingness?",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Did you know deep neural networks of 2012 were suffocating, with classic Sigmoid activations vanishing their gradients into absolute nothingness?",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until AlexNet proved a 6x leap.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is AlexNet a major breakthrough? Because replacing slow Sigmoid with piecewise linear ReLU to defeat vanishing gradients, paired with random node dropout to prevent co-adaptation.",
+        "verdict": 59,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Replacing slow Sigmoid with piecewise linear ReLU to defeat vanishing gradients, paired with random node dropout to prevent co-adaptation.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? AlexNet reveals the solution.",
+        "verdict": 56,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that AlexNet finally breaks.",
+        "verdict": 55,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Deep neural networks of 2012 were suffocating, with classic Sigmoid activations vanishing their gradients into absolute nothingness.",
+        "verdict": 39,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 6x speedup using AlexNet.",
+        "verdict": 39,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Replacing slow Sigmoid with piecewise linear ReLU to defeat vanishing gradients, paired with random node dropout to prevent co-adaptation.",
+        "verdict": 35,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "AlexNet (ReLU/Dropout)",
+        "model_a_score": "6x",
+        "model_b_name": "Classical CNN",
+        "model_b_score": "1x",
+        "delta_label": "\u26a1 6x CONVERGENCE SPEEDUP"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "etU2qigV9eI",
+    "shorts_url": "https://youtube.com/shorts/etU2qigV9eI",
+    "studio_url": "https://studio.youtube.com/video/etU2qigV9eI/edit",
+    "title": "AlexNet Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/alexnet_ignition_part2_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
