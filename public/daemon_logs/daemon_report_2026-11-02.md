@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-02 | **Timestamp:** 2026-11-02 20:55:10 UTC
+**Date:** 2026-11-02 | **Timestamp:** 2026-11-02 21:56:14 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: GANs: Generative Adversarial Networks: Part 2 - The Minimax Equation: Mathematical Proof of Jensen-Shannon Divergence Convergence
-- **Topic Queue Part:** `goat_gans_part_2` (arXiv: [1406.2661](https://arxiv.org/abs/1406.2661))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/ZCvLpz3n61c](https://youtube.com/shorts/ZCvLpz3n61c) (`ZCvLpz3n61c`)
-- **High-CTR Poster:** [gan_minimax_divergence_poster.png](public/thumbnails/gan_minimax_divergence_poster.png)
+### Reel 1: DDPM: Denoising Diffusion Probabilistic Models: Part 2 - The Forward-Reverse Markov Chain: Reparameterization Trick and Closed-Form Noise Addition
+- **Topic Queue Part:** `goat_ddpm_part_2` (arXiv: [2006.11239](https://arxiv.org/abs/2006.11239))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/2kgDtSwAai8](https://youtube.com/shorts/2kgDtSwAai8) (`2kgDtSwAai8`)
+- **High-CTR Poster:** [ddpm_forward_reverse_sampling_poster.png](public/thumbnails/ddpm_forward_reverse_sampling_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: GANs: Generative Adversarial Networks Mini-Series 2/5: GANs: Generative Adversarial Networks: Part 2 - The Minimax Equation: Mathematical Proof of Jensen-Shannon Divergence Convergence*
-- **Everyday Analogy:** *The theoretical derivation proving that the optimal discriminator is D*(x) = p_data / (p_data + p_g), leading to global minimum p_g = p_data.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_gan_minimax_divergence_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: DDPM: Denoising Diffusion Probabilistic Models Mini-Series 2/5: DDPM: Denoising Diffusion Probabilistic Models: Part 2 - The Forward-Reverse Markov Chain: Reparameterization Trick and Closed-Form Noise Addition*
+- **Everyday Analogy:** *The mathematical magic of sampling noisy image x_t directly from x_0 at any arbitrary timestep using Gaussian schedules without step-by-step iteration.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_ddpm_forward_reverse_sampling_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
