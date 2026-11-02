@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-02 | **Timestamp:** 2026-11-02 02:49:32 UTC
+**Date:** 2026-11-02 | **Timestamp:** 2026-11-02 06:45:15 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: GPT-3: Few-Shot In-Context Learners: Part 2 - The Geometry of In-Context Learning: How Frozen Weights Simulate Gradient Descent
-- **Topic Queue Part:** `goat_gpt3_part_2` (arXiv: [2005.14165](https://arxiv.org/abs/2005.14165))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/ZICSSzbiAPw](https://youtube.com/shorts/ZICSSzbiAPw) (`ZICSSzbiAPw`)
-- **High-CTR Poster:** [gpt3_in_context_geometry_poster.png](public/thumbnails/gpt3_in_context_geometry_poster.png)
+### Reel 1: AlphaGo: Mastering the Game of Go: Part 2 - Policy vs Value Networks: Fusing Grandmaster Intuition with Cold Calculation
+- **Topic Queue Part:** `goat_alphago_part_2` (arXiv: [alphago_nature_2016](https://arxiv.org/abs/alphago_nature_2016))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/e0mG9sXo-iE](https://youtube.com/shorts/e0mG9sXo-iE) (`e0mG9sXo-iE`)
+- **High-CTR Poster:** [alphago_policy_value_dynamics_poster.png](public/thumbnails/alphago_policy_value_dynamics_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: GPT-3: Few-Shot In-Context Learners Mini-Series 2/5: GPT-3: Few-Shot In-Context Learners: Part 2 - The Geometry of In-Context Learning: How Frozen Weights Simulate Gradient Descent*
-- **Everyday Analogy:** *The mathematical phenomenon where few-shot prompt tokens act as steering vectors that navigate latent manifolds without weight updates.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_gpt3_in_context_geometry_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: AlphaGo: Mastering the Game of Go Mini-Series 2/5: AlphaGo: Mastering the Game of Go: Part 2 - Policy vs Value Networks: Fusing Grandmaster Intuition with Cold Calculation*
+- **Everyday Analogy:** *How policy networks prune the search space to high-probability moves while value networks evaluate board position without exhaustive rollouts.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_alphago_policy_value_dynamics_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
