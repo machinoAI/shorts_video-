@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-03 | **Timestamp:** 2026-11-03 18:44:03 UTC
+**Date:** 2026-11-03 | **Timestamp:** 2026-11-03 19:47:40 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Scaling Laws for Neural Language Models: Part 2 - The Triad Exponents: Compute (C), Parameters (N), and Dataset Size (D)
-- **Topic Queue Part:** `goat_scaling_laws_part_2` (arXiv: [2001.08361](https://arxiv.org/abs/2001.08361))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/b3tdXQ9LG68](https://youtube.com/shorts/b3tdXQ9LG68) (`b3tdXQ9LG68`)
-- **High-CTR Poster:** [scaling_laws_triad_poster.png](public/thumbnails/scaling_laws_triad_poster.png)
+### Reel 1: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 2 - IO-Aware Hardware Tiling: Bypassing Slow HBM by Exploiting 20 TB/s On-Chip SRAM
+- **Topic Queue Part:** `goat_flashattention_part_2` (arXiv: [2205.14135](https://arxiv.org/abs/2205.14135))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/8MEBcVgKLUk](https://youtube.com/shorts/8MEBcVgKLUk) (`8MEBcVgKLUk`)
+- **High-CTR Poster:** [flash_attention_io_awareness_poster.png](public/thumbnails/flash_attention_io_awareness_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: Scaling Laws for Neural Language Models Mini-Series 2/5: Scaling Laws for Neural Language Models: Part 2 - The Triad Exponents: Compute (C), Parameters (N), and Dataset Size (D)*
-- **Everyday Analogy:** *The mathematical derivation of power-law exponents alpha_N, alpha_D, and alpha_C, proving that network depth vs width matters far less than raw scale.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_scaling_laws_triad_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: FlashAttention: Fast & Memory-Efficient Exact Attention Mini-Series 2/5: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 2 - IO-Aware Hardware Tiling: Bypassing Slow HBM by Exploiting 20 TB/s On-Chip SRAM*
+- **Everyday Analogy:** *Re-engineering transformer attention to load matrix blocks into ultra-fast SRAM tiles, computing intermediate values without spilling to slow HBM memory.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_flash_attention_io_awareness_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
