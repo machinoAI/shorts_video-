@@ -1,0 +1,1768 @@
+{
+  "id": "bert_masked_lm_deepdive",
+  "title": "BERT: The Bidirectional Breakthrough",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "neural_attention",
+  "hook_tag": "MECHANISM DEEPDIVE",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until BERT unlocks 80.5% throughput?",
+      "visual_focus": "A linear sequence of tokens moving left to right with a vertical wall blocking forward vision.",
+      "highlight_words": {
+        "blinkered horse": "#EF4444",
+        "ignore the future": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Sequential Model",
+        "action_verb": "blocks",
+        "direct_object": "future token trajectory",
+        "anchor_word": "ignore",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "THE LINEAR LIMITATION",
+        "sub": "Predictive models are constrained by causal left-to-right temporal masks",
+        "accent_color": "#EF4444",
+        "params": {
+          "stage_1_label": "Token_n",
+          "stage_2_label": "Token_n+1",
+          "stage_3_label": "Hidden_Future_Mask"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 67,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "THE LINEAR LIMITATION",
+        "sub": "Predictive models are constrained by causal left-to-right temporal masks",
+        "accent_color": "#EF4444",
+        "stage_1_label": "Token_n",
+        "stage_2_label": "Token_n+1",
+        "stage_3_label": "Hidden_Future_Mask"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.87,
+      "duration": 5.87,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.005,
+          "end": 0.3,
+          "duration": 0.295,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.3,
+          "end": 0.485,
+          "duration": 0.185,
+          "frame_ahead_trigger": 0.26
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.485,
+          "end": 1.23,
+          "duration": 0.745,
+          "frame_ahead_trigger": 0.445
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.23,
+          "end": 1.405,
+          "duration": 0.175,
+          "frame_ahead_trigger": 1.19
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.405,
+          "end": 1.855,
+          "duration": 0.45,
+          "frame_ahead_trigger": 1.365
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 1.855,
+          "end": 2.235,
+          "duration": 0.38,
+          "frame_ahead_trigger": 1.815
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.235,
+          "end": 2.605,
+          "duration": 0.37,
+          "frame_ahead_trigger": 2.195
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 2.605,
+          "end": 3.15,
+          "duration": 0.545,
+          "frame_ahead_trigger": 2.565
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 3.15,
+          "end": 3.55,
+          "duration": 0.4,
+          "frame_ahead_trigger": 3.11
+        },
+        {
+          "word": "BERT",
+          "clean_word": "bert",
+          "phonemes": "b\u02c8\u025c\u02d0t",
+          "start": 3.55,
+          "end": 3.836,
+          "duration": 0.286,
+          "frame_ahead_trigger": 3.51
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 3.836,
+          "end": 4.295,
+          "duration": 0.459,
+          "frame_ahead_trigger": 3.796
+        },
+        {
+          "word": "80.5%",
+          "clean_word": "805",
+          "phonemes": "\u02c8e\u026ath\u02c8\u028cnd\u0279\u026ad f\u02c8a\u026av",
+          "start": 4.295,
+          "end": 5.295,
+          "duration": 1.0,
+          "frame_ahead_trigger": 4.255
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 5.295,
+          "end": 5.78,
+          "duration": 0.485,
+          "frame_ahead_trigger": 5.255
+        }
+      ],
+      "audio_duration": 5.87,
+      "slot_duration": 6.02
+    },
+    {
+      "beat_id": 2,
+      "text": "This directional dependency is a massive performance cage, preventing the network from understanding the deeper structural context of a full sentence.",
+      "visual_focus": "A rigid geometric wireframe of a sentence where connections only flow in one direction, creating a bottleneck.",
+      "highlight_words": {
+        "performance cage": "#EF4444",
+        "directional dependency": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Directional Mask",
+        "action_verb": "constricts",
+        "direct_object": "bidirectional latent flow",
+        "anchor_word": "cage",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE CAUSAL BOTTLENECK",
+        "sub": "Unidirectional attention artificially limits the receptive field",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Left Context",
+          "stream_b_label": "Right Context",
+          "barrier_label": "Unidirectional Barrier",
+          "barrier_sub": "Information Flow Blocked"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE CAUSAL BOTTLENECK",
+        "sub": "Unidirectional attention artificially limits the receptive field",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Left Context",
+        "stream_b_label": "Right Context",
+        "barrier_label": "Unidirectional Barrier",
+        "barrier_sub": "Information Flow Blocked"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.02,
+      "end": 13.93,
+      "duration": 7.91,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 6.032,
+          "end": 6.302,
+          "duration": 0.27,
+          "frame_ahead_trigger": 6.142
+        },
+        {
+          "word": "directional",
+          "clean_word": "directional",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bk\u0283\u0259n\u0259l",
+          "start": 6.302,
+          "end": 6.852,
+          "duration": 0.55,
+          "frame_ahead_trigger": 6.412
+        },
+        {
+          "word": "dependency",
+          "clean_word": "dependency",
+          "phonemes": "d\u1d7bp\u02c8\u025bnd\u0259nsi",
+          "start": 6.852,
+          "end": 7.567,
+          "duration": 0.715,
+          "frame_ahead_trigger": 6.962
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 7.567,
+          "end": 7.662,
+          "duration": 0.095,
+          "frame_ahead_trigger": 7.677
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 7.662,
+          "end": 7.757,
+          "duration": 0.095,
+          "frame_ahead_trigger": 7.772
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 7.757,
+          "end": 8.092,
+          "duration": 0.335,
+          "frame_ahead_trigger": 7.867
+        },
+        {
+          "word": "performance",
+          "clean_word": "performance",
+          "phonemes": "p\u025af\u02c8\u0254\u02d0\u0279m\u0259ns",
+          "start": 8.092,
+          "end": 8.722,
+          "duration": 0.63,
+          "frame_ahead_trigger": 8.202
+        },
+        {
+          "word": "cage,",
+          "clean_word": "cage",
+          "phonemes": "k\u02c8e\u026ad\u0292",
+          "start": 8.722,
+          "end": 9.092,
+          "duration": 0.37,
+          "frame_ahead_trigger": 8.832
+        },
+        {
+          "word": "preventing",
+          "clean_word": "preventing",
+          "phonemes": "p\u0279\u026av\u02c8\u025bnt\u026a\u014b",
+          "start": 9.092,
+          "end": 9.657,
+          "duration": 0.565,
+          "frame_ahead_trigger": 9.202
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 9.657,
+          "end": 9.837,
+          "duration": 0.18,
+          "frame_ahead_trigger": 9.767
+        },
+        {
+          "word": "network",
+          "clean_word": "network",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0k",
+          "start": 9.837,
+          "end": 10.227,
+          "duration": 0.39,
+          "frame_ahead_trigger": 9.947
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 10.227,
+          "end": 10.492,
+          "duration": 0.265,
+          "frame_ahead_trigger": 10.337
+        },
+        {
+          "word": "understanding",
+          "clean_word": "understanding",
+          "phonemes": "\u02cc\u028cnd\u025ast\u02c8\u00e6nd\u026a\u014b",
+          "start": 10.492,
+          "end": 11.192,
+          "duration": 0.7,
+          "frame_ahead_trigger": 10.602
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 11.192,
+          "end": 11.295,
+          "duration": 0.103,
+          "frame_ahead_trigger": 11.302
+        },
+        {
+          "word": "deeper",
+          "clean_word": "deeper",
+          "phonemes": "d\u02c8i\u02d0p\u025a",
+          "start": 11.295,
+          "end": 11.697,
+          "duration": 0.402,
+          "frame_ahead_trigger": 11.405
+        },
+        {
+          "word": "structural",
+          "clean_word": "structural",
+          "phonemes": "st\u0279\u02c8\u028ckt\u0283\u025a\u0279\u0259l",
+          "start": 11.697,
+          "end": 12.314,
+          "duration": 0.617,
+          "frame_ahead_trigger": 11.807
+        },
+        {
+          "word": "context",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 12.314,
+          "end": 12.892,
+          "duration": 0.578,
+          "frame_ahead_trigger": 12.424
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 12.892,
+          "end": 12.987,
+          "duration": 0.095,
+          "frame_ahead_trigger": 13.002
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 12.987,
+          "end": 13.152,
+          "duration": 0.165,
+          "frame_ahead_trigger": 13.097
+        },
+        {
+          "word": "full",
+          "clean_word": "full",
+          "phonemes": "f\u02c8\u028al",
+          "start": 13.152,
+          "end": 13.367,
+          "duration": 0.215,
+          "frame_ahead_trigger": 13.262
+        },
+        {
+          "word": "sentence.",
+          "clean_word": "sentence",
+          "phonemes": "s\u02c8\u025bnt\u0259ns",
+          "start": 13.367,
+          "end": 13.842,
+          "duration": 0.475,
+          "frame_ahead_trigger": 13.477
+        }
+      ],
+      "audio_duration": 7.91,
+      "slot_duration": 8.06
+    },
+    {
+      "beat_id": 3,
+      "text": "BERT shatters this by introducing the Cloze task, randomly masking 15 percent of tokens to force simultaneous, deep bidirectional attention.",
+      "visual_focus": "A sentence of tokens where random ones are highlighted and obscured, triggering a bidirectional flow of attention weights.",
+      "highlight_words": {
+        "Cloze task": "#34D399",
+        "bidirectional": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Masking Kernel",
+        "action_verb": "projects",
+        "direct_object": "attention field",
+        "anchor_word": "masking",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "BERT ARCHITECTURE",
+        "sub": "A sentence of tokens where random ones are highlighted and obscur",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.png",
+          "arxiv_id": "1810.04805",
+          "title": "BERT ARCHITECTURE",
+          "sub": "A sentence of tokens where random ones are highlighted and obscur",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Bert Comparisons",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.png",
+        "arxiv_id": "1810.04805",
+        "title": "BERT ARCHITECTURE",
+        "sub": "A sentence of tokens where random ones are highlighted and obscur",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Bert Comparisons",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 14.08,
+      "end": 22.32,
+      "duration": 8.23,
+      "word_timings": [
+        {
+          "word": "BERT",
+          "clean_word": "bert",
+          "phonemes": "b\u02c8\u025c\u02d0t",
+          "start": 14.086,
+          "end": 14.376,
+          "duration": 0.29,
+          "frame_ahead_trigger": 14.346
+        },
+        {
+          "word": "shatters",
+          "clean_word": "shatters",
+          "phonemes": "\u0283\u02c8\u00e6\u027e\u025az",
+          "start": 14.376,
+          "end": 14.776,
+          "duration": 0.4,
+          "frame_ahead_trigger": 14.636
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 14.776,
+          "end": 14.986,
+          "duration": 0.21,
+          "frame_ahead_trigger": 15.036
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 14.986,
+          "end": 15.151,
+          "duration": 0.165,
+          "frame_ahead_trigger": 15.246
+        },
+        {
+          "word": "introducing",
+          "clean_word": "introducing",
+          "phonemes": "\u02cc\u026ant\u0279\u0259d\u02c8u\u02d0s\u026a\u014b",
+          "start": 15.151,
+          "end": 15.976,
+          "duration": 0.825,
+          "frame_ahead_trigger": 15.411
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 15.976,
+          "end": 16.146,
+          "duration": 0.17,
+          "frame_ahead_trigger": 16.236
+        },
+        {
+          "word": "Cloze",
+          "clean_word": "cloze",
+          "phonemes": "kl\u02c8o\u028az",
+          "start": 16.146,
+          "end": 16.401,
+          "duration": 0.255,
+          "frame_ahead_trigger": 16.406
+        },
+        {
+          "word": "task,",
+          "clean_word": "task",
+          "phonemes": "t\u02c8\u00e6sk",
+          "start": 16.401,
+          "end": 16.744,
+          "duration": 0.342,
+          "frame_ahead_trigger": 16.661
+        },
+        {
+          "word": "randomly",
+          "clean_word": "randomly",
+          "phonemes": "\u0279\u02c8\u00e6nd\u0259mli",
+          "start": 16.744,
+          "end": 17.201,
+          "duration": 0.458,
+          "frame_ahead_trigger": 17.004
+        },
+        {
+          "word": "masking",
+          "clean_word": "masking",
+          "phonemes": "m\u02c8\u00e6sk\u026a\u014b",
+          "start": 17.201,
+          "end": 17.646,
+          "duration": 0.445,
+          "frame_ahead_trigger": 17.461
+        },
+        {
+          "word": "15",
+          "clean_word": "15",
+          "phonemes": "f\u02c8\u026afti\u02d0n",
+          "start": 17.646,
+          "end": 18.246,
+          "duration": 0.6,
+          "frame_ahead_trigger": 17.906
+        },
+        {
+          "word": "percent",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 18.246,
+          "end": 18.551,
+          "duration": 0.305,
+          "frame_ahead_trigger": 18.506
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 18.551,
+          "end": 18.676,
+          "duration": 0.125,
+          "frame_ahead_trigger": 18.811
+        },
+        {
+          "word": "tokens",
+          "clean_word": "tokens",
+          "phonemes": "t\u02c8o\u028ak\u0259nz",
+          "start": 18.676,
+          "end": 19.126,
+          "duration": 0.45,
+          "frame_ahead_trigger": 18.936
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 19.126,
+          "end": 19.301,
+          "duration": 0.175,
+          "frame_ahead_trigger": 19.386
+        },
+        {
+          "word": "force",
+          "clean_word": "force",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s",
+          "start": 19.301,
+          "end": 19.631,
+          "duration": 0.33,
+          "frame_ahead_trigger": 19.561
+        },
+        {
+          "word": "simultaneous,",
+          "clean_word": "simultaneous",
+          "phonemes": "s\u02cca\u026am\u0259lt\u02c8e\u026ani\u0259s",
+          "start": 19.631,
+          "end": 20.516,
+          "duration": 0.885,
+          "frame_ahead_trigger": 19.891
+        },
+        {
+          "word": "deep",
+          "clean_word": "deep",
+          "phonemes": "d\u02c8i\u02d0p",
+          "start": 20.516,
+          "end": 20.877,
+          "duration": 0.361,
+          "frame_ahead_trigger": 20.776
+        },
+        {
+          "word": "bidirectional",
+          "clean_word": "bidirectional",
+          "phonemes": "ba\u026ad\u1d7b\u0279\u02c8\u025bk\u0283\u0259n\u0259l",
+          "start": 20.877,
+          "end": 21.721,
+          "duration": 0.844,
+          "frame_ahead_trigger": 21.137
+        },
+        {
+          "word": "attention.",
+          "clean_word": "attention",
+          "phonemes": "\u0250t\u02c8\u025bn\u0283\u0259n",
+          "start": 21.721,
+          "end": 22.176,
+          "duration": 0.455,
+          "frame_ahead_trigger": 21.981
+        }
+      ],
+      "audio_duration": 8.23,
+      "slot_duration": 8.39
+    },
+    {
+      "beat_id": 4,
+      "text": "The encoder processes this corrupted input globally, utilizing the full transformer stack to infer missing pieces from their left and right neighbors.",
+      "visual_focus": "A multi-layer Transformer stack showing bidirectional information propagation across all layers, filling in the masked gaps.",
+      "highlight_words": {
+        "full transformer stack": "#F59E0B",
+        "globally": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Transformer Layer",
+        "action_verb": "synthesizes",
+        "direct_object": "contextual representation",
+        "anchor_word": "stack",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: BERT: THE BIDIRECT",
+        "sub": "A multi-layer Transformer stack showing bidirectional information",
+        "params": {
+          "title": "KERNEL CODE: BERT: THE BIDIRECT",
+          "sub": "A multi-layer Transformer stack showing bidirectional information",
+          "filename": "bert_attention.py",
+          "language": "python",
+          "lines": [
+            "def mask_tokens(inputs, mask_prob=0.15):",
+            "mask = torch.rand(inputs.shape) < mask_prob",
+            "inputs[mask] = '[MASK]'",
+            "return inputs, labels",
+            "output = model.forward(inputs)"
+          ],
+          "highlight_lines": [
+            1,
+            2,
+            3
+          ],
+          "trace_register": "\u26a1 BIDIRECTIONAL MASKED FORWARD PASS",
+          "delta_badge": "Global context reconstruction"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: BERT: THE BIDIRECT",
+        "sub": "A multi-layer Transformer stack showing bidirectional information",
+        "filename": "bert_attention.py",
+        "language": "python",
+        "lines": [
+          "def mask_tokens(inputs, mask_prob=0.15):",
+          "mask = torch.rand(inputs.shape) < mask_prob",
+          "inputs[mask] = '[MASK]'",
+          "return inputs, labels",
+          "output = model.forward(inputs)"
+        ],
+        "highlight_lines": [
+          1,
+          2,
+          3
+        ],
+        "trace_register": "\u26a1 BIDIRECTIONAL MASKED FORWARD PASS",
+        "delta_badge": "Global context reconstruction"
+      },
+      "start": 22.47,
+      "end": 30.36,
+      "duration": 7.89,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 22.476,
+          "end": 22.691,
+          "duration": 0.215,
+          "frame_ahead_trigger": 22.886
+        },
+        {
+          "word": "encoder",
+          "clean_word": "encoder",
+          "phonemes": "\u025b\u014bk\u02c8o\u028ad\u025a",
+          "start": 22.691,
+          "end": 23.046,
+          "duration": 0.355,
+          "frame_ahead_trigger": 23.101
+        },
+        {
+          "word": "processes",
+          "clean_word": "processes",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0s\u025bs\u1d7bz",
+          "start": 23.046,
+          "end": 23.631,
+          "duration": 0.585,
+          "frame_ahead_trigger": 23.456
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 23.631,
+          "end": 23.831,
+          "duration": 0.2,
+          "frame_ahead_trigger": 24.041
+        },
+        {
+          "word": "corrupted",
+          "clean_word": "corrupted",
+          "phonemes": "k\u025a\u0279\u02c8\u028cpt\u1d7bd",
+          "start": 23.831,
+          "end": 24.486,
+          "duration": 0.655,
+          "frame_ahead_trigger": 24.241
+        },
+        {
+          "word": "input",
+          "clean_word": "input",
+          "phonemes": "\u02c8\u026anp\u028at",
+          "start": 24.486,
+          "end": 24.671,
+          "duration": 0.185,
+          "frame_ahead_trigger": 24.896
+        },
+        {
+          "word": "globally,",
+          "clean_word": "globally",
+          "phonemes": "\u0261l\u02c8o\u028ab\u0259li",
+          "start": 24.671,
+          "end": 25.295,
+          "duration": 0.624,
+          "frame_ahead_trigger": 25.081
+        },
+        {
+          "word": "utilizing",
+          "clean_word": "utilizing",
+          "phonemes": "j\u02c8u\u02d0\u027e\u026al\u02cca\u026az\u026a\u014b",
+          "start": 25.295,
+          "end": 26.041,
+          "duration": 0.746,
+          "frame_ahead_trigger": 25.705
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 26.041,
+          "end": 26.166,
+          "duration": 0.125,
+          "frame_ahead_trigger": 26.451
+        },
+        {
+          "word": "full",
+          "clean_word": "full",
+          "phonemes": "f\u02c8\u028al",
+          "start": 26.166,
+          "end": 26.306,
+          "duration": 0.14,
+          "frame_ahead_trigger": 26.576
+        },
+        {
+          "word": "transformer",
+          "clean_word": "transformer",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279m\u025a",
+          "start": 26.306,
+          "end": 27.161,
+          "duration": 0.855,
+          "frame_ahead_trigger": 26.716
+        },
+        {
+          "word": "stack",
+          "clean_word": "stack",
+          "phonemes": "st\u02c8\u00e6k",
+          "start": 27.161,
+          "end": 27.516,
+          "duration": 0.355,
+          "frame_ahead_trigger": 27.571
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 27.516,
+          "end": 27.585,
+          "duration": 0.069,
+          "frame_ahead_trigger": 27.926
+        },
+        {
+          "word": "infer",
+          "clean_word": "infer",
+          "phonemes": "\u026anf\u02c8\u025c\u02d0",
+          "start": 27.585,
+          "end": 27.851,
+          "duration": 0.266,
+          "frame_ahead_trigger": 27.995
+        },
+        {
+          "word": "missing",
+          "clean_word": "missing",
+          "phonemes": "m\u02c8\u026as\u026a\u014b",
+          "start": 27.851,
+          "end": 28.391,
+          "duration": 0.54,
+          "frame_ahead_trigger": 28.261
+        },
+        {
+          "word": "pieces",
+          "clean_word": "pieces",
+          "phonemes": "p\u02c8i\u02d0s\u1d7bz",
+          "start": 28.391,
+          "end": 28.636,
+          "duration": 0.245,
+          "frame_ahead_trigger": 28.801
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 28.636,
+          "end": 28.906,
+          "duration": 0.27,
+          "frame_ahead_trigger": 29.046
+        },
+        {
+          "word": "their",
+          "clean_word": "their",
+          "phonemes": "\u00f0\u025b\u0279",
+          "start": 28.906,
+          "end": 29.096,
+          "duration": 0.19,
+          "frame_ahead_trigger": 29.316
+        },
+        {
+          "word": "left",
+          "clean_word": "left",
+          "phonemes": "l\u02c8\u025bft",
+          "start": 29.096,
+          "end": 29.431,
+          "duration": 0.335,
+          "frame_ahead_trigger": 29.506
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 29.431,
+          "end": 29.546,
+          "duration": 0.115,
+          "frame_ahead_trigger": 29.841
+        },
+        {
+          "word": "right",
+          "clean_word": "right",
+          "phonemes": "\u0279\u02c8a\u026at",
+          "start": 29.546,
+          "end": 29.831,
+          "duration": 0.285,
+          "frame_ahead_trigger": 29.956
+        },
+        {
+          "word": "neighbors.",
+          "clean_word": "neighbors",
+          "phonemes": "n\u02c8e\u026ab\u025az",
+          "start": 29.831,
+          "end": 30.286,
+          "duration": 0.455,
+          "frame_ahead_trigger": 30.241
+        }
+      ],
+      "audio_duration": 7.89,
+      "slot_duration": 8.04
+    },
+    {
+      "beat_id": 5,
+      "text": "This simple trick pushed GLUE benchmarks by over 7 percent, proving that deep bidirectionality is the architecture's true performance unlock.",
+      "visual_focus": "A bar chart comparing pre-BERT baseline scores vs BERT on GLUE benchmarks.",
+      "highlight_words": {
+        "7 percent": "#34D399",
+        "performance unlock": "#34D399"
+      },
+      "svo_action": {
+        "subject": "BERT Architecture",
+        "action_verb": "outperforms",
+        "direct_object": "baseline metrics",
+        "anchor_word": "7 percent",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "GLUE BENCHMARK PERFORMANCE",
+        "sub": "A bar chart comparing pre-BERT baseline scores vs BERT",
+        "params": {
+          "title": "GLUE BENCHMARK PERFORMANCE",
+          "sub": "A bar chart comparing pre-BERT baseline scores vs BERT",
+          "metric_name": "GLUE Score",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "BERT Large",
+              "value": 80.5,
+              "display_val": "80.5%",
+              "is_hero": true,
+              "color": "#34D399"
+            },
+            {
+              "name": "Previous SOTA",
+              "value": 72.8,
+              "display_val": "72.8%",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +7.7% SOTA GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "GLUE BENCHMARK PERFORMANCE",
+        "sub": "A bar chart comparing pre-BERT baseline scores vs BERT",
+        "metric_name": "GLUE Score",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "BERT Large",
+            "value": 80.5,
+            "display_val": "80.5%",
+            "is_hero": true,
+            "color": "#34D399"
+          },
+          {
+            "name": "Previous SOTA",
+            "value": 72.8,
+            "display_val": "72.8%",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +7.7% SOTA GAIN"
+      },
+      "start": 30.51,
+      "end": 38.04,
+      "duration": 7.53,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 30.524,
+          "end": 30.694,
+          "duration": 0.17,
+          "frame_ahead_trigger": 31.084
+        },
+        {
+          "word": "simple",
+          "clean_word": "simple",
+          "phonemes": "s\u02c8\u026amp\u0259l",
+          "start": 30.694,
+          "end": 31.059,
+          "duration": 0.365,
+          "frame_ahead_trigger": 31.254
+        },
+        {
+          "word": "trick",
+          "clean_word": "trick",
+          "phonemes": "t\u0279\u02c8\u026ak",
+          "start": 31.059,
+          "end": 31.384,
+          "duration": 0.325,
+          "frame_ahead_trigger": 31.619
+        },
+        {
+          "word": "pushed",
+          "clean_word": "pushed",
+          "phonemes": "p\u02c8\u028a\u0283t",
+          "start": 31.384,
+          "end": 31.554,
+          "duration": 0.17,
+          "frame_ahead_trigger": 31.944
+        },
+        {
+          "word": "GLUE",
+          "clean_word": "glue",
+          "phonemes": "\u0261l\u02c8u\u02d0",
+          "start": 31.554,
+          "end": 31.959,
+          "duration": 0.405,
+          "frame_ahead_trigger": 32.114
+        },
+        {
+          "word": "benchmarks",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 31.959,
+          "end": 32.494,
+          "duration": 0.535,
+          "frame_ahead_trigger": 32.519
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 32.494,
+          "end": 32.754,
+          "duration": 0.26,
+          "frame_ahead_trigger": 33.054
+        },
+        {
+          "word": "over",
+          "clean_word": "over",
+          "phonemes": "\u02c8o\u028av\u025a",
+          "start": 32.754,
+          "end": 32.984,
+          "duration": 0.23,
+          "frame_ahead_trigger": 33.314
+        },
+        {
+          "word": "7",
+          "clean_word": "7",
+          "phonemes": "s\u02c8\u025bv\u0259n",
+          "start": 32.984,
+          "end": 33.319,
+          "duration": 0.335,
+          "frame_ahead_trigger": 33.544
+        },
+        {
+          "word": "percent,",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 33.319,
+          "end": 33.749,
+          "duration": 0.43,
+          "frame_ahead_trigger": 33.879
+        },
+        {
+          "word": "proving",
+          "clean_word": "proving",
+          "phonemes": "p\u0279\u02c8u\u02d0v\u026a\u014b",
+          "start": 33.749,
+          "end": 34.189,
+          "duration": 0.44,
+          "frame_ahead_trigger": 34.309
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 34.189,
+          "end": 34.369,
+          "duration": 0.18,
+          "frame_ahead_trigger": 34.749
+        },
+        {
+          "word": "deep",
+          "clean_word": "deep",
+          "phonemes": "d\u02c8i\u02d0p",
+          "start": 34.369,
+          "end": 34.704,
+          "duration": 0.335,
+          "frame_ahead_trigger": 34.929
+        },
+        {
+          "word": "bidirectionality",
+          "clean_word": "bidirectionality",
+          "phonemes": "ba\u026ad\u1d7b\u0279\u02cc\u025bk\u0283\u0259n\u02c8\u00e6l\u1d7b\u027ei",
+          "start": 34.704,
+          "end": 35.569,
+          "duration": 0.865,
+          "frame_ahead_trigger": 35.264
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 35.569,
+          "end": 35.744,
+          "duration": 0.175,
+          "frame_ahead_trigger": 36.129
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 35.744,
+          "end": 35.874,
+          "duration": 0.13,
+          "frame_ahead_trigger": 36.304
+        },
+        {
+          "word": "architecture's",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 35.874,
+          "end": 36.649,
+          "duration": 0.775,
+          "frame_ahead_trigger": 36.434
+        },
+        {
+          "word": "true",
+          "clean_word": "true",
+          "phonemes": "t\u0279\u02c8u\u02d0",
+          "start": 36.649,
+          "end": 36.889,
+          "duration": 0.24,
+          "frame_ahead_trigger": 37.209
+        },
+        {
+          "word": "performance",
+          "clean_word": "performance",
+          "phonemes": "p\u025af\u02c8\u0254\u02d0\u0279m\u0259ns",
+          "start": 36.889,
+          "end": 37.364,
+          "duration": 0.475,
+          "frame_ahead_trigger": 37.449
+        },
+        {
+          "word": "unlock.",
+          "clean_word": "unlock",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0k",
+          "start": 37.364,
+          "end": 37.834,
+          "duration": 0.47,
+          "frame_ahead_trigger": 37.924
+        }
+      ],
+      "audio_duration": 7.53,
+      "slot_duration": 7.68
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into the mathematical foundations powering today's frontier AI architectures.",
+      "visual_focus": "A stylized, rotating neural weight matrix transitioning into a loop.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Model Weights",
+        "action_verb": "loops",
+        "direct_object": "recurrent knowledge",
+        "anchor_word": "loop",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "THE FRONTIER LOOP",
+        "sub": "Continuous integration of deep architectural intelligence",
+        "accent_color": "#34D399",
+        "params": {
+          "input_1_label": "Paper Logic",
+          "input_2_label": "Math Kernels",
+          "input_3_label": "Benchmarking",
+          "fused_label": "machinoAI"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 38.19,
+      "end": 45.44,
+      "duration": 7.25,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 38.205,
+          "end": 38.605,
+          "duration": 0.4,
+          "frame_ahead_trigger": 38.915
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 38.605,
+          "end": 39.56,
+          "duration": 0.955,
+          "frame_ahead_trigger": 39.315
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 39.56,
+          "end": 39.91,
+          "duration": 0.35,
+          "frame_ahead_trigger": 40.27
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 39.91,
+          "end": 40.265,
+          "duration": 0.355,
+          "frame_ahead_trigger": 40.62
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 40.265,
+          "end": 40.855,
+          "duration": 0.59,
+          "frame_ahead_trigger": 40.975
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 40.855,
+          "end": 41.105,
+          "duration": 0.25,
+          "frame_ahead_trigger": 41.565
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 41.105,
+          "end": 41.29,
+          "duration": 0.185,
+          "frame_ahead_trigger": 41.815
+        },
+        {
+          "word": "mathematical",
+          "clean_word": "mathematical",
+          "phonemes": "m\u02cc\u00e6\u03b8\u026am\u02c8\u00e6\u027e\u026ak\u0259l",
+          "start": 41.29,
+          "end": 42.01,
+          "duration": 0.72,
+          "frame_ahead_trigger": 42.0
+        },
+        {
+          "word": "foundations",
+          "clean_word": "foundations",
+          "phonemes": "fa\u028and\u02c8e\u026a\u0283\u0259nz",
+          "start": 42.01,
+          "end": 42.737,
+          "duration": 0.727,
+          "frame_ahead_trigger": 42.72
+        },
+        {
+          "word": "powering",
+          "clean_word": "powering",
+          "phonemes": "p\u02c8a\u028a\u025a\u0279\u026a\u014b",
+          "start": 42.737,
+          "end": 43.225,
+          "duration": 0.488,
+          "frame_ahead_trigger": 43.447
+        },
+        {
+          "word": "today's",
+          "clean_word": "todays",
+          "phonemes": "t\u0259d\u02c8e\u026az",
+          "start": 43.225,
+          "end": 43.625,
+          "duration": 0.4,
+          "frame_ahead_trigger": 43.935
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 43.625,
+          "end": 44.115,
+          "duration": 0.49,
+          "frame_ahead_trigger": 44.335
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 44.115,
+          "end": 44.475,
+          "duration": 0.36,
+          "frame_ahead_trigger": 44.825
+        },
+        {
+          "word": "architectures.",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 44.475,
+          "end": 45.37,
+          "duration": 0.895,
+          "frame_ahead_trigger": 45.185
+        }
+      ],
+      "audio_duration": 7.25,
+      "slot_duration": 7.25
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$P(w_t | w_{<t}) = \\prod_{t=1}^T P(w_t | w_1, \\dots, w_{t-1})$",
+      "filename": "bert_masked_lm_deepdive_beat1_formula.svg",
+      "fontsize": 20,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "w_t",
+          "label": "Target Token"
+        },
+        {
+          "term": "w_{<t}",
+          "label": "Causal History"
+        }
+      ],
+      "svg_filename": "bert_masked_lm_deepdive_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{H}_t = \\sigma(\\mathbf{W}_h [\\mathbf{h}_{t-1}, \\mathbf{x}_t])$",
+      "filename": "bert_masked_lm_deepdive_beat2_formula.svg",
+      "fontsize": 20,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\mathcal{H}_t",
+          "label": "Hidden State"
+        },
+        {
+          "term": "h_{t-1}",
+          "label": "Left Context Only"
+        }
+      ],
+      "svg_filename": "bert_masked_lm_deepdive_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathcal{L}_{MLM} = -\\mathbb{E}_{\\hat{x} \\sim m(x)} [\\log P(x_i | \\hat{x})]$",
+      "filename": "bert_masked_lm_deepdive_beat3_formula.svg",
+      "fontsize": 20,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "m(x)",
+          "label": "Masking Operator"
+        },
+        {
+          "term": "\\hat{x}",
+          "label": "Corrupted Input"
+        }
+      ],
+      "svg_filename": "bert_masked_lm_deepdive_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathbf{z} = \\mathrm{Softmax}(\\frac{QK^T}{\\sqrt{d_k}})V$",
+      "filename": "bert_masked_lm_deepdive_beat4_formula.svg",
+      "fontsize": 20,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "QK^T",
+          "label": "Bidirectional Dot-Product"
+        },
+        {
+          "term": "V",
+          "label": "Full Token Context"
+        }
+      ],
+      "svg_filename": "bert_masked_lm_deepdive_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\Delta_{GLUE} = \\mathrm{Score}_{BERT} - \\mathrm{Score}_{Base} \\approx 7.7\\%$",
+      "filename": "bert_masked_lm_deepdive_beat5_formula.svg",
+      "fontsize": 20,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\Delta_{GLUE}",
+          "label": "Performance Delta"
+        },
+        {
+          "term": "7.7\\%",
+          "label": "Absolute Improvement"
+        }
+      ],
+      "svg_filename": "bert_masked_lm_deepdive_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "attention_flow",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Masked",
+          "color": "#EF4444",
+          "items": [
+            "%Mask",
+            "Random"
+          ]
+        },
+        {
+          "name": "Encoder",
+          "color": "#34D399",
+          "items": [
+            "Attention",
+            "Hidden"
+          ]
+        },
+        {
+          "name": "Output",
+          "color": "#F59E0B",
+          "items": [
+            "Logit",
+            "Softmax"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: [MASK]",
+        "target_cluster": "Encoder",
+        "token": "[MASK]"
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Directional",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Causal",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "BERT",
+    "model_a_specs": [
+      "Bidirectional",
+      "Transformer Encoder",
+      "Cloze Task"
+    ],
+    "model_b": "GPT-style LM",
+    "model_b_specs": [
+      "Unidirectional",
+      "Causal Decoder",
+      "Auto-regressive"
+    ],
+    "divide_title": "BIDIRECTIONAL VS CAUSAL DIVIDE",
+    "model_a_stat": "80.5%",
+    "model_a_stat_label": "GLUE SCORE",
+    "model_b_stat": "72.8%",
+    "model_b_stat_label": "BASELINE SCORE",
+    "efficiency_badge": "\u26a1 +7.7% ABSOLUTE GAIN",
+    "benchmarks": [
+      {
+        "name": "GLUE",
+        "score_a": "80.5%",
+        "score_b": "72.8%"
+      },
+      {
+        "name": "MultiNLI",
+        "score_a": "86.7%",
+        "score_b": "82.1%"
+      },
+      {
+        "name": "SQuAD v1.1",
+        "score_a": "93.2",
+        "score_b": "91.7"
+      }
+    ],
+    "scale_metric": "15%",
+    "scale_label": "MASKING RATIO",
+    "bottleneck_title": "UNIDIRECTIONAL BLINDFOLD",
+    "bottleneck_desc": "Sequential causal limitations",
+    "solution_title": "BIDIRECTIONAL ATTENTION PRISM",
+    "solution_components": "Global Token Context",
+    "mechanism_title": "MASKED LANGUAGE MODELING",
+    "payoff_stat": "80.5%",
+    "payoff_label": "GLUE PERFORMANCE",
+    "payoff_sub": "Deep Bidirectional Pre-training",
+    "payoff_hero_stat": 80.5,
+    "payoff_hero_label": "BERT GLUE",
+    "payoff_base_stat": 72.8,
+    "payoff_base_label": "Baseline",
+    "payoff_delta_badge": "\u26a1 +7.7% SYNTACTIC RECOVERY GAIN",
+    "challenger": "BERT",
+    "incumbent": "Sequential LMs"
+  },
+  "benchmark_comparison": {
+    "title": "GLUE BENCHMARK PERFORMANCE",
+    "metric_name": "GLUE Score",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "BERT Large",
+        "value": 80.5,
+        "display_val": "80.5%",
+        "is_hero": true,
+        "color": "#34D399"
+      },
+      {
+        "name": "Previous SOTA",
+        "value": 72.8,
+        "display_val": "72.8%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +7.7% SOTA GAIN",
+    "radar_axes": [
+      "GLUE",
+      "MultiNLI",
+      "SQuAD_v1",
+      "SQuAD_v2"
+    ]
+  },
+  "code_snippet": {
+    "filename": "bert_attention.py",
+    "language": "python",
+    "lines": [
+      "def mask_tokens(inputs, mask_prob=0.15):",
+      "mask = torch.rand(inputs.shape) < mask_prob",
+      "inputs[mask] = '[MASK]'",
+      "return inputs, labels",
+      "output = model.forward(inputs)"
+    ],
+    "highlight_lines": [
+      1,
+      2,
+      3
+    ],
+    "trace_register": "\u26a1 BIDIRECTIONAL MASKED FORWARD PASS",
+    "explanation": "Global context reconstruction"
+  },
+  "arxiv_id": "1810.04805",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "BERT_comparisons",
+      "caption": "Bert Comparisons",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/source/BERT_comparisons.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "BERT_fine_tune",
+      "caption": "Bert Fine Tune",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/source/BERT_fine_tune.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_2_BERT_fine_tune.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_2_BERT_fine_tune.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "Input_Emebeddings",
+      "caption": "Input Emebeddings",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/source/Input_Emebeddings.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_3_Input_Emebeddings.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_3_Input_Emebeddings.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "BERT_Overall",
+      "caption": "Bert Overall",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/source/BERT_Overall.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_4_BERT_Overall.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_4_BERT_Overall.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until BERT unlocks 80.5% throughput?",
+    "verdict": 67,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until BERT unlocks 80.5% throughput?",
+        "verdict": 67,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until BERT proved a 80.5% leap.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Why is BERT a major breakthrough? Because we introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers.",
+        "verdict": 60,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? BERT reveals the solution.",
+        "verdict": 56,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that BERT finally breaks.",
+        "verdict": 55,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Did you know traditional models read text like a blinkered horse, forced to ignore the future to predict the next word?",
+        "verdict": 50,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Traditional models read text like a blinkered horse, forced to ignore the future to predict the next word.",
+        "verdict": 49,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "What happens when traditional models read text like a blinkered horse, forced to ignore the future to predict the next word?",
+        "verdict": 49,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 80.5% speedup using BERT.",
+        "verdict": 39,
+        "band": "WEAK",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until BERT proved: unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.",
+        "verdict": 33,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "attention_grid",
+      "entity_type": "attention_grid",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "V88fbcnfxnA",
+    "shorts_url": "https://youtube.com/shorts/V88fbcnfxnA",
+    "studio_url": "https://studio.youtube.com/video/V88fbcnfxnA/edit",
+    "title": "BERT Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/bert_masked_lm_deepdive_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
