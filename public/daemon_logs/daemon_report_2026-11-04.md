@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-04 | **Timestamp:** 2026-11-04 18:50:05 UTC
+**Date:** 2026-11-04 | **Timestamp:** 2026-11-04 20:06:41 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: BERT: Deep Bidirectional Transformers: Part 2 - Masked Language Modeling: The 15% Cloze Task That Unlocked Deep Bidirectional Context
-- **Topic Queue Part:** `goat_bert_part_2` (arXiv: [1810.04805](https://arxiv.org/abs/1810.04805))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/V88fbcnfxnA](https://youtube.com/shorts/V88fbcnfxnA) (`V88fbcnfxnA`)
-- **High-CTR Poster:** [bert_masked_lm_deepdive_poster.png](public/thumbnails/bert_masked_lm_deepdive_poster.png)
+### Reel 1: Vision Transformer (ViT): Attention for Visual Recognition: Part 2 - An Image is Worth 16x16 Words: Flattening Pixel Patches into Standard Transformer Tokens
+- **Topic Queue Part:** `goat_vit_part_2` (arXiv: [2010.11929](https://arxiv.org/abs/2010.11929))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/4msaWVKGwhM](https://youtube.com/shorts/4msaWVKGwhM) (`4msaWVKGwhM`)
+- **High-CTR Poster:** [vit_image_worth_16x16_poster.png](public/thumbnails/vit_image_worth_16x16_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: BERT: Deep Bidirectional Transformers Mini-Series 2/5: BERT: Deep Bidirectional Transformers: Part 2 - Masked Language Modeling: The 15% Cloze Task That Unlocked Deep Bidirectional Context*
-- **Everyday Analogy:** *The mathematical design behind replacing 15% of tokens with [MASK] or random words, forcing the Transformer encoder to attend to both left and right context simultaneously.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_bert_masked_lm_deepdive_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: Vision Transformer (ViT): Attention for Visual Recognition Mini-Series 2/5: Vision Transformer (ViT): Attention for Visual Recognition: Part 2 - An Image is Worth 16x16 Words: Flattening Pixel Patches into Standard Transformer Tokens*
+- **Everyday Analogy:** *The elegant mathematical projection chopping 2D images into 16x16 pixel patches, flattening them into 1D vectors, and prepending a learnable [CLS] token.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_vit_image_worth_16x16_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs

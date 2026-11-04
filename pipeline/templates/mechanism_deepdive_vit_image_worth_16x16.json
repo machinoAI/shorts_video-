@@ -1,0 +1,1747 @@
+{
+  "id": "vit_image_worth_16x16",
+  "title": "Vision Transformer: An Image is Worth 16x16 Words",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "neural_attention",
+  "hook_tag": "ARCHITECTURE BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "For years, computer vision was held hostage by convolutional filters, ignoring the global context of every pixel.",
+      "visual_focus": "Grid of image pixels shifting into high-dimensional space",
+      "highlight_words": {
+        "convolutional filters": "#EF4444",
+        "global context": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Transformer",
+        "action_verb": "discards",
+        "direct_object": "Convolutional Bottleneck",
+        "anchor_word": "ignoring",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "FROM PIXELS TO PATCHES",
+        "sub": "Deconstructing 2D image data into sequential vector input",
+        "accent_color": "#38BDF8",
+        "params": {
+          "stage_1_label": "2D Image",
+          "stage_2_label": "Patch Extraction",
+          "stage_3_label": "Linear Embedding"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 52,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "FROM PIXELS TO PATCHES",
+        "sub": "Deconstructing 2D image data into sequential vector input",
+        "accent_color": "#38BDF8",
+        "stage_1_label": "2D Image",
+        "stage_2_label": "Patch Extraction",
+        "stage_3_label": "Linear Embedding"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.57,
+      "duration": 6.57,
+      "word_timings": [
+        {
+          "word": "For",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 0.015,
+          "end": 0.247,
+          "duration": 0.232,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "years,",
+          "clean_word": "years",
+          "phonemes": "j\u02c8\u026a\u0279z",
+          "start": 0.247,
+          "end": 0.525,
+          "duration": 0.278,
+          "frame_ahead_trigger": 0.207
+        },
+        {
+          "word": "computer",
+          "clean_word": "computer",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0\u027e\u025a",
+          "start": 0.525,
+          "end": 1.13,
+          "duration": 0.605,
+          "frame_ahead_trigger": 0.485
+        },
+        {
+          "word": "vision",
+          "clean_word": "vision",
+          "phonemes": "v\u02c8\u026a\u0292\u0259n",
+          "start": 1.13,
+          "end": 1.455,
+          "duration": 0.325,
+          "frame_ahead_trigger": 1.09
+        },
+        {
+          "word": "was",
+          "clean_word": "was",
+          "phonemes": "w\u028cz",
+          "start": 1.455,
+          "end": 1.74,
+          "duration": 0.285,
+          "frame_ahead_trigger": 1.415
+        },
+        {
+          "word": "held",
+          "clean_word": "held",
+          "phonemes": "h\u02c8\u025bld",
+          "start": 1.74,
+          "end": 1.915,
+          "duration": 0.175,
+          "frame_ahead_trigger": 1.7
+        },
+        {
+          "word": "hostage",
+          "clean_word": "hostage",
+          "phonemes": "h\u02c8\u0251\u02d0st\u026ad\u0292",
+          "start": 1.915,
+          "end": 2.43,
+          "duration": 0.515,
+          "frame_ahead_trigger": 1.875
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 2.43,
+          "end": 2.655,
+          "duration": 0.225,
+          "frame_ahead_trigger": 2.39
+        },
+        {
+          "word": "convolutional",
+          "clean_word": "convolutional",
+          "phonemes": "k\u0251\u02d0nv\u0259l\u02c8u\u02d0\u0283\u0259n\u0259l",
+          "start": 2.655,
+          "end": 3.59,
+          "duration": 0.935,
+          "frame_ahead_trigger": 2.615
+        },
+        {
+          "word": "filters,",
+          "clean_word": "filters",
+          "phonemes": "f\u02c8\u026alt\u025az",
+          "start": 3.59,
+          "end": 4.035,
+          "duration": 0.445,
+          "frame_ahead_trigger": 3.55
+        },
+        {
+          "word": "ignoring",
+          "clean_word": "ignoring",
+          "phonemes": "\u026a\u0261n\u02c8\u0254\u02d0\u0279\u026a\u014b",
+          "start": 4.035,
+          "end": 4.495,
+          "duration": 0.46,
+          "frame_ahead_trigger": 3.995
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 4.495,
+          "end": 4.598,
+          "duration": 0.103,
+          "frame_ahead_trigger": 4.455
+        },
+        {
+          "word": "global",
+          "clean_word": "global",
+          "phonemes": "\u0261l\u02c8o\u028ab\u0259l",
+          "start": 4.598,
+          "end": 5.095,
+          "duration": 0.497,
+          "frame_ahead_trigger": 4.558
+        },
+        {
+          "word": "context",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 5.095,
+          "end": 5.645,
+          "duration": 0.55,
+          "frame_ahead_trigger": 5.055
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 5.645,
+          "end": 5.74,
+          "duration": 0.095,
+          "frame_ahead_trigger": 5.605
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 5.74,
+          "end": 6.065,
+          "duration": 0.325,
+          "frame_ahead_trigger": 5.7
+        },
+        {
+          "word": "pixel.",
+          "clean_word": "pixel",
+          "phonemes": "p\u02c8\u026aks\u0259l",
+          "start": 6.065,
+          "end": 6.455,
+          "duration": 0.39,
+          "frame_ahead_trigger": 6.025
+        }
+      ],
+      "audio_duration": 6.57,
+      "slot_duration": 6.72
+    },
+    {
+      "beat_id": 2,
+      "text": "The bottleneck isn't the data, it's our rigid reliance on spatial locality; we treat 2D images like 1D text tokens.",
+      "visual_focus": "Grid of pixels being linearized",
+      "highlight_words": {
+        "bottleneck": "#EF4444",
+        "1D text tokens": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Linear Projection",
+        "action_verb": "flattens",
+        "direct_object": "Image Patch Sequence",
+        "anchor_word": "flattens",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "attention_prism_refraction",
+        "title": "PATCH LINEARIZATION",
+        "sub": "Converting 16x16 pixel blocks into sequence vectors",
+        "accent_color": "#EF4444",
+        "params": {
+          "token_label": "16x16 Patch",
+          "matrix_title": "Flattening Matrix"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "attention_prism_refraction",
+        "title": "PATCH LINEARIZATION",
+        "sub": "Converting 16x16 pixel blocks into sequence vectors",
+        "accent_color": "#EF4444",
+        "token_label": "16x16 Patch",
+        "matrix_title": "Flattening Matrix"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.72,
+      "end": 14.1,
+      "duration": 7.38,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 6.731,
+          "end": 6.806,
+          "duration": 0.075,
+          "frame_ahead_trigger": 6.841
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 6.806,
+          "end": 7.466,
+          "duration": 0.66,
+          "frame_ahead_trigger": 6.916
+        },
+        {
+          "word": "isn't",
+          "clean_word": "isnt",
+          "phonemes": "\u02c8\u026asnt",
+          "start": 7.466,
+          "end": 7.856,
+          "duration": 0.39,
+          "frame_ahead_trigger": 7.576
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 7.856,
+          "end": 7.926,
+          "duration": 0.07,
+          "frame_ahead_trigger": 7.966
+        },
+        {
+          "word": "data,",
+          "clean_word": "data",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259",
+          "start": 7.926,
+          "end": 8.376,
+          "duration": 0.45,
+          "frame_ahead_trigger": 8.036
+        },
+        {
+          "word": "it's",
+          "clean_word": "its",
+          "phonemes": "\u026ats",
+          "start": 8.376,
+          "end": 8.471,
+          "duration": 0.095,
+          "frame_ahead_trigger": 8.486
+        },
+        {
+          "word": "our",
+          "clean_word": "our",
+          "phonemes": "\u02cca\u028a\u025a",
+          "start": 8.471,
+          "end": 8.711,
+          "duration": 0.24,
+          "frame_ahead_trigger": 8.581
+        },
+        {
+          "word": "rigid",
+          "clean_word": "rigid",
+          "phonemes": "\u0279\u02c8\u026ad\u0292\u026ad",
+          "start": 8.711,
+          "end": 9.031,
+          "duration": 0.32,
+          "frame_ahead_trigger": 8.821
+        },
+        {
+          "word": "reliance",
+          "clean_word": "reliance",
+          "phonemes": "\u0279\u1d7bl\u02c8a\u026a\u0259ns",
+          "start": 9.031,
+          "end": 9.556,
+          "duration": 0.525,
+          "frame_ahead_trigger": 9.141
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 9.556,
+          "end": 9.761,
+          "duration": 0.205,
+          "frame_ahead_trigger": 9.666
+        },
+        {
+          "word": "spatial",
+          "clean_word": "spatial",
+          "phonemes": "sp\u02c8e\u026a\u0283\u0259l",
+          "start": 9.761,
+          "end": 10.231,
+          "duration": 0.47,
+          "frame_ahead_trigger": 9.871
+        },
+        {
+          "word": "locality;",
+          "clean_word": "locality",
+          "phonemes": "lo\u028ak\u02c8\u00e6l\u1d7b\u027ei",
+          "start": 10.231,
+          "end": 10.746,
+          "duration": 0.515,
+          "frame_ahead_trigger": 10.341
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 10.746,
+          "end": 11.028,
+          "duration": 0.283,
+          "frame_ahead_trigger": 10.856
+        },
+        {
+          "word": "treat",
+          "clean_word": "treat",
+          "phonemes": "t\u0279\u02c8i\u02d0t",
+          "start": 11.028,
+          "end": 11.361,
+          "duration": 0.332,
+          "frame_ahead_trigger": 11.138
+        },
+        {
+          "word": "2D",
+          "clean_word": "2d",
+          "phonemes": "t\u02c8u\u02d0 d\u02c8i\u02d0",
+          "start": 11.361,
+          "end": 11.871,
+          "duration": 0.51,
+          "frame_ahead_trigger": 11.471
+        },
+        {
+          "word": "images",
+          "clean_word": "images",
+          "phonemes": "\u02c8\u026am\u026ad\u0292\u1d7bz",
+          "start": 11.871,
+          "end": 12.271,
+          "duration": 0.4,
+          "frame_ahead_trigger": 11.981
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 12.271,
+          "end": 12.721,
+          "duration": 0.45,
+          "frame_ahead_trigger": 12.381
+        },
+        {
+          "word": "1D",
+          "clean_word": "1d",
+          "phonemes": "w\u02c8\u028cn d\u02c8i\u02d0",
+          "start": 12.721,
+          "end": 13.186,
+          "duration": 0.465,
+          "frame_ahead_trigger": 12.831
+        },
+        {
+          "word": "text",
+          "clean_word": "text",
+          "phonemes": "t\u02c8\u025bkst",
+          "start": 13.186,
+          "end": 13.476,
+          "duration": 0.29,
+          "frame_ahead_trigger": 13.296
+        },
+        {
+          "word": "tokens.",
+          "clean_word": "tokens",
+          "phonemes": "t\u02c8o\u028ak\u0259nz",
+          "start": 13.476,
+          "end": 14.031,
+          "duration": 0.555,
+          "frame_ahead_trigger": 13.586
+        }
+      ],
+      "audio_duration": 7.38,
+      "slot_duration": 7.53
+    },
+    {
+      "beat_id": 3,
+      "text": "We force the image into the Transformer by chopping it into 16 by 16 patches, then flattening them into vectors.",
+      "visual_focus": "Grid lines appearing over an image, highlighting patch segments",
+      "highlight_words": {
+        "16 by 16": "#F59E0B",
+        "flattening": "#34D399"
+      },
+      "svo_action": {
+        "subject": "ViT Patch Embedder",
+        "action_verb": "projects",
+        "direct_object": "Embedded Patch Sequence",
+        "anchor_word": "chopping",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "VISION TRANSFORMER ARCHITECTURE",
+        "sub": "Grid lines appearing over an image, highlighting patch segments",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_1_model_scheme.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_1_model_scheme.png",
+          "arxiv_id": "2010.11929",
+          "title": "VISION TRANSFORMER ARCHITECTURE",
+          "sub": "Grid lines appearing over an image, highlighting patch segments",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Model Scheme",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_1_model_scheme.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_1_model_scheme.png",
+        "arxiv_id": "2010.11929",
+        "title": "VISION TRANSFORMER ARCHITECTURE",
+        "sub": "Grid lines appearing over an image, highlighting patch segments",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Model Scheme",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 14.25,
+      "end": 20.57,
+      "duration": 6.31,
+      "word_timings": [
+        {
+          "word": "We",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 14.257,
+          "end": 14.367,
+          "duration": 0.11,
+          "frame_ahead_trigger": 14.517
+        },
+        {
+          "word": "force",
+          "clean_word": "force",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s",
+          "start": 14.367,
+          "end": 14.737,
+          "duration": 0.37,
+          "frame_ahead_trigger": 14.627
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 14.737,
+          "end": 14.872,
+          "duration": 0.135,
+          "frame_ahead_trigger": 14.997
+        },
+        {
+          "word": "image",
+          "clean_word": "image",
+          "phonemes": "\u02c8\u026am\u026ad\u0292",
+          "start": 14.872,
+          "end": 15.187,
+          "duration": 0.315,
+          "frame_ahead_trigger": 15.132
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 15.187,
+          "end": 15.587,
+          "duration": 0.4,
+          "frame_ahead_trigger": 15.447
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 15.587,
+          "end": 15.59,
+          "duration": 0.003,
+          "frame_ahead_trigger": 15.847
+        },
+        {
+          "word": "Transformer",
+          "clean_word": "transformer",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279m\u025a",
+          "start": 15.59,
+          "end": 16.262,
+          "duration": 0.672,
+          "frame_ahead_trigger": 15.85
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 16.262,
+          "end": 16.522,
+          "duration": 0.26,
+          "frame_ahead_trigger": 16.522
+        },
+        {
+          "word": "chopping",
+          "clean_word": "chopping",
+          "phonemes": "t\u0283\u02c8\u0251\u02d0p\u026a\u014b",
+          "start": 16.522,
+          "end": 16.927,
+          "duration": 0.405,
+          "frame_ahead_trigger": 16.782
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 16.927,
+          "end": 17.117,
+          "duration": 0.19,
+          "frame_ahead_trigger": 17.187
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 17.117,
+          "end": 17.232,
+          "duration": 0.115,
+          "frame_ahead_trigger": 17.377
+        },
+        {
+          "word": "16",
+          "clean_word": "16",
+          "phonemes": "s\u02c8\u026aksti\u02d0n",
+          "start": 17.232,
+          "end": 17.827,
+          "duration": 0.595,
+          "frame_ahead_trigger": 17.492
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 17.827,
+          "end": 17.922,
+          "duration": 0.095,
+          "frame_ahead_trigger": 18.087
+        },
+        {
+          "word": "16",
+          "clean_word": "16",
+          "phonemes": "s\u02c8\u026aksti\u02d0n",
+          "start": 17.922,
+          "end": 18.557,
+          "duration": 0.635,
+          "frame_ahead_trigger": 18.182
+        },
+        {
+          "word": "patches,",
+          "clean_word": "patches",
+          "phonemes": "p\u02c8\u00e6t\u0283\u1d7bz",
+          "start": 18.557,
+          "end": 18.987,
+          "duration": 0.43,
+          "frame_ahead_trigger": 18.817
+        },
+        {
+          "word": "then",
+          "clean_word": "then",
+          "phonemes": "\u00f0\u02c8\u025bn",
+          "start": 18.987,
+          "end": 19.252,
+          "duration": 0.265,
+          "frame_ahead_trigger": 19.247
+        },
+        {
+          "word": "flattening",
+          "clean_word": "flattening",
+          "phonemes": "fl\u02c8\u00e6\u0294n\u026a\u014b",
+          "start": 19.252,
+          "end": 19.597,
+          "duration": 0.345,
+          "frame_ahead_trigger": 19.512
+        },
+        {
+          "word": "them",
+          "clean_word": "them",
+          "phonemes": "\u00f0\u02cc\u025bm",
+          "start": 19.597,
+          "end": 19.742,
+          "duration": 0.145,
+          "frame_ahead_trigger": 19.857
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 19.742,
+          "end": 20.002,
+          "duration": 0.26,
+          "frame_ahead_trigger": 20.002
+        },
+        {
+          "word": "vectors.",
+          "clean_word": "vectors",
+          "phonemes": "v\u02c8\u025bkt\u025az",
+          "start": 20.002,
+          "end": 20.477,
+          "duration": 0.475,
+          "frame_ahead_trigger": 20.262
+        }
+      ],
+      "audio_duration": 6.31,
+      "slot_duration": 6.47
+    },
+    {
+      "beat_id": 4,
+      "text": "The secret is the learnable [CLS] token: a global sentinel that aggregates semantic information across every single patch coordinate.",
+      "visual_focus": "The special CLS token emerging at the start of the vector sequence",
+      "highlight_words": {
+        "CLS": "#34D399",
+        "global sentinel": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "CLS Token",
+        "action_verb": "aggregates",
+        "direct_object": "Global Visual Semantics",
+        "anchor_word": "aggregates",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: VISION TRANSFORMER",
+        "sub": "The special CLS token emerging at the start of the vector sequenc",
+        "params": {
+          "title": "KERNEL CODE: VISION TRANSFORMER",
+          "sub": "The special CLS token emerging at the start of the vector sequenc",
+          "filename": "patch_embed.py",
+          "language": "python",
+          "lines": [
+            "def patch_embedding(image, p=16):",
+            "patches = rearrange(image, 'b c (h p1) (w p2) -> b (h w) (p1 p2 c)', p1=p, p2=p)",
+            "x = linear_projection(patches)",
+            "return concat(cls_token, x)"
+          ],
+          "highlight_lines": [
+            1,
+            2
+          ],
+          "trace_register": "\u26a1 PATCH-TO-SEQUENCE TRANSFORMATION",
+          "delta_badge": "Translating 2D spatial grid to 1D sequence tokens"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: VISION TRANSFORMER",
+        "sub": "The special CLS token emerging at the start of the vector sequenc",
+        "filename": "patch_embed.py",
+        "language": "python",
+        "lines": [
+          "def patch_embedding(image, p=16):",
+          "patches = rearrange(image, 'b c (h p1) (w p2) -> b (h w) (p1 p2 c)', p1=p, p2=p)",
+          "x = linear_projection(patches)",
+          "return concat(cls_token, x)"
+        ],
+        "highlight_lines": [
+          1,
+          2
+        ],
+        "trace_register": "\u26a1 PATCH-TO-SEQUENCE TRANSFORMATION",
+        "delta_badge": "Translating 2D spatial grid to 1D sequence tokens"
+      },
+      "start": 20.72,
+      "end": 28.27,
+      "duration": 7.55,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 20.732,
+          "end": 20.802,
+          "duration": 0.07,
+          "frame_ahead_trigger": 21.142
+        },
+        {
+          "word": "secret",
+          "clean_word": "secret",
+          "phonemes": "s\u02c8i\u02d0k\u0279\u1d7bt",
+          "start": 20.802,
+          "end": 21.237,
+          "duration": 0.435,
+          "frame_ahead_trigger": 21.212
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 21.237,
+          "end": 21.422,
+          "duration": 0.185,
+          "frame_ahead_trigger": 21.647
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 21.422,
+          "end": 21.552,
+          "duration": 0.13,
+          "frame_ahead_trigger": 21.832
+        },
+        {
+          "word": "learnable",
+          "clean_word": "learnable",
+          "phonemes": "l\u02c8\u025c\u02d0n\u0259b\u0259l",
+          "start": 21.552,
+          "end": 22.062,
+          "duration": 0.51,
+          "frame_ahead_trigger": 21.962
+        },
+        {
+          "word": "[CLS]",
+          "clean_word": "cls",
+          "phonemes": "s\u02cci\u02d0\u02cc\u025bl\u02c8\u025bs",
+          "start": 22.062,
+          "end": 22.602,
+          "duration": 0.54,
+          "frame_ahead_trigger": 22.472
+        },
+        {
+          "word": "token:",
+          "clean_word": "token",
+          "phonemes": "t\u02c8o\u028ak\u0259n",
+          "start": 22.602,
+          "end": 22.988,
+          "duration": 0.386,
+          "frame_ahead_trigger": 23.012
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 22.988,
+          "end": 23.157,
+          "duration": 0.169,
+          "frame_ahead_trigger": 23.398
+        },
+        {
+          "word": "global",
+          "clean_word": "global",
+          "phonemes": "\u0261l\u02c8o\u028ab\u0259l",
+          "start": 23.157,
+          "end": 23.592,
+          "duration": 0.435,
+          "frame_ahead_trigger": 23.567
+        },
+        {
+          "word": "sentinel",
+          "clean_word": "sentinel",
+          "phonemes": "s\u02c8\u025bnt\u026an\u0259l",
+          "start": 23.592,
+          "end": 24.042,
+          "duration": 0.45,
+          "frame_ahead_trigger": 24.002
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 24.042,
+          "end": 24.341,
+          "duration": 0.3,
+          "frame_ahead_trigger": 24.452
+        },
+        {
+          "word": "aggregates",
+          "clean_word": "aggregates",
+          "phonemes": "\u02c8\u00e6\u0261\u0279\u026a\u0261\u02cce\u026ats",
+          "start": 24.341,
+          "end": 24.967,
+          "duration": 0.625,
+          "frame_ahead_trigger": 24.751
+        },
+        {
+          "word": "semantic",
+          "clean_word": "semantic",
+          "phonemes": "s\u0259m\u02c8\u00e6nt\u026ak",
+          "start": 24.967,
+          "end": 25.372,
+          "duration": 0.405,
+          "frame_ahead_trigger": 25.377
+        },
+        {
+          "word": "information",
+          "clean_word": "information",
+          "phonemes": "\u02cc\u026anf\u025am\u02c8e\u026a\u0283\u0259n",
+          "start": 25.372,
+          "end": 26.217,
+          "duration": 0.845,
+          "frame_ahead_trigger": 25.782
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 26.217,
+          "end": 26.442,
+          "duration": 0.225,
+          "frame_ahead_trigger": 26.627
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 26.442,
+          "end": 26.777,
+          "duration": 0.335,
+          "frame_ahead_trigger": 26.852
+        },
+        {
+          "word": "single",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 26.777,
+          "end": 27.277,
+          "duration": 0.5,
+          "frame_ahead_trigger": 27.187
+        },
+        {
+          "word": "patch",
+          "clean_word": "patch",
+          "phonemes": "p\u02c8\u00e6t\u0283",
+          "start": 27.277,
+          "end": 27.422,
+          "duration": 0.145,
+          "frame_ahead_trigger": 27.687
+        },
+        {
+          "word": "coordinate.",
+          "clean_word": "coordinate",
+          "phonemes": "ko\u028a\u02c8\u0254\u02d0\u0279d\u1d7bn\u0259t",
+          "start": 27.422,
+          "end": 28.177,
+          "duration": 0.755,
+          "frame_ahead_trigger": 27.832
+        }
+      ],
+      "audio_duration": 7.55,
+      "slot_duration": 7.7
+    },
+    {
+      "beat_id": 5,
+      "text": "This pure Transformer architecture reaches state-of-the-art accuracy while training on significantly fewer compute resources than traditional convolutional network baselines.",
+      "visual_focus": "Bar chart comparing ViT compute efficiency vs CNN",
+      "highlight_words": {
+        "fewer compute resources": "#34D399",
+        "state-of-the-art": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Vision Transformer",
+        "action_verb": "outperforms",
+        "direct_object": "Convolutional Baselines",
+        "anchor_word": "outperforms",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: TRAINING EFFICIENCY",
+        "sub": "Bar chart comparing ViT compute efficiency vs CNN",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: TRAINING EFFICIENCY",
+          "sub": "Bar chart comparing ViT compute efficiency vs CNN",
+          "metric_name": "Training Compute (TPU-days)",
+          "unit": "Days",
+          "contestants": [
+            {
+              "name": "ViT-Huge/14",
+              "value": 2500.0,
+              "display_val": "2,500 Days",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "ResNet-152x4",
+              "value": 9900.0,
+              "display_val": "9,900 Days",
+              "is_hero": false,
+              "color": "#38BDF8"
+            },
+            {
+              "name": "EfficientNet",
+              "value": 7800.0,
+              "display_val": "7,800 Days",
+              "is_hero": false,
+              "color": "#A855F7"
+            }
+          ],
+          "delta_badge": "\u26a1 +74.7% SOTA EFFICIENCY GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: TRAINING EFFICIENCY",
+        "sub": "Bar chart comparing ViT compute efficiency vs CNN",
+        "metric_name": "Training Compute (TPU-days)",
+        "unit": "Days",
+        "contestants": [
+          {
+            "name": "ViT-Huge/14",
+            "value": 2500.0,
+            "display_val": "2,500 Days",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "ResNet-152x4",
+            "value": 9900.0,
+            "display_val": "9,900 Days",
+            "is_hero": false,
+            "color": "#38BDF8"
+          },
+          {
+            "name": "EfficientNet",
+            "value": 7800.0,
+            "display_val": "7,800 Days",
+            "is_hero": false,
+            "color": "#A855F7"
+          }
+        ],
+        "delta_badge": "\u26a1 +74.7% SOTA EFFICIENCY GAIN"
+      },
+      "start": 28.42,
+      "end": 38.45,
+      "duration": 10.03,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 28.434,
+          "end": 28.754,
+          "duration": 0.32,
+          "frame_ahead_trigger": 28.994
+        },
+        {
+          "word": "pure",
+          "clean_word": "pure",
+          "phonemes": "pj\u02c8\u028a\u0279",
+          "start": 28.754,
+          "end": 28.884,
+          "duration": 0.13,
+          "frame_ahead_trigger": 29.314
+        },
+        {
+          "word": "Transformer",
+          "clean_word": "transformer",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279m\u025a",
+          "start": 28.884,
+          "end": 29.734,
+          "duration": 0.85,
+          "frame_ahead_trigger": 29.444
+        },
+        {
+          "word": "architecture",
+          "clean_word": "architecture",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025a",
+          "start": 29.734,
+          "end": 30.384,
+          "duration": 0.65,
+          "frame_ahead_trigger": 30.294
+        },
+        {
+          "word": "reaches",
+          "clean_word": "reaches",
+          "phonemes": "\u0279\u02c8i\u02d0t\u0283\u1d7bz",
+          "start": 30.384,
+          "end": 30.834,
+          "duration": 0.45,
+          "frame_ahead_trigger": 30.944
+        },
+        {
+          "word": "state-of-the-art",
+          "clean_word": "stateoftheart",
+          "phonemes": "st\u02c8e\u026a\u027e\u0254fth\u02cc\u0251\u02d0\u0279t",
+          "start": 30.834,
+          "end": 31.769,
+          "duration": 0.935,
+          "frame_ahead_trigger": 31.394
+        },
+        {
+          "word": "accuracy",
+          "clean_word": "accuracy",
+          "phonemes": "\u02c8\u00e6kj\u028a\u0279\u0259si",
+          "start": 31.769,
+          "end": 32.337,
+          "duration": 0.568,
+          "frame_ahead_trigger": 32.329
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 32.337,
+          "end": 32.609,
+          "duration": 0.272,
+          "frame_ahead_trigger": 32.897
+        },
+        {
+          "word": "training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 32.609,
+          "end": 33.124,
+          "duration": 0.515,
+          "frame_ahead_trigger": 33.169
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 33.124,
+          "end": 33.374,
+          "duration": 0.25,
+          "frame_ahead_trigger": 33.684
+        },
+        {
+          "word": "significantly",
+          "clean_word": "significantly",
+          "phonemes": "s\u026a\u0261n\u02c8\u026af\u026ak\u0259ntli",
+          "start": 33.374,
+          "end": 34.124,
+          "duration": 0.75,
+          "frame_ahead_trigger": 33.934
+        },
+        {
+          "word": "fewer",
+          "clean_word": "fewer",
+          "phonemes": "fj\u02c8u\u02d0\u025a",
+          "start": 34.124,
+          "end": 34.409,
+          "duration": 0.285,
+          "frame_ahead_trigger": 34.684
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 34.409,
+          "end": 35.059,
+          "duration": 0.65,
+          "frame_ahead_trigger": 34.969
+        },
+        {
+          "word": "resources",
+          "clean_word": "resources",
+          "phonemes": "\u0279\u1d7bs\u02c8\u0254\u02d0\u0279s\u1d7bz",
+          "start": 35.059,
+          "end": 35.589,
+          "duration": 0.531,
+          "frame_ahead_trigger": 35.619
+        },
+        {
+          "word": "than",
+          "clean_word": "than",
+          "phonemes": "\u00f0\u0250n",
+          "start": 35.589,
+          "end": 35.814,
+          "duration": 0.224,
+          "frame_ahead_trigger": 36.149
+        },
+        {
+          "word": "traditional",
+          "clean_word": "traditional",
+          "phonemes": "t\u0279\u0250d\u02c8\u026a\u0283\u0259n\u0259l",
+          "start": 35.814,
+          "end": 36.524,
+          "duration": 0.71,
+          "frame_ahead_trigger": 36.374
+        },
+        {
+          "word": "convolutional",
+          "clean_word": "convolutional",
+          "phonemes": "k\u0251\u02d0nv\u0259l\u02c8u\u02d0\u0283\u0259n\u0259l",
+          "start": 36.524,
+          "end": 37.424,
+          "duration": 0.9,
+          "frame_ahead_trigger": 37.084
+        },
+        {
+          "word": "network",
+          "clean_word": "network",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0k",
+          "start": 37.424,
+          "end": 37.699,
+          "duration": 0.275,
+          "frame_ahead_trigger": 37.984
+        },
+        {
+          "word": "baselines.",
+          "clean_word": "baselines",
+          "phonemes": "b\u02c8e\u026asla\u026anz",
+          "start": 37.699,
+          "end": 38.369,
+          "duration": 0.67,
+          "frame_ahead_trigger": 38.259
+        }
+      ],
+      "audio_duration": 10.03,
+      "slot_duration": 10.18
+    },
+    {
+      "beat_id": 6,
+      "text": "Stop looking at pixels, start looking at sequences. Follow machinoAI for deep-dives into the architecture of the frontier.",
+      "visual_focus": "Abstract transformer geometry glowing",
+      "highlight_words": {
+        "sequences": "#38BDF8",
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Viewer",
+        "action_verb": "subscribes",
+        "direct_object": "Frontier Architecture Channel",
+        "anchor_word": "Follow",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "THE ARCHITECTURE LOOP",
+        "sub": "Always iterate on the fundamental geometry",
+        "accent_color": "#34D399",
+        "params": {
+          "input_1_label": "Paper",
+          "input_2_label": "Code",
+          "input_3_label": "Logic",
+          "fused_label": "Deep Dive"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 38.6,
+      "end": 45.55,
+      "duration": 6.95,
+      "word_timings": [
+        {
+          "word": "Stop",
+          "clean_word": "stop",
+          "phonemes": "st\u02c8\u0251\u02d0p",
+          "start": 38.61,
+          "end": 38.9,
+          "duration": 0.29,
+          "frame_ahead_trigger": 39.32
+        },
+        {
+          "word": "looking",
+          "clean_word": "looking",
+          "phonemes": "l\u02c8\u028ak\u026a\u014b",
+          "start": 38.9,
+          "end": 39.285,
+          "duration": 0.385,
+          "frame_ahead_trigger": 39.61
+        },
+        {
+          "word": "at",
+          "clean_word": "at",
+          "phonemes": "\u00e6t",
+          "start": 39.285,
+          "end": 39.43,
+          "duration": 0.145,
+          "frame_ahead_trigger": 39.995
+        },
+        {
+          "word": "pixels,",
+          "clean_word": "pixels",
+          "phonemes": "p\u02c8\u026aks\u0259lz",
+          "start": 39.43,
+          "end": 39.885,
+          "duration": 0.455,
+          "frame_ahead_trigger": 40.14
+        },
+        {
+          "word": "start",
+          "clean_word": "start",
+          "phonemes": "st\u02c8\u0251\u02d0\u0279t",
+          "start": 39.885,
+          "end": 40.29,
+          "duration": 0.405,
+          "frame_ahead_trigger": 40.595
+        },
+        {
+          "word": "looking",
+          "clean_word": "looking",
+          "phonemes": "l\u02c8\u028ak\u026a\u014b",
+          "start": 40.29,
+          "end": 40.72,
+          "duration": 0.43,
+          "frame_ahead_trigger": 41.0
+        },
+        {
+          "word": "at",
+          "clean_word": "at",
+          "phonemes": "\u00e6t",
+          "start": 40.72,
+          "end": 40.789,
+          "duration": 0.069,
+          "frame_ahead_trigger": 41.43
+        },
+        {
+          "word": "sequences.",
+          "clean_word": "sequences",
+          "phonemes": "s\u02c8i\u02d0kw\u0259ns\u1d7bz",
+          "start": 40.789,
+          "end": 41.437,
+          "duration": 0.648,
+          "frame_ahead_trigger": 41.499
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 41.437,
+          "end": 41.84,
+          "duration": 0.404,
+          "frame_ahead_trigger": 42.147
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 41.84,
+          "end": 42.791,
+          "duration": 0.95,
+          "frame_ahead_trigger": 42.55
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 42.791,
+          "end": 43.06,
+          "duration": 0.27,
+          "frame_ahead_trigger": 43.501
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 43.06,
+          "end": 43.655,
+          "duration": 0.595,
+          "frame_ahead_trigger": 43.77
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 43.655,
+          "end": 43.93,
+          "duration": 0.275,
+          "frame_ahead_trigger": 44.365
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 43.93,
+          "end": 44.0,
+          "duration": 0.07,
+          "frame_ahead_trigger": 44.64
+        },
+        {
+          "word": "architecture",
+          "clean_word": "architecture",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025a",
+          "start": 44.0,
+          "end": 44.74,
+          "duration": 0.74,
+          "frame_ahead_trigger": 44.71
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 44.74,
+          "end": 44.86,
+          "duration": 0.12,
+          "frame_ahead_trigger": 45.45
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 44.86,
+          "end": 45.0,
+          "duration": 0.14,
+          "frame_ahead_trigger": 45.57
+        },
+        {
+          "word": "frontier.",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 45.0,
+          "end": 45.44,
+          "duration": 0.44,
+          "frame_ahead_trigger": 45.71
+        }
+      ],
+      "audio_duration": 6.95,
+      "slot_duration": 6.95
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$d_{\\mathrm{model}} = 4096 \\to N = 671 \\times 10^9$",
+      "filename": "vit_image_worth_16x16_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "d_{model}",
+          "label": "Embedding Dimension"
+        },
+        {
+          "term": "N",
+          "label": "Parameter Count"
+        }
+      ],
+      "svg_filename": "vit_image_worth_16x16_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathbf{x}_p \\in \\mathbb{R}^{N \\times (P^2 \\cdot C)}$",
+      "filename": "vit_image_worth_16x16_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "P",
+          "label": "Patch Size (16)"
+        },
+        {
+          "term": "C",
+          "label": "Channels (3)"
+        }
+      ],
+      "svg_filename": "vit_image_worth_16x16_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{z}_0 = [x_{\\mathrm{class}}; x_p^1 \\mathbf{E}; x_p^2 \\mathbf{E}; \\dots] + \\mathbf{E}_{\\mathrm{pos}}$",
+      "filename": "vit_image_worth_16x16_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "E",
+          "label": "Linear Projection"
+        },
+        {
+          "term": "E_{pos}",
+          "label": "Positional Embedding"
+        }
+      ],
+      "svg_filename": "vit_image_worth_16x16_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathbf{z}_\\ell = \\mathrm{MSA}(\\mathrm{LN}(\\mathbf{z}_{\\ell-1})) + \\mathbf{z}_{\\ell-1}$",
+      "filename": "vit_image_worth_16x16_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "MSA",
+          "label": "Multi-head Self-Attention"
+        },
+        {
+          "term": "LN",
+          "label": "Layer Norm"
+        }
+      ],
+      "svg_filename": "vit_image_worth_16x16_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{TrainingCost} = \\mathcal{O}(N \\cdot L^2 \\cdot D)$",
+      "filename": "vit_image_worth_16x16_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "L",
+          "label": "Sequence Length"
+        },
+        {
+          "term": "D",
+          "label": "Dimension"
+        }
+      ],
+      "svg_filename": "vit_image_worth_16x16_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "attention_flow",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Patches",
+          "color": "#38BDF8",
+          "items": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "color": "#10B981",
+          "items": [
+            "Vector1",
+            "Vector2",
+            "Vector3"
+          ]
+        },
+        {
+          "name": "Global",
+          "color": "#F59E0B",
+          "items": [
+            "CLS",
+            "Embed",
+            "Self-Attention"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"16x16 Patch\"",
+        "target_cluster": "Tokens",
+        "token": "\"patch_vec\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'spatial_grid'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token '1D_seq'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "Vision Transformer (ViT)",
+    "model_a_specs": [
+      "Attention-based",
+      "Patch-sequence",
+      "Scale-efficient"
+    ],
+    "model_b": "Convolutional Network (CNN)",
+    "model_b_specs": [
+      "Filter-based",
+      "Inductive Bias",
+      "High-compute"
+    ],
+    "divide_title": "PIXEL VS SEQUENCE DIVIDE",
+    "model_a_stat": "High",
+    "model_a_stat_label": "TRAINING EFFICIENCY",
+    "model_b_stat": "Low",
+    "model_b_stat_label": "BASELINE EFFICIENCY",
+    "efficiency_badge": "\u26a1 50% FEWER TPU-DAYS",
+    "benchmarks": [
+      {
+        "name": "ImageNet",
+        "score_a": "88.5%",
+        "score_b": "86.0%"
+      },
+      {
+        "name": "CIFAR-100",
+        "score_a": "94.5%",
+        "score_b": "91.0%"
+      },
+      {
+        "name": "Compute",
+        "score_a": "2.5k",
+        "score_b": "10k"
+      }
+    ],
+    "scale_metric": "16x16",
+    "scale_label": "PATCH DIMENSION",
+    "bottleneck_title": "SPATIAL LOCALITY BOTTLENECK",
+    "bottleneck_desc": "Fixed-size convolution limits receptive fields",
+    "solution_title": "SEQUENCE-BASED PATCH EMBEDDING",
+    "solution_components": "Linear Projection + CLS Token",
+    "mechanism_title": "GLOBAL ATTENTION RECEPTION",
+    "payoff_stat": "88.5%",
+    "payoff_label": "IMAGENET ACCURACY",
+    "payoff_sub": "Pure Transformer architecture reaching peak performance",
+    "payoff_hero_stat": 88.5,
+    "payoff_hero_label": "Vision Transformer",
+    "payoff_base_stat": 86.0,
+    "payoff_base_label": "ResNet Baseline",
+    "payoff_delta_badge": "\u26a1 +2.5% TOP-1 SOTA GAIN",
+    "challenger": "ViT",
+    "incumbent": "CNN"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: TRAINING EFFICIENCY",
+    "metric_name": "Training Compute (TPU-days)",
+    "unit": "Days",
+    "contestants": [
+      {
+        "name": "ViT-Huge/14",
+        "value": 2500.0,
+        "display_val": "2,500 Days",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "ResNet-152x4",
+        "value": 9900.0,
+        "display_val": "9,900 Days",
+        "is_hero": false,
+        "color": "#38BDF8"
+      },
+      {
+        "name": "EfficientNet",
+        "value": 7800.0,
+        "display_val": "7,800 Days",
+        "is_hero": false,
+        "color": "#A855F7"
+      }
+    ],
+    "delta_badge": "\u26a1 +74.7% SOTA EFFICIENCY GAIN",
+    "radar_axes": [
+      "Accuracy",
+      "VRAM Efficiency",
+      "Training Speed",
+      "Scale Capability",
+      "Inductive Bias"
+    ]
+  },
+  "code_snippet": {
+    "filename": "patch_embed.py",
+    "language": "python",
+    "lines": [
+      "def patch_embedding(image, p=16):",
+      "patches = rearrange(image, 'b c (h p1) (w p2) -> b (h w) (p1 p2 c)', p1=p, p2=p)",
+      "x = linear_projection(patches)",
+      "return concat(cls_token, x)"
+    ],
+    "highlight_lines": [
+      1,
+      2
+    ],
+    "trace_register": "\u26a1 PATCH-TO-SEQUENCE TRANSFORMATION",
+    "explanation": "Translating 2D spatial grid to 1D sequence tokens"
+  },
+  "arxiv_id": "2010.11929",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "model_scheme",
+      "caption": "Model Scheme",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/source/images/model_scheme.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_1_model_scheme.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_1_model_scheme.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "img_sec_core",
+      "caption": "Img Sec Core",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/source/images/img_sec_core.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_2_img_sec_core.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_2_img_sec_core.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "vit-vtab",
+      "caption": "Vit-Vtab",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/source/images/vit-vtab.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_3_vit-vtab.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_3_vit-vtab.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "finetune_vs_compute2",
+      "caption": "Finetune Vs Compute2",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/source/images/finetune_vs_compute2.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_4_finetune_vs_compute2.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_4_finetune_vs_compute2.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "head_tokens",
+      "caption": "Head Tokens",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/source/images/head_tokens.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_5_head_tokens.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_5_head_tokens.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "For years, computer vision was held hostage by convolutional filters, ignoring the global context of every pixel.",
+    "verdict": 52,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "attention_grid",
+      "entity_type": "attention_grid",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "4msaWVKGwhM",
+    "shorts_url": "https://youtube.com/shorts/4msaWVKGwhM",
+    "studio_url": "https://studio.youtube.com/video/4msaWVKGwhM/edit",
+    "title": "Vision Transformer Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/vit_image_worth_16x16_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
