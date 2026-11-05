@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-05 | **Timestamp:** 2026-11-05 03:43:10 UTC
+**Date:** 2026-11-05 | **Timestamp:** 2026-11-05 07:19:35 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: CLIP: Contrastive Language-Image Pretraining: Part 2 - Contrastive Dual-Encoder Alignment: Maximizing Diagonal Dot-Products in Shared Latent Space
-- **Topic Queue Part:** `goat_clip_part_2` (arXiv: [2103.00020](https://arxiv.org/abs/2103.00020))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/tx6cqWK6q6E](https://youtube.com/shorts/tx6cqWK6q6E) (`tx6cqWK6q6E`)
-- **High-CTR Poster:** [clip_contrastive_alignment_poster.png](public/thumbnails/clip_contrastive_alignment_poster.png)
+### Reel 1: AlphaFold 2: The Protein Folding Revolution: Part 2 - The Evoformer Engine: Dual-Attention Over Multiple Sequence Alignments and Pair Representations
+- **Topic Queue Part:** `goat_alphafold2_part_2` (arXiv: [alphafold2_nature_2021](https://arxiv.org/abs/alphafold2_nature_2021))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/VqEWE51S9H8](https://youtube.com/shorts/VqEWE51S9H8) (`VqEWE51S9H8`)
+- **High-CTR Poster:** [alphafold_evoformer_engine_poster.png](public/thumbnails/alphafold_evoformer_engine_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: CLIP: Contrastive Language-Image Pretraining Mini-Series 2/5: CLIP: Contrastive Language-Image Pretraining: Part 2 - Contrastive Dual-Encoder Alignment: Maximizing Diagonal Dot-Products in Shared Latent Space*
-- **Everyday Analogy:** *The symmetric cross-entropy loss aligning N image embeddings with N text embeddings across an N x N similarity matrix with learnable temperature tau.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_clip_contrastive_alignment_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: AlphaFold 2: The Protein Folding Revolution Mini-Series 2/5: AlphaFold 2: The Protein Folding Revolution: Part 2 - The Evoformer Engine: Dual-Attention Over Multiple Sequence Alignments and Pair Representations*
+- **Everyday Analogy:** *How the Evoformer processes evolutionary co-variation across species while updating 2D residue-residue distance matrices in tandem.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_alphafold_evoformer_engine_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
