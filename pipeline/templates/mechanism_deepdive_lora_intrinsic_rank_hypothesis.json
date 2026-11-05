@@ -1,0 +1,1582 @@
+{
+  "id": "lora_intrinsic_rank_hypothesis",
+  "title": "The Low-Rank Adaptation Mystery",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "INTRINSIC RANK HYPOTHESIS",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Updating a 175 billion parameter model for every new task is a structural nightmare that burns GPUs.",
+      "visual_focus": "A massive, glowing 3D weight matrix trembling under the weight of billions of parameters.",
+      "highlight_words": {
+        "175 billion": "#F59E0B",
+        "nightmare": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Weight Matrix",
+        "action_verb": "collapses",
+        "direct_object": "memory bandwidth",
+        "anchor_word": "nightmare",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "layer_stack",
+        "title": "THE PARAMETER EXPLOSION",
+        "sub": "Full-rank fine-tuning cost vs model scale",
+        "accent_color": "#EF4444",
+        "params": {
+          "bottom_layer": "175B Parameters",
+          "mid_layer": "Training Gradients",
+          "top_layer": "Memory Exhaustion"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 64,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "layer_stack",
+        "title": "THE PARAMETER EXPLOSION",
+        "sub": "Full-rank fine-tuning cost vs model scale",
+        "accent_color": "#EF4444",
+        "bottom_layer": "175B Parameters",
+        "mid_layer": "Training Gradients",
+        "top_layer": "Memory Exhaustion"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.1,
+      "duration": 7.1,
+      "word_timings": [
+        {
+          "word": "Updating",
+          "clean_word": "updating",
+          "phonemes": "\u028cpd\u02c8e\u026a\u027e\u026a\u014b",
+          "start": 0.0,
+          "end": 0.495,
+          "duration": 0.495,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 0.495,
+          "end": 0.64,
+          "duration": 0.145,
+          "frame_ahead_trigger": 0.455
+        },
+        {
+          "word": "175",
+          "clean_word": "175",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad s\u02c8\u025bv\u0259nti f\u02c8a\u026av",
+          "start": 0.64,
+          "end": 2.085,
+          "duration": 1.445,
+          "frame_ahead_trigger": 0.6
+        },
+        {
+          "word": "billion",
+          "clean_word": "billion",
+          "phonemes": "b\u02c8\u026ali\u0259n",
+          "start": 2.085,
+          "end": 2.54,
+          "duration": 0.455,
+          "frame_ahead_trigger": 2.045
+        },
+        {
+          "word": "parameter",
+          "clean_word": "parameter",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025a",
+          "start": 2.54,
+          "end": 3.065,
+          "duration": 0.525,
+          "frame_ahead_trigger": 2.5
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 3.065,
+          "end": 3.34,
+          "duration": 0.275,
+          "frame_ahead_trigger": 3.025
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 3.34,
+          "end": 3.51,
+          "duration": 0.17,
+          "frame_ahead_trigger": 3.3
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 3.51,
+          "end": 3.785,
+          "duration": 0.275,
+          "frame_ahead_trigger": 3.47
+        },
+        {
+          "word": "new",
+          "clean_word": "new",
+          "phonemes": "n\u02c8u\u02d0",
+          "start": 3.785,
+          "end": 4.113,
+          "duration": 0.328,
+          "frame_ahead_trigger": 3.745
+        },
+        {
+          "word": "task",
+          "clean_word": "task",
+          "phonemes": "t\u02c8\u00e6sk",
+          "start": 4.113,
+          "end": 4.35,
+          "duration": 0.237,
+          "frame_ahead_trigger": 4.073
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 4.35,
+          "end": 4.535,
+          "duration": 0.185,
+          "frame_ahead_trigger": 4.31
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 4.535,
+          "end": 4.695,
+          "duration": 0.16,
+          "frame_ahead_trigger": 4.495
+        },
+        {
+          "word": "structural",
+          "clean_word": "structural",
+          "phonemes": "st\u0279\u02c8\u028ckt\u0283\u025a\u0279\u0259l",
+          "start": 4.695,
+          "end": 5.215,
+          "duration": 0.52,
+          "frame_ahead_trigger": 4.655
+        },
+        {
+          "word": "nightmare",
+          "clean_word": "nightmare",
+          "phonemes": "n\u02c8a\u026atm\u025b\u0279",
+          "start": 5.215,
+          "end": 5.785,
+          "duration": 0.57,
+          "frame_ahead_trigger": 5.175
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 5.785,
+          "end": 6.07,
+          "duration": 0.285,
+          "frame_ahead_trigger": 5.745
+        },
+        {
+          "word": "burns",
+          "clean_word": "burns",
+          "phonemes": "b\u02c8\u025c\u02d0nz",
+          "start": 6.07,
+          "end": 6.235,
+          "duration": 0.165,
+          "frame_ahead_trigger": 6.03
+        },
+        {
+          "word": "GPUs.",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 6.235,
+          "end": 7.02,
+          "duration": 0.785,
+          "frame_ahead_trigger": 6.195
+        }
+      ],
+      "audio_duration": 7.1,
+      "slot_duration": 7.25
+    },
+    {
+      "beat_id": 2,
+      "text": "Full fine-tuning treats every weight as if it needs a massive shift, ignoring the intrinsic low-dimensional manifold.",
+      "visual_focus": "A dense grid of weights attempting to move in all directions, restricted by a tight, invisible cage.",
+      "highlight_words": {
+        "low-dimensional": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Optimization Manifold",
+        "action_verb": "constrains",
+        "direct_object": "weight updates",
+        "anchor_word": "low-dimensional",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "optimization_landscape",
+        "title": "THE OVER-PARAMETERIZED TRAP",
+        "sub": "Weight updates restricted by an intrinsic low-rank manifold",
+        "accent_color": "#EF4444",
+        "params": {
+          "landscape_title": "Full Rank Update Space",
+          "optima_label": "Intrinsic Target Path"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "optimization_landscape",
+        "title": "THE OVER-PARAMETERIZED TRAP",
+        "sub": "Weight updates restricted by an intrinsic low-rank manifold",
+        "accent_color": "#EF4444",
+        "landscape_title": "Full Rank Update Space",
+        "optima_label": "Intrinsic Target Path"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.25,
+      "end": 13.74,
+      "duration": 6.49,
+      "word_timings": [
+        {
+          "word": "Full",
+          "clean_word": "full",
+          "phonemes": "f\u02c8\u028al",
+          "start": 7.279,
+          "end": 7.494,
+          "duration": 0.215,
+          "frame_ahead_trigger": 7.389
+        },
+        {
+          "word": "fine-tuning",
+          "clean_word": "finetuning",
+          "phonemes": "f\u02c8a\u026antu\u02d0n\u026a\u014b",
+          "start": 7.494,
+          "end": 8.184,
+          "duration": 0.69,
+          "frame_ahead_trigger": 7.604
+        },
+        {
+          "word": "treats",
+          "clean_word": "treats",
+          "phonemes": "t\u0279\u02c8i\u02d0ts",
+          "start": 8.184,
+          "end": 8.609,
+          "duration": 0.425,
+          "frame_ahead_trigger": 8.294
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 8.609,
+          "end": 8.894,
+          "duration": 0.285,
+          "frame_ahead_trigger": 8.719
+        },
+        {
+          "word": "weight",
+          "clean_word": "weight",
+          "phonemes": "w\u02c8e\u026at",
+          "start": 8.894,
+          "end": 9.193,
+          "duration": 0.299,
+          "frame_ahead_trigger": 9.004
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 9.193,
+          "end": 9.324,
+          "duration": 0.131,
+          "frame_ahead_trigger": 9.303
+        },
+        {
+          "word": "if",
+          "clean_word": "if",
+          "phonemes": "\u026af",
+          "start": 9.324,
+          "end": 9.439,
+          "duration": 0.115,
+          "frame_ahead_trigger": 9.434
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 9.439,
+          "end": 9.554,
+          "duration": 0.115,
+          "frame_ahead_trigger": 9.549
+        },
+        {
+          "word": "needs",
+          "clean_word": "needs",
+          "phonemes": "n\u02c8i\u02d0dz",
+          "start": 9.554,
+          "end": 9.909,
+          "duration": 0.355,
+          "frame_ahead_trigger": 9.664
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 9.909,
+          "end": 10.119,
+          "duration": 0.21,
+          "frame_ahead_trigger": 10.019
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 10.119,
+          "end": 10.414,
+          "duration": 0.295,
+          "frame_ahead_trigger": 10.229
+        },
+        {
+          "word": "shift,",
+          "clean_word": "shift",
+          "phonemes": "\u0283\u02c8\u026aft",
+          "start": 10.414,
+          "end": 10.748,
+          "duration": 0.334,
+          "frame_ahead_trigger": 10.524
+        },
+        {
+          "word": "ignoring",
+          "clean_word": "ignoring",
+          "phonemes": "\u026a\u0261n\u02c8\u0254\u02d0\u0279\u026a\u014b",
+          "start": 10.748,
+          "end": 11.344,
+          "duration": 0.596,
+          "frame_ahead_trigger": 10.858
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 11.344,
+          "end": 11.406,
+          "duration": 0.062,
+          "frame_ahead_trigger": 11.454
+        },
+        {
+          "word": "intrinsic",
+          "clean_word": "intrinsic",
+          "phonemes": "\u026ant\u0279\u02c8\u026ans\u026ak",
+          "start": 11.406,
+          "end": 11.934,
+          "duration": 0.528,
+          "frame_ahead_trigger": 11.516
+        },
+        {
+          "word": "low-dimensional",
+          "clean_word": "lowdimensional",
+          "phonemes": "l\u02c8o\u028ad\u1d7bm\u02cc\u025bn\u0283\u0259n\u0259l",
+          "start": 11.934,
+          "end": 12.949,
+          "duration": 1.015,
+          "frame_ahead_trigger": 12.044
+        },
+        {
+          "word": "manifold.",
+          "clean_word": "manifold",
+          "phonemes": "m\u02c8\u00e6n\u026af\u02cco\u028ald",
+          "start": 12.949,
+          "end": 13.559,
+          "duration": 0.61,
+          "frame_ahead_trigger": 13.059
+        }
+      ],
+      "audio_duration": 6.49,
+      "slot_duration": 6.64
+    },
+    {
+      "beat_id": 3,
+      "text": "LoRA freezes the model and injects tiny, trainable rank-decomposition matrices into each attention layer's weight space.",
+      "visual_focus": "A massive matrix splitting into two thin, vibrant green rectangles.",
+      "highlight_words": {
+        "rank-decomposition": "#34D399"
+      },
+      "svo_action": {
+        "subject": "LoRA Injection",
+        "action_verb": "decomposes",
+        "direct_object": "Delta Weight Matrix",
+        "anchor_word": "rank-decomposition",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE LOW-RANK ADAPT ARCHITECTURE",
+        "sub": "A massive matrix splitting into two thin, vibrant green rectangle",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_1_figure1.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_1_figure1.png",
+          "arxiv_id": "2106.09685",
+          "title": "THE LOW-RANK ADAPT ARCHITECTURE",
+          "sub": "A massive matrix splitting into two thin, vibrant green rectangle",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Figure1",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_1_figure1.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_1_figure1.png",
+        "arxiv_id": "2106.09685",
+        "title": "THE LOW-RANK ADAPT ARCHITECTURE",
+        "sub": "A massive matrix splitting into two thin, vibrant green rectangle",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Figure1",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 13.89,
+      "end": 21.4,
+      "duration": 7.51,
+      "word_timings": [
+        {
+          "word": "LoRA",
+          "clean_word": "lora",
+          "phonemes": "l\u02c8o\u028a \u0279\u02c8\u0251\u02d0",
+          "start": 13.899,
+          "end": 14.344,
+          "duration": 0.445,
+          "frame_ahead_trigger": 14.159
+        },
+        {
+          "word": "freezes",
+          "clean_word": "freezes",
+          "phonemes": "f\u0279\u02c8i\u02d0z\u1d7bz",
+          "start": 14.344,
+          "end": 14.864,
+          "duration": 0.52,
+          "frame_ahead_trigger": 14.604
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 14.864,
+          "end": 15.029,
+          "duration": 0.165,
+          "frame_ahead_trigger": 15.124
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 15.029,
+          "end": 15.394,
+          "duration": 0.365,
+          "frame_ahead_trigger": 15.289
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 15.394,
+          "end": 15.678,
+          "duration": 0.283,
+          "frame_ahead_trigger": 15.654
+        },
+        {
+          "word": "injects",
+          "clean_word": "injects",
+          "phonemes": "\u026and\u0292\u02c8\u025bkts",
+          "start": 15.678,
+          "end": 16.299,
+          "duration": 0.622,
+          "frame_ahead_trigger": 15.938
+        },
+        {
+          "word": "tiny,",
+          "clean_word": "tiny",
+          "phonemes": "t\u02c8a\u026ani",
+          "start": 16.299,
+          "end": 16.598,
+          "duration": 0.298,
+          "frame_ahead_trigger": 16.559
+        },
+        {
+          "word": "trainable",
+          "clean_word": "trainable",
+          "phonemes": "t\u0279\u02c8e\u026an\u0259b\u0259l",
+          "start": 16.598,
+          "end": 17.219,
+          "duration": 0.622,
+          "frame_ahead_trigger": 16.858
+        },
+        {
+          "word": "rank-decomposition",
+          "clean_word": "rankdecomposition",
+          "phonemes": "\u0279\u02cc\u00e6\u014bkd\u026ak\u02cc\u0251\u02d0mp\u0259z\u02c8\u026a\u0283\u0259n",
+          "start": 17.219,
+          "end": 18.384,
+          "duration": 1.165,
+          "frame_ahead_trigger": 17.479
+        },
+        {
+          "word": "matrices",
+          "clean_word": "matrices",
+          "phonemes": "m\u02c8e\u026at\u0279\u026as\u02cci\u02d0z",
+          "start": 18.384,
+          "end": 19.094,
+          "duration": 0.71,
+          "frame_ahead_trigger": 18.644
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 19.094,
+          "end": 19.524,
+          "duration": 0.43,
+          "frame_ahead_trigger": 19.354
+        },
+        {
+          "word": "each",
+          "clean_word": "each",
+          "phonemes": "\u02c8i\u02d0t\u0283",
+          "start": 19.524,
+          "end": 19.839,
+          "duration": 0.315,
+          "frame_ahead_trigger": 19.784
+        },
+        {
+          "word": "attention",
+          "clean_word": "attention",
+          "phonemes": "\u0250t\u02c8\u025bn\u0283\u0259n",
+          "start": 19.839,
+          "end": 20.184,
+          "duration": 0.345,
+          "frame_ahead_trigger": 20.099
+        },
+        {
+          "word": "layer's",
+          "clean_word": "layers",
+          "phonemes": "l\u02c8e\u026a\u025az",
+          "start": 20.184,
+          "end": 20.629,
+          "duration": 0.445,
+          "frame_ahead_trigger": 20.444
+        },
+        {
+          "word": "weight",
+          "clean_word": "weight",
+          "phonemes": "w\u02c8e\u026at",
+          "start": 20.629,
+          "end": 20.989,
+          "duration": 0.36,
+          "frame_ahead_trigger": 20.889
+        },
+        {
+          "word": "space.",
+          "clean_word": "space",
+          "phonemes": "sp\u02c8e\u026as",
+          "start": 20.989,
+          "end": 21.319,
+          "duration": 0.33,
+          "frame_ahead_trigger": 21.249
+        }
+      ],
+      "audio_duration": 7.51,
+      "slot_duration": 7.66
+    },
+    {
+      "beat_id": 4,
+      "text": "We compute the update as the product of matrices A and B, using an intrinsic rank as low as eight.",
+      "visual_focus": "The multiplication of two thin vectors flowing into a single output channel.",
+      "highlight_words": {
+        "rank as low as eight": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Compute Kernel",
+        "action_verb": "projects",
+        "direct_object": "latent updates",
+        "anchor_word": "eight",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: THE LOW-RANK ADAPT",
+        "sub": "The multiplication of two thin vectors flowing into a single outp",
+        "params": {
+          "title": "KERNEL CODE: THE LOW-RANK ADAPT",
+          "sub": "The multiplication of two thin vectors flowing into a single outp",
+          "filename": "lora_layer.py",
+          "language": "python",
+          "lines": [
+            "def forward(x):",
+            "# W_frozen(x) + (B @ A)(x)",
+            "return self.w_frozen(x) + (self.B @ self.A)(x)"
+          ],
+          "highlight_lines": [
+            3
+          ],
+          "trace_register": "\u26a1 FUSED RANK-8 KERNEL EXECUTION",
+          "delta_badge": "Zero inference latency overhead"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: THE LOW-RANK ADAPT",
+        "sub": "The multiplication of two thin vectors flowing into a single outp",
+        "filename": "lora_layer.py",
+        "language": "python",
+        "lines": [
+          "def forward(x):",
+          "# W_frozen(x) + (B @ A)(x)",
+          "return self.w_frozen(x) + (self.B @ self.A)(x)"
+        ],
+        "highlight_lines": [
+          3
+        ],
+        "trace_register": "\u26a1 FUSED RANK-8 KERNEL EXECUTION",
+        "delta_badge": "Zero inference latency overhead"
+      },
+      "start": 21.55,
+      "end": 26.92,
+      "duration": 5.38,
+      "word_timings": [
+        {
+          "word": "We",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 21.554,
+          "end": 21.659,
+          "duration": 0.105,
+          "frame_ahead_trigger": 21.964
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 21.659,
+          "end": 22.259,
+          "duration": 0.6,
+          "frame_ahead_trigger": 22.069
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 22.259,
+          "end": 22.321,
+          "duration": 0.063,
+          "frame_ahead_trigger": 22.669
+        },
+        {
+          "word": "update",
+          "clean_word": "update",
+          "phonemes": "\u02c8\u028cpde\u026at",
+          "start": 22.321,
+          "end": 22.734,
+          "duration": 0.412,
+          "frame_ahead_trigger": 22.731
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 22.734,
+          "end": 22.815,
+          "duration": 0.081,
+          "frame_ahead_trigger": 23.144
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 22.815,
+          "end": 22.929,
+          "duration": 0.114,
+          "frame_ahead_trigger": 23.225
+        },
+        {
+          "word": "product",
+          "clean_word": "product",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0d\u028ckt",
+          "start": 22.929,
+          "end": 23.409,
+          "duration": 0.48,
+          "frame_ahead_trigger": 23.339
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 23.409,
+          "end": 23.554,
+          "duration": 0.145,
+          "frame_ahead_trigger": 23.819
+        },
+        {
+          "word": "matrices",
+          "clean_word": "matrices",
+          "phonemes": "m\u02c8e\u026at\u0279\u026as\u02cci\u02d0z",
+          "start": 23.554,
+          "end": 24.159,
+          "duration": 0.605,
+          "frame_ahead_trigger": 23.964
+        },
+        {
+          "word": "A",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 24.159,
+          "end": 24.351,
+          "duration": 0.192,
+          "frame_ahead_trigger": 24.569
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 24.351,
+          "end": 24.515,
+          "duration": 0.165,
+          "frame_ahead_trigger": 24.761
+        },
+        {
+          "word": "B,",
+          "clean_word": "b",
+          "phonemes": "b\u02c8i\u02d0",
+          "start": 24.515,
+          "end": 24.789,
+          "duration": 0.274,
+          "frame_ahead_trigger": 24.925
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 24.789,
+          "end": 25.134,
+          "duration": 0.345,
+          "frame_ahead_trigger": 25.199
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 25.134,
+          "end": 25.269,
+          "duration": 0.135,
+          "frame_ahead_trigger": 25.544
+        },
+        {
+          "word": "intrinsic",
+          "clean_word": "intrinsic",
+          "phonemes": "\u026ant\u0279\u02c8\u026ans\u026ak",
+          "start": 25.269,
+          "end": 25.776,
+          "duration": 0.508,
+          "frame_ahead_trigger": 25.679
+        },
+        {
+          "word": "rank",
+          "clean_word": "rank",
+          "phonemes": "\u0279\u02c8\u00e6\u014bk",
+          "start": 25.776,
+          "end": 26.119,
+          "duration": 0.342,
+          "frame_ahead_trigger": 26.186
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 26.119,
+          "end": 26.16,
+          "duration": 0.042,
+          "frame_ahead_trigger": 26.529
+        },
+        {
+          "word": "low",
+          "clean_word": "low",
+          "phonemes": "l\u02c8o\u028a",
+          "start": 26.16,
+          "end": 26.339,
+          "duration": 0.178,
+          "frame_ahead_trigger": 26.57
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 26.339,
+          "end": 26.474,
+          "duration": 0.135,
+          "frame_ahead_trigger": 26.749
+        },
+        {
+          "word": "eight.",
+          "clean_word": "eight",
+          "phonemes": "\u02c8e\u026at",
+          "start": 26.474,
+          "end": 26.709,
+          "duration": 0.235,
+          "frame_ahead_trigger": 26.884
+        }
+      ],
+      "audio_duration": 5.38,
+      "slot_duration": 5.52
+    },
+    {
+      "beat_id": 5,
+      "text": "This reduces trainable parameters by ten thousand times while matching full-rank quality on GPT-3 benchmarks.",
+      "visual_focus": "Side-by-side performance comparison bars.",
+      "highlight_words": {
+        "ten thousand times": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Training Throughput",
+        "action_verb": "surges",
+        "direct_object": "efficiency metrics",
+        "anchor_word": "ten thousand times",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: EFFICIENCY METRIC",
+        "sub": "Side-by-side performance comparison bars.",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: EFFICIENCY METRIC",
+          "sub": "Side-by-side performance comparison bars.",
+          "metric_name": "Parameter Training Overhead",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "LoRA",
+              "value": 0.01,
+              "display_val": "0.01%",
+              "is_hero": true,
+              "color": "#34D399"
+            },
+            {
+              "name": "Full Fine-Tuning",
+              "value": 100.0,
+              "display_val": "100%",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 10,000x PARAMETER EFFICIENCY GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: EFFICIENCY METRIC",
+        "sub": "Side-by-side performance comparison bars.",
+        "metric_name": "Parameter Training Overhead",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "LoRA",
+            "value": 0.01,
+            "display_val": "0.01%",
+            "is_hero": true,
+            "color": "#34D399"
+          },
+          {
+            "name": "Full Fine-Tuning",
+            "value": 100.0,
+            "display_val": "100%",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 10,000x PARAMETER EFFICIENCY GAIN"
+      },
+      "start": 27.07,
+      "end": 33.92,
+      "duration": 6.85,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 27.085,
+          "end": 27.37,
+          "duration": 0.285,
+          "frame_ahead_trigger": 27.645
+        },
+        {
+          "word": "reduces",
+          "clean_word": "reduces",
+          "phonemes": "\u0279\u1d7bd\u02c8u\u02d0s\u1d7bz",
+          "start": 27.37,
+          "end": 27.745,
+          "duration": 0.375,
+          "frame_ahead_trigger": 27.93
+        },
+        {
+          "word": "trainable",
+          "clean_word": "trainable",
+          "phonemes": "t\u0279\u02c8e\u026an\u0259b\u0259l",
+          "start": 27.745,
+          "end": 28.44,
+          "duration": 0.695,
+          "frame_ahead_trigger": 28.305
+        },
+        {
+          "word": "parameters",
+          "clean_word": "parameters",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025az",
+          "start": 28.44,
+          "end": 28.97,
+          "duration": 0.53,
+          "frame_ahead_trigger": 29.0
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 28.97,
+          "end": 29.26,
+          "duration": 0.29,
+          "frame_ahead_trigger": 29.53
+        },
+        {
+          "word": "ten",
+          "clean_word": "ten",
+          "phonemes": "t\u02c8\u025bn",
+          "start": 29.26,
+          "end": 29.4,
+          "duration": 0.14,
+          "frame_ahead_trigger": 29.82
+        },
+        {
+          "word": "thousand",
+          "clean_word": "thousand",
+          "phonemes": "\u03b8\u02c8a\u028az\u0259nd",
+          "start": 29.4,
+          "end": 30.02,
+          "duration": 0.62,
+          "frame_ahead_trigger": 29.96
+        },
+        {
+          "word": "times",
+          "clean_word": "times",
+          "phonemes": "t\u02c8a\u026amz",
+          "start": 30.02,
+          "end": 30.26,
+          "duration": 0.24,
+          "frame_ahead_trigger": 30.58
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 30.26,
+          "end": 30.555,
+          "duration": 0.295,
+          "frame_ahead_trigger": 30.82
+        },
+        {
+          "word": "matching",
+          "clean_word": "matching",
+          "phonemes": "m\u02c8\u00e6t\u0283\u026a\u014b",
+          "start": 30.555,
+          "end": 31.015,
+          "duration": 0.46,
+          "frame_ahead_trigger": 31.115
+        },
+        {
+          "word": "full-rank",
+          "clean_word": "fullrank",
+          "phonemes": "f\u02c8\u028al\u0279\u00e6\u014bk",
+          "start": 31.015,
+          "end": 31.445,
+          "duration": 0.43,
+          "frame_ahead_trigger": 31.575
+        },
+        {
+          "word": "quality",
+          "clean_word": "quality",
+          "phonemes": "kw\u02c8\u0254l\u1d7b\u027ei",
+          "start": 31.445,
+          "end": 31.84,
+          "duration": 0.395,
+          "frame_ahead_trigger": 32.005
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 31.84,
+          "end": 32.13,
+          "duration": 0.29,
+          "frame_ahead_trigger": 32.4
+        },
+        {
+          "word": "GPT-3",
+          "clean_word": "gpt3",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0 \u03b8\u0279\u02c8i\u02d0",
+          "start": 32.13,
+          "end": 33.215,
+          "duration": 1.085,
+          "frame_ahead_trigger": 32.69
+        },
+        {
+          "word": "benchmarks.",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 33.215,
+          "end": 33.84,
+          "duration": 0.625,
+          "frame_ahead_trigger": 33.775
+        }
+      ],
+      "audio_duration": 6.85,
+      "slot_duration": 7.0
+    },
+    {
+      "beat_id": 6,
+      "text": "Efficiency isn't just a hack; it's the geometry of knowledge. Follow machinoAI for more architectural breakthroughs.",
+      "visual_focus": "A repeating geometric loop of vectors converging into a single point.",
+      "highlight_words": {
+        "geometry of knowledge": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Knowledge Manifold",
+        "action_verb": "converges",
+        "direct_object": "architectural deep-dives",
+        "anchor_word": "knowledge",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "THE GEOMETRIC PARADIGM",
+        "sub": "Knowledge convergence in latent space",
+        "accent_color": "#34D399",
+        "params": {
+          "field_title": "Intrinsic Adaptation Field",
+          "source_label": "High-Dim Noise",
+          "target_label": "Low-Rank Solution"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 34.07,
+      "end": 40.71,
+      "duration": 6.63,
+      "word_timings": [
+        {
+          "word": "Efficiency",
+          "clean_word": "efficiency",
+          "phonemes": "\u026af\u02c8\u026a\u0283\u0259nsi",
+          "start": 34.073,
+          "end": 34.638,
+          "duration": 0.565,
+          "frame_ahead_trigger": 34.783
+        },
+        {
+          "word": "isn't",
+          "clean_word": "isnt",
+          "phonemes": "\u02c8\u026asnt",
+          "start": 34.638,
+          "end": 34.888,
+          "duration": 0.25,
+          "frame_ahead_trigger": 35.348
+        },
+        {
+          "word": "just",
+          "clean_word": "just",
+          "phonemes": "d\u0292\u02c8\u028cst",
+          "start": 34.888,
+          "end": 35.168,
+          "duration": 0.28,
+          "frame_ahead_trigger": 35.598
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 35.168,
+          "end": 35.42,
+          "duration": 0.252,
+          "frame_ahead_trigger": 35.878
+        },
+        {
+          "word": "hack;",
+          "clean_word": "hack",
+          "phonemes": "h\u02c8\u00e6k",
+          "start": 35.42,
+          "end": 35.728,
+          "duration": 0.308,
+          "frame_ahead_trigger": 36.13
+        },
+        {
+          "word": "it's",
+          "clean_word": "its",
+          "phonemes": "\u026ats",
+          "start": 35.728,
+          "end": 35.838,
+          "duration": 0.11,
+          "frame_ahead_trigger": 36.438
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 35.838,
+          "end": 35.938,
+          "duration": 0.1,
+          "frame_ahead_trigger": 36.548
+        },
+        {
+          "word": "geometry",
+          "clean_word": "geometry",
+          "phonemes": "d\u0292i\u02c8\u0251\u02d0m\u0259t\u0279i",
+          "start": 35.938,
+          "end": 36.618,
+          "duration": 0.68,
+          "frame_ahead_trigger": 36.648
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 36.618,
+          "end": 36.708,
+          "duration": 0.09,
+          "frame_ahead_trigger": 37.328
+        },
+        {
+          "word": "knowledge.",
+          "clean_word": "knowledge",
+          "phonemes": "n\u02c8\u0251\u02d0l\u026ad\u0292",
+          "start": 36.708,
+          "end": 37.148,
+          "duration": 0.44,
+          "frame_ahead_trigger": 37.418
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 37.148,
+          "end": 37.673,
+          "duration": 0.525,
+          "frame_ahead_trigger": 37.858
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 37.673,
+          "end": 38.458,
+          "duration": 0.785,
+          "frame_ahead_trigger": 38.383
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 38.458,
+          "end": 38.758,
+          "duration": 0.301,
+          "frame_ahead_trigger": 39.168
+        },
+        {
+          "word": "more",
+          "clean_word": "more",
+          "phonemes": "m\u02c8\u0254\u02d0\u0279",
+          "start": 38.758,
+          "end": 39.013,
+          "duration": 0.254,
+          "frame_ahead_trigger": 39.468
+        },
+        {
+          "word": "architectural",
+          "clean_word": "architectural",
+          "phonemes": "\u02cc\u0251\u02d0\u0279k\u026at\u02c8\u025bkt\u0283\u025a\u0279\u0259l",
+          "start": 39.013,
+          "end": 40.053,
+          "duration": 1.04,
+          "frame_ahead_trigger": 39.723
+        },
+        {
+          "word": "breakthroughs.",
+          "clean_word": "breakthroughs",
+          "phonemes": "b\u0279\u02c8e\u026ak\u03b8\u0279u\u02d0z",
+          "start": 40.053,
+          "end": 40.633,
+          "duration": 0.58,
+          "frame_ahead_trigger": 40.763
+        }
+      ],
+      "audio_duration": 6.63,
+      "slot_duration": 6.64
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$W_{\\mathrm{total}} = 175 \\times 10^9 \\text{ params}$",
+      "filename": "lora_intrinsic_rank_hypothesis_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "W_total",
+          "label": "Full GPT-3 Weights"
+        }
+      ],
+      "svg_filename": "lora_intrinsic_rank_hypothesis_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\Delta W \\in \\mathbb{R}^{d \\times k}, \\text{ rank}(\\Delta W) \\ll \\min(d, k)$",
+      "filename": "lora_intrinsic_rank_hypothesis_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "rank",
+          "label": "Intrinsic Dimensionality"
+        }
+      ],
+      "svg_filename": "lora_intrinsic_rank_hypothesis_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\Delta W = BA, \\quad B \\in \\mathbb{R}^{d \\times r}, A \\in \\mathbb{R}^{r \\times k}$",
+      "filename": "lora_intrinsic_rank_hypothesis_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "r",
+          "label": "Rank"
+        },
+        {
+          "term": "B, A",
+          "label": "Trainable Matrices"
+        }
+      ],
+      "svg_filename": "lora_intrinsic_rank_hypothesis_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$h = W_0x + \\Delta Wx = W_0x + BAx$",
+      "filename": "lora_intrinsic_rank_hypothesis_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "W_0",
+          "label": "Frozen Weights"
+        },
+        {
+          "term": "BAx",
+          "label": "Low-Rank Update"
+        }
+      ],
+      "svg_filename": "lora_intrinsic_rank_hypothesis_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Params}_{\\mathrm{LoRA}} \\approx \\frac{1}{10{,}000} \\mathrm{Params}_{\\mathrm{FineTune}}$",
+      "filename": "lora_intrinsic_rank_hypothesis_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "Params",
+          "label": "Trainable Weight Count"
+        }
+      ],
+      "svg_filename": "lora_intrinsic_rank_hypothesis_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Weights",
+          "color": "#38BDF8",
+          "items": [
+            "W_init",
+            "W_fixed"
+          ]
+        },
+        {
+          "name": "Adaptation",
+          "color": "#34D399",
+          "items": [
+            "Matrix_A",
+            "Matrix_B"
+          ]
+        },
+        {
+          "name": "Rank",
+          "color": "#F59E0B",
+          "items": [
+            "r=8",
+            "r=16"
+          ]
+        }
+      ]
+    },
+    "model_a": "LoRA (Rank-8)",
+    "model_a_specs": [
+      "Frozen Base",
+      "Delta Weights",
+      "r=8"
+    ],
+    "model_b": "Full Fine-Tuning",
+    "model_b_specs": [
+      "Full Update",
+      "All Layers",
+      "Full Rank"
+    ],
+    "divide_title": "ADAPTATION CAPACITY DIVIDE",
+    "model_a_stat": "0.01%",
+    "model_a_stat_label": "TRAINABLE PARAMS",
+    "model_b_stat": "100%",
+    "model_b_stat_label": "FULL PARAMS",
+    "efficiency_badge": "\u26a1 10,000x REDUCTION",
+    "benchmarks": [
+      {
+        "name": "GPT-3 Accuracy",
+        "score_a": "On-Par",
+        "score_b": "Baseline"
+      },
+      {
+        "name": "GPU Memory",
+        "score_a": "1/3x",
+        "score_b": "3x"
+      },
+      {
+        "name": "Inference",
+        "score_a": "0 Latency",
+        "score_b": "None"
+      }
+    ],
+    "scale_metric": "175B",
+    "scale_label": "Model Parameters",
+    "bottleneck_title": "MONOLITHIC WEIGHT BOTTLENECK",
+    "bottleneck_desc": "Redundant full-rank parameter updates",
+    "solution_title": "LOW-RANK DECOMPOSITION",
+    "solution_components": "A and B Matrices",
+    "mechanism_title": "INTRINSIC RANK PROJECTION",
+    "payoff_stat": "99.9%",
+    "payoff_label": "COMPRESSION EFFICIENCY",
+    "payoff_sub": "Achieving SOTA with 10k-fold fewer parameters",
+    "payoff_hero_stat": 99.9,
+    "payoff_hero_label": "Weight Efficiency",
+    "payoff_base_stat": 0.01,
+    "payoff_base_label": "Baseline Efficiency",
+    "payoff_delta_badge": "\u26a1 +10,000x PARAMETER EFFICIENCY GAIN",
+    "challenger": "LoRA",
+    "incumbent": "Full Fine-Tuning"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: EFFICIENCY METRIC",
+    "metric_name": "Parameter Training Overhead",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "LoRA",
+        "value": 0.01,
+        "display_val": "0.01%",
+        "is_hero": true,
+        "color": "#34D399"
+      },
+      {
+        "name": "Full Fine-Tuning",
+        "value": 100.0,
+        "display_val": "100%",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 10,000x PARAMETER EFFICIENCY GAIN",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "lora_layer.py",
+    "language": "python",
+    "lines": [
+      "def forward(x):",
+      "# W_frozen(x) + (B @ A)(x)",
+      "return self.w_frozen(x) + (self.B @ self.A)(x)"
+    ],
+    "highlight_lines": [
+      3
+    ],
+    "trace_register": "\u26a1 FUSED RANK-8 KERNEL EXECUTION",
+    "explanation": "Zero inference latency overhead"
+  },
+  "arxiv_id": "2106.09685",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "figure1",
+      "caption": "Figure1",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/source/figures/figure1.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_1_figure1.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_1_figure1.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "latency",
+      "caption": "Latency",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/source/figures/latency.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_2_latency.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_2_latency.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "UA_across_random_seeds_more_layers",
+      "caption": "Ua Across Random Seeds More Layers",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/source/figures/UA_across_random_seeds_more_layers.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_3_UA_across_random_seeds_more_layers.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_3_UA_across_random_seeds_more_layers.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "qv8_qv64",
+      "caption": "Qv8 Qv64",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/source/figures/qv8_qv64.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_4_qv8_qv64.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_4_qv8_qv64.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "w_vs_delta_w",
+      "caption": "W Vs Delta W",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/source/figures/w_vs_delta_w.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_5_w_vs_delta_w.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2106.09685/chalkboard_figures/fig_5_w_vs_delta_w.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Updating a 175 billion parameter model for every new task is a structural nightmare that burns GPUs.",
+    "verdict": 64,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "LoRA (Rank-8)",
+        "model_a_score": "0.01%",
+        "model_b_name": "Full Fine-Tuning",
+        "model_b_score": "100%",
+        "delta_label": "\u26a1 10,000x REDUCTION"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "19joz0UQUCU",
+    "shorts_url": "https://youtube.com/shorts/19joz0UQUCU",
+    "studio_url": "https://studio.youtube.com/video/19joz0UQUCU/edit",
+    "title": "The Low-Rank Adaptation Mystery Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/lora_intrinsic_rank_hypothesis_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
