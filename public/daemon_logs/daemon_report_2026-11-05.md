@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-05 | **Timestamp:** 2026-11-05 18:59:04 UTC
+**Date:** 2026-11-05 | **Timestamp:** 2026-11-05 20:16:47 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: LoRA: Low-Rank Adaptation of Large Language Models: Part 2 - The Intrinsic Rank Hypothesis: Decomposing Delta W into Thin Bottleneck Matrices B x A
-- **Topic Queue Part:** `goat_lora_part_2` (arXiv: [2106.09685](https://arxiv.org/abs/2106.09685))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/19joz0UQUCU](https://youtube.com/shorts/19joz0UQUCU) (`19joz0UQUCU`)
-- **High-CTR Poster:** [lora_intrinsic_rank_hypothesis_poster.png](public/thumbnails/lora_intrinsic_rank_hypothesis_poster.png)
+### Reel 1: Chinchilla: Compute-Optimal Large Language Models: Part 2 - IsoFLOP Contour Hyperbolas: The 1:1 Mathematical Balance of Parameters and Tokens
+- **Topic Queue Part:** `goat_chinchilla_part_2` (arXiv: [2203.15556](https://arxiv.org/abs/2203.15556))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/9231hO-t6c4](https://youtube.com/shorts/9231hO-t6c4) (`9231hO-t6c4`)
+- **High-CTR Poster:** [chinchilla_scaling_laws_poster.png](public/thumbnails/chinchilla_scaling_laws_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: LoRA: Low-Rank Adaptation of Large Language Models Mini-Series 2/5: LoRA: Low-Rank Adaptation of Large Language Models: Part 2 - The Intrinsic Rank Hypothesis: Decomposing Delta W into Thin Bottleneck Matrices B x A*
-- **Everyday Analogy:** *The mathematical hypothesis that weight updates live on a low-dimensional manifold, proving that rank r=8 or r=16 captures full adaptation capacity.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_lora_intrinsic_rank_hypothesis_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: Chinchilla: Compute-Optimal Large Language Models Mini-Series 2/5: Chinchilla: Compute-Optimal Large Language Models: Part 2 - IsoFLOP Contour Hyperbolas: The 1:1 Mathematical Balance of Parameters and Tokens*
+- **Everyday Analogy:** *Fitting parametric loss surfaces across over 400 training runs to prove that compute-optimal scaling requires parameters and tokens to scale in equal 1:1 proportion.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_chinchilla_scaling_laws_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
