@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-06 | **Timestamp:** 2026-11-06 03:38:47 UTC
+**Date:** 2026-11-06 | **Timestamp:** 2026-11-06 18:20:26 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: DPO: Direct Preference Optimization: Part 2 - The Closed-Form Analytic Derivation: Turning the Optimal Policy into an Implicit Reward
-- **Topic Queue Part:** `goat_dpo_part_2` (arXiv: [2305.18290](https://arxiv.org/abs/2305.18290))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/xs_T0iLTmXA](https://youtube.com/shorts/xs_T0iLTmXA) (`xs_T0iLTmXA`)
-- **High-CTR Poster:** [dpo_closed_form_derivation_poster.png](public/thumbnails/dpo_closed_form_derivation_poster.png)
+### Reel 1: NeRF: Neural Radiance Fields for View Synthesis: Part 2 - The 5D Continuous Function: Mapping (x, y, z, theta, phi) to (RGB, sigma) with an 8-Layer MLP
+- **Topic Queue Part:** `goat_nerf_part_2` (arXiv: [2003.08934](https://arxiv.org/abs/2003.08934))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/oBK2p0_4KGk](https://youtube.com/shorts/oBK2p0_4KGk) (`oBK2p0_4KGk`)
+- **High-CTR Poster:** [nerf_5d_continuous_function_poster.png](public/thumbnails/nerf_5d_continuous_function_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: DPO: Direct Preference Optimization Mini-Series 2/5: DPO: Direct Preference Optimization: Part 2 - The Closed-Form Analytic Derivation: Turning the Optimal Policy into an Implicit Reward*
-- **Everyday Analogy:** *The mathematical breakthrough deriving the exact analytical relationship between optimal policy probabilities and the underlying Bradley-Terry ground-truth reward.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_dpo_closed_form_derivation_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: NeRF: Neural Radiance Fields for View Synthesis Mini-Series 2/5: NeRF: Neural Radiance Fields for View Synthesis: Part 2 - The 5D Continuous Function: Mapping (x, y, z, theta, phi) to (RGB, sigma) with an 8-Layer MLP*
+- **Everyday Analogy:** *Representing continuous 3D scenes inside the weights of a simple neural network that predicts emitted color and volume density along camera sightlines.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_nerf_5d_continuous_function_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
