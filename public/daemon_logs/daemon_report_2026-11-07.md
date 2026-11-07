@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-07 | **Timestamp:** 2026-11-07 17:01:03 UTC
+**Date:** 2026-11-07 | **Timestamp:** 2026-11-07 17:53:07 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: GPT-3: Few-Shot In-Context Learners: Part 3 - The 175-Billion Parameter Monster: Megatron Tensor Slicing and Sparse Alternation
-- **Topic Queue Part:** `goat_gpt3_part_3` (arXiv: [2005.14165](https://arxiv.org/abs/2005.14165))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/O3flkAaM6hU](https://youtube.com/shorts/O3flkAaM6hU) (`O3flkAaM6hU`)
-- **High-CTR Poster:** [gpt3_megatron_parallelism_poster.png](public/thumbnails/gpt3_megatron_parallelism_poster.png)
+### Reel 1: AlphaGo: Mastering the Game of Go: Part 3 - Monte Carlo Tree Search Integration: Upper Confidence Bounds and Neural Rollouts
+- **Topic Queue Part:** `goat_alphago_part_3` (arXiv: [alphago_nature_2016](https://arxiv.org/abs/alphago_nature_2016))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/_eYvd9sa6vQ](https://youtube.com/shorts/_eYvd9sa6vQ) (`_eYvd9sa6vQ`)
+- **High-CTR Poster:** [alphago_mcts_mcts_integration_poster.png](public/thumbnails/alphago_mcts_mcts_integration_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: GPT-3: Few-Shot In-Context Learners Mini-Series 3/5: GPT-3: Few-Shot In-Context Learners: Part 3 - The 175-Billion Parameter Monster: Megatron Tensor Slicing and Sparse Alternation*
-- **Everyday Analogy:** *The engineering breakthrough of training 175B parameters across thousands of V100 GPUs using Megatron-style tensor and pipeline parallelism.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_gpt3_megatron_parallelism_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: AlphaGo: Mastering the Game of Go Mini-Series 3/5: AlphaGo: Mastering the Game of Go: Part 3 - Monte Carlo Tree Search Integration: Upper Confidence Bounds and Neural Rollouts*
+- **Everyday Analogy:** *Balancing exploration and exploitation using PUCT equations to guide dynamic tree expansion toward winning branches.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_alphago_mcts_mcts_integration_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
