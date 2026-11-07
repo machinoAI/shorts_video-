@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-07 | **Timestamp:** 2026-11-07 03:07:28 UTC
+**Date:** 2026-11-07 | **Timestamp:** 2026-11-07 06:31:11 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: ResNet: Deep Residual Learning: Part 3 - The 152-Layer Architecture: Bottleneck Residual Blocks and Dimension Projections
-- **Topic Queue Part:** `goat_resnet_part_3` (arXiv: [1512.03385](https://arxiv.org/abs/1512.03385))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/9GIa-ZZ-EQM](https://youtube.com/shorts/9GIa-ZZ-EQM) (`9GIa-ZZ-EQM`)
-- **High-CTR Poster:** [resnet_deep_residual_learning_part_3_-_the_152-layer_architecture_bottleneck_residual_blocks_and_dimension_projections_poster.png](public/thumbnails/resnet_deep_residual_learning_part_3_-_the_152-layer_architecture_bottleneck_residual_blocks_and_dimension_projections_poster.png)
+### Reel 1: AlexNet: Deep Learning Ignition: Part 3 - The Dual-GTX-580 Split Pipeline: Model Parallelism Before It Had a Name
+- **Topic Queue Part:** `goat_alexnet_part_3` (arXiv: [alexnet_imagenet_2012](https://arxiv.org/abs/alexnet_imagenet_2012))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/tvEKWmJG9-U](https://youtube.com/shorts/tvEKWmJG9-U) (`tvEKWmJG9-U`)
+- **High-CTR Poster:** [alexnet_dual_gpu_pipeline_poster.png](public/thumbnails/alexnet_dual_gpu_pipeline_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: ResNet: Deep Residual Learning Mini-Series 3/5: ResNet: Deep Residual Learning: Part 3 - The 152-Layer Architecture: Bottleneck Residual Blocks and Dimension Projections*
-- **Everyday Analogy:** *Designing 1x1, 3x3, and 1x1 bottleneck layers to drastically reduce parameter count while scaling layer depth to unprecedented heights.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_resnet_deep_residual_learning_part_3_-_the_152-layer_architecture_bottleneck_residual_blocks_and_dimension_projections_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: AlexNet: Deep Learning Ignition Mini-Series 3/5: AlexNet: Deep Learning Ignition: Part 3 - The Dual-GTX-580 Split Pipeline: Model Parallelism Before It Had a Name*
+- **Everyday Analogy:** *How Alex Krizhevsky split 60 million parameters across two 3GB gaming GPUs using cross-GPU communication layers.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_alexnet_dual_gpu_pipeline_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs

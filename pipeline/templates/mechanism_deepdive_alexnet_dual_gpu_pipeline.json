@@ -1,0 +1,1704 @@
+{
+  "id": "alexnet_dual_gpu_pipeline",
+  "title": "AlexNet: The Birth of Model Parallelism",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "DEEP LEARNING IGNITION",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until AlexNet unlocks 10.9% throughput?",
+      "visual_focus": "A split GPU diagram showing memory overflow.",
+      "highlight_words": {
+        "sixty million": "#F59E0B",
+        "three gigabytes": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Neural Weights",
+        "action_verb": "overflow",
+        "direct_object": "VRAM Buffer",
+        "anchor_word": "fit",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "split_flow",
+        "title": "THE MEMORY WALL",
+        "sub": "Parameters exceeding physical GPU capacity",
+        "accent_color": "#EF4444",
+        "params": {
+          "input_label": "60M Parameters",
+          "router_label": "Memory Constraint",
+          "branch_a_label": "GPU 0 (3GB)",
+          "branch_a_sub": "Overflowing",
+          "branch_b_label": "GPU 1 (3GB)",
+          "branch_b_sub": "Idle"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 67,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "split_flow",
+        "title": "THE MEMORY WALL",
+        "sub": "Parameters exceeding physical GPU capacity",
+        "accent_color": "#EF4444",
+        "input_label": "60M Parameters",
+        "router_label": "Memory Constraint",
+        "branch_a_label": "GPU 0 (3GB)",
+        "branch_a_sub": "Overflowing",
+        "branch_b_label": "GPU 1 (3GB)",
+        "branch_b_sub": "Idle"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.08,
+      "duration": 6.08,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.005,
+          "end": 0.185,
+          "duration": 0.18,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.185,
+          "end": 0.515,
+          "duration": 0.33,
+          "frame_ahead_trigger": 0.145
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.515,
+          "end": 1.285,
+          "duration": 0.77,
+          "frame_ahead_trigger": 0.475
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.285,
+          "end": 1.455,
+          "duration": 0.17,
+          "frame_ahead_trigger": 1.245
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.455,
+          "end": 1.75,
+          "duration": 0.295,
+          "frame_ahead_trigger": 1.415
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 1.75,
+          "end": 2.085,
+          "duration": 0.335,
+          "frame_ahead_trigger": 1.71
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.085,
+          "end": 2.685,
+          "duration": 0.6,
+          "frame_ahead_trigger": 2.045
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 2.685,
+          "end": 3.115,
+          "duration": 0.43,
+          "frame_ahead_trigger": 2.645
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 3.115,
+          "end": 3.535,
+          "duration": 0.42,
+          "frame_ahead_trigger": 3.075
+        },
+        {
+          "word": "AlexNet",
+          "clean_word": "alexnet",
+          "phonemes": "\u02c8\u00e6l\u026aks n\u02c8\u025bt",
+          "start": 3.535,
+          "end": 3.97,
+          "duration": 0.435,
+          "frame_ahead_trigger": 3.495
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 3.97,
+          "end": 4.49,
+          "duration": 0.52,
+          "frame_ahead_trigger": 3.93
+        },
+        {
+          "word": "10.9%",
+          "clean_word": "109",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad n\u02c8a\u026an",
+          "start": 4.49,
+          "end": 5.62,
+          "duration": 1.13,
+          "frame_ahead_trigger": 4.45
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 5.62,
+          "end": 5.98,
+          "duration": 0.36,
+          "frame_ahead_trigger": 5.58
+        }
+      ],
+      "audio_duration": 6.08,
+      "slot_duration": 6.23
+    },
+    {
+      "beat_id": 2,
+      "text": "The bottleneck is like trying to force a firehose into a straw, wasting silicon while weights sit idle in waiting cycles.",
+      "visual_focus": "Flow rate comparison visual.",
+      "highlight_words": {
+        "bottleneck": "#EF4444",
+        "idle": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Compute Cycles",
+        "action_verb": "starve",
+        "direct_object": "Execution Pipeline",
+        "anchor_word": "bottleneck",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "THE IDLE SILICON TRAP",
+        "sub": "Sequential starvation during forward pass",
+        "accent_color": "#EF4444",
+        "params": {
+          "stage_1_label": "Fetch",
+          "stage_1_sub": "Latency",
+          "stage_2_label": "Compute",
+          "stage_2_sub": "Starved",
+          "stage_3_label": "Sync",
+          "stage_3_sub": "Blocked"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "THE IDLE SILICON TRAP",
+        "sub": "Sequential starvation during forward pass",
+        "accent_color": "#EF4444",
+        "stage_1_label": "Fetch",
+        "stage_1_sub": "Latency",
+        "stage_2_label": "Compute",
+        "stage_2_sub": "Starved",
+        "stage_3_label": "Sync",
+        "stage_3_sub": "Blocked"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.23,
+      "end": 12.63,
+      "duration": 6.4,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 6.235,
+          "end": 6.32,
+          "duration": 0.085,
+          "frame_ahead_trigger": 6.345
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 6.32,
+          "end": 6.965,
+          "duration": 0.645,
+          "frame_ahead_trigger": 6.43
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 6.965,
+          "end": 7.045,
+          "duration": 0.08,
+          "frame_ahead_trigger": 7.075
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 7.045,
+          "end": 7.405,
+          "duration": 0.36,
+          "frame_ahead_trigger": 7.155
+        },
+        {
+          "word": "trying",
+          "clean_word": "trying",
+          "phonemes": "t\u0279\u02c8a\u026a\u026a\u014b",
+          "start": 7.405,
+          "end": 7.695,
+          "duration": 0.29,
+          "frame_ahead_trigger": 7.515
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 7.695,
+          "end": 7.855,
+          "duration": 0.16,
+          "frame_ahead_trigger": 7.805
+        },
+        {
+          "word": "force",
+          "clean_word": "force",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s",
+          "start": 7.855,
+          "end": 8.175,
+          "duration": 0.32,
+          "frame_ahead_trigger": 7.965
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 8.175,
+          "end": 8.415,
+          "duration": 0.24,
+          "frame_ahead_trigger": 8.285
+        },
+        {
+          "word": "firehose",
+          "clean_word": "firehose",
+          "phonemes": "f\u02c8a\u026a\u025aho\u028az",
+          "start": 8.415,
+          "end": 8.885,
+          "duration": 0.47,
+          "frame_ahead_trigger": 8.525
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 8.885,
+          "end": 9.096,
+          "duration": 0.211,
+          "frame_ahead_trigger": 8.995
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 9.096,
+          "end": 9.27,
+          "duration": 0.174,
+          "frame_ahead_trigger": 9.206
+        },
+        {
+          "word": "straw,",
+          "clean_word": "straw",
+          "phonemes": "st\u0279\u02c8\u0254\u02d0",
+          "start": 9.27,
+          "end": 9.615,
+          "duration": 0.345,
+          "frame_ahead_trigger": 9.38
+        },
+        {
+          "word": "wasting",
+          "clean_word": "wasting",
+          "phonemes": "w\u02c8e\u026ast\u026a\u014b",
+          "start": 9.615,
+          "end": 9.945,
+          "duration": 0.33,
+          "frame_ahead_trigger": 9.725
+        },
+        {
+          "word": "silicon",
+          "clean_word": "silicon",
+          "phonemes": "s\u02c8\u026al\u026ak\u0259n",
+          "start": 9.945,
+          "end": 10.475,
+          "duration": 0.53,
+          "frame_ahead_trigger": 10.055
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 10.475,
+          "end": 10.65,
+          "duration": 0.175,
+          "frame_ahead_trigger": 10.585
+        },
+        {
+          "word": "weights",
+          "clean_word": "weights",
+          "phonemes": "w\u02c8e\u026ats",
+          "start": 10.65,
+          "end": 11.005,
+          "duration": 0.355,
+          "frame_ahead_trigger": 10.76
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 11.005,
+          "end": 11.205,
+          "duration": 0.2,
+          "frame_ahead_trigger": 11.115
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 11.205,
+          "end": 11.53,
+          "duration": 0.325,
+          "frame_ahead_trigger": 11.315
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 11.53,
+          "end": 11.725,
+          "duration": 0.195,
+          "frame_ahead_trigger": 11.64
+        },
+        {
+          "word": "waiting",
+          "clean_word": "waiting",
+          "phonemes": "w\u02c8e\u026a\u027e\u026a\u014b",
+          "start": 11.725,
+          "end": 12.11,
+          "duration": 0.385,
+          "frame_ahead_trigger": 11.835
+        },
+        {
+          "word": "cycles.",
+          "clean_word": "cycles",
+          "phonemes": "s\u02c8a\u026ak\u0259lz",
+          "start": 12.11,
+          "end": 12.55,
+          "duration": 0.44,
+          "frame_ahead_trigger": 12.22
+        }
+      ],
+      "audio_duration": 6.4,
+      "slot_duration": 6.55
+    },
+    {
+      "beat_id": 3,
+      "text": "Alex Krizhevsky solved this by hacking the pipeline, splitting layers across two devices using custom cross-GPU communication to share internal activations.",
+      "visual_focus": "Network bifurcation across two hardware entities.",
+      "highlight_words": {
+        "split": "#34D399",
+        "cross-GPU": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Parallel Router",
+        "action_verb": "divides",
+        "direct_object": "Neural Layers",
+        "anchor_word": "split",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: ALEXNET: THE BIRTH",
+        "sub": "Network bifurcation across two hardware entities.",
+        "params": {
+          "title": "KERNEL CODE: ALEXNET: THE BIRTH",
+          "sub": "Network bifurcation across two hardware entities.",
+          "filename": "parallel_conv.py",
+          "language": "python",
+          "lines": [
+            "def forward(x):",
+            "x_gpu0 = gpu_0_conv(x)",
+            "x_sync = sync_activations(x_gpu0)",
+            "return gpu_1_conv(x_sync)"
+          ],
+          "highlight_lines": [
+            2,
+            3
+          ],
+          "trace_register": "\u26a1 PARALLEL CONV KERNEL",
+          "delta_badge": "Synchronized layer splitting"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: ALEXNET: THE BIRTH",
+        "sub": "Network bifurcation across two hardware entities.",
+        "filename": "parallel_conv.py",
+        "language": "python",
+        "lines": [
+          "def forward(x):",
+          "x_gpu0 = gpu_0_conv(x)",
+          "x_sync = sync_activations(x_gpu0)",
+          "return gpu_1_conv(x_sync)"
+        ],
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "trace_register": "\u26a1 PARALLEL CONV KERNEL",
+        "delta_badge": "Synchronized layer splitting"
+      },
+      "start": 12.78,
+      "end": 21.91,
+      "duration": 9.13,
+      "word_timings": [
+        {
+          "word": "Alex",
+          "clean_word": "alex",
+          "phonemes": "\u02c8\u00e6l\u026aks",
+          "start": 12.79,
+          "end": 13.1,
+          "duration": 0.31,
+          "frame_ahead_trigger": 13.05
+        },
+        {
+          "word": "Krizhevsky",
+          "clean_word": "krizhevsky",
+          "phonemes": "k\u0279\u026a\u0292\u02c8\u025bvski",
+          "start": 13.1,
+          "end": 13.71,
+          "duration": 0.61,
+          "frame_ahead_trigger": 13.36
+        },
+        {
+          "word": "solved",
+          "clean_word": "solved",
+          "phonemes": "s\u02c8\u0251\u02d0lvd",
+          "start": 13.71,
+          "end": 14.09,
+          "duration": 0.38,
+          "frame_ahead_trigger": 13.97
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 14.09,
+          "end": 14.31,
+          "duration": 0.22,
+          "frame_ahead_trigger": 14.35
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 14.31,
+          "end": 14.5,
+          "duration": 0.19,
+          "frame_ahead_trigger": 14.57
+        },
+        {
+          "word": "hacking",
+          "clean_word": "hacking",
+          "phonemes": "h\u02c8\u00e6k\u026a\u014b",
+          "start": 14.5,
+          "end": 14.84,
+          "duration": 0.34,
+          "frame_ahead_trigger": 14.76
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 14.84,
+          "end": 14.93,
+          "duration": 0.09,
+          "frame_ahead_trigger": 15.1
+        },
+        {
+          "word": "pipeline,",
+          "clean_word": "pipeline",
+          "phonemes": "p\u02c8a\u026apla\u026an",
+          "start": 14.93,
+          "end": 15.499,
+          "duration": 0.569,
+          "frame_ahead_trigger": 15.19
+        },
+        {
+          "word": "splitting",
+          "clean_word": "splitting",
+          "phonemes": "spl\u02c8\u026a\u027e\u026a\u014b",
+          "start": 15.499,
+          "end": 15.95,
+          "duration": 0.451,
+          "frame_ahead_trigger": 15.759
+        },
+        {
+          "word": "layers",
+          "clean_word": "layers",
+          "phonemes": "l\u02c8e\u026a\u025az",
+          "start": 15.95,
+          "end": 16.289,
+          "duration": 0.339,
+          "frame_ahead_trigger": 16.21
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 16.289,
+          "end": 16.685,
+          "duration": 0.396,
+          "frame_ahead_trigger": 16.549
+        },
+        {
+          "word": "two",
+          "clean_word": "two",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 16.685,
+          "end": 16.89,
+          "duration": 0.205,
+          "frame_ahead_trigger": 16.945
+        },
+        {
+          "word": "devices",
+          "clean_word": "devices",
+          "phonemes": "d\u026av\u02c8a\u026as\u1d7bz",
+          "start": 16.89,
+          "end": 17.505,
+          "duration": 0.615,
+          "frame_ahead_trigger": 17.15
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 17.505,
+          "end": 17.75,
+          "duration": 0.245,
+          "frame_ahead_trigger": 17.765
+        },
+        {
+          "word": "custom",
+          "clean_word": "custom",
+          "phonemes": "k\u02c8\u028cst\u0259m",
+          "start": 17.75,
+          "end": 18.15,
+          "duration": 0.4,
+          "frame_ahead_trigger": 18.01
+        },
+        {
+          "word": "cross-GPU",
+          "clean_word": "crossgpu",
+          "phonemes": "k\u0279\u02c8\u0254s d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 18.15,
+          "end": 19.32,
+          "duration": 1.17,
+          "frame_ahead_trigger": 18.41
+        },
+        {
+          "word": "communication",
+          "clean_word": "communication",
+          "phonemes": "k\u0259mj\u02ccu\u02d0n\u026ak\u02c8e\u026a\u0283\u0259n",
+          "start": 19.32,
+          "end": 20.235,
+          "duration": 0.915,
+          "frame_ahead_trigger": 19.58
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 20.235,
+          "end": 20.31,
+          "duration": 0.075,
+          "frame_ahead_trigger": 20.495
+        },
+        {
+          "word": "share",
+          "clean_word": "share",
+          "phonemes": "\u0283\u02c8\u025b\u0279",
+          "start": 20.31,
+          "end": 20.578,
+          "duration": 0.268,
+          "frame_ahead_trigger": 20.57
+        },
+        {
+          "word": "internal",
+          "clean_word": "internal",
+          "phonemes": "\u026ant\u02c8\u025c\u02d0n\u0259l",
+          "start": 20.578,
+          "end": 21.035,
+          "duration": 0.457,
+          "frame_ahead_trigger": 20.838
+        },
+        {
+          "word": "activations.",
+          "clean_word": "activations",
+          "phonemes": "\u02cc\u00e6kt\u026av\u02c8e\u026a\u0283\u0259nz",
+          "start": 21.035,
+          "end": 21.82,
+          "duration": 0.785,
+          "frame_ahead_trigger": 21.295
+        }
+      ],
+      "audio_duration": 9.13,
+      "slot_duration": 9.28
+    },
+    {
+      "beat_id": 4,
+      "text": "The mechanism relies on selective communication; GPUs only exchange data at specific layers, minimizing the latency overhead of the PCIe bus bottleneck.",
+      "visual_focus": "Highlighting specific communication synchronization points.",
+      "highlight_words": {
+        "selective": "#38BDF8",
+        "latency": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Communication Kernel",
+        "action_verb": "filters",
+        "direct_object": "Activation Flow",
+        "anchor_word": "selective",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "MINIMAL COMMUNICATION OVERHEAD",
+        "sub": "Optimized inter-device syncing",
+        "accent_color": "#38BDF8",
+        "params": {
+          "stream_a_label": "GPU 0 Pipeline",
+          "stream_b_label": "GPU 1 Pipeline",
+          "barrier_label": "Selective Sync",
+          "barrier_sub": "Reduced PCIe Bottleneck"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "MINIMAL COMMUNICATION OVERHEAD",
+        "sub": "Optimized inter-device syncing",
+        "accent_color": "#38BDF8",
+        "stream_a_label": "GPU 0 Pipeline",
+        "stream_b_label": "GPU 1 Pipeline",
+        "barrier_label": "Selective Sync",
+        "barrier_sub": "Reduced PCIe Bottleneck"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 22.06,
+      "end": 31.94,
+      "duration": 9.88,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 22.076,
+          "end": 22.276,
+          "duration": 0.2,
+          "frame_ahead_trigger": 22.486
+        },
+        {
+          "word": "mechanism",
+          "clean_word": "mechanism",
+          "phonemes": "m\u02c8\u025bk\u0259n\u02cc\u026az\u0259m",
+          "start": 22.276,
+          "end": 22.836,
+          "duration": 0.56,
+          "frame_ahead_trigger": 22.686
+        },
+        {
+          "word": "relies",
+          "clean_word": "relies",
+          "phonemes": "\u0279\u1d7bl\u02c8a\u026az",
+          "start": 22.836,
+          "end": 23.296,
+          "duration": 0.46,
+          "frame_ahead_trigger": 23.246
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 23.296,
+          "end": 23.446,
+          "duration": 0.15,
+          "frame_ahead_trigger": 23.706
+        },
+        {
+          "word": "selective",
+          "clean_word": "selective",
+          "phonemes": "s\u1d7bl\u02c8\u025bkt\u026av",
+          "start": 23.446,
+          "end": 24.031,
+          "duration": 0.585,
+          "frame_ahead_trigger": 23.856
+        },
+        {
+          "word": "communication;",
+          "clean_word": "communication",
+          "phonemes": "k\u0259mj\u02ccu\u02d0n\u026ak\u02c8e\u026a\u0283\u0259n",
+          "start": 24.031,
+          "end": 24.878,
+          "duration": 0.847,
+          "frame_ahead_trigger": 24.441
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 24.878,
+          "end": 25.651,
+          "duration": 0.773,
+          "frame_ahead_trigger": 25.288
+        },
+        {
+          "word": "only",
+          "clean_word": "only",
+          "phonemes": "\u02c8o\u028anli",
+          "start": 25.651,
+          "end": 26.046,
+          "duration": 0.395,
+          "frame_ahead_trigger": 26.061
+        },
+        {
+          "word": "exchange",
+          "clean_word": "exchange",
+          "phonemes": "\u025bkst\u0283\u02c8e\u026and\u0292",
+          "start": 26.046,
+          "end": 26.576,
+          "duration": 0.53,
+          "frame_ahead_trigger": 26.456
+        },
+        {
+          "word": "data",
+          "clean_word": "data",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259",
+          "start": 26.576,
+          "end": 27.011,
+          "duration": 0.435,
+          "frame_ahead_trigger": 26.986
+        },
+        {
+          "word": "at",
+          "clean_word": "at",
+          "phonemes": "\u00e6t",
+          "start": 27.011,
+          "end": 27.126,
+          "duration": 0.115,
+          "frame_ahead_trigger": 27.421
+        },
+        {
+          "word": "specific",
+          "clean_word": "specific",
+          "phonemes": "sp\u0259s\u02c8\u026af\u026ak",
+          "start": 27.126,
+          "end": 27.621,
+          "duration": 0.495,
+          "frame_ahead_trigger": 27.536
+        },
+        {
+          "word": "layers,",
+          "clean_word": "layers",
+          "phonemes": "l\u02c8e\u026a\u025az",
+          "start": 27.621,
+          "end": 27.881,
+          "duration": 0.26,
+          "frame_ahead_trigger": 28.031
+        },
+        {
+          "word": "minimizing",
+          "clean_word": "minimizing",
+          "phonemes": "m\u02c8\u026an\u026am\u02cca\u026az\u026a\u014b",
+          "start": 27.881,
+          "end": 28.731,
+          "duration": 0.85,
+          "frame_ahead_trigger": 28.291
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 28.731,
+          "end": 28.816,
+          "duration": 0.085,
+          "frame_ahead_trigger": 29.141
+        },
+        {
+          "word": "latency",
+          "clean_word": "latency",
+          "phonemes": "l\u02c8e\u026at\u0259nsi",
+          "start": 28.816,
+          "end": 29.296,
+          "duration": 0.48,
+          "frame_ahead_trigger": 29.226
+        },
+        {
+          "word": "overhead",
+          "clean_word": "overhead",
+          "phonemes": "\u02cco\u028av\u025ah\u02c8\u025bd",
+          "start": 29.296,
+          "end": 29.901,
+          "duration": 0.605,
+          "frame_ahead_trigger": 29.706
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 29.901,
+          "end": 29.956,
+          "duration": 0.055,
+          "frame_ahead_trigger": 30.311
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 29.956,
+          "end": 30.026,
+          "duration": 0.07,
+          "frame_ahead_trigger": 30.366
+        },
+        {
+          "word": "PCIe",
+          "clean_word": "pcie",
+          "phonemes": "p\u02cci\u02d0s\u02cci\u02d0\u02cca\u026a\u02c8i\u02d0",
+          "start": 30.026,
+          "end": 30.836,
+          "duration": 0.81,
+          "frame_ahead_trigger": 30.436
+        },
+        {
+          "word": "bus",
+          "clean_word": "bus",
+          "phonemes": "b\u02c8\u028cs",
+          "start": 30.836,
+          "end": 31.186,
+          "duration": 0.35,
+          "frame_ahead_trigger": 31.246
+        },
+        {
+          "word": "bottleneck.",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 31.186,
+          "end": 31.766,
+          "duration": 0.58,
+          "frame_ahead_trigger": 31.596
+        }
+      ],
+      "audio_duration": 9.88,
+      "slot_duration": 10.03
+    },
+    {
+      "beat_id": 5,
+      "text": "This parallel architecture shattered ImageNet benchmarks, proving that hardware constraints are simply challenges for clever pipeline engineering.",
+      "visual_focus": "Performance chart showing the jump in ImageNet accuracy.",
+      "highlight_words": {
+        "shattered": "#34D399",
+        "engineering": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Model Accuracy",
+        "action_verb": "outperforms",
+        "direct_object": "Top-5 Baseline",
+        "anchor_word": "shattered",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN",
+        "sub": "Performance chart showing the jump in ImageNet",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN",
+          "sub": "Performance chart showing the jump in ImageNet",
+          "metric_name": "ImageNet Error Rate",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "AlexNet",
+              "value": 15.3,
+              "display_val": "15.3%",
+              "is_hero": true,
+              "color": "#34D399"
+            },
+            {
+              "name": "Baselines",
+              "value": 26.2,
+              "display_val": "26.2%",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 -10.9% SOTA GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN",
+        "sub": "Performance chart showing the jump in ImageNet",
+        "metric_name": "ImageNet Error Rate",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "AlexNet",
+            "value": 15.3,
+            "display_val": "15.3%",
+            "is_hero": true,
+            "color": "#34D399"
+          },
+          {
+            "name": "Baselines",
+            "value": 26.2,
+            "display_val": "26.2%",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 -10.9% SOTA GAIN"
+      },
+      "start": 32.09,
+      "end": 39.77,
+      "duration": 7.68,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 32.103,
+          "end": 32.248,
+          "duration": 0.145,
+          "frame_ahead_trigger": 32.663
+        },
+        {
+          "word": "parallel",
+          "clean_word": "parallel",
+          "phonemes": "p\u02c8\u00e6\u0279\u0259l\u02cc\u025bl",
+          "start": 32.248,
+          "end": 32.753,
+          "duration": 0.505,
+          "frame_ahead_trigger": 32.808
+        },
+        {
+          "word": "architecture",
+          "clean_word": "architecture",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025a",
+          "start": 32.753,
+          "end": 33.458,
+          "duration": 0.705,
+          "frame_ahead_trigger": 33.313
+        },
+        {
+          "word": "shattered",
+          "clean_word": "shattered",
+          "phonemes": "\u0283\u02c8\u00e6\u027e\u025ad",
+          "start": 33.458,
+          "end": 33.743,
+          "duration": 0.285,
+          "frame_ahead_trigger": 34.018
+        },
+        {
+          "word": "ImageNet",
+          "clean_word": "imagenet",
+          "phonemes": "\u02c8\u026am\u026ad\u0292 n\u02c8\u025bt",
+          "start": 33.743,
+          "end": 34.303,
+          "duration": 0.56,
+          "frame_ahead_trigger": 34.303
+        },
+        {
+          "word": "benchmarks,",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 34.303,
+          "end": 35.063,
+          "duration": 0.76,
+          "frame_ahead_trigger": 34.863
+        },
+        {
+          "word": "proving",
+          "clean_word": "proving",
+          "phonemes": "p\u0279\u02c8u\u02d0v\u026a\u014b",
+          "start": 35.063,
+          "end": 35.543,
+          "duration": 0.48,
+          "frame_ahead_trigger": 35.623
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 35.543,
+          "end": 35.758,
+          "duration": 0.215,
+          "frame_ahead_trigger": 36.103
+        },
+        {
+          "word": "hardware",
+          "clean_word": "hardware",
+          "phonemes": "h\u02c8\u0251\u02d0\u0279dw\u025b\u0279",
+          "start": 35.758,
+          "end": 36.243,
+          "duration": 0.485,
+          "frame_ahead_trigger": 36.318
+        },
+        {
+          "word": "constraints",
+          "clean_word": "constraints",
+          "phonemes": "k\u0259nst\u0279\u02c8e\u026ants",
+          "start": 36.243,
+          "end": 36.918,
+          "duration": 0.675,
+          "frame_ahead_trigger": 36.803
+        },
+        {
+          "word": "are",
+          "clean_word": "are",
+          "phonemes": "\u0251\u02d0\u0279",
+          "start": 36.918,
+          "end": 37.063,
+          "duration": 0.145,
+          "frame_ahead_trigger": 37.478
+        },
+        {
+          "word": "simply",
+          "clean_word": "simply",
+          "phonemes": "s\u02c8\u026ampli",
+          "start": 37.063,
+          "end": 37.428,
+          "duration": 0.365,
+          "frame_ahead_trigger": 37.623
+        },
+        {
+          "word": "challenges",
+          "clean_word": "challenges",
+          "phonemes": "t\u0283\u02c8\u00e6l\u026and\u0292\u1d7bz",
+          "start": 37.428,
+          "end": 38.008,
+          "duration": 0.58,
+          "frame_ahead_trigger": 37.988
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 38.008,
+          "end": 38.128,
+          "duration": 0.12,
+          "frame_ahead_trigger": 38.568
+        },
+        {
+          "word": "clever",
+          "clean_word": "clever",
+          "phonemes": "kl\u02c8\u025bv\u025a",
+          "start": 38.128,
+          "end": 38.468,
+          "duration": 0.34,
+          "frame_ahead_trigger": 38.688
+        },
+        {
+          "word": "pipeline",
+          "clean_word": "pipeline",
+          "phonemes": "p\u02c8a\u026apla\u026an",
+          "start": 38.468,
+          "end": 39.063,
+          "duration": 0.595,
+          "frame_ahead_trigger": 39.028
+        },
+        {
+          "word": "engineering.",
+          "clean_word": "engineering",
+          "phonemes": "\u02cc\u025bnd\u0292\u026an\u02c8\u026a\u0279\u026a\u014b",
+          "start": 39.063,
+          "end": 39.643,
+          "duration": 0.58,
+          "frame_ahead_trigger": 39.623
+        }
+      ],
+      "audio_duration": 7.68,
+      "slot_duration": 7.83
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into how we actually build the AI that breaks records.",
+      "visual_focus": "Channel branding loop.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Viewer",
+        "action_verb": "loops",
+        "direct_object": "Engineering Insight",
+        "anchor_word": "machinoAI",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "THE ARCHITECTURE LOOP",
+        "sub": "Return to ignition",
+        "accent_color": "#FFFFFF",
+        "params": {
+          "root_label": "Ignition",
+          "optimal_label": "Model Parallelism",
+          "pruned_label": "Legacy Monolith"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 39.92,
+      "end": 45.55,
+      "duration": 5.63,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 39.918,
+          "end": 40.333,
+          "duration": 0.415,
+          "frame_ahead_trigger": 40.628
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 40.333,
+          "end": 41.258,
+          "duration": 0.925,
+          "frame_ahead_trigger": 41.043
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 41.258,
+          "end": 41.423,
+          "duration": 0.165,
+          "frame_ahead_trigger": 41.968
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 41.423,
+          "end": 41.753,
+          "duration": 0.33,
+          "frame_ahead_trigger": 42.133
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 41.753,
+          "end": 42.273,
+          "duration": 0.52,
+          "frame_ahead_trigger": 42.463
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 42.273,
+          "end": 42.673,
+          "duration": 0.4,
+          "frame_ahead_trigger": 42.983
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 42.673,
+          "end": 42.878,
+          "duration": 0.205,
+          "frame_ahead_trigger": 43.383
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 42.878,
+          "end": 43.043,
+          "duration": 0.165,
+          "frame_ahead_trigger": 43.588
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 43.043,
+          "end": 43.653,
+          "duration": 0.61,
+          "frame_ahead_trigger": 43.753
+        },
+        {
+          "word": "build",
+          "clean_word": "build",
+          "phonemes": "b\u02c8\u026ald",
+          "start": 43.653,
+          "end": 43.998,
+          "duration": 0.345,
+          "frame_ahead_trigger": 44.363
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 43.998,
+          "end": 44.07,
+          "duration": 0.072,
+          "frame_ahead_trigger": 44.708
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 44.07,
+          "end": 44.513,
+          "duration": 0.443,
+          "frame_ahead_trigger": 44.78
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 44.513,
+          "end": 44.673,
+          "duration": 0.16,
+          "frame_ahead_trigger": 45.223
+        },
+        {
+          "word": "breaks",
+          "clean_word": "breaks",
+          "phonemes": "b\u0279\u02c8e\u026aks",
+          "start": 44.673,
+          "end": 45.123,
+          "duration": 0.45,
+          "frame_ahead_trigger": 45.383
+        },
+        {
+          "word": "records.",
+          "clean_word": "records",
+          "phonemes": "\u0279\u02c8\u025bk\u025adz",
+          "start": 45.123,
+          "end": 45.473,
+          "duration": 0.35,
+          "frame_ahead_trigger": 45.833
+        }
+      ],
+      "audio_duration": 5.63,
+      "slot_duration": 5.63
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$N_{\\mathrm{total}} = 60 \\times 10^6, \\mathrm{VRAM} < 3 \\mathrm{GB}$",
+      "filename": "alexnet_dual_gpu_pipeline_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "N_{total}",
+          "label": "Model Parameters"
+        },
+        {
+          "term": "VRAM",
+          "label": "Device Memory"
+        }
+      ],
+      "svg_filename": "alexnet_dual_gpu_pipeline_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{T}_{\\mathrm{wait}} = \\sum \\mathrm{Bus}_{\\mathrm{latency}}$",
+      "filename": "alexnet_dual_gpu_pipeline_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "T_{wait}",
+          "label": "Idle Time"
+        },
+        {
+          "term": "Bus",
+          "label": "PCIe Overhead"
+        }
+      ],
+      "svg_filename": "alexnet_dual_gpu_pipeline_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{H} = [\\mathbf{H}_{\\mathrm{GPU0}} \\oplus \\mathbf{H}_{\\mathrm{GPU1}}]$",
+      "filename": "alexnet_dual_gpu_pipeline_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "H",
+          "label": "Layer Activations"
+        },
+        {
+          "term": "\\oplus",
+          "label": "GPU Concat"
+        }
+      ],
+      "svg_filename": "alexnet_dual_gpu_pipeline_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathcal{L}_{\\mathrm{sync}} = \\mathrm{Top\\_K}(\\nabla \\mathbf{w}_{\\mathrm{sync}})$",
+      "filename": "alexnet_dual_gpu_pipeline_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "L_{sync}",
+          "label": "Sync Cost"
+        },
+        {
+          "term": "Top_K",
+          "label": "Filtered Sync"
+        }
+      ],
+      "svg_filename": "alexnet_dual_gpu_pipeline_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Error}_{\\mathrm{AlexNet}} = 15.3\\%, \\Delta = -10.9\\%$",
+      "filename": "alexnet_dual_gpu_pipeline_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "Error",
+          "label": "Classification Error"
+        },
+        {
+          "term": "\\Delta",
+          "label": "Performance Gain"
+        }
+      ],
+      "svg_filename": "alexnet_dual_gpu_pipeline_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Hardware",
+          "color": "#EF4444",
+          "items": [
+            "GPU 0",
+            "GPU 1"
+          ]
+        },
+        {
+          "name": "Weights",
+          "color": "#F59E0B",
+          "items": [
+            "60M Params"
+          ]
+        },
+        {
+          "name": "Sync",
+          "color": "#34D399",
+          "items": [
+            "Activations"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Layer 3 Split",
+        "target_cluster": "Sync",
+        "token": "Activation Tensor"
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "PCIe Wait",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Idle Cycles",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "AlexNet (Parallel)",
+    "model_a_specs": [
+      "Two GTX 580s",
+      "60M Params",
+      "Model Parallelism"
+    ],
+    "model_b": "Standard ConvNet",
+    "model_b_specs": [
+      "Single GPU",
+      "Limited Params",
+      "Memory Starvation"
+    ],
+    "divide_title": "PARALLELISM VS MEMORY LIMIT",
+    "model_a_stat": "15.3%",
+    "model_a_stat_label": "TOP-5 ERROR",
+    "model_b_stat": "26.2%",
+    "model_b_stat_label": "BASELINE ERROR",
+    "efficiency_badge": "\u26a1 2x VRAM UTILIZATION",
+    "benchmarks": [
+      {
+        "name": "ImageNet Error",
+        "score_a": "15.3%",
+        "score_b": "26.2%"
+      }
+    ],
+    "scale_metric": "60M",
+    "scale_label": "Total Parameters",
+    "bottleneck_title": "VRAM OVERFLOW",
+    "bottleneck_desc": "Sequential bottlenecking on single hardware",
+    "solution_title": "MODEL PARALLELISM",
+    "solution_components": "Cross-device activation sharing",
+    "mechanism_title": "SELECTIVE SYNC",
+    "payoff_stat": "10.9%",
+    "payoff_label": "ACCURACY GAIN",
+    "payoff_sub": "Scaling beyond the hardware wall",
+    "payoff_hero_stat": 15.3,
+    "payoff_hero_label": "AlexNet",
+    "payoff_base_stat": 26.2,
+    "payoff_base_label": "Baseline",
+    "payoff_delta_badge": "\u26a1 +10.9% REDUCTION",
+    "challenger": "AlexNet",
+    "incumbent": "Traditional Baselines"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN",
+    "metric_name": "ImageNet Error Rate",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "AlexNet",
+        "value": 15.3,
+        "display_val": "15.3%",
+        "is_hero": true,
+        "color": "#34D399"
+      },
+      {
+        "name": "Baselines",
+        "value": 26.2,
+        "display_val": "26.2%",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 -10.9% SOTA GAIN",
+    "radar_axes": [
+      "Accuracy",
+      "VRAM Utilization",
+      "Scalability",
+      "Latency",
+      "Throughput"
+    ]
+  },
+  "code_snippet": {
+    "filename": "parallel_conv.py",
+    "language": "python",
+    "lines": [
+      "def forward(x):",
+      "x_gpu0 = gpu_0_conv(x)",
+      "x_sync = sync_activations(x_gpu0)",
+      "return gpu_1_conv(x_sync)"
+    ],
+    "highlight_lines": [
+      2,
+      3
+    ],
+    "trace_register": "\u26a1 PARALLEL CONV KERNEL",
+    "explanation": "Synchronized layer splitting"
+  },
+  "arxiv_id": "alexnet_imagenet_2012",
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until AlexNet unlocks 10.9% throughput?",
+    "verdict": 67,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until AlexNet unlocks 10.9% throughput?",
+        "verdict": 67,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why is AlexNet a major breakthrough? Because how Alex Krizhevsky split 60 million parameters across two 3GB gaming GPUs using cross-GPU communication layers.",
+        "verdict": 65,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "How Alex Krizhevsky split 60 million parameters across two 3GB gaming GPUs using cross-GPU communication layers.",
+        "verdict": 65,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Did you know sixty million parameters couldn't fit into the three gigabytes of VRAM available on a single GTX 580?",
+        "verdict": 65,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: How Alex Krizhevsky split 60 million parameters across two 3GB gaming GPUs using cross-GPU communication layers.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "What happens when sixty million parameters couldn't fit into the three gigabytes of VRAM available on a single GTX 580?",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until AlexNet proved a 10.9% leap.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? AlexNet reveals the solution.",
+        "verdict": 56,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that AlexNet finally breaks.",
+        "verdict": 55,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Sixty million parameters couldn't fit into the three gigabytes of VRAM available on a single GTX 580.",
+        "verdict": 40,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 10.9% speedup using AlexNet.",
+        "verdict": 39,
+        "band": "WEAK",
+        "formula": "The Statistic"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "AlexNet (Parallel)",
+        "model_a_score": "15.3%",
+        "model_b_name": "Standard ConvNet",
+        "model_b_score": "26.2%",
+        "delta_label": "\u26a1 2x VRAM UTILIZATION"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "tvEKWmJG9-U",
+    "shorts_url": "https://youtube.com/shorts/tvEKWmJG9-U",
+    "studio_url": "https://studio.youtube.com/video/tvEKWmJG9-U/edit",
+    "title": "AlexNet Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/alexnet_dual_gpu_pipeline_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
