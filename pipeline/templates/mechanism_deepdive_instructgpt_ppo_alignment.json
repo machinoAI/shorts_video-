@@ -1,0 +1,1792 @@
+{
+  "id": "instructgpt_ppo_alignment",
+  "title": "InstructGPT: PPO & The KL Penalty",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "ALIGNMENT MECHANICS",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until InstructGPT unlocks 85% throughput?",
+      "visual_focus": "175B parameter network outputting corrupted, untruthful text when given a simple instruction.",
+      "highlight_words": {
+        "toxic hallucinations": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Giant LLM",
+        "action_verb": "spews",
+        "direct_object": "toxic hallucinations",
+        "anchor_word": "hallucinations",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "optimization_landscape",
+        "title": "THE SCALE PARADOX",
+        "sub": "175B base model failing human intent",
+        "accent_color": "#EF4444",
+        "params": {
+          "landscape_title": "Reward Gradient Descent",
+          "optima_label": "Human Preference Minima"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 67,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "optimization_landscape",
+        "title": "THE SCALE PARADOX",
+        "sub": "175B base model failing human intent",
+        "accent_color": "#EF4444",
+        "landscape_title": "Reward Gradient Descent",
+        "optima_label": "Human Preference Minima"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.44,
+      "duration": 6.44,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.015,
+          "end": 0.18,
+          "duration": 0.165,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.18,
+          "end": 0.51,
+          "duration": 0.33,
+          "frame_ahead_trigger": 0.14
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.51,
+          "end": 1.255,
+          "duration": 0.745,
+          "frame_ahead_trigger": 0.47
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.255,
+          "end": 1.43,
+          "duration": 0.175,
+          "frame_ahead_trigger": 1.215
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.43,
+          "end": 1.725,
+          "duration": 0.295,
+          "frame_ahead_trigger": 1.39
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 1.725,
+          "end": 2.055,
+          "duration": 0.33,
+          "frame_ahead_trigger": 1.685
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.055,
+          "end": 2.66,
+          "duration": 0.605,
+          "frame_ahead_trigger": 2.015
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 2.66,
+          "end": 3.23,
+          "duration": 0.57,
+          "frame_ahead_trigger": 2.62
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 3.23,
+          "end": 3.51,
+          "duration": 0.28,
+          "frame_ahead_trigger": 3.19
+        },
+        {
+          "word": "InstructGPT",
+          "clean_word": "instructgpt",
+          "phonemes": "\u026anst\u0279\u02c8\u028ckt d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0",
+          "start": 3.51,
+          "end": 4.725,
+          "duration": 1.215,
+          "frame_ahead_trigger": 3.47
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 4.725,
+          "end": 5.245,
+          "duration": 0.52,
+          "frame_ahead_trigger": 4.685
+        },
+        {
+          "word": "85%",
+          "clean_word": "85",
+          "phonemes": "\u02c8e\u026a\u027ei f\u02c8a\u026av",
+          "start": 5.245,
+          "end": 5.995,
+          "duration": 0.75,
+          "frame_ahead_trigger": 5.205
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 5.995,
+          "end": 6.35,
+          "duration": 0.355,
+          "frame_ahead_trigger": 5.955
+        }
+      ],
+      "audio_duration": 6.44,
+      "slot_duration": 6.59
+    },
+    {
+      "beat_id": 2,
+      "text": "Raw token prediction simply mimics internet chaos. Force it to maximize rewards without constraints. It quickly games the scoring function.",
+      "visual_focus": "Optimization curve diverging wildly off the manifold into high reward but nonsensical gibberish.",
+      "highlight_words": {
+        "reward-hacking": "#EF4444",
+        "mimics internet chaos": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Policy model",
+        "action_verb": "exploits",
+        "direct_object": "scoring function",
+        "anchor_word": "games",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "REWARD COLLAPSE",
+        "sub": "Unconstrained reinforcement learning drifting into gibberish",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "SFT Policy",
+          "stream_b_label": "Exploitative PPO",
+          "barrier_label": "The Reward Gap"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "REWARD COLLAPSE",
+        "sub": "Unconstrained reinforcement learning drifting into gibberish",
+        "accent_color": "#EF4444",
+        "stream_a_label": "SFT Policy",
+        "stream_b_label": "Exploitative PPO",
+        "barrier_label": "The Reward Gap"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.59,
+      "end": 14.49,
+      "duration": 7.89,
+      "word_timings": [
+        {
+          "word": "Raw",
+          "clean_word": "raw",
+          "phonemes": "\u0279\u02c8\u0254\u02d0",
+          "start": 6.603,
+          "end": 6.828,
+          "duration": 0.225,
+          "frame_ahead_trigger": 6.713
+        },
+        {
+          "word": "token",
+          "clean_word": "token",
+          "phonemes": "t\u02c8o\u028ak\u0259n",
+          "start": 6.828,
+          "end": 7.253,
+          "duration": 0.425,
+          "frame_ahead_trigger": 6.938
+        },
+        {
+          "word": "prediction",
+          "clean_word": "prediction",
+          "phonemes": "p\u0279\u026ad\u02c8\u026ak\u0283\u0259n",
+          "start": 7.253,
+          "end": 7.838,
+          "duration": 0.585,
+          "frame_ahead_trigger": 7.363
+        },
+        {
+          "word": "simply",
+          "clean_word": "simply",
+          "phonemes": "s\u02c8\u026ampli",
+          "start": 7.838,
+          "end": 8.248,
+          "duration": 0.41,
+          "frame_ahead_trigger": 7.948
+        },
+        {
+          "word": "mimics",
+          "clean_word": "mimics",
+          "phonemes": "m\u02c8\u026am\u026aks",
+          "start": 8.248,
+          "end": 8.593,
+          "duration": 0.345,
+          "frame_ahead_trigger": 8.358
+        },
+        {
+          "word": "internet",
+          "clean_word": "internet",
+          "phonemes": "\u02c8\u026ant\u025an\u02cc\u025bt",
+          "start": 8.593,
+          "end": 9.248,
+          "duration": 0.655,
+          "frame_ahead_trigger": 8.703
+        },
+        {
+          "word": "chaos.",
+          "clean_word": "chaos",
+          "phonemes": "k\u02c8e\u026a\u0251\u02d0s",
+          "start": 9.248,
+          "end": 9.556,
+          "duration": 0.308,
+          "frame_ahead_trigger": 9.358
+        },
+        {
+          "word": "Force",
+          "clean_word": "force",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s",
+          "start": 9.556,
+          "end": 9.988,
+          "duration": 0.432,
+          "frame_ahead_trigger": 9.666
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 9.988,
+          "end": 10.019,
+          "duration": 0.032,
+          "frame_ahead_trigger": 10.098
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 10.019,
+          "end": 10.233,
+          "duration": 0.213,
+          "frame_ahead_trigger": 10.129
+        },
+        {
+          "word": "maximize",
+          "clean_word": "maximize",
+          "phonemes": "m\u02c8\u00e6ks\u026am\u02cca\u026az",
+          "start": 10.233,
+          "end": 10.908,
+          "duration": 0.675,
+          "frame_ahead_trigger": 10.343
+        },
+        {
+          "word": "rewards",
+          "clean_word": "rewards",
+          "phonemes": "\u0279\u1d7bw\u02c8\u0254\u02d0\u0279dz",
+          "start": 10.908,
+          "end": 11.388,
+          "duration": 0.48,
+          "frame_ahead_trigger": 11.018
+        },
+        {
+          "word": "without",
+          "clean_word": "without",
+          "phonemes": "w\u026a\u00f0\u02c8a\u028at",
+          "start": 11.388,
+          "end": 11.698,
+          "duration": 0.31,
+          "frame_ahead_trigger": 11.498
+        },
+        {
+          "word": "constraints.",
+          "clean_word": "constraints",
+          "phonemes": "k\u0259nst\u0279\u02c8e\u026ants",
+          "start": 11.698,
+          "end": 12.452,
+          "duration": 0.754,
+          "frame_ahead_trigger": 11.808
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 12.452,
+          "end": 12.668,
+          "duration": 0.216,
+          "frame_ahead_trigger": 12.562
+        },
+        {
+          "word": "quickly",
+          "clean_word": "quickly",
+          "phonemes": "kw\u02c8\u026akli",
+          "start": 12.668,
+          "end": 12.958,
+          "duration": 0.29,
+          "frame_ahead_trigger": 12.778
+        },
+        {
+          "word": "games",
+          "clean_word": "games",
+          "phonemes": "\u0261\u02c8e\u026amz",
+          "start": 12.958,
+          "end": 13.32,
+          "duration": 0.363,
+          "frame_ahead_trigger": 13.068
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 13.32,
+          "end": 13.443,
+          "duration": 0.122,
+          "frame_ahead_trigger": 13.43
+        },
+        {
+          "word": "scoring",
+          "clean_word": "scoring",
+          "phonemes": "sk\u02c8\u0254\u02d0\u0279\u026a\u014b",
+          "start": 13.443,
+          "end": 14.003,
+          "duration": 0.56,
+          "frame_ahead_trigger": 13.553
+        },
+        {
+          "word": "function.",
+          "clean_word": "function",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259n",
+          "start": 14.003,
+          "end": 14.363,
+          "duration": 0.36,
+          "frame_ahead_trigger": 14.113
+        }
+      ],
+      "audio_duration": 7.89,
+      "slot_duration": 8.05
+    },
+    {
+      "beat_id": 3,
+      "text": "Enter InstructGPT. It scores outputs on human preferences. Then steers the policy with PPO locked to an elastic mathematical leash.",
+      "visual_focus": "Reward model routing rankings into a PPO trust-region loop with a glowing blue tension band.",
+      "highlight_words": {
+        "InstructGPT": "#10B981",
+        "elastic mathematical leash": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "InstructGPT",
+        "action_verb": "steers",
+        "direct_object": "policy network",
+        "anchor_word": "elastic",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "INSTRUCTGPT ARCHITECTURE",
+        "sub": "Reward model routing rankings into a PPO trust-region loop with a",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.png",
+          "arxiv_id": "2203.02155",
+          "title": "INSTRUCTGPT ARCHITECTURE",
+          "sub": "Reward model routing rankings into a PPO trust-region loop with a",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Metadata-With-Model-Size",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.png",
+        "arxiv_id": "2203.02155",
+        "title": "INSTRUCTGPT ARCHITECTURE",
+        "sub": "Reward model routing rankings into a PPO trust-region loop with a",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Metadata-With-Model-Size",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 14.64,
+      "end": 23.13,
+      "duration": 8.49,
+      "word_timings": [
+        {
+          "word": "Enter",
+          "clean_word": "enter",
+          "phonemes": "\u02c8\u025bnt\u025a",
+          "start": 14.646,
+          "end": 14.911,
+          "duration": 0.265,
+          "frame_ahead_trigger": 14.906
+        },
+        {
+          "word": "InstructGPT.",
+          "clean_word": "instructgpt",
+          "phonemes": "\u026anst\u0279\u02c8\u028ckt d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0",
+          "start": 14.911,
+          "end": 16.335,
+          "duration": 1.424,
+          "frame_ahead_trigger": 15.171
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 16.335,
+          "end": 16.541,
+          "duration": 0.206,
+          "frame_ahead_trigger": 16.595
+        },
+        {
+          "word": "scores",
+          "clean_word": "scores",
+          "phonemes": "sk\u02c8\u0254\u02d0\u0279z",
+          "start": 16.541,
+          "end": 16.901,
+          "duration": 0.36,
+          "frame_ahead_trigger": 16.801
+        },
+        {
+          "word": "outputs",
+          "clean_word": "outputs",
+          "phonemes": "\u02c8a\u028atp\u02cc\u028ats",
+          "start": 16.901,
+          "end": 17.331,
+          "duration": 0.43,
+          "frame_ahead_trigger": 17.161
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 17.331,
+          "end": 17.526,
+          "duration": 0.195,
+          "frame_ahead_trigger": 17.591
+        },
+        {
+          "word": "human",
+          "clean_word": "human",
+          "phonemes": "hj\u02c8u\u02d0m\u0259n",
+          "start": 17.526,
+          "end": 18.046,
+          "duration": 0.52,
+          "frame_ahead_trigger": 17.786
+        },
+        {
+          "word": "preferences.",
+          "clean_word": "preferences",
+          "phonemes": "p\u0279\u02c8\u025bf\u0279\u0259ns\u1d7bz",
+          "start": 18.046,
+          "end": 18.748,
+          "duration": 0.702,
+          "frame_ahead_trigger": 18.306
+        },
+        {
+          "word": "Then",
+          "clean_word": "then",
+          "phonemes": "\u00f0\u02c8\u025bn",
+          "start": 18.748,
+          "end": 19.026,
+          "duration": 0.278,
+          "frame_ahead_trigger": 19.008
+        },
+        {
+          "word": "steers",
+          "clean_word": "steers",
+          "phonemes": "st\u02c8\u026a\u0279z",
+          "start": 19.026,
+          "end": 19.301,
+          "duration": 0.275,
+          "frame_ahead_trigger": 19.286
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 19.301,
+          "end": 19.411,
+          "duration": 0.11,
+          "frame_ahead_trigger": 19.561
+        },
+        {
+          "word": "policy",
+          "clean_word": "policy",
+          "phonemes": "p\u02c8\u0251\u02d0l\u026asi",
+          "start": 19.411,
+          "end": 19.971,
+          "duration": 0.56,
+          "frame_ahead_trigger": 19.671
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 19.971,
+          "end": 20.131,
+          "duration": 0.16,
+          "frame_ahead_trigger": 20.231
+        },
+        {
+          "word": "PPO",
+          "clean_word": "ppo",
+          "phonemes": "p\u02cci\u02d0p\u02cci\u02d0\u02c8o\u028a",
+          "start": 20.131,
+          "end": 20.799,
+          "duration": 0.668,
+          "frame_ahead_trigger": 20.391
+        },
+        {
+          "word": "locked",
+          "clean_word": "locked",
+          "phonemes": "l\u02c8\u0251\u02d0kt",
+          "start": 20.799,
+          "end": 21.276,
+          "duration": 0.477,
+          "frame_ahead_trigger": 21.059
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 21.276,
+          "end": 21.342,
+          "duration": 0.066,
+          "frame_ahead_trigger": 21.536
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 21.342,
+          "end": 21.451,
+          "duration": 0.109,
+          "frame_ahead_trigger": 21.602
+        },
+        {
+          "word": "elastic",
+          "clean_word": "elastic",
+          "phonemes": "\u1d7bl\u02c8\u00e6st\u026ak",
+          "start": 21.451,
+          "end": 21.961,
+          "duration": 0.51,
+          "frame_ahead_trigger": 21.711
+        },
+        {
+          "word": "mathematical",
+          "clean_word": "mathematical",
+          "phonemes": "m\u02cc\u00e6\u03b8\u026am\u02c8\u00e6\u027e\u026ak\u0259l",
+          "start": 21.961,
+          "end": 22.741,
+          "duration": 0.78,
+          "frame_ahead_trigger": 22.221
+        },
+        {
+          "word": "leash.",
+          "clean_word": "leash",
+          "phonemes": "l\u02c8i\u02d0\u0283",
+          "start": 22.741,
+          "end": 23.031,
+          "duration": 0.29,
+          "frame_ahead_trigger": 23.001
+        }
+      ],
+      "audio_duration": 8.49,
+      "slot_duration": 8.64
+    },
+    {
+      "beat_id": 4,
+      "text": "Clipped surrogate objectives prevent destructive policy updates. A KL penalty mathematically punishes the model if it drifts from coherent language.",
+      "visual_focus": "Mathematical clamp bounding the probability ratio, tethered by an orange KL divergence penalty term.",
+      "highlight_words": {
+        "Clipped surrogate": "#38BDF8",
+        "KL penalty": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "KL penalty",
+        "action_verb": "punishes",
+        "direct_object": "policy drift",
+        "anchor_word": "tethered",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: INSTRUCTGPT: PPO &",
+        "sub": "Mathematical clamp bounding the probability ratio, tethered by an",
+        "params": {
+          "title": "KERNEL CODE: INSTRUCTGPT: PPO &",
+          "sub": "Mathematical clamp bounding the probability ratio, tethered by an",
+          "filename": "ppo_objective.py",
+          "language": "python",
+          "lines": [
+            "def ppo_loss(ratio, adv):",
+            "surr1 = ratio * adv",
+            "surr2 = torch.clamp(ratio, 1-eps, 1+eps) * adv",
+            "loss = -torch.min(surr1, surr2) + kl_penalty",
+            "return loss"
+          ],
+          "highlight_lines": [
+            2,
+            3
+          ],
+          "trace_register": "\u26a1 TRUST-REGION CONSTRAINED OPTIMIZATION",
+          "delta_badge": "Clipped objective prevents policy collapse"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: INSTRUCTGPT: PPO &",
+        "sub": "Mathematical clamp bounding the probability ratio, tethered by an",
+        "filename": "ppo_objective.py",
+        "language": "python",
+        "lines": [
+          "def ppo_loss(ratio, adv):",
+          "surr1 = ratio * adv",
+          "surr2 = torch.clamp(ratio, 1-eps, 1+eps) * adv",
+          "loss = -torch.min(surr1, surr2) + kl_penalty",
+          "return loss"
+        ],
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "trace_register": "\u26a1 TRUST-REGION CONSTRAINED OPTIMIZATION",
+        "delta_badge": "Clipped objective prevents policy collapse"
+      },
+      "start": 23.28,
+      "end": 31.55,
+      "duration": 8.28,
+      "word_timings": [
+        {
+          "word": "Clipped",
+          "clean_word": "clipped",
+          "phonemes": "kl\u02c8\u026apt",
+          "start": 23.277,
+          "end": 23.637,
+          "duration": 0.36,
+          "frame_ahead_trigger": 23.687
+        },
+        {
+          "word": "surrogate",
+          "clean_word": "surrogate",
+          "phonemes": "s\u02c8\u025c\u02d0\u0279\u0259\u0261\u0259t",
+          "start": 23.637,
+          "end": 24.197,
+          "duration": 0.56,
+          "frame_ahead_trigger": 24.047
+        },
+        {
+          "word": "objectives",
+          "clean_word": "objectives",
+          "phonemes": "\u0251\u02d0bd\u0292\u02c8\u025bkt\u026avz",
+          "start": 24.197,
+          "end": 24.777,
+          "duration": 0.58,
+          "frame_ahead_trigger": 24.607
+        },
+        {
+          "word": "prevent",
+          "clean_word": "prevent",
+          "phonemes": "p\u0279\u026av\u02c8\u025bnt",
+          "start": 24.777,
+          "end": 25.292,
+          "duration": 0.515,
+          "frame_ahead_trigger": 25.187
+        },
+        {
+          "word": "destructive",
+          "clean_word": "destructive",
+          "phonemes": "d\u1d7bst\u0279\u02c8\u028ckt\u026av",
+          "start": 25.292,
+          "end": 25.872,
+          "duration": 0.58,
+          "frame_ahead_trigger": 25.702
+        },
+        {
+          "word": "policy",
+          "clean_word": "policy",
+          "phonemes": "p\u02c8\u0251\u02d0l\u026asi",
+          "start": 25.872,
+          "end": 26.242,
+          "duration": 0.37,
+          "frame_ahead_trigger": 26.282
+        },
+        {
+          "word": "updates.",
+          "clean_word": "updates",
+          "phonemes": "\u02c8\u028cpde\u026ats",
+          "start": 26.242,
+          "end": 26.805,
+          "duration": 0.563,
+          "frame_ahead_trigger": 26.652
+        },
+        {
+          "word": "A",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 26.805,
+          "end": 27.037,
+          "duration": 0.232,
+          "frame_ahead_trigger": 27.215
+        },
+        {
+          "word": "KL",
+          "clean_word": "kl",
+          "phonemes": "k\u02cce\u026a\u02c8\u025bl",
+          "start": 27.037,
+          "end": 27.327,
+          "duration": 0.29,
+          "frame_ahead_trigger": 27.447
+        },
+        {
+          "word": "penalty",
+          "clean_word": "penalty",
+          "phonemes": "p\u02c8\u025bn\u0259l\u027ei",
+          "start": 27.327,
+          "end": 27.842,
+          "duration": 0.515,
+          "frame_ahead_trigger": 27.737
+        },
+        {
+          "word": "mathematically",
+          "clean_word": "mathematically",
+          "phonemes": "m\u02cc\u00e6\u03b8\u026am\u02c8\u00e6\u027e\u026akli",
+          "start": 27.842,
+          "end": 28.597,
+          "duration": 0.755,
+          "frame_ahead_trigger": 28.252
+        },
+        {
+          "word": "punishes",
+          "clean_word": "punishes",
+          "phonemes": "p\u02c8\u028cn\u026a\u0283\u1d7bz",
+          "start": 28.597,
+          "end": 28.972,
+          "duration": 0.375,
+          "frame_ahead_trigger": 29.007
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 28.972,
+          "end": 29.122,
+          "duration": 0.15,
+          "frame_ahead_trigger": 29.382
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 29.122,
+          "end": 29.612,
+          "duration": 0.49,
+          "frame_ahead_trigger": 29.532
+        },
+        {
+          "word": "if",
+          "clean_word": "if",
+          "phonemes": "\u026af",
+          "start": 29.612,
+          "end": 29.651,
+          "duration": 0.039,
+          "frame_ahead_trigger": 30.022
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 29.651,
+          "end": 29.732,
+          "duration": 0.081,
+          "frame_ahead_trigger": 30.061
+        },
+        {
+          "word": "drifts",
+          "clean_word": "drifts",
+          "phonemes": "d\u0279\u02c8\u026afts",
+          "start": 29.732,
+          "end": 30.182,
+          "duration": 0.45,
+          "frame_ahead_trigger": 30.142
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 30.182,
+          "end": 30.317,
+          "duration": 0.135,
+          "frame_ahead_trigger": 30.592
+        },
+        {
+          "word": "coherent",
+          "clean_word": "coherent",
+          "phonemes": "ko\u028ah\u02c8\u026a\u0279\u0259nt",
+          "start": 30.317,
+          "end": 30.962,
+          "duration": 0.645,
+          "frame_ahead_trigger": 30.727
+        },
+        {
+          "word": "language.",
+          "clean_word": "language",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292",
+          "start": 30.962,
+          "end": 31.472,
+          "duration": 0.51,
+          "frame_ahead_trigger": 31.372
+        }
+      ],
+      "audio_duration": 8.28,
+      "slot_duration": 8.42
+    },
+    {
+      "beat_id": 5,
+      "text": "The result? A tiny 1.3-billion parameter InstructGPT destroys the unaligned 175-billion giant with an eighty-five percent human preference rate.",
+      "visual_focus": "Horizontal bars comparing 1.3B InstructGPT against 175B GPT-3 baseline.",
+      "highlight_words": {
+        "eighty-five percent": "#10B981",
+        "100x fewer parameters": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "InstructGPT 1.3B",
+        "action_verb": "outperforms",
+        "direct_object": "GPT-3 175B",
+        "anchor_word": "preference",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: PREFERENCE",
+        "sub": "Horizontal bars comparing 1.3B InstructGPT against",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: PREFERENCE",
+          "sub": "Horizontal bars comparing 1.3B InstructGPT against",
+          "metric_name": "Human Preference Win Rate",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "InstructGPT",
+              "value": 85.0,
+              "display_val": "85%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "GPT-3 Baseline",
+              "value": 15.0,
+              "display_val": "15%",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +70% ALIGNMENT GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: PREFERENCE",
+        "sub": "Horizontal bars comparing 1.3B InstructGPT against",
+        "metric_name": "Human Preference Win Rate",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "InstructGPT",
+            "value": 85.0,
+            "display_val": "85%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "GPT-3 Baseline",
+            "value": 15.0,
+            "display_val": "15%",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +70% ALIGNMENT GAIN"
+      },
+      "start": 31.7,
+      "end": 42.07,
+      "duration": 10.37,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 31.719,
+          "end": 31.899,
+          "duration": 0.18,
+          "frame_ahead_trigger": 32.279
+        },
+        {
+          "word": "result?",
+          "clean_word": "result",
+          "phonemes": "\u0279\u026az\u02c8\u028clt",
+          "start": 31.899,
+          "end": 32.251,
+          "duration": 0.352,
+          "frame_ahead_trigger": 32.459
+        },
+        {
+          "word": "A",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 32.251,
+          "end": 32.429,
+          "duration": 0.177,
+          "frame_ahead_trigger": 32.811
+        },
+        {
+          "word": "tiny",
+          "clean_word": "tiny",
+          "phonemes": "t\u02c8a\u026ani",
+          "start": 32.429,
+          "end": 32.684,
+          "duration": 0.255,
+          "frame_ahead_trigger": 32.989
+        },
+        {
+          "word": "1.3-billion",
+          "clean_word": "13billion",
+          "phonemes": "\u03b8\u02c8\u025c\u02d0ti\u02d0n b\u02c8\u026ali\u0259n",
+          "start": 32.684,
+          "end": 33.799,
+          "duration": 1.115,
+          "frame_ahead_trigger": 33.244
+        },
+        {
+          "word": "parameter",
+          "clean_word": "parameter",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025a",
+          "start": 33.799,
+          "end": 34.174,
+          "duration": 0.375,
+          "frame_ahead_trigger": 34.359
+        },
+        {
+          "word": "InstructGPT",
+          "clean_word": "instructgpt",
+          "phonemes": "\u026anst\u0279\u02c8\u028ckt d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0",
+          "start": 34.174,
+          "end": 35.644,
+          "duration": 1.47,
+          "frame_ahead_trigger": 34.734
+        },
+        {
+          "word": "destroys",
+          "clean_word": "destroys",
+          "phonemes": "d\u1d7bst\u0279\u02c8\u0254\u026az",
+          "start": 35.644,
+          "end": 36.234,
+          "duration": 0.59,
+          "frame_ahead_trigger": 36.204
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 36.234,
+          "end": 36.274,
+          "duration": 0.04,
+          "frame_ahead_trigger": 36.794
+        },
+        {
+          "word": "unaligned",
+          "clean_word": "unaligned",
+          "phonemes": "\u028cn\u0250l\u02c8a\u026and",
+          "start": 36.274,
+          "end": 36.804,
+          "duration": 0.53,
+          "frame_ahead_trigger": 36.834
+        },
+        {
+          "word": "175-billion",
+          "clean_word": "175billion",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad s\u02c8\u025bv\u0259nti f\u02c8a\u026av b\u02c8\u026ali\u0259n",
+          "start": 36.804,
+          "end": 38.794,
+          "duration": 1.99,
+          "frame_ahead_trigger": 37.364
+        },
+        {
+          "word": "giant",
+          "clean_word": "giant",
+          "phonemes": "d\u0292\u02c8a\u026a\u0259nt",
+          "start": 38.794,
+          "end": 39.351,
+          "duration": 0.557,
+          "frame_ahead_trigger": 39.354
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 39.351,
+          "end": 39.528,
+          "duration": 0.177,
+          "frame_ahead_trigger": 39.911
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 39.528,
+          "end": 39.659,
+          "duration": 0.131,
+          "frame_ahead_trigger": 40.088
+        },
+        {
+          "word": "eighty-five",
+          "clean_word": "eightyfive",
+          "phonemes": "\u02cce\u026a\u027e\u026af\u02c8a\u026av",
+          "start": 39.659,
+          "end": 40.314,
+          "duration": 0.655,
+          "frame_ahead_trigger": 40.219
+        },
+        {
+          "word": "percent",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 40.314,
+          "end": 40.664,
+          "duration": 0.35,
+          "frame_ahead_trigger": 40.874
+        },
+        {
+          "word": "human",
+          "clean_word": "human",
+          "phonemes": "hj\u02c8u\u02d0m\u0259n",
+          "start": 40.664,
+          "end": 41.009,
+          "duration": 0.345,
+          "frame_ahead_trigger": 41.224
+        },
+        {
+          "word": "preference",
+          "clean_word": "preference",
+          "phonemes": "p\u0279\u02c8\u025bf\u0279\u0259ns",
+          "start": 41.009,
+          "end": 41.719,
+          "duration": 0.71,
+          "frame_ahead_trigger": 41.569
+        },
+        {
+          "word": "rate.",
+          "clean_word": "rate",
+          "phonemes": "\u0279\u02c8e\u026at",
+          "start": 41.719,
+          "end": 41.954,
+          "duration": 0.235,
+          "frame_ahead_trigger": 42.279
+        }
+      ],
+      "audio_duration": 10.37,
+      "slot_duration": 10.52
+    },
+    {
+      "beat_id": 6,
+      "text": "Smart alignment beats brute parameter scale. Follow machinoAI for daily engineering deep-dives into how modern models actually work.",
+      "visual_focus": "Chalkboard brand lockup with circular radar plot showing truthfulness, helpfulness, and safety.",
+      "highlight_words": {
+        "machinoAI": "#10B981"
+      },
+      "svo_action": {
+        "subject": "machinoAI",
+        "action_verb": "decodes",
+        "direct_object": "frontier architectures",
+        "anchor_word": "follow",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "radar_pareto_plot",
+        "title": "THE ALIGNMENT PARETO",
+        "sub": "Helpfulness, truthfulness, and safety combined",
+        "accent_color": "#10B981",
+        "params": {
+          "axes": [
+            "Helpfulness",
+            "Truthfulness",
+            "Low Toxicity",
+            "Alignment",
+            "Efficiency"
+          ],
+          "hero_scores": [
+            0.92,
+            0.88,
+            0.9,
+            0.85,
+            0.95
+          ],
+          "baseline_scores": [
+            0.35,
+            0.3,
+            0.4,
+            0.15,
+            0.2
+          ]
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 42.22,
+      "end": 49.86,
+      "duration": 7.64,
+      "word_timings": [
+        {
+          "word": "Smart",
+          "clean_word": "smart",
+          "phonemes": "sm\u02c8\u0251\u02d0\u0279t",
+          "start": 42.247,
+          "end": 42.652,
+          "duration": 0.405,
+          "frame_ahead_trigger": 42.957
+        },
+        {
+          "word": "alignment",
+          "clean_word": "alignment",
+          "phonemes": "\u0250l\u02c8a\u026anm\u0259nt",
+          "start": 42.652,
+          "end": 43.167,
+          "duration": 0.515,
+          "frame_ahead_trigger": 43.362
+        },
+        {
+          "word": "beats",
+          "clean_word": "beats",
+          "phonemes": "b\u02c8i\u02d0ts",
+          "start": 43.167,
+          "end": 43.602,
+          "duration": 0.435,
+          "frame_ahead_trigger": 43.877
+        },
+        {
+          "word": "brute",
+          "clean_word": "brute",
+          "phonemes": "b\u0279\u02c8u\u02d0t",
+          "start": 43.602,
+          "end": 43.737,
+          "duration": 0.135,
+          "frame_ahead_trigger": 44.312
+        },
+        {
+          "word": "parameter",
+          "clean_word": "parameter",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025a",
+          "start": 43.737,
+          "end": 44.217,
+          "duration": 0.48,
+          "frame_ahead_trigger": 44.447
+        },
+        {
+          "word": "scale.",
+          "clean_word": "scale",
+          "phonemes": "sk\u02c8e\u026al",
+          "start": 44.217,
+          "end": 44.628,
+          "duration": 0.411,
+          "frame_ahead_trigger": 44.927
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 44.628,
+          "end": 44.962,
+          "duration": 0.334,
+          "frame_ahead_trigger": 45.338
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 44.962,
+          "end": 45.862,
+          "duration": 0.9,
+          "frame_ahead_trigger": 45.672
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 45.862,
+          "end": 46.09,
+          "duration": 0.228,
+          "frame_ahead_trigger": 46.572
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 46.09,
+          "end": 46.422,
+          "duration": 0.332,
+          "frame_ahead_trigger": 46.8
+        },
+        {
+          "word": "engineering",
+          "clean_word": "engineering",
+          "phonemes": "\u02cc\u025bnd\u0292\u026an\u02c8\u026a\u0279\u026a\u014b",
+          "start": 46.422,
+          "end": 47.162,
+          "duration": 0.74,
+          "frame_ahead_trigger": 47.132
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 47.162,
+          "end": 47.492,
+          "duration": 0.33,
+          "frame_ahead_trigger": 47.872
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 47.492,
+          "end": 47.832,
+          "duration": 0.34,
+          "frame_ahead_trigger": 48.202
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 47.832,
+          "end": 48.027,
+          "duration": 0.195,
+          "frame_ahead_trigger": 48.542
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 48.027,
+          "end": 48.412,
+          "duration": 0.385,
+          "frame_ahead_trigger": 48.737
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 48.412,
+          "end": 48.817,
+          "duration": 0.405,
+          "frame_ahead_trigger": 49.122
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 48.817,
+          "end": 49.387,
+          "duration": 0.57,
+          "frame_ahead_trigger": 49.527
+        },
+        {
+          "word": "work.",
+          "clean_word": "work",
+          "phonemes": "w\u02c8\u025c\u02d0k",
+          "start": 49.387,
+          "end": 49.662,
+          "duration": 0.275,
+          "frame_ahead_trigger": 50.097
+        }
+      ],
+      "audio_duration": 7.64,
+      "slot_duration": 7.64
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\mathcal{R}(\\theta) = \\mathbb{E}_{t \\sim \\pi_{\\theta}}[r(x_t, y_t)]$",
+      "filename": "instructgpt_ppo_alignment_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "r",
+          "label": "Reward Function"
+        },
+        {
+          "term": "pi",
+          "label": "Policy Weights"
+        }
+      ],
+      "svg_filename": "instructgpt_ppo_alignment_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\nabla_{\\theta} J = \\mathbb{E}[\\frac{\\pi_{\\theta}}{\\pi_{\\mathrm{old}}} A_t]$",
+      "filename": "instructgpt_ppo_alignment_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "A_t",
+          "label": "Advantage Estimate"
+        },
+        {
+          "term": "theta",
+          "label": "Model Policy"
+        }
+      ],
+      "svg_filename": "instructgpt_ppo_alignment_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$L^{CLIP} = \\min(r_t \\hat{A}_t, \\mathrm{clip}(r_t, 1-\\epsilon, 1+\\epsilon) \\hat{A}_t)$",
+      "filename": "instructgpt_ppo_alignment_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "epsilon",
+          "label": "Trust Region Bound"
+        }
+      ],
+      "svg_filename": "instructgpt_ppo_alignment_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{KL}(\\pi_{\\theta} || \\pi_{\\mathrm{ref}}) = \\sum \\pi_{\\theta} \\log \\frac{\\pi_{\\theta}}{\\pi_{\\mathrm{ref}}}$",
+      "filename": "instructgpt_ppo_alignment_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "pi_ref",
+          "label": "Reference SFT Policy"
+        }
+      ],
+      "svg_filename": "instructgpt_ppo_alignment_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Perf}_{1.3B} > \\mathrm{Perf}_{175B}$",
+      "filename": "instructgpt_ppo_alignment_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "Perf",
+          "label": "Human Preference Rate"
+        }
+      ],
+      "svg_filename": "instructgpt_ppo_alignment_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "REWARD",
+          "color": "#38BDF8",
+          "items": [
+            "User Prompt",
+            "Preference Rank"
+          ]
+        },
+        {
+          "name": "POLICY",
+          "color": "#10B981",
+          "items": [
+            "Actor",
+            "Critic",
+            "Weights"
+          ]
+        },
+        {
+          "name": "PENALTY",
+          "color": "#F59E0B",
+          "items": [
+            "KL-Div",
+            "Trust Clip"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Prompt",
+        "target_cluster": "REWARD",
+        "token": "human_feedback"
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Greedy Opt",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Policy Collapse",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "InstructGPT",
+    "model_a_specs": [
+      "1.3B Parameters",
+      "PPO-Alignment",
+      "RLHF Training"
+    ],
+    "model_b": "GPT-3",
+    "model_b_specs": [
+      "175B Parameters",
+      "Standard SFT",
+      "Pretrained"
+    ],
+    "divide_title": "ALIGNMENT VS SCALE DIVIDE",
+    "model_a_stat": "85% Win",
+    "model_a_stat_label": "Human Preference",
+    "model_b_stat": "15% Win",
+    "model_b_stat_label": "Human Preference",
+    "efficiency_badge": "\u26a1 100x Parameter Gap",
+    "benchmarks": [
+      {
+        "name": "Helpfulness",
+        "score_a": "High",
+        "score_b": "Baseline"
+      },
+      {
+        "name": "Truthfulness",
+        "score_a": "Improvement",
+        "score_b": "Standard"
+      },
+      {
+        "name": "Toxicity",
+        "score_a": "Reduced",
+        "score_b": "Baseline"
+      }
+    ],
+    "scale_metric": "100x",
+    "scale_label": "Parameter Efficiency",
+    "bottleneck_title": "POLICY COLLAPSE",
+    "bottleneck_desc": "Unbounded reward exploitation",
+    "solution_title": "PPO TRUST REGION",
+    "solution_components": "KL-Divergence Anchors",
+    "mechanism_title": "POLICY RATIO CLIPPING",
+    "payoff_stat": "85%",
+    "payoff_label": "HUMAN PREFERENCE",
+    "payoff_sub": "1.3B InstructGPT vs 175B GPT-3",
+    "payoff_hero_stat": 85.0,
+    "payoff_hero_label": "InstructGPT Preference",
+    "payoff_base_stat": 15.0,
+    "payoff_base_label": "GPT-3 Baseline",
+    "payoff_delta_badge": "\u26a1 +70% PREFERENCE GAIN",
+    "challenger": "InstructGPT",
+    "incumbent": "GPT-3"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: PREFERENCE",
+    "metric_name": "Human Preference Win Rate",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "InstructGPT",
+        "value": 85.0,
+        "display_val": "85%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "GPT-3 Baseline",
+        "value": 15.0,
+        "display_val": "15%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +70% ALIGNMENT GAIN",
+    "radar_axes": [
+      "Helpfulness",
+      "Truthfulness",
+      "Low Toxicity",
+      "Alignment",
+      "Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "ppo_objective.py",
+    "language": "python",
+    "lines": [
+      "def ppo_loss(ratio, adv):",
+      "surr1 = ratio * adv",
+      "surr2 = torch.clamp(ratio, 1-eps, 1+eps) * adv",
+      "loss = -torch.min(surr1, surr2) + kl_penalty",
+      "return loss"
+    ],
+    "highlight_lines": [
+      2,
+      3
+    ],
+    "trace_register": "\u26a1 TRUST-REGION CONSTRAINED OPTIMIZATION",
+    "explanation": "Clipped objective prevents policy collapse"
+  },
+  "arxiv_id": "2203.02155",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "metadata-with-model-size",
+      "caption": "Metadata-With-Model-Size",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/metadata-with-model-size.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "academic-evals-v-episodes",
+      "caption": "Academic-Evals-V-Episodes",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/academic-evals-v-episodes.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_2_academic-evals-v-episodes.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_2_academic-evals-v-episodes.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "academic-evals-v-pretrain-loss",
+      "caption": "Academic-Evals-V-Pretrain-Loss",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/academic-evals-v-pretrain-loss.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_3_academic-evals-v-pretrain-loss.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_3_academic-evals-v-pretrain-loss.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "academic-evals-v-kl",
+      "caption": "Academic-Evals-V-Kl",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/academic-evals-v-kl.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_4_academic-evals-v-kl.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_4_academic-evals-v-kl.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "human-evals-v-lrs",
+      "caption": "Human-Evals-V-Lrs",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/human-evals-v-lrs.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_5_human-evals-v-lrs.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_5_human-evals-v-lrs.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 8.7,
+    "final_retention_hook_score": 9.0,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "The hook was super punchy\u2014saying a 175B model still spews garbage got me immediately. The stat at the end about a 1.3B model beating a 175B model is wild. My only gripe is in Beat 4: 'clipped surrogate objectives' sounds like you copy-pasted directly from John Schulman's PPO paper abstract. It momentarily broke my flow, even though the next sentence about the KL penalty made total sense."
+  },
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until InstructGPT unlocks 85% throughput?",
+    "verdict": 67,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until InstructGPT unlocks 85% throughput?",
+        "verdict": 67,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until InstructGPT proved a 85% leap.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Why is InstructGPT a major breakthrough? Because making language models bigger does not inherently make them better at following a user's intent.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? InstructGPT reveals the solution.",
+        "verdict": 56,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Making language models bigger does not inherently make them better at following a user's intent.",
+        "verdict": 55,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that InstructGPT finally breaks.",
+        "verdict": 55,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Did you know a giant one-hundred-seventy-five billion parameter language model will still spew toxic hallucinations on basic instructions?",
+        "verdict": 53,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until InstructGPT proved: for example, large language models can generate outputs that are untruthful, toxic, or simply not helpful to the user.",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "What happens when a giant one-hundred-seventy-five billion parameter language model will still spew toxic hallucinations on basic instructions?",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 85% speedup using InstructGPT.",
+        "verdict": 39,
+        "band": "WEAK",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "A giant one-hundred-seventy-five billion parameter language model will still spew toxic hallucinations on basic instructions.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "InstructGPT",
+        "model_a_score": "85% Win",
+        "model_b_name": "GPT-3",
+        "model_b_score": "15% Win",
+        "delta_label": "\u26a1 100x Parameter Gap"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "GkzrnpuDCn4",
+    "shorts_url": "https://youtube.com/shorts/GkzrnpuDCn4",
+    "studio_url": "https://studio.youtube.com/video/GkzrnpuDCn4/edit",
+    "title": "InstructGPT Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/instructgpt_ppo_alignment_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
