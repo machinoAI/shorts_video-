@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-09 | **Timestamp:** 2026-11-09 07:07:34 UTC
+**Date:** 2026-11-09 | **Timestamp:** 2026-11-09 21:37:21 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 3 - The Online Softmax Breakthrough: Exact Normalization Without Storing N x N Matrices
-- **Topic Queue Part:** `goat_flashattention_part_3` (arXiv: [2205.14135](https://arxiv.org/abs/2205.14135))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/jwNYLjxu3Qk](https://youtube.com/shorts/jwNYLjxu3Qk) (`jwNYLjxu3Qk`)
-- **High-CTR Poster:** [flashattention_online_softmax_poster.png](public/thumbnails/flashattention_online_softmax_poster.png)
+### Reel 1: Word2Vec: Semantic Vector Spaces: Part 3 - Distributed Vector Algebra: The Magic of King - Man + Woman = Queen
+- **Topic Queue Part:** `goat_word2vec_part_3` (arXiv: [1301.3781](https://arxiv.org/abs/1301.3781))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/VVKrhzQRRSM](https://youtube.com/shorts/VVKrhzQRRSM) (`VVKrhzQRRSM`)
+- **High-CTR Poster:** [word2vec_semantic_algebra_poster.png](public/thumbnails/word2vec_semantic_algebra_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: FlashAttention: Fast & Memory-Efficient Exact Attention Mini-Series 3/5: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 3 - The Online Softmax Breakthrough: Exact Normalization Without Storing N x N Matrices*
-- **Everyday Analogy:** *The clever mathematical reformulation of the softmax normalization constant that allows exact attention output accumulation across incremental tiles.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_flashattention_online_softmax_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: Word2Vec: Semantic Vector Spaces Mini-Series 3/5: Word2Vec: Semantic Vector Spaces: Part 3 - Distributed Vector Algebra: The Magic of King - Man + Woman = Queen*
+- **Everyday Analogy:** *How linear vector offsets in a 300-dimensional space encode abstract semantic, syntactic, and relational concepts without explicit supervision.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_word2vec_semantic_algebra_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
