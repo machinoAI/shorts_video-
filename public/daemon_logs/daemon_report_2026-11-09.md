@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-09 | **Timestamp:** 2026-11-09 21:37:21 UTC
+**Date:** 2026-11-09 | **Timestamp:** 2026-11-09 22:41:10 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Word2Vec: Semantic Vector Spaces: Part 3 - Distributed Vector Algebra: The Magic of King - Man + Woman = Queen
-- **Topic Queue Part:** `goat_word2vec_part_3` (arXiv: [1301.3781](https://arxiv.org/abs/1301.3781))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/VVKrhzQRRSM](https://youtube.com/shorts/VVKrhzQRRSM) (`VVKrhzQRRSM`)
-- **High-CTR Poster:** [word2vec_semantic_algebra_poster.png](public/thumbnails/word2vec_semantic_algebra_poster.png)
+### Reel 1: Deep Q-Networks (DQN): Deep Reinforcement Learning: Part 3 - Experience Replay and Target Networks: Taming Deadly Feedback Instabilities
+- **Topic Queue Part:** `goat_dqn_part_3` (arXiv: [1312.5602](https://arxiv.org/abs/1312.5602))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/O9qIf-3bk2A](https://youtube.com/shorts/O9qIf-3bk2A) (`O9qIf-3bk2A`)
+- **High-CTR Poster:** [dqn_experience_replay_poster.png](public/thumbnails/dqn_experience_replay_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: Word2Vec: Semantic Vector Spaces Mini-Series 3/5: Word2Vec: Semantic Vector Spaces: Part 3 - Distributed Vector Algebra: The Magic of King - Man + Woman = Queen*
-- **Everyday Analogy:** *How linear vector offsets in a 300-dimensional space encode abstract semantic, syntactic, and relational concepts without explicit supervision.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_word2vec_semantic_algebra_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: Deep Q-Networks (DQN): Deep Reinforcement Learning Mini-Series 3/5: Deep Q-Networks (DQN): Deep Reinforcement Learning: Part 3 - Experience Replay and Target Networks: Taming Deadly Feedback Instabilities*
+- **Everyday Analogy:** *How randomizing historical transitions from an experience replay buffer breaks temporal correlation, and fixed target weights prevent runaway divergence.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_dqn_experience_replay_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
