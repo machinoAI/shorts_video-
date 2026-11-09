@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-09 | **Timestamp:** 2026-11-09 02:57:13 UTC
+**Date:** 2026-11-09 | **Timestamp:** 2026-11-09 07:07:34 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Scaling Laws for Neural Language Models: Part 3 - The Overfitting Mirage: Why Larger Models Are Always More Sample-Efficient
-- **Topic Queue Part:** `goat_scaling_laws_part_3` (arXiv: [2001.08361](https://arxiv.org/abs/2001.08361))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/Gvhb3JJwe1I](https://youtube.com/shorts/Gvhb3JJwe1I) (`Gvhb3JJwe1I`)
-- **High-CTR Poster:** [scaling_laws_overfitting_mirage_poster.png](public/thumbnails/scaling_laws_overfitting_mirage_poster.png)
+### Reel 1: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 3 - The Online Softmax Breakthrough: Exact Normalization Without Storing N x N Matrices
+- **Topic Queue Part:** `goat_flashattention_part_3` (arXiv: [2205.14135](https://arxiv.org/abs/2205.14135))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/jwNYLjxu3Qk](https://youtube.com/shorts/jwNYLjxu3Qk) (`jwNYLjxu3Qk`)
+- **High-CTR Poster:** [flashattention_online_softmax_poster.png](public/thumbnails/flashattention_online_softmax_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: Scaling Laws for Neural Language Models Mini-Series 3/5: Scaling Laws for Neural Language Models: Part 3 - The Overfitting Mirage: Why Larger Models Are Always More Sample-Efficient*
-- **Everyday Analogy:** *Proving mathematically that bigger models achieve lower cross-entropy loss with fewer training tokens and fewer optimization steps than smaller models.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_scaling_laws_overfitting_mirage_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: FlashAttention: Fast & Memory-Efficient Exact Attention Mini-Series 3/5: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 3 - The Online Softmax Breakthrough: Exact Normalization Without Storing N x N Matrices*
+- **Everyday Analogy:** *The clever mathematical reformulation of the softmax normalization constant that allows exact attention output accumulation across incremental tiles.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_flashattention_online_softmax_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
