@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-10 | **Timestamp:** 2026-11-10 07:43:16 UTC
+**Date:** 2026-11-10 | **Timestamp:** 2026-11-10 18:49:26 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Vision Transformer (ViT): Attention for Visual Recognition: Part 3 - Global Self-Attention Across Pixels: Why Patch Mixing Beats Local Receptive Fields
-- **Topic Queue Part:** `goat_vit_part_3` (arXiv: [2010.11929](https://arxiv.org/abs/2010.11929))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/yZ9PWhAYf00](https://youtube.com/shorts/yZ9PWhAYf00) (`yZ9PWhAYf00`)
-- **High-CTR Poster:** [vit_vision_transformer_global_attention_poster.png](public/thumbnails/vit_vision_transformer_global_attention_poster.png)
+### Reel 1: CLIP: Contrastive Language-Image Pretraining: Part 3 - Zero-Shot Visual Inference: Classifying Any Object by Prompting Text Encoders
+- **Topic Queue Part:** `goat_clip_part_3` (arXiv: [2103.00020](https://arxiv.org/abs/2103.00020))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/brU1qMd8OQI](https://youtube.com/shorts/brU1qMd8OQI) (`brU1qMd8OQI`)
+- **High-CTR Poster:** [clip_zero_shot_inference_poster.png](public/thumbnails/clip_zero_shot_inference_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: Vision Transformer (ViT): Attention for Visual Recognition Mini-Series 3/5: Vision Transformer (ViT): Attention for Visual Recognition: Part 3 - Global Self-Attention Across Pixels: Why Patch Mixing Beats Local Receptive Fields*
-- **Everyday Analogy:** *How self-attention allows early visual layers to integrate context from opposite corners of the image instantly, unlike CNNs that expand slowly across layers.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_vit_vision_transformer_global_attention_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: CLIP: Contrastive Language-Image Pretraining Mini-Series 3/5: CLIP: Contrastive Language-Image Pretraining: Part 3 - Zero-Shot Visual Inference: Classifying Any Object by Prompting Text Encoders*
+- **Everyday Analogy:** *How prompting the text encoder with 'a photo of a {label}' allows instant visual classification across thousands of unseen categories without fine-tuning.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_clip_zero_shot_inference_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
