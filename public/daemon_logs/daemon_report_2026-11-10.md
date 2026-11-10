@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-10 | **Timestamp:** 2026-11-10 04:59:21 UTC
+**Date:** 2026-11-10 | **Timestamp:** 2026-11-10 07:43:16 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: BERT: Deep Bidirectional Transformers: Part 3 - Next Sentence Prediction & Cross-Attention: Teaching Transformers Inter-Sentence Cohesion
-- **Topic Queue Part:** `goat_bert_part_3` (arXiv: [1810.04805](https://arxiv.org/abs/1810.04805))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/wFQuREh5vPY](https://youtube.com/shorts/wFQuREh5vPY) (`wFQuREh5vPY`)
-- **High-CTR Poster:** [bert_nsp_cross_attention_poster.png](public/thumbnails/bert_nsp_cross_attention_poster.png)
+### Reel 1: Vision Transformer (ViT): Attention for Visual Recognition: Part 3 - Global Self-Attention Across Pixels: Why Patch Mixing Beats Local Receptive Fields
+- **Topic Queue Part:** `goat_vit_part_3` (arXiv: [2010.11929](https://arxiv.org/abs/2010.11929))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/yZ9PWhAYf00](https://youtube.com/shorts/yZ9PWhAYf00) (`yZ9PWhAYf00`)
+- **High-CTR Poster:** [vit_vision_transformer_global_attention_poster.png](public/thumbnails/vit_vision_transformer_global_attention_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `mechanism_deepdive`
-- **Editorial Hook:** *GOAT Papers: BERT: Deep Bidirectional Transformers Mini-Series 3/5: BERT: Deep Bidirectional Transformers: Part 3 - Next Sentence Prediction & Cross-Attention: Teaching Transformers Inter-Sentence Cohesion*
-- **Everyday Analogy:** *Training multi-task objectives on sentence pair relationships [CLS] A [SEP] B [SEP] to power complex reading comprehension and semantic entailment.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_bert_nsp_cross_attention_mechanism_deepdive.mp4`
+- **Editorial Hook:** *GOAT Papers: Vision Transformer (ViT): Attention for Visual Recognition Mini-Series 3/5: Vision Transformer (ViT): Attention for Visual Recognition: Part 3 - Global Self-Attention Across Pixels: Why Patch Mixing Beats Local Receptive Fields*
+- **Everyday Analogy:** *How self-attention allows early visual layers to integrate context from opposite corners of the image instantly, unlike CNNs that expand slowly across layers.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_vit_vision_transformer_global_attention_mechanism_deepdive.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
