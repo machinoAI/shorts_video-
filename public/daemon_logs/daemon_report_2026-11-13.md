@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-13 | **Timestamp:** 2026-11-13 07:12:46 UTC
+**Date:** 2026-11-13 | **Timestamp:** 2026-11-13 18:43:10 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: GANs: Generative Adversarial Networks: Part 4 - The Photorealism Revolution: From 28x28 MNIST Blobs to High-Res Face Synthesis
-- **Topic Queue Part:** `goat_gans_part_4` (arXiv: [1406.2661](https://arxiv.org/abs/1406.2661))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/PLTdf_giWfU](https://youtube.com/shorts/PLTdf_giWfU) (`PLTdf_giWfU`)
-- **High-CTR Poster:** [gans_photorealism_revolution_poster.png](public/thumbnails/gans_photorealism_revolution_poster.png)
+### Reel 1: DDPM: Denoising Diffusion Probabilistic Models: Part 4 - Toppling GANs on ImageNet: Lower FID Scores and True Distribution Coverage
+- **Topic Queue Part:** `goat_ddpm_part_4` (arXiv: [2006.11239](https://arxiv.org/abs/2006.11239))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/20uW75Rd8zg](https://youtube.com/shorts/20uW75Rd8zg) (`20uW75Rd8zg`)
+- **High-CTR Poster:** [ddpm_diffusion_breakdown_poster.png](public/thumbnails/ddpm_diffusion_breakdown_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `benchmark_news`
-- **Editorial Hook:** *GOAT Papers: GANs: Generative Adversarial Networks Mini-Series 4/5: GANs: Generative Adversarial Networks: Part 4 - The Photorealism Revolution: From 28x28 MNIST Blobs to High-Res Face Synthesis*
-- **Everyday Analogy:** *The progression through DCGAN, WGAN, and StyleGAN that produced faces indistinguishable from real human photographs.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_gans_photorealism_revolution_benchmark_news.mp4`
+- **Editorial Hook:** *GOAT Papers: DDPM: Denoising Diffusion Probabilistic Models Mini-Series 4/5: DDPM: Denoising Diffusion Probabilistic Models: Part 4 - Toppling GANs on ImageNet: Lower FID Scores and True Distribution Coverage*
+- **Everyday Analogy:** *The landmark empirical demonstration that diffusion models achieve superior Fréchet Inception Distance without mode collapse.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_ddpm_diffusion_breakdown_benchmark_news.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
