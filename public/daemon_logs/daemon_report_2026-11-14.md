@@ -1,17 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-14 | **Timestamp:** 2026-11-14 03:31:56 UTC
+**Date:** 2026-11-14 | **Timestamp:** 2026-11-14 06:59:33 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Scaling Laws for Neural Language Models: Part 4 - Predicting Frontier Performance Across 4 Orders of Magnitude: The Billion-Dollar Graph
-- **Topic Queue Part:** `goat_scaling_laws_part_4` (arXiv: [2001.08361](https://arxiv.org/abs/2001.08361))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/2RcbcRy9HMs](https://youtube.com/shorts/2RcbcRy9HMs) (`2RcbcRy9HMs`)
-- **High-CTR Poster:** [scaling_laws_prediction_poster.png](public/thumbnails/scaling_laws_prediction_poster.png)
+### Reel 1: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 4 - The 4x Speedup: Slashing Training Time and Unlocking 64K to 1M Context Windows
+- **Topic Queue Part:** `goat_flashattention_part_4` (arXiv: [2205.14135](https://arxiv.org/abs/2205.14135))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/Gj4vjqQEhOA](https://youtube.com/shorts/Gj4vjqQEhOA) (`Gj4vjqQEhOA`)
+- **High-CTR Poster:** [flashattention_speedup_poster.png](public/thumbnails/flashattention_speedup_poster.png)
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `benchmark_news`
-- **Editorial Hook:** *GOAT Papers: Scaling Laws for Neural Language Models Mini-Series 4/5: Scaling Laws for Neural Language Models: Part 4 - Predicting Frontier Performance Across 4 Orders of Magnitude: The Billion-Dollar Graph*
-- **Everyday Analogy:** *How small-scale compute runs accurately predicted the exact performance curves of multi-thousand GPU clusters months before training completed.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_scaling_laws_prediction_benchmark_news.mp4`
+- **Editorial Hook:** *GOAT Papers: FlashAttention: Fast & Memory-Efficient Exact Attention Mini-Series 4/5: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 4 - The 4x Speedup: Slashing Training Time and Unlocking 64K to 1M Context Windows*
+- **Everyday Analogy:** *Benchmarking FlashAttention across BERT, GPT-2, and long-sequence models, proving 2-4x end-to-end wall-clock speedups with zero loss in mathematical precision.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_flashattention_speedup_benchmark_news.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
