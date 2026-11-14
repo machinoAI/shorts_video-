@@ -1,0 +1,1676 @@
+{
+  "id": "dqn_breakout_tunnel",
+  "title": "DQN: The Atari Breakout Tunnel",
+  "category": "benchmark_news",
+  "domain_taxonomy": "algorithmic_search",
+  "hook_tag": "AGENT STRATEGY BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Deep Q-Networks didn't just play Breakout; they hallucinated a shortcut by tunneling through the wall to win.",
+      "visual_focus": "Grid visualization of the Breakout wall decaying as the agent identifies the exploit.",
+      "highlight_words": {
+        "tunneling": "#34D399",
+        "hallucinated": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Deep Q-Network",
+        "action_verb": "pierces",
+        "direct_object": "pixelated geometry",
+        "anchor_word": "tunneling",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "STRATEGY DISCOVERY",
+        "sub": "Recursive search through state space",
+        "accent_color": "#34D399",
+        "params": {
+          "root_label": "Pixel Input",
+          "optimal_label": "Tunnel Route",
+          "pruned_label": "Failed Paths"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 56,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "tree_hierarchy",
+        "title": "STRATEGY DISCOVERY",
+        "sub": "Recursive search through state space",
+        "accent_color": "#34D399",
+        "root_label": "Pixel Input",
+        "optimal_label": "Tunnel Route",
+        "pruned_label": "Failed Paths"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.65,
+      "duration": 5.65,
+      "word_timings": [
+        {
+          "word": "Deep",
+          "clean_word": "deep",
+          "phonemes": "d\u02c8i\u02d0p",
+          "start": 0.01,
+          "end": 0.195,
+          "duration": 0.185,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "Q-Networks",
+          "clean_word": "qnetworks",
+          "phonemes": "kj\u02c8u\u02d0 n\u02c8\u025btw\u025c\u02d0ks",
+          "start": 0.195,
+          "end": 1.09,
+          "duration": 0.895,
+          "frame_ahead_trigger": 0.155
+        },
+        {
+          "word": "didn't",
+          "clean_word": "didnt",
+          "phonemes": "d\u02c8\u026adnt",
+          "start": 1.09,
+          "end": 1.265,
+          "duration": 0.175,
+          "frame_ahead_trigger": 1.05
+        },
+        {
+          "word": "just",
+          "clean_word": "just",
+          "phonemes": "d\u0292\u02c8\u028cst",
+          "start": 1.265,
+          "end": 1.565,
+          "duration": 0.3,
+          "frame_ahead_trigger": 1.225
+        },
+        {
+          "word": "play",
+          "clean_word": "play",
+          "phonemes": "pl\u02c8e\u026a",
+          "start": 1.565,
+          "end": 1.914,
+          "duration": 0.349,
+          "frame_ahead_trigger": 1.525
+        },
+        {
+          "word": "Breakout;",
+          "clean_word": "breakout",
+          "phonemes": "b\u0279\u02c8e\u026aka\u028at",
+          "start": 1.914,
+          "end": 2.47,
+          "duration": 0.556,
+          "frame_ahead_trigger": 1.874
+        },
+        {
+          "word": "they",
+          "clean_word": "they",
+          "phonemes": "\u00f0e\u026a",
+          "start": 2.47,
+          "end": 2.531,
+          "duration": 0.061,
+          "frame_ahead_trigger": 2.43
+        },
+        {
+          "word": "hallucinated",
+          "clean_word": "hallucinated",
+          "phonemes": "h\u0250l\u02c8u\u02d0s\u1d7bn\u02cce\u026a\u027e\u1d7bd",
+          "start": 2.531,
+          "end": 3.34,
+          "duration": 0.809,
+          "frame_ahead_trigger": 2.491
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 3.34,
+          "end": 3.545,
+          "duration": 0.205,
+          "frame_ahead_trigger": 3.3
+        },
+        {
+          "word": "shortcut",
+          "clean_word": "shortcut",
+          "phonemes": "\u0283\u02c8\u0254\u02d0\u0279tk\u028ct",
+          "start": 3.545,
+          "end": 3.855,
+          "duration": 0.31,
+          "frame_ahead_trigger": 3.505
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 3.855,
+          "end": 4.125,
+          "duration": 0.27,
+          "frame_ahead_trigger": 3.815
+        },
+        {
+          "word": "tunneling",
+          "clean_word": "tunneling",
+          "phonemes": "t\u02c8\u028cn\u0259l\u026a\u014b",
+          "start": 4.125,
+          "end": 4.5,
+          "duration": 0.375,
+          "frame_ahead_trigger": 4.085
+        },
+        {
+          "word": "through",
+          "clean_word": "through",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0",
+          "start": 4.5,
+          "end": 4.825,
+          "duration": 0.325,
+          "frame_ahead_trigger": 4.46
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 4.825,
+          "end": 4.898,
+          "duration": 0.073,
+          "frame_ahead_trigger": 4.785
+        },
+        {
+          "word": "wall",
+          "clean_word": "wall",
+          "phonemes": "w\u02c8\u0254\u02d0l",
+          "start": 4.898,
+          "end": 5.125,
+          "duration": 0.227,
+          "frame_ahead_trigger": 4.858
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 5.125,
+          "end": 5.275,
+          "duration": 0.15,
+          "frame_ahead_trigger": 5.085
+        },
+        {
+          "word": "win.",
+          "clean_word": "win",
+          "phonemes": "w\u02c8\u026an",
+          "start": 5.275,
+          "end": 5.515,
+          "duration": 0.24,
+          "frame_ahead_trigger": 5.235
+        }
+      ],
+      "audio_duration": 5.65,
+      "slot_duration": 5.8
+    },
+    {
+      "beat_id": 2,
+      "text": "The bottleneck is a credit assignment disaster; the model can't tell if that brick break causes future reward or pure entropy.",
+      "visual_focus": "Energy landscape showing a flat, confused basin with random noise.",
+      "highlight_words": {
+        "credit assignment": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Reward Signal",
+        "action_verb": "collapses",
+        "direct_object": "temporal horizon",
+        "anchor_word": "bottleneck",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "optimization_landscape",
+        "title": "CREDIT BOTTLENECK",
+        "sub": "Temporal horizon confusion",
+        "accent_color": "#EF4444",
+        "params": {
+          "landscape_title": "Reward Entropy",
+          "optima_label": "Hidden Strategy"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "optimization_landscape",
+        "title": "CREDIT BOTTLENECK",
+        "sub": "Temporal horizon confusion",
+        "accent_color": "#EF4444",
+        "landscape_title": "Reward Entropy",
+        "optima_label": "Hidden Strategy"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 5.8,
+      "end": 12.57,
+      "duration": 6.76,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 5.813,
+          "end": 5.888,
+          "duration": 0.075,
+          "frame_ahead_trigger": 5.923
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 5.888,
+          "end": 6.518,
+          "duration": 0.63,
+          "frame_ahead_trigger": 5.998
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 6.518,
+          "end": 6.623,
+          "duration": 0.105,
+          "frame_ahead_trigger": 6.628
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 6.623,
+          "end": 6.853,
+          "duration": 0.23,
+          "frame_ahead_trigger": 6.733
+        },
+        {
+          "word": "credit",
+          "clean_word": "credit",
+          "phonemes": "k\u0279\u02c8\u025bd\u026at",
+          "start": 6.853,
+          "end": 7.158,
+          "duration": 0.305,
+          "frame_ahead_trigger": 6.963
+        },
+        {
+          "word": "assignment",
+          "clean_word": "assignment",
+          "phonemes": "\u0250s\u02c8a\u026anm\u0259nt",
+          "start": 7.158,
+          "end": 7.848,
+          "duration": 0.69,
+          "frame_ahead_trigger": 7.268
+        },
+        {
+          "word": "disaster;",
+          "clean_word": "disaster",
+          "phonemes": "d\u026az\u02c8\u00e6st\u025a",
+          "start": 7.848,
+          "end": 8.252,
+          "duration": 0.404,
+          "frame_ahead_trigger": 7.958
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 8.252,
+          "end": 8.428,
+          "duration": 0.176,
+          "frame_ahead_trigger": 8.362
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 8.428,
+          "end": 8.823,
+          "duration": 0.395,
+          "frame_ahead_trigger": 8.538
+        },
+        {
+          "word": "can't",
+          "clean_word": "cant",
+          "phonemes": "k\u02c8\u00e6nt",
+          "start": 8.823,
+          "end": 9.098,
+          "duration": 0.275,
+          "frame_ahead_trigger": 8.933
+        },
+        {
+          "word": "tell",
+          "clean_word": "tell",
+          "phonemes": "t\u02c8\u025bl",
+          "start": 9.098,
+          "end": 9.353,
+          "duration": 0.255,
+          "frame_ahead_trigger": 9.208
+        },
+        {
+          "word": "if",
+          "clean_word": "if",
+          "phonemes": "\u026af",
+          "start": 9.353,
+          "end": 9.386,
+          "duration": 0.033,
+          "frame_ahead_trigger": 9.463
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 9.386,
+          "end": 9.518,
+          "duration": 0.132,
+          "frame_ahead_trigger": 9.496
+        },
+        {
+          "word": "brick",
+          "clean_word": "brick",
+          "phonemes": "b\u0279\u02c8\u026ak",
+          "start": 9.518,
+          "end": 9.988,
+          "duration": 0.47,
+          "frame_ahead_trigger": 9.628
+        },
+        {
+          "word": "break",
+          "clean_word": "break",
+          "phonemes": "b\u0279\u02c8e\u026ak",
+          "start": 9.988,
+          "end": 10.278,
+          "duration": 0.29,
+          "frame_ahead_trigger": 10.098
+        },
+        {
+          "word": "causes",
+          "clean_word": "causes",
+          "phonemes": "k\u02c8\u0254\u02d0z\u1d7bz",
+          "start": 10.278,
+          "end": 10.613,
+          "duration": 0.335,
+          "frame_ahead_trigger": 10.388
+        },
+        {
+          "word": "future",
+          "clean_word": "future",
+          "phonemes": "fj\u02c8u\u02d0t\u0283\u025a",
+          "start": 10.613,
+          "end": 11.068,
+          "duration": 0.455,
+          "frame_ahead_trigger": 10.723
+        },
+        {
+          "word": "reward",
+          "clean_word": "reward",
+          "phonemes": "\u0279\u1d7bw\u02c8\u0254\u02d0\u0279d",
+          "start": 11.068,
+          "end": 11.513,
+          "duration": 0.445,
+          "frame_ahead_trigger": 11.178
+        },
+        {
+          "word": "or",
+          "clean_word": "or",
+          "phonemes": "\u0254\u02d0\u0279",
+          "start": 11.513,
+          "end": 11.753,
+          "duration": 0.24,
+          "frame_ahead_trigger": 11.623
+        },
+        {
+          "word": "pure",
+          "clean_word": "pure",
+          "phonemes": "pj\u02c8\u028a\u0279",
+          "start": 11.753,
+          "end": 11.995,
+          "duration": 0.241,
+          "frame_ahead_trigger": 11.863
+        },
+        {
+          "word": "entropy.",
+          "clean_word": "entropy",
+          "phonemes": "\u02c8\u025bnt\u0279\u0259pi",
+          "start": 11.995,
+          "end": 12.448,
+          "duration": 0.454,
+          "frame_ahead_trigger": 12.105
+        }
+      ],
+      "audio_duration": 6.76,
+      "slot_duration": 6.92
+    },
+    {
+      "beat_id": 3,
+      "text": "The Q-network architecture solves this by mapping raw frames into a massive, stable value function through convolutional layers.",
+      "visual_focus": "Convolutional filters passing over pixels to build spatial representations.",
+      "highlight_words": {
+        "Q-network": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Conv-Layers",
+        "action_verb": "refracts",
+        "direct_object": "spatial features",
+        "anchor_word": "mapping",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "DQN ARCHITECTURE",
+        "sub": "Convolutional filters passing over pixels to build spatial repres",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_1_seaquest_average_reward.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_1_seaquest_average_reward.png",
+          "arxiv_id": "1312.5602",
+          "title": "DQN ARCHITECTURE",
+          "sub": "Convolutional filters passing over pixels to build spatial repres",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Seaquest Average Reward",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_1_seaquest_average_reward.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_1_seaquest_average_reward.png",
+        "arxiv_id": "1312.5602",
+        "title": "DQN ARCHITECTURE",
+        "sub": "Convolutional filters passing over pixels to build spatial repres",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Seaquest Average Reward",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 12.72,
+      "end": 20.01,
+      "duration": 7.3,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 12.721,
+          "end": 12.796,
+          "duration": 0.075,
+          "frame_ahead_trigger": 12.981
+        },
+        {
+          "word": "Q-network",
+          "clean_word": "qnetwork",
+          "phonemes": "kj\u02c8u\u02d0n\u02c8\u025btw\u025c\u02d0k",
+          "start": 12.796,
+          "end": 13.631,
+          "duration": 0.835,
+          "frame_ahead_trigger": 13.056
+        },
+        {
+          "word": "architecture",
+          "clean_word": "architecture",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025a",
+          "start": 13.631,
+          "end": 14.401,
+          "duration": 0.77,
+          "frame_ahead_trigger": 13.891
+        },
+        {
+          "word": "solves",
+          "clean_word": "solves",
+          "phonemes": "s\u02c8\u0251\u02d0lvz",
+          "start": 14.401,
+          "end": 14.721,
+          "duration": 0.32,
+          "frame_ahead_trigger": 14.661
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 14.721,
+          "end": 15.096,
+          "duration": 0.375,
+          "frame_ahead_trigger": 14.981
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 15.096,
+          "end": 15.201,
+          "duration": 0.105,
+          "frame_ahead_trigger": 15.356
+        },
+        {
+          "word": "mapping",
+          "clean_word": "mapping",
+          "phonemes": "m\u02c8\u00e6p\u026a\u014b",
+          "start": 15.201,
+          "end": 15.616,
+          "duration": 0.415,
+          "frame_ahead_trigger": 15.461
+        },
+        {
+          "word": "raw",
+          "clean_word": "raw",
+          "phonemes": "\u0279\u02c8\u0254\u02d0",
+          "start": 15.616,
+          "end": 15.886,
+          "duration": 0.27,
+          "frame_ahead_trigger": 15.876
+        },
+        {
+          "word": "frames",
+          "clean_word": "frames",
+          "phonemes": "f\u0279\u02c8e\u026amz",
+          "start": 15.886,
+          "end": 16.256,
+          "duration": 0.37,
+          "frame_ahead_trigger": 16.146
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 16.256,
+          "end": 16.501,
+          "duration": 0.245,
+          "frame_ahead_trigger": 16.516
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 16.501,
+          "end": 16.701,
+          "duration": 0.2,
+          "frame_ahead_trigger": 16.761
+        },
+        {
+          "word": "massive,",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 16.701,
+          "end": 17.036,
+          "duration": 0.335,
+          "frame_ahead_trigger": 16.961
+        },
+        {
+          "word": "stable",
+          "clean_word": "stable",
+          "phonemes": "st\u02c8e\u026ab\u0259l",
+          "start": 17.036,
+          "end": 17.526,
+          "duration": 0.49,
+          "frame_ahead_trigger": 17.296
+        },
+        {
+          "word": "value",
+          "clean_word": "value",
+          "phonemes": "v\u02c8\u00e6lju\u02d0",
+          "start": 17.526,
+          "end": 17.936,
+          "duration": 0.41,
+          "frame_ahead_trigger": 17.786
+        },
+        {
+          "word": "function",
+          "clean_word": "function",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259n",
+          "start": 17.936,
+          "end": 18.399,
+          "duration": 0.463,
+          "frame_ahead_trigger": 18.196
+        },
+        {
+          "word": "through",
+          "clean_word": "through",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0",
+          "start": 18.399,
+          "end": 18.751,
+          "duration": 0.352,
+          "frame_ahead_trigger": 18.659
+        },
+        {
+          "word": "convolutional",
+          "clean_word": "convolutional",
+          "phonemes": "k\u0251\u02d0nv\u0259l\u02c8u\u02d0\u0283\u0259n\u0259l",
+          "start": 18.751,
+          "end": 19.461,
+          "duration": 0.71,
+          "frame_ahead_trigger": 19.011
+        },
+        {
+          "word": "layers.",
+          "clean_word": "layers",
+          "phonemes": "l\u02c8e\u026a\u025az",
+          "start": 19.461,
+          "end": 19.921,
+          "duration": 0.46,
+          "frame_ahead_trigger": 19.721
+        }
+      ],
+      "audio_duration": 7.3,
+      "slot_duration": 7.44
+    },
+    {
+      "beat_id": 4,
+      "text": "By iteratively updating Q-values using experience replay, the network freezes temporal variance into a reliable, long-term strategic map.",
+      "visual_focus": "Experience buffer filling with trajectory sequences that re-train the model weights.",
+      "highlight_words": {
+        "experience replay": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Replay Buffer",
+        "action_verb": "normalizes",
+        "direct_object": "weight distributions",
+        "anchor_word": "experience",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: DQN: THE ATARI BRE",
+        "sub": "Experience buffer filling with trajectory sequences that re-train",
+        "params": {
+          "title": "KERNEL CODE: DQN: THE ATARI BRE",
+          "sub": "Experience buffer filling with trajectory sequences that re-train",
+          "filename": "dqn_step.py",
+          "language": "python",
+          "lines": [
+            "def get_action(state):",
+            "q_vals = model.forward(state)",
+            "action = torch.argmax(q_vals)",
+            "return action"
+          ],
+          "highlight_lines": [
+            2,
+            3
+          ],
+          "trace_register": "\u26a1 POLICY EXECUTION",
+          "delta_badge": "Argmax over learned Q-values"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: DQN: THE ATARI BRE",
+        "sub": "Experience buffer filling with trajectory sequences that re-train",
+        "filename": "dqn_step.py",
+        "language": "python",
+        "lines": [
+          "def get_action(state):",
+          "q_vals = model.forward(state)",
+          "action = torch.argmax(q_vals)",
+          "return action"
+        ],
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "trace_register": "\u26a1 POLICY EXECUTION",
+        "delta_badge": "Argmax over learned Q-values"
+      },
+      "start": 20.16,
+      "end": 28.46,
+      "duration": 8.3,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 20.167,
+          "end": 20.407,
+          "duration": 0.24,
+          "frame_ahead_trigger": 20.577
+        },
+        {
+          "word": "iteratively",
+          "clean_word": "iteratively",
+          "phonemes": "\u02c8\u026a\u027e\u025a\u0279\u0259t\u02cc\u026avli",
+          "start": 20.407,
+          "end": 21.097,
+          "duration": 0.69,
+          "frame_ahead_trigger": 20.817
+        },
+        {
+          "word": "updating",
+          "clean_word": "updating",
+          "phonemes": "\u028cpd\u02c8e\u026a\u027e\u026a\u014b",
+          "start": 21.097,
+          "end": 21.607,
+          "duration": 0.51,
+          "frame_ahead_trigger": 21.507
+        },
+        {
+          "word": "Q-values",
+          "clean_word": "qvalues",
+          "phonemes": "kj\u02c8u\u02d0v\u02c8\u00e6lju\u02d0z",
+          "start": 21.607,
+          "end": 22.427,
+          "duration": 0.82,
+          "frame_ahead_trigger": 22.017
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 22.427,
+          "end": 22.748,
+          "duration": 0.321,
+          "frame_ahead_trigger": 22.837
+        },
+        {
+          "word": "experience",
+          "clean_word": "experience",
+          "phonemes": "\u025bksp\u02c8i\u0259\u0279\u026a\u0259ns",
+          "start": 22.748,
+          "end": 23.436,
+          "duration": 0.688,
+          "frame_ahead_trigger": 23.158
+        },
+        {
+          "word": "replay,",
+          "clean_word": "replay",
+          "phonemes": "\u0279\u02c8i\u02d0ple\u026a",
+          "start": 23.436,
+          "end": 23.912,
+          "duration": 0.476,
+          "frame_ahead_trigger": 23.846
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 23.912,
+          "end": 24.077,
+          "duration": 0.165,
+          "frame_ahead_trigger": 24.322
+        },
+        {
+          "word": "network",
+          "clean_word": "network",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0k",
+          "start": 24.077,
+          "end": 24.587,
+          "duration": 0.51,
+          "frame_ahead_trigger": 24.487
+        },
+        {
+          "word": "freezes",
+          "clean_word": "freezes",
+          "phonemes": "f\u0279\u02c8i\u02d0z\u1d7bz",
+          "start": 24.587,
+          "end": 25.027,
+          "duration": 0.44,
+          "frame_ahead_trigger": 24.997
+        },
+        {
+          "word": "temporal",
+          "clean_word": "temporal",
+          "phonemes": "t\u02c8\u025bmp\u025a\u0279\u0259l",
+          "start": 25.027,
+          "end": 25.444,
+          "duration": 0.417,
+          "frame_ahead_trigger": 25.437
+        },
+        {
+          "word": "variance",
+          "clean_word": "variance",
+          "phonemes": "v\u02c8\u025b\u0279i\u0259ns",
+          "start": 25.444,
+          "end": 25.847,
+          "duration": 0.403,
+          "frame_ahead_trigger": 25.854
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 25.847,
+          "end": 26.177,
+          "duration": 0.33,
+          "frame_ahead_trigger": 26.257
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 26.177,
+          "end": 26.387,
+          "duration": 0.21,
+          "frame_ahead_trigger": 26.587
+        },
+        {
+          "word": "reliable,",
+          "clean_word": "reliable",
+          "phonemes": "\u0279\u1d7bl\u02c8a\u026a\u0259b\u0259l",
+          "start": 26.387,
+          "end": 27.032,
+          "duration": 0.645,
+          "frame_ahead_trigger": 26.797
+        },
+        {
+          "word": "long-term",
+          "clean_word": "longterm",
+          "phonemes": "l\u02c8\u0254\u014bt\u025c\u02d0m",
+          "start": 27.032,
+          "end": 27.492,
+          "duration": 0.46,
+          "frame_ahead_trigger": 27.442
+        },
+        {
+          "word": "strategic",
+          "clean_word": "strategic",
+          "phonemes": "st\u0279\u0259t\u02c8i\u02d0d\u0292\u026ak",
+          "start": 27.492,
+          "end": 28.072,
+          "duration": 0.58,
+          "frame_ahead_trigger": 27.902
+        },
+        {
+          "word": "map.",
+          "clean_word": "map",
+          "phonemes": "m\u02c8\u00e6p",
+          "start": 28.072,
+          "end": 28.312,
+          "duration": 0.24,
+          "frame_ahead_trigger": 28.482
+        }
+      ],
+      "audio_duration": 8.3,
+      "slot_duration": 8.45
+    },
+    {
+      "beat_id": 5,
+      "text": "The result is a performance spike that leaves human expert baselines behind on seven distinct arcade environment benchmarks.",
+      "visual_focus": "Benchmark bar chart showing DQN outperforming human records.",
+      "highlight_words": {
+        "performance spike": "#34D399"
+      },
+      "svo_action": {
+        "subject": "DQN Model",
+        "action_verb": "surpasses",
+        "direct_object": "human expert",
+        "anchor_word": "spike",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN",
+        "sub": "Benchmark bar chart showing DQN outperforming human",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN",
+          "sub": "Benchmark bar chart showing DQN outperforming human",
+          "metric_name": "Game Success Rate",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "DQN",
+              "value": 90.0,
+              "display_val": "90%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Baseline",
+              "value": 40.0,
+              "display_val": "40%",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +50% SUCCESS"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN",
+        "sub": "Benchmark bar chart showing DQN outperforming human",
+        "metric_name": "Game Success Rate",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "DQN",
+            "value": 90.0,
+            "display_val": "90%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Baseline",
+            "value": 40.0,
+            "display_val": "40%",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +50% SUCCESS"
+      },
+      "start": 28.61,
+      "end": 35.71,
+      "duration": 7.1,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 28.621,
+          "end": 28.686,
+          "duration": 0.065,
+          "frame_ahead_trigger": 29.181
+        },
+        {
+          "word": "result",
+          "clean_word": "result",
+          "phonemes": "\u0279\u026az\u02c8\u028clt",
+          "start": 28.686,
+          "end": 29.156,
+          "duration": 0.47,
+          "frame_ahead_trigger": 29.246
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 29.156,
+          "end": 29.271,
+          "duration": 0.115,
+          "frame_ahead_trigger": 29.716
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 29.271,
+          "end": 29.446,
+          "duration": 0.175,
+          "frame_ahead_trigger": 29.831
+        },
+        {
+          "word": "performance",
+          "clean_word": "performance",
+          "phonemes": "p\u025af\u02c8\u0254\u02d0\u0279m\u0259ns",
+          "start": 29.446,
+          "end": 30.014,
+          "duration": 0.568,
+          "frame_ahead_trigger": 30.006
+        },
+        {
+          "word": "spike",
+          "clean_word": "spike",
+          "phonemes": "sp\u02c8a\u026ak",
+          "start": 30.014,
+          "end": 30.421,
+          "duration": 0.407,
+          "frame_ahead_trigger": 30.574
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 30.421,
+          "end": 30.536,
+          "duration": 0.115,
+          "frame_ahead_trigger": 30.981
+        },
+        {
+          "word": "leaves",
+          "clean_word": "leaves",
+          "phonemes": "l\u02c8i\u02d0vz",
+          "start": 30.536,
+          "end": 30.921,
+          "duration": 0.385,
+          "frame_ahead_trigger": 31.096
+        },
+        {
+          "word": "human",
+          "clean_word": "human",
+          "phonemes": "hj\u02c8u\u02d0m\u0259n",
+          "start": 30.921,
+          "end": 31.351,
+          "duration": 0.43,
+          "frame_ahead_trigger": 31.481
+        },
+        {
+          "word": "expert",
+          "clean_word": "expert",
+          "phonemes": "\u02c8\u025bksp\u025c\u02d0t",
+          "start": 31.351,
+          "end": 31.716,
+          "duration": 0.365,
+          "frame_ahead_trigger": 31.911
+        },
+        {
+          "word": "baselines",
+          "clean_word": "baselines",
+          "phonemes": "b\u02c8e\u026asla\u026anz",
+          "start": 31.716,
+          "end": 32.354,
+          "duration": 0.638,
+          "frame_ahead_trigger": 32.276
+        },
+        {
+          "word": "behind",
+          "clean_word": "behind",
+          "phonemes": "b\u1d7bh\u02c8a\u026and",
+          "start": 32.354,
+          "end": 32.886,
+          "duration": 0.532,
+          "frame_ahead_trigger": 32.914
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 32.886,
+          "end": 32.966,
+          "duration": 0.081,
+          "frame_ahead_trigger": 33.446
+        },
+        {
+          "word": "seven",
+          "clean_word": "seven",
+          "phonemes": "s\u02c8\u025bv\u0259n",
+          "start": 32.966,
+          "end": 33.311,
+          "duration": 0.344,
+          "frame_ahead_trigger": 33.526
+        },
+        {
+          "word": "distinct",
+          "clean_word": "distinct",
+          "phonemes": "d\u026ast\u02c8\u026a\u014bkt",
+          "start": 33.311,
+          "end": 33.802,
+          "duration": 0.491,
+          "frame_ahead_trigger": 33.871
+        },
+        {
+          "word": "arcade",
+          "clean_word": "arcade",
+          "phonemes": "\u0251\u02d0\u0279k\u02c8e\u026ad",
+          "start": 33.802,
+          "end": 34.316,
+          "duration": 0.514,
+          "frame_ahead_trigger": 34.362
+        },
+        {
+          "word": "environment",
+          "clean_word": "environment",
+          "phonemes": "\u025bnv\u02c8a\u026a\u0279\u0259nm\u0259nt",
+          "start": 34.316,
+          "end": 35.036,
+          "duration": 0.72,
+          "frame_ahead_trigger": 34.876
+        },
+        {
+          "word": "benchmarks.",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 35.036,
+          "end": 35.641,
+          "duration": 0.605,
+          "frame_ahead_trigger": 35.596
+        }
+      ],
+      "audio_duration": 7.1,
+      "slot_duration": 7.25
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into the algorithms that define the frontier of intelligent machine autonomy.",
+      "visual_focus": "A glowing loop connecting the start and end of the tunnel strategy.",
+      "highlight_words": {
+        "frontier": "#FFFFFF"
+      },
+      "svo_action": {
+        "subject": "System Controller",
+        "action_verb": "loops",
+        "direct_object": "strategic memory",
+        "anchor_word": "loops",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "CONTINUOUS LEARNING",
+        "sub": "Closing the loop on intelligence",
+        "accent_color": "#FFFFFF",
+        "params": {
+          "input_1_label": "Sensory Data",
+          "input_2_label": "Strategy Logic",
+          "fused_label": "Autonomous Policy"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 35.86,
+      "end": 42.71,
+      "duration": 6.85,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 35.88,
+          "end": 36.285,
+          "duration": 0.405,
+          "frame_ahead_trigger": 36.59
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 36.285,
+          "end": 37.275,
+          "duration": 0.99,
+          "frame_ahead_trigger": 36.995
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 37.275,
+          "end": 37.45,
+          "duration": 0.175,
+          "frame_ahead_trigger": 37.985
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 37.45,
+          "end": 37.775,
+          "duration": 0.325,
+          "frame_ahead_trigger": 38.16
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 37.775,
+          "end": 38.32,
+          "duration": 0.545,
+          "frame_ahead_trigger": 38.485
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 38.32,
+          "end": 38.655,
+          "duration": 0.335,
+          "frame_ahead_trigger": 39.03
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 38.655,
+          "end": 38.755,
+          "duration": 0.1,
+          "frame_ahead_trigger": 39.365
+        },
+        {
+          "word": "algorithms",
+          "clean_word": "algorithms",
+          "phonemes": "\u02c8\u00e6l\u0261\u025a\u0279\u02cc\u026a\u03b8\u0259mz",
+          "start": 38.755,
+          "end": 39.525,
+          "duration": 0.77,
+          "frame_ahead_trigger": 39.465
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 39.525,
+          "end": 39.78,
+          "duration": 0.255,
+          "frame_ahead_trigger": 40.235
+        },
+        {
+          "word": "define",
+          "clean_word": "define",
+          "phonemes": "d\u1d7bf\u02c8a\u026an",
+          "start": 39.78,
+          "end": 40.17,
+          "duration": 0.39,
+          "frame_ahead_trigger": 40.49
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 40.17,
+          "end": 40.3,
+          "duration": 0.13,
+          "frame_ahead_trigger": 40.88
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 40.3,
+          "end": 40.749,
+          "duration": 0.449,
+          "frame_ahead_trigger": 41.01
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 40.749,
+          "end": 40.965,
+          "duration": 0.216,
+          "frame_ahead_trigger": 41.459
+        },
+        {
+          "word": "intelligent",
+          "clean_word": "intelligent",
+          "phonemes": "\u026ant\u02c8\u025bl\u026ad\u0292\u0259nt",
+          "start": 40.965,
+          "end": 41.625,
+          "duration": 0.66,
+          "frame_ahead_trigger": 41.675
+        },
+        {
+          "word": "machine",
+          "clean_word": "machine",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0n",
+          "start": 41.625,
+          "end": 42.09,
+          "duration": 0.465,
+          "frame_ahead_trigger": 42.335
+        },
+        {
+          "word": "autonomy.",
+          "clean_word": "autonomy",
+          "phonemes": "\u0254\u02d0t\u02c8\u0251\u02d0n\u0259mi",
+          "start": 42.09,
+          "end": 42.59,
+          "duration": 0.5,
+          "frame_ahead_trigger": 42.8
+        }
+      ],
+      "audio_duration": 6.85,
+      "slot_duration": 6.85
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$Q(s, a) = \\mathbb{E}_{s'}[r + \\gamma \\max_{a'} Q(s', a')]$",
+      "filename": "dqn_breakout_tunnel_beat1_formula.svg",
+      "fontsize": 20,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "Q(s, a)",
+          "label": "Expected reward"
+        },
+        {
+          "term": "\\gamma",
+          "label": "Discount factor"
+        }
+      ],
+      "svg_filename": "dqn_breakout_tunnel_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$L_i(\\theta_i) = \\mathbb{E}[(y_i - Q(s, a; \\theta_i))^2]$",
+      "filename": "dqn_breakout_tunnel_beat2_formula.svg",
+      "fontsize": 20,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "y_i",
+          "label": "Target value"
+        },
+        {
+          "term": "\\theta_i",
+          "label": "Network weights"
+        }
+      ],
+      "svg_filename": "dqn_breakout_tunnel_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$y_i = r + \\gamma \\max_{a'} Q(s', a'; \\theta_i^-)$",
+      "filename": "dqn_breakout_tunnel_beat3_formula.svg",
+      "fontsize": 20,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\theta_i^-",
+          "label": "Target network"
+        }
+      ],
+      "svg_filename": "dqn_breakout_tunnel_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathcal{D} = \\{(s_t, a_t, r_t, s_{t+1})\\}$",
+      "filename": "dqn_breakout_tunnel_beat4_formula.svg",
+      "fontsize": 20,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "\\mathcal{D}",
+          "label": "Replay buffer"
+        }
+      ],
+      "svg_filename": "dqn_breakout_tunnel_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\text{Performance} = \\frac{\\text{DQN Score}}{\\text{Human Score}} > 1$",
+      "filename": "dqn_breakout_tunnel_beat5_formula.svg",
+      "fontsize": 20,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\text{DQN}",
+          "label": "Agent score"
+        }
+      ],
+      "svg_filename": "dqn_breakout_tunnel_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "reasoning_tree",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Pixels",
+          "color": "#38BDF8",
+          "items": [
+            "Grid",
+            "Color",
+            "Frame"
+          ]
+        },
+        {
+          "name": "Logic",
+          "color": "#10B981",
+          "items": [
+            "Q-Value",
+            "Tunnel",
+            "Reward"
+          ]
+        },
+        {
+          "name": "Memory",
+          "color": "#F59E0B",
+          "items": [
+            "Buffer",
+            "Weights",
+            "History"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Frame",
+        "target_cluster": "Pixels",
+        "token": "pixel_val"
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Noise",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Credit",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "Deep Q-Network",
+    "model_a_specs": [
+      "Convolutional Layers",
+      "Experience Replay",
+      "Q-Learning"
+    ],
+    "model_b": "Linear Baseline",
+    "model_b_specs": [
+      "Simple Regression",
+      "No Memory",
+      "Myopic Policy"
+    ],
+    "divide_title": "STRATEGY VS MYOPIA",
+    "model_a_stat": "1.5x",
+    "model_a_stat_label": "Human Performance",
+    "model_b_stat": "0.4x",
+    "model_b_stat_label": "Baseline Performance",
+    "efficiency_badge": "\u26a1 STRATEGY DISCOVERED",
+    "benchmarks": [
+      {
+        "name": "Breakout",
+        "score_a": "1.5x",
+        "score_b": "0.2x"
+      },
+      {
+        "name": "Pong",
+        "score_a": "1.2x",
+        "score_b": "0.8x"
+      },
+      {
+        "name": "Enduro",
+        "score_a": "1.1x",
+        "score_b": "0.5x"
+      }
+    ],
+    "scale_metric": "7",
+    "scale_label": "Games Solved",
+    "bottleneck_title": "TEMPORAL ENTROPY",
+    "bottleneck_desc": "Long-range reward attribution failure",
+    "solution_title": "CONVOLUTIONAL Q-LEARNING",
+    "solution_components": "Spatial feature aggregation",
+    "mechanism_title": "EXPERIENCE REPLAY",
+    "payoff_stat": "150%",
+    "payoff_label": "Human Expert Normalized Score",
+    "payoff_sub": "Achieved without manual tuning",
+    "payoff_hero_stat": 150,
+    "payoff_hero_label": "DQN Agent",
+    "payoff_base_stat": 100,
+    "payoff_base_label": "Human Expert",
+    "payoff_delta_badge": "\u26a1 +50% PERFORMANCE GAIN",
+    "challenger": "DQN",
+    "incumbent": "Human Expert"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN",
+    "metric_name": "Game Success Rate",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "DQN",
+        "value": 90.0,
+        "display_val": "90%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Baseline",
+        "value": 40.0,
+        "display_val": "40%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +50% SUCCESS",
+    "radar_axes": [
+      "Speed",
+      "Strategy",
+      "Stability",
+      "Learning Rate",
+      "Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "dqn_step.py",
+    "language": "python",
+    "lines": [
+      "def get_action(state):",
+      "q_vals = model.forward(state)",
+      "action = torch.argmax(q_vals)",
+      "return action"
+    ],
+    "highlight_lines": [
+      2,
+      3
+    ],
+    "trace_register": "\u26a1 POLICY EXECUTION",
+    "explanation": "Argmax over learned Q-values"
+  },
+  "arxiv_id": "1312.5602",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "seaquest_average_reward",
+      "caption": "Seaquest Average Reward",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/source/figures/seaquest_average_reward.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_1_seaquest_average_reward.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_1_seaquest_average_reward.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "breakout_average_reward",
+      "caption": "Breakout Average Reward",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/source/figures/breakout_average_reward.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_2_breakout_average_reward.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_2_breakout_average_reward.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "breakout_average_v",
+      "caption": "Breakout Average V",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/source/figures/breakout_average_v.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_3_breakout_average_v.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_3_breakout_average_v.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "seaquest_average_v",
+      "caption": "Seaquest Average V",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/source/figures/seaquest_average_v.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_4_seaquest_average_v.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_4_seaquest_average_v.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "seaquest_v",
+      "caption": "Seaquest V",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/source/figures/seaquest_v.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_5_seaquest_v.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1312.5602/chalkboard_figures/fig_5_seaquest_v.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Deep Q-Networks didn't just play Breakout; they hallucinated a shortcut by tunneling through the wall to win.",
+    "verdict": 56,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "search_tree",
+      "entity_type": "search_tree",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        1.2,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    },
+    {
+      "entity_id": "branch_bound_laser",
+      "entity_type": "branch_bound",
+      "z_index": 12,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "24Ju6EEk9TQ",
+    "shorts_url": "https://youtube.com/shorts/24Ju6EEk9TQ",
+    "studio_url": "https://studio.youtube.com/video/24Ju6EEk9TQ/edit",
+    "title": "DQN Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/dqn_breakout_tunnel_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
