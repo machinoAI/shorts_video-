@@ -17,6 +17,8 @@ sys.path.append(str(PROJECT_ROOT))
 
 from pipeline.config import WORKSPACE_ROOT
 from manim_engine.primitives.visual_compositions import BLUEPRINT_COMPOSITION_REGISTRY
+from manim_engine.primitives.text_utils import trim_words
+from pipeline.layout_params import normalize_layout_params
 
 VISUAL_ASSETS_DIR = PROJECT_ROOT / "public" / "visual_assets"
 VISUAL_ASSETS_DIR.mkdir(parents=True, exist_ok=True)
@@ -77,6 +79,21 @@ class VisualDirector:
             return True
         return False
 
+    # Stock phrases that used to be baked into every synthesized diagram (and sometimes made
+    # claims the paper never made, e.g. "O(1) CONSTANT LATENCY", "dx/dt = v_theta(x, t)").
+    # They are dropped so pipeline.layout_params fills the slots from the beat instead.
+    FILLER_LABELS = {
+        "Semantic Representation", "Geometric Spatial Depth", "O(1) CONSTANT LATENCY",
+        "TEMPORAL FORGETTING", "Blur & Memory Wipeout", "O(1) Sharp Coherence",
+        "ORTHOGONAL PENALTY BARRIER", "Zero cross-stream interference", "L2: LATENT REASONING",
+        "L2: ROUTING & CONFIDENCE", "STREAM A", "EXPERT 3: REASONING", "Raw high-dimensional inputs",
+        "Core mathematical transformation", "Target reconstructed state", "OBSERVER CAMERA POSE",
+        "dx/dt = v_theta(x, t)", "PRUNED DEAD END", "DISCARDED PATH", "BASELINE PATH", "Prior approach",
+    }
+
+    def _strip_filler(self, cand: Dict[str, Any]) -> Dict[str, Any]:
+        return {k: v for k, v in cand.items() if not (isinstance(v, str) and v in self.FILLER_LABELS)}
+
     def synthesize_visual_blueprint(
         self,
         beat: Dict[str, Any],
@@ -107,12 +124,12 @@ class VisualDirector:
         if any(k in text for k in ["vector", "flow", "drift", "field", "manifold", "trajectory", "stream", "continuous", "velocity", "diffusion", "denois", "fluid"]):
             candidates.append({
                 "layout": "vector_flow_field",
-                "title": f"VECTOR FLOW FIELD: {subj.upper()[:16]}",
-                "sub": v_focus[:65] or "Continuous velocity streamlines guiding latent trajectory drift",
+                "title": f"VECTOR FLOW FIELD: {trim_words(subj.upper(), 16)}",
+                "sub": trim_words(v_focus, 65) or "Continuous velocity streamlines guiding latent trajectory drift",
                 "accent_color": "#38BDF8",
-                "field_title": f"CONTINUOUS {topic.upper()[:16]} MANIFOLD",
-                "source_label": f"SOURCE: {subj.upper()[:14]}",
-                "target_label": f"TARGET: {obj.upper()[:14]}",
+                "field_title": f"CONTINUOUS {trim_words(topic.upper(), 16)} MANIFOLD",
+                "source_label": f"SOURCE: {trim_words(subj.upper(), 14)}",
+                "target_label": f"TARGET: {trim_words(obj.upper(), 14)}",
                 "stream_formula": "dx/dt = v_theta(x, t)"
             })
 
@@ -120,12 +137,12 @@ class VisualDirector:
         if any(k in text for k in ["neural", "activation", "synap", "network", "pulse", "firing", "deep layer", "neuron", "forward pass", "cascade"]):
             candidates.append({
                 "layout": "neural_activation_wave",
-                "title": f"SYNAPTIC PROPAGATION: {subj.upper()[:14]}",
-                "sub": v_focus[:65] or "Propagating activation wave across dense synaptic layers",
+                "title": f"SYNAPTIC PROPAGATION: {trim_words(subj.upper(), 14)}",
+                "sub": trim_words(v_focus, 65) or "Propagating activation wave across dense synaptic layers",
                 "accent_color": "#A855F7",
-                "input_label": f"L1: {subj.upper()[:14]}",
+                "input_label": f"L1: {trim_words(subj.upper(), 14)}",
                 "hidden_label": "L2: LATENT REASONING",
-                "output_label": f"L3: {obj.upper()[:14]}"
+                "output_label": f"L3: {trim_words(obj.upper(), 14)}"
             })
 
         # Physics Simulation 3: Attention Prism Refraction / Optical Splitting
@@ -133,10 +150,10 @@ class VisualDirector:
             candidates.append({
                 "layout": "attention_prism_refraction",
                 "title": "ATTENTION PRISM REFRACTION",
-                "sub": v_focus[:65] or "Token laser beam refracted into Query, Key, and Value vectors",
+                "sub": trim_words(v_focus, 65) or "Token laser beam refracted into Query, Key, and Value vectors",
                 "accent_color": "#F59E0B",
-                "token_label": f"TOKEN: {subj.upper()[:14]}",
-                "matrix_title": f"{topic.upper()[:16]} ATTENTION"
+                "token_label": f"TOKEN: {trim_words(subj.upper(), 14)}",
+                "matrix_title": f"{trim_words(topic.upper(), 16)} ATTENTION"
             })
 
         # Physics Simulation 4: 2.5D Loss Landscape / Gradient Descent Basin
@@ -144,24 +161,24 @@ class VisualDirector:
             candidates.append({
                 "layout": "optimization_landscape",
                 "title": "LOSS LANDSCAPE DESCENT",
-                "sub": v_focus[:65] or "Optimization trajectory rolling through energy basin into global minimum",
+                "sub": trim_words(v_focus, 65) or "Optimization trajectory rolling through energy basin into global minimum",
                 "accent_color": "#34D399",
-                "landscape_title": f"{topic.upper()[:16]} OBJECTIVE SURFACE",
-                "optima_label": f"OPTIMA: {obj.upper()[:14]}"
+                "landscape_title": f"{trim_words(topic.upper(), 16)} OBJECTIVE SURFACE",
+                "optima_label": f"OPTIMA: {trim_words(obj.upper(), 14)}"
             })
 
         # 1. Split / Diverging / Bifurcated Flow
         if any(k in text for k in ["split", "dual", "bifurcat", "two path", "branch", "two stream", "decoupl", "separate semantic"]):
             candidates.append({
                 "layout": "split_flow",
-                "title": f"BIFURCATED ROUTING: {subj.upper()[:18]}",
-                "sub": v_focus[:65] or "Decoupling high-level semantics from low-level geometric depth",
+                "title": f"BIFURCATED ROUTING: {trim_words(subj.upper(), 18)}",
+                "sub": trim_words(v_focus, 65) or "Decoupling high-level semantics from low-level geometric depth",
                 "accent_color": "#38BDF8",
-                "input_label": f"UNIFIED {topic.upper()[:16]} STREAM",
-                "router_label": f"{subj.upper()[:14]} ROUTER",
-                "branch_a_label": f"STREAM A: {subj.upper()[:14]}",
+                "input_label": f"UNIFIED {trim_words(topic.upper(), 16)} STREAM",
+                "router_label": f"{trim_words(subj.upper(), 14)} ROUTER",
+                "branch_a_label": f"STREAM A: {trim_words(subj.upper(), 14)}",
                 "branch_a_sub": "Semantic Representation",
-                "branch_b_label": f"STREAM B: {obj.upper()[:14]}",
+                "branch_b_label": f"STREAM B: {trim_words(obj.upper(), 14)}",
                 "branch_b_sub": "Geometric Spatial Depth"
             })
 
@@ -169,12 +186,12 @@ class VisualDirector:
         if any(k in text for k in ["library", "catalog", "index", "desk", "drawer", "dispatch", "sort", "unbounded"]):
             candidates.append({
                 "layout": "catalog_routing",
-                "title": f"CENTRAL INDEX DISPATCH: {subj.upper()[:16]}",
-                "sub": v_focus[:65] or "Instant O(1) hash map routing queries to specialized drawers",
+                "title": f"CENTRAL INDEX DISPATCH: {trim_words(subj.upper(), 16)}",
+                "sub": trim_words(v_focus, 65) or "Instant O(1) hash map routing queries to specialized drawers",
                 "accent_color": "#38BDF8",
-                "index_label": f"{topic.upper()[:18]} INDEX DESK",
-                "drawer_a_label": f"EXPERT 1: {subj[:12]}",
-                "drawer_b_label": f"EXPERT 2: {obj[:12]}",
+                "index_label": f"{trim_words(topic.upper(), 18)} INDEX DESK",
+                "drawer_a_label": f"EXPERT 1: {trim_words(subj, 12)}",
+                "drawer_b_label": f"EXPERT 2: {trim_words(obj, 12)}",
                 "drawer_c_label": "EXPERT 3: REASONING"
             })
 
@@ -182,23 +199,23 @@ class VisualDirector:
         if any(k in text for k in ["camera math", "camera rays", "projective", "perspective", "sightline", "ray", "focal plane"]):
             candidates.append({
                 "layout": "projection_rays",
-                "title": f"PROJECTIVE GEOMETRY: {subj.upper()[:18]}",
-                "sub": v_focus[:65] or "Mapping camera rays to local stored spatial feature anchors",
+                "title": f"PROJECTIVE GEOMETRY: {trim_words(subj.upper(), 18)}",
+                "sub": trim_words(v_focus, 65) or "Mapping camera rays to local stored spatial feature anchors",
                 "accent_color": "#38BDF8",
                 "camera_label": "OBSERVER CAMERA POSE",
-                "focal_plane_label": f"{topic.upper()[:18]} FOCAL PLANE",
-                "target_label": f"ANCHOR: {obj.upper()[:22]}"
+                "focal_plane_label": f"{trim_words(topic.upper(), 18)} FOCAL PLANE",
+                "target_label": f"ANCHOR: {trim_words(obj.upper(), 22)}"
             })
 
         # 4. Memory / Cache / Grid / Matrix / Spatial Slots
         if any(k in text for k in ["memory", "grid", "cache", "kv", "buffer", "matrix", "cell", "store", "slot"]):
             candidates.append({
                 "layout": "grid_memory",
-                "title": f"SPATIAL MEMORY MATRIX: {subj.upper()[:18]}",
-                "sub": v_focus[:65] or "O(1) constant-latency query over persistent memory grid",
+                "title": f"SPATIAL MEMORY MATRIX: {trim_words(subj.upper(), 18)}",
+                "sub": trim_words(v_focus, 65) or "O(1) constant-latency query over persistent memory grid",
                 "accent_color": "#38BDF8",
-                "grid_title": f"{topic.upper()[:22]} COORDINATE GRID",
-                "active_cell_label": f"HIT: {subj.upper()[:14]}",
+                "grid_title": f"{trim_words(topic.upper(), 22)} COORDINATE GRID",
+                "active_cell_label": f"HIT: {trim_words(subj.upper(), 14)}",
                 "efficiency_label": "O(1) CONSTANT LATENCY"
             })
 
@@ -208,7 +225,7 @@ class VisualDirector:
             candidates.append({
                 "layout": "horizontal_race_bars",
                 "title": verified_benchmark.title,
-                "sub": v_focus[:65] or "Results reported in the paper",
+                "sub": trim_words(v_focus, 65) or "Results reported in the paper",
                 "accent_color": "#10B981",
                 "metric_name": verified_benchmark.metric_name,
                 "unit": verified_benchmark.unit,
@@ -221,14 +238,14 @@ class VisualDirector:
         if verified_code and verified_code.get("lines") and (beat_id in [3, 4, 5] or beat_id is None) and any(k in (text + " " + topic.lower()) for k in ["function", "kernel", "algorithm", "implementation", "compile", "python", "cuda", "syntax", "source code", "snippet"]):
             candidates.append({
                 "layout": "chalkboard_code_block",
-                "title": f"KERNEL IMPLEMENTATION: {subj.upper()[:16]}",
-                "sub": v_focus[:65] or "Core loop from the open-source repository",
+                "title": f"KERNEL IMPLEMENTATION: {trim_words(subj.upper(), 16)}",
+                "sub": trim_words(v_focus, 65) or "Core loop from the open-source repository",
                 "accent_color": "#38BDF8",
                 "filename": verified_code.get("filename", "kernel.py"),
                 "language": verified_code.get("language", "python"),
                 "lines": verified_code.get("lines", []),
                 "highlight_lines": verified_code.get("highlight_lines", [1]),
-                "trace_register": verified_code.get("trace_register", f"⚡ ACTIVE STATE: {obj.upper()[:24]}"),
+                "trace_register": verified_code.get("trace_register", f"⚡ ACTIVE STATE: {trim_words(obj.upper(), 24)}"),
                 "delta_badge": (verified_code.get("explanation") or "")[:52]
             })
 
@@ -236,12 +253,12 @@ class VisualDirector:
         if any(k in text for k in ["mirror", "reflection", "forget", "blur", "versus", "compare", "traditional", "prior", "baseline", "monolithic"]):
             candidates.append({
                 "layout": "comparison_side_by_side",
-                "title": f"COHERENCE VS DECAY: {subj.upper()[:16]}",
-                "sub": v_focus[:65] or "Contrasting persistent spatial memory against temporal decay",
+                "title": f"COHERENCE VS DECAY: {trim_words(subj.upper(), 16)}",
+                "sub": trim_words(v_focus, 65) or "Contrasting persistent spatial memory against temporal decay",
                 "accent_color": "#34D399",
                 "col_a_title": "TEMPORAL FORGETTING",
                 "col_a_stat": "Blur & Memory Wipeout",
-                "col_b_title": f"{topic.upper()[:14]} PERSISTENCE",
+                "col_b_title": f"{trim_words(topic.upper(), 14)} PERSISTENCE",
                 "col_b_stat": "O(1) Sharp Coherence"
             })
 
@@ -249,11 +266,11 @@ class VisualDirector:
         if any(k in text for k in ["barrier", "wall", "penalty", "bleed", "isolate", "prevent", "guard", "forcefield"]):
             candidates.append({
                 "layout": "barrier_separation",
-                "title": f"ORTHOGONAL BARRIER: {subj.upper()[:18]}",
-                "sub": v_focus[:65] or "Strict penalty prevents cross-talk between latent streams",
+                "title": f"ORTHOGONAL BARRIER: {trim_words(subj.upper(), 18)}",
+                "sub": trim_words(v_focus, 65) or "Strict penalty prevents cross-talk between latent streams",
                 "accent_color": "#EF4444",
-                "stream_a_label": f"STREAM 1: {subj.upper()[:14]}",
-                "stream_b_label": f"STREAM 2: {obj.upper()[:14]}",
+                "stream_a_label": f"STREAM 1: {trim_words(subj.upper(), 14)}",
+                "stream_b_label": f"STREAM 2: {trim_words(obj.upper(), 14)}",
                 "barrier_label": "ORTHOGONAL PENALTY BARRIER",
                 "barrier_sub": "Zero cross-stream interference"
             })
@@ -262,11 +279,11 @@ class VisualDirector:
         if any(k in text for k in ["tree", "search", "mcts", "reason", "decision", "choice", "prun", "binary game"]):
             candidates.append({
                 "layout": "tree_hierarchy",
-                "title": f"DECISION TREE: {subj.upper()[:18]}",
-                "sub": v_focus[:65] or "Pruning low-confidence candidates to isolate optimal choice",
+                "title": f"DECISION TREE: {trim_words(subj.upper(), 18)}",
+                "sub": trim_words(v_focus, 65) or "Pruning low-confidence candidates to isolate optimal choice",
                 "accent_color": "#34D399",
-                "root_label": f"{topic.upper()[:16]} QUERY",
-                "optimal_label": f"CHOSEN: {subj.upper()[:16]}",
+                "root_label": f"{trim_words(topic.upper(), 16)} QUERY",
+                "optimal_label": f"CHOSEN: {trim_words(subj.upper(), 16)}",
                 "pruned_label": "PRUNED DEAD END"
             })
 
@@ -274,38 +291,38 @@ class VisualDirector:
         if any(k in text for k in ["layer", "stack", "deep", "hierarchy", "level", "judgment", "scores"]):
             candidates.append({
                 "layout": "layer_stack",
-                "title": f"LAYERED COMPOSITION: {subj.upper()[:18]}",
-                "sub": v_focus[:65] or "Hierarchical abstraction assembling high-confidence decisions",
+                "title": f"LAYERED COMPOSITION: {trim_words(subj.upper(), 18)}",
+                "sub": trim_words(v_focus, 65) or "Hierarchical abstraction assembling high-confidence decisions",
                 "accent_color": "#38BDF8",
-                "bottom_layer": f"L1: {subj.upper()[:18]} INPUTS",
+                "bottom_layer": f"L1: {trim_words(subj.upper(), 18)} INPUTS",
                 "mid_layer": "L2: ROUTING & CONFIDENCE",
-                "top_layer": f"L3: {obj.upper()[:18]} OUTPUT"
+                "top_layer": f"L3: {trim_words(obj.upper(), 18)} OUTPUT"
             })
 
         # 9. Convergence / Funnel / Multimodal Fusion
         if any(k in text for k in ["funnel", "multimodal", "fuse", "combine", "converge", "aggregate", "condens"]):
             candidates.append({
                 "layout": "convergence_funnel",
-                "title": f"MULTIMODAL FUSION: {subj.upper()[:18]}",
-                "sub": v_focus[:65] or "Harmonizing multiple streams into a unified representation",
+                "title": f"MULTIMODAL FUSION: {trim_words(subj.upper(), 18)}",
+                "sub": trim_words(v_focus, 65) or "Harmonizing multiple streams into a unified representation",
                 "accent_color": "#38BDF8",
                 "input_1_label": "STREAM A",
-                "input_2_label": f"{subj[:12]}",
-                "input_3_label": f"{obj[:12]}",
-                "fused_label": f"{topic.upper()[:20]} UNIFIED CORE"
+                "input_2_label": f"{trim_words(subj, 12)}",
+                "input_3_label": f"{trim_words(obj, 12)}",
+                "fused_label": f"{trim_words(topic.upper(), 20)} UNIFIED CORE"
             })
 
         # Default fallback candidate: Sequential Pipeline Stages
         pipeline_cand = {
             "layout": "pipeline_stages",
-            "title": f"{topic.upper()[:20]}: {subj.upper()[:16]}",
-            "sub": v_focus[:65] or f"Sequential transformation from {subj.lower()} to {obj.lower()}",
+            "title": f"{trim_words(topic.upper(), 20)}: {trim_words(subj.upper(), 16)}",
+            "sub": trim_words(v_focus, 65) or f"Sequential transformation from {subj.lower()} to {obj.lower()}",
             "accent_color": "#38BDF8",
-            "stage_1_label": f"STAGE 1: {subj.upper()[:18]}",
+            "stage_1_label": f"STAGE 1: {trim_words(subj.upper(), 18)}",
             "stage_1_sub": "Raw high-dimensional inputs",
-            "stage_2_label": f"STAGE 2: {action.upper()[:18]} ENGINE",
+            "stage_2_label": f"STAGE 2: {trim_words(action.upper(), 18)} ENGINE",
             "stage_2_sub": "Core mathematical transformation",
-            "stage_3_label": f"STAGE 3: {obj.upper()[:18]}",
+            "stage_3_label": f"STAGE 3: {trim_words(obj.upper(), 18)}",
             "stage_3_sub": "Target reconstructed state"
         }
         candidates.append(pipeline_cand)
@@ -324,58 +341,58 @@ class VisualDirector:
         # Select highest-retention candidate not already used in this video
         for cand in sorted_candidates:
             if cand["layout"] not in used:
-                return cand
+                return self._strip_filler(cand)
 
         # Keyword matches exhausted: rotate through other non-numeric layouts so beats
         # that lost a fake race-bar / code visual don't all collapse to pipeline_stages.
         generic_fallbacks = [
             {
                 "layout": "layer_stack",
-                "title": f"LAYERED VIEW: {subj.upper()[:18]}",
-                "sub": v_focus[:65] or f"How {subj.lower()} builds up to {obj.lower()}",
+                "title": f"LAYERED VIEW: {trim_words(subj.upper(), 18)}",
+                "sub": trim_words(v_focus, 65) or f"How {subj.lower()} builds up to {obj.lower()}",
                 "accent_color": "#38BDF8",
-                "bottom_layer": f"L1: {subj.upper()[:18]}",
-                "mid_layer": f"L2: {action.upper()[:18]}",
-                "top_layer": f"L3: {obj.upper()[:18]}"
+                "bottom_layer": f"L1: {trim_words(subj.upper(), 18)}",
+                "mid_layer": f"L2: {trim_words(action.upper(), 18)}",
+                "top_layer": f"L3: {trim_words(obj.upper(), 18)}"
             },
             {
                 "layout": "split_flow",
-                "title": f"BEFORE VS AFTER: {subj.upper()[:16]}",
-                "sub": v_focus[:65] or f"Contrasting the old path with {subj.lower()}",
+                "title": f"BEFORE VS AFTER: {trim_words(subj.upper(), 16)}",
+                "sub": trim_words(v_focus, 65) or f"Contrasting the old path with {subj.lower()}",
                 "accent_color": "#34D399",
-                "input_label": f"{topic.upper()[:18]} INPUT",
-                "router_label": f"{action.upper()[:14]}",
+                "input_label": f"{trim_words(topic.upper(), 18)} INPUT",
+                "router_label": f"{trim_words(action.upper(), 14)}",
                 "branch_a_label": "BASELINE PATH",
                 "branch_a_sub": "Prior approach",
-                "branch_b_label": f"{subj.upper()[:16]}",
-                "branch_b_sub": f"{obj[:24]}"
+                "branch_b_label": f"{trim_words(subj.upper(), 16)}",
+                "branch_b_sub": f"{trim_words(obj, 24)}"
             },
             {
                 "layout": "convergence_funnel",
-                "title": f"WHAT IT COMBINES: {subj.upper()[:16]}",
-                "sub": v_focus[:65] or f"Inputs converging into {obj.lower()}",
+                "title": f"WHAT IT COMBINES: {trim_words(subj.upper(), 16)}",
+                "sub": trim_words(v_focus, 65) or f"Inputs converging into {obj.lower()}",
                 "accent_color": "#A855F7",
-                "input_1_label": f"{subj[:12]}",
-                "input_2_label": f"{action[:12]}",
-                "input_3_label": f"{obj[:12]}",
-                "fused_label": f"{topic.upper()[:20]}"
+                "input_1_label": f"{trim_words(subj, 12)}",
+                "input_2_label": f"{trim_words(action, 12)}",
+                "input_3_label": f"{trim_words(obj, 12)}",
+                "fused_label": f"{trim_words(topic.upper(), 20)}"
             },
             {
                 "layout": "tree_hierarchy",
-                "title": f"DECISION PATH: {subj.upper()[:18]}",
-                "sub": v_focus[:65] or f"Which branch leads to {obj.lower()}",
+                "title": f"DECISION PATH: {trim_words(subj.upper(), 18)}",
+                "sub": trim_words(v_focus, 65) or f"Which branch leads to {obj.lower()}",
                 "accent_color": "#F59E0B",
-                "root_label": f"{topic.upper()[:16]}",
-                "optimal_label": f"{obj.upper()[:16]}",
+                "root_label": f"{trim_words(topic.upper(), 16)}",
+                "optimal_label": f"{trim_words(obj.upper(), 16)}",
                 "pruned_label": "DISCARDED PATH"
             },
         ]
         for cand in generic_fallbacks:
             if cand["layout"] not in used:
-                return cand
+                return self._strip_filler(cand)
 
         # If all candidates used, fallback to the top match
-        return sorted_candidates[0]
+        return self._strip_filler(sorted_candidates[0])
 
     def prepare_storyboard_for_spec(self, spec: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -428,7 +445,7 @@ class VisualDirector:
             if b_id == 5 and verified_benchmark is not None:
                 v_foc = b.get("visual_focus", "")
                 if len(v_foc) > 55:
-                    v_foc = v_foc[:55].rsplit(" ", 1)[0]
+                    v_foc = trim_words(v_foc, 55).rsplit(" ", 1)[0]
 
                 b_comp = verified_benchmark
 
@@ -436,7 +453,7 @@ class VisualDirector:
                 if b_comp.radar_models and any(k in b_text for k in ["radar", "spider", "pareto", "tradeoff", "trade-off", "frontier", "dimensions"]):
                     layout_name = "radar_pareto_plot"
                     params = {
-                        "title": f"PARETO FRONTIER: {topic.upper()[:18]}",
+                        "title": f"TRADE-OFFS: {trim_words(topic.upper(), 26)}",
                         "sub": v_foc or "Multi-dimensional performance tradeoff across frontier architectures",
                         "axes": b_comp.radar_axes,
                         "models": b_comp.radar_models,
@@ -516,18 +533,18 @@ class VisualDirector:
 
                 if (fig_svg and os.path.exists(fig_svg)) or (fig_img and os.path.exists(fig_img)):
                     topic_core = topic.split(":")[0].strip().upper()
-                    fig_title = f"{topic_core[:18]} ARCHITECTURE"
+                    fig_title = f"{trim_words(topic_core, 24)}: FIGURE"
                     b["motif_type"] = "paper_figure"
                     b["visual_blueprint"] = {
                         "layout": "paper_figure",
                         "title": fig_title,
-                        "sub": b.get("visual_focus", "")[:65] or "Official architectural diagram from arXiv source",
+                        "sub": trim_words(b.get("visual_focus", ""), 65) or "Official architectural diagram from arXiv source",
                         "params": {
                             "svg_path": fig_svg,
                             "image_path": fig_img,
                             "arxiv_id": arxiv_id,
                             "title": fig_title,
-                            "sub": b.get("visual_focus", "")[:65] or "Official architectural diagram from arXiv source",
+                            "sub": trim_words(b.get("visual_focus", ""), 65) or "Official architectural diagram from arXiv source",
                             "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
                             "caption": top_fig.get("caption", "Architecture Overview"),
                             "preferred_renderer": "vector" if fig_svg else "raster"
@@ -549,8 +566,8 @@ class VisualDirector:
                 b["motif_type"] = "chalkboard_code_block"
                 b["kinetic_action"] = "pulse"
                 code_params = {
-                    "title": f"KERNEL CODE: {topic.upper()[:18]}",
-                    "sub": b.get("visual_focus", "")[:65] or "Open-source kernel executing inside GPU memory",
+                    "title": f"CODE: {trim_words(topic.upper(), 28)}",
+                    "sub": trim_words(b.get("visual_focus", ""), 65) or "Open-source kernel executing inside GPU memory",
                     "filename": code_filename,
                     "language": code_data.get("language", "python"),
                     "lines": code_data.get("lines", []),
@@ -591,8 +608,8 @@ class VisualDirector:
             # Flatten top-level blueprint metadata into params for the composition
             composition_params = {
                 "layout": layout,
-                "title": blueprint.get("title", f"{topic.upper()[:22]}: BEAT {b_id}"),
-                "sub": blueprint.get("sub", b.get("visual_focus", "")[:65]),
+                "title": trim_words(str(blueprint.get("title") or topic).upper(), 40),
+                "sub": trim_words(str(blueprint.get("sub") or b.get("visual_focus", "")), 70),
                 "accent_color": blueprint.get("accent_color", "#38BDF8"),
             }
             # Merge any explicit sub-params
@@ -601,6 +618,17 @@ class VisualDirector:
                     composition_params[k] = v
             if isinstance(params, dict):
                 composition_params.update(params)
+
+            # Map mis-named / empty params onto the diagram's real label slots and fill
+            # the rest from the beat, so the diagram never shows its built-in demo labels.
+            label_params, filled = normalize_layout_params(layout, composition_params, b, topic)
+            composition_params.update(label_params)
+            if filled:
+                print(f"   🏷️ Beat {b_id}: filled diagram labels from the beat: {', '.join(filled)}")
+            if isinstance(blueprint.get("params"), dict):
+                # keep the scene's later params merge consistent with the normalized labels
+                blueprint["params"] = {k: v for k, v in label_params.items()
+                                       if k not in ("layout", "title", "sub", "accent_color")}
 
             b["motif_type"] = "visual_composition"
             b["motif_params"] = composition_params

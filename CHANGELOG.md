@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased] — Word-synced animation engine
+
+### Changed — how beats animate (`ANIMATION_ENGINE=timeline`, default)
+- Each beat used to fade in, pulse 2–4% and slowly zoom in/out until the beat ended, so every beat looked the same. Now diagrams **build step by step as the narration names each part** (word timings from the aligner), the key element is emphasised on the beat's **anchor word** (a signal flowing along the connectors + an outline), and the frame otherwise holds still. Set `ANIMATION_ENGINE=legacy` to get the old behaviour.
+- New `manim_engine/choreography/`: `timeline.py` (pure-Python planner) and `builders.py` (build steps, reveal/focus animations, safe-area fitting).
+- Every diagram type has semantic build steps: split flow, pipeline, memory grid, projection rays, barrier, tree, layer stack, funnel, catalog, side-by-side, paper figure, flow field (particles now travel along streamlines), neural network (signal propagates layer by layer), attention prism (matrix fills in), loss landscape (the ball actually rolls into the minimum), race bars (rows race in one at a time), code block (lines typed in).
+- Clean transitions: a beat is cleared before the next starts (no overlapping diagrams); no camera breathing or snap zoom (which pushed the formula into the captions).
+- Diagrams are scaled up to ~1.2–1.3× to fill the 9:16 safe area; titles 20pt / subtitles 13pt.
+- VLM-critic layout patches (`layout_overrides`) are now applied by `ScriptDrivenScene` (previously only the legacy scene read them, so the repair loop had no effect). Keyframes for the critic are sampled at 85% of each beat, after the build.
+
+### Fixed — placeholder and hard-coded diagram content
+- New `pipeline/layout_params.py`: maps mis-named blueprint params onto each diagram's real label slots and fills gaps from the beat (SVO subject/action/object, highlighted terms). Previously ~48% of beats rendered the diagram's demo labels ("SEMANTIC STREAM", "GEOMETRIC STREAM", ...).
+- Removed hard-coded content shown in every video: tree "Optimal 99.4% Choice", catalog "O(1) Hash Map / Index Lookup", funnel "Harmonized Latent Representation", side-by-side BitNet FP16/ternary matrices and 100%/10% load bars, attention-cell numbers, the diffusion formula default on flow fields, stock phrases in synthesized blueprints.
+- Labels/titles are shortened at word boundaries (`trim_words`) instead of mid-word ("ATTENTION IS ALL Y").
+
+### Added
+- `scripts/preview_beats.py`: render selected beats quickly at low quality (optionally with local Kokoro narration via `--tts`, or `--engine legacy` for before/after). No API keys needed.
+- Tests: `test_beat_timeline.py`, `test_layout_params.py`, `test_choreography_manim.py` (needs Manim).
+
+---
+
 ## [Unreleased] — Quality quick wins (branch `quality/quick-wins`)
 
 ### Fixed — fabricated numbers and code on screen

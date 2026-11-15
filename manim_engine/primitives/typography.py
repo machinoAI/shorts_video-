@@ -15,6 +15,9 @@ sys.path.append(str(PROJECT_ROOT))
 from pipeline.config import FONT_HELVETICA
 
 
+from manim_engine.primitives.text_utils import trim_words  # noqa: F401 (re-export)
+
+
 class CleanText(Text):
     """
     Drop-in replacement for Manim's Text that fixes Pango Cairo integer grid-snapping gaps.
