@@ -7,6 +7,47 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased] — Word-synced animation engine
+
+### Changed — how beats animate (`ANIMATION_ENGINE=timeline`, default)
+- Each beat used to fade in, pulse 2–4% and slowly zoom in/out until the beat ended, so every beat looked the same. Now diagrams **build step by step as the narration names each part** (word timings from the aligner), the key element is emphasised on the beat's **anchor word** (a signal flowing along the connectors + an outline), and the frame otherwise holds still. Set `ANIMATION_ENGINE=legacy` to get the old behaviour.
+- New `manim_engine/choreography/`: `timeline.py` (pure-Python planner) and `builders.py` (build steps, reveal/focus animations, safe-area fitting).
+- Every diagram type has semantic build steps: split flow, pipeline, memory grid, projection rays, barrier, tree, layer stack, funnel, catalog, side-by-side, paper figure, flow field (particles now travel along streamlines), neural network (signal propagates layer by layer), attention prism (matrix fills in), loss landscape (the ball actually rolls into the minimum), race bars (rows race in one at a time), code block (lines typed in).
+- Clean transitions: a beat is cleared before the next starts (no overlapping diagrams); no camera breathing or snap zoom (which pushed the formula into the captions).
+- Diagrams are scaled up to ~1.2–1.3× to fill the 9:16 safe area; titles 20pt / subtitles 13pt.
+- VLM-critic layout patches (`layout_overrides`) are now applied by `ScriptDrivenScene` (previously only the legacy scene read them, so the repair loop had no effect). Keyframes for the critic are sampled at 85% of each beat, after the build.
+
+### Fixed — placeholder and hard-coded diagram content
+- New `pipeline/layout_params.py`: maps mis-named blueprint params onto each diagram's real label slots and fills gaps from the beat (SVO subject/action/object, highlighted terms). Previously ~48% of beats rendered the diagram's demo labels ("SEMANTIC STREAM", "GEOMETRIC STREAM", ...).
+- Removed hard-coded content shown in every video: tree "Optimal 99.4% Choice", catalog "O(1) Hash Map / Index Lookup", funnel "Harmonized Latent Representation", side-by-side BitNet FP16/ternary matrices and 100%/10% load bars, attention-cell numbers, the diffusion formula default on flow fields, stock phrases in synthesized blueprints.
+- Labels/titles are shortened at word boundaries (`trim_words`) instead of mid-word ("ATTENTION IS ALL Y").
+
+### Added
+- `scripts/preview_beats.py`: render selected beats quickly at low quality (optionally with local Kokoro narration via `--tts`, or `--engine legacy` for before/after). No API keys needed.
+- Tests: `test_beat_timeline.py`, `test_layout_params.py`, `test_choreography_manim.py` (needs Manim).
+
+---
+
+## [Unreleased] — Quality quick wins (branch `quality/quick-wins`)
+
+### Fixed — fabricated numbers and code on screen
+- **Prompt example leakage**: removed concrete example values (98.2%, 41.5%, "+56.7% SYNTACTIC RECOVERY GAIN", 1,180 TFLOPS, "Dense Baseline", ...) from the scriptwriter prompt; added a "numbers rule" and placeholders. 50 of 267 saved specs contained the 98.2/41.5 pair.
+- **New `pipeline/grounding.py`**: removes metric fields whose numbers are not in the paper material (title / abstract / queue angle) and flags ungrounded narration numbers in `spec["quality_flags"]`.
+- **`enforce_script_schema`** no longer backfills `payoff_stat: 98.2%`, `scale_metric: 10x`, a 1,180 TFLOPS benchmark, or a fake code snippet.
+- **`benchmark_extractor`**: deleted keyword-matched fallback tables and the fixed radar scores; `extract_verified()` returns only spec or LaTeX-table data, else `None`.
+- **Visuals**: race bars / radar / code blocks are only used with verified data; `create_blueprint_composition` refuses to render primitive demo numbers or demo code. Thumbnail profiles no longer carry DeepSeek-specific stats or a default formula.
+- **Code blocks**: only real repository code (GitHub ingest, `repo_metadata`) is shown; generic placeholder kernels are dropped.
+
+### Changed — hook gate
+- The scriptwriter's hook is kept whenever usable (no lecture opener, 6–32 words, no ungrounded numbers); the regex score is diagnostic only. Replacement templates use the paper's short method name (never the video title) and no longer splice metadata metrics into paper hooks.
+
+### Added — publish gate (`pipeline/publish_gate.py`)
+- Holds a video when the script came from the deterministic fallback, narration has ungrounded numbers, prompt-example values leaked, the hook needs review, or the vision critic failed. Held videos upload to YouTube as **private** and skip Instagram / X / LinkedIn (`PUBLISH_GATE_MODE=private|skip|off`).
+- The VLM critic marks heuristic fallback scores as `unverified`; set `PUBLISH_GATE_REQUIRE_VLM=true` to hold when no vision model ran.
+- Daemon report shows the gate decision; held queue items are archived as `held_for_review`.
+
+---
+
 ## [5.2.0] - 2026-10-03
 
 ### 💻 GitHub Trending AI & Live Code Execution Trace Visualizer

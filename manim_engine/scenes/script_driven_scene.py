@@ -22,7 +22,7 @@ from pipeline.config import (
     VIDEO_WIDTH, VIDEO_HEIGHT, FRAME_WIDTH, FRAME_HEIGHT, BG_CARBON,
     FONT_HELVETICA, CHANNEL_NAME, CHANNEL_HANDLE, CHANNEL_TAGLINE
 )
-from manim_engine.primitives.typography import CleanText, clean_text
+from manim_engine.primitives.typography import CleanText, clean_text, trim_words
 
 # Alias Text -> CleanText so HUD headers and brand watermarks render with flawless subpixel typography
 Text = CleanText
@@ -55,6 +55,10 @@ class ScriptDrivenScene(MovingCameraScene):
     def construct(self):
         # 1. Load active specification & controllers
         self.spec = self.load_spec()
+        # Preview mode (scripts/preview_beats.py): render only some beats, shifting the
+        # clock so the first previewed beat starts at t=0.
+        self.preview_beats = self._parse_preview_beats()
+        self.time_offset = self._preview_time_offset()
         self.scheduler = KineticScheduler(self.spec)
         self.spotlight_controller = SpotlightStagingController()
         self.kinetic_camera = KineticCameraController()
@@ -74,8 +78,128 @@ class ScriptDrivenScene(MovingCameraScene):
         # 4. Choreograph Each Beat with Script-Driven Visuals
         self.play_script_driven_choreography()
 
-        # 5. Outro Brand Signature
-        self.play_brand_outro()
+        # 5. Outro Brand Signature (skipped when previewing selected beats only)
+        total_beats = len(self.spec.get("beats", []))
+        if not self.preview_beats or total_beats in self.preview_beats:
+            self.play_brand_outro()
+
+    # ------------------------------------------------------------------ preview helpers
+
+    def _parse_preview_beats(self) -> set:
+        raw = os.environ.get("PREVIEW_BEATS", "").strip()
+        if not raw:
+            return set()
+        out = set()
+        for part in raw.split(","):
+            part = part.strip()
+            if part.isdigit():
+                out.add(int(part))
+        return out
+
+    def _preview_time_offset(self) -> float:
+        if not self.preview_beats:
+            return 0.0
+        starts = [float(b.get("start", 0.0)) for b in self.spec.get("beats", [])
+                  if b.get("beat_id") in self.preview_beats and b.get("start") is not None]
+        return min(starts) if starts else 0.0
+
+    def use_timeline_engine(self) -> bool:
+        """ANIMATION_ENGINE=legacy restores the old fade / pulse / breathing choreography."""
+        return os.environ.get("ANIMATION_ENGINE", "timeline").strip().lower() != "legacy"
+
+    # ------------------------------------------------------------------ word-synced choreography
+
+    def play_timeline_beat(self, b: Dict[str, Any], beat_id: int, motif: Mobject,
+                           beat_start: float, beat_end: float):
+        """
+        Plays one beat as a word-synced build:
+          1. the diagram is fitted to the safe area (bigger) and VLM-critic patches applied,
+          2. its build steps are revealed when the narration mentions them,
+          3. the key element is emphasised on the anchor word (signal flow + outline),
+          4. everything holds still in between and is cleared in the last ~0.35s.
+        Times in the spec are audio times; self.time_offset shifts them in preview mode.
+        """
+        from manim_engine.choreography.timeline import plan_beat_timeline
+        from manim_engine.choreography.builders import (
+            get_build_steps, reveal_step, focus_animation, fit_to_safe_area, apply_layout_override
+        )
+
+        self._safe_reset_camera()
+        persistent = set(self.mobjects)  # background, header, caption pill, ...
+
+        tray = self._build_formula_tray_mobject(beat_id)
+        has_formula = tray is not None and len(tray) > 0
+
+        fit_to_safe_area(motif, has_formula)
+        overrides = (self.spec.get("layout_overrides") or {}).get(str(beat_id), {}) or {}
+        apply_layout_override(motif, overrides.get("hero_visual"))
+        if has_formula:
+            apply_layout_override(tray, overrides.get("math_formula"))
+
+        steps = get_build_steps(motif)
+        events = plan_beat_timeline(
+            beat_start=beat_start,
+            beat_end=beat_end,
+            step_cues=[s.cues for s in steps],
+            word_timings=b.get("word_timings") or [],
+            anchor_word=(b.get("svo_action") or {}).get("anchor_word"),
+            has_formula=has_formula,
+            has_focus=True,
+        )
+        summary = ", ".join(
+            f"{e.kind}{e.index if e.kind == 'step' else ''}@{e.time:.2f}" + (f"('{e.cue}')" if e.cue else "")
+            for e in events
+        )
+        print(f"   🎞️ [Timeline] Beat {beat_id}: {len(steps)} build steps | {summary}")
+
+        last_step_index = max((e.index for e in events if e.kind == "step"), default=0)
+        motion_started = False
+        frame = 1.0 / max(1.0, float(config.frame_rate))
+
+        for ev in events:
+            target = ev.time - self.time_offset
+            now = self.renderer.time
+            if target - now > frame:
+                self.wait(target - now)
+
+            try:
+                if ev.kind == "step":
+                    anims = [reveal_step(steps[ev.index], ev.run_time)]
+                    if ev.with_formula and has_formula:
+                        anims.append(FadeIn(tray, shift=UP * 0.12))
+                    self.play(*anims, run_time=ev.run_time)
+                    if ev.index == last_step_index and not motion_started and hasattr(motif, "start_continuous_motion"):
+                        motif.start_continuous_motion()
+                        motion_started = True
+                elif ev.kind == "focus":
+                    self.play(focus_animation(motif, ev.run_time), run_time=ev.run_time)
+                elif ev.kind == "exit":
+                    if motion_started and hasattr(motif, "stop_continuous_motion"):
+                        motif.stop_continuous_motion()
+                    to_clear = [m for m in self.mobjects if m not in persistent]
+                    if to_clear:
+                        self.play(*[FadeOut(m) for m in to_clear], run_time=ev.run_time)
+                        self.remove(*to_clear)
+            except Exception as e:
+                print(f"⚠️ [Timeline] Beat {beat_id} {ev.kind} event failed: {e}")
+                if ev.kind == "step":
+                    # Never leave a step invisible: show its mobjects directly.
+                    for m in steps[ev.index].mobjects:
+                        if m not in self.mobjects:
+                            self.add(m)
+                    if ev.with_formula and has_formula and tray not in self.mobjects:
+                        self.add(tray)
+
+        # Safety: nothing from this beat may leak into the next one.
+        leftovers = [m for m in self.mobjects if m not in persistent]
+        if leftovers:
+            self.remove(*leftovers)
+        self.current_motif = None
+        self.current_formula_mobj = None
+
+        remaining = (beat_end - self.time_offset) - self.renderer.time
+        if remaining > frame:
+            self.wait(remaining)
 
     def track_auxiliary_mobject(self, *mobjects: Any):
         """Registers transient/auxiliary mobjects (particles, halos, overlays) to be cleaned up at beat exit."""
@@ -201,7 +325,7 @@ class ScriptDrivenScene(MovingCameraScene):
         self.current_caption_idx = -1
 
         def update_caption(mob, dt):
-            t = self.renderer.time
+            t = self.renderer.time + getattr(self, "time_offset", 0.0)
             matched = False
             for i, c in enumerate(self.caption_chunks):
                 if c["start"] <= t < c["end"]:
@@ -375,6 +499,8 @@ class ScriptDrivenScene(MovingCameraScene):
             # Skip final outro beat, handled separately in play_brand_outro
             if beat_id == total_beats:
                 continue
+            if self.preview_beats and beat_id not in self.preview_beats:
+                continue
 
             duration = self.get_beat_duration(beat_id, 6.5)
             motif_type = b.get("motif_type")
@@ -399,7 +525,7 @@ class ScriptDrivenScene(MovingCameraScene):
                     motif_params.update(visual_blueprint["params"])
 
             # Auto-enrich benchmark layouts with paper's empirical ground truth
-            bm = self.spec.get("benchmark_comparison", {})
+            bm = self.spec.get("benchmark_comparison") or {}
             curr_layout = motif_params.get("layout")
             if curr_layout in ["horizontal_race_bars", "benchmark_race", "race_bars", "comparative_bars"]:
                 motif_params["layout"] = "horizontal_race_bars"
@@ -423,11 +549,19 @@ class ScriptDrivenScene(MovingCameraScene):
 
             # Visual Engine 4.0: Composable Visual Blueprint (First-class citizen)
             if beat_id == 5:
-                # Beat 5 is the empirical victory / payoff beat.
-                # Always elevate generic placeholders or comparison cards to authentic benchmark race bars!
-                if not visual_blueprint or curr_layout in ["comparative_bars", "benchmark_bars", "comparison_side_by_side", None] or not motif_params.get("contestants"):
+                # Beat 5 is the empirical payoff beat. Upgrade placeholder / data-less
+                # numeric layouts to race bars ONLY when verified benchmark numbers exist;
+                # otherwise keep the director's non-numeric visual (never invent contestants).
+                needs_numbers = (
+                    not visual_blueprint
+                    or curr_layout in ["comparative_bars", "benchmark_bars", "comparison_side_by_side", None]
+                    or (curr_layout == "horizontal_race_bars" and not motif_params.get("contestants"))
+                )
+                b_comp = None
+                if needs_numbers:
                     from pipeline.benchmark_extractor import BenchmarkExtractor
-                    b_comp = BenchmarkExtractor().extract_or_fallback(self.spec)
+                    b_comp = BenchmarkExtractor().extract_verified(self.spec)
+                if b_comp is not None:
                     motif_type = "visual_composition"
                     motif_params["layout"] = "horizontal_race_bars"
                     motif_params["contestants"] = [
@@ -458,10 +592,10 @@ class ScriptDrivenScene(MovingCameraScene):
                     motif_type = "visual_composition"
 
             # Strict audio-synchronous timing anchors
-            expected_start = float(b.get("start", self.renderer.time))
+            expected_start = float(b.get("start", self.renderer.time + self.time_offset))
             expected_end = expected_start + duration
-            if self.renderer.time < expected_start:
-                wait_time = expected_start - self.renderer.time
+            if self.renderer.time < expected_start - self.time_offset:
+                wait_time = expected_start - self.time_offset - self.renderer.time
                 if self.current_motif is not None:
                     self.play_ambient_micro_motion(self.current_motif, motif_type, wait_time)
                 else:
@@ -486,9 +620,9 @@ class ScriptDrivenScene(MovingCameraScene):
                     motif_params["image_path"] = current_img
 
                 if not motif_params.get("title"):
-                    motif_params["title"] = f"{self.spec.get('title', 'AI')[:22].upper()}: BEAT {beat_id}"
+                    motif_params["title"] = trim_words(str(self.spec.get('title', 'AI')).upper(), 30)
                 if not motif_params.get("sub"):
-                    motif_params["sub"] = v_focus[:55] or "Official architectural diagram tailored to narrative beat"
+                    motif_params["sub"] = trim_words(v_focus, 60) or "Figure from the paper"
                 if not motif_params.get("arxiv_id") and self.spec.get("arxiv_id"):
                     motif_params["arxiv_id"] = self.spec.get("arxiv_id")
 
@@ -513,6 +647,12 @@ class ScriptDrivenScene(MovingCameraScene):
 
             if motif is None:
                 motif = create_script_motif(motif_type, motif_params)
+
+            # Word-synced choreography (default): build the diagram step by step as the
+            # narration mentions each part, emphasise the anchor word, hold still otherwise.
+            if self.use_timeline_engine():
+                self.play_timeline_beat(b, beat_id, motif, expected_start, expected_end)
+                continue
 
             # Strict safe-zone enforcement to prevent overlapping with top headers or bottom subtitles
             if motif.width > 7.2:

@@ -28,7 +28,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(PROJECT_ROOT))
 
 from pipeline.config import FONT_HELVETICA
-from manim_engine.primitives.typography import CleanText
+from manim_engine.primitives.typography import CleanText, trim_words
 from manim_engine.primitives.isometric import create_isometric_slab, create_isometric_layer_stack
 
 # Standard 3b1b Palette
@@ -57,29 +57,31 @@ class BaseBlueprintComposition(Group):
         super().__init__(**mobject_kwargs)
         self.accent_color = accent_color
 
-        # Clean top titles formatted for 9:16 mobile canvas
+        # Clean top titles formatted for 9:16 mobile canvas (word-boundary trimmed, readable on phones)
         self.title = CleanText(
-            title.upper()[:48],
+            trim_words(str(title).upper(), 40),
             font=FONT_HELVETICA,
-            font_size=16,
+            font_size=20,
             color=accent_color,
             weight=BOLD
         ).move_to([0, 5.3, 0])
-        if self.title.width > 7.2:
-            self.title.scale_to_fit_width(7.2)
+        if self.title.width > 7.4:
+            self.title.scale_to_fit_width(7.4)
 
         self.sub = CleanText(
-            sub[:80],
+            trim_words(str(sub), 70),
             font=FONT_HELVETICA,
-            font_size=11,
+            font_size=13,
             color=COLOR_SLATE,
             weight=NORMAL
         ).next_to(self.title, DOWN, buff=0.15)
-        if self.sub.width > 7.2:
-            self.sub.scale_to_fit_width(7.2)
+        if self.sub.width > 7.4:
+            self.sub.scale_to_fit_width(7.4)
 
         self.content_group = Group()
         self.kinetic_elements = Group()
+        # Element outlined on the anchor word by the word-synced choreography (optional)
+        self.focus_target = None
 
     def get_entrance_animation(self, run_time: float = 1.0) -> Animation:
         """Returns the entrance animation for this composition. Defaults to FadeIn."""
@@ -117,7 +119,7 @@ class BlueprintSplitFlow(BaseBlueprintComposition):
 
         # 1. Top Input Node
         in_box = RoundedRectangle(corner_radius=0.12, width=4.8, height=0.9, color=COLOR_DARK_SLATE, fill_color=COLOR_PANEL_BG, fill_opacity=0.95, stroke_width=2.5).move_to([0, 3.4, 0])
-        in_txt = CleanText(input_label[:28].upper(), font=FONT_HELVETICA, font_size=12, color=COLOR_WHITE, weight=BOLD).move_to(in_box)
+        in_txt = CleanText(trim_words(input_label, 28).upper(), font=FONT_HELVETICA, font_size=12, color=COLOR_WHITE, weight=BOLD).move_to(in_box)
         in_node = VGroup(in_box, in_txt)
 
         # 2. Central Splitter / Router Gate
@@ -125,15 +127,15 @@ class BlueprintSplitFlow(BaseBlueprintComposition):
             [-1.4, 1.4, 0], [0, 2.1, 0], [1.4, 1.4, 0], [0, 0.7, 0],
             color=self.accent_color, fill_color="#0F172A", fill_opacity=0.95, stroke_width=3.0
         )
-        router_txt = CleanText(router_label[:20].upper(), font=FONT_HELVETICA, font_size=11, color=self.accent_color, weight=BOLD).move_to(router_diamond)
+        router_txt = CleanText(trim_words(router_label, 20).upper(), font=FONT_HELVETICA, font_size=11, color=self.accent_color, weight=BOLD).move_to(router_diamond)
         router_node = VGroup(router_diamond, router_txt)
 
         in_arrow = Arrow(start=in_box.get_bottom(), end=router_diamond.get_top(), color=COLOR_WHITE, buff=0.1, stroke_width=4.0)
 
         # 3. Branch A (Left)
         branch_a_box = RoundedRectangle(corner_radius=0.14, width=3.3, height=2.2, color=branch_a_color, fill_color=COLOR_PANEL_BG, fill_opacity=0.95, stroke_width=3.0).move_to([-1.9, -1.2, 0])
-        a_title = CleanText(branch_a_label[:22].upper(), font=FONT_HELVETICA, font_size=12, color=branch_a_color, weight=BOLD).move_to(branch_a_box.get_top() + DOWN * 0.4)
-        a_sub = CleanText(branch_a_sub[:28], font=FONT_HELVETICA, font_size=10, color=COLOR_SLATE).next_to(a_title, DOWN, buff=0.15)
+        a_title = CleanText(trim_words(branch_a_label, 22).upper(), font=FONT_HELVETICA, font_size=12, color=branch_a_color, weight=BOLD).move_to(branch_a_box.get_top() + DOWN * 0.4)
+        a_sub = CleanText(trim_words(branch_a_sub, 28), font=FONT_HELVETICA, font_size=10, color=COLOR_SLATE).next_to(a_title, DOWN, buff=0.15) if str(branch_a_sub).strip() else VGroup()
         # Visual wave / grid inside branch A
         a_sample_axes = Axes(x_range=[0, 3, 1], y_range=[-1, 1, 1], x_length=2.5, y_length=0.7, axis_config={"color": branch_a_color, "stroke_width": 1.0}).move_to(branch_a_box.get_bottom() + UP * 0.55)
         a_wave = a_sample_axes.plot(lambda x: np.sin(2 * PI * x), color=branch_a_color, stroke_width=3.5)
@@ -141,8 +143,8 @@ class BlueprintSplitFlow(BaseBlueprintComposition):
 
         # 4. Branch B (Right)
         branch_b_box = RoundedRectangle(corner_radius=0.14, width=3.3, height=2.2, color=branch_b_color, fill_color=COLOR_PANEL_BG, fill_opacity=0.95, stroke_width=3.0).move_to([1.9, -1.2, 0])
-        b_title = CleanText(branch_b_label[:22].upper(), font=FONT_HELVETICA, font_size=12, color=branch_b_color, weight=BOLD).move_to(branch_b_box.get_top() + DOWN * 0.4)
-        b_sub = CleanText(branch_b_sub[:28], font=FONT_HELVETICA, font_size=10, color=COLOR_SLATE).next_to(b_title, DOWN, buff=0.15)
+        b_title = CleanText(trim_words(branch_b_label, 22).upper(), font=FONT_HELVETICA, font_size=12, color=branch_b_color, weight=BOLD).move_to(branch_b_box.get_top() + DOWN * 0.4)
+        b_sub = CleanText(trim_words(branch_b_sub, 28), font=FONT_HELVETICA, font_size=10, color=COLOR_SLATE).next_to(b_title, DOWN, buff=0.15) if str(branch_b_sub).strip() else VGroup()
         # Visual discrete steps inside branch B
         b_steps = VGroup(*[
             Rectangle(width=0.6, height=0.25 + 0.18 * i, color=branch_b_color, fill_color=branch_b_color, fill_opacity=0.8, stroke_width=1.5).move_to(branch_b_box.get_bottom() + UP * (0.35 + 0.1 * i) + LEFT * (0.8 - 0.7 * i))
@@ -158,10 +160,23 @@ class BlueprintSplitFlow(BaseBlueprintComposition):
         self.router_node = router_node
         self.branch_a_group = branch_a_group
         self.branch_b_group = branch_b_group
+        self.in_arrow = in_arrow
+        self.arrow_a = arrow_a
+        self.arrow_b = arrow_b
+        self.focus_target = router_node
 
         self.content_group.add(in_node, in_arrow, router_node, arrow_a, arrow_b, branch_a_group, branch_b_group)
         self.kinetic_elements.add(router_node, arrow_a, arrow_b)
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Input -> router -> branch A -> branch B, each revealed as the narration reaches it."""
+        return [
+            [self.in_node],
+            [self.in_arrow, self.router_node],
+            [self.arrow_a, self.branch_a_group],
+            [self.arrow_b, self.branch_b_group],
+        ]
 
 
 class BlueprintPipelineStages(BaseBlueprintComposition):
@@ -171,12 +186,12 @@ class BlueprintPipelineStages(BaseBlueprintComposition):
     """
     def __init__(
         self,
-        stage_1_label: str = "RAW OBSERVATION",
-        stage_1_sub: str = "Noisy high-dimensional inputs",
-        stage_2_label: str = "TRANSFORMATION ENGINE",
-        stage_2_sub: str = "Linear coordinate projection",
-        stage_3_label: str = "CLEAN RECONSTRUCTION",
-        stage_3_sub: str = "Zero-loss structured output",
+        stage_1_label: str = "INPUT",
+        stage_1_sub: str = "",
+        stage_2_label: str = "PROCESS",
+        stage_2_sub: str = "",
+        stage_3_label: str = "OUTPUT",
+        stage_3_sub: str = "",
         accent_color: str = COLOR_CYAN,
         **kwargs
     ):
@@ -211,8 +226,12 @@ class BlueprintPipelineStages(BaseBlueprintComposition):
             ).move_to(box.get_left() + RIGHT * 0.9)
             badge_txt = CleanText(f"STEP {idx+1}", font=FONT_HELVETICA, font_size=10, color=col, weight=BOLD).move_to(badge)
 
-            t = CleanText(lbl[:26].upper(), font=FONT_HELVETICA, font_size=13, color=col, weight=BOLD).next_to(badge, RIGHT, buff=0.3)
-            s = CleanText(sub_lbl[:45], font=FONT_HELVETICA, font_size=10, color=COLOR_SLATE).next_to(t, DOWN, buff=0.1, aligned_edge=LEFT)
+            t = CleanText(trim_words(lbl, 26).upper(), font=FONT_HELVETICA, font_size=13, color=col, weight=BOLD).next_to(badge, RIGHT, buff=0.3)
+            if str(sub_lbl).strip():
+                s = CleanText(trim_words(sub_lbl, 45), font=FONT_HELVETICA, font_size=10, color=COLOR_SLATE).next_to(t, DOWN, buff=0.1, aligned_edge=LEFT)
+            else:
+                t.move_to([t.get_center()[0], box.get_center()[1], 0])
+                s = VGroup()
 
             grp = VGroup(box, badge, badge_txt, t, s)
             stage_groups.append(grp)
@@ -229,10 +248,19 @@ class BlueprintPipelineStages(BaseBlueprintComposition):
 
         self.arrow_1 = arrow_1
         self.arrow_2 = arrow_2
+        self.focus_target = stage_groups[1]
 
         self.content_group.add(arrow_1, arrow_2)
         self.kinetic_elements.add(stage_groups[1], arrow_1, arrow_2)
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Stage 1 -> arrow + stage 2 -> arrow + stage 3."""
+        return [
+            [self.stage_groups[0]],
+            [self.arrow_1, self.stage_groups[1]],
+            [self.arrow_2, self.stage_groups[2]],
+        ]
 
     def get_kinetic_animation(self, run_time: float = 1.5) -> Animation:
         """Sequential packet flow across pipeline stages with glowing flash highlights."""
@@ -268,7 +296,7 @@ class BlueprintGridMemory(BaseBlueprintComposition):
             stroke_width=2.0
         ).move_to([0, 0.4, 0])
 
-        header = CleanText(grid_title[:28].upper(), font=FONT_HELVETICA, font_size=12, color=accent_color, weight=BOLD).move_to(chassis.get_top() + DOWN * 0.4)
+        header = CleanText(trim_words(grid_title, 28).upper(), font=FONT_HELVETICA, font_size=12, color=accent_color, weight=BOLD).move_to(chassis.get_top() + DOWN * 0.4)
 
         # 4x4 coordinate cell matrix
         cells = VGroup()
@@ -297,10 +325,10 @@ class BlueprintGridMemory(BaseBlueprintComposition):
 
         # Bottom query hit badge cleanly separated below row 4
         hit_badge = RoundedRectangle(corner_radius=0.1, width=3.3, height=0.5, color=COLOR_MINT, fill_color="#064E3B", fill_opacity=0.9, stroke_width=1.8).move_to([-1.65, chassis.get_bottom()[1] + 0.45, 0])
-        hit_txt = CleanText(active_cell_label[:24], font=FONT_HELVETICA, font_size=9, color=COLOR_MINT, weight=BOLD).move_to(hit_badge)
+        hit_txt = CleanText(trim_words(active_cell_label, 24), font=FONT_HELVETICA, font_size=9, color=COLOR_MINT, weight=BOLD).move_to(hit_badge)
 
         eff_badge = RoundedRectangle(corner_radius=0.1, width=3.1, height=0.5, color=COLOR_AMBER, fill_color="#451A03", fill_opacity=0.9, stroke_width=1.8).move_to([1.65, chassis.get_bottom()[1] + 0.45, 0])
-        eff_txt = CleanText(efficiency_label[:20], font=FONT_HELVETICA, font_size=9, color=COLOR_AMBER, weight=BOLD).move_to(eff_badge)
+        eff_txt = CleanText(trim_words(efficiency_label, 20), font=FONT_HELVETICA, font_size=9, color=COLOR_AMBER, weight=BOLD).move_to(eff_badge)
 
         badge_group = VGroup(hit_badge, hit_txt, eff_badge, eff_txt)
 
@@ -308,10 +336,22 @@ class BlueprintGridMemory(BaseBlueprintComposition):
         self.hit_cell = hit_cell
         self.active_cell = hit_cell
         self.badge_group = badge_group
+        self.chassis = chassis
+        self.grid_header = header
+        self.focus_target = hit_cell
 
         self.content_group.add(chassis, header, cells, badge_group)
         self.kinetic_elements.add(hit_cell, badge_group)
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Empty memory -> cells fill row by row -> hit / efficiency badges."""
+        return [
+            [self.chassis, self.grid_header],
+            {"mobjects": [self.cells],
+             "animate": lambda rt: LaggedStart(*[FadeIn(c, scale=0.85) for c in self.cells], lag_ratio=0.06, run_time=rt)},
+            [self.badge_group],
+        ]
 
     def get_kinetic_animation(self, run_time: float = 1.5) -> Animation:
         """Matrix cell laser flash and query hit activation."""
@@ -341,7 +381,7 @@ class BlueprintProjectionRays(BaseBlueprintComposition):
         # 1. Top Camera Icon
         cam_body = RoundedRectangle(corner_radius=0.1, width=2.4, height=0.9, color=COLOR_WHITE, fill_color=COLOR_PANEL_BG, fill_opacity=0.95, stroke_width=2.5).move_to([0, 3.2, 0])
         cam_lens = Polygon([0.4, 2.9, 0], [0.9, 2.5, 0], [-0.9, 2.5, 0], [-0.4, 2.9, 0], color=COLOR_WHITE, fill_color=COLOR_WHITE, fill_opacity=0.3, stroke_width=2.0)
-        cam_txt = CleanText(camera_label[:20].upper(), font=FONT_HELVETICA, font_size=10, color=COLOR_WHITE, weight=BOLD).move_to(cam_body)
+        cam_txt = CleanText(trim_words(camera_label, 20).upper(), font=FONT_HELVETICA, font_size=10, color=COLOR_WHITE, weight=BOLD).move_to(cam_body)
         cam_group = VGroup(cam_body, cam_lens, cam_txt)
 
         # 2. Middle Focal Plane (Tilted perspective rectangle)
@@ -349,7 +389,7 @@ class BlueprintProjectionRays(BaseBlueprintComposition):
             [-2.8, 1.0, 0], [2.8, 1.0, 0], [2.2, 0.2, 0], [-2.2, 0.2, 0],
             color=accent_color, fill_color=accent_color, fill_opacity=0.2, stroke_width=2.5
         )
-        focal_txt = CleanText(focal_plane_label[:30].upper(), font=FONT_HELVETICA, font_size=9, color=accent_color, weight=BOLD).move_to(focal_plane)
+        focal_txt = CleanText(trim_words(focal_plane_label, 30).upper(), font=FONT_HELVETICA, font_size=9, color=accent_color, weight=BOLD).move_to(focal_plane)
         plane_group = VGroup(focal_plane, focal_txt)
 
         # 3. Ray lines projecting from lens through focal plane to ground points
@@ -364,12 +404,36 @@ class BlueprintProjectionRays(BaseBlueprintComposition):
         pt_right = Dot(point=[2.0, -1.8, 0], radius=0.18, color=COLOR_AMBER)
 
         target_banner = RoundedRectangle(corner_radius=0.12, width=5.8, height=0.65, color=COLOR_CYAN, fill_color="#0F172A", fill_opacity=0.92, stroke_width=2.0).move_to([0, -2.7, 0])
-        target_txt = CleanText(target_label[:32].upper(), font=FONT_HELVETICA, font_size=11, color=COLOR_CYAN, weight=BOLD).move_to(target_banner)
+        target_txt = CleanText(trim_words(target_label, 32).upper(), font=FONT_HELVETICA, font_size=11, color=COLOR_CYAN, weight=BOLD).move_to(target_banner)
         target_group = VGroup(pt_left, pt_center, pt_right, target_banner, target_txt)
+
+        self.cam_group = cam_group
+        self.plane_group = plane_group
+        self.rays_group = rays_group
+        self.target_group = target_group
+        self.focus_target = pt_center
 
         self.content_group.add(cam_group, plane_group, rays_group, target_group)
         self.kinetic_elements.add(rays_group, pt_center)
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Camera -> rays cast -> projection plane -> landing points."""
+        return [
+            [self.cam_group],
+            {"mobjects": [self.rays_group],
+             "animate": lambda rt: LaggedStart(*[Create(r) for r in self.rays_group], lag_ratio=0.25, run_time=rt)},
+            [self.plane_group],
+            [self.target_group],
+        ]
+
+    def get_focus_animation(self, run_time: float = 1.0):
+        flashes = [ShowPassingFlash(r.copy().set_stroke(color=YELLOW, width=7), time_width=0.5) for r in self.rays_group]
+        return AnimationGroup(
+            AnimationGroup(*flashes),
+            Circumscribe(self.target_group, color=self.accent_color, time_width=0.6),
+            run_time=run_time,
+        )
 
 
 class BlueprintBarrierSeparation(BaseBlueprintComposition):
@@ -389,7 +453,7 @@ class BlueprintBarrierSeparation(BaseBlueprintComposition):
 
         # Left Conduit (Stream A)
         tube_a = RoundedRectangle(corner_radius=0.16, width=2.6, height=5.2, color=COLOR_CYAN, fill_color=COLOR_PANEL_BG, fill_opacity=0.92, stroke_width=2.5).move_to([-2.1, 0.4, 0])
-        lbl_a = CleanText(stream_a_label[:20].upper(), font=FONT_HELVETICA, font_size=10, color=COLOR_CYAN, weight=BOLD).move_to(tube_a.get_top() + DOWN * 0.4)
+        lbl_a = CleanText(trim_words(stream_a_label, 20).upper(), font=FONT_HELVETICA, font_size=10, color=COLOR_CYAN, weight=BOLD).move_to(tube_a.get_top() + DOWN * 0.4)
         arrows_a = VGroup(*[
             Arrow(start=[-2.1, 1.6 - 1.2 * i, 0], end=[-2.1, 0.8 - 1.2 * i, 0], color=COLOR_CYAN, stroke_width=3.5, buff=0)
             for i in range(3)
@@ -398,7 +462,7 @@ class BlueprintBarrierSeparation(BaseBlueprintComposition):
 
         # Right Conduit (Stream B)
         tube_b = RoundedRectangle(corner_radius=0.16, width=2.6, height=5.2, color=COLOR_AMBER, fill_color=COLOR_PANEL_BG, fill_opacity=0.92, stroke_width=2.5).move_to([2.1, 0.4, 0])
-        lbl_b = CleanText(stream_b_label[:20].upper(), font=FONT_HELVETICA, font_size=10, color=COLOR_AMBER, weight=BOLD).move_to(tube_b.get_top() + DOWN * 0.4)
+        lbl_b = CleanText(trim_words(stream_b_label, 20).upper(), font=FONT_HELVETICA, font_size=10, color=COLOR_AMBER, weight=BOLD).move_to(tube_b.get_top() + DOWN * 0.4)
         arrows_b = VGroup(*[
             Arrow(start=[2.1, 1.6 - 1.2 * i, 0], end=[2.1, 0.8 - 1.2 * i, 0], color=COLOR_AMBER, stroke_width=3.5, buff=0)
             for i in range(3)
@@ -413,12 +477,38 @@ class BlueprintBarrierSeparation(BaseBlueprintComposition):
             for i in range(8)
         ])
         barrier_badge = RoundedRectangle(corner_radius=0.1, width=4.6, height=0.6, color=COLOR_CORAL, fill_color="#450A0A", fill_opacity=0.95, stroke_width=2.0).move_to([0, -1.6, 0])
-        barrier_txt = CleanText(barrier_label[:26].upper(), font=FONT_HELVETICA, font_size=10, color=COLOR_CORAL, weight=BOLD).move_to(barrier_badge)
+        barrier_txt = CleanText(trim_words(barrier_label, 26).upper(), font=FONT_HELVETICA, font_size=10, color=COLOR_CORAL, weight=BOLD).move_to(barrier_badge)
         barrier_group = VGroup(barrier_wall, hatches, barrier_badge, barrier_txt)
+
+        self.group_a = group_a
+        self.group_b = group_b
+        self.barrier_group = barrier_group
+        self.arrows_a = arrows_a
+        self.arrows_b = arrows_b
+        self.focus_target = barrier_group
 
         self.content_group.add(group_a, group_b, barrier_group)
         self.kinetic_elements.add(barrier_group)
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Stream A -> stream B -> the barrier slams down between them."""
+        return [
+            [self.group_a],
+            [self.group_b],
+            {"mobjects": [self.barrier_group],
+             "animate": lambda rt: AnimationGroup(
+                 GrowFromEdge(self.barrier_group[0], UP), FadeIn(self.barrier_group[1:]), run_time=rt)},
+        ]
+
+    def get_focus_animation(self, run_time: float = 1.0):
+        flows = [ShowPassingFlash(a.copy().set_stroke(color=YELLOW, width=7), time_width=0.6)
+                 for a in list(self.arrows_a) + list(self.arrows_b)]
+        return AnimationGroup(
+            LaggedStart(*flows, lag_ratio=0.1),
+            Circumscribe(self.barrier_group, color=COLOR_CORAL, time_width=0.6),
+            run_time=run_time,
+        )
 
 
 class BlueprintTreeHierarchy(BaseBlueprintComposition):
@@ -431,6 +521,10 @@ class BlueprintTreeHierarchy(BaseBlueprintComposition):
         root_label: str = "DECISION QUERY",
         optimal_label: str = "HIGH-CONFIDENCE PATH",
         pruned_label: str = "PRUNED BRANCH",
+        left_node_label: str = "DEAD END",
+        right_node_label: str = "EXPLORE",
+        leaf_label: str = "PRUNE",
+        optimal_sub: str = "",
         accent_color: str = COLOR_MINT,
         **kwargs
     ):
@@ -438,40 +532,72 @@ class BlueprintTreeHierarchy(BaseBlueprintComposition):
 
         # Root Node
         root_box = RoundedRectangle(corner_radius=0.12, width=3.8, height=0.85, color=COLOR_WHITE, fill_color=COLOR_PANEL_BG, fill_opacity=0.95, stroke_width=2.5).move_to([0, 3.2, 0])
-        root_txt = CleanText(root_label[:22].upper(), font=FONT_HELVETICA, font_size=11, color=COLOR_WHITE, weight=BOLD).move_to(root_box)
+        root_txt = CleanText(trim_words(root_label, 22).upper(), font=FONT_HELVETICA, font_size=11, color=COLOR_WHITE, weight=BOLD).move_to(root_box)
         root_grp = VGroup(root_box, root_txt)
 
         # Level 1 Nodes
         node_left = Circle(radius=0.55, color=COLOR_CORAL, fill_color="#450A0A", fill_opacity=0.8, stroke_width=2.5).move_to([-2.1, 1.4, 0])
-        txt_l = CleanText("FAIL", font=FONT_HELVETICA, font_size=9, color=COLOR_CORAL, weight=BOLD).move_to(node_left)
+        txt_l = CleanText(trim_words(left_node_label, 10).upper(), font=FONT_HELVETICA, font_size=9, color=COLOR_CORAL, weight=BOLD, max_width=0.95).move_to(node_left)
         edge_l = Line(start=root_box.get_bottom(), end=node_left.get_top(), color=COLOR_CORAL, stroke_width=2.5)
 
         node_right = Circle(radius=0.6, color=accent_color, fill_color="#064E3B", fill_opacity=0.9, stroke_width=3.5).move_to([2.1, 1.4, 0])
-        txt_r = CleanText("EXPLORE", font=FONT_HELVETICA, font_size=9, color=accent_color, weight=BOLD).move_to(node_right)
+        txt_r = CleanText(trim_words(right_node_label, 10).upper(), font=FONT_HELVETICA, font_size=9, color=accent_color, weight=BOLD, max_width=1.05).move_to(node_right)
         edge_r = Line(start=root_box.get_bottom(), end=node_right.get_top(), color=accent_color, stroke_width=4.0)
 
         # Level 2 Nodes (from right node)
         leaf_1 = Circle(radius=0.45, color=COLOR_SLATE, fill_color="#1E293B", fill_opacity=0.8, stroke_width=2.0).move_to([0.6, -0.6, 0])
-        txt_leaf_1 = CleanText("PRUNE", font=FONT_HELVETICA, font_size=8, color=COLOR_SLATE, weight=BOLD).move_to(leaf_1)
+        txt_leaf_1 = CleanText(trim_words(leaf_label, 8).upper(), font=FONT_HELVETICA, font_size=8, color=COLOR_SLATE, weight=BOLD, max_width=0.8).move_to(leaf_1)
         edge_leaf_1 = Line(start=node_right.get_bottom(), end=leaf_1.get_top(), color=COLOR_SLATE, stroke_width=2.0)
 
         leaf_2 = RoundedRectangle(corner_radius=0.12, width=3.4, height=1.1, color=accent_color, fill_color="#064E3B", fill_opacity=0.95, stroke_width=3.0).move_to([2.2, -1.8, 0])
-        leaf_2_t = CleanText(optimal_label[:20].upper(), font=FONT_HELVETICA, font_size=10, color=accent_color, weight=BOLD).move_to(leaf_2.get_top() + DOWN * 0.35)
-        leaf_2_s = CleanText("Optimal 99.4% Choice", font=FONT_HELVETICA, font_size=9, color=COLOR_WHITE).next_to(leaf_2_t, DOWN, buff=0.1)
+        leaf_2_t = CleanText(trim_words(optimal_label, 20).upper(), font=FONT_HELVETICA, font_size=10, color=accent_color, weight=BOLD).move_to(leaf_2.get_top() + DOWN * 0.35)
         edge_leaf_2 = Arrow(start=node_right.get_bottom() + RIGHT * 0.2, end=leaf_2.get_top(), color=accent_color, stroke_width=4.5, buff=0.1)
-        leaf_grp = VGroup(leaf_2, leaf_2_t, leaf_2_s)
+        if optimal_sub:
+            # No hard-coded stats: the old "Optimal 99.4% Choice" appeared in every video.
+            leaf_2_s = CleanText(trim_words(optimal_sub, 26), font=FONT_HELVETICA, font_size=9, color=COLOR_WHITE).next_to(leaf_2_t, DOWN, buff=0.1)
+            leaf_grp = VGroup(leaf_2, leaf_2_t, leaf_2_s)
+        else:
+            leaf_2_t.move_to(leaf_2)
+            leaf_grp = VGroup(leaf_2, leaf_2_t)
 
         # Pruned badge on left
         pruned_box = RoundedRectangle(corner_radius=0.1, width=2.4, height=0.5, color=COLOR_CORAL, fill_color="#450A0A", fill_opacity=0.9, stroke_width=1.5).next_to(node_left, DOWN, buff=0.4)
-        pruned_txt = CleanText(pruned_label[:16].upper(), font=FONT_HELVETICA, font_size=8, color=COLOR_CORAL, weight=BOLD).move_to(pruned_box)
+        pruned_txt = CleanText(trim_words(pruned_label, 16).upper(), font=FONT_HELVETICA, font_size=8, color=COLOR_CORAL, weight=BOLD).move_to(pruned_box)
 
         self.root_node = root_grp
         self.optimal_group = leaf_grp
         self.pruned_group = VGroup(node_left, txt_l, edge_l, pruned_box, pruned_txt)
+        self.focus_target = leaf_grp
+        self._tree_parts = dict(
+            root=root_grp, edge_l=edge_l, node_l=VGroup(node_left, txt_l), edge_r=edge_r,
+            node_r=VGroup(node_right, txt_r), pruned=VGroup(pruned_box, pruned_txt),
+            edge_leaf_1=edge_leaf_1, leaf_1=VGroup(leaf_1, txt_leaf_1), edge_leaf_2=edge_leaf_2, leaf=leaf_grp,
+        )
 
         self.content_group.add(root_grp, edge_l, node_left, txt_l, pruned_box, pruned_txt, edge_r, node_right, txt_r, edge_leaf_1, leaf_1, txt_leaf_1, edge_leaf_2, leaf_grp)
         self.kinetic_elements.add(leaf_grp, edge_leaf_2)
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Root -> two branches -> dead ends get pruned -> winning path."""
+        p = self._tree_parts
+        return [
+            [p["root"]],
+            [p["edge_l"], p["node_l"], p["edge_r"], p["node_r"]],
+            [p["edge_leaf_1"], p["leaf_1"], p["pruned"]],
+            [p["edge_leaf_2"], p["leaf"]],
+        ]
+
+    def get_focus_animation(self, run_time: float = 1.0):
+        p = self._tree_parts
+        path = [p["edge_r"], p["edge_leaf_2"]]
+        flashes = [ShowPassingFlash(e.copy().set_stroke(color=YELLOW, width=7), time_width=0.6) for e in path]
+        return AnimationGroup(
+            Succession(*flashes),
+            p["pruned"].animate.set_opacity(0.35),
+            Circumscribe(p["leaf"], color=self.accent_color, time_width=0.6),
+            run_time=run_time,
+        )
 
 
 class BlueprintLayerStack(BaseBlueprintComposition):
@@ -507,10 +633,26 @@ class BlueprintLayerStack(BaseBlueprintComposition):
         self.stack_group = stack_grp
         self.proj_rays = proj_rays
         self.layer_groups = [stack_grp[i] for i in range(len(stack_grp))]
+        self.focus_target = stack_grp[-1]
 
         self.content_group.add(stack_grp, proj_rays)
         self.kinetic_elements.add(stack_grp[-1], proj_rays)
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Layers stack up from the bottom; projection rays connect them with the top layer."""
+        steps = [[layer] for layer in self.layer_groups]
+        if steps:
+            steps[-1] = [self.proj_rays] + steps[-1]
+        return steps
+
+    def get_focus_animation(self, run_time: float = 1.0):
+        flashes = [ShowPassingFlash(r.copy().set_stroke(color=YELLOW, width=6), time_width=0.6) for r in self.proj_rays]
+        return AnimationGroup(
+            LaggedStart(*flashes, lag_ratio=0.15),
+            Circumscribe(self.stack_group[-1], color=self.accent_color, time_width=0.6),
+            run_time=run_time,
+        )
 
     def get_kinetic_animation(self, run_time: float = 1.5) -> Animation:
         """Ascending vertical projection beam kinetics into top synthesized tier."""
@@ -530,6 +672,7 @@ class BlueprintConvergenceFunnel(BaseBlueprintComposition):
         input_2_label: str = "VISION TOKENS",
         input_3_label: str = "AUDIO SIGNALS",
         fused_label: str = "UNIFIED MULTIMODAL CORE",
+        fused_sub: str = "",
         accent_color: str = COLOR_CYAN,
         **kwargs
     ):
@@ -547,7 +690,7 @@ class BlueprintConvergenceFunnel(BaseBlueprintComposition):
 
         for lbl, col, x_pos in inputs:
             box = RoundedRectangle(corner_radius=0.1, width=2.1, height=0.8, color=col, fill_color=COLOR_PANEL_BG, fill_opacity=0.95, stroke_width=2.0).move_to([x_pos, 2.8, 0])
-            txt = CleanText(lbl[:16].upper(), font=FONT_HELVETICA, font_size=9, color=col, weight=BOLD).move_to(box)
+            txt = CleanText(trim_words(lbl, 16).upper(), font=FONT_HELVETICA, font_size=9, color=col, weight=BOLD).move_to(box)
             node = VGroup(box, txt)
             in_nodes.append(node)
             self.content_group.add(node)
@@ -558,13 +701,28 @@ class BlueprintConvergenceFunnel(BaseBlueprintComposition):
 
         # Fused Core
         fused_box = RoundedRectangle(corner_radius=0.16, width=6.2, height=1.6, color=accent_color, fill_color="#0F172A", fill_opacity=0.95, stroke_width=3.5).move_to(fused_pos)
-        fused_t = CleanText(fused_label[:28].upper(), font=FONT_HELVETICA, font_size=13, color=accent_color, weight=BOLD).move_to(fused_box.get_top() + DOWN * 0.45)
-        fused_s = CleanText("Harmonized Latent Representation", font=FONT_HELVETICA, font_size=10, color=COLOR_WHITE).next_to(fused_t, DOWN, buff=0.15)
-        fused_group = VGroup(fused_box, fused_t, fused_s)
+        fused_t = CleanText(trim_words(fused_label, 28).upper(), font=FONT_HELVETICA, font_size=13, color=accent_color, weight=BOLD).move_to(fused_box.get_top() + DOWN * 0.45)
+        if fused_sub:
+            fused_s = CleanText(trim_words(fused_sub, 36), font=FONT_HELVETICA, font_size=10, color=COLOR_WHITE).next_to(fused_t, DOWN, buff=0.15)
+            fused_group = VGroup(fused_box, fused_t, fused_s)
+        else:
+            fused_t.move_to(fused_box)
+            fused_group = VGroup(fused_box, fused_t)
+
+        self.in_nodes = in_nodes
+        self.in_arrows = in_arrows
+        self.fused_group = fused_group
+        self.focus_target = fused_group
 
         self.content_group.add(fused_group)
         self.kinetic_elements.add(fused_group)
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Each input appears as it is named; then all arrows converge into the fused core."""
+        steps = [[n] for n in self.in_nodes]
+        steps.append(list(self.in_arrows) + [self.fused_group])
+        return steps
 
 
 class BlueprintCatalogRouting(BaseBlueprintComposition):
@@ -578,6 +736,7 @@ class BlueprintCatalogRouting(BaseBlueprintComposition):
         drawer_a_label: str = "DOMAIN EXPERT A",
         drawer_b_label: str = "DOMAIN EXPERT B",
         drawer_c_label: str = "DOMAIN EXPERT C",
+        index_sub: str = "",
         accent_color: str = COLOR_CYAN,
         **kwargs
     ):
@@ -585,9 +744,13 @@ class BlueprintCatalogRouting(BaseBlueprintComposition):
 
         # Top Central Index Desk
         index_box = RoundedRectangle(corner_radius=0.14, width=5.8, height=1.2, color=COLOR_WHITE, fill_color=COLOR_PANEL_BG, fill_opacity=0.95, stroke_width=2.5).move_to([0, 2.8, 0])
-        index_t = CleanText(index_label[:24].upper(), font=FONT_HELVETICA, font_size=12, color=COLOR_WHITE, weight=BOLD).move_to(index_box.get_top() + DOWN * 0.35)
-        index_s = CleanText("O(1) Hash Map / Index Lookup", font=FONT_HELVETICA, font_size=9, color=COLOR_SLATE).next_to(index_t, DOWN, buff=0.1)
-        index_group = VGroup(index_box, index_t, index_s)
+        index_t = CleanText(trim_words(index_label, 24).upper(), font=FONT_HELVETICA, font_size=12, color=COLOR_WHITE, weight=BOLD).move_to(index_box.get_top() + DOWN * 0.35)
+        if index_sub:
+            index_s = CleanText(trim_words(index_sub, 34), font=FONT_HELVETICA, font_size=9, color=COLOR_SLATE).next_to(index_t, DOWN, buff=0.1)
+            index_group = VGroup(index_box, index_t, index_s)
+        else:
+            index_t.move_to(index_box)
+            index_group = VGroup(index_box, index_t)
 
         # 3 Destination Drawers / Buckets
         drawers_data = [
@@ -600,7 +763,7 @@ class BlueprintCatalogRouting(BaseBlueprintComposition):
         arrows = []
         for lbl, col, x_pos in drawers_data:
             d_box = RoundedRectangle(corner_radius=0.12, width=2.1, height=2.4, color=col, fill_color=COLOR_PANEL_BG, fill_opacity=0.92, stroke_width=2.5).move_to([x_pos, -1.0, 0])
-            d_t = CleanText(lbl[:16].upper(), font=FONT_HELVETICA, font_size=9, color=col, weight=BOLD).move_to(d_box.get_top() + DOWN * 0.35)
+            d_t = CleanText(trim_words(lbl, 16).upper(), font=FONT_HELVETICA, font_size=9, color=col, weight=BOLD).move_to(d_box.get_top() + DOWN * 0.35)
 
             # Slot lines inside drawer
             slots = VGroup(*[
@@ -617,27 +780,46 @@ class BlueprintCatalogRouting(BaseBlueprintComposition):
 
         self.content_group.add(index_group)
         self.kinetic_elements.add(drawers[1], arrows[1])  # Middle drawer active
+        self.index_group = index_group
+        self.drawers = drawers
+        self.drawer_arrows = arrows
+        self.focus_target = drawers[1]
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Index first, then each destination as the narration routes to it."""
+        return [[self.index_group]] + [[a, d] for a, d in zip(self.drawer_arrows, self.drawers)]
+
+    def get_focus_animation(self, run_time: float = 1.0):
+        arrow = self.drawer_arrows[1]
+        return AnimationGroup(
+            ShowPassingFlash(arrow.copy().set_stroke(color=YELLOW, width=7), time_width=0.6),
+            Circumscribe(self.drawers[1], color=self.accent_color, time_width=0.6),
+            run_time=run_time,
+        )
 
 
 class BlueprintSideBySideComparison(BaseBlueprintComposition):
     """
-    Direct dual-column contrast: Two opposing architectures compared side-by-side with
-    properly aligned telemetry gauges, technical specs, and dynamic metrics.
-    Eliminates crude cartoon X/checkmarks and empty placeholder voids.
+    Direct dual-column contrast: two approaches compared side by side.
+
+    Only shows what the script provides (titles, tags, up to 3 spec lines, optional stat
+    pill, optional load bar when a real ratio is given). The previous version always drew
+    BitNet-specific FP16 vs ternary matrices and "100% / 10%" load bars, which appeared in
+    every comparison regardless of the paper.
     """
     def __init__(
         self,
-        col_a_title: str = "BASELINE ARCHITECTURE",
-        col_a_stat: str = "1.0x Compute / Full FP16",
-        col_a_tag: str = "BASELINE",
-        col_a_metric_lbl: str = "RESOURCE LOAD: 100%",
-        col_a_ratio: float = 1.0,
-        col_b_title: str = "OPTIMIZED ARCHITECTURE",
-        col_b_stat: str = "0.1x Compute / Ternary Ops",
-        col_b_tag: str = "PROPOSED SOTA",
-        col_b_metric_lbl: str = "RESOURCE LOAD: 10%",
-        col_b_ratio: float = 0.15,
+        col_a_title: str = "BASELINE",
+        col_a_stat: str = "",
+        col_a_tag: str = "BEFORE",
+        col_a_metric_lbl: str = "",
+        col_a_ratio: Optional[float] = None,
+        col_b_title: str = "PROPOSED",
+        col_b_stat: str = "",
+        col_b_tag: str = "AFTER",
+        col_b_metric_lbl: str = "",
+        col_b_ratio: Optional[float] = None,
         col_a_specs: Optional[List[str]] = None,
         col_b_specs: Optional[List[str]] = None,
         accent_color: str = COLOR_MINT,
@@ -645,120 +827,81 @@ class BlueprintSideBySideComparison(BaseBlueprintComposition):
     ):
         super().__init__(accent_color=accent_color, **kwargs)
 
-        specs_a = col_a_specs or ["Dense Matrix Multiplication", "Memory Bandwidth Bound", "High Precision Floats"]
-        specs_b = col_b_specs or ["Zero MatMul Kernel", "Bandwidth Unconstrained", "Bitwise / Ternary Logic"]
+        def _column(x, title, tag, stat, specs, ratio, metric_lbl, edge_col, title_col, fill_col, dot_col):
+            box = RoundedRectangle(corner_radius=0.16, width=3.5, height=4.8, color=edge_col,
+                                   fill_color=fill_col, fill_opacity=0.92, stroke_width=2.5).move_to([x, 0.6, 0])
+            parts = VGroup(box)
+            tag_m = CleanText(trim_words(str(tag).upper(), 18), font=FONT_HELVETICA, font_size=11, color=COLOR_SLATE,
+                              weight=BOLD, max_width=3.0).move_to(box.get_top() + DOWN * 0.38)
+            title_m = CleanText(trim_words(str(title).upper(), 24), font=FONT_HELVETICA, font_size=15, color=title_col,
+                                weight=BOLD, max_width=3.1).next_to(tag_m, DOWN, buff=0.16)
+            parts.add(tag_m, title_m)
+            y = title_m.get_bottom()[1] - 0.45
+            spec_rows = VGroup()
+            for spec_text in (specs or [])[:3]:
+                if not str(spec_text).strip():
+                    continue
+                dot = Dot(radius=0.05, color=dot_col)
+                t = CleanText(trim_words(str(spec_text), 30), font=FONT_HELVETICA, font_size=11, color=COLOR_WHITE,
+                              max_width=2.75)
+                row = VGroup(dot, t).arrange(RIGHT, buff=0.14)
+                row.move_to([x, y, 0]).align_to(box, LEFT).shift(RIGHT * 0.3)
+                spec_rows.add(row)
+                y -= 0.55
+            parts.add(spec_rows)
+            if ratio is not None:
+                try:
+                    r = max(0.05, min(1.0, float(ratio)))
+                    bar_bg = RoundedRectangle(corner_radius=0.06, width=2.8, height=0.26, color="#1E293B",
+                                              fill_color="#0F172A", fill_opacity=0.9, stroke_width=1.0).move_to([x, y - 0.1, 0])
+                    bar = RoundedRectangle(corner_radius=0.06, width=2.75 * r, height=0.22, color=dot_col,
+                                           fill_color=dot_col, fill_opacity=0.9, stroke_width=0)
+                    bar.move_to(bar_bg).align_to(bar_bg, LEFT).shift(RIGHT * 0.025)
+                    parts.add(bar_bg, bar)
+                    if metric_lbl:
+                        parts.add(CleanText(trim_words(str(metric_lbl), 26), font=FONT_HELVETICA, font_size=10,
+                                            color=dot_col, weight=BOLD, max_width=2.9).next_to(bar_bg, DOWN, buff=0.1))
+                except (TypeError, ValueError):
+                    pass
+            if str(stat).strip():
+                stat_t = CleanText(trim_words(str(stat), 28), font=FONT_HELVETICA, font_size=12, color=COLOR_WHITE,
+                                   weight=BOLD, max_width=2.9)
+                pill = RoundedRectangle(corner_radius=0.08, width=stat_t.width + 0.4, height=0.42, color=edge_col,
+                                        fill_color="#0F172A", fill_opacity=0.9, stroke_width=1.2)
+                pill.move_to([x, box.get_bottom()[1] + 0.45, 0])
+                stat_t.move_to(pill)
+                parts.add(pill, stat_t)
+            return parts
 
-        # Left Column (Traditional / Baseline)
-        col_a_box = RoundedRectangle(
-            corner_radius=0.16, width=3.35, height=4.6,
-            color="#334155", fill_color=COLOR_PANEL_BG, fill_opacity=0.92, stroke_width=2.0
-        ).move_to([-1.85, 0.45, 0])
-        col_a_tag_m = CleanText(col_a_tag.upper()[:18], font=FONT_HELVETICA, font_size=8, color="#94A3B8", weight=BOLD).move_to(col_a_box.get_top() + DOWN * 0.32)
-        col_a_t = CleanText(col_a_title[:18].upper(), font=FONT_HELVETICA, font_size=11, color=COLOR_CORAL, weight=BOLD).next_to(col_a_tag_m, DOWN, buff=0.10)
-        if col_a_t.width > 2.9:
-            col_a_t.scale_to_fit_width(2.9)
+        grp_a = _column(-1.9, col_a_title, col_a_tag, col_a_stat, col_a_specs, col_a_ratio, col_a_metric_lbl,
+                        "#334155", COLOR_CORAL, COLOR_PANEL_BG, COLOR_CORAL)
+        grp_b = _column(1.9, col_b_title, col_b_tag, col_b_stat, col_b_specs, col_b_ratio, col_b_metric_lbl,
+                        accent_color, COLOR_WHITE, "#052E26", accent_color)
 
-        # Baseline Technical Schematic: 3x3 Continuous FP16 Weight Matrix
-        matrix_a_cells = [
-            ["+0.82", "-1.41", "+0.35"],
-            ["-0.92", "+2.10", "-0.44"],
-            ["+1.05", "-0.18", "+0.88"]
-        ]
-        grid_a = VGroup()
-        for r_idx, row in enumerate(matrix_a_cells):
-            for c_idx, val in enumerate(row):
-                cell_box = RoundedRectangle(corner_radius=0.04, width=0.72, height=0.28, color="#475569", fill_color="#0F172A", fill_opacity=0.9, stroke_width=1.0)
-                cell_txt = CleanText(val, font=FONT_HELVETICA, font_size=7.5, color=COLOR_WHITE if "+" in val else "#FCA5A5")
-                cell_txt.move_to(cell_box)
-                cell = VGroup(cell_box, cell_txt).move_to([-2.6 + c_idx * 0.75, 1.45 - r_idx * 0.32, 0])
-                grid_a.add(cell)
-
-        op_a_badge = CleanText("OP: FP16 TENSOR MULTIPLY (MAC)", font=FONT_HELVETICA, font_size=7.5, color=COLOR_CORAL, weight=BOLD).move_to([-1.85, 0.35, 0])
-
-        # Baseline telemetry bar
-        bar_a_bg = RoundedRectangle(corner_radius=0.06, width=2.7, height=0.24, color="#1E293B", fill_color="#0F172A", fill_opacity=0.9, stroke_width=1.0).move_to([-1.85, -0.05, 0])
-        fill_w_a = max(0.3, min(2.6, 2.7 * col_a_ratio))
-        bar_a_fill = RoundedRectangle(corner_radius=0.06, width=fill_w_a, height=0.20, color=COLOR_CORAL, fill_color=COLOR_CORAL, fill_opacity=0.88, stroke_width=0).move_to(bar_a_bg.get_center()).align_to(bar_a_bg, LEFT).shift(RIGHT * 0.05)
-        bar_a_lbl = CleanText(col_a_metric_lbl[:24], font=FONT_HELVETICA, font_size=8, color="#F87171", weight=BOLD).next_to(bar_a_bg, DOWN, buff=0.10)
-        bar_a_grp = VGroup(bar_a_bg, bar_a_fill, bar_a_lbl)
-
-        # Baseline feature specs
-        specs_a_grp = VGroup()
-        for idx, spec_text in enumerate(specs_a[:2]):
-            dot = Dot(radius=0.03, color=COLOR_CORAL)
-            t = CleanText(spec_text[:28], font=FONT_HELVETICA, font_size=8, color=COLOR_SLATE)
-            if t.width > 2.4:
-                t.scale_to_fit_width(2.4)
-            row = VGroup(dot, t).arrange(RIGHT, buff=0.10).move_to([-1.85, -0.65 - 0.32 * idx, 0])
-            specs_a_grp.add(row)
-
-        col_a_s = CleanText(col_a_stat[:28], font=FONT_HELVETICA, font_size=9, color=COLOR_WHITE, weight=BOLD)
-        if col_a_s.width > 2.8:
-            col_a_s.scale_to_fit_width(2.8)
-        stat_a_pill = RoundedRectangle(corner_radius=0.08, width=col_a_s.width + 0.35, height=0.32, color="#334155", fill_color="#1E293B", fill_opacity=0.85, stroke_width=1.0).move_to([-1.85, col_a_box.get_bottom()[1] + 0.40, 0])
-        col_a_s.move_to(stat_a_pill)
-        grp_a = VGroup(col_a_box, col_a_tag_m, col_a_t, grid_a, op_a_badge, bar_a_grp, specs_a_grp, stat_a_pill, col_a_s)
-
-        # Right Column (Breakthrough / Optimized)
-        col_b_box = RoundedRectangle(
-            corner_radius=0.16, width=3.35, height=4.6,
-            color=accent_color, fill_color="#052E26", fill_opacity=0.92, stroke_width=2.5
-        ).move_to([1.85, 0.45, 0])
-        col_b_tag_m = CleanText(col_b_tag.upper()[:18], font=FONT_HELVETICA, font_size=8, color=accent_color, weight=BOLD).move_to(col_b_box.get_top() + DOWN * 0.32)
-        col_b_t = CleanText(col_b_title[:18].upper(), font=FONT_HELVETICA, font_size=11, color=COLOR_WHITE, weight=BOLD).next_to(col_b_tag_m, DOWN, buff=0.10)
-        if col_b_t.width > 2.9:
-            col_b_t.scale_to_fit_width(2.9)
-
-        # Optimized Technical Schematic: 3x3 Discrete Ternary BitLinear Matrix {-1, 0, +1}
-        matrix_b_cells = [
-            ["+1", " 0", "-1"],
-            [" 0", "+1", " 0"],
-            ["-1", " 0", "+1"]
-        ]
-        grid_b = VGroup()
-        for r_idx, row in enumerate(matrix_b_cells):
-            for c_idx, val in enumerate(row):
-                cell_box = RoundedRectangle(corner_radius=0.04, width=0.72, height=0.28, color="#065F46", fill_color="#022C22", fill_opacity=0.95, stroke_width=1.0)
-                cell_color = accent_color if "+1" in val else ("#94A3B8" if "0" in val else "#38BDF8")
-                cell_txt = CleanText(val.strip(), font=FONT_HELVETICA, font_size=8, color=cell_color, weight=BOLD)
-                cell_txt.move_to(cell_box)
-                cell = VGroup(cell_box, cell_txt).move_to([1.1 + c_idx * 0.75, 1.45 - r_idx * 0.32, 0])
-                grid_b.add(cell)
-
-        op_b_badge = CleanText("OP: BITWISE ADDITION ONLY (ADD)", font=FONT_HELVETICA, font_size=7.5, color=accent_color, weight=BOLD).move_to([1.85, 0.35, 0])
-
-        # Efficient telemetry bar
-        bar_b_bg = RoundedRectangle(corner_radius=0.06, width=2.7, height=0.24, color="#064E3B", fill_color="#022C22", fill_opacity=0.9, stroke_width=1.0).move_to([1.85, -0.05, 0])
-        fill_w_b = max(0.25, min(2.6, 2.7 * col_b_ratio))
-        bar_b_fill = RoundedRectangle(corner_radius=0.06, width=fill_w_b, height=0.20, color=accent_color, fill_color=accent_color, fill_opacity=0.95, stroke_width=0).move_to(bar_b_bg.get_center()).align_to(bar_b_bg, LEFT).shift(RIGHT * 0.05)
-        bar_b_lbl = CleanText(col_b_metric_lbl[:24], font=FONT_HELVETICA, font_size=8, color=accent_color, weight=BOLD).next_to(bar_b_bg, DOWN, buff=0.10)
-        bar_b_grp = VGroup(bar_b_bg, bar_b_fill, bar_b_lbl)
-
-        # Proposed SOTA feature specs
-        specs_b_grp = VGroup()
-        for idx, spec_text in enumerate(specs_b[:2]):
-            dot = Dot(radius=0.03, color=accent_color)
-            t = CleanText(spec_text[:28], font=FONT_HELVETICA, font_size=8, color="#A7F3D0")
-            if t.width > 2.4:
-                t.scale_to_fit_width(2.4)
-            row = VGroup(dot, t).arrange(RIGHT, buff=0.10).move_to([1.85, -0.65 - 0.32 * idx, 0])
-            specs_b_grp.add(row)
-
-        col_b_s = CleanText(col_b_stat[:28], font=FONT_HELVETICA, font_size=9, color=COLOR_WHITE, weight=BOLD)
-        if col_b_s.width > 2.8:
-            col_b_s.scale_to_fit_width(2.8)
-        stat_b_pill = RoundedRectangle(corner_radius=0.08, width=col_b_s.width + 0.35, height=0.32, color=accent_color, fill_color="#064E3B", fill_opacity=0.9, stroke_width=1.2).move_to([1.85, col_b_box.get_bottom()[1] + 0.40, 0])
-        col_b_s.move_to(stat_b_pill)
-        grp_b = VGroup(col_b_box, col_b_tag_m, col_b_t, grid_b, op_b_badge, bar_b_grp, specs_b_grp, stat_b_pill, col_b_s)
-
-        # Center VS divider pill
-        vs_pill = RoundedRectangle(corner_radius=0.1, width=0.8, height=0.45, color="#475569", fill_color="#0F172A", fill_opacity=0.95, stroke_width=1.5).move_to([0, 0.45, 0])
-        vs_txt = CleanText("VS", font=FONT_HELVETICA, font_size=10, color="#38BDF8", weight=BOLD).move_to(vs_pill)
+        vs_pill = RoundedRectangle(corner_radius=0.1, width=0.8, height=0.46, color="#475569", fill_color="#0F172A",
+                                   fill_opacity=0.95, stroke_width=1.5).move_to([0, 0.6, 0])
+        vs_txt = CleanText("VS", font=FONT_HELVETICA, font_size=12, color="#38BDF8", weight=BOLD).move_to(vs_pill)
         vs_grp = VGroup(vs_pill, vs_txt)
 
+        self.col_a = grp_a
+        self.col_b = grp_b
+        self.vs_grp = vs_grp
+        self.focus_target = grp_b
+
         self.content_group.add(grp_a, grp_b, vs_grp)
-        self.kinetic_elements.add(grp_b, bar_b_fill, stat_b_pill)
+        self.kinetic_elements.add(grp_b)
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Old approach -> VS -> new approach."""
+        return [[self.col_a], [self.vs_grp], [self.col_b]]
+
+    def get_focus_animation(self, run_time: float = 1.0):
+        return AnimationGroup(
+            self.col_a.animate.set_opacity(0.45),
+            Circumscribe(self.col_b, color=self.accent_color, time_width=0.6),
+            run_time=run_time,
+        )
 
 
 class BlueprintPaperFigure(BaseBlueprintComposition):
@@ -828,7 +971,7 @@ class BlueprintPaperFigure(BaseBlueprintComposition):
         # 3. Fallback placeholder if neither exists
         if not fig_mobj:
             box = RoundedRectangle(corner_radius=0.18, width=6.2, height=3.6, color=accent_color, stroke_width=2).move_to([0, 0.9, 0])
-            lbl = CleanText(title[:28], font_size=13, color=accent_color, weight=BOLD).move_to(box)
+            lbl = CleanText(trim_words(title, 28), font_size=13, color=accent_color, weight=BOLD).move_to(box)
             fig_mobj = Group(box, lbl)
 
         # Architectural lightbox chassis behind figure with glowing accent and corner brackets
@@ -893,7 +1036,7 @@ class BlueprintPaperFigure(BaseBlueprintComposition):
             badge_str = f"ARXIV: {arxiv_id} • {raw_b}"
         else:
             badge_str = raw_b
-        badge_txt = CleanText(badge_str[:42], font_size=9, color="#10B981", weight=BOLD)
+        badge_txt = CleanText(trim_words(badge_str, 42), font_size=9, color="#10B981", weight=BOLD)
         badge_pill = RoundedRectangle(
             corner_radius=0.12,
             width=badge_txt.width + 0.45,
@@ -926,7 +1069,27 @@ class BlueprintPaperFigure(BaseBlueprintComposition):
             self.laser_line
         )
         self.kinetic_elements.add(self.fig_mobj)
+        self.focus_target = self.fig_mobj
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Lightbox frame -> the paper's figure -> citation badge (laser is used by the focus only)."""
+        return [
+            [self.glow_chassis, self.chassis, self.corner_brackets, self.lightbox_header],
+            {"mobjects": [self.fig_mobj], "animate": lambda rt: FadeIn(self.fig_mobj, scale=0.94, run_time=rt)},
+            [self.badge],
+        ]
+
+    def get_focus_animation(self, run_time: float = 1.0):
+        """A single scan line sweeps down the figure, then the figure is outlined."""
+        top_y = self.chassis.get_top()[1] - 0.45
+        bot_y = self.chassis.get_bottom()[1] + 0.45
+        return Succession(
+            FadeIn(self.laser_line, run_time=0.15 * run_time),
+            self.laser_line.animate(run_time=0.6 * run_time, rate_func=linear).shift(DOWN * (top_y - bot_y)),
+            AnimationGroup(FadeOut(self.laser_line), Circumscribe(self.fig_mobj, color=self.accent_color, time_width=0.6),
+                           run_time=0.25 * run_time),
+        )
 
     def get_kinetic_animation(self, run_time: float = 1.5) -> Animation:
         """Returns kinetic architectural laser sweep across the diagram."""
@@ -1028,6 +1191,25 @@ def create_blueprint_composition(layout: str, params: Optional[Dict[str, Any]] =
     cls = BLUEPRINT_COMPOSITION_REGISTRY.get(layout, BlueprintPipelineStages)
     clean_params = dict(params) if params else {}
     clean_params.pop("layout", None)
+
+    # Data guard: the race-bar and radar primitives fall back to built-in demo numbers
+    # (e.g. FlashAttention-3 TFLOPS) when given no data. Never let that reach a render:
+    # without real contestants/models, show a non-numeric composition instead.
+    numeric_data_key = {
+        "horizontal_race_bars": "contestants", "race_bars": "contestants", "benchmark_race": "contestants",
+        "drag_race_bars": "contestants", "radar_pareto_plot": "models", "radar_plot": "models",
+        "spider_chart": "models", "pareto_frontier": "models", "pareto_tradeoff": "models",
+    }.get(layout)
+    code_layouts = {"chalkboard_code_block", "chalkboard_code", "code_block", "code_execution_trace",
+                    "syntax_code_block", "code_kernel", "ast_code_trace", "ast_tree"}
+    missing_data = (
+        (numeric_data_key and not clean_params.get(numeric_data_key))
+        or (layout in code_layouts and not (clean_params.get("lines") or clean_params.get("code_lines")))
+    )
+    if missing_data:
+        print(f"⚠️ Layout '{layout}' has no verified data; rendering pipeline_stages instead of demo content.")
+        cls = BlueprintPipelineStages
+        clean_params = {k: v for k, v in clean_params.items() if k in ("title", "sub", "accent_color")}
     try:
         return cls(**clean_params)
     except Exception as e:

@@ -78,7 +78,9 @@ def test_parse_latex_table():
     assert "+78.8%" in comp.delta_badge or "SPEEDUP" in comp.delta_badge
 
 
-def test_extract_or_fallback_synthesis():
+def test_extract_or_fallback_never_synthesizes_numbers():
+    """Without spec data or a parsed LaTeX table, no benchmark is invented (old behavior
+    returned hard-coded FlashAttention-3 H100 numbers for any 'flashattention' title)."""
     extractor = BenchmarkExtractor()
     spec = {
         "id": "flashattention_3_speed",
@@ -90,13 +92,26 @@ def test_extract_or_fallback_synthesis():
             "milestone_metric": "Throughput (TFLOPS)"
         }
     }
-    comp = extractor.extract_or_fallback(spec)
+    assert extractor.extract_or_fallback(spec) is None
+    assert extractor.extract_verified(spec) is None
+
+
+def test_extract_verified_uses_spec_table_without_fake_radar():
+    extractor = BenchmarkExtractor()
+    spec = {
+        "benchmark_comparison": {
+            "metric_name": "Speedup", "unit": "x",
+            "contestants": [
+                {"name": "FlashAttention", "value": 3.0, "display_val": "3.0x", "is_hero": True},
+                {"name": "PyTorch", "value": 1.0, "display_val": "1.0x"},
+                {"name": "Missing value"},  # dropped, not defaulted to 100
+            ],
+        }
+    }
+    comp = extractor.extract_verified(spec)
     assert comp is not None
-    assert len(comp.contestants) >= 3
-    assert comp.contestants[0].is_hero is True
-    assert len(comp.radar_axes) == 5
-    assert len(comp.radar_models) == 2
-    assert comp.radar_models[0]["is_hero"] is True
+    assert [c.name for c in comp.contestants] == ["FlashAttention", "PyTorch"]
+    assert comp.radar_models == []  # one metric cannot fill a multi-axis radar honestly
 
 
 def test_blueprint_horizontal_race_bars_layout():

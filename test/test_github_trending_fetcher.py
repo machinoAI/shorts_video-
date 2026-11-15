@@ -107,8 +107,10 @@ def test_get_trending_github_digest():
     assert len(candidates) == 3
     for c in candidates:
         assert str(c["id"]).startswith("gh_")
-        assert "code_snippet" in c
-        assert isinstance(c["code_snippet"]["lines"], list)
-        assert len(c["code_snippet"]["lines"]) > 0
+        # code_snippet is omitted when only the generic placeholder kernel was available
+        if "code_snippet" in c:
+            assert isinstance(c["code_snippet"]["lines"], list)
+            assert len(c["code_snippet"]["lines"]) > 0
+            assert c["code_snippet"].get("provenance") != "placeholder"
         assert "repo_metadata" in c
         assert c["repo_metadata"]["stars"] > 1000

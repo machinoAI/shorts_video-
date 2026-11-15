@@ -17,7 +17,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(PROJECT_ROOT))
 
 from pipeline.config import FONT_HELVETICA
-from manim_engine.primitives.typography import CleanText
+from manim_engine.primitives.typography import CleanText, trim_words
 from manim_engine.primitives.visual_compositions import BaseBlueprintComposition
 
 # 3b1b Signature Color Palette
@@ -40,11 +40,11 @@ class BlueprintHorizontalRaceBars(BaseBlueprintComposition):
     def __init__(
         self,
         title: str = "BENCHMARK SHOWDOWN",
-        sub: str = "Throughput comparison on NVIDIA H100 GPU (FP16)",
+        sub: str = "Results reported in the paper",
         metric_name: str = "THROUGHPUT",
         unit: str = "TFLOPS",
         contestants: Optional[List[Dict[str, Any]]] = None,
-        delta_badge: str = "⚡ +78.8% SPEEDUP OVER INCUMBENT SOTA",
+        delta_badge: str = "",
         accent_color: str = COLOR_MINT,
         **kwargs
     ):
@@ -134,7 +134,7 @@ class BlueprintHorizontalRaceBars(BaseBlueprintComposition):
 
             # 2. Model Name
             name_col = COLOR_WHITE if is_hero else "#CBD5E1"
-            name_txt = CleanText(name[:26], font_size=12, color=name_col, weight=BOLD if is_hero else MEDIUM)
+            name_txt = CleanText(trim_words(name, 26), font_size=12, color=name_col, weight=BOLD if is_hero else MEDIUM)
             name_txt.next_to(rank_pill, RIGHT, buff=0.20).shift(UP * 0.02)
             if name_txt.width > 2.35:
                 name_txt.scale_to_fit_width(2.35)
@@ -164,7 +164,7 @@ class BlueprintHorizontalRaceBars(BaseBlueprintComposition):
 
             # 5. Clean Value Display
             val_col = COLOR_WHITE if is_hero else COLOR_SLATE
-            val_txt = CleanText(display_val[:16], font_size=11.5, color=val_col, weight=BOLD if is_hero else MEDIUM)
+            val_txt = CleanText(trim_words(display_val, 16), font_size=11.5, color=val_col, weight=BOLD if is_hero else MEDIUM)
             val_txt.next_to(bar_track_bg, RIGHT, buff=0.20)
             if val_txt.width > 1.3:
                 val_txt.scale_to_fit_width(1.3)
@@ -193,7 +193,7 @@ class BlueprintHorizontalRaceBars(BaseBlueprintComposition):
 
         # Bottom Victory Delta Badge at y = -0.9 (strictly within safe zone [-1.5, 2.5], above subtitles at y = -3.45)
         delta_y = -0.75 if n_contestants <= 2 else (-0.95 if n_contestants == 3 else -1.15)
-        badge_txt = CleanText(self.delta_str[:52], font_size=9.5, color="#10B981", weight=BOLD)
+        badge_txt = CleanText(trim_words(self.delta_str, 52) or " ", font_size=9.5, color="#10B981", weight=BOLD)
         badge_pill = RoundedRectangle(
             corner_radius=0.10,
             width=badge_txt.width + 0.45,
@@ -219,6 +219,30 @@ class BlueprintHorizontalRaceBars(BaseBlueprintComposition):
             anims.append(GrowFromEdge(bar, LEFT, rate_func=ease_out_cubic))
         anims.append(FadeIn(self.tracks_group, shift=RIGHT * 0.08))
         anims.append(FadeIn(self.badge, shift=UP * 0.12, rate_func=ease_out_back))
+        return AnimationGroup(*anims, run_time=run_time)
+
+    def get_build_steps(self):
+        """Rows race in one at a time (baselines first, the paper's method last), then the delta badge."""
+        rows = list(self.tracks_group.submobjects)
+        ordered = [r for r in rows if r is not self.hero_row] + ([self.hero_row] if self.hero_row is not None else [])
+
+        def _row_anim(row, rt):
+            rank, name, track, fill, tip, val = row.submobjects[:6]
+            return AnimationGroup(
+                FadeIn(rank), FadeIn(name, shift=RIGHT * 0.1), FadeIn(track),
+                GrowFromEdge(fill, LEFT, rate_func=ease_out_cubic), FadeIn(tip), FadeIn(val, shift=LEFT * 0.1),
+                lag_ratio=0.12, run_time=rt)
+
+        steps = [{"mobjects": [r], "animate": (lambda rt, r=r: _row_anim(r, rt))} for r in ordered]
+        if str(self.delta_str or "").strip():
+            steps.append({"mobjects": [self.badge], "animate": lambda rt: FadeIn(self.badge, shift=UP * 0.12, run_time=rt)})
+        return steps
+
+    def get_focus_animation(self, run_time: float = 1.0):
+        target = self.hero_row if self.hero_row is not None else self.tracks_group
+        anims = [Circumscribe(target, color=COLOR_MINT, time_width=0.6)]
+        if self.hero_row is not None and len(self.hero_row.submobjects) > 4:
+            anims.append(Flash(self.hero_row.submobjects[4].get_center(), color=COLOR_MINT, line_length=0.25, num_lines=10))
         return AnimationGroup(*anims, run_time=run_time)
 
     def get_kinetic_animation(self, run_time: float = 1.8) -> Animation:
@@ -247,7 +271,7 @@ class BlueprintRadarParetoPlot(BaseBlueprintComposition):
         sub: str = "Multi-dimensional tradeoff across reasoning architectures",
         axes: Optional[List[str]] = None,
         models: Optional[List[Dict[str, Any]]] = None,
-        delta_badge: str = "⚡ DOMINATES PARETO FRONTIER AT 18x LOWER COST",
+        delta_badge: str = "",
         accent_color: str = COLOR_MINT,
         **kwargs
     ):
@@ -334,7 +358,7 @@ class BlueprintRadarParetoPlot(BaseBlueprintComposition):
             # Axis Label slightly outside outer point
             label_offset = 0.38
             label_pt = self.center_pt + np.array([(self.max_radius + label_offset) * np.cos(angle), (self.max_radius + label_offset) * np.sin(angle), 0.0])
-            lbl = CleanText(label_text.upper()[:16], font_size=9.5, color=COLOR_SLATE, weight=BOLD)
+            lbl = CleanText(trim_words(label_text.upper(), 16), font_size=9.5, color=COLOR_SLATE, weight=BOLD)
             lbl.move_to(label_pt)
             if lbl.width > 1.8:
                 lbl.scale_to_fit_width(1.8)
@@ -385,7 +409,7 @@ class BlueprintRadarParetoPlot(BaseBlueprintComposition):
             col = item.get("color", COLOR_MINT)
             name = item.get("name", "Model")
             dot = Dot(radius=0.05, color=col)
-            txt = CleanText(name[:24], font_size=10, color=col, weight=BOLD)
+            txt = CleanText(trim_words(name, 24), font_size=10, color=col, weight=BOLD)
             leg_item = Group(dot, txt).arrange(RIGHT, buff=0.12)
             legend_group.add(leg_item)
 
@@ -393,7 +417,7 @@ class BlueprintRadarParetoPlot(BaseBlueprintComposition):
         self.content_group.add(legend_group)
 
         # 5. Bottom Victory Delta Badge at y = -2.1
-        badge_txt = CleanText(self.delta_str[:52], font_size=9.5, color="#10B981", weight=BOLD)
+        badge_txt = CleanText(trim_words(self.delta_str, 52) or " ", font_size=9.5, color="#10B981", weight=BOLD)
         badge_pill = RoundedRectangle(
             corner_radius=0.12,
             width=badge_txt.width + 0.5,

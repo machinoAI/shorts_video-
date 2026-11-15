@@ -156,6 +156,9 @@ def test_visual_director_code_routing():
             {"beat_id": 5, "text": "This delivers four times higher serving throughput."},
             {"beat_id": 6, "text": "Follow The Model Verse for clear visual breakdowns."}
         ],
+        # Code blocks are only shown for real repository code (GitHub ingest sets repo_metadata)
+        "repo_metadata": {"repo_name": "vllm-project/vllm", "stars": 42000, "language": "Python",
+                          "url": "https://github.com/vllm-project/vllm"},
         "code_snippet": {
             "filename": "paged_attention.cu",
             "language": "cuda",
