@@ -1,13 +1,14 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-15 | **Timestamp:** 2026-11-15 14:43:40 UTC
+**Date:** 2026-11-15 | **Timestamp:** 2026-11-15 16:01:33 UTC
 **Total Reels Produced:** 1 / 1
 
 ### Reel 1: Attention Is All You Need
 - **arXiv ID:** [1706.03762](https://arxiv.org/abs/1706.03762)
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/ris3kb65isI](https://youtube.com/shorts/ris3kb65isI) (`ris3kb65isI`)
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/n2w5RAPnIDQ](https://youtube.com/shorts/n2w5RAPnIDQ) (`n2w5RAPnIDQ`)
 - **High-CTR Poster:** [attention_is_all_you_need_breakdown_poster.png](public/thumbnails/attention_is_all_you_need_breakdown_poster.png)
+- **✅ Publish gate:** passed
 - **Content Pillar:** `arxiv`
-- **Domain Taxonomy:** `hardware_efficiency` (0.77x velocity)
+- **Domain Taxonomy:** `hardware_efficiency` (0.65x velocity)
 - **Category:** `mechanism_deepdive`
 - **Editorial Hook:** *How Attention Is All You Need works under the hood*
 - **Everyday Analogy:** *Mechanical blueprint breakdown*
