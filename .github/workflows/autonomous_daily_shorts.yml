@@ -194,6 +194,10 @@ jobs:
           LINKEDIN_CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
           LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          # Publish gate (pipeline/publish_gate.py): held videos upload as PRIVATE and skip
+          # cross-posting. Override with repo variables: private | skip | off.
+          PUBLISH_GATE_MODE: ${{ vars.PUBLISH_GATE_MODE || 'private' }}
+          PUBLISH_GATE_REQUIRE_VLM: ${{ vars.PUBLISH_GATE_REQUIRE_VLM || 'false' }}
           PYTHONUNBUFFERED: "1"
         run: |
           COUNT="${{ github.event.inputs.count || '1' }}"

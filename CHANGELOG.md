@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased] — Quality quick wins (branch `quality/quick-wins`)
+
+### Fixed — fabricated numbers and code on screen
+- **Prompt example leakage**: removed concrete example values (98.2%, 41.5%, "+56.7% SYNTACTIC RECOVERY GAIN", 1,180 TFLOPS, "Dense Baseline", ...) from the scriptwriter prompt; added a "numbers rule" and placeholders. 50 of 267 saved specs contained the 98.2/41.5 pair.
+- **New `pipeline/grounding.py`**: removes metric fields whose numbers are not in the paper material (title / abstract / queue angle) and flags ungrounded narration numbers in `spec["quality_flags"]`.
+- **`enforce_script_schema`** no longer backfills `payoff_stat: 98.2%`, `scale_metric: 10x`, a 1,180 TFLOPS benchmark, or a fake code snippet.
+- **`benchmark_extractor`**: deleted keyword-matched fallback tables and the fixed radar scores; `extract_verified()` returns only spec or LaTeX-table data, else `None`.
+- **Visuals**: race bars / radar / code blocks are only used with verified data; `create_blueprint_composition` refuses to render primitive demo numbers or demo code. Thumbnail profiles no longer carry DeepSeek-specific stats or a default formula.
+- **Code blocks**: only real repository code (GitHub ingest, `repo_metadata`) is shown; generic placeholder kernels are dropped.
+
+### Changed — hook gate
+- The scriptwriter's hook is kept whenever usable (no lecture opener, 6–32 words, no ungrounded numbers); the regex score is diagnostic only. Replacement templates use the paper's short method name (never the video title) and no longer splice metadata metrics into paper hooks.
+
+### Added — publish gate (`pipeline/publish_gate.py`)
+- Holds a video when the script came from the deterministic fallback, narration has ungrounded numbers, prompt-example values leaked, the hook needs review, or the vision critic failed. Held videos upload to YouTube as **private** and skip Instagram / X / LinkedIn (`PUBLISH_GATE_MODE=private|skip|off`).
+- The VLM critic marks heuristic fallback scores as `unverified`; set `PUBLISH_GATE_REQUIRE_VLM=true` to hold when no vision model ran.
+- Daemon report shows the gate decision; held queue items are archived as `held_for_review`.
+
+---
+
 ## [5.2.0] - 2026-10-03
 
 ### 💻 GitHub Trending AI & Live Code Execution Trace Visualizer

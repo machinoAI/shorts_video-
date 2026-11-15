@@ -28,15 +28,63 @@ class VisualDirector:
     Directly aligns voiceover beats to intuitive, full-screen 3Blue1Brown visual compositions.
     """
 
+    NUMERIC_LAYOUTS = {
+        "horizontal_race_bars", "race_bars", "benchmark_race", "drag_race_bars", "comparative_bars",
+        "radar_pareto_plot", "radar_plot", "spider_chart", "pareto_frontier", "pareto_tradeoff",
+    }
+    RADAR_LAYOUTS = {"radar_pareto_plot", "radar_plot", "spider_chart", "pareto_frontier", "pareto_tradeoff"}
+
     def __init__(self):
         self.api_key = os.environ.get("GEMINI_API_KEY")
+
+    @staticmethod
+    def _contestant_params(benchmark: Any) -> List[Dict[str, Any]]:
+        return [
+            {"name": c.name, "value": c.value, "display_val": c.raw_str, "is_hero": c.is_hero, "color": c.color}
+            for c in benchmark.contestants
+        ]
+
+    CODE_LAYOUTS = {
+        "chalkboard_code_block", "chalkboard_code", "code_block", "code_execution_trace",
+        "syntax_code_block", "code_kernel", "ast_code_trace", "ast_tree",
+    }
+
+    def _numeric_layout_has_data(self, blueprint: Dict[str, Any], verified_benchmark: Any, verified_code: bool = False) -> bool:
+        """
+        True if the blueprint is a plain layout, or a data layout with real data to show.
+        Fills race-bar contestants from the verified benchmark when the blueprint has none.
+        A numeric/code layout without data would otherwise render the primitive's demo
+        numbers or demo code, or invented values from the LLM.
+        """
+        layout = blueprint.get("layout")
+        if layout in self.CODE_LAYOUTS:
+            return verified_code  # code layouts are filled from the repo snippet by the code branch
+        if layout not in self.NUMERIC_LAYOUTS:
+            return True
+        params = blueprint.get("params") if isinstance(blueprint.get("params"), dict) else {}
+        if layout in self.RADAR_LAYOUTS:
+            return bool(params.get("models") or blueprint.get("models"))
+        if params.get("contestants") or blueprint.get("contestants"):
+            return True
+        if verified_benchmark is not None:
+            params = dict(params)
+            params["contestants"] = self._contestant_params(verified_benchmark)
+            params.setdefault("metric_name", verified_benchmark.metric_name)
+            params.setdefault("unit", verified_benchmark.unit)
+            if verified_benchmark.delta_badge:
+                params.setdefault("delta_badge", verified_benchmark.delta_badge)
+            blueprint["params"] = params
+            return True
+        return False
 
     def synthesize_visual_blueprint(
         self,
         beat: Dict[str, Any],
         topic: str,
         beat_id: int,
-        used_layouts: Optional[set] = None
+        used_layouts: Optional[set] = None,
+        verified_benchmark: Any = None,
+        verified_code: Optional[Dict[str, Any]] = None
     ) -> Dict[str, Any]:
         """
         Derives a rich, context-specific visual blueprint for a beat if not already provided
@@ -154,58 +202,34 @@ class VisualDirector:
                 "efficiency_label": "O(1) CONSTANT LATENCY"
             })
 
-        # Showdown 1: Horizontal Benchmark Drag-Race Bars
-        if any(k in text for k in ["throughput", "tflops", "race", "speedup", "faster", "benchmark", "leaderboard", "tokens/s", "drag race", "baseline", "outperform", "gflops", "speed"]):
+        # Showdown: Horizontal Benchmark Race Bars — only with verified numbers.
+        # (A radar plot is never synthesized here: we have no real multi-metric data.)
+        if verified_benchmark is not None and any(k in text for k in ["throughput", "tflops", "race", "speedup", "faster", "benchmark", "leaderboard", "tokens/s", "drag race", "baseline", "outperform", "gflops", "speed", "accuracy", "score"]):
             candidates.append({
                 "layout": "horizontal_race_bars",
-                "title": f"BENCHMARK RACE: {subj.upper()[:16]}",
-                "sub": v_focus[:65] or "Hardware throughput and execution speed drag race",
+                "title": verified_benchmark.title,
+                "sub": v_focus[:65] or "Results reported in the paper",
                 "accent_color": "#10B981",
-                "metric_name": "THROUGHPUT",
-                "unit": "TFLOPS",
-                "contestants": [
-                    {"name": f"{subj[:14]} (Ours)", "value": 1180.0, "display_val": "1,180 TFLOPS", "is_hero": True, "color": "#10B981"},
-                    {"name": "Prior SOTA", "value": 660.0, "display_val": "660 TFLOPS", "is_hero": False, "color": "#38BDF8"},
-                    {"name": "cuDNN Native", "value": 610.0, "display_val": "610 TFLOPS", "is_hero": False, "color": "#A855F7"},
-                    {"name": "PyTorch Baseline", "value": 240.0, "display_val": "240 TFLOPS", "is_hero": False, "color": "#EF4444"}
-                ],
-                "delta_badge": "⚡ +78.8% SPEEDUP OVER PRIOR SOTA"
+                "metric_name": verified_benchmark.metric_name,
+                "unit": verified_benchmark.unit,
+                "contestants": self._contestant_params(verified_benchmark),
+                "delta_badge": verified_benchmark.delta_badge
             })
 
-        # Showdown 2: Radar / Spider Pareto Frontier Tradeoff
-        if any(k in text for k in ["radar", "spider", "pareto", "tradeoff", "trade-off", "frontier", "dimensions", "cost efficiency", "compromise", "multi-dimensional"]):
-            candidates.append({
-                "layout": "radar_pareto_plot",
-                "title": f"PARETO FRONTIER: {subj.upper()[:16]}",
-                "sub": v_focus[:65] or "Multi-dimensional performance tradeoff across frontier architectures",
-                "accent_color": "#10B981",
-                "axes": ["Throughput", "VRAM Efficiency", "Accuracy", "Context Length", "Cost Efficiency"],
-                "models": [
-                    {"name": f"{subj[:14]} (Ours)", "scores": [0.94, 0.90, 0.92, 0.88, 0.96], "is_hero": True, "color": "#10B981", "fill_opacity": 0.35},
-                    {"name": "Proprietary Incumbent", "scores": [0.62, 0.48, 0.95, 0.85, 0.22], "is_hero": False, "color": "#EF4444", "fill_opacity": 0.20}
-                ],
-                "delta_badge": "⚡ DOMINATES PARETO FRONTIER AT FRACTION OF COST"
-            })
-
-        # Code Execution 1: Chalkboard Syntax Code Block & Live Register
-        # Dedicated to Beat 3 or 4 when explaining the kernel implementation
-        if (beat_id in [3, 4, 5] or beat_id is None) and any(k in (text + " " + topic.lower()) for k in ["function", "kernel", "algorithm", "implementation", "compile", "python", "cuda", "syntax", "source code", "snippet"]):
+        # Code Execution: Chalkboard Code Block — only with real repository code.
+        # (Previously this generated fake lines like `def execute_<verb>(tensor_in): ...`.)
+        if verified_code and verified_code.get("lines") and (beat_id in [3, 4, 5] or beat_id is None) and any(k in (text + " " + topic.lower()) for k in ["function", "kernel", "algorithm", "implementation", "compile", "python", "cuda", "syntax", "source code", "snippet"]):
             candidates.append({
                 "layout": "chalkboard_code_block",
                 "title": f"KERNEL IMPLEMENTATION: {subj.upper()[:16]}",
-                "sub": v_focus[:65] or "Core algorithmic loop running directly inside GPU memory",
+                "sub": v_focus[:65] or "Core loop from the open-source repository",
                 "accent_color": "#38BDF8",
-                "filename": f"{subj.lower()[:12]}_kernel.py",
-                "language": "python",
-                "lines": [
-                    f"def execute_{action.lower()[:10]}(tensor_in):",
-                    f"    state = {subj.lower()[:12]}_cache()",
-                    f"    out = fused_{action.lower()[:10]}_step(tensor_in)",
-                    "    return synchronize(state, out)"
-                ],
-                "highlight_lines": [2, 3],
-                "trace_register": f"⚡ ACTIVE STATE: {obj.upper()[:24]}",
-                "delta_badge": "⚡ ZERO MEMORY COPY OVERHEAD"
+                "filename": verified_code.get("filename", "kernel.py"),
+                "language": verified_code.get("language", "python"),
+                "lines": verified_code.get("lines", []),
+                "highlight_lines": verified_code.get("highlight_lines", [1]),
+                "trace_register": verified_code.get("trace_register", f"⚡ ACTIVE STATE: {obj.upper()[:24]}"),
+                "delta_badge": (verified_code.get("explanation") or "")[:52]
             })
 
         # 5. Mirror / Blur / Contrast / Side-by-Side Comparison
@@ -302,6 +326,54 @@ class VisualDirector:
             if cand["layout"] not in used:
                 return cand
 
+        # Keyword matches exhausted: rotate through other non-numeric layouts so beats
+        # that lost a fake race-bar / code visual don't all collapse to pipeline_stages.
+        generic_fallbacks = [
+            {
+                "layout": "layer_stack",
+                "title": f"LAYERED VIEW: {subj.upper()[:18]}",
+                "sub": v_focus[:65] or f"How {subj.lower()} builds up to {obj.lower()}",
+                "accent_color": "#38BDF8",
+                "bottom_layer": f"L1: {subj.upper()[:18]}",
+                "mid_layer": f"L2: {action.upper()[:18]}",
+                "top_layer": f"L3: {obj.upper()[:18]}"
+            },
+            {
+                "layout": "split_flow",
+                "title": f"BEFORE VS AFTER: {subj.upper()[:16]}",
+                "sub": v_focus[:65] or f"Contrasting the old path with {subj.lower()}",
+                "accent_color": "#34D399",
+                "input_label": f"{topic.upper()[:18]} INPUT",
+                "router_label": f"{action.upper()[:14]}",
+                "branch_a_label": "BASELINE PATH",
+                "branch_a_sub": "Prior approach",
+                "branch_b_label": f"{subj.upper()[:16]}",
+                "branch_b_sub": f"{obj[:24]}"
+            },
+            {
+                "layout": "convergence_funnel",
+                "title": f"WHAT IT COMBINES: {subj.upper()[:16]}",
+                "sub": v_focus[:65] or f"Inputs converging into {obj.lower()}",
+                "accent_color": "#A855F7",
+                "input_1_label": f"{subj[:12]}",
+                "input_2_label": f"{action[:12]}",
+                "input_3_label": f"{obj[:12]}",
+                "fused_label": f"{topic.upper()[:20]}"
+            },
+            {
+                "layout": "tree_hierarchy",
+                "title": f"DECISION PATH: {subj.upper()[:18]}",
+                "sub": v_focus[:65] or f"Which branch leads to {obj.lower()}",
+                "accent_color": "#F59E0B",
+                "root_label": f"{topic.upper()[:16]}",
+                "optimal_label": f"{obj.upper()[:16]}",
+                "pruned_label": "DISCARDED PATH"
+            },
+        ]
+        for cand in generic_fallbacks:
+            if cand["layout"] not in used:
+                return cand
+
         # If all candidates used, fallback to the top match
         return sorted_candidates[0]
 
@@ -332,6 +404,17 @@ class VisualDirector:
 
         used_layouts = set()
 
+        # Benchmark numbers backed by the spec (grounded) or the paper's LaTeX tables.
+        # None means there is nothing real to chart, so no beat gets a numeric layout.
+        from pipeline.benchmark_extractor import BenchmarkExtractor
+        verified_benchmark = BenchmarkExtractor().extract_verified(spec)
+        from pipeline.grounding import has_verified_code
+        verified_code = has_verified_code(spec)
+        if spec.get("code_snippet") and not verified_code:
+            print("   ℹ️ Ignoring code_snippet: not from a real repository (no repo_metadata or placeholder code).")
+        if verified_benchmark is None:
+            print("   ℹ️ No verified benchmark numbers found — numeric layouts (race bars / radar) disabled for this video.")
+
         print(f"\n🎬 [VisualDirector 4.0] Designing Script-Driven Visual Storyboard for '{topic}'...")
 
         for i, b in enumerate(beats):
@@ -342,17 +425,15 @@ class VisualDirector:
             # -------------------------------------------------------------
             # BEAT 5: Automated Showdown & Benchmark Visualizer (Visual Engine 5.0)
             # -------------------------------------------------------------
-            if b_id == 5:
+            if b_id == 5 and verified_benchmark is not None:
                 v_foc = b.get("visual_focus", "")
                 if len(v_foc) > 55:
                     v_foc = v_foc[:55].rsplit(" ", 1)[0]
 
-                from pipeline.benchmark_extractor import BenchmarkExtractor
-                extractor = BenchmarkExtractor()
-                b_comp = extractor.extract_or_fallback(spec)
+                b_comp = verified_benchmark
 
                 b_text = (b.get("text", "") + " " + v_foc).lower()
-                if any(k in b_text for k in ["radar", "spider", "pareto", "tradeoff", "trade-off", "frontier", "dimensions"]):
+                if b_comp.radar_models and any(k in b_text for k in ["radar", "spider", "pareto", "tradeoff", "trade-off", "frontier", "dimensions"]):
                     layout_name = "radar_pareto_plot"
                     params = {
                         "title": f"PARETO FRONTIER: {topic.upper()[:18]}",
@@ -462,7 +543,7 @@ class VisualDirector:
             # -------------------------------------------------------------
             # BEAT 3 or 4: Open-Source Code Kernel (if code_snippet present)
             # -------------------------------------------------------------
-            code_data = spec.get("code_snippet")
+            code_data = spec.get("code_snippet") if verified_code else None
             if code_data and "chalkboard_code_block" not in used_layouts and (b_id == 4 or (b_id == 3 and not paper_figures)):
                 code_filename = code_data.get("filename", "kernel.py")
                 b["motif_type"] = "chalkboard_code_block"
@@ -493,8 +574,15 @@ class VisualDirector:
             # Composable Visual Blueprint (Visual Engine 4.0)
             # -------------------------------------------------------------
             blueprint = b.get("visual_blueprint")
-            if not blueprint or not isinstance(blueprint, dict) or not blueprint.get("layout") or blueprint.get("layout") in used_layouts:
-                blueprint = self.synthesize_visual_blueprint(b, topic, b_id, used_layouts=used_layouts)
+            if (
+                not blueprint or not isinstance(blueprint, dict) or not blueprint.get("layout")
+                or blueprint.get("layout") in used_layouts
+                or not self._numeric_layout_has_data(blueprint, verified_benchmark, verified_code)
+            ):
+                blueprint = self.synthesize_visual_blueprint(
+                    b, topic, b_id, used_layouts=used_layouts, verified_benchmark=verified_benchmark,
+                    verified_code=spec.get("code_snippet") if verified_code else None
+                )
                 b["visual_blueprint"] = blueprint
 
             layout = blueprint.get("layout", "pipeline_stages")

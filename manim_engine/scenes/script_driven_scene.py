@@ -399,7 +399,7 @@ class ScriptDrivenScene(MovingCameraScene):
                     motif_params.update(visual_blueprint["params"])
 
             # Auto-enrich benchmark layouts with paper's empirical ground truth
-            bm = self.spec.get("benchmark_comparison", {})
+            bm = self.spec.get("benchmark_comparison") or {}
             curr_layout = motif_params.get("layout")
             if curr_layout in ["horizontal_race_bars", "benchmark_race", "race_bars", "comparative_bars"]:
                 motif_params["layout"] = "horizontal_race_bars"
@@ -423,11 +423,19 @@ class ScriptDrivenScene(MovingCameraScene):
 
             # Visual Engine 4.0: Composable Visual Blueprint (First-class citizen)
             if beat_id == 5:
-                # Beat 5 is the empirical victory / payoff beat.
-                # Always elevate generic placeholders or comparison cards to authentic benchmark race bars!
-                if not visual_blueprint or curr_layout in ["comparative_bars", "benchmark_bars", "comparison_side_by_side", None] or not motif_params.get("contestants"):
+                # Beat 5 is the empirical payoff beat. Upgrade placeholder / data-less
+                # numeric layouts to race bars ONLY when verified benchmark numbers exist;
+                # otherwise keep the director's non-numeric visual (never invent contestants).
+                needs_numbers = (
+                    not visual_blueprint
+                    or curr_layout in ["comparative_bars", "benchmark_bars", "comparison_side_by_side", None]
+                    or (curr_layout == "horizontal_race_bars" and not motif_params.get("contestants"))
+                )
+                b_comp = None
+                if needs_numbers:
                     from pipeline.benchmark_extractor import BenchmarkExtractor
-                    b_comp = BenchmarkExtractor().extract_or_fallback(self.spec)
+                    b_comp = BenchmarkExtractor().extract_verified(self.spec)
+                if b_comp is not None:
                     motif_type = "visual_composition"
                     motif_params["layout"] = "horizontal_race_bars"
                     motif_params["contestants"] = [

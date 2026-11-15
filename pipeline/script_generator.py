@@ -60,6 +60,10 @@ Aesthetic & Pedagogical Philosophy (Fireship meets 3Blue1Brown & Veritasium):
   * Every fact, system component, mechanical bottleneck, and metric MUST be derived directly from the provided paper details (title and abstract).
   * NEVER hallucinate unrelated tools or frameworks (e.g. do NOT mention Cursor or Claude unless the paper is about coding assistants; do NOT use universal chef analogies).
   * If the paper is about robotics, focus on robotics kinematics/simulation; if about video/diffusion, focus on temporal consistency/denoising; if about hardware, focus on memory bandwidth/SRAM.
+- NUMBERS RULE (overrides every other instruction):
+  * Every number you write — in narration, metadata, benchmark contestants, badges, or formulas with concrete values — MUST appear in the Paper Details below.
+  * If the Paper Details do not state a value for a field, set that field to null. Never estimate, round up, or invent a number to make a result sound impressive.
+  * Placeholders in the JSON schema below (written as <...>) describe what goes in a field; they are NOT values to copy.
 - REQUIRED RELATABLE DOMAIN HUMOR & FIRESHIP SARCASM:
   * Inject smart, wry, relatable developer humor highlighting the authentic irony or frustration behind the paper's core challenge.
   * Point out the real-world absurdity (e.g., in robotics: AI solving differential equations but getting defeated by an egg; in hardware: spending millions on GPUs that sit idling waiting on RAM; in vision: melting data centers to draw hands with eleven fingers).
@@ -97,7 +101,7 @@ The 4-Act Intellectual Thriller Narrative Arc:
    * Beat 3 (The Eureka Pivot, 20-25 words): Introduce the actual architectural innovation simply and cleanly.
    * Beat 4 (The Technical Deep-Dive / Secret Sauce, 20-25 words): Explain the paper's specific secret sauce with real developer terms.
 4. ACT 4: The Paradigm Shift / Open Loop (Beats 5 & 6, 40-50s):
-   * Beat 5 (Empirical Victory Payoff, 18-24 words): Deliver the concrete payoff with numbers from the paper.
+   * Beat 5 (Empirical Victory Payoff, 18-24 words): Deliver the concrete payoff with numbers stated in the Paper Details. If none are stated, describe the payoff qualitatively — never invent a number.
    * Beat 6 (Paradigm Shift & Seamless Loop, 15-20 words): Crisp outro that naturally loops back to Beat 1.
      Example: 'Follow {{CHANNEL_NAME}} for daily deep-dives into how modern AI actually works under the hood.'
 
@@ -117,7 +121,7 @@ DEDICATED 5-BEAT MATHEMATICAL FORMULAS (STRICT REQUIREMENT):
   * Formula 1 (Beat 2): The Bottleneck / Superposition / Complexity equation (e.g. '$\\mathbf{x} = \\sum_{i=1}^M \\alpha_i \\mathbf{v}_i$' or '$\\mathcal{O}(N^2)$').
   * Formula 2 (Beat 3): The Architectural Decomposition / Dictionary / Projection equation (e.g. '$\\mathbf{f}(x) = \\mathrm{ReLU}(\\mathbf{W}_e x + b_e)$' or '$W \\to \\{E_1, \\dots, E_{256}\\}$').
   * Formula 3 (Beat 4): The Operational Mechanism / Gating / Latent Partition equation (e.g. '$\\mathcal{C}_{\\mathrm{POS}} = \\{k \\mid f_k(x) > \\tau\\}$' or '$\\mathrm{Top8}(\\sigma(W_g x))$').
-  * Formula 4 (Beat 5): The Quantitative Proof / Metric / Accuracy equation (e.g. '$\\mathrm{Accuracy}_{\\mathrm{POS}} = 98.2\\%$' or '$94.5\\% \\text{ Compute Saved}$').
+  * Formula 4 (Beat 5): The Quantitative Proof / Metric equation. Only put a number in it if that exact number is stated in the Paper Details; otherwise write the metric symbolically (e.g. '$\\mathrm{Speedup} = T_{\\mathrm{base}} / T_{\\mathrm{new}}$').
 - Compatibility constraint: Use valid Matplotlib math mode (wrapped in $). Use `\\mathrm{...}` for words (do NOT use `\\text{...}` inside math). DO NOT use `\\underbrace`, `\\overbrace`, or undefined packages.
 - For each formula, provide 1 to 2 `term_annotations` explaining the variables (e.g. `[{"term": "f(x)", "label": "Sparse Latents"}, {"term": "W_e", "label": "32k Dictionary"}]`).
 
@@ -168,23 +172,25 @@ DEDICATED FULL-SCREEN VISUAL BLUEPRINTS (CRITICAL ARCHITECTURAL DIRECTIVE):
   * "catalog_routing": For library card catalogs, indexing desks, hash map lookups, or dispatching to specialized drawers.
     params: {"index_label": "...", "drawer_a_label": "...", "drawer_b_label": "...", "drawer_c_label": "..."}
   * "horizontal_race_bars": For performance benchmarks, speedup comparisons, throughput (TFLOPS), power (Watts), or memory footprint.
+    ONLY use when the Paper Details state the numbers for at least two contestants.
     params: {
-      "metric_name": "...",
-      "unit": "...",
+      "metric_name": "<metric named in the paper>",
+      "unit": "<unit used in the paper>",
       "contestants": [
-        {"name": "Our Model", "value": 13.0, "display_val": "13W / 0.1x RAM", "is_hero": true, "color": "#34D399"},
-        {"name": "Incumbent Baseline", "value": 350.0, "display_val": "350W / 1.0x RAM", "is_hero": false, "color": "#EF4444"}
+        {"name": "<method from the paper>", "value": <number stated in the paper>, "display_val": "<that number with its unit>", "is_hero": true, "color": "#34D399"},
+        {"name": "<baseline named in the paper>", "value": <number stated in the paper>, "display_val": "<that number with its unit>", "is_hero": false, "color": "#EF4444"}
       ],
-      "delta_badge": "⚡ ..."
+      "delta_badge": "<⚡ short badge using only numbers stated in the paper, or null>"
     }
   * "radar_pareto_plot": For multi-dimensional Pareto frontier comparisons (speed, memory, accuracy, cost).
+    ONLY use when the Paper Details report results on several metrics for the same models.
     params: {
-      "axes": ["Throughput", "VRAM Efficiency", "Accuracy", "Context Length", "Cost Efficiency"],
+      "axes": ["<metric 1 from the paper>", "<metric 2>", "<metric 3>"],
       "models": [
-        {"name": "Our Model", "scores": [0.95, 0.90, 0.92, 0.85, 0.98], "is_hero": true, "color": "#34D399"},
-        {"name": "Baseline", "scores": [0.50, 0.40, 0.90, 0.80, 0.25], "is_hero": false, "color": "#EF4444"}
+        {"name": "<method>", "scores": [<0-1 values normalized from reported numbers>], "is_hero": true, "color": "#34D399"},
+        {"name": "<baseline>", "scores": [<0-1 values normalized from reported numbers>], "is_hero": false, "color": "#EF4444"}
       ],
-      "delta_badge": "⚡ ..."
+      "delta_badge": "<⚡ short badge, or null>"
     }
   * "comparison_side_by_side": For contrasting two opposing architectures side-by-side with full feature specs and telemetry gauges (NOT for empirical benchmark bars; use horizontal_race_bars for benchmarks).
     params: {
@@ -193,10 +199,11 @@ DEDICATED FULL-SCREEN VISUAL BLUEPRINTS (CRITICAL ARCHITECTURAL DIRECTIVE):
     }
 - NEVER reuse the same blueprint layout across beats in the same video. Every beat must have its own distinct visual layout!
 - BEAT 5 CLIMAX MANDATE: Beat 5 must NEVER end with generic empty boxes or placeholder cards. It MUST deliver the paper's genuine empirical payoff:
-  * If quantitative throughput/memory/latency/power: use "horizontal_race_bars" with actual named contestants and real units.
-  * If multi-metric tradeoff: use "radar_pareto_plot".
+  * If the Paper Details state throughput/memory/latency/power/accuracy numbers for the method AND a baseline: use "horizontal_race_bars" with those exact contestants and units.
+  * If the Paper Details state several metrics for the same models: use "radar_pareto_plot".
+  * If the Paper Details state no comparable numbers: pick a non-numeric layout that shows the mechanism's effect.
   * If mathematical or state-space convergence: use "optimization_landscape" or "vector_flow_field".
-  * If executable implementation: use "chalkboard_code_block".
+  * Never use "chalkboard_code_block" — it is reserved for real repository code attached by the pipeline.
 - STRICT BAN ON CARTOON X AND CHECKMARKS: Never draw crude red 'X' and green checkmark boxes like cheap clickbait. All visuals must feature real scientific hardware telemetry, mathematical equations, and technical flow mechanics!
 """.replace("{{CHANNEL_NAME}}", CHANNEL_NAME).replace("{{CHANNEL_HANDLE}}", CHANNEL_HANDLE)
 
@@ -402,7 +409,7 @@ Generate the complete JSON specification strictly adhering to this structure:
         "semantic_role": "agent_action | state_transition | causal_elimination | metric_evaluation"
       }},
       "visual_blueprint": {{
-        "layout": "horizontal_race_bars | radar_pareto_plot | chalkboard_code_block | vector_flow_field | neural_activation_wave | attention_prism_refraction | optimization_landscape | split_flow | pipeline_stages | grid_memory | projection_rays | barrier_separation | tree_hierarchy | layer_stack | convergence_funnel | catalog_routing | paper_figure | comparison_side_by_side",
+        "layout": "horizontal_race_bars | radar_pareto_plot | vector_flow_field | neural_activation_wave | attention_prism_refraction | optimization_landscape | split_flow | pipeline_stages | grid_memory | projection_rays | barrier_separation | tree_hierarchy | layer_stack | convergence_funnel | catalog_routing | paper_figure | comparison_side_by_side",
         "title": "CLEAR UPPERCASE CONCEPT TITLE",
         "sub": "Concise 1-line description of visual structure",
         "accent_color": "#38BDF8",
@@ -493,66 +500,56 @@ Generate the complete JSON specification strictly adhering to this structure:
         {{"word": "Token 'poly2'", "color": "#F59E0B"}}
       ]
     }},
-    "model_a": "Contender 1 Name (e.g. Coding Agents, Claude 3.7)",
-    "model_a_specs": ["Short spec 1", "Short spec 2", "Short spec 3"],
-    "model_b": "Contender 2 Name (e.g. Classical TAMP, GPT-4o)",
-    "model_b_specs": ["Short spec 1", "Short spec 2", "Short spec 3"],
-    "divide_title": "Short uppercase divide title (e.g. SEARCH VS POLICY DIVIDE)",
-    "model_a_stat": "Contender 1 stat (e.g. 95%, 37B, 10x)",
-    "model_a_stat_label": "Label under metric (e.g. TASK SUCCESS, ACTIVE PARAMS)",
-    "model_b_stat": "Contender 2 stat (e.g. 47%, 1.8T, 1x)",
-    "model_b_stat_label": "Label under metric (e.g. BASELINE SUCCESS, FULL WEIGHTS)",
-    "efficiency_badge": "Badge text with emoji (e.g. ⚡ 10x COMPUTE REDUCTION)",
+    "model_a": "<the paper's method name>",
+    "model_a_specs": ["<short spec from the paper>", "<short spec>", "<short spec>"],
+    "model_b": "<the baseline the paper compares against, or null>",
+    "model_b_specs": ["<short spec from the paper>", "<short spec>", "<short spec>"],
+    "divide_title": "<SHORT UPPERCASE CONTRAST TITLE>",
+    "model_a_stat": "<method's headline number as stated in the paper, or null>",
+    "model_a_stat_label": "<UPPERCASE label for that number, or null>",
+    "model_b_stat": "<baseline's number as stated in the paper, or null>",
+    "model_b_stat_label": "<UPPERCASE label for that number, or null>",
+    "efficiency_badge": "<⚡ short badge using only numbers stated in the paper, or null>",
     "benchmarks": [
-      {{"name": "Benchmark 1", "score_a": "95%", "score_b": "47%"}},
-      {{"name": "Benchmark 2", "score_a": "10x", "score_b": "1x"}},
-      {{"name": "Benchmark 3", "score_a": "High", "score_b": "Baseline"}}
+      {{"name": "<benchmark named in the paper>", "score_a": "<method score as stated>", "score_b": "<baseline score as stated>"}}
     ],
-    "scale_metric": "Hero number for Beat 1 (e.g. 16k, 671B, 100M)",
-    "scale_label": "Label under hero number (e.g. Latent Features, Total Parameters)",
+    "scale_metric": "<hero number for Beat 1 as stated in the paper, or null>",
+    "scale_label": "<label under that number, or null>",
     "bottleneck_title": "Uppercase title for Beat 2 (e.g. MONOLITHIC BRUTE-FORCE BOTTLENECK)",
     "bottleneck_desc": "Short description for Beat 2 (e.g. Entangled Superposition)",
     "solution_title": "Uppercase title for Beat 3 (e.g. SPARSE AUTOENCODER PROJECTION)",
     "solution_components": "Components label for Beat 3 (e.g. Monosemantic Dictionary)",
     "mechanism_title": "Uppercase title for Beat 4 (e.g. STRUCTURED LATENT ACTIVATION)",
-    "payoff_stat": "Hero stat for Beat 5 (e.g. 95%, 10x, 94.5%)",
-    "payoff_label": "Uppercase label for Beat 5 (e.g. SUCCESS RATE, SPEEDUP)",
-    "payoff_sub": "Subtext for Beat 5 (e.g. Outperforming Traditional Hand-Crafted Models)",
-    "payoff_hero_stat": 98.2,
-    "payoff_hero_label": "Sparse SAE Latents",
-    "payoff_base_stat": 41.5,
-    "payoff_base_label": "Dense Baseline",
-    "payoff_delta_badge": "⚡ +56.7% SYNTACTIC RECOVERY GAIN",
-    "challenger": "Challenger Name (for benchmark_news)",
-    "incumbent": "Incumbent Name (for benchmark_news)"
+    "payoff_stat": "<Beat 5 hero number as stated in the paper, or null>",
+    "payoff_label": "<UPPERCASE label for that number, or null>",
+    "payoff_sub": "<one-line subtext grounded in the paper>",
+    "payoff_hero_stat": "<method's number as stated in the paper (numeric), or null>",
+    "payoff_hero_label": "<method name>",
+    "payoff_base_stat": "<baseline's number as stated in the paper (numeric), or null>",
+    "payoff_base_label": "<baseline name>",
+    "payoff_delta_badge": "<⚡ badge using only numbers stated in the paper, or null>",
+    "challenger": "<challenger name (for benchmark_news)>",
+    "incumbent": "<incumbent name (for benchmark_news)>"
   }},
   "benchmark_comparison": {{
-    "title": "BENCHMARK SHOWDOWN: PRIMARY METRIC",
-    "metric_name": "Throughput or Accuracy",
-    "unit": "TFLOPS | % | tok/s | ms",
+    "title": "<BENCHMARK SHOWDOWN: METRIC NAME>",
+    "metric_name": "<metric named in the paper>",
+    "unit": "<unit used in the paper>",
     "contestants": [
-      {{"name": "Our Model", "value": 1180.0, "display_val": "1,180 TFLOPS", "is_hero": true, "color": "#10B981"}},
-      {{"name": "Incumbent SOTA", "value": 660.0, "display_val": "660 TFLOPS", "is_hero": false, "color": "#38BDF8"}},
-      {{"name": "Alternative Baselines", "value": 610.0, "display_val": "610 TFLOPS", "is_hero": false, "color": "#A855F7"}},
-      {{"name": "Standard PyTorch", "value": 240.0, "display_val": "240 TFLOPS", "is_hero": false, "color": "#EF4444"}}
+      {{"name": "<method from the paper>", "value": "<number stated in the paper (numeric)>", "display_val": "<that number with its unit>", "is_hero": true, "color": "#10B981"}},
+      {{"name": "<baseline named in the paper>", "value": "<number stated in the paper (numeric)>", "display_val": "<that number with its unit>", "is_hero": false, "color": "#EF4444"}}
     ],
-    "delta_badge": "⚡ +78.8% SOTA EFFICIENCY GAIN",
-    "radar_axes": ["Throughput", "VRAM Efficiency", "Accuracy", "Context Length", "Cost Efficiency"]
+    "delta_badge": "<⚡ badge using only numbers stated in the paper, or null>",
+    "radar_axes": ["<metric 1 from the paper>", "<metric 2>", "<metric 3>"]
   }},
-  "code_snippet": {{
-    "filename": "core_kernel.py",
-    "language": "python",
-    "lines": [
-      "def execute_step(tensor_in):",
-      "    node = self.root_cache",
-      "    out = fused_forward_pass(tensor_in)",
-      "    return synchronize(node, out)"
-    ],
-    "highlight_lines": [2, 3],
-    "trace_register": "⚡ FUSED HARDWARE KERNEL EXECUTION",
-    "explanation": "Zero memory-copy hardware acceleration"
-  }}
+  "code_snippet": null
 }}
+
+Final checks before you answer:
+- Replace every <...> placeholder with content from the Paper Details, or with null when the paper does not state it.
+- Set "benchmark_comparison" to null unless the Paper Details state numbers for the method and at least one baseline.
+- Always set "code_snippet" to null and never use the "chalkboard_code_block" layout: real repository code is attached separately when it exists, and invented code must never be shown as the paper's implementation.
+- Re-read your narration: any number not found in the Paper Details must be removed or rephrased qualitatively.
 """
 
     from pipeline.llm_router import llm_router
@@ -564,7 +561,16 @@ Generate the complete JSON specification strictly adhering to this structure:
         arxiv_meta=arxiv_meta
     )
     print(f"✅ Script generated successfully via provider '{provider_used}'")
+    spec["script_provider"] = provider_used
     spec = sanitize_spec_channel_branding(spec)
+
+    # Numeric grounding guard: drop structured metrics whose numbers are not in the
+    # paper material the model was given (prevents prompt-example values leaking).
+    from pipeline.grounding import build_source_text, apply_grounding_guard
+    grounding_source = build_source_text(arxiv_meta, extra=[topic, context or ""])
+    spec = apply_grounding_guard(spec, grounding_source)
+    if spec["quality_flags"].get("scrubbed_fields"):
+        print(f"🧹 [Grounding] Removed ungrounded metric fields: {', '.join(spec['quality_flags']['scrubbed_fields'])}")
 
     # Ensure ID slug is filesystem safe
     clean_id = re.sub(r"[^a-zA-Z0-9_\-]", "_", spec.get("id", "short_topic")).lower()
@@ -610,12 +616,14 @@ Generate the complete JSON specification strictly adhering to this structure:
             except Exception as e_figs:
                 print(f"⚠️ Figure extraction notice in script_generator: {e_figs}")
 
-    # Preserve curated code kernel and repo metadata if supplied by GitHub ingest
+    # Code snippets: only real repository code (GitHub ingest) is kept. Anything the
+    # scriptwriter produced is dropped so invented code is never shown as the paper's.
+    spec.pop("code_snippet", None)
     if arxiv_meta and isinstance(arxiv_meta, dict):
-        if arxiv_meta.get("code_snippet") and (not spec.get("code_snippet") or arxiv_meta.get("repo_metadata")):
-            spec["code_snippet"] = arxiv_meta["code_snippet"]
         if arxiv_meta.get("repo_metadata"):
             spec["repo_metadata"] = arxiv_meta["repo_metadata"]
+            if arxiv_meta.get("code_snippet"):
+                spec["code_snippet"] = arxiv_meta["code_snippet"]
 
     # 2-Agent Socratic Feynman Dialogue Engine (TechScriptwriter + Curious Novice Listener)
     try:
@@ -732,6 +740,16 @@ Generate the complete JSON specification strictly adhering to this structure:
 
     # Final channel branding sanitization pass
     spec = sanitize_spec_channel_branding(spec)
+
+    # Re-run the grounding guard on the final (rewritten) script and record
+    # ungrounded narration numbers for the publish gate.
+    spec = apply_grounding_guard(spec, grounding_source)
+    narration_flags = spec["quality_flags"].get("ungrounded_narration_numbers", [])
+    if narration_flags:
+        for nf in narration_flags:
+            print(f"⚠️ [Grounding] Beat {nf['beat_id']} narration has numbers not found in the paper material: {nf['numbers']}")
+    if spec["quality_flags"].get("leaked_example_values"):
+        print(f"⚠️ [Grounding] Prompt-example values detected: {spec['quality_flags']['leaked_example_values']}")
 
     # Save to templates directory
     templates_dir = PROJECT_ROOT / "pipeline" / "templates"

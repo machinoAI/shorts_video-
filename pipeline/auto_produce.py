@@ -357,6 +357,7 @@ def auto_produce(
 
     # Step 6.5: Closed-Loop VLM Critic Quality Audit & Self-Healing Loop (Phase 6)
     print("\n🧐 Step 6.5: Auditing visual quality & 3b1b compliance via Gemini Vision VLM Critic...")
+    audit_report = None
     try:
         from pipeline.vlm_critic import vlm_critic
         from pipeline.fast_beat_renderer import render_beat_keyframe, DRAFT_CACHE_DIR
@@ -491,8 +492,26 @@ def auto_produce(
         traceback.print_exc()
 
 
+    # Step 6.8: Publish gate — decide whether this video may go out publicly.
+    from pipeline.publish_gate import evaluate_publish_gate, apply_gate_to_publishing, save_gate_report, print_gate
+    print("\n🚦 Step 6.8: Publish gate...")
+    gate = evaluate_publish_gate(spec, vlm_report=audit_report, script_report=script_report)
+    gate_action = apply_gate_to_publishing(gate, privacy)
+    gate["action"] = gate_action
+    spec["publish_gate"] = gate
+    save_gate_report(gate, final_output)
+    try:
+        with open(template_path, "w", encoding="utf-8") as f:
+            json.dump(spec, f, indent=2)
+    except Exception:
+        pass
+    print_gate(gate, gate_action)
+    upload_privacy = gate_action["privacy"]
+    allow_youtube = gate_action["youtube_upload"]
+    allow_cross_post = gate_action["cross_post"]
+
     # Step 7: Automated YouTube Shorts Distribution
-    if publish or dry_run_publish:
+    if (publish and allow_youtube) or dry_run_publish:
         from pipeline.publisher import generate_shorts_metadata, upload_short
         print("\n🚀 Step 7: YouTube Shorts automated distribution...")
         metadata = generate_shorts_metadata(spec, final_output)
@@ -508,7 +527,7 @@ def auto_produce(
             print("=======================================================\n")
         else:
             try:
-                upload_res = upload_short(final_output, metadata, privacy_status=privacy)
+                upload_res = upload_short(final_output, metadata, privacy_status=upload_privacy)
                 spec["youtube_upload"] = upload_res
                 # Save companion upload info file for caller inspection
                 try:
@@ -541,7 +560,7 @@ def auto_produce(
                     raise e
 
     # Step 8: Automated Instagram Reels Distribution
-    should_publish_ig = publish_instagram or (publish and os.getenv("PUBLISH_INSTAGRAM", "false").lower() == "true")
+    should_publish_ig = allow_cross_post and (publish_instagram or (publish and os.getenv("PUBLISH_INSTAGRAM", "false").lower() == "true"))
     if should_publish_ig or dry_run_publish:
         from pipeline.instagram_caption_generator import generate_instagram_post, format_full_caption_with_hashtags
         from pipeline.instagram_publisher import instagram_publisher
@@ -582,7 +601,7 @@ def auto_produce(
                 print(f"\n⚠️ Instagram automated publish skipped or failed: {e_ig}")
 
     # Step 9: Automated X (Twitter) Video Thread Distribution
-    should_publish_x = publish_x or (publish and os.getenv("PUBLISH_TWITTER", os.getenv("PUBLISH_X", "false")).lower() == "true")
+    should_publish_x = allow_cross_post and (publish_x or (publish and os.getenv("PUBLISH_TWITTER", os.getenv("PUBLISH_X", "false")).lower() == "true"))
     if should_publish_x or dry_run_publish:
         from pipeline.x_thread_generator import generate_x_thread, calculate_tweet_length
         from pipeline.x_publisher import x_publisher
@@ -605,7 +624,7 @@ def auto_produce(
                 print(f"\n⚠️ X automated publish skipped or failed: {e_x}")
 
     # Step 10: Automated LinkedIn Video Distribution
-    should_publish_li = publish_linkedin or (publish and os.getenv("PUBLISH_LINKEDIN", "false").lower() == "true")
+    should_publish_li = allow_cross_post and (publish_linkedin or (publish and os.getenv("PUBLISH_LINKEDIN", "false").lower() == "true"))
     if should_publish_li or dry_run_publish:
         from pipeline.linkedin_copy_generator import generate_linkedin_post
         from pipeline.linkedin_publisher import linkedin_publisher

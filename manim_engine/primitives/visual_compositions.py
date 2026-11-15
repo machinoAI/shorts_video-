@@ -1028,6 +1028,25 @@ def create_blueprint_composition(layout: str, params: Optional[Dict[str, Any]] =
     cls = BLUEPRINT_COMPOSITION_REGISTRY.get(layout, BlueprintPipelineStages)
     clean_params = dict(params) if params else {}
     clean_params.pop("layout", None)
+
+    # Data guard: the race-bar and radar primitives fall back to built-in demo numbers
+    # (e.g. FlashAttention-3 TFLOPS) when given no data. Never let that reach a render:
+    # without real contestants/models, show a non-numeric composition instead.
+    numeric_data_key = {
+        "horizontal_race_bars": "contestants", "race_bars": "contestants", "benchmark_race": "contestants",
+        "drag_race_bars": "contestants", "radar_pareto_plot": "models", "radar_plot": "models",
+        "spider_chart": "models", "pareto_frontier": "models", "pareto_tradeoff": "models",
+    }.get(layout)
+    code_layouts = {"chalkboard_code_block", "chalkboard_code", "code_block", "code_execution_trace",
+                    "syntax_code_block", "code_kernel", "ast_code_trace", "ast_tree"}
+    missing_data = (
+        (numeric_data_key and not clean_params.get(numeric_data_key))
+        or (layout in code_layouts and not (clean_params.get("lines") or clean_params.get("code_lines")))
+    )
+    if missing_data:
+        print(f"⚠️ Layout '{layout}' has no verified data; rendering pipeline_stages instead of demo content.")
+        cls = BlueprintPipelineStages
+        clean_params = {k: v for k, v in clean_params.items() if k in ("title", "sub", "accent_color")}
     try:
         return cls(**clean_params)
     except Exception as e:
