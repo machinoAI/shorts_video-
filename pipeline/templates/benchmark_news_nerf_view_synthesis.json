@@ -1,0 +1,1600 @@
+{
+  "id": "nerf_view_synthesis",
+  "title": "NEURAL RADIANCE FIELDS: PHOTOREALISM REIMAGINED",
+  "category": "benchmark_news",
+  "domain_taxonomy": "quantitative_benchmark",
+  "hook_tag": "ARCHITECTURE BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Stitching sparse photos into 360-degree scenes usually results in a blurry, disjointed, geometric disaster.",
+      "visual_focus": "A fragmented 3D mesh collapsing under poor camera alignment.",
+      "highlight_words": {
+        "sparse photos": "#38BDF8",
+        "geometric disaster": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Geometric Mesh",
+        "action_verb": "collapses",
+        "direct_object": "disjointed scene",
+        "anchor_word": "disaster",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "projection_rays",
+        "title": "THE FRAGMENTATION PROBLEM",
+        "sub": "Input views failing to reconstruct complex scene depth.",
+        "accent_color": "#EF4444",
+        "params": {
+          "camera_label": "Sparse Input",
+          "focal_plane_label": "Incomplete Depth",
+          "target_label": "disjointed scene"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 63,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "projection_rays",
+        "title": "THE FRAGMENTATION PROBLEM",
+        "sub": "Input views failing to reconstruct complex scene depth.",
+        "accent_color": "#EF4444",
+        "camera_label": "Sparse Input",
+        "focal_plane_label": "Incomplete Depth",
+        "target_label": "disjointed scene"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.55,
+      "duration": 7.55,
+      "word_timings": [
+        {
+          "word": "Stitching",
+          "clean_word": "stitching",
+          "phonemes": "st\u02c8\u026at\u0283\u026a\u014b",
+          "start": 0.07,
+          "end": 0.47,
+          "duration": 0.4,
+          "frame_ahead_trigger": 0.03
+        },
+        {
+          "word": "sparse",
+          "clean_word": "sparse",
+          "phonemes": "sp\u02c8\u0251\u02d0\u0279s",
+          "start": 0.47,
+          "end": 1.025,
+          "duration": 0.555,
+          "frame_ahead_trigger": 0.43
+        },
+        {
+          "word": "photos",
+          "clean_word": "photos",
+          "phonemes": "f\u02c8o\u028a\u027eo\u028az",
+          "start": 1.025,
+          "end": 1.34,
+          "duration": 0.315,
+          "frame_ahead_trigger": 0.985
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 1.34,
+          "end": 1.725,
+          "duration": 0.385,
+          "frame_ahead_trigger": 1.3
+        },
+        {
+          "word": "360-degree",
+          "clean_word": "360degree",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0h\u02c8\u028cnd\u0279\u026ad s\u02c8\u026aksti d\u1d7b\u0261\u0279\u02c8i\u02d0",
+          "start": 1.725,
+          "end": 3.35,
+          "duration": 1.625,
+          "frame_ahead_trigger": 1.685
+        },
+        {
+          "word": "scenes",
+          "clean_word": "scenes",
+          "phonemes": "s\u02c8i\u02d0nz",
+          "start": 3.35,
+          "end": 3.735,
+          "duration": 0.385,
+          "frame_ahead_trigger": 3.31
+        },
+        {
+          "word": "usually",
+          "clean_word": "usually",
+          "phonemes": "j\u02c8u\u02d0\u0292u\u02d0\u0259li",
+          "start": 3.735,
+          "end": 4.305,
+          "duration": 0.57,
+          "frame_ahead_trigger": 3.695
+        },
+        {
+          "word": "results",
+          "clean_word": "results",
+          "phonemes": "\u0279\u026az\u02c8\u028clts",
+          "start": 4.305,
+          "end": 4.615,
+          "duration": 0.31,
+          "frame_ahead_trigger": 4.265
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 4.615,
+          "end": 4.903,
+          "duration": 0.288,
+          "frame_ahead_trigger": 4.575
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 4.903,
+          "end": 5.076,
+          "duration": 0.173,
+          "frame_ahead_trigger": 4.863
+        },
+        {
+          "word": "blurry,",
+          "clean_word": "blurry",
+          "phonemes": "bl\u02c8\u025c\u02d0\u0279i",
+          "start": 5.076,
+          "end": 5.485,
+          "duration": 0.409,
+          "frame_ahead_trigger": 5.036
+        },
+        {
+          "word": "disjointed,",
+          "clean_word": "disjointed",
+          "phonemes": "d\u026asd\u0292\u02c8\u0254\u026ant\u1d7bd",
+          "start": 5.485,
+          "end": 6.08,
+          "duration": 0.595,
+          "frame_ahead_trigger": 5.445
+        },
+        {
+          "word": "geometric",
+          "clean_word": "geometric",
+          "phonemes": "d\u0292\u02cci\u02d0o\u028am\u02c8\u025bt\u0279\u026ak",
+          "start": 6.08,
+          "end": 6.99,
+          "duration": 0.91,
+          "frame_ahead_trigger": 6.04
+        },
+        {
+          "word": "disaster.",
+          "clean_word": "disaster",
+          "phonemes": "d\u026az\u02c8\u00e6st\u025a",
+          "start": 6.99,
+          "end": 7.435,
+          "duration": 0.445,
+          "frame_ahead_trigger": 6.95
+        }
+      ],
+      "audio_duration": 7.55,
+      "slot_duration": 7.7
+    },
+    {
+      "beat_id": 2,
+      "text": "Traditional voxels suffer from memory explosion, forcing us to trade off high-fidelity resolution for basic, grid-bound sanity.",
+      "visual_focus": "A dense grid filling with memory overflow warnings and stuttering render frames.",
+      "highlight_words": {
+        "memory explosion": "#EF4444",
+        "grid-bound": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Voxel Grid",
+        "action_verb": "chokes",
+        "direct_object": "memory buffer",
+        "anchor_word": "explosion",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE MEMORY BOTTLENECK",
+        "sub": "Voxel density reaching the limits of hardware capacity.",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "High-Res Geometry",
+          "stream_b_label": "Memory Constraints",
+          "barrier_label": "Resolution Ceiling",
+          "barrier_sub": " "
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE MEMORY BOTTLENECK",
+        "sub": "Voxel density reaching the limits of hardware capacity.",
+        "accent_color": "#EF4444",
+        "stream_a_label": "High-Res Geometry",
+        "stream_b_label": "Memory Constraints",
+        "barrier_label": "Resolution Ceiling",
+        "barrier_sub": " "
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.7,
+      "end": 14.98,
+      "duration": 7.27,
+      "word_timings": [
+        {
+          "word": "Traditional",
+          "clean_word": "traditional",
+          "phonemes": "t\u0279\u0250d\u02c8\u026a\u0283\u0259n\u0259l",
+          "start": 7.702,
+          "end": 8.387,
+          "duration": 0.685,
+          "frame_ahead_trigger": 7.812
+        },
+        {
+          "word": "voxels",
+          "clean_word": "voxels",
+          "phonemes": "v\u02c8\u0251\u02d0ks\u0259lz",
+          "start": 8.387,
+          "end": 8.882,
+          "duration": 0.495,
+          "frame_ahead_trigger": 8.497
+        },
+        {
+          "word": "suffer",
+          "clean_word": "suffer",
+          "phonemes": "s\u02c8\u028cf\u025a",
+          "start": 8.882,
+          "end": 9.127,
+          "duration": 0.245,
+          "frame_ahead_trigger": 8.992
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 9.127,
+          "end": 9.412,
+          "duration": 0.285,
+          "frame_ahead_trigger": 9.237
+        },
+        {
+          "word": "memory",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 9.412,
+          "end": 9.742,
+          "duration": 0.33,
+          "frame_ahead_trigger": 9.522
+        },
+        {
+          "word": "explosion,",
+          "clean_word": "explosion",
+          "phonemes": "\u025bkspl\u02c8o\u028a\u0292\u0259n",
+          "start": 9.742,
+          "end": 10.436,
+          "duration": 0.694,
+          "frame_ahead_trigger": 9.852
+        },
+        {
+          "word": "forcing",
+          "clean_word": "forcing",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u026a\u014b",
+          "start": 10.436,
+          "end": 10.862,
+          "duration": 0.426,
+          "frame_ahead_trigger": 10.546
+        },
+        {
+          "word": "us",
+          "clean_word": "us",
+          "phonemes": "\u02cc\u028cs",
+          "start": 10.862,
+          "end": 11.057,
+          "duration": 0.195,
+          "frame_ahead_trigger": 10.972
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 11.057,
+          "end": 11.252,
+          "duration": 0.195,
+          "frame_ahead_trigger": 11.167
+        },
+        {
+          "word": "trade",
+          "clean_word": "trade",
+          "phonemes": "t\u0279\u02c8e\u026ad",
+          "start": 11.252,
+          "end": 11.637,
+          "duration": 0.385,
+          "frame_ahead_trigger": 11.362
+        },
+        {
+          "word": "off",
+          "clean_word": "off",
+          "phonemes": "\u02c8\u0254f",
+          "start": 11.637,
+          "end": 11.774,
+          "duration": 0.137,
+          "frame_ahead_trigger": 11.747
+        },
+        {
+          "word": "high-fidelity",
+          "clean_word": "highfidelity",
+          "phonemes": "h\u02cca\u026af\u1d7bd\u02c8\u025bl\u1d7b\u027ei",
+          "start": 11.774,
+          "end": 12.522,
+          "duration": 0.748,
+          "frame_ahead_trigger": 11.884
+        },
+        {
+          "word": "resolution",
+          "clean_word": "resolution",
+          "phonemes": "\u0279\u02cc\u025bz\u0259l\u02c8u\u02d0\u0283\u0259n",
+          "start": 12.522,
+          "end": 13.187,
+          "duration": 0.665,
+          "frame_ahead_trigger": 12.632
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 13.187,
+          "end": 13.427,
+          "duration": 0.24,
+          "frame_ahead_trigger": 13.297
+        },
+        {
+          "word": "basic,",
+          "clean_word": "basic",
+          "phonemes": "b\u02c8e\u026as\u026ak",
+          "start": 13.427,
+          "end": 13.868,
+          "duration": 0.441,
+          "frame_ahead_trigger": 13.537
+        },
+        {
+          "word": "grid-bound",
+          "clean_word": "gridbound",
+          "phonemes": "\u0261\u0279\u02c8\u026adba\u028and",
+          "start": 13.868,
+          "end": 14.402,
+          "duration": 0.534,
+          "frame_ahead_trigger": 13.978
+        },
+        {
+          "word": "sanity.",
+          "clean_word": "sanity",
+          "phonemes": "s\u02c8\u00e6n\u1d7b\u027ei",
+          "start": 14.402,
+          "end": 14.857,
+          "duration": 0.455,
+          "frame_ahead_trigger": 14.512
+        }
+      ],
+      "audio_duration": 7.27,
+      "slot_duration": 7.43
+    },
+    {
+      "beat_id": 3,
+      "text": "NeRF pivots by encoding the entire 5D scene into a continuous, fully-connected neural network instead of fixed arrays.",
+      "visual_focus": "A 5D input coordinate transforming into a smooth, flowing radiance output field.",
+      "highlight_words": {
+        "fully-connected": "#34D399",
+        "5D scene": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Neural Network",
+        "action_verb": "projects",
+        "direct_object": "continuous volume",
+        "anchor_word": "encodes",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "NEURAL RADIANCE FIELDS: FIGURE",
+        "sub": "A 5D input coordinate transforming into a smooth, flowing",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.png",
+          "arxiv_id": "2003.08934",
+          "title": "NEURAL RADIANCE FIELDS: FIGURE",
+          "sub": "A 5D input coordinate transforming into a smooth, flowing",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Pipeline V2 Small",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.png",
+        "arxiv_id": "2003.08934",
+        "title": "NEURAL RADIANCE FIELDS: FIGURE",
+        "sub": "A 5D input coordinate transforming into a smooth, flowing",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Pipeline V2 Small",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 15.13,
+      "end": 22.72,
+      "duration": 7.59,
+      "word_timings": [
+        {
+          "word": "NeRF",
+          "clean_word": "nerf",
+          "phonemes": "n\u02c8i\u02d0 \u02cc\u0251\u02d0\u0279\u0279\u02c8\u025bf",
+          "start": 15.137,
+          "end": 15.902,
+          "duration": 0.765,
+          "frame_ahead_trigger": 15.397
+        },
+        {
+          "word": "pivots",
+          "clean_word": "pivots",
+          "phonemes": "p\u02c8\u026av\u0259ts",
+          "start": 15.902,
+          "end": 16.309,
+          "duration": 0.408,
+          "frame_ahead_trigger": 16.162
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 16.309,
+          "end": 16.652,
+          "duration": 0.342,
+          "frame_ahead_trigger": 16.569
+        },
+        {
+          "word": "encoding",
+          "clean_word": "encoding",
+          "phonemes": "\u025b\u014bk\u02c8o\u028ad\u026a\u014b",
+          "start": 16.652,
+          "end": 17.072,
+          "duration": 0.42,
+          "frame_ahead_trigger": 16.912
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 17.072,
+          "end": 17.232,
+          "duration": 0.16,
+          "frame_ahead_trigger": 17.332
+        },
+        {
+          "word": "entire",
+          "clean_word": "entire",
+          "phonemes": "\u025bnt\u02c8a\u026a\u025a",
+          "start": 17.232,
+          "end": 17.587,
+          "duration": 0.355,
+          "frame_ahead_trigger": 17.492
+        },
+        {
+          "word": "5D",
+          "clean_word": "5d",
+          "phonemes": "f\u02c8a\u026av d\u02c8i\u02d0",
+          "start": 17.587,
+          "end": 18.186,
+          "duration": 0.599,
+          "frame_ahead_trigger": 17.847
+        },
+        {
+          "word": "scene",
+          "clean_word": "scene",
+          "phonemes": "s\u02c8i\u02d0n",
+          "start": 18.186,
+          "end": 18.537,
+          "duration": 0.351,
+          "frame_ahead_trigger": 18.446
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 18.537,
+          "end": 18.802,
+          "duration": 0.265,
+          "frame_ahead_trigger": 18.797
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 18.802,
+          "end": 18.977,
+          "duration": 0.175,
+          "frame_ahead_trigger": 19.062
+        },
+        {
+          "word": "continuous,",
+          "clean_word": "continuous",
+          "phonemes": "k\u0259nt\u02c8\u026anju\u02d0\u0259s",
+          "start": 18.977,
+          "end": 19.602,
+          "duration": 0.625,
+          "frame_ahead_trigger": 19.237
+        },
+        {
+          "word": "fully-connected",
+          "clean_word": "fullyconnected",
+          "phonemes": "f\u02c8\u028al\u026ak\u02cc\u0251\u02d0n\u025bkt\u1d7bd",
+          "start": 19.602,
+          "end": 20.557,
+          "duration": 0.955,
+          "frame_ahead_trigger": 19.862
+        },
+        {
+          "word": "neural",
+          "clean_word": "neural",
+          "phonemes": "n\u02c8\u028a\u0279\u0279\u0259l",
+          "start": 20.557,
+          "end": 20.887,
+          "duration": 0.33,
+          "frame_ahead_trigger": 20.817
+        },
+        {
+          "word": "network",
+          "clean_word": "network",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0k",
+          "start": 20.887,
+          "end": 21.437,
+          "duration": 0.55,
+          "frame_ahead_trigger": 21.147
+        },
+        {
+          "word": "instead",
+          "clean_word": "instead",
+          "phonemes": "\u026anst\u02c8\u025bd",
+          "start": 21.437,
+          "end": 21.762,
+          "duration": 0.325,
+          "frame_ahead_trigger": 21.697
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 21.762,
+          "end": 21.892,
+          "duration": 0.13,
+          "frame_ahead_trigger": 22.022
+        },
+        {
+          "word": "fixed",
+          "clean_word": "fixed",
+          "phonemes": "f\u02c8\u026akst",
+          "start": 21.892,
+          "end": 22.227,
+          "duration": 0.335,
+          "frame_ahead_trigger": 22.152
+        },
+        {
+          "word": "arrays.",
+          "clean_word": "arrays",
+          "phonemes": "\u025a\u0279\u02c8e\u026az",
+          "start": 22.227,
+          "end": 22.642,
+          "duration": 0.415,
+          "frame_ahead_trigger": 22.487
+        }
+      ],
+      "audio_duration": 7.59,
+      "slot_duration": 7.74
+    },
+    {
+      "beat_id": 4,
+      "text": "By querying rays through this function and applying classic differentiable volume rendering, we synthesize pixels from pure latent density.",
+      "visual_focus": "Camera rays intersecting a continuous field, accumulating radiance into final photorealistic pixels.",
+      "highlight_words": {
+        "volume rendering": "#F59E0B",
+        "latent density": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Camera Ray",
+        "action_verb": "samples",
+        "direct_object": "volumetric density",
+        "anchor_word": "querying",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "DIFFERENTIABLE RAY MARCHING",
+        "sub": "Sampling radiance and density along differentiable camera rays.",
+        "accent_color": "#F59E0B",
+        "params": {
+          "field_title": "Scene Radiance Field",
+          "source_label": "Camera Ray",
+          "target_label": "Rendered Pixel",
+          "stream_formula": " "
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "DIFFERENTIABLE RAY MARCHING",
+        "sub": "Sampling radiance and density along differentiable camera rays.",
+        "accent_color": "#F59E0B",
+        "field_title": "Scene Radiance Field",
+        "source_label": "Camera Ray",
+        "target_label": "Rendered Pixel",
+        "stream_formula": " "
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 22.87,
+      "end": 30.51,
+      "duration": 7.64,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 22.871,
+          "end": 23.016,
+          "duration": 0.145,
+          "frame_ahead_trigger": 23.281
+        },
+        {
+          "word": "querying",
+          "clean_word": "querying",
+          "phonemes": "kw\u02c8i\u0259\u0279\u026a\u026a\u014b",
+          "start": 23.016,
+          "end": 23.501,
+          "duration": 0.485,
+          "frame_ahead_trigger": 23.426
+        },
+        {
+          "word": "rays",
+          "clean_word": "rays",
+          "phonemes": "\u0279\u02c8e\u026az",
+          "start": 23.501,
+          "end": 23.911,
+          "duration": 0.41,
+          "frame_ahead_trigger": 23.911
+        },
+        {
+          "word": "through",
+          "clean_word": "through",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0",
+          "start": 23.911,
+          "end": 24.216,
+          "duration": 0.305,
+          "frame_ahead_trigger": 24.321
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 24.216,
+          "end": 24.316,
+          "duration": 0.1,
+          "frame_ahead_trigger": 24.626
+        },
+        {
+          "word": "function",
+          "clean_word": "function",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259n",
+          "start": 24.316,
+          "end": 24.848,
+          "duration": 0.531,
+          "frame_ahead_trigger": 24.726
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 24.848,
+          "end": 24.981,
+          "duration": 0.134,
+          "frame_ahead_trigger": 25.258
+        },
+        {
+          "word": "applying",
+          "clean_word": "applying",
+          "phonemes": "\u0250pl\u02c8a\u026a\u026a\u014b",
+          "start": 24.981,
+          "end": 25.471,
+          "duration": 0.49,
+          "frame_ahead_trigger": 25.391
+        },
+        {
+          "word": "classic",
+          "clean_word": "classic",
+          "phonemes": "kl\u02c8\u00e6s\u026ak",
+          "start": 25.471,
+          "end": 25.811,
+          "duration": 0.34,
+          "frame_ahead_trigger": 25.881
+        },
+        {
+          "word": "differentiable",
+          "clean_word": "differentiable",
+          "phonemes": "d\u02c8\u026af\u025a\u0279\u02cc\u025bn\u0283\u026a\u0259b\u0259l",
+          "start": 25.811,
+          "end": 26.691,
+          "duration": 0.88,
+          "frame_ahead_trigger": 26.221
+        },
+        {
+          "word": "volume",
+          "clean_word": "volume",
+          "phonemes": "v\u02c8\u0251\u02d0lju\u02d0m",
+          "start": 26.691,
+          "end": 27.306,
+          "duration": 0.615,
+          "frame_ahead_trigger": 27.101
+        },
+        {
+          "word": "rendering,",
+          "clean_word": "rendering",
+          "phonemes": "\u0279\u02c8\u025bnd\u025a\u0279\u026a\u014b",
+          "start": 27.306,
+          "end": 27.727,
+          "duration": 0.421,
+          "frame_ahead_trigger": 27.716
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 27.727,
+          "end": 27.896,
+          "duration": 0.169,
+          "frame_ahead_trigger": 28.137
+        },
+        {
+          "word": "synthesize",
+          "clean_word": "synthesize",
+          "phonemes": "s\u02c8\u026an\u03b8\u0259s\u02cca\u026az",
+          "start": 27.896,
+          "end": 28.586,
+          "duration": 0.69,
+          "frame_ahead_trigger": 28.306
+        },
+        {
+          "word": "pixels",
+          "clean_word": "pixels",
+          "phonemes": "p\u02c8\u026aks\u0259lz",
+          "start": 28.586,
+          "end": 29.026,
+          "duration": 0.44,
+          "frame_ahead_trigger": 28.996
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 29.026,
+          "end": 29.111,
+          "duration": 0.085,
+          "frame_ahead_trigger": 29.436
+        },
+        {
+          "word": "pure",
+          "clean_word": "pure",
+          "phonemes": "pj\u02c8\u028a\u0279",
+          "start": 29.111,
+          "end": 29.386,
+          "duration": 0.275,
+          "frame_ahead_trigger": 29.521
+        },
+        {
+          "word": "latent",
+          "clean_word": "latent",
+          "phonemes": "l\u02c8e\u026at\u0259nt",
+          "start": 29.386,
+          "end": 29.971,
+          "duration": 0.585,
+          "frame_ahead_trigger": 29.796
+        },
+        {
+          "word": "density.",
+          "clean_word": "density",
+          "phonemes": "d\u02c8\u025bns\u1d7b\u027ei",
+          "start": 29.971,
+          "end": 30.381,
+          "duration": 0.41,
+          "frame_ahead_trigger": 30.381
+        }
+      ],
+      "audio_duration": 7.64,
+      "slot_duration": 7.79
+    },
+    {
+      "beat_id": 5,
+      "text": "This optimization strategy achieves unprecedented photorealistic results, outperforming every prior neural rendering baseline on standard synthetic and real-world scenes.",
+      "visual_focus": "A side-by-side comparison of rendering quality showing NeRF clarity vs previous baseline blur.",
+      "highlight_words": {
+        "photorealistic": "#34D399"
+      },
+      "svo_action": {
+        "subject": "NeRF Architecture",
+        "action_verb": "surpasses",
+        "direct_object": "rendering baselines",
+        "anchor_word": "outperforming",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: \\#IM.",
+        "sub": "A side-by-side comparison of rendering quality",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: \\#IM.",
+          "sub": "A side-by-side comparison of rendering quality",
+          "metric_name": "\\#Im.",
+          "unit": "",
+          "contestants": [
+            {
+              "name": "1)",
+              "value": 100.0,
+              "display_val": "100.0",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "2)",
+              "value": 100.0,
+              "display_val": "100.0",
+              "is_hero": false,
+              "color": "#38BDF8"
+            },
+            {
+              "name": "3)",
+              "value": 100.0,
+              "display_val": "100.0",
+              "is_hero": false,
+              "color": "#F59E0B"
+            },
+            {
+              "name": "4)",
+              "value": 100.0,
+              "display_val": "100.0",
+              "is_hero": false,
+              "color": "#A855F7"
+            }
+          ],
+          "delta_badge": "\u26a1 +0.0% OVER 2)"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: \\#IM.",
+        "sub": "A side-by-side comparison of rendering quality",
+        "metric_name": "\\#Im.",
+        "unit": "",
+        "contestants": [
+          {
+            "name": "1)",
+            "value": 100.0,
+            "display_val": "100.0",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "2)",
+            "value": 100.0,
+            "display_val": "100.0",
+            "is_hero": false,
+            "color": "#38BDF8"
+          },
+          {
+            "name": "3)",
+            "value": 100.0,
+            "display_val": "100.0",
+            "is_hero": false,
+            "color": "#F59E0B"
+          },
+          {
+            "name": "4)",
+            "value": 100.0,
+            "display_val": "100.0",
+            "is_hero": false,
+            "color": "#A855F7"
+          }
+        ],
+        "delta_badge": "\u26a1 +0.0% OVER 2)"
+      },
+      "start": 30.66,
+      "end": 40.92,
+      "duration": 10.26,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 30.674,
+          "end": 30.974,
+          "duration": 0.3,
+          "frame_ahead_trigger": 31.234
+        },
+        {
+          "word": "optimization",
+          "clean_word": "optimization",
+          "phonemes": "\u02cc\u0251\u02d0pt\u026am\u1d7bz\u02c8e\u026a\u0283\u0259n",
+          "start": 30.974,
+          "end": 31.869,
+          "duration": 0.895,
+          "frame_ahead_trigger": 31.534
+        },
+        {
+          "word": "strategy",
+          "clean_word": "strategy",
+          "phonemes": "st\u0279\u02c8\u00e6\u027e\u0259d\u0292i",
+          "start": 31.869,
+          "end": 32.409,
+          "duration": 0.54,
+          "frame_ahead_trigger": 32.429
+        },
+        {
+          "word": "achieves",
+          "clean_word": "achieves",
+          "phonemes": "\u0250t\u0283\u02c8i\u02d0vz",
+          "start": 32.409,
+          "end": 33.009,
+          "duration": 0.6,
+          "frame_ahead_trigger": 32.969
+        },
+        {
+          "word": "unprecedented",
+          "clean_word": "unprecedented",
+          "phonemes": "\u028cnp\u0279\u02c8\u025bs\u1d7bd\u0259nt\u1d7bd",
+          "start": 33.009,
+          "end": 33.884,
+          "duration": 0.875,
+          "frame_ahead_trigger": 33.569
+        },
+        {
+          "word": "photorealistic",
+          "clean_word": "photorealistic",
+          "phonemes": "f\u02cco\u028a\u027eo\u028a\u0279i\u02d0\u0259l\u02c8\u026ast\u026ak",
+          "start": 33.884,
+          "end": 34.974,
+          "duration": 1.09,
+          "frame_ahead_trigger": 34.444
+        },
+        {
+          "word": "results,",
+          "clean_word": "results",
+          "phonemes": "\u0279\u026az\u02c8\u028clts",
+          "start": 34.974,
+          "end": 35.384,
+          "duration": 0.41,
+          "frame_ahead_trigger": 35.534
+        },
+        {
+          "word": "outperforming",
+          "clean_word": "outperforming",
+          "phonemes": "a\u028atp\u025af\u02c8\u0254\u02d0\u0279m\u026a\u014b",
+          "start": 35.384,
+          "end": 36.199,
+          "duration": 0.815,
+          "frame_ahead_trigger": 35.944
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 36.199,
+          "end": 36.514,
+          "duration": 0.315,
+          "frame_ahead_trigger": 36.759
+        },
+        {
+          "word": "prior",
+          "clean_word": "prior",
+          "phonemes": "p\u0279\u02c8a\u026a\u025a",
+          "start": 36.514,
+          "end": 36.884,
+          "duration": 0.37,
+          "frame_ahead_trigger": 37.074
+        },
+        {
+          "word": "neural",
+          "clean_word": "neural",
+          "phonemes": "n\u02c8\u028a\u0279\u0279\u0259l",
+          "start": 36.884,
+          "end": 37.299,
+          "duration": 0.415,
+          "frame_ahead_trigger": 37.444
+        },
+        {
+          "word": "rendering",
+          "clean_word": "rendering",
+          "phonemes": "\u0279\u02c8\u025bnd\u025a\u0279\u026a\u014b",
+          "start": 37.299,
+          "end": 37.894,
+          "duration": 0.595,
+          "frame_ahead_trigger": 37.859
+        },
+        {
+          "word": "baseline",
+          "clean_word": "baseline",
+          "phonemes": "b\u02c8e\u026asla\u026an",
+          "start": 37.894,
+          "end": 38.329,
+          "duration": 0.435,
+          "frame_ahead_trigger": 38.454
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 38.329,
+          "end": 38.604,
+          "duration": 0.275,
+          "frame_ahead_trigger": 38.889
+        },
+        {
+          "word": "standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 38.604,
+          "end": 39.039,
+          "duration": 0.435,
+          "frame_ahead_trigger": 39.164
+        },
+        {
+          "word": "synthetic",
+          "clean_word": "synthetic",
+          "phonemes": "s\u026an\u03b8\u02c8\u025b\u027e\u026ak",
+          "start": 39.039,
+          "end": 39.509,
+          "duration": 0.47,
+          "frame_ahead_trigger": 39.599
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 39.509,
+          "end": 39.834,
+          "duration": 0.325,
+          "frame_ahead_trigger": 40.069
+        },
+        {
+          "word": "real-world",
+          "clean_word": "realworld",
+          "phonemes": "\u0279\u02c8i\u02d0\u0259lw\u025c\u02d0ld",
+          "start": 39.834,
+          "end": 40.424,
+          "duration": 0.59,
+          "frame_ahead_trigger": 40.394
+        },
+        {
+          "word": "scenes.",
+          "clean_word": "scenes",
+          "phonemes": "s\u02c8i\u02d0nz",
+          "start": 40.424,
+          "end": 40.829,
+          "duration": 0.405,
+          "frame_ahead_trigger": 40.984
+        }
+      ],
+      "audio_duration": 10.26,
+      "slot_duration": 10.41
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for deep-dives into the geometry powering our next generation of 3D vision systems.",
+      "visual_focus": "The 5D scene manifold rotating smoothly into the logo animation.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "3D System",
+        "action_verb": "optimizes",
+        "direct_object": "novel views",
+        "anchor_word": "vision",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "THE FUTURE OF NEURAL RENDERING",
+        "sub": "Scaling NeRF to complex scenes and high-frequency details.",
+        "accent_color": "#34D399",
+        "params": {
+          "root_label": "NeRF Architecture",
+          "optimal_label": "Novel View Synthesis",
+          "pruned_label": "Baseline Methods"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 41.07,
+      "end": 47.34,
+      "duration": 6.27,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 41.085,
+          "end": 41.49,
+          "duration": 0.405,
+          "frame_ahead_trigger": 41.795
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 41.49,
+          "end": 42.465,
+          "duration": 0.975,
+          "frame_ahead_trigger": 42.2
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 42.465,
+          "end": 42.645,
+          "duration": 0.18,
+          "frame_ahead_trigger": 43.175
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 42.645,
+          "end": 43.085,
+          "duration": 0.44,
+          "frame_ahead_trigger": 43.355
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 43.085,
+          "end": 43.415,
+          "duration": 0.33,
+          "frame_ahead_trigger": 43.795
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 43.415,
+          "end": 43.483,
+          "duration": 0.068,
+          "frame_ahead_trigger": 44.125
+        },
+        {
+          "word": "geometry",
+          "clean_word": "geometry",
+          "phonemes": "d\u0292i\u02c8\u0251\u02d0m\u0259t\u0279i",
+          "start": 43.483,
+          "end": 44.055,
+          "duration": 0.572,
+          "frame_ahead_trigger": 44.193
+        },
+        {
+          "word": "powering",
+          "clean_word": "powering",
+          "phonemes": "p\u02c8a\u028a\u025a\u0279\u026a\u014b",
+          "start": 44.055,
+          "end": 44.545,
+          "duration": 0.49,
+          "frame_ahead_trigger": 44.765
+        },
+        {
+          "word": "our",
+          "clean_word": "our",
+          "phonemes": "\u02cca\u028a\u025a",
+          "start": 44.545,
+          "end": 44.755,
+          "duration": 0.21,
+          "frame_ahead_trigger": 45.255
+        },
+        {
+          "word": "next",
+          "clean_word": "next",
+          "phonemes": "n\u02c8\u025bkst",
+          "start": 44.755,
+          "end": 45.075,
+          "duration": 0.32,
+          "frame_ahead_trigger": 45.465
+        },
+        {
+          "word": "generation",
+          "clean_word": "generation",
+          "phonemes": "d\u0292\u02cc\u025bn\u025a\u0279\u02c8e\u026a\u0283\u0259n",
+          "start": 45.075,
+          "end": 45.79,
+          "duration": 0.715,
+          "frame_ahead_trigger": 45.785
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 45.79,
+          "end": 45.865,
+          "duration": 0.075,
+          "frame_ahead_trigger": 46.5
+        },
+        {
+          "word": "3D",
+          "clean_word": "3d",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0 d\u02c8i\u02d0",
+          "start": 45.865,
+          "end": 46.51,
+          "duration": 0.645,
+          "frame_ahead_trigger": 46.575
+        },
+        {
+          "word": "vision",
+          "clean_word": "vision",
+          "phonemes": "v\u02c8\u026a\u0292\u0259n",
+          "start": 46.51,
+          "end": 46.855,
+          "duration": 0.345,
+          "frame_ahead_trigger": 47.22
+        },
+        {
+          "word": "systems.",
+          "clean_word": "systems",
+          "phonemes": "s\u02c8\u026ast\u0259mz",
+          "start": 46.855,
+          "end": 47.275,
+          "duration": 0.42,
+          "frame_ahead_trigger": 47.565
+        }
+      ],
+      "audio_duration": 6.27,
+      "slot_duration": 6.27
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$I(r) = \\int_{t_n}^{t_f} T(t) \\sigma(r(t)) c(r(t), d) dt$",
+      "filename": "nerf_view_synthesis_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "I(r)",
+          "label": "Rendered Pixel"
+        },
+        {
+          "term": "\\sigma",
+          "label": "Volume Density"
+        }
+      ],
+      "svg_filename": "nerf_view_synthesis_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(N^3) \\to \\infty$",
+      "filename": "nerf_view_synthesis_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "N",
+          "label": "Spatial Resolution"
+        }
+      ],
+      "svg_filename": "nerf_view_synthesis_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$F_{\\Theta}: (x, y, z, \\theta, \\phi) \\to (c, \\sigma)$",
+      "filename": "nerf_view_synthesis_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "F_{\\Theta}",
+          "label": "Neural Network"
+        },
+        {
+          "term": "c",
+          "label": "View-Dependent Color"
+        }
+      ],
+      "svg_filename": "nerf_view_synthesis_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$r(t) = o + t d$",
+      "filename": "nerf_view_synthesis_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "o",
+          "label": "Camera Origin"
+        },
+        {
+          "term": "d",
+          "label": "Viewing Direction"
+        }
+      ],
+      "svg_filename": "nerf_view_synthesis_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{PSNR} = 10 \\cdot \\log_{10} \\left( \\frac{MAX_I^2}{MSE} \\right)$",
+      "filename": "nerf_view_synthesis_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "MSE",
+          "label": "Mean Squared Error"
+        }
+      ],
+      "svg_filename": "nerf_view_synthesis_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Spatial",
+          "color": "#38BDF8",
+          "items": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        {
+          "name": "Radiance",
+          "color": "#10B981",
+          "items": [
+            "color",
+            "density"
+          ]
+        },
+        {
+          "name": "View",
+          "color": "#F59E0B",
+          "items": [
+            "theta",
+            "phi"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "5D Coordinate",
+        "target_cluster": "Spatial",
+        "token": "(x,y,z,t,p)"
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Memory",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Resolution",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "NeRF",
+    "model_a_specs": [
+      "MLP-based",
+      "Continuous function",
+      "Differentiable"
+    ],
+    "model_b": "Volumetric Baselines",
+    "model_b_specs": [
+      "Grid-based",
+      "High memory",
+      "Discrete"
+    ],
+    "divide_title": "NEURAL VS GRID",
+    "bottleneck_title": "THE VOXEL BOTTLENECK",
+    "bottleneck_desc": "Memory explosion in discrete grid representations.",
+    "solution_title": "CONTINUOUS RADIANCE FIELDS",
+    "solution_components": "MLP Function Approximation",
+    "mechanism_title": "DIFFERENTIABLE VOLUME RENDERING",
+    "payoff_sub": "Unprecedented view synthesis quality.",
+    "payoff_hero_label": "NeRF",
+    "payoff_base_label": "Baseline",
+    "challenger": "NeRF",
+    "incumbent": "Volumetric Baselines"
+  },
+  "script_provider": "gemini",
+  "quality_flags": {
+    "scrubbed_fields": [
+      "metadata.benchmarks"
+    ],
+    "ungrounded_narration_numbers": [
+      {
+        "beat_id": 6,
+        "numbers": [
+          "3"
+        ],
+        "text": "Follow machinoAI for deep-dives into the geometry powering our next generation of 3D vision systems."
+      }
+    ],
+    "leaked_example_values": [],
+    "grounding_source_chars": 1725
+  },
+  "arxiv_id": "2003.08934",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "pipeline_v2_small",
+      "caption": "Pipeline V2 Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/pipeline_v2_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "netdiag",
+      "caption": "Netdiag",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/netdiag.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_2_netdiag.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_2_netdiag.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "teaser_small",
+      "caption": "Teaser Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/teaser_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_3_teaser_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_3_teaser_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "viewdirs_small",
+      "caption": "Viewdirs Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/viewdirs_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_4_viewdirs_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_4_viewdirs_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "llff",
+      "caption": "Llff",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/real_results_new/trex/llff.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_5_llff.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 95
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Stitching sparse photos into 360-degree scenes usually results in a blurry, disjointed, geometric disaster.",
+    "verdict": 63,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "properties": {
+      "SPECIFICITY": 56,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "NeRF",
+        "model_a_score": "95%",
+        "model_b_name": "Volumetric Baselines",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "publish_gate": {
+    "decision": "hold",
+    "reasons": [
+      "Beat 6 narration states numbers not found in the paper material: 3."
+    ],
+    "warnings": [
+      "No vision model audited the keyframes (scores are heuristic placeholders).",
+      "Script critic: \u274c REJECTED: Script reading level is Grade 16.5 (target: Grade 9.0), overall score 5.5/10 is below threshold 8.0."
+    ],
+    "action": {
+      "youtube_upload": true,
+      "privacy": "private",
+      "cross_post": false,
+      "mode": "private"
+    }
+  },
+  "youtube_upload": {
+    "video_id": "9_NvTuTsoB4",
+    "shorts_url": "https://youtube.com/shorts/9_NvTuTsoB4",
+    "studio_url": "https://studio.youtube.com/video/9_NvTuTsoB4/edit",
+    "title": "NEURAL RADIANCE FIELDS Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/nerf_view_synthesis_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
