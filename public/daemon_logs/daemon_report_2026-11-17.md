@@ -1,18 +1,18 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-17 | **Timestamp:** 2026-11-17 08:26:09 UTC
+**Date:** 2026-11-17 | **Timestamp:** 2026-11-17 20:00:43 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Attention Is All You Need: Part 5 - The Universal Architecture: How One Paper Birthed GPT, Claude, Gemini, and Modern AI
-- **Topic Queue Part:** `goat_transformer_part_5` (arXiv: [1706.03762](https://arxiv.org/abs/1706.03762))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/O11a_gbpm80](https://youtube.com/shorts/O11a_gbpm80) (`O11a_gbpm80`)
-- **High-CTR Poster:** [attention_is_all_you_need_legacy_poster.png](public/thumbnails/attention_is_all_you_need_legacy_poster.png)
+### Reel 1: ResNet: Deep Residual Learning: Part 5 - The Indestructible Skeleton: Why Every Modern Transformer Still Relies on Residual Connections
+- **Topic Queue Part:** `goat_resnet_part_5` (arXiv: [1512.03385](https://arxiv.org/abs/1512.03385))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/eR1DWGEiEyc](https://youtube.com/shorts/eR1DWGEiEyc) (`eR1DWGEiEyc`)
+- **High-CTR Poster:** [resnet_residual_evolution_poster.png](public/thumbnails/resnet_residual_evolution_poster.png)
 - **✅ Publish gate:** passed
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: Attention Is All You Need Mini-Series 5/5: Attention Is All You Need: Part 5 - The Universal Architecture: How One Paper Birthed GPT, Claude, Gemini, and Modern AI*
-- **Everyday Analogy:** *How the identical attention building block scaled across text, vision, protein folding, audio, and robotics over seven years.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_attention_is_all_you_need_legacy_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: ResNet: Deep Residual Learning Mini-Series 5/5: ResNet: Deep Residual Learning: Part 5 - The Indestructible Skeleton: Why Every Modern Transformer Still Relies on Residual Connections*
+- **Everyday Analogy:** *How the residual stream remains the primary communication bus inside modern LLMs from GPT-4 to Llama 3.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_resnet_residual_evolution_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs

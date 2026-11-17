@@ -1,0 +1,1737 @@
+{
+  "id": "resnet_residual_evolution",
+  "title": "The Indestructible Skeleton of LLMs",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "ARCHITECTURAL BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Deeper neural networks suffer from vanishing gradients, turning 152 layers into a training death trap of stagnant weights.",
+      "visual_focus": "A deep vertical stack of layers crumbling under their own weight.",
+      "highlight_words": {
+        "vanishing gradients": "#EF4444",
+        "152 layers": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Deep Stack",
+        "action_verb": "collapses",
+        "direct_object": "Gradient Signal",
+        "anchor_word": "trap",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "layer_stack",
+        "title": "VANISHING GRADIENT TRAP",
+        "sub": "Failure state of hyper-deep stacked architectures",
+        "accent_color": "#EF4444",
+        "params": {
+          "bottom_layer": "Input",
+          "mid_layer": "Stagnant Hidden States",
+          "top_layer": "Gradient Death"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 63,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "layer_stack",
+        "title": "VANISHING GRADIENT TRAP",
+        "sub": "Failure state of hyper-deep stacked architectures",
+        "accent_color": "#EF4444",
+        "bottom_layer": "Input",
+        "mid_layer": "Stagnant Hidden States",
+        "top_layer": "Gradient Death"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.93,
+      "duration": 6.93,
+      "word_timings": [
+        {
+          "word": "Deeper",
+          "clean_word": "deeper",
+          "phonemes": "d\u02c8i\u02d0p\u025a",
+          "start": 0.01,
+          "end": 0.28,
+          "duration": 0.27,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "neural",
+          "clean_word": "neural",
+          "phonemes": "n\u02c8\u028a\u0279\u0279\u0259l",
+          "start": 0.28,
+          "end": 0.605,
+          "duration": 0.325,
+          "frame_ahead_trigger": 0.24
+        },
+        {
+          "word": "networks",
+          "clean_word": "networks",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0ks",
+          "start": 0.605,
+          "end": 1.175,
+          "duration": 0.57,
+          "frame_ahead_trigger": 0.565
+        },
+        {
+          "word": "suffer",
+          "clean_word": "suffer",
+          "phonemes": "s\u02c8\u028cf\u025a",
+          "start": 1.175,
+          "end": 1.49,
+          "duration": 0.315,
+          "frame_ahead_trigger": 1.135
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 1.49,
+          "end": 1.685,
+          "duration": 0.195,
+          "frame_ahead_trigger": 1.45
+        },
+        {
+          "word": "vanishing",
+          "clean_word": "vanishing",
+          "phonemes": "v\u02c8\u00e6n\u026a\u0283\u026a\u014b",
+          "start": 1.685,
+          "end": 2.105,
+          "duration": 0.42,
+          "frame_ahead_trigger": 1.645
+        },
+        {
+          "word": "gradients,",
+          "clean_word": "gradients",
+          "phonemes": "\u0261\u0279\u02c8e\u026adi\u0259nts",
+          "start": 2.105,
+          "end": 2.685,
+          "duration": 0.58,
+          "frame_ahead_trigger": 2.065
+        },
+        {
+          "word": "turning",
+          "clean_word": "turning",
+          "phonemes": "t\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 2.685,
+          "end": 3.14,
+          "duration": 0.455,
+          "frame_ahead_trigger": 2.645
+        },
+        {
+          "word": "152",
+          "clean_word": "152",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad f\u02c8\u026afti t\u02c8u\u02d0",
+          "start": 3.14,
+          "end": 4.265,
+          "duration": 1.125,
+          "frame_ahead_trigger": 3.1
+        },
+        {
+          "word": "layers",
+          "clean_word": "layers",
+          "phonemes": "l\u02c8e\u026a\u025az",
+          "start": 4.265,
+          "end": 4.626,
+          "duration": 0.361,
+          "frame_ahead_trigger": 4.225
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 4.626,
+          "end": 4.905,
+          "duration": 0.279,
+          "frame_ahead_trigger": 4.586
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 4.905,
+          "end": 5.04,
+          "duration": 0.135,
+          "frame_ahead_trigger": 4.865
+        },
+        {
+          "word": "training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 5.04,
+          "end": 5.47,
+          "duration": 0.43,
+          "frame_ahead_trigger": 5.0
+        },
+        {
+          "word": "death",
+          "clean_word": "death",
+          "phonemes": "d\u02c8\u025b\u03b8",
+          "start": 5.47,
+          "end": 5.685,
+          "duration": 0.215,
+          "frame_ahead_trigger": 5.43
+        },
+        {
+          "word": "trap",
+          "clean_word": "trap",
+          "phonemes": "t\u0279\u02c8\u00e6p",
+          "start": 5.685,
+          "end": 5.945,
+          "duration": 0.26,
+          "frame_ahead_trigger": 5.645
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 5.945,
+          "end": 6.025,
+          "duration": 0.08,
+          "frame_ahead_trigger": 5.905
+        },
+        {
+          "word": "stagnant",
+          "clean_word": "stagnant",
+          "phonemes": "st\u02c8\u00e6\u0261n\u0259nt",
+          "start": 6.025,
+          "end": 6.49,
+          "duration": 0.465,
+          "frame_ahead_trigger": 5.985
+        },
+        {
+          "word": "weights.",
+          "clean_word": "weights",
+          "phonemes": "w\u02c8e\u026ats",
+          "start": 6.49,
+          "end": 6.855,
+          "duration": 0.365,
+          "frame_ahead_trigger": 6.45
+        }
+      ],
+      "audio_duration": 6.93,
+      "slot_duration": 7.08
+    },
+    {
+      "beat_id": 2,
+      "text": "Stacking layers creates a forced bottleneck where the information bottleneck destroys identity, leaving the model unable to learn simple functions.",
+      "visual_focus": "A narrow pipe choking the flow of data information.",
+      "highlight_words": {
+        "bottleneck": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Deep Stacking",
+        "action_verb": "constricts",
+        "direct_object": "Information Identity",
+        "anchor_word": "bottleneck",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE IDENTITY DESTRUCTION",
+        "sub": "Loss of signal parity through non-linear mapping",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Direct Input",
+          "stream_b_label": "Transformed State",
+          "barrier_label": "Non-Linear Bottleneck",
+          "barrier_sub": "Identity Loss"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE IDENTITY DESTRUCTION",
+        "sub": "Loss of signal parity through non-linear mapping",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Direct Input",
+        "stream_b_label": "Transformed State",
+        "barrier_label": "Non-Linear Bottleneck",
+        "barrier_sub": "Identity Loss"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.08,
+      "end": 15.3,
+      "duration": 8.21,
+      "word_timings": [
+        {
+          "word": "Stacking",
+          "clean_word": "stacking",
+          "phonemes": "st\u02c8\u00e6k\u026a\u014b",
+          "start": 7.103,
+          "end": 7.512,
+          "duration": 0.408,
+          "frame_ahead_trigger": 7.213
+        },
+        {
+          "word": "layers",
+          "clean_word": "layers",
+          "phonemes": "l\u02c8e\u026a\u025az",
+          "start": 7.512,
+          "end": 7.873,
+          "duration": 0.362,
+          "frame_ahead_trigger": 7.622
+        },
+        {
+          "word": "creates",
+          "clean_word": "creates",
+          "phonemes": "k\u0279i\u02d0\u02c8e\u026ats",
+          "start": 7.873,
+          "end": 8.453,
+          "duration": 0.58,
+          "frame_ahead_trigger": 7.983
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 8.453,
+          "end": 8.658,
+          "duration": 0.205,
+          "frame_ahead_trigger": 8.563
+        },
+        {
+          "word": "forced",
+          "clean_word": "forced",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279st",
+          "start": 8.658,
+          "end": 9.018,
+          "duration": 0.36,
+          "frame_ahead_trigger": 8.768
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 9.018,
+          "end": 9.578,
+          "duration": 0.56,
+          "frame_ahead_trigger": 9.128
+        },
+        {
+          "word": "where",
+          "clean_word": "where",
+          "phonemes": "w\u02c8\u025b\u0279",
+          "start": 9.578,
+          "end": 9.783,
+          "duration": 0.205,
+          "frame_ahead_trigger": 9.688
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 9.783,
+          "end": 9.943,
+          "duration": 0.16,
+          "frame_ahead_trigger": 9.893
+        },
+        {
+          "word": "information",
+          "clean_word": "information",
+          "phonemes": "\u02cc\u026anf\u025am\u02c8e\u026a\u0283\u0259n",
+          "start": 9.943,
+          "end": 10.663,
+          "duration": 0.72,
+          "frame_ahead_trigger": 10.053
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 10.663,
+          "end": 11.248,
+          "duration": 0.585,
+          "frame_ahead_trigger": 10.773
+        },
+        {
+          "word": "destroys",
+          "clean_word": "destroys",
+          "phonemes": "d\u1d7bst\u0279\u02c8\u0254\u026az",
+          "start": 11.248,
+          "end": 11.773,
+          "duration": 0.525,
+          "frame_ahead_trigger": 11.358
+        },
+        {
+          "word": "identity,",
+          "clean_word": "identity",
+          "phonemes": "a\u026ad\u02c8\u025bnt\u1d7b\u027ei",
+          "start": 11.773,
+          "end": 12.413,
+          "duration": 0.639,
+          "frame_ahead_trigger": 11.883
+        },
+        {
+          "word": "leaving",
+          "clean_word": "leaving",
+          "phonemes": "l\u02c8i\u02d0v\u026a\u014b",
+          "start": 12.413,
+          "end": 12.798,
+          "duration": 0.386,
+          "frame_ahead_trigger": 12.523
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 12.798,
+          "end": 12.933,
+          "duration": 0.135,
+          "frame_ahead_trigger": 12.908
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 12.933,
+          "end": 13.278,
+          "duration": 0.345,
+          "frame_ahead_trigger": 13.043
+        },
+        {
+          "word": "unable",
+          "clean_word": "unable",
+          "phonemes": "\u028cn\u02c8e\u026ab\u0259l",
+          "start": 13.278,
+          "end": 13.763,
+          "duration": 0.485,
+          "frame_ahead_trigger": 13.388
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 13.763,
+          "end": 14.053,
+          "duration": 0.29,
+          "frame_ahead_trigger": 13.873
+        },
+        {
+          "word": "learn",
+          "clean_word": "learn",
+          "phonemes": "l\u02c8\u025c\u02d0n",
+          "start": 14.053,
+          "end": 14.303,
+          "duration": 0.25,
+          "frame_ahead_trigger": 14.163
+        },
+        {
+          "word": "simple",
+          "clean_word": "simple",
+          "phonemes": "s\u02c8\u026amp\u0259l",
+          "start": 14.303,
+          "end": 14.698,
+          "duration": 0.395,
+          "frame_ahead_trigger": 14.413
+        },
+        {
+          "word": "functions.",
+          "clean_word": "functions",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259nz",
+          "start": 14.698,
+          "end": 15.213,
+          "duration": 0.515,
+          "frame_ahead_trigger": 14.808
+        }
+      ],
+      "audio_duration": 8.21,
+      "slot_duration": 8.37
+    },
+    {
+      "beat_id": 3,
+      "text": "Residual learning solves this by adding shortcut connections, forcing layers to learn the difference rather than the entire transformation.",
+      "visual_focus": "An arrow jumping over layers to preserve the input signal.",
+      "highlight_words": {
+        "shortcut connections": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Residual Shortcut",
+        "action_verb": "bypasses",
+        "direct_object": "Weighted Layers",
+        "anchor_word": "shortcut",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE INDESTRUCTIBLE: FIGURE",
+        "sub": "An arrow jumping over layers to preserve the input signal.",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_1_arch.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_1_arch.png",
+          "arxiv_id": "1512.03385",
+          "title": "THE INDESTRUCTIBLE: FIGURE",
+          "sub": "An arrow jumping over layers to preserve the input signal.",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Arch",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_1_arch.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_1_arch.png",
+        "arxiv_id": "1512.03385",
+        "title": "THE INDESTRUCTIBLE: FIGURE",
+        "sub": "An arrow jumping over layers to preserve the input signal.",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Arch",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 15.45,
+      "end": 22.66,
+      "duration": 7.21,
+      "word_timings": [
+        {
+          "word": "Residual",
+          "clean_word": "residual",
+          "phonemes": "\u0279\u1d7bs\u02c8\u026ad\u0292u\u02d0\u0259l",
+          "start": 15.457,
+          "end": 16.092,
+          "duration": 0.636,
+          "frame_ahead_trigger": 15.717
+        },
+        {
+          "word": "learning",
+          "clean_word": "learning",
+          "phonemes": "l\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 16.092,
+          "end": 16.497,
+          "duration": 0.405,
+          "frame_ahead_trigger": 16.352
+        },
+        {
+          "word": "solves",
+          "clean_word": "solves",
+          "phonemes": "s\u02c8\u0251\u02d0lvz",
+          "start": 16.497,
+          "end": 16.947,
+          "duration": 0.45,
+          "frame_ahead_trigger": 16.757
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 16.947,
+          "end": 17.132,
+          "duration": 0.185,
+          "frame_ahead_trigger": 17.207
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 17.132,
+          "end": 17.372,
+          "duration": 0.24,
+          "frame_ahead_trigger": 17.392
+        },
+        {
+          "word": "adding",
+          "clean_word": "adding",
+          "phonemes": "\u02c8\u00e6d\u026a\u014b",
+          "start": 17.372,
+          "end": 17.737,
+          "duration": 0.365,
+          "frame_ahead_trigger": 17.632
+        },
+        {
+          "word": "shortcut",
+          "clean_word": "shortcut",
+          "phonemes": "\u0283\u02c8\u0254\u02d0\u0279tk\u028ct",
+          "start": 17.737,
+          "end": 18.217,
+          "duration": 0.48,
+          "frame_ahead_trigger": 17.997
+        },
+        {
+          "word": "connections,",
+          "clean_word": "connections",
+          "phonemes": "k\u0259n\u02c8\u025bk\u0283\u0259nz",
+          "start": 18.217,
+          "end": 18.751,
+          "duration": 0.534,
+          "frame_ahead_trigger": 18.477
+        },
+        {
+          "word": "forcing",
+          "clean_word": "forcing",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u026a\u014b",
+          "start": 18.751,
+          "end": 19.162,
+          "duration": 0.411,
+          "frame_ahead_trigger": 19.011
+        },
+        {
+          "word": "layers",
+          "clean_word": "layers",
+          "phonemes": "l\u02c8e\u026a\u025az",
+          "start": 19.162,
+          "end": 19.542,
+          "duration": 0.38,
+          "frame_ahead_trigger": 19.422
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 19.542,
+          "end": 19.727,
+          "duration": 0.185,
+          "frame_ahead_trigger": 19.802
+        },
+        {
+          "word": "learn",
+          "clean_word": "learn",
+          "phonemes": "l\u02c8\u025c\u02d0n",
+          "start": 19.727,
+          "end": 20.062,
+          "duration": 0.335,
+          "frame_ahead_trigger": 19.987
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 20.062,
+          "end": 20.207,
+          "duration": 0.145,
+          "frame_ahead_trigger": 20.322
+        },
+        {
+          "word": "difference",
+          "clean_word": "difference",
+          "phonemes": "d\u02c8\u026af\u0279\u0259ns",
+          "start": 20.207,
+          "end": 20.607,
+          "duration": 0.4,
+          "frame_ahead_trigger": 20.467
+        },
+        {
+          "word": "rather",
+          "clean_word": "rather",
+          "phonemes": "\u0279\u02c8\u00e6\u00f0\u025a",
+          "start": 20.607,
+          "end": 20.842,
+          "duration": 0.235,
+          "frame_ahead_trigger": 20.867
+        },
+        {
+          "word": "than",
+          "clean_word": "than",
+          "phonemes": "\u00f0\u0250n",
+          "start": 20.842,
+          "end": 21.052,
+          "duration": 0.21,
+          "frame_ahead_trigger": 21.102
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 21.052,
+          "end": 21.142,
+          "duration": 0.09,
+          "frame_ahead_trigger": 21.312
+        },
+        {
+          "word": "entire",
+          "clean_word": "entire",
+          "phonemes": "\u025bnt\u02c8a\u026a\u025a",
+          "start": 21.142,
+          "end": 21.562,
+          "duration": 0.42,
+          "frame_ahead_trigger": 21.402
+        },
+        {
+          "word": "transformation.",
+          "clean_word": "transformation",
+          "phonemes": "t\u0279\u00e6nsf\u0254\u02d0\u0279m\u02c8e\u026a\u0283\u0259n",
+          "start": 21.562,
+          "end": 22.507,
+          "duration": 0.945,
+          "frame_ahead_trigger": 21.822
+        }
+      ],
+      "audio_duration": 7.21,
+      "slot_duration": 7.36
+    },
+    {
+      "beat_id": 4,
+      "text": "By formulating the mapping as a residual function, the gradient flows unimpeded across the network during backpropagation, bypassing catastrophic signal decay.",
+      "visual_focus": "Gradients smoothly flowing through the shortcut bypasses.",
+      "highlight_words": {
+        "residual function": "#34D399",
+        "gradient": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Residual Mapping",
+        "action_verb": "channels",
+        "direct_object": "Gradient Flow",
+        "anchor_word": "gradient",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "neural_activation_wave",
+        "title": "UNIMPEDED GRADIENT FLOW",
+        "sub": "Backpropagation via residual identity mapping",
+        "accent_color": "#34D399",
+        "params": {
+          "input_label": "Residual Path",
+          "hidden_label": "Identity Link",
+          "output_label": "Gradient Preservation"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "neural_activation_wave",
+        "title": "UNIMPEDED GRADIENT FLOW",
+        "sub": "Backpropagation via residual identity mapping",
+        "accent_color": "#34D399",
+        "input_label": "Residual Path",
+        "hidden_label": "Identity Link",
+        "output_label": "Gradient Preservation"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 22.81,
+      "end": 31.77,
+      "duration": 8.96,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 22.812,
+          "end": 23.002,
+          "duration": 0.19,
+          "frame_ahead_trigger": 23.222
+        },
+        {
+          "word": "formulating",
+          "clean_word": "formulating",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279mj\u028al\u02cce\u026a\u027e\u026a\u014b",
+          "start": 23.002,
+          "end": 23.842,
+          "duration": 0.84,
+          "frame_ahead_trigger": 23.412
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 23.842,
+          "end": 23.952,
+          "duration": 0.11,
+          "frame_ahead_trigger": 24.252
+        },
+        {
+          "word": "mapping",
+          "clean_word": "mapping",
+          "phonemes": "m\u02c8\u00e6p\u026a\u014b",
+          "start": 23.952,
+          "end": 24.312,
+          "duration": 0.36,
+          "frame_ahead_trigger": 24.362
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 24.312,
+          "end": 24.497,
+          "duration": 0.185,
+          "frame_ahead_trigger": 24.722
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 24.497,
+          "end": 24.608,
+          "duration": 0.111,
+          "frame_ahead_trigger": 24.907
+        },
+        {
+          "word": "residual",
+          "clean_word": "residual",
+          "phonemes": "\u0279\u1d7bs\u02c8\u026ad\u0292u\u02d0\u0259l",
+          "start": 24.608,
+          "end": 25.225,
+          "duration": 0.617,
+          "frame_ahead_trigger": 25.018
+        },
+        {
+          "word": "function,",
+          "clean_word": "function",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259n",
+          "start": 25.225,
+          "end": 25.597,
+          "duration": 0.372,
+          "frame_ahead_trigger": 25.635
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 25.597,
+          "end": 25.827,
+          "duration": 0.23,
+          "frame_ahead_trigger": 26.007
+        },
+        {
+          "word": "gradient",
+          "clean_word": "gradient",
+          "phonemes": "\u0261\u0279\u02c8e\u026adi\u0259nt",
+          "start": 25.827,
+          "end": 26.422,
+          "duration": 0.595,
+          "frame_ahead_trigger": 26.237
+        },
+        {
+          "word": "flows",
+          "clean_word": "flows",
+          "phonemes": "fl\u02c8o\u028az",
+          "start": 26.422,
+          "end": 26.737,
+          "duration": 0.315,
+          "frame_ahead_trigger": 26.832
+        },
+        {
+          "word": "unimpeded",
+          "clean_word": "unimpeded",
+          "phonemes": "\u02cc\u028cn\u026amp\u02c8i\u02d0d\u1d7bd",
+          "start": 26.737,
+          "end": 27.312,
+          "duration": 0.575,
+          "frame_ahead_trigger": 27.147
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 27.312,
+          "end": 27.667,
+          "duration": 0.355,
+          "frame_ahead_trigger": 27.722
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 27.667,
+          "end": 27.957,
+          "duration": 0.29,
+          "frame_ahead_trigger": 28.077
+        },
+        {
+          "word": "network",
+          "clean_word": "network",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0k",
+          "start": 27.957,
+          "end": 28.247,
+          "duration": 0.29,
+          "frame_ahead_trigger": 28.367
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 28.247,
+          "end": 28.757,
+          "duration": 0.51,
+          "frame_ahead_trigger": 28.657
+        },
+        {
+          "word": "backpropagation,",
+          "clean_word": "backpropagation",
+          "phonemes": "b\u02cc\u00e6kp\u0279\u0259p\u0250\u0261\u02c8e\u026a\u0283\u0259n",
+          "start": 28.757,
+          "end": 29.557,
+          "duration": 0.8,
+          "frame_ahead_trigger": 29.167
+        },
+        {
+          "word": "bypassing",
+          "clean_word": "bypassing",
+          "phonemes": "b\u02c8a\u026ap\u00e6s\u026a\u014b",
+          "start": 29.557,
+          "end": 30.067,
+          "duration": 0.51,
+          "frame_ahead_trigger": 29.967
+        },
+        {
+          "word": "catastrophic",
+          "clean_word": "catastrophic",
+          "phonemes": "k\u02cc\u00e6\u027e\u0259st\u0279\u02c8\u0251\u02d0f\u026ak",
+          "start": 30.067,
+          "end": 30.792,
+          "duration": 0.725,
+          "frame_ahead_trigger": 30.477
+        },
+        {
+          "word": "signal",
+          "clean_word": "signal",
+          "phonemes": "s\u02c8\u026a\u0261n\u0259l",
+          "start": 30.792,
+          "end": 31.237,
+          "duration": 0.445,
+          "frame_ahead_trigger": 31.202
+        },
+        {
+          "word": "decay.",
+          "clean_word": "decay",
+          "phonemes": "d\u1d7bk\u02c8e\u026a",
+          "start": 31.237,
+          "end": 31.622,
+          "duration": 0.385,
+          "frame_ahead_trigger": 31.647
+        }
+      ],
+      "audio_duration": 8.96,
+      "slot_duration": 9.11
+    },
+    {
+      "beat_id": 5,
+      "text": "This framework shattered limits, allowing models like the 152-layer ResNet to reach 3.57% error, setting the blueprint for modern transformers.",
+      "visual_focus": "Performance comparison chart showing the 3.57% error milestone.",
+      "highlight_words": {
+        "3.57%": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "ResNet-152",
+        "action_verb": "achieves",
+        "direct_object": "Record Accuracy",
+        "anchor_word": "3.57%",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: \\MULTICOLUMN2C|COCO TRAI",
+        "sub": "Performance comparison chart showing the 3.57%",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: \\MULTICOLUMN2C|COCO TRAI",
+          "sub": "Performance comparison chart showing the 3.57%",
+          "metric_name": "\\multicolumn2c|COCO train",
+          "unit": "",
+          "contestants": [
+            {
+              "name": "+multi-scale testing",
+              "value": 53.8,
+              "display_val": "53.8",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "+context",
+              "value": 51.1,
+              "display_val": "51.1",
+              "is_hero": false,
+              "color": "#10B981"
+            },
+            {
+              "name": "+box refinement",
+              "value": 49.9,
+              "display_val": "49.9",
+              "is_hero": false,
+              "color": "#EF4444"
+            },
+            {
+              "name": "baseline Faster R-CNN (R",
+              "value": 48.4,
+              "display_val": "48.4",
+              "is_hero": false,
+              "color": "#A855F7"
+            }
+          ],
+          "delta_badge": "\u26a1 +5.3% OVER +CONTEXT"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: \\MULTICOLUMN2C|COCO TRAI",
+        "sub": "Performance comparison chart showing the 3.57%",
+        "metric_name": "\\multicolumn2c|COCO train",
+        "unit": "",
+        "contestants": [
+          {
+            "name": "+multi-scale testing",
+            "value": 53.8,
+            "display_val": "53.8",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "+context",
+            "value": 51.1,
+            "display_val": "51.1",
+            "is_hero": false,
+            "color": "#10B981"
+          },
+          {
+            "name": "+box refinement",
+            "value": 49.9,
+            "display_val": "49.9",
+            "is_hero": false,
+            "color": "#EF4444"
+          },
+          {
+            "name": "baseline Faster R-CNN (R",
+            "value": 48.4,
+            "display_val": "48.4",
+            "is_hero": false,
+            "color": "#A855F7"
+          }
+        ],
+        "delta_badge": "\u26a1 +5.3% OVER +CONTEXT"
+      },
+      "start": 31.92,
+      "end": 41.88,
+      "duration": 9.96,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 31.932,
+          "end": 32.107,
+          "duration": 0.175,
+          "frame_ahead_trigger": 32.492
+        },
+        {
+          "word": "framework",
+          "clean_word": "framework",
+          "phonemes": "f\u0279\u02c8e\u026amw\u025c\u02d0k",
+          "start": 32.107,
+          "end": 32.812,
+          "duration": 0.705,
+          "frame_ahead_trigger": 32.667
+        },
+        {
+          "word": "shattered",
+          "clean_word": "shattered",
+          "phonemes": "\u0283\u02c8\u00e6\u027e\u025ad",
+          "start": 32.812,
+          "end": 33.093,
+          "duration": 0.281,
+          "frame_ahead_trigger": 33.372
+        },
+        {
+          "word": "limits,",
+          "clean_word": "limits",
+          "phonemes": "l\u02c8\u026am\u026ats",
+          "start": 33.093,
+          "end": 33.499,
+          "duration": 0.406,
+          "frame_ahead_trigger": 33.653
+        },
+        {
+          "word": "allowing",
+          "clean_word": "allowing",
+          "phonemes": "\u0250l\u02c8a\u028a\u026a\u014b",
+          "start": 33.499,
+          "end": 33.997,
+          "duration": 0.498,
+          "frame_ahead_trigger": 34.059
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 33.997,
+          "end": 34.367,
+          "duration": 0.37,
+          "frame_ahead_trigger": 34.557
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 34.367,
+          "end": 34.697,
+          "duration": 0.33,
+          "frame_ahead_trigger": 34.927
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 34.697,
+          "end": 34.812,
+          "duration": 0.115,
+          "frame_ahead_trigger": 35.257
+        },
+        {
+          "word": "152-layer",
+          "clean_word": "152layer",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad f\u02c8\u026afti t\u02c8u\u02d0 l\u02c8e\u026a\u025a",
+          "start": 34.812,
+          "end": 36.557,
+          "duration": 1.745,
+          "frame_ahead_trigger": 35.372
+        },
+        {
+          "word": "ResNet",
+          "clean_word": "resnet",
+          "phonemes": "\u0279\u02c8\u025bz n\u02c8\u025bt",
+          "start": 36.557,
+          "end": 37.027,
+          "duration": 0.47,
+          "frame_ahead_trigger": 37.117
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 37.027,
+          "end": 37.167,
+          "duration": 0.14,
+          "frame_ahead_trigger": 37.587
+        },
+        {
+          "word": "reach",
+          "clean_word": "reach",
+          "phonemes": "\u0279\u02c8i\u02d0t\u0283",
+          "start": 37.167,
+          "end": 37.457,
+          "duration": 0.29,
+          "frame_ahead_trigger": 37.727
+        },
+        {
+          "word": "3.57%",
+          "clean_word": "357",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0h\u02c8\u028cnd\u0279\u026ad f\u02c8\u026afti s\u02c8\u025bv\u0259n",
+          "start": 37.457,
+          "end": 39.027,
+          "duration": 1.57,
+          "frame_ahead_trigger": 38.017
+        },
+        {
+          "word": "error,",
+          "clean_word": "error",
+          "phonemes": "\u02c8\u025b\u0279\u025a",
+          "start": 39.027,
+          "end": 39.36,
+          "duration": 0.333,
+          "frame_ahead_trigger": 39.587
+        },
+        {
+          "word": "setting",
+          "clean_word": "setting",
+          "phonemes": "s\u02c8\u025b\u027e\u026a\u014b",
+          "start": 39.36,
+          "end": 39.667,
+          "duration": 0.307,
+          "frame_ahead_trigger": 39.92
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 39.667,
+          "end": 39.897,
+          "duration": 0.23,
+          "frame_ahead_trigger": 40.227
+        },
+        {
+          "word": "blueprint",
+          "clean_word": "blueprint",
+          "phonemes": "bl\u02c8u\u02d0p\u0279\u026ant",
+          "start": 39.897,
+          "end": 40.317,
+          "duration": 0.42,
+          "frame_ahead_trigger": 40.457
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 40.317,
+          "end": 40.657,
+          "duration": 0.34,
+          "frame_ahead_trigger": 40.877
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 40.657,
+          "end": 41.052,
+          "duration": 0.395,
+          "frame_ahead_trigger": 41.217
+        },
+        {
+          "word": "transformers.",
+          "clean_word": "transformers",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279m\u025az",
+          "start": 41.052,
+          "end": 41.797,
+          "duration": 0.745,
+          "frame_ahead_trigger": 41.612
+        }
+      ],
+      "audio_duration": 9.96,
+      "slot_duration": 10.11
+    },
+    {
+      "beat_id": 6,
+      "text": "The residual shortcut is the indestructible skeleton of intelligence. Subscribe to machinoAI for more deep-dive architectural dissections.",
+      "visual_focus": "A schematic of a transformer block with its residual loop highlighted.",
+      "highlight_words": {
+        "indestructible skeleton": "#FFFFFF"
+      },
+      "svo_action": {
+        "subject": "Residual Stream",
+        "action_verb": "anchors",
+        "direct_object": "Transformer Logic",
+        "anchor_word": "skeleton",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "THE MODERN BACKBONE",
+        "sub": "Residual logic in current Transformer design",
+        "accent_color": "#34D399",
+        "params": {
+          "stage_1_label": "Attention",
+          "stage_1_sub": "Residual Loop",
+          "stage_2_label": "MLP",
+          "stage_2_sub": "Residual Loop",
+          "stage_3_label": "Output",
+          "stage_3_sub": "Stable Representation"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 42.03,
+      "end": 50.46,
+      "duration": 8.43,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 42.04,
+          "end": 42.215,
+          "duration": 0.175,
+          "frame_ahead_trigger": 42.75
+        },
+        {
+          "word": "residual",
+          "clean_word": "residual",
+          "phonemes": "\u0279\u1d7bs\u02c8\u026ad\u0292u\u02d0\u0259l",
+          "start": 42.215,
+          "end": 42.875,
+          "duration": 0.66,
+          "frame_ahead_trigger": 42.925
+        },
+        {
+          "word": "shortcut",
+          "clean_word": "shortcut",
+          "phonemes": "\u0283\u02c8\u0254\u02d0\u0279tk\u028ct",
+          "start": 42.875,
+          "end": 43.325,
+          "duration": 0.45,
+          "frame_ahead_trigger": 43.585
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 43.325,
+          "end": 43.46,
+          "duration": 0.135,
+          "frame_ahead_trigger": 44.035
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 43.46,
+          "end": 43.58,
+          "duration": 0.12,
+          "frame_ahead_trigger": 44.17
+        },
+        {
+          "word": "indestructible",
+          "clean_word": "indestructible",
+          "phonemes": "\u02cc\u026and\u1d7bst\u0279\u02c8\u028ckt\u1d7bb\u0259l",
+          "start": 43.58,
+          "end": 44.65,
+          "duration": 1.07,
+          "frame_ahead_trigger": 44.29
+        },
+        {
+          "word": "skeleton",
+          "clean_word": "skeleton",
+          "phonemes": "sk\u02c8\u025bl\u1d7bt\u0259n",
+          "start": 44.65,
+          "end": 45.125,
+          "duration": 0.475,
+          "frame_ahead_trigger": 45.36
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 45.125,
+          "end": 45.3,
+          "duration": 0.175,
+          "frame_ahead_trigger": 45.835
+        },
+        {
+          "word": "intelligence.",
+          "clean_word": "intelligence",
+          "phonemes": "\u026ant\u02c8\u025bl\u026ad\u0292\u0259ns",
+          "start": 45.3,
+          "end": 45.964,
+          "duration": 0.664,
+          "frame_ahead_trigger": 46.01
+        },
+        {
+          "word": "Subscribe",
+          "clean_word": "subscribe",
+          "phonemes": "s\u0259bsk\u0279\u02c8a\u026ab",
+          "start": 45.964,
+          "end": 46.615,
+          "duration": 0.651,
+          "frame_ahead_trigger": 46.674
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 46.615,
+          "end": 46.78,
+          "duration": 0.165,
+          "frame_ahead_trigger": 47.325
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 46.78,
+          "end": 47.714,
+          "duration": 0.934,
+          "frame_ahead_trigger": 47.49
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 47.714,
+          "end": 48.025,
+          "duration": 0.311,
+          "frame_ahead_trigger": 48.424
+        },
+        {
+          "word": "more",
+          "clean_word": "more",
+          "phonemes": "m\u02c8\u0254\u02d0\u0279",
+          "start": 48.025,
+          "end": 48.26,
+          "duration": 0.235,
+          "frame_ahead_trigger": 48.735
+        },
+        {
+          "word": "deep-dive",
+          "clean_word": "deepdive",
+          "phonemes": "d\u02c8i\u02d0pd\u026av",
+          "start": 48.26,
+          "end": 48.8,
+          "duration": 0.54,
+          "frame_ahead_trigger": 48.97
+        },
+        {
+          "word": "architectural",
+          "clean_word": "architectural",
+          "phonemes": "\u02cc\u0251\u02d0\u0279k\u026at\u02c8\u025bkt\u0283\u025a\u0279\u0259l",
+          "start": 48.8,
+          "end": 49.67,
+          "duration": 0.87,
+          "frame_ahead_trigger": 49.51
+        },
+        {
+          "word": "dissections.",
+          "clean_word": "dissections",
+          "phonemes": "da\u026as\u02c8\u025bk\u0283\u0259nz",
+          "start": 49.67,
+          "end": 50.37,
+          "duration": 0.7,
+          "frame_ahead_trigger": 50.38
+        }
+      ],
+      "audio_duration": 8.43,
+      "slot_duration": 8.43
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$N = 152$",
+      "filename": "resnet_residual_evolution_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "N",
+          "label": "Total Network Layers"
+        }
+      ],
+      "svg_filename": "resnet_residual_evolution_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(L^2)$",
+      "filename": "resnet_residual_evolution_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "L",
+          "label": "Training Complexity"
+        }
+      ],
+      "svg_filename": "resnet_residual_evolution_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$y = F(x, \\{W_i\\}) + x$",
+      "filename": "resnet_residual_evolution_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "F(x)",
+          "label": "Residual Mapping"
+        },
+        {
+          "term": "x",
+          "label": "Identity Shortcut"
+        }
+      ],
+      "svg_filename": "resnet_residual_evolution_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\frac{\\partial \\mathcal{E}}{\\partial x_l} = \\frac{\\partial \\mathcal{E}}{\\partial x_L} (1 + \\frac{\\partial}{\\partial x_l} \\sum_{i=l}^{L-1} F(x_i))$",
+      "filename": "resnet_residual_evolution_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "1",
+          "label": "Preserved Gradient"
+        }
+      ],
+      "svg_filename": "resnet_residual_evolution_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Error} = 3.57\\%$",
+      "filename": "resnet_residual_evolution_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "Error",
+          "label": "ILSVRC Top-5 Error"
+        }
+      ],
+      "svg_filename": "resnet_residual_evolution_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "LAYERS",
+          "color": "#38BDF8",
+          "items": [
+            "Conv",
+            "ReLU",
+            "Batchnorm"
+          ]
+        },
+        {
+          "name": "RESIDUAL",
+          "color": "#10B981",
+          "items": [
+            "Identity",
+            "Skip",
+            "Add"
+          ]
+        },
+        {
+          "name": "GRADIENT",
+          "color": "#F59E0B",
+          "items": [
+            "Backprop",
+            "Signal",
+            "Weight"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Feature",
+        "target_cluster": "RESIDUAL",
+        "token": "x"
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Identity",
+          "color": "#EF4444"
+        }
+      ]
+    },
+    "model_a": "ResNet-152",
+    "model_a_specs": [
+      "152 Layers",
+      "Residual Learning",
+      "ILSVRC Winner"
+    ],
+    "model_b": "VGG",
+    "model_b_specs": [
+      "Standard Stack",
+      "High Complexity",
+      "Gradient Decay"
+    ],
+    "divide_title": "RESIDUAL VS STACK",
+    "model_a_stat": "3.57",
+    "model_a_stat_label": "TEST ERROR",
+    "benchmarks": [
+      {
+        "name": "ILSVRC",
+        "score_a": "3.57%",
+        "score_b": null
+      }
+    ],
+    "scale_metric": "152",
+    "scale_label": "LAYERS",
+    "bottleneck_title": "IDENTITY DESTRUCTION",
+    "bottleneck_desc": "Loss of parity in deep stacking",
+    "solution_title": "RESIDUAL MAPPING",
+    "solution_components": "Identity Shortcut Connections",
+    "mechanism_title": "GRADIENT PRESERVATION",
+    "payoff_stat": "3.57",
+    "payoff_label": "TEST ERROR",
+    "payoff_sub": "152-layer ImageNet benchmark victory",
+    "payoff_hero_stat": 3.57,
+    "payoff_hero_label": "ResNet-152",
+    "payoff_delta_badge": "\u26a1 1st Place",
+    "challenger": "ResNet-152",
+    "incumbent": "VGG-19"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: ILSVRC 2015",
+    "metric_name": "Classification Error",
+    "unit": "Percent",
+    "contestants": [
+      {
+        "name": "ResNet-152",
+        "value": "3.57",
+        "display_val": "3.57%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "VGG-19",
+        "value": null,
+        "display_val": "Baseline",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 1st Place",
+    "radar_axes": [
+      "Depth",
+      "Efficiency",
+      "Accuracy"
+    ]
+  },
+  "script_provider": "gemini",
+  "quality_flags": {
+    "scrubbed_fields": [
+      "metadata.efficiency_badge"
+    ],
+    "ungrounded_narration_numbers": [],
+    "leaked_example_values": [],
+    "grounding_source_chars": 1711
+  },
+  "arxiv_id": "1512.03385",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "arch",
+      "caption": "Arch",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/source/eps/arch.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_1_arch.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_1_arch.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "imagenet",
+      "caption": "Imagenet",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/source/eps/imagenet.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_2_imagenet.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_2_imagenet.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "cifar",
+      "caption": "Cifar",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/source/eps/cifar.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_3_cifar.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_3_cifar.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "block_deeper",
+      "caption": "Block Deeper",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/source/eps/block_deeper.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_4_block_deeper.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_4_block_deeper.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "std",
+      "caption": "Std",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/source/eps/std.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_5_std.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1512.03385/chalkboard_figures/fig_5_std.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Deeper neural networks suffer from vanishing gradients, turning 152 layers into a training death trap of stagnant weights.",
+    "verdict": 63,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "properties": {
+      "SPECIFICITY": 56,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "ResNet-152",
+        "model_a_score": "3.57",
+        "model_b_name": "VGG",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "publish_gate": {
+    "decision": "publish",
+    "reasons": [],
+    "warnings": [
+      "No vision model audited the keyframes (scores are heuristic placeholders).",
+      "Script critic: \u274c REJECTED: Script contains 1 heavy jargon term(s): backpropagation, reading level is Grade 13.5 (target: Grade 9.0), overall score 6.8/10 is below threshold 8.0."
+    ],
+    "action": {
+      "youtube_upload": true,
+      "privacy": "public",
+      "cross_post": true,
+      "mode": "private"
+    }
+  },
+  "youtube_upload": {
+    "video_id": "eR1DWGEiEyc",
+    "shorts_url": "https://youtube.com/shorts/eR1DWGEiEyc",
+    "studio_url": "https://studio.youtube.com/video/eR1DWGEiEyc/edit",
+    "title": "The Indestructible Skeleton of LLMs #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/resnet_residual_evolution_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
