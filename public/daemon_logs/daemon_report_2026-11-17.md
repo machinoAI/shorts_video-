@@ -1,18 +1,18 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-17 | **Timestamp:** 2026-11-17 20:00:43 UTC
+**Date:** 2026-11-17 | **Timestamp:** 2026-11-17 21:18:09 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: ResNet: Deep Residual Learning: Part 5 - The Indestructible Skeleton: Why Every Modern Transformer Still Relies on Residual Connections
-- **Topic Queue Part:** `goat_resnet_part_5` (arXiv: [1512.03385](https://arxiv.org/abs/1512.03385))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/eR1DWGEiEyc](https://youtube.com/shorts/eR1DWGEiEyc) (`eR1DWGEiEyc`)
-- **High-CTR Poster:** [resnet_residual_evolution_poster.png](public/thumbnails/resnet_residual_evolution_poster.png)
+### Reel 1: AlexNet: Deep Learning Ignition: Part 5 - The Deep Learning Big Bang: How Three Researchers Sparked the Trillion-Dollar AI Boom
+- **Topic Queue Part:** `goat_alexnet_part_5` (arXiv: [alexnet_imagenet_2012](https://arxiv.org/abs/alexnet_imagenet_2012))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/wOmutWZhEI8](https://youtube.com/shorts/wOmutWZhEI8) (`wOmutWZhEI8`)
+- **High-CTR Poster:** [alexnet_deep_learning_ignition_poster.png](public/thumbnails/alexnet_deep_learning_ignition_poster.png)
 - **✅ Publish gate:** passed
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: ResNet: Deep Residual Learning Mini-Series 5/5: ResNet: Deep Residual Learning: Part 5 - The Indestructible Skeleton: Why Every Modern Transformer Still Relies on Residual Connections*
-- **Everyday Analogy:** *How the residual stream remains the primary communication bus inside modern LLMs from GPT-4 to Llama 3.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_resnet_residual_evolution_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: AlexNet: Deep Learning Ignition Mini-Series 5/5: AlexNet: Deep Learning Ignition: Part 5 - The Deep Learning Big Bang: How Three Researchers Sparked the Trillion-Dollar AI Boom*
+- **Everyday Analogy:** *How AlexNet triggered the worldwide pivot of Google, Facebook, Microsoft, and academic labs into deep neural networks.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_alexnet_deep_learning_ignition_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
