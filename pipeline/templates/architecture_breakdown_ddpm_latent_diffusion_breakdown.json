@@ -1,0 +1,1815 @@
+{
+  "id": "ddpm_latent_diffusion_breakdown",
+  "title": "The Denoising Diffusion Revolution",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "neural_sae",
+  "hook_tag": "ARCHITECTURAL BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "For years. Generating high-fidelity images meant trapping two networks in a toxic. Unstable adversarial cage match.",
+      "visual_focus": "Split boxing ring where two neural networks slam each other into pixel noise",
+      "highlight_words": {
+        "adversarial cage match": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "GAN generators",
+        "action_verb": "destabilize",
+        "direct_object": "image synthesis",
+        "anchor_word": "adversarial",
+        "semantic_role": "conflict_introduction"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "THE ADVERSARIAL TRAP",
+        "sub": "Generator vs Discriminator Training Instability",
+        "accent_color": "#38BDF8",
+        "params": {
+          "field_title": "Noise Trajectory Flow",
+          "source_label": "Gaussian Noise",
+          "target_label": "Structured Latents",
+          "stream_formula": "$p(x_T) \\to p(x_0)$"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 35,
+      "hook_band": "WEAK",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "THE ADVERSARIAL TRAP",
+        "sub": "Generator vs Discriminator Training Instability",
+        "accent_color": "#38BDF8",
+        "field_title": "Noise Trajectory Flow",
+        "source_label": "Gaussian Noise",
+        "target_label": "Structured Latents",
+        "stream_formula": "$p(x_T) \\to p(x_0)$"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.78,
+      "duration": 6.78,
+      "word_timings": [
+        {
+          "word": "For",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 0.02,
+          "end": 0.135,
+          "duration": 0.115,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "years.",
+          "clean_word": "years",
+          "phonemes": "j\u02c8\u026a\u0279z",
+          "start": 0.135,
+          "end": 0.57,
+          "duration": 0.435,
+          "frame_ahead_trigger": 0.095
+        },
+        {
+          "word": "Generating",
+          "clean_word": "generating",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u02cce\u026a\u027e\u026a\u014b",
+          "start": 0.57,
+          "end": 1.36,
+          "duration": 0.79,
+          "frame_ahead_trigger": 0.53
+        },
+        {
+          "word": "high-fidelity",
+          "clean_word": "highfidelity",
+          "phonemes": "h\u02cca\u026af\u1d7bd\u02c8\u025bl\u1d7b\u027ei",
+          "start": 1.36,
+          "end": 2.055,
+          "duration": 0.695,
+          "frame_ahead_trigger": 1.32
+        },
+        {
+          "word": "images",
+          "clean_word": "images",
+          "phonemes": "\u02c8\u026am\u026ad\u0292\u1d7bz",
+          "start": 2.055,
+          "end": 2.485,
+          "duration": 0.43,
+          "frame_ahead_trigger": 2.015
+        },
+        {
+          "word": "meant",
+          "clean_word": "meant",
+          "phonemes": "m\u02c8\u025bnt",
+          "start": 2.485,
+          "end": 2.875,
+          "duration": 0.39,
+          "frame_ahead_trigger": 2.445
+        },
+        {
+          "word": "trapping",
+          "clean_word": "trapping",
+          "phonemes": "t\u0279\u02c8\u00e6p\u026a\u014b",
+          "start": 2.875,
+          "end": 3.26,
+          "duration": 0.385,
+          "frame_ahead_trigger": 2.835
+        },
+        {
+          "word": "two",
+          "clean_word": "two",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 3.26,
+          "end": 3.445,
+          "duration": 0.185,
+          "frame_ahead_trigger": 3.22
+        },
+        {
+          "word": "networks",
+          "clean_word": "networks",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0ks",
+          "start": 3.445,
+          "end": 3.92,
+          "duration": 0.475,
+          "frame_ahead_trigger": 3.405
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 3.92,
+          "end": 4.141,
+          "duration": 0.221,
+          "frame_ahead_trigger": 3.88
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 4.141,
+          "end": 4.315,
+          "duration": 0.174,
+          "frame_ahead_trigger": 4.101
+        },
+        {
+          "word": "toxic.",
+          "clean_word": "toxic",
+          "phonemes": "t\u02c8\u0251\u02d0ks\u026ak",
+          "start": 4.315,
+          "end": 4.805,
+          "duration": 0.49,
+          "frame_ahead_trigger": 4.275
+        },
+        {
+          "word": "Unstable",
+          "clean_word": "unstable",
+          "phonemes": "\u028cnst\u02c8e\u026ab\u0259l",
+          "start": 4.805,
+          "end": 5.285,
+          "duration": 0.48,
+          "frame_ahead_trigger": 4.765
+        },
+        {
+          "word": "adversarial",
+          "clean_word": "adversarial",
+          "phonemes": "\u02cc\u00e6dv\u025as\u02c8\u025b\u0279\u026a\u0259l",
+          "start": 5.285,
+          "end": 5.975,
+          "duration": 0.69,
+          "frame_ahead_trigger": 5.245
+        },
+        {
+          "word": "cage",
+          "clean_word": "cage",
+          "phonemes": "k\u02c8e\u026ad\u0292",
+          "start": 5.975,
+          "end": 6.345,
+          "duration": 0.37,
+          "frame_ahead_trigger": 5.935
+        },
+        {
+          "word": "match.",
+          "clean_word": "match",
+          "phonemes": "m\u02c8\u00e6t\u0283",
+          "start": 6.345,
+          "end": 6.695,
+          "duration": 0.35,
+          "frame_ahead_trigger": 6.305
+        }
+      ],
+      "audio_duration": 6.78,
+      "slot_duration": 6.93
+    },
+    {
+      "beat_id": 2,
+      "text": "Standard GANs suffered catastrophic mode collapse. Training felt like defusing a live bomb,. Where two rival models constantly sabotaged each other into digital garbage.",
+      "visual_focus": "Generator collapsing into repeating blurry faces while discriminator hits zero loss",
+      "highlight_words": {
+        "mode collapse": "#EF4444",
+        "sabotaged": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Mode collapse",
+        "action_verb": "destroys",
+        "direct_object": "sample diversity",
+        "anchor_word": "sabotaged",
+        "semantic_role": "bottleneck_manifestation"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "MODE COLLAPSE FAILURE",
+        "sub": "Zero gradient diversity under adversarial loss",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Autoregressive Chain",
+          "stream_b_label": "Diffusion Process",
+          "barrier_label": "Entropy Barrier",
+          "barrier_sub": "Information Loss"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "MODE COLLAPSE FAILURE",
+        "sub": "Zero gradient diversity under adversarial loss",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Autoregressive Chain",
+        "stream_b_label": "Diffusion Process",
+        "barrier_label": "Entropy Barrier",
+        "barrier_sub": "Information Loss"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.93,
+      "end": 17.0,
+      "duration": 10.07,
+      "word_timings": [
+        {
+          "word": "Standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 6.959,
+          "end": 7.409,
+          "duration": 0.45,
+          "frame_ahead_trigger": 7.069
+        },
+        {
+          "word": "GANs",
+          "clean_word": "gans",
+          "phonemes": "\u0261\u02c8\u00e6n",
+          "start": 7.409,
+          "end": 7.764,
+          "duration": 0.355,
+          "frame_ahead_trigger": 7.519
+        },
+        {
+          "word": "suffered",
+          "clean_word": "suffered",
+          "phonemes": "s\u02c8\u028cf\u025ad",
+          "start": 7.764,
+          "end": 8.049,
+          "duration": 0.285,
+          "frame_ahead_trigger": 7.874
+        },
+        {
+          "word": "catastrophic",
+          "clean_word": "catastrophic",
+          "phonemes": "k\u02cc\u00e6\u027e\u0259st\u0279\u02c8\u0251\u02d0f\u026ak",
+          "start": 8.049,
+          "end": 8.914,
+          "duration": 0.865,
+          "frame_ahead_trigger": 8.159
+        },
+        {
+          "word": "mode",
+          "clean_word": "mode",
+          "phonemes": "m\u02c8o\u028ad",
+          "start": 8.914,
+          "end": 9.239,
+          "duration": 0.325,
+          "frame_ahead_trigger": 9.024
+        },
+        {
+          "word": "collapse.",
+          "clean_word": "collapse",
+          "phonemes": "k\u0259l\u02c8\u00e6ps",
+          "start": 9.239,
+          "end": 9.684,
+          "duration": 0.445,
+          "frame_ahead_trigger": 9.349
+        },
+        {
+          "word": "Training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 9.684,
+          "end": 10.132,
+          "duration": 0.448,
+          "frame_ahead_trigger": 9.794
+        },
+        {
+          "word": "felt",
+          "clean_word": "felt",
+          "phonemes": "f\u02c8\u025blt",
+          "start": 10.132,
+          "end": 10.464,
+          "duration": 0.332,
+          "frame_ahead_trigger": 10.242
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 10.464,
+          "end": 10.739,
+          "duration": 0.275,
+          "frame_ahead_trigger": 10.574
+        },
+        {
+          "word": "defusing",
+          "clean_word": "defusing",
+          "phonemes": "d\u1d7bfj\u02c8u\u02d0z\u026a\u014b",
+          "start": 10.739,
+          "end": 11.349,
+          "duration": 0.61,
+          "frame_ahead_trigger": 10.849
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 11.349,
+          "end": 11.459,
+          "duration": 0.11,
+          "frame_ahead_trigger": 11.459
+        },
+        {
+          "word": "live",
+          "clean_word": "live",
+          "phonemes": "l\u02c8a\u026av",
+          "start": 11.459,
+          "end": 11.794,
+          "duration": 0.335,
+          "frame_ahead_trigger": 11.569
+        },
+        {
+          "word": "bomb,.",
+          "clean_word": "bomb",
+          "phonemes": "b\u02c8\u0251\u02d0m",
+          "start": 11.794,
+          "end": 12.069,
+          "duration": 0.275,
+          "frame_ahead_trigger": 11.904
+        },
+        {
+          "word": "Where",
+          "clean_word": "where",
+          "phonemes": "w\u02c8\u025b\u0279",
+          "start": 12.069,
+          "end": 12.389,
+          "duration": 0.32,
+          "frame_ahead_trigger": 12.179
+        },
+        {
+          "word": "two",
+          "clean_word": "two",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 12.389,
+          "end": 12.633,
+          "duration": 0.244,
+          "frame_ahead_trigger": 12.499
+        },
+        {
+          "word": "rival",
+          "clean_word": "rival",
+          "phonemes": "\u0279\u02c8a\u026av\u0259l",
+          "start": 12.633,
+          "end": 12.984,
+          "duration": 0.351,
+          "frame_ahead_trigger": 12.743
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 12.984,
+          "end": 13.524,
+          "duration": 0.54,
+          "frame_ahead_trigger": 13.094
+        },
+        {
+          "word": "constantly",
+          "clean_word": "constantly",
+          "phonemes": "k\u02c8\u0251\u02d0nst\u0259ntli",
+          "start": 13.524,
+          "end": 14.249,
+          "duration": 0.725,
+          "frame_ahead_trigger": 13.634
+        },
+        {
+          "word": "sabotaged",
+          "clean_word": "sabotaged",
+          "phonemes": "s\u02c8\u00e6b\u0259t\u02cc\u0251\u02d0\u0292d",
+          "start": 14.249,
+          "end": 14.949,
+          "duration": 0.7,
+          "frame_ahead_trigger": 14.359
+        },
+        {
+          "word": "each",
+          "clean_word": "each",
+          "phonemes": "\u02c8i\u02d0t\u0283",
+          "start": 14.949,
+          "end": 15.359,
+          "duration": 0.41,
+          "frame_ahead_trigger": 15.059
+        },
+        {
+          "word": "other",
+          "clean_word": "other",
+          "phonemes": "\u02c8\u028c\u00f0\u025a",
+          "start": 15.359,
+          "end": 15.489,
+          "duration": 0.13,
+          "frame_ahead_trigger": 15.469
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 15.489,
+          "end": 15.759,
+          "duration": 0.27,
+          "frame_ahead_trigger": 15.599
+        },
+        {
+          "word": "digital",
+          "clean_word": "digital",
+          "phonemes": "d\u02c8\u026ad\u0292\u026a\u027e\u0259l",
+          "start": 15.759,
+          "end": 16.414,
+          "duration": 0.655,
+          "frame_ahead_trigger": 15.869
+        },
+        {
+          "word": "garbage.",
+          "clean_word": "garbage",
+          "phonemes": "\u0261\u02c8\u0251\u02d0\u0279b\u026ad\u0292",
+          "start": 16.414,
+          "end": 16.904,
+          "duration": 0.49,
+          "frame_ahead_trigger": 16.524
+        }
+      ],
+      "audio_duration": 10.07,
+      "slot_duration": 10.22
+    },
+    {
+      "beat_id": 3,
+      "text": "Enter Denoising Diffusion. Instead of fighting an adversarial opponent. Researchers turned to nonequilibrium thermodynamics. They systematically dissolved images into pure Gaussian noise.",
+      "visual_focus": "Crisp photo of a cat slowly diffusing across 1,000 steps into pure static particles",
+      "highlight_words": {
+        "nonequilibrium thermodynamics": "#38BDF8",
+        "Gaussian noise": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Forward process",
+        "action_verb": "dissolves",
+        "direct_object": "image structure",
+        "anchor_word": "thermodynamics",
+        "semantic_role": "paradigm_shift"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE DENOISING DIFFUSION: FIGURE",
+        "sub": "Crisp photo of a cat slowly diffusing across 1,000 steps into",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_1_interp_coarse_to_fine_jpg_small.svg",
+          "image_path": null,
+          "arxiv_id": "2006.11239",
+          "title": "THE DENOISING DIFFUSION: FIGURE",
+          "sub": "Crisp photo of a cat slowly diffusing across 1,000 steps into",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Interp Coarse To Fine Jpg Small",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_1_interp_coarse_to_fine_jpg_small.svg",
+        "image_path": null,
+        "arxiv_id": "2006.11239",
+        "title": "THE DENOISING DIFFUSION: FIGURE",
+        "sub": "Crisp photo of a cat slowly diffusing across 1,000 steps into",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Interp Coarse To Fine Jpg Small",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 17.15,
+      "end": 27.99,
+      "duration": 10.84,
+      "word_timings": [
+        {
+          "word": "Enter",
+          "clean_word": "enter",
+          "phonemes": "\u02c8\u025bnt\u025a",
+          "start": 17.163,
+          "end": 17.418,
+          "duration": 0.255,
+          "frame_ahead_trigger": 17.423
+        },
+        {
+          "word": "Denoising",
+          "clean_word": "denoising",
+          "phonemes": "d\u1d7bn\u02c8\u0254\u026as\u026a\u014b",
+          "start": 17.418,
+          "end": 17.978,
+          "duration": 0.56,
+          "frame_ahead_trigger": 17.678
+        },
+        {
+          "word": "Diffusion.",
+          "clean_word": "diffusion",
+          "phonemes": "d\u1d7bfj\u02c8u\u02d0\u0292\u0259n",
+          "start": 17.978,
+          "end": 18.646,
+          "duration": 0.668,
+          "frame_ahead_trigger": 18.238
+        },
+        {
+          "word": "Instead",
+          "clean_word": "instead",
+          "phonemes": "\u026anst\u02c8\u025bd",
+          "start": 18.646,
+          "end": 19.083,
+          "duration": 0.437,
+          "frame_ahead_trigger": 18.906
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 19.083,
+          "end": 19.248,
+          "duration": 0.165,
+          "frame_ahead_trigger": 19.343
+        },
+        {
+          "word": "fighting",
+          "clean_word": "fighting",
+          "phonemes": "f\u02c8a\u026a\u027e\u026a\u014b",
+          "start": 19.248,
+          "end": 19.683,
+          "duration": 0.435,
+          "frame_ahead_trigger": 19.508
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 19.683,
+          "end": 19.758,
+          "duration": 0.075,
+          "frame_ahead_trigger": 19.943
+        },
+        {
+          "word": "adversarial",
+          "clean_word": "adversarial",
+          "phonemes": "\u02cc\u00e6dv\u025as\u02c8\u025b\u0279\u026a\u0259l",
+          "start": 19.758,
+          "end": 20.448,
+          "duration": 0.69,
+          "frame_ahead_trigger": 20.018
+        },
+        {
+          "word": "opponent.",
+          "clean_word": "opponent",
+          "phonemes": "\u0259p\u02c8o\u028an\u0259nt",
+          "start": 20.448,
+          "end": 21.056,
+          "duration": 0.607,
+          "frame_ahead_trigger": 20.708
+        },
+        {
+          "word": "Researchers",
+          "clean_word": "researchers",
+          "phonemes": "\u0279\u1d7bs\u02c8\u025c\u02d0t\u0283\u025az",
+          "start": 21.056,
+          "end": 21.648,
+          "duration": 0.593,
+          "frame_ahead_trigger": 21.316
+        },
+        {
+          "word": "turned",
+          "clean_word": "turned",
+          "phonemes": "t\u02c8\u025c\u02d0nd",
+          "start": 21.648,
+          "end": 21.993,
+          "duration": 0.345,
+          "frame_ahead_trigger": 21.908
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 21.993,
+          "end": 22.258,
+          "duration": 0.265,
+          "frame_ahead_trigger": 22.253
+        },
+        {
+          "word": "nonequilibrium",
+          "clean_word": "nonequilibrium",
+          "phonemes": "n\u02cc\u0251\u02d0n\u02cci\u02d0kw\u026al\u02c8\u026ab\u0279i\u0259m",
+          "start": 22.258,
+          "end": 23.403,
+          "duration": 1.145,
+          "frame_ahead_trigger": 22.518
+        },
+        {
+          "word": "thermodynamics.",
+          "clean_word": "thermodynamics",
+          "phonemes": "\u03b8\u02cc\u025c\u02d0mo\u028ada\u026an\u02c8\u00e6m\u026aks",
+          "start": 23.403,
+          "end": 24.498,
+          "duration": 1.095,
+          "frame_ahead_trigger": 23.663
+        },
+        {
+          "word": "They",
+          "clean_word": "they",
+          "phonemes": "\u00f0e\u026a",
+          "start": 24.498,
+          "end": 24.653,
+          "duration": 0.155,
+          "frame_ahead_trigger": 24.758
+        },
+        {
+          "word": "systematically",
+          "clean_word": "systematically",
+          "phonemes": "s\u02cc\u026ast\u0259m\u02c8\u00e6\u027e\u026akli",
+          "start": 24.653,
+          "end": 25.513,
+          "duration": 0.86,
+          "frame_ahead_trigger": 24.913
+        },
+        {
+          "word": "dissolved",
+          "clean_word": "dissolved",
+          "phonemes": "d\u026as\u02c8\u0251\u02d0lvd",
+          "start": 25.513,
+          "end": 26.043,
+          "duration": 0.53,
+          "frame_ahead_trigger": 25.773
+        },
+        {
+          "word": "images",
+          "clean_word": "images",
+          "phonemes": "\u02c8\u026am\u026ad\u0292\u1d7bz",
+          "start": 26.043,
+          "end": 26.568,
+          "duration": 0.525,
+          "frame_ahead_trigger": 26.303
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 26.568,
+          "end": 26.763,
+          "duration": 0.195,
+          "frame_ahead_trigger": 26.828
+        },
+        {
+          "word": "pure",
+          "clean_word": "pure",
+          "phonemes": "pj\u02c8\u028a\u0279",
+          "start": 26.763,
+          "end": 27.228,
+          "duration": 0.465,
+          "frame_ahead_trigger": 27.023
+        },
+        {
+          "word": "Gaussian",
+          "clean_word": "gaussian",
+          "phonemes": "\u0261\u02c8a\u028a\u0283\u0259n",
+          "start": 27.228,
+          "end": 27.604,
+          "duration": 0.376,
+          "frame_ahead_trigger": 27.488
+        },
+        {
+          "word": "noise.",
+          "clean_word": "noise",
+          "phonemes": "n\u02c8\u0254\u026az",
+          "start": 27.604,
+          "end": 27.913,
+          "duration": 0.309,
+          "frame_ahead_trigger": 27.864
+        }
+      ],
+      "audio_duration": 10.84,
+      "slot_duration": 10.99
+    },
+    {
+      "beat_id": 4,
+      "text": "By re-engineering the objective with Langevin dynamics. A single network learns to reverse entropy. It predicts and subtracts tiny noise vectors at each time step.",
+      "visual_focus": "U-Net predicting noise vector epsilon and peeling back static layer by layer",
+      "highlight_words": {
+        "reverse entropy": "#10B981",
+        "predicts and subtracts": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Denoising U-Net",
+        "action_verb": "subtracts",
+        "direct_object": "predicted noise vector",
+        "anchor_word": "reverse",
+        "semantic_role": "mechanism_execution"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "REVERSE SCORE MATCHING",
+        "sub": "p_theta(x_{t-1} | x_t) Vector Field Reconstruction",
+        "accent_color": "#F59E0B",
+        "params": {
+          "input_1_label": "Pixel Space",
+          "input_2_label": "Score Matching",
+          "input_3_label": "Weighted Bound",
+          "fused_label": "Latent Manifold"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "convergence_funnel",
+        "title": "REVERSE SCORE MATCHING",
+        "sub": "p_theta(x_{t-1} | x_t) Vector Field Reconstruction",
+        "accent_color": "#F59E0B",
+        "input_1_label": "Pixel Space",
+        "input_2_label": "Score Matching",
+        "input_3_label": "Weighted Bound",
+        "fused_label": "Latent Manifold"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 28.14,
+      "end": 37.61,
+      "duration": 9.47,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 28.151,
+          "end": 28.291,
+          "duration": 0.14,
+          "frame_ahead_trigger": 28.561
+        },
+        {
+          "word": "re-engineering",
+          "clean_word": "reengineering",
+          "phonemes": "\u0279i\u02d0\u02cc\u025bnd\u0292\u026an\u02c8\u026a\u0279\u026a\u014b",
+          "start": 28.291,
+          "end": 29.261,
+          "duration": 0.97,
+          "frame_ahead_trigger": 28.701
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 29.261,
+          "end": 29.466,
+          "duration": 0.205,
+          "frame_ahead_trigger": 29.671
+        },
+        {
+          "word": "objective",
+          "clean_word": "objective",
+          "phonemes": "\u0251\u02d0bd\u0292\u02c8\u025bkt\u026av",
+          "start": 29.466,
+          "end": 30.126,
+          "duration": 0.66,
+          "frame_ahead_trigger": 29.876
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 30.126,
+          "end": 30.236,
+          "duration": 0.11,
+          "frame_ahead_trigger": 30.536
+        },
+        {
+          "word": "Langevin",
+          "clean_word": "langevin",
+          "phonemes": "l\u02c8\u00e6nd\u0292\u026av\u02cc\u026an",
+          "start": 30.236,
+          "end": 30.911,
+          "duration": 0.675,
+          "frame_ahead_trigger": 30.646
+        },
+        {
+          "word": "dynamics.",
+          "clean_word": "dynamics",
+          "phonemes": "da\u026an\u02c8\u00e6m\u026aks",
+          "start": 30.911,
+          "end": 31.476,
+          "duration": 0.565,
+          "frame_ahead_trigger": 31.321
+        },
+        {
+          "word": "A",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 31.476,
+          "end": 31.716,
+          "duration": 0.24,
+          "frame_ahead_trigger": 31.886
+        },
+        {
+          "word": "single",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 31.716,
+          "end": 32.101,
+          "duration": 0.385,
+          "frame_ahead_trigger": 32.126
+        },
+        {
+          "word": "network",
+          "clean_word": "network",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0k",
+          "start": 32.101,
+          "end": 32.539,
+          "duration": 0.438,
+          "frame_ahead_trigger": 32.511
+        },
+        {
+          "word": "learns",
+          "clean_word": "learns",
+          "phonemes": "l\u02c8\u025c\u02d0nz",
+          "start": 32.539,
+          "end": 32.966,
+          "duration": 0.427,
+          "frame_ahead_trigger": 32.949
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 32.966,
+          "end": 33.156,
+          "duration": 0.19,
+          "frame_ahead_trigger": 33.376
+        },
+        {
+          "word": "reverse",
+          "clean_word": "reverse",
+          "phonemes": "\u0279\u1d7bv\u02c8\u025c\u02d0s",
+          "start": 33.156,
+          "end": 33.486,
+          "duration": 0.33,
+          "frame_ahead_trigger": 33.566
+        },
+        {
+          "word": "entropy.",
+          "clean_word": "entropy",
+          "phonemes": "\u02c8\u025bnt\u0279\u0259pi",
+          "start": 33.486,
+          "end": 34.046,
+          "duration": 0.56,
+          "frame_ahead_trigger": 33.896
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 34.046,
+          "end": 34.081,
+          "duration": 0.035,
+          "frame_ahead_trigger": 34.456
+        },
+        {
+          "word": "predicts",
+          "clean_word": "predicts",
+          "phonemes": "p\u0279\u026ad\u02c8\u026akts",
+          "start": 34.081,
+          "end": 34.614,
+          "duration": 0.534,
+          "frame_ahead_trigger": 34.491
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 34.614,
+          "end": 34.746,
+          "duration": 0.131,
+          "frame_ahead_trigger": 35.024
+        },
+        {
+          "word": "subtracts",
+          "clean_word": "subtracts",
+          "phonemes": "s\u028cbt\u0279\u02c8\u00e6kts",
+          "start": 34.746,
+          "end": 35.336,
+          "duration": 0.59,
+          "frame_ahead_trigger": 35.156
+        },
+        {
+          "word": "tiny",
+          "clean_word": "tiny",
+          "phonemes": "t\u02c8a\u026ani",
+          "start": 35.336,
+          "end": 35.741,
+          "duration": 0.405,
+          "frame_ahead_trigger": 35.746
+        },
+        {
+          "word": "noise",
+          "clean_word": "noise",
+          "phonemes": "n\u02c8\u0254\u026az",
+          "start": 35.741,
+          "end": 36.116,
+          "duration": 0.375,
+          "frame_ahead_trigger": 36.151
+        },
+        {
+          "word": "vectors",
+          "clean_word": "vectors",
+          "phonemes": "v\u02c8\u025bkt\u025az",
+          "start": 36.116,
+          "end": 36.486,
+          "duration": 0.37,
+          "frame_ahead_trigger": 36.526
+        },
+        {
+          "word": "at",
+          "clean_word": "at",
+          "phonemes": "\u00e6t",
+          "start": 36.486,
+          "end": 36.621,
+          "duration": 0.135,
+          "frame_ahead_trigger": 36.896
+        },
+        {
+          "word": "each",
+          "clean_word": "each",
+          "phonemes": "\u02c8i\u02d0t\u0283",
+          "start": 36.621,
+          "end": 36.906,
+          "duration": 0.285,
+          "frame_ahead_trigger": 37.031
+        },
+        {
+          "word": "time",
+          "clean_word": "time",
+          "phonemes": "t\u02c8a\u026am",
+          "start": 36.906,
+          "end": 37.201,
+          "duration": 0.295,
+          "frame_ahead_trigger": 37.316
+        },
+        {
+          "word": "step.",
+          "clean_word": "step",
+          "phonemes": "st\u02c8\u025bp",
+          "start": 37.201,
+          "end": 37.461,
+          "duration": 0.26,
+          "frame_ahead_trigger": 37.611
+        }
+      ],
+      "audio_duration": 9.47,
+      "slot_duration": 9.62
+    },
+    {
+      "beat_id": 5,
+      "text": "The payoff was staggering. DDPM crushed generative records. Achieving an unprecedented three-point-one-seven FID score on CIFAR-ten with rock-solid stability.",
+      "visual_focus": "FID benchmark bar crashing down to 3.17 with green celebratory particle blast",
+      "highlight_words": {
+        "three-point-one-seven FID": "#10B981",
+        "rock-solid stability": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "DDPM",
+        "action_verb": "achieves",
+        "direct_object": "record FID score",
+        "anchor_word": "crushed",
+        "semantic_role": "benchmark_validation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: FID SCORE",
+        "sub": "FID benchmark bar crashing down to 3.17 with",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: FID SCORE",
+          "sub": "FID benchmark bar crashing down to 3.17 with",
+          "metric_name": "FID Score",
+          "unit": "FID",
+          "contestants": [
+            {
+              "name": "DDPM",
+              "value": 3.17,
+              "display_val": "3.17",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "ProgressiveGAN",
+              "value": 0.0,
+              "display_val": "N/A",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 3.17 FID"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: FID SCORE",
+        "sub": "FID benchmark bar crashing down to 3.17 with",
+        "metric_name": "FID Score",
+        "unit": "FID",
+        "contestants": [
+          {
+            "name": "DDPM",
+            "value": 3.17,
+            "display_val": "3.17",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "ProgressiveGAN",
+            "value": 0.0,
+            "display_val": "N/A",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 3.17 FID"
+      },
+      "start": 37.76,
+      "end": 47.58,
+      "duration": 9.81,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 37.773,
+          "end": 37.848,
+          "duration": 0.075,
+          "frame_ahead_trigger": 38.333
+        },
+        {
+          "word": "payoff",
+          "clean_word": "payoff",
+          "phonemes": "p\u02c8e\u026a\u0254f",
+          "start": 37.848,
+          "end": 38.228,
+          "duration": 0.38,
+          "frame_ahead_trigger": 38.408
+        },
+        {
+          "word": "was",
+          "clean_word": "was",
+          "phonemes": "w\u028cz",
+          "start": 38.228,
+          "end": 38.448,
+          "duration": 0.22,
+          "frame_ahead_trigger": 38.788
+        },
+        {
+          "word": "staggering.",
+          "clean_word": "staggering",
+          "phonemes": "st\u02c8\u00e6\u0261\u025a\u0279\u026a\u014b",
+          "start": 38.448,
+          "end": 39.016,
+          "duration": 0.568,
+          "frame_ahead_trigger": 39.008
+        },
+        {
+          "word": "DDPM",
+          "clean_word": "ddpm",
+          "phonemes": "d\u02cci\u02d0d\u02cci\u02d0p\u02cci\u02d0\u02c8\u025bm",
+          "start": 39.016,
+          "end": 39.938,
+          "duration": 0.922,
+          "frame_ahead_trigger": 39.576
+        },
+        {
+          "word": "crushed",
+          "clean_word": "crushed",
+          "phonemes": "k\u0279\u02c8\u028c\u0283t",
+          "start": 39.938,
+          "end": 40.328,
+          "duration": 0.39,
+          "frame_ahead_trigger": 40.498
+        },
+        {
+          "word": "generative",
+          "clean_word": "generative",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u0259t\u02cc\u026av",
+          "start": 40.328,
+          "end": 41.028,
+          "duration": 0.7,
+          "frame_ahead_trigger": 40.888
+        },
+        {
+          "word": "records.",
+          "clean_word": "records",
+          "phonemes": "\u0279\u02c8\u025bk\u025adz",
+          "start": 41.028,
+          "end": 41.458,
+          "duration": 0.43,
+          "frame_ahead_trigger": 41.588
+        },
+        {
+          "word": "Achieving",
+          "clean_word": "achieving",
+          "phonemes": "\u0250t\u0283\u02c8i\u02d0v\u026a\u014b",
+          "start": 41.458,
+          "end": 42.008,
+          "duration": 0.55,
+          "frame_ahead_trigger": 42.018
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 42.008,
+          "end": 42.208,
+          "duration": 0.2,
+          "frame_ahead_trigger": 42.568
+        },
+        {
+          "word": "unprecedented",
+          "clean_word": "unprecedented",
+          "phonemes": "\u028cnp\u0279\u02c8\u025bs\u1d7bd\u0259nt\u1d7bd",
+          "start": 42.208,
+          "end": 43.038,
+          "duration": 0.83,
+          "frame_ahead_trigger": 42.768
+        },
+        {
+          "word": "three-point-one-seven",
+          "clean_word": "threepointoneseven",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0p\u0254\u026ant\u02cco\u028ans\u025bv\u0259n",
+          "start": 43.038,
+          "end": 44.188,
+          "duration": 1.15,
+          "frame_ahead_trigger": 43.598
+        },
+        {
+          "word": "FID",
+          "clean_word": "fid",
+          "phonemes": "f\u02c8\u026ad",
+          "start": 44.188,
+          "end": 44.488,
+          "duration": 0.3,
+          "frame_ahead_trigger": 44.748
+        },
+        {
+          "word": "score",
+          "clean_word": "score",
+          "phonemes": "sk\u02c8\u0254\u02d0\u0279",
+          "start": 44.488,
+          "end": 44.838,
+          "duration": 0.35,
+          "frame_ahead_trigger": 45.048
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 44.838,
+          "end": 45.093,
+          "duration": 0.255,
+          "frame_ahead_trigger": 45.398
+        },
+        {
+          "word": "CIFAR-ten",
+          "clean_word": "cifarten",
+          "phonemes": "s\u02c8i\u02d0f\u0259 \u02c8\u0251\u02d0\u0279t\u02c8\u025bn",
+          "start": 45.093,
+          "end": 45.993,
+          "duration": 0.9,
+          "frame_ahead_trigger": 45.653
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 45.993,
+          "end": 46.168,
+          "duration": 0.175,
+          "frame_ahead_trigger": 46.553
+        },
+        {
+          "word": "rock-solid",
+          "clean_word": "rocksolid",
+          "phonemes": "\u0279\u02c8\u0251\u02d0ks\u0259l\u02cc\u026ad",
+          "start": 46.168,
+          "end": 46.903,
+          "duration": 0.735,
+          "frame_ahead_trigger": 46.728
+        },
+        {
+          "word": "stability.",
+          "clean_word": "stability",
+          "phonemes": "st\u0259b\u02c8\u026al\u1d7b\u027ei",
+          "start": 46.903,
+          "end": 47.468,
+          "duration": 0.565,
+          "frame_ahead_trigger": 47.463
+        }
+      ],
+      "audio_duration": 9.81,
+      "slot_duration": 9.97
+    },
+    {
+      "beat_id": 6,
+      "text": "Physical entropy became generative art, birthing modern AI video. Follow machinoAI for deep-dives into how frontier models work.",
+      "visual_focus": "Chalkboard network diagram connecting DDPM to modern video diffusion pipelines with machinoAI logo",
+      "highlight_words": {
+        "generative art": "#38BDF8",
+        "machinoAI": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Diffusion models",
+        "action_verb": "power",
+        "direct_object": "modern generative video",
+        "anchor_word": "frontier",
+        "semantic_role": "call_to_action"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "THE DIFFUSION ERA",
+        "sub": "From Thermodynamics to Video Synthesis",
+        "accent_color": "#34D399",
+        "params": {
+          "root_label": "Diffusion",
+          "optimal_label": "Latent Models",
+          "pruned_label": "Old GANs"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 47.73,
+      "end": 55.85,
+      "duration": 8.13,
+      "word_timings": [
+        {
+          "word": "Physical",
+          "clean_word": "physical",
+          "phonemes": "f\u02c8\u026az\u026ak\u0259l",
+          "start": 47.726,
+          "end": 48.246,
+          "duration": 0.52,
+          "frame_ahead_trigger": 48.436
+        },
+        {
+          "word": "entropy",
+          "clean_word": "entropy",
+          "phonemes": "\u02c8\u025bnt\u0279\u0259pi",
+          "start": 48.246,
+          "end": 48.631,
+          "duration": 0.385,
+          "frame_ahead_trigger": 48.956
+        },
+        {
+          "word": "became",
+          "clean_word": "became",
+          "phonemes": "b\u026ak\u02c8e\u026am",
+          "start": 48.631,
+          "end": 49.101,
+          "duration": 0.47,
+          "frame_ahead_trigger": 49.341
+        },
+        {
+          "word": "generative",
+          "clean_word": "generative",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u0259t\u02cc\u026av",
+          "start": 49.101,
+          "end": 49.716,
+          "duration": 0.615,
+          "frame_ahead_trigger": 49.811
+        },
+        {
+          "word": "art,",
+          "clean_word": "art",
+          "phonemes": "\u02c8\u0251\u02d0\u0279t",
+          "start": 49.716,
+          "end": 50.176,
+          "duration": 0.46,
+          "frame_ahead_trigger": 50.426
+        },
+        {
+          "word": "birthing",
+          "clean_word": "birthing",
+          "phonemes": "b\u02c8\u025c\u02d0\u03b8\u026a\u014b",
+          "start": 50.176,
+          "end": 50.591,
+          "duration": 0.415,
+          "frame_ahead_trigger": 50.886
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 50.591,
+          "end": 50.946,
+          "duration": 0.355,
+          "frame_ahead_trigger": 51.301
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 50.946,
+          "end": 51.281,
+          "duration": 0.335,
+          "frame_ahead_trigger": 51.656
+        },
+        {
+          "word": "video.",
+          "clean_word": "video",
+          "phonemes": "v\u02c8\u026ad\u026ao\u028a",
+          "start": 51.281,
+          "end": 51.728,
+          "duration": 0.447,
+          "frame_ahead_trigger": 51.991
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 51.728,
+          "end": 52.201,
+          "duration": 0.473,
+          "frame_ahead_trigger": 52.438
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 52.201,
+          "end": 53.121,
+          "duration": 0.92,
+          "frame_ahead_trigger": 52.911
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 53.121,
+          "end": 53.341,
+          "duration": 0.22,
+          "frame_ahead_trigger": 53.831
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 53.341,
+          "end": 53.846,
+          "duration": 0.505,
+          "frame_ahead_trigger": 54.051
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 53.846,
+          "end": 54.186,
+          "duration": 0.34,
+          "frame_ahead_trigger": 54.556
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 54.186,
+          "end": 54.466,
+          "duration": 0.28,
+          "frame_ahead_trigger": 54.896
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 54.466,
+          "end": 54.896,
+          "duration": 0.43,
+          "frame_ahead_trigger": 55.176
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 54.896,
+          "end": 55.426,
+          "duration": 0.53,
+          "frame_ahead_trigger": 55.606
+        },
+        {
+          "word": "work.",
+          "clean_word": "work",
+          "phonemes": "w\u02c8\u025c\u02d0k",
+          "start": 55.426,
+          "end": 55.671,
+          "duration": 0.245,
+          "frame_ahead_trigger": 56.136
+        }
+      ],
+      "audio_duration": 8.13,
+      "slot_duration": 8.12
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$p(x_0) = \\int p(x_0, x_1, \\dots, x_T) dx_{1:T}$",
+      "filename": "ddpm_latent_diffusion_breakdown_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "p(x_0)",
+          "label": "Data distribution"
+        },
+        {
+          "term": "x_T",
+          "label": "Gaussian noise"
+        }
+      ],
+      "svg_filename": "ddpm_latent_diffusion_breakdown_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$q(x_t | x_{t-1}) = \\mathcal{N}(x_t; \\sqrt{1-\\beta_t}x_{t-1}, \\beta_t I)$",
+      "filename": "ddpm_latent_diffusion_breakdown_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "q(x_t | x_{t-1})",
+          "label": "Forward diffusion"
+        },
+        {
+          "term": "\\beta_t",
+          "label": "Variance schedule"
+        }
+      ],
+      "svg_filename": "ddpm_latent_diffusion_breakdown_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\nabla_x \\log p(x) \\approx s_\\theta(x_t, t)$",
+      "filename": "ddpm_latent_diffusion_breakdown_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "s_\\theta",
+          "label": "Score network"
+        },
+        {
+          "term": "\\nabla_x \\log p(x)",
+          "label": "Data gradient"
+        }
+      ],
+      "svg_filename": "ddpm_latent_diffusion_breakdown_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$L_{vlb} = \\mathbb{E}_q [\\sum_{t=1}^T D_{KL}(q(x_{t-1}|x_t, x_0) || p_\\theta(x_{t-1}|x_t))]$",
+      "filename": "ddpm_latent_diffusion_breakdown_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "L_{vlb}",
+          "label": "Variational bound"
+        },
+        {
+          "term": "D_{KL}",
+          "label": "KL divergence"
+        }
+      ],
+      "svg_filename": "ddpm_latent_diffusion_breakdown_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{FID} = ||\\mu_r - \\mu_g||^2 + \\mathrm{Tr}(\\Sigma_r + \\Sigma_g - 2(\\Sigma_r \\Sigma_g)^{1/2})$",
+      "filename": "ddpm_latent_diffusion_breakdown_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "FID",
+          "label": "Fr\u00e9chet Inception Distance"
+        },
+        {
+          "term": "\\mu_g, \\Sigma_g",
+          "label": "Generated statistics"
+        }
+      ],
+      "svg_filename": "ddpm_latent_diffusion_breakdown_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "overcomplete_dictionary",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Denoising",
+          "color": "#38BDF8",
+          "items": [
+            "Gaussian",
+            "Langevin",
+            "Score"
+          ]
+        },
+        {
+          "name": "Latents",
+          "color": "#10B981",
+          "items": [
+            "Vector",
+            "Compression",
+            "Variational"
+          ]
+        },
+        {
+          "name": "Bound",
+          "color": "#F59E0B",
+          "items": [
+            "Entropy",
+            "KLD",
+            "Thermodynamics"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Diffusion\"",
+        "target_cluster": "Denoising",
+        "token": "\"Diffusion\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'noise'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'data'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "DDPM",
+    "model_a_specs": [
+      "Nonequilibrium thermodynamics",
+      "Weighted variational bound",
+      "Langevin dynamics"
+    ],
+    "model_b": "ProgressiveGAN",
+    "model_b_specs": [
+      "Progressive growth",
+      "Image synthesis",
+      "GAN framework"
+    ],
+    "divide_title": "DDPM VS PROGRESSIVEGAN",
+    "model_a_stat": 3.17,
+    "model_a_stat_label": "FID SCORE",
+    "efficiency_badge": "\u26a1 3.17 FID",
+    "benchmarks": [
+      {
+        "name": "FID Score",
+        "score_a": "3.17",
+        "score_b": "null"
+      }
+    ],
+    "scale_metric": "3.17",
+    "scale_label": "FID SCORE",
+    "bottleneck_title": "THERMODYNAMIC BOTTLENECK",
+    "bottleneck_desc": "Sequential denoising steps versus monolithic generation",
+    "solution_title": "EUREKA GRADIENT FLOW",
+    "solution_components": "Langevin dynamics projection",
+    "mechanism_title": "VARIATIONAL COMPRESSION",
+    "payoff_stat": 3.17,
+    "payoff_label": "FID SCORE",
+    "payoff_sub": "State-of-the-art performance on LSUN",
+    "payoff_hero_stat": 3.17,
+    "payoff_hero_label": "DDPM",
+    "payoff_base_label": "Baseline",
+    "payoff_delta_badge": "\u26a1 3.17 FID",
+    "challenger": "DDPM",
+    "incumbent": "ProgressiveGAN"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: FID SCORE",
+    "metric_name": "FID Score",
+    "unit": "FID",
+    "contestants": [
+      {
+        "name": "DDPM",
+        "value": 3.17,
+        "display_val": "3.17",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "ProgressiveGAN",
+        "value": 0,
+        "display_val": "N/A",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 3.17 FID",
+    "radar_axes": [
+      "Sample Quality",
+      "Stability",
+      "Inception Score"
+    ]
+  },
+  "script_provider": "gemini",
+  "quality_flags": {
+    "scrubbed_fields": [],
+    "ungrounded_narration_numbers": [],
+    "leaked_example_values": [],
+    "grounding_source_chars": 1291
+  },
+  "arxiv_id": "2006.11239",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "interp_coarse_to_fine_jpg_small",
+      "caption": "Interp Coarse To Fine Jpg Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/source/images/interp_coarse_to_fine_jpg_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_1_interp_coarse_to_fine_jpg_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_1_interp_coarse_to_fine_jpg_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "pgm_diagram_xarrow_small",
+      "caption": "Pgm Diagram Xarrow Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/source/images/pgm_diagram_xarrow_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_2_pgm_diagram_xarrow_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_2_pgm_diagram_xarrow_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "celebahq256_more_nninception",
+      "caption": "Celebahq256 More Nninception",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/source/images/celebahq256_more_nninception.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_3_celebahq256_more_nninception.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "lsun_bedroom_10x10_highlight_l192_step155600_small",
+      "caption": "Lsun Bedroom 10X10 Highlight L192 Step155600 Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/source/images/lsun_bedroom_10x10_highlight_l192_step155600_small.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_4_lsun_bedroom_10x10_highlight_l192_step155600_small.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "lsun_church_layout",
+      "caption": "Lsun Church Layout",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/source/images/lsun_church_layout.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_5_lsun_church_layout.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 95
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 8.5,
+    "final_retention_hook_score": 9.0,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Approved! Clear real-world developer terms and intuitive physical analogy."
+  },
+  "hook_gating": {
+    "selected_hook": "For years. Generating high-fidelity images meant trapping two networks in a toxic. Unstable adversarial cage match.",
+    "verdict": 35,
+    "band": "WEAK",
+    "formula": "Unclassified",
+    "properties": {
+      "SPECIFICITY": 46,
+      "ADDRESS": 26,
+      "STAKES": 22,
+      "CURIOSITY": 24,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "sae_constellation",
+      "entity_type": "sae_constellation",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "publish_gate": {
+    "decision": "publish",
+    "reasons": [],
+    "warnings": [
+      "No vision model audited the keyframes (scores are heuristic placeholders).",
+      "Script critic: \u274c REJECTED: Script reading level is Grade 11.9 (target: Grade 9.0), overall score 7.2/10 is below threshold 8.0."
+    ],
+    "action": {
+      "youtube_upload": true,
+      "privacy": "public",
+      "cross_post": true,
+      "mode": "private"
+    }
+  },
+  "youtube_upload": {
+    "video_id": "tFjHZI_qcZY",
+    "shorts_url": "https://youtube.com/shorts/tFjHZI_qcZY",
+    "studio_url": "https://studio.youtube.com/video/tFjHZI_qcZY/edit",
+    "title": "How AI Creates Images From TV Static #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/ddpm_latent_diffusion_breakdown_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
