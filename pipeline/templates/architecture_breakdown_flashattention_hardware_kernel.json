@@ -1,0 +1,1653 @@
+{
+  "id": "flashattention_hardware_kernel",
+  "title": "FLASHATTENTION: THE IO-AWARE KERNEL",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "neural_attention",
+  "hook_tag": "ARCHITECTURAL BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Quadratic memory growth kills long-context models because standard attention keeps smashing into a brick-wall memory bandwidth bottleneck.",
+      "visual_focus": "A GPU HBM memory pool saturating under quadratic sequence growth stress.",
+      "highlight_words": {
+        "quadratic memory growth": "#EF4444",
+        "memory bandwidth": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Attention Kernel",
+        "action_verb": "saturates",
+        "direct_object": "HBM Bandwidth",
+        "anchor_word": "bottleneck",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "THE QUADRATIC WALL",
+        "sub": "Memory access cycles outpacing GPU throughput",
+        "accent_color": "#EF4444",
+        "params": {
+          "stage_1_label": "Attention Input",
+          "stage_2_label": "HBM Reads/Writes",
+          "stage_3_label": "Compute Stall",
+          "stage_1_sub": " ",
+          "stage_2_sub": " ",
+          "stage_3_sub": " "
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 52,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "THE QUADRATIC WALL",
+        "sub": "Memory access cycles outpacing GPU throughput",
+        "accent_color": "#EF4444",
+        "stage_1_label": "Attention Input",
+        "stage_2_label": "HBM Reads/Writes",
+        "stage_3_label": "Compute Stall",
+        "stage_1_sub": " ",
+        "stage_2_sub": " ",
+        "stage_3_sub": " "
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.57,
+      "duration": 7.57,
+      "word_timings": [
+        {
+          "word": "Quadratic",
+          "clean_word": "quadratic",
+          "phonemes": "kw\u0251\u02d0d\u0279\u02c8\u00e6\u027e\u026ak",
+          "start": 0.0,
+          "end": 0.7,
+          "duration": 0.7,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "memory",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 0.7,
+          "end": 0.935,
+          "duration": 0.235,
+          "frame_ahead_trigger": 0.66
+        },
+        {
+          "word": "growth",
+          "clean_word": "growth",
+          "phonemes": "\u0261\u0279\u02c8o\u028a\u03b8",
+          "start": 0.935,
+          "end": 1.29,
+          "duration": 0.355,
+          "frame_ahead_trigger": 0.895
+        },
+        {
+          "word": "kills",
+          "clean_word": "kills",
+          "phonemes": "k\u02c8\u026alz",
+          "start": 1.29,
+          "end": 1.665,
+          "duration": 0.375,
+          "frame_ahead_trigger": 1.25
+        },
+        {
+          "word": "long-context",
+          "clean_word": "longcontext",
+          "phonemes": "l\u02c8\u0254\u014bk\u0254nt\u02cc\u025bkst",
+          "start": 1.665,
+          "end": 2.4,
+          "duration": 0.735,
+          "frame_ahead_trigger": 1.625
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 2.4,
+          "end": 2.92,
+          "duration": 0.52,
+          "frame_ahead_trigger": 2.36
+        },
+        {
+          "word": "because",
+          "clean_word": "because",
+          "phonemes": "b\u026ak\u02c8\u028cz",
+          "start": 2.92,
+          "end": 3.21,
+          "duration": 0.29,
+          "frame_ahead_trigger": 2.88
+        },
+        {
+          "word": "standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 3.21,
+          "end": 3.665,
+          "duration": 0.455,
+          "frame_ahead_trigger": 3.17
+        },
+        {
+          "word": "attention",
+          "clean_word": "attention",
+          "phonemes": "\u0250t\u02c8\u025bn\u0283\u0259n",
+          "start": 3.665,
+          "end": 4.045,
+          "duration": 0.38,
+          "frame_ahead_trigger": 3.625
+        },
+        {
+          "word": "keeps",
+          "clean_word": "keeps",
+          "phonemes": "k\u02c8i\u02d0ps",
+          "start": 4.045,
+          "end": 4.525,
+          "duration": 0.48,
+          "frame_ahead_trigger": 4.005
+        },
+        {
+          "word": "smashing",
+          "clean_word": "smashing",
+          "phonemes": "sm\u02c8\u00e6\u0283\u026a\u014b",
+          "start": 4.525,
+          "end": 4.885,
+          "duration": 0.36,
+          "frame_ahead_trigger": 4.485
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 4.885,
+          "end": 5.175,
+          "duration": 0.29,
+          "frame_ahead_trigger": 4.845
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 5.175,
+          "end": 5.255,
+          "duration": 0.08,
+          "frame_ahead_trigger": 5.135
+        },
+        {
+          "word": "brick-wall",
+          "clean_word": "brickwall",
+          "phonemes": "b\u0279\u02c8\u026akw\u0254\u02d0l",
+          "start": 5.255,
+          "end": 5.755,
+          "duration": 0.5,
+          "frame_ahead_trigger": 5.215
+        },
+        {
+          "word": "memory",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 5.755,
+          "end": 6.24,
+          "duration": 0.485,
+          "frame_ahead_trigger": 5.715
+        },
+        {
+          "word": "bandwidth",
+          "clean_word": "bandwidth",
+          "phonemes": "b\u02c8\u00e6ndw\u026ad\u03b8",
+          "start": 6.24,
+          "end": 6.725,
+          "duration": 0.485,
+          "frame_ahead_trigger": 6.2
+        },
+        {
+          "word": "bottleneck.",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 6.725,
+          "end": 7.395,
+          "duration": 0.67,
+          "frame_ahead_trigger": 6.685
+        }
+      ],
+      "audio_duration": 7.57,
+      "slot_duration": 7.72
+    },
+    {
+      "beat_id": 2,
+      "text": "Standard attention forces the GPU to constantly swap massive matrices between slow high-bandwidth memory and lightning-fast but tiny SRAM.",
+      "visual_focus": "Data packets thrashing between HBM and SRAM memory banks.",
+      "highlight_words": {
+        "HBM": "#EF4444",
+        "SRAM": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Memory Controller",
+        "action_verb": "thrash",
+        "direct_object": "Intermediate Matrices",
+        "anchor_word": "swap",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "MEMORY I/O BOTTLENECK",
+        "sub": "HBM vs SRAM bottlenecking throughput",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Slow HBM",
+          "stream_b_label": "Fast SRAM",
+          "barrier_label": "Data Transfer Limit",
+          "barrier_sub": " "
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "MEMORY I/O BOTTLENECK",
+        "sub": "HBM vs SRAM bottlenecking throughput",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Slow HBM",
+        "stream_b_label": "Fast SRAM",
+        "barrier_label": "Data Transfer Limit",
+        "barrier_sub": " "
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.72,
+      "end": 16.21,
+      "duration": 8.49,
+      "word_timings": [
+        {
+          "word": "Standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 7.803,
+          "end": 8.368,
+          "duration": 0.565,
+          "frame_ahead_trigger": 7.913
+        },
+        {
+          "word": "attention",
+          "clean_word": "attention",
+          "phonemes": "\u0250t\u02c8\u025bn\u0283\u0259n",
+          "start": 8.368,
+          "end": 8.808,
+          "duration": 0.44,
+          "frame_ahead_trigger": 8.478
+        },
+        {
+          "word": "forces",
+          "clean_word": "forces",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u1d7bz",
+          "start": 8.808,
+          "end": 9.143,
+          "duration": 0.335,
+          "frame_ahead_trigger": 8.918
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 9.143,
+          "end": 9.348,
+          "duration": 0.205,
+          "frame_ahead_trigger": 9.253
+        },
+        {
+          "word": "GPU",
+          "clean_word": "gpu",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 9.348,
+          "end": 9.953,
+          "duration": 0.605,
+          "frame_ahead_trigger": 9.458
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 9.953,
+          "end": 10.243,
+          "duration": 0.29,
+          "frame_ahead_trigger": 10.063
+        },
+        {
+          "word": "constantly",
+          "clean_word": "constantly",
+          "phonemes": "k\u02c8\u0251\u02d0nst\u0259ntli",
+          "start": 10.243,
+          "end": 10.798,
+          "duration": 0.555,
+          "frame_ahead_trigger": 10.353
+        },
+        {
+          "word": "swap",
+          "clean_word": "swap",
+          "phonemes": "sw\u02c8\u0251\u02d0p",
+          "start": 10.798,
+          "end": 11.273,
+          "duration": 0.475,
+          "frame_ahead_trigger": 10.908
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 11.273,
+          "end": 11.578,
+          "duration": 0.305,
+          "frame_ahead_trigger": 11.383
+        },
+        {
+          "word": "matrices",
+          "clean_word": "matrices",
+          "phonemes": "m\u02c8e\u026at\u0279\u026as\u02cci\u02d0z",
+          "start": 11.578,
+          "end": 12.278,
+          "duration": 0.7,
+          "frame_ahead_trigger": 11.688
+        },
+        {
+          "word": "between",
+          "clean_word": "between",
+          "phonemes": "b\u1d7btw\u02c8i\u02d0n",
+          "start": 12.278,
+          "end": 12.708,
+          "duration": 0.43,
+          "frame_ahead_trigger": 12.388
+        },
+        {
+          "word": "slow",
+          "clean_word": "slow",
+          "phonemes": "sl\u02c8o\u028a",
+          "start": 12.708,
+          "end": 13.048,
+          "duration": 0.34,
+          "frame_ahead_trigger": 12.818
+        },
+        {
+          "word": "high-bandwidth",
+          "clean_word": "highbandwidth",
+          "phonemes": "h\u02c8a\u026ab\u0250ndw\u02cc\u026ad\u03b8",
+          "start": 13.048,
+          "end": 13.78,
+          "duration": 0.731,
+          "frame_ahead_trigger": 13.158
+        },
+        {
+          "word": "memory",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 13.78,
+          "end": 14.163,
+          "duration": 0.384,
+          "frame_ahead_trigger": 13.89
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 14.163,
+          "end": 14.403,
+          "duration": 0.24,
+          "frame_ahead_trigger": 14.273
+        },
+        {
+          "word": "lightning-fast",
+          "clean_word": "lightningfast",
+          "phonemes": "l\u02c8a\u026atn\u026a\u014bf\u02cc\u00e6st",
+          "start": 14.403,
+          "end": 15.163,
+          "duration": 0.76,
+          "frame_ahead_trigger": 14.513
+        },
+        {
+          "word": "but",
+          "clean_word": "but",
+          "phonemes": "b\u02cc\u028ct",
+          "start": 15.163,
+          "end": 15.273,
+          "duration": 0.11,
+          "frame_ahead_trigger": 15.273
+        },
+        {
+          "word": "tiny",
+          "clean_word": "tiny",
+          "phonemes": "t\u02c8a\u026ani",
+          "start": 15.273,
+          "end": 15.663,
+          "duration": 0.39,
+          "frame_ahead_trigger": 15.383
+        },
+        {
+          "word": "SRAM.",
+          "clean_word": "sram",
+          "phonemes": "\u02c8\u025bs\u0279\u02c8\u00e6m",
+          "start": 15.663,
+          "end": 16.078,
+          "duration": 0.415,
+          "frame_ahead_trigger": 15.773
+        }
+      ],
+      "audio_duration": 8.49,
+      "slot_duration": 8.64
+    },
+    {
+      "beat_id": 3,
+      "text": "FlashAttention pivots by using tiling to break large attention matrices into manageable blocks that fit inside the SRAM perfectly.",
+      "visual_focus": "A large attention matrix being subdivided into grid tiles.",
+      "highlight_words": {
+        "tiling": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Tiling Algorithm",
+        "action_verb": "subdivides",
+        "direct_object": "Attention Matrix",
+        "anchor_word": "tiling",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "FLASHATTENTION: FIGURE",
+        "sub": "A large attention matrix being subdivided into grid tiles.",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/chalkboard_figures/fig_1_attention_benchmarks.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/chalkboard_figures/fig_1_attention_benchmarks.png",
+          "arxiv_id": "2205.14135",
+          "title": "FLASHATTENTION: FIGURE",
+          "sub": "A large attention matrix being subdivided into grid tiles.",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Attention Benchmarks",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/chalkboard_figures/fig_1_attention_benchmarks.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/chalkboard_figures/fig_1_attention_benchmarks.png",
+        "arxiv_id": "2205.14135",
+        "title": "FLASHATTENTION: FIGURE",
+        "sub": "A large attention matrix being subdivided into grid tiles.",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Attention Benchmarks",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 16.36,
+      "end": 23.81,
+      "duration": 7.45,
+      "word_timings": [
+        {
+          "word": "FlashAttention",
+          "clean_word": "flashattention",
+          "phonemes": "fl\u02c8\u00e6\u0283 \u0250t\u02c8\u025bn\u0283\u0259n",
+          "start": 16.389,
+          "end": 17.139,
+          "duration": 0.75,
+          "frame_ahead_trigger": 16.649
+        },
+        {
+          "word": "pivots",
+          "clean_word": "pivots",
+          "phonemes": "p\u02c8\u026av\u0259ts",
+          "start": 17.139,
+          "end": 17.549,
+          "duration": 0.41,
+          "frame_ahead_trigger": 17.399
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 17.549,
+          "end": 17.719,
+          "duration": 0.17,
+          "frame_ahead_trigger": 17.809
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 17.719,
+          "end": 18.099,
+          "duration": 0.38,
+          "frame_ahead_trigger": 17.979
+        },
+        {
+          "word": "tiling",
+          "clean_word": "tiling",
+          "phonemes": "t\u02c8a\u026al\u026a\u014b",
+          "start": 18.099,
+          "end": 18.509,
+          "duration": 0.41,
+          "frame_ahead_trigger": 18.359
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 18.509,
+          "end": 18.789,
+          "duration": 0.28,
+          "frame_ahead_trigger": 18.769
+        },
+        {
+          "word": "break",
+          "clean_word": "break",
+          "phonemes": "b\u0279\u02c8e\u026ak",
+          "start": 18.789,
+          "end": 19.099,
+          "duration": 0.31,
+          "frame_ahead_trigger": 19.049
+        },
+        {
+          "word": "large",
+          "clean_word": "large",
+          "phonemes": "l\u02c8\u0251\u02d0\u0279d\u0292",
+          "start": 19.099,
+          "end": 19.334,
+          "duration": 0.235,
+          "frame_ahead_trigger": 19.359
+        },
+        {
+          "word": "attention",
+          "clean_word": "attention",
+          "phonemes": "\u0250t\u02c8\u025bn\u0283\u0259n",
+          "start": 19.334,
+          "end": 19.869,
+          "duration": 0.535,
+          "frame_ahead_trigger": 19.594
+        },
+        {
+          "word": "matrices",
+          "clean_word": "matrices",
+          "phonemes": "m\u02c8e\u026at\u0279\u026as\u02cci\u02d0z",
+          "start": 19.869,
+          "end": 20.504,
+          "duration": 0.635,
+          "frame_ahead_trigger": 20.129
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 20.504,
+          "end": 20.809,
+          "duration": 0.305,
+          "frame_ahead_trigger": 20.764
+        },
+        {
+          "word": "manageable",
+          "clean_word": "manageable",
+          "phonemes": "m\u02c8\u00e6n\u026ad\u0292\u0259b\u0259l",
+          "start": 20.809,
+          "end": 21.509,
+          "duration": 0.7,
+          "frame_ahead_trigger": 21.069
+        },
+        {
+          "word": "blocks",
+          "clean_word": "blocks",
+          "phonemes": "bl\u02c8\u0251\u02d0ks",
+          "start": 21.509,
+          "end": 21.834,
+          "duration": 0.325,
+          "frame_ahead_trigger": 21.769
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 21.834,
+          "end": 22.009,
+          "duration": 0.175,
+          "frame_ahead_trigger": 22.094
+        },
+        {
+          "word": "fit",
+          "clean_word": "fit",
+          "phonemes": "f\u02c8\u026at",
+          "start": 22.009,
+          "end": 22.279,
+          "duration": 0.27,
+          "frame_ahead_trigger": 22.269
+        },
+        {
+          "word": "inside",
+          "clean_word": "inside",
+          "phonemes": "\u026ans\u02c8a\u026ad",
+          "start": 22.279,
+          "end": 22.694,
+          "duration": 0.415,
+          "frame_ahead_trigger": 22.539
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 22.694,
+          "end": 22.744,
+          "duration": 0.05,
+          "frame_ahead_trigger": 22.954
+        },
+        {
+          "word": "SRAM",
+          "clean_word": "sram",
+          "phonemes": "\u02c8\u025bs\u0279\u02c8\u00e6m",
+          "start": 22.744,
+          "end": 23.214,
+          "duration": 0.47,
+          "frame_ahead_trigger": 23.004
+        },
+        {
+          "word": "perfectly.",
+          "clean_word": "perfectly",
+          "phonemes": "p\u02c8\u025c\u02d0f\u025bktli",
+          "start": 23.214,
+          "end": 23.684,
+          "duration": 0.47,
+          "frame_ahead_trigger": 23.474
+        }
+      ],
+      "audio_duration": 7.45,
+      "slot_duration": 7.6
+    },
+    {
+      "beat_id": 4,
+      "text": "This kernel recomputes attention on-the-fly, fusing softmax and GEMM operations to effectively eliminate redundant memory round-trips to the HBM.",
+      "visual_focus": "The fusion process collapsing multiple kernels into one operation.",
+      "highlight_words": {
+        "fusing": "#F59E0B",
+        "softmax": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Kernel Fusion Engine",
+        "action_verb": "collapses",
+        "direct_object": "Memory Round-trips",
+        "anchor_word": "fusing",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "KERNEL FUSION PIPELINE",
+        "sub": "Collapsing softmax and matrix multiplication",
+        "accent_color": "#F59E0B",
+        "params": {
+          "input_1_label": "Softmax",
+          "input_2_label": "GEMM",
+          "fused_label": "FlashAttention Kernel",
+          "input_3_label": "fusing"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "convergence_funnel",
+        "title": "KERNEL FUSION PIPELINE",
+        "sub": "Collapsing softmax and matrix multiplication",
+        "accent_color": "#F59E0B",
+        "input_1_label": "Softmax",
+        "input_2_label": "GEMM",
+        "fused_label": "FlashAttention Kernel",
+        "input_3_label": "fusing"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 23.96,
+      "end": 32.49,
+      "duration": 8.53,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 23.974,
+          "end": 24.124,
+          "duration": 0.15,
+          "frame_ahead_trigger": 24.384
+        },
+        {
+          "word": "kernel",
+          "clean_word": "kernel",
+          "phonemes": "k\u02c8\u025c\u02d0n\u0259l",
+          "start": 24.124,
+          "end": 24.619,
+          "duration": 0.495,
+          "frame_ahead_trigger": 24.534
+        },
+        {
+          "word": "recomputes",
+          "clean_word": "recomputes",
+          "phonemes": "\u0279\u02cci\u02d0k\u0259mpj\u02c8u\u02d0ts",
+          "start": 24.619,
+          "end": 25.309,
+          "duration": 0.69,
+          "frame_ahead_trigger": 25.029
+        },
+        {
+          "word": "attention",
+          "clean_word": "attention",
+          "phonemes": "\u0250t\u02c8\u025bn\u0283\u0259n",
+          "start": 25.309,
+          "end": 25.744,
+          "duration": 0.435,
+          "frame_ahead_trigger": 25.719
+        },
+        {
+          "word": "on-the-fly,",
+          "clean_word": "onthefly",
+          "phonemes": "\u02c8\u0251\u02d0n\u03b8\u026afl\u02cca\u026a",
+          "start": 25.744,
+          "end": 26.499,
+          "duration": 0.755,
+          "frame_ahead_trigger": 26.154
+        },
+        {
+          "word": "fusing",
+          "clean_word": "fusing",
+          "phonemes": "fj\u02c8u\u02d0z\u026a\u014b",
+          "start": 26.499,
+          "end": 26.769,
+          "duration": 0.27,
+          "frame_ahead_trigger": 26.909
+        },
+        {
+          "word": "softmax",
+          "clean_word": "softmax",
+          "phonemes": "s\u02c8\u0254ftm\u00e6ks",
+          "start": 26.769,
+          "end": 27.269,
+          "duration": 0.5,
+          "frame_ahead_trigger": 27.179
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 27.269,
+          "end": 27.489,
+          "duration": 0.22,
+          "frame_ahead_trigger": 27.679
+        },
+        {
+          "word": "GEMM",
+          "clean_word": "gemm",
+          "phonemes": "d\u0292\u02c8\u025bm",
+          "start": 27.489,
+          "end": 27.754,
+          "duration": 0.265,
+          "frame_ahead_trigger": 27.899
+        },
+        {
+          "word": "operations",
+          "clean_word": "operations",
+          "phonemes": "\u02cc\u0251\u02d0p\u025a\u0279\u02c8e\u026a\u0283\u0259nz",
+          "start": 27.754,
+          "end": 28.439,
+          "duration": 0.685,
+          "frame_ahead_trigger": 28.164
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 28.439,
+          "end": 28.694,
+          "duration": 0.255,
+          "frame_ahead_trigger": 28.849
+        },
+        {
+          "word": "effectively",
+          "clean_word": "effectively",
+          "phonemes": "\u026af\u02c8\u025bkt\u026avli",
+          "start": 28.694,
+          "end": 29.234,
+          "duration": 0.54,
+          "frame_ahead_trigger": 29.104
+        },
+        {
+          "word": "eliminate",
+          "clean_word": "eliminate",
+          "phonemes": "\u1d7bl\u02c8\u026am\u1d7bn\u02cce\u026at",
+          "start": 29.234,
+          "end": 29.944,
+          "duration": 0.71,
+          "frame_ahead_trigger": 29.644
+        },
+        {
+          "word": "redundant",
+          "clean_word": "redundant",
+          "phonemes": "\u0279\u1d7bd\u02c8\u028cnd\u0259nt",
+          "start": 29.944,
+          "end": 30.334,
+          "duration": 0.39,
+          "frame_ahead_trigger": 30.354
+        },
+        {
+          "word": "memory",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 30.334,
+          "end": 30.884,
+          "duration": 0.55,
+          "frame_ahead_trigger": 30.744
+        },
+        {
+          "word": "round-trips",
+          "clean_word": "roundtrips",
+          "phonemes": "\u0279\u02c8a\u028andt\u0279\u026aps",
+          "start": 30.884,
+          "end": 31.354,
+          "duration": 0.47,
+          "frame_ahead_trigger": 31.294
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 31.354,
+          "end": 31.574,
+          "duration": 0.22,
+          "frame_ahead_trigger": 31.764
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 31.574,
+          "end": 31.694,
+          "duration": 0.12,
+          "frame_ahead_trigger": 31.984
+        },
+        {
+          "word": "HBM.",
+          "clean_word": "hbm",
+          "phonemes": "\u02cce\u026at\u0283b\u02cci\u02d0\u02c8\u025bm",
+          "start": 31.694,
+          "end": 32.319,
+          "duration": 0.625,
+          "frame_ahead_trigger": 32.104
+        }
+      ],
+      "audio_duration": 8.53,
+      "slot_duration": 8.68
+    },
+    {
+      "beat_id": 5,
+      "text": "The empirical payoff is massive, yielding a 3 times speedup on GPT-2 and enabling massive 64K sequence length inference.",
+      "visual_focus": "Performance comparison chart showing the speedup against the baseline.",
+      "highlight_words": {
+        "3 times": "#34D399",
+        "64K": "#34D399"
+      },
+      "svo_action": {
+        "subject": "FlashAttention",
+        "action_verb": "outperforms",
+        "direct_object": "Standard Attention",
+        "anchor_word": "speedup",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: SPEEDUP",
+        "sub": "Performance comparison chart showing the",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: SPEEDUP",
+          "sub": "Performance comparison chart showing the",
+          "metric_name": "Wall-clock speedup",
+          "unit": "x",
+          "contestants": [
+            {
+              "name": "FlashAttention",
+              "value": 3.0,
+              "display_val": "3x",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Standard Attention",
+              "value": 1.0,
+              "display_val": "1x",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 3x SPEEDUP"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: SPEEDUP",
+        "sub": "Performance comparison chart showing the",
+        "metric_name": "Wall-clock speedup",
+        "unit": "x",
+        "contestants": [
+          {
+            "name": "FlashAttention",
+            "value": 3.0,
+            "display_val": "3x",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Standard Attention",
+            "value": 1.0,
+            "display_val": "1x",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 3x SPEEDUP"
+      },
+      "start": 32.64,
+      "end": 40.94,
+      "duration": 8.3,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 32.653,
+          "end": 32.868,
+          "duration": 0.215,
+          "frame_ahead_trigger": 33.213
+        },
+        {
+          "word": "empirical",
+          "clean_word": "empirical",
+          "phonemes": "\u025bmp\u02c8\u026a\u0279\u026ak\u0259l",
+          "start": 32.868,
+          "end": 33.308,
+          "duration": 0.44,
+          "frame_ahead_trigger": 33.428
+        },
+        {
+          "word": "payoff",
+          "clean_word": "payoff",
+          "phonemes": "p\u02c8e\u026a\u0254f",
+          "start": 33.308,
+          "end": 33.683,
+          "duration": 0.375,
+          "frame_ahead_trigger": 33.868
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 33.683,
+          "end": 33.848,
+          "duration": 0.165,
+          "frame_ahead_trigger": 34.243
+        },
+        {
+          "word": "massive,",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 33.848,
+          "end": 34.223,
+          "duration": 0.375,
+          "frame_ahead_trigger": 34.408
+        },
+        {
+          "word": "yielding",
+          "clean_word": "yielding",
+          "phonemes": "j\u02c8i\u02d0ld\u026a\u014b",
+          "start": 34.223,
+          "end": 34.738,
+          "duration": 0.515,
+          "frame_ahead_trigger": 34.783
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 34.738,
+          "end": 34.988,
+          "duration": 0.25,
+          "frame_ahead_trigger": 35.298
+        },
+        {
+          "word": "3",
+          "clean_word": "3",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0",
+          "start": 34.988,
+          "end": 35.218,
+          "duration": 0.23,
+          "frame_ahead_trigger": 35.548
+        },
+        {
+          "word": "times",
+          "clean_word": "times",
+          "phonemes": "t\u02c8a\u026amz",
+          "start": 35.218,
+          "end": 35.458,
+          "duration": 0.24,
+          "frame_ahead_trigger": 35.778
+        },
+        {
+          "word": "speedup",
+          "clean_word": "speedup",
+          "phonemes": "sp\u02c8i\u02d0d\u028cp",
+          "start": 35.458,
+          "end": 36.038,
+          "duration": 0.58,
+          "frame_ahead_trigger": 36.018
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 36.038,
+          "end": 36.223,
+          "duration": 0.185,
+          "frame_ahead_trigger": 36.598
+        },
+        {
+          "word": "GPT-2",
+          "clean_word": "gpt2",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0 t\u02c8u\u02d0",
+          "start": 36.223,
+          "end": 37.295,
+          "duration": 1.073,
+          "frame_ahead_trigger": 36.783
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 37.295,
+          "end": 37.476,
+          "duration": 0.181,
+          "frame_ahead_trigger": 37.855
+        },
+        {
+          "word": "enabling",
+          "clean_word": "enabling",
+          "phonemes": "\u025bn\u02c8e\u026abl\u026a\u014b",
+          "start": 37.476,
+          "end": 38.043,
+          "duration": 0.566,
+          "frame_ahead_trigger": 38.036
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 38.043,
+          "end": 38.473,
+          "duration": 0.43,
+          "frame_ahead_trigger": 38.603
+        },
+        {
+          "word": "64K",
+          "clean_word": "64k",
+          "phonemes": "s\u02c8\u026aksti f\u02c8\u0254\u02d0\u0279 k\u02c8e\u026a",
+          "start": 38.473,
+          "end": 39.368,
+          "duration": 0.895,
+          "frame_ahead_trigger": 39.033
+        },
+        {
+          "word": "sequence",
+          "clean_word": "sequence",
+          "phonemes": "s\u02c8i\u02d0kw\u0259ns",
+          "start": 39.368,
+          "end": 40.073,
+          "duration": 0.705,
+          "frame_ahead_trigger": 39.928
+        },
+        {
+          "word": "length",
+          "clean_word": "length",
+          "phonemes": "l\u02c8\u025b\u014b\u03b8",
+          "start": 40.073,
+          "end": 40.358,
+          "duration": 0.285,
+          "frame_ahead_trigger": 40.633
+        },
+        {
+          "word": "inference.",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 40.358,
+          "end": 40.853,
+          "duration": 0.495,
+          "frame_ahead_trigger": 40.918
+        }
+      ],
+      "audio_duration": 8.3,
+      "slot_duration": 8.45
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into how modern AI actually works under the hood.",
+      "visual_focus": "The machinoAI logo animating with a circuit-trace overlay.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Viewers",
+        "action_verb": "subscribe",
+        "direct_object": "Deep-dives",
+        "anchor_word": "machinoAI",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "STAY TUNED",
+        "sub": "Next deep-dive incoming",
+        "accent_color": "#34D399",
+        "params": {
+          "stage_1_label": "Paper Analysis",
+          "stage_2_label": "Architecture Breakdown",
+          "stage_3_label": "Next Topic"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 41.09,
+      "end": 46.49,
+      "duration": 5.4,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 41.091,
+          "end": 41.526,
+          "duration": 0.435,
+          "frame_ahead_trigger": 41.801
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 41.526,
+          "end": 42.401,
+          "duration": 0.875,
+          "frame_ahead_trigger": 42.236
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 42.401,
+          "end": 42.571,
+          "duration": 0.17,
+          "frame_ahead_trigger": 43.111
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 42.571,
+          "end": 42.896,
+          "duration": 0.325,
+          "frame_ahead_trigger": 43.281
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 42.896,
+          "end": 43.416,
+          "duration": 0.52,
+          "frame_ahead_trigger": 43.606
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 43.416,
+          "end": 43.821,
+          "duration": 0.405,
+          "frame_ahead_trigger": 44.126
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 43.821,
+          "end": 44.026,
+          "duration": 0.205,
+          "frame_ahead_trigger": 44.531
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 44.026,
+          "end": 44.441,
+          "duration": 0.415,
+          "frame_ahead_trigger": 44.736
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 44.441,
+          "end": 44.781,
+          "duration": 0.34,
+          "frame_ahead_trigger": 45.151
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 44.781,
+          "end": 45.336,
+          "duration": 0.555,
+          "frame_ahead_trigger": 45.491
+        },
+        {
+          "word": "works",
+          "clean_word": "works",
+          "phonemes": "w\u02c8\u025c\u02d0ks",
+          "start": 45.336,
+          "end": 45.661,
+          "duration": 0.325,
+          "frame_ahead_trigger": 46.046
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 45.661,
+          "end": 46.071,
+          "duration": 0.41,
+          "frame_ahead_trigger": 46.371
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 46.071,
+          "end": 46.12,
+          "duration": 0.049,
+          "frame_ahead_trigger": 46.781
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 46.12,
+          "end": 46.351,
+          "duration": 0.231,
+          "frame_ahead_trigger": 46.83
+        }
+      ],
+      "audio_duration": 5.4,
+      "slot_duration": 5.4
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$T = \\mathcal{O}(N^2)$",
+      "filename": "flashattention_hardware_kernel_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "T",
+          "label": "Time Complexity"
+        },
+        {
+          "term": "N",
+          "label": "Sequence Length"
+        }
+      ],
+      "svg_filename": "flashattention_hardware_kernel_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathrm{IO}(N) = \\mathcal{O}(N^2 / \\sqrt{M})$",
+      "filename": "flashattention_hardware_kernel_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "IO(N)",
+          "label": "Memory Accesses"
+        },
+        {
+          "term": "M",
+          "label": "SRAM Size"
+        }
+      ],
+      "svg_filename": "flashattention_hardware_kernel_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$X \\to \\{B_1, B_2, \\dots, B_n\\}$",
+      "filename": "flashattention_hardware_kernel_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "X",
+          "label": "Full Matrix"
+        },
+        {
+          "term": "B_i",
+          "label": "SRAM Tile"
+        }
+      ],
+      "svg_filename": "flashattention_hardware_kernel_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$f(Q, K, V) = \\mathrm{softmax}(QK^T)V$",
+      "filename": "flashattention_hardware_kernel_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "f",
+          "label": "Fused Attention"
+        }
+      ],
+      "svg_filename": "flashattention_hardware_kernel_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Speedup} = \\frac{T_{\\mathrm{baseline}}}{T_{\\mathrm{Flash}}}$",
+      "filename": "flashattention_hardware_kernel_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "T",
+          "label": "Wall-clock Time"
+        }
+      ],
+      "svg_filename": "flashattention_hardware_kernel_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "MEMORY",
+          "color": "#38BDF8",
+          "items": [
+            "HBM",
+            "SRAM",
+            "Register"
+          ]
+        },
+        {
+          "name": "OPERATION",
+          "color": "#10B981",
+          "items": [
+            "Tiling",
+            "Softmax",
+            "GEMM"
+          ]
+        },
+        {
+          "name": "METRIC",
+          "color": "#F59E0B",
+          "items": [
+            "Speedup",
+            "IO-Aware",
+            "Latency"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"block_tile\"",
+        "target_cluster": "OPERATION",
+        "token": "\"block_tile\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "HBM-Load",
+          "color": "#EF4444"
+        },
+        {
+          "word": "HBM-Store",
+          "color": "#EF4444"
+        }
+      ]
+    },
+    "model_a": "FlashAttention",
+    "model_a_specs": [
+      "IO-aware tiling",
+      "Fused kernels",
+      "Exact attention"
+    ],
+    "model_b": "Standard Attention",
+    "model_b_specs": [
+      "Quadratic IO",
+      "Memory-bound",
+      "High latency"
+    ],
+    "divide_title": "IO-AWARE VS BRUTE-FORCE",
+    "model_a_stat": "3",
+    "model_a_stat_label": "GPT-2 SPEEDUP",
+    "model_b_stat": "1",
+    "model_b_stat_label": "BASELINE",
+    "efficiency_badge": "3x SPEEDUP",
+    "benchmarks": [
+      {
+        "name": "GPT-2 Training",
+        "score_a": "3x",
+        "score_b": "1x"
+      }
+    ],
+    "scale_metric": "64K",
+    "scale_label": "MAX CONTEXT LENGTH",
+    "bottleneck_title": "MONOLITHIC MEMORY BRUTE-FORCE",
+    "bottleneck_desc": "Entangled HBM thrashing",
+    "solution_title": "IO-AWARE TILE DECOMPOSITION",
+    "solution_components": "SRAM Tiling & Kernel Fusion",
+    "mechanism_title": "STRUCTURED LATENT ACTIVATION",
+    "payoff_stat": "3",
+    "payoff_label": "SPEEDUP FACTOR",
+    "payoff_sub": "End-to-end wall-clock training efficiency",
+    "payoff_hero_stat": 3,
+    "payoff_hero_label": "FlashAttention",
+    "payoff_base_stat": 1,
+    "payoff_base_label": "Standard Attention",
+    "payoff_delta_badge": "\u26a1 3x FASTER",
+    "challenger": "FlashAttention",
+    "incumbent": "Standard Attention"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: SPEEDUP",
+    "metric_name": "Wall-clock speedup",
+    "unit": "x",
+    "contestants": [
+      {
+        "name": "FlashAttention",
+        "value": 3,
+        "display_val": "3x",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Standard Attention",
+        "value": 1,
+        "display_val": "1x",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 3x SPEEDUP",
+    "radar_axes": [
+      "Latency",
+      "Memory Footprint",
+      "Training Speed"
+    ]
+  },
+  "script_provider": "gemini",
+  "quality_flags": {
+    "scrubbed_fields": [],
+    "ungrounded_narration_numbers": [],
+    "leaked_example_values": [],
+    "grounding_source_chars": 2195
+  },
+  "arxiv_id": "2205.14135",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "attention_benchmarks",
+      "caption": "Attention Benchmarks",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/source/figs/attention_benchmarks.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/chalkboard_figures/fig_1_attention_benchmarks.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/chalkboard_figures/fig_1_attention_benchmarks.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "flashattn_speedup_3090",
+      "caption": "Flashattn Speedup 3090",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/source/figs/flashattn_speedup_3090.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/chalkboard_figures/fig_2_flashattn_speedup_3090.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 125
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "flashattn_speedup_t4",
+      "caption": "Flashattn Speedup T4",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/source/figs/flashattn_speedup_t4.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/chalkboard_figures/fig_3_flashattn_speedup_t4.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 125
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "flashattn_speedup_t4_fwd",
+      "caption": "Flashattn Speedup T4 Fwd",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/source/figs/flashattn_speedup_t4_fwd.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/chalkboard_figures/fig_4_flashattn_speedup_t4_fwd.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 125
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "flashattn_speedup",
+      "caption": "Flashattn Speedup",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/source/figs/flashattn_speedup.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2205.14135/chalkboard_figures/fig_5_flashattn_speedup.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 125
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Quadratic memory growth kills long-context models because standard attention keeps smashing into a brick-wall memory bandwidth bottleneck.",
+    "verdict": 52,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "properties": {
+      "SPECIFICITY": 34,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "SPECIFICITY",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "attention_grid",
+      "entity_type": "attention_grid",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "publish_gate": {
+    "decision": "publish",
+    "reasons": [],
+    "warnings": [
+      "No vision model audited the keyframes (scores are heuristic placeholders).",
+      "Script critic: \u274c REJECTED: Script contains 3 heavy jargon term(s): sram, softmax, hbm, reading level is Grade 14.5 (target: Grade 9.0), overall score 5.4/10 is below threshold 8.0."
+    ],
+    "action": {
+      "youtube_upload": true,
+      "privacy": "public",
+      "cross_post": true,
+      "mode": "private"
+    }
+  },
+  "youtube_upload": {
+    "video_id": "O8Y3yN9AhXU",
+    "shorts_url": "https://youtube.com/shorts/O8Y3yN9AhXU",
+    "studio_url": "https://studio.youtube.com/video/O8Y3yN9AhXU/edit",
+    "title": "FlashAttention-3: How GPUs Hit 1.2 PFLOPS #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/flashattention_hardware_kernel_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

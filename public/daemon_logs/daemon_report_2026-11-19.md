@@ -1,18 +1,18 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-19 | **Timestamp:** 2026-11-19 07:55:01 UTC
+**Date:** 2026-11-19 | **Timestamp:** 2026-11-19 20:10:29 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Scaling Laws for Neural Language Models: Part 5 - The Capital Supercycle: How One Empirical Paper Justified the Trillion-Dollar Data Center Boom
-- **Topic Queue Part:** `goat_scaling_laws_part_5` (arXiv: [2001.08361](https://arxiv.org/abs/2001.08361))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/VWkBgXSqjI0](https://youtube.com/shorts/VWkBgXSqjI0) (`VWkBgXSqjI0`)
-- **High-CTR Poster:** [scaling_laws_neural_language_models_poster.png](public/thumbnails/scaling_laws_neural_language_models_poster.png)
+### Reel 1: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 5 - The Universal Hardware Standard: How FlashAttention Rewrote Every Frontier AI Kernel
+- **Topic Queue Part:** `goat_flashattention_part_5` (arXiv: [2205.14135](https://arxiv.org/abs/2205.14135))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/O8Y3yN9AhXU](https://youtube.com/shorts/O8Y3yN9AhXU) (`O8Y3yN9AhXU`)
+- **High-CTR Poster:** [flashattention_hardware_kernel_poster.png](public/thumbnails/flashattention_hardware_kernel_poster.png)
 - **✅ Publish gate:** passed
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: Scaling Laws for Neural Language Models Mini-Series 5/5: Scaling Laws for Neural Language Models: Part 5 - The Capital Supercycle: How One Empirical Paper Justified the Trillion-Dollar Data Center Boom*
-- **Everyday Analogy:** *How the scaling law equations gave cloud providers and venture capital the mathematical confidence to invest hundreds of billions into AI hardware.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_scaling_laws_neural_language_models_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: FlashAttention: Fast & Memory-Efficient Exact Attention Mini-Series 5/5: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 5 - The Universal Hardware Standard: How FlashAttention Rewrote Every Frontier AI Kernel*
+- **Everyday Analogy:** *How FlashAttention-2 and FlashAttention-3 became the mandatory low-level execution engine across PyTorch, vLLM, DeepSeek, and modern LLM serving.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_flashattention_hardware_kernel_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
