@@ -1,18 +1,18 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-19 | **Timestamp:** 2026-11-19 20:10:29 UTC
+**Date:** 2026-11-19 | **Timestamp:** 2026-11-19 21:00:06 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 5 - The Universal Hardware Standard: How FlashAttention Rewrote Every Frontier AI Kernel
-- **Topic Queue Part:** `goat_flashattention_part_5` (arXiv: [2205.14135](https://arxiv.org/abs/2205.14135))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/O8Y3yN9AhXU](https://youtube.com/shorts/O8Y3yN9AhXU) (`O8Y3yN9AhXU`)
-- **High-CTR Poster:** [flashattention_hardware_kernel_poster.png](public/thumbnails/flashattention_hardware_kernel_poster.png)
+### Reel 1: Word2Vec: Semantic Vector Spaces: Part 5 - The Vector Database Genesis: How Word2Vec Built the Foundation for Dense Retrieval and RAG
+- **Topic Queue Part:** `goat_word2vec_part_5` (arXiv: [1301.3781](https://arxiv.org/abs/1301.3781))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/ddIh43UIm7o](https://youtube.com/shorts/ddIh43UIm7o) (`ddIh43UIm7o`)
+- **High-CTR Poster:** [word2vec_dense_retrieval_genesis_poster.png](public/thumbnails/word2vec_dense_retrieval_genesis_poster.png)
 - **✅ Publish gate:** passed
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: FlashAttention: Fast & Memory-Efficient Exact Attention Mini-Series 5/5: FlashAttention: Fast & Memory-Efficient Exact Attention: Part 5 - The Universal Hardware Standard: How FlashAttention Rewrote Every Frontier AI Kernel*
-- **Everyday Analogy:** *How FlashAttention-2 and FlashAttention-3 became the mandatory low-level execution engine across PyTorch, vLLM, DeepSeek, and modern LLM serving.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_flashattention_hardware_kernel_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: Word2Vec: Semantic Vector Spaces Mini-Series 5/5: Word2Vec: Semantic Vector Spaces: Part 5 - The Vector Database Genesis: How Word2Vec Built the Foundation for Dense Retrieval and RAG*
+- **Everyday Analogy:** *Tracing the lineage from Word2Vec through GloVe and Sentence-Transformers to modern dense vector search and RAG retrieval systems.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_word2vec_dense_retrieval_genesis_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
