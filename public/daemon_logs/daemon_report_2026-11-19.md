@@ -1,18 +1,18 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-19 | **Timestamp:** 2026-11-19 04:29:20 UTC
+**Date:** 2026-11-19 | **Timestamp:** 2026-11-19 07:55:01 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: InstructGPT: RLHF Alignment: Part 5 - The ChatGPT Ignition: The Single Paper That Brought AI to 100 Million Consumers
-- **Topic Queue Part:** `goat_instructgpt_part_5` (arXiv: [2203.02155](https://arxiv.org/abs/2203.02155))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/5C2lS2d2Cnc](https://youtube.com/shorts/5C2lS2d2Cnc) (`5C2lS2d2Cnc`)
-- **High-CTR Poster:** [instructgpt_rlhf_alignment_poster.png](public/thumbnails/instructgpt_rlhf_alignment_poster.png)
+### Reel 1: Scaling Laws for Neural Language Models: Part 5 - The Capital Supercycle: How One Empirical Paper Justified the Trillion-Dollar Data Center Boom
+- **Topic Queue Part:** `goat_scaling_laws_part_5` (arXiv: [2001.08361](https://arxiv.org/abs/2001.08361))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/VWkBgXSqjI0](https://youtube.com/shorts/VWkBgXSqjI0) (`VWkBgXSqjI0`)
+- **High-CTR Poster:** [scaling_laws_neural_language_models_poster.png](public/thumbnails/scaling_laws_neural_language_models_poster.png)
 - **✅ Publish gate:** passed
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: InstructGPT: RLHF Alignment Mini-Series 5/5: InstructGPT: RLHF Alignment: Part 5 - The ChatGPT Ignition: The Single Paper That Brought AI to 100 Million Consumers*
-- **Everyday Analogy:** *How the 3-stage alignment blueprint (SFT -> Reward Model -> PPO) unlocked conversational AI and catalyzed modern LLM products.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_instructgpt_rlhf_alignment_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: Scaling Laws for Neural Language Models Mini-Series 5/5: Scaling Laws for Neural Language Models: Part 5 - The Capital Supercycle: How One Empirical Paper Justified the Trillion-Dollar Data Center Boom*
+- **Everyday Analogy:** *How the scaling law equations gave cloud providers and venture capital the mathematical confidence to invest hundreds of billions into AI hardware.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_scaling_laws_neural_language_models_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
