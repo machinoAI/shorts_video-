@@ -1,18 +1,17 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-20 | **Timestamp:** 2026-11-20 07:44:16 UTC
+**Date:** 2026-11-20 | **Timestamp:** 2026-11-20 19:16:01 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: BERT: Deep Bidirectional Transformers: Part 5 - The Search Engine Transformation: How BERT Rewrote the Architecture of Google Search
-- **Topic Queue Part:** `goat_bert_part_5` (arXiv: [1810.04805](https://arxiv.org/abs/1810.04805))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/u8dgOiqS5Tw](https://youtube.com/shorts/u8dgOiqS5Tw) (`u8dgOiqS5Tw`)
-- **High-CTR Poster:** [bert_search_transformer_poster.png](public/thumbnails/bert_search_transformer_poster.png)
+### Reel 1: Vision Transformer (ViT): Attention for Visual Recognition: Part 5 - The Multimodal Unification: How ViT Collapsed NLP and Computer Vision into One Architecture
+- **Topic Queue Part:** `goat_vit_part_5` (arXiv: [2010.11929](https://arxiv.org/abs/2010.11929))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/6eGWe-EH1co](https://youtube.com/shorts/6eGWe-EH1co) (`6eGWe-EH1co`)
 - **✅ Publish gate:** passed
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: BERT: Deep Bidirectional Transformers Mini-Series 5/5: BERT: Deep Bidirectional Transformers: Part 5 - The Search Engine Transformation: How BERT Rewrote the Architecture of Google Search*
-- **Everyday Analogy:** *How Google integrated BERT into its core search ranking algorithm to understand conversational, multi-word queries for billions of daily users.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_bert_search_transformer_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: Vision Transformer (ViT): Attention for Visual Recognition Mini-Series 5/5: Vision Transformer (ViT): Attention for Visual Recognition: Part 5 - The Multimodal Unification: How ViT Collapsed NLP and Computer Vision into One Architecture*
+- **Everyday Analogy:** *How ViT eliminated specialized vision backbones, paving the way for unified multimodal models (CLIP, Flamingo, GPT-4V, Gemini).*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_vit_architecture_breakdown_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
