@@ -1,0 +1,1781 @@
+{
+  "id": "clip_steering_engine",
+  "title": "CLIP: The Text-to-Image Steering Wheel",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "ARCHITECTURE BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Classic computer vision models instantly fall apart the moment an image falls outside their rigid thousand-label checklist.",
+      "visual_focus": "A camera feed classifying an unexpected object, with rigid class slots rejecting the input and flashing red bounds.",
+      "highlight_words": {
+        "rigid thousand-label checklist": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "vision models",
+        "action_verb": "reject",
+        "direct_object": "unlabeled visual concepts",
+        "anchor_word": "fall apart",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "THE FIXED-LABEL TRAP",
+        "sub": "Rigid 1,000-class classifiers cannot generalize beyond hardcoded tags",
+        "accent_color": "#34D399",
+        "params": {
+          "input_1_label": "Raw Images",
+          "input_2_label": "Natural Language",
+          "input_3_label": "Internet Supervision",
+          "fused_label": "Shared Latent Space"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 34,
+      "hook_band": "WEAK",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "convergence_funnel",
+        "title": "THE FIXED-LABEL TRAP",
+        "sub": "Rigid 1,000-class classifiers cannot generalize beyond hardcoded tags",
+        "accent_color": "#34D399",
+        "input_1_label": "Raw Images",
+        "input_2_label": "Natural Language",
+        "input_3_label": "Internet Supervision",
+        "fused_label": "Shared Latent Space"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.0,
+      "duration": 7.0,
+      "word_timings": [
+        {
+          "word": "Classic",
+          "clean_word": "classic",
+          "phonemes": "kl\u02c8\u00e6s\u026ak",
+          "start": 0.025,
+          "end": 0.35,
+          "duration": 0.325,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "computer",
+          "clean_word": "computer",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0\u027e\u025a",
+          "start": 0.35,
+          "end": 1.05,
+          "duration": 0.7,
+          "frame_ahead_trigger": 0.31
+        },
+        {
+          "word": "vision",
+          "clean_word": "vision",
+          "phonemes": "v\u02c8\u026a\u0292\u0259n",
+          "start": 1.05,
+          "end": 1.29,
+          "duration": 0.24,
+          "frame_ahead_trigger": 1.01
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 1.29,
+          "end": 1.825,
+          "duration": 0.535,
+          "frame_ahead_trigger": 1.25
+        },
+        {
+          "word": "instantly",
+          "clean_word": "instantly",
+          "phonemes": "\u02c8\u026anst\u0259ntli",
+          "start": 1.825,
+          "end": 2.3,
+          "duration": 0.475,
+          "frame_ahead_trigger": 1.785
+        },
+        {
+          "word": "fall",
+          "clean_word": "fall",
+          "phonemes": "f\u02c8\u0254\u02d0l",
+          "start": 2.3,
+          "end": 2.605,
+          "duration": 0.305,
+          "frame_ahead_trigger": 2.26
+        },
+        {
+          "word": "apart",
+          "clean_word": "apart",
+          "phonemes": "\u0250p\u02c8\u0251\u02d0\u0279t",
+          "start": 2.605,
+          "end": 3.08,
+          "duration": 0.475,
+          "frame_ahead_trigger": 2.565
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 3.08,
+          "end": 3.196,
+          "duration": 0.115,
+          "frame_ahead_trigger": 3.04
+        },
+        {
+          "word": "moment",
+          "clean_word": "moment",
+          "phonemes": "m\u02c8o\u028am\u0259nt",
+          "start": 3.196,
+          "end": 3.657,
+          "duration": 0.461,
+          "frame_ahead_trigger": 3.156
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 3.657,
+          "end": 3.8,
+          "duration": 0.143,
+          "frame_ahead_trigger": 3.617
+        },
+        {
+          "word": "image",
+          "clean_word": "image",
+          "phonemes": "\u02c8\u026am\u026ad\u0292",
+          "start": 3.8,
+          "end": 4.118,
+          "duration": 0.318,
+          "frame_ahead_trigger": 3.76
+        },
+        {
+          "word": "falls",
+          "clean_word": "falls",
+          "phonemes": "f\u02c8\u0254\u02d0lz",
+          "start": 4.118,
+          "end": 4.5,
+          "duration": 0.382,
+          "frame_ahead_trigger": 4.078
+        },
+        {
+          "word": "outside",
+          "clean_word": "outside",
+          "phonemes": "a\u028ats\u02c8a\u026ad",
+          "start": 4.5,
+          "end": 4.945,
+          "duration": 0.445,
+          "frame_ahead_trigger": 4.46
+        },
+        {
+          "word": "their",
+          "clean_word": "their",
+          "phonemes": "\u00f0\u025b\u0279",
+          "start": 4.945,
+          "end": 5.09,
+          "duration": 0.145,
+          "frame_ahead_trigger": 4.905
+        },
+        {
+          "word": "rigid",
+          "clean_word": "rigid",
+          "phonemes": "\u0279\u02c8\u026ad\u0292\u026ad",
+          "start": 5.09,
+          "end": 5.535,
+          "duration": 0.445,
+          "frame_ahead_trigger": 5.05
+        },
+        {
+          "word": "thousand-label",
+          "clean_word": "thousandlabel",
+          "phonemes": "\u03b8\u02c8a\u028az\u0259ndl\u02cce\u026ab\u0259l",
+          "start": 5.535,
+          "end": 6.38,
+          "duration": 0.845,
+          "frame_ahead_trigger": 5.495
+        },
+        {
+          "word": "checklist.",
+          "clean_word": "checklist",
+          "phonemes": "t\u0283\u02c8\u025bkl\u026ast",
+          "start": 6.38,
+          "end": 6.885,
+          "duration": 0.505,
+          "frame_ahead_trigger": 6.34
+        }
+      ],
+      "audio_duration": 7.0,
+      "slot_duration": 7.15
+    },
+    {
+      "beat_id": 2,
+      "text": "The villain is brittle categorical supervision. ResNet demands millions of painstakingly hand-annotated labels. Missing a class means total architectural blindness.",
+      "visual_focus": "A ResNet classification head forced to map complex real-world scenes into a narrow softmax probability vector.",
+      "highlight_words": {
+        "brittle categorical supervision": "#EF4444",
+        "architectural blindness": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "supervision",
+        "action_verb": "constrains",
+        "direct_object": "neural representations",
+        "anchor_word": "blindness",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "SUPERVISION BOTTLENECK",
+        "sub": "Hand-labeled bounding boxes destroy rich contextual nuance",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Fixed Categories",
+          "stream_b_label": "General Concepts",
+          "barrier_label": "Label Constraint",
+          "barrier_sub": "O(N) Complexity"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "SUPERVISION BOTTLENECK",
+        "sub": "Hand-labeled bounding boxes destroy rich contextual nuance",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Fixed Categories",
+        "stream_b_label": "General Concepts",
+        "barrier_label": "Label Constraint",
+        "barrier_sub": "O(N) Complexity"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.15,
+      "end": 16.7,
+      "duration": 9.56,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 7.157,
+          "end": 7.232,
+          "duration": 0.075,
+          "frame_ahead_trigger": 7.267
+        },
+        {
+          "word": "villain",
+          "clean_word": "villain",
+          "phonemes": "v\u02c8\u026al\u0259n",
+          "start": 7.232,
+          "end": 7.577,
+          "duration": 0.345,
+          "frame_ahead_trigger": 7.342
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 7.577,
+          "end": 7.812,
+          "duration": 0.235,
+          "frame_ahead_trigger": 7.687
+        },
+        {
+          "word": "brittle",
+          "clean_word": "brittle",
+          "phonemes": "b\u0279\u02c8\u026a\u027e\u0259l",
+          "start": 7.812,
+          "end": 8.097,
+          "duration": 0.285,
+          "frame_ahead_trigger": 7.922
+        },
+        {
+          "word": "categorical",
+          "clean_word": "categorical",
+          "phonemes": "k\u02cc\u00e6\u027e\u026a\u0261\u02c8\u0254\u02d0\u0279\u026ak\u0259l",
+          "start": 8.097,
+          "end": 8.992,
+          "duration": 0.895,
+          "frame_ahead_trigger": 8.207
+        },
+        {
+          "word": "supervision.",
+          "clean_word": "supervision",
+          "phonemes": "su\u02d0p\u025av\u02c8\u026a\u0292\u0259n",
+          "start": 8.992,
+          "end": 9.658,
+          "duration": 0.665,
+          "frame_ahead_trigger": 9.102
+        },
+        {
+          "word": "ResNet",
+          "clean_word": "resnet",
+          "phonemes": "\u0279\u02c8\u025bz n\u02c8\u025bt",
+          "start": 9.658,
+          "end": 10.102,
+          "duration": 0.445,
+          "frame_ahead_trigger": 9.768
+        },
+        {
+          "word": "demands",
+          "clean_word": "demands",
+          "phonemes": "d\u1d7bm\u02c8\u00e6ndz",
+          "start": 10.102,
+          "end": 10.67,
+          "duration": 0.567,
+          "frame_ahead_trigger": 10.212
+        },
+        {
+          "word": "millions",
+          "clean_word": "millions",
+          "phonemes": "m\u02c8\u026ali\u0259nz",
+          "start": 10.67,
+          "end": 11.127,
+          "duration": 0.458,
+          "frame_ahead_trigger": 10.78
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 11.127,
+          "end": 11.287,
+          "duration": 0.16,
+          "frame_ahead_trigger": 11.237
+        },
+        {
+          "word": "painstakingly",
+          "clean_word": "painstakingly",
+          "phonemes": "p\u02c8e\u026anste\u026ak\u026a\u014bli",
+          "start": 11.287,
+          "end": 12.212,
+          "duration": 0.925,
+          "frame_ahead_trigger": 11.397
+        },
+        {
+          "word": "hand-annotated",
+          "clean_word": "handannotated",
+          "phonemes": "h\u02c8\u00e6nd\u0250n\u0259t\u02cce\u026a\u027e\u1d7bd",
+          "start": 12.212,
+          "end": 12.972,
+          "duration": 0.76,
+          "frame_ahead_trigger": 12.322
+        },
+        {
+          "word": "labels.",
+          "clean_word": "labels",
+          "phonemes": "l\u02c8e\u026ab\u0259lz",
+          "start": 12.972,
+          "end": 13.382,
+          "duration": 0.41,
+          "frame_ahead_trigger": 13.082
+        },
+        {
+          "word": "Missing",
+          "clean_word": "missing",
+          "phonemes": "m\u02c8\u026as\u026a\u014b",
+          "start": 13.382,
+          "end": 13.902,
+          "duration": 0.52,
+          "frame_ahead_trigger": 13.492
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 13.902,
+          "end": 14.037,
+          "duration": 0.135,
+          "frame_ahead_trigger": 14.012
+        },
+        {
+          "word": "class",
+          "clean_word": "class",
+          "phonemes": "kl\u02c8\u00e6s",
+          "start": 14.037,
+          "end": 14.262,
+          "duration": 0.225,
+          "frame_ahead_trigger": 14.147
+        },
+        {
+          "word": "means",
+          "clean_word": "means",
+          "phonemes": "m\u02c8i\u02d0nz",
+          "start": 14.262,
+          "end": 14.667,
+          "duration": 0.405,
+          "frame_ahead_trigger": 14.372
+        },
+        {
+          "word": "total",
+          "clean_word": "total",
+          "phonemes": "t\u02c8o\u028a\u027e\u0259l",
+          "start": 14.667,
+          "end": 15.047,
+          "duration": 0.38,
+          "frame_ahead_trigger": 14.777
+        },
+        {
+          "word": "architectural",
+          "clean_word": "architectural",
+          "phonemes": "\u02cc\u0251\u02d0\u0279k\u026at\u02c8\u025bkt\u0283\u025a\u0279\u0259l",
+          "start": 15.047,
+          "end": 16.077,
+          "duration": 1.03,
+          "frame_ahead_trigger": 15.157
+        },
+        {
+          "word": "blindness.",
+          "clean_word": "blindness",
+          "phonemes": "bl\u02c8a\u026andn\u0259s",
+          "start": 16.077,
+          "end": 16.622,
+          "duration": 0.545,
+          "frame_ahead_trigger": 16.187
+        }
+      ],
+      "audio_duration": 9.56,
+      "slot_duration": 9.7
+    },
+    {
+      "beat_id": 3,
+      "text": "Enter CLIP. OpenAI ditched fixed categories. Training an image encoder alongside a text transformer directly on four hundred million raw web captions.",
+      "visual_focus": "Dual encoder pipelines: images entering a ViT or ResNet and captions entering a Transformer, mapping into high-dimensional space.",
+      "highlight_words": {
+        "CLIP": "#10B981",
+        "four hundred million raw web captions": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "OpenAI",
+        "action_verb": "pairs",
+        "direct_object": "image and text encoders",
+        "anchor_word": "ditched",
+        "semantic_role": "causal_intervention"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "CLIP: FIGURE",
+        "sub": "Dual encoder pipelines: images entering a ViT or ResNet",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_fs-clip-vs-imagenet-robustness-plot.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_fs-clip-vs-imagenet-robustness-plot.png",
+          "arxiv_id": "2103.00020",
+          "title": "CLIP: FIGURE",
+          "sub": "Dual encoder pipelines: images entering a ViT or ResNet",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Fs-Clip-Vs-Imagenet-Robustness-Plot",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_fs-clip-vs-imagenet-robustness-plot.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_fs-clip-vs-imagenet-robustness-plot.png",
+        "arxiv_id": "2103.00020",
+        "title": "CLIP: FIGURE",
+        "sub": "Dual encoder pipelines: images entering a ViT or ResNet",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Fs-Clip-Vs-Imagenet-Robustness-Plot",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 16.85,
+      "end": 25.79,
+      "duration": 8.94,
+      "word_timings": [
+        {
+          "word": "Enter",
+          "clean_word": "enter",
+          "phonemes": "\u02c8\u025bnt\u025a",
+          "start": 16.865,
+          "end": 17.09,
+          "duration": 0.225,
+          "frame_ahead_trigger": 17.125
+        },
+        {
+          "word": "CLIP.",
+          "clean_word": "clip",
+          "phonemes": "kl\u02c8\u026ap",
+          "start": 17.09,
+          "end": 17.466,
+          "duration": 0.377,
+          "frame_ahead_trigger": 17.35
+        },
+        {
+          "word": "OpenAI",
+          "clean_word": "openai",
+          "phonemes": "\u02c8o\u028ap\u0259n \u02cce\u026a\u02c8a\u026a",
+          "start": 17.466,
+          "end": 18.22,
+          "duration": 0.753,
+          "frame_ahead_trigger": 17.726
+        },
+        {
+          "word": "ditched",
+          "clean_word": "ditched",
+          "phonemes": "d\u02c8\u026at\u0283t",
+          "start": 18.22,
+          "end": 18.595,
+          "duration": 0.375,
+          "frame_ahead_trigger": 18.48
+        },
+        {
+          "word": "fixed",
+          "clean_word": "fixed",
+          "phonemes": "f\u02c8\u026akst",
+          "start": 18.595,
+          "end": 18.92,
+          "duration": 0.325,
+          "frame_ahead_trigger": 18.855
+        },
+        {
+          "word": "categories.",
+          "clean_word": "categories",
+          "phonemes": "k\u02c8\u00e6\u027e\u026a\u0261\u025a\u0279iz",
+          "start": 18.92,
+          "end": 19.505,
+          "duration": 0.585,
+          "frame_ahead_trigger": 19.18
+        },
+        {
+          "word": "Training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 19.505,
+          "end": 20.054,
+          "duration": 0.549,
+          "frame_ahead_trigger": 19.765
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 20.054,
+          "end": 20.245,
+          "duration": 0.191,
+          "frame_ahead_trigger": 20.314
+        },
+        {
+          "word": "image",
+          "clean_word": "image",
+          "phonemes": "\u02c8\u026am\u026ad\u0292",
+          "start": 20.245,
+          "end": 20.535,
+          "duration": 0.29,
+          "frame_ahead_trigger": 20.505
+        },
+        {
+          "word": "encoder",
+          "clean_word": "encoder",
+          "phonemes": "\u025b\u014bk\u02c8o\u028ad\u025a",
+          "start": 20.535,
+          "end": 21.025,
+          "duration": 0.49,
+          "frame_ahead_trigger": 20.795
+        },
+        {
+          "word": "alongside",
+          "clean_word": "alongside",
+          "phonemes": "\u0250l\u02c8\u0254\u014bsa\u026ad",
+          "start": 21.025,
+          "end": 21.515,
+          "duration": 0.49,
+          "frame_ahead_trigger": 21.285
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 21.515,
+          "end": 21.745,
+          "duration": 0.23,
+          "frame_ahead_trigger": 21.775
+        },
+        {
+          "word": "text",
+          "clean_word": "text",
+          "phonemes": "t\u02c8\u025bkst",
+          "start": 21.745,
+          "end": 22.03,
+          "duration": 0.285,
+          "frame_ahead_trigger": 22.005
+        },
+        {
+          "word": "transformer",
+          "clean_word": "transformer",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279m\u025a",
+          "start": 22.03,
+          "end": 22.865,
+          "duration": 0.835,
+          "frame_ahead_trigger": 22.29
+        },
+        {
+          "word": "directly",
+          "clean_word": "directly",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bktli",
+          "start": 22.865,
+          "end": 23.325,
+          "duration": 0.46,
+          "frame_ahead_trigger": 23.125
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 23.325,
+          "end": 23.544,
+          "duration": 0.219,
+          "frame_ahead_trigger": 23.585
+        },
+        {
+          "word": "four",
+          "clean_word": "four",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279",
+          "start": 23.544,
+          "end": 23.77,
+          "duration": 0.226,
+          "frame_ahead_trigger": 23.804
+        },
+        {
+          "word": "hundred",
+          "clean_word": "hundred",
+          "phonemes": "h\u02c8\u028cnd\u0279\u026ad",
+          "start": 23.77,
+          "end": 24.24,
+          "duration": 0.47,
+          "frame_ahead_trigger": 24.03
+        },
+        {
+          "word": "million",
+          "clean_word": "million",
+          "phonemes": "m\u02c8\u026ali\u0259n",
+          "start": 24.24,
+          "end": 24.645,
+          "duration": 0.405,
+          "frame_ahead_trigger": 24.5
+        },
+        {
+          "word": "raw",
+          "clean_word": "raw",
+          "phonemes": "\u0279\u02c8\u0254\u02d0",
+          "start": 24.645,
+          "end": 24.925,
+          "duration": 0.28,
+          "frame_ahead_trigger": 24.905
+        },
+        {
+          "word": "web",
+          "clean_word": "web",
+          "phonemes": "w\u02c8\u025bb",
+          "start": 24.925,
+          "end": 25.135,
+          "duration": 0.21,
+          "frame_ahead_trigger": 25.185
+        },
+        {
+          "word": "captions.",
+          "clean_word": "captions",
+          "phonemes": "k\u02c8\u00e6p\u0283\u0259nz",
+          "start": 25.135,
+          "end": 25.71,
+          "duration": 0.575,
+          "frame_ahead_trigger": 25.395
+        }
+      ],
+      "audio_duration": 8.94,
+      "slot_duration": 9.09
+    },
+    {
+      "beat_id": 4,
+      "text": "Its secret sauce is contrastive alignment. The model calculates vector dot products. Pulling matching pairs together in shared embedding space while repelling mismatches.",
+      "visual_focus": "An N by N cosine similarity matrix. Positive diagonal vector pairs glow green and pull together; off-diagonal pairs glow red and repel.",
+      "highlight_words": {
+        "contrastive alignment": "#10B981",
+        "vector dot products": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "contrastive loss",
+        "action_verb": "aligns",
+        "direct_object": "embedding vectors",
+        "anchor_word": "pulling",
+        "semantic_role": "causal_intervention"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "CONTRASTIVE COSINE SIMILARITY",
+        "sub": "Maximizing diagonal dot products while penalizing N^2 - N negatives",
+        "accent_color": "#F59E0B",
+        "params": {
+          "field_title": "Latent Manifold",
+          "source_label": "Noisy Input",
+          "target_label": "Prompt Representation",
+          "stream_formula": "cos(\\theta)"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "CONTRASTIVE COSINE SIMILARITY",
+        "sub": "Maximizing diagonal dot products while penalizing N^2 - N negatives",
+        "accent_color": "#F59E0B",
+        "field_title": "Latent Manifold",
+        "source_label": "Noisy Input",
+        "target_label": "Prompt Representation",
+        "stream_formula": "cos(\\theta)"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 25.94,
+      "end": 35.37,
+      "duration": 9.43,
+      "word_timings": [
+        {
+          "word": "Its",
+          "clean_word": "its",
+          "phonemes": "\u026ats",
+          "start": 25.943,
+          "end": 26.113,
+          "duration": 0.17,
+          "frame_ahead_trigger": 26.353
+        },
+        {
+          "word": "secret",
+          "clean_word": "secret",
+          "phonemes": "s\u02c8i\u02d0k\u0279\u1d7bt",
+          "start": 26.113,
+          "end": 26.498,
+          "duration": 0.385,
+          "frame_ahead_trigger": 26.523
+        },
+        {
+          "word": "sauce",
+          "clean_word": "sauce",
+          "phonemes": "s\u02c8\u0254\u02d0s",
+          "start": 26.498,
+          "end": 26.983,
+          "duration": 0.485,
+          "frame_ahead_trigger": 26.908
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 26.983,
+          "end": 27.058,
+          "duration": 0.075,
+          "frame_ahead_trigger": 27.393
+        },
+        {
+          "word": "contrastive",
+          "clean_word": "contrastive",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u0279\u0250st\u02cc\u026av",
+          "start": 27.058,
+          "end": 27.825,
+          "duration": 0.767,
+          "frame_ahead_trigger": 27.468
+        },
+        {
+          "word": "alignment.",
+          "clean_word": "alignment",
+          "phonemes": "\u0250l\u02c8a\u026anm\u0259nt",
+          "start": 27.825,
+          "end": 28.523,
+          "duration": 0.698,
+          "frame_ahead_trigger": 28.235
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 28.523,
+          "end": 28.554,
+          "duration": 0.031,
+          "frame_ahead_trigger": 28.933
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 28.554,
+          "end": 28.918,
+          "duration": 0.364,
+          "frame_ahead_trigger": 28.964
+        },
+        {
+          "word": "calculates",
+          "clean_word": "calculates",
+          "phonemes": "k\u02c8\u00e6lkj\u028al\u02cce\u026ats",
+          "start": 28.918,
+          "end": 29.763,
+          "duration": 0.845,
+          "frame_ahead_trigger": 29.328
+        },
+        {
+          "word": "vector",
+          "clean_word": "vector",
+          "phonemes": "v\u02c8\u025bkt\u025a",
+          "start": 29.763,
+          "end": 30.208,
+          "duration": 0.445,
+          "frame_ahead_trigger": 30.173
+        },
+        {
+          "word": "dot",
+          "clean_word": "dot",
+          "phonemes": "d\u02c8\u0251\u02d0t",
+          "start": 30.208,
+          "end": 30.443,
+          "duration": 0.235,
+          "frame_ahead_trigger": 30.618
+        },
+        {
+          "word": "products.",
+          "clean_word": "products",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0d\u028ckts",
+          "start": 30.443,
+          "end": 31.123,
+          "duration": 0.68,
+          "frame_ahead_trigger": 30.853
+        },
+        {
+          "word": "Pulling",
+          "clean_word": "pulling",
+          "phonemes": "p\u02c8\u028al\u026a\u014b",
+          "start": 31.123,
+          "end": 31.388,
+          "duration": 0.265,
+          "frame_ahead_trigger": 31.533
+        },
+        {
+          "word": "matching",
+          "clean_word": "matching",
+          "phonemes": "m\u02c8\u00e6t\u0283\u026a\u014b",
+          "start": 31.388,
+          "end": 31.793,
+          "duration": 0.405,
+          "frame_ahead_trigger": 31.798
+        },
+        {
+          "word": "pairs",
+          "clean_word": "pairs",
+          "phonemes": "p\u02c8\u025b\u0279z",
+          "start": 31.793,
+          "end": 32.253,
+          "duration": 0.46,
+          "frame_ahead_trigger": 32.203
+        },
+        {
+          "word": "together",
+          "clean_word": "together",
+          "phonemes": "t\u0259\u0261\u02c8\u025b\u00f0\u025a",
+          "start": 32.253,
+          "end": 32.613,
+          "duration": 0.36,
+          "frame_ahead_trigger": 32.663
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 32.613,
+          "end": 32.798,
+          "duration": 0.185,
+          "frame_ahead_trigger": 33.023
+        },
+        {
+          "word": "shared",
+          "clean_word": "shared",
+          "phonemes": "\u0283\u02c8\u025b\u0279d",
+          "start": 32.798,
+          "end": 32.988,
+          "duration": 0.19,
+          "frame_ahead_trigger": 33.208
+        },
+        {
+          "word": "embedding",
+          "clean_word": "embedding",
+          "phonemes": "\u025bmb\u02c8\u025bd\u026a\u014b",
+          "start": 32.988,
+          "end": 33.518,
+          "duration": 0.53,
+          "frame_ahead_trigger": 33.398
+        },
+        {
+          "word": "space",
+          "clean_word": "space",
+          "phonemes": "sp\u02c8e\u026as",
+          "start": 33.518,
+          "end": 33.888,
+          "duration": 0.37,
+          "frame_ahead_trigger": 33.928
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 33.888,
+          "end": 34.158,
+          "duration": 0.27,
+          "frame_ahead_trigger": 34.298
+        },
+        {
+          "word": "repelling",
+          "clean_word": "repelling",
+          "phonemes": "\u0279\u1d7bp\u02c8\u025bl\u026a\u014b",
+          "start": 34.158,
+          "end": 34.733,
+          "duration": 0.575,
+          "frame_ahead_trigger": 34.568
+        },
+        {
+          "word": "mismatches.",
+          "clean_word": "mismatches",
+          "phonemes": "m\u026asm\u02c8\u00e6t\u0283\u1d7bz",
+          "start": 34.733,
+          "end": 35.293,
+          "duration": 0.56,
+          "frame_ahead_trigger": 35.143
+        }
+      ],
+      "audio_duration": 9.43,
+      "slot_duration": 9.58
+    },
+    {
+      "beat_id": 5,
+      "text": "The payoff? CLIP matches ResNet-50 accuracy on ImageNet completely zero-shot. Without training on a single one of its 1.28 million examples.",
+      "visual_focus": "A clean bar chart race where zero-shot CLIP catches supervised ResNet-50, displaying a 0% labels used badge.",
+      "highlight_words": {
+        "completely zero-shot": "#10B981",
+        "1.28 million examples": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "zero-shot CLIP",
+        "action_verb": "matches",
+        "direct_object": "supervised ResNet-50",
+        "anchor_word": "matches",
+        "semantic_role": "quantitative_comparison"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "IMAGENET ZERO-SHOT SHOWDOWN",
+        "sub": "A clean bar chart race where zero-shot CLIP",
+        "params": {
+          "title": "IMAGENET ZERO-SHOT SHOWDOWN",
+          "sub": "A clean bar chart race where zero-shot CLIP",
+          "metric_name": "Accuracy",
+          "unit": "ratio",
+          "contestants": [
+            {
+              "name": "CLIP",
+              "value": 1.0,
+              "display_val": "1.0",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "ResNet-50",
+              "value": 1.0,
+              "display_val": "1.0",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "0% LABELS USED"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "IMAGENET ZERO-SHOT SHOWDOWN",
+        "sub": "A clean bar chart race where zero-shot CLIP",
+        "metric_name": "Accuracy",
+        "unit": "ratio",
+        "contestants": [
+          {
+            "name": "CLIP",
+            "value": 1.0,
+            "display_val": "1.0",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "ResNet-50",
+            "value": 1.0,
+            "display_val": "1.0",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "0% LABELS USED"
+      },
+      "start": 35.52,
+      "end": 44.48,
+      "duration": 8.96,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 35.533,
+          "end": 35.608,
+          "duration": 0.075,
+          "frame_ahead_trigger": 36.093
+        },
+        {
+          "word": "payoff?",
+          "clean_word": "payoff",
+          "phonemes": "p\u02c8e\u026a\u0254f",
+          "start": 35.608,
+          "end": 35.976,
+          "duration": 0.368,
+          "frame_ahead_trigger": 36.168
+        },
+        {
+          "word": "CLIP",
+          "clean_word": "clip",
+          "phonemes": "kl\u02c8\u026ap",
+          "start": 35.976,
+          "end": 36.288,
+          "duration": 0.311,
+          "frame_ahead_trigger": 36.536
+        },
+        {
+          "word": "matches",
+          "clean_word": "matches",
+          "phonemes": "m\u02c8\u00e6t\u0283\u1d7bz",
+          "start": 36.288,
+          "end": 36.748,
+          "duration": 0.46,
+          "frame_ahead_trigger": 36.848
+        },
+        {
+          "word": "ResNet-50",
+          "clean_word": "resnet50",
+          "phonemes": "\u0279\u02c8\u025bz n\u02c8\u025bt f\u02c8\u026afti",
+          "start": 36.748,
+          "end": 37.423,
+          "duration": 0.675,
+          "frame_ahead_trigger": 37.308
+        },
+        {
+          "word": "accuracy",
+          "clean_word": "accuracy",
+          "phonemes": "\u02c8\u00e6kj\u028a\u0279\u0259si",
+          "start": 37.423,
+          "end": 38.023,
+          "duration": 0.6,
+          "frame_ahead_trigger": 37.983
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 38.023,
+          "end": 38.223,
+          "duration": 0.2,
+          "frame_ahead_trigger": 38.583
+        },
+        {
+          "word": "ImageNet",
+          "clean_word": "imagenet",
+          "phonemes": "\u02c8\u026am\u026ad\u0292 n\u02c8\u025bt",
+          "start": 38.223,
+          "end": 38.833,
+          "duration": 0.61,
+          "frame_ahead_trigger": 38.783
+        },
+        {
+          "word": "completely",
+          "clean_word": "completely",
+          "phonemes": "k\u0259mpl\u02c8i\u02d0tli",
+          "start": 38.833,
+          "end": 39.518,
+          "duration": 0.685,
+          "frame_ahead_trigger": 39.393
+        },
+        {
+          "word": "zero-shot.",
+          "clean_word": "zeroshot",
+          "phonemes": "z\u02c8i\u0259\u0279\u0259\u0283\u02cc\u0251\u02d0t",
+          "start": 39.518,
+          "end": 40.083,
+          "duration": 0.565,
+          "frame_ahead_trigger": 40.078
+        },
+        {
+          "word": "Without",
+          "clean_word": "without",
+          "phonemes": "w\u026a\u00f0\u02c8a\u028at",
+          "start": 40.083,
+          "end": 40.411,
+          "duration": 0.329,
+          "frame_ahead_trigger": 40.643
+        },
+        {
+          "word": "training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 40.411,
+          "end": 40.903,
+          "duration": 0.491,
+          "frame_ahead_trigger": 40.971
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 40.903,
+          "end": 40.993,
+          "duration": 0.09,
+          "frame_ahead_trigger": 41.463
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 40.993,
+          "end": 41.168,
+          "duration": 0.175,
+          "frame_ahead_trigger": 41.553
+        },
+        {
+          "word": "single",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 41.168,
+          "end": 41.533,
+          "duration": 0.365,
+          "frame_ahead_trigger": 41.728
+        },
+        {
+          "word": "one",
+          "clean_word": "one",
+          "phonemes": "w\u02cc\u028cn",
+          "start": 41.533,
+          "end": 41.723,
+          "duration": 0.19,
+          "frame_ahead_trigger": 42.093
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 41.723,
+          "end": 41.883,
+          "duration": 0.16,
+          "frame_ahead_trigger": 42.283
+        },
+        {
+          "word": "its",
+          "clean_word": "its",
+          "phonemes": "\u026ats",
+          "start": 41.883,
+          "end": 42.113,
+          "duration": 0.23,
+          "frame_ahead_trigger": 42.443
+        },
+        {
+          "word": "1.28",
+          "clean_word": "128",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad tw\u02c8\u025bnti \u02c8e\u026at",
+          "start": 42.113,
+          "end": 43.388,
+          "duration": 1.275,
+          "frame_ahead_trigger": 42.673
+        },
+        {
+          "word": "million",
+          "clean_word": "million",
+          "phonemes": "m\u02c8\u026ali\u0259n",
+          "start": 43.388,
+          "end": 43.853,
+          "duration": 0.465,
+          "frame_ahead_trigger": 43.948
+        },
+        {
+          "word": "examples.",
+          "clean_word": "examples",
+          "phonemes": "\u025b\u0261z\u02c8\u00e6mp\u0259lz",
+          "start": 43.853,
+          "end": 44.403,
+          "duration": 0.55,
+          "frame_ahead_trigger": 44.413
+        }
+      ],
+      "audio_duration": 8.96,
+      "slot_duration": 9.11
+    },
+    {
+      "beat_id": 6,
+      "text": "Language became a zero-shot steering wheel for visual perception. Follow machinoAI for daily technical deep-dives into modern AI architectures.",
+      "visual_focus": "Text prompts dynamically querying and steering visual embeddings across OCR, geo-localization, and classification spaces, looping cleanly.",
+      "highlight_words": {
+        "steering wheel": "#10B981",
+        "machinoAI": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "natural language",
+        "action_verb": "steers",
+        "direct_object": "multimodal embeddings",
+        "anchor_word": "steering",
+        "semantic_role": "causal_intervention"
+      },
+      "visual_blueprint": {
+        "layout": "projection_rays",
+        "title": "UNIVERSAL ZERO-SHOT TRANSFER",
+        "sub": "Prompting visual features across OCR, detection, and geo-localization",
+        "accent_color": "#10B981",
+        "params": {
+          "source_node": "Text Prompt Prompting",
+          "target_domains": [
+            "ImageNet",
+            "OCR",
+            "Action Recognition",
+            "Geo-Localization"
+          ]
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 44.63,
+      "end": 53.53,
+      "duration": 8.9,
+      "word_timings": [
+        {
+          "word": "Language",
+          "clean_word": "language",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292",
+          "start": 44.643,
+          "end": 45.198,
+          "duration": 0.555,
+          "frame_ahead_trigger": 45.353
+        },
+        {
+          "word": "became",
+          "clean_word": "became",
+          "phonemes": "b\u026ak\u02c8e\u026am",
+          "start": 45.198,
+          "end": 45.688,
+          "duration": 0.49,
+          "frame_ahead_trigger": 45.908
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 45.688,
+          "end": 45.763,
+          "duration": 0.075,
+          "frame_ahead_trigger": 46.398
+        },
+        {
+          "word": "zero-shot",
+          "clean_word": "zeroshot",
+          "phonemes": "z\u02c8i\u0259\u0279\u0259\u0283\u02cc\u0251\u02d0t",
+          "start": 45.763,
+          "end": 46.458,
+          "duration": 0.695,
+          "frame_ahead_trigger": 46.473
+        },
+        {
+          "word": "steering",
+          "clean_word": "steering",
+          "phonemes": "st\u02c8\u026a\u0279\u026a\u014b",
+          "start": 46.458,
+          "end": 46.953,
+          "duration": 0.495,
+          "frame_ahead_trigger": 47.168
+        },
+        {
+          "word": "wheel",
+          "clean_word": "wheel",
+          "phonemes": "w\u02c8i\u02d0l",
+          "start": 46.953,
+          "end": 47.243,
+          "duration": 0.29,
+          "frame_ahead_trigger": 47.663
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 47.243,
+          "end": 47.423,
+          "duration": 0.18,
+          "frame_ahead_trigger": 47.953
+        },
+        {
+          "word": "visual",
+          "clean_word": "visual",
+          "phonemes": "v\u02c8\u026a\u0292u\u02d0\u0259l",
+          "start": 47.423,
+          "end": 47.905,
+          "duration": 0.482,
+          "frame_ahead_trigger": 48.133
+        },
+        {
+          "word": "perception.",
+          "clean_word": "perception",
+          "phonemes": "p\u025as\u02c8\u025bp\u0283\u0259n",
+          "start": 47.905,
+          "end": 48.533,
+          "duration": 0.628,
+          "frame_ahead_trigger": 48.615
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 48.533,
+          "end": 48.838,
+          "duration": 0.305,
+          "frame_ahead_trigger": 49.243
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 48.838,
+          "end": 49.838,
+          "duration": 1.0,
+          "frame_ahead_trigger": 49.548
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 49.838,
+          "end": 50.143,
+          "duration": 0.305,
+          "frame_ahead_trigger": 50.548
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 50.143,
+          "end": 50.448,
+          "duration": 0.305,
+          "frame_ahead_trigger": 50.853
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 50.448,
+          "end": 50.968,
+          "duration": 0.52,
+          "frame_ahead_trigger": 51.158
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 50.968,
+          "end": 51.528,
+          "duration": 0.56,
+          "frame_ahead_trigger": 51.678
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 51.528,
+          "end": 51.793,
+          "duration": 0.265,
+          "frame_ahead_trigger": 52.238
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 51.793,
+          "end": 52.223,
+          "duration": 0.43,
+          "frame_ahead_trigger": 52.503
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 52.223,
+          "end": 52.703,
+          "duration": 0.48,
+          "frame_ahead_trigger": 52.933
+        },
+        {
+          "word": "architectures.",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 52.703,
+          "end": 53.463,
+          "duration": 0.76,
+          "frame_ahead_trigger": 53.413
+        }
+      ],
+      "audio_duration": 8.9,
+      "slot_duration": 8.9
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$N = 400 \\times 10^6$",
+      "filename": "clip_steering_engine_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "N",
+          "label": "Total Image-Text Pairs"
+        }
+      ],
+      "svg_filename": "clip_steering_engine_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(N_{\\mathrm{labels}})$",
+      "filename": "clip_steering_engine_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "N_{\\mathrm{labels}}",
+          "label": "Fixed Class Set"
+        }
+      ],
+      "svg_filename": "clip_steering_engine_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathrm{sim}(I, T) = \\frac{v_I^T v_T}{\\|v_I\\| \\|v_T\\|}$",
+      "filename": "clip_steering_engine_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "v_I, v_T",
+          "label": "Visual and Text Vectors"
+        }
+      ],
+      "svg_filename": "clip_steering_engine_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\nabla_x \\mathcal{L} \\approx \\mathrm{proj}_{\\mathrm{CLIP}}(t)$",
+      "filename": "clip_steering_engine_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "\\mathrm{proj}",
+          "label": "Textual Steering Projection"
+        }
+      ],
+      "svg_filename": "clip_steering_engine_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$A_{\\mathrm{zero}} \\approx A_{\\mathrm{ResNet50}}$",
+      "filename": "clip_steering_engine_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "A",
+          "label": "Top-1 Classification Accuracy"
+        }
+      ],
+      "svg_filename": "clip_steering_engine_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "semantic_clusters",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "IMAGE_EMBEDDING",
+          "color": "#38BDF8",
+          "items": [
+            "pixels",
+            "features",
+            "vision"
+          ]
+        },
+        {
+          "name": "TEXT_EMBEDDING",
+          "color": "#10B981",
+          "items": [
+            "captions",
+            "tokens",
+            "language"
+          ]
+        },
+        {
+          "name": "SHARED_LATENT",
+          "color": "#F59E0B",
+          "items": [
+            "cosine",
+            "alignment",
+            "space"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"dog\"",
+        "target_cluster": "TEXT_EMBEDDING",
+        "token": "\"dog\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'Class'",
+          "color": "#EF4444"
+        }
+      ]
+    },
+    "model_a": "CLIP",
+    "model_a_specs": [
+      "400 Million Pairs",
+      "Contrastive Learning",
+      "Zero-Shot Transfer"
+    ],
+    "model_b": "ResNet-50",
+    "model_b_specs": [
+      "Supervised Learning",
+      "1.28 Million Images",
+      "Fixed Class Set"
+    ],
+    "divide_title": "ZERO-SHOT VS SUPERVISED",
+    "efficiency_badge": "400M PAIRS",
+    "benchmarks": [
+      {
+        "name": "ImageNet",
+        "score_a": "Matches ResNet-50",
+        "score_b": "Baseline"
+      }
+    ],
+    "bottleneck_title": "SUPERVISION BOTTLENECK",
+    "bottleneck_desc": "Static category labels restrict visual model generality.",
+    "solution_title": "CONTRASTIVE ALIGNMENT",
+    "solution_components": "Image-Text Cosine Similarity Space",
+    "mechanism_title": "LATENT STEERING",
+    "payoff_label": "ZERO-SHOT EQUIVALENCE",
+    "payoff_sub": "Matching supervised benchmarks without task-specific training",
+    "payoff_hero_stat": 1,
+    "payoff_hero_label": "CLIP",
+    "payoff_base_stat": 1,
+    "payoff_base_label": "ResNet-50",
+    "payoff_delta_badge": "0% TRAINING LABELS",
+    "challenger": "CLIP",
+    "incumbent": "ResNet-50"
+  },
+  "benchmark_comparison": {
+    "title": "IMAGENET ZERO-SHOT SHOWDOWN",
+    "metric_name": "Accuracy",
+    "unit": "ratio",
+    "contestants": [
+      {
+        "name": "CLIP",
+        "value": 1.0,
+        "display_val": "1.0",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "ResNet-50",
+        "value": 1.0,
+        "display_val": "1.0",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "0% LABELS USED",
+    "radar_axes": [
+      "Accuracy",
+      "Transferability",
+      "Supervision"
+    ]
+  },
+  "script_provider": "gemini",
+  "quality_flags": {
+    "scrubbed_fields": [
+      "metadata.scale_metric"
+    ],
+    "ungrounded_narration_numbers": [],
+    "leaked_example_values": [],
+    "grounding_source_chars": 1990
+  },
+  "arxiv_id": "2103.00020",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "fs-clip-vs-imagenet-robustness-plot",
+      "caption": "Fs-Clip-Vs-Imagenet-Robustness-Plot",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/fs-clip-vs-imagenet-robustness-plot.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_fs-clip-vs-imagenet-robustness-plot.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_fs-clip-vs-imagenet-robustness-plot.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "zs-clip-vs-imagenet-robustness-datasets",
+      "caption": "Zs-Clip-Vs-Imagenet-Robustness-Datasets",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/zs-clip-vs-imagenet-robustness-datasets.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_2_zs-clip-vs-imagenet-robustness-datasets.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_2_zs-clip-vs-imagenet-robustness-datasets.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "main-diagrams",
+      "caption": "Main-Diagrams",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/main-diagrams.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_3_main-diagrams.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_3_main-diagrams.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "zs-clip-vs-imagenet-robustness-plot",
+      "caption": "Zs-Clip-Vs-Imagenet-Robustness-Plot",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/zs-clip-vs-imagenet-robustness-plot.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_4_zs-clip-vs-imagenet-robustness-plot.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_4_zs-clip-vs-imagenet-robustness-plot.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "zs-clip-vs-rn50",
+      "caption": "Zs-Clip-Vs-Rn50",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/zs-clip-vs-rn50.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_5_zs-clip-vs-rn50.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_5_zs-clip-vs-rn50.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 8.5,
+    "final_retention_hook_score": 9.0,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Approved! Clear real-world developer terms and intuitive physical analogy."
+  },
+  "hook_gating": {
+    "selected_hook": "Classic computer vision models instantly fall apart the moment an image falls outside their rigid thousand-label checklist.",
+    "verdict": 34,
+    "band": "WEAK",
+    "formula": "Unclassified",
+    "properties": {
+      "SPECIFICITY": 34,
+      "ADDRESS": 26,
+      "STAKES": 22,
+      "CURIOSITY": 24,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "CLIP",
+        "model_a_score": "95%",
+        "model_b_name": "ResNet-50",
+        "model_b_score": "45%",
+        "delta_label": "400M PAIRS"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "publish_gate": {
+    "decision": "publish",
+    "reasons": [],
+    "warnings": [
+      "No vision model audited the keyframes (scores are heuristic placeholders).",
+      "Script critic: \u274c REJECTED: Script overall score 7.3/10 is below threshold 8.0."
+    ],
+    "action": {
+      "youtube_upload": true,
+      "privacy": "public",
+      "cross_post": true,
+      "mode": "private"
+    }
+  },
+  "youtube_upload": {
+    "video_id": "6O7SqwaufbI",
+    "shorts_url": "https://youtube.com/shorts/6O7SqwaufbI",
+    "studio_url": "https://studio.youtube.com/video/6O7SqwaufbI/edit",
+    "title": "CLIP Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/clip_steering_engine_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
