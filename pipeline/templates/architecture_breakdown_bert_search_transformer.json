@@ -1,0 +1,1732 @@
+{
+  "id": "bert_search_transformer",
+  "title": "BERT: The Bidirectional Search Engine Rewrite",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "neural_attention",
+  "hook_tag": "SEARCH ARCHITECTURE BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Before BERT. Language models read sentences like horses wearing blinders. They only looked backwards.",
+      "visual_focus": "A linear sentence where tokens ahead of the cursor are locked behind a dense black barrier.",
+      "highlight_words": {
+        "horses wearing blinders": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "language models",
+        "action_verb": "read",
+        "direct_object": "backward context",
+        "anchor_word": "blinders",
+        "semantic_role": "structural_flaw"
+      },
+      "visual_blueprint": {
+        "layout": "attention_prism_refraction",
+        "title": "UNIDIRECTIONAL TUNNEL VISION",
+        "sub": "Standard models could only process tokens sequentially from left to right",
+        "accent_color": "#EF4444",
+        "params": {
+          "token_label": "Search Query Words",
+          "matrix_title": "Legacy Embedding Space"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 42,
+      "hook_band": "WEAK",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "attention_prism_refraction",
+        "title": "UNIDIRECTIONAL TUNNEL VISION",
+        "sub": "Standard models could only process tokens sequentially from left",
+        "accent_color": "#EF4444",
+        "token_label": "Search Query Words",
+        "matrix_title": "Legacy Embedding Space"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.76,
+      "duration": 5.76,
+      "word_timings": [
+        {
+          "word": "Before",
+          "clean_word": "before",
+          "phonemes": "b\u1d7bf\u02c8\u0254\u02d0\u0279",
+          "start": 0.015,
+          "end": 0.355,
+          "duration": 0.34,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "BERT.",
+          "clean_word": "bert",
+          "phonemes": "b\u02c8\u025c\u02d0t",
+          "start": 0.355,
+          "end": 0.738,
+          "duration": 0.383,
+          "frame_ahead_trigger": 0.315
+        },
+        {
+          "word": "Language",
+          "clean_word": "language",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292",
+          "start": 0.738,
+          "end": 1.24,
+          "duration": 0.502,
+          "frame_ahead_trigger": 0.698
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 1.24,
+          "end": 1.8,
+          "duration": 0.56,
+          "frame_ahead_trigger": 1.2
+        },
+        {
+          "word": "read",
+          "clean_word": "read",
+          "phonemes": "\u0279\u02c8i\u02d0d",
+          "start": 1.8,
+          "end": 2.02,
+          "duration": 0.22,
+          "frame_ahead_trigger": 1.76
+        },
+        {
+          "word": "sentences",
+          "clean_word": "sentences",
+          "phonemes": "s\u02c8\u025bnt\u0259ns\u1d7bz",
+          "start": 2.02,
+          "end": 2.64,
+          "duration": 0.62,
+          "frame_ahead_trigger": 1.98
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 2.64,
+          "end": 2.915,
+          "duration": 0.275,
+          "frame_ahead_trigger": 2.6
+        },
+        {
+          "word": "horses",
+          "clean_word": "horses",
+          "phonemes": "h\u02c8\u0254\u02d0\u0279s\u1d7bz",
+          "start": 2.915,
+          "end": 3.36,
+          "duration": 0.445,
+          "frame_ahead_trigger": 2.875
+        },
+        {
+          "word": "wearing",
+          "clean_word": "wearing",
+          "phonemes": "w\u02c8\u025b\u0279\u026a\u014b",
+          "start": 3.36,
+          "end": 3.7,
+          "duration": 0.34,
+          "frame_ahead_trigger": 3.32
+        },
+        {
+          "word": "blinders.",
+          "clean_word": "blinders",
+          "phonemes": "bl\u02c8a\u026and\u025az",
+          "start": 3.7,
+          "end": 4.35,
+          "duration": 0.65,
+          "frame_ahead_trigger": 3.66
+        },
+        {
+          "word": "They",
+          "clean_word": "they",
+          "phonemes": "\u00f0e\u026a",
+          "start": 4.35,
+          "end": 4.515,
+          "duration": 0.165,
+          "frame_ahead_trigger": 4.31
+        },
+        {
+          "word": "only",
+          "clean_word": "only",
+          "phonemes": "\u02c8o\u028anli",
+          "start": 4.515,
+          "end": 4.9,
+          "duration": 0.385,
+          "frame_ahead_trigger": 4.475
+        },
+        {
+          "word": "looked",
+          "clean_word": "looked",
+          "phonemes": "l\u02c8\u028akt",
+          "start": 4.9,
+          "end": 5.125,
+          "duration": 0.225,
+          "frame_ahead_trigger": 4.86
+        },
+        {
+          "word": "backwards.",
+          "clean_word": "backwards",
+          "phonemes": "b\u02c8\u00e6kw\u025adz",
+          "start": 5.125,
+          "end": 5.675,
+          "duration": 0.55,
+          "frame_ahead_trigger": 5.085
+        }
+      ],
+      "audio_duration": 5.76,
+      "slot_duration": 5.91
+    },
+    {
+      "beat_id": 2,
+      "text": "Standard models processed text sequentially from left to right. That created massive blind spots. Making true bidirectional context impossible to capture.",
+      "visual_focus": "A unidirectional vector arrow crawling slowly left-to-right, failing to resolve the ambiguous word 'bank'.",
+      "highlight_words": {
+        "massive blind spots": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "sequential processing",
+        "action_verb": "created",
+        "direct_object": "blind spots",
+        "anchor_word": "impossible",
+        "semantic_role": "bottleneck_manifestation"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE CONTEXT BOTTLENECK",
+        "sub": "Left-to-right sequential conditioning starves ambiguous tokens of crucial future clues",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Left Context",
+          "stream_b_label": "Right Context",
+          "barrier_label": "Causal Masking",
+          "barrier_sub": "No backward visibility"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE CONTEXT BOTTLENECK",
+        "sub": "Left-to-right sequential conditioning starves ambiguous tokens",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Left Context",
+        "stream_b_label": "Right Context",
+        "barrier_label": "Causal Masking",
+        "barrier_sub": "No backward visibility"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 5.91,
+      "end": 14.83,
+      "duration": 8.92,
+      "word_timings": [
+        {
+          "word": "Standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 5.99,
+          "end": 6.465,
+          "duration": 0.475,
+          "frame_ahead_trigger": 6.1
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 6.465,
+          "end": 6.89,
+          "duration": 0.425,
+          "frame_ahead_trigger": 6.575
+        },
+        {
+          "word": "processed",
+          "clean_word": "processed",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0s\u025bst",
+          "start": 6.89,
+          "end": 7.48,
+          "duration": 0.59,
+          "frame_ahead_trigger": 7.0
+        },
+        {
+          "word": "text",
+          "clean_word": "text",
+          "phonemes": "t\u02c8\u025bkst",
+          "start": 7.48,
+          "end": 7.695,
+          "duration": 0.215,
+          "frame_ahead_trigger": 7.59
+        },
+        {
+          "word": "sequentially",
+          "clean_word": "sequentially",
+          "phonemes": "si\u02d0kw\u02c8\u025bn\u0283\u0259li",
+          "start": 7.695,
+          "end": 8.545,
+          "duration": 0.85,
+          "frame_ahead_trigger": 7.805
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 8.545,
+          "end": 8.7,
+          "duration": 0.155,
+          "frame_ahead_trigger": 8.655
+        },
+        {
+          "word": "left",
+          "clean_word": "left",
+          "phonemes": "l\u02c8\u025bft",
+          "start": 8.7,
+          "end": 8.996,
+          "duration": 0.296,
+          "frame_ahead_trigger": 8.81
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 8.996,
+          "end": 9.17,
+          "duration": 0.173,
+          "frame_ahead_trigger": 9.106
+        },
+        {
+          "word": "right.",
+          "clean_word": "right",
+          "phonemes": "\u0279\u02c8a\u026at",
+          "start": 9.17,
+          "end": 9.45,
+          "duration": 0.28,
+          "frame_ahead_trigger": 9.28
+        },
+        {
+          "word": "That",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 9.45,
+          "end": 9.765,
+          "duration": 0.315,
+          "frame_ahead_trigger": 9.56
+        },
+        {
+          "word": "created",
+          "clean_word": "created",
+          "phonemes": "k\u0279i\u02d0\u02c8e\u026a\u027e\u1d7bd",
+          "start": 9.765,
+          "end": 10.28,
+          "duration": 0.515,
+          "frame_ahead_trigger": 9.875
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 10.28,
+          "end": 10.5,
+          "duration": 0.22,
+          "frame_ahead_trigger": 10.39
+        },
+        {
+          "word": "blind",
+          "clean_word": "blind",
+          "phonemes": "bl\u02c8a\u026and",
+          "start": 10.5,
+          "end": 10.945,
+          "duration": 0.445,
+          "frame_ahead_trigger": 10.61
+        },
+        {
+          "word": "spots.",
+          "clean_word": "spots",
+          "phonemes": "sp\u02c8\u0251\u02d0ts",
+          "start": 10.945,
+          "end": 11.425,
+          "duration": 0.48,
+          "frame_ahead_trigger": 11.055
+        },
+        {
+          "word": "Making",
+          "clean_word": "making",
+          "phonemes": "m\u02c8e\u026ak\u026a\u014b",
+          "start": 11.425,
+          "end": 11.81,
+          "duration": 0.385,
+          "frame_ahead_trigger": 11.535
+        },
+        {
+          "word": "true",
+          "clean_word": "true",
+          "phonemes": "t\u0279\u02c8u\u02d0",
+          "start": 11.81,
+          "end": 12.055,
+          "duration": 0.245,
+          "frame_ahead_trigger": 11.92
+        },
+        {
+          "word": "bidirectional",
+          "clean_word": "bidirectional",
+          "phonemes": "ba\u026ad\u1d7b\u0279\u02c8\u025bk\u0283\u0259n\u0259l",
+          "start": 12.055,
+          "end": 12.91,
+          "duration": 0.855,
+          "frame_ahead_trigger": 12.165
+        },
+        {
+          "word": "context",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 12.91,
+          "end": 13.47,
+          "duration": 0.56,
+          "frame_ahead_trigger": 13.02
+        },
+        {
+          "word": "impossible",
+          "clean_word": "impossible",
+          "phonemes": "\u026amp\u02c8\u0251\u02d0s\u1d7bb\u0259l",
+          "start": 13.47,
+          "end": 14.175,
+          "duration": 0.705,
+          "frame_ahead_trigger": 13.58
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 14.175,
+          "end": 14.285,
+          "duration": 0.11,
+          "frame_ahead_trigger": 14.285
+        },
+        {
+          "word": "capture.",
+          "clean_word": "capture",
+          "phonemes": "k\u02c8\u00e6pt\u0283\u025a",
+          "start": 14.285,
+          "end": 14.72,
+          "duration": 0.435,
+          "frame_ahead_trigger": 14.395
+        }
+      ],
+      "audio_duration": 8.92,
+      "slot_duration": 9.07
+    },
+    {
+      "beat_id": 3,
+      "text": "BERT shattered this bottleneck. Instead of moving in one direction. It conditions on left and right context simultaneously across all layers.",
+      "visual_focus": "Two opposing light beams collapse into a single dual-directional prism, illuminating the whole sequence at once.",
+      "highlight_words": {
+        "shattered this bottleneck": "#10B981",
+        "simultaneously": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "BERT",
+        "action_verb": "conditions",
+        "direct_object": "bilateral context",
+        "anchor_word": "simultaneously",
+        "semantic_role": "architectural_pivot"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "BERT: FIGURE",
+        "sub": "Two opposing light beams collapse into a single dual-directional",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.png",
+          "arxiv_id": "1810.04805",
+          "title": "BERT: FIGURE",
+          "sub": "Two opposing light beams collapse into a single dual-directional",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Bert Comparisons",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.png",
+        "arxiv_id": "1810.04805",
+        "title": "BERT: FIGURE",
+        "sub": "Two opposing light beams collapse into a single dual-directional",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Bert Comparisons",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 14.98,
+      "end": 22.83,
+      "duration": 7.85,
+      "word_timings": [
+        {
+          "word": "BERT",
+          "clean_word": "bert",
+          "phonemes": "b\u02c8\u025c\u02d0t",
+          "start": 14.982,
+          "end": 15.282,
+          "duration": 0.3,
+          "frame_ahead_trigger": 15.242
+        },
+        {
+          "word": "shattered",
+          "clean_word": "shattered",
+          "phonemes": "\u0283\u02c8\u00e6\u027e\u025ad",
+          "start": 15.282,
+          "end": 15.622,
+          "duration": 0.34,
+          "frame_ahead_trigger": 15.542
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 15.622,
+          "end": 15.842,
+          "duration": 0.22,
+          "frame_ahead_trigger": 15.882
+        },
+        {
+          "word": "bottleneck.",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 15.842,
+          "end": 16.535,
+          "duration": 0.693,
+          "frame_ahead_trigger": 16.102
+        },
+        {
+          "word": "Instead",
+          "clean_word": "instead",
+          "phonemes": "\u026anst\u02c8\u025bd",
+          "start": 16.535,
+          "end": 16.962,
+          "duration": 0.427,
+          "frame_ahead_trigger": 16.795
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 16.962,
+          "end": 17.042,
+          "duration": 0.08,
+          "frame_ahead_trigger": 17.222
+        },
+        {
+          "word": "moving",
+          "clean_word": "moving",
+          "phonemes": "m\u02c8u\u02d0v\u026a\u014b",
+          "start": 17.042,
+          "end": 17.467,
+          "duration": 0.425,
+          "frame_ahead_trigger": 17.302
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 17.467,
+          "end": 17.652,
+          "duration": 0.185,
+          "frame_ahead_trigger": 17.727
+        },
+        {
+          "word": "one",
+          "clean_word": "one",
+          "phonemes": "w\u02cc\u028cn",
+          "start": 17.652,
+          "end": 17.902,
+          "duration": 0.25,
+          "frame_ahead_trigger": 17.912
+        },
+        {
+          "word": "direction.",
+          "clean_word": "direction",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bk\u0283\u0259n",
+          "start": 17.902,
+          "end": 18.447,
+          "duration": 0.544,
+          "frame_ahead_trigger": 18.162
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 18.447,
+          "end": 18.587,
+          "duration": 0.141,
+          "frame_ahead_trigger": 18.707
+        },
+        {
+          "word": "conditions",
+          "clean_word": "conditions",
+          "phonemes": "k\u0259nd\u02c8\u026a\u0283\u0259nz",
+          "start": 18.587,
+          "end": 19.182,
+          "duration": 0.595,
+          "frame_ahead_trigger": 18.847
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 19.182,
+          "end": 19.332,
+          "duration": 0.15,
+          "frame_ahead_trigger": 19.442
+        },
+        {
+          "word": "left",
+          "clean_word": "left",
+          "phonemes": "l\u02c8\u025bft",
+          "start": 19.332,
+          "end": 19.702,
+          "duration": 0.37,
+          "frame_ahead_trigger": 19.592
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 19.702,
+          "end": 19.812,
+          "duration": 0.11,
+          "frame_ahead_trigger": 19.962
+        },
+        {
+          "word": "right",
+          "clean_word": "right",
+          "phonemes": "\u0279\u02c8a\u026at",
+          "start": 19.812,
+          "end": 20.132,
+          "duration": 0.32,
+          "frame_ahead_trigger": 20.072
+        },
+        {
+          "word": "context",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 20.132,
+          "end": 20.697,
+          "duration": 0.565,
+          "frame_ahead_trigger": 20.392
+        },
+        {
+          "word": "simultaneously",
+          "clean_word": "simultaneously",
+          "phonemes": "s\u02cca\u026am\u0259lt\u02c8e\u026ani\u0259sli",
+          "start": 20.697,
+          "end": 21.812,
+          "duration": 1.115,
+          "frame_ahead_trigger": 20.957
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 21.812,
+          "end": 22.072,
+          "duration": 0.26,
+          "frame_ahead_trigger": 22.072
+        },
+        {
+          "word": "all",
+          "clean_word": "all",
+          "phonemes": "\u02c8\u0254\u02d0l",
+          "start": 22.072,
+          "end": 22.322,
+          "duration": 0.25,
+          "frame_ahead_trigger": 22.332
+        },
+        {
+          "word": "layers.",
+          "clean_word": "layers",
+          "phonemes": "l\u02c8e\u026a\u025az",
+          "start": 22.322,
+          "end": 22.747,
+          "duration": 0.425,
+          "frame_ahead_trigger": 22.582
+        }
+      ],
+      "audio_duration": 7.85,
+      "slot_duration": 8.0
+    },
+    {
+      "beat_id": 4,
+      "text": "By masking random words in the input. BERT forces the neural transformer to predict missing tokens using entire panoramic sentences.",
+      "visual_focus": "A token tile flips to reveal a '[MASK]' badge, while surrounding tokens send attention rays to reconstruct it.",
+      "highlight_words": {
+        "masking random words": "#F59E0B",
+        "panoramic sentences": "#10B981"
+      },
+      "svo_action": {
+        "subject": "BERT",
+        "action_verb": "predicts",
+        "direct_object": "masked tokens",
+        "anchor_word": "panoramic",
+        "semantic_role": "mechanism_execution"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "MASKED LANGUAGE MODELING",
+        "sub": "15% of tokens are masked, forcing the network to fuse 360-degree context",
+        "accent_color": "#F59E0B",
+        "params": {
+          "input_1_label": "Layer 12 Output",
+          "input_2_label": "CLS Token",
+          "input_3_label": "Fine-tuning weights",
+          "fused_label": "Task Representation"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "convergence_funnel",
+        "title": "MASKED LANGUAGE MODELING",
+        "sub": "15% of tokens are masked, forcing the network to fuse 360-degree",
+        "accent_color": "#F59E0B",
+        "input_1_label": "Layer 12 Output",
+        "input_2_label": "CLS Token",
+        "input_3_label": "Fine-tuning weights",
+        "fused_label": "Task Representation"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 22.98,
+      "end": 30.94,
+      "duration": 7.96,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 22.988,
+          "end": 23.298,
+          "duration": 0.31,
+          "frame_ahead_trigger": 23.398
+        },
+        {
+          "word": "masking",
+          "clean_word": "masking",
+          "phonemes": "m\u02c8\u00e6sk\u026a\u014b",
+          "start": 23.298,
+          "end": 23.573,
+          "duration": 0.275,
+          "frame_ahead_trigger": 23.708
+        },
+        {
+          "word": "random",
+          "clean_word": "random",
+          "phonemes": "\u0279\u02c8\u00e6nd\u0259m",
+          "start": 23.573,
+          "end": 23.998,
+          "duration": 0.425,
+          "frame_ahead_trigger": 23.983
+        },
+        {
+          "word": "words",
+          "clean_word": "words",
+          "phonemes": "w\u02c8\u025c\u02d0dz",
+          "start": 23.998,
+          "end": 24.448,
+          "duration": 0.45,
+          "frame_ahead_trigger": 24.408
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 24.448,
+          "end": 24.598,
+          "duration": 0.15,
+          "frame_ahead_trigger": 24.858
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 24.598,
+          "end": 24.788,
+          "duration": 0.19,
+          "frame_ahead_trigger": 25.008
+        },
+        {
+          "word": "input.",
+          "clean_word": "input",
+          "phonemes": "\u02c8\u026anp\u028at",
+          "start": 24.788,
+          "end": 25.125,
+          "duration": 0.337,
+          "frame_ahead_trigger": 25.198
+        },
+        {
+          "word": "BERT",
+          "clean_word": "bert",
+          "phonemes": "b\u02c8\u025c\u02d0t",
+          "start": 25.125,
+          "end": 25.478,
+          "duration": 0.353,
+          "frame_ahead_trigger": 25.535
+        },
+        {
+          "word": "forces",
+          "clean_word": "forces",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u1d7bz",
+          "start": 25.478,
+          "end": 25.943,
+          "duration": 0.465,
+          "frame_ahead_trigger": 25.888
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 25.943,
+          "end": 26.04,
+          "duration": 0.097,
+          "frame_ahead_trigger": 26.353
+        },
+        {
+          "word": "neural",
+          "clean_word": "neural",
+          "phonemes": "n\u02c8\u028a\u0279\u0279\u0259l",
+          "start": 26.04,
+          "end": 26.443,
+          "duration": 0.403,
+          "frame_ahead_trigger": 26.45
+        },
+        {
+          "word": "transformer",
+          "clean_word": "transformer",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279m\u025a",
+          "start": 26.443,
+          "end": 27.263,
+          "duration": 0.82,
+          "frame_ahead_trigger": 26.853
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 27.263,
+          "end": 27.388,
+          "duration": 0.125,
+          "frame_ahead_trigger": 27.673
+        },
+        {
+          "word": "predict",
+          "clean_word": "predict",
+          "phonemes": "p\u0279\u026ad\u02c8\u026akt",
+          "start": 27.388,
+          "end": 27.863,
+          "duration": 0.475,
+          "frame_ahead_trigger": 27.798
+        },
+        {
+          "word": "missing",
+          "clean_word": "missing",
+          "phonemes": "m\u02c8\u026as\u026a\u014b",
+          "start": 27.863,
+          "end": 28.303,
+          "duration": 0.44,
+          "frame_ahead_trigger": 28.273
+        },
+        {
+          "word": "tokens",
+          "clean_word": "tokens",
+          "phonemes": "t\u02c8o\u028ak\u0259nz",
+          "start": 28.303,
+          "end": 28.733,
+          "duration": 0.43,
+          "frame_ahead_trigger": 28.713
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 28.733,
+          "end": 29.183,
+          "duration": 0.45,
+          "frame_ahead_trigger": 29.143
+        },
+        {
+          "word": "entire",
+          "clean_word": "entire",
+          "phonemes": "\u025bnt\u02c8a\u026a\u025a",
+          "start": 29.183,
+          "end": 29.568,
+          "duration": 0.385,
+          "frame_ahead_trigger": 29.593
+        },
+        {
+          "word": "panoramic",
+          "clean_word": "panoramic",
+          "phonemes": "p\u02cc\u00e6n\u025a\u0279\u02c8\u00e6m\u026ak",
+          "start": 29.568,
+          "end": 30.263,
+          "duration": 0.695,
+          "frame_ahead_trigger": 29.978
+        },
+        {
+          "word": "sentences.",
+          "clean_word": "sentences",
+          "phonemes": "s\u02c8\u025bnt\u0259ns\u1d7bz",
+          "start": 30.263,
+          "end": 30.863,
+          "duration": 0.6,
+          "frame_ahead_trigger": 30.673
+        }
+      ],
+      "audio_duration": 7.96,
+      "slot_duration": 8.11
+    },
+    {
+      "beat_id": 5,
+      "text": "The payoff was instant. BERT swept eleven benchmarks. Hitting a record ninety-three point two F1 score on SQuAD question answering.",
+      "visual_focus": "Horizontal race bar surges past the state-of-the-art threshold to 93.2 on SQuAD v1.1.",
+      "highlight_words": {
+        "swept eleven benchmarks": "#10B981",
+        "ninety-three point two": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "BERT",
+        "action_verb": "swept",
+        "direct_object": "eleven benchmarks",
+        "anchor_word": "record",
+        "semantic_role": "empirical_validation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: \\MULTICOLUMN2CDEV",
+        "sub": "Horizontal race bar surges past the",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: \\MULTICOLUMN2CDEV",
+          "sub": "Horizontal race bar surges past the",
+          "metric_name": "\\multicolumn2cDev",
+          "unit": "",
+          "contestants": [
+            {
+              "name": "\\bertlarge (Ens.+TriviaQ",
+              "value": 86.2,
+              "display_val": "86.2",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "\\bertlarge (Ensemble)",
+              "value": 85.8,
+              "display_val": "85.8",
+              "is_hero": false,
+              "color": "#A855F7"
+            },
+            {
+              "name": "\\bertlarge (Sgl.+TriviaQ",
+              "value": 84.2,
+              "display_val": "84.2",
+              "is_hero": false,
+              "color": "#EF4444"
+            },
+            {
+              "name": "\\bertlarge (Single)",
+              "value": 84.1,
+              "display_val": "84.1",
+              "is_hero": false,
+              "color": "#F59E0B"
+            }
+          ],
+          "delta_badge": "\u26a1 +0.5% OVER \\BERTLARGE (ENSE"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: \\MULTICOLUMN2CDEV",
+        "sub": "Horizontal race bar surges past the",
+        "metric_name": "\\multicolumn2cDev",
+        "unit": "",
+        "contestants": [
+          {
+            "name": "\\bertlarge (Ens.+TriviaQ",
+            "value": 86.2,
+            "display_val": "86.2",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "\\bertlarge (Ensemble)",
+            "value": 85.8,
+            "display_val": "85.8",
+            "is_hero": false,
+            "color": "#A855F7"
+          },
+          {
+            "name": "\\bertlarge (Sgl.+TriviaQ",
+            "value": 84.2,
+            "display_val": "84.2",
+            "is_hero": false,
+            "color": "#EF4444"
+          },
+          {
+            "name": "\\bertlarge (Single)",
+            "value": 84.1,
+            "display_val": "84.1",
+            "is_hero": false,
+            "color": "#F59E0B"
+          }
+        ],
+        "delta_badge": "\u26a1 +0.5% OVER \\BERTLARGE (ENSE"
+      },
+      "start": 31.09,
+      "end": 38.89,
+      "duration": 7.81,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 31.095,
+          "end": 31.17,
+          "duration": 0.075,
+          "frame_ahead_trigger": 31.655
+        },
+        {
+          "word": "payoff",
+          "clean_word": "payoff",
+          "phonemes": "p\u02c8e\u026a\u0254f",
+          "start": 31.17,
+          "end": 31.55,
+          "duration": 0.38,
+          "frame_ahead_trigger": 31.73
+        },
+        {
+          "word": "was",
+          "clean_word": "was",
+          "phonemes": "w\u028cz",
+          "start": 31.55,
+          "end": 31.74,
+          "duration": 0.19,
+          "frame_ahead_trigger": 32.11
+        },
+        {
+          "word": "instant.",
+          "clean_word": "instant",
+          "phonemes": "\u02c8\u026anst\u0259nt",
+          "start": 31.74,
+          "end": 32.226,
+          "duration": 0.485,
+          "frame_ahead_trigger": 32.3
+        },
+        {
+          "word": "BERT",
+          "clean_word": "bert",
+          "phonemes": "b\u02c8\u025c\u02d0t",
+          "start": 32.226,
+          "end": 32.523,
+          "duration": 0.297,
+          "frame_ahead_trigger": 32.786
+        },
+        {
+          "word": "swept",
+          "clean_word": "swept",
+          "phonemes": "sw\u02c8\u025bpt",
+          "start": 32.523,
+          "end": 32.885,
+          "duration": 0.362,
+          "frame_ahead_trigger": 33.083
+        },
+        {
+          "word": "eleven",
+          "clean_word": "eleven",
+          "phonemes": "\u1d7bl\u02c8\u025bv\u0259n",
+          "start": 32.885,
+          "end": 33.31,
+          "duration": 0.425,
+          "frame_ahead_trigger": 33.445
+        },
+        {
+          "word": "benchmarks.",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 33.31,
+          "end": 33.895,
+          "duration": 0.585,
+          "frame_ahead_trigger": 33.87
+        },
+        {
+          "word": "Hitting",
+          "clean_word": "hitting",
+          "phonemes": "h\u02c8\u026a\u027e\u026a\u014b",
+          "start": 33.895,
+          "end": 34.368,
+          "duration": 0.472,
+          "frame_ahead_trigger": 34.455
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 34.368,
+          "end": 34.575,
+          "duration": 0.208,
+          "frame_ahead_trigger": 34.928
+        },
+        {
+          "word": "record",
+          "clean_word": "record",
+          "phonemes": "\u0279\u02c8\u025bk\u025ad",
+          "start": 34.575,
+          "end": 34.855,
+          "duration": 0.28,
+          "frame_ahead_trigger": 35.135
+        },
+        {
+          "word": "ninety-three",
+          "clean_word": "ninetythree",
+          "phonemes": "n\u02c8a\u026ant\u026a\u03b8\u0279\u02cci\u02d0",
+          "start": 34.855,
+          "end": 35.53,
+          "duration": 0.675,
+          "frame_ahead_trigger": 35.415
+        },
+        {
+          "word": "point",
+          "clean_word": "point",
+          "phonemes": "p\u02c8\u0254\u026ant",
+          "start": 35.53,
+          "end": 36.07,
+          "duration": 0.54,
+          "frame_ahead_trigger": 36.09
+        },
+        {
+          "word": "two",
+          "clean_word": "two",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 36.07,
+          "end": 36.215,
+          "duration": 0.145,
+          "frame_ahead_trigger": 36.63
+        },
+        {
+          "word": "F1",
+          "clean_word": "f1",
+          "phonemes": "\u02c8\u025bf w\u02c8\u028cn",
+          "start": 36.215,
+          "end": 36.655,
+          "duration": 0.44,
+          "frame_ahead_trigger": 36.775
+        },
+        {
+          "word": "score",
+          "clean_word": "score",
+          "phonemes": "sk\u02c8\u0254\u02d0\u0279",
+          "start": 36.655,
+          "end": 37.135,
+          "duration": 0.48,
+          "frame_ahead_trigger": 37.215
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 37.135,
+          "end": 37.223,
+          "duration": 0.088,
+          "frame_ahead_trigger": 37.695
+        },
+        {
+          "word": "SQuAD",
+          "clean_word": "squad",
+          "phonemes": "\u02c8\u025bs k \u02c8\u00e6d",
+          "start": 37.223,
+          "end": 37.805,
+          "duration": 0.582,
+          "frame_ahead_trigger": 37.783
+        },
+        {
+          "word": "question",
+          "clean_word": "question",
+          "phonemes": "kw\u02c8\u025bst\u0283\u0259n",
+          "start": 37.805,
+          "end": 38.275,
+          "duration": 0.47,
+          "frame_ahead_trigger": 38.365
+        },
+        {
+          "word": "answering.",
+          "clean_word": "answering",
+          "phonemes": "\u02c8\u00e6ns\u025a\u0279\u026a\u014b",
+          "start": 38.275,
+          "end": 38.77,
+          "duration": 0.495,
+          "frame_ahead_trigger": 38.835
+        }
+      ],
+      "audio_duration": 7.81,
+      "slot_duration": 7.95
+    },
+    {
+      "beat_id": 6,
+      "text": "A single output layer replaced customized architectures. Follow machinoAI for daily breakdowns of how modern AI works under the hood.",
+      "visual_focus": "A unified BERT backbone effortlessly snapping onto classification, QA, and inference heads, then looping back to the title card.",
+      "highlight_words": {
+        "single output layer": "#10B981",
+        "machinoAI": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "output layer",
+        "action_verb": "replaced",
+        "direct_object": "customized architectures",
+        "anchor_word": "machinoAI",
+        "semantic_role": "paradigm_shift"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "UNIVERSAL FINE-TUNING",
+        "sub": "One pre-trained bidirectional core powers every downstream NLP task",
+        "accent_color": "#38BDF8",
+        "params": {
+          "root_label": "BERT Architecture",
+          "optimal_label": "Deep Bidirectional Context",
+          "pruned_label": "Isolated Token Blindness"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 39.04,
+      "end": 47.24,
+      "duration": 8.19,
+      "word_timings": [
+        {
+          "word": "A",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 39.053,
+          "end": 39.243,
+          "duration": 0.19,
+          "frame_ahead_trigger": 39.763
+        },
+        {
+          "word": "single",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 39.243,
+          "end": 39.698,
+          "duration": 0.455,
+          "frame_ahead_trigger": 39.953
+        },
+        {
+          "word": "output",
+          "clean_word": "output",
+          "phonemes": "\u02c8a\u028atp\u028at",
+          "start": 39.698,
+          "end": 40.043,
+          "duration": 0.345,
+          "frame_ahead_trigger": 40.408
+        },
+        {
+          "word": "layer",
+          "clean_word": "layer",
+          "phonemes": "l\u02c8e\u026a\u025a",
+          "start": 40.043,
+          "end": 40.273,
+          "duration": 0.23,
+          "frame_ahead_trigger": 40.753
+        },
+        {
+          "word": "replaced",
+          "clean_word": "replaced",
+          "phonemes": "\u0279\u1d7bpl\u02c8e\u026ast",
+          "start": 40.273,
+          "end": 40.873,
+          "duration": 0.6,
+          "frame_ahead_trigger": 40.983
+        },
+        {
+          "word": "customized",
+          "clean_word": "customized",
+          "phonemes": "k\u02c8\u028cst\u0259m\u02cca\u026azd",
+          "start": 40.873,
+          "end": 41.553,
+          "duration": 0.68,
+          "frame_ahead_trigger": 41.583
+        },
+        {
+          "word": "architectures.",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 41.553,
+          "end": 42.398,
+          "duration": 0.845,
+          "frame_ahead_trigger": 42.263
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 42.398,
+          "end": 42.838,
+          "duration": 0.44,
+          "frame_ahead_trigger": 43.108
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 42.838,
+          "end": 43.748,
+          "duration": 0.91,
+          "frame_ahead_trigger": 43.548
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 43.748,
+          "end": 44.048,
+          "duration": 0.3,
+          "frame_ahead_trigger": 44.458
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 44.048,
+          "end": 44.393,
+          "duration": 0.345,
+          "frame_ahead_trigger": 44.758
+        },
+        {
+          "word": "breakdowns",
+          "clean_word": "breakdowns",
+          "phonemes": "b\u0279\u02c8e\u026akda\u028anz",
+          "start": 44.393,
+          "end": 44.933,
+          "duration": 0.54,
+          "frame_ahead_trigger": 45.103
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 44.933,
+          "end": 45.113,
+          "duration": 0.18,
+          "frame_ahead_trigger": 45.643
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 45.113,
+          "end": 45.428,
+          "duration": 0.315,
+          "frame_ahead_trigger": 45.823
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 45.428,
+          "end": 45.688,
+          "duration": 0.26,
+          "frame_ahead_trigger": 46.138
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 45.688,
+          "end": 46.038,
+          "duration": 0.35,
+          "frame_ahead_trigger": 46.398
+        },
+        {
+          "word": "works",
+          "clean_word": "works",
+          "phonemes": "w\u02c8\u025c\u02d0ks",
+          "start": 46.038,
+          "end": 46.393,
+          "duration": 0.355,
+          "frame_ahead_trigger": 46.748
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 46.393,
+          "end": 46.798,
+          "duration": 0.405,
+          "frame_ahead_trigger": 47.103
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 46.798,
+          "end": 46.908,
+          "duration": 0.11,
+          "frame_ahead_trigger": 47.508
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 46.908,
+          "end": 47.093,
+          "duration": 0.185,
+          "frame_ahead_trigger": 47.618
+        }
+      ],
+      "audio_duration": 8.19,
+      "slot_duration": 8.2
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$Q = \\{t_1, t_2, \\dots, t_n\\}$",
+      "filename": "bert_search_transformer_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "Q",
+          "label": "Query Tokens"
+        },
+        {
+          "term": "t_n",
+          "label": "Isolated Token"
+        }
+      ],
+      "svg_filename": "bert_search_transformer_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(L_{unidir}) < \\mathcal{O}(L_{bidir})$",
+      "filename": "bert_search_transformer_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "L_{unidir}",
+          "label": "Unidirectional Context Loss"
+        }
+      ],
+      "svg_filename": "bert_search_transformer_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{h}_{i} = \\mathrm{Attn}(\\mathbf{x}_{i \\in \\{1 \\dots n\\}})$",
+      "filename": "bert_search_transformer_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\mathbf{h}_{i}",
+          "label": "Bidirectional Representation"
+        },
+        {
+          "term": "\\mathrm{Attn}",
+          "label": "Multi-layer Attention"
+        }
+      ],
+      "svg_filename": "bert_search_transformer_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\hat{y} = \\mathrm{Softmax}(W_o \\mathbf{h}_{CLS})$",
+      "filename": "bert_search_transformer_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "W_o",
+          "label": "Output Layer Weights"
+        },
+        {
+          "term": "\\mathbf{h}_{CLS}",
+          "label": "Final Representation"
+        }
+      ],
+      "svg_filename": "bert_search_transformer_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\Delta F1 = F1_{BERT} - F1_{Baseline} = 1.5$",
+      "filename": "bert_search_transformer_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\Delta F1",
+          "label": "Absolute Performance Gain"
+        }
+      ],
+      "svg_filename": "bert_search_transformer_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "attention_flow",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Context",
+          "color": "#38BDF8",
+          "items": [
+            "Left",
+            "Right",
+            "Bidirectional"
+          ]
+        },
+        {
+          "name": "Performance",
+          "color": "#10B981",
+          "items": [
+            "93.2",
+            "86.7",
+            "80.5"
+          ]
+        },
+        {
+          "name": "Layers",
+          "color": "#F59E0B",
+          "items": [
+            "Attention",
+            "Projection",
+            "Embedding"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Search\"",
+        "target_cluster": "Context",
+        "token": "\"Search\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'unidirectional'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'left-to-right'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "BERT",
+    "model_a_specs": [
+      "Bidirectional Encoder",
+      "Transformer Architecture",
+      "Pre-trained Representations"
+    ],
+    "model_b_specs": [],
+    "divide_title": "BIDIRECTIONAL ARCHITECTURE",
+    "model_a_stat": "93.2",
+    "model_a_stat_label": "SQUAD V1.1 F1",
+    "efficiency_badge": "1.5 point gain",
+    "benchmarks": [
+      {
+        "name": "SQuAD v1.1",
+        "score_a": "93.2",
+        "score_b": null
+      }
+    ],
+    "scale_metric": "80.5",
+    "scale_label": "GLUE SCORE",
+    "bottleneck_title": "UNIDIRECTIONAL TUNNEL VISION",
+    "bottleneck_desc": "Fragmented context processing",
+    "solution_title": "DEEP BIDIRECTIONAL ENCODING",
+    "solution_components": "Transformer Attention Layers",
+    "mechanism_title": "JOINT CONTEXT CONDITIONING",
+    "payoff_stat": "93.2",
+    "payoff_label": "SQUAD V1.1 F1",
+    "payoff_sub": "1.5 point absolute improvement",
+    "payoff_hero_stat": 93.2,
+    "payoff_hero_label": "BERT",
+    "payoff_delta_badge": "1.5 point",
+    "challenger": "BERT",
+    "incumbent": "Baseline"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: SQUAD V1.1",
+    "metric_name": "Test F1 Score",
+    "unit": "Percentage",
+    "contestants": [
+      {
+        "name": "BERT",
+        "value": "93.2",
+        "display_val": "93.2",
+        "is_hero": true,
+        "color": "#10B981"
+      }
+    ],
+    "delta_badge": "1.5 point improvement",
+    "radar_axes": [
+      "GLUE",
+      "MultiNLI",
+      "SQuAD"
+    ]
+  },
+  "script_provider": "gemini",
+  "quality_flags": {
+    "scrubbed_fields": [],
+    "ungrounded_narration_numbers": [],
+    "leaked_example_values": [],
+    "grounding_source_chars": 1518
+  },
+  "arxiv_id": "1810.04805",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "BERT_comparisons",
+      "caption": "Bert Comparisons",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/source/BERT_comparisons.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "BERT_Overall",
+      "caption": "Bert Overall",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/source/BERT_Overall.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_2_BERT_Overall.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_2_BERT_Overall.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "BERT_fine_tune",
+      "caption": "Bert Fine Tune",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/source/BERT_fine_tune.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_3_BERT_fine_tune.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_3_BERT_fine_tune.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "Input_Emebeddings",
+      "caption": "Input Emebeddings",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/source/Input_Emebeddings.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_4_Input_Emebeddings.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_4_Input_Emebeddings.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 9.0,
+    "final_retention_hook_score": 9.0,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Approved! Clear real-world developer terms and intuitive physical analogy."
+  },
+  "hook_gating": {
+    "selected_hook": "Before BERT. Language models read sentences like horses wearing blinders. They only looked backwards.",
+    "verdict": 42,
+    "band": "WEAK",
+    "formula": "Unclassified",
+    "properties": {
+      "SPECIFICITY": 47,
+      "ADDRESS": 26,
+      "STAKES": 48,
+      "CURIOSITY": 41,
+      "BREVITY": 100
+    },
+    "weakest_property": "ADDRESS",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "attention_grid",
+      "entity_type": "attention_grid",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "publish_gate": {
+    "decision": "publish",
+    "reasons": [],
+    "warnings": [
+      "No vision model audited the keyframes (scores are heuristic placeholders)."
+    ],
+    "action": {
+      "youtube_upload": true,
+      "privacy": "public",
+      "cross_post": true,
+      "mode": "private"
+    }
+  },
+  "youtube_upload": {
+    "video_id": "u8dgOiqS5Tw",
+    "shorts_url": "https://youtube.com/shorts/u8dgOiqS5Tw",
+    "studio_url": "https://studio.youtube.com/video/u8dgOiqS5Tw/edit",
+    "title": "BERT Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/bert_search_transformer_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
