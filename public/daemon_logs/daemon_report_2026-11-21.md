@@ -1,18 +1,19 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-21 | **Timestamp:** 2026-11-21 07:40:47 UTC
+**Date:** 2026-11-21 | **Timestamp:** 2026-11-21 18:11:32 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: LoRA: Low-Rank Adaptation of Large Language Models: Part 5 - The Open-Source Fine-Tuning Boom: How LoRA Empowered Millions to Train LLMs on Consumer Hardware
-- **Topic Queue Part:** `goat_lora_part_5` (arXiv: [2106.09685](https://arxiv.org/abs/2106.09685))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/0hu4D7F3yIY](https://youtube.com/shorts/0hu4D7F3yIY) (`0hu4D7F3yIY`)
-- **High-CTR Poster:** [lora_low_rank_adaptation_poster.png](public/thumbnails/lora_low_rank_adaptation_poster.png)
-- **✅ Publish gate:** passed
+### Reel 1: Chinchilla: Compute-Optimal Large Language Models: Part 5 - The Blueprint for Llama and Mistral: How Chinchilla Shaped Modern Open-Weights AI
+- **Topic Queue Part:** `goat_chinchilla_part_5` (arXiv: [2203.15556](https://arxiv.org/abs/2203.15556))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/luW-QOTMQsk](https://youtube.com/shorts/luW-QOTMQsk) (`luW-QOTMQsk`)
+- **High-CTR Poster:** [chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_poster.png](public/thumbnails/chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_poster.png)
+- **⛔ Publish gate: HELD for review** (uploaded private, not cross-posted)
+  - Script came from the deterministic fallback (all LLM providers failed).
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: LoRA: Low-Rank Adaptation of Large Language Models Mini-Series 5/5: LoRA: Low-Rank Adaptation of Large Language Models: Part 5 - The Open-Source Fine-Tuning Boom: How LoRA Empowered Millions to Train LLMs on Consumer Hardware*
-- **Everyday Analogy:** *How LoRA and QLoRA democratized custom AI fine-tuning, allowing developers to adapt 70B models on modest single-GPU workstations.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_lora_low_rank_adaptation_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: Chinchilla: Compute-Optimal Large Language Models Mini-Series 5/5: Chinchilla: Compute-Optimal Large Language Models: Part 5 - The Blueprint for Llama and Mistral: How Chinchilla Shaped Modern Open-Weights AI*
+- **Everyday Analogy:** *How Meta and Mistral adopted Chinchilla scaling principles to train over-tokenized compact models (Llama 1, 2, 3), sparking the open-source LLM revolution.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
