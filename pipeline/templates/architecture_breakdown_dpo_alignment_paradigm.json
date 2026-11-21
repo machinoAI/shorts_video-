@@ -1,0 +1,1611 @@
+{
+  "id": "dpo_alignment_paradigm",
+  "title": "Direct Preference Optimization",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "ARCHITECTURAL BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Training models with traditional RLHF is like trying to balance a spinning top while blindfolded and juggling knives.",
+      "visual_focus": "A complex, unstable spinning top balancing atop a shifting, jagged terrain.",
+      "highlight_words": {
+        "RLHF": "#EF4444",
+        "spinning top": "#FFFFFF"
+      },
+      "svo_action": {
+        "subject": "Reinforcement Learning",
+        "action_verb": "destabilizes",
+        "direct_object": "Model Policy Stability",
+        "anchor_word": "juggling",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "optimization_landscape",
+        "title": "RLHF INSTABILITY",
+        "sub": "Optimization paths spiraling into uncontrolled variance",
+        "accent_color": "#EF4444",
+        "params": {
+          "landscape_title": "Policy Variance Surface",
+          "optima_label": "Unstable Convergence"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 52,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "optimization_landscape",
+        "title": "RLHF INSTABILITY",
+        "sub": "Optimization paths spiraling into uncontrolled variance",
+        "accent_color": "#EF4444",
+        "landscape_title": "Policy Variance Surface",
+        "optima_label": "Unstable Convergence"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.55,
+      "duration": 6.55,
+      "word_timings": [
+        {
+          "word": "Training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 0.025,
+          "end": 0.455,
+          "duration": 0.43,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 0.455,
+          "end": 0.905,
+          "duration": 0.45,
+          "frame_ahead_trigger": 0.415
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 0.905,
+          "end": 1.06,
+          "duration": 0.155,
+          "frame_ahead_trigger": 0.865
+        },
+        {
+          "word": "traditional",
+          "clean_word": "traditional",
+          "phonemes": "t\u0279\u0250d\u02c8\u026a\u0283\u0259n\u0259l",
+          "start": 1.06,
+          "end": 1.62,
+          "duration": 0.56,
+          "frame_ahead_trigger": 1.02
+        },
+        {
+          "word": "RLHF",
+          "clean_word": "rlhf",
+          "phonemes": "\u02cc\u0251\u02d0\u0279\u0279\u02cc\u025bl\u02cce\u026at\u0283\u02c8\u025bf",
+          "start": 1.62,
+          "end": 2.525,
+          "duration": 0.905,
+          "frame_ahead_trigger": 1.58
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 2.525,
+          "end": 2.586,
+          "duration": 0.061,
+          "frame_ahead_trigger": 2.485
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 2.586,
+          "end": 2.83,
+          "duration": 0.244,
+          "frame_ahead_trigger": 2.546
+        },
+        {
+          "word": "trying",
+          "clean_word": "trying",
+          "phonemes": "t\u0279\u02c8a\u026a\u026a\u014b",
+          "start": 2.83,
+          "end": 3.2,
+          "duration": 0.37,
+          "frame_ahead_trigger": 2.79
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 3.2,
+          "end": 3.395,
+          "duration": 0.195,
+          "frame_ahead_trigger": 3.16
+        },
+        {
+          "word": "balance",
+          "clean_word": "balance",
+          "phonemes": "b\u02c8\u00e6l\u0259ns",
+          "start": 3.395,
+          "end": 3.755,
+          "duration": 0.36,
+          "frame_ahead_trigger": 3.355
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 3.755,
+          "end": 3.855,
+          "duration": 0.1,
+          "frame_ahead_trigger": 3.715
+        },
+        {
+          "word": "spinning",
+          "clean_word": "spinning",
+          "phonemes": "sp\u02c8\u026an\u026a\u014b",
+          "start": 3.855,
+          "end": 4.293,
+          "duration": 0.438,
+          "frame_ahead_trigger": 3.815
+        },
+        {
+          "word": "top",
+          "clean_word": "top",
+          "phonemes": "t\u02c8\u0251\u02d0p",
+          "start": 4.293,
+          "end": 4.49,
+          "duration": 0.197,
+          "frame_ahead_trigger": 4.253
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 4.49,
+          "end": 4.81,
+          "duration": 0.32,
+          "frame_ahead_trigger": 4.45
+        },
+        {
+          "word": "blindfolded",
+          "clean_word": "blindfolded",
+          "phonemes": "bl\u02c8a\u026andfo\u028ald\u1d7bd",
+          "start": 4.81,
+          "end": 5.58,
+          "duration": 0.77,
+          "frame_ahead_trigger": 4.77
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 5.58,
+          "end": 5.775,
+          "duration": 0.195,
+          "frame_ahead_trigger": 5.54
+        },
+        {
+          "word": "juggling",
+          "clean_word": "juggling",
+          "phonemes": "d\u0292\u02c8\u028c\u0261l\u026a\u014b",
+          "start": 5.775,
+          "end": 6.16,
+          "duration": 0.385,
+          "frame_ahead_trigger": 5.735
+        },
+        {
+          "word": "knives.",
+          "clean_word": "knives",
+          "phonemes": "n\u02c8a\u026avz",
+          "start": 6.16,
+          "end": 6.48,
+          "duration": 0.32,
+          "frame_ahead_trigger": 6.12
+        }
+      ],
+      "audio_duration": 6.55,
+      "slot_duration": 6.7
+    },
+    {
+      "beat_id": 2,
+      "text": "The bottleneck? Fitting an intermediate reward model forces the system to perform a delicate two-stage dance of infinite instability.",
+      "visual_focus": "Two separate, drifting coordinate systems representing the reward model and policy model failing to synchronize.",
+      "highlight_words": {
+        "reward model": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Reward Model",
+        "action_verb": "decouples",
+        "direct_object": "Language Model Feedback",
+        "anchor_word": "bottleneck",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "split_flow",
+        "title": "THE REWARD BOTTLENECK",
+        "sub": "Decoupled optimization stages creating systemic lag",
+        "accent_color": "#EF4444",
+        "params": {
+          "input_label": "Preference Data",
+          "router_label": "Reward Stage",
+          "branch_a_label": "Reward Estimation",
+          "branch_a_sub": "Stochastic Modeling",
+          "branch_b_label": "Policy Update",
+          "branch_b_sub": "Reinforcement Learning"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "split_flow",
+        "title": "THE REWARD BOTTLENECK",
+        "sub": "Decoupled optimization stages creating systemic lag",
+        "accent_color": "#EF4444",
+        "input_label": "Preference Data",
+        "router_label": "Reward Stage",
+        "branch_a_label": "Reward Estimation",
+        "branch_a_sub": "Stochastic Modeling",
+        "branch_b_label": "Policy Update",
+        "branch_b_sub": "Reinforcement Learning"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.7,
+      "end": 14.12,
+      "duration": 7.42,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 6.709,
+          "end": 6.779,
+          "duration": 0.07,
+          "frame_ahead_trigger": 6.819
+        },
+        {
+          "word": "bottleneck?",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 6.779,
+          "end": 7.467,
+          "duration": 0.688,
+          "frame_ahead_trigger": 6.889
+        },
+        {
+          "word": "Fitting",
+          "clean_word": "fitting",
+          "phonemes": "f\u02c8\u026a\u027e\u026a\u014b",
+          "start": 7.467,
+          "end": 7.794,
+          "duration": 0.327,
+          "frame_ahead_trigger": 7.577
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 7.794,
+          "end": 7.924,
+          "duration": 0.13,
+          "frame_ahead_trigger": 7.904
+        },
+        {
+          "word": "intermediate",
+          "clean_word": "intermediate",
+          "phonemes": "\u02cc\u026ant\u025am\u02c8i\u02d0di\u0259t",
+          "start": 7.924,
+          "end": 8.649,
+          "duration": 0.725,
+          "frame_ahead_trigger": 8.034
+        },
+        {
+          "word": "reward",
+          "clean_word": "reward",
+          "phonemes": "\u0279\u1d7bw\u02c8\u0254\u02d0\u0279d",
+          "start": 8.649,
+          "end": 9.204,
+          "duration": 0.555,
+          "frame_ahead_trigger": 8.759
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 9.204,
+          "end": 9.634,
+          "duration": 0.43,
+          "frame_ahead_trigger": 9.314
+        },
+        {
+          "word": "forces",
+          "clean_word": "forces",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u1d7bz",
+          "start": 9.634,
+          "end": 10.009,
+          "duration": 0.375,
+          "frame_ahead_trigger": 9.744
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 10.009,
+          "end": 10.174,
+          "duration": 0.165,
+          "frame_ahead_trigger": 10.119
+        },
+        {
+          "word": "system",
+          "clean_word": "system",
+          "phonemes": "s\u02c8\u026ast\u0259m",
+          "start": 10.174,
+          "end": 10.544,
+          "duration": 0.37,
+          "frame_ahead_trigger": 10.284
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 10.544,
+          "end": 10.809,
+          "duration": 0.265,
+          "frame_ahead_trigger": 10.654
+        },
+        {
+          "word": "perform",
+          "clean_word": "perform",
+          "phonemes": "p\u025af\u02c8\u0254\u02d0\u0279m",
+          "start": 10.809,
+          "end": 11.204,
+          "duration": 0.395,
+          "frame_ahead_trigger": 10.919
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 11.204,
+          "end": 11.359,
+          "duration": 0.155,
+          "frame_ahead_trigger": 11.314
+        },
+        {
+          "word": "delicate",
+          "clean_word": "delicate",
+          "phonemes": "d\u02c8\u025bl\u1d7bk\u0259t",
+          "start": 11.359,
+          "end": 11.829,
+          "duration": 0.47,
+          "frame_ahead_trigger": 11.469
+        },
+        {
+          "word": "two-stage",
+          "clean_word": "twostage",
+          "phonemes": "t\u02c8u\u02d0ste\u026ad\u0292",
+          "start": 11.829,
+          "end": 12.534,
+          "duration": 0.705,
+          "frame_ahead_trigger": 11.939
+        },
+        {
+          "word": "dance",
+          "clean_word": "dance",
+          "phonemes": "d\u02c8\u00e6ns",
+          "start": 12.534,
+          "end": 12.724,
+          "duration": 0.19,
+          "frame_ahead_trigger": 12.644
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 12.724,
+          "end": 12.899,
+          "duration": 0.175,
+          "frame_ahead_trigger": 12.834
+        },
+        {
+          "word": "infinite",
+          "clean_word": "infinite",
+          "phonemes": "\u02c8\u026anf\u026an\u0259t",
+          "start": 12.899,
+          "end": 13.329,
+          "duration": 0.43,
+          "frame_ahead_trigger": 13.009
+        },
+        {
+          "word": "instability.",
+          "clean_word": "instability",
+          "phonemes": "\u026anst\u0259b\u02c8\u026al\u1d7b\u027ei",
+          "start": 13.329,
+          "end": 13.999,
+          "duration": 0.67,
+          "frame_ahead_trigger": 13.439
+        }
+      ],
+      "audio_duration": 7.42,
+      "slot_duration": 7.57
+    },
+    {
+      "beat_id": 3,
+      "text": "DPO pivots the entire paradigm by mapping the reward function directly to the policy through a single classification task.",
+      "visual_focus": "The two divergent streams collapsing into a single, clean classification pipeline.",
+      "highlight_words": {
+        "DPO": "#34D399",
+        "single classification": "#34D399"
+      },
+      "svo_action": {
+        "subject": "DPO Algorithm",
+        "action_verb": "collapses",
+        "direct_object": "Preference Latent Space",
+        "anchor_word": "pivots",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "DIRECT PREFERENCE: FIGURE",
+        "sub": "The two divergent streams collapsing into a single, clean",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_1_tldr_winrate_vs_temp.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_1_tldr_winrate_vs_temp.png",
+          "arxiv_id": "2305.18290",
+          "title": "DIRECT PREFERENCE: FIGURE",
+          "sub": "The two divergent streams collapsing into a single, clean",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Tldr Winrate Vs Temp",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_1_tldr_winrate_vs_temp.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_1_tldr_winrate_vs_temp.png",
+        "arxiv_id": "2305.18290",
+        "title": "DIRECT PREFERENCE: FIGURE",
+        "sub": "The two divergent streams collapsing into a single, clean",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Tldr Winrate Vs Temp",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 14.27,
+      "end": 21.7,
+      "duration": 7.42,
+      "word_timings": [
+        {
+          "word": "DPO",
+          "clean_word": "dpo",
+          "phonemes": "d\u02cci\u02d0p\u02cci\u02d0\u02c8o\u028a",
+          "start": 14.293,
+          "end": 14.938,
+          "duration": 0.645,
+          "frame_ahead_trigger": 14.553
+        },
+        {
+          "word": "pivots",
+          "clean_word": "pivots",
+          "phonemes": "p\u02c8\u026av\u0259ts",
+          "start": 14.938,
+          "end": 15.353,
+          "duration": 0.415,
+          "frame_ahead_trigger": 15.198
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 15.353,
+          "end": 15.488,
+          "duration": 0.135,
+          "frame_ahead_trigger": 15.613
+        },
+        {
+          "word": "entire",
+          "clean_word": "entire",
+          "phonemes": "\u025bnt\u02c8a\u026a\u025a",
+          "start": 15.488,
+          "end": 15.978,
+          "duration": 0.49,
+          "frame_ahead_trigger": 15.748
+        },
+        {
+          "word": "paradigm",
+          "clean_word": "paradigm",
+          "phonemes": "p\u02c8\u00e6\u0279\u0259d\u02cca\u026am",
+          "start": 15.978,
+          "end": 16.504,
+          "duration": 0.526,
+          "frame_ahead_trigger": 16.238
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 16.504,
+          "end": 16.843,
+          "duration": 0.339,
+          "frame_ahead_trigger": 16.764
+        },
+        {
+          "word": "mapping",
+          "clean_word": "mapping",
+          "phonemes": "m\u02c8\u00e6p\u026a\u014b",
+          "start": 16.843,
+          "end": 17.203,
+          "duration": 0.36,
+          "frame_ahead_trigger": 17.103
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 17.203,
+          "end": 17.221,
+          "duration": 0.018,
+          "frame_ahead_trigger": 17.463
+        },
+        {
+          "word": "reward",
+          "clean_word": "reward",
+          "phonemes": "\u0279\u1d7bw\u02c8\u0254\u02d0\u0279d",
+          "start": 17.221,
+          "end": 17.713,
+          "duration": 0.492,
+          "frame_ahead_trigger": 17.481
+        },
+        {
+          "word": "function",
+          "clean_word": "function",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259n",
+          "start": 17.713,
+          "end": 18.193,
+          "duration": 0.48,
+          "frame_ahead_trigger": 17.973
+        },
+        {
+          "word": "directly",
+          "clean_word": "directly",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bktli",
+          "start": 18.193,
+          "end": 18.788,
+          "duration": 0.595,
+          "frame_ahead_trigger": 18.453
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 18.788,
+          "end": 18.878,
+          "duration": 0.09,
+          "frame_ahead_trigger": 19.048
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 18.878,
+          "end": 18.968,
+          "duration": 0.09,
+          "frame_ahead_trigger": 19.138
+        },
+        {
+          "word": "policy",
+          "clean_word": "policy",
+          "phonemes": "p\u02c8\u0251\u02d0l\u026asi",
+          "start": 18.968,
+          "end": 19.492,
+          "duration": 0.524,
+          "frame_ahead_trigger": 19.228
+        },
+        {
+          "word": "through",
+          "clean_word": "through",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0",
+          "start": 19.492,
+          "end": 19.873,
+          "duration": 0.381,
+          "frame_ahead_trigger": 19.752
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 19.873,
+          "end": 19.97,
+          "duration": 0.097,
+          "frame_ahead_trigger": 20.133
+        },
+        {
+          "word": "single",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 19.97,
+          "end": 20.428,
+          "duration": 0.458,
+          "frame_ahead_trigger": 20.23
+        },
+        {
+          "word": "classification",
+          "clean_word": "classification",
+          "phonemes": "kl\u02cc\u00e6s\u026af\u026ak\u02c8e\u026a\u0283\u0259n",
+          "start": 20.428,
+          "end": 21.233,
+          "duration": 0.805,
+          "frame_ahead_trigger": 20.688
+        },
+        {
+          "word": "task.",
+          "clean_word": "task",
+          "phonemes": "t\u02c8\u00e6sk",
+          "start": 21.233,
+          "end": 21.583,
+          "duration": 0.35,
+          "frame_ahead_trigger": 21.493
+        }
+      ],
+      "audio_duration": 7.42,
+      "slot_duration": 7.58
+    },
+    {
+      "beat_id": 4,
+      "text": "By eliminating the reward model, we optimize for human preference using a simple, stable logistic regression over generated sequences.",
+      "visual_focus": "A clean linear weight adjustment vector refining the output probabilities without sampling.",
+      "highlight_words": {
+        "logistic regression": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Logistic Objective",
+        "action_verb": "constrains",
+        "direct_object": "Preference Log-Likelihood",
+        "anchor_word": "stable",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "attention_prism_refraction",
+        "title": "MECHANICAL SIMPLICITY",
+        "sub": "Direct mapping of log-ratios to policy gradients",
+        "accent_color": "#F59E0B",
+        "params": {
+          "token_label": "Preference Log-Ratios",
+          "matrix_title": "Optimization Weights"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "attention_prism_refraction",
+        "title": "MECHANICAL SIMPLICITY",
+        "sub": "Direct mapping of log-ratios to policy gradients",
+        "accent_color": "#F59E0B",
+        "token_label": "Preference Log-Ratios",
+        "matrix_title": "Optimization Weights"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 21.85,
+      "end": 29.4,
+      "duration": 7.55,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 21.852,
+          "end": 22.037,
+          "duration": 0.185,
+          "frame_ahead_trigger": 22.262
+        },
+        {
+          "word": "eliminating",
+          "clean_word": "eliminating",
+          "phonemes": "\u1d7bl\u02c8\u026am\u1d7bn\u02cce\u026a\u027e\u026a\u014b",
+          "start": 22.037,
+          "end": 22.717,
+          "duration": 0.68,
+          "frame_ahead_trigger": 22.447
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 22.717,
+          "end": 22.912,
+          "duration": 0.195,
+          "frame_ahead_trigger": 23.127
+        },
+        {
+          "word": "reward",
+          "clean_word": "reward",
+          "phonemes": "\u0279\u1d7bw\u02c8\u0254\u02d0\u0279d",
+          "start": 22.912,
+          "end": 23.274,
+          "duration": 0.361,
+          "frame_ahead_trigger": 23.322
+        },
+        {
+          "word": "model,",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 23.274,
+          "end": 23.597,
+          "duration": 0.324,
+          "frame_ahead_trigger": 23.684
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 23.597,
+          "end": 23.872,
+          "duration": 0.275,
+          "frame_ahead_trigger": 24.007
+        },
+        {
+          "word": "optimize",
+          "clean_word": "optimize",
+          "phonemes": "\u02c8\u0251\u02d0pt\u026am\u02cca\u026az",
+          "start": 23.872,
+          "end": 24.342,
+          "duration": 0.47,
+          "frame_ahead_trigger": 24.282
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 24.342,
+          "end": 24.642,
+          "duration": 0.3,
+          "frame_ahead_trigger": 24.752
+        },
+        {
+          "word": "human",
+          "clean_word": "human",
+          "phonemes": "hj\u02c8u\u02d0m\u0259n",
+          "start": 24.642,
+          "end": 25.052,
+          "duration": 0.41,
+          "frame_ahead_trigger": 25.052
+        },
+        {
+          "word": "preference",
+          "clean_word": "preference",
+          "phonemes": "p\u0279\u02c8\u025bf\u0279\u0259ns",
+          "start": 25.052,
+          "end": 25.457,
+          "duration": 0.405,
+          "frame_ahead_trigger": 25.462
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 25.457,
+          "end": 25.787,
+          "duration": 0.33,
+          "frame_ahead_trigger": 25.867
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 25.787,
+          "end": 25.967,
+          "duration": 0.18,
+          "frame_ahead_trigger": 26.197
+        },
+        {
+          "word": "simple,",
+          "clean_word": "simple",
+          "phonemes": "s\u02c8\u026amp\u0259l",
+          "start": 25.967,
+          "end": 26.377,
+          "duration": 0.41,
+          "frame_ahead_trigger": 26.377
+        },
+        {
+          "word": "stable",
+          "clean_word": "stable",
+          "phonemes": "st\u02c8e\u026ab\u0259l",
+          "start": 26.377,
+          "end": 26.747,
+          "duration": 0.37,
+          "frame_ahead_trigger": 26.787
+        },
+        {
+          "word": "logistic",
+          "clean_word": "logistic",
+          "phonemes": "l\u0259d\u0292\u02c8\u026ast\u026ak",
+          "start": 26.747,
+          "end": 27.237,
+          "duration": 0.49,
+          "frame_ahead_trigger": 27.157
+        },
+        {
+          "word": "regression",
+          "clean_word": "regression",
+          "phonemes": "\u0279\u1d7b\u0261\u0279\u02c8\u025b\u0283\u0259n",
+          "start": 27.237,
+          "end": 27.847,
+          "duration": 0.61,
+          "frame_ahead_trigger": 27.647
+        },
+        {
+          "word": "over",
+          "clean_word": "over",
+          "phonemes": "\u02c8o\u028av\u025a",
+          "start": 27.847,
+          "end": 28.127,
+          "duration": 0.28,
+          "frame_ahead_trigger": 28.257
+        },
+        {
+          "word": "generated",
+          "clean_word": "generated",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u02cce\u026a\u027e\u1d7bd",
+          "start": 28.127,
+          "end": 28.727,
+          "duration": 0.6,
+          "frame_ahead_trigger": 28.537
+        },
+        {
+          "word": "sequences.",
+          "clean_word": "sequences",
+          "phonemes": "s\u02c8i\u02d0kw\u0259ns\u1d7bz",
+          "start": 28.727,
+          "end": 29.327,
+          "duration": 0.6,
+          "frame_ahead_trigger": 29.137
+        }
+      ],
+      "audio_duration": 7.55,
+      "slot_duration": 7.7
+    },
+    {
+      "beat_id": 5,
+      "text": "Empirically, this bypass results in superior sentiment control and higher-quality dialogue while drastically reducing computational overhead during training.",
+      "visual_focus": "Comparison bars showing DPO's performance versus standard RLHF.",
+      "highlight_words": {
+        "superior": "#34D399"
+      },
+      "svo_action": {
+        "subject": "DPO Training",
+        "action_verb": "outperforms",
+        "direct_object": "RLHF Baseline",
+        "anchor_word": "superior",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: DPO",
+        "sub": "Comparison bars showing DPO's performance",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: DPO",
+          "sub": "Comparison bars showing DPO's performance",
+          "metric_name": "DPO",
+          "unit": "",
+          "contestants": [
+            {
+              "name": "N respondents",
+              "value": 272.0,
+              "display_val": "272.0",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "GPT-4 (S)-H agree",
+              "value": 70.0,
+              "display_val": "70.0",
+              "is_hero": false,
+              "color": "#EF4444"
+            },
+            {
+              "name": "GPT-4 (C)-H agree",
+              "value": 67.0,
+              "display_val": "67.0",
+              "is_hero": false,
+              "color": "#10B981"
+            },
+            {
+              "name": "H-H agree",
+              "value": 65.0,
+              "display_val": "65.0",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +288.6% OVER GPT-4 (S)-H AGRE"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: DPO",
+        "sub": "Comparison bars showing DPO's performance",
+        "metric_name": "DPO",
+        "unit": "",
+        "contestants": [
+          {
+            "name": "N respondents",
+            "value": 272.0,
+            "display_val": "272.0",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "GPT-4 (S)-H agree",
+            "value": 70.0,
+            "display_val": "70.0",
+            "is_hero": false,
+            "color": "#EF4444"
+          },
+          {
+            "name": "GPT-4 (C)-H agree",
+            "value": 67.0,
+            "display_val": "67.0",
+            "is_hero": false,
+            "color": "#10B981"
+          },
+          {
+            "name": "H-H agree",
+            "value": 65.0,
+            "display_val": "65.0",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +288.6% OVER GPT-4 (S)-H AGRE"
+      },
+      "start": 29.55,
+      "end": 38.36,
+      "duration": 8.81,
+      "word_timings": [
+        {
+          "word": "Empirically,",
+          "clean_word": "empirically",
+          "phonemes": "\u025bmp\u02c8\u026a\u0279\u026akli",
+          "start": 29.559,
+          "end": 30.128,
+          "duration": 0.569,
+          "frame_ahead_trigger": 30.119
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 30.128,
+          "end": 30.459,
+          "duration": 0.331,
+          "frame_ahead_trigger": 30.688
+        },
+        {
+          "word": "bypass",
+          "clean_word": "bypass",
+          "phonemes": "b\u02c8a\u026ap\u00e6s",
+          "start": 30.459,
+          "end": 30.679,
+          "duration": 0.22,
+          "frame_ahead_trigger": 31.019
+        },
+        {
+          "word": "results",
+          "clean_word": "results",
+          "phonemes": "\u0279\u026az\u02c8\u028clts",
+          "start": 30.679,
+          "end": 31.304,
+          "duration": 0.625,
+          "frame_ahead_trigger": 31.239
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 31.304,
+          "end": 31.394,
+          "duration": 0.09,
+          "frame_ahead_trigger": 31.864
+        },
+        {
+          "word": "superior",
+          "clean_word": "superior",
+          "phonemes": "su\u02d0p\u02c8i\u0259\u0279\u026a\u025a",
+          "start": 31.394,
+          "end": 31.984,
+          "duration": 0.59,
+          "frame_ahead_trigger": 31.954
+        },
+        {
+          "word": "sentiment",
+          "clean_word": "sentiment",
+          "phonemes": "s\u02c8\u025bnt\u026am\u0259nt",
+          "start": 31.984,
+          "end": 32.554,
+          "duration": 0.57,
+          "frame_ahead_trigger": 32.544
+        },
+        {
+          "word": "control",
+          "clean_word": "control",
+          "phonemes": "k\u0259nt\u0279\u02c8o\u028al",
+          "start": 32.554,
+          "end": 33.074,
+          "duration": 0.52,
+          "frame_ahead_trigger": 33.114
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 33.074,
+          "end": 33.244,
+          "duration": 0.17,
+          "frame_ahead_trigger": 33.634
+        },
+        {
+          "word": "higher-quality",
+          "clean_word": "higherquality",
+          "phonemes": "h\u02cca\u026a\u025akw\u02c8\u0254l\u1d7b\u027ei",
+          "start": 33.244,
+          "end": 33.949,
+          "duration": 0.705,
+          "frame_ahead_trigger": 33.804
+        },
+        {
+          "word": "dialogue",
+          "clean_word": "dialogue",
+          "phonemes": "d\u02c8a\u026a\u0259l\u0251\u02d0\u0261",
+          "start": 33.949,
+          "end": 34.453,
+          "duration": 0.504,
+          "frame_ahead_trigger": 34.509
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 34.453,
+          "end": 34.738,
+          "duration": 0.285,
+          "frame_ahead_trigger": 35.013
+        },
+        {
+          "word": "drastically",
+          "clean_word": "drastically",
+          "phonemes": "d\u0279\u02c8\u00e6st\u026akli",
+          "start": 34.738,
+          "end": 35.279,
+          "duration": 0.541,
+          "frame_ahead_trigger": 35.298
+        },
+        {
+          "word": "reducing",
+          "clean_word": "reducing",
+          "phonemes": "\u0279\u1d7bd\u02c8u\u02d0s\u026a\u014b",
+          "start": 35.279,
+          "end": 35.769,
+          "duration": 0.49,
+          "frame_ahead_trigger": 35.839
+        },
+        {
+          "word": "computational",
+          "clean_word": "computational",
+          "phonemes": "k\u02cc\u0251\u02d0mpju\u02d0t\u02c8e\u026a\u0283\u0259n\u0259l",
+          "start": 35.769,
+          "end": 36.789,
+          "duration": 1.02,
+          "frame_ahead_trigger": 36.329
+        },
+        {
+          "word": "overhead",
+          "clean_word": "overhead",
+          "phonemes": "\u02cco\u028av\u025ah\u02c8\u025bd",
+          "start": 36.789,
+          "end": 37.289,
+          "duration": 0.5,
+          "frame_ahead_trigger": 37.349
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 37.289,
+          "end": 37.859,
+          "duration": 0.57,
+          "frame_ahead_trigger": 37.849
+        },
+        {
+          "word": "training.",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 37.859,
+          "end": 38.209,
+          "duration": 0.35,
+          "frame_ahead_trigger": 38.419
+        }
+      ],
+      "audio_duration": 8.81,
+      "slot_duration": 8.96
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into how modern AI actually works under the hood.",
+      "visual_focus": "The machinoAI logo glowing with circuit-like connections.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Viewer",
+        "action_verb": "tracks",
+        "direct_object": "Architecture Feed",
+        "anchor_word": "deep-dives",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "SUBSCRIBE",
+        "sub": "Stay informed on next-gen architecture shifts",
+        "accent_color": "#34D399",
+        "params": {
+          "root_label": "machinoAI",
+          "optimal_label": "Subscribe",
+          "pruned_label": "Noise"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 38.51,
+      "end": 43.91,
+      "duration": 5.4,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 38.51,
+          "end": 38.945,
+          "duration": 0.435,
+          "frame_ahead_trigger": 39.22
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 38.945,
+          "end": 39.82,
+          "duration": 0.875,
+          "frame_ahead_trigger": 39.655
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 39.82,
+          "end": 39.99,
+          "duration": 0.17,
+          "frame_ahead_trigger": 40.53
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 39.99,
+          "end": 40.315,
+          "duration": 0.325,
+          "frame_ahead_trigger": 40.7
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 40.315,
+          "end": 40.835,
+          "duration": 0.52,
+          "frame_ahead_trigger": 41.025
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 40.835,
+          "end": 41.235,
+          "duration": 0.4,
+          "frame_ahead_trigger": 41.545
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 41.235,
+          "end": 41.445,
+          "duration": 0.21,
+          "frame_ahead_trigger": 41.945
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 41.445,
+          "end": 41.86,
+          "duration": 0.415,
+          "frame_ahead_trigger": 42.155
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 41.86,
+          "end": 42.2,
+          "duration": 0.34,
+          "frame_ahead_trigger": 42.57
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 42.2,
+          "end": 42.755,
+          "duration": 0.555,
+          "frame_ahead_trigger": 42.91
+        },
+        {
+          "word": "works",
+          "clean_word": "works",
+          "phonemes": "w\u02c8\u025c\u02d0ks",
+          "start": 42.755,
+          "end": 43.08,
+          "duration": 0.325,
+          "frame_ahead_trigger": 43.465
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 43.08,
+          "end": 43.49,
+          "duration": 0.41,
+          "frame_ahead_trigger": 43.79
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 43.49,
+          "end": 43.539,
+          "duration": 0.049,
+          "frame_ahead_trigger": 44.2
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 43.539,
+          "end": 43.77,
+          "duration": 0.231,
+          "frame_ahead_trigger": 44.249
+        }
+      ],
+      "audio_duration": 5.4,
+      "slot_duration": 5.4
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\mathcal{L}_{RLHF} = -\\mathbb{E}_{x \\sim \\mathcal{D}}[R(x)]$",
+      "filename": "dpo_alignment_paradigm_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "R(x)",
+          "label": "Reward Estimate"
+        }
+      ],
+      "svg_filename": "dpo_alignment_paradigm_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(N^2 \\cdot T_{sample})$",
+      "filename": "dpo_alignment_paradigm_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "T_{sample}",
+          "label": "Sampling Latency"
+        }
+      ],
+      "svg_filename": "dpo_alignment_paradigm_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\pi_{\\theta}(y|x) \\propto \\pi_{ref}(y|x) \\exp(\\beta r(x,y))$",
+      "filename": "dpo_alignment_paradigm_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\pi_{\\theta}",
+          "label": "Policy Mapping"
+        }
+      ],
+      "svg_filename": "dpo_alignment_paradigm_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathcal{L}_{DPO} = -\\log \\sigma \\left( \\beta \\log \\frac{\\pi_{\\theta}(y_w|x)}{\\pi_{ref}(y_w|x)} - \\beta \\log \\frac{\\pi_{\\theta}(y_l|x)}{\\pi_{ref}(y_l|x)} \\right)$",
+      "filename": "dpo_alignment_paradigm_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "y_w",
+          "label": "Chosen Response"
+        },
+        {
+          "term": "y_l",
+          "label": "Rejected Response"
+        }
+      ],
+      "svg_filename": "dpo_alignment_paradigm_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Efficiency} = \\frac{\\mathrm{Params}_{RLHF}}{\\mathrm{Params}_{DPO}}$",
+      "filename": "dpo_alignment_paradigm_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\mathrm{Params}",
+          "label": "Training Overhead"
+        }
+      ],
+      "svg_filename": "dpo_alignment_paradigm_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "RLHF",
+          "color": "#EF4444",
+          "items": [
+            "RewardModel",
+            "Sampling",
+            "PPO"
+          ]
+        },
+        {
+          "name": "DPO",
+          "color": "#34D399",
+          "items": [
+            "PreferenceData",
+            "LogRatio",
+            "Classification"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"preference\"",
+        "target_cluster": "DPO",
+        "token": "\"preference\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'RLHF-Reward'",
+          "color": "#EF4444"
+        }
+      ]
+    },
+    "model_a": "Direct Preference Optimization",
+    "model_a_specs": [
+      "Single-stage",
+      "No Sampling",
+      "Classification-based"
+    ],
+    "model_b": "RLHF",
+    "model_b_specs": [
+      "Multi-stage",
+      "Reward-model fitting",
+      "PPO optimization"
+    ],
+    "divide_title": "DPO VERSUS RLHF",
+    "bottleneck_title": "MONOLITHIC BRUTE-FORCE BOTTLENECK",
+    "bottleneck_desc": "Entangled Superposition",
+    "solution_title": "DPO ARCHITECTURAL DECOMPOSITION",
+    "solution_components": "Monosemantic Dictionary",
+    "mechanism_title": "STRUCTURED LATENT ACTIVATION",
+    "payoff_hero_label": "DPO",
+    "payoff_base_label": "RLHF",
+    "challenger": "DPO",
+    "incumbent": "RLHF"
+  },
+  "script_provider": "gemini",
+  "quality_flags": {
+    "scrubbed_fields": [
+      "metadata.benchmarks"
+    ],
+    "ungrounded_narration_numbers": [],
+    "leaked_example_values": [],
+    "grounding_source_chars": 2139
+  },
+  "arxiv_id": "2305.18290",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "tldr_winrate_vs_temp",
+      "caption": "Tldr Winrate Vs Temp",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/source/figures/results/tldr_winrate_vs_temp.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_1_tldr_winrate_vs_temp.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_1_tldr_winrate_vs_temp.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "dialogue_winrate_vs_steps",
+      "caption": "Dialogue Winrate Vs Steps",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/source/figures/results/dialogue_winrate_vs_steps.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_2_dialogue_winrate_vs_steps.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_2_dialogue_winrate_vs_steps.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "dialogue_winrate_vs_temp",
+      "caption": "Dialogue Winrate Vs Temp",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/source/figures/results/dialogue_winrate_vs_temp.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_3_dialogue_winrate_vs_temp.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_3_dialogue_winrate_vs_temp.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "frontier",
+      "caption": "Frontier",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/source/figures/results/frontier.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_4_frontier.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_4_frontier.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "dialogue_winrate_vs_temp_rerank",
+      "caption": "Dialogue Winrate Vs Temp Rerank",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/source/figures/results/dialogue_winrate_vs_temp_rerank.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_5_dialogue_winrate_vs_temp_rerank.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_5_dialogue_winrate_vs_temp_rerank.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Training models with traditional RLHF is like trying to balance a spinning top while blindfolded and juggling knives.",
+    "verdict": 52,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "properties": {
+      "SPECIFICITY": 35,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "SPECIFICITY",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Direct Preference Optimization",
+        "model_a_score": "95%",
+        "model_b_name": "RLHF",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "publish_gate": {
+    "decision": "publish",
+    "reasons": [],
+    "warnings": [
+      "No vision model audited the keyframes (scores are heuristic placeholders).",
+      "Script critic: \u274c REJECTED: Script reading level is Grade 14.5 (target: Grade 9.0), overall score 6.6/10 is below threshold 8.0."
+    ],
+    "action": {
+      "youtube_upload": true,
+      "privacy": "public",
+      "cross_post": true,
+      "mode": "private"
+    }
+  },
+  "youtube_upload": {
+    "video_id": "xx8tm8DOy-Q",
+    "shorts_url": "https://youtube.com/shorts/xx8tm8DOy-Q",
+    "studio_url": "https://studio.youtube.com/video/xx8tm8DOy-Q/edit",
+    "title": "Direct Preference Optimization Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/dpo_alignment_paradigm_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
