@@ -1,0 +1,1711 @@
+{
+  "id": "nerf_spatial_computing_evolution",
+  "title": "NEURAL RADIANCE FIELDS: THE 3D GENESIS",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "NEURAL FIELDS",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Traditional 3D graphics hit an impossible memory wall the moment you try rendering realistic lighting.",
+      "visual_focus": "Discrete voxel grid shattering under memory pressure as light rays fail to resolve",
+      "highlight_words": {
+        "memory wall": "#EF4444",
+        "realistic lighting": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Discrete 3D Graphics",
+        "action_verb": "hits",
+        "direct_object": "Memory Wall",
+        "anchor_word": "memory wall",
+        "semantic_role": "bottleneck_reveal"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "VOXEL GRID COLLAPSE",
+        "sub": "O(N^3) Memory Explosion",
+        "accent_color": "#EF4444",
+        "params": {
+          "stage_1_label": "Input Image",
+          "stage_2_label": "Voxel Grid",
+          "stage_3_label": "Artifacts",
+          "stage_1_sub": " ",
+          "stage_2_sub": " ",
+          "stage_3_sub": " "
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 52,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "VOXEL GRID COLLAPSE",
+        "sub": "O(N^3) Memory Explosion",
+        "accent_color": "#EF4444",
+        "stage_1_label": "Input Image",
+        "stage_2_label": "Voxel Grid",
+        "stage_3_label": "Artifacts",
+        "stage_1_sub": " ",
+        "stage_2_sub": " ",
+        "stage_3_sub": " "
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.99,
+      "duration": 5.99,
+      "word_timings": [
+        {
+          "word": "Traditional",
+          "clean_word": "traditional",
+          "phonemes": "t\u0279\u0250d\u02c8\u026a\u0283\u0259n\u0259l",
+          "start": 0.0,
+          "end": 0.51,
+          "duration": 0.51,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "3D",
+          "clean_word": "3d",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0 d\u02c8i\u02d0",
+          "start": 0.51,
+          "end": 1.21,
+          "duration": 0.7,
+          "frame_ahead_trigger": 0.47
+        },
+        {
+          "word": "graphics",
+          "clean_word": "graphics",
+          "phonemes": "\u0261\u0279\u02c8\u00e6f\u026aks",
+          "start": 1.21,
+          "end": 1.71,
+          "duration": 0.5,
+          "frame_ahead_trigger": 1.17
+        },
+        {
+          "word": "hit",
+          "clean_word": "hit",
+          "phonemes": "h\u02c8\u026at",
+          "start": 1.71,
+          "end": 1.874,
+          "duration": 0.164,
+          "frame_ahead_trigger": 1.67
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 1.874,
+          "end": 2.0,
+          "duration": 0.126,
+          "frame_ahead_trigger": 1.834
+        },
+        {
+          "word": "impossible",
+          "clean_word": "impossible",
+          "phonemes": "\u026amp\u02c8\u0251\u02d0s\u1d7bb\u0259l",
+          "start": 2.0,
+          "end": 2.7,
+          "duration": 0.7,
+          "frame_ahead_trigger": 1.96
+        },
+        {
+          "word": "memory",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 2.7,
+          "end": 2.925,
+          "duration": 0.225,
+          "frame_ahead_trigger": 2.66
+        },
+        {
+          "word": "wall",
+          "clean_word": "wall",
+          "phonemes": "w\u02c8\u0254\u02d0l",
+          "start": 2.925,
+          "end": 3.294,
+          "duration": 0.369,
+          "frame_ahead_trigger": 2.885
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 3.294,
+          "end": 3.408,
+          "duration": 0.114,
+          "frame_ahead_trigger": 3.254
+        },
+        {
+          "word": "moment",
+          "clean_word": "moment",
+          "phonemes": "m\u02c8o\u028am\u0259nt",
+          "start": 3.408,
+          "end": 3.815,
+          "duration": 0.407,
+          "frame_ahead_trigger": 3.368
+        },
+        {
+          "word": "you",
+          "clean_word": "you",
+          "phonemes": "ju\u02d0",
+          "start": 3.815,
+          "end": 4.09,
+          "duration": 0.275,
+          "frame_ahead_trigger": 3.775
+        },
+        {
+          "word": "try",
+          "clean_word": "try",
+          "phonemes": "t\u0279\u02c8a\u026a",
+          "start": 4.09,
+          "end": 4.29,
+          "duration": 0.2,
+          "frame_ahead_trigger": 4.05
+        },
+        {
+          "word": "rendering",
+          "clean_word": "rendering",
+          "phonemes": "\u0279\u02c8\u025bnd\u025a\u0279\u026a\u014b",
+          "start": 4.29,
+          "end": 4.835,
+          "duration": 0.545,
+          "frame_ahead_trigger": 4.25
+        },
+        {
+          "word": "realistic",
+          "clean_word": "realistic",
+          "phonemes": "\u0279i\u02d0\u0259l\u02c8\u026ast\u026ak",
+          "start": 4.835,
+          "end": 5.41,
+          "duration": 0.575,
+          "frame_ahead_trigger": 4.795
+        },
+        {
+          "word": "lighting.",
+          "clean_word": "lighting",
+          "phonemes": "l\u02c8a\u026a\u027e\u026a\u014b",
+          "start": 5.41,
+          "end": 5.85,
+          "duration": 0.44,
+          "frame_ahead_trigger": 5.37
+        }
+      ],
+      "audio_duration": 5.99,
+      "slot_duration": 6.14
+    },
+    {
+      "beat_id": 2,
+      "text": "Discrete voxel grids scale cubically like empty storage lockers, devouring gigabytes of memory while failing miserably on delicate geometry and glossy reflections.",
+      "visual_focus": "Massive 3D voxel grid showing millions of empty redundant cells and aliased jagged edges",
+      "highlight_words": {
+        "scale cubically": "#EF4444",
+        "storage lockers": "#F59E0B",
+        "failing miserably": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Voxel Grids",
+        "action_verb": "scale",
+        "direct_object": "Cubically",
+        "anchor_word": "scale cubically",
+        "semantic_role": "friction_escalation"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "CUBIC DISCRETIZATION TRAP",
+        "sub": "Resolution Constrained by VRAM",
+        "accent_color": "#38BDF8",
+        "params": {
+          "input_1_label": "x, y, z",
+          "input_2_label": "theta, phi",
+          "fused_label": "Neural Radiance Field",
+          "input_3_label": "failing miserably"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "convergence_funnel",
+        "title": "CUBIC DISCRETIZATION TRAP",
+        "sub": "Resolution Constrained by VRAM",
+        "accent_color": "#38BDF8",
+        "input_1_label": "x, y, z",
+        "input_2_label": "theta, phi",
+        "fused_label": "Neural Radiance Field",
+        "input_3_label": "failing miserably"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.14,
+      "end": 15.72,
+      "duration": 9.58,
+      "word_timings": [
+        {
+          "word": "Discrete",
+          "clean_word": "discrete",
+          "phonemes": "d\u026ask\u0279\u02c8i\u02d0t",
+          "start": 6.16,
+          "end": 6.697,
+          "duration": 0.537,
+          "frame_ahead_trigger": 6.27
+        },
+        {
+          "word": "voxel",
+          "clean_word": "voxel",
+          "phonemes": "v\u02c8\u0251\u02d0ks\u0259l",
+          "start": 6.697,
+          "end": 7.085,
+          "duration": 0.388,
+          "frame_ahead_trigger": 6.807
+        },
+        {
+          "word": "grids",
+          "clean_word": "grids",
+          "phonemes": "\u0261\u0279\u02c8\u026adz",
+          "start": 7.085,
+          "end": 7.52,
+          "duration": 0.435,
+          "frame_ahead_trigger": 7.195
+        },
+        {
+          "word": "scale",
+          "clean_word": "scale",
+          "phonemes": "sk\u02c8e\u026al",
+          "start": 7.52,
+          "end": 7.81,
+          "duration": 0.29,
+          "frame_ahead_trigger": 7.63
+        },
+        {
+          "word": "cubically",
+          "clean_word": "cubically",
+          "phonemes": "kj\u02c8u\u02d0b\u026akli",
+          "start": 7.81,
+          "end": 8.58,
+          "duration": 0.77,
+          "frame_ahead_trigger": 7.92
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 8.58,
+          "end": 8.765,
+          "duration": 0.185,
+          "frame_ahead_trigger": 8.69
+        },
+        {
+          "word": "empty",
+          "clean_word": "empty",
+          "phonemes": "\u02c8\u025bmpti",
+          "start": 8.765,
+          "end": 9.14,
+          "duration": 0.375,
+          "frame_ahead_trigger": 8.875
+        },
+        {
+          "word": "storage",
+          "clean_word": "storage",
+          "phonemes": "st\u02c8\u0254\u02d0\u0279\u026ad\u0292",
+          "start": 9.14,
+          "end": 9.69,
+          "duration": 0.55,
+          "frame_ahead_trigger": 9.25
+        },
+        {
+          "word": "lockers,",
+          "clean_word": "lockers",
+          "phonemes": "l\u02c8\u0251\u02d0k\u025az",
+          "start": 9.69,
+          "end": 10.16,
+          "duration": 0.47,
+          "frame_ahead_trigger": 9.8
+        },
+        {
+          "word": "devouring",
+          "clean_word": "devouring",
+          "phonemes": "d\u026av\u02c8a\u028a\u025a\u0279\u026a\u014b",
+          "start": 10.16,
+          "end": 10.65,
+          "duration": 0.49,
+          "frame_ahead_trigger": 10.27
+        },
+        {
+          "word": "gigabytes",
+          "clean_word": "gigabytes",
+          "phonemes": "\u0261\u02c8\u026a\u0261\u0259b\u02cca\u026ats",
+          "start": 10.65,
+          "end": 11.32,
+          "duration": 0.67,
+          "frame_ahead_trigger": 10.76
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 11.32,
+          "end": 11.515,
+          "duration": 0.195,
+          "frame_ahead_trigger": 11.43
+        },
+        {
+          "word": "memory",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 11.515,
+          "end": 11.889,
+          "duration": 0.375,
+          "frame_ahead_trigger": 11.625
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 11.889,
+          "end": 12.23,
+          "duration": 0.34,
+          "frame_ahead_trigger": 11.999
+        },
+        {
+          "word": "failing",
+          "clean_word": "failing",
+          "phonemes": "f\u02c8e\u026al\u026a\u014b",
+          "start": 12.23,
+          "end": 12.52,
+          "duration": 0.29,
+          "frame_ahead_trigger": 12.34
+        },
+        {
+          "word": "miserably",
+          "clean_word": "miserably",
+          "phonemes": "m\u02c8\u026az\u0279\u0259bli",
+          "start": 12.52,
+          "end": 13.17,
+          "duration": 0.65,
+          "frame_ahead_trigger": 12.63
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 13.17,
+          "end": 13.35,
+          "duration": 0.18,
+          "frame_ahead_trigger": 13.28
+        },
+        {
+          "word": "delicate",
+          "clean_word": "delicate",
+          "phonemes": "d\u02c8\u025bl\u1d7bk\u0259t",
+          "start": 13.35,
+          "end": 13.735,
+          "duration": 0.385,
+          "frame_ahead_trigger": 13.46
+        },
+        {
+          "word": "geometry",
+          "clean_word": "geometry",
+          "phonemes": "d\u0292i\u02c8\u0251\u02d0m\u0259t\u0279i",
+          "start": 13.735,
+          "end": 14.39,
+          "duration": 0.655,
+          "frame_ahead_trigger": 13.845
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 14.39,
+          "end": 14.58,
+          "duration": 0.19,
+          "frame_ahead_trigger": 14.5
+        },
+        {
+          "word": "glossy",
+          "clean_word": "glossy",
+          "phonemes": "\u0261l\u02c8\u0254si",
+          "start": 14.58,
+          "end": 14.985,
+          "duration": 0.405,
+          "frame_ahead_trigger": 14.69
+        },
+        {
+          "word": "reflections.",
+          "clean_word": "reflections",
+          "phonemes": "\u0279\u1d7bfl\u02c8\u025bk\u0283\u0259nz",
+          "start": 14.985,
+          "end": 15.65,
+          "duration": 0.665,
+          "frame_ahead_trigger": 15.095
+        }
+      ],
+      "audio_duration": 9.58,
+      "slot_duration": 9.73
+    },
+    {
+      "beat_id": 3,
+      "text": "NeRF abandons physical polygons completely, compressing an entire continuous visual scene into a compact fully-connected network taking five-dimensional coordinates.",
+      "visual_focus": "A 5D vector (x, y, z, theta, phi) entering an MLP and outputting continuous color and density",
+      "highlight_words": {
+        "abandons physical polygons": "#10B981",
+        "continuous visual scene": "#38BDF8",
+        "five-dimensional coordinates": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "NeRF Architecture",
+        "action_verb": "compresses",
+        "direct_object": "Continuous 3D Scene",
+        "anchor_word": "five-dimensional coordinates",
+        "semantic_role": "mechanism_shift"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "NEURAL RADIANCE FIELDS: FIGURE",
+        "sub": "A 5D vector (x, y, z, theta, phi) entering an MLP and outputting",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.png",
+          "arxiv_id": "2003.08934",
+          "title": "NEURAL RADIANCE FIELDS: FIGURE",
+          "sub": "A 5D vector (x, y, z, theta, phi) entering an MLP and outputting",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Pipeline V2 Small",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_pivot",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.png",
+        "arxiv_id": "2003.08934",
+        "title": "NEURAL RADIANCE FIELDS: FIGURE",
+        "sub": "A 5D vector (x, y, z, theta, phi) entering an MLP and outputting",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Pipeline V2 Small",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 15.87,
+      "end": 25.69,
+      "duration": 9.81,
+      "word_timings": [
+        {
+          "word": "NeRF",
+          "clean_word": "nerf",
+          "phonemes": "n\u02c8i\u02d0 \u02cc\u0251\u02d0\u0279\u0279\u02c8\u025bf",
+          "start": 15.883,
+          "end": 16.608,
+          "duration": 0.725,
+          "frame_ahead_trigger": 16.143
+        },
+        {
+          "word": "abandons",
+          "clean_word": "abandons",
+          "phonemes": "\u0250b\u02c8\u00e6nd\u0259nz",
+          "start": 16.608,
+          "end": 17.088,
+          "duration": 0.48,
+          "frame_ahead_trigger": 16.868
+        },
+        {
+          "word": "physical",
+          "clean_word": "physical",
+          "phonemes": "f\u02c8\u026az\u026ak\u0259l",
+          "start": 17.088,
+          "end": 17.468,
+          "duration": 0.38,
+          "frame_ahead_trigger": 17.348
+        },
+        {
+          "word": "polygons",
+          "clean_word": "polygons",
+          "phonemes": "p\u02c8\u0251\u02d0l\u026a\u0261\u02cc\u0251\u02d0nz",
+          "start": 17.468,
+          "end": 18.303,
+          "duration": 0.835,
+          "frame_ahead_trigger": 17.728
+        },
+        {
+          "word": "completely,",
+          "clean_word": "completely",
+          "phonemes": "k\u0259mpl\u02c8i\u02d0tli",
+          "start": 18.303,
+          "end": 18.883,
+          "duration": 0.58,
+          "frame_ahead_trigger": 18.563
+        },
+        {
+          "word": "compressing",
+          "clean_word": "compressing",
+          "phonemes": "k\u0259mp\u0279\u02c8\u025bs\u026a\u014b",
+          "start": 18.883,
+          "end": 19.433,
+          "duration": 0.55,
+          "frame_ahead_trigger": 19.143
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 19.433,
+          "end": 19.563,
+          "duration": 0.13,
+          "frame_ahead_trigger": 19.693
+        },
+        {
+          "word": "entire",
+          "clean_word": "entire",
+          "phonemes": "\u025bnt\u02c8a\u026a\u025a",
+          "start": 19.563,
+          "end": 19.888,
+          "duration": 0.325,
+          "frame_ahead_trigger": 19.823
+        },
+        {
+          "word": "continuous",
+          "clean_word": "continuous",
+          "phonemes": "k\u0259nt\u02c8\u026anju\u02d0\u0259s",
+          "start": 19.888,
+          "end": 20.718,
+          "duration": 0.83,
+          "frame_ahead_trigger": 20.148
+        },
+        {
+          "word": "visual",
+          "clean_word": "visual",
+          "phonemes": "v\u02c8\u026a\u0292u\u02d0\u0259l",
+          "start": 20.718,
+          "end": 21.138,
+          "duration": 0.42,
+          "frame_ahead_trigger": 20.978
+        },
+        {
+          "word": "scene",
+          "clean_word": "scene",
+          "phonemes": "s\u02c8i\u02d0n",
+          "start": 21.138,
+          "end": 21.373,
+          "duration": 0.235,
+          "frame_ahead_trigger": 21.398
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 21.373,
+          "end": 21.593,
+          "duration": 0.22,
+          "frame_ahead_trigger": 21.633
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 21.593,
+          "end": 21.893,
+          "duration": 0.3,
+          "frame_ahead_trigger": 21.853
+        },
+        {
+          "word": "compact",
+          "clean_word": "compact",
+          "phonemes": "k\u0259mp\u02c8\u00e6kt",
+          "start": 21.893,
+          "end": 22.333,
+          "duration": 0.44,
+          "frame_ahead_trigger": 22.153
+        },
+        {
+          "word": "fully-connected",
+          "clean_word": "fullyconnected",
+          "phonemes": "f\u02c8\u028al\u026ak\u02cc\u0251\u02d0n\u025bkt\u1d7bd",
+          "start": 22.333,
+          "end": 23.168,
+          "duration": 0.835,
+          "frame_ahead_trigger": 22.593
+        },
+        {
+          "word": "network",
+          "clean_word": "network",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0k",
+          "start": 23.168,
+          "end": 23.581,
+          "duration": 0.412,
+          "frame_ahead_trigger": 23.428
+        },
+        {
+          "word": "taking",
+          "clean_word": "taking",
+          "phonemes": "t\u02c8e\u026ak\u026a\u014b",
+          "start": 23.581,
+          "end": 24.043,
+          "duration": 0.463,
+          "frame_ahead_trigger": 23.841
+        },
+        {
+          "word": "five-dimensional",
+          "clean_word": "fivedimensional",
+          "phonemes": "f\u02c8a\u026avd\u1d7bm\u02cc\u025bn\u0283\u0259n\u0259l",
+          "start": 24.043,
+          "end": 24.833,
+          "duration": 0.79,
+          "frame_ahead_trigger": 24.303
+        },
+        {
+          "word": "coordinates.",
+          "clean_word": "coordinates",
+          "phonemes": "ko\u028a\u02c8\u0254\u02d0\u0279d\u1d7bn\u0259ts",
+          "start": 24.833,
+          "end": 25.618,
+          "duration": 0.785,
+          "frame_ahead_trigger": 25.093
+        }
+      ],
+      "audio_duration": 9.81,
+      "slot_duration": 9.97
+    },
+    {
+      "beat_id": 4,
+      "text": "By casting rays through camera pixels, it samples spatial locations and viewing angles, blending continuous density and color via differentiable volume integration.",
+      "visual_focus": "Camera ray tracing through 3D space with sample points accumulating density and RGB into a pixel",
+      "highlight_words": {
+        "casting rays": "#38BDF8",
+        "continuous density": "#F59E0B",
+        "differentiable volume integration": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Ray Marching",
+        "action_verb": "integrates",
+        "direct_object": "Continuous Density and Radiance",
+        "anchor_word": "differentiable volume integration",
+        "semantic_role": "core_algorithm"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "DIFF VOLUME RENDERING",
+        "sub": "Quadrature Integral along Camera Rays",
+        "accent_color": "#F59E0B",
+        "params": {
+          "stream_a_label": "Density",
+          "stream_b_label": "Color (RGB)",
+          "barrier_label": "Volume Integral",
+          "barrier_sub": "Differentiable Output"
+        }
+      },
+      "thriller_role": "technical_deepdive",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "DIFF VOLUME RENDERING",
+        "sub": "Quadrature Integral along Camera Rays",
+        "accent_color": "#F59E0B",
+        "stream_a_label": "Density",
+        "stream_b_label": "Color (RGB)",
+        "barrier_label": "Volume Integral",
+        "barrier_sub": "Differentiable Output"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 25.84,
+      "end": 35.24,
+      "duration": 9.41,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 25.847,
+          "end": 25.967,
+          "duration": 0.12,
+          "frame_ahead_trigger": 26.257
+        },
+        {
+          "word": "casting",
+          "clean_word": "casting",
+          "phonemes": "k\u02c8\u00e6st\u026a\u014b",
+          "start": 25.967,
+          "end": 26.402,
+          "duration": 0.435,
+          "frame_ahead_trigger": 26.377
+        },
+        {
+          "word": "rays",
+          "clean_word": "rays",
+          "phonemes": "\u0279\u02c8e\u026az",
+          "start": 26.402,
+          "end": 26.802,
+          "duration": 0.4,
+          "frame_ahead_trigger": 26.812
+        },
+        {
+          "word": "through",
+          "clean_word": "through",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0",
+          "start": 26.802,
+          "end": 27.012,
+          "duration": 0.21,
+          "frame_ahead_trigger": 27.212
+        },
+        {
+          "word": "camera",
+          "clean_word": "camera",
+          "phonemes": "k\u02c8\u00e6m\u0279\u0259",
+          "start": 27.012,
+          "end": 27.397,
+          "duration": 0.385,
+          "frame_ahead_trigger": 27.422
+        },
+        {
+          "word": "pixels,",
+          "clean_word": "pixels",
+          "phonemes": "p\u02c8\u026aks\u0259lz",
+          "start": 27.397,
+          "end": 27.787,
+          "duration": 0.39,
+          "frame_ahead_trigger": 27.807
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 27.787,
+          "end": 27.998,
+          "duration": 0.211,
+          "frame_ahead_trigger": 28.197
+        },
+        {
+          "word": "samples",
+          "clean_word": "samples",
+          "phonemes": "s\u02c8\u00e6mp\u0259lz",
+          "start": 27.998,
+          "end": 28.392,
+          "duration": 0.394,
+          "frame_ahead_trigger": 28.408
+        },
+        {
+          "word": "spatial",
+          "clean_word": "spatial",
+          "phonemes": "sp\u02c8e\u026a\u0283\u0259l",
+          "start": 28.392,
+          "end": 28.852,
+          "duration": 0.46,
+          "frame_ahead_trigger": 28.802
+        },
+        {
+          "word": "locations",
+          "clean_word": "locations",
+          "phonemes": "lo\u028ak\u02c8e\u026a\u0283\u0259nz",
+          "start": 28.852,
+          "end": 29.552,
+          "duration": 0.7,
+          "frame_ahead_trigger": 29.262
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 29.552,
+          "end": 29.822,
+          "duration": 0.27,
+          "frame_ahead_trigger": 29.962
+        },
+        {
+          "word": "viewing",
+          "clean_word": "viewing",
+          "phonemes": "vj\u02c8u\u02d0\u026a\u014b",
+          "start": 29.822,
+          "end": 30.149,
+          "duration": 0.328,
+          "frame_ahead_trigger": 30.232
+        },
+        {
+          "word": "angles,",
+          "clean_word": "angles",
+          "phonemes": "\u02c8\u00e6\u014b\u0261\u0259lz",
+          "start": 30.149,
+          "end": 30.567,
+          "duration": 0.417,
+          "frame_ahead_trigger": 30.559
+        },
+        {
+          "word": "blending",
+          "clean_word": "blending",
+          "phonemes": "bl\u02c8\u025bnd\u026a\u014b",
+          "start": 30.567,
+          "end": 31.022,
+          "duration": 0.455,
+          "frame_ahead_trigger": 30.977
+        },
+        {
+          "word": "continuous",
+          "clean_word": "continuous",
+          "phonemes": "k\u0259nt\u02c8\u026anju\u02d0\u0259s",
+          "start": 31.022,
+          "end": 31.712,
+          "duration": 0.69,
+          "frame_ahead_trigger": 31.432
+        },
+        {
+          "word": "density",
+          "clean_word": "density",
+          "phonemes": "d\u02c8\u025bns\u1d7b\u027ei",
+          "start": 31.712,
+          "end": 32.132,
+          "duration": 0.42,
+          "frame_ahead_trigger": 32.122
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 32.132,
+          "end": 32.362,
+          "duration": 0.23,
+          "frame_ahead_trigger": 32.542
+        },
+        {
+          "word": "color",
+          "clean_word": "color",
+          "phonemes": "k\u02c8\u028cl\u025a",
+          "start": 32.362,
+          "end": 32.737,
+          "duration": 0.375,
+          "frame_ahead_trigger": 32.772
+        },
+        {
+          "word": "via",
+          "clean_word": "via",
+          "phonemes": "v\u02c8a\u026a\u0259",
+          "start": 32.737,
+          "end": 32.937,
+          "duration": 0.2,
+          "frame_ahead_trigger": 33.147
+        },
+        {
+          "word": "differentiable",
+          "clean_word": "differentiable",
+          "phonemes": "d\u02c8\u026af\u025a\u0279\u02cc\u025bn\u0283\u026a\u0259b\u0259l",
+          "start": 32.937,
+          "end": 33.802,
+          "duration": 0.865,
+          "frame_ahead_trigger": 33.347
+        },
+        {
+          "word": "volume",
+          "clean_word": "volume",
+          "phonemes": "v\u02c8\u0251\u02d0lju\u02d0m",
+          "start": 33.802,
+          "end": 34.367,
+          "duration": 0.565,
+          "frame_ahead_trigger": 34.212
+        },
+        {
+          "word": "integration.",
+          "clean_word": "integration",
+          "phonemes": "\u02cc\u026ant\u1d7b\u0261\u0279\u02c8e\u026a\u0283\u0259n",
+          "start": 34.367,
+          "end": 35.092,
+          "duration": 0.725,
+          "frame_ahead_trigger": 34.777
+        }
+      ],
+      "audio_duration": 9.41,
+      "slot_duration": 9.55
+    },
+    {
+      "beat_id": 5,
+      "text": "Trained purely on sparse photos with known poses, NeRF demolished prior view-synthesis benchmarks with flawless, photorealistic free-viewpoint navigation.",
+      "visual_focus": "Benchmark bar charts showing dramatic PSNR and SSIM leaps over voxels and mesh pipelines",
+      "highlight_words": {
+        "sparse photos": "#38BDF8",
+        "demolished": "#10B981",
+        "photorealistic": "#10B981"
+      },
+      "svo_action": {
+        "subject": "NeRF Optimization",
+        "action_verb": "demolishes",
+        "direct_object": "Synthesis Benchmarks",
+        "anchor_word": "photorealistic",
+        "semantic_role": "metric_triumph"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: \\MULTICOLUMN4C|PSNR\\UPAR",
+        "sub": "Benchmark bar charts showing dramatic PSNR and",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: \\MULTICOLUMN4C|PSNR\\UPAR",
+          "sub": "Benchmark bar charts showing dramatic PSNR and",
+          "metric_name": "\\multicolumn4c|PSNR\\uparrow",
+          "unit": "",
+          "contestants": [
+            {
+              "name": "Ours",
+              "value": 42.65,
+              "display_val": "42.6",
+              "is_hero": true,
+              "color": "#38BDF8"
+            },
+            {
+              "name": "SRN",
+              "value": 36.67,
+              "display_val": "36.7",
+              "is_hero": false,
+              "color": "#A855F7"
+            },
+            {
+              "name": "LLFF",
+              "value": 36.11,
+              "display_val": "36.1",
+              "is_hero": false,
+              "color": "#10B981"
+            },
+            {
+              "name": "NV",
+              "value": 35.15,
+              "display_val": "35.1",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +16.3% OVER SRN"
+        }
+      },
+      "thriller_role": "empirical_victory",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: \\MULTICOLUMN4C|PSNR\\UPAR",
+        "sub": "Benchmark bar charts showing dramatic PSNR and",
+        "metric_name": "\\multicolumn4c|PSNR\\uparrow",
+        "unit": "",
+        "contestants": [
+          {
+            "name": "Ours",
+            "value": 42.65,
+            "display_val": "42.6",
+            "is_hero": true,
+            "color": "#38BDF8"
+          },
+          {
+            "name": "SRN",
+            "value": 36.67,
+            "display_val": "36.7",
+            "is_hero": false,
+            "color": "#A855F7"
+          },
+          {
+            "name": "LLFF",
+            "value": 36.11,
+            "display_val": "36.1",
+            "is_hero": false,
+            "color": "#10B981"
+          },
+          {
+            "name": "NV",
+            "value": 35.15,
+            "display_val": "35.1",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +16.3% OVER SRN"
+      },
+      "start": 35.39,
+      "end": 44.57,
+      "duration": 9.17,
+      "word_timings": [
+        {
+          "word": "Trained",
+          "clean_word": "trained",
+          "phonemes": "t\u0279\u02c8e\u026and",
+          "start": 35.43,
+          "end": 35.78,
+          "duration": 0.35,
+          "frame_ahead_trigger": 35.99
+        },
+        {
+          "word": "purely",
+          "clean_word": "purely",
+          "phonemes": "pj\u02c8\u028a\u0279li",
+          "start": 35.78,
+          "end": 36.285,
+          "duration": 0.505,
+          "frame_ahead_trigger": 36.34
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 36.285,
+          "end": 36.39,
+          "duration": 0.105,
+          "frame_ahead_trigger": 36.845
+        },
+        {
+          "word": "sparse",
+          "clean_word": "sparse",
+          "phonemes": "sp\u02c8\u0251\u02d0\u0279s",
+          "start": 36.39,
+          "end": 36.705,
+          "duration": 0.315,
+          "frame_ahead_trigger": 36.95
+        },
+        {
+          "word": "photos",
+          "clean_word": "photos",
+          "phonemes": "f\u02c8o\u028a\u027eo\u028az",
+          "start": 36.705,
+          "end": 37.25,
+          "duration": 0.545,
+          "frame_ahead_trigger": 37.265
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 37.25,
+          "end": 37.422,
+          "duration": 0.173,
+          "frame_ahead_trigger": 37.81
+        },
+        {
+          "word": "known",
+          "clean_word": "known",
+          "phonemes": "n\u02c8o\u028an",
+          "start": 37.422,
+          "end": 37.707,
+          "duration": 0.285,
+          "frame_ahead_trigger": 37.982
+        },
+        {
+          "word": "poses,",
+          "clean_word": "poses",
+          "phonemes": "p\u02c8o\u028az\u1d7bz",
+          "start": 37.707,
+          "end": 37.99,
+          "duration": 0.283,
+          "frame_ahead_trigger": 38.267
+        },
+        {
+          "word": "NeRF",
+          "clean_word": "nerf",
+          "phonemes": "n\u02c8i\u02d0 \u02cc\u0251\u02d0\u0279\u0279\u02c8\u025bf",
+          "start": 37.99,
+          "end": 38.83,
+          "duration": 0.84,
+          "frame_ahead_trigger": 38.55
+        },
+        {
+          "word": "demolished",
+          "clean_word": "demolished",
+          "phonemes": "d\u1d7bm\u02c8\u0251\u02d0l\u026a\u0283t",
+          "start": 38.83,
+          "end": 39.445,
+          "duration": 0.615,
+          "frame_ahead_trigger": 39.39
+        },
+        {
+          "word": "prior",
+          "clean_word": "prior",
+          "phonemes": "p\u0279\u02c8a\u026a\u025a",
+          "start": 39.445,
+          "end": 39.755,
+          "duration": 0.31,
+          "frame_ahead_trigger": 40.005
+        },
+        {
+          "word": "view-synthesis",
+          "clean_word": "viewsynthesis",
+          "phonemes": "vj\u02c8u\u02d0s\u026an\u03b8\u0259s\u02cc\u026as",
+          "start": 39.755,
+          "end": 40.5,
+          "duration": 0.745,
+          "frame_ahead_trigger": 40.315
+        },
+        {
+          "word": "benchmarks",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 40.5,
+          "end": 41.265,
+          "duration": 0.765,
+          "frame_ahead_trigger": 41.06
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 41.265,
+          "end": 41.43,
+          "duration": 0.165,
+          "frame_ahead_trigger": 41.825
+        },
+        {
+          "word": "flawless,",
+          "clean_word": "flawless",
+          "phonemes": "fl\u02c8\u0254\u02d0l\u0259s",
+          "start": 41.43,
+          "end": 41.92,
+          "duration": 0.49,
+          "frame_ahead_trigger": 41.99
+        },
+        {
+          "word": "photorealistic",
+          "clean_word": "photorealistic",
+          "phonemes": "f\u02cco\u028a\u027eo\u028a\u0279i\u02d0\u0259l\u02c8\u026ast\u026ak",
+          "start": 41.92,
+          "end": 42.875,
+          "duration": 0.955,
+          "frame_ahead_trigger": 42.48
+        },
+        {
+          "word": "free-viewpoint",
+          "clean_word": "freeviewpoint",
+          "phonemes": "f\u0279\u02c8i\u02d0vju\u02d0p\u02cc\u0254\u026ant",
+          "start": 42.875,
+          "end": 43.83,
+          "duration": 0.955,
+          "frame_ahead_trigger": 43.435
+        },
+        {
+          "word": "navigation.",
+          "clean_word": "navigation",
+          "phonemes": "n\u02cc\u00e6v\u026a\u0261\u02c8e\u026a\u0283\u0259n",
+          "start": 43.83,
+          "end": 44.425,
+          "duration": 0.595,
+          "frame_ahead_trigger": 44.39
+        }
+      ],
+      "audio_duration": 9.17,
+      "slot_duration": 9.33
+    },
+    {
+      "beat_id": 6,
+      "text": "Spatial computing stopped storing rigid meshes and became continuous radiance fields. Follow machinoAI for frontier deep-dives.",
+      "visual_focus": "Looping back from the continuous glowing radiance field to the initial lighting paradox",
+      "highlight_words": {
+        "continuous radiance fields": "#10B981",
+        "machinoAI": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Spatial Computing",
+        "action_verb": "transforms into",
+        "direct_object": "Radiance Fields",
+        "anchor_word": "continuous radiance fields",
+        "semantic_role": "closing_loop"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "THE CONTINUOUS PARADIGM",
+        "sub": "Discrete Meshes -> Neural Fields",
+        "accent_color": "#34D399",
+        "params": {
+          "root_label": "NeRF Genesis",
+          "optimal_label": "3D Gaussian Splatting",
+          "pruned_label": "Spatial Computing"
+        }
+      },
+      "thriller_role": "paradigm_shift_loop",
+      "act": 4,
+      "start": 44.72,
+      "end": 52.46,
+      "duration": 7.74,
+      "word_timings": [
+        {
+          "word": "Spatial",
+          "clean_word": "spatial",
+          "phonemes": "sp\u02c8e\u026a\u0283\u0259l",
+          "start": 44.793,
+          "end": 45.243,
+          "duration": 0.45,
+          "frame_ahead_trigger": 45.503
+        },
+        {
+          "word": "computing",
+          "clean_word": "computing",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0\u027e\u026a\u014b",
+          "start": 45.243,
+          "end": 45.978,
+          "duration": 0.735,
+          "frame_ahead_trigger": 45.953
+        },
+        {
+          "word": "stopped",
+          "clean_word": "stopped",
+          "phonemes": "st\u02c8\u0251\u02d0pt",
+          "start": 45.978,
+          "end": 46.313,
+          "duration": 0.335,
+          "frame_ahead_trigger": 46.688
+        },
+        {
+          "word": "storing",
+          "clean_word": "storing",
+          "phonemes": "st\u02c8\u0254\u02d0\u0279\u026a\u014b",
+          "start": 46.313,
+          "end": 46.858,
+          "duration": 0.545,
+          "frame_ahead_trigger": 47.023
+        },
+        {
+          "word": "rigid",
+          "clean_word": "rigid",
+          "phonemes": "\u0279\u02c8\u026ad\u0292\u026ad",
+          "start": 46.858,
+          "end": 47.263,
+          "duration": 0.405,
+          "frame_ahead_trigger": 47.568
+        },
+        {
+          "word": "meshes",
+          "clean_word": "meshes",
+          "phonemes": "m\u02c8\u025b\u0283\u1d7bz",
+          "start": 47.263,
+          "end": 47.453,
+          "duration": 0.19,
+          "frame_ahead_trigger": 47.973
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 47.453,
+          "end": 47.738,
+          "duration": 0.285,
+          "frame_ahead_trigger": 48.163
+        },
+        {
+          "word": "became",
+          "clean_word": "became",
+          "phonemes": "b\u026ak\u02c8e\u026am",
+          "start": 47.738,
+          "end": 48.268,
+          "duration": 0.53,
+          "frame_ahead_trigger": 48.448
+        },
+        {
+          "word": "continuous",
+          "clean_word": "continuous",
+          "phonemes": "k\u0259nt\u02c8\u026anju\u02d0\u0259s",
+          "start": 48.268,
+          "end": 48.788,
+          "duration": 0.52,
+          "frame_ahead_trigger": 48.978
+        },
+        {
+          "word": "radiance",
+          "clean_word": "radiance",
+          "phonemes": "\u0279\u02c8e\u026adi\u0259ns",
+          "start": 48.788,
+          "end": 49.385,
+          "duration": 0.597,
+          "frame_ahead_trigger": 49.498
+        },
+        {
+          "word": "fields.",
+          "clean_word": "fields",
+          "phonemes": "f\u02c8i\u02d0ldz",
+          "start": 49.385,
+          "end": 49.808,
+          "duration": 0.423,
+          "frame_ahead_trigger": 50.095
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 49.808,
+          "end": 50.138,
+          "duration": 0.33,
+          "frame_ahead_trigger": 50.518
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 50.138,
+          "end": 51.088,
+          "duration": 0.95,
+          "frame_ahead_trigger": 50.848
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 51.088,
+          "end": 51.473,
+          "duration": 0.385,
+          "frame_ahead_trigger": 51.798
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 51.473,
+          "end": 51.943,
+          "duration": 0.47,
+          "frame_ahead_trigger": 52.183
+        },
+        {
+          "word": "deep-dives.",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 51.943,
+          "end": 52.388,
+          "duration": 0.445,
+          "frame_ahead_trigger": 52.653
+        }
+      ],
+      "audio_duration": 7.74,
+      "slot_duration": 7.74
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\mathcal{S} = \\{ \\mathbf{x}, \\mathbf{d} \\} \\subset \\mathbb{R}^5$",
+      "filename": "nerf_spatial_computing_evolution_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "\\mathcal{S}",
+          "label": "5D Coordinate Input"
+        },
+        {
+          "term": "\\mathbf{x}, \\mathbf{d}",
+          "label": "Location & Direction"
+        }
+      ],
+      "svg_filename": "nerf_spatial_computing_evolution_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$F_{\\Theta}: (\\mathbf{x}, \\mathbf{d}) \\to (\\mathbf{c}, \\sigma)$",
+      "filename": "nerf_spatial_computing_evolution_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "F_{\\Theta}",
+          "label": "MLP Network"
+        },
+        {
+          "term": "\\sigma",
+          "label": "Volume Density"
+        }
+      ],
+      "svg_filename": "nerf_spatial_computing_evolution_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{r}(t) = \\mathbf{o} + t\\mathbf{d}$",
+      "filename": "nerf_spatial_computing_evolution_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\mathbf{r}(t)",
+          "label": "Camera Ray"
+        },
+        {
+          "term": "\\mathbf{o}",
+          "label": "Ray Origin"
+        }
+      ],
+      "svg_filename": "nerf_spatial_computing_evolution_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$C(\\mathbf{r}) = \\int_{t_n}^{t_f} T(t)\\sigma(\\mathbf{r}(t))\\mathbf{c}(\\mathbf{r}(t), \\mathbf{d}) dt$",
+      "filename": "nerf_spatial_computing_evolution_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "T(t)",
+          "label": "Accumulated Transmittance"
+        },
+        {
+          "term": "C(\\mathbf{r})",
+          "label": "Expected Color"
+        }
+      ],
+      "svg_filename": "nerf_spatial_computing_evolution_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{PSNR} = 10 \\cdot \\log_{10}(MAX^2 / MSE)$",
+      "filename": "nerf_spatial_computing_evolution_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "MSE",
+          "label": "Mean Squared Error"
+        }
+      ],
+      "svg_filename": "nerf_spatial_computing_evolution_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "semantic_clusters",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "SPATIAL",
+          "color": "#38BDF8",
+          "items": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        {
+          "name": "ANGULAR",
+          "color": "#10B981",
+          "items": [
+            "theta",
+            "phi"
+          ]
+        },
+        {
+          "name": "OUTPUT",
+          "color": "#F59E0B",
+          "items": [
+            "RGB",
+            "Density"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"ray_sample\"",
+        "target_cluster": "SPATIAL",
+        "token": "\"ray_sample\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Voxelization",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Memory",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "NeRF",
+    "model_a_specs": [
+      "Fully-connected MLP",
+      "5D Input",
+      "Continuous Function"
+    ],
+    "model_b": "Discrete Voxel Grid",
+    "model_b_specs": [
+      "Discretized Volume",
+      "O(N^3) Memory",
+      "Quantized Views"
+    ],
+    "divide_title": "NEURAL VS DISCRETE RENDERING",
+    "efficiency_badge": "\u26a1 +5 PSNR",
+    "bottleneck_title": "MONOLITHIC GRID BOTTLENECK",
+    "bottleneck_desc": "Entangled Memory Bloat",
+    "solution_title": "NEURAL VOLUMETRIC REPRESENTATION",
+    "solution_components": "Continuous Function Dictionary",
+    "mechanism_title": "DIFFERENTIABLE VOLUME RENDERING",
+    "payoff_delta_badge": "\u26a1 +5 PSNR Improvement",
+    "challenger": "NeRF",
+    "incumbent": "Discrete Voxel Grids"
+  },
+  "script_provider": "gemini",
+  "quality_flags": {
+    "scrubbed_fields": [
+      "beats[5].visual_blueprint.params.contestants",
+      "benchmark_comparison",
+      "metadata.benchmarks",
+      "metadata.model_a_stat",
+      "metadata.model_b_stat",
+      "metadata.payoff_base_stat",
+      "metadata.payoff_hero_stat",
+      "metadata.payoff_stat",
+      "metadata.scale_metric"
+    ],
+    "ungrounded_narration_numbers": [],
+    "leaked_example_values": [],
+    "grounding_source_chars": 1707
+  },
+  "arxiv_id": "2003.08934",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "pipeline_v2_small",
+      "caption": "Pipeline V2 Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/pipeline_v2_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "netdiag",
+      "caption": "Netdiag",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/netdiag.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_2_netdiag.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_2_netdiag.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "viewdirs_small",
+      "caption": "Viewdirs Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/viewdirs_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_3_viewdirs_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_3_viewdirs_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "teaser_small",
+      "caption": "Teaser Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/teaser_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_4_teaser_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_4_teaser_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "nerf",
+      "caption": "Nerf",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/real_results_new/trex/nerf.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_5_nerf.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 95
+    }
+  ],
+  "thriller_metadata": {
+    "engine_version": "7.0",
+    "narrative_style": "intellectual_thriller",
+    "villain_entity": "Cubic Voxel Grid Bloat",
+    "physical_analogy": "Infinite empty storage lockers vs a continuous mathematical function",
+    "eureka_mechanism": "Continuous 5D Coordinate Ray Marching with Differentiable Volume Rendering",
+    "paradigm_shift": "Moving from discrete polygon meshes to continuous volumetric radiance functions"
+  },
+  "hook_gating": {
+    "selected_hook": "Traditional 3D graphics hit an impossible memory wall the moment you try rendering realistic lighting.",
+    "verdict": 52,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "properties": {
+      "SPECIFICITY": 34,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "SPECIFICITY",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "NeRF",
+        "model_a_score": "95%",
+        "model_b_name": "Discrete Voxel Grid",
+        "model_b_score": "45%",
+        "delta_label": "\u26a1 +5 PSNR"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "publish_gate": {
+    "decision": "publish",
+    "reasons": [],
+    "warnings": [
+      "No vision model audited the keyframes (scores are heuristic placeholders).",
+      "Script critic: \u274c REJECTED: Script reading level is Grade 17.1 (target: Grade 9.0), overall score 5.6/10 is below threshold 8.0."
+    ],
+    "action": {
+      "youtube_upload": true,
+      "privacy": "public",
+      "cross_post": true,
+      "mode": "private"
+    }
+  },
+  "youtube_upload": {
+    "video_id": "4iQztwVvDVA",
+    "shorts_url": "https://youtube.com/shorts/4iQztwVvDVA",
+    "studio_url": "https://studio.youtube.com/video/4iQztwVvDVA/edit",
+    "title": "NEURAL RADIANCE FIELDS Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/nerf_spatial_computing_evolution_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
