@@ -171,6 +171,24 @@ jobs:
         run: |
           python3 pipeline/setup_credentials.py
 
+      - name: Validate topic queue
+        run: |
+          echo "Working directory: $(pwd)"
+          echo "Commit: $(git rev-parse HEAD)"
+          python3 - <<'PY'
+          import json
+
+          with open("data/topic_queue.json", encoding="utf-8") as queue_file:
+              queue = json.load(queue_file)
+
+          pending = sum(
+              item.get("status") not in ("completed", "done")
+              for item in queue
+          )
+          print(f"Queue entries: {len(queue)}")
+          print(f"Pending entries: {pending}")
+          PY
+
       - name: Run Daily Shorts Daemon
         env:
           CHANNEL_NAME: ${{ secrets.CHANNEL_NAME || 'machinoAI' }}

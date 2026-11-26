@@ -385,6 +385,22 @@ def test_daemon_run_daily_cycle_mixed_count_1(monkeypatch):
     assert report["status"] == "dry_run_success"
 
 
+def test_daemon_queue_exhaustion_falls_back_to_mixed(monkeypatch, tmp_path):
+    """An exhausted default queue must not fail a scheduled quota run."""
+    monkeypatch.setattr("pipeline.daily_shorts_daemon.TOPIC_QUEUE_FILE", tmp_path / "topic_queue.json")
+    monkeypatch.setattr("pipeline.daily_shorts_daemon.TOPIC_QUEUE_ARCHIVE_FILE", tmp_path / "topic_queue_archive.json")
+    (tmp_path / "topic_queue.json").write_text(json.dumps([{"id": "old", "status": "completed"}]))
+    (tmp_path / "topic_queue_archive.json").write_text("[]")
+    monkeypatch.setattr("pipeline.daily_shorts_daemon.load_history", lambda: {"processed_papers": {}})
+    monkeypatch.setattr("pipeline.script_generator.generate_script", _mock_generated_script)
+    monkeypatch.setenv("GEMINI_API_KEY", "")
+
+    result = DailyShortsDaemon().run_daily_cycle(count=1, dry_run=True, source="queue")
+
+    assert len(result) == 1
+    assert result[0]["source"] in {"arxiv", "blogs", "perks"}
+
+
 def test_daemon_run_daily_cycle_mixed_count_3_balances_all_three_pillars(monkeypatch):
     """
     Validates that a multi-reel batch (count=3) under source='mixed'

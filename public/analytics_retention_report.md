@@ -1,33 +1,33 @@
 # 📈 The Model Verse — YouTube Performance & Retention Intelligence
 
-**Generated:** 2026-10-25T05:12:25.578135+00:00  
+**Generated:** 2026-11-26T17:54:05.709725+00:00  
 **Videos Analyzed:** 50 | **Autopsies Performed:** 19  
 **Top Domain:** `general_breakthroughs`  
 **Recommended Pacing:** `1.15x` TTS Speed | Hook $\le$ `6.8s`
 
 ---
 
-## 🧬 Closed-Loop Retention Genome Evolution (Engine 7.0 - Gen 344)
+## 🧬 Closed-Loop Retention Genome Evolution (Engine 7.0 - Gen 348)
 The autonomous pipeline continuously evolves these visual and narrative recipes based on real viewer drop-offs:
 
 | Visual Blueprint | Evolutionary Multiplier | Avg Retention | Win/Loss Track | Action Directive |
 | :--- | :--- | :--- | :--- | :--- |
-| `bespoke_code` | **1.5x** | 81.03% | 1931W / 181L | Auto-discovered layout. |
-| `chalkboard_code_block` | **1.5x** | 61.5% | 1176W / 0L | Auto-discovered layout. |
-| `barrier_separation` | **1.5x** | 74.08% | 345W / 46L | Auto-discovered layout. |
+| `bespoke_code` | **1.5x** | 59.37% | 1935W / 181L | Auto-discovered layout. |
+| `chalkboard_code_block` | **1.5x** | 60.0% | 1195W / 0L | Auto-discovered layout. |
+| `barrier_separation` | **1.5x** | 74.93% | 349W / 46L | Auto-discovered layout. |
 | `ast_tree` | **1.5x** | 66.11% | 102W / 0L | Auto-discovered layout. |
 | `chalkboard_code` | **1.5x** | 54.77% | 253W / 0L | Auto-discovered layout. |
-| `horizontal_race_bars` | **1.5x** | 54.44% | 1133W / 0L | Auto-discovered layout. |
-| `paper_figure` | **1.5x** | 67.76% | 884W / 0L | Auto-discovered layout. |
-| `convergence_funnel` | **1.5x** | 50.03% | 277W / 0L | Auto-discovered layout. |
+| `horizontal_race_bars` | **1.5x** | 59.63% | 1153W / 0L | Auto-discovered layout. |
+| `paper_figure` | **1.5x** | 68.36% | 901W / 0L | Auto-discovered layout. |
+| `convergence_funnel` | **1.5x** | 49.42% | 279W / 0L | Auto-discovered layout. |
 | `side_by_side` | **1.5x** | 48.07% | 36W / 0L | Auto-discovered layout. |
-| `catalog_routing` | **1.5x** | 73.55% | 133W / 0L | Auto-discovered layout. |
+| `catalog_routing` | **1.5x** | 72.36% | 136W / 0L | Auto-discovered layout. |
 | `layer_stack` | **1.5x** | 68.43% | 33W / 3L | Auto-discovered layout. |
-| `vector_flow_field` | **1.5x** | 54.95% | 278W / 10L | Auto-discovered layout. |
+| `vector_flow_field` | **1.5x** | 65.89% | 286W / 10L | Auto-discovered layout. |
 | `projection_rays` | **1.5x** | 48.81% | 22W / 0L | Auto-discovered layout. |
-| `neural_activation_wave` | **1.5x** | 50.22% | 266W / 0L | Auto-discovered layout. |
-| `pipeline_stages` | **1.5x** | 57.57% | 25W / 0L | Auto-discovered layout. |
-| `grid_memory` | **1.49x** | 73.95% | 372W / 162L | Auto-discovered layout. |
+| `neural_activation_wave` | **1.5x** | 50.31% | 271W / 0L | Auto-discovered layout. |
+| `pipeline_stages` | **1.5x** | 57.52% | 27W / 0L | Auto-discovered layout. |
+| `grid_memory` | **1.47x** | 72.9% | 378W / 165L | Auto-discovered layout. |
 | `tree_hierarchy` | **1.44x** | 70.69% | 143W / 18L | Auto-discovered layout. |
 | `BlueprintHorizontalRaceBars` | **1.3x** | 78.5% | 6W / 0L | PRIORITIZE for Act 4 benchmark showdown. |
 | `BlueprintSplitFlow` | **1.25x** | 76.0% | 5W / 1L | EXCELLENT for bifurcated flows, dual-pass verification, or router dispatch. |
@@ -53,8 +53,8 @@ The autonomous pipeline continuously evolves these visual and narrative recipes 
 | `news_hero_announcement` | **0.68x** | 50.0% | 0W / 4L | Auto-discovered layout. |
 | `generic_sine_wave` | **0.5x** | 46.0% | 0W / 4L | BANNED: Flat generic animation trigger. Causes immediate cognitive drop-off. |
 | `comparison_side_by_side` | **0.4x** | 49.69% | 111W / 30L | Auto-discovered layout. |
-| `split_flow` | **0.4x** | 60.61% | 134W / 24L | Auto-discovered layout. |
-| `optimization_landscape` | **0.4x** | 61.81% | 13W / 52L | Auto-discovered layout. |
+| `split_flow` | **0.4x** | 60.61% | 134W / 25L | Auto-discovered layout. |
+| `optimization_landscape` | **0.4x** | 61.81% | 13W / 53L | Auto-discovered layout. |
 
 **Top Performing Hook Archetype:** `ARCHITECTURE_BREAKDOWN` — *Auto-discovered hook archetype: architecture_breakdown*
 
