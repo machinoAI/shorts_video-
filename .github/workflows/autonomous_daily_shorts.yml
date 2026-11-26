@@ -127,7 +127,7 @@ jobs:
           cache: 'pip'
 
       - name: Cache Kokoro Neural Voice Models
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         id: cache-kokoro
         with:
           path: kokoro_models/
