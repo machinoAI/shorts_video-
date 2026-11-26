@@ -1,0 +1,1677 @@
+{
+  "id": "scaling_laws_triad",
+  "title": "The Power-Law of Intelligence",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "SCALING LAWS EXPOSED",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until The Power-Law of Intelligence unlocks 92% throughput?",
+      "visual_focus": "Log-log plot showing cross-entropy loss collapsing against compute, parameters, and data size.",
+      "highlight_words": {
+        "power-law": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Optimization Curve",
+        "action_verb": "converges",
+        "direct_object": "power-law manifold",
+        "anchor_word": "power-law",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "optimization_landscape",
+        "title": "THE SCALING TRIAD",
+        "sub": "Cross-entropy loss as a function of C, N, and D",
+        "accent_color": "#F59E0B",
+        "params": {
+          "landscape_title": "Loss Manifold",
+          "optima_label": "Global Efficiency"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 67,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "optimization_landscape",
+        "title": "THE SCALING TRIAD",
+        "sub": "Cross-entropy loss as a function of C, N, and D",
+        "accent_color": "#F59E0B",
+        "landscape_title": "Loss Manifold",
+        "optima_label": "Global Efficiency"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.68,
+      "duration": 6.68,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.015,
+          "end": 0.205,
+          "duration": 0.19,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.205,
+          "end": 0.365,
+          "duration": 0.16,
+          "frame_ahead_trigger": 0.165
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.365,
+          "end": 1.14,
+          "duration": 0.775,
+          "frame_ahead_trigger": 0.325
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.14,
+          "end": 1.355,
+          "duration": 0.215,
+          "frame_ahead_trigger": 1.1
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.355,
+          "end": 1.85,
+          "duration": 0.495,
+          "frame_ahead_trigger": 1.315
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 1.85,
+          "end": 2.21,
+          "duration": 0.36,
+          "frame_ahead_trigger": 1.81
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.21,
+          "end": 2.625,
+          "duration": 0.415,
+          "frame_ahead_trigger": 2.17
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 2.625,
+          "end": 3.235,
+          "duration": 0.61,
+          "frame_ahead_trigger": 2.585
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 3.235,
+          "end": 3.54,
+          "duration": 0.305,
+          "frame_ahead_trigger": 3.195
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 3.54,
+          "end": 3.68,
+          "duration": 0.14,
+          "frame_ahead_trigger": 3.5
+        },
+        {
+          "word": "Power-Law",
+          "clean_word": "powerlaw",
+          "phonemes": "p\u02c8a\u028a\u025a l\u02c8\u0254\u02d0",
+          "start": 3.68,
+          "end": 4.27,
+          "duration": 0.59,
+          "frame_ahead_trigger": 3.64
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 4.27,
+          "end": 4.316,
+          "duration": 0.046,
+          "frame_ahead_trigger": 4.23
+        },
+        {
+          "word": "Intelligence",
+          "clean_word": "intelligence",
+          "phonemes": "\u026ant\u02c8\u025bl\u026ad\u0292\u0259ns",
+          "start": 4.316,
+          "end": 4.995,
+          "duration": 0.679,
+          "frame_ahead_trigger": 4.276
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 4.995,
+          "end": 5.52,
+          "duration": 0.525,
+          "frame_ahead_trigger": 4.955
+        },
+        {
+          "word": "92%",
+          "clean_word": "92",
+          "phonemes": "n\u02c8a\u026anti t\u02c8u\u02d0",
+          "start": 5.52,
+          "end": 6.215,
+          "duration": 0.695,
+          "frame_ahead_trigger": 5.48
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 6.215,
+          "end": 6.58,
+          "duration": 0.365,
+          "frame_ahead_trigger": 6.175
+        }
+      ],
+      "audio_duration": 6.68,
+      "slot_duration": 6.83
+    },
+    {
+      "beat_id": 2,
+      "text": "The villain is the memory wall; most architects obsess over layer depth while the true bottleneck remains compute.",
+      "visual_focus": "A bottleneck graphic showing compute budget draining into the VRAM capacity limit.",
+      "highlight_words": {
+        "memory wall": "#EF4444",
+        "bottleneck": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Compute Budget",
+        "action_verb": "starves",
+        "direct_object": "parameter growth",
+        "anchor_word": "bottleneck",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE RESOURCE BOTTLENECK",
+        "sub": "Compute vs Parameter Entanglement",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Compute (C)",
+          "stream_b_label": "Parameters (N)",
+          "barrier_label": "Memory Wall",
+          "barrier_sub": "Constraint boundary"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE RESOURCE BOTTLENECK",
+        "sub": "Compute vs Parameter Entanglement",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Compute (C)",
+        "stream_b_label": "Parameters (N)",
+        "barrier_label": "Memory Wall",
+        "barrier_sub": "Constraint boundary"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.83,
+      "end": 12.67,
+      "duration": 5.85,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 6.837,
+          "end": 6.912,
+          "duration": 0.075,
+          "frame_ahead_trigger": 6.947
+        },
+        {
+          "word": "villain",
+          "clean_word": "villain",
+          "phonemes": "v\u02c8\u026al\u0259n",
+          "start": 6.912,
+          "end": 7.237,
+          "duration": 0.325,
+          "frame_ahead_trigger": 7.022
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 7.237,
+          "end": 7.387,
+          "duration": 0.15,
+          "frame_ahead_trigger": 7.347
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 7.387,
+          "end": 7.487,
+          "duration": 0.1,
+          "frame_ahead_trigger": 7.497
+        },
+        {
+          "word": "memory",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 7.487,
+          "end": 7.917,
+          "duration": 0.43,
+          "frame_ahead_trigger": 7.597
+        },
+        {
+          "word": "wall;",
+          "clean_word": "wall",
+          "phonemes": "w\u02c8\u0254\u02d0l",
+          "start": 7.917,
+          "end": 8.156,
+          "duration": 0.239,
+          "frame_ahead_trigger": 8.027
+        },
+        {
+          "word": "most",
+          "clean_word": "most",
+          "phonemes": "m\u02c8o\u028ast",
+          "start": 8.156,
+          "end": 8.592,
+          "duration": 0.436,
+          "frame_ahead_trigger": 8.266
+        },
+        {
+          "word": "architects",
+          "clean_word": "architects",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkts",
+          "start": 8.592,
+          "end": 9.162,
+          "duration": 0.57,
+          "frame_ahead_trigger": 8.702
+        },
+        {
+          "word": "obsess",
+          "clean_word": "obsess",
+          "phonemes": "\u0259bs\u02c8\u025bs",
+          "start": 9.162,
+          "end": 9.482,
+          "duration": 0.32,
+          "frame_ahead_trigger": 9.272
+        },
+        {
+          "word": "over",
+          "clean_word": "over",
+          "phonemes": "\u02c8o\u028av\u025a",
+          "start": 9.482,
+          "end": 9.707,
+          "duration": 0.225,
+          "frame_ahead_trigger": 9.592
+        },
+        {
+          "word": "layer",
+          "clean_word": "layer",
+          "phonemes": "l\u02c8e\u026a\u025a",
+          "start": 9.707,
+          "end": 10.007,
+          "duration": 0.3,
+          "frame_ahead_trigger": 9.817
+        },
+        {
+          "word": "depth",
+          "clean_word": "depth",
+          "phonemes": "d\u02c8\u025bp\u03b8",
+          "start": 10.007,
+          "end": 10.327,
+          "duration": 0.32,
+          "frame_ahead_trigger": 10.117
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 10.327,
+          "end": 10.527,
+          "duration": 0.2,
+          "frame_ahead_trigger": 10.437
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 10.527,
+          "end": 10.777,
+          "duration": 0.25,
+          "frame_ahead_trigger": 10.637
+        },
+        {
+          "word": "true",
+          "clean_word": "true",
+          "phonemes": "t\u0279\u02c8u\u02d0",
+          "start": 10.777,
+          "end": 10.957,
+          "duration": 0.18,
+          "frame_ahead_trigger": 10.887
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 10.957,
+          "end": 11.632,
+          "duration": 0.675,
+          "frame_ahead_trigger": 11.067
+        },
+        {
+          "word": "remains",
+          "clean_word": "remains",
+          "phonemes": "\u0279\u1d7bm\u02c8e\u026anz",
+          "start": 11.632,
+          "end": 12.042,
+          "duration": 0.41,
+          "frame_ahead_trigger": 11.742
+        },
+        {
+          "word": "compute.",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 12.042,
+          "end": 12.497,
+          "duration": 0.455,
+          "frame_ahead_trigger": 12.152
+        }
+      ],
+      "audio_duration": 5.85,
+      "slot_duration": 5.99
+    },
+    {
+      "beat_id": 3,
+      "text": "The Eureka pivot realizes that model performance depends primarily on the total compute budget allocated during training.",
+      "visual_focus": "A geometric vector field shifting to show the alignment of optimal training trajectory.",
+      "highlight_words": {
+        "Eureka pivot": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Optimal Policy",
+        "action_verb": "projects",
+        "direct_object": "compute allocation",
+        "anchor_word": "pivot",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE POWER-LAW OF I ARCHITECTURE",
+        "sub": "A geometric vector field shifting to show the alignment of optima",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_1_SuboptimalModels.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_1_SuboptimalModels.png",
+          "arxiv_id": "2001.08361",
+          "title": "THE POWER-LAW OF I ARCHITECTURE",
+          "sub": "A geometric vector field shifting to show the alignment of optima",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Suboptimalmodels",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_1_SuboptimalModels.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_1_SuboptimalModels.png",
+        "arxiv_id": "2001.08361",
+        "title": "THE POWER-LAW OF I ARCHITECTURE",
+        "sub": "A geometric vector field shifting to show the alignment of optima",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Suboptimalmodels",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 12.82,
+      "end": 19.33,
+      "duration": 6.51,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 12.833,
+          "end": 12.983,
+          "duration": 0.15,
+          "frame_ahead_trigger": 13.093
+        },
+        {
+          "word": "Eureka",
+          "clean_word": "eureka",
+          "phonemes": "ju\u02d0\u0279\u02c8i\u02d0k\u0250",
+          "start": 12.983,
+          "end": 13.308,
+          "duration": 0.325,
+          "frame_ahead_trigger": 13.243
+        },
+        {
+          "word": "pivot",
+          "clean_word": "pivot",
+          "phonemes": "p\u02c8\u026av\u0259t",
+          "start": 13.308,
+          "end": 13.633,
+          "duration": 0.325,
+          "frame_ahead_trigger": 13.568
+        },
+        {
+          "word": "realizes",
+          "clean_word": "realizes",
+          "phonemes": "\u0279\u02c8i\u02d0\u0259la\u026az\u1d7bz",
+          "start": 13.633,
+          "end": 14.263,
+          "duration": 0.63,
+          "frame_ahead_trigger": 13.893
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 14.263,
+          "end": 14.493,
+          "duration": 0.23,
+          "frame_ahead_trigger": 14.523
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 14.493,
+          "end": 14.808,
+          "duration": 0.315,
+          "frame_ahead_trigger": 14.753
+        },
+        {
+          "word": "performance",
+          "clean_word": "performance",
+          "phonemes": "p\u025af\u02c8\u0254\u02d0\u0279m\u0259ns",
+          "start": 14.808,
+          "end": 15.363,
+          "duration": 0.555,
+          "frame_ahead_trigger": 15.068
+        },
+        {
+          "word": "depends",
+          "clean_word": "depends",
+          "phonemes": "d\u1d7bp\u02c8\u025bndz",
+          "start": 15.363,
+          "end": 15.738,
+          "duration": 0.375,
+          "frame_ahead_trigger": 15.623
+        },
+        {
+          "word": "primarily",
+          "clean_word": "primarily",
+          "phonemes": "p\u0279a\u026am\u02c8\u025b\u0279\u1d7bli",
+          "start": 15.738,
+          "end": 16.423,
+          "duration": 0.685,
+          "frame_ahead_trigger": 15.998
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 16.423,
+          "end": 16.538,
+          "duration": 0.115,
+          "frame_ahead_trigger": 16.683
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 16.538,
+          "end": 16.648,
+          "duration": 0.11,
+          "frame_ahead_trigger": 16.798
+        },
+        {
+          "word": "total",
+          "clean_word": "total",
+          "phonemes": "t\u02c8o\u028a\u027e\u0259l",
+          "start": 16.648,
+          "end": 17.023,
+          "duration": 0.375,
+          "frame_ahead_trigger": 16.908
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 17.023,
+          "end": 17.478,
+          "duration": 0.455,
+          "frame_ahead_trigger": 17.283
+        },
+        {
+          "word": "budget",
+          "clean_word": "budget",
+          "phonemes": "b\u02c8\u028cd\u0292\u026at",
+          "start": 17.478,
+          "end": 17.84,
+          "duration": 0.363,
+          "frame_ahead_trigger": 17.738
+        },
+        {
+          "word": "allocated",
+          "clean_word": "allocated",
+          "phonemes": "\u02c8\u00e6l\u0259k\u02cce\u026a\u027e\u1d7bd",
+          "start": 17.84,
+          "end": 18.413,
+          "duration": 0.572,
+          "frame_ahead_trigger": 18.1
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 18.413,
+          "end": 18.738,
+          "duration": 0.325,
+          "frame_ahead_trigger": 18.673
+        },
+        {
+          "word": "training.",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 18.738,
+          "end": 19.183,
+          "duration": 0.445,
+          "frame_ahead_trigger": 18.998
+        }
+      ],
+      "audio_duration": 6.51,
+      "slot_duration": 6.66
+    },
+    {
+      "beat_id": 4,
+      "text": "The secret sauce reveals that larger models are inherently more sample-efficient, requiring fewer tokens to reach convergence.",
+      "visual_focus": "Dynamic pipeline showing larger models consuming less data compared to smaller architectures.",
+      "highlight_words": {
+        "sample-efficient": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Large Model",
+        "action_verb": "compresses",
+        "direct_object": "training data",
+        "anchor_word": "sample-efficient",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: THE POWER-LAW OF I",
+        "sub": "Dynamic pipeline showing larger models consuming less data compar",
+        "params": {
+          "title": "KERNEL CODE: THE POWER-LAW OF I",
+          "sub": "Dynamic pipeline showing larger models consuming less data compar",
+          "filename": "compute_scaling.py",
+          "language": "python",
+          "lines": [
+            "def get_optimal_params(C):",
+            "# Target loss reduction",
+            "N = C ** 0.73",
+            "D = C ** 0.27",
+            "return N, D"
+          ],
+          "highlight_lines": [
+            2,
+            3
+          ],
+          "trace_register": "\u26a1 OPTIMAL SCALING KERNEL",
+          "delta_badge": "Compute allocation power-law derivation"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: THE POWER-LAW OF I",
+        "sub": "Dynamic pipeline showing larger models consuming less data compar",
+        "filename": "compute_scaling.py",
+        "language": "python",
+        "lines": [
+          "def get_optimal_params(C):",
+          "# Target loss reduction",
+          "N = C ** 0.73",
+          "D = C ** 0.27",
+          "return N, D"
+        ],
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "trace_register": "\u26a1 OPTIMAL SCALING KERNEL",
+        "delta_badge": "Compute allocation power-law derivation"
+      },
+      "start": 19.48,
+      "end": 26.63,
+      "duration": 7.15,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 19.479,
+          "end": 19.593,
+          "duration": 0.114,
+          "frame_ahead_trigger": 19.889
+        },
+        {
+          "word": "secret",
+          "clean_word": "secret",
+          "phonemes": "s\u02c8i\u02d0k\u0279\u1d7bt",
+          "start": 19.593,
+          "end": 20.014,
+          "duration": 0.421,
+          "frame_ahead_trigger": 20.003
+        },
+        {
+          "word": "sauce",
+          "clean_word": "sauce",
+          "phonemes": "s\u02c8\u0254\u02d0s",
+          "start": 20.014,
+          "end": 20.309,
+          "duration": 0.295,
+          "frame_ahead_trigger": 20.424
+        },
+        {
+          "word": "reveals",
+          "clean_word": "reveals",
+          "phonemes": "\u0279\u1d7bv\u02c8i\u02d0lz",
+          "start": 20.309,
+          "end": 20.819,
+          "duration": 0.51,
+          "frame_ahead_trigger": 20.719
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 20.819,
+          "end": 20.949,
+          "duration": 0.13,
+          "frame_ahead_trigger": 21.229
+        },
+        {
+          "word": "larger",
+          "clean_word": "larger",
+          "phonemes": "l\u02c8\u0251\u02d0\u0279d\u0292\u025a",
+          "start": 20.949,
+          "end": 21.474,
+          "duration": 0.525,
+          "frame_ahead_trigger": 21.359
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 21.474,
+          "end": 21.834,
+          "duration": 0.36,
+          "frame_ahead_trigger": 21.884
+        },
+        {
+          "word": "are",
+          "clean_word": "are",
+          "phonemes": "\u0251\u02d0\u0279",
+          "start": 21.834,
+          "end": 22.119,
+          "duration": 0.285,
+          "frame_ahead_trigger": 22.244
+        },
+        {
+          "word": "inherently",
+          "clean_word": "inherently",
+          "phonemes": "\u026anh\u02c8i\u0259\u0279\u0259ntli",
+          "start": 22.119,
+          "end": 22.794,
+          "duration": 0.675,
+          "frame_ahead_trigger": 22.529
+        },
+        {
+          "word": "more",
+          "clean_word": "more",
+          "phonemes": "m\u02c8\u0254\u02d0\u0279",
+          "start": 22.794,
+          "end": 23.084,
+          "duration": 0.29,
+          "frame_ahead_trigger": 23.204
+        },
+        {
+          "word": "sample-efficient,",
+          "clean_word": "sampleefficient",
+          "phonemes": "s\u02c8\u00e6mpli\u02d0f\u02cc\u026a\u0283\u0259nt",
+          "start": 23.084,
+          "end": 24.004,
+          "duration": 0.92,
+          "frame_ahead_trigger": 23.494
+        },
+        {
+          "word": "requiring",
+          "clean_word": "requiring",
+          "phonemes": "\u0279\u1d7bkw\u02c8a\u026a\u025a\u0279\u026a\u014b",
+          "start": 24.004,
+          "end": 24.634,
+          "duration": 0.63,
+          "frame_ahead_trigger": 24.414
+        },
+        {
+          "word": "fewer",
+          "clean_word": "fewer",
+          "phonemes": "fj\u02c8u\u02d0\u025a",
+          "start": 24.634,
+          "end": 24.939,
+          "duration": 0.305,
+          "frame_ahead_trigger": 25.044
+        },
+        {
+          "word": "tokens",
+          "clean_word": "tokens",
+          "phonemes": "t\u02c8o\u028ak\u0259nz",
+          "start": 24.939,
+          "end": 25.409,
+          "duration": 0.47,
+          "frame_ahead_trigger": 25.349
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 25.409,
+          "end": 25.489,
+          "duration": 0.08,
+          "frame_ahead_trigger": 25.819
+        },
+        {
+          "word": "reach",
+          "clean_word": "reach",
+          "phonemes": "\u0279\u02c8i\u02d0t\u0283",
+          "start": 25.489,
+          "end": 25.864,
+          "duration": 0.375,
+          "frame_ahead_trigger": 25.899
+        },
+        {
+          "word": "convergence.",
+          "clean_word": "convergence",
+          "phonemes": "k\u0259nv\u02c8\u025c\u02d0d\u0292\u0259ns",
+          "start": 25.864,
+          "end": 26.554,
+          "duration": 0.69,
+          "frame_ahead_trigger": 26.274
+        }
+      ],
+      "audio_duration": 7.15,
+      "slot_duration": 7.3
+    },
+    {
+      "beat_id": 5,
+      "text": "Empirical data proves that stopping well before convergence allows for optimal compute allocation across the entire fleet.",
+      "visual_focus": "Bar chart comparing compute-optimal training against standard training paths.",
+      "highlight_words": {
+        "optimal": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Training Budget",
+        "action_verb": "optimizes",
+        "direct_object": "compute utilization",
+        "anchor_word": "optimal",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: EFFICIENCY",
+        "sub": "Bar chart comparing compute-optimal training against",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: EFFICIENCY",
+          "sub": "Bar chart comparing compute-optimal training against",
+          "metric_name": "Efficiency Gains",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "Scaling-Optimal",
+              "value": 92.0,
+              "display_val": "92%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Standard Baseline",
+              "value": 45.0,
+              "display_val": "45%",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +47% SOTA EFFICIENCY GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: EFFICIENCY",
+        "sub": "Bar chart comparing compute-optimal training against",
+        "metric_name": "Efficiency Gains",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "Scaling-Optimal",
+            "value": 92.0,
+            "display_val": "92%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Standard Baseline",
+            "value": 45.0,
+            "display_val": "45%",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +47% SOTA EFFICIENCY GAIN"
+      },
+      "start": 26.78,
+      "end": 33.73,
+      "duration": 6.95,
+      "word_timings": [
+        {
+          "word": "Empirical",
+          "clean_word": "empirical",
+          "phonemes": "\u025bmp\u02c8\u026a\u0279\u026ak\u0259l",
+          "start": 26.781,
+          "end": 27.326,
+          "duration": 0.545,
+          "frame_ahead_trigger": 27.341
+        },
+        {
+          "word": "data",
+          "clean_word": "data",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259",
+          "start": 27.326,
+          "end": 27.656,
+          "duration": 0.33,
+          "frame_ahead_trigger": 27.886
+        },
+        {
+          "word": "proves",
+          "clean_word": "proves",
+          "phonemes": "p\u0279\u02c8u\u02d0vz",
+          "start": 27.656,
+          "end": 28.046,
+          "duration": 0.39,
+          "frame_ahead_trigger": 28.216
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 28.046,
+          "end": 28.296,
+          "duration": 0.25,
+          "frame_ahead_trigger": 28.606
+        },
+        {
+          "word": "stopping",
+          "clean_word": "stopping",
+          "phonemes": "st\u02c8\u0251\u02d0p\u026a\u014b",
+          "start": 28.296,
+          "end": 28.771,
+          "duration": 0.475,
+          "frame_ahead_trigger": 28.856
+        },
+        {
+          "word": "well",
+          "clean_word": "well",
+          "phonemes": "w\u02c8\u025bl",
+          "start": 28.771,
+          "end": 29.051,
+          "duration": 0.28,
+          "frame_ahead_trigger": 29.331
+        },
+        {
+          "word": "before",
+          "clean_word": "before",
+          "phonemes": "b\u1d7bf\u02c8\u0254\u02d0\u0279",
+          "start": 29.051,
+          "end": 29.396,
+          "duration": 0.345,
+          "frame_ahead_trigger": 29.611
+        },
+        {
+          "word": "convergence",
+          "clean_word": "convergence",
+          "phonemes": "k\u0259nv\u02c8\u025c\u02d0d\u0292\u0259ns",
+          "start": 29.396,
+          "end": 30.078,
+          "duration": 0.682,
+          "frame_ahead_trigger": 29.956
+        },
+        {
+          "word": "allows",
+          "clean_word": "allows",
+          "phonemes": "\u0250l\u02c8a\u028az",
+          "start": 30.078,
+          "end": 30.306,
+          "duration": 0.228,
+          "frame_ahead_trigger": 30.638
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 30.306,
+          "end": 30.666,
+          "duration": 0.36,
+          "frame_ahead_trigger": 30.866
+        },
+        {
+          "word": "optimal",
+          "clean_word": "optimal",
+          "phonemes": "\u02c8\u0251\u02d0pt\u026am\u0259l",
+          "start": 30.666,
+          "end": 31.131,
+          "duration": 0.465,
+          "frame_ahead_trigger": 31.226
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 31.131,
+          "end": 31.661,
+          "duration": 0.53,
+          "frame_ahead_trigger": 31.691
+        },
+        {
+          "word": "allocation",
+          "clean_word": "allocation",
+          "phonemes": "\u02cc\u00e6l\u0259k\u02c8e\u026a\u0283\u0259n",
+          "start": 31.661,
+          "end": 32.206,
+          "duration": 0.545,
+          "frame_ahead_trigger": 32.221
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 32.206,
+          "end": 32.721,
+          "duration": 0.515,
+          "frame_ahead_trigger": 32.766
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 32.721,
+          "end": 32.796,
+          "duration": 0.075,
+          "frame_ahead_trigger": 33.281
+        },
+        {
+          "word": "entire",
+          "clean_word": "entire",
+          "phonemes": "\u025bnt\u02c8a\u026a\u025a",
+          "start": 32.796,
+          "end": 33.201,
+          "duration": 0.405,
+          "frame_ahead_trigger": 33.356
+        },
+        {
+          "word": "fleet.",
+          "clean_word": "fleet",
+          "phonemes": "fl\u02c8i\u02d0t",
+          "start": 33.201,
+          "end": 33.546,
+          "duration": 0.345,
+          "frame_ahead_trigger": 33.761
+        }
+      ],
+      "audio_duration": 6.95,
+      "slot_duration": 7.1
+    },
+    {
+      "beat_id": 6,
+      "text": "Stop guessing hyper-parameters and start following the exponents; subscribe to machinoAI for more deep-dives.",
+      "visual_focus": "Recursive loop animation showing the triad exponents interacting with the title.",
+      "highlight_words": {
+        "exponents": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "machinoAI",
+        "action_verb": "loops",
+        "direct_object": "Scaling Triad",
+        "anchor_word": "exponents",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "THE SCALING PARADIGM",
+        "sub": "Recursive loop back to first principles",
+        "accent_color": "#FFFFFF",
+        "params": {
+          "root_label": "Scaling Laws",
+          "optimal_label": "C, N, D Exponents",
+          "pruned_label": "Manual Guesswork"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 33.88,
+      "end": 39.94,
+      "duration": 6.06,
+      "word_timings": [
+        {
+          "word": "Stop",
+          "clean_word": "stop",
+          "phonemes": "st\u02c8\u0251\u02d0p",
+          "start": 33.886,
+          "end": 34.246,
+          "duration": 0.36,
+          "frame_ahead_trigger": 34.596
+        },
+        {
+          "word": "guessing",
+          "clean_word": "guessing",
+          "phonemes": "\u0261\u02c8\u025bs\u026a\u014b",
+          "start": 34.246,
+          "end": 34.626,
+          "duration": 0.38,
+          "frame_ahead_trigger": 34.956
+        },
+        {
+          "word": "hyper-parameters",
+          "clean_word": "hyperparameters",
+          "phonemes": "h\u02cca\u026ap\u025ap\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025az",
+          "start": 34.626,
+          "end": 35.466,
+          "duration": 0.84,
+          "frame_ahead_trigger": 35.336
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 35.466,
+          "end": 35.551,
+          "duration": 0.085,
+          "frame_ahead_trigger": 36.176
+        },
+        {
+          "word": "start",
+          "clean_word": "start",
+          "phonemes": "st\u02c8\u0251\u02d0\u0279t",
+          "start": 35.551,
+          "end": 35.961,
+          "duration": 0.41,
+          "frame_ahead_trigger": 36.261
+        },
+        {
+          "word": "following",
+          "clean_word": "following",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a\u026a\u014b",
+          "start": 35.961,
+          "end": 36.466,
+          "duration": 0.505,
+          "frame_ahead_trigger": 36.671
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 36.466,
+          "end": 36.592,
+          "duration": 0.126,
+          "frame_ahead_trigger": 37.176
+        },
+        {
+          "word": "exponents;",
+          "clean_word": "exponents",
+          "phonemes": "\u025bksp\u02c8o\u028an\u0259nts",
+          "start": 36.592,
+          "end": 37.255,
+          "duration": 0.663,
+          "frame_ahead_trigger": 37.302
+        },
+        {
+          "word": "subscribe",
+          "clean_word": "subscribe",
+          "phonemes": "s\u0259bsk\u0279\u02c8a\u026ab",
+          "start": 37.255,
+          "end": 37.801,
+          "duration": 0.546,
+          "frame_ahead_trigger": 37.965
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 37.801,
+          "end": 37.981,
+          "duration": 0.18,
+          "frame_ahead_trigger": 38.511
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 37.981,
+          "end": 38.906,
+          "duration": 0.925,
+          "frame_ahead_trigger": 38.691
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 38.906,
+          "end": 39.121,
+          "duration": 0.215,
+          "frame_ahead_trigger": 39.616
+        },
+        {
+          "word": "more",
+          "clean_word": "more",
+          "phonemes": "m\u02c8\u0254\u02d0\u0279",
+          "start": 39.121,
+          "end": 39.441,
+          "duration": 0.32,
+          "frame_ahead_trigger": 39.831
+        },
+        {
+          "word": "deep-dives.",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 39.441,
+          "end": 39.851,
+          "duration": 0.41,
+          "frame_ahead_trigger": 40.151
+        }
+      ],
+      "audio_duration": 6.06,
+      "slot_duration": 6.06
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$L(N, D) = \\left( \\frac{N_c}{N} \\right)^{\\frac{\\alpha_N}{\\alpha_D}} + \\left( \\frac{D_c}{D} \\right)$",
+      "filename": "scaling_laws_triad_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "N",
+          "label": "Parameters"
+        },
+        {
+          "term": "D",
+          "label": "Dataset Size"
+        }
+      ],
+      "svg_filename": "scaling_laws_triad_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$C = 6ND$",
+      "filename": "scaling_laws_triad_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "C",
+          "label": "Total Compute"
+        },
+        {
+          "term": "6",
+          "label": "FLOPS/Param/Token"
+        }
+      ],
+      "svg_filename": "scaling_laws_triad_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$L(C) \\approx E + \\frac{A}{C^{\\alpha_C}}$",
+      "filename": "scaling_laws_triad_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "E",
+          "label": "Irreducible Loss"
+        },
+        {
+          "term": "\\alpha_C",
+          "label": "Compute Exponent"
+        }
+      ],
+      "svg_filename": "scaling_laws_triad_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\frac{\\partial L}{\\partial N} \\propto \\frac{\\partial L}{\\partial D} \\cdot \\frac{\\partial D}{\\partial N}$",
+      "filename": "scaling_laws_triad_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "\\partial L",
+          "label": "Loss Change"
+        },
+        {
+          "term": "\\partial N",
+          "label": "Param Change"
+        }
+      ],
+      "svg_filename": "scaling_laws_triad_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$C_{opt} \\propto 10^{12} \\text{ FLOPs}$",
+      "filename": "scaling_laws_triad_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "C_{opt}",
+          "label": "Optimal Budget"
+        }
+      ],
+      "svg_filename": "scaling_laws_triad_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "COMPUTE",
+          "color": "#38BDF8",
+          "items": [
+            "FLOPs",
+            "TFLOPS",
+            "SRAM"
+          ]
+        },
+        {
+          "name": "PARAMETERS",
+          "color": "#10B981",
+          "items": [
+            "Weights",
+            "Layers",
+            "Hidden Dim"
+          ]
+        },
+        {
+          "name": "DATASET",
+          "color": "#F59E0B",
+          "items": [
+            "Tokens",
+            "Corpus",
+            "Samples"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Training Step",
+        "target_cluster": "COMPUTE",
+        "token": "C"
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Memory",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Bandwidth",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "Scaling-Optimal Model",
+    "model_a_specs": [
+      "Large Param Count",
+      "Small Data Pass",
+      "Compute Aware"
+    ],
+    "model_b": "Dense Baseline",
+    "model_b_specs": [
+      "Fixed Width",
+      "Full Convergence",
+      "Compute Heavy"
+    ],
+    "divide_title": "SCALING EXPO VS BRUTE FORCE",
+    "model_a_stat": "92%",
+    "model_a_stat_label": "EFFICIENCY GAIN",
+    "model_b_stat": "45%",
+    "model_b_stat_label": "BASELINE EFFICIENCY",
+    "efficiency_badge": "\u26a1 2x COMPUTE REDUCTION",
+    "benchmarks": [
+      {
+        "name": "Compute Efficiency",
+        "score_a": "92%",
+        "score_b": "45%"
+      },
+      {
+        "name": "Training Speed",
+        "score_a": "10x",
+        "score_b": "1x"
+      },
+      {
+        "name": "Model Scaling",
+        "score_a": "Power-Law",
+        "score_b": "Linear"
+      }
+    ],
+    "scale_metric": "671B",
+    "scale_label": "Total Parameters",
+    "bottleneck_title": "THE MEMORY WALL",
+    "bottleneck_desc": "Entangled superposition of Compute and Memory",
+    "solution_title": "POWER-LAW OPTIMIZATION",
+    "solution_components": "Compute-Param Allocation",
+    "mechanism_title": "OPTIMAL SAMPLE ALLOCATION",
+    "payoff_stat": "92%",
+    "payoff_label": "EFFICIENCY",
+    "payoff_sub": "Compute vs Parameter Pareto Frontier",
+    "payoff_hero_stat": 92.0,
+    "payoff_hero_label": "Scaling Optimal",
+    "payoff_base_stat": 45.0,
+    "payoff_base_label": "Standard Training",
+    "payoff_delta_badge": "\u26a1 +47% EFFICIENCY GAIN",
+    "challenger": "Scaling Model",
+    "incumbent": "Traditional Model"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: EFFICIENCY",
+    "metric_name": "Efficiency Gains",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "Scaling-Optimal",
+        "value": 92.0,
+        "display_val": "92%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Standard Baseline",
+        "value": 45.0,
+        "display_val": "45%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +47% SOTA EFFICIENCY GAIN",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "compute_scaling.py",
+    "language": "python",
+    "lines": [
+      "def get_optimal_params(C):",
+      "# Target loss reduction",
+      "N = C ** 0.73",
+      "D = C ** 0.27",
+      "return N, D"
+    ],
+    "highlight_lines": [
+      2,
+      3
+    ],
+    "trace_register": "\u26a1 OPTIMAL SCALING KERNEL",
+    "explanation": "Compute allocation power-law derivation"
+  },
+  "arxiv_id": "2001.08361",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "SuboptimalModels",
+      "caption": "Suboptimalmodels",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/source/figures/SuboptimalModels.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_1_SuboptimalModels.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_1_SuboptimalModels.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "PerformancevsModelSizevsContext",
+      "caption": "Performancevsmodelsizevscontext",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/source/figures/PerformancevsModelSizevsContext.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_2_PerformancevsModelSizevsContext.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_2_PerformancevsModelSizevsContext.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "TradeoffModelSizeVsStepSize",
+      "caption": "Tradeoffmodelsizevsstepsize",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/source/figures/TradeoffModelSizeVsStepSize.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_3_TradeoffModelSizeVsStepSize.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_3_TradeoffModelSizeVsStepSize.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "PerfVsModelSizeAllParams",
+      "caption": "Perfvsmodelsizeallparams",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/source/figures/PerfVsModelSizeAllParams.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_4_PerfVsModelSizeAllParams.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_4_PerfVsModelSizeAllParams.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "LossvsModelDatasetSize",
+      "caption": "Lossvsmodeldatasetsize",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/source/figures/LossvsModelDatasetSize.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_5_LossvsModelDatasetSize.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_5_LossvsModelDatasetSize.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until The Power-Law of Intelligence unlocks 92% throughput?",
+    "verdict": 67,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until The Power-Law of Intelligence unlocks 92% throughput?",
+        "verdict": 67,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until The Power-Law of Intelligence proved a 92% leap.",
+        "verdict": 65,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? The Power-Law of Intelligence reveals the solution.",
+        "verdict": 62,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that The Power-Law of Intelligence finally breaks.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is The Power-Law of Intelligence a major breakthrough? Because we study empirical scaling laws for language model performance on the cross-entropy loss.",
+        "verdict": 60,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: We study empirical scaling laws for language model performance on the cross-entropy loss.",
+        "verdict": 55,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Brute-forcing model depth and width is a massive distraction when raw scale follows a predictable power-law.",
+        "verdict": 44,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "What happens when brute-forcing model depth and width is a massive distraction when raw scale follows a predictable power-law?",
+        "verdict": 44,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Did you know brute-forcing model depth and width is a massive distraction when raw scale follows a predictable power-law?",
+        "verdict": 44,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 92% speedup using The Power-Law of Intelligence.",
+        "verdict": 40,
+        "band": "WEAK",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until The Power-Law of Intelligence proved: the loss scales as a power-law with model size, dataset size, and the amount of compute used for training, with some trends spanning more than seven orders of magnitude.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Scaling-Optimal Model",
+        "model_a_score": "92%",
+        "model_b_name": "Dense Baseline",
+        "model_b_score": "45%",
+        "delta_label": "\u26a1 2x COMPUTE REDUCTION"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "b3tdXQ9LG68",
+    "shorts_url": "https://youtube.com/shorts/b3tdXQ9LG68",
+    "studio_url": "https://studio.youtube.com/video/b3tdXQ9LG68/edit",
+    "title": "The Power-Law of Intelligence Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/scaling_laws_triad_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

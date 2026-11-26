@@ -52,6 +52,8 @@ def get_font(size: int, is_mono: bool = False) -> ImageFont.FreeTypeFont:
 
 # -------------------------------------------------------------
 # Category & Topic Profiles (Pre-tuned High-CTR Configurations)
+# Defaults are deliberately non-numeric: they appear on thumbnails for ANY paper in the
+# category, so a hard-coded stat (e.g. "94.5% COMPUTE SAVED") would be a false claim.
 # -------------------------------------------------------------
 
 CATEGORY_PROFILES = {
@@ -59,49 +61,33 @@ CATEGORY_PROFILES = {
         "pill_label": "BENCHMARK NEWS",
         "theme_color": (245, 158, 11),       # Gold
         "glow_color": (245, 158, 11, 180),
-        "default_badge": "27x CHEAPER THAN o1",
+        "default_badge": "THE RESULTS, EXPLAINED",
         "badge_icon": "bolt",
-        "default_svg": "grpo_formula.svg",
-        "stat_label_1": "AIME 2024 ACCURACY:",
-        "stat_val_1": "79.8% (#1 SOTA)",
-        "stat_label_2": "INFERENCE COST:",
-        "stat_val_2": "$0.55 vs $15.00"
+        "default_svg": None,
     },
     "architecture_breakdown": {
         "pill_label": "ARCHITECTURE BREAKDOWN",
         "theme_color": (16, 185, 129),       # Mint
         "glow_color": (16, 185, 129, 180),
-        "default_badge": "94.5% COMPUTE SAVED",
+        "default_badge": "INSIDE THE ARCHITECTURE",
         "badge_icon": "rocket",
-        "default_svg": "efficiency_math.svg",
-        "stat_label_1": "ACTIVE PARAMETERS:",
-        "stat_val_1": "37B / 671B (5.5%)",
-        "stat_label_2": "ROUTING LATENCY:",
-        "stat_val_2": "TOP-8 LASERS"
+        "default_svg": None,
     },
     "mechanism_deepdive": {
         "pill_label": "MECHANISM DEEP DIVE",
         "theme_color": (0, 240, 255),        # Cyan
         "glow_color": (0, 240, 255, 180),
-        "default_badge": "3x FASTER ATTENTION",
+        "default_badge": "HOW IT ACTUALLY WORKS",
         "badge_icon": "bolt",
-        "default_svg": "attention_equation.svg",
-        "stat_label_1": "VRAM COMPLEXITY:",
-        "stat_val_1": "O(1) SRAM TILES",
-        "stat_label_2": "HARDWARE SPEED:",
-        "stat_val_2": "HOPPER ASYNC TMA"
+        "default_svg": None,
     },
     "model_showdown": {
         "pill_label": "MODEL SHOWDOWN",
         "theme_color": (255, 51, 102),       # Danger / Neon Red
         "glow_color": (255, 51, 102, 180),
-        "default_badge": "OPEN WEIGHTS SHOCK",
+        "default_badge": "HEAD-TO-HEAD",
         "badge_icon": "flame",
-        "default_svg": "cost_disparity_r1.svg",
-        "stat_label_1": "BENCHMARK PARITY:",
-        "stat_val_1": "MATH-500: 97.3%",
-        "stat_label_2": "API COST SPREAD:",
-        "stat_val_2": "96% SAVINGS"
+        "default_svg": None,
     }
 }
 
@@ -318,14 +304,14 @@ class ShortsThumbnailGenerator:
         draw.text((63, 228), topic_part or "ARCHITECTURE & MATHEMATICS", font=font_subtitle, fill=(0, 0, 0, 220))
         draw.text((60, 225), topic_part or "ARCHITECTURE & MATHEMATICS", font=font_subtitle, fill=(248, 250, 252, 255))
 
-        meta = spec.get("metadata", {})
+        meta = spec.get("metadata") or {}
 
         # --- Hero Stat / Hook Badge (Y = 300 to 410) ---
         badge_candidate = (
             custom_badge
             or meta.get("efficiency_badge")
             or meta.get("payoff_badge")
-            or (f"{meta['payoff_stat']} {meta['payoff_label']}" if "payoff_stat" in meta and "payoff_label" in meta else None)
+            or (f"{meta['payoff_stat']} {meta['payoff_label']}" if meta.get("payoff_stat") and meta.get("payoff_label") else None)
             or profile["default_badge"]
         )
         # Clean leading emoji symbols for cleaner vector icon placement
@@ -400,8 +386,11 @@ class ShortsThumbnailGenerator:
         if not svg_filename:
             svg_filename = profile.get("default_svg")
 
-        math_svg_path = PROJECT_ROOT / "public" / "math_svgs" / svg_filename
-        rendered_png = render_math_svg_to_png(math_svg_path, output_width=860)
+        # No paper formula -> no formula plate (never show another paper's equation).
+        rendered_png = None
+        if svg_filename:
+            math_svg_path = PROJECT_ROOT / "public" / "math_svgs" / svg_filename
+            rendered_png = render_math_svg_to_png(math_svg_path, output_width=860)
 
         if rendered_png and rendered_png.exists():
             plate_rect = (60, 1140, W - 60, 1360)
@@ -431,21 +420,29 @@ class ShortsThumbnailGenerator:
             overlay.paste(math_resized, (mx, my), math_resized)
 
         # --- Impact Metrics Footer (Y = 1390 to 1570) ---
-        stat_l1 = (
-            (meta.get("model_a_stat_label") or meta.get("payoff_label") or profile.get("stat_label_1", "PRIMARY METRIC:"))
-            .upper()
-        )
+        # Stats come only from the (grounding-filtered) spec metadata, each paired with
+        # its own label. Without a stat, show non-numeric facts instead of profile numbers.
+        core_idea = meta.get("solution_title") or meta.get("mechanism_title") or spec.get("hook_tag") or spec.get("title", "")
+        if meta.get("model_a_stat"):
+            stat_l1, stat_v1 = (meta.get("model_a_stat_label") or "KEY RESULT"), str(meta["model_a_stat"])
+        elif meta.get("payoff_stat"):
+            stat_l1, stat_v1 = (meta.get("payoff_label") or "KEY RESULT"), str(meta["payoff_stat"])
+        else:
+            stat_l1, stat_v1 = "CORE IDEA", str(core_idea)[:28]
+        stat_l1 = stat_l1.upper()
         if not stat_l1.endswith(":"):
             stat_l1 += ":"
-        stat_v1 = meta.get("model_a_stat") or meta.get("payoff_stat") or profile.get("stat_val_1", "SOTA BREAKTHROUGH")
 
-        stat_l2 = (
-            (meta.get("scale_label") or profile.get("stat_label_2", "ARCHITECTURE:"))
-            .upper()
-        )
+        src_arxiv = spec.get("arxiv_id", "")
+        if meta.get("scale_metric"):
+            stat_l2, stat_v2 = (meta.get("scale_label") or "SCALE"), str(meta["scale_metric"])
+        elif src_arxiv and not str(src_arxiv).startswith(("gh_", "perk_", "blog_", "news_")):
+            stat_l2, stat_v2 = "PAPER", f"arXiv {src_arxiv}"
+        else:
+            stat_l2, stat_v2 = "CHANNEL", CHANNEL_NAME
+        stat_l2 = stat_l2.upper()
         if not stat_l2.endswith(":"):
             stat_l2 += ":"
-        stat_v2 = meta.get("scale_metric") or meta.get("solution_title") or profile.get("stat_val_2", CHANNEL_NAME)
 
         # Format label and val neatly with dynamic offset
         bb_l1 = font_meta.getbbox(stat_l1)

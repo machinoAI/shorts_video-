@@ -93,8 +93,9 @@ def test_hook_candidate_generation_archetypes():
     cand_str = " ".join(candidates)
 
     # Check for archetype patterns from hooks.json:
-    # 1. The Statistic (% or metric)
-    assert any("%" in c or "PFLOPS" in c for c in candidates)
+    # 1. Paper hooks no longer get metadata metrics spliced into templates (that mislabeled
+    #    numbers, e.g. an FID score became "speedups"); numbers only come from the scriptwriter.
+    assert not any("%" in c or "PFLOPS" in c for c in candidates)
     # 2. Address / Mistake ("you")
     assert any("you" in c.lower() for c in candidates)
     # 3. Contrarian / Warning ("everyone" or "do not" or "stop")
@@ -407,8 +408,11 @@ def test_high_scoring_hook_gating_strong_band():
     candidates = generate_hook_candidates(topic=topic, metadata=meta)
 
     winner, win_eval, all_evals = gate_and_select_best_hook(candidates)
-    assert win_eval["verdict"] >= 70
-    assert win_eval["band"] == "STRONG"
+    # Paper hooks no longer splice metadata numbers into templates, and the regex scorer
+    # rewards digits heavily, so fallback templates land in the WORKABLE band (~62-66).
+    assert win_eval["verdict"] >= 60
+    assert win_eval["band"] in ("STRONG", "WORKABLE")
+    assert "PFLOPS" not in winner and "%" not in winner
     assert win_eval["formula"] in ("The Question", "The Statistic", "The Warning", "Unclassified")
     assert winner.startswith(("Why", "Over", "Do not", "Did", "What", "How", "Standard", "Stop", "Everyone"))
 
@@ -576,4 +580,6 @@ def test_replaces_weak_low_effort_hook_with_category_hook():
     assert not optimized["beats"][0]["text"].lower().startswith("before you")
     assert not optimized["beats"][0]["text"].lower().startswith("today we")
     assert "gpu cycles waste compute" not in optimized["beats"][0]["text"].lower()
-    assert optimized["beats"][0]["hook_score"] >= 65
+    # No metadata metric ("4x") spliced in; fallback templates score WORKABLE.
+    assert "4x" not in optimized["beats"][0]["text"]
+    assert optimized["beats"][0]["hook_score"] >= 60

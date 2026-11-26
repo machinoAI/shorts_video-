@@ -1,0 +1,1792 @@
+{
+  "id": "instructgpt_alignment_breakdown",
+  "title": "InstructGPT: 1.3B Parameters Crushing 175B",
+  "category": "benchmark_news",
+  "domain_taxonomy": "quantitative_benchmark",
+  "hook_tag": "BENCHMARK NEWS",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "What happens when a 1.3 billion parameter model shouldn't be destroying a 175 billion parameter monster at following basic instructions?",
+      "visual_focus": "Comparison of two model sizes showing the 1.3B versus 175B footprint.",
+      "highlight_words": {
+        "1.3 billion": "#34D399",
+        "175 billion": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Small Model",
+        "action_verb": "dwarfs",
+        "direct_object": "Large Baseline",
+        "anchor_word": "destroying",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "PARAM SCALE PARADOX",
+        "sub": "Relative parameter weight comparison",
+        "accent_color": "#38BDF8",
+        "params": {
+          "metric_name": "Parameter Count (B)",
+          "unit": "Billions"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 66,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "horizontal_race_bars",
+        "title": "PARAM SCALE PARADOX",
+        "sub": "Relative parameter weight comparison",
+        "accent_color": "#38BDF8",
+        "metric_name": "Parameter Count (B)",
+        "unit": "Billions"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 8.79,
+      "duration": 8.79,
+      "word_timings": [
+        {
+          "word": "What",
+          "clean_word": "what",
+          "phonemes": "w\u02cc\u028ct",
+          "start": 0.005,
+          "end": 0.3,
+          "duration": 0.295,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "happens",
+          "clean_word": "happens",
+          "phonemes": "h\u02c8\u00e6p\u0259nz",
+          "start": 0.3,
+          "end": 0.64,
+          "duration": 0.34,
+          "frame_ahead_trigger": 0.26
+        },
+        {
+          "word": "when",
+          "clean_word": "when",
+          "phonemes": "w\u02cc\u025bn",
+          "start": 0.64,
+          "end": 0.76,
+          "duration": 0.12,
+          "frame_ahead_trigger": 0.6
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 0.76,
+          "end": 1.09,
+          "duration": 0.33,
+          "frame_ahead_trigger": 0.72
+        },
+        {
+          "word": "1.3",
+          "clean_word": "13",
+          "phonemes": "\u03b8\u02c8\u025c\u02d0ti\u02d0n",
+          "start": 1.09,
+          "end": 1.493,
+          "duration": 0.403,
+          "frame_ahead_trigger": 1.05
+        },
+        {
+          "word": "billion",
+          "clean_word": "billion",
+          "phonemes": "b\u02c8\u026ali\u0259n",
+          "start": 1.493,
+          "end": 1.895,
+          "duration": 0.402,
+          "frame_ahead_trigger": 1.453
+        },
+        {
+          "word": "parameter",
+          "clean_word": "parameter",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025a",
+          "start": 1.895,
+          "end": 2.45,
+          "duration": 0.555,
+          "frame_ahead_trigger": 1.855
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 2.45,
+          "end": 2.745,
+          "duration": 0.295,
+          "frame_ahead_trigger": 2.41
+        },
+        {
+          "word": "shouldn't",
+          "clean_word": "shouldnt",
+          "phonemes": "\u0283\u02c8\u028adnt",
+          "start": 2.745,
+          "end": 3.185,
+          "duration": 0.44,
+          "frame_ahead_trigger": 2.705
+        },
+        {
+          "word": "be",
+          "clean_word": "be",
+          "phonemes": "b\u02c8i\u02d0",
+          "start": 3.185,
+          "end": 3.405,
+          "duration": 0.22,
+          "frame_ahead_trigger": 3.145
+        },
+        {
+          "word": "destroying",
+          "clean_word": "destroying",
+          "phonemes": "d\u1d7bst\u0279\u02c8\u0254\u026a\u026a\u014b",
+          "start": 3.405,
+          "end": 3.935,
+          "duration": 0.53,
+          "frame_ahead_trigger": 3.365
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 3.935,
+          "end": 4.07,
+          "duration": 0.135,
+          "frame_ahead_trigger": 3.895
+        },
+        {
+          "word": "175",
+          "clean_word": "175",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad s\u02c8\u025bv\u0259nti f\u02c8a\u026av",
+          "start": 4.07,
+          "end": 5.615,
+          "duration": 1.545,
+          "frame_ahead_trigger": 4.03
+        },
+        {
+          "word": "billion",
+          "clean_word": "billion",
+          "phonemes": "b\u02c8\u026ali\u0259n",
+          "start": 5.615,
+          "end": 6.125,
+          "duration": 0.51,
+          "frame_ahead_trigger": 5.575
+        },
+        {
+          "word": "parameter",
+          "clean_word": "parameter",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025a",
+          "start": 6.125,
+          "end": 6.545,
+          "duration": 0.42,
+          "frame_ahead_trigger": 6.085
+        },
+        {
+          "word": "monster",
+          "clean_word": "monster",
+          "phonemes": "m\u02c8\u0254nst\u025a",
+          "start": 6.545,
+          "end": 6.925,
+          "duration": 0.38,
+          "frame_ahead_trigger": 6.505
+        },
+        {
+          "word": "at",
+          "clean_word": "at",
+          "phonemes": "\u00e6t",
+          "start": 6.925,
+          "end": 7.1,
+          "duration": 0.175,
+          "frame_ahead_trigger": 6.885
+        },
+        {
+          "word": "following",
+          "clean_word": "following",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a\u026a\u014b",
+          "start": 7.1,
+          "end": 7.59,
+          "duration": 0.49,
+          "frame_ahead_trigger": 7.06
+        },
+        {
+          "word": "basic",
+          "clean_word": "basic",
+          "phonemes": "b\u02c8e\u026as\u026ak",
+          "start": 7.59,
+          "end": 8.06,
+          "duration": 0.47,
+          "frame_ahead_trigger": 7.55
+        },
+        {
+          "word": "instructions?",
+          "clean_word": "instructions",
+          "phonemes": "\u026anst\u0279\u02c8\u028ck\u0283\u0259nz",
+          "start": 8.06,
+          "end": 8.705,
+          "duration": 0.645,
+          "frame_ahead_trigger": 8.02
+        }
+      ],
+      "audio_duration": 8.79,
+      "slot_duration": 8.94
+    },
+    {
+      "beat_id": 2,
+      "text": "The villain is raw scale; throwing massive data at a model creates a bloated, unaligned brute incapable of helpful intent.",
+      "visual_focus": "A giant monolithic neural block emitting scattered, toxic-red toxic output clouds.",
+      "highlight_words": {
+        "raw scale": "#EF4444",
+        "bloated": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Bloated Model",
+        "action_verb": "emits",
+        "direct_object": "Toxic Tokens",
+        "anchor_word": "bloated",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "MONOLITHIC BOTTLENECK",
+        "sub": "Unsupervised pre-training limitation",
+        "accent_color": "#EF4444",
+        "params": {
+          "stage_1_label": "Pre-training",
+          "stage_1_sub": "Massive Text Soup",
+          "stage_2_label": "Alignment Loss",
+          "stage_2_sub": "Zero Human Feedback",
+          "stage_3_label": "Output",
+          "stage_3_sub": "Toxic/Untruthful"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "MONOLITHIC BOTTLENECK",
+        "sub": "Unsupervised pre-training limitation",
+        "accent_color": "#EF4444",
+        "stage_1_label": "Pre-training",
+        "stage_1_sub": "Massive Text Soup",
+        "stage_2_label": "Alignment Loss",
+        "stage_2_sub": "Zero Human Feedback",
+        "stage_3_label": "Output",
+        "stage_3_sub": "Toxic/Untruthful"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 8.94,
+      "end": 16.04,
+      "duration": 7.1,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 8.949,
+          "end": 9.024,
+          "duration": 0.075,
+          "frame_ahead_trigger": 9.059
+        },
+        {
+          "word": "villain",
+          "clean_word": "villain",
+          "phonemes": "v\u02c8\u026al\u0259n",
+          "start": 9.024,
+          "end": 9.499,
+          "duration": 0.475,
+          "frame_ahead_trigger": 9.134
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 9.499,
+          "end": 9.564,
+          "duration": 0.065,
+          "frame_ahead_trigger": 9.609
+        },
+        {
+          "word": "raw",
+          "clean_word": "raw",
+          "phonemes": "\u0279\u02c8\u0254\u02d0",
+          "start": 9.564,
+          "end": 9.739,
+          "duration": 0.175,
+          "frame_ahead_trigger": 9.674
+        },
+        {
+          "word": "scale;",
+          "clean_word": "scale",
+          "phonemes": "sk\u02c8e\u026al",
+          "start": 9.739,
+          "end": 10.179,
+          "duration": 0.44,
+          "frame_ahead_trigger": 9.849
+        },
+        {
+          "word": "throwing",
+          "clean_word": "throwing",
+          "phonemes": "\u03b8\u0279\u02c8o\u028a\u026a\u014b",
+          "start": 10.179,
+          "end": 10.614,
+          "duration": 0.435,
+          "frame_ahead_trigger": 10.289
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 10.614,
+          "end": 10.999,
+          "duration": 0.385,
+          "frame_ahead_trigger": 10.724
+        },
+        {
+          "word": "data",
+          "clean_word": "data",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259",
+          "start": 10.999,
+          "end": 11.374,
+          "duration": 0.375,
+          "frame_ahead_trigger": 11.109
+        },
+        {
+          "word": "at",
+          "clean_word": "at",
+          "phonemes": "\u00e6t",
+          "start": 11.374,
+          "end": 11.534,
+          "duration": 0.16,
+          "frame_ahead_trigger": 11.484
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 11.534,
+          "end": 11.664,
+          "duration": 0.13,
+          "frame_ahead_trigger": 11.644
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 11.664,
+          "end": 12.019,
+          "duration": 0.355,
+          "frame_ahead_trigger": 11.774
+        },
+        {
+          "word": "creates",
+          "clean_word": "creates",
+          "phonemes": "k\u0279i\u02d0\u02c8e\u026ats",
+          "start": 12.019,
+          "end": 12.674,
+          "duration": 0.655,
+          "frame_ahead_trigger": 12.129
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 12.674,
+          "end": 12.864,
+          "duration": 0.19,
+          "frame_ahead_trigger": 12.784
+        },
+        {
+          "word": "bloated,",
+          "clean_word": "bloated",
+          "phonemes": "bl\u02c8o\u028a\u027e\u1d7bd",
+          "start": 12.864,
+          "end": 13.344,
+          "duration": 0.48,
+          "frame_ahead_trigger": 12.974
+        },
+        {
+          "word": "unaligned",
+          "clean_word": "unaligned",
+          "phonemes": "\u028cn\u0250l\u02c8a\u026and",
+          "start": 13.344,
+          "end": 13.869,
+          "duration": 0.524,
+          "frame_ahead_trigger": 13.454
+        },
+        {
+          "word": "brute",
+          "clean_word": "brute",
+          "phonemes": "b\u0279\u02c8u\u02d0t",
+          "start": 13.869,
+          "end": 14.238,
+          "duration": 0.369,
+          "frame_ahead_trigger": 13.979
+        },
+        {
+          "word": "incapable",
+          "clean_word": "incapable",
+          "phonemes": "\u026a\u014bk\u02c8e\u026ap\u0259b\u0259l",
+          "start": 14.238,
+          "end": 14.894,
+          "duration": 0.657,
+          "frame_ahead_trigger": 14.348
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 14.894,
+          "end": 15.084,
+          "duration": 0.19,
+          "frame_ahead_trigger": 15.004
+        },
+        {
+          "word": "helpful",
+          "clean_word": "helpful",
+          "phonemes": "h\u02c8\u025blpf\u0259l",
+          "start": 15.084,
+          "end": 15.494,
+          "duration": 0.41,
+          "frame_ahead_trigger": 15.194
+        },
+        {
+          "word": "intent.",
+          "clean_word": "intent",
+          "phonemes": "\u026ant\u02c8\u025bnt",
+          "start": 15.494,
+          "end": 15.959,
+          "duration": 0.465,
+          "frame_ahead_trigger": 15.604
+        }
+      ],
+      "audio_duration": 7.1,
+      "slot_duration": 7.25
+    },
+    {
+      "beat_id": 3,
+      "text": "The pivot is human supervision; by collecting demonstrations, we refine the model's behavior directly toward a user's intent.",
+      "visual_focus": "Geometric convergence of vectors towards a user-intent focal plane.",
+      "highlight_words": {
+        "human supervision": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Labeler Feed",
+        "action_verb": "constrains",
+        "direct_object": "Latent Manifold",
+        "anchor_word": "refine",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "INSTRUCTGPT ARCHITECTURE",
+        "sub": "Geometric convergence of vectors towards a user-intent focal plan",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.png",
+          "arxiv_id": "2203.02155",
+          "title": "INSTRUCTGPT ARCHITECTURE",
+          "sub": "Geometric convergence of vectors towards a user-intent focal plan",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Metadata-With-Model-Size",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.png",
+        "arxiv_id": "2203.02155",
+        "title": "INSTRUCTGPT ARCHITECTURE",
+        "sub": "Geometric convergence of vectors towards a user-intent focal plan",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Metadata-With-Model-Size",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 16.19,
+      "end": 23.3,
+      "duration": 7.1,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 16.203,
+          "end": 16.298,
+          "duration": 0.095,
+          "frame_ahead_trigger": 16.463
+        },
+        {
+          "word": "pivot",
+          "clean_word": "pivot",
+          "phonemes": "p\u02c8\u026av\u0259t",
+          "start": 16.298,
+          "end": 16.688,
+          "duration": 0.39,
+          "frame_ahead_trigger": 16.558
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 16.688,
+          "end": 16.813,
+          "duration": 0.125,
+          "frame_ahead_trigger": 16.948
+        },
+        {
+          "word": "human",
+          "clean_word": "human",
+          "phonemes": "hj\u02c8u\u02d0m\u0259n",
+          "start": 16.813,
+          "end": 17.208,
+          "duration": 0.395,
+          "frame_ahead_trigger": 17.073
+        },
+        {
+          "word": "supervision;",
+          "clean_word": "supervision",
+          "phonemes": "su\u02d0p\u025av\u02c8\u026a\u0292\u0259n",
+          "start": 17.208,
+          "end": 17.861,
+          "duration": 0.652,
+          "frame_ahead_trigger": 17.468
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 17.861,
+          "end": 18.089,
+          "duration": 0.229,
+          "frame_ahead_trigger": 18.121
+        },
+        {
+          "word": "collecting",
+          "clean_word": "collecting",
+          "phonemes": "k\u0259l\u02c8\u025bkt\u026a\u014b",
+          "start": 18.089,
+          "end": 18.578,
+          "duration": 0.489,
+          "frame_ahead_trigger": 18.349
+        },
+        {
+          "word": "demonstrations,",
+          "clean_word": "demonstrations",
+          "phonemes": "d\u02cc\u025bm\u0259nst\u0279\u02c8e\u026a\u0283\u0259nz",
+          "start": 18.578,
+          "end": 19.513,
+          "duration": 0.935,
+          "frame_ahead_trigger": 18.838
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 19.513,
+          "end": 19.688,
+          "duration": 0.175,
+          "frame_ahead_trigger": 19.773
+        },
+        {
+          "word": "refine",
+          "clean_word": "refine",
+          "phonemes": "\u0279\u1d7bf\u02c8a\u026an",
+          "start": 19.688,
+          "end": 20.108,
+          "duration": 0.42,
+          "frame_ahead_trigger": 19.948
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 20.108,
+          "end": 20.263,
+          "duration": 0.155,
+          "frame_ahead_trigger": 20.368
+        },
+        {
+          "word": "model's",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 20.263,
+          "end": 20.593,
+          "duration": 0.33,
+          "frame_ahead_trigger": 20.523
+        },
+        {
+          "word": "behavior",
+          "clean_word": "behavior",
+          "phonemes": "b\u1d7bh\u02c8e\u026avj\u025a",
+          "start": 20.593,
+          "end": 21.148,
+          "duration": 0.555,
+          "frame_ahead_trigger": 20.853
+        },
+        {
+          "word": "directly",
+          "clean_word": "directly",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bktli",
+          "start": 21.148,
+          "end": 21.653,
+          "duration": 0.505,
+          "frame_ahead_trigger": 21.408
+        },
+        {
+          "word": "toward",
+          "clean_word": "toward",
+          "phonemes": "t\u0259w\u02c8\u0254\u02d0\u0279d",
+          "start": 21.653,
+          "end": 22.028,
+          "duration": 0.375,
+          "frame_ahead_trigger": 21.913
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 22.028,
+          "end": 22.363,
+          "duration": 0.335,
+          "frame_ahead_trigger": 22.288
+        },
+        {
+          "word": "user's",
+          "clean_word": "users",
+          "phonemes": "j\u02c8u\u02d0z\u025az",
+          "start": 22.363,
+          "end": 22.693,
+          "duration": 0.33,
+          "frame_ahead_trigger": 22.623
+        },
+        {
+          "word": "intent.",
+          "clean_word": "intent",
+          "phonemes": "\u026ant\u02c8\u025bnt",
+          "start": 22.693,
+          "end": 23.118,
+          "duration": 0.425,
+          "frame_ahead_trigger": 22.953
+        }
+      ],
+      "audio_duration": 7.1,
+      "slot_duration": 7.26
+    },
+    {
+      "beat_id": 4,
+      "text": "The secret sauce is Reinforcement Learning from Human Feedback, ranking model outputs to steer the gradient away from nonsense.",
+      "visual_focus": "Optimization landscape showing the path being carved by RLHF rewards.",
+      "highlight_words": {
+        "Reinforcement Learning": "#F59E0B",
+        "steer": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "RLHF Reward",
+        "action_verb": "steers",
+        "direct_object": "Model Trajectory",
+        "anchor_word": "steer",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: INSTRUCTGPT: 1.3B ",
+        "sub": "Optimization landscape showing the path being carved by RLHF rewa",
+        "params": {
+          "title": "KERNEL CODE: INSTRUCTGPT: 1.3B ",
+          "sub": "Optimization landscape showing the path being carved by RLHF rewa",
+          "filename": "rlhf_reward.py",
+          "language": "python",
+          "lines": [
+            "def get_reward(model_output):",
+            "score = reward_model(model_output)",
+            "return compute_policy_gradient(score)"
+          ],
+          "highlight_lines": [
+            1,
+            2
+          ],
+          "trace_register": "\u26a1 HUMAN FEEDBACK OPTIMIZATION",
+          "delta_badge": "Steering generation via reward signal"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: INSTRUCTGPT: 1.3B ",
+        "sub": "Optimization landscape showing the path being carved by RLHF rewa",
+        "filename": "rlhf_reward.py",
+        "language": "python",
+        "lines": [
+          "def get_reward(model_output):",
+          "score = reward_model(model_output)",
+          "return compute_policy_gradient(score)"
+        ],
+        "highlight_lines": [
+          1,
+          2
+        ],
+        "trace_register": "\u26a1 HUMAN FEEDBACK OPTIMIZATION",
+        "delta_badge": "Steering generation via reward signal"
+      },
+      "start": 23.45,
+      "end": 30.38,
+      "duration": 6.93,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 23.462,
+          "end": 23.527,
+          "duration": 0.065,
+          "frame_ahead_trigger": 23.872
+        },
+        {
+          "word": "secret",
+          "clean_word": "secret",
+          "phonemes": "s\u02c8i\u02d0k\u0279\u1d7bt",
+          "start": 23.527,
+          "end": 24.022,
+          "duration": 0.495,
+          "frame_ahead_trigger": 23.937
+        },
+        {
+          "word": "sauce",
+          "clean_word": "sauce",
+          "phonemes": "s\u02c8\u0254\u02d0s",
+          "start": 24.022,
+          "end": 24.362,
+          "duration": 0.34,
+          "frame_ahead_trigger": 24.432
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 24.362,
+          "end": 24.423,
+          "duration": 0.06,
+          "frame_ahead_trigger": 24.772
+        },
+        {
+          "word": "Reinforcement",
+          "clean_word": "reinforcement",
+          "phonemes": "\u0279\u02cci\u02d0\u026anf\u02c8\u0254\u02d0\u0279sm\u0259nt",
+          "start": 24.423,
+          "end": 25.312,
+          "duration": 0.89,
+          "frame_ahead_trigger": 24.833
+        },
+        {
+          "word": "Learning",
+          "clean_word": "learning",
+          "phonemes": "l\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 25.312,
+          "end": 25.672,
+          "duration": 0.36,
+          "frame_ahead_trigger": 25.722
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 25.672,
+          "end": 25.982,
+          "duration": 0.31,
+          "frame_ahead_trigger": 26.082
+        },
+        {
+          "word": "Human",
+          "clean_word": "human",
+          "phonemes": "hj\u02c8u\u02d0m\u0259n",
+          "start": 25.982,
+          "end": 26.422,
+          "duration": 0.44,
+          "frame_ahead_trigger": 26.392
+        },
+        {
+          "word": "Feedback,",
+          "clean_word": "feedback",
+          "phonemes": "f\u02c8i\u02d0db\u00e6k",
+          "start": 26.422,
+          "end": 26.852,
+          "duration": 0.429,
+          "frame_ahead_trigger": 26.832
+        },
+        {
+          "word": "ranking",
+          "clean_word": "ranking",
+          "phonemes": "\u0279\u02c8\u00e6\u014bk\u026a\u014b",
+          "start": 26.852,
+          "end": 27.267,
+          "duration": 0.416,
+          "frame_ahead_trigger": 27.262
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 27.267,
+          "end": 27.652,
+          "duration": 0.385,
+          "frame_ahead_trigger": 27.677
+        },
+        {
+          "word": "outputs",
+          "clean_word": "outputs",
+          "phonemes": "\u02c8a\u028atp\u02cc\u028ats",
+          "start": 27.652,
+          "end": 28.227,
+          "duration": 0.575,
+          "frame_ahead_trigger": 28.062
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 28.227,
+          "end": 28.332,
+          "duration": 0.105,
+          "frame_ahead_trigger": 28.637
+        },
+        {
+          "word": "steer",
+          "clean_word": "steer",
+          "phonemes": "st\u02c8\u026a\u0279",
+          "start": 28.332,
+          "end": 28.537,
+          "duration": 0.205,
+          "frame_ahead_trigger": 28.742
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 28.537,
+          "end": 28.722,
+          "duration": 0.185,
+          "frame_ahead_trigger": 28.947
+        },
+        {
+          "word": "gradient",
+          "clean_word": "gradient",
+          "phonemes": "\u0261\u0279\u02c8e\u026adi\u0259nt",
+          "start": 28.722,
+          "end": 29.247,
+          "duration": 0.525,
+          "frame_ahead_trigger": 29.132
+        },
+        {
+          "word": "away",
+          "clean_word": "away",
+          "phonemes": "\u0250w\u02c8e\u026a",
+          "start": 29.247,
+          "end": 29.662,
+          "duration": 0.415,
+          "frame_ahead_trigger": 29.657
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 29.662,
+          "end": 29.752,
+          "duration": 0.09,
+          "frame_ahead_trigger": 30.072
+        },
+        {
+          "word": "nonsense.",
+          "clean_word": "nonsense",
+          "phonemes": "n\u02c8\u0251\u02d0ns\u0259ns",
+          "start": 29.752,
+          "end": 30.297,
+          "duration": 0.545,
+          "frame_ahead_trigger": 30.162
+        }
+      ],
+      "audio_duration": 6.93,
+      "slot_duration": 7.08
+    },
+    {
+      "beat_id": 5,
+      "text": "InstructGPT crushes the 175B incumbent because aligned logic beats raw, unguided scale every single time in human evaluation.",
+      "visual_focus": "A bar chart showing human preference rates for the InstructGPT versus original GPT-3.",
+      "highlight_words": {
+        "175B": "#EF4444",
+        "aligned logic": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Human Raters",
+        "action_verb": "prefer",
+        "direct_object": "1.3B Instruct Model",
+        "anchor_word": "crushes",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: HUMAN EVALUATION",
+        "sub": "A bar chart showing human preference rates for the",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: HUMAN EVALUATION",
+          "sub": "A bar chart showing human preference rates for the",
+          "metric_name": "Win Rate",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "InstructGPT (1.3B)",
+              "value": 85.0,
+              "display_val": "85%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "GPT-3 (175B)",
+              "value": 15.0,
+              "display_val": "15%",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +566% PREFERENCE RATIO"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: HUMAN EVALUATION",
+        "sub": "A bar chart showing human preference rates for the",
+        "metric_name": "Win Rate",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "InstructGPT (1.3B)",
+            "value": 85.0,
+            "display_val": "85%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "GPT-3 (175B)",
+            "value": 15.0,
+            "display_val": "15%",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +566% PREFERENCE RATIO"
+      },
+      "start": 30.53,
+      "end": 40.22,
+      "duration": 9.69,
+      "word_timings": [
+        {
+          "word": "InstructGPT",
+          "clean_word": "instructgpt",
+          "phonemes": "\u026anst\u0279\u02c8\u028ckt d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0",
+          "start": 30.541,
+          "end": 31.906,
+          "duration": 1.365,
+          "frame_ahead_trigger": 31.101
+        },
+        {
+          "word": "crushes",
+          "clean_word": "crushes",
+          "phonemes": "k\u0279\u02c8\u028c\u0283\u1d7bz",
+          "start": 31.906,
+          "end": 32.376,
+          "duration": 0.47,
+          "frame_ahead_trigger": 32.466
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 32.376,
+          "end": 32.421,
+          "duration": 0.045,
+          "frame_ahead_trigger": 32.936
+        },
+        {
+          "word": "175B",
+          "clean_word": "175b",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad s\u02c8\u025bv\u0259nti f\u02c8a\u026av b\u02c8i\u02d0",
+          "start": 32.421,
+          "end": 34.302,
+          "duration": 1.88,
+          "frame_ahead_trigger": 32.981
+        },
+        {
+          "word": "incumbent",
+          "clean_word": "incumbent",
+          "phonemes": "\u026a\u014bk\u02c8\u028cmb\u0259nt",
+          "start": 34.302,
+          "end": 34.846,
+          "duration": 0.544,
+          "frame_ahead_trigger": 34.862
+        },
+        {
+          "word": "because",
+          "clean_word": "because",
+          "phonemes": "b\u026ak\u02c8\u028cz",
+          "start": 34.846,
+          "end": 35.221,
+          "duration": 0.375,
+          "frame_ahead_trigger": 35.406
+        },
+        {
+          "word": "aligned",
+          "clean_word": "aligned",
+          "phonemes": "\u0250l\u02c8a\u026and",
+          "start": 35.221,
+          "end": 35.536,
+          "duration": 0.315,
+          "frame_ahead_trigger": 35.781
+        },
+        {
+          "word": "logic",
+          "clean_word": "logic",
+          "phonemes": "l\u02c8\u0251\u02d0d\u0292\u026ak",
+          "start": 35.536,
+          "end": 36.061,
+          "duration": 0.525,
+          "frame_ahead_trigger": 36.096
+        },
+        {
+          "word": "beats",
+          "clean_word": "beats",
+          "phonemes": "b\u02c8i\u02d0ts",
+          "start": 36.061,
+          "end": 36.476,
+          "duration": 0.415,
+          "frame_ahead_trigger": 36.621
+        },
+        {
+          "word": "raw,",
+          "clean_word": "raw",
+          "phonemes": "\u0279\u02c8\u0254\u02d0",
+          "start": 36.476,
+          "end": 36.616,
+          "duration": 0.14,
+          "frame_ahead_trigger": 37.036
+        },
+        {
+          "word": "unguided",
+          "clean_word": "unguided",
+          "phonemes": "\u02c8\u028c\u014b\u0261a\u026ad\u1d7bd",
+          "start": 36.616,
+          "end": 37.281,
+          "duration": 0.665,
+          "frame_ahead_trigger": 37.176
+        },
+        {
+          "word": "scale",
+          "clean_word": "scale",
+          "phonemes": "sk\u02c8e\u026al",
+          "start": 37.281,
+          "end": 37.593,
+          "duration": 0.312,
+          "frame_ahead_trigger": 37.841
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 37.593,
+          "end": 37.906,
+          "duration": 0.313,
+          "frame_ahead_trigger": 38.153
+        },
+        {
+          "word": "single",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 37.906,
+          "end": 38.271,
+          "duration": 0.365,
+          "frame_ahead_trigger": 38.466
+        },
+        {
+          "word": "time",
+          "clean_word": "time",
+          "phonemes": "t\u02c8a\u026am",
+          "start": 38.271,
+          "end": 38.581,
+          "duration": 0.31,
+          "frame_ahead_trigger": 38.831
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 38.581,
+          "end": 38.881,
+          "duration": 0.3,
+          "frame_ahead_trigger": 39.141
+        },
+        {
+          "word": "human",
+          "clean_word": "human",
+          "phonemes": "hj\u02c8u\u02d0m\u0259n",
+          "start": 38.881,
+          "end": 39.251,
+          "duration": 0.37,
+          "frame_ahead_trigger": 39.441
+        },
+        {
+          "word": "evaluation.",
+          "clean_word": "evaluation",
+          "phonemes": "\u026av\u02cc\u00e6lju\u02d0\u02c8e\u026a\u0283\u0259n",
+          "start": 39.251,
+          "end": 40.061,
+          "duration": 0.81,
+          "frame_ahead_trigger": 39.811
+        }
+      ],
+      "audio_duration": 9.69,
+      "slot_duration": 9.84
+    },
+    {
+      "beat_id": 6,
+      "text": "Alignment is the new scaling. Follow machinoAI for daily deep-dives into the architecture behind the next AI breakthrough.",
+      "visual_focus": "A sleek infinite loop transition graphic back to the start.",
+      "highlight_words": {
+        "Alignment": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Viewer",
+        "action_verb": "loops",
+        "direct_object": "Architecture Insight",
+        "anchor_word": "loops",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "ARCHITECTURE LOOP",
+        "sub": "Next generation paradigms",
+        "accent_color": "#34D399",
+        "params": {
+          "root_label": "Alignments",
+          "optimal_label": "Future Breakthroughs",
+          "pruned_label": "Scale Bloat"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 40.37,
+      "end": 47.43,
+      "duration": 7.06,
+      "word_timings": [
+        {
+          "word": "Alignment",
+          "clean_word": "alignment",
+          "phonemes": "\u0250l\u02c8a\u026anm\u0259nt",
+          "start": 40.376,
+          "end": 40.861,
+          "duration": 0.485,
+          "frame_ahead_trigger": 41.086
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 40.861,
+          "end": 41.056,
+          "duration": 0.195,
+          "frame_ahead_trigger": 41.571
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 41.056,
+          "end": 41.151,
+          "duration": 0.095,
+          "frame_ahead_trigger": 41.766
+        },
+        {
+          "word": "new",
+          "clean_word": "new",
+          "phonemes": "n\u02c8u\u02d0",
+          "start": 41.151,
+          "end": 41.421,
+          "duration": 0.27,
+          "frame_ahead_trigger": 41.861
+        },
+        {
+          "word": "scaling.",
+          "clean_word": "scaling",
+          "phonemes": "sk\u02c8e\u026al\u026a\u014b",
+          "start": 41.421,
+          "end": 41.877,
+          "duration": 0.457,
+          "frame_ahead_trigger": 42.131
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 41.877,
+          "end": 42.316,
+          "duration": 0.438,
+          "frame_ahead_trigger": 42.587
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 42.316,
+          "end": 43.231,
+          "duration": 0.915,
+          "frame_ahead_trigger": 43.026
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 43.231,
+          "end": 43.437,
+          "duration": 0.206,
+          "frame_ahead_trigger": 43.941
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 43.437,
+          "end": 43.801,
+          "duration": 0.364,
+          "frame_ahead_trigger": 44.147
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 43.801,
+          "end": 44.346,
+          "duration": 0.545,
+          "frame_ahead_trigger": 44.511
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 44.346,
+          "end": 44.526,
+          "duration": 0.18,
+          "frame_ahead_trigger": 45.056
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 44.526,
+          "end": 44.661,
+          "duration": 0.135,
+          "frame_ahead_trigger": 45.236
+        },
+        {
+          "word": "architecture",
+          "clean_word": "architecture",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025a",
+          "start": 44.661,
+          "end": 45.456,
+          "duration": 0.795,
+          "frame_ahead_trigger": 45.371
+        },
+        {
+          "word": "behind",
+          "clean_word": "behind",
+          "phonemes": "b\u1d7bh\u02c8a\u026and",
+          "start": 45.456,
+          "end": 45.836,
+          "duration": 0.38,
+          "frame_ahead_trigger": 46.166
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 45.836,
+          "end": 46.021,
+          "duration": 0.185,
+          "frame_ahead_trigger": 46.546
+        },
+        {
+          "word": "next",
+          "clean_word": "next",
+          "phonemes": "n\u02c8\u025bkst",
+          "start": 46.021,
+          "end": 46.376,
+          "duration": 0.355,
+          "frame_ahead_trigger": 46.731
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 46.376,
+          "end": 46.728,
+          "duration": 0.353,
+          "frame_ahead_trigger": 47.086
+        },
+        {
+          "word": "breakthrough.",
+          "clean_word": "breakthrough",
+          "phonemes": "b\u0279\u02c8e\u026ak\u03b8\u0279u\u02d0",
+          "start": 46.728,
+          "end": 47.306,
+          "duration": 0.578,
+          "frame_ahead_trigger": 47.438
+        }
+      ],
+      "audio_duration": 7.06,
+      "slot_duration": 7.06
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$N_{Instruct} = 1.3 \\times 10^9 \\ll N_{GPT3} = 175 \\times 10^9$",
+      "filename": "instructgpt_alignment_breakdown_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "N_{Instruct}",
+          "label": "InstructGPT Params"
+        },
+        {
+          "term": "N_{GPT3}",
+          "label": "GPT-3 Params"
+        }
+      ],
+      "svg_filename": "instructgpt_alignment_breakdown_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{L}_{unaligned} = \\mathbb{E}_{x \\sim P_{data}} [-\\log P(x)]$",
+      "filename": "instructgpt_alignment_breakdown_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\mathcal{L}_{unaligned}",
+          "label": "Standard Loss"
+        }
+      ],
+      "svg_filename": "instructgpt_alignment_breakdown_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\pi_{\\phi}(a|s) \\approx \\mathrm{SFT}(demonstrations)$",
+      "filename": "instructgpt_alignment_breakdown_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\pi_{\\phi}",
+          "label": "Policy Params"
+        }
+      ],
+      "svg_filename": "instructgpt_alignment_breakdown_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\nabla_{\\phi} J(\\phi) \\approx \\mathbb{E} [\\nabla_{\\phi} \\log \\pi_{\\phi}(a|s) R(s, a)]$",
+      "filename": "instructgpt_alignment_breakdown_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "R(s, a)",
+          "label": "Human Reward"
+        }
+      ],
+      "svg_filename": "instructgpt_alignment_breakdown_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{WinRate} = \\frac{1}{N} \\sum_{i=1}^N \\mathbb{I}(R_i^{Instruct} > R_i^{GPT3}) \\approx 0.85$",
+      "filename": "instructgpt_alignment_breakdown_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\mathbb{I}",
+          "label": "Indicator Function"
+        }
+      ],
+      "svg_filename": "instructgpt_alignment_breakdown_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Instruction",
+          "color": "#38BDF8",
+          "items": [
+            "Prompt",
+            "Intent",
+            "Goal"
+          ]
+        },
+        {
+          "name": "Feedback",
+          "color": "#10B981",
+          "items": [
+            "Reward",
+            "Rank",
+            "Human"
+          ]
+        },
+        {
+          "name": "Weights",
+          "color": "#F59E0B",
+          "items": [
+            "Param",
+            "Gradient",
+            "Policy"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Explain\"",
+        "target_cluster": "Instruction",
+        "token": "\"Explain\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'toxic'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'unaligned'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "InstructGPT (1.3B)",
+    "model_a_specs": [
+      "RLHF Fine-tuned",
+      "Human Aligned",
+      "Efficient"
+    ],
+    "model_b": "GPT-3 (175B)",
+    "model_b_specs": [
+      "Unsupervised",
+      "Raw Scale",
+      "Baseline"
+    ],
+    "divide_title": "ALIGNMENT VS SCALE DIVIDE",
+    "model_a_stat": "85%",
+    "model_a_stat_label": "Human Preference",
+    "model_b_stat": "15%",
+    "model_b_stat_label": "Legacy Baseline",
+    "efficiency_badge": "\u26a1 100x PARAMETER EFFICIENCY",
+    "benchmarks": [
+      {
+        "name": "Human Eval",
+        "score_a": "85%",
+        "score_b": "15%"
+      },
+      {
+        "name": "Params",
+        "score_a": "1.3B",
+        "score_b": "175B"
+      },
+      {
+        "name": "Alignment",
+        "score_a": "High",
+        "score_b": "Low"
+      }
+    ],
+    "scale_metric": "1.3B",
+    "scale_label": "Aligned Parameters",
+    "bottleneck_title": "UNALIGNED MONOLITH",
+    "bottleneck_desc": "Entangled scale without intent guidance",
+    "solution_title": "RLHF ALIGNMENT",
+    "solution_components": "Human-ranked feedback loop",
+    "mechanism_title": "REWARD-STEERED POLICY",
+    "payoff_stat": "85%",
+    "payoff_label": "WIN RATE",
+    "payoff_sub": "1.3B InstructGPT vs 175B GPT-3",
+    "payoff_hero_stat": 85.0,
+    "payoff_hero_label": "InstructGPT Win Rate",
+    "payoff_base_stat": 15.0,
+    "payoff_base_label": "Legacy GPT-3",
+    "payoff_delta_badge": "\u26a1 5.6x PREFERENCE ADVANTAGE",
+    "challenger": "InstructGPT",
+    "incumbent": "GPT-3"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: HUMAN EVALUATION",
+    "metric_name": "Win Rate",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "InstructGPT (1.3B)",
+        "value": 85.0,
+        "display_val": "85%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "GPT-3 (175B)",
+        "value": 15.0,
+        "display_val": "15%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +566% PREFERENCE RATIO",
+    "radar_axes": [
+      "Helpfulness",
+      "Truthfulness",
+      "Safety",
+      "Context Length",
+      "Alignment"
+    ]
+  },
+  "code_snippet": {
+    "filename": "rlhf_reward.py",
+    "language": "python",
+    "lines": [
+      "def get_reward(model_output):",
+      "score = reward_model(model_output)",
+      "return compute_policy_gradient(score)"
+    ],
+    "highlight_lines": [
+      1,
+      2
+    ],
+    "trace_register": "\u26a1 HUMAN FEEDBACK OPTIMIZATION",
+    "explanation": "Steering generation via reward signal"
+  },
+  "arxiv_id": "2203.02155",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "metadata-with-model-size",
+      "caption": "Metadata-With-Model-Size",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/metadata-with-model-size.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "academic-evals-v-episodes",
+      "caption": "Academic-Evals-V-Episodes",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/academic-evals-v-episodes.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_2_academic-evals-v-episodes.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_2_academic-evals-v-episodes.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "academic-evals-v-pretrain-loss",
+      "caption": "Academic-Evals-V-Pretrain-Loss",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/academic-evals-v-pretrain-loss.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_3_academic-evals-v-pretrain-loss.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_3_academic-evals-v-pretrain-loss.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "academic-evals-v-kl",
+      "caption": "Academic-Evals-V-Kl",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/academic-evals-v-kl.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_4_academic-evals-v-kl.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_4_academic-evals-v-kl.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "human-evals-v-lrs",
+      "caption": "Human-Evals-V-Lrs",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/human-evals-v-lrs.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_5_human-evals-v-lrs.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_5_human-evals-v-lrs.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "What happens when a 1.3 billion parameter model shouldn't be destroying a 175 billion parameter monster at following basic instructions?",
+    "verdict": 66,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 78,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "What happens when a 1.3 billion parameter model shouldn't be destroying a 175 billion parameter monster at following basic instructions?",
+        "verdict": 66,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Did you know a 1.3 billion parameter model shouldn't be destroying a 175 billion parameter monster at following basic instructions?",
+        "verdict": 66,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why are leading AI teams switching to InstructGPT after this 85% benchmark result?",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed the reigning model was unbeatable, until InstructGPT posted a 85% lead.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Does InstructGPT actually crush the competition by 85%, or is it just benchmark hype?",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "The AI leaderboard just experienced a massive shift: InstructGPT beat the reigning champion by 85%.",
+        "verdict": 59,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Why is InstructGPT a major breakthrough? Because making language models bigger does not inherently make them better at following a user's intent.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Making language models bigger does not inherently make them better at following a user's intent.",
+        "verdict": 55,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until InstructGPT proved: for example, large language models can generate outputs that are untruthful, toxic, or simply not helpful to the user.",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Here is what actually happened when InstructGPT went head-to-head with the top model.",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "A 1.3 billion parameter model shouldn't be destroying a 175 billion parameter monster at following basic instructions.",
+        "verdict": 41,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "InstructGPT (1.3B)",
+        "model_a_score": "85%",
+        "model_b_name": "GPT-3 (175B)",
+        "model_b_score": "15%",
+        "delta_label": "\u26a1 100x PARAMETER EFFICIENCY"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "XG9mGer6j_0",
+    "shorts_url": "https://youtube.com/shorts/XG9mGer6j_0",
+    "studio_url": "https://studio.youtube.com/video/XG9mGer6j_0/edit",
+    "title": "InstructGPT Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/instructgpt_alignment_breakdown_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

@@ -1,0 +1,1616 @@
+{
+  "id": "word2vec_dense_retrieval_genesis",
+  "title": "The Vector Database Genesis",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "VECTOR DATABASE GENESIS",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Early language models treated words like isolated phonebook entries. Every single concept had zero mathematical connection.",
+      "visual_focus": "Orthogonal discrete unit axes in empty black space showing completely disconnected, isolated word markers.",
+      "highlight_words": {
+        "isolated phonebook": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "early models",
+        "action_verb": "isolated",
+        "direct_object": "word representations",
+        "anchor_word": "phonebook",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "SPARSE ISOLATION",
+        "sub": "Words treated as disconnected orthogonal indices",
+        "accent_color": "#EF4444",
+        "params": {
+          "grid_title": "VOCABULARY INDEX",
+          "active_cell_label": "SPARSE ACTIVATION",
+          "efficiency_label": "O(N) DIMENSIONS"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 52,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Impossible Claim",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "SPARSE ISOLATION",
+        "sub": "Words treated as disconnected orthogonal indices",
+        "accent_color": "#EF4444",
+        "grid_title": "VOCABULARY INDEX",
+        "active_cell_label": "SPARSE ACTIVATION",
+        "efficiency_label": "O(N) DIMENSIONS"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.15,
+      "duration": 7.15,
+      "word_timings": [
+        {
+          "word": "Early",
+          "clean_word": "early",
+          "phonemes": "\u02c8\u025c\u02d0li",
+          "start": 0.005,
+          "end": 0.24,
+          "duration": 0.235,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "language",
+          "clean_word": "language",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292",
+          "start": 0.24,
+          "end": 0.79,
+          "duration": 0.55,
+          "frame_ahead_trigger": 0.2
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 0.79,
+          "end": 1.31,
+          "duration": 0.52,
+          "frame_ahead_trigger": 0.75
+        },
+        {
+          "word": "treated",
+          "clean_word": "treated",
+          "phonemes": "t\u0279\u02c8i\u02d0\u027e\u1d7bd",
+          "start": 1.31,
+          "end": 1.755,
+          "duration": 0.445,
+          "frame_ahead_trigger": 1.27
+        },
+        {
+          "word": "words",
+          "clean_word": "words",
+          "phonemes": "w\u02c8\u025c\u02d0dz",
+          "start": 1.755,
+          "end": 2.005,
+          "duration": 0.25,
+          "frame_ahead_trigger": 1.715
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 2.005,
+          "end": 2.33,
+          "duration": 0.325,
+          "frame_ahead_trigger": 1.965
+        },
+        {
+          "word": "isolated",
+          "clean_word": "isolated",
+          "phonemes": "\u02c8a\u026as\u0259l\u02cce\u026a\u027e\u1d7bd",
+          "start": 2.33,
+          "end": 3.015,
+          "duration": 0.685,
+          "frame_ahead_trigger": 2.29
+        },
+        {
+          "word": "phonebook",
+          "clean_word": "phonebook",
+          "phonemes": "f\u02c8o\u028anb\u028ak",
+          "start": 3.015,
+          "end": 3.445,
+          "duration": 0.43,
+          "frame_ahead_trigger": 2.975
+        },
+        {
+          "word": "entries.",
+          "clean_word": "entries",
+          "phonemes": "\u02c8\u025bnt\u0279iz",
+          "start": 3.445,
+          "end": 4.005,
+          "duration": 0.56,
+          "frame_ahead_trigger": 3.405
+        },
+        {
+          "word": "Every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 4.005,
+          "end": 4.14,
+          "duration": 0.135,
+          "frame_ahead_trigger": 3.965
+        },
+        {
+          "word": "single",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 4.14,
+          "end": 4.58,
+          "duration": 0.44,
+          "frame_ahead_trigger": 4.1
+        },
+        {
+          "word": "concept",
+          "clean_word": "concept",
+          "phonemes": "k\u02c8\u0251\u02d0ns\u025bpt",
+          "start": 4.58,
+          "end": 5.185,
+          "duration": 0.605,
+          "frame_ahead_trigger": 4.54
+        },
+        {
+          "word": "had",
+          "clean_word": "had",
+          "phonemes": "h\u02cc\u00e6d",
+          "start": 5.185,
+          "end": 5.315,
+          "duration": 0.13,
+          "frame_ahead_trigger": 5.145
+        },
+        {
+          "word": "zero",
+          "clean_word": "zero",
+          "phonemes": "z\u02c8i\u0259\u0279o\u028a",
+          "start": 5.315,
+          "end": 5.77,
+          "duration": 0.455,
+          "frame_ahead_trigger": 5.275
+        },
+        {
+          "word": "mathematical",
+          "clean_word": "mathematical",
+          "phonemes": "m\u02cc\u00e6\u03b8\u026am\u02c8\u00e6\u027e\u026ak\u0259l",
+          "start": 5.77,
+          "end": 6.505,
+          "duration": 0.735,
+          "frame_ahead_trigger": 5.73
+        },
+        {
+          "word": "connection.",
+          "clean_word": "connection",
+          "phonemes": "k\u0259n\u02c8\u025bk\u0283\u0259n",
+          "start": 6.505,
+          "end": 6.99,
+          "duration": 0.485,
+          "frame_ahead_trigger": 6.465
+        }
+      ],
+      "audio_duration": 7.15,
+      "slot_duration": 7.3
+    },
+    {
+      "beat_id": 2,
+      "text": "The culprit was sparse one-hot encoding. Words lived in gigantic, mostly empty vectors. Training simple vocabularies wasted weeks on bloated networks.",
+      "visual_focus": "A monstrous vector containing tens of thousands of empty zeros with a single lonely one, stalling a compute engine.",
+      "highlight_words": {
+        "sparse one-hot encoding": "#EF4444",
+        "wasted weeks": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "one-hot encoding",
+        "action_verb": "bloated",
+        "direct_object": "memory dimensions",
+        "anchor_word": "sparse",
+        "semantic_role": "causal_friction"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "ONE-HOT BOTTLENECK",
+        "sub": "Gigantic sparse vectors wasting memory and compute",
+        "accent_color": "#F59E0B",
+        "params": {
+          "stream_a_label": "TOKEN A",
+          "stream_b_label": "TOKEN B",
+          "barrier_label": "ZERO COSIM",
+          "barrier_sub": "No latent proximity"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "ONE-HOT BOTTLENECK",
+        "sub": "Gigantic sparse vectors wasting memory and compute",
+        "accent_color": "#F59E0B",
+        "stream_a_label": "TOKEN A",
+        "stream_b_label": "TOKEN B",
+        "barrier_label": "ZERO COSIM",
+        "barrier_sub": "No latent proximity"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.3,
+      "end": 16.34,
+      "duration": 9.05,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 7.307,
+          "end": 7.367,
+          "duration": 0.06,
+          "frame_ahead_trigger": 7.417
+        },
+        {
+          "word": "culprit",
+          "clean_word": "culprit",
+          "phonemes": "k\u02c8\u028clp\u0279\u026at",
+          "start": 7.367,
+          "end": 7.962,
+          "duration": 0.595,
+          "frame_ahead_trigger": 7.477
+        },
+        {
+          "word": "was",
+          "clean_word": "was",
+          "phonemes": "w\u028cz",
+          "start": 7.962,
+          "end": 8.202,
+          "duration": 0.24,
+          "frame_ahead_trigger": 8.072
+        },
+        {
+          "word": "sparse",
+          "clean_word": "sparse",
+          "phonemes": "sp\u02c8\u0251\u02d0\u0279s",
+          "start": 8.202,
+          "end": 8.522,
+          "duration": 0.32,
+          "frame_ahead_trigger": 8.312
+        },
+        {
+          "word": "one-hot",
+          "clean_word": "onehot",
+          "phonemes": "w\u02c8\u028cnh\u0251\u02d0t",
+          "start": 8.522,
+          "end": 9.077,
+          "duration": 0.555,
+          "frame_ahead_trigger": 8.632
+        },
+        {
+          "word": "encoding.",
+          "clean_word": "encoding",
+          "phonemes": "\u025b\u014bk\u02c8o\u028ad\u026a\u014b",
+          "start": 9.077,
+          "end": 9.672,
+          "duration": 0.595,
+          "frame_ahead_trigger": 9.187
+        },
+        {
+          "word": "Words",
+          "clean_word": "words",
+          "phonemes": "w\u02c8\u025c\u02d0dz",
+          "start": 9.672,
+          "end": 9.982,
+          "duration": 0.31,
+          "frame_ahead_trigger": 9.782
+        },
+        {
+          "word": "lived",
+          "clean_word": "lived",
+          "phonemes": "l\u02c8\u026avd",
+          "start": 9.982,
+          "end": 10.232,
+          "duration": 0.251,
+          "frame_ahead_trigger": 10.092
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 10.232,
+          "end": 10.367,
+          "duration": 0.134,
+          "frame_ahead_trigger": 10.342
+        },
+        {
+          "word": "gigantic,",
+          "clean_word": "gigantic",
+          "phonemes": "d\u0292a\u026a\u0261\u02c8\u00e6nt\u026ak",
+          "start": 10.367,
+          "end": 11.042,
+          "duration": 0.675,
+          "frame_ahead_trigger": 10.477
+        },
+        {
+          "word": "mostly",
+          "clean_word": "mostly",
+          "phonemes": "m\u02c8o\u028astli",
+          "start": 11.042,
+          "end": 11.512,
+          "duration": 0.47,
+          "frame_ahead_trigger": 11.152
+        },
+        {
+          "word": "empty",
+          "clean_word": "empty",
+          "phonemes": "\u02c8\u025bmpti",
+          "start": 11.512,
+          "end": 11.972,
+          "duration": 0.46,
+          "frame_ahead_trigger": 11.622
+        },
+        {
+          "word": "vectors.",
+          "clean_word": "vectors",
+          "phonemes": "v\u02c8\u025bkt\u025az",
+          "start": 11.972,
+          "end": 12.312,
+          "duration": 0.34,
+          "frame_ahead_trigger": 12.082
+        },
+        {
+          "word": "Training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 12.312,
+          "end": 12.802,
+          "duration": 0.49,
+          "frame_ahead_trigger": 12.422
+        },
+        {
+          "word": "simple",
+          "clean_word": "simple",
+          "phonemes": "s\u02c8\u026amp\u0259l",
+          "start": 12.802,
+          "end": 13.292,
+          "duration": 0.49,
+          "frame_ahead_trigger": 12.912
+        },
+        {
+          "word": "vocabularies",
+          "clean_word": "vocabularies",
+          "phonemes": "vo\u028ak\u02c8\u00e6bj\u028al\u02cc\u025b\u0279iz",
+          "start": 13.292,
+          "end": 14.252,
+          "duration": 0.96,
+          "frame_ahead_trigger": 13.402
+        },
+        {
+          "word": "wasted",
+          "clean_word": "wasted",
+          "phonemes": "w\u02c8e\u026ast\u1d7bd",
+          "start": 14.252,
+          "end": 14.692,
+          "duration": 0.44,
+          "frame_ahead_trigger": 14.362
+        },
+        {
+          "word": "weeks",
+          "clean_word": "weeks",
+          "phonemes": "w\u02c8i\u02d0ks",
+          "start": 14.692,
+          "end": 15.062,
+          "duration": 0.37,
+          "frame_ahead_trigger": 14.802
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 15.062,
+          "end": 15.237,
+          "duration": 0.175,
+          "frame_ahead_trigger": 15.172
+        },
+        {
+          "word": "bloated",
+          "clean_word": "bloated",
+          "phonemes": "bl\u02c8o\u028a\u027e\u1d7bd",
+          "start": 15.237,
+          "end": 15.722,
+          "duration": 0.485,
+          "frame_ahead_trigger": 15.347
+        },
+        {
+          "word": "networks.",
+          "clean_word": "networks",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0ks",
+          "start": 15.722,
+          "end": 16.267,
+          "duration": 0.545,
+          "frame_ahead_trigger": 15.832
+        }
+      ],
+      "audio_duration": 9.05,
+      "slot_duration": 9.19
+    },
+    {
+      "beat_id": 3,
+      "text": "The breakthrough ditched heavy hidden layers entirely. Two lightweight architectures mapped words directly into a dense coordinate space using surrounding context.",
+      "visual_focus": "Pruning heavy dense neural layers down to a simple sliding context window projecting into a low-dimensional space.",
+      "highlight_words": {
+        "dense coordinate space": "#10B981"
+      },
+      "svo_action": {
+        "subject": "continuous projection",
+        "action_verb": "compresses",
+        "direct_object": "word context",
+        "anchor_word": "coordinates",
+        "semantic_role": "resolution"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE VECTOR DATABASE: FIGURE",
+        "sub": "Pruning heavy dense neural layers down to a simple sliding",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/chalkboard_figures/fig_1_efficient-models.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/chalkboard_figures/fig_1_efficient-models.png",
+          "arxiv_id": "1301.3781",
+          "title": "THE VECTOR DATABASE: FIGURE",
+          "sub": "Pruning heavy dense neural layers down to a simple sliding",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Efficient-Models",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/chalkboard_figures/fig_1_efficient-models.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/chalkboard_figures/fig_1_efficient-models.png",
+        "arxiv_id": "1301.3781",
+        "title": "THE VECTOR DATABASE: FIGURE",
+        "sub": "Pruning heavy dense neural layers down to a simple sliding",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Efficient-Models",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 16.49,
+      "end": 25.35,
+      "duration": 8.85,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 16.502,
+          "end": 16.582,
+          "duration": 0.08,
+          "frame_ahead_trigger": 16.762
+        },
+        {
+          "word": "breakthrough",
+          "clean_word": "breakthrough",
+          "phonemes": "b\u0279\u02c8e\u026ak\u03b8\u0279u\u02d0",
+          "start": 16.582,
+          "end": 17.202,
+          "duration": 0.62,
+          "frame_ahead_trigger": 16.842
+        },
+        {
+          "word": "ditched",
+          "clean_word": "ditched",
+          "phonemes": "d\u02c8\u026at\u0283t",
+          "start": 17.202,
+          "end": 17.487,
+          "duration": 0.285,
+          "frame_ahead_trigger": 17.462
+        },
+        {
+          "word": "heavy",
+          "clean_word": "heavy",
+          "phonemes": "h\u02c8\u025bvi",
+          "start": 17.487,
+          "end": 17.767,
+          "duration": 0.28,
+          "frame_ahead_trigger": 17.747
+        },
+        {
+          "word": "hidden",
+          "clean_word": "hidden",
+          "phonemes": "h\u02c8\u026ad\u0259n",
+          "start": 17.767,
+          "end": 18.307,
+          "duration": 0.54,
+          "frame_ahead_trigger": 18.027
+        },
+        {
+          "word": "layers",
+          "clean_word": "layers",
+          "phonemes": "l\u02c8e\u026a\u025az",
+          "start": 18.307,
+          "end": 18.517,
+          "duration": 0.21,
+          "frame_ahead_trigger": 18.567
+        },
+        {
+          "word": "entirely.",
+          "clean_word": "entirely",
+          "phonemes": "\u025bnt\u02c8a\u026a\u025ali",
+          "start": 18.517,
+          "end": 19.081,
+          "duration": 0.564,
+          "frame_ahead_trigger": 18.777
+        },
+        {
+          "word": "Two",
+          "clean_word": "two",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 19.081,
+          "end": 19.316,
+          "duration": 0.234,
+          "frame_ahead_trigger": 19.341
+        },
+        {
+          "word": "lightweight",
+          "clean_word": "lightweight",
+          "phonemes": "l\u02c8a\u026atwe\u026at",
+          "start": 19.316,
+          "end": 19.777,
+          "duration": 0.461,
+          "frame_ahead_trigger": 19.576
+        },
+        {
+          "word": "architectures",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 19.777,
+          "end": 20.677,
+          "duration": 0.9,
+          "frame_ahead_trigger": 20.037
+        },
+        {
+          "word": "mapped",
+          "clean_word": "mapped",
+          "phonemes": "m\u02c8\u00e6pt",
+          "start": 20.677,
+          "end": 20.952,
+          "duration": 0.275,
+          "frame_ahead_trigger": 20.937
+        },
+        {
+          "word": "words",
+          "clean_word": "words",
+          "phonemes": "w\u02c8\u025c\u02d0dz",
+          "start": 20.952,
+          "end": 21.217,
+          "duration": 0.265,
+          "frame_ahead_trigger": 21.212
+        },
+        {
+          "word": "directly",
+          "clean_word": "directly",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bktli",
+          "start": 21.217,
+          "end": 21.827,
+          "duration": 0.61,
+          "frame_ahead_trigger": 21.477
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 21.827,
+          "end": 22.157,
+          "duration": 0.33,
+          "frame_ahead_trigger": 22.087
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 22.157,
+          "end": 22.312,
+          "duration": 0.155,
+          "frame_ahead_trigger": 22.417
+        },
+        {
+          "word": "dense",
+          "clean_word": "dense",
+          "phonemes": "d\u02c8\u025bns",
+          "start": 22.312,
+          "end": 22.572,
+          "duration": 0.26,
+          "frame_ahead_trigger": 22.572
+        },
+        {
+          "word": "coordinate",
+          "clean_word": "coordinate",
+          "phonemes": "ko\u028a\u02c8\u0254\u02d0\u0279d\u1d7bn\u0259t",
+          "start": 22.572,
+          "end": 23.342,
+          "duration": 0.77,
+          "frame_ahead_trigger": 22.832
+        },
+        {
+          "word": "space",
+          "clean_word": "space",
+          "phonemes": "sp\u02c8e\u026as",
+          "start": 23.342,
+          "end": 23.662,
+          "duration": 0.32,
+          "frame_ahead_trigger": 23.602
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 23.662,
+          "end": 24.107,
+          "duration": 0.445,
+          "frame_ahead_trigger": 23.922
+        },
+        {
+          "word": "surrounding",
+          "clean_word": "surrounding",
+          "phonemes": "s\u025a\u0279\u02c8a\u028and\u026a\u014b",
+          "start": 24.107,
+          "end": 24.627,
+          "duration": 0.52,
+          "frame_ahead_trigger": 24.367
+        },
+        {
+          "word": "context.",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 24.627,
+          "end": 25.237,
+          "duration": 0.61,
+          "frame_ahead_trigger": 24.887
+        }
+      ],
+      "audio_duration": 8.85,
+      "slot_duration": 9.01
+    },
+    {
+      "beat_id": 4,
+      "text": "This continuous vector projection turned meaning into geometry. Now, linguistic relationships functioned like spatial vectors. Subtract man from king, add woman, and get queen.",
+      "visual_focus": "3D geometric vector subtraction: King vector minus Man vector plus Woman vector aligning directly onto Queen.",
+      "highlight_words": {
+        "spatial vectors": "#38BDF8",
+        "king, add woman, and get queen": "#10B981"
+      },
+      "svo_action": {
+        "subject": "vector arithmetic",
+        "action_verb": "solves",
+        "direct_object": "semantic relationships",
+        "anchor_word": "geometry",
+        "semantic_role": "proof_point"
+      },
+      "visual_blueprint": {
+        "layout": "projection_rays",
+        "title": "SEMANTIC ARITHMETIC",
+        "sub": "King - Man + Woman = Queen via vector algebra",
+        "accent_color": "#38BDF8",
+        "params": {
+          "camera_label": "vector arithmetic",
+          "focal_plane_label": "solves",
+          "target_label": "semantic relationships"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "projection_rays",
+        "title": "SEMANTIC ARITHMETIC",
+        "sub": "King - Man + Woman = Queen via vector algebra",
+        "accent_color": "#38BDF8",
+        "camera_label": "vector arithmetic",
+        "focal_plane_label": "solves",
+        "target_label": "semantic relationships"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 25.5,
+      "end": 35.84,
+      "duration": 10.35,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 25.505,
+          "end": 25.82,
+          "duration": 0.315,
+          "frame_ahead_trigger": 25.915
+        },
+        {
+          "word": "continuous",
+          "clean_word": "continuous",
+          "phonemes": "k\u0259nt\u02c8\u026anju\u02d0\u0259s",
+          "start": 25.82,
+          "end": 26.555,
+          "duration": 0.735,
+          "frame_ahead_trigger": 26.23
+        },
+        {
+          "word": "vector",
+          "clean_word": "vector",
+          "phonemes": "v\u02c8\u025bkt\u025a",
+          "start": 26.555,
+          "end": 26.865,
+          "duration": 0.31,
+          "frame_ahead_trigger": 26.965
+        },
+        {
+          "word": "projection",
+          "clean_word": "projection",
+          "phonemes": "p\u0279\u0259d\u0292\u02c8\u025bk\u0283\u0259n",
+          "start": 26.865,
+          "end": 27.565,
+          "duration": 0.7,
+          "frame_ahead_trigger": 27.275
+        },
+        {
+          "word": "turned",
+          "clean_word": "turned",
+          "phonemes": "t\u02c8\u025c\u02d0nd",
+          "start": 27.565,
+          "end": 28.01,
+          "duration": 0.445,
+          "frame_ahead_trigger": 27.975
+        },
+        {
+          "word": "meaning",
+          "clean_word": "meaning",
+          "phonemes": "m\u02c8i\u02d0n\u026a\u014b",
+          "start": 28.01,
+          "end": 28.41,
+          "duration": 0.4,
+          "frame_ahead_trigger": 28.42
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 28.41,
+          "end": 28.701,
+          "duration": 0.291,
+          "frame_ahead_trigger": 28.82
+        },
+        {
+          "word": "geometry.",
+          "clean_word": "geometry",
+          "phonemes": "d\u0292i\u02c8\u0251\u02d0m\u0259t\u0279i",
+          "start": 28.701,
+          "end": 29.391,
+          "duration": 0.689,
+          "frame_ahead_trigger": 29.111
+        },
+        {
+          "word": "Now,",
+          "clean_word": "now",
+          "phonemes": "n\u02c8a\u028a",
+          "start": 29.391,
+          "end": 29.625,
+          "duration": 0.235,
+          "frame_ahead_trigger": 29.801
+        },
+        {
+          "word": "linguistic",
+          "clean_word": "linguistic",
+          "phonemes": "l\u026a\u014b\u0261w\u02c8\u026ast\u026ak",
+          "start": 29.625,
+          "end": 30.33,
+          "duration": 0.705,
+          "frame_ahead_trigger": 30.035
+        },
+        {
+          "word": "relationships",
+          "clean_word": "relationships",
+          "phonemes": "\u0279\u1d7bl\u02c8e\u026a\u0283\u0259n\u0283\u02cc\u026aps",
+          "start": 30.33,
+          "end": 31.17,
+          "duration": 0.84,
+          "frame_ahead_trigger": 30.74
+        },
+        {
+          "word": "functioned",
+          "clean_word": "functioned",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259nd",
+          "start": 31.17,
+          "end": 31.71,
+          "duration": 0.54,
+          "frame_ahead_trigger": 31.58
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 31.71,
+          "end": 32.04,
+          "duration": 0.33,
+          "frame_ahead_trigger": 32.12
+        },
+        {
+          "word": "spatial",
+          "clean_word": "spatial",
+          "phonemes": "sp\u02c8e\u026a\u0283\u0259l",
+          "start": 32.04,
+          "end": 32.587,
+          "duration": 0.547,
+          "frame_ahead_trigger": 32.45
+        },
+        {
+          "word": "vectors.",
+          "clean_word": "vectors",
+          "phonemes": "v\u02c8\u025bkt\u025az",
+          "start": 32.587,
+          "end": 33.115,
+          "duration": 0.528,
+          "frame_ahead_trigger": 32.997
+        },
+        {
+          "word": "Subtract",
+          "clean_word": "subtract",
+          "phonemes": "s\u028cbt\u0279\u02c8\u00e6kt",
+          "start": 33.115,
+          "end": 33.59,
+          "duration": 0.474,
+          "frame_ahead_trigger": 33.525
+        },
+        {
+          "word": "man",
+          "clean_word": "man",
+          "phonemes": "m\u02c8\u00e6n",
+          "start": 33.59,
+          "end": 33.78,
+          "duration": 0.191,
+          "frame_ahead_trigger": 34.0
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 33.78,
+          "end": 34.025,
+          "duration": 0.245,
+          "frame_ahead_trigger": 34.19
+        },
+        {
+          "word": "king,",
+          "clean_word": "king",
+          "phonemes": "k\u02c8\u026a\u014b",
+          "start": 34.025,
+          "end": 34.342,
+          "duration": 0.316,
+          "frame_ahead_trigger": 34.435
+        },
+        {
+          "word": "add",
+          "clean_word": "add",
+          "phonemes": "\u02c8\u00e6d",
+          "start": 34.342,
+          "end": 34.47,
+          "duration": 0.129,
+          "frame_ahead_trigger": 34.752
+        },
+        {
+          "word": "woman,",
+          "clean_word": "woman",
+          "phonemes": "w\u02c8\u028am\u0259n",
+          "start": 34.47,
+          "end": 35.02,
+          "duration": 0.55,
+          "frame_ahead_trigger": 34.88
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 35.02,
+          "end": 35.094,
+          "duration": 0.073,
+          "frame_ahead_trigger": 35.43
+        },
+        {
+          "word": "get",
+          "clean_word": "get",
+          "phonemes": "\u0261\u02c8\u025bt",
+          "start": 35.094,
+          "end": 35.34,
+          "duration": 0.247,
+          "frame_ahead_trigger": 35.504
+        },
+        {
+          "word": "queen.",
+          "clean_word": "queen",
+          "phonemes": "kw\u02c8i\u02d0n",
+          "start": 35.34,
+          "end": 35.72,
+          "duration": 0.38,
+          "frame_ahead_trigger": 35.75
+        }
+      ],
+      "audio_duration": 10.35,
+      "slot_duration": 10.49
+    },
+    {
+      "beat_id": 5,
+      "text": "Training collapsed from weeks to under a single day across 1.6 billion words. Setting a new benchmark for semantic accuracy.",
+      "visual_focus": "Side-by-side performance bar graph showing compute time dropping from weeks to under 24 hours while semantic scores spike.",
+      "highlight_words": {
+        "under a single day": "#10B981",
+        "1.6 billion words": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "training runtime",
+        "action_verb": "plummeted",
+        "direct_object": "compute cost",
+        "anchor_word": "hours",
+        "semantic_role": "empirical_metric"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "THE VECTOR DATABASE: TRAINING RUNTIME",
+        "sub": "Side-by-side performance bar graph showing compute time dropping",
+        "accent_color": "#38BDF8",
+        "stage_1_label": "STAGE 1: TRAINING RUNTIME",
+        "stage_2_label": "STAGE 2: PLUMMETED ENGINE",
+        "stage_3_label": "STAGE 3: COMPUTE COST"
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "THE VECTOR DATABASE: TRAINING RUNTIME",
+        "sub": "Side-by-side performance bar graph showing compute time dropping",
+        "accent_color": "#38BDF8",
+        "stage_1_label": "STAGE 1: TRAINING RUNTIME",
+        "stage_2_label": "STAGE 2: PLUMMETED ENGINE",
+        "stage_3_label": "STAGE 3: COMPUTE COST",
+        "stage_1_sub": " ",
+        "stage_2_sub": " ",
+        "stage_3_sub": " "
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 35.99,
+      "end": 43.12,
+      "duration": 7.13,
+      "word_timings": [
+        {
+          "word": "Training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 35.992,
+          "end": 36.457,
+          "duration": 0.465,
+          "frame_ahead_trigger": 36.552
+        },
+        {
+          "word": "collapsed",
+          "clean_word": "collapsed",
+          "phonemes": "k\u0259l\u02c8\u00e6pst",
+          "start": 36.457,
+          "end": 36.952,
+          "duration": 0.495,
+          "frame_ahead_trigger": 37.017
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 36.952,
+          "end": 37.152,
+          "duration": 0.2,
+          "frame_ahead_trigger": 37.512
+        },
+        {
+          "word": "weeks",
+          "clean_word": "weeks",
+          "phonemes": "w\u02c8i\u02d0ks",
+          "start": 37.152,
+          "end": 37.517,
+          "duration": 0.365,
+          "frame_ahead_trigger": 37.712
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 37.517,
+          "end": 37.647,
+          "duration": 0.13,
+          "frame_ahead_trigger": 38.077
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 37.647,
+          "end": 37.877,
+          "duration": 0.23,
+          "frame_ahead_trigger": 38.207
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 37.877,
+          "end": 38.037,
+          "duration": 0.16,
+          "frame_ahead_trigger": 38.437
+        },
+        {
+          "word": "single",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 38.037,
+          "end": 38.494,
+          "duration": 0.457,
+          "frame_ahead_trigger": 38.597
+        },
+        {
+          "word": "day",
+          "clean_word": "day",
+          "phonemes": "d\u02c8e\u026a",
+          "start": 38.494,
+          "end": 38.647,
+          "duration": 0.153,
+          "frame_ahead_trigger": 39.054
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 38.647,
+          "end": 39.142,
+          "duration": 0.495,
+          "frame_ahead_trigger": 39.207
+        },
+        {
+          "word": "1.6",
+          "clean_word": "16",
+          "phonemes": "s\u02c8\u026aksti\u02d0n",
+          "start": 39.142,
+          "end": 39.652,
+          "duration": 0.51,
+          "frame_ahead_trigger": 39.702
+        },
+        {
+          "word": "billion",
+          "clean_word": "billion",
+          "phonemes": "b\u02c8\u026ali\u0259n",
+          "start": 39.652,
+          "end": 40.03,
+          "duration": 0.378,
+          "frame_ahead_trigger": 40.212
+        },
+        {
+          "word": "words.",
+          "clean_word": "words",
+          "phonemes": "w\u02c8\u025c\u02d0dz",
+          "start": 40.03,
+          "end": 40.371,
+          "duration": 0.341,
+          "frame_ahead_trigger": 40.59
+        },
+        {
+          "word": "Setting",
+          "clean_word": "setting",
+          "phonemes": "s\u02c8\u025b\u027e\u026a\u014b",
+          "start": 40.371,
+          "end": 40.682,
+          "duration": 0.311,
+          "frame_ahead_trigger": 40.931
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 40.682,
+          "end": 40.877,
+          "duration": 0.195,
+          "frame_ahead_trigger": 41.242
+        },
+        {
+          "word": "new",
+          "clean_word": "new",
+          "phonemes": "n\u02c8u\u02d0",
+          "start": 40.877,
+          "end": 41.057,
+          "duration": 0.18,
+          "frame_ahead_trigger": 41.437
+        },
+        {
+          "word": "benchmark",
+          "clean_word": "benchmark",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279k",
+          "start": 41.057,
+          "end": 41.747,
+          "duration": 0.69,
+          "frame_ahead_trigger": 41.617
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 41.747,
+          "end": 41.917,
+          "duration": 0.17,
+          "frame_ahead_trigger": 42.307
+        },
+        {
+          "word": "semantic",
+          "clean_word": "semantic",
+          "phonemes": "s\u0259m\u02c8\u00e6nt\u026ak",
+          "start": 41.917,
+          "end": 42.372,
+          "duration": 0.455,
+          "frame_ahead_trigger": 42.477
+        },
+        {
+          "word": "accuracy.",
+          "clean_word": "accuracy",
+          "phonemes": "\u02c8\u00e6kj\u028a\u0279\u0259si",
+          "start": 42.372,
+          "end": 42.987,
+          "duration": 0.615,
+          "frame_ahead_trigger": 42.932
+        }
+      ],
+      "audio_duration": 7.13,
+      "slot_duration": 7.28
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI to see how simple geometric coordinates transformed machine learning under the hood.",
+      "visual_focus": "A glowing multi-dimensional vector sphere smoothly rotating, forming the foundational mesh of modern language models.",
+      "highlight_words": {
+        "machinoAI": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "geometric coordinates",
+        "action_verb": "powers",
+        "direct_object": "modern models",
+        "anchor_word": "coordinates",
+        "semantic_role": "call_to_action"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "THE VECTOR GENESIS",
+        "sub": "The geometric foundation of modern LLMs",
+        "accent_color": "#38BDF8",
+        "params": {
+          "input_1_label": "USER QUERY",
+          "input_2_label": "VECTOR STORE",
+          "input_3_label": "CONTEXT",
+          "fused_label": "RELEVANT RESPONSE"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 43.27,
+      "end": 48.92,
+      "duration": 5.65,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 43.282,
+          "end": 43.667,
+          "duration": 0.385,
+          "frame_ahead_trigger": 43.992
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 43.667,
+          "end": 44.487,
+          "duration": 0.82,
+          "frame_ahead_trigger": 44.377
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 44.487,
+          "end": 44.644,
+          "duration": 0.157,
+          "frame_ahead_trigger": 45.197
+        },
+        {
+          "word": "see",
+          "clean_word": "see",
+          "phonemes": "s\u02c8i\u02d0",
+          "start": 44.644,
+          "end": 44.877,
+          "duration": 0.233,
+          "frame_ahead_trigger": 45.354
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 44.877,
+          "end": 44.987,
+          "duration": 0.11,
+          "frame_ahead_trigger": 45.587
+        },
+        {
+          "word": "simple",
+          "clean_word": "simple",
+          "phonemes": "s\u02c8\u026amp\u0259l",
+          "start": 44.987,
+          "end": 45.402,
+          "duration": 0.415,
+          "frame_ahead_trigger": 45.697
+        },
+        {
+          "word": "geometric",
+          "clean_word": "geometric",
+          "phonemes": "d\u0292\u02cci\u02d0o\u028am\u02c8\u025bt\u0279\u026ak",
+          "start": 45.402,
+          "end": 46.177,
+          "duration": 0.775,
+          "frame_ahead_trigger": 46.112
+        },
+        {
+          "word": "coordinates",
+          "clean_word": "coordinates",
+          "phonemes": "ko\u028a\u02c8\u0254\u02d0\u0279d\u1d7bn\u0259ts",
+          "start": 46.177,
+          "end": 46.857,
+          "duration": 0.68,
+          "frame_ahead_trigger": 46.887
+        },
+        {
+          "word": "transformed",
+          "clean_word": "transformed",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279md",
+          "start": 46.857,
+          "end": 47.527,
+          "duration": 0.67,
+          "frame_ahead_trigger": 47.567
+        },
+        {
+          "word": "machine",
+          "clean_word": "machine",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0n",
+          "start": 47.527,
+          "end": 47.802,
+          "duration": 0.275,
+          "frame_ahead_trigger": 48.237
+        },
+        {
+          "word": "learning",
+          "clean_word": "learning",
+          "phonemes": "l\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 47.802,
+          "end": 48.307,
+          "duration": 0.505,
+          "frame_ahead_trigger": 48.512
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 48.307,
+          "end": 48.442,
+          "duration": 0.135,
+          "frame_ahead_trigger": 49.017
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 48.442,
+          "end": 48.602,
+          "duration": 0.16,
+          "frame_ahead_trigger": 49.152
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 48.602,
+          "end": 48.782,
+          "duration": 0.18,
+          "frame_ahead_trigger": 49.312
+        }
+      ],
+      "audio_duration": 5.65,
+      "slot_duration": 5.65
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$N_{vocab} = 10^6 \\to \\mathrm{sparse} \\approx 0$",
+      "filename": "word2vec_dense_retrieval_genesis_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "N_{vocab}",
+          "label": "One-hot dimensionality"
+        }
+      ],
+      "svg_filename": "word2vec_dense_retrieval_genesis_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathbf{v}_a \\cdot \\mathbf{v}_b = 0$",
+      "filename": "word2vec_dense_retrieval_genesis_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\mathbf{v}_a, \\mathbf{v}_b",
+          "label": "Orthogonal word vectors"
+        }
+      ],
+      "svg_filename": "word2vec_dense_retrieval_genesis_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$f(w) \\to \\mathbb{R}^{d}$",
+      "filename": "word2vec_dense_retrieval_genesis_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "d",
+          "label": "Embedding dimension"
+        }
+      ],
+      "svg_filename": "word2vec_dense_retrieval_genesis_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$P(w_t | w_{t-n \\dots t+n}) = \\sigma(\\mathbf{v}_w^T \\mathbf{u}_c)$",
+      "filename": "word2vec_dense_retrieval_genesis_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "\\mathbf{v}_w, \\mathbf{u}_c",
+          "label": "Target and context vectors"
+        }
+      ],
+      "svg_filename": "word2vec_dense_retrieval_genesis_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$D = 1.6 \\times 10^9 \\mathrm{words}$",
+      "filename": "word2vec_dense_retrieval_genesis_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "D",
+          "label": "Dataset size"
+        }
+      ],
+      "svg_filename": "word2vec_dense_retrieval_genesis_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "semantic_clusters",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "SYNTATIC",
+          "color": "#38BDF8",
+          "items": [
+            "run",
+            "runs",
+            "ran"
+          ]
+        },
+        {
+          "name": "SEMANTIC",
+          "color": "#10B981",
+          "items": [
+            "king",
+            "queen",
+            "man"
+          ]
+        },
+        {
+          "name": "CONTEXTUAL",
+          "color": "#F59E0B",
+          "items": [
+            "dog",
+            "cat",
+            "pet"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"king\"",
+        "target_cluster": "SEMANTIC",
+        "token": "\"king\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'one-hot'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'sparse'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "Word2Vec",
+    "model_a_specs": [
+      "Skip-gram",
+      "CBOW",
+      "1.6 billion words"
+    ],
+    "model_b": "Standard Neural Networks",
+    "model_b_specs": [
+      "Dense inputs",
+      "High computational cost",
+      "Limited semantic scope"
+    ],
+    "divide_title": "DENSE VS SPARSE",
+    "efficiency_badge": "\u26a1 < 1 Day Training",
+    "benchmarks": [
+      {
+        "name": "Word Similarity",
+        "score_a": "SOTA",
+        "score_b": "Legacy"
+      }
+    ],
+    "scale_metric": "1.6e9",
+    "scale_label": "TOTAL WORDS",
+    "bottleneck_title": "MONOLITHIC SPARSE BOTTLENECK",
+    "bottleneck_desc": "Entangled dimensionality and zero semantic overlap",
+    "solution_title": "CONTINUOUS VECTOR PROJECTION",
+    "solution_components": "Monosemantic semantic clusters",
+    "mechanism_title": "CONTEXTUAL WEIGHT AGGREGATION",
+    "payoff_sub": "1.6 billion words processed in under one day",
+    "payoff_hero_label": "Word2Vec",
+    "payoff_base_label": "Baseline NN",
+    "payoff_delta_badge": "\u26a1 Massive Accuracy Gains",
+    "challenger": "Word2Vec",
+    "incumbent": "Neural Baselines"
+  },
+  "script_provider": "gemini",
+  "quality_flags": {
+    "scrubbed_fields": [
+      "beats[5].visual_blueprint.params.contestants"
+    ],
+    "ungrounded_narration_numbers": [],
+    "leaked_example_values": [],
+    "grounding_source_chars": 1105
+  },
+  "arxiv_id": "1301.3781",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "efficient-models",
+      "caption": "Efficient-Models",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/source/efficient-models.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/chalkboard_figures/fig_1_efficient-models.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1301.3781/chalkboard_figures/fig_1_efficient-models.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 8.5,
+    "final_retention_hook_score": 9.0,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Approved! Clear real-world developer terms and intuitive physical analogy."
+  },
+  "hook_gating": {
+    "selected_hook": "Early language models treated words like isolated phonebook entries. Every single concept had zero mathematical connection.",
+    "verdict": 52,
+    "band": "WORKABLE",
+    "formula": "The Impossible Claim",
+    "properties": {
+      "SPECIFICITY": 35,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "SPECIFICITY",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Word2Vec",
+        "model_a_score": "95%",
+        "model_b_name": "Standard Neural Networks",
+        "model_b_score": "45%",
+        "delta_label": "\u26a1 < 1 Day Training"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "publish_gate": {
+    "decision": "publish",
+    "reasons": [],
+    "warnings": [
+      "No vision model audited the keyframes (scores are heuristic placeholders).",
+      "Script critic: \u274c REJECTED: Script overall score 7.7/10 is below threshold 8.0."
+    ],
+    "action": {
+      "youtube_upload": true,
+      "privacy": "public",
+      "cross_post": true,
+      "mode": "private"
+    }
+  },
+  "youtube_upload": {
+    "video_id": "ddIh43UIm7o",
+    "shorts_url": "https://youtube.com/shorts/ddIh43UIm7o",
+    "studio_url": "https://studio.youtube.com/video/ddIh43UIm7o/edit",
+    "title": "The Vector Database Genesis Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/word2vec_dense_retrieval_genesis_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

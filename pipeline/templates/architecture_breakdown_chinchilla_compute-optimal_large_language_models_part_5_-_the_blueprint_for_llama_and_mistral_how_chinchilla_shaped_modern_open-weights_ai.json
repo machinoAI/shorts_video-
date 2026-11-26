@@ -1,0 +1,1535 @@
+{
+  "id": "chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai",
+  "title": "Chinchilla: Compute-Optimal Large Language Models: Part 5 - The Blueprint for Llama and Mistral: How Chinchilla Shaped Modern Open-Weights AI",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "SCALING PARADOX",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Your massive AI models are starving, burning compute on bloated weights while ignoring the data.",
+      "visual_focus": "Split screen showing a massive parameter cloud vs a tiny data stream.",
+      "highlight_words": {
+        "starving": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Bloated models",
+        "action_verb": "starve",
+        "direct_object": "compute efficiency",
+        "anchor_word": "starving",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "THE SCALING PARADOX",
+        "sub": "Why bigger isn't always better",
+        "accent_color": "#38BDF8",
+        "params": {
+          "grid_title": "Bloated models",
+          "active_cell_label": "compute efficiency",
+          "efficiency_label": "starving"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 47,
+      "hook_band": "WEAK",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "THE SCALING PARADOX",
+        "sub": "Why bigger isn't always better",
+        "accent_color": "#38BDF8",
+        "grid_title": "Bloated models",
+        "active_cell_label": "compute efficiency",
+        "efficiency_label": "starving"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.16,
+      "duration": 5.16,
+      "word_timings": [
+        {
+          "word": "Your",
+          "clean_word": "your",
+          "phonemes": "j\u028a\u0279",
+          "start": 0.015,
+          "end": 0.11,
+          "duration": 0.095,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 0.11,
+          "end": 0.51,
+          "duration": 0.4,
+          "frame_ahead_trigger": 0.07
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 0.51,
+          "end": 0.74,
+          "duration": 0.23,
+          "frame_ahead_trigger": 0.47
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 0.74,
+          "end": 1.24,
+          "duration": 0.5,
+          "frame_ahead_trigger": 0.7
+        },
+        {
+          "word": "are",
+          "clean_word": "are",
+          "phonemes": "\u0251\u02d0\u0279",
+          "start": 1.24,
+          "end": 1.485,
+          "duration": 0.245,
+          "frame_ahead_trigger": 1.2
+        },
+        {
+          "word": "starving,",
+          "clean_word": "starving",
+          "phonemes": "st\u02c8\u0251\u02d0\u0279v\u026a\u014b",
+          "start": 1.485,
+          "end": 1.9,
+          "duration": 0.415,
+          "frame_ahead_trigger": 1.445
+        },
+        {
+          "word": "burning",
+          "clean_word": "burning",
+          "phonemes": "b\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 1.9,
+          "end": 2.45,
+          "duration": 0.55,
+          "frame_ahead_trigger": 1.86
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 2.45,
+          "end": 2.76,
+          "duration": 0.31,
+          "frame_ahead_trigger": 2.41
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 2.76,
+          "end": 2.95,
+          "duration": 0.19,
+          "frame_ahead_trigger": 2.72
+        },
+        {
+          "word": "bloated",
+          "clean_word": "bloated",
+          "phonemes": "bl\u02c8o\u028a\u027e\u1d7bd",
+          "start": 2.95,
+          "end": 3.535,
+          "duration": 0.585,
+          "frame_ahead_trigger": 2.91
+        },
+        {
+          "word": "weights",
+          "clean_word": "weights",
+          "phonemes": "w\u02c8e\u026ats",
+          "start": 3.535,
+          "end": 3.905,
+          "duration": 0.37,
+          "frame_ahead_trigger": 3.495
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 3.905,
+          "end": 4.02,
+          "duration": 0.115,
+          "frame_ahead_trigger": 3.865
+        },
+        {
+          "word": "ignoring",
+          "clean_word": "ignoring",
+          "phonemes": "\u026a\u0261n\u02c8\u0254\u02d0\u0279\u026a\u014b",
+          "start": 4.02,
+          "end": 4.66,
+          "duration": 0.64,
+          "frame_ahead_trigger": 3.98
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 4.66,
+          "end": 4.691,
+          "duration": 0.031,
+          "frame_ahead_trigger": 4.62
+        },
+        {
+          "word": "data.",
+          "clean_word": "data",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259",
+          "start": 4.691,
+          "end": 5.025,
+          "duration": 0.334,
+          "frame_ahead_trigger": 4.651
+        }
+      ],
+      "audio_duration": 5.16,
+      "slot_duration": 5.31
+    },
+    {
+      "beat_id": 2,
+      "text": "The villain is flawed scaling theory. Engineers built libraries of billions of parameters, but left them reading empty shelves.",
+      "visual_focus": "Animation of a giant brain structure with empty data pipelines.",
+      "highlight_words": {
+        "empty shelves": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Scaling theory",
+        "action_verb": "stalls",
+        "direct_object": "model intelligence",
+        "anchor_word": "empty",
+        "semantic_role": "bottleneck_identification"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "THE DATA DEFICIT",
+        "sub": "Compute wasted on under-utilized weights",
+        "accent_color": "#EF4444",
+        "params": {
+          "field_title": "Chinchilla: Compute-Optimal",
+          "source_label": "Scaling theory",
+          "target_label": "model intelligence",
+          "stream_formula": " "
+        }
+      },
+      "thriller_role": "the_villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "THE DATA DEFICIT",
+        "sub": "Compute wasted on under-utilized weights",
+        "accent_color": "#EF4444",
+        "field_title": "Chinchilla: Compute-Optimal",
+        "source_label": "Scaling theory",
+        "target_label": "model intelligence",
+        "stream_formula": " "
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 5.31,
+      "end": 12.16,
+      "duration": 6.85,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 5.323,
+          "end": 5.398,
+          "duration": 0.075,
+          "frame_ahead_trigger": 5.433
+        },
+        {
+          "word": "villain",
+          "clean_word": "villain",
+          "phonemes": "v\u02c8\u026al\u0259n",
+          "start": 5.398,
+          "end": 5.798,
+          "duration": 0.4,
+          "frame_ahead_trigger": 5.508
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 5.798,
+          "end": 5.928,
+          "duration": 0.13,
+          "frame_ahead_trigger": 5.908
+        },
+        {
+          "word": "flawed",
+          "clean_word": "flawed",
+          "phonemes": "fl\u02c8\u0254\u02d0d",
+          "start": 5.928,
+          "end": 6.253,
+          "duration": 0.325,
+          "frame_ahead_trigger": 6.038
+        },
+        {
+          "word": "scaling",
+          "clean_word": "scaling",
+          "phonemes": "sk\u02c8e\u026al\u026a\u014b",
+          "start": 6.253,
+          "end": 6.778,
+          "duration": 0.525,
+          "frame_ahead_trigger": 6.363
+        },
+        {
+          "word": "theory.",
+          "clean_word": "theory",
+          "phonemes": "\u03b8\u02c8i\u0259\u0279i",
+          "start": 6.778,
+          "end": 7.169,
+          "duration": 0.391,
+          "frame_ahead_trigger": 6.888
+        },
+        {
+          "word": "Engineers",
+          "clean_word": "engineers",
+          "phonemes": "\u02cc\u025bnd\u0292\u026an\u02c8\u026a\u0279z",
+          "start": 7.169,
+          "end": 7.818,
+          "duration": 0.649,
+          "frame_ahead_trigger": 7.279
+        },
+        {
+          "word": "built",
+          "clean_word": "built",
+          "phonemes": "b\u02c8\u026alt",
+          "start": 7.818,
+          "end": 8.198,
+          "duration": 0.38,
+          "frame_ahead_trigger": 7.928
+        },
+        {
+          "word": "libraries",
+          "clean_word": "libraries",
+          "phonemes": "l\u02c8a\u026ab\u0279\u025b\u0279iz",
+          "start": 8.198,
+          "end": 8.828,
+          "duration": 0.63,
+          "frame_ahead_trigger": 8.308
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 8.828,
+          "end": 8.953,
+          "duration": 0.125,
+          "frame_ahead_trigger": 8.938
+        },
+        {
+          "word": "billions",
+          "clean_word": "billions",
+          "phonemes": "b\u02c8\u026ali\u0259nz",
+          "start": 8.953,
+          "end": 9.343,
+          "duration": 0.39,
+          "frame_ahead_trigger": 9.063
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 9.343,
+          "end": 9.508,
+          "duration": 0.165,
+          "frame_ahead_trigger": 9.453
+        },
+        {
+          "word": "parameters,",
+          "clean_word": "parameters",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025az",
+          "start": 9.508,
+          "end": 10.168,
+          "duration": 0.66,
+          "frame_ahead_trigger": 9.618
+        },
+        {
+          "word": "but",
+          "clean_word": "but",
+          "phonemes": "b\u02cc\u028ct",
+          "start": 10.168,
+          "end": 10.428,
+          "duration": 0.26,
+          "frame_ahead_trigger": 10.278
+        },
+        {
+          "word": "left",
+          "clean_word": "left",
+          "phonemes": "l\u02c8\u025bft",
+          "start": 10.428,
+          "end": 10.793,
+          "duration": 0.365,
+          "frame_ahead_trigger": 10.538
+        },
+        {
+          "word": "them",
+          "clean_word": "them",
+          "phonemes": "\u00f0\u02cc\u025bm",
+          "start": 10.793,
+          "end": 10.988,
+          "duration": 0.195,
+          "frame_ahead_trigger": 10.903
+        },
+        {
+          "word": "reading",
+          "clean_word": "reading",
+          "phonemes": "\u0279\u02c8i\u02d0d\u026a\u014b",
+          "start": 10.988,
+          "end": 11.298,
+          "duration": 0.31,
+          "frame_ahead_trigger": 11.098
+        },
+        {
+          "word": "empty",
+          "clean_word": "empty",
+          "phonemes": "\u02c8\u025bmpti",
+          "start": 11.298,
+          "end": 11.673,
+          "duration": 0.375,
+          "frame_ahead_trigger": 11.408
+        },
+        {
+          "word": "shelves.",
+          "clean_word": "shelves",
+          "phonemes": "\u0283\u02c8\u025blvz",
+          "start": 11.673,
+          "end": 12.093,
+          "duration": 0.42,
+          "frame_ahead_trigger": 11.783
+        }
+      ],
+      "audio_duration": 6.85,
+      "slot_duration": 7.0
+    },
+    {
+      "beat_id": 3,
+      "text": "DeepMind shattered the dogma by training 400 models, proving that model size and training tokens must scale in lockstep.",
+      "visual_focus": "Graph showing the linear correlation between parameters and token counts.",
+      "highlight_words": {
+        "lockstep": "#3B82F6"
+      },
+      "svo_action": {
+        "subject": "DeepMind",
+        "action_verb": "uncovers",
+        "direct_object": "scaling equilibrium",
+        "anchor_word": "lockstep",
+        "semantic_role": "eureka_discovery"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "CHINCHILLA: FIGURE",
+        "sub": "Graph showing the linear correlation between parameters and token",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_1_c4_0.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_1_c4_0.png",
+          "arxiv_id": "2203.15556",
+          "title": "CHINCHILLA: FIGURE",
+          "sub": "Graph showing the linear correlation between parameters and token",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "C4 0",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_pivot",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_1_c4_0.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_1_c4_0.png",
+        "arxiv_id": "2203.15556",
+        "title": "CHINCHILLA: FIGURE",
+        "sub": "Graph showing the linear correlation between parameters and token",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "C4 0",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 12.31,
+      "end": 19.35,
+      "duration": 7.04,
+      "word_timings": [
+        {
+          "word": "DeepMind",
+          "clean_word": "deepmind",
+          "phonemes": "d\u02c8i\u02d0p m\u02c8a\u026and",
+          "start": 12.321,
+          "end": 13.011,
+          "duration": 0.69,
+          "frame_ahead_trigger": 12.581
+        },
+        {
+          "word": "shattered",
+          "clean_word": "shattered",
+          "phonemes": "\u0283\u02c8\u00e6\u027e\u025ad",
+          "start": 13.011,
+          "end": 13.296,
+          "duration": 0.285,
+          "frame_ahead_trigger": 13.271
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 13.296,
+          "end": 13.421,
+          "duration": 0.125,
+          "frame_ahead_trigger": 13.556
+        },
+        {
+          "word": "dogma",
+          "clean_word": "dogma",
+          "phonemes": "d\u02c8\u0251\u02d0\u0261m\u0259",
+          "start": 13.421,
+          "end": 13.861,
+          "duration": 0.44,
+          "frame_ahead_trigger": 13.681
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 13.861,
+          "end": 14.031,
+          "duration": 0.17,
+          "frame_ahead_trigger": 14.121
+        },
+        {
+          "word": "training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 14.031,
+          "end": 14.451,
+          "duration": 0.42,
+          "frame_ahead_trigger": 14.291
+        },
+        {
+          "word": "400",
+          "clean_word": "400",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279h\u02c8\u028cnd\u0279\u026ad",
+          "start": 14.451,
+          "end": 15.191,
+          "duration": 0.74,
+          "frame_ahead_trigger": 14.711
+        },
+        {
+          "word": "models,",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 15.191,
+          "end": 15.618,
+          "duration": 0.428,
+          "frame_ahead_trigger": 15.451
+        },
+        {
+          "word": "proving",
+          "clean_word": "proving",
+          "phonemes": "p\u0279\u02c8u\u02d0v\u026a\u014b",
+          "start": 15.618,
+          "end": 16.041,
+          "duration": 0.422,
+          "frame_ahead_trigger": 15.878
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 16.041,
+          "end": 16.251,
+          "duration": 0.21,
+          "frame_ahead_trigger": 16.301
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 16.251,
+          "end": 16.616,
+          "duration": 0.365,
+          "frame_ahead_trigger": 16.511
+        },
+        {
+          "word": "size",
+          "clean_word": "size",
+          "phonemes": "s\u02c8a\u026az",
+          "start": 16.616,
+          "end": 16.931,
+          "duration": 0.315,
+          "frame_ahead_trigger": 16.876
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 16.931,
+          "end": 17.036,
+          "duration": 0.105,
+          "frame_ahead_trigger": 17.191
+        },
+        {
+          "word": "training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 17.036,
+          "end": 17.571,
+          "duration": 0.535,
+          "frame_ahead_trigger": 17.296
+        },
+        {
+          "word": "tokens",
+          "clean_word": "tokens",
+          "phonemes": "t\u02c8o\u028ak\u0259nz",
+          "start": 17.571,
+          "end": 18.086,
+          "duration": 0.515,
+          "frame_ahead_trigger": 17.831
+        },
+        {
+          "word": "must",
+          "clean_word": "must",
+          "phonemes": "m\u02c8\u028cst",
+          "start": 18.086,
+          "end": 18.236,
+          "duration": 0.15,
+          "frame_ahead_trigger": 18.346
+        },
+        {
+          "word": "scale",
+          "clean_word": "scale",
+          "phonemes": "sk\u02c8e\u026al",
+          "start": 18.236,
+          "end": 18.651,
+          "duration": 0.415,
+          "frame_ahead_trigger": 18.496
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 18.651,
+          "end": 18.751,
+          "duration": 0.1,
+          "frame_ahead_trigger": 18.911
+        },
+        {
+          "word": "lockstep.",
+          "clean_word": "lockstep",
+          "phonemes": "l\u02c8\u0251\u02d0kst\u025bp",
+          "start": 18.751,
+          "end": 19.246,
+          "duration": 0.495,
+          "frame_ahead_trigger": 19.011
+        }
+      ],
+      "audio_duration": 7.04,
+      "slot_duration": 7.19
+    },
+    {
+      "beat_id": 4,
+      "text": "The Chinchilla breakthrough: 70 billion parameters fed with four times more data, maximizing every single floating-point operation.",
+      "visual_focus": "Chinchilla model icon consuming massive data streams efficiently.",
+      "highlight_words": {
+        "70 billion": "#3B82F6"
+      },
+      "svo_action": {
+        "subject": "Chinchilla",
+        "action_verb": "optimizes",
+        "direct_object": "compute budget",
+        "anchor_word": "maximizing",
+        "semantic_role": "technical_mechanism"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "CHINCHILLA: CHINCHILLA",
+        "sub": "Chinchilla model icon consuming massive data streams efficiently.",
+        "accent_color": "#38BDF8",
+        "stage_1_label": "STAGE 1: CHINCHILLA",
+        "stage_2_label": "STAGE 2: OPTIMIZES ENGINE",
+        "stage_3_label": "STAGE 3: COMPUTE BUDGET"
+      },
+      "thriller_role": "technical_deep_dive",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "CHINCHILLA: CHINCHILLA",
+        "sub": "Chinchilla model icon consuming massive data streams efficiently.",
+        "accent_color": "#38BDF8",
+        "stage_1_label": "STAGE 1: CHINCHILLA",
+        "stage_2_label": "STAGE 2: OPTIMIZES ENGINE",
+        "stage_3_label": "STAGE 3: COMPUTE BUDGET",
+        "stage_1_sub": " ",
+        "stage_2_sub": " ",
+        "stage_3_sub": " "
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 19.5,
+      "end": 27.18,
+      "duration": 7.68,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 19.511,
+          "end": 19.576,
+          "duration": 0.065,
+          "frame_ahead_trigger": 19.921
+        },
+        {
+          "word": "Chinchilla",
+          "clean_word": "chinchilla",
+          "phonemes": "t\u0283\u026ant\u0283\u02c8\u026al\u0259",
+          "start": 19.576,
+          "end": 20.266,
+          "duration": 0.69,
+          "frame_ahead_trigger": 19.986
+        },
+        {
+          "word": "breakthrough:",
+          "clean_word": "breakthrough",
+          "phonemes": "b\u0279\u02c8e\u026ak\u03b8\u0279u\u02d0",
+          "start": 20.266,
+          "end": 20.815,
+          "duration": 0.549,
+          "frame_ahead_trigger": 20.676
+        },
+        {
+          "word": "70",
+          "clean_word": "70",
+          "phonemes": "s\u02c8\u025bv\u0259nti",
+          "start": 20.815,
+          "end": 21.246,
+          "duration": 0.431,
+          "frame_ahead_trigger": 21.225
+        },
+        {
+          "word": "billion",
+          "clean_word": "billion",
+          "phonemes": "b\u02c8\u026ali\u0259n",
+          "start": 21.246,
+          "end": 21.731,
+          "duration": 0.485,
+          "frame_ahead_trigger": 21.656
+        },
+        {
+          "word": "parameters",
+          "clean_word": "parameters",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025az",
+          "start": 21.731,
+          "end": 22.261,
+          "duration": 0.53,
+          "frame_ahead_trigger": 22.141
+        },
+        {
+          "word": "fed",
+          "clean_word": "fed",
+          "phonemes": "f\u02c8\u025bd",
+          "start": 22.261,
+          "end": 22.591,
+          "duration": 0.33,
+          "frame_ahead_trigger": 22.671
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 22.591,
+          "end": 22.712,
+          "duration": 0.122,
+          "frame_ahead_trigger": 23.001
+        },
+        {
+          "word": "four",
+          "clean_word": "four",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279",
+          "start": 22.712,
+          "end": 23.051,
+          "duration": 0.338,
+          "frame_ahead_trigger": 23.122
+        },
+        {
+          "word": "times",
+          "clean_word": "times",
+          "phonemes": "t\u02c8a\u026amz",
+          "start": 23.051,
+          "end": 23.416,
+          "duration": 0.365,
+          "frame_ahead_trigger": 23.461
+        },
+        {
+          "word": "more",
+          "clean_word": "more",
+          "phonemes": "m\u02c8\u0254\u02d0\u0279",
+          "start": 23.416,
+          "end": 23.671,
+          "duration": 0.255,
+          "frame_ahead_trigger": 23.826
+        },
+        {
+          "word": "data,",
+          "clean_word": "data",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259",
+          "start": 23.671,
+          "end": 24.017,
+          "duration": 0.346,
+          "frame_ahead_trigger": 24.081
+        },
+        {
+          "word": "maximizing",
+          "clean_word": "maximizing",
+          "phonemes": "m\u02c8\u00e6ks\u026am\u02cca\u026az\u026a\u014b",
+          "start": 24.017,
+          "end": 24.686,
+          "duration": 0.669,
+          "frame_ahead_trigger": 24.427
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 24.686,
+          "end": 25.116,
+          "duration": 0.43,
+          "frame_ahead_trigger": 25.096
+        },
+        {
+          "word": "single",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 25.116,
+          "end": 25.476,
+          "duration": 0.36,
+          "frame_ahead_trigger": 25.526
+        },
+        {
+          "word": "floating-point",
+          "clean_word": "floatingpoint",
+          "phonemes": "fl\u02c8o\u028a\u027e\u026a\u014bp\u02cc\u0254\u026ant",
+          "start": 25.476,
+          "end": 26.436,
+          "duration": 0.96,
+          "frame_ahead_trigger": 25.886
+        },
+        {
+          "word": "operation.",
+          "clean_word": "operation",
+          "phonemes": "\u02cc\u0251\u02d0p\u025a\u0279\u02c8e\u026a\u0283\u0259n",
+          "start": 26.436,
+          "end": 27.041,
+          "duration": 0.605,
+          "frame_ahead_trigger": 26.846
+        }
+      ],
+      "audio_duration": 7.68,
+      "slot_duration": 7.83
+    },
+    {
+      "beat_id": 5,
+      "text": "Chinchilla crushed the 280-billion Gopher, hitting 67.5% on MMLU while slashing inference latency and memory requirements in half.",
+      "visual_focus": "Bar chart comparing MMLU scores of Gopher vs Chinchilla.",
+      "highlight_words": {
+        "67.5%": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Chinchilla",
+        "action_verb": "outperforms",
+        "direct_object": "legacy giants",
+        "anchor_word": "crushed",
+        "semantic_role": "empirical_payoff"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: SIZE (\\# PARAMETERS)",
+        "sub": "Bar chart comparing MMLU scores of Gopher",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: SIZE (\\# PARAMETERS)",
+          "sub": "Bar chart comparing MMLU scores of Gopher",
+          "metric_name": "Size (\\# Parameters)",
+          "unit": "",
+          "contestants": [
+            {
+              "name": "\\mtnlg \\citepnlg530b",
+              "value": 530.0,
+              "display_val": "530.0",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "\\gopher \\citeprae2021gop",
+              "value": 280.0,
+              "display_val": "280.0",
+              "is_hero": false,
+              "color": "#A855F7"
+            },
+            {
+              "name": "Jurassic \\citepjurassic",
+              "value": 178.0,
+              "display_val": "178.0",
+              "is_hero": false,
+              "color": "#F59E0B"
+            },
+            {
+              "name": "GPT-3 \\citepgpt3",
+              "value": 175.0,
+              "display_val": "175.0",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +89.3% OVER \\GOPHER \\CITEPRA"
+        }
+      },
+      "thriller_role": "empirical_victory",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: SIZE (\\# PARAMETERS)",
+        "sub": "Bar chart comparing MMLU scores of Gopher",
+        "metric_name": "Size (\\# Parameters)",
+        "unit": "",
+        "contestants": [
+          {
+            "name": "\\mtnlg \\citepnlg530b",
+            "value": 530.0,
+            "display_val": "530.0",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "\\gopher \\citeprae2021gop",
+            "value": 280.0,
+            "display_val": "280.0",
+            "is_hero": false,
+            "color": "#A855F7"
+          },
+          {
+            "name": "Jurassic \\citepjurassic",
+            "value": 178.0,
+            "display_val": "178.0",
+            "is_hero": false,
+            "color": "#F59E0B"
+          },
+          {
+            "name": "GPT-3 \\citepgpt3",
+            "value": 175.0,
+            "display_val": "175.0",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +89.3% OVER \\GOPHER \\CITEPRA"
+      },
+      "start": 27.33,
+      "end": 36.89,
+      "duration": 9.56,
+      "word_timings": [
+        {
+          "word": "Chinchilla",
+          "clean_word": "chinchilla",
+          "phonemes": "t\u0283\u026ant\u0283\u02c8\u026al\u0259",
+          "start": 27.346,
+          "end": 27.871,
+          "duration": 0.525,
+          "frame_ahead_trigger": 27.906
+        },
+        {
+          "word": "crushed",
+          "clean_word": "crushed",
+          "phonemes": "k\u0279\u02c8\u028c\u0283t",
+          "start": 27.871,
+          "end": 28.306,
+          "duration": 0.435,
+          "frame_ahead_trigger": 28.431
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 28.306,
+          "end": 28.381,
+          "duration": 0.075,
+          "frame_ahead_trigger": 28.866
+        },
+        {
+          "word": "280-billion",
+          "clean_word": "280billion",
+          "phonemes": "t\u02c8u\u02d0h\u02c8\u028cnd\u0279\u026ad \u02c8e\u026a\u027ei b\u02c8\u026ali\u0259n",
+          "start": 28.381,
+          "end": 29.946,
+          "duration": 1.565,
+          "frame_ahead_trigger": 28.941
+        },
+        {
+          "word": "Gopher,",
+          "clean_word": "gopher",
+          "phonemes": "\u0261\u02c8o\u028af\u025a",
+          "start": 29.946,
+          "end": 30.271,
+          "duration": 0.325,
+          "frame_ahead_trigger": 30.506
+        },
+        {
+          "word": "hitting",
+          "clean_word": "hitting",
+          "phonemes": "h\u02c8\u026a\u027e\u026a\u014b",
+          "start": 30.271,
+          "end": 30.636,
+          "duration": 0.365,
+          "frame_ahead_trigger": 30.831
+        },
+        {
+          "word": "67.5%",
+          "clean_word": "675",
+          "phonemes": "s\u02c8\u026aksh\u02c8\u028cnd\u0279\u026ad s\u02c8\u025bv\u0259nti f\u02c8a\u026av",
+          "start": 30.636,
+          "end": 32.226,
+          "duration": 1.59,
+          "frame_ahead_trigger": 31.196
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 32.226,
+          "end": 32.461,
+          "duration": 0.235,
+          "frame_ahead_trigger": 32.786
+        },
+        {
+          "word": "MMLU",
+          "clean_word": "mmlu",
+          "phonemes": "\u02cc\u025bm\u02cc\u025bm\u02cc\u025blj\u02c8u\u02d0",
+          "start": 32.461,
+          "end": 33.196,
+          "duration": 0.735,
+          "frame_ahead_trigger": 33.021
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 33.196,
+          "end": 33.601,
+          "duration": 0.405,
+          "frame_ahead_trigger": 33.756
+        },
+        {
+          "word": "slashing",
+          "clean_word": "slashing",
+          "phonemes": "sl\u02c8\u00e6\u0283\u026a\u014b",
+          "start": 33.601,
+          "end": 33.826,
+          "duration": 0.225,
+          "frame_ahead_trigger": 34.161
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 33.826,
+          "end": 34.386,
+          "duration": 0.56,
+          "frame_ahead_trigger": 34.386
+        },
+        {
+          "word": "latency",
+          "clean_word": "latency",
+          "phonemes": "l\u02c8e\u026at\u0259nsi",
+          "start": 34.386,
+          "end": 34.991,
+          "duration": 0.605,
+          "frame_ahead_trigger": 34.946
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 34.991,
+          "end": 35.236,
+          "duration": 0.245,
+          "frame_ahead_trigger": 35.551
+        },
+        {
+          "word": "memory",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 35.236,
+          "end": 35.536,
+          "duration": 0.3,
+          "frame_ahead_trigger": 35.796
+        },
+        {
+          "word": "requirements",
+          "clean_word": "requirements",
+          "phonemes": "\u0279\u1d7bkw\u02c8a\u026a\u025am\u0259nts",
+          "start": 35.536,
+          "end": 36.281,
+          "duration": 0.745,
+          "frame_ahead_trigger": 36.096
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 36.281,
+          "end": 36.496,
+          "duration": 0.215,
+          "frame_ahead_trigger": 36.841
+        },
+        {
+          "word": "half.",
+          "clean_word": "half",
+          "phonemes": "h\u02c8\u00e6f",
+          "start": 36.496,
+          "end": 36.706,
+          "duration": 0.21,
+          "frame_ahead_trigger": 37.056
+        }
+      ],
+      "audio_duration": 9.56,
+      "slot_duration": 9.71
+    },
+    {
+      "beat_id": 6,
+      "text": "This 1-to-1 ratio is the blueprint for LLaMA and Mistral. Follow machinoAI to decode modern AI architecture.",
+      "visual_focus": "Fast-paced montage of modern model architectures.",
+      "highlight_words": {
+        "blueprint": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Chinchilla",
+        "action_verb": "defines",
+        "direct_object": "modern scaling",
+        "anchor_word": "blueprint",
+        "semantic_role": "paradigm_shift"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE NEW STANDARD",
+        "sub": "Scaling laws for the next generation",
+        "accent_color": "#34D399",
+        "params": {
+          "title": "Outro"
+        }
+      },
+      "thriller_role": "paradigm_shift",
+      "act": 4,
+      "start": 37.04,
+      "end": 44.5,
+      "duration": 7.47,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 37.043,
+          "end": 37.338,
+          "duration": 0.295,
+          "frame_ahead_trigger": 37.753
+        },
+        {
+          "word": "1-to-1",
+          "clean_word": "1to1",
+          "phonemes": "w\u02c8\u028cn t\u0259 w\u02c8\u028cn",
+          "start": 37.338,
+          "end": 37.958,
+          "duration": 0.62,
+          "frame_ahead_trigger": 38.048
+        },
+        {
+          "word": "ratio",
+          "clean_word": "ratio",
+          "phonemes": "\u0279\u02c8e\u026a\u0283\u026a\u02cco\u028a",
+          "start": 37.958,
+          "end": 38.478,
+          "duration": 0.52,
+          "frame_ahead_trigger": 38.668
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 38.478,
+          "end": 38.668,
+          "duration": 0.19,
+          "frame_ahead_trigger": 39.188
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 38.668,
+          "end": 38.745,
+          "duration": 0.077,
+          "frame_ahead_trigger": 39.378
+        },
+        {
+          "word": "blueprint",
+          "clean_word": "blueprint",
+          "phonemes": "bl\u02c8u\u02d0p\u0279\u026ant",
+          "start": 38.745,
+          "end": 39.373,
+          "duration": 0.628,
+          "frame_ahead_trigger": 39.455
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 39.373,
+          "end": 39.566,
+          "duration": 0.193,
+          "frame_ahead_trigger": 40.083
+        },
+        {
+          "word": "LLaMA",
+          "clean_word": "llama",
+          "phonemes": "\u02c8\u025bl l\u02cc\u00e6 m\u02c8\u0251\u02d0",
+          "start": 39.566,
+          "end": 40.213,
+          "duration": 0.647,
+          "frame_ahead_trigger": 40.276
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 40.213,
+          "end": 40.446,
+          "duration": 0.233,
+          "frame_ahead_trigger": 40.923
+        },
+        {
+          "word": "Mistral.",
+          "clean_word": "mistral",
+          "phonemes": "m\u02c8\u026ast\u0279\u0259l",
+          "start": 40.446,
+          "end": 40.938,
+          "duration": 0.492,
+          "frame_ahead_trigger": 41.156
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 40.938,
+          "end": 41.368,
+          "duration": 0.43,
+          "frame_ahead_trigger": 41.648
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 41.368,
+          "end": 42.368,
+          "duration": 1.0,
+          "frame_ahead_trigger": 42.078
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 42.368,
+          "end": 42.478,
+          "duration": 0.11,
+          "frame_ahead_trigger": 43.078
+        },
+        {
+          "word": "decode",
+          "clean_word": "decode",
+          "phonemes": "d\u1d7bk\u02c8o\u028ad",
+          "start": 42.478,
+          "end": 42.828,
+          "duration": 0.35,
+          "frame_ahead_trigger": 43.188
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 42.828,
+          "end": 43.278,
+          "duration": 0.45,
+          "frame_ahead_trigger": 43.538
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 43.278,
+          "end": 43.615,
+          "duration": 0.337,
+          "frame_ahead_trigger": 43.988
+        },
+        {
+          "word": "architecture.",
+          "clean_word": "architecture",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025a",
+          "start": 43.615,
+          "end": 44.378,
+          "duration": 0.763,
+          "frame_ahead_trigger": 44.325
+        }
+      ],
+      "audio_duration": 7.47,
+      "slot_duration": 7.46
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\mathcal{O}(N) \\ll \\mathcal{O}(N^2)$",
+      "filename": "chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathbf{L}_{\\mathrm{bottleneck}} = \\sum_{i=1}^M \\alpha_i \\mathbf{v}_i$",
+      "filename": "chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{y} = \\mathrm{LayerNorm}(\\mathbf{W}_p \\mathbf{x} + \\mathbf{b})$",
+      "filename": "chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{TopK}(\\sigma(\\mathbf{W}_g \\mathbf{x})) = \\mathbf{e}^*$",
+      "filename": "chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Speedup} = T_{\\mathrm{base}} / T_{\\mathrm{new}}$",
+      "filename": "chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 15.0,
+      "sound_type": "laser",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 25.0,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy"
+  },
+  "script_provider": "deterministic_fallback",
+  "quality_flags": {
+    "scrubbed_fields": [],
+    "ungrounded_narration_numbers": [],
+    "leaked_example_values": [],
+    "grounding_source_chars": 1768
+  },
+  "arxiv_id": "2203.15556",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "c4_0",
+      "caption": "C4 0",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/source/figures/c4_0.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_1_c4_0.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_1_c4_0.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "gh_c4_2",
+      "caption": "Gh C4 2",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/source/figures/gh_c4_2.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_2_gh_c4_2.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_2_gh_c4_2.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "curvature_v3",
+      "caption": "Curvature V3",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/source/figures/curvature_v3.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_3_curvature_v3.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_3_curvature_v3.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "combined_predictions_v9",
+      "caption": "Combined Predictions V9",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/source/figures/combined_predictions_v9.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_4_combined_predictions_v9.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_4_combined_predictions_v9.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "mmlu_0",
+      "caption": "Mmlu 0",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/source/figures/mmlu_0.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_5_mmlu_0.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.15556/chalkboard_figures/fig_5_mmlu_0.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 9.5,
+    "final_retention_hook_score": 9.5,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "This actually slapped. You didn't waste my time with 'Hey guys' or 'In this video,' and you didn't treat me like a toddler with 'smart drawers' metaphors. The 'starved of reading material' hook is solid because it frames the problem as a resource inefficiency rather than just math. I understood exactly why Chinchilla matters\u2014it's about the compute-to-token ratio, not just throwing parameters at a wall."
+  },
+  "thriller_metadata": {
+    "engine_version": "7.0",
+    "narrative_style": "intellectual_thriller",
+    "villain_entity": "Undertrained bloated parameters",
+    "physical_analogy": "A massive library with millions of books but only one reader to process them all.",
+    "eureka_mechanism": "Compute-optimal scaling ratio",
+    "paradigm_shift": "Model size and training data must scale in perfect lockstep"
+  },
+  "hook_gating": {
+    "selected_hook": "Your massive AI models are starving, burning compute on bloated weights while ignoring the data.",
+    "verdict": 47,
+    "band": "WEAK",
+    "formula": "Unclassified",
+    "properties": {
+      "SPECIFICITY": 24,
+      "ADDRESS": 76,
+      "STAKES": 55,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "SPECIFICITY",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Contender A",
+        "model_a_score": "95%",
+        "model_b_name": "Baseline",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "publish_gate": {
+    "decision": "hold",
+    "reasons": [
+      "Script came from the deterministic fallback (all LLM providers failed)."
+    ],
+    "warnings": [
+      "No vision model audited the keyframes (scores are heuristic placeholders)."
+    ],
+    "action": {
+      "youtube_upload": true,
+      "privacy": "private",
+      "cross_post": false,
+      "mode": "private"
+    }
+  },
+  "youtube_upload": {
+    "video_id": "luW-QOTMQsk",
+    "shorts_url": "https://youtube.com/shorts/luW-QOTMQsk",
+    "studio_url": "https://studio.youtube.com/video/luW-QOTMQsk/edit",
+    "title": "Chinchilla Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/chinchilla_compute-optimal_large_language_models_part_5_-_the_blueprint_for_llama_and_mistral_how_chinchilla_shaped_modern_open-weights_ai_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

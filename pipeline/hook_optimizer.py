@@ -462,10 +462,43 @@ def get_domain_context_parameters(
             "Standard transformer architectures hit a severe memory wall that {clean_topic} completely redesigns.",
             "Why do GPUs sit idling waiting on memory bandwidth, and how does {clean_topic} fix it?",
             "What happens when deep learning architectures scale up? {clean_topic} exposes the hidden bottleneck.",
+            "What happens when your model's memory footprint explodes? {clean_topic} reveals the solution.",
             "Everyone assumed standard scaling was the only answer, until {clean_topic} proved otherwise.",
             "Why are frontier AI labs redesigning their core infrastructure around {clean_topic}?"
         ]
     }
+
+
+_UNSET = object()
+MAX_HOOK_WORDS = 30
+
+
+def resolve_subject_name(spec: Dict[str, Any], arxiv_meta: Optional[Dict[str, Any]] = None) -> Optional[str]:
+    """
+    Short name of the method/product the video is about, for use inside hook templates.
+
+    Deliberately NOT the spec title: that is the LLM's catchy video title
+    ("Predicting the Billion-Dollar Graph", "Toppling GANs"), and templates turned it
+    into nonsense like "Why are leading AI teams switching to Toppling GANs?".
+    Returns None when no short, real name is available.
+    """
+    meta = spec.get("metadata") or {}
+    model_a = meta.get("model_a")
+    if isinstance(model_a, str) and "<" not in model_a and 1 <= len(model_a.split()) <= 4:
+        return model_a.strip()
+    if isinstance(arxiv_meta, dict):
+        for key in ("paper_title", "title"):
+            title = (arxiv_meta.get(key) or "").strip()
+            if ":" in title:
+                head = title.split(":")[0].strip()
+                if 1 <= len(head.split()) <= 4:
+                    return head
+            elif title and len(title.split()) <= 3:
+                return title
+        return None
+    # No paper metadata (manual --topic runs): the topic itself is the subject.
+    title = spec.get("title") or spec.get("id")
+    return clean_display_topic(title) if title else None
 
 
 def generate_hook_candidates(
@@ -474,14 +507,22 @@ def generate_hook_candidates(
     arxiv_meta: Optional[Dict[str, Any]] = None,
     metadata: Optional[Dict[str, Any]] = None,
     category: Optional[str] = None,
-    domain_taxonomy: Optional[str] = None
+    domain_taxonomy: Optional[str] = None,
+    subject_name: Any = _UNSET,
+    source_text: Optional[str] = None
 ) -> List[str]:
     """
     Synthesizes diverse Beat 1 hooks dynamically from the paper's actual content
     and proven archetypes from hooks.json, with ZERO repetitive canned templates.
+
+    subject_name: the method name to put in templates. Defaults to the cleaned topic
+    for direct callers; pass None to skip every template that needs a name.
+    source_text: when given, candidates containing numbers absent from it are dropped.
     """
     candidates: List[str] = []
-    clean_topic = clean_display_topic(topic)
+    if subject_name is _UNSET:
+        subject_name = clean_display_topic(topic)
+    clean_topic = subject_name or ""
     metric = extract_metric_from_context(arxiv_meta=arxiv_meta, metadata=metadata)
 
     # 1. Base hook and authentic dynamic linguistic reframings
@@ -496,7 +537,7 @@ def generate_hook_candidates(
                 candidates.append(f"What happens when {b_core[0].lower() + b_core[1:]}?")
                 if not b_core.endswith("?"):
                     candidates.append(f"Did you know {b_core[0].lower() + b_core[1:]}?")
-            else:
+            elif clean_topic:
                 candidates.append(f"Why should engineers care about {clean_topic}? Because {b_core[0].lower() + b_core[1:]}.")
 
     # 2. Extract dynamic clauses directly from live abstract / summary / key facts
@@ -509,23 +550,19 @@ def generate_hook_candidates(
     if abstract_text:
         # Split into distinct sentences to extract authentic problem and mechanism
         raw_sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", abstract_text) if len(s.strip()) > 15]
+        # Author-voice sentences ("We study...", "In this paper...") make unreadable hooks
+        # once wrapped in a template, so only use sentences that state a fact.
+        raw_sentences = [s for s in raw_sentences if not re.match(r"^(we|in this|this (paper|work)|here,? we|our)\b", s, re.I)]
         if raw_sentences:
             s0 = raw_sentences[0].rstrip(".?! ")
             # Transform the paper's actual thesis into question / challenge archetypes
-            if not any(y in s0.lower() for y in ("you", "your")):
+            if any(y in s0.lower() for y in ("you", "your")):
+                candidates.append(s0 + ".")
+            else:
                 candidates.append(f"Standard systems hit an invisible wall right here: {s0}.")
-                candidates.append(f"Why is {clean_topic} a major breakthrough? Because {s0[0].lower() + s0[1:]}.")
-            else:
-                candidates.append(s0 + ".")
-
-            if len(raw_sentences) > 1:
-                s1 = raw_sentences[1].rstrip(".?! ")
-                candidates.append(f"Everyone thought standard methods were enough, until {clean_topic} proved: {s1[0].lower() + s1[1:]}.")
-                candidates.append(f"Why is {clean_topic} a major breakthrough? Because {s0[0].lower() + s0[1:]}.")
-            else:
-                candidates.append(s0 + ".")
-
-            if len(raw_sentences) > 1:
+                if clean_topic:
+                    candidates.append(f"Why is {clean_topic} a major breakthrough? Because {s0[0].lower() + s0[1:]}.")
+            if len(raw_sentences) > 1 and clean_topic:
                 s1 = raw_sentences[1].rstrip(".?! ")
                 candidates.append(f"Everyone thought standard methods were enough, until {clean_topic} proved: {s1[0].lower() + s1[1:]}.")
 
@@ -539,14 +576,23 @@ def generate_hook_candidates(
     )
     domain_params = get_domain_context_parameters(cat, dom)
 
-    # 4. Dynamic metric and topic hooks from domain parameters
-    if metric:
-        for tpl in domain_params.get("metric_templates", []):
-            candidates.append(tpl.format(clean_topic=clean_topic, metric=metric))
-    else:
-        for tpl in domain_params.get("general_templates", []):
-            candidates.append(tpl.format(clean_topic=clean_topic))
+    # 4. Domain templates. Metric templates are only used for developer perks, where the
+    # metric is a verified credit amount and the sentence ("... gives you {metric} in free
+    # credits") matches its meaning. For papers the old metric templates mislabeled numbers
+    # (an FID score of 3.17 became "3.17 speedups"), so papers only get general templates.
+    if clean_topic:
+        if metric and cat == "developer_perks":
+            for tpl in domain_params.get("metric_templates", []):
+                candidates.append(tpl.format(clean_topic=clean_topic, metric=metric))
+        else:
+            for tpl in domain_params.get("general_templates", []):
+                candidates.append(tpl.format(clean_topic=clean_topic))
     candidates = [c for c in candidates if is_candidate_relevant(c, cat)]
+    candidates = [c for c in candidates if len(c.split()) <= MAX_HOOK_WORDS]
+    if source_text is not None:
+        from pipeline.grounding import extract_numbers, ungrounded_numbers
+        src_nums = set(extract_numbers(source_text))
+        candidates = [c for c in candidates if not ungrounded_numbers(c, src_nums)]
 
     # Deduplicate while preserving order
     seen = set()
@@ -586,108 +632,135 @@ def gate_and_select_best_hook(candidates: List[str]) -> Tuple[str, Dict[str, Any
     return winner["hook"], winner, evaluations
 
 
+def _hook_audit(hook: str, ev: Dict[str, Any], kept_bespoke: bool, candidates_evaluated: int, **extra) -> Dict[str, Any]:
+    audit = {
+        "selected_hook": hook,
+        "verdict": ev["verdict"],
+        "band": ev["band"],
+        "formula": ev.get("formula", "Bespoke Paper Narrative"),
+        "properties": ev.get("properties", {}),
+        "weakest_property": ev.get("weakest_property"),
+        "kept_bespoke": kept_bespoke,
+        "candidates_evaluated": candidates_evaluated,
+    }
+    audit.update(extra)
+    return audit
+
+
 def optimize_script_hook(
     spec: Dict[str, Any],
     arxiv_meta: Optional[Dict[str, Any]] = None,
     candidate_hooks: Optional[List[str]] = None
 ) -> Dict[str, Any]:
     """
-    Integrates hook scoring gating directly into a script specification.
-    Evaluates candidates, respects authentic high-quality base hooks from the LLM,
-    selects the highest scoring category-aware hook for Beat 1,
-    and updates the spec with audit metadata.
+    Gates the Beat 1 hook.
+
+    Policy (changed): the scriptwriter's own hook is KEPT whenever it is usable —
+    not a lecture opener, not "Before you...", 6-32 words, and (when paper metadata is
+    available) containing no numbers absent from the paper material. The regex hook
+    score is recorded for diagnostics only; it no longer overrides a usable hook.
+    Previously a regex score < 50 replaced the hook with a fill-in-the-blank template,
+    which happened in 80 of 133 gated scripts and produced lines like
+    "Why are leading AI teams switching to <video title> after this 98.2% benchmark result?".
+
+    Only when the hook is unusable are replacement candidates generated, using the
+    paper's short method name (never the catchy video title) and no injected metrics.
     """
     beats = spec.get("beats", [])
     if not beats:
         return spec
 
+    subject = resolve_subject_name(spec, arxiv_meta)
     topic = spec.get("title") or spec.get("id") or "Frontier AI"
     base_hook = beats[0].get("text", "")
     metadata = spec.get("metadata", {})
     category = spec.get("category")
     domain_taxonomy = spec.get("domain_taxonomy")
 
-    # 1. First-Class Bespoke Narrative Preservation:
-    # If the LLM has already generated an authentic, paper-specific hook, sanitize it
-    # and preserve it if it meets quality standards (non-slop, not repetitive, workable score).
-    clean_base = sanitize_hook_text(base_hook, topic)
+    source_text: Optional[str] = None
+    src_nums = None
+    if isinstance(arxiv_meta, dict):
+        from pipeline.grounding import build_source_text, extract_numbers, ungrounded_numbers
+        source_text = build_source_text(arxiv_meta)
+        src_nums = set(extract_numbers(source_text))
+
+    clean_base = sanitize_hook_text(base_hook, subject or topic)
     raw_lecture_slop = any(re.search(pat, base_hook.strip(), re.I) for pat in BANNED_INTRO_PATTERNS)
     is_lecture_slop = raw_lecture_slop or any(re.search(pat, clean_base, re.I) for pat in BANNED_INTRO_PATTERNS)
     is_canned_repetitive = clean_base.lower().startswith("before you")
-    is_good_length = 6 <= len(clean_base.split()) <= 32
+    # Check the raw hook too: sanitize_hook_text swaps very short text for a canned question.
+    is_good_length = 6 <= len(clean_base.split()) <= 32 and len(base_hook.split()) >= 4
+    bad_numbers = ungrounded_numbers(clean_base, src_nums) if src_nums is not None else []
 
-    if clean_base and not is_lecture_slop and not is_canned_repetitive and is_good_length:
+    rejection_reasons = []
+    if not base_hook.strip():
+        rejection_reasons.append("empty")
+    if is_lecture_slop:
+        rejection_reasons.append("lecture_opener")
+    if is_canned_repetitive:
+        rejection_reasons.append("before_you_cliche")
+    if not is_good_length:
+        rejection_reasons.append("length")
+    if bad_numbers:
+        rejection_reasons.append(f"ungrounded_numbers:{','.join(bad_numbers)}")
+
+    # 1. Keep the scriptwriter's hook whenever it is usable.
+    if not rejection_reasons:
         base_eval = score_hook(clean_base)
-        # If the LLM's bespoke hook has acceptable quality (>= 50, WORKABLE/STRONG) and is not slop: PRESERVE IT!
-        if base_eval["verdict"] >= 50:
-            print(f"🎯 [Hook Scoring Gating] Keeping authentic bespoke paper hook ({base_eval['verdict']}/100, {base_eval['band']}): \"{clean_base}\"")
-            beats[0]["text"] = clean_base
-            beats[0]["hook_score"] = base_eval["verdict"]
-            beats[0]["hook_band"] = base_eval["band"]
-            beats[0]["hook_formula"] = base_eval.get("formula", "Bespoke Paper Narrative")
-            spec["hook_gating"] = {
-                "selected_hook": clean_base,
-                "verdict": base_eval["verdict"],
-                "band": base_eval["band"],
-                "formula": base_eval.get("formula", "Bespoke Paper Narrative"),
-                "kept_bespoke": True,
-                "candidates_evaluated": 1
-            }
-            return spec
+        print(f"🎯 [Hook Gating] Keeping scriptwriter hook (diagnostic score {base_eval['verdict']}/100): \"{clean_base}\"")
+        beats[0]["text"] = clean_base
+        beats[0]["hook_score"] = base_eval["verdict"]
+        beats[0]["hook_band"] = base_eval["band"]
+        beats[0]["hook_formula"] = base_eval.get("formula", "Bespoke Paper Narrative")
+        spec["hook_gating"] = _hook_audit(clean_base, base_eval, kept_bespoke=True, candidates_evaluated=1)
+        return spec
 
-    # 2. If base hook has lecture slop, is missing, or is repetitive "Before you...",
-    # generate diverse, non-repetitive candidate hooks:
-    if candidate_hooks and len(candidate_hooks) > 0:
+    print(f"🎯 [Hook Gating] Scriptwriter hook rejected ({', '.join(rejection_reasons)}): \"{base_hook}\"")
+
+    # 2. Replacement candidates (no metric injection, no video-title-as-product).
+    if candidate_hooks:
         candidates = [c for c in candidate_hooks if not c.lower().strip().startswith("before you")]
     else:
+        reusable_base = clean_base if not (is_canned_repetitive or is_lecture_slop or bad_numbers) else None
         candidates = generate_hook_candidates(
             topic=topic,
-            base_hook=clean_base if not is_canned_repetitive and not is_lecture_slop else None,
+            base_hook=reusable_base,
             arxiv_meta=arxiv_meta,
             metadata=metadata,
             category=category,
-            domain_taxonomy=domain_taxonomy
+            domain_taxonomy=domain_taxonomy,
+            subject_name=subject,
+            source_text=source_text
         )
-
-    # Filter out any candidates that start with "before you"
     candidates = [c for c in candidates if not c.lower().strip().startswith("before you")]
+    if src_nums is not None:
+        candidates = [c for c in candidates if not ungrounded_numbers(c, src_nums)]
+
     if not candidates:
-        clean_t = clean_display_topic(topic)
-        candidates = [
-            f"Why are top AI researchers paying attention to {clean_t}?",
-            f"Standard architectures hit an invisible wall right here: enter {clean_t}.",
-            f"What happens when standard AI methods fail? {clean_t} reveals the solution."
-        ]
+        # Nothing better available: keep the cleaned hook and flag it for review rather
+        # than inventing one. (The publish gate reads hook_gating.needs_review.)
+        base_eval = score_hook(clean_base)
+        beats[0]["text"] = clean_base
+        beats[0]["hook_score"] = base_eval["verdict"]
+        beats[0]["hook_band"] = base_eval["band"]
+        spec["hook_gating"] = _hook_audit(
+            clean_base, base_eval, kept_bespoke=True, candidates_evaluated=1,
+            needs_review=True, rejection_reasons=rejection_reasons
+        )
+        print(f"⚠️ [Hook Gating] No grounded replacement available; keeping hook and flagging for review.")
+        return spec
 
     winning_hook, winner_eval, all_evals = gate_and_select_best_hook(candidates)
 
-    # Update Beat 1 text with winning gated hook
     beats[0]["text"] = winning_hook
     beats[0]["hook_score"] = winner_eval["verdict"]
     beats[0]["hook_band"] = winner_eval["band"]
     beats[0]["hook_formula"] = winner_eval["formula"]
+    spec["hook_gating"] = _hook_audit(
+        winning_hook, winner_eval, kept_bespoke=False, candidates_evaluated=len(all_evals),
+        rejection_reasons=rejection_reasons,
+        rankings=[{"hook": e["hook"], "verdict": e["verdict"], "band": e["band"], "formula": e["formula"]} for e in all_evals]
+    )
 
-    # Store full gating audit on spec
-    spec["hook_gating"] = {
-        "selected_hook": winning_hook,
-        "verdict": winner_eval["verdict"],
-        "band": winner_eval["band"],
-        "formula": winner_eval["formula"],
-        "properties": winner_eval["properties"],
-        "weakest_property": winner_eval["weakest_property"],
-        "candidates_evaluated": len(all_evals),
-        "kept_bespoke": False,
-        "rankings": [
-            {
-                "hook": e["hook"],
-                "verdict": e["verdict"],
-                "band": e["band"],
-                "formula": e["formula"]
-            }
-            for e in all_evals
-        ]
-    }
-
-    print(f"🎯 [Hook Scoring Gating] Winner ({winner_eval['verdict']}/100, {winner_eval['band']}, {winner_eval['formula']}): \"{winning_hook}\"")
+    print(f"🎯 [Hook Gating] Replacement ({winner_eval['verdict']}/100, {winner_eval['band']}, {winner_eval['formula']}): \"{winning_hook}\"")
     return spec
-

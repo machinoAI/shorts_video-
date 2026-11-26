@@ -1,0 +1,1804 @@
+{
+  "id": "bert_bidirectional_transformer",
+  "title": "The Unidirectional Transformer Trap",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "neural_attention",
+  "hook_tag": "ARCHITECTURAL BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until The Unidirectional Transformer Trap unlocks 80.5% throughput?",
+      "visual_focus": "A linear stream of tokens being blocked by an opaque wall.",
+      "highlight_words": {
+        "blinds": "#EF4444",
+        "full sentence": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Autoregressive Model",
+        "action_verb": "blocks",
+        "direct_object": "future context",
+        "anchor_word": "blinds",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE UNIDIRECTIONAL WALL",
+        "sub": "Predicting the next token without looking ahead",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Left Context",
+          "stream_b_label": "Future Information",
+          "barrier_label": "Masking Constraint"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 67,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE UNIDIRECTIONAL WALL",
+        "sub": "Predicting the next token without looking ahead",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Left Context",
+        "stream_b_label": "Future Information",
+        "barrier_label": "Masking Constraint"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.68,
+      "duration": 7.68,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.015,
+          "end": 0.18,
+          "duration": 0.165,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.18,
+          "end": 0.53,
+          "duration": 0.35,
+          "frame_ahead_trigger": 0.14
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.53,
+          "end": 1.305,
+          "duration": 0.775,
+          "frame_ahead_trigger": 0.49
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.305,
+          "end": 1.48,
+          "duration": 0.175,
+          "frame_ahead_trigger": 1.265
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.48,
+          "end": 1.8,
+          "duration": 0.32,
+          "frame_ahead_trigger": 1.44
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 1.8,
+          "end": 2.13,
+          "duration": 0.33,
+          "frame_ahead_trigger": 1.76
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.13,
+          "end": 2.735,
+          "duration": 0.605,
+          "frame_ahead_trigger": 2.09
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 2.735,
+          "end": 3.275,
+          "duration": 0.54,
+          "frame_ahead_trigger": 2.695
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 3.275,
+          "end": 3.605,
+          "duration": 0.33,
+          "frame_ahead_trigger": 3.235
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 3.605,
+          "end": 3.69,
+          "duration": 0.085,
+          "frame_ahead_trigger": 3.565
+        },
+        {
+          "word": "Unidirectional",
+          "clean_word": "unidirectional",
+          "phonemes": "j\u02ccu\u02d0n\u026ad\u1d7b\u0279\u02c8\u025bk\u0283\u0259n\u0259l",
+          "start": 3.69,
+          "end": 4.665,
+          "duration": 0.975,
+          "frame_ahead_trigger": 3.65
+        },
+        {
+          "word": "Transformer",
+          "clean_word": "transformer",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279m\u025a",
+          "start": 4.665,
+          "end": 5.43,
+          "duration": 0.765,
+          "frame_ahead_trigger": 4.625
+        },
+        {
+          "word": "Trap",
+          "clean_word": "trap",
+          "phonemes": "t\u0279\u02c8\u00e6p",
+          "start": 5.43,
+          "end": 5.725,
+          "duration": 0.295,
+          "frame_ahead_trigger": 5.39
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 5.725,
+          "end": 6.045,
+          "duration": 0.32,
+          "frame_ahead_trigger": 5.685
+        },
+        {
+          "word": "80.5%",
+          "clean_word": "805",
+          "phonemes": "\u02c8e\u026ath\u02c8\u028cnd\u0279\u026ad f\u02c8a\u026av",
+          "start": 6.045,
+          "end": 7.045,
+          "duration": 1.0,
+          "frame_ahead_trigger": 6.005
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 7.045,
+          "end": 7.58,
+          "duration": 0.535,
+          "frame_ahead_trigger": 7.005
+        }
+      ],
+      "audio_duration": 7.68,
+      "slot_duration": 7.83
+    },
+    {
+      "beat_id": 2,
+      "text": "This autoregressive bottleneck forces the model to guess the future, trapping intelligence inside a one-way street of rigid, shallow projections.",
+      "visual_focus": "A bottleneck funnel narrowing flow to a singular, desperate path.",
+      "highlight_words": {
+        "bottleneck": "#EF4444",
+        "one-way": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Probability Distribution",
+        "action_verb": "constrains",
+        "direct_object": "hidden representations",
+        "anchor_word": "bottleneck",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "AUTOREGRESSIVE BOTTLENECK",
+        "sub": "Information loss via forced serial dependency",
+        "accent_color": "#EF4444",
+        "params": {
+          "input_1_label": "Token i-1",
+          "input_2_label": "Token i-2",
+          "fused_label": "Restricted Hidden State"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "convergence_funnel",
+        "title": "AUTOREGRESSIVE BOTTLENECK",
+        "sub": "Information loss via forced serial dependency",
+        "accent_color": "#EF4444",
+        "input_1_label": "Token i-1",
+        "input_2_label": "Token i-2",
+        "fused_label": "Restricted Hidden State"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.83,
+      "end": 15.6,
+      "duration": 7.77,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 7.835,
+          "end": 8.135,
+          "duration": 0.3,
+          "frame_ahead_trigger": 7.945
+        },
+        {
+          "word": "autoregressive",
+          "clean_word": "autoregressive",
+          "phonemes": "\u02cc\u0254\u02d0\u027eo\u028a\u0279\u1d7b\u0261\u0279\u02c8\u025bs\u026av",
+          "start": 8.135,
+          "end": 8.985,
+          "duration": 0.85,
+          "frame_ahead_trigger": 8.245
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 8.985,
+          "end": 9.57,
+          "duration": 0.585,
+          "frame_ahead_trigger": 9.095
+        },
+        {
+          "word": "forces",
+          "clean_word": "forces",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u1d7bz",
+          "start": 9.57,
+          "end": 9.965,
+          "duration": 0.395,
+          "frame_ahead_trigger": 9.68
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 9.965,
+          "end": 10.07,
+          "duration": 0.105,
+          "frame_ahead_trigger": 10.075
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 10.07,
+          "end": 10.555,
+          "duration": 0.485,
+          "frame_ahead_trigger": 10.18
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 10.555,
+          "end": 10.65,
+          "duration": 0.095,
+          "frame_ahead_trigger": 10.665
+        },
+        {
+          "word": "guess",
+          "clean_word": "guess",
+          "phonemes": "\u0261\u02c8\u025bs",
+          "start": 10.65,
+          "end": 10.85,
+          "duration": 0.2,
+          "frame_ahead_trigger": 10.76
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 10.85,
+          "end": 11.049,
+          "duration": 0.199,
+          "frame_ahead_trigger": 10.96
+        },
+        {
+          "word": "future,",
+          "clean_word": "future",
+          "phonemes": "fj\u02c8u\u02d0t\u0283\u025a",
+          "start": 11.049,
+          "end": 11.45,
+          "duration": 0.401,
+          "frame_ahead_trigger": 11.159
+        },
+        {
+          "word": "trapping",
+          "clean_word": "trapping",
+          "phonemes": "t\u0279\u02c8\u00e6p\u026a\u014b",
+          "start": 11.45,
+          "end": 11.925,
+          "duration": 0.475,
+          "frame_ahead_trigger": 11.56
+        },
+        {
+          "word": "intelligence",
+          "clean_word": "intelligence",
+          "phonemes": "\u026ant\u02c8\u025bl\u026ad\u0292\u0259ns",
+          "start": 11.925,
+          "end": 12.6,
+          "duration": 0.675,
+          "frame_ahead_trigger": 12.035
+        },
+        {
+          "word": "inside",
+          "clean_word": "inside",
+          "phonemes": "\u026ans\u02c8a\u026ad",
+          "start": 12.6,
+          "end": 13.02,
+          "duration": 0.42,
+          "frame_ahead_trigger": 12.71
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 13.02,
+          "end": 13.185,
+          "duration": 0.165,
+          "frame_ahead_trigger": 13.13
+        },
+        {
+          "word": "one-way",
+          "clean_word": "oneway",
+          "phonemes": "w\u02c8\u028cnwe\u026a",
+          "start": 13.185,
+          "end": 13.615,
+          "duration": 0.43,
+          "frame_ahead_trigger": 13.295
+        },
+        {
+          "word": "street",
+          "clean_word": "street",
+          "phonemes": "st\u0279\u02c8i\u02d0t",
+          "start": 13.615,
+          "end": 13.98,
+          "duration": 0.365,
+          "frame_ahead_trigger": 13.725
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 13.98,
+          "end": 14.09,
+          "duration": 0.11,
+          "frame_ahead_trigger": 14.09
+        },
+        {
+          "word": "rigid,",
+          "clean_word": "rigid",
+          "phonemes": "\u0279\u02c8\u026ad\u0292\u026ad",
+          "start": 14.09,
+          "end": 14.53,
+          "duration": 0.44,
+          "frame_ahead_trigger": 14.2
+        },
+        {
+          "word": "shallow",
+          "clean_word": "shallow",
+          "phonemes": "\u0283\u02c8\u00e6lo\u028a",
+          "start": 14.53,
+          "end": 14.865,
+          "duration": 0.335,
+          "frame_ahead_trigger": 14.64
+        },
+        {
+          "word": "projections.",
+          "clean_word": "projections",
+          "phonemes": "p\u0279\u0259d\u0292\u02c8\u025bk\u0283\u0259nz",
+          "start": 14.865,
+          "end": 15.525,
+          "duration": 0.66,
+          "frame_ahead_trigger": 14.975
+        }
+      ],
+      "audio_duration": 7.77,
+      "slot_duration": 7.92
+    },
+    {
+      "beat_id": 3,
+      "text": "BERT shatters this barrier by using masked language modeling to let every token peer into both left and right neighbors simultaneously.",
+      "visual_focus": "Tokens refracting into a bidirectional attention matrix.",
+      "highlight_words": {
+        "shatters": "#34D399",
+        "bidirectional": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Attention Heads",
+        "action_verb": "refracts",
+        "direct_object": "input tokens",
+        "anchor_word": "shatters",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE UNIDIRECTIONAL ARCHITECTURE",
+        "sub": "Tokens refracting into a bidirectional attention matrix.",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.png",
+          "arxiv_id": "1810.04805",
+          "title": "THE UNIDIRECTIONAL ARCHITECTURE",
+          "sub": "Tokens refracting into a bidirectional attention matrix.",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Bert Comparisons",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.png",
+        "arxiv_id": "1810.04805",
+        "title": "THE UNIDIRECTIONAL ARCHITECTURE",
+        "sub": "Tokens refracting into a bidirectional attention matrix.",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Bert Comparisons",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 15.75,
+      "end": 23.32,
+      "duration": 7.57,
+      "word_timings": [
+        {
+          "word": "BERT",
+          "clean_word": "bert",
+          "phonemes": "b\u02c8\u025c\u02d0t",
+          "start": 15.75,
+          "end": 16.045,
+          "duration": 0.295,
+          "frame_ahead_trigger": 16.01
+        },
+        {
+          "word": "shatters",
+          "clean_word": "shatters",
+          "phonemes": "\u0283\u02c8\u00e6\u027e\u025az",
+          "start": 16.045,
+          "end": 16.445,
+          "duration": 0.4,
+          "frame_ahead_trigger": 16.305
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 16.445,
+          "end": 16.66,
+          "duration": 0.215,
+          "frame_ahead_trigger": 16.705
+        },
+        {
+          "word": "barrier",
+          "clean_word": "barrier",
+          "phonemes": "b\u02c8\u00e6\u0279i\u025a",
+          "start": 16.66,
+          "end": 16.94,
+          "duration": 0.28,
+          "frame_ahead_trigger": 16.92
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 16.94,
+          "end": 17.255,
+          "duration": 0.315,
+          "frame_ahead_trigger": 17.2
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 17.255,
+          "end": 17.641,
+          "duration": 0.386,
+          "frame_ahead_trigger": 17.515
+        },
+        {
+          "word": "masked",
+          "clean_word": "masked",
+          "phonemes": "m\u02c8\u00e6skt",
+          "start": 17.641,
+          "end": 17.996,
+          "duration": 0.355,
+          "frame_ahead_trigger": 17.901
+        },
+        {
+          "word": "language",
+          "clean_word": "language",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292",
+          "start": 17.996,
+          "end": 18.49,
+          "duration": 0.495,
+          "frame_ahead_trigger": 18.256
+        },
+        {
+          "word": "modeling",
+          "clean_word": "modeling",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l\u026a\u014b",
+          "start": 18.49,
+          "end": 19.0,
+          "duration": 0.51,
+          "frame_ahead_trigger": 18.75
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 19.0,
+          "end": 19.305,
+          "duration": 0.305,
+          "frame_ahead_trigger": 19.26
+        },
+        {
+          "word": "let",
+          "clean_word": "let",
+          "phonemes": "l\u02c8\u025bt",
+          "start": 19.305,
+          "end": 19.46,
+          "duration": 0.155,
+          "frame_ahead_trigger": 19.565
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 19.46,
+          "end": 19.69,
+          "duration": 0.23,
+          "frame_ahead_trigger": 19.72
+        },
+        {
+          "word": "token",
+          "clean_word": "token",
+          "phonemes": "t\u02c8o\u028ak\u0259n",
+          "start": 19.69,
+          "end": 20.23,
+          "duration": 0.54,
+          "frame_ahead_trigger": 19.95
+        },
+        {
+          "word": "peer",
+          "clean_word": "peer",
+          "phonemes": "p\u02c8\u026a\u0279",
+          "start": 20.23,
+          "end": 20.435,
+          "duration": 0.205,
+          "frame_ahead_trigger": 20.49
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 20.435,
+          "end": 20.65,
+          "duration": 0.215,
+          "frame_ahead_trigger": 20.695
+        },
+        {
+          "word": "both",
+          "clean_word": "both",
+          "phonemes": "b\u02c8o\u028a\u03b8",
+          "start": 20.65,
+          "end": 21.009,
+          "duration": 0.359,
+          "frame_ahead_trigger": 20.91
+        },
+        {
+          "word": "left",
+          "clean_word": "left",
+          "phonemes": "l\u02c8\u025bft",
+          "start": 21.009,
+          "end": 21.31,
+          "duration": 0.301,
+          "frame_ahead_trigger": 21.269
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 21.31,
+          "end": 21.465,
+          "duration": 0.155,
+          "frame_ahead_trigger": 21.57
+        },
+        {
+          "word": "right",
+          "clean_word": "right",
+          "phonemes": "\u0279\u02c8a\u026at",
+          "start": 21.465,
+          "end": 21.68,
+          "duration": 0.215,
+          "frame_ahead_trigger": 21.725
+        },
+        {
+          "word": "neighbors",
+          "clean_word": "neighbors",
+          "phonemes": "n\u02c8e\u026ab\u025az",
+          "start": 21.68,
+          "end": 22.215,
+          "duration": 0.535,
+          "frame_ahead_trigger": 21.94
+        },
+        {
+          "word": "simultaneously.",
+          "clean_word": "simultaneously",
+          "phonemes": "s\u02cca\u026am\u0259lt\u02c8e\u026ani\u0259sli",
+          "start": 22.215,
+          "end": 23.195,
+          "duration": 0.98,
+          "frame_ahead_trigger": 22.475
+        }
+      ],
+      "audio_duration": 7.57,
+      "slot_duration": 7.72
+    },
+    {
+      "beat_id": 4,
+      "text": "By replacing the standard mask with random hidden token objectives, the encoder learns a truly deep, context-rich representation for every single word.",
+      "visual_focus": "A dense layer stack pulsating as it reconstructs masked inputs.",
+      "highlight_words": {
+        "deep": "#F59E0B",
+        "context-rich": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Transformer Layers",
+        "action_verb": "optimizes",
+        "direct_object": "contextual embeddings",
+        "anchor_word": "deep",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: THE UNIDIRECTIONAL",
+        "sub": "A dense layer stack pulsating as it reconstructs masked inputs.",
+        "params": {
+          "title": "KERNEL CODE: THE UNIDIRECTIONAL",
+          "sub": "A dense layer stack pulsating as it reconstructs masked inputs.",
+          "filename": "modeling_bert.py",
+          "language": "python",
+          "lines": [
+            "def forward_pass(input_ids, mask_indices):",
+            "# bidirectional attention allowed",
+            "attention_mask = generate_mask(input_ids)",
+            "encoded = encoder(input_ids, attention_mask)",
+            "return predict(encoded, mask_indices)"
+          ],
+          "highlight_lines": [
+            2,
+            3
+          ],
+          "trace_register": "\u26a1 BIDIRECTIONAL ATTENTION KERNEL",
+          "delta_badge": "Concurrent access to all input sequence tokens"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: THE UNIDIRECTIONAL",
+        "sub": "A dense layer stack pulsating as it reconstructs masked inputs.",
+        "filename": "modeling_bert.py",
+        "language": "python",
+        "lines": [
+          "def forward_pass(input_ids, mask_indices):",
+          "# bidirectional attention allowed",
+          "attention_mask = generate_mask(input_ids)",
+          "encoded = encoder(input_ids, attention_mask)",
+          "return predict(encoded, mask_indices)"
+        ],
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "trace_register": "\u26a1 BIDIRECTIONAL ATTENTION KERNEL",
+        "delta_badge": "Concurrent access to all input sequence tokens"
+      },
+      "start": 23.47,
+      "end": 32.11,
+      "duration": 8.64,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 23.479,
+          "end": 23.719,
+          "duration": 0.24,
+          "frame_ahead_trigger": 23.889
+        },
+        {
+          "word": "replacing",
+          "clean_word": "replacing",
+          "phonemes": "\u0279\u1d7bpl\u02c8e\u026as\u026a\u014b",
+          "start": 23.719,
+          "end": 24.369,
+          "duration": 0.65,
+          "frame_ahead_trigger": 24.129
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 24.369,
+          "end": 24.407,
+          "duration": 0.039,
+          "frame_ahead_trigger": 24.779
+        },
+        {
+          "word": "standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 24.407,
+          "end": 24.889,
+          "duration": 0.481,
+          "frame_ahead_trigger": 24.817
+        },
+        {
+          "word": "mask",
+          "clean_word": "mask",
+          "phonemes": "m\u02c8\u00e6sk",
+          "start": 24.889,
+          "end": 25.049,
+          "duration": 0.16,
+          "frame_ahead_trigger": 25.299
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 25.049,
+          "end": 25.364,
+          "duration": 0.315,
+          "frame_ahead_trigger": 25.459
+        },
+        {
+          "word": "random",
+          "clean_word": "random",
+          "phonemes": "\u0279\u02c8\u00e6nd\u0259m",
+          "start": 25.364,
+          "end": 25.814,
+          "duration": 0.45,
+          "frame_ahead_trigger": 25.774
+        },
+        {
+          "word": "hidden",
+          "clean_word": "hidden",
+          "phonemes": "h\u02c8\u026ad\u0259n",
+          "start": 25.814,
+          "end": 26.144,
+          "duration": 0.33,
+          "frame_ahead_trigger": 26.224
+        },
+        {
+          "word": "token",
+          "clean_word": "token",
+          "phonemes": "t\u02c8o\u028ak\u0259n",
+          "start": 26.144,
+          "end": 26.559,
+          "duration": 0.415,
+          "frame_ahead_trigger": 26.554
+        },
+        {
+          "word": "objectives,",
+          "clean_word": "objectives",
+          "phonemes": "\u0251\u02d0bd\u0292\u02c8\u025bkt\u026avz",
+          "start": 26.559,
+          "end": 27.214,
+          "duration": 0.655,
+          "frame_ahead_trigger": 26.969
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 27.214,
+          "end": 27.31,
+          "duration": 0.096,
+          "frame_ahead_trigger": 27.624
+        },
+        {
+          "word": "encoder",
+          "clean_word": "encoder",
+          "phonemes": "\u025b\u014bk\u02c8o\u028ad\u025a",
+          "start": 27.31,
+          "end": 27.819,
+          "duration": 0.509,
+          "frame_ahead_trigger": 27.72
+        },
+        {
+          "word": "learns",
+          "clean_word": "learns",
+          "phonemes": "l\u02c8\u025c\u02d0nz",
+          "start": 27.819,
+          "end": 28.074,
+          "duration": 0.255,
+          "frame_ahead_trigger": 28.229
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 28.074,
+          "end": 28.324,
+          "duration": 0.25,
+          "frame_ahead_trigger": 28.484
+        },
+        {
+          "word": "truly",
+          "clean_word": "truly",
+          "phonemes": "t\u0279\u02c8u\u02d0li",
+          "start": 28.324,
+          "end": 28.694,
+          "duration": 0.37,
+          "frame_ahead_trigger": 28.734
+        },
+        {
+          "word": "deep,",
+          "clean_word": "deep",
+          "phonemes": "d\u02c8i\u02d0p",
+          "start": 28.694,
+          "end": 28.993,
+          "duration": 0.3,
+          "frame_ahead_trigger": 29.104
+        },
+        {
+          "word": "context-rich",
+          "clean_word": "contextrich",
+          "phonemes": "k\u0259nt\u02c8\u025bkst\u0279\u026at\u0283",
+          "start": 28.993,
+          "end": 29.679,
+          "duration": 0.685,
+          "frame_ahead_trigger": 29.403
+        },
+        {
+          "word": "representation",
+          "clean_word": "representation",
+          "phonemes": "\u0279\u02cc\u025bp\u0279\u1d7bz\u02c8\u025bnt\u02c8e\u026a\u0283\u0259n",
+          "start": 29.679,
+          "end": 30.699,
+          "duration": 1.02,
+          "frame_ahead_trigger": 30.089
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 30.699,
+          "end": 31.009,
+          "duration": 0.31,
+          "frame_ahead_trigger": 31.109
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 31.009,
+          "end": 31.289,
+          "duration": 0.28,
+          "frame_ahead_trigger": 31.419
+        },
+        {
+          "word": "single",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 31.289,
+          "end": 31.684,
+          "duration": 0.395,
+          "frame_ahead_trigger": 31.699
+        },
+        {
+          "word": "word.",
+          "clean_word": "word",
+          "phonemes": "w\u02c8\u025c\u02d0d",
+          "start": 31.684,
+          "end": 31.954,
+          "duration": 0.27,
+          "frame_ahead_trigger": 32.094
+        }
+      ],
+      "audio_duration": 8.64,
+      "slot_duration": 8.79
+    },
+    {
+      "beat_id": 5,
+      "text": "This brute-force bidirectionality pushes the GLUE benchmark to eighty percent, essentially making shallow, unidirectional language models obsolete overnight.",
+      "visual_focus": "Performance bar chart showing a massive spike in accuracy metrics.",
+      "highlight_words": {
+        "eighty percent": "#34D399"
+      },
+      "svo_action": {
+        "subject": "BERT Architecture",
+        "action_verb": "outperforms",
+        "direct_object": "unidirectional baseline",
+        "anchor_word": "eighty",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "GLUE BENCHMARK PERFORMANCE",
+        "sub": "Performance bar chart showing a massive spike in",
+        "params": {
+          "title": "GLUE BENCHMARK PERFORMANCE",
+          "sub": "Performance bar chart showing a massive spike in",
+          "metric_name": "GLUE Accuracy",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "BERT Large",
+              "value": 80.5,
+              "display_val": "80.5%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "GPT-1",
+              "value": 72.8,
+              "display_val": "72.8%",
+              "is_hero": false,
+              "color": "#38BDF8"
+            },
+            {
+              "name": "Standard RNN",
+              "value": 65.2,
+              "display_val": "65.2%",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +7.7% SUPERIORITY"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "GLUE BENCHMARK PERFORMANCE",
+        "sub": "Performance bar chart showing a massive spike in",
+        "metric_name": "GLUE Accuracy",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "BERT Large",
+            "value": 80.5,
+            "display_val": "80.5%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "GPT-1",
+            "value": 72.8,
+            "display_val": "72.8%",
+            "is_hero": false,
+            "color": "#38BDF8"
+          },
+          {
+            "name": "Standard RNN",
+            "value": 65.2,
+            "display_val": "65.2%",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +7.7% SUPERIORITY"
+      },
+      "start": 32.26,
+      "end": 40.43,
+      "duration": 8.17,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 32.274,
+          "end": 32.449,
+          "duration": 0.175,
+          "frame_ahead_trigger": 32.834
+        },
+        {
+          "word": "brute-force",
+          "clean_word": "bruteforce",
+          "phonemes": "b\u0279\u02c8u\u02d0\u027e\u026af\u02cc\u0254\u02d0\u0279s",
+          "start": 32.449,
+          "end": 33.144,
+          "duration": 0.695,
+          "frame_ahead_trigger": 33.009
+        },
+        {
+          "word": "bidirectionality",
+          "clean_word": "bidirectionality",
+          "phonemes": "ba\u026ad\u1d7b\u0279\u02cc\u025bk\u0283\u0259n\u02c8\u00e6l\u1d7b\u027ei",
+          "start": 33.144,
+          "end": 34.074,
+          "duration": 0.93,
+          "frame_ahead_trigger": 33.704
+        },
+        {
+          "word": "pushes",
+          "clean_word": "pushes",
+          "phonemes": "p\u02c8\u028a\u0283\u1d7bz",
+          "start": 34.074,
+          "end": 34.394,
+          "duration": 0.32,
+          "frame_ahead_trigger": 34.634
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 34.394,
+          "end": 34.619,
+          "duration": 0.225,
+          "frame_ahead_trigger": 34.954
+        },
+        {
+          "word": "GLUE",
+          "clean_word": "glue",
+          "phonemes": "\u0261l\u02c8u\u02d0",
+          "start": 34.619,
+          "end": 34.809,
+          "duration": 0.19,
+          "frame_ahead_trigger": 35.179
+        },
+        {
+          "word": "benchmark",
+          "clean_word": "benchmark",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279k",
+          "start": 34.809,
+          "end": 35.479,
+          "duration": 0.67,
+          "frame_ahead_trigger": 35.369
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 35.479,
+          "end": 35.599,
+          "duration": 0.12,
+          "frame_ahead_trigger": 36.039
+        },
+        {
+          "word": "eighty",
+          "clean_word": "eighty",
+          "phonemes": "\u02c8e\u026a\u027ei",
+          "start": 35.599,
+          "end": 35.799,
+          "duration": 0.2,
+          "frame_ahead_trigger": 36.159
+        },
+        {
+          "word": "percent,",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 35.799,
+          "end": 36.219,
+          "duration": 0.42,
+          "frame_ahead_trigger": 36.359
+        },
+        {
+          "word": "essentially",
+          "clean_word": "essentially",
+          "phonemes": "\u1d7bs\u02c8\u025bn\u0283\u0259li",
+          "start": 36.219,
+          "end": 36.709,
+          "duration": 0.49,
+          "frame_ahead_trigger": 36.779
+        },
+        {
+          "word": "making",
+          "clean_word": "making",
+          "phonemes": "m\u02c8e\u026ak\u026a\u014b",
+          "start": 36.709,
+          "end": 37.104,
+          "duration": 0.395,
+          "frame_ahead_trigger": 37.269
+        },
+        {
+          "word": "shallow,",
+          "clean_word": "shallow",
+          "phonemes": "\u0283\u02c8\u00e6lo\u028a",
+          "start": 37.104,
+          "end": 37.354,
+          "duration": 0.25,
+          "frame_ahead_trigger": 37.664
+        },
+        {
+          "word": "unidirectional",
+          "clean_word": "unidirectional",
+          "phonemes": "j\u02ccu\u02d0n\u026ad\u1d7b\u0279\u02c8\u025bk\u0283\u0259n\u0259l",
+          "start": 37.354,
+          "end": 38.314,
+          "duration": 0.96,
+          "frame_ahead_trigger": 37.914
+        },
+        {
+          "word": "language",
+          "clean_word": "language",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292",
+          "start": 38.314,
+          "end": 38.794,
+          "duration": 0.48,
+          "frame_ahead_trigger": 38.874
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 38.794,
+          "end": 39.204,
+          "duration": 0.41,
+          "frame_ahead_trigger": 39.354
+        },
+        {
+          "word": "obsolete",
+          "clean_word": "obsolete",
+          "phonemes": "\u02c8\u0251\u02d0bs\u0259l\u02cci\u02d0t",
+          "start": 39.204,
+          "end": 39.719,
+          "duration": 0.515,
+          "frame_ahead_trigger": 39.764
+        },
+        {
+          "word": "overnight.",
+          "clean_word": "overnight",
+          "phonemes": "\u02cco\u028av\u025an\u02c8a\u026at",
+          "start": 39.719,
+          "end": 40.324,
+          "duration": 0.605,
+          "frame_ahead_trigger": 40.279
+        }
+      ],
+      "audio_duration": 8.17,
+      "slot_duration": 8.32
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into the hardware and math fueling the next generation of intelligent architectures.",
+      "visual_focus": "Logo fading into a loop back to the start.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Viewer",
+        "action_verb": "loops",
+        "direct_object": "the knowledge graph",
+        "anchor_word": "loop",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "THE KNOWLEDGE LOOP",
+        "sub": "Continuous architectural mastery",
+        "accent_color": "#34D399",
+        "params": {
+          "stage_1_label": "Read Paper",
+          "stage_2_label": "Reverse Engineer",
+          "stage_3_label": "Master Architecture"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 40.58,
+      "end": 47.49,
+      "duration": 6.91,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 40.594,
+          "end": 40.989,
+          "duration": 0.395,
+          "frame_ahead_trigger": 41.304
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 40.989,
+          "end": 41.969,
+          "duration": 0.98,
+          "frame_ahead_trigger": 41.699
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 41.969,
+          "end": 42.139,
+          "duration": 0.17,
+          "frame_ahead_trigger": 42.679
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 42.139,
+          "end": 42.464,
+          "duration": 0.325,
+          "frame_ahead_trigger": 42.849
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 42.464,
+          "end": 42.999,
+          "duration": 0.535,
+          "frame_ahead_trigger": 43.174
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 42.999,
+          "end": 43.194,
+          "duration": 0.195,
+          "frame_ahead_trigger": 43.709
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 43.194,
+          "end": 43.309,
+          "duration": 0.115,
+          "frame_ahead_trigger": 43.904
+        },
+        {
+          "word": "hardware",
+          "clean_word": "hardware",
+          "phonemes": "h\u02c8\u0251\u02d0\u0279dw\u025b\u0279",
+          "start": 43.309,
+          "end": 43.924,
+          "duration": 0.615,
+          "frame_ahead_trigger": 44.019
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 43.924,
+          "end": 43.974,
+          "duration": 0.05,
+          "frame_ahead_trigger": 44.634
+        },
+        {
+          "word": "math",
+          "clean_word": "math",
+          "phonemes": "m\u02c8\u00e6\u03b8",
+          "start": 43.974,
+          "end": 44.196,
+          "duration": 0.222,
+          "frame_ahead_trigger": 44.684
+        },
+        {
+          "word": "fueling",
+          "clean_word": "fueling",
+          "phonemes": "fj\u02c8u\u02d0\u0259l\u026a\u014b",
+          "start": 44.196,
+          "end": 44.694,
+          "duration": 0.499,
+          "frame_ahead_trigger": 44.906
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 44.694,
+          "end": 44.914,
+          "duration": 0.22,
+          "frame_ahead_trigger": 45.404
+        },
+        {
+          "word": "next",
+          "clean_word": "next",
+          "phonemes": "n\u02c8\u025bkst",
+          "start": 44.914,
+          "end": 45.144,
+          "duration": 0.23,
+          "frame_ahead_trigger": 45.624
+        },
+        {
+          "word": "generation",
+          "clean_word": "generation",
+          "phonemes": "d\u0292\u02cc\u025bn\u025a\u0279\u02c8e\u026a\u0283\u0259n",
+          "start": 45.144,
+          "end": 45.874,
+          "duration": 0.73,
+          "frame_ahead_trigger": 45.854
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 45.874,
+          "end": 45.944,
+          "duration": 0.07,
+          "frame_ahead_trigger": 46.584
+        },
+        {
+          "word": "intelligent",
+          "clean_word": "intelligent",
+          "phonemes": "\u026ant\u02c8\u025bl\u026ad\u0292\u0259nt",
+          "start": 45.944,
+          "end": 46.639,
+          "duration": 0.695,
+          "frame_ahead_trigger": 46.654
+        },
+        {
+          "word": "architectures.",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 46.639,
+          "end": 47.409,
+          "duration": 0.77,
+          "frame_ahead_trigger": 47.349
+        }
+      ],
+      "audio_duration": 6.91,
+      "slot_duration": 6.91
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$P(x_t | x_1, \\dots, x_{t-1})$",
+      "filename": "bert_bidirectional_transformer_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x_t",
+          "label": "Target Token"
+        },
+        {
+          "term": "x_1...t-1",
+          "label": "Left Context Only"
+        }
+      ],
+      "svg_filename": "bert_bidirectional_transformer_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(N^2) \\text{ where } N \\text{ is restricted}$",
+      "filename": "bert_bidirectional_transformer_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "N",
+          "label": "Sequence Dependency"
+        }
+      ],
+      "svg_filename": "bert_bidirectional_transformer_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$P(x_t | x_1, \\dots, x_{t-1}, x_{t+1}, \\dots, x_T)$",
+      "filename": "bert_bidirectional_transformer_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "x_{t+1...T}",
+          "label": "Right Context Enabled"
+        }
+      ],
+      "svg_filename": "bert_bidirectional_transformer_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{Mask}(X) = \\{x_i \\mid i \\in \\text{random_indices}\\}$",
+      "filename": "bert_bidirectional_transformer_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "Mask",
+          "label": "Hidden Objective"
+        }
+      ],
+      "svg_filename": "bert_bidirectional_transformer_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{GLUE}_{BERT} = 80.5\\%$",
+      "filename": "bert_bidirectional_transformer_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "80.5",
+          "label": "SOTA Performance"
+        }
+      ],
+      "svg_filename": "bert_bidirectional_transformer_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "attention_flow",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "ENCODER_BLOCKS",
+          "color": "#38BDF8",
+          "items": [
+            "MultiHeadAttention",
+            "FFN",
+            "LayerNorm"
+          ]
+        },
+        {
+          "name": "MASKED_TOKENS",
+          "color": "#10B981",
+          "items": [
+            "[MASK]",
+            "ContextualEmbeddings"
+          ]
+        },
+        {
+          "name": "OUTPUT_LAYERS",
+          "color": "#F59E0B",
+          "items": [
+            "Softmax",
+            "ClassToken"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"[MASK]\"",
+        "target_cluster": "MASKED_TOKENS",
+        "token": "\"[MASK]\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'GPT-1'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'Unidirectional'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "BERT",
+    "model_a_specs": [
+      "Bidirectional",
+      "110M+ Params",
+      "Masked Modeling"
+    ],
+    "model_b": "GPT-1",
+    "model_b_specs": [
+      "Unidirectional",
+      "117M Params",
+      "Autoregressive"
+    ],
+    "divide_title": "DIRECTIONALITY DIVIDE",
+    "model_a_stat": "80.5%",
+    "model_a_stat_label": "GLUE SCORE",
+    "model_b_stat": "72.8%",
+    "model_b_stat_label": "BASELINE SCORE",
+    "efficiency_badge": "\u26a1 +7.7% ABSOLUTE IMPROVEMENT",
+    "benchmarks": [
+      {
+        "name": "GLUE",
+        "score_a": "80.5%",
+        "score_b": "72.8%"
+      },
+      {
+        "name": "SQuAD v1.1",
+        "score_a": "93.2",
+        "score_b": "91.7"
+      },
+      {
+        "name": "MultiNLI",
+        "score_a": "86.7%",
+        "score_b": "82.1%"
+      }
+    ],
+    "scale_metric": "80.5",
+    "scale_label": "GLUE Score Benchmark",
+    "bottleneck_title": "THE AUTOREGRESSIVE TRAP",
+    "bottleneck_desc": "Sequential masking prevents future context access.",
+    "solution_title": "BIDIRECTIONAL MASKED ENCODER",
+    "solution_components": "Contextual Token Recovery",
+    "mechanism_title": "SIMULTANEOUS CONTEXT ATTENTION",
+    "payoff_stat": "80.5%",
+    "payoff_label": "GLUE BENCHMARK",
+    "payoff_sub": "Outperforming all prior language representations",
+    "payoff_hero_stat": 80.5,
+    "payoff_hero_label": "BERT (Bidirectional)",
+    "payoff_base_stat": 72.8,
+    "payoff_base_label": "Unidirectional Baselines",
+    "payoff_delta_badge": "\u26a1 +7.7% ABSOLUTE GAIN",
+    "challenger": "BERT",
+    "incumbent": "Autoregressive Transformers"
+  },
+  "benchmark_comparison": {
+    "title": "GLUE BENCHMARK PERFORMANCE",
+    "metric_name": "GLUE Accuracy",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "BERT Large",
+        "value": 80.5,
+        "display_val": "80.5%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "GPT-1",
+        "value": 72.8,
+        "display_val": "72.8%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      },
+      {
+        "name": "Standard RNN",
+        "value": 65.2,
+        "display_val": "65.2%",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +7.7% SUPERIORITY",
+    "radar_axes": [
+      "GLUE",
+      "SQuAD",
+      "MultiNLI",
+      "Inference Speed",
+      "Training Stability"
+    ]
+  },
+  "code_snippet": {
+    "filename": "modeling_bert.py",
+    "language": "python",
+    "lines": [
+      "def forward_pass(input_ids, mask_indices):",
+      "# bidirectional attention allowed",
+      "attention_mask = generate_mask(input_ids)",
+      "encoded = encoder(input_ids, attention_mask)",
+      "return predict(encoded, mask_indices)"
+    ],
+    "highlight_lines": [
+      2,
+      3
+    ],
+    "trace_register": "\u26a1 BIDIRECTIONAL ATTENTION KERNEL",
+    "explanation": "Concurrent access to all input sequence tokens"
+  },
+  "arxiv_id": "1810.04805",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "BERT_comparisons",
+      "caption": "Bert Comparisons",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/source/BERT_comparisons.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_1_BERT_comparisons.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "BERT_fine_tune",
+      "caption": "Bert Fine Tune",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/source/BERT_fine_tune.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_2_BERT_fine_tune.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_2_BERT_fine_tune.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "Input_Emebeddings",
+      "caption": "Input Emebeddings",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/source/Input_Emebeddings.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_3_Input_Emebeddings.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_3_Input_Emebeddings.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "BERT_Overall",
+      "caption": "Bert Overall",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/source/BERT_Overall.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_4_BERT_Overall.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1810.04805/chalkboard_figures/fig_4_BERT_Overall.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until The Unidirectional Transformer Trap unlocks 80.5% throughput?",
+    "verdict": 67,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until The Unidirectional Transformer Trap unlocks 80.5% throughput?",
+        "verdict": 67,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until The Unidirectional Transformer Trap proved a 80.5% leap.",
+        "verdict": 65,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 80.5% speedup using The Unidirectional Transformer Trap.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? The Unidirectional Transformer Trap reveals the solution.",
+        "verdict": 62,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that The Unidirectional Transformer Trap finally breaks.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers.",
+        "verdict": 60,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is The Unidirectional Transformer Trap a major breakthrough? Because we introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers.",
+        "verdict": 59,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Did you know forcing language models to read only left-to-right blinds them to the deep context of the full sentence?",
+        "verdict": 53,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when forcing language models to read only left-to-right blinds them to the deep context of the full sentence?",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Forcing language models to read only left-to-right blinds them to the deep context of the full sentence.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until The Unidirectional Transformer Trap proved: unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "attention_grid",
+      "entity_type": "attention_grid",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "nASNz82NsdU",
+    "shorts_url": "https://youtube.com/shorts/nASNz82NsdU",
+    "studio_url": "https://studio.youtube.com/video/nASNz82NsdU/edit",
+    "title": "The Unidirectional Transformer Trap #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/bert_bidirectional_transformer_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

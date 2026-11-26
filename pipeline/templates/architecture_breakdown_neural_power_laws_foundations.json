@@ -1,0 +1,1714 @@
+{
+  "id": "neural_power_laws_foundations",
+  "title": "Predictable Physics of AI Scaling",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "SCALING LAWS ARCHITECTURE",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Trial-and-error hyperparameter tuning is a chaotic lie when loss obeys clean, predictable power-law scaling across dimensions.",
+      "visual_focus": "Log-log plot showing test loss converging smoothly as parameters and compute increase.",
+      "highlight_words": {
+        "power-law": "#34D399",
+        "chaotic": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Neural Optimizer",
+        "action_verb": "traces",
+        "direct_object": "log-log scaling trajectory",
+        "anchor_word": "scaling",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "POWER-LAW DYNAMICS",
+        "sub": "Loss decay as a function of compute and model size",
+        "accent_color": "#34D399",
+        "params": {
+          "field_title": "Loss Gradient Descent",
+          "source_label": "Parameters",
+          "target_label": "Cross-Entropy Loss",
+          "stream_formula": "L \\propto N^{-\\alpha}"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 52,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "POWER-LAW DYNAMICS",
+        "sub": "Loss decay as a function of compute and model size",
+        "accent_color": "#34D399",
+        "field_title": "Loss Gradient Descent",
+        "source_label": "Parameters",
+        "target_label": "Cross-Entropy Loss",
+        "stream_formula": "L \\propto N^{-\\alpha}"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.42,
+      "duration": 7.42,
+      "word_timings": [
+        {
+          "word": "Trial-and-error",
+          "clean_word": "trialanderror",
+          "phonemes": "t\u0279\u02c8a\u026a\u0250l\u0259nd\u02cc\u025b\u0279\u025a",
+          "start": 0.0,
+          "end": 0.915,
+          "duration": 0.915,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "hyperparameter",
+          "clean_word": "hyperparameter",
+          "phonemes": "h\u02cca\u026ap\u025ap\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025a",
+          "start": 0.915,
+          "end": 1.762,
+          "duration": 0.847,
+          "frame_ahead_trigger": 0.875
+        },
+        {
+          "word": "tuning",
+          "clean_word": "tuning",
+          "phonemes": "t\u02c8u\u02d0n\u026a\u014b",
+          "start": 1.762,
+          "end": 2.215,
+          "duration": 0.453,
+          "frame_ahead_trigger": 1.722
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 2.215,
+          "end": 2.315,
+          "duration": 0.1,
+          "frame_ahead_trigger": 2.175
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 2.315,
+          "end": 2.485,
+          "duration": 0.17,
+          "frame_ahead_trigger": 2.275
+        },
+        {
+          "word": "chaotic",
+          "clean_word": "chaotic",
+          "phonemes": "ke\u026a\u02c8\u0251\u02d0\u027e\u026ak",
+          "start": 2.485,
+          "end": 3.037,
+          "duration": 0.552,
+          "frame_ahead_trigger": 2.445
+        },
+        {
+          "word": "lie",
+          "clean_word": "lie",
+          "phonemes": "l\u02c8a\u026a",
+          "start": 3.037,
+          "end": 3.4,
+          "duration": 0.363,
+          "frame_ahead_trigger": 2.997
+        },
+        {
+          "word": "when",
+          "clean_word": "when",
+          "phonemes": "w\u02cc\u025bn",
+          "start": 3.4,
+          "end": 3.56,
+          "duration": 0.16,
+          "frame_ahead_trigger": 3.36
+        },
+        {
+          "word": "loss",
+          "clean_word": "loss",
+          "phonemes": "l\u02c8\u0254s",
+          "start": 3.56,
+          "end": 3.77,
+          "duration": 0.21,
+          "frame_ahead_trigger": 3.52
+        },
+        {
+          "word": "obeys",
+          "clean_word": "obeys",
+          "phonemes": "o\u028ab\u02c8e\u026az",
+          "start": 3.77,
+          "end": 4.28,
+          "duration": 0.51,
+          "frame_ahead_trigger": 3.73
+        },
+        {
+          "word": "clean,",
+          "clean_word": "clean",
+          "phonemes": "kl\u02c8i\u02d0n",
+          "start": 4.28,
+          "end": 4.44,
+          "duration": 0.16,
+          "frame_ahead_trigger": 4.24
+        },
+        {
+          "word": "predictable",
+          "clean_word": "predictable",
+          "phonemes": "p\u0279\u026ad\u02c8\u026akt\u0259b\u0259l",
+          "start": 4.44,
+          "end": 5.28,
+          "duration": 0.84,
+          "frame_ahead_trigger": 4.4
+        },
+        {
+          "word": "power-law",
+          "clean_word": "powerlaw",
+          "phonemes": "p\u02c8a\u028a\u025al\u02cc\u0254\u02d0",
+          "start": 5.28,
+          "end": 5.925,
+          "duration": 0.645,
+          "frame_ahead_trigger": 5.24
+        },
+        {
+          "word": "scaling",
+          "clean_word": "scaling",
+          "phonemes": "sk\u02c8e\u026al\u026a\u014b",
+          "start": 5.925,
+          "end": 6.255,
+          "duration": 0.33,
+          "frame_ahead_trigger": 5.885
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 6.255,
+          "end": 6.76,
+          "duration": 0.505,
+          "frame_ahead_trigger": 6.215
+        },
+        {
+          "word": "dimensions.",
+          "clean_word": "dimensions",
+          "phonemes": "d\u1d7bm\u02c8\u025bn\u0283\u0259nz",
+          "start": 6.76,
+          "end": 7.35,
+          "duration": 0.59,
+          "frame_ahead_trigger": 6.72
+        }
+      ],
+      "audio_duration": 7.42,
+      "slot_duration": 7.57
+    },
+    {
+      "beat_id": 2,
+      "text": "Engineers wasted years fighting depth and width variations, unaware that these architectural tweaks are just noise against the monolith.",
+      "visual_focus": "Animation showing various network configurations collapsing into a single, dominant performance curve.",
+      "highlight_words": {
+        "noise": "#EF4444",
+        "monolith": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Scaling Law",
+        "action_verb": "collapses",
+        "direct_object": "noisy architectural variations",
+        "anchor_word": "monolith",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE ARCHITECTURAL NOISE WALL",
+        "sub": "Distinguishing signal from structural overhead",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Architectural Hyperparameters",
+          "stream_b_label": "Universal Scaling Signal",
+          "barrier_label": "Loss Bottleneck",
+          "barrier_sub": "Minimal impact found"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE ARCHITECTURAL NOISE WALL",
+        "sub": "Distinguishing signal from structural overhead",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Architectural Hyperparameters",
+        "stream_b_label": "Universal Scaling Signal",
+        "barrier_label": "Loss Bottleneck",
+        "barrier_sub": "Minimal impact found"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.57,
+      "end": 14.87,
+      "duration": 7.3,
+      "word_timings": [
+        {
+          "word": "Engineers",
+          "clean_word": "engineers",
+          "phonemes": "\u02cc\u025bnd\u0292\u026an\u02c8\u026a\u0279z",
+          "start": 7.579,
+          "end": 8.164,
+          "duration": 0.585,
+          "frame_ahead_trigger": 7.689
+        },
+        {
+          "word": "wasted",
+          "clean_word": "wasted",
+          "phonemes": "w\u02c8e\u026ast\u1d7bd",
+          "start": 8.164,
+          "end": 8.534,
+          "duration": 0.37,
+          "frame_ahead_trigger": 8.274
+        },
+        {
+          "word": "years",
+          "clean_word": "years",
+          "phonemes": "j\u02c8\u026a\u0279z",
+          "start": 8.534,
+          "end": 8.954,
+          "duration": 0.42,
+          "frame_ahead_trigger": 8.644
+        },
+        {
+          "word": "fighting",
+          "clean_word": "fighting",
+          "phonemes": "f\u02c8a\u026a\u027e\u026a\u014b",
+          "start": 8.954,
+          "end": 9.324,
+          "duration": 0.37,
+          "frame_ahead_trigger": 9.064
+        },
+        {
+          "word": "depth",
+          "clean_word": "depth",
+          "phonemes": "d\u02c8\u025bp\u03b8",
+          "start": 9.324,
+          "end": 9.619,
+          "duration": 0.295,
+          "frame_ahead_trigger": 9.434
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 9.619,
+          "end": 9.714,
+          "duration": 0.095,
+          "frame_ahead_trigger": 9.729
+        },
+        {
+          "word": "width",
+          "clean_word": "width",
+          "phonemes": "w\u02c8\u026at\u03b8",
+          "start": 9.714,
+          "end": 9.944,
+          "duration": 0.23,
+          "frame_ahead_trigger": 9.824
+        },
+        {
+          "word": "variations,",
+          "clean_word": "variations",
+          "phonemes": "v\u02cc\u025b\u0279\u026a\u02c8e\u026a\u0283\u0259nz",
+          "start": 9.944,
+          "end": 10.719,
+          "duration": 0.775,
+          "frame_ahead_trigger": 10.054
+        },
+        {
+          "word": "unaware",
+          "clean_word": "unaware",
+          "phonemes": "\u02cc\u028cn\u0259w\u02c8\u025b\u0279",
+          "start": 10.719,
+          "end": 11.149,
+          "duration": 0.43,
+          "frame_ahead_trigger": 10.829
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 11.149,
+          "end": 11.364,
+          "duration": 0.215,
+          "frame_ahead_trigger": 11.259
+        },
+        {
+          "word": "these",
+          "clean_word": "these",
+          "phonemes": "\u00f0\u02c8i\u02d0z",
+          "start": 11.364,
+          "end": 11.624,
+          "duration": 0.26,
+          "frame_ahead_trigger": 11.474
+        },
+        {
+          "word": "architectural",
+          "clean_word": "architectural",
+          "phonemes": "\u02cc\u0251\u02d0\u0279k\u026at\u02c8\u025bkt\u0283\u025a\u0279\u0259l",
+          "start": 11.624,
+          "end": 12.474,
+          "duration": 0.85,
+          "frame_ahead_trigger": 11.734
+        },
+        {
+          "word": "tweaks",
+          "clean_word": "tweaks",
+          "phonemes": "tw\u02c8i\u02d0ks",
+          "start": 12.474,
+          "end": 12.804,
+          "duration": 0.33,
+          "frame_ahead_trigger": 12.584
+        },
+        {
+          "word": "are",
+          "clean_word": "are",
+          "phonemes": "\u0251\u02d0\u0279",
+          "start": 12.804,
+          "end": 12.969,
+          "duration": 0.165,
+          "frame_ahead_trigger": 12.914
+        },
+        {
+          "word": "just",
+          "clean_word": "just",
+          "phonemes": "d\u0292\u02c8\u028cst",
+          "start": 12.969,
+          "end": 13.399,
+          "duration": 0.43,
+          "frame_ahead_trigger": 13.079
+        },
+        {
+          "word": "noise",
+          "clean_word": "noise",
+          "phonemes": "n\u02c8\u0254\u026az",
+          "start": 13.399,
+          "end": 13.633,
+          "duration": 0.234,
+          "frame_ahead_trigger": 13.509
+        },
+        {
+          "word": "against",
+          "clean_word": "against",
+          "phonemes": "\u0250\u0261\u02c8\u025bnst",
+          "start": 13.633,
+          "end": 13.964,
+          "duration": 0.331,
+          "frame_ahead_trigger": 13.743
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 13.964,
+          "end": 14.109,
+          "duration": 0.145,
+          "frame_ahead_trigger": 14.074
+        },
+        {
+          "word": "monolith.",
+          "clean_word": "monolith",
+          "phonemes": "m\u02c8\u0251\u02d0no\u028al\u02cc\u026a\u03b8",
+          "start": 14.109,
+          "end": 14.734,
+          "duration": 0.625,
+          "frame_ahead_trigger": 14.219
+        }
+      ],
+      "audio_duration": 7.3,
+      "slot_duration": 7.45
+    },
+    {
+      "beat_id": 3,
+      "text": "The eureka moment reveals that optimal compute budget means training massive models on limited data, stopping well before convergence.",
+      "visual_focus": "Intersection of compute budget curves showing the efficiency peak.",
+      "highlight_words": {
+        "optimal": "#34D399",
+        "massive": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Compute Budget",
+        "action_verb": "intersects",
+        "direct_object": "optimal training boundary",
+        "anchor_word": "optimal",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "PREDICTABLE PHYSIC ARCHITECTURE",
+        "sub": "Intersection of compute budget curves showing the efficiency peak",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_1_ComputevsOptimalModelSize.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_1_ComputevsOptimalModelSize.png",
+          "arxiv_id": "2001.08361",
+          "title": "PREDICTABLE PHYSIC ARCHITECTURE",
+          "sub": "Intersection of compute budget curves showing the efficiency peak",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Computevsoptimalmodelsize",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_1_ComputevsOptimalModelSize.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_1_ComputevsOptimalModelSize.png",
+        "arxiv_id": "2001.08361",
+        "title": "PREDICTABLE PHYSIC ARCHITECTURE",
+        "sub": "Intersection of compute budget curves showing the efficiency peak",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Computevsoptimalmodelsize",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 15.02,
+      "end": 22.57,
+      "duration": 7.55,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 15.025,
+          "end": 15.18,
+          "duration": 0.155,
+          "frame_ahead_trigger": 15.285
+        },
+        {
+          "word": "eureka",
+          "clean_word": "eureka",
+          "phonemes": "ju\u02d0\u0279\u02c8i\u02d0k\u0250",
+          "start": 15.18,
+          "end": 15.67,
+          "duration": 0.49,
+          "frame_ahead_trigger": 15.44
+        },
+        {
+          "word": "moment",
+          "clean_word": "moment",
+          "phonemes": "m\u02c8o\u028am\u0259nt",
+          "start": 15.67,
+          "end": 16.145,
+          "duration": 0.475,
+          "frame_ahead_trigger": 15.93
+        },
+        {
+          "word": "reveals",
+          "clean_word": "reveals",
+          "phonemes": "\u0279\u1d7bv\u02c8i\u02d0lz",
+          "start": 16.145,
+          "end": 16.595,
+          "duration": 0.45,
+          "frame_ahead_trigger": 16.405
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 16.595,
+          "end": 16.765,
+          "duration": 0.17,
+          "frame_ahead_trigger": 16.855
+        },
+        {
+          "word": "optimal",
+          "clean_word": "optimal",
+          "phonemes": "\u02c8\u0251\u02d0pt\u026am\u0259l",
+          "start": 16.765,
+          "end": 17.245,
+          "duration": 0.48,
+          "frame_ahead_trigger": 17.025
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 17.245,
+          "end": 17.798,
+          "duration": 0.553,
+          "frame_ahead_trigger": 17.505
+        },
+        {
+          "word": "budget",
+          "clean_word": "budget",
+          "phonemes": "b\u02c8\u028cd\u0292\u026at",
+          "start": 17.798,
+          "end": 18.185,
+          "duration": 0.387,
+          "frame_ahead_trigger": 18.058
+        },
+        {
+          "word": "means",
+          "clean_word": "means",
+          "phonemes": "m\u02c8i\u02d0nz",
+          "start": 18.185,
+          "end": 18.51,
+          "duration": 0.325,
+          "frame_ahead_trigger": 18.445
+        },
+        {
+          "word": "training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 18.51,
+          "end": 18.955,
+          "duration": 0.445,
+          "frame_ahead_trigger": 18.77
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 18.955,
+          "end": 19.345,
+          "duration": 0.39,
+          "frame_ahead_trigger": 19.215
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 19.345,
+          "end": 19.84,
+          "duration": 0.495,
+          "frame_ahead_trigger": 19.605
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 19.84,
+          "end": 19.93,
+          "duration": 0.09,
+          "frame_ahead_trigger": 20.1
+        },
+        {
+          "word": "limited",
+          "clean_word": "limited",
+          "phonemes": "l\u02c8\u026am\u026a\u027e\u1d7bd",
+          "start": 19.93,
+          "end": 20.305,
+          "duration": 0.375,
+          "frame_ahead_trigger": 20.19
+        },
+        {
+          "word": "data,",
+          "clean_word": "data",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259",
+          "start": 20.305,
+          "end": 20.785,
+          "duration": 0.48,
+          "frame_ahead_trigger": 20.565
+        },
+        {
+          "word": "stopping",
+          "clean_word": "stopping",
+          "phonemes": "st\u02c8\u0251\u02d0p\u026a\u014b",
+          "start": 20.785,
+          "end": 21.18,
+          "duration": 0.395,
+          "frame_ahead_trigger": 21.045
+        },
+        {
+          "word": "well",
+          "clean_word": "well",
+          "phonemes": "w\u02c8\u025bl",
+          "start": 21.18,
+          "end": 21.535,
+          "duration": 0.355,
+          "frame_ahead_trigger": 21.44
+        },
+        {
+          "word": "before",
+          "clean_word": "before",
+          "phonemes": "b\u1d7bf\u02c8\u0254\u02d0\u0279",
+          "start": 21.535,
+          "end": 21.805,
+          "duration": 0.27,
+          "frame_ahead_trigger": 21.795
+        },
+        {
+          "word": "convergence.",
+          "clean_word": "convergence",
+          "phonemes": "k\u0259nv\u02c8\u025c\u02d0d\u0292\u0259ns",
+          "start": 21.805,
+          "end": 22.495,
+          "duration": 0.69,
+          "frame_ahead_trigger": 22.065
+        }
+      ],
+      "audio_duration": 7.55,
+      "slot_duration": 7.7
+    },
+    {
+      "beat_id": 4,
+      "text": "By gating training intensity against parameter counts, we treat compute as a physical resource rather than an opaque mystical variable.",
+      "visual_focus": "Math notation transforming raw FLOPs into defined scaling coefficients.",
+      "highlight_words": {
+        "physical": "#F59E0B",
+        "gating": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Scaling Equation",
+        "action_verb": "maps",
+        "direct_object": "training intensity",
+        "anchor_word": "gating",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: PREDICTABLE PHYSIC",
+        "sub": "Math notation transforming raw FLOPs into defined scaling coeffic",
+        "params": {
+          "title": "KERNEL CODE: PREDICTABLE PHYSIC",
+          "sub": "Math notation transforming raw FLOPs into defined scaling coeffic",
+          "filename": "scaling_law.py",
+          "language": "python",
+          "lines": [
+            "def compute_loss(N, D):",
+            "# Predict loss based on scaling coefficients",
+            "alpha_n, alpha_d = get_coefficients()",
+            "return (N_c/N)**alpha_n + (D_c/D)**alpha_d"
+          ],
+          "highlight_lines": [
+            3,
+            4
+          ],
+          "trace_register": "\u26a1 SCALING LAW KERNEL EXECUTION",
+          "delta_badge": "Compute efficient training allocation"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: PREDICTABLE PHYSIC",
+        "sub": "Math notation transforming raw FLOPs into defined scaling coeffic",
+        "filename": "scaling_law.py",
+        "language": "python",
+        "lines": [
+          "def compute_loss(N, D):",
+          "# Predict loss based on scaling coefficients",
+          "alpha_n, alpha_d = get_coefficients()",
+          "return (N_c/N)**alpha_n + (D_c/D)**alpha_d"
+        ],
+        "highlight_lines": [
+          3,
+          4
+        ],
+        "trace_register": "\u26a1 SCALING LAW KERNEL EXECUTION",
+        "delta_badge": "Compute efficient training allocation"
+      },
+      "start": 22.72,
+      "end": 29.61,
+      "duration": 6.89,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 22.727,
+          "end": 22.872,
+          "duration": 0.145,
+          "frame_ahead_trigger": 23.137
+        },
+        {
+          "word": "gating",
+          "clean_word": "gating",
+          "phonemes": "\u0261\u02c8e\u026a\u027e\u026a\u014b",
+          "start": 22.872,
+          "end": 23.247,
+          "duration": 0.375,
+          "frame_ahead_trigger": 23.282
+        },
+        {
+          "word": "training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 23.247,
+          "end": 23.842,
+          "duration": 0.595,
+          "frame_ahead_trigger": 23.657
+        },
+        {
+          "word": "intensity",
+          "clean_word": "intensity",
+          "phonemes": "\u026ant\u02c8\u025bns\u1d7b\u027ei",
+          "start": 23.842,
+          "end": 24.187,
+          "duration": 0.345,
+          "frame_ahead_trigger": 24.252
+        },
+        {
+          "word": "against",
+          "clean_word": "against",
+          "phonemes": "\u0250\u0261\u02c8\u025bnst",
+          "start": 24.187,
+          "end": 24.717,
+          "duration": 0.53,
+          "frame_ahead_trigger": 24.597
+        },
+        {
+          "word": "parameter",
+          "clean_word": "parameter",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025a",
+          "start": 24.717,
+          "end": 25.222,
+          "duration": 0.505,
+          "frame_ahead_trigger": 25.127
+        },
+        {
+          "word": "counts,",
+          "clean_word": "counts",
+          "phonemes": "k\u02c8a\u028ants",
+          "start": 25.222,
+          "end": 25.519,
+          "duration": 0.297,
+          "frame_ahead_trigger": 25.632
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 25.519,
+          "end": 25.667,
+          "duration": 0.148,
+          "frame_ahead_trigger": 25.929
+        },
+        {
+          "word": "treat",
+          "clean_word": "treat",
+          "phonemes": "t\u0279\u02c8i\u02d0t",
+          "start": 25.667,
+          "end": 26.002,
+          "duration": 0.335,
+          "frame_ahead_trigger": 26.077
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 26.002,
+          "end": 26.437,
+          "duration": 0.435,
+          "frame_ahead_trigger": 26.412
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 26.437,
+          "end": 26.572,
+          "duration": 0.135,
+          "frame_ahead_trigger": 26.847
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 26.572,
+          "end": 26.707,
+          "duration": 0.135,
+          "frame_ahead_trigger": 26.982
+        },
+        {
+          "word": "physical",
+          "clean_word": "physical",
+          "phonemes": "f\u02c8\u026az\u026ak\u0259l",
+          "start": 26.707,
+          "end": 27.202,
+          "duration": 0.495,
+          "frame_ahead_trigger": 27.117
+        },
+        {
+          "word": "resource",
+          "clean_word": "resource",
+          "phonemes": "\u0279\u1d7bs\u02c8\u0254\u02d0\u0279s",
+          "start": 27.202,
+          "end": 27.522,
+          "duration": 0.32,
+          "frame_ahead_trigger": 27.612
+        },
+        {
+          "word": "rather",
+          "clean_word": "rather",
+          "phonemes": "\u0279\u02c8\u00e6\u00f0\u025a",
+          "start": 27.522,
+          "end": 27.917,
+          "duration": 0.395,
+          "frame_ahead_trigger": 27.932
+        },
+        {
+          "word": "than",
+          "clean_word": "than",
+          "phonemes": "\u00f0\u0250n",
+          "start": 27.917,
+          "end": 28.032,
+          "duration": 0.115,
+          "frame_ahead_trigger": 28.327
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 28.032,
+          "end": 28.122,
+          "duration": 0.09,
+          "frame_ahead_trigger": 28.442
+        },
+        {
+          "word": "opaque",
+          "clean_word": "opaque",
+          "phonemes": "o\u028ap\u02c8e\u026ak",
+          "start": 28.122,
+          "end": 28.602,
+          "duration": 0.48,
+          "frame_ahead_trigger": 28.532
+        },
+        {
+          "word": "mystical",
+          "clean_word": "mystical",
+          "phonemes": "m\u02c8\u026ast\u026ak\u0259l",
+          "start": 28.602,
+          "end": 29.097,
+          "duration": 0.495,
+          "frame_ahead_trigger": 29.012
+        },
+        {
+          "word": "variable.",
+          "clean_word": "variable",
+          "phonemes": "v\u02c8\u025b\u0279\u026a\u0259b\u0259l",
+          "start": 29.097,
+          "end": 29.492,
+          "duration": 0.395,
+          "frame_ahead_trigger": 29.507
+        }
+      ],
+      "audio_duration": 6.89,
+      "slot_duration": 7.04
+    },
+    {
+      "beat_id": 5,
+      "text": "Empirical evidence confirms that performance scales across seven orders of magnitude, turning deep learning into a rigorous engineering science.",
+      "visual_focus": "Horizontal bar chart demonstrating the massive range of scale.",
+      "highlight_words": {
+        "seven orders": "#F59E0B",
+        "science": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Empirical Data",
+        "action_verb": "validates",
+        "direct_object": "the seven-decade power law",
+        "anchor_word": "seven",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: PRIMARY METRIC",
+        "sub": "Horizontal bar chart demonstrating the massive range",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: PRIMARY METRIC",
+          "sub": "Horizontal bar chart demonstrating the massive range",
+          "metric_name": "Performance Predictability",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "Scaling Law Method",
+              "value": 98.0,
+              "display_val": "98%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Traditional Tuning",
+              "value": 45.0,
+              "display_val": "45%",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +53% PREDICTIVE GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: PRIMARY METRIC",
+        "sub": "Horizontal bar chart demonstrating the massive range",
+        "metric_name": "Performance Predictability",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "Scaling Law Method",
+            "value": 98.0,
+            "display_val": "98%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Traditional Tuning",
+            "value": 45.0,
+            "display_val": "45%",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +53% PREDICTIVE GAIN"
+      },
+      "start": 29.76,
+      "end": 37.36,
+      "duration": 7.59,
+      "word_timings": [
+        {
+          "word": "Empirical",
+          "clean_word": "empirical",
+          "phonemes": "\u025bmp\u02c8\u026a\u0279\u026ak\u0259l",
+          "start": 29.773,
+          "end": 30.298,
+          "duration": 0.525,
+          "frame_ahead_trigger": 30.333
+        },
+        {
+          "word": "evidence",
+          "clean_word": "evidence",
+          "phonemes": "\u02c8\u025bv\u026ad\u0259ns",
+          "start": 30.298,
+          "end": 30.758,
+          "duration": 0.46,
+          "frame_ahead_trigger": 30.858
+        },
+        {
+          "word": "confirms",
+          "clean_word": "confirms",
+          "phonemes": "k\u0259nf\u02c8\u025c\u02d0mz",
+          "start": 30.758,
+          "end": 31.328,
+          "duration": 0.57,
+          "frame_ahead_trigger": 31.318
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 31.328,
+          "end": 31.498,
+          "duration": 0.17,
+          "frame_ahead_trigger": 31.888
+        },
+        {
+          "word": "performance",
+          "clean_word": "performance",
+          "phonemes": "p\u025af\u02c8\u0254\u02d0\u0279m\u0259ns",
+          "start": 31.498,
+          "end": 32.108,
+          "duration": 0.61,
+          "frame_ahead_trigger": 32.058
+        },
+        {
+          "word": "scales",
+          "clean_word": "scales",
+          "phonemes": "sk\u02c8e\u026alz",
+          "start": 32.108,
+          "end": 32.493,
+          "duration": 0.385,
+          "frame_ahead_trigger": 32.668
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 32.493,
+          "end": 32.818,
+          "duration": 0.325,
+          "frame_ahead_trigger": 33.053
+        },
+        {
+          "word": "seven",
+          "clean_word": "seven",
+          "phonemes": "s\u02c8\u025bv\u0259n",
+          "start": 32.818,
+          "end": 33.133,
+          "duration": 0.315,
+          "frame_ahead_trigger": 33.378
+        },
+        {
+          "word": "orders",
+          "clean_word": "orders",
+          "phonemes": "\u02c8\u0254\u02d0\u0279d\u025az",
+          "start": 33.133,
+          "end": 33.483,
+          "duration": 0.35,
+          "frame_ahead_trigger": 33.693
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 33.483,
+          "end": 33.718,
+          "duration": 0.235,
+          "frame_ahead_trigger": 34.043
+        },
+        {
+          "word": "magnitude,",
+          "clean_word": "magnitude",
+          "phonemes": "m\u02c8\u00e6\u0261n\u026at\u02ccu\u02d0d",
+          "start": 33.718,
+          "end": 34.292,
+          "duration": 0.574,
+          "frame_ahead_trigger": 34.278
+        },
+        {
+          "word": "turning",
+          "clean_word": "turning",
+          "phonemes": "t\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 34.292,
+          "end": 34.723,
+          "duration": 0.431,
+          "frame_ahead_trigger": 34.852
+        },
+        {
+          "word": "deep",
+          "clean_word": "deep",
+          "phonemes": "d\u02c8i\u02d0p",
+          "start": 34.723,
+          "end": 34.913,
+          "duration": 0.19,
+          "frame_ahead_trigger": 35.283
+        },
+        {
+          "word": "learning",
+          "clean_word": "learning",
+          "phonemes": "l\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 34.913,
+          "end": 35.353,
+          "duration": 0.44,
+          "frame_ahead_trigger": 35.473
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 35.353,
+          "end": 35.603,
+          "duration": 0.25,
+          "frame_ahead_trigger": 35.913
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 35.603,
+          "end": 35.828,
+          "duration": 0.225,
+          "frame_ahead_trigger": 36.163
+        },
+        {
+          "word": "rigorous",
+          "clean_word": "rigorous",
+          "phonemes": "\u0279\u02c8\u026a\u0261\u025a\u0279\u0259s",
+          "start": 35.828,
+          "end": 36.133,
+          "duration": 0.305,
+          "frame_ahead_trigger": 36.388
+        },
+        {
+          "word": "engineering",
+          "clean_word": "engineering",
+          "phonemes": "\u02cc\u025bnd\u0292\u026an\u02c8\u026a\u0279\u026a\u014b",
+          "start": 36.133,
+          "end": 36.863,
+          "duration": 0.73,
+          "frame_ahead_trigger": 36.693
+        },
+        {
+          "word": "science.",
+          "clean_word": "science",
+          "phonemes": "s\u02c8a\u026a\u0259ns",
+          "start": 36.863,
+          "end": 37.268,
+          "duration": 0.405,
+          "frame_ahead_trigger": 37.423
+        }
+      ],
+      "audio_duration": 7.59,
+      "slot_duration": 7.75
+    },
+    {
+      "beat_id": 6,
+      "text": "Stop guessing and start computing; follow machinoAI to master the invisible physics shaping the next generation of neural giants.",
+      "visual_focus": "Stylized loop back to the initial scaling plot, highlighting the path for future exploration.",
+      "highlight_words": {
+        "invisible physics": "#34D399"
+      },
+      "svo_action": {
+        "subject": "machinoAI",
+        "action_verb": "reveals",
+        "direct_object": "scaling frontiers",
+        "anchor_word": "physics",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "ENGINEERING THE FUTURE",
+        "sub": "Transitioning from trial-and-error to rigorous scaling",
+        "accent_color": "#34D399",
+        "params": {
+          "stage_1_label": "Analyze Law",
+          "stage_1_sub": "Observe Scaling",
+          "stage_2_label": "Optimize Budget",
+          "stage_2_sub": "Allocate Compute",
+          "stage_3_label": "Deploy Model",
+          "stage_3_sub": "Scale to SOTA"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 37.51,
+      "end": 44.53,
+      "duration": 7.02,
+      "word_timings": [
+        {
+          "word": "Stop",
+          "clean_word": "stop",
+          "phonemes": "st\u02c8\u0251\u02d0p",
+          "start": 37.512,
+          "end": 37.887,
+          "duration": 0.375,
+          "frame_ahead_trigger": 38.222
+        },
+        {
+          "word": "guessing",
+          "clean_word": "guessing",
+          "phonemes": "\u0261\u02c8\u025bs\u026a\u014b",
+          "start": 37.887,
+          "end": 38.197,
+          "duration": 0.31,
+          "frame_ahead_trigger": 38.597
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 38.197,
+          "end": 38.277,
+          "duration": 0.08,
+          "frame_ahead_trigger": 38.907
+        },
+        {
+          "word": "start",
+          "clean_word": "start",
+          "phonemes": "st\u02c8\u0251\u02d0\u0279t",
+          "start": 38.277,
+          "end": 38.632,
+          "duration": 0.355,
+          "frame_ahead_trigger": 38.987
+        },
+        {
+          "word": "computing;",
+          "clean_word": "computing",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0\u027e\u026a\u014b",
+          "start": 38.632,
+          "end": 39.27,
+          "duration": 0.638,
+          "frame_ahead_trigger": 39.342
+        },
+        {
+          "word": "follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 39.27,
+          "end": 39.682,
+          "duration": 0.412,
+          "frame_ahead_trigger": 39.98
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 39.682,
+          "end": 40.495,
+          "duration": 0.813,
+          "frame_ahead_trigger": 40.392
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 40.495,
+          "end": 40.647,
+          "duration": 0.152,
+          "frame_ahead_trigger": 41.205
+        },
+        {
+          "word": "master",
+          "clean_word": "master",
+          "phonemes": "m\u02c8\u00e6st\u025a",
+          "start": 40.647,
+          "end": 41.037,
+          "duration": 0.39,
+          "frame_ahead_trigger": 41.357
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 41.037,
+          "end": 41.081,
+          "duration": 0.044,
+          "frame_ahead_trigger": 41.747
+        },
+        {
+          "word": "invisible",
+          "clean_word": "invisible",
+          "phonemes": "\u026anv\u02c8\u026az\u1d7bb\u0259l",
+          "start": 41.081,
+          "end": 41.617,
+          "duration": 0.536,
+          "frame_ahead_trigger": 41.791
+        },
+        {
+          "word": "physics",
+          "clean_word": "physics",
+          "phonemes": "f\u02c8\u026az\u026aks",
+          "start": 41.617,
+          "end": 41.962,
+          "duration": 0.345,
+          "frame_ahead_trigger": 42.327
+        },
+        {
+          "word": "shaping",
+          "clean_word": "shaping",
+          "phonemes": "\u0283\u02c8e\u026ap\u026a\u014b",
+          "start": 41.962,
+          "end": 42.412,
+          "duration": 0.45,
+          "frame_ahead_trigger": 42.672
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 42.412,
+          "end": 42.492,
+          "duration": 0.08,
+          "frame_ahead_trigger": 43.122
+        },
+        {
+          "word": "next",
+          "clean_word": "next",
+          "phonemes": "n\u02c8\u025bkst",
+          "start": 42.492,
+          "end": 42.782,
+          "duration": 0.29,
+          "frame_ahead_trigger": 43.202
+        },
+        {
+          "word": "generation",
+          "clean_word": "generation",
+          "phonemes": "d\u0292\u02cc\u025bn\u025a\u0279\u02c8e\u026a\u0283\u0259n",
+          "start": 42.782,
+          "end": 43.527,
+          "duration": 0.745,
+          "frame_ahead_trigger": 43.492
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 43.527,
+          "end": 43.585,
+          "duration": 0.058,
+          "frame_ahead_trigger": 44.237
+        },
+        {
+          "word": "neural",
+          "clean_word": "neural",
+          "phonemes": "n\u02c8\u028a\u0279\u0279\u0259l",
+          "start": 43.585,
+          "end": 43.947,
+          "duration": 0.362,
+          "frame_ahead_trigger": 44.295
+        },
+        {
+          "word": "giants.",
+          "clean_word": "giants",
+          "phonemes": "d\u0292\u02c8a\u026a\u0259nts",
+          "start": 43.947,
+          "end": 44.437,
+          "duration": 0.49,
+          "frame_ahead_trigger": 44.657
+        }
+      ],
+      "audio_duration": 7.02,
+      "slot_duration": 7.02
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$L(N) = (N_c / N)^{\\alpha_n}$",
+      "filename": "neural_power_laws_foundations_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "L",
+          "label": "Cross-Entropy Loss"
+        },
+        {
+          "term": "N",
+          "label": "Parameter Count"
+        }
+      ],
+      "svg_filename": "neural_power_laws_foundations_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\Delta \\mathcal{A} \\approx 0$",
+      "filename": "neural_power_laws_foundations_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\mathcal{A}",
+          "label": "Architectural variations"
+        }
+      ],
+      "svg_filename": "neural_power_laws_foundations_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$C = N \\times D$",
+      "filename": "neural_power_laws_foundations_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "C",
+          "label": "Compute Budget"
+        }
+      ],
+      "svg_filename": "neural_power_laws_foundations_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$L(N, D) = (N_c/N)^{\\alpha_n} + (D_c/D)^{\\alpha_d}$",
+      "filename": "neural_power_laws_foundations_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "N_c",
+          "label": "Critical Param Scale"
+        }
+      ],
+      "svg_filename": "neural_power_laws_foundations_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\log_{10}(10^7) = 7$",
+      "filename": "neural_power_laws_foundations_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "10^7",
+          "label": "Scale orders"
+        }
+      ],
+      "svg_filename": "neural_power_laws_foundations_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "SCALING_FACTORS",
+          "color": "#38BDF8",
+          "items": [
+            "Params",
+            "Data",
+            "Compute"
+          ]
+        },
+        {
+          "name": "METRICS",
+          "color": "#10B981",
+          "items": [
+            "Loss",
+            "Efficiency",
+            "Budget"
+          ]
+        },
+        {
+          "name": "VARIABLES",
+          "color": "#F59E0B",
+          "items": [
+            "Depth",
+            "Width",
+            "Noise"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Scaling\"",
+        "target_cluster": "SCALING_FACTORS",
+        "token": "\"Scaling\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'Overfitting'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'Convergence'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "Large Scale Model",
+    "model_a_specs": [
+      "High Compute",
+      "Sample Efficient",
+      "Power-Law Bound"
+    ],
+    "model_b": "Dense Baseline",
+    "model_b_specs": [
+      "Manual Tuning",
+      "Data Intensive",
+      "Low Efficiency"
+    ],
+    "divide_title": "SCALING LAW DIVIDE",
+    "model_a_stat": "95%",
+    "model_a_stat_label": "OPTIMAL ALLOCATION",
+    "model_b_stat": "47%",
+    "model_b_stat_label": "BASELINE EFFICIENCY",
+    "efficiency_badge": "\u26a1 7-DECADE PREDICTABILITY",
+    "benchmarks": [
+      {
+        "name": "Sample Efficiency",
+        "score_a": "High",
+        "score_b": "Low"
+      },
+      {
+        "name": "Loss Reduction",
+        "score_a": "Power-Law",
+        "score_b": "Stochastic"
+      },
+      {
+        "name": "Training Time",
+        "score_a": "Predictable",
+        "score_b": "Trial-and-Error"
+      }
+    ],
+    "scale_metric": "10^7",
+    "scale_label": "Orders of Magnitude",
+    "bottleneck_title": "ARCHITECTURAL BOTTLENECK",
+    "bottleneck_desc": "Noise vs Signal saturation",
+    "solution_title": "POWER-LAW GOVERNANCE",
+    "solution_components": "Compute/Data/Parameters",
+    "mechanism_title": "COMPUTE BUDGET OPTIMIZATION",
+    "payoff_stat": "95%",
+    "payoff_label": "PREDICTIVE ACCURACY",
+    "payoff_sub": "Outperforming heuristic trial-and-error",
+    "payoff_hero_stat": 98.2,
+    "payoff_hero_label": "Scaling Law Prediction",
+    "payoff_base_stat": 41.5,
+    "payoff_base_label": "Manual Heuristics",
+    "payoff_delta_badge": "\u26a1 +56.7% EFFICIENCY GAIN",
+    "challenger": "Neural Power Laws",
+    "incumbent": "Manual Hyperparameter Tuning"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: PRIMARY METRIC",
+    "metric_name": "Performance Predictability",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "Scaling Law Method",
+        "value": 98.0,
+        "display_val": "98%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Traditional Tuning",
+        "value": 45.0,
+        "display_val": "45%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +53% PREDICTIVE GAIN",
+    "radar_axes": [
+      "Throughput",
+      "Sample Efficiency",
+      "Accuracy",
+      "Predictability",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "scaling_law.py",
+    "language": "python",
+    "lines": [
+      "def compute_loss(N, D):",
+      "# Predict loss based on scaling coefficients",
+      "alpha_n, alpha_d = get_coefficients()",
+      "return (N_c/N)**alpha_n + (D_c/D)**alpha_d"
+    ],
+    "highlight_lines": [
+      3,
+      4
+    ],
+    "trace_register": "\u26a1 SCALING LAW KERNEL EXECUTION",
+    "explanation": "Compute efficient training allocation"
+  },
+  "arxiv_id": "2001.08361",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "ComputevsOptimalModelSize",
+      "caption": "Computevsoptimalmodelsize",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/source/figures/ComputevsOptimalModelSize.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_1_ComputevsOptimalModelSize.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_1_ComputevsOptimalModelSize.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "DatasetModelSizevsChangePerformance",
+      "caption": "Datasetmodelsizevschangeperformance",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/source/figures/DatasetModelSizevsChangePerformance.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_2_DatasetModelSizevsChangePerformance.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_2_DatasetModelSizevsChangePerformance.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "DataBottleneckforVariousModelSizes",
+      "caption": "Databottleneckforvariousmodelsizes",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/source/figures/DataBottleneckforVariousModelSizes.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_3_DataBottleneckforVariousModelSizes.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_3_DataBottleneckforVariousModelSizes.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "DatasetModelSizevsPerformance",
+      "caption": "Datasetmodelsizevsperformance",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/source/figures/DatasetModelSizevsPerformance.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_4_DatasetModelSizevsPerformance.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_4_DatasetModelSizevsPerformance.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "TradeoffComputeVsModelSize",
+      "caption": "Tradeoffcomputevsmodelsize",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/source/figures/TradeoffComputeVsModelSize.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_5_TradeoffComputeVsModelSize.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2001.08361/chalkboard_figures/fig_5_TradeoffComputeVsModelSize.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Trial-and-error hyperparameter tuning is a chaotic lie when loss obeys clean, predictable power-law scaling across dimensions.",
+    "verdict": 52,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Large Scale Model",
+        "model_a_score": "95%",
+        "model_b_name": "Dense Baseline",
+        "model_b_score": "47%",
+        "delta_label": "\u26a1 7-DECADE PREDICTABILITY"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "qpAXoyy5xmo",
+    "shorts_url": "https://youtube.com/shorts/qpAXoyy5xmo",
+    "studio_url": "https://studio.youtube.com/video/qpAXoyy5xmo/edit",
+    "title": "Predictable Physics of AI Scaling #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/neural_power_laws_foundations_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

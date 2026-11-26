@@ -283,7 +283,10 @@ def extract_frames(video_path: str, output_dir: str, category: str = "architectu
             fname = f"beat_{i+1:02d}.png"
             start = float(b.get("start", 0.0))
             dur = float(b.get("slot_duration", b.get("duration", 5.0)))
-            midpoint = start + (dur * 0.52)
+            # Word-synced choreography builds diagrams progressively: sample after the build
+            # (85% of the beat, before the exit fade) so the critic sees the finished diagram.
+            frac = 0.52 if os.environ.get("ANIMATION_ENGINE", "timeline").lower() == "legacy" else 0.85
+            midpoint = start + (dur * frac)
             hrs = int(midpoint // 3600)
             mins = int((midpoint % 3600) // 60)
             secs = midpoint % 60

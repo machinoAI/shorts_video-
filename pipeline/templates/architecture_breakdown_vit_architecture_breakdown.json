@@ -1,0 +1,1578 @@
+{
+  "id": "vit_architecture_breakdown",
+  "title": "Vision Transformer: The End of CNNs",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "neural_attention",
+  "hook_tag": "TRANSFORMER UNIFICATION",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "For years. We forced AI to view images through a tiny. Sliding convolutional keyhole.",
+      "visual_focus": "A camera aperture closing down to a tiny square scanning a landscape.",
+      "highlight_words": {
+        "sliding convolutional keyhole": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "AI",
+        "action_verb": "views",
+        "direct_object": "images",
+        "anchor_word": "keyhole",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "THE CONVOLUTIONAL TRAP",
+        "sub": "The bottleneck of local pixel processing",
+        "accent_color": "#EF4444",
+        "params": {
+          "field_title": "Vision Transformer: The End",
+          "source_label": "AI",
+          "target_label": "images",
+          "stream_formula": " "
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 36,
+      "hook_band": "WEAK",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "THE CONVOLUTIONAL TRAP",
+        "sub": "The bottleneck of local pixel processing",
+        "accent_color": "#EF4444",
+        "field_title": "Vision Transformer: The End",
+        "source_label": "AI",
+        "target_label": "images",
+        "stream_formula": " "
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 4.93,
+      "duration": 4.93,
+      "word_timings": [
+        {
+          "word": "For",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 0.015,
+          "end": 0.13,
+          "duration": 0.115,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "years.",
+          "clean_word": "years",
+          "phonemes": "j\u02c8\u026a\u0279z",
+          "start": 0.13,
+          "end": 0.535,
+          "duration": 0.405,
+          "frame_ahead_trigger": 0.09
+        },
+        {
+          "word": "We",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 0.535,
+          "end": 0.695,
+          "duration": 0.16,
+          "frame_ahead_trigger": 0.495
+        },
+        {
+          "word": "forced",
+          "clean_word": "forced",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279st",
+          "start": 0.695,
+          "end": 1.145,
+          "duration": 0.45,
+          "frame_ahead_trigger": 0.655
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 1.145,
+          "end": 1.49,
+          "duration": 0.345,
+          "frame_ahead_trigger": 1.105
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 1.49,
+          "end": 1.59,
+          "duration": 0.1,
+          "frame_ahead_trigger": 1.45
+        },
+        {
+          "word": "view",
+          "clean_word": "view",
+          "phonemes": "vj\u02c8u\u02d0",
+          "start": 1.59,
+          "end": 1.835,
+          "duration": 0.245,
+          "frame_ahead_trigger": 1.55
+        },
+        {
+          "word": "images",
+          "clean_word": "images",
+          "phonemes": "\u02c8\u026am\u026ad\u0292\u1d7bz",
+          "start": 1.835,
+          "end": 2.385,
+          "duration": 0.55,
+          "frame_ahead_trigger": 1.795
+        },
+        {
+          "word": "through",
+          "clean_word": "through",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0",
+          "start": 2.385,
+          "end": 2.485,
+          "duration": 0.1,
+          "frame_ahead_trigger": 2.345
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 2.485,
+          "end": 2.758,
+          "duration": 0.273,
+          "frame_ahead_trigger": 2.445
+        },
+        {
+          "word": "tiny.",
+          "clean_word": "tiny",
+          "phonemes": "t\u02c8a\u026ani",
+          "start": 2.758,
+          "end": 3.094,
+          "duration": 0.336,
+          "frame_ahead_trigger": 2.718
+        },
+        {
+          "word": "Sliding",
+          "clean_word": "sliding",
+          "phonemes": "sl\u02c8a\u026ad\u026a\u014b",
+          "start": 3.094,
+          "end": 3.545,
+          "duration": 0.451,
+          "frame_ahead_trigger": 3.054
+        },
+        {
+          "word": "convolutional",
+          "clean_word": "convolutional",
+          "phonemes": "k\u0251\u02d0nv\u0259l\u02c8u\u02d0\u0283\u0259n\u0259l",
+          "start": 3.545,
+          "end": 4.425,
+          "duration": 0.88,
+          "frame_ahead_trigger": 3.505
+        },
+        {
+          "word": "keyhole.",
+          "clean_word": "keyhole",
+          "phonemes": "k\u02c8i\u02d0ho\u028al",
+          "start": 4.425,
+          "end": 4.83,
+          "duration": 0.405,
+          "frame_ahead_trigger": 4.385
+        }
+      ],
+      "audio_duration": 4.93,
+      "slot_duration": 5.08
+    },
+    {
+      "beat_id": 2,
+      "text": "CNNs are obsessed with local neighbors. They ignore the global context. Massive compute on redundant, repetitive pixel-by-pixel sliding operations.",
+      "visual_focus": "A grid of pixels being processed one-by-one by a slow, clunky mechanical scanner.",
+      "highlight_words": {
+        "redundant": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "CNNs",
+        "action_verb": "ignore",
+        "direct_object": "global context",
+        "anchor_word": "redundant",
+        "semantic_role": "bottleneck_definition"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE LOCALITY WALL",
+        "sub": "Why CNNs struggle with global features",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "CNN Filters",
+          "stream_b_label": "Global Attention",
+          "barrier_label": "Structural Bottleneck",
+          "barrier_sub": "Sequential receptive field limitations"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE LOCALITY WALL",
+        "sub": "Why CNNs struggle with global features",
+        "accent_color": "#EF4444",
+        "stream_a_label": "CNN Filters",
+        "stream_b_label": "Global Attention",
+        "barrier_label": "Structural Bottleneck",
+        "barrier_sub": "Sequential receptive field limitations"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 5.08,
+      "end": 14.06,
+      "duration": 8.98,
+      "word_timings": [
+        {
+          "word": "CNNs",
+          "clean_word": "cnns",
+          "phonemes": "s\u02cci\u02d0\u02cc\u025bn\u02c8\u025bn",
+          "start": 5.113,
+          "end": 5.688,
+          "duration": 0.575,
+          "frame_ahead_trigger": 5.223
+        },
+        {
+          "word": "are",
+          "clean_word": "are",
+          "phonemes": "\u0251\u02d0\u0279",
+          "start": 5.688,
+          "end": 5.958,
+          "duration": 0.27,
+          "frame_ahead_trigger": 5.798
+        },
+        {
+          "word": "obsessed",
+          "clean_word": "obsessed",
+          "phonemes": "\u0259bs\u02c8\u025bst",
+          "start": 5.958,
+          "end": 6.283,
+          "duration": 0.325,
+          "frame_ahead_trigger": 6.068
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 6.283,
+          "end": 6.438,
+          "duration": 0.155,
+          "frame_ahead_trigger": 6.393
+        },
+        {
+          "word": "local",
+          "clean_word": "local",
+          "phonemes": "l\u02c8o\u028ak\u0259l",
+          "start": 6.438,
+          "end": 7.053,
+          "duration": 0.615,
+          "frame_ahead_trigger": 6.548
+        },
+        {
+          "word": "neighbors.",
+          "clean_word": "neighbors",
+          "phonemes": "n\u02c8e\u026ab\u025az",
+          "start": 7.053,
+          "end": 7.407,
+          "duration": 0.354,
+          "frame_ahead_trigger": 7.163
+        },
+        {
+          "word": "They",
+          "clean_word": "they",
+          "phonemes": "\u00f0e\u026a",
+          "start": 7.407,
+          "end": 7.648,
+          "duration": 0.241,
+          "frame_ahead_trigger": 7.517
+        },
+        {
+          "word": "ignore",
+          "clean_word": "ignore",
+          "phonemes": "\u026a\u0261n\u02c8\u0254\u02d0\u0279",
+          "start": 7.648,
+          "end": 8.038,
+          "duration": 0.39,
+          "frame_ahead_trigger": 7.758
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 8.038,
+          "end": 8.158,
+          "duration": 0.12,
+          "frame_ahead_trigger": 8.148
+        },
+        {
+          "word": "global",
+          "clean_word": "global",
+          "phonemes": "\u0261l\u02c8o\u028ab\u0259l",
+          "start": 8.158,
+          "end": 8.628,
+          "duration": 0.47,
+          "frame_ahead_trigger": 8.268
+        },
+        {
+          "word": "context.",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 8.628,
+          "end": 9.158,
+          "duration": 0.53,
+          "frame_ahead_trigger": 8.738
+        },
+        {
+          "word": "Massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 9.158,
+          "end": 9.703,
+          "duration": 0.545,
+          "frame_ahead_trigger": 9.268
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 9.703,
+          "end": 10.108,
+          "duration": 0.405,
+          "frame_ahead_trigger": 9.813
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 10.108,
+          "end": 10.298,
+          "duration": 0.19,
+          "frame_ahead_trigger": 10.218
+        },
+        {
+          "word": "redundant,",
+          "clean_word": "redundant",
+          "phonemes": "\u0279\u1d7bd\u02c8\u028cnd\u0259nt",
+          "start": 10.298,
+          "end": 11.068,
+          "duration": 0.77,
+          "frame_ahead_trigger": 10.408
+        },
+        {
+          "word": "repetitive",
+          "clean_word": "repetitive",
+          "phonemes": "\u0279\u1d7bp\u02c8\u025b\u027e\u1d7bt\u02cc\u026av",
+          "start": 11.068,
+          "end": 11.668,
+          "duration": 0.6,
+          "frame_ahead_trigger": 11.178
+        },
+        {
+          "word": "pixel-by-pixel",
+          "clean_word": "pixelbypixel",
+          "phonemes": "p\u02c8\u026aks\u026alb\u02cc\u026ap\u026aks\u0259l",
+          "start": 11.668,
+          "end": 12.648,
+          "duration": 0.98,
+          "frame_ahead_trigger": 11.778
+        },
+        {
+          "word": "sliding",
+          "clean_word": "sliding",
+          "phonemes": "sl\u02c8a\u026ad\u026a\u014b",
+          "start": 12.648,
+          "end": 13.148,
+          "duration": 0.5,
+          "frame_ahead_trigger": 12.758
+        },
+        {
+          "word": "operations.",
+          "clean_word": "operations",
+          "phonemes": "\u02cc\u0251\u02d0p\u025a\u0279\u02c8e\u026a\u0283\u0259nz",
+          "start": 13.148,
+          "end": 13.978,
+          "duration": 0.83,
+          "frame_ahead_trigger": 13.258
+        }
+      ],
+      "audio_duration": 8.98,
+      "slot_duration": 9.13
+    },
+    {
+      "beat_id": 3,
+      "text": "The Vision Transformer breaks the image into flat. Linear patches. It treats pixels like words in a sentence. Unlocking global attention.",
+      "visual_focus": "An image shattering into a 16x16 grid of squares that rearrange into a long sequence.",
+      "highlight_words": {
+        "linear patches": "#10B981"
+      },
+      "svo_action": {
+        "subject": "ViT",
+        "action_verb": "shatters",
+        "direct_object": "images",
+        "anchor_word": "patches",
+        "semantic_role": "eureka_pivot"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "VISION TRANSFORMER: FIGURE",
+        "sub": "An image shattering into a 16x16 grid of squares that rearrange",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_1_model_scheme.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_1_model_scheme.png",
+          "arxiv_id": "2010.11929",
+          "title": "VISION TRANSFORMER: FIGURE",
+          "sub": "An image shattering into a 16x16 grid of squares that rearrange",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Model Scheme",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_1_model_scheme.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_1_model_scheme.png",
+        "arxiv_id": "2010.11929",
+        "title": "VISION TRANSFORMER: FIGURE",
+        "sub": "An image shattering into a 16x16 grid of squares that rearrange",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Model Scheme",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 14.21,
+      "end": 21.91,
+      "duration": 7.7,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 14.219,
+          "end": 14.294,
+          "duration": 0.075,
+          "frame_ahead_trigger": 14.479
+        },
+        {
+          "word": "Vision",
+          "clean_word": "vision",
+          "phonemes": "v\u02c8\u026a\u0292\u0259n",
+          "start": 14.294,
+          "end": 14.594,
+          "duration": 0.3,
+          "frame_ahead_trigger": 14.554
+        },
+        {
+          "word": "Transformer",
+          "clean_word": "transformer",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279m\u025a",
+          "start": 14.594,
+          "end": 15.434,
+          "duration": 0.84,
+          "frame_ahead_trigger": 14.854
+        },
+        {
+          "word": "breaks",
+          "clean_word": "breaks",
+          "phonemes": "b\u0279\u02c8e\u026aks",
+          "start": 15.434,
+          "end": 15.889,
+          "duration": 0.455,
+          "frame_ahead_trigger": 15.694
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 15.889,
+          "end": 16.049,
+          "duration": 0.16,
+          "frame_ahead_trigger": 16.149
+        },
+        {
+          "word": "image",
+          "clean_word": "image",
+          "phonemes": "\u02c8\u026am\u026ad\u0292",
+          "start": 16.049,
+          "end": 16.339,
+          "duration": 0.29,
+          "frame_ahead_trigger": 16.309
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 16.339,
+          "end": 16.642,
+          "duration": 0.303,
+          "frame_ahead_trigger": 16.599
+        },
+        {
+          "word": "flat.",
+          "clean_word": "flat",
+          "phonemes": "fl\u02c8\u00e6t",
+          "start": 16.642,
+          "end": 16.904,
+          "duration": 0.263,
+          "frame_ahead_trigger": 16.902
+        },
+        {
+          "word": "Linear",
+          "clean_word": "linear",
+          "phonemes": "l\u02c8\u026an\u026a\u0279",
+          "start": 16.904,
+          "end": 17.414,
+          "duration": 0.51,
+          "frame_ahead_trigger": 17.164
+        },
+        {
+          "word": "patches.",
+          "clean_word": "patches",
+          "phonemes": "p\u02c8\u00e6t\u0283\u1d7bz",
+          "start": 17.414,
+          "end": 17.614,
+          "duration": 0.2,
+          "frame_ahead_trigger": 17.674
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 17.614,
+          "end": 17.853,
+          "duration": 0.239,
+          "frame_ahead_trigger": 17.874
+        },
+        {
+          "word": "treats",
+          "clean_word": "treats",
+          "phonemes": "t\u0279\u02c8i\u02d0ts",
+          "start": 17.853,
+          "end": 18.349,
+          "duration": 0.496,
+          "frame_ahead_trigger": 18.113
+        },
+        {
+          "word": "pixels",
+          "clean_word": "pixels",
+          "phonemes": "p\u02c8\u026aks\u0259lz",
+          "start": 18.349,
+          "end": 18.824,
+          "duration": 0.475,
+          "frame_ahead_trigger": 18.609
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 18.824,
+          "end": 19.009,
+          "duration": 0.185,
+          "frame_ahead_trigger": 19.084
+        },
+        {
+          "word": "words",
+          "clean_word": "words",
+          "phonemes": "w\u02c8\u025c\u02d0dz",
+          "start": 19.009,
+          "end": 19.379,
+          "duration": 0.37,
+          "frame_ahead_trigger": 19.269
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 19.379,
+          "end": 19.639,
+          "duration": 0.26,
+          "frame_ahead_trigger": 19.639
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 19.639,
+          "end": 19.809,
+          "duration": 0.17,
+          "frame_ahead_trigger": 19.899
+        },
+        {
+          "word": "sentence.",
+          "clean_word": "sentence",
+          "phonemes": "s\u02c8\u025bnt\u0259ns",
+          "start": 19.809,
+          "end": 20.324,
+          "duration": 0.515,
+          "frame_ahead_trigger": 20.069
+        },
+        {
+          "word": "Unlocking",
+          "clean_word": "unlocking",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0k\u026a\u014b",
+          "start": 20.324,
+          "end": 20.809,
+          "duration": 0.485,
+          "frame_ahead_trigger": 20.584
+        },
+        {
+          "word": "global",
+          "clean_word": "global",
+          "phonemes": "\u0261l\u02c8o\u028ab\u0259l",
+          "start": 20.809,
+          "end": 21.284,
+          "duration": 0.475,
+          "frame_ahead_trigger": 21.069
+        },
+        {
+          "word": "attention.",
+          "clean_word": "attention",
+          "phonemes": "\u0250t\u02c8\u025bn\u0283\u0259n",
+          "start": 21.284,
+          "end": 21.789,
+          "duration": 0.505,
+          "frame_ahead_trigger": 21.544
+        }
+      ],
+      "audio_duration": 7.7,
+      "slot_duration": 7.85
+    },
+    {
+      "beat_id": 4,
+      "text": "By applying standard self-attention across these patches. The model captures long-range dependencies instantly. No convolutions required.",
+      "visual_focus": "Lines of light connecting distant patches across the screen simultaneously.",
+      "highlight_words": {
+        "long-range dependencies": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Self-attention",
+        "action_verb": "connects",
+        "direct_object": "distant patches",
+        "anchor_word": "dependencies",
+        "semantic_role": "technical_mechanism"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "GLOBAL ATTENTION",
+        "sub": "The power of non-local relationships",
+        "accent_color": "#F59E0B",
+        "params": {
+          "root_label": "Global Attention",
+          "optimal_label": "Unified Representation",
+          "pruned_label": "Local Filter"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "tree_hierarchy",
+        "title": "GLOBAL ATTENTION",
+        "sub": "The power of non-local relationships",
+        "accent_color": "#F59E0B",
+        "root_label": "Global Attention",
+        "optimal_label": "Unified Representation",
+        "pruned_label": "Local Filter"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 22.06,
+      "end": 30.15,
+      "duration": 8.09,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 22.066,
+          "end": 22.226,
+          "duration": 0.16,
+          "frame_ahead_trigger": 22.476
+        },
+        {
+          "word": "applying",
+          "clean_word": "applying",
+          "phonemes": "\u0250pl\u02c8a\u026a\u026a\u014b",
+          "start": 22.226,
+          "end": 22.866,
+          "duration": 0.64,
+          "frame_ahead_trigger": 22.636
+        },
+        {
+          "word": "standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 22.866,
+          "end": 23.251,
+          "duration": 0.385,
+          "frame_ahead_trigger": 23.276
+        },
+        {
+          "word": "self-attention",
+          "clean_word": "selfattention",
+          "phonemes": "s\u02cc\u025blf\u0250t\u02c8\u025bn\u0283\u0259n",
+          "start": 23.251,
+          "end": 24.091,
+          "duration": 0.84,
+          "frame_ahead_trigger": 23.661
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 24.091,
+          "end": 24.511,
+          "duration": 0.42,
+          "frame_ahead_trigger": 24.501
+        },
+        {
+          "word": "these",
+          "clean_word": "these",
+          "phonemes": "\u00f0\u02c8i\u02d0z",
+          "start": 24.511,
+          "end": 24.835,
+          "duration": 0.325,
+          "frame_ahead_trigger": 24.921
+        },
+        {
+          "word": "patches.",
+          "clean_word": "patches",
+          "phonemes": "p\u02c8\u00e6t\u0283\u1d7bz",
+          "start": 24.835,
+          "end": 25.301,
+          "duration": 0.465,
+          "frame_ahead_trigger": 25.245
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 25.301,
+          "end": 25.391,
+          "duration": 0.09,
+          "frame_ahead_trigger": 25.711
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 25.391,
+          "end": 25.841,
+          "duration": 0.45,
+          "frame_ahead_trigger": 25.801
+        },
+        {
+          "word": "captures",
+          "clean_word": "captures",
+          "phonemes": "k\u02c8\u00e6pt\u0283\u025az",
+          "start": 25.841,
+          "end": 26.421,
+          "duration": 0.58,
+          "frame_ahead_trigger": 26.251
+        },
+        {
+          "word": "long-range",
+          "clean_word": "longrange",
+          "phonemes": "l\u02c8\u0254\u014b\u0261\u0279e\u026and\u0292",
+          "start": 26.421,
+          "end": 27.026,
+          "duration": 0.605,
+          "frame_ahead_trigger": 26.831
+        },
+        {
+          "word": "dependencies",
+          "clean_word": "dependencies",
+          "phonemes": "d\u1d7bp\u02c8\u025bnd\u0259nsiz",
+          "start": 27.026,
+          "end": 27.756,
+          "duration": 0.73,
+          "frame_ahead_trigger": 27.436
+        },
+        {
+          "word": "instantly.",
+          "clean_word": "instantly",
+          "phonemes": "\u02c8\u026anst\u0259ntli",
+          "start": 27.756,
+          "end": 28.344,
+          "duration": 0.588,
+          "frame_ahead_trigger": 28.166
+        },
+        {
+          "word": "No",
+          "clean_word": "no",
+          "phonemes": "n\u02c8o\u028a",
+          "start": 28.344,
+          "end": 28.536,
+          "duration": 0.192,
+          "frame_ahead_trigger": 28.754
+        },
+        {
+          "word": "convolutions",
+          "clean_word": "convolutions",
+          "phonemes": "k\u0251\u02d0nv\u0259l\u02c8u\u02d0\u0283\u0259nz",
+          "start": 28.536,
+          "end": 29.466,
+          "duration": 0.93,
+          "frame_ahead_trigger": 28.946
+        },
+        {
+          "word": "required.",
+          "clean_word": "required",
+          "phonemes": "\u0279\u1d7bkw\u02c8a\u026a\u025ad",
+          "start": 29.466,
+          "end": 30.006,
+          "duration": 0.54,
+          "frame_ahead_trigger": 29.876
+        }
+      ],
+      "audio_duration": 8.09,
+      "slot_duration": 8.24
+    },
+    {
+      "beat_id": 5,
+      "text": "ViT beats state-of-the-art CNNs on ImageNet. It trains faster and scales better with massive data.",
+      "visual_focus": "A bar chart showing ViT overtaking CNN performance metrics.",
+      "highlight_words": {
+        "scales better": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "ViT",
+        "action_verb": "outperforms",
+        "direct_object": "CNNs",
+        "anchor_word": "scales",
+        "semantic_role": "empirical_victory"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: LAYERS",
+        "sub": "A bar chart showing ViT overtaking CNN",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: LAYERS",
+          "sub": "A bar chart showing ViT overtaking CNN",
+          "metric_name": "Layers",
+          "unit": "",
+          "contestants": [
+            {
+              "name": "\\oursabbrv-Huge",
+              "value": 32.0,
+              "display_val": "32.0",
+              "is_hero": true,
+              "color": "#F59E0B"
+            },
+            {
+              "name": "\\oursabbrv-Large",
+              "value": 24.0,
+              "display_val": "24.0",
+              "is_hero": true,
+              "color": "#38BDF8"
+            },
+            {
+              "name": "\\oursabbrv-Base",
+              "value": 12.0,
+              "display_val": "12.0",
+              "is_hero": true,
+              "color": "#10B981"
+            }
+          ],
+          "delta_badge": "\u26a1 +33.3% OVER \\OURSABBRV-LARGE"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: LAYERS",
+        "sub": "A bar chart showing ViT overtaking CNN",
+        "metric_name": "Layers",
+        "unit": "",
+        "contestants": [
+          {
+            "name": "\\oursabbrv-Huge",
+            "value": 32.0,
+            "display_val": "32.0",
+            "is_hero": true,
+            "color": "#F59E0B"
+          },
+          {
+            "name": "\\oursabbrv-Large",
+            "value": 24.0,
+            "display_val": "24.0",
+            "is_hero": true,
+            "color": "#38BDF8"
+          },
+          {
+            "name": "\\oursabbrv-Base",
+            "value": 12.0,
+            "display_val": "12.0",
+            "is_hero": true,
+            "color": "#10B981"
+          }
+        ],
+        "delta_badge": "\u26a1 +33.3% OVER \\OURSABBRV-LARGE"
+      },
+      "start": 30.3,
+      "end": 36.23,
+      "duration": 5.93,
+      "word_timings": [
+        {
+          "word": "ViT",
+          "clean_word": "vit",
+          "phonemes": "v\u02c8a\u026a t\u02c8i\u02d0",
+          "start": 30.311,
+          "end": 30.756,
+          "duration": 0.445,
+          "frame_ahead_trigger": 30.871
+        },
+        {
+          "word": "beats",
+          "clean_word": "beats",
+          "phonemes": "b\u02c8i\u02d0ts",
+          "start": 30.756,
+          "end": 31.156,
+          "duration": 0.4,
+          "frame_ahead_trigger": 31.316
+        },
+        {
+          "word": "state-of-the-art",
+          "clean_word": "stateoftheart",
+          "phonemes": "st\u02c8e\u026a\u027e\u0254fth\u02cc\u0251\u02d0\u0279t",
+          "start": 31.156,
+          "end": 31.986,
+          "duration": 0.83,
+          "frame_ahead_trigger": 31.716
+        },
+        {
+          "word": "CNNs",
+          "clean_word": "cnns",
+          "phonemes": "s\u02cci\u02d0\u02cc\u025bn\u02c8\u025bn",
+          "start": 31.986,
+          "end": 32.686,
+          "duration": 0.7,
+          "frame_ahead_trigger": 32.546
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 32.686,
+          "end": 32.826,
+          "duration": 0.14,
+          "frame_ahead_trigger": 33.246
+        },
+        {
+          "word": "ImageNet.",
+          "clean_word": "imagenet",
+          "phonemes": "\u02c8\u026am\u026ad\u0292 n\u02c8\u025bt",
+          "start": 32.826,
+          "end": 33.501,
+          "duration": 0.675,
+          "frame_ahead_trigger": 33.386
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 33.501,
+          "end": 33.586,
+          "duration": 0.085,
+          "frame_ahead_trigger": 34.061
+        },
+        {
+          "word": "trains",
+          "clean_word": "trains",
+          "phonemes": "t\u0279\u02c8e\u026anz",
+          "start": 33.586,
+          "end": 33.906,
+          "duration": 0.32,
+          "frame_ahead_trigger": 34.146
+        },
+        {
+          "word": "faster",
+          "clean_word": "faster",
+          "phonemes": "f\u02c8\u00e6st\u025a",
+          "start": 33.906,
+          "end": 34.331,
+          "duration": 0.425,
+          "frame_ahead_trigger": 34.466
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 34.331,
+          "end": 34.496,
+          "duration": 0.165,
+          "frame_ahead_trigger": 34.891
+        },
+        {
+          "word": "scales",
+          "clean_word": "scales",
+          "phonemes": "sk\u02c8e\u026alz",
+          "start": 34.496,
+          "end": 34.971,
+          "duration": 0.475,
+          "frame_ahead_trigger": 35.056
+        },
+        {
+          "word": "better",
+          "clean_word": "better",
+          "phonemes": "b\u02c8\u025b\u027e\u025a",
+          "start": 34.971,
+          "end": 35.226,
+          "duration": 0.255,
+          "frame_ahead_trigger": 35.531
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 35.226,
+          "end": 35.341,
+          "duration": 0.115,
+          "frame_ahead_trigger": 35.786
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 35.341,
+          "end": 35.811,
+          "duration": 0.47,
+          "frame_ahead_trigger": 35.901
+        },
+        {
+          "word": "data.",
+          "clean_word": "data",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259",
+          "start": 35.811,
+          "end": 36.101,
+          "duration": 0.29,
+          "frame_ahead_trigger": 36.371
+        }
+      ],
+      "audio_duration": 5.93,
+      "slot_duration": 6.08
+    },
+    {
+      "beat_id": 6,
+      "text": "The era of the sliding window is over. Follow machinoAI for deep-dives into the architectures redefining reality.",
+      "visual_focus": "The sliding window icon shattering into light.",
+      "highlight_words": {
+        "redefining reality": "#10B981"
+      },
+      "svo_action": {
+        "subject": "machinoAI",
+        "action_verb": "explains",
+        "direct_object": "AI architectures",
+        "anchor_word": "redefining",
+        "semantic_role": "loop_outro"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "STAY TUNED",
+        "sub": "Next: The future of vision",
+        "accent_color": "#38BDF8",
+        "params": {
+          "input_1_label": "Text",
+          "input_2_label": "Images",
+          "input_3_label": "Audio",
+          "fused_label": "Universal Transformer"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 36.38,
+      "end": 43.25,
+      "duration": 6.87,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 36.382,
+          "end": 36.467,
+          "duration": 0.085,
+          "frame_ahead_trigger": 37.092
+        },
+        {
+          "word": "era",
+          "clean_word": "era",
+          "phonemes": "\u02c8i\u0259\u0279\u0259",
+          "start": 36.467,
+          "end": 36.777,
+          "duration": 0.31,
+          "frame_ahead_trigger": 37.177
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 36.777,
+          "end": 36.957,
+          "duration": 0.18,
+          "frame_ahead_trigger": 37.487
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 36.957,
+          "end": 37.057,
+          "duration": 0.1,
+          "frame_ahead_trigger": 37.667
+        },
+        {
+          "word": "sliding",
+          "clean_word": "sliding",
+          "phonemes": "sl\u02c8a\u026ad\u026a\u014b",
+          "start": 37.057,
+          "end": 37.447,
+          "duration": 0.39,
+          "frame_ahead_trigger": 37.767
+        },
+        {
+          "word": "window",
+          "clean_word": "window",
+          "phonemes": "w\u02c8\u026ando\u028a",
+          "start": 37.447,
+          "end": 37.907,
+          "duration": 0.46,
+          "frame_ahead_trigger": 38.157
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 37.907,
+          "end": 38.177,
+          "duration": 0.27,
+          "frame_ahead_trigger": 38.617
+        },
+        {
+          "word": "over.",
+          "clean_word": "over",
+          "phonemes": "\u02c8o\u028av\u025a",
+          "start": 38.177,
+          "end": 38.384,
+          "duration": 0.207,
+          "frame_ahead_trigger": 38.887
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 38.384,
+          "end": 38.802,
+          "duration": 0.418,
+          "frame_ahead_trigger": 39.094
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 38.802,
+          "end": 39.802,
+          "duration": 1.0,
+          "frame_ahead_trigger": 39.512
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 39.802,
+          "end": 40.022,
+          "duration": 0.221,
+          "frame_ahead_trigger": 40.512
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 40.022,
+          "end": 40.587,
+          "duration": 0.564,
+          "frame_ahead_trigger": 40.732
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 40.587,
+          "end": 40.897,
+          "duration": 0.31,
+          "frame_ahead_trigger": 41.297
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 40.897,
+          "end": 41.072,
+          "duration": 0.175,
+          "frame_ahead_trigger": 41.607
+        },
+        {
+          "word": "architectures",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 41.072,
+          "end": 41.842,
+          "duration": 0.771,
+          "frame_ahead_trigger": 41.782
+        },
+        {
+          "word": "redefining",
+          "clean_word": "redefining",
+          "phonemes": "\u0279\u02cci\u02d0d\u1d7bf\u02c8a\u026an\u026a\u014b",
+          "start": 41.842,
+          "end": 42.622,
+          "duration": 0.779,
+          "frame_ahead_trigger": 42.552
+        },
+        {
+          "word": "reality.",
+          "clean_word": "reality",
+          "phonemes": "\u0279\u026a\u02c8\u00e6l\u1d7b\u027ei",
+          "start": 42.622,
+          "end": 43.117,
+          "duration": 0.495,
+          "frame_ahead_trigger": 43.332
+        }
+      ],
+      "audio_duration": 6.87,
+      "slot_duration": 6.87
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$x = \\mathrm{Reshape}(I, (16, 16))$",
+      "filename": "vit_architecture_breakdown_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "I",
+          "label": "Input Image"
+        },
+        {
+          "term": "16,16",
+          "label": "Patch Resolution"
+        }
+      ],
+      "svg_filename": "vit_architecture_breakdown_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(k^2 \\cdot N)$",
+      "filename": "vit_architecture_breakdown_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "k",
+          "label": "Filter Size"
+        }
+      ],
+      "svg_filename": "vit_architecture_breakdown_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$z_0 = [x_1^1 E; x_2^1 E; \\dots; x_N^1 E] + E_{pos}$",
+      "filename": "vit_architecture_breakdown_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "E",
+          "label": "Patch Projection"
+        },
+        {
+          "term": "E_{pos}",
+          "label": "Positional Embedding"
+        }
+      ],
+      "svg_filename": "vit_architecture_breakdown_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{Attn}(Q, K, V) = \\mathrm{softmax}(\\frac{QK^T}{\\sqrt{d_k}})V$",
+      "filename": "vit_architecture_breakdown_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "Q,K,V",
+          "label": "Projection Matrices"
+        }
+      ],
+      "svg_filename": "vit_architecture_breakdown_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Ratio} = \\frac{\\mathrm{Cost}_{ViT}}{\\mathrm{Cost}_{CNN}} < 1$",
+      "filename": "vit_architecture_breakdown_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "Cost",
+          "label": "Training Resources"
+        }
+      ],
+      "svg_filename": "vit_architecture_breakdown_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "attention_flow",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "INPUT",
+          "color": "#38BDF8",
+          "items": [
+            "Patch",
+            "Vector",
+            "Embedding"
+          ]
+        },
+        {
+          "name": "TRANSFORMER",
+          "color": "#10B981",
+          "items": [
+            "Attention",
+            "Query",
+            "Key"
+          ]
+        },
+        {
+          "name": "OUTPUT",
+          "color": "#F59E0B",
+          "items": [
+            "Class",
+            "Logit",
+            "Label"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"patch_1\"",
+        "target_cluster": "TRANSFORMER",
+        "token": "\"patch_1\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Filter",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Kernel",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "Vision Transformer (ViT)",
+    "model_a_specs": [
+      "Patch size 16x16",
+      "Global Attention",
+      "Pre-trained at scale"
+    ],
+    "model_b": "Convolutional Neural Networks (CNNs)",
+    "model_b_specs": [
+      "Local receptive fields",
+      "Hierarchical features",
+      "Translation invariance"
+    ],
+    "divide_title": "TRANSFORMER VS CONVNET",
+    "benchmarks": [
+      {
+        "name": "ImageNet",
+        "score_a": "SOTA",
+        "score_b": "Baseline"
+      }
+    ],
+    "bottleneck_title": "MONOLITHIC CONVOLUTIONAL BOTTLENECK",
+    "bottleneck_desc": "Sequential local filtering limits global context",
+    "solution_title": "TRANSFORMER ARCHITECTURAL DECOMPOSITION",
+    "solution_components": "Image patch sequence projections",
+    "mechanism_title": "GLOBAL SELF-ATTENTION MECHANISM",
+    "payoff_sub": "Superior accuracy with lower training cost",
+    "payoff_hero_label": "ViT",
+    "payoff_base_label": "CNNs",
+    "challenger": "ViT",
+    "incumbent": "CNN"
+  },
+  "script_provider": "gemini",
+  "quality_flags": {
+    "scrubbed_fields": [
+      "beats[5].visual_blueprint.params.contestants"
+    ],
+    "ungrounded_narration_numbers": [],
+    "leaked_example_values": [],
+    "grounding_source_chars": 1382
+  },
+  "arxiv_id": "2010.11929",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "model_scheme",
+      "caption": "Model Scheme",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/source/images/model_scheme.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_1_model_scheme.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_1_model_scheme.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "finetune_vs_compute2",
+      "caption": "Finetune Vs Compute2",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/source/images/finetune_vs_compute2.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_2_finetune_vs_compute2.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_2_finetune_vs_compute2.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "head_tokens",
+      "caption": "Head Tokens",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/source/images/head_tokens.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_3_head_tokens.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_3_head_tokens.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "vit-vtab",
+      "caption": "Vit-Vtab",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/source/images/vit-vtab.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_4_vit-vtab.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_4_vit-vtab.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "img_sec_core",
+      "caption": "Img Sec Core",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/source/images/img_sec_core.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_5_img_sec_core.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2010.11929/chalkboard_figures/fig_5_img_sec_core.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 8.5,
+    "final_retention_hook_score": 9.0,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Approved! Clear real-world developer terms and intuitive physical analogy."
+  },
+  "hook_gating": {
+    "selected_hook": "For years. We forced AI to view images through a tiny. Sliding convolutional keyhole.",
+    "verdict": 36,
+    "band": "WEAK",
+    "formula": "Unclassified",
+    "properties": {
+      "SPECIFICITY": 52,
+      "ADDRESS": 26,
+      "STAKES": 22,
+      "CURIOSITY": 24,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "attention_grid",
+      "entity_type": "attention_grid",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "publish_gate": {
+    "decision": "publish",
+    "reasons": [],
+    "warnings": [
+      "No vision model audited the keyframes (scores are heuristic placeholders)."
+    ],
+    "action": {
+      "youtube_upload": true,
+      "privacy": "public",
+      "cross_post": true,
+      "mode": "private"
+    }
+  },
+  "youtube_upload": {
+    "video_id": "6eGWe-EH1co",
+    "shorts_url": "https://youtube.com/shorts/6eGWe-EH1co",
+    "studio_url": "https://studio.youtube.com/video/6eGWe-EH1co/edit",
+    "title": "Vision Transformer Explained #Shorts",
+    "poster_path": null,
+    "custom_thumbnail_set": false
+  }
+}

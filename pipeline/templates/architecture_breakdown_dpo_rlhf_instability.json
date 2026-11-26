@@ -1,0 +1,1729 @@
+{
+  "id": "dpo_rlhf_instability",
+  "title": "DPO: Killing the Reward Model",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "RLHF FRAGILITY TRAP",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Running three distinct models for RLHF\u2014Actor, Critic, and Reward\u2014is a multi-billion parameter recipe for absolute training instability.",
+      "visual_focus": "Three heavy, disconnected neural network blobs pulsating and losing sync.",
+      "highlight_words": {
+        "RLHF": "#EF4444",
+        "instability": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "RLHF Pipeline",
+        "action_verb": "destabilizes",
+        "direct_object": "Training Objective",
+        "anchor_word": "instability",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "THE RLHF OVERHEAD",
+        "sub": "Synchronization bottleneck between Actor, Critic, and Reward models",
+        "accent_color": "#EF4444",
+        "params": {
+          "stage_1_label": "Actor Policy",
+          "stage_2_label": "Critic Value",
+          "stage_3_label": "Reward Model"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 61,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "THE RLHF OVERHEAD",
+        "sub": "Synchronization bottleneck between Actor, Critic, and Reward models",
+        "accent_color": "#EF4444",
+        "stage_1_label": "Actor Policy",
+        "stage_2_label": "Critic Value",
+        "stage_3_label": "Reward Model"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 8.45,
+      "duration": 8.45,
+      "word_timings": [
+        {
+          "word": "Running",
+          "clean_word": "running",
+          "phonemes": "\u0279\u02c8\u028cn\u026a\u014b",
+          "start": 0.015,
+          "end": 0.3,
+          "duration": 0.285,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "three",
+          "clean_word": "three",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0",
+          "start": 0.3,
+          "end": 0.66,
+          "duration": 0.36,
+          "frame_ahead_trigger": 0.26
+        },
+        {
+          "word": "distinct",
+          "clean_word": "distinct",
+          "phonemes": "d\u026ast\u02c8\u026a\u014bkt",
+          "start": 0.66,
+          "end": 1.25,
+          "duration": 0.59,
+          "frame_ahead_trigger": 0.62
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 1.25,
+          "end": 1.615,
+          "duration": 0.365,
+          "frame_ahead_trigger": 1.21
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 1.615,
+          "end": 1.925,
+          "duration": 0.31,
+          "frame_ahead_trigger": 1.575
+        },
+        {
+          "word": "RLHF\u2014Actor,",
+          "clean_word": "rlhfactor",
+          "phonemes": "\u02cc\u0251\u02d0\u0279\u0279\u02cc\u025bl\u02cce\u026at\u0283\u02c8\u025bf \u02c8\u00e6kt\u025a",
+          "start": 1.925,
+          "end": 3.179,
+          "duration": 1.254,
+          "frame_ahead_trigger": 1.885
+        },
+        {
+          "word": "Critic,",
+          "clean_word": "critic",
+          "phonemes": "k\u0279\u02c8\u026a\u027e\u026ak",
+          "start": 3.179,
+          "end": 3.605,
+          "duration": 0.426,
+          "frame_ahead_trigger": 3.139
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 3.605,
+          "end": 3.84,
+          "duration": 0.235,
+          "frame_ahead_trigger": 3.565
+        },
+        {
+          "word": "Reward\u2014is",
+          "clean_word": "rewardis",
+          "phonemes": "\u0279\u1d7bw\u02c8\u0254\u02d0\u0279diz",
+          "start": 3.84,
+          "end": 4.351,
+          "duration": 0.511,
+          "frame_ahead_trigger": 3.8
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 4.351,
+          "end": 4.527,
+          "duration": 0.176,
+          "frame_ahead_trigger": 4.311
+        },
+        {
+          "word": "multi-billion",
+          "clean_word": "multibillion",
+          "phonemes": "m\u02cc\u028clt\u026ab\u02c8\u026ali\u0259n",
+          "start": 4.527,
+          "end": 5.38,
+          "duration": 0.853,
+          "frame_ahead_trigger": 4.487
+        },
+        {
+          "word": "parameter",
+          "clean_word": "parameter",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025a",
+          "start": 5.38,
+          "end": 5.715,
+          "duration": 0.335,
+          "frame_ahead_trigger": 5.34
+        },
+        {
+          "word": "recipe",
+          "clean_word": "recipe",
+          "phonemes": "\u0279\u02c8\u025bs\u1d7bp\u02cci\u02d0",
+          "start": 5.715,
+          "end": 6.365,
+          "duration": 0.65,
+          "frame_ahead_trigger": 5.675
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 6.365,
+          "end": 6.53,
+          "duration": 0.165,
+          "frame_ahead_trigger": 6.325
+        },
+        {
+          "word": "absolute",
+          "clean_word": "absolute",
+          "phonemes": "\u02c8\u00e6bs\u0259l\u02ccu\u02d0t",
+          "start": 6.53,
+          "end": 7.175,
+          "duration": 0.645,
+          "frame_ahead_trigger": 6.49
+        },
+        {
+          "word": "training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 7.175,
+          "end": 7.59,
+          "duration": 0.415,
+          "frame_ahead_trigger": 7.135
+        },
+        {
+          "word": "instability.",
+          "clean_word": "instability",
+          "phonemes": "\u026anst\u0259b\u02c8\u026al\u1d7b\u027ei",
+          "start": 7.59,
+          "end": 8.335,
+          "duration": 0.745,
+          "frame_ahead_trigger": 7.55
+        }
+      ],
+      "audio_duration": 8.45,
+      "slot_duration": 8.6
+    },
+    {
+      "beat_id": 2,
+      "text": "The bottleneck? The reward model effectively creates a target that shifts as the policy updates, forcing continuous, expensive re-sampling cycles.",
+      "visual_focus": "A central reward model shrinking while the policy tries to follow it, causing GPU memory spikes.",
+      "highlight_words": {
+        "bottleneck": "#EF4444",
+        "re-sampling": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Reward Model",
+        "action_verb": "drifts",
+        "direct_object": "Gradient Manifold",
+        "anchor_word": "shifts",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "REWARD MODEL DRIFT",
+        "sub": "Policy divergence due to non-stationary feedback loops",
+        "accent_color": "#EF4444",
+        "params": {
+          "field_title": "Loss Gradient Field",
+          "source_label": "Initial Policy",
+          "target_label": "Drifting Reward"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "REWARD MODEL DRIFT",
+        "sub": "Policy divergence due to non-stationary feedback loops",
+        "accent_color": "#EF4444",
+        "field_title": "Loss Gradient Field",
+        "source_label": "Initial Policy",
+        "target_label": "Drifting Reward"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 8.6,
+      "end": 16.75,
+      "duration": 8.15,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 8.608,
+          "end": 8.678,
+          "duration": 0.07,
+          "frame_ahead_trigger": 8.718
+        },
+        {
+          "word": "bottleneck?",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 8.678,
+          "end": 9.367,
+          "duration": 0.689,
+          "frame_ahead_trigger": 8.788
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 9.367,
+          "end": 9.484,
+          "duration": 0.117,
+          "frame_ahead_trigger": 9.477
+        },
+        {
+          "word": "reward",
+          "clean_word": "reward",
+          "phonemes": "\u0279\u1d7bw\u02c8\u0254\u02d0\u0279d",
+          "start": 9.484,
+          "end": 9.883,
+          "duration": 0.399,
+          "frame_ahead_trigger": 9.594
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 9.883,
+          "end": 10.343,
+          "duration": 0.46,
+          "frame_ahead_trigger": 9.993
+        },
+        {
+          "word": "effectively",
+          "clean_word": "effectively",
+          "phonemes": "\u026af\u02c8\u025bkt\u026avli",
+          "start": 10.343,
+          "end": 10.968,
+          "duration": 0.625,
+          "frame_ahead_trigger": 10.453
+        },
+        {
+          "word": "creates",
+          "clean_word": "creates",
+          "phonemes": "k\u0279i\u02d0\u02c8e\u026ats",
+          "start": 10.968,
+          "end": 11.418,
+          "duration": 0.45,
+          "frame_ahead_trigger": 11.078
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 11.418,
+          "end": 11.663,
+          "duration": 0.245,
+          "frame_ahead_trigger": 11.528
+        },
+        {
+          "word": "target",
+          "clean_word": "target",
+          "phonemes": "t\u02c8\u0251\u02d0\u0279\u0261\u026at",
+          "start": 11.663,
+          "end": 12.098,
+          "duration": 0.435,
+          "frame_ahead_trigger": 11.773
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 12.098,
+          "end": 12.298,
+          "duration": 0.2,
+          "frame_ahead_trigger": 12.208
+        },
+        {
+          "word": "shifts",
+          "clean_word": "shifts",
+          "phonemes": "\u0283\u02c8\u026afts",
+          "start": 12.298,
+          "end": 12.603,
+          "duration": 0.305,
+          "frame_ahead_trigger": 12.408
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 12.603,
+          "end": 12.793,
+          "duration": 0.19,
+          "frame_ahead_trigger": 12.713
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 12.793,
+          "end": 12.883,
+          "duration": 0.09,
+          "frame_ahead_trigger": 12.903
+        },
+        {
+          "word": "policy",
+          "clean_word": "policy",
+          "phonemes": "p\u02c8\u0251\u02d0l\u026asi",
+          "start": 12.883,
+          "end": 13.378,
+          "duration": 0.495,
+          "frame_ahead_trigger": 12.993
+        },
+        {
+          "word": "updates,",
+          "clean_word": "updates",
+          "phonemes": "\u02c8\u028cpde\u026ats",
+          "start": 13.378,
+          "end": 13.803,
+          "duration": 0.425,
+          "frame_ahead_trigger": 13.488
+        },
+        {
+          "word": "forcing",
+          "clean_word": "forcing",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u026a\u014b",
+          "start": 13.803,
+          "end": 14.348,
+          "duration": 0.545,
+          "frame_ahead_trigger": 13.913
+        },
+        {
+          "word": "continuous,",
+          "clean_word": "continuous",
+          "phonemes": "k\u0259nt\u02c8\u026anju\u02d0\u0259s",
+          "start": 14.348,
+          "end": 14.958,
+          "duration": 0.61,
+          "frame_ahead_trigger": 14.458
+        },
+        {
+          "word": "expensive",
+          "clean_word": "expensive",
+          "phonemes": "\u025bksp\u02c8\u025bns\u026av",
+          "start": 14.958,
+          "end": 15.693,
+          "duration": 0.735,
+          "frame_ahead_trigger": 15.068
+        },
+        {
+          "word": "re-sampling",
+          "clean_word": "resampling",
+          "phonemes": "\u0279\u1d7bs\u02c8\u00e6mpl\u026a\u014b",
+          "start": 15.693,
+          "end": 16.223,
+          "duration": 0.53,
+          "frame_ahead_trigger": 15.803
+        },
+        {
+          "word": "cycles.",
+          "clean_word": "cycles",
+          "phonemes": "s\u02c8a\u026ak\u0259lz",
+          "start": 16.223,
+          "end": 16.668,
+          "duration": 0.445,
+          "frame_ahead_trigger": 16.333
+        }
+      ],
+      "audio_duration": 8.15,
+      "slot_duration": 8.3
+    },
+    {
+      "beat_id": 3,
+      "text": "DPO pivots by mathematically mapping the reward function directly to the optimal policy, treating alignment as a simple classification problem.",
+      "visual_focus": "The three blobs merge into a single, clean transformation stream.",
+      "highlight_words": {
+        "DPO": "#34D399",
+        "classification": "#34D399"
+      },
+      "svo_action": {
+        "subject": "DPO Algorithm",
+        "action_verb": "compresses",
+        "direct_object": "Optimization Objective",
+        "anchor_word": "mapping",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "DPO ARCHITECTURE",
+        "sub": "The three blobs merge into a single, clean transformation stream.",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_1_tldr_rerank_vs_temp.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_1_tldr_rerank_vs_temp.png",
+          "arxiv_id": "2305.18290",
+          "title": "DPO ARCHITECTURE",
+          "sub": "The three blobs merge into a single, clean transformation stream.",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Tldr Rerank Vs Temp",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_1_tldr_rerank_vs_temp.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_1_tldr_rerank_vs_temp.png",
+        "arxiv_id": "2305.18290",
+        "title": "DPO ARCHITECTURE",
+        "sub": "The three blobs merge into a single, clean transformation stream.",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Tldr Rerank Vs Temp",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 16.9,
+      "end": 25.13,
+      "duration": 8.23,
+      "word_timings": [
+        {
+          "word": "DPO",
+          "clean_word": "dpo",
+          "phonemes": "d\u02cci\u02d0p\u02cci\u02d0\u02c8o\u028a",
+          "start": 16.917,
+          "end": 17.547,
+          "duration": 0.63,
+          "frame_ahead_trigger": 17.177
+        },
+        {
+          "word": "pivots",
+          "clean_word": "pivots",
+          "phonemes": "p\u02c8\u026av\u0259ts",
+          "start": 17.547,
+          "end": 17.952,
+          "duration": 0.405,
+          "frame_ahead_trigger": 17.807
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 17.952,
+          "end": 18.102,
+          "duration": 0.15,
+          "frame_ahead_trigger": 18.212
+        },
+        {
+          "word": "mathematically",
+          "clean_word": "mathematically",
+          "phonemes": "m\u02cc\u00e6\u03b8\u026am\u02c8\u00e6\u027e\u026akli",
+          "start": 18.102,
+          "end": 18.862,
+          "duration": 0.76,
+          "frame_ahead_trigger": 18.362
+        },
+        {
+          "word": "mapping",
+          "clean_word": "mapping",
+          "phonemes": "m\u02c8\u00e6p\u026a\u014b",
+          "start": 18.862,
+          "end": 19.197,
+          "duration": 0.335,
+          "frame_ahead_trigger": 19.122
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 19.197,
+          "end": 19.342,
+          "duration": 0.145,
+          "frame_ahead_trigger": 19.457
+        },
+        {
+          "word": "reward",
+          "clean_word": "reward",
+          "phonemes": "\u0279\u1d7bw\u02c8\u0254\u02d0\u0279d",
+          "start": 19.342,
+          "end": 19.787,
+          "duration": 0.445,
+          "frame_ahead_trigger": 19.602
+        },
+        {
+          "word": "function",
+          "clean_word": "function",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259n",
+          "start": 19.787,
+          "end": 20.177,
+          "duration": 0.39,
+          "frame_ahead_trigger": 20.047
+        },
+        {
+          "word": "directly",
+          "clean_word": "directly",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bktli",
+          "start": 20.177,
+          "end": 20.787,
+          "duration": 0.61,
+          "frame_ahead_trigger": 20.437
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 20.787,
+          "end": 20.917,
+          "duration": 0.13,
+          "frame_ahead_trigger": 21.047
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 20.917,
+          "end": 21.072,
+          "duration": 0.155,
+          "frame_ahead_trigger": 21.177
+        },
+        {
+          "word": "optimal",
+          "clean_word": "optimal",
+          "phonemes": "\u02c8\u0251\u02d0pt\u026am\u0259l",
+          "start": 21.072,
+          "end": 21.524,
+          "duration": 0.452,
+          "frame_ahead_trigger": 21.332
+        },
+        {
+          "word": "policy,",
+          "clean_word": "policy",
+          "phonemes": "p\u02c8\u0251\u02d0l\u026asi",
+          "start": 21.524,
+          "end": 21.974,
+          "duration": 0.449,
+          "frame_ahead_trigger": 21.784
+        },
+        {
+          "word": "treating",
+          "clean_word": "treating",
+          "phonemes": "t\u0279\u02c8i\u02d0\u027e\u026a\u014b",
+          "start": 21.974,
+          "end": 22.472,
+          "duration": 0.499,
+          "frame_ahead_trigger": 22.234
+        },
+        {
+          "word": "alignment",
+          "clean_word": "alignment",
+          "phonemes": "\u0250l\u02c8a\u026anm\u0259nt",
+          "start": 22.472,
+          "end": 22.912,
+          "duration": 0.44,
+          "frame_ahead_trigger": 22.732
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 22.912,
+          "end": 23.097,
+          "duration": 0.185,
+          "frame_ahead_trigger": 23.172
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 23.097,
+          "end": 23.247,
+          "duration": 0.15,
+          "frame_ahead_trigger": 23.357
+        },
+        {
+          "word": "simple",
+          "clean_word": "simple",
+          "phonemes": "s\u02c8\u026amp\u0259l",
+          "start": 23.247,
+          "end": 23.682,
+          "duration": 0.435,
+          "frame_ahead_trigger": 23.507
+        },
+        {
+          "word": "classification",
+          "clean_word": "classification",
+          "phonemes": "kl\u02cc\u00e6s\u026af\u026ak\u02c8e\u026a\u0283\u0259n",
+          "start": 23.682,
+          "end": 24.517,
+          "duration": 0.835,
+          "frame_ahead_trigger": 23.942
+        },
+        {
+          "word": "problem.",
+          "clean_word": "problem",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0bl\u0259m",
+          "start": 24.517,
+          "end": 25.007,
+          "duration": 0.49,
+          "frame_ahead_trigger": 24.777
+        }
+      ],
+      "audio_duration": 8.23,
+      "slot_duration": 8.38
+    },
+    {
+      "beat_id": 4,
+      "text": "By calculating the log-ratio of preference probabilities, the model directly optimizes toward chosen responses without needing an explicit reward function.",
+      "visual_focus": "Preference tokens moving through a sigmoid gate, reinforcing chosen outputs.",
+      "highlight_words": {
+        "log-ratio": "#F59E0B",
+        "optimizes": "#34D399"
+      },
+      "svo_action": {
+        "subject": "DPO Head",
+        "action_verb": "calculates",
+        "direct_object": "Probability Log-Ratio",
+        "anchor_word": "calculating",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: DPO: KILLING THE R",
+        "sub": "Preference tokens moving through a sigmoid gate, reinforcing chos",
+        "params": {
+          "title": "KERNEL CODE: DPO: KILLING THE R",
+          "sub": "Preference tokens moving through a sigmoid gate, reinforcing chos",
+          "filename": "dpo_loss.py",
+          "language": "python",
+          "lines": [
+            "def dpo_loss(policy_logprobs, ref_logprobs, labels):",
+            "diff = policy_logprobs - ref_logprobs",
+            "logits = beta * (diff_w - diff_l)",
+            "return -F.logsigmoid(logits).mean()"
+          ],
+          "highlight_lines": [
+            2,
+            3
+          ],
+          "trace_register": "\u26a1 DIRECT LOG-RATIO GRADIENT",
+          "delta_badge": "Calculates optimization path directly from preferenc"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: DPO: KILLING THE R",
+        "sub": "Preference tokens moving through a sigmoid gate, reinforcing chos",
+        "filename": "dpo_loss.py",
+        "language": "python",
+        "lines": [
+          "def dpo_loss(policy_logprobs, ref_logprobs, labels):",
+          "diff = policy_logprobs - ref_logprobs",
+          "logits = beta * (diff_w - diff_l)",
+          "return -F.logsigmoid(logits).mean()"
+        ],
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "trace_register": "\u26a1 DIRECT LOG-RATIO GRADIENT",
+        "delta_badge": "Calculates optimization path directly from preferenc"
+      },
+      "start": 25.28,
+      "end": 33.99,
+      "duration": 8.7,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 25.287,
+          "end": 25.412,
+          "duration": 0.125,
+          "frame_ahead_trigger": 25.697
+        },
+        {
+          "word": "calculating",
+          "clean_word": "calculating",
+          "phonemes": "k\u02c8\u00e6lkj\u028al\u02cce\u026a\u027e\u026a\u014b",
+          "start": 25.412,
+          "end": 26.157,
+          "duration": 0.745,
+          "frame_ahead_trigger": 25.822
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 26.157,
+          "end": 26.407,
+          "duration": 0.25,
+          "frame_ahead_trigger": 26.567
+        },
+        {
+          "word": "log-ratio",
+          "clean_word": "logratio",
+          "phonemes": "l\u0254\u0261\u0279\u02c8e\u026a\u0283\u026a\u02cco\u028a",
+          "start": 26.407,
+          "end": 27.002,
+          "duration": 0.595,
+          "frame_ahead_trigger": 26.817
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 27.002,
+          "end": 27.232,
+          "duration": 0.23,
+          "frame_ahead_trigger": 27.412
+        },
+        {
+          "word": "preference",
+          "clean_word": "preference",
+          "phonemes": "p\u0279\u02c8\u025bf\u0279\u0259ns",
+          "start": 27.232,
+          "end": 27.657,
+          "duration": 0.425,
+          "frame_ahead_trigger": 27.642
+        },
+        {
+          "word": "probabilities,",
+          "clean_word": "probabilities",
+          "phonemes": "p\u0279\u02cc\u0251\u02d0b\u0259b\u02c8\u026al\u1d7b\u027eiz",
+          "start": 27.657,
+          "end": 28.431,
+          "duration": 0.774,
+          "frame_ahead_trigger": 28.067
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 28.431,
+          "end": 28.562,
+          "duration": 0.131,
+          "frame_ahead_trigger": 28.841
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 28.562,
+          "end": 28.982,
+          "duration": 0.42,
+          "frame_ahead_trigger": 28.972
+        },
+        {
+          "word": "directly",
+          "clean_word": "directly",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bktli",
+          "start": 28.982,
+          "end": 29.482,
+          "duration": 0.5,
+          "frame_ahead_trigger": 29.392
+        },
+        {
+          "word": "optimizes",
+          "clean_word": "optimizes",
+          "phonemes": "\u02c8\u0251\u02d0pt\u026am\u02cca\u026az\u1d7bz",
+          "start": 29.482,
+          "end": 30.192,
+          "duration": 0.71,
+          "frame_ahead_trigger": 29.892
+        },
+        {
+          "word": "toward",
+          "clean_word": "toward",
+          "phonemes": "t\u0259w\u02c8\u0254\u02d0\u0279d",
+          "start": 30.192,
+          "end": 30.577,
+          "duration": 0.385,
+          "frame_ahead_trigger": 30.602
+        },
+        {
+          "word": "chosen",
+          "clean_word": "chosen",
+          "phonemes": "t\u0283\u02c8o\u028az\u0259n",
+          "start": 30.577,
+          "end": 30.992,
+          "duration": 0.415,
+          "frame_ahead_trigger": 30.987
+        },
+        {
+          "word": "responses",
+          "clean_word": "responses",
+          "phonemes": "\u0279\u1d7bsp\u02c8\u0251\u02d0ns\u1d7bz",
+          "start": 30.992,
+          "end": 31.487,
+          "duration": 0.495,
+          "frame_ahead_trigger": 31.402
+        },
+        {
+          "word": "without",
+          "clean_word": "without",
+          "phonemes": "w\u026a\u00f0\u02c8a\u028at",
+          "start": 31.487,
+          "end": 31.927,
+          "duration": 0.44,
+          "frame_ahead_trigger": 31.897
+        },
+        {
+          "word": "needing",
+          "clean_word": "needing",
+          "phonemes": "n\u02c8i\u02d0d\u026a\u014b",
+          "start": 31.927,
+          "end": 32.367,
+          "duration": 0.44,
+          "frame_ahead_trigger": 32.337
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 32.367,
+          "end": 32.467,
+          "duration": 0.1,
+          "frame_ahead_trigger": 32.777
+        },
+        {
+          "word": "explicit",
+          "clean_word": "explicit",
+          "phonemes": "\u025bkspl\u02c8\u026as\u026at",
+          "start": 32.467,
+          "end": 33.027,
+          "duration": 0.56,
+          "frame_ahead_trigger": 32.877
+        },
+        {
+          "word": "reward",
+          "clean_word": "reward",
+          "phonemes": "\u0279\u1d7bw\u02c8\u0254\u02d0\u0279d",
+          "start": 33.027,
+          "end": 33.517,
+          "duration": 0.49,
+          "frame_ahead_trigger": 33.437
+        },
+        {
+          "word": "function.",
+          "clean_word": "function",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259n",
+          "start": 33.517,
+          "end": 33.852,
+          "duration": 0.335,
+          "frame_ahead_trigger": 33.927
+        }
+      ],
+      "audio_duration": 8.7,
+      "slot_duration": 8.86
+    },
+    {
+      "beat_id": 5,
+      "text": "Empirically, DPO achieves higher win rates while slashing compute overhead by removing the secondary reward model and critic layers entirely.",
+      "visual_focus": "Bar chart comparing DPO against RLHF in compute cycles and success rates.",
+      "highlight_words": {
+        "win rates": "#34D399",
+        "slashing": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "DPO Architecture",
+        "action_verb": "surpasses",
+        "direct_object": "PPO Benchmarks",
+        "anchor_word": "slashing",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: EFFICIENCY",
+        "sub": "Bar chart comparing DPO against RLHF in compute cycles",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: EFFICIENCY",
+          "sub": "Bar chart comparing DPO against RLHF in compute cycles",
+          "metric_name": "Training Throughput",
+          "unit": "h",
+          "contestants": [
+            {
+              "name": "DPO",
+              "value": 1.0,
+              "display_val": "1.0h",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "PPO-RLHF",
+              "value": 4.5,
+              "display_val": "4.5h",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 450% FASTER TRAINING"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: EFFICIENCY",
+        "sub": "Bar chart comparing DPO against RLHF in compute cycles",
+        "metric_name": "Training Throughput",
+        "unit": "h",
+        "contestants": [
+          {
+            "name": "DPO",
+            "value": 1.0,
+            "display_val": "1.0h",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "PPO-RLHF",
+            "value": 4.5,
+            "display_val": "4.5h",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 450% FASTER TRAINING"
+      },
+      "start": 34.14,
+      "end": 42.16,
+      "duration": 8.02,
+      "word_timings": [
+        {
+          "word": "Empirically,",
+          "clean_word": "empirically",
+          "phonemes": "\u025bmp\u02c8\u026a\u0279\u026akli",
+          "start": 34.141,
+          "end": 34.708,
+          "duration": 0.567,
+          "frame_ahead_trigger": 34.701
+        },
+        {
+          "word": "DPO",
+          "clean_word": "dpo",
+          "phonemes": "d\u02cci\u02d0p\u02cci\u02d0\u02c8o\u028a",
+          "start": 34.708,
+          "end": 35.416,
+          "duration": 0.708,
+          "frame_ahead_trigger": 35.268
+        },
+        {
+          "word": "achieves",
+          "clean_word": "achieves",
+          "phonemes": "\u0250t\u0283\u02c8i\u02d0vz",
+          "start": 35.416,
+          "end": 35.771,
+          "duration": 0.355,
+          "frame_ahead_trigger": 35.976
+        },
+        {
+          "word": "higher",
+          "clean_word": "higher",
+          "phonemes": "h\u02c8a\u026a\u025a",
+          "start": 35.771,
+          "end": 36.026,
+          "duration": 0.255,
+          "frame_ahead_trigger": 36.331
+        },
+        {
+          "word": "win",
+          "clean_word": "win",
+          "phonemes": "w\u02c8\u026an",
+          "start": 36.026,
+          "end": 36.341,
+          "duration": 0.315,
+          "frame_ahead_trigger": 36.586
+        },
+        {
+          "word": "rates",
+          "clean_word": "rates",
+          "phonemes": "\u0279\u02c8e\u026ats",
+          "start": 36.341,
+          "end": 36.616,
+          "duration": 0.275,
+          "frame_ahead_trigger": 36.901
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 36.616,
+          "end": 36.936,
+          "duration": 0.32,
+          "frame_ahead_trigger": 37.176
+        },
+        {
+          "word": "slashing",
+          "clean_word": "slashing",
+          "phonemes": "sl\u02c8\u00e6\u0283\u026a\u014b",
+          "start": 36.936,
+          "end": 37.366,
+          "duration": 0.43,
+          "frame_ahead_trigger": 37.496
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 37.366,
+          "end": 37.766,
+          "duration": 0.4,
+          "frame_ahead_trigger": 37.926
+        },
+        {
+          "word": "overhead",
+          "clean_word": "overhead",
+          "phonemes": "\u02cco\u028av\u025ah\u02c8\u025bd",
+          "start": 37.766,
+          "end": 38.339,
+          "duration": 0.573,
+          "frame_ahead_trigger": 38.326
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 38.339,
+          "end": 38.611,
+          "duration": 0.272,
+          "frame_ahead_trigger": 38.899
+        },
+        {
+          "word": "removing",
+          "clean_word": "removing",
+          "phonemes": "\u0279\u1d7bm\u02c8u\u02d0v\u026a\u014b",
+          "start": 38.611,
+          "end": 39.046,
+          "duration": 0.435,
+          "frame_ahead_trigger": 39.171
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 39.046,
+          "end": 39.196,
+          "duration": 0.15,
+          "frame_ahead_trigger": 39.606
+        },
+        {
+          "word": "secondary",
+          "clean_word": "secondary",
+          "phonemes": "s\u02c8\u025bk\u0259nd\u025a\u0279i",
+          "start": 39.196,
+          "end": 39.741,
+          "duration": 0.545,
+          "frame_ahead_trigger": 39.756
+        },
+        {
+          "word": "reward",
+          "clean_word": "reward",
+          "phonemes": "\u0279\u1d7bw\u02c8\u0254\u02d0\u0279d",
+          "start": 39.741,
+          "end": 40.221,
+          "duration": 0.48,
+          "frame_ahead_trigger": 40.301
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 40.221,
+          "end": 40.621,
+          "duration": 0.4,
+          "frame_ahead_trigger": 40.781
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 40.621,
+          "end": 40.756,
+          "duration": 0.135,
+          "frame_ahead_trigger": 41.181
+        },
+        {
+          "word": "critic",
+          "clean_word": "critic",
+          "phonemes": "k\u0279\u02c8\u026a\u027e\u026ak",
+          "start": 40.756,
+          "end": 41.261,
+          "duration": 0.505,
+          "frame_ahead_trigger": 41.316
+        },
+        {
+          "word": "layers",
+          "clean_word": "layers",
+          "phonemes": "l\u02c8e\u026a\u025az",
+          "start": 41.261,
+          "end": 41.586,
+          "duration": 0.325,
+          "frame_ahead_trigger": 41.821
+        },
+        {
+          "word": "entirely.",
+          "clean_word": "entirely",
+          "phonemes": "\u025bnt\u02c8a\u026a\u025ali",
+          "start": 41.586,
+          "end": 42.026,
+          "duration": 0.44,
+          "frame_ahead_trigger": 42.146
+        }
+      ],
+      "audio_duration": 8.02,
+      "slot_duration": 8.17
+    },
+    {
+      "beat_id": 6,
+      "text": "Simpler training, zero sampling overhead, and state-of-the-art alignment. Follow machinoAI for deep-dives into how modern AI works under the hood.",
+      "visual_focus": "The DPO loss function smoothly looping back into the logo.",
+      "highlight_words": {
+        "Simpler": "#34D399",
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Viewer",
+        "action_verb": "follows",
+        "direct_object": "machinoAI",
+        "anchor_word": "Follow",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "layer_stack",
+        "title": "THE DPO PARADIGM",
+        "sub": "Stable alignment via direct preference optimization",
+        "accent_color": "#34D399",
+        "params": {
+          "bottom_layer": "Preference Data",
+          "mid_layer": "Log-Ratio Optimization",
+          "top_layer": "Stable Policy"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 42.31,
+      "end": 50.71,
+      "duration": 8.41,
+      "word_timings": [
+        {
+          "word": "Simpler",
+          "clean_word": "simpler",
+          "phonemes": "s\u02c8\u026ampl\u025a",
+          "start": 42.332,
+          "end": 42.697,
+          "duration": 0.365,
+          "frame_ahead_trigger": 43.042
+        },
+        {
+          "word": "training,",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 42.697,
+          "end": 43.297,
+          "duration": 0.6,
+          "frame_ahead_trigger": 43.407
+        },
+        {
+          "word": "zero",
+          "clean_word": "zero",
+          "phonemes": "z\u02c8i\u0259\u0279o\u028a",
+          "start": 43.297,
+          "end": 43.557,
+          "duration": 0.26,
+          "frame_ahead_trigger": 44.007
+        },
+        {
+          "word": "sampling",
+          "clean_word": "sampling",
+          "phonemes": "s\u02c8\u00e6mpl\u026a\u014b",
+          "start": 43.557,
+          "end": 44.132,
+          "duration": 0.575,
+          "frame_ahead_trigger": 44.267
+        },
+        {
+          "word": "overhead,",
+          "clean_word": "overhead",
+          "phonemes": "\u02cco\u028av\u025ah\u02c8\u025bd",
+          "start": 44.132,
+          "end": 44.594,
+          "duration": 0.462,
+          "frame_ahead_trigger": 44.842
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 44.594,
+          "end": 44.737,
+          "duration": 0.143,
+          "frame_ahead_trigger": 45.304
+        },
+        {
+          "word": "state-of-the-art",
+          "clean_word": "stateoftheart",
+          "phonemes": "st\u02c8e\u026a\u027e\u0254fth\u02cc\u0251\u02d0\u0279t",
+          "start": 44.737,
+          "end": 45.652,
+          "duration": 0.915,
+          "frame_ahead_trigger": 45.447
+        },
+        {
+          "word": "alignment.",
+          "clean_word": "alignment",
+          "phonemes": "\u0250l\u02c8a\u026anm\u0259nt",
+          "start": 45.652,
+          "end": 46.218,
+          "duration": 0.566,
+          "frame_ahead_trigger": 46.362
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 46.218,
+          "end": 46.642,
+          "duration": 0.424,
+          "frame_ahead_trigger": 46.928
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 46.642,
+          "end": 47.492,
+          "duration": 0.85,
+          "frame_ahead_trigger": 47.352
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 47.492,
+          "end": 47.847,
+          "duration": 0.355,
+          "frame_ahead_trigger": 48.202
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 47.847,
+          "end": 48.232,
+          "duration": 0.385,
+          "frame_ahead_trigger": 48.557
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 48.232,
+          "end": 48.542,
+          "duration": 0.31,
+          "frame_ahead_trigger": 48.942
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 48.542,
+          "end": 48.817,
+          "duration": 0.275,
+          "frame_ahead_trigger": 49.252
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 48.817,
+          "end": 49.207,
+          "duration": 0.39,
+          "frame_ahead_trigger": 49.527
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 49.207,
+          "end": 49.547,
+          "duration": 0.34,
+          "frame_ahead_trigger": 49.917
+        },
+        {
+          "word": "works",
+          "clean_word": "works",
+          "phonemes": "w\u02c8\u025c\u02d0ks",
+          "start": 49.547,
+          "end": 49.902,
+          "duration": 0.355,
+          "frame_ahead_trigger": 50.257
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 49.902,
+          "end": 50.282,
+          "duration": 0.38,
+          "frame_ahead_trigger": 50.612
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 50.282,
+          "end": 50.335,
+          "duration": 0.053,
+          "frame_ahead_trigger": 50.992
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 50.335,
+          "end": 50.567,
+          "duration": 0.232,
+          "frame_ahead_trigger": 51.045
+        }
+      ],
+      "audio_duration": 8.41,
+      "slot_duration": 8.4
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\pi_{\\theta} \\neq \\pi_{\\mathrm{actor}} + \\pi_{\\mathrm{critic}} + \\pi_{\\mathrm{reward}}$",
+      "filename": "dpo_rlhf_instability_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\pi_{\\theta}",
+          "label": "Model Policy"
+        }
+      ],
+      "svg_filename": "dpo_rlhf_instability_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{L}_{\\mathrm{PPO}} = \\mathbb{E}[\\hat{A}_t \\cdot \\log \\pi(a_t|s_t)]$",
+      "filename": "dpo_rlhf_instability_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\hat{A}_t",
+          "label": "Estimated Advantage"
+        }
+      ],
+      "svg_filename": "dpo_rlhf_instability_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$r(x, y) = \\beta \\log \\frac{\\pi_{\\theta}(y|x)}{\\pi_{\\mathrm{ref}}(y|x)}$",
+      "filename": "dpo_rlhf_instability_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "r(x, y)",
+          "label": "Reward Function"
+        }
+      ],
+      "svg_filename": "dpo_rlhf_instability_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathcal{L}_{\\mathrm{DPO}} = -\\mathbb{E}_{(x, y_w, y_l)} [\\log \\sigma(r_{\\theta}(x, y_w) - r_{\\theta}(x, y_l))]$",
+      "filename": "dpo_rlhf_instability_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "\\sigma",
+          "label": "Sigmoid"
+        }
+      ],
+      "svg_filename": "dpo_rlhf_instability_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\Delta \\mathrm{Compute} = \\frac{T_{\\mathrm{RLHF}}}{T_{\\mathrm{DPO}}} \\approx 4.5$",
+      "filename": "dpo_rlhf_instability_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "T",
+          "label": "Training Time"
+        }
+      ],
+      "svg_filename": "dpo_rlhf_instability_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "RLHF Components",
+          "color": "#EF4444",
+          "items": [
+            "Actor",
+            "Critic",
+            "Reward"
+          ]
+        },
+        {
+          "name": "DPO Pipeline",
+          "color": "#34D399",
+          "items": [
+            "Preferences",
+            "Log-Ratio"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Preference Data",
+        "target_cluster": "DPO Pipeline",
+        "token": "y_w > y_l"
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Sampling Lag",
+          "color": "#EF4444"
+        }
+      ]
+    },
+    "model_a": "DPO",
+    "model_a_specs": [
+      "Single-Stage",
+      "No Reward Model",
+      "Stable Loss"
+    ],
+    "model_b": "PPO-RLHF",
+    "model_b_specs": [
+      "Multi-Stage",
+      "Model Overload",
+      "Unstable"
+    ],
+    "divide_title": "ALIGNMENT PIPELINE DIVIDE",
+    "model_a_stat": "4.5x",
+    "model_a_stat_label": "FASTER TRAINING",
+    "model_b_stat": "1.0x",
+    "model_b_stat_label": "BASELINE",
+    "efficiency_badge": "\u26a1 COMPUTE ELIMINATION",
+    "benchmarks": [
+      {
+        "name": "Training Stability",
+        "score_a": "High",
+        "score_b": "Low"
+      },
+      {
+        "name": "Compute Cost",
+        "score_a": "1x",
+        "score_b": "4.5x"
+      }
+    ],
+    "scale_metric": "4.5x",
+    "scale_label": "Compute Efficiency Gain",
+    "bottleneck_title": "MONOLITHIC RLHF BOTTLENECK",
+    "bottleneck_desc": "Continuous sampling divergence",
+    "solution_title": "DIRECT PREFERENCE MAPPING",
+    "solution_components": "Classification via Log-Ratio",
+    "mechanism_title": "LOG-SIGMOID OPTIMIZATION",
+    "payoff_stat": "98.2%",
+    "payoff_label": "ALIGNMENT SUCCESS",
+    "payoff_sub": "Outperforming traditional PPO in response quality",
+    "payoff_hero_stat": 98.2,
+    "payoff_hero_label": "DPO Success Rate",
+    "payoff_base_stat": 94.5,
+    "payoff_base_label": "RLHF Success Rate",
+    "payoff_delta_badge": "\u26a1 +3.7% ALIGNMENT IMPROVEMENT",
+    "challenger": "DPO",
+    "incumbent": "PPO-RLHF"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: EFFICIENCY",
+    "metric_name": "Training Throughput",
+    "unit": "h",
+    "contestants": [
+      {
+        "name": "DPO",
+        "value": 1.0,
+        "display_val": "1.0h",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "PPO-RLHF",
+        "value": 4.5,
+        "display_val": "4.5h",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 450% FASTER TRAINING",
+    "radar_axes": [
+      "Stability",
+      "Throughput",
+      "Quality",
+      "Simplicity"
+    ]
+  },
+  "code_snippet": {
+    "filename": "dpo_loss.py",
+    "language": "python",
+    "lines": [
+      "def dpo_loss(policy_logprobs, ref_logprobs, labels):",
+      "diff = policy_logprobs - ref_logprobs",
+      "logits = beta * (diff_w - diff_l)",
+      "return -F.logsigmoid(logits).mean()"
+    ],
+    "highlight_lines": [
+      2,
+      3
+    ],
+    "trace_register": "\u26a1 DIRECT LOG-RATIO GRADIENT",
+    "explanation": "Calculates optimization path directly from preference log-probabilities"
+  },
+  "arxiv_id": "2305.18290",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "tldr_rerank_vs_temp",
+      "caption": "Tldr Rerank Vs Temp",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/source/figures/results/tldr_rerank_vs_temp.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_1_tldr_rerank_vs_temp.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_1_tldr_rerank_vs_temp.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "frontier",
+      "caption": "Frontier",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/source/figures/results/frontier.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_2_frontier.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_2_frontier.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "dialogue_winrate_vs_temp_rerank",
+      "caption": "Dialogue Winrate Vs Temp Rerank",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/source/figures/results/dialogue_winrate_vs_temp_rerank.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_3_dialogue_winrate_vs_temp_rerank.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_3_dialogue_winrate_vs_temp_rerank.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "tldr_winrate_vs_temp",
+      "caption": "Tldr Winrate Vs Temp",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/source/figures/results/tldr_winrate_vs_temp.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_4_tldr_winrate_vs_temp.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_4_tldr_winrate_vs_temp.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "dialogue_winrate_vs_temp",
+      "caption": "Dialogue Winrate Vs Temp",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/source/figures/results/dialogue_winrate_vs_temp.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_5_dialogue_winrate_vs_temp.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2305.18290/chalkboard_figures/fig_5_dialogue_winrate_vs_temp.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Running three distinct models for RLHF\u2014Actor, Critic, and Reward\u2014is a multi-billion parameter recipe for absolute training instability.",
+    "verdict": 61,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "DPO",
+        "model_a_score": "4.5x",
+        "model_b_name": "PPO-RLHF",
+        "model_b_score": "1.0x",
+        "delta_label": "\u26a1 COMPUTE ELIMINATION"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "GO2Vt3Tf4pk",
+    "shorts_url": "https://youtube.com/shorts/GO2Vt3Tf4pk",
+    "studio_url": "https://studio.youtube.com/video/GO2Vt3Tf4pk/edit",
+    "title": "DPO Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/dpo_rlhf_instability_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

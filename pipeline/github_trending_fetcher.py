@@ -25,6 +25,9 @@ class CodeKernelSnippet:
     highlight_lines: List[int] = field(default_factory=list)
     trace_register: str = ""
     explanation: str = ""
+    # Where the lines came from: "curated" (hand-picked for this repo), "readme"
+    # (extracted from the repo's README) or "placeholder" (generic stand-in, never shown).
+    provenance: str = "curated"
 
 
 @dataclass
@@ -61,7 +64,9 @@ class TrendingRepo:
                 "pushed_at": self.pushed_at,
                 "updated_at": self.updated_at,
             },
-            "code_snippet": asdict(self.code_kernel),
+            # Placeholder kernels are generic stand-ins, not this repo's code: omit them so
+            # the video never presents them as the repository's implementation.
+            **({"code_snippet": asdict(self.code_kernel)} if self.code_kernel.provenance != "placeholder" else {}),
             "editorial_notes": {
                 "recommended_hook": f"How {self.repo_name.split('/')[-1]} actually runs inside your GPU memory",
                 "suggested_everyday_analogy": "A shared filing cabinet where identical papers are never photocopied twice"
@@ -201,7 +206,8 @@ class GitHubTrendingFetcher:
                     lines=valid_lines,
                     highlight_lines=[1, 2],
                     trace_register="⚡ OPEN-SOURCE EXECUTION KERNEL",
-                    explanation=f"Core algorithmic loop extracted from {repo_name}."
+                    explanation=f"Core algorithmic loop extracted from {repo_name}.",
+                    provenance="readme"
                 )
 
         # Default fallback snippet
@@ -216,7 +222,8 @@ class GitHubTrendingFetcher:
             ],
             highlight_lines=[2, 3],
             trace_register="⚡ FUSED HARDWARE PIPELINE",
-            explanation=f"High-efficiency computational pipeline for {repo_name}."
+            explanation=f"High-efficiency computational pipeline for {repo_name}.",
+            provenance="placeholder"
         )
 
     def fetch_trending_repos(self, limit: int = 5) -> List[TrendingRepo]:

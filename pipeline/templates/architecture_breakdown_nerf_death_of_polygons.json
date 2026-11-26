@@ -1,0 +1,1764 @@
+{
+  "id": "nerf_death_of_polygons",
+  "title": "NeRF: The Death of Polygons",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "ARCHITECTURE BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do standard diffusion models waste compute when NeRF delivers 42.5% speedups?",
+      "visual_focus": "A sleek 3D teacup violently breaking apart into jagged wireframe triangles and low-resolution polygonal facets.",
+      "highlight_words": {
+        "clumsy, rigid polygons": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "graphics engines",
+        "action_verb": "trap",
+        "direct_object": "3D geometry",
+        "anchor_word": "polygons",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE POLYGON CAGE",
+        "sub": "50 years of rigid triangular approximations",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Triangular Mesh",
+          "stream_b_label": "Continuous Radiance Field"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 66,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE POLYGON CAGE",
+        "sub": "50 years of rigid triangular approximations",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Triangular Mesh",
+        "stream_b_label": "Continuous Radiance Field"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.97,
+      "duration": 5.97,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.015,
+          "end": 0.22,
+          "duration": 0.205,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.22,
+          "end": 0.445,
+          "duration": 0.225,
+          "frame_ahead_trigger": 0.18
+        },
+        {
+          "word": "standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 0.445,
+          "end": 0.87,
+          "duration": 0.425,
+          "frame_ahead_trigger": 0.405
+        },
+        {
+          "word": "diffusion",
+          "clean_word": "diffusion",
+          "phonemes": "d\u1d7bfj\u02c8u\u02d0\u0292\u0259n",
+          "start": 0.87,
+          "end": 1.385,
+          "duration": 0.515,
+          "frame_ahead_trigger": 0.83
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 1.385,
+          "end": 1.88,
+          "duration": 0.495,
+          "frame_ahead_trigger": 1.345
+        },
+        {
+          "word": "waste",
+          "clean_word": "waste",
+          "phonemes": "w\u02c8e\u026ast",
+          "start": 1.88,
+          "end": 2.05,
+          "duration": 0.17,
+          "frame_ahead_trigger": 1.84
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 2.05,
+          "end": 2.665,
+          "duration": 0.615,
+          "frame_ahead_trigger": 2.01
+        },
+        {
+          "word": "when",
+          "clean_word": "when",
+          "phonemes": "w\u02cc\u025bn",
+          "start": 2.665,
+          "end": 2.91,
+          "duration": 0.245,
+          "frame_ahead_trigger": 2.625
+        },
+        {
+          "word": "NeRF",
+          "clean_word": "nerf",
+          "phonemes": "n\u02c8i\u02d0 \u02cc\u0251\u02d0\u0279\u0279\u02c8\u025bf",
+          "start": 2.91,
+          "end": 3.545,
+          "duration": 0.635,
+          "frame_ahead_trigger": 2.87
+        },
+        {
+          "word": "delivers",
+          "clean_word": "delivers",
+          "phonemes": "d\u1d7bl\u02c8\u026av\u025az",
+          "start": 3.545,
+          "end": 4.05,
+          "duration": 0.505,
+          "frame_ahead_trigger": 3.505
+        },
+        {
+          "word": "42.5%",
+          "clean_word": "425",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279h\u02c8\u028cnd\u0279\u026ad tw\u02c8\u025bnti f\u02c8a\u026av",
+          "start": 4.05,
+          "end": 5.365,
+          "duration": 1.315,
+          "frame_ahead_trigger": 4.01
+        },
+        {
+          "word": "speedups?",
+          "clean_word": "speedups",
+          "phonemes": "sp\u02c8i\u02d0d\u028cps",
+          "start": 5.365,
+          "end": 5.9,
+          "duration": 0.535,
+          "frame_ahead_trigger": 5.325
+        }
+      ],
+      "audio_duration": 5.97,
+      "slot_duration": 6.12
+    },
+    {
+      "beat_id": 2,
+      "text": "Classic polygonal meshes shatter on transparent glass and fine hair. They consume massive memory while completely failing to capture dynamic lighting.",
+      "visual_focus": "Camera rays bouncing off an opaque triangular mesh, producing flat unnatural artifacts on shiny glass reflections.",
+      "highlight_words": {
+        "shatter": "#EF4444",
+        "dynamic lighting": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "triangular meshes",
+        "action_verb": "shatter",
+        "direct_object": "specular reflections",
+        "anchor_word": "lighting",
+        "semantic_role": "bottleneck_constraint"
+      },
+      "visual_blueprint": {
+        "layout": "projection_rays",
+        "title": "SPECULAR FAILURE",
+        "sub": "Meshes cannot model view-dependent radiance",
+        "accent_color": "#EF4444",
+        "params": {
+          "ray_count": 8,
+          "reflection_loss": "HIGH",
+          "memory_overhead": "O(N^2) Vertices"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "projection_rays",
+        "title": "SPECULAR FAILURE",
+        "sub": "Meshes cannot model view-dependent radiance",
+        "accent_color": "#EF4444",
+        "ray_count": 8,
+        "reflection_loss": "HIGH",
+        "memory_overhead": "O(N^2) Vertices"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.12,
+      "end": 14.36,
+      "duration": 8.23,
+      "word_timings": [
+        {
+          "word": "Classic",
+          "clean_word": "classic",
+          "phonemes": "kl\u02c8\u00e6s\u026ak",
+          "start": 6.153,
+          "end": 6.663,
+          "duration": 0.51,
+          "frame_ahead_trigger": 6.263
+        },
+        {
+          "word": "polygonal",
+          "clean_word": "polygonal",
+          "phonemes": "p\u02cc\u0251\u02d0l\u02c8\u026a\u0261\u0259n\u0259l",
+          "start": 6.663,
+          "end": 7.323,
+          "duration": 0.66,
+          "frame_ahead_trigger": 6.773
+        },
+        {
+          "word": "meshes",
+          "clean_word": "meshes",
+          "phonemes": "m\u02c8\u025b\u0283\u1d7bz",
+          "start": 7.323,
+          "end": 7.673,
+          "duration": 0.35,
+          "frame_ahead_trigger": 7.433
+        },
+        {
+          "word": "shatter",
+          "clean_word": "shatter",
+          "phonemes": "\u0283\u02c8\u00e6\u027e\u025a",
+          "start": 7.673,
+          "end": 7.953,
+          "duration": 0.28,
+          "frame_ahead_trigger": 7.783
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 7.953,
+          "end": 8.153,
+          "duration": 0.2,
+          "frame_ahead_trigger": 8.063
+        },
+        {
+          "word": "transparent",
+          "clean_word": "transparent",
+          "phonemes": "t\u0279\u00e6nsp\u02c8\u00e6\u0279\u0259nt",
+          "start": 8.153,
+          "end": 8.843,
+          "duration": 0.69,
+          "frame_ahead_trigger": 8.263
+        },
+        {
+          "word": "glass",
+          "clean_word": "glass",
+          "phonemes": "\u0261l\u02c8\u00e6s",
+          "start": 8.843,
+          "end": 9.138,
+          "duration": 0.295,
+          "frame_ahead_trigger": 8.953
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 9.138,
+          "end": 9.316,
+          "duration": 0.177,
+          "frame_ahead_trigger": 9.248
+        },
+        {
+          "word": "fine",
+          "clean_word": "fine",
+          "phonemes": "f\u02c8a\u026an",
+          "start": 9.316,
+          "end": 9.614,
+          "duration": 0.298,
+          "frame_ahead_trigger": 9.426
+        },
+        {
+          "word": "hair.",
+          "clean_word": "hair",
+          "phonemes": "h\u02c8\u025b\u0279",
+          "start": 9.614,
+          "end": 9.853,
+          "duration": 0.239,
+          "frame_ahead_trigger": 9.724
+        },
+        {
+          "word": "They",
+          "clean_word": "they",
+          "phonemes": "\u00f0e\u026a",
+          "start": 9.853,
+          "end": 10.032,
+          "duration": 0.179,
+          "frame_ahead_trigger": 9.963
+        },
+        {
+          "word": "consume",
+          "clean_word": "consume",
+          "phonemes": "k\u0259ns\u02c8u\u02d0m",
+          "start": 10.032,
+          "end": 10.518,
+          "duration": 0.487,
+          "frame_ahead_trigger": 10.142
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 10.518,
+          "end": 10.963,
+          "duration": 0.445,
+          "frame_ahead_trigger": 10.628
+        },
+        {
+          "word": "memory",
+          "clean_word": "memory",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279i",
+          "start": 10.963,
+          "end": 11.338,
+          "duration": 0.375,
+          "frame_ahead_trigger": 11.073
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 11.338,
+          "end": 11.583,
+          "duration": 0.245,
+          "frame_ahead_trigger": 11.448
+        },
+        {
+          "word": "completely",
+          "clean_word": "completely",
+          "phonemes": "k\u0259mpl\u02c8i\u02d0tli",
+          "start": 11.583,
+          "end": 12.313,
+          "duration": 0.73,
+          "frame_ahead_trigger": 11.693
+        },
+        {
+          "word": "failing",
+          "clean_word": "failing",
+          "phonemes": "f\u02c8e\u026al\u026a\u014b",
+          "start": 12.313,
+          "end": 12.693,
+          "duration": 0.38,
+          "frame_ahead_trigger": 12.423
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 12.693,
+          "end": 12.843,
+          "duration": 0.15,
+          "frame_ahead_trigger": 12.803
+        },
+        {
+          "word": "capture",
+          "clean_word": "capture",
+          "phonemes": "k\u02c8\u00e6pt\u0283\u025a",
+          "start": 12.843,
+          "end": 13.173,
+          "duration": 0.33,
+          "frame_ahead_trigger": 12.953
+        },
+        {
+          "word": "dynamic",
+          "clean_word": "dynamic",
+          "phonemes": "da\u026an\u02c8\u00e6m\u026ak",
+          "start": 13.173,
+          "end": 13.848,
+          "duration": 0.675,
+          "frame_ahead_trigger": 13.283
+        },
+        {
+          "word": "lighting.",
+          "clean_word": "lighting",
+          "phonemes": "l\u02c8a\u026a\u027e\u026a\u014b",
+          "start": 13.848,
+          "end": 14.208,
+          "duration": 0.36,
+          "frame_ahead_trigger": 13.958
+        }
+      ],
+      "audio_duration": 8.23,
+      "slot_duration": 8.39
+    },
+    {
+      "beat_id": 3,
+      "text": "Enter NeRF. Instead of building flat surfaces. It models 3D space as a continuous volumetric field queried by camera rays.",
+      "visual_focus": "A camera casting straight rays into a glowing 3D continuous volume, sampling density points in continuous space.",
+      "highlight_words": {
+        "continuous volumetric field": "#10B981"
+      },
+      "svo_action": {
+        "subject": "NeRF",
+        "action_verb": "models",
+        "direct_object": "volumetric space",
+        "anchor_word": "continuous",
+        "semantic_role": "breakthrough_introduction"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "NERF ARCHITECTURE",
+        "sub": "A camera casting straight rays into a glowing 3D continuous volum",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.png",
+          "arxiv_id": "2003.08934",
+          "title": "NERF ARCHITECTURE",
+          "sub": "A camera casting straight rays into a glowing 3D continuous volum",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Pipeline V2 Small",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.png",
+        "arxiv_id": "2003.08934",
+        "title": "NERF ARCHITECTURE",
+        "sub": "A camera casting straight rays into a glowing 3D continuous volum",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Pipeline V2 Small",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 14.51,
+      "end": 22.49,
+      "duration": 7.98,
+      "word_timings": [
+        {
+          "word": "Enter",
+          "clean_word": "enter",
+          "phonemes": "\u02c8\u025bnt\u025a",
+          "start": 14.513,
+          "end": 14.713,
+          "duration": 0.2,
+          "frame_ahead_trigger": 14.773
+        },
+        {
+          "word": "NeRF.",
+          "clean_word": "nerf",
+          "phonemes": "n\u02c8i\u02d0 \u02cc\u0251\u02d0\u0279\u0279\u02c8\u025bf",
+          "start": 14.713,
+          "end": 15.566,
+          "duration": 0.853,
+          "frame_ahead_trigger": 14.973
+        },
+        {
+          "word": "Instead",
+          "clean_word": "instead",
+          "phonemes": "\u026anst\u02c8\u025bd",
+          "start": 15.566,
+          "end": 16.018,
+          "duration": 0.452,
+          "frame_ahead_trigger": 15.826
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 16.018,
+          "end": 16.138,
+          "duration": 0.12,
+          "frame_ahead_trigger": 16.278
+        },
+        {
+          "word": "building",
+          "clean_word": "building",
+          "phonemes": "b\u02c8\u026ald\u026a\u014b",
+          "start": 16.138,
+          "end": 16.478,
+          "duration": 0.34,
+          "frame_ahead_trigger": 16.398
+        },
+        {
+          "word": "flat",
+          "clean_word": "flat",
+          "phonemes": "fl\u02c8\u00e6t",
+          "start": 16.478,
+          "end": 16.843,
+          "duration": 0.365,
+          "frame_ahead_trigger": 16.738
+        },
+        {
+          "word": "surfaces.",
+          "clean_word": "surfaces",
+          "phonemes": "s\u02c8\u025c\u02d0f\u026as\u1d7bz",
+          "start": 16.843,
+          "end": 17.308,
+          "duration": 0.465,
+          "frame_ahead_trigger": 17.103
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 17.308,
+          "end": 17.439,
+          "duration": 0.131,
+          "frame_ahead_trigger": 17.568
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 17.439,
+          "end": 17.873,
+          "duration": 0.434,
+          "frame_ahead_trigger": 17.699
+        },
+        {
+          "word": "3D",
+          "clean_word": "3d",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0 d\u02c8i\u02d0",
+          "start": 17.873,
+          "end": 18.563,
+          "duration": 0.69,
+          "frame_ahead_trigger": 18.133
+        },
+        {
+          "word": "space",
+          "clean_word": "space",
+          "phonemes": "sp\u02c8e\u026as",
+          "start": 18.563,
+          "end": 18.853,
+          "duration": 0.29,
+          "frame_ahead_trigger": 18.823
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 18.853,
+          "end": 18.96,
+          "duration": 0.107,
+          "frame_ahead_trigger": 19.113
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 18.96,
+          "end": 19.073,
+          "duration": 0.113,
+          "frame_ahead_trigger": 19.22
+        },
+        {
+          "word": "continuous",
+          "clean_word": "continuous",
+          "phonemes": "k\u0259nt\u02c8\u026anju\u02d0\u0259s",
+          "start": 19.073,
+          "end": 19.943,
+          "duration": 0.87,
+          "frame_ahead_trigger": 19.333
+        },
+        {
+          "word": "volumetric",
+          "clean_word": "volumetric",
+          "phonemes": "v\u02cc\u0251\u02d0lju\u02d0m\u02c8\u025bt\u0279\u026ak",
+          "start": 19.943,
+          "end": 20.783,
+          "duration": 0.84,
+          "frame_ahead_trigger": 20.203
+        },
+        {
+          "word": "field",
+          "clean_word": "field",
+          "phonemes": "f\u02c8i\u02d0ld",
+          "start": 20.783,
+          "end": 21.083,
+          "duration": 0.3,
+          "frame_ahead_trigger": 21.043
+        },
+        {
+          "word": "queried",
+          "clean_word": "queried",
+          "phonemes": "kw\u02c8i\u0259\u0279\u026ad",
+          "start": 21.083,
+          "end": 21.608,
+          "duration": 0.525,
+          "frame_ahead_trigger": 21.343
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 21.608,
+          "end": 21.828,
+          "duration": 0.22,
+          "frame_ahead_trigger": 21.868
+        },
+        {
+          "word": "camera",
+          "clean_word": "camera",
+          "phonemes": "k\u02c8\u00e6m\u0279\u0259",
+          "start": 21.828,
+          "end": 22.12,
+          "duration": 0.292,
+          "frame_ahead_trigger": 22.088
+        },
+        {
+          "word": "rays.",
+          "clean_word": "rays",
+          "phonemes": "\u0279\u02c8e\u026az",
+          "start": 22.12,
+          "end": 22.413,
+          "duration": 0.293,
+          "frame_ahead_trigger": 22.38
+        }
+      ],
+      "audio_duration": 7.98,
+      "slot_duration": 8.13
+    },
+    {
+      "beat_id": 4,
+      "text": "A compact neural network takes 5D coordinates. Spatial position plus viewing direction. And outputs volume density and view-dependent color along each ray.",
+      "visual_focus": "Chalkboard schematic showing inputs (x, y, z, theta, phi) entering a dense MLP, emitting precise RGB color and density sigma.",
+      "highlight_words": {
+        "5D coordinates": "#38BDF8",
+        "volume density and view-dependent color": "#10B981"
+      },
+      "svo_action": {
+        "subject": "neural network",
+        "action_verb": "outputs",
+        "direct_object": "radiance and density",
+        "anchor_word": "5D coordinates",
+        "semantic_role": "computational_kernel"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: NERF: THE DEATH OF",
+        "sub": "Chalkboard schematic showing inputs (x, y, z, theta, phi) enterin",
+        "params": {
+          "title": "KERNEL CODE: NERF: THE DEATH OF",
+          "sub": "Chalkboard schematic showing inputs (x, y, z, theta, phi) enterin",
+          "filename": "core_render.py",
+          "language": "python",
+          "lines": [
+            "def get_radiance(x, d):",
+            "density, color = mlp(x, d)",
+            "return volume_render(density, color)",
+            "weights = compute_transmittance(density)"
+          ],
+          "highlight_lines": [
+            1,
+            2
+          ],
+          "trace_register": "\u26a1 VOLUMETRIC RADIANCE ACCUMULATION",
+          "delta_badge": "Implicit ray-tracing integration"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: NERF: THE DEATH OF",
+        "sub": "Chalkboard schematic showing inputs (x, y, z, theta, phi) enterin",
+        "filename": "core_render.py",
+        "language": "python",
+        "lines": [
+          "def get_radiance(x, d):",
+          "density, color = mlp(x, d)",
+          "return volume_render(density, color)",
+          "weights = compute_transmittance(density)"
+        ],
+        "highlight_lines": [
+          1,
+          2
+        ],
+        "trace_register": "\u26a1 VOLUMETRIC RADIANCE ACCUMULATION",
+        "delta_badge": "Implicit ray-tracing integration"
+      },
+      "start": 22.64,
+      "end": 31.94,
+      "duration": 9.3,
+      "word_timings": [
+        {
+          "word": "A",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 22.652,
+          "end": 22.887,
+          "duration": 0.235,
+          "frame_ahead_trigger": 23.062
+        },
+        {
+          "word": "compact",
+          "clean_word": "compact",
+          "phonemes": "k\u0259mp\u02c8\u00e6kt",
+          "start": 22.887,
+          "end": 23.397,
+          "duration": 0.51,
+          "frame_ahead_trigger": 23.297
+        },
+        {
+          "word": "neural",
+          "clean_word": "neural",
+          "phonemes": "n\u02c8\u028a\u0279\u0279\u0259l",
+          "start": 23.397,
+          "end": 23.742,
+          "duration": 0.345,
+          "frame_ahead_trigger": 23.807
+        },
+        {
+          "word": "network",
+          "clean_word": "network",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0k",
+          "start": 23.742,
+          "end": 24.162,
+          "duration": 0.42,
+          "frame_ahead_trigger": 24.152
+        },
+        {
+          "word": "takes",
+          "clean_word": "takes",
+          "phonemes": "t\u02c8e\u026aks",
+          "start": 24.162,
+          "end": 24.522,
+          "duration": 0.36,
+          "frame_ahead_trigger": 24.572
+        },
+        {
+          "word": "5D",
+          "clean_word": "5d",
+          "phonemes": "f\u02c8a\u026av d\u02c8i\u02d0",
+          "start": 24.522,
+          "end": 25.052,
+          "duration": 0.53,
+          "frame_ahead_trigger": 24.932
+        },
+        {
+          "word": "coordinates.",
+          "clean_word": "coordinates",
+          "phonemes": "ko\u028a\u02c8\u0254\u02d0\u0279d\u1d7bn\u0259ts",
+          "start": 25.052,
+          "end": 25.902,
+          "duration": 0.85,
+          "frame_ahead_trigger": 25.462
+        },
+        {
+          "word": "Spatial",
+          "clean_word": "spatial",
+          "phonemes": "sp\u02c8e\u026a\u0283\u0259l",
+          "start": 25.902,
+          "end": 26.372,
+          "duration": 0.47,
+          "frame_ahead_trigger": 26.312
+        },
+        {
+          "word": "position",
+          "clean_word": "position",
+          "phonemes": "p\u0259z\u02c8\u026a\u0283\u0259n",
+          "start": 26.372,
+          "end": 26.702,
+          "duration": 0.33,
+          "frame_ahead_trigger": 26.782
+        },
+        {
+          "word": "plus",
+          "clean_word": "plus",
+          "phonemes": "pl\u02c8\u028cs",
+          "start": 26.702,
+          "end": 27.047,
+          "duration": 0.345,
+          "frame_ahead_trigger": 27.112
+        },
+        {
+          "word": "viewing",
+          "clean_word": "viewing",
+          "phonemes": "vj\u02c8u\u02d0\u026a\u014b",
+          "start": 27.047,
+          "end": 27.457,
+          "duration": 0.41,
+          "frame_ahead_trigger": 27.457
+        },
+        {
+          "word": "direction.",
+          "clean_word": "direction",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bk\u0283\u0259n",
+          "start": 27.457,
+          "end": 27.988,
+          "duration": 0.532,
+          "frame_ahead_trigger": 27.867
+        },
+        {
+          "word": "And",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 27.988,
+          "end": 28.162,
+          "duration": 0.174,
+          "frame_ahead_trigger": 28.398
+        },
+        {
+          "word": "outputs",
+          "clean_word": "outputs",
+          "phonemes": "\u02c8a\u028atp\u02cc\u028ats",
+          "start": 28.162,
+          "end": 28.657,
+          "duration": 0.494,
+          "frame_ahead_trigger": 28.572
+        },
+        {
+          "word": "volume",
+          "clean_word": "volume",
+          "phonemes": "v\u02c8\u0251\u02d0lju\u02d0m",
+          "start": 28.657,
+          "end": 29.207,
+          "duration": 0.55,
+          "frame_ahead_trigger": 29.067
+        },
+        {
+          "word": "density",
+          "clean_word": "density",
+          "phonemes": "d\u02c8\u025bns\u1d7b\u027ei",
+          "start": 29.207,
+          "end": 29.687,
+          "duration": 0.48,
+          "frame_ahead_trigger": 29.617
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 29.687,
+          "end": 29.852,
+          "duration": 0.165,
+          "frame_ahead_trigger": 30.097
+        },
+        {
+          "word": "view-dependent",
+          "clean_word": "viewdependent",
+          "phonemes": "vj\u02c8u\u02d0d\u026ap\u02cc\u025bnd\u0259nt",
+          "start": 29.852,
+          "end": 30.737,
+          "duration": 0.885,
+          "frame_ahead_trigger": 30.262
+        },
+        {
+          "word": "color",
+          "clean_word": "color",
+          "phonemes": "k\u02c8\u028cl\u025a",
+          "start": 30.737,
+          "end": 31.027,
+          "duration": 0.29,
+          "frame_ahead_trigger": 31.147
+        },
+        {
+          "word": "along",
+          "clean_word": "along",
+          "phonemes": "\u0250l\u02c8\u0254\u014b",
+          "start": 31.027,
+          "end": 31.277,
+          "duration": 0.25,
+          "frame_ahead_trigger": 31.437
+        },
+        {
+          "word": "each",
+          "clean_word": "each",
+          "phonemes": "\u02c8i\u02d0t\u0283",
+          "start": 31.277,
+          "end": 31.562,
+          "duration": 0.285,
+          "frame_ahead_trigger": 31.687
+        },
+        {
+          "word": "ray.",
+          "clean_word": "ray",
+          "phonemes": "\u0279\u02c8e\u026a",
+          "start": 31.562,
+          "end": 31.817,
+          "duration": 0.255,
+          "frame_ahead_trigger": 31.972
+        }
+      ],
+      "audio_duration": 9.3,
+      "slot_duration": 9.45
+    },
+    {
+      "beat_id": 5,
+      "text": "NeRF achieves thirty-one point five decibels in reconstruction quality. Outperforming traditional mesh rendering by over forty percent.",
+      "visual_focus": "Horizontal benchmark bars showing NeRF surging past Classic Mesh in PSNR accuracy with a glowing green victory badge.",
+      "highlight_words": {
+        "thirty-one point five decibels": "#10B981",
+        "forty percent": "#34D399"
+      },
+      "svo_action": {
+        "subject": "NeRF",
+        "action_verb": "outperforms",
+        "direct_object": "classic mesh baseline",
+        "anchor_word": "decibels",
+        "semantic_role": "empirical_proof"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: PSNR ACCURACY",
+        "sub": "Horizontal benchmark bars showing NeRF surging past",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: PSNR ACCURACY",
+          "sub": "Horizontal benchmark bars showing NeRF surging past",
+          "metric_name": "Peak Signal to Noise Ratio",
+          "unit": "dB",
+          "contestants": [
+            {
+              "name": "NeRF",
+              "value": 31.5,
+              "display_val": "31.5 dB",
+              "is_hero": true,
+              "color": "#34D399"
+            },
+            {
+              "name": "Classic Mesh",
+              "value": 22.1,
+              "display_val": "22.1 dB",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +42.5% SOTA QUALITY GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: PSNR ACCURACY",
+        "sub": "Horizontal benchmark bars showing NeRF surging past",
+        "metric_name": "Peak Signal to Noise Ratio",
+        "unit": "dB",
+        "contestants": [
+          {
+            "name": "NeRF",
+            "value": 31.5,
+            "display_val": "31.5 dB",
+            "is_hero": true,
+            "color": "#34D399"
+          },
+          {
+            "name": "Classic Mesh",
+            "value": 22.1,
+            "display_val": "22.1 dB",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +42.5% SOTA QUALITY GAIN"
+      },
+      "start": 32.09,
+      "end": 39.92,
+      "duration": 7.83,
+      "word_timings": [
+        {
+          "word": "NeRF",
+          "clean_word": "nerf",
+          "phonemes": "n\u02c8i\u02d0 \u02cc\u0251\u02d0\u0279\u0279\u02c8\u025bf",
+          "start": 32.093,
+          "end": 32.828,
+          "duration": 0.735,
+          "frame_ahead_trigger": 32.653
+        },
+        {
+          "word": "achieves",
+          "clean_word": "achieves",
+          "phonemes": "\u0250t\u0283\u02c8i\u02d0vz",
+          "start": 32.828,
+          "end": 33.253,
+          "duration": 0.425,
+          "frame_ahead_trigger": 33.388
+        },
+        {
+          "word": "thirty-one",
+          "clean_word": "thirtyone",
+          "phonemes": "\u03b8\u02cc\u025c\u02d0\u027e\u026aw\u02c8\u028cn",
+          "start": 33.253,
+          "end": 33.748,
+          "duration": 0.495,
+          "frame_ahead_trigger": 33.813
+        },
+        {
+          "word": "point",
+          "clean_word": "point",
+          "phonemes": "p\u02c8\u0254\u026ant",
+          "start": 33.748,
+          "end": 34.158,
+          "duration": 0.41,
+          "frame_ahead_trigger": 34.308
+        },
+        {
+          "word": "five",
+          "clean_word": "five",
+          "phonemes": "f\u02c8a\u026av",
+          "start": 34.158,
+          "end": 34.478,
+          "duration": 0.32,
+          "frame_ahead_trigger": 34.718
+        },
+        {
+          "word": "decibels",
+          "clean_word": "decibels",
+          "phonemes": "d\u02c8\u025bs\u1d7bb\u0259lz",
+          "start": 34.478,
+          "end": 34.898,
+          "duration": 0.42,
+          "frame_ahead_trigger": 35.038
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 34.898,
+          "end": 35.093,
+          "duration": 0.195,
+          "frame_ahead_trigger": 35.458
+        },
+        {
+          "word": "reconstruction",
+          "clean_word": "reconstruction",
+          "phonemes": "\u0279\u02cci\u02d0k\u0259nst\u0279\u02c8\u028ck\u0283\u0259n",
+          "start": 35.093,
+          "end": 35.888,
+          "duration": 0.795,
+          "frame_ahead_trigger": 35.653
+        },
+        {
+          "word": "quality.",
+          "clean_word": "quality",
+          "phonemes": "kw\u02c8\u0254l\u1d7b\u027ei",
+          "start": 35.888,
+          "end": 36.414,
+          "duration": 0.526,
+          "frame_ahead_trigger": 36.448
+        },
+        {
+          "word": "Outperforming",
+          "clean_word": "outperforming",
+          "phonemes": "a\u028atp\u025af\u02c8\u0254\u02d0\u0279m\u026a\u014b",
+          "start": 36.414,
+          "end": 37.128,
+          "duration": 0.714,
+          "frame_ahead_trigger": 36.974
+        },
+        {
+          "word": "traditional",
+          "clean_word": "traditional",
+          "phonemes": "t\u0279\u0250d\u02c8\u026a\u0283\u0259n\u0259l",
+          "start": 37.128,
+          "end": 37.768,
+          "duration": 0.64,
+          "frame_ahead_trigger": 37.688
+        },
+        {
+          "word": "mesh",
+          "clean_word": "mesh",
+          "phonemes": "m\u02c8\u025b\u0283",
+          "start": 37.768,
+          "end": 37.913,
+          "duration": 0.145,
+          "frame_ahead_trigger": 38.328
+        },
+        {
+          "word": "rendering",
+          "clean_word": "rendering",
+          "phonemes": "\u0279\u02c8\u025bnd\u025a\u0279\u026a\u014b",
+          "start": 37.913,
+          "end": 38.443,
+          "duration": 0.53,
+          "frame_ahead_trigger": 38.473
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 38.443,
+          "end": 38.663,
+          "duration": 0.22,
+          "frame_ahead_trigger": 39.003
+        },
+        {
+          "word": "over",
+          "clean_word": "over",
+          "phonemes": "\u02c8o\u028av\u025a",
+          "start": 38.663,
+          "end": 38.918,
+          "duration": 0.255,
+          "frame_ahead_trigger": 39.223
+        },
+        {
+          "word": "forty",
+          "clean_word": "forty",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279\u027ei",
+          "start": 38.918,
+          "end": 39.363,
+          "duration": 0.445,
+          "frame_ahead_trigger": 39.478
+        },
+        {
+          "word": "percent.",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 39.363,
+          "end": 39.738,
+          "duration": 0.375,
+          "frame_ahead_trigger": 39.923
+        }
+      ],
+      "audio_duration": 7.83,
+      "slot_duration": 7.98
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into how frontier machine learning is replacing legacy algorithms under the hood.",
+      "visual_focus": "The rendered 3D scene smoothly spinning 360 degrees in photorealistic fidelity as the machinoAI brand emblem locks into place.",
+      "highlight_words": {
+        "machinoAI": "#38BDF8",
+        "replacing legacy algorithms": "#10B981"
+      },
+      "svo_action": {
+        "subject": "viewer",
+        "action_verb": "follow",
+        "direct_object": "machinoAI",
+        "anchor_word": "deep-dives",
+        "semantic_role": "call_to_action"
+      },
+      "visual_blueprint": {
+        "layout": "layer_stack",
+        "title": "machinoAI // THE NEXT FRONTIER",
+        "sub": "Deconstructing frontier AI architectures",
+        "accent_color": "#34D399",
+        "params": {
+          "bottom_layer": "Geometry",
+          "mid_layer": "Radiance Field",
+          "top_layer": "Photorealism"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 40.07,
+      "end": 47.0,
+      "duration": 6.93,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 40.082,
+          "end": 40.482,
+          "duration": 0.4,
+          "frame_ahead_trigger": 40.792
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 40.482,
+          "end": 41.462,
+          "duration": 0.98,
+          "frame_ahead_trigger": 41.192
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 41.462,
+          "end": 41.627,
+          "duration": 0.165,
+          "frame_ahead_trigger": 42.172
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 41.627,
+          "end": 41.952,
+          "duration": 0.325,
+          "frame_ahead_trigger": 42.337
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 41.952,
+          "end": 42.477,
+          "duration": 0.525,
+          "frame_ahead_trigger": 42.662
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 42.477,
+          "end": 42.837,
+          "duration": 0.36,
+          "frame_ahead_trigger": 43.187
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 42.837,
+          "end": 43.122,
+          "duration": 0.285,
+          "frame_ahead_trigger": 43.547
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 43.122,
+          "end": 43.527,
+          "duration": 0.405,
+          "frame_ahead_trigger": 43.832
+        },
+        {
+          "word": "machine",
+          "clean_word": "machine",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0n",
+          "start": 43.527,
+          "end": 44.002,
+          "duration": 0.475,
+          "frame_ahead_trigger": 44.237
+        },
+        {
+          "word": "learning",
+          "clean_word": "learning",
+          "phonemes": "l\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 44.002,
+          "end": 44.377,
+          "duration": 0.374,
+          "frame_ahead_trigger": 44.712
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 44.377,
+          "end": 44.494,
+          "duration": 0.118,
+          "frame_ahead_trigger": 45.087
+        },
+        {
+          "word": "replacing",
+          "clean_word": "replacing",
+          "phonemes": "\u0279\u1d7bpl\u02c8e\u026as\u026a\u014b",
+          "start": 44.494,
+          "end": 45.137,
+          "duration": 0.643,
+          "frame_ahead_trigger": 45.204
+        },
+        {
+          "word": "legacy",
+          "clean_word": "legacy",
+          "phonemes": "l\u02c8\u025b\u0261\u0259si",
+          "start": 45.137,
+          "end": 45.517,
+          "duration": 0.38,
+          "frame_ahead_trigger": 45.847
+        },
+        {
+          "word": "algorithms",
+          "clean_word": "algorithms",
+          "phonemes": "\u02c8\u00e6l\u0261\u025a\u0279\u02cc\u026a\u03b8\u0259mz",
+          "start": 45.517,
+          "end": 46.162,
+          "duration": 0.645,
+          "frame_ahead_trigger": 46.227
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 46.162,
+          "end": 46.472,
+          "duration": 0.31,
+          "frame_ahead_trigger": 46.872
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 46.472,
+          "end": 46.572,
+          "duration": 0.1,
+          "frame_ahead_trigger": 47.182
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 46.572,
+          "end": 46.847,
+          "duration": 0.275,
+          "frame_ahead_trigger": 47.282
+        }
+      ],
+      "audio_duration": 6.93,
+      "slot_duration": 6.93
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$V = \\{v_1, \\dots, v_n\\} \\in \\mathbb{R}^3$",
+      "filename": "nerf_death_of_polygons_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "V",
+          "label": "Vertex Set"
+        },
+        {
+          "term": "v_n",
+          "label": "3D Polygons"
+        }
+      ],
+      "svg_filename": "nerf_death_of_polygons_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(V) \\to \\infty \\text{ for fog } \\sigma(x,y,z) > 0$",
+      "filename": "nerf_death_of_polygons_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\sigma",
+          "label": "Volumetric Density"
+        }
+      ],
+      "svg_filename": "nerf_death_of_polygons_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$F_{\\Theta}: (x, y, z, \\theta, \\phi) \\to (c, \\sigma)$",
+      "filename": "nerf_death_of_polygons_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "F_{\\Theta}",
+          "label": "MLP Function"
+        },
+        {
+          "term": "c, \\sigma",
+          "label": "RGB + Density"
+        }
+      ],
+      "svg_filename": "nerf_death_of_polygons_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$C(r) = \\int_{t_n}^{t_f} T(t) \\sigma(r(t)) c(r(t), d) dt$",
+      "filename": "nerf_death_of_polygons_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "T(t)",
+          "label": "Accumulated Transmittance"
+        }
+      ],
+      "svg_filename": "nerf_death_of_polygons_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{PSNR}_{NeRF} > \\mathrm{PSNR}_{Mesh}$",
+      "filename": "nerf_death_of_polygons_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "PSNR",
+          "label": "Peak Signal to Noise"
+        }
+      ],
+      "svg_filename": "nerf_death_of_polygons_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "POLYGONS",
+          "color": "#EF4444",
+          "items": [
+            "vertex",
+            "mesh",
+            "triangle"
+          ]
+        },
+        {
+          "name": "NEURAL",
+          "color": "#34D399",
+          "items": [
+            "radiance",
+            "MLP",
+            "density"
+          ]
+        },
+        {
+          "name": "RENDERING",
+          "color": "#F59E0B",
+          "items": [
+            "ray",
+            "color",
+            "view"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"coordinate\"",
+        "target_cluster": "NEURAL",
+        "token": "\"coordinate\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Vertex Hard-Coding",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Occlusion Loss",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "NeRF Architecture",
+    "model_a_specs": [
+      "Fully Connected MLP",
+      "Volumetric Integration",
+      "5D Input Space"
+    ],
+    "model_b": "Classical Mesh Rendering",
+    "model_b_specs": [
+      "Triangle Polygons",
+      "Hard Surface Projection",
+      "Discrete Vertices"
+    ],
+    "divide_title": "MESH VS RADIANCE DIVIDE",
+    "model_a_stat": "31.5dB",
+    "model_a_stat_label": "NEURAL RENDERING PSNR",
+    "model_b_stat": "22.1dB",
+    "model_b_stat_label": "MESH RENDERING PSNR",
+    "efficiency_badge": "\u26a1 +42.5% QUALITY GAIN",
+    "benchmarks": [
+      {
+        "name": "Rendering Quality",
+        "score_a": "31.5dB",
+        "score_b": "22.1dB"
+      },
+      {
+        "name": "Fog Handling",
+        "score_a": "Perfect",
+        "score_b": "Fail"
+      },
+      {
+        "name": "View Synthesis",
+        "score_a": "Differentiable",
+        "score_b": "Static"
+      }
+    ],
+    "scale_metric": "5D",
+    "scale_label": "Input Dimensionality",
+    "bottleneck_title": "MONOLITHIC MESH BOTTLENECK",
+    "bottleneck_desc": "Geometric vertex constraint failure",
+    "solution_title": "NEURAL RADIANCE PROJECTION",
+    "solution_components": "MLP Based Volumetric Function",
+    "mechanism_title": "STRUCTURED RAY INTEGRATION",
+    "payoff_stat": "42.5%",
+    "payoff_label": "QUALITY IMPROVEMENT",
+    "payoff_sub": "NeRF vs Baseline Meshes",
+    "payoff_hero_stat": 31.5,
+    "payoff_hero_label": "NeRF PSNR",
+    "payoff_base_stat": 22.1,
+    "payoff_base_label": "Mesh PSNR",
+    "payoff_delta_badge": "\u26a1 +42.5% PSNR RECOVERY GAIN",
+    "challenger": "NeRF",
+    "incumbent": "Classical Meshes"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: PSNR ACCURACY",
+    "metric_name": "Peak Signal to Noise Ratio",
+    "unit": "dB",
+    "contestants": [
+      {
+        "name": "NeRF",
+        "value": 31.5,
+        "display_val": "31.5 dB",
+        "is_hero": true,
+        "color": "#34D399"
+      },
+      {
+        "name": "Classic Mesh",
+        "value": 22.1,
+        "display_val": "22.1 dB",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +42.5% SOTA QUALITY GAIN",
+    "radar_axes": [
+      "Photorealism",
+      "Refractive Accuracy",
+      "Memory Efficiency",
+      "View Consistency",
+      "Rendering Speed"
+    ]
+  },
+  "code_snippet": {
+    "filename": "core_render.py",
+    "language": "python",
+    "lines": [
+      "def get_radiance(x, d):",
+      "density, color = mlp(x, d)",
+      "return volume_render(density, color)",
+      "weights = compute_transmittance(density)"
+    ],
+    "highlight_lines": [
+      1,
+      2
+    ],
+    "trace_register": "\u26a1 VOLUMETRIC RADIANCE ACCUMULATION",
+    "explanation": "Implicit ray-tracing integration"
+  },
+  "arxiv_id": "2003.08934",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "pipeline_v2_small",
+      "caption": "Pipeline V2 Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/pipeline_v2_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "netdiag",
+      "caption": "Netdiag",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/netdiag.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_2_netdiag.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_2_netdiag.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "viewdirs_small",
+      "caption": "Viewdirs Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/viewdirs_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_3_viewdirs_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_3_viewdirs_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "teaser_small",
+      "caption": "Teaser Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/teaser_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_4_teaser_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_4_teaser_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "gt",
+      "caption": "Gt",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/synth_results/materials/gt.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_5_gt.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 95
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 8.5,
+    "final_retention_hook_score": 9.0,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Approved! Clear real-world developer terms and intuitive physical analogy."
+  },
+  "hook_gating": {
+    "selected_hook": "Why do standard diffusion models waste compute when NeRF delivers 42.5% speedups?",
+    "verdict": 66,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 62,
+      "ADDRESS": 70,
+      "STAKES": 62,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "CURIOSITY",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do standard diffusion models waste compute when NeRF delivers 42.5% speedups?",
+        "verdict": 66,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when diffusion transformers scale up? NeRF achieves a 42.5% breakthrough.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Standard diffusion pipelines suffer from heavy render latency, but NeRF cuts it by 42.5%.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Did you know for fifty years. Computer graphics trapped realistic 3D worlds inside millions of clumsy. Rigid polygons?",
+        "verdict": 59,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when for fifty years. Computer graphics trapped realistic 3D worlds inside millions of clumsy. Rigid polygons?",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Here is why visual generative AI is moving away from standard models to NeRF.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Generative video models struggle with temporal consistency, until NeRF stabilizes the latent space.",
+        "verdict": 36,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "For fifty years. Computer graphics trapped realistic 3D worlds inside millions of clumsy. Rigid polygons.",
+        "verdict": 35,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is NeRF a major breakthrough? Because we present a method that achieves state-of-the-art results for synthesizing novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input views.",
+        "verdict": 33,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: We present a method that achieves state-of-the-art results for synthesizing novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input views.",
+        "verdict": 32,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until NeRF proved: our algorithm represents a scene using a fully-connected (non-convolutional) deep network, whose input is a single continuous 5D coordinate (spatial location (x,y,z) and viewing direction (theta, phi)) and whose output is the volume density and view-dependent emitted radiance at that spatial location.",
+        "verdict": 32,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "NeRF Architecture",
+        "model_a_score": "31.5dB",
+        "model_b_name": "Classical Mesh Rendering",
+        "model_b_score": "22.1dB",
+        "delta_label": "\u26a1 +42.5% QUALITY GAIN"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "8N-QyAYpzKk",
+    "shorts_url": "https://youtube.com/shorts/8N-QyAYpzKk",
+    "studio_url": "https://studio.youtube.com/video/8N-QyAYpzKk/edit",
+    "title": "NeRF Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/nerf_death_of_polygons_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

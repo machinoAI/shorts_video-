@@ -242,218 +242,88 @@ class BenchmarkExtractor:
         axes: Optional[List[str]] = None
     ) -> Tuple[List[str], List[Dict[str, Any]]]:
         """
-        Synthesizes calibrated 5-axis Pareto tradeoff metrics (0.0 to 1.0)
-        comparing the hero challenger against the primary incumbent.
+        Returns radar axes and radar models.
+
+        A radar plot needs several metrics per model. Our sources (the spec's
+        benchmark table or one parsed LaTeX table) only carry ONE metric, so there is
+        no honest way to fill the other axes. We therefore return no radar models;
+        callers fall back to race bars. (Previously this returned the same
+        hard-coded 0.94/0.90/... profile for every paper.)
         """
-        default_axes = ["Throughput", "VRAM Efficiency", "Accuracy", "Context Length", "Cost Efficiency"]
-        chosen_axes = axes or default_axes
+        return list(axes or []), []
 
-        if not contestants:
-            return chosen_axes, []
-
-        hero = next((c for c in contestants if c.is_hero), contestants[0])
-        incumbent = next((c for c in contestants if not c.is_hero), contestants[-1])
-
-        # Hero Pareto profile (high throughput, high efficiency, competitive accuracy)
-        hero_scores = [0.94, 0.90, 0.92, 0.88, 0.96]
-        # Incumbent profile (strong accuracy, but poor throughput/cost efficiency)
-        incumbent_scores = [0.62, 0.48, 0.95, 0.85, 0.22]
-
-        radar_models = [
-            {
-                "name": hero.name[:20],
-                "scores": hero_scores[:len(chosen_axes)],
-                "is_hero": True,
-                "color": "#10B981",  # Mint / Emerald
-                "fill_opacity": 0.35
-            },
-            {
-                "name": incumbent.name[:20],
-                "scores": incumbent_scores[:len(chosen_axes)],
-                "is_hero": False,
-                "color": "#EF4444",  # Coral / Red
-                "fill_opacity": 0.20
-            }
-        ]
-
-        return chosen_axes, radar_models
-
-    def extract_or_fallback(
+    def extract_verified(
         self,
         spec: Dict[str, Any],
         arxiv_id: Optional[str] = None
-    ) -> BenchmarkComparison:
+    ) -> Optional[BenchmarkComparison]:
         """
-        High-level orchestrator:
-        1. Checks if spec already contains explicit benchmark_comparison.
-        2. Tries LaTeX table extraction from public/arxiv_cache/{arxiv_id}/source.
-        3. Synthesizes high-fidelity benchmark showdown from spec metadata / topic.
-        Guaranteed to return a valid BenchmarkComparison object.
-        """
-        # 1. Spec check
-        if spec.get("benchmark_comparison"):
-            b_data = spec["benchmark_comparison"]
-            contestants = [
-                BenchmarkContestant(
-                    name=c.get("name", "Model"),
-                    value=float(c.get("value", 100.0)),
-                    raw_str=c.get("display_val", f"{c.get('value')} {b_data.get('unit', '')}"),
-                    is_hero=c.get("is_hero", False),
-                    color=c.get("color", "#38BDF8")
-                )
-                for c in b_data.get("contestants", [])
-            ]
-            axes, radar_models = self.build_pareto_radar_data(contestants, b_data.get("radar_axes"))
-            return BenchmarkComparison(
-                title=b_data.get("title", "BENCHMARK SHOWDOWN"),
-                metric_name=b_data.get("metric_name", "Performance"),
-                unit=b_data.get("unit", ""),
-                higher_is_better=b_data.get("higher_is_better", True),
-                contestants=contestants,
-                delta_badge=b_data.get("delta_badge", "⚡ MEASURED SOTA MILESTONE"),
-                radar_axes=axes,
-                radar_models=radar_models
-            )
+        Returns a benchmark comparison backed by real data, or None.
 
-        # 2. LaTeX Table Extraction check
-        clean_id = (arxiv_id or spec.get("arxiv_id") or spec.get("id", "")).replace("arxiv_", "").strip()
+        Sources, in order:
+          1. spec["benchmark_comparison"] (already filtered by pipeline.grounding so its
+             numbers appear in the paper material the script was written from).
+          2. A results table parsed from the paper's LaTeX source in public/arxiv_cache.
+
+        There is deliberately no synthetic fallback: when neither source has numbers,
+        callers must choose a non-numeric visual instead of inventing contestants.
+        """
+        # 1. Spec benchmark table
+        b_data = spec.get("benchmark_comparison")
+        if isinstance(b_data, dict):
+            contestants: List[BenchmarkContestant] = []
+            for c in b_data.get("contestants", []) or []:
+                if not isinstance(c, dict):
+                    continue
+                try:
+                    value = float(c.get("value"))
+                except (TypeError, ValueError):
+                    continue  # never default a missing value to an arbitrary bar length
+                contestants.append(BenchmarkContestant(
+                    name=str(c.get("name", "Model")),
+                    value=value,
+                    raw_str=c.get("display_val") or f"{c.get('value')} {b_data.get('unit', '')}".strip(),
+                    is_hero=bool(c.get("is_hero", False)),
+                    color=c.get("color", "#38BDF8")
+                ))
+            if len(contestants) >= 2:
+                axes, radar_models = self.build_pareto_radar_data(contestants, b_data.get("radar_axes"))
+                return BenchmarkComparison(
+                    title=b_data.get("title") or f"BENCHMARK SHOWDOWN: {str(b_data.get('metric_name', 'RESULTS')).upper()[:24]}",
+                    metric_name=b_data.get("metric_name", "Performance"),
+                    unit=b_data.get("unit", ""),
+                    higher_is_better=b_data.get("higher_is_better", True),
+                    contestants=contestants,
+                    delta_badge=b_data.get("delta_badge") or "",
+                    radar_axes=axes,
+                    radar_models=radar_models
+                )
+
+        # 2. LaTeX results table from the paper source
+        clean_id = str(arxiv_id or spec.get("arxiv_id") or "").replace("arxiv_", "").strip()
         if clean_id:
             source_dir = PROJECT_ROOT / "public" / "arxiv_cache" / clean_id / "source"
             if source_dir.exists():
                 parsed = self.extract_from_latex_source(source_dir)
-                if parsed:
+                if parsed and len(parsed.contestants) >= 2:
                     axes, radar_models = self.build_pareto_radar_data(parsed.contestants)
                     parsed.radar_axes = axes
                     parsed.radar_models = radar_models
                     return parsed
 
-        # 3. Dynamic Synthesis from Paper Metadata & Beat 5 Spoken Ground Truth
-        meta = spec.get("metadata", {})
-        title_lower = (spec.get("title", "") + " " + meta.get("challenger", "") + " " + spec.get("id", "")).lower()
+        return None
 
-        # Check Beat 5 text and blueprint for explicit empirical metrics
-        beat_5 = next((b for b in spec.get("beats", []) if b.get("beat_id") == 5), None)
-        b5_text = (beat_5.get("text", "") if beat_5 else "").lower()
-        b5_bp = (beat_5.get("visual_blueprint", {}) if beat_5 else {}) or {}
-        b5_params = b5_bp.get("params", {}) if isinstance(b5_bp, dict) else {}
+    def extract_or_fallback(
+        self,
+        spec: Dict[str, Any],
+        arxiv_id: Optional[str] = None
+    ) -> Optional[BenchmarkComparison]:
+        """
+        Backwards-compatible name for extract_verified().
 
-        if any(k in title_lower or k in b5_text for k in ["matmul", "matmul-free", "bitnet", "1-bit", "ternary", "bitlinear"]):
-            challenger = meta.get("challenger", "MatMul-Free (2.7B)")
-            contestants = [
-                BenchmarkContestant(name=challenger[:18], value=10.0, raw_str="0.1x (13W FPGA)", is_hero=True, color="#10B981"),
-                BenchmarkContestant(name="BitNet b1.58", value=35.0, raw_str="0.35x Memory", is_hero=False, color="#38BDF8"),
-                BenchmarkContestant(name="Optimized Transformer", value=65.0, raw_str="0.65x Memory", is_hero=False, color="#94A3B8"),
-                BenchmarkContestant(name="Standard FP16 Dense", value=100.0, raw_str="1.0x (Baseline)", is_hero=False, color="#EF4444"),
-            ]
-            axes = ["Memory Efficiency", "Energy (Watts)", "Throughput", "Latency", "Perplexity Parity"]
-            metric = "Inference Overhead & RAM"
-            unit = "% Relative"
-            delta = "⚡ 10x INFERENCE SAVINGS & 61% RAM REDUCTION"
-        elif "flashattention" in title_lower or "fa-3" in title_lower:
-            contestants = [
-                BenchmarkContestant(name="FlashAttention-3", value=1180.0, raw_str="1,180 TFLOPS", is_hero=True, color="#10B981"),
-                BenchmarkContestant(name="FlashAttention-2", value=660.0, raw_str="660 TFLOPS", is_hero=False, color="#38BDF8"),
-                BenchmarkContestant(name="cuDNN Flash", value=610.0, raw_str="610 TFLOPS", is_hero=False, color="#A855F7"),
-                BenchmarkContestant(name="PyTorch Native", value=240.0, raw_str="240 TFLOPS", is_hero=False, color="#EF4444"),
-            ]
-            axes = ["Throughput", "SRAM Reuse", "Warp Efficiency", "Context Scaling", "Accuracy"]
-            metric = "Throughput (H100 FP16)"
-            unit = "TFLOPS"
-            delta = "⚡ +78.8% SPEEDUP OVER FA-2"
-        elif "deepseek" in title_lower or "r1" in title_lower:
-            challenger = meta.get("challenger", "DeepSeek-R1")
-            incumbent = meta.get("incumbent", "OpenAI o1")
-            contestants = [
-                BenchmarkContestant(name=challenger, value=79.8, raw_str="79.8%", is_hero=True, color="#10B981"),
-                BenchmarkContestant(name=incumbent, value=79.2, raw_str="79.2%", is_hero=False, color="#EF4444"),
-                BenchmarkContestant(name="Claude 3.5 Sonnet", value=65.4, raw_str="65.4%", is_hero=False, color="#38BDF8"),
-                BenchmarkContestant(name="GPT-4o", value=41.7, raw_str="41.7%", is_hero=False, color="#94A3B8"),
-            ]
-            axes = ["Math (AIME)", "Code (LiveCode)", "Reasoning (GSM8K)", "Context (128k)", "Cost Efficiency"]
-            metric = "AIME 2024 (Pass@1)"
-            unit = "%"
-            delta = f"⚡ PARITY WITH {incumbent.upper()} AT 18x LOWER COST"
-        elif any(k in title_lower for k in ["robot", "tamp", "kinematics", "manipulation", "embodied"]):
-            challenger = meta.get("challenger", "Open-World Agent")
-            contestants = [
-                BenchmarkContestant(name=f"{challenger[:14]} (Ours)", value=91.4, raw_str="91.4% Success", is_hero=True, color="#10B981"),
-                BenchmarkContestant(name="Diffusion Policy", value=72.8, raw_str="72.8% Success", is_hero=False, color="#38BDF8"),
-                BenchmarkContestant(name="Action Chunking (ACT)", value=58.2, raw_str="58.2% Success", is_hero=False, color="#94A3B8"),
-                BenchmarkContestant(name="Behavior Cloning Baseline", value=34.5, raw_str="34.5% Success", is_hero=False, color="#EF4444"),
-            ]
-            axes = ["Task Success", "Zero-Shot Generalization", "Spatial Precision", "Execution Speed", "Disturbance Recovery"]
-            metric = "Zero-Shot Task Execution Success"
-            unit = "%"
-            delta = "⚡ +33.2% HIGHER SUCCESS IN UNSEEN SCENES"
-        elif any(k in title_lower for k in ["diffusion", "sora", "video", "dit", "flow matching"]):
-            challenger = meta.get("challenger", "Diffusion Transformer")
-            contestants = [
-                BenchmarkContestant(name=f"{challenger[:14]} (DiT)", value=92.5, raw_str="2.1 FVD Score", is_hero=True, color="#10B981"),
-                BenchmarkContestant(name="Latent Video U-Net", value=64.0, raw_str="6.8 FVD Score", is_hero=False, color="#38BDF8"),
-                BenchmarkContestant(name="Autoregressive Next-Frame", value=42.0, raw_str="12.5 FVD Score", is_hero=False, color="#EF4444"),
-            ]
-            axes = ["Temporal Consistency", "Spatio-Temporal Coherence", "Render Speed", "Motion Realism", "Prompt Fidelity"]
-            metric = "Spatio-Temporal Coherence (FVD)"
-            unit = "FVD"
-            delta = "⚡ 3.2x HIGHER TEMPORAL CONSISTENCY & ZERO DRIFT"
-        elif any(k in title_lower for k in ["speculative", "spec", "agspec", "draft model"]):
-            challenger = meta.get("challenger", "AST Speculative")
-            contestants = [
-                BenchmarkContestant(name=f"{challenger[:14]} (Ours)", value=82.5, raw_str="4.0x Speedup", is_hero=True, color="#10B981"),
-                BenchmarkContestant(name="Standard Speculative", value=52.0, raw_str="2.4x Speedup", is_hero=False, color="#38BDF8"),
-                BenchmarkContestant(name="Greedy Next-Token", value=20.0, raw_str="1.0x Baseline", is_hero=False, color="#EF4444"),
-            ]
-            axes = ["Inference Speedup", "Acceptance Rate", "Memory Overhead", "Speculation Depth", "Accuracy Parity"]
-            metric = "Inference Generation Speedup"
-            unit = "x"
-            delta = "⚡ 4x FASTER CODING INFERENCE AT ZERO LOSS"
-        elif "loop" in title_lower:
-            contestants = [
-                BenchmarkContestant(name="LoopCD (Ours)", value=68.4, raw_str="68.4%", is_hero=True, color="#10B981"),
-                BenchmarkContestant(name="Looped Baseline", value=56.9, raw_str="56.9%", is_hero=False, color="#38BDF8"),
-                BenchmarkContestant(name="Standard Decoding", value=51.2, raw_str="51.2%", is_hero=False, color="#94A3B8"),
-                BenchmarkContestant(name="Greedy Search", value=44.1, raw_str="44.1%", is_hero=False, color="#EF4444"),
-            ]
-            axes = ["Accuracy", "Compute Reuse", "Latency", "Memory Bound", "Sample Quality"]
-            metric = "AIME Reasoning Accuracy"
-            unit = "%"
-            delta = "⚡ +11.5% ACCURACY GAIN FOR (ALMOST) FREE"
-        elif "col_a_title" in b5_params and "col_b_title" in b5_params:
-            name_b = b5_params.get("col_b_title", "Breakthrough")
-            stat_b = b5_params.get("col_b_stat", "0.1x")
-            name_a = b5_params.get("col_a_title", "Baseline Architecture")
-            stat_a = b5_params.get("col_a_stat", "1.0x")
-            contestants = [
-                BenchmarkContestant(name=name_b[:18], value=92.0, raw_str=stat_b, is_hero=True, color="#10B981"),
-                BenchmarkContestant(name="Competitive Baseline", value=68.0, raw_str="0.68x", is_hero=False, color="#38BDF8"),
-                BenchmarkContestant(name=name_a[:18], value=35.0, raw_str=stat_a, is_hero=False, color="#EF4444"),
-            ]
-            axes = ["Throughput", "Memory", "Quality", "Context", "Cost Efficiency"]
-            metric = "Empirical SOTA Evaluation"
-            unit = "Relative"
-            delta = f"⚡ SIGNIFICANT MEASURED GAIN OVER {name_a[:14].upper()}"
-        else:
-            challenger = meta.get("challenger", spec.get("title", "Breakthrough Model")[:18])
-            incumbent = meta.get("incumbent", "Incumbent Baseline")
-            contestants = [
-                BenchmarkContestant(name=challenger[:18], value=94.2, raw_str="94.2%", is_hero=True, color="#10B981"),
-                BenchmarkContestant(name=incumbent[:18], value=78.5, raw_str="78.5%", is_hero=False, color="#38BDF8"),
-                BenchmarkContestant(name="Prior SOTA", value=71.0, raw_str="71.0%", is_hero=False, color="#94A3B8"),
-                BenchmarkContestant(name="Standard Baseline", value=52.3, raw_str="52.3%", is_hero=False, color="#EF4444"),
-            ]
-            axes = ["Throughput", "Memory", "Quality", "Context", "Cost Efficiency"]
-            metric = meta.get("milestone_metric", "Benchmark Score")
-            unit = "%"
-            delta = f"⚡ +15.7% GAIN OVER {incumbent.upper()[:16]}"
-
-        axes, radar_models = self.build_pareto_radar_data(contestants, axes)
-        return BenchmarkComparison(
-            title=f"BENCHMARK SHOWDOWN: {metric.upper()[:24]}",
-            metric_name=metric,
-            unit=unit,
-            higher_is_better=True,
-            contestants=contestants,
-            delta_badge=delta,
-            radar_axes=axes,
-            radar_models=radar_models
-        )
+        NOTE: this no longer synthesizes a fallback. The old keyword-matched
+        fallbacks (e.g. FlashAttention-3 H100 numbers for any title containing
+        "flashattention", or a generic 94.2% vs 78.5% table) put fabricated numbers
+        on screen, so callers now receive None when no verified data exists.
+        """
+        return self.extract_verified(spec, arxiv_id)

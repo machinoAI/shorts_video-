@@ -1,0 +1,1619 @@
+{
+  "id": "alphago_mcts_mcts_integration",
+  "title": "AlphaGo: Mastering Game Trees",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "algorithmic_search",
+  "hook_tag": "ALGORITHMIC SEARCH DIVIDE",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Go has more possible board states than atoms in the observable universe. Traditional tree search chokes immediately.",
+      "visual_focus": "Massive exponential game tree exploding outward into millions of tiny dim branches.",
+      "highlight_words": {
+        "atoms in the observable universe": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Go board complexity",
+        "action_verb": "chokes",
+        "direct_object": "search algorithms",
+        "anchor_word": "universe",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "COMBINATORIAL EXPLOSION",
+        "sub": "Branching factor exceeds universe atom count (~10^170)",
+        "accent_color": "#EF4444",
+        "params": {
+          "root_label": "Go Board State",
+          "optimal_label": "Winning Move",
+          "pruned_label": "Abandoned Branch"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 55,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "tree_hierarchy",
+        "title": "COMBINATORIAL EXPLOSION",
+        "sub": "Branching factor exceeds universe atom count (~10^170)",
+        "accent_color": "#EF4444",
+        "root_label": "Go Board State",
+        "optimal_label": "Winning Move",
+        "pruned_label": "Abandoned Branch"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.44,
+      "duration": 6.44,
+      "word_timings": [
+        {
+          "word": "Go",
+          "clean_word": "go",
+          "phonemes": "\u0261\u02c8o\u028a",
+          "start": 0.015,
+          "end": 0.17,
+          "duration": 0.155,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "has",
+          "clean_word": "has",
+          "phonemes": "h\u02c8\u00e6z",
+          "start": 0.17,
+          "end": 0.42,
+          "duration": 0.25,
+          "frame_ahead_trigger": 0.13
+        },
+        {
+          "word": "more",
+          "clean_word": "more",
+          "phonemes": "m\u02c8\u0254\u02d0\u0279",
+          "start": 0.42,
+          "end": 0.78,
+          "duration": 0.36,
+          "frame_ahead_trigger": 0.38
+        },
+        {
+          "word": "possible",
+          "clean_word": "possible",
+          "phonemes": "p\u02c8\u0251\u02d0s\u1d7bb\u0259l",
+          "start": 0.78,
+          "end": 1.325,
+          "duration": 0.545,
+          "frame_ahead_trigger": 0.74
+        },
+        {
+          "word": "board",
+          "clean_word": "board",
+          "phonemes": "b\u02c8\u0254\u02d0\u0279d",
+          "start": 1.325,
+          "end": 1.66,
+          "duration": 0.335,
+          "frame_ahead_trigger": 1.285
+        },
+        {
+          "word": "states",
+          "clean_word": "states",
+          "phonemes": "st\u02c8e\u026ats",
+          "start": 1.66,
+          "end": 2.01,
+          "duration": 0.35,
+          "frame_ahead_trigger": 1.62
+        },
+        {
+          "word": "than",
+          "clean_word": "than",
+          "phonemes": "\u00f0\u0250n",
+          "start": 2.01,
+          "end": 2.2,
+          "duration": 0.19,
+          "frame_ahead_trigger": 1.97
+        },
+        {
+          "word": "atoms",
+          "clean_word": "atoms",
+          "phonemes": "\u02c8\u00e6\u027e\u0259mz",
+          "start": 2.2,
+          "end": 2.505,
+          "duration": 0.305,
+          "frame_ahead_trigger": 2.16
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 2.505,
+          "end": 2.58,
+          "duration": 0.075,
+          "frame_ahead_trigger": 2.465
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 2.58,
+          "end": 2.83,
+          "duration": 0.25,
+          "frame_ahead_trigger": 2.54
+        },
+        {
+          "word": "observable",
+          "clean_word": "observable",
+          "phonemes": "\u0259bz\u02c8\u025c\u02d0v\u0259b\u0259l",
+          "start": 2.83,
+          "end": 3.45,
+          "duration": 0.62,
+          "frame_ahead_trigger": 2.79
+        },
+        {
+          "word": "universe.",
+          "clean_word": "universe",
+          "phonemes": "j\u02c8u\u02d0n\u026av\u02cc\u025c\u02d0s",
+          "start": 3.45,
+          "end": 4.048,
+          "duration": 0.598,
+          "frame_ahead_trigger": 3.41
+        },
+        {
+          "word": "Traditional",
+          "clean_word": "traditional",
+          "phonemes": "t\u0279\u0250d\u02c8\u026a\u0283\u0259n\u0259l",
+          "start": 4.048,
+          "end": 4.755,
+          "duration": 0.707,
+          "frame_ahead_trigger": 4.008
+        },
+        {
+          "word": "tree",
+          "clean_word": "tree",
+          "phonemes": "t\u0279\u02c8i\u02d0",
+          "start": 4.755,
+          "end": 4.99,
+          "duration": 0.235,
+          "frame_ahead_trigger": 4.715
+        },
+        {
+          "word": "search",
+          "clean_word": "search",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283",
+          "start": 4.99,
+          "end": 5.25,
+          "duration": 0.26,
+          "frame_ahead_trigger": 4.95
+        },
+        {
+          "word": "chokes",
+          "clean_word": "chokes",
+          "phonemes": "t\u0283\u02c8o\u028aks",
+          "start": 5.25,
+          "end": 5.625,
+          "duration": 0.375,
+          "frame_ahead_trigger": 5.21
+        },
+        {
+          "word": "immediately.",
+          "clean_word": "immediately",
+          "phonemes": "\u026am\u02c8i\u02d0d\u026a\u0259tli",
+          "start": 5.625,
+          "end": 6.32,
+          "duration": 0.695,
+          "frame_ahead_trigger": 5.585
+        }
+      ],
+      "audio_duration": 6.44,
+      "slot_duration": 6.59
+    },
+    {
+      "beat_id": 2,
+      "text": "Standard game trees explode into billions of branches. Without guidance. Random sampling wastes massive compute exploring obviously suicidal moves.",
+      "visual_focus": "Search worker nodes fruitlessly wandering into red blundered leaf nodes while GPUs redline.",
+      "highlight_words": {
+        "wastes massive compute": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Random sampling",
+        "action_verb": "wastes",
+        "direct_object": "GPU compute",
+        "anchor_word": "suicidal",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "split_flow",
+        "title": "UNINFORMED ROLLOUTS",
+        "sub": "Blind simulations burn millions of cycles on invalid branches",
+        "accent_color": "#F59E0B",
+        "params": {
+          "waste_ratio": "99.4%"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "split_flow",
+        "title": "UNINFORMED ROLLOUTS",
+        "sub": "Blind simulations burn millions of cycles on invalid branches",
+        "accent_color": "#F59E0B",
+        "waste_ratio": "99.4%"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.59,
+      "end": 15.57,
+      "duration": 8.98,
+      "word_timings": [
+        {
+          "word": "Standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 6.673,
+          "end": 7.258,
+          "duration": 0.585,
+          "frame_ahead_trigger": 6.783
+        },
+        {
+          "word": "game",
+          "clean_word": "game",
+          "phonemes": "\u0261\u02c8e\u026am",
+          "start": 7.258,
+          "end": 7.558,
+          "duration": 0.3,
+          "frame_ahead_trigger": 7.368
+        },
+        {
+          "word": "trees",
+          "clean_word": "trees",
+          "phonemes": "t\u0279\u02c8i\u02d0z",
+          "start": 7.558,
+          "end": 7.828,
+          "duration": 0.27,
+          "frame_ahead_trigger": 7.668
+        },
+        {
+          "word": "explode",
+          "clean_word": "explode",
+          "phonemes": "\u025bkspl\u02c8o\u028ad",
+          "start": 7.828,
+          "end": 8.373,
+          "duration": 0.545,
+          "frame_ahead_trigger": 7.938
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 8.373,
+          "end": 8.758,
+          "duration": 0.385,
+          "frame_ahead_trigger": 8.483
+        },
+        {
+          "word": "billions",
+          "clean_word": "billions",
+          "phonemes": "b\u02c8\u026ali\u0259nz",
+          "start": 8.758,
+          "end": 9.208,
+          "duration": 0.45,
+          "frame_ahead_trigger": 8.868
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 9.208,
+          "end": 9.338,
+          "duration": 0.13,
+          "frame_ahead_trigger": 9.318
+        },
+        {
+          "word": "branches.",
+          "clean_word": "branches",
+          "phonemes": "b\u0279\u02c8\u00e6nt\u0283\u1d7bz",
+          "start": 9.338,
+          "end": 9.838,
+          "duration": 0.5,
+          "frame_ahead_trigger": 9.448
+        },
+        {
+          "word": "Without",
+          "clean_word": "without",
+          "phonemes": "w\u026a\u00f0\u02c8a\u028at",
+          "start": 9.838,
+          "end": 10.373,
+          "duration": 0.535,
+          "frame_ahead_trigger": 9.948
+        },
+        {
+          "word": "guidance.",
+          "clean_word": "guidance",
+          "phonemes": "\u0261\u02c8a\u026ad\u0259ns",
+          "start": 10.373,
+          "end": 10.81,
+          "duration": 0.437,
+          "frame_ahead_trigger": 10.483
+        },
+        {
+          "word": "Random",
+          "clean_word": "random",
+          "phonemes": "\u0279\u02c8\u00e6nd\u0259m",
+          "start": 10.81,
+          "end": 11.128,
+          "duration": 0.318,
+          "frame_ahead_trigger": 10.92
+        },
+        {
+          "word": "sampling",
+          "clean_word": "sampling",
+          "phonemes": "s\u02c8\u00e6mpl\u026a\u014b",
+          "start": 11.128,
+          "end": 11.808,
+          "duration": 0.68,
+          "frame_ahead_trigger": 11.238
+        },
+        {
+          "word": "wastes",
+          "clean_word": "wastes",
+          "phonemes": "w\u02c8e\u026asts",
+          "start": 11.808,
+          "end": 12.168,
+          "duration": 0.361,
+          "frame_ahead_trigger": 11.918
+        },
+        {
+          "word": "massive",
+          "clean_word": "massive",
+          "phonemes": "m\u02c8\u00e6s\u026av",
+          "start": 12.168,
+          "end": 12.539,
+          "duration": 0.37,
+          "frame_ahead_trigger": 12.278
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 12.539,
+          "end": 13.043,
+          "duration": 0.504,
+          "frame_ahead_trigger": 12.649
+        },
+        {
+          "word": "exploring",
+          "clean_word": "exploring",
+          "phonemes": "\u025bkspl\u02c8\u0254\u02d0\u0279\u026a\u014b",
+          "start": 13.043,
+          "end": 13.838,
+          "duration": 0.795,
+          "frame_ahead_trigger": 13.153
+        },
+        {
+          "word": "obviously",
+          "clean_word": "obviously",
+          "phonemes": "\u02c8\u0251\u02d0bvi\u0259sli",
+          "start": 13.838,
+          "end": 14.418,
+          "duration": 0.58,
+          "frame_ahead_trigger": 13.948
+        },
+        {
+          "word": "suicidal",
+          "clean_word": "suicidal",
+          "phonemes": "s\u02ccu\u02d0\u026as\u02c8a\u026ad\u0259l",
+          "start": 14.418,
+          "end": 15.073,
+          "duration": 0.655,
+          "frame_ahead_trigger": 14.528
+        },
+        {
+          "word": "moves.",
+          "clean_word": "moves",
+          "phonemes": "m\u02c8u\u02d0vz",
+          "start": 15.073,
+          "end": 15.503,
+          "duration": 0.43,
+          "frame_ahead_trigger": 15.183
+        }
+      ],
+      "audio_duration": 8.98,
+      "slot_duration": 9.13
+    },
+    {
+      "beat_id": 3,
+      "text": "AlphaGo cracked this combinatorial nightmare using PUCT. It mathematically fuses raw win rates with deep neural network intuition.",
+      "visual_focus": "A glowing mathematical beam collapses noisy branches, highlighting only grandmaster-grade candidate moves.",
+      "highlight_words": {
+        "fuses raw win rates": "#38BDF8",
+        "neural network intuition": "#10B981"
+      },
+      "svo_action": {
+        "subject": "AlphaGo",
+        "action_verb": "fuses",
+        "direct_object": "win rates with neural intuition",
+        "anchor_word": "PUCT",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: ALPHAGO: MASTERING",
+        "sub": "A glowing mathematical beam collapses noisy branches, highlightin",
+        "params": {
+          "title": "KERNEL CODE: ALPHAGO: MASTERING",
+          "sub": "A glowing mathematical beam collapses noisy branches, highlightin",
+          "filename": "puct_policy.py",
+          "language": "python",
+          "lines": [
+            "def get_action(node):",
+            "# PUCT balancing exploration",
+            "ucb = Q(node) + C * P(node)",
+            "return select_best(ucb)"
+          ],
+          "highlight_lines": [
+            3,
+            4
+          ],
+          "trace_register": "\u26a1 PUCT GATE ACTIVATED",
+          "delta_badge": "Exploration-Exploitation Balancing"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: ALPHAGO: MASTERING",
+        "sub": "A glowing mathematical beam collapses noisy branches, highlightin",
+        "filename": "puct_policy.py",
+        "language": "python",
+        "lines": [
+          "def get_action(node):",
+          "# PUCT balancing exploration",
+          "ucb = Q(node) + C * P(node)",
+          "return select_best(ucb)"
+        ],
+        "highlight_lines": [
+          3,
+          4
+        ],
+        "trace_register": "\u26a1 PUCT GATE ACTIVATED",
+        "delta_badge": "Exploration-Exploitation Balancing"
+      },
+      "start": 15.72,
+      "end": 23.32,
+      "duration": 7.59,
+      "word_timings": [
+        {
+          "word": "AlphaGo",
+          "clean_word": "alphago",
+          "phonemes": "\u02c8\u00e6lf\u0259 \u0261\u02c8o\u028a",
+          "start": 15.734,
+          "end": 16.269,
+          "duration": 0.535,
+          "frame_ahead_trigger": 15.994
+        },
+        {
+          "word": "cracked",
+          "clean_word": "cracked",
+          "phonemes": "k\u0279\u02c8\u00e6kt",
+          "start": 16.269,
+          "end": 16.679,
+          "duration": 0.41,
+          "frame_ahead_trigger": 16.529
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 16.679,
+          "end": 16.994,
+          "duration": 0.315,
+          "frame_ahead_trigger": 16.939
+        },
+        {
+          "word": "combinatorial",
+          "clean_word": "combinatorial",
+          "phonemes": "k\u02cc\u0251\u02d0mb\u026an\u0250t\u02c8\u0254\u02d0\u0279\u026a\u0259l",
+          "start": 16.994,
+          "end": 17.804,
+          "duration": 0.81,
+          "frame_ahead_trigger": 17.254
+        },
+        {
+          "word": "nightmare",
+          "clean_word": "nightmare",
+          "phonemes": "n\u02c8a\u026atm\u025b\u0279",
+          "start": 17.804,
+          "end": 18.369,
+          "duration": 0.565,
+          "frame_ahead_trigger": 18.064
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 18.369,
+          "end": 18.669,
+          "duration": 0.3,
+          "frame_ahead_trigger": 18.629
+        },
+        {
+          "word": "PUCT.",
+          "clean_word": "puct",
+          "phonemes": "p\u02c8\u028ckt",
+          "start": 18.669,
+          "end": 19.179,
+          "duration": 0.51,
+          "frame_ahead_trigger": 18.929
+        },
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 19.179,
+          "end": 19.188,
+          "duration": 0.009,
+          "frame_ahead_trigger": 19.439
+        },
+        {
+          "word": "mathematically",
+          "clean_word": "mathematically",
+          "phonemes": "m\u02cc\u00e6\u03b8\u026am\u02c8\u00e6\u027e\u026akli",
+          "start": 19.188,
+          "end": 19.884,
+          "duration": 0.696,
+          "frame_ahead_trigger": 19.448
+        },
+        {
+          "word": "fuses",
+          "clean_word": "fuses",
+          "phonemes": "fj\u02c8u\u02d0z\u1d7bz",
+          "start": 19.884,
+          "end": 20.324,
+          "duration": 0.44,
+          "frame_ahead_trigger": 20.144
+        },
+        {
+          "word": "raw",
+          "clean_word": "raw",
+          "phonemes": "\u0279\u02c8\u0254\u02d0",
+          "start": 20.324,
+          "end": 20.534,
+          "duration": 0.21,
+          "frame_ahead_trigger": 20.584
+        },
+        {
+          "word": "win",
+          "clean_word": "win",
+          "phonemes": "w\u02c8\u026an",
+          "start": 20.534,
+          "end": 20.849,
+          "duration": 0.315,
+          "frame_ahead_trigger": 20.794
+        },
+        {
+          "word": "rates",
+          "clean_word": "rates",
+          "phonemes": "\u0279\u02c8e\u026ats",
+          "start": 20.849,
+          "end": 21.279,
+          "duration": 0.43,
+          "frame_ahead_trigger": 21.109
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 21.279,
+          "end": 21.389,
+          "duration": 0.11,
+          "frame_ahead_trigger": 21.539
+        },
+        {
+          "word": "deep",
+          "clean_word": "deep",
+          "phonemes": "d\u02c8i\u02d0p",
+          "start": 21.389,
+          "end": 21.819,
+          "duration": 0.43,
+          "frame_ahead_trigger": 21.649
+        },
+        {
+          "word": "neural",
+          "clean_word": "neural",
+          "phonemes": "n\u02c8\u028a\u0279\u0279\u0259l",
+          "start": 21.819,
+          "end": 22.089,
+          "duration": 0.27,
+          "frame_ahead_trigger": 22.079
+        },
+        {
+          "word": "network",
+          "clean_word": "network",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0k",
+          "start": 22.089,
+          "end": 22.614,
+          "duration": 0.525,
+          "frame_ahead_trigger": 22.349
+        },
+        {
+          "word": "intuition.",
+          "clean_word": "intuition",
+          "phonemes": "\u026antu\u02d0\u02c8\u026a\u0283\u0259n",
+          "start": 22.614,
+          "end": 23.169,
+          "duration": 0.555,
+          "frame_ahead_trigger": 22.874
+        }
+      ],
+      "audio_duration": 7.59,
+      "slot_duration": 7.75
+    },
+    {
+      "beat_id": 4,
+      "text": "The formula balances proven board value against an exploration bonus. High-probability moves get searched deep. Blunders vanish instantly.",
+      "visual_focus": "Chalkboard code evaluating UCB scores: Q-value plus exploration term dynamically updating tree node weights.",
+      "highlight_words": {
+        "proven board value": "#38BDF8",
+        "exploration bonus": "#10B981"
+      },
+      "svo_action": {
+        "subject": "PUCT formula",
+        "action_verb": "prunes",
+        "direct_object": "terrible game branches",
+        "anchor_word": "balances",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "layer_stack",
+        "title": "LAYERED COMPOSITION: PUCT FORMULA",
+        "sub": "Chalkboard code evaluating UCB scores: Q-value plus exploration t",
+        "accent_color": "#38BDF8",
+        "bottom_layer": "L1: PUCT FORMULA INPUTS",
+        "mid_layer": "L2: ROUTING & CONFIDENCE",
+        "top_layer": "L3: TERRIBLE GAME BRAN OUTPUT"
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "layer_stack",
+        "title": "LAYERED COMPOSITION: PUCT FORMULA",
+        "sub": "Chalkboard code evaluating UCB scores: Q-value plus exploration t",
+        "accent_color": "#38BDF8",
+        "bottom_layer": "L1: PUCT FORMULA INPUTS",
+        "mid_layer": "L2: ROUTING & CONFIDENCE",
+        "top_layer": "L3: TERRIBLE GAME BRAN OUTPUT"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 23.47,
+      "end": 31.58,
+      "duration": 8.11,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 23.479,
+          "end": 23.554,
+          "duration": 0.075,
+          "frame_ahead_trigger": 23.889
+        },
+        {
+          "word": "formula",
+          "clean_word": "formula",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279mj\u028al\u0259",
+          "start": 23.554,
+          "end": 24.179,
+          "duration": 0.625,
+          "frame_ahead_trigger": 23.964
+        },
+        {
+          "word": "balances",
+          "clean_word": "balances",
+          "phonemes": "b\u02c8\u00e6l\u0259ns\u1d7bz",
+          "start": 24.179,
+          "end": 24.789,
+          "duration": 0.61,
+          "frame_ahead_trigger": 24.589
+        },
+        {
+          "word": "proven",
+          "clean_word": "proven",
+          "phonemes": "p\u0279\u02c8u\u02d0v\u0259n",
+          "start": 24.789,
+          "end": 25.274,
+          "duration": 0.485,
+          "frame_ahead_trigger": 25.199
+        },
+        {
+          "word": "board",
+          "clean_word": "board",
+          "phonemes": "b\u02c8\u0254\u02d0\u0279d",
+          "start": 25.274,
+          "end": 25.534,
+          "duration": 0.26,
+          "frame_ahead_trigger": 25.684
+        },
+        {
+          "word": "value",
+          "clean_word": "value",
+          "phonemes": "v\u02c8\u00e6lju\u02d0",
+          "start": 25.534,
+          "end": 25.964,
+          "duration": 0.43,
+          "frame_ahead_trigger": 25.944
+        },
+        {
+          "word": "against",
+          "clean_word": "against",
+          "phonemes": "\u0250\u0261\u02c8\u025bnst",
+          "start": 25.964,
+          "end": 26.469,
+          "duration": 0.505,
+          "frame_ahead_trigger": 26.374
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 26.469,
+          "end": 26.518,
+          "duration": 0.049,
+          "frame_ahead_trigger": 26.879
+        },
+        {
+          "word": "exploration",
+          "clean_word": "exploration",
+          "phonemes": "\u025bkspl\u0254\u02d0\u0279\u02c8e\u026a\u0283\u0259n",
+          "start": 26.518,
+          "end": 27.299,
+          "duration": 0.781,
+          "frame_ahead_trigger": 26.928
+        },
+        {
+          "word": "bonus.",
+          "clean_word": "bonus",
+          "phonemes": "b\u02c8o\u028an\u0259s",
+          "start": 27.299,
+          "end": 27.874,
+          "duration": 0.575,
+          "frame_ahead_trigger": 27.709
+        },
+        {
+          "word": "High-probability",
+          "clean_word": "highprobability",
+          "phonemes": "h\u02cca\u026ap\u0279\u0259b\u0259b\u02c8\u026al\u1d7b\u027ei",
+          "start": 27.874,
+          "end": 28.709,
+          "duration": 0.835,
+          "frame_ahead_trigger": 28.284
+        },
+        {
+          "word": "moves",
+          "clean_word": "moves",
+          "phonemes": "m\u02c8u\u02d0vz",
+          "start": 28.709,
+          "end": 29.079,
+          "duration": 0.37,
+          "frame_ahead_trigger": 29.119
+        },
+        {
+          "word": "get",
+          "clean_word": "get",
+          "phonemes": "\u0261\u02c8\u025bt",
+          "start": 29.079,
+          "end": 29.259,
+          "duration": 0.18,
+          "frame_ahead_trigger": 29.489
+        },
+        {
+          "word": "searched",
+          "clean_word": "searched",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283t",
+          "start": 29.259,
+          "end": 29.736,
+          "duration": 0.477,
+          "frame_ahead_trigger": 29.669
+        },
+        {
+          "word": "deep.",
+          "clean_word": "deep",
+          "phonemes": "d\u02c8i\u02d0p",
+          "start": 29.736,
+          "end": 30.099,
+          "duration": 0.363,
+          "frame_ahead_trigger": 30.146
+        },
+        {
+          "word": "Blunders",
+          "clean_word": "blunders",
+          "phonemes": "bl\u02c8\u028cnd\u025az",
+          "start": 30.099,
+          "end": 30.594,
+          "duration": 0.495,
+          "frame_ahead_trigger": 30.509
+        },
+        {
+          "word": "vanish",
+          "clean_word": "vanish",
+          "phonemes": "v\u02c8\u00e6n\u026a\u0283",
+          "start": 30.594,
+          "end": 30.894,
+          "duration": 0.3,
+          "frame_ahead_trigger": 31.004
+        },
+        {
+          "word": "instantly.",
+          "clean_word": "instantly",
+          "phonemes": "\u02c8\u026anst\u0259ntli",
+          "start": 30.894,
+          "end": 31.464,
+          "duration": 0.57,
+          "frame_ahead_trigger": 31.304
+        }
+      ],
+      "audio_duration": 8.11,
+      "slot_duration": 8.26
+    },
+    {
+      "beat_id": 5,
+      "text": "AlphaGo rocketed move prediction accuracy from forty-five percent under heuristic search to ninety-eight percent. Completely dethroning human grandmasters.",
+      "visual_focus": "Horizontal race bars showing AlphaGo surging ahead of traditional MCTS by over fifty-three percent.",
+      "highlight_words": {
+        "ninety-eight percent": "#10B981",
+        "forty-five percent": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "AlphaGo",
+        "action_verb": "rocketed",
+        "direct_object": "move accuracy",
+        "anchor_word": "accuracy",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: MOVE QUALITY",
+        "sub": "Horizontal race bars showing AlphaGo surging ahead of",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: MOVE QUALITY",
+          "sub": "Horizontal race bars showing AlphaGo surging ahead of",
+          "metric_name": "Accuracy",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "AlphaGo",
+              "value": 98.0,
+              "display_val": "98%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Heuristic MCTS",
+              "value": 45.0,
+              "display_val": "45%",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +53% ELO IMPROVEMENT"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: MOVE QUALITY",
+        "sub": "Horizontal race bars showing AlphaGo surging ahead of",
+        "metric_name": "Accuracy",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "AlphaGo",
+            "value": 98.0,
+            "display_val": "98%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Heuristic MCTS",
+            "value": 45.0,
+            "display_val": "45%",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +53% ELO IMPROVEMENT"
+      },
+      "start": 31.73,
+      "end": 40.66,
+      "duration": 8.94,
+      "word_timings": [
+        {
+          "word": "AlphaGo",
+          "clean_word": "alphago",
+          "phonemes": "\u02c8\u00e6lf\u0259 \u0261\u02c8o\u028a",
+          "start": 31.735,
+          "end": 32.25,
+          "duration": 0.515,
+          "frame_ahead_trigger": 32.295
+        },
+        {
+          "word": "rocketed",
+          "clean_word": "rocketed",
+          "phonemes": "\u0279\u02c8\u0251\u02d0k\u026a\u027e\u1d7bd",
+          "start": 32.25,
+          "end": 32.848,
+          "duration": 0.598,
+          "frame_ahead_trigger": 32.81
+        },
+        {
+          "word": "move",
+          "clean_word": "move",
+          "phonemes": "m\u02c8u\u02d0v",
+          "start": 32.848,
+          "end": 33.11,
+          "duration": 0.262,
+          "frame_ahead_trigger": 33.408
+        },
+        {
+          "word": "prediction",
+          "clean_word": "prediction",
+          "phonemes": "p\u0279\u026ad\u02c8\u026ak\u0283\u0259n",
+          "start": 33.11,
+          "end": 33.775,
+          "duration": 0.665,
+          "frame_ahead_trigger": 33.67
+        },
+        {
+          "word": "accuracy",
+          "clean_word": "accuracy",
+          "phonemes": "\u02c8\u00e6kj\u028a\u0279\u0259si",
+          "start": 33.775,
+          "end": 34.335,
+          "duration": 0.56,
+          "frame_ahead_trigger": 34.335
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 34.335,
+          "end": 34.515,
+          "duration": 0.18,
+          "frame_ahead_trigger": 34.895
+        },
+        {
+          "word": "forty-five",
+          "clean_word": "fortyfive",
+          "phonemes": "f\u02cc\u0254\u02d0\u0279\u027e\u026af\u02c8a\u026av",
+          "start": 34.515,
+          "end": 35.191,
+          "duration": 0.676,
+          "frame_ahead_trigger": 35.075
+        },
+        {
+          "word": "percent",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 35.191,
+          "end": 35.585,
+          "duration": 0.394,
+          "frame_ahead_trigger": 35.751
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 35.585,
+          "end": 35.895,
+          "duration": 0.31,
+          "frame_ahead_trigger": 36.145
+        },
+        {
+          "word": "heuristic",
+          "clean_word": "heuristic",
+          "phonemes": "hju\u02d0\u0279\u02c8\u026ast\u026ak",
+          "start": 35.895,
+          "end": 36.655,
+          "duration": 0.76,
+          "frame_ahead_trigger": 36.455
+        },
+        {
+          "word": "search",
+          "clean_word": "search",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283",
+          "start": 36.655,
+          "end": 36.78,
+          "duration": 0.125,
+          "frame_ahead_trigger": 37.215
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 36.78,
+          "end": 37.0,
+          "duration": 0.22,
+          "frame_ahead_trigger": 37.34
+        },
+        {
+          "word": "ninety-eight",
+          "clean_word": "ninetyeight",
+          "phonemes": "n\u02cca\u026ant\u026a\u02c8e\u026at",
+          "start": 37.0,
+          "end": 37.71,
+          "duration": 0.71,
+          "frame_ahead_trigger": 37.56
+        },
+        {
+          "word": "percent.",
+          "clean_word": "percent",
+          "phonemes": "p\u025as\u02c8\u025bnt",
+          "start": 37.71,
+          "end": 38.12,
+          "duration": 0.41,
+          "frame_ahead_trigger": 38.27
+        },
+        {
+          "word": "Completely",
+          "clean_word": "completely",
+          "phonemes": "k\u0259mpl\u02c8i\u02d0tli",
+          "start": 38.12,
+          "end": 38.68,
+          "duration": 0.56,
+          "frame_ahead_trigger": 38.68
+        },
+        {
+          "word": "dethroning",
+          "clean_word": "dethroning",
+          "phonemes": "di\u02d0\u03b8\u0279\u02c8o\u028an\u026a\u014b",
+          "start": 38.68,
+          "end": 39.4,
+          "duration": 0.72,
+          "frame_ahead_trigger": 39.24
+        },
+        {
+          "word": "human",
+          "clean_word": "human",
+          "phonemes": "hj\u02c8u\u02d0m\u0259n",
+          "start": 39.4,
+          "end": 39.845,
+          "duration": 0.445,
+          "frame_ahead_trigger": 39.96
+        },
+        {
+          "word": "grandmasters.",
+          "clean_word": "grandmasters",
+          "phonemes": "\u0261\u0279\u02c8\u00e6ndm\u00e6st\u025az",
+          "start": 39.845,
+          "end": 40.58,
+          "duration": 0.735,
+          "frame_ahead_trigger": 40.405
+        }
+      ],
+      "audio_duration": 8.94,
+      "slot_duration": 9.08
+    },
+    {
+      "beat_id": 6,
+      "text": "Smarter search trees rewrote artificial intelligence forever. Follow machinoAI for daily breakdowns of how modern algorithms actually think.",
+      "visual_focus": "Logo convergence with a glowing game tree contracting into an elegant neural core.",
+      "highlight_words": {
+        "rewrote artificial intelligence": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "machinoAI",
+        "action_verb": "decodes",
+        "direct_object": "modern algorithms",
+        "anchor_word": "search",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "THE FUTURE OF SEARCH",
+        "sub": "Follow @machinoai-in for daily architectural deep dives",
+        "accent_color": "#34D399",
+        "params": {
+          "input_1_label": "Strategy",
+          "input_2_label": "Search",
+          "input_3_label": "Policy",
+          "fused_label": "Intelligence"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 40.81,
+      "end": 49.09,
+      "duration": 8.28,
+      "word_timings": [
+        {
+          "word": "Smarter",
+          "clean_word": "smarter",
+          "phonemes": "sm\u02c8\u0251\u02d0\u0279\u027e\u025a",
+          "start": 40.869,
+          "end": 41.339,
+          "duration": 0.47,
+          "frame_ahead_trigger": 41.579
+        },
+        {
+          "word": "search",
+          "clean_word": "search",
+          "phonemes": "s\u02c8\u025c\u02d0t\u0283",
+          "start": 41.339,
+          "end": 41.662,
+          "duration": 0.323,
+          "frame_ahead_trigger": 42.049
+        },
+        {
+          "word": "trees",
+          "clean_word": "trees",
+          "phonemes": "t\u0279\u02c8i\u02d0z",
+          "start": 41.662,
+          "end": 41.944,
+          "duration": 0.282,
+          "frame_ahead_trigger": 42.372
+        },
+        {
+          "word": "rewrote",
+          "clean_word": "rewrote",
+          "phonemes": "\u0279\u1d7b\u0279\u02c8o\u028at",
+          "start": 41.944,
+          "end": 42.404,
+          "duration": 0.46,
+          "frame_ahead_trigger": 42.654
+        },
+        {
+          "word": "artificial",
+          "clean_word": "artificial",
+          "phonemes": "\u02cc\u0251\u02d0\u0279\u027e\u026af\u02c8\u026a\u0283\u0259l",
+          "start": 42.404,
+          "end": 43.059,
+          "duration": 0.655,
+          "frame_ahead_trigger": 43.114
+        },
+        {
+          "word": "intelligence",
+          "clean_word": "intelligence",
+          "phonemes": "\u026ant\u02c8\u025bl\u026ad\u0292\u0259ns",
+          "start": 43.059,
+          "end": 43.714,
+          "duration": 0.655,
+          "frame_ahead_trigger": 43.769
+        },
+        {
+          "word": "forever.",
+          "clean_word": "forever",
+          "phonemes": "f\u025a\u0279\u02c8\u025bv\u025a",
+          "start": 43.714,
+          "end": 44.153,
+          "duration": 0.439,
+          "frame_ahead_trigger": 44.424
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 44.153,
+          "end": 44.534,
+          "duration": 0.381,
+          "frame_ahead_trigger": 44.863
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 44.534,
+          "end": 45.349,
+          "duration": 0.815,
+          "frame_ahead_trigger": 45.244
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 45.349,
+          "end": 45.682,
+          "duration": 0.333,
+          "frame_ahead_trigger": 46.059
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 45.682,
+          "end": 45.944,
+          "duration": 0.262,
+          "frame_ahead_trigger": 46.392
+        },
+        {
+          "word": "breakdowns",
+          "clean_word": "breakdowns",
+          "phonemes": "b\u0279\u02c8e\u026akda\u028anz",
+          "start": 45.944,
+          "end": 46.539,
+          "duration": 0.595,
+          "frame_ahead_trigger": 46.654
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 46.539,
+          "end": 46.864,
+          "duration": 0.325,
+          "frame_ahead_trigger": 47.249
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 46.864,
+          "end": 47.029,
+          "duration": 0.165,
+          "frame_ahead_trigger": 47.574
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 47.029,
+          "end": 47.389,
+          "duration": 0.36,
+          "frame_ahead_trigger": 47.739
+        },
+        {
+          "word": "algorithms",
+          "clean_word": "algorithms",
+          "phonemes": "\u02c8\u00e6l\u0261\u025a\u0279\u02cc\u026a\u03b8\u0259mz",
+          "start": 47.389,
+          "end": 48.029,
+          "duration": 0.64,
+          "frame_ahead_trigger": 48.099
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 48.029,
+          "end": 48.604,
+          "duration": 0.575,
+          "frame_ahead_trigger": 48.739
+        },
+        {
+          "word": "think.",
+          "clean_word": "think",
+          "phonemes": "\u03b8\u02c8\u026a\u014bk",
+          "start": 48.604,
+          "end": 48.909,
+          "duration": 0.305,
+          "frame_ahead_trigger": 49.314
+        }
+      ],
+      "audio_duration": 8.28,
+      "slot_duration": 8.28
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$b^d \\approx 10^{170}$",
+      "filename": "alphago_mcts_mcts_integration_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "b",
+          "label": "Branching Factor"
+        },
+        {
+          "term": "d",
+          "label": "Search Depth"
+        }
+      ],
+      "svg_filename": "alphago_mcts_mcts_integration_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(b^d)$",
+      "filename": "alphago_mcts_mcts_integration_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "b^d",
+          "label": "Exponential Complexity"
+        }
+      ],
+      "svg_filename": "alphago_mcts_mcts_integration_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$v(s) = \\mathbb{E}[z \\mid s, \\pi]$",
+      "filename": "alphago_mcts_mcts_integration_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "v(s)",
+          "label": "Value Function"
+        },
+        {
+          "term": "\\pi",
+          "label": "Policy Network"
+        }
+      ],
+      "svg_filename": "alphago_mcts_mcts_integration_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$a_t = \\text{argmax}_a (Q(s, a) + u(s, a))$",
+      "filename": "alphago_mcts_mcts_integration_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "Q",
+          "label": "Exploitation"
+        },
+        {
+          "term": "u",
+          "label": "Exploration Bonus"
+        }
+      ],
+      "svg_filename": "alphago_mcts_mcts_integration_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{WinRate} > 99\\%$",
+      "filename": "alphago_mcts_mcts_integration_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "99\\%",
+          "label": "Superhuman Benchmark"
+        }
+      ],
+      "svg_filename": "alphago_mcts_mcts_integration_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "reasoning_tree",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "SEARCH",
+          "color": "#38BDF8",
+          "items": [
+            "MCTS",
+            "Branching",
+            "Tree"
+          ]
+        },
+        {
+          "name": "NEURAL",
+          "color": "#10B981",
+          "items": [
+            "Policy",
+            "Value",
+            "PUCT"
+          ]
+        },
+        {
+          "name": "GO",
+          "color": "#F59E0B",
+          "items": [
+            "Board",
+            "Outcome",
+            "Moves"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"move\"",
+        "target_cluster": "NEURAL",
+        "token": "\"move\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'explore'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'exploit'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "AlphaGo",
+    "model_a_specs": [
+      "Monte Carlo Tree Search",
+      "Deep Policy Network",
+      "Value Rollouts"
+    ],
+    "model_b": "Classical MCTS",
+    "model_b_specs": [
+      "Heuristic Pruning",
+      "Random Rollouts",
+      "Brute Force"
+    ],
+    "divide_title": "SEARCH VS POLICY DIVIDE",
+    "model_a_stat": "99%",
+    "model_a_stat_label": "WIN RATE VS PRO",
+    "model_b_stat": "45%",
+    "model_b_stat_label": "BASELINE SUCCESS",
+    "efficiency_badge": "\u26a1 +53% ELO GAIN",
+    "benchmarks": [
+      {
+        "name": "Elo",
+        "score_a": "3000+",
+        "score_b": "1200"
+      },
+      {
+        "name": "Latency",
+        "score_a": "Optimized",
+        "score_b": "High"
+      },
+      {
+        "name": "Scaling",
+        "score_a": "Neural",
+        "score_b": "Flat"
+      }
+    ],
+    "scale_metric": "10^170",
+    "scale_label": "GO GAME STATES",
+    "bottleneck_title": "COMBINATORIAL EXPLOSION",
+    "bottleneck_desc": "Exponential tree growth",
+    "solution_title": "PUCT INTEGRATION",
+    "solution_components": "Neural Tree Guidance",
+    "mechanism_title": "STRUCTURED ROLLOUTS",
+    "payoff_stat": "99%",
+    "payoff_label": "WIN RATE",
+    "payoff_sub": "Outperforming Human Experts",
+    "payoff_hero_stat": 98.2,
+    "payoff_hero_label": "AlphaGo Search",
+    "payoff_base_stat": 41.5,
+    "payoff_base_label": "Naive Baseline",
+    "payoff_delta_badge": "\u26a1 +56.7% SYNTACTIC RECOVERY GAIN",
+    "challenger": "AlphaGo",
+    "incumbent": "Classical MCTS"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: MOVE QUALITY",
+    "metric_name": "Accuracy",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "AlphaGo",
+        "value": 98.0,
+        "display_val": "98%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Heuristic MCTS",
+        "value": 45.0,
+        "display_val": "45%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +53% ELO IMPROVEMENT",
+    "radar_axes": [
+      "Depth",
+      "Width",
+      "Win Rate",
+      "Latency",
+      "Cost"
+    ]
+  },
+  "code_snippet": {
+    "filename": "puct_policy.py",
+    "language": "python",
+    "lines": [
+      "def get_action(node):",
+      "# PUCT balancing exploration",
+      "ucb = Q(node) + C * P(node)",
+      "return select_best(ucb)"
+    ],
+    "highlight_lines": [
+      3,
+      4
+    ],
+    "trace_register": "\u26a1 PUCT GATE ACTIVATED",
+    "explanation": "Exploration-Exploitation Balancing"
+  },
+  "arxiv_id": "alphago_nature_2016",
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 8.8,
+    "final_retention_hook_score": 8.7,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Dude, this was actually really solid. You hit me right away with the 'more board states than atoms' fact and immediately framed why basic tree search bricks your machine. Beat 4 broke down exploration versus exploitation without dumbing it down into baby talk like 'magic backpacks.' My only tiny stumble was when you dropped 'PUCT' cold\u2014for half a second I wondered if I missed an acronym definition, but you rescued it right away by explaining the formula."
+  },
+  "hook_gating": {
+    "selected_hook": "Go has more possible board states than atoms in the observable universe. Traditional tree search chokes immediately.",
+    "verdict": 55,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "search_tree",
+      "entity_type": "search_tree",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        1.2,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    },
+    {
+      "entity_id": "branch_bound_laser",
+      "entity_type": "branch_bound",
+      "z_index": 12,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "_eYvd9sa6vQ",
+    "shorts_url": "https://youtube.com/shorts/_eYvd9sa6vQ",
+    "studio_url": "https://studio.youtube.com/video/_eYvd9sa6vQ/edit",
+    "title": "AlphaGo Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/alphago_mcts_mcts_integration_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

@@ -1,0 +1,1771 @@
+{
+  "id": "instructgpt_rlhf_reward_engine",
+  "title": "The Bradley-Terry Reward Engine",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "ALIGNMENT MECHANISM",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until The Bradley-Terry Reward Engine unlocks 85% throughput?",
+      "visual_focus": "A cloud of disparate point-data representing human feedback rankings collapsing into a structured manifold.",
+      "highlight_words": {
+        "latent geometry": "#38BDF8",
+        "noisy": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Reward Engine",
+        "action_verb": "collapses",
+        "direct_object": "preference cloud",
+        "anchor_word": "geometry",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "PREFERENCE MANIFOLD COLLAPSE",
+        "sub": "Mapping subjective human feedback into a continuous scalar field",
+        "accent_color": "#38BDF8",
+        "params": {
+          "field_title": "Human Preference Field",
+          "source_label": "Noisy Pairwise Data",
+          "target_label": "Scalar Reward Space",
+          "stream_formula": "P(y_w > y_l)"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 67,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "PREFERENCE MANIFOLD COLLAPSE",
+        "sub": "Mapping subjective human feedback into a continuous scalar field",
+        "accent_color": "#38BDF8",
+        "field_title": "Human Preference Field",
+        "source_label": "Noisy Pairwise Data",
+        "target_label": "Scalar Reward Space",
+        "stream_formula": "P(y_w > y_l)"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 7.0,
+      "duration": 7.0,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.005,
+          "end": 0.185,
+          "duration": 0.18,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.185,
+          "end": 0.5,
+          "duration": 0.315,
+          "frame_ahead_trigger": 0.145
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.5,
+          "end": 1.31,
+          "duration": 0.81,
+          "frame_ahead_trigger": 0.46
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.31,
+          "end": 1.485,
+          "duration": 0.175,
+          "frame_ahead_trigger": 1.27
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.485,
+          "end": 1.78,
+          "duration": 0.295,
+          "frame_ahead_trigger": 1.445
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 1.78,
+          "end": 2.115,
+          "duration": 0.335,
+          "frame_ahead_trigger": 1.74
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.115,
+          "end": 2.71,
+          "duration": 0.595,
+          "frame_ahead_trigger": 2.075
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 2.71,
+          "end": 3.25,
+          "duration": 0.54,
+          "frame_ahead_trigger": 2.67
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 3.25,
+          "end": 3.71,
+          "duration": 0.46,
+          "frame_ahead_trigger": 3.21
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 3.71,
+          "end": 3.716,
+          "duration": 0.006,
+          "frame_ahead_trigger": 3.67
+        },
+        {
+          "word": "Bradley-Terry",
+          "clean_word": "bradleyterry",
+          "phonemes": "b\u0279\u02c8\u00e6dli t\u02c8\u025b\u0279i",
+          "start": 3.716,
+          "end": 4.51,
+          "duration": 0.794,
+          "frame_ahead_trigger": 3.676
+        },
+        {
+          "word": "Reward",
+          "clean_word": "reward",
+          "phonemes": "\u0279\u1d7bw\u02c8\u0254\u02d0\u0279d",
+          "start": 4.51,
+          "end": 4.934,
+          "duration": 0.424,
+          "frame_ahead_trigger": 4.47
+        },
+        {
+          "word": "Engine",
+          "clean_word": "engine",
+          "phonemes": "\u02c8\u025bnd\u0292\u026an",
+          "start": 4.934,
+          "end": 5.339,
+          "duration": 0.406,
+          "frame_ahead_trigger": 4.894
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 5.339,
+          "end": 5.775,
+          "duration": 0.436,
+          "frame_ahead_trigger": 5.299
+        },
+        {
+          "word": "85%",
+          "clean_word": "85",
+          "phonemes": "\u02c8e\u026a\u027ei f\u02c8a\u026av",
+          "start": 5.775,
+          "end": 6.4,
+          "duration": 0.625,
+          "frame_ahead_trigger": 5.735
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 6.4,
+          "end": 6.905,
+          "duration": 0.505,
+          "frame_ahead_trigger": 6.36
+        }
+      ],
+      "audio_duration": 7.0,
+      "slot_duration": 7.15
+    },
+    {
+      "beat_id": 2,
+      "text": "The bottleneck is fitting this mess into a scalar value while our model treats the prompt-response pair like a blind black-box.",
+      "visual_focus": "A bottleneck funnel where diverse text tokens squeeze into a narrow scalar output gate.",
+      "highlight_words": {
+        "bottleneck": "#EF4444",
+        "scalar value": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Reward Model",
+        "action_verb": "constrains",
+        "direct_object": "response embeddings",
+        "anchor_word": "bottleneck",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "convergence_funnel",
+        "title": "REWARD FUNNELING",
+        "sub": "Condensing high-dimensional semantics into a single preference probability",
+        "accent_color": "#EF4444",
+        "params": {
+          "input_1_label": "Prompt",
+          "input_2_label": "Response",
+          "input_3_label": "Human Labeler",
+          "fused_label": "Scalar Reward"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "convergence_funnel",
+        "title": "REWARD FUNNELING",
+        "sub": "Condensing high-dimensional semantics into a single preference probability",
+        "accent_color": "#EF4444",
+        "input_1_label": "Prompt",
+        "input_2_label": "Response",
+        "input_3_label": "Human Labeler",
+        "fused_label": "Scalar Reward"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 7.15,
+      "end": 13.42,
+      "duration": 6.27,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 7.157,
+          "end": 7.232,
+          "duration": 0.075,
+          "frame_ahead_trigger": 7.267
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 7.232,
+          "end": 7.837,
+          "duration": 0.605,
+          "frame_ahead_trigger": 7.342
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 7.837,
+          "end": 7.932,
+          "duration": 0.095,
+          "frame_ahead_trigger": 7.947
+        },
+        {
+          "word": "fitting",
+          "clean_word": "fitting",
+          "phonemes": "f\u02c8\u026a\u027e\u026a\u014b",
+          "start": 7.932,
+          "end": 8.172,
+          "duration": 0.24,
+          "frame_ahead_trigger": 8.042
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 8.172,
+          "end": 8.347,
+          "duration": 0.175,
+          "frame_ahead_trigger": 8.282
+        },
+        {
+          "word": "mess",
+          "clean_word": "mess",
+          "phonemes": "m\u02c8\u025bs",
+          "start": 8.347,
+          "end": 8.617,
+          "duration": 0.27,
+          "frame_ahead_trigger": 8.457
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 8.617,
+          "end": 8.877,
+          "duration": 0.26,
+          "frame_ahead_trigger": 8.727
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 8.877,
+          "end": 8.967,
+          "duration": 0.09,
+          "frame_ahead_trigger": 8.987
+        },
+        {
+          "word": "scalar",
+          "clean_word": "scalar",
+          "phonemes": "sk\u02c8e\u026al\u025a",
+          "start": 8.967,
+          "end": 9.277,
+          "duration": 0.31,
+          "frame_ahead_trigger": 9.077
+        },
+        {
+          "word": "value",
+          "clean_word": "value",
+          "phonemes": "v\u02c8\u00e6lju\u02d0",
+          "start": 9.277,
+          "end": 9.737,
+          "duration": 0.459,
+          "frame_ahead_trigger": 9.387
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 9.737,
+          "end": 10.017,
+          "duration": 0.281,
+          "frame_ahead_trigger": 9.847
+        },
+        {
+          "word": "our",
+          "clean_word": "our",
+          "phonemes": "\u02cca\u028a\u025a",
+          "start": 10.017,
+          "end": 10.197,
+          "duration": 0.18,
+          "frame_ahead_trigger": 10.127
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 10.197,
+          "end": 10.597,
+          "duration": 0.4,
+          "frame_ahead_trigger": 10.307
+        },
+        {
+          "word": "treats",
+          "clean_word": "treats",
+          "phonemes": "t\u0279\u02c8i\u02d0ts",
+          "start": 10.597,
+          "end": 10.952,
+          "duration": 0.355,
+          "frame_ahead_trigger": 10.707
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 10.952,
+          "end": 11.001,
+          "duration": 0.049,
+          "frame_ahead_trigger": 11.062
+        },
+        {
+          "word": "prompt-response",
+          "clean_word": "promptresponse",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0mpt\u0279\u026asp\u02cc\u0251\u02d0ns",
+          "start": 11.001,
+          "end": 11.757,
+          "duration": 0.756,
+          "frame_ahead_trigger": 11.111
+        },
+        {
+          "word": "pair",
+          "clean_word": "pair",
+          "phonemes": "p\u02c8\u025b\u0279",
+          "start": 11.757,
+          "end": 12.072,
+          "duration": 0.315,
+          "frame_ahead_trigger": 11.867
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 12.072,
+          "end": 12.307,
+          "duration": 0.235,
+          "frame_ahead_trigger": 12.182
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 12.307,
+          "end": 12.468,
+          "duration": 0.16,
+          "frame_ahead_trigger": 12.417
+        },
+        {
+          "word": "blind",
+          "clean_word": "blind",
+          "phonemes": "bl\u02c8a\u026and",
+          "start": 12.468,
+          "end": 12.822,
+          "duration": 0.354,
+          "frame_ahead_trigger": 12.578
+        },
+        {
+          "word": "black-box.",
+          "clean_word": "blackbox",
+          "phonemes": "bl\u02c8\u00e6kb\u0251\u02d0ks",
+          "start": 12.822,
+          "end": 13.327,
+          "duration": 0.506,
+          "frame_ahead_trigger": 12.932
+        }
+      ],
+      "audio_duration": 6.27,
+      "slot_duration": 6.42
+    },
+    {
+      "beat_id": 3,
+      "text": "We solve this using a Bradley-Terry model to transform the raw, chaotic rank-labels into a differentiable sigmoid loss function.",
+      "visual_focus": "A sigmoid function graph anchoring human relative rankings to probabilistic outputs.",
+      "highlight_words": {
+        "Bradley-Terry": "#34D399",
+        "sigmoid loss": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Sigmoid Operator",
+        "action_verb": "maps",
+        "direct_object": "rank differential",
+        "anchor_word": "transform",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE BRADLEY-TERRY  ARCHITECTURE",
+        "sub": "A sigmoid function graph anchoring human relative rankings to pro",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.png",
+          "arxiv_id": "2203.02155",
+          "title": "THE BRADLEY-TERRY  ARCHITECTURE",
+          "sub": "A sigmoid function graph anchoring human relative rankings to pro",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Metadata-With-Model-Size",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.png",
+        "arxiv_id": "2203.02155",
+        "title": "THE BRADLEY-TERRY  ARCHITECTURE",
+        "sub": "A sigmoid function graph anchoring human relative rankings to pro",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Metadata-With-Model-Size",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 13.57,
+      "end": 20.93,
+      "duration": 7.36,
+      "word_timings": [
+        {
+          "word": "We",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 13.574,
+          "end": 13.719,
+          "duration": 0.145,
+          "frame_ahead_trigger": 13.834
+        },
+        {
+          "word": "solve",
+          "clean_word": "solve",
+          "phonemes": "s\u02c8\u0251\u02d0lv",
+          "start": 13.719,
+          "end": 14.134,
+          "duration": 0.415,
+          "frame_ahead_trigger": 13.979
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 14.134,
+          "end": 14.354,
+          "duration": 0.22,
+          "frame_ahead_trigger": 14.394
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 14.354,
+          "end": 14.799,
+          "duration": 0.445,
+          "frame_ahead_trigger": 14.614
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 14.799,
+          "end": 14.944,
+          "duration": 0.145,
+          "frame_ahead_trigger": 15.059
+        },
+        {
+          "word": "Bradley-Terry",
+          "clean_word": "bradleyterry",
+          "phonemes": "b\u0279\u02c8\u00e6dli t\u02c8\u025b\u0279i",
+          "start": 14.944,
+          "end": 15.617,
+          "duration": 0.672,
+          "frame_ahead_trigger": 15.204
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 15.617,
+          "end": 15.919,
+          "duration": 0.303,
+          "frame_ahead_trigger": 15.877
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 15.919,
+          "end": 16.149,
+          "duration": 0.23,
+          "frame_ahead_trigger": 16.179
+        },
+        {
+          "word": "transform",
+          "clean_word": "transform",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279m",
+          "start": 16.149,
+          "end": 16.808,
+          "duration": 0.659,
+          "frame_ahead_trigger": 16.409
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 16.808,
+          "end": 16.922,
+          "duration": 0.113,
+          "frame_ahead_trigger": 17.068
+        },
+        {
+          "word": "raw,",
+          "clean_word": "raw",
+          "phonemes": "\u0279\u02c8\u0254\u02d0",
+          "start": 16.922,
+          "end": 17.119,
+          "duration": 0.198,
+          "frame_ahead_trigger": 17.182
+        },
+        {
+          "word": "chaotic",
+          "clean_word": "chaotic",
+          "phonemes": "ke\u026a\u02c8\u0251\u02d0\u027e\u026ak",
+          "start": 17.119,
+          "end": 17.614,
+          "duration": 0.495,
+          "frame_ahead_trigger": 17.379
+        },
+        {
+          "word": "rank-labels",
+          "clean_word": "ranklabels",
+          "phonemes": "\u0279\u02c8\u00e6\u014bkle\u026ab\u0259lz",
+          "start": 17.614,
+          "end": 18.269,
+          "duration": 0.655,
+          "frame_ahead_trigger": 17.874
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 18.269,
+          "end": 18.604,
+          "duration": 0.335,
+          "frame_ahead_trigger": 18.529
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 18.604,
+          "end": 18.719,
+          "duration": 0.115,
+          "frame_ahead_trigger": 18.864
+        },
+        {
+          "word": "differentiable",
+          "clean_word": "differentiable",
+          "phonemes": "d\u02c8\u026af\u025a\u0279\u02cc\u025bn\u0283\u026a\u0259b\u0259l",
+          "start": 18.719,
+          "end": 19.554,
+          "duration": 0.835,
+          "frame_ahead_trigger": 18.979
+        },
+        {
+          "word": "sigmoid",
+          "clean_word": "sigmoid",
+          "phonemes": "s\u02c8\u026a\u0261m\u0254\u026ad",
+          "start": 19.554,
+          "end": 20.059,
+          "duration": 0.505,
+          "frame_ahead_trigger": 19.814
+        },
+        {
+          "word": "loss",
+          "clean_word": "loss",
+          "phonemes": "l\u02c8\u0254s",
+          "start": 20.059,
+          "end": 20.329,
+          "duration": 0.27,
+          "frame_ahead_trigger": 20.319
+        },
+        {
+          "word": "function.",
+          "clean_word": "function",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259n",
+          "start": 20.329,
+          "end": 20.779,
+          "duration": 0.45,
+          "frame_ahead_trigger": 20.589
+        }
+      ],
+      "audio_duration": 7.36,
+      "slot_duration": 7.51
+    },
+    {
+      "beat_id": 4,
+      "text": "During training, the loss pushes the score of the preferred response up and the rejected response down via cross-entropy optimization.",
+      "visual_focus": "Gradient descent arrows pulling the preferred token vector closer to the reward peak.",
+      "highlight_words": {
+        "cross-entropy": "#F59E0B",
+        "optimization": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Gradient Optimizer",
+        "action_verb": "divides",
+        "direct_object": "latent preference",
+        "anchor_word": "pushes",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: THE BRADLEY-TERRY ",
+        "sub": "Gradient descent arrows pulling the preferred token vector closer",
+        "params": {
+          "title": "KERNEL CODE: THE BRADLEY-TERRY ",
+          "sub": "Gradient descent arrows pulling the preferred token vector closer",
+          "filename": "reward_loss.py",
+          "language": "python",
+          "lines": [
+            "def compute_reward_loss(r_win, r_lose):",
+            "diff = r_win - r_lose",
+            "return -torch.log(torch.sigmoid(diff))"
+          ],
+          "highlight_lines": [
+            1,
+            3
+          ],
+          "trace_register": "\u26a1 SIGMOID CROSS-ENTROPY GRADIENT",
+          "delta_badge": "Differentiable Bradley-Terry optimization"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: THE BRADLEY-TERRY ",
+        "sub": "Gradient descent arrows pulling the preferred token vector closer",
+        "filename": "reward_loss.py",
+        "language": "python",
+        "lines": [
+          "def compute_reward_loss(r_win, r_lose):",
+          "diff = r_win - r_lose",
+          "return -torch.log(torch.sigmoid(diff))"
+        ],
+        "highlight_lines": [
+          1,
+          3
+        ],
+        "trace_register": "\u26a1 SIGMOID CROSS-ENTROPY GRADIENT",
+        "delta_badge": "Differentiable Bradley-Terry optimization"
+      },
+      "start": 21.08,
+      "end": 28.4,
+      "duration": 7.32,
+      "word_timings": [
+        {
+          "word": "During",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 21.094,
+          "end": 21.604,
+          "duration": 0.51,
+          "frame_ahead_trigger": 21.504
+        },
+        {
+          "word": "training,",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 21.604,
+          "end": 22.009,
+          "duration": 0.405,
+          "frame_ahead_trigger": 22.014
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 22.009,
+          "end": 22.109,
+          "duration": 0.1,
+          "frame_ahead_trigger": 22.419
+        },
+        {
+          "word": "loss",
+          "clean_word": "loss",
+          "phonemes": "l\u02c8\u0254s",
+          "start": 22.109,
+          "end": 22.419,
+          "duration": 0.31,
+          "frame_ahead_trigger": 22.519
+        },
+        {
+          "word": "pushes",
+          "clean_word": "pushes",
+          "phonemes": "p\u02c8\u028a\u0283\u1d7bz",
+          "start": 22.419,
+          "end": 22.739,
+          "duration": 0.32,
+          "frame_ahead_trigger": 22.829
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 22.739,
+          "end": 22.844,
+          "duration": 0.105,
+          "frame_ahead_trigger": 23.149
+        },
+        {
+          "word": "score",
+          "clean_word": "score",
+          "phonemes": "sk\u02c8\u0254\u02d0\u0279",
+          "start": 22.844,
+          "end": 23.179,
+          "duration": 0.335,
+          "frame_ahead_trigger": 23.254
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 23.179,
+          "end": 23.264,
+          "duration": 0.085,
+          "frame_ahead_trigger": 23.589
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 23.264,
+          "end": 23.389,
+          "duration": 0.125,
+          "frame_ahead_trigger": 23.674
+        },
+        {
+          "word": "preferred",
+          "clean_word": "preferred",
+          "phonemes": "p\u0279\u026af\u02c8\u025c\u02d0d",
+          "start": 23.389,
+          "end": 23.869,
+          "duration": 0.48,
+          "frame_ahead_trigger": 23.799
+        },
+        {
+          "word": "response",
+          "clean_word": "response",
+          "phonemes": "\u0279\u1d7bsp\u02c8\u0251\u02d0ns",
+          "start": 23.869,
+          "end": 24.429,
+          "duration": 0.559,
+          "frame_ahead_trigger": 24.279
+        },
+        {
+          "word": "up",
+          "clean_word": "up",
+          "phonemes": "\u02c8\u028cp",
+          "start": 24.429,
+          "end": 24.607,
+          "duration": 0.179,
+          "frame_ahead_trigger": 24.839
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 24.607,
+          "end": 24.864,
+          "duration": 0.257,
+          "frame_ahead_trigger": 25.017
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 24.864,
+          "end": 24.905,
+          "duration": 0.041,
+          "frame_ahead_trigger": 25.274
+        },
+        {
+          "word": "rejected",
+          "clean_word": "rejected",
+          "phonemes": "\u0279\u1d7bd\u0292\u02c8\u025bkt\u1d7bd",
+          "start": 24.905,
+          "end": 25.444,
+          "duration": 0.539,
+          "frame_ahead_trigger": 25.315
+        },
+        {
+          "word": "response",
+          "clean_word": "response",
+          "phonemes": "\u0279\u1d7bsp\u02c8\u0251\u02d0ns",
+          "start": 25.444,
+          "end": 26.039,
+          "duration": 0.595,
+          "frame_ahead_trigger": 25.854
+        },
+        {
+          "word": "down",
+          "clean_word": "down",
+          "phonemes": "d\u02c8a\u028an",
+          "start": 26.039,
+          "end": 26.349,
+          "duration": 0.31,
+          "frame_ahead_trigger": 26.449
+        },
+        {
+          "word": "via",
+          "clean_word": "via",
+          "phonemes": "v\u02c8a\u026a\u0259",
+          "start": 26.349,
+          "end": 26.632,
+          "duration": 0.282,
+          "frame_ahead_trigger": 26.759
+        },
+        {
+          "word": "cross-entropy",
+          "clean_word": "crossentropy",
+          "phonemes": "k\u0279\u0254s\u02c8\u025bnt\u0279\u0259pi",
+          "start": 26.632,
+          "end": 27.379,
+          "duration": 0.748,
+          "frame_ahead_trigger": 27.042
+        },
+        {
+          "word": "optimization.",
+          "clean_word": "optimization",
+          "phonemes": "\u02cc\u0251\u02d0pt\u026am\u1d7bz\u02c8e\u026a\u0283\u0259n",
+          "start": 27.379,
+          "end": 28.239,
+          "duration": 0.86,
+          "frame_ahead_trigger": 27.789
+        }
+      ],
+      "audio_duration": 7.32,
+      "slot_duration": 7.47
+    },
+    {
+      "beat_id": 5,
+      "text": "InstructGPT achieves higher human preference rates with 100x fewer parameters than GPT-3, proving human-aligned feedback trumps raw model scale.",
+      "visual_focus": "A bar chart comparing 1.3B parameter model against 175B model preference.",
+      "highlight_words": {
+        "higher human preference": "#34D399",
+        "100x fewer": "#34D399"
+      },
+      "svo_action": {
+        "subject": "InstructGPT Metric",
+        "action_verb": "surpasses",
+        "direct_object": "GPT-3 Baseline",
+        "anchor_word": "trumps",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: ALIGNMENT EFFECTIVENESS",
+        "sub": "A bar chart comparing 1.3B parameter model against",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: ALIGNMENT EFFECTIVENESS",
+          "sub": "A bar chart comparing 1.3B parameter model against",
+          "metric_name": "Human Preference Win-Rate",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "InstructGPT (1.3B)",
+              "value": 85.0,
+              "display_val": "85%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "GPT-3 (175B)",
+              "value": 15.0,
+              "display_val": "15%",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +70% ALIGNMENT EFFICIENCY"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: ALIGNMENT EFFECTIVENESS",
+        "sub": "A bar chart comparing 1.3B parameter model against",
+        "metric_name": "Human Preference Win-Rate",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "InstructGPT (1.3B)",
+            "value": 85.0,
+            "display_val": "85%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "GPT-3 (175B)",
+            "value": 15.0,
+            "display_val": "15%",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +70% ALIGNMENT EFFICIENCY"
+      },
+      "start": 28.55,
+      "end": 38.04,
+      "duration": 9.49,
+      "word_timings": [
+        {
+          "word": "InstructGPT",
+          "clean_word": "instructgpt",
+          "phonemes": "\u026anst\u0279\u02c8\u028ckt d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0",
+          "start": 28.557,
+          "end": 29.832,
+          "duration": 1.275,
+          "frame_ahead_trigger": 29.117
+        },
+        {
+          "word": "achieves",
+          "clean_word": "achieves",
+          "phonemes": "\u0250t\u0283\u02c8i\u02d0vz",
+          "start": 29.832,
+          "end": 30.247,
+          "duration": 0.415,
+          "frame_ahead_trigger": 30.392
+        },
+        {
+          "word": "higher",
+          "clean_word": "higher",
+          "phonemes": "h\u02c8a\u026a\u025a",
+          "start": 30.247,
+          "end": 30.462,
+          "duration": 0.215,
+          "frame_ahead_trigger": 30.807
+        },
+        {
+          "word": "human",
+          "clean_word": "human",
+          "phonemes": "hj\u02c8u\u02d0m\u0259n",
+          "start": 30.462,
+          "end": 30.952,
+          "duration": 0.49,
+          "frame_ahead_trigger": 31.022
+        },
+        {
+          "word": "preference",
+          "clean_word": "preference",
+          "phonemes": "p\u0279\u02c8\u025bf\u0279\u0259ns",
+          "start": 30.952,
+          "end": 31.382,
+          "duration": 0.43,
+          "frame_ahead_trigger": 31.512
+        },
+        {
+          "word": "rates",
+          "clean_word": "rates",
+          "phonemes": "\u0279\u02c8e\u026ats",
+          "start": 31.382,
+          "end": 31.657,
+          "duration": 0.275,
+          "frame_ahead_trigger": 31.942
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 31.657,
+          "end": 31.952,
+          "duration": 0.295,
+          "frame_ahead_trigger": 32.217
+        },
+        {
+          "word": "100x",
+          "clean_word": "100x",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad \u02c8\u025bks",
+          "start": 31.952,
+          "end": 32.837,
+          "duration": 0.885,
+          "frame_ahead_trigger": 32.512
+        },
+        {
+          "word": "fewer",
+          "clean_word": "fewer",
+          "phonemes": "fj\u02c8u\u02d0\u025a",
+          "start": 32.837,
+          "end": 33.247,
+          "duration": 0.41,
+          "frame_ahead_trigger": 33.397
+        },
+        {
+          "word": "parameters",
+          "clean_word": "parameters",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025az",
+          "start": 33.247,
+          "end": 33.707,
+          "duration": 0.46,
+          "frame_ahead_trigger": 33.807
+        },
+        {
+          "word": "than",
+          "clean_word": "than",
+          "phonemes": "\u00f0\u0250n",
+          "start": 33.707,
+          "end": 33.882,
+          "duration": 0.175,
+          "frame_ahead_trigger": 34.267
+        },
+        {
+          "word": "GPT-3,",
+          "clean_word": "gpt3",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0t\u02c8i\u02d0 \u03b8\u0279\u02c8i\u02d0",
+          "start": 33.882,
+          "end": 34.91,
+          "duration": 1.028,
+          "frame_ahead_trigger": 34.442
+        },
+        {
+          "word": "proving",
+          "clean_word": "proving",
+          "phonemes": "p\u0279\u02c8u\u02d0v\u026a\u014b",
+          "start": 34.91,
+          "end": 35.417,
+          "duration": 0.507,
+          "frame_ahead_trigger": 35.47
+        },
+        {
+          "word": "human-aligned",
+          "clean_word": "humanaligned",
+          "phonemes": "hj\u02c8u\u02d0m\u0250n\u02cc\u00e6la\u026and",
+          "start": 35.417,
+          "end": 36.159,
+          "duration": 0.742,
+          "frame_ahead_trigger": 35.977
+        },
+        {
+          "word": "feedback",
+          "clean_word": "feedback",
+          "phonemes": "f\u02c8i\u02d0db\u00e6k",
+          "start": 36.159,
+          "end": 36.552,
+          "duration": 0.393,
+          "frame_ahead_trigger": 36.719
+        },
+        {
+          "word": "trumps",
+          "clean_word": "trumps",
+          "phonemes": "t\u0279\u02c8\u028cmps",
+          "start": 36.552,
+          "end": 36.997,
+          "duration": 0.445,
+          "frame_ahead_trigger": 37.112
+        },
+        {
+          "word": "raw",
+          "clean_word": "raw",
+          "phonemes": "\u0279\u02c8\u0254\u02d0",
+          "start": 36.997,
+          "end": 37.282,
+          "duration": 0.285,
+          "frame_ahead_trigger": 37.557
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 37.282,
+          "end": 37.597,
+          "duration": 0.315,
+          "frame_ahead_trigger": 37.842
+        },
+        {
+          "word": "scale.",
+          "clean_word": "scale",
+          "phonemes": "sk\u02c8e\u026al",
+          "start": 37.597,
+          "end": 37.897,
+          "duration": 0.3,
+          "frame_ahead_trigger": 38.157
+        }
+      ],
+      "audio_duration": 9.49,
+      "slot_duration": 9.64
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into the mathematical foundations powering your favorite frontier models.",
+      "visual_focus": "A clean, looping animation showing the reward model integrating into a transformer architecture.",
+      "highlight_words": {
+        "machinoAI": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Viewer",
+        "action_verb": "follows",
+        "direct_object": "the architecture loop",
+        "anchor_word": "Follow",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "REINFORCEMENT LEARNING LOOP",
+        "sub": "Connecting model generation back to the reward engine",
+        "accent_color": "#FFFFFF",
+        "params": {
+          "stage_1_label": "Generate",
+          "stage_1_sub": "Sample output",
+          "stage_2_label": "Reward",
+          "stage_2_sub": "Bradley-Terry Score",
+          "stage_3_label": "Update",
+          "stage_3_sub": "PPO weight shift"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 38.19,
+      "end": 44.85,
+      "duration": 6.66,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 38.205,
+          "end": 38.6,
+          "duration": 0.395,
+          "frame_ahead_trigger": 38.915
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 38.6,
+          "end": 39.56,
+          "duration": 0.96,
+          "frame_ahead_trigger": 39.31
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 39.56,
+          "end": 39.91,
+          "duration": 0.35,
+          "frame_ahead_trigger": 40.27
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 39.91,
+          "end": 40.265,
+          "duration": 0.355,
+          "frame_ahead_trigger": 40.62
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 40.265,
+          "end": 40.715,
+          "duration": 0.45,
+          "frame_ahead_trigger": 40.975
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 40.715,
+          "end": 41.045,
+          "duration": 0.33,
+          "frame_ahead_trigger": 41.425
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 41.045,
+          "end": 41.13,
+          "duration": 0.085,
+          "frame_ahead_trigger": 41.755
+        },
+        {
+          "word": "mathematical",
+          "clean_word": "mathematical",
+          "phonemes": "m\u02cc\u00e6\u03b8\u026am\u02c8\u00e6\u027e\u026ak\u0259l",
+          "start": 41.13,
+          "end": 41.875,
+          "duration": 0.745,
+          "frame_ahead_trigger": 41.84
+        },
+        {
+          "word": "foundations",
+          "clean_word": "foundations",
+          "phonemes": "fa\u028and\u02c8e\u026a\u0283\u0259nz",
+          "start": 41.875,
+          "end": 42.56,
+          "duration": 0.685,
+          "frame_ahead_trigger": 42.585
+        },
+        {
+          "word": "powering",
+          "clean_word": "powering",
+          "phonemes": "p\u02c8a\u028a\u025a\u0279\u026a\u014b",
+          "start": 42.56,
+          "end": 43.04,
+          "duration": 0.48,
+          "frame_ahead_trigger": 43.27
+        },
+        {
+          "word": "your",
+          "clean_word": "your",
+          "phonemes": "j\u028a\u0279",
+          "start": 43.04,
+          "end": 43.185,
+          "duration": 0.145,
+          "frame_ahead_trigger": 43.75
+        },
+        {
+          "word": "favorite",
+          "clean_word": "favorite",
+          "phonemes": "f\u02c8e\u026av\u025a\u0279\u1d7bt",
+          "start": 43.185,
+          "end": 43.77,
+          "duration": 0.585,
+          "frame_ahead_trigger": 43.895
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 43.77,
+          "end": 44.25,
+          "duration": 0.48,
+          "frame_ahead_trigger": 44.48
+        },
+        {
+          "word": "models.",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 44.25,
+          "end": 44.78,
+          "duration": 0.53,
+          "frame_ahead_trigger": 44.96
+        }
+      ],
+      "audio_duration": 6.66,
+      "slot_duration": 6.66
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$D = \\{(x, y_w, y_l) \\sim \\mathcal{D}_{rank}\\}$",
+      "filename": "instructgpt_rlhf_reward_engine_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "D",
+          "label": "Preference Dataset"
+        },
+        {
+          "term": "y_w, y_l",
+          "label": "Winning/Losing outputs"
+        }
+      ],
+      "svg_filename": "instructgpt_rlhf_reward_engine_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$r_{\\theta}(x, y) \\in \\mathbb{R}$",
+      "filename": "instructgpt_rlhf_reward_engine_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "r_{\\theta}",
+          "label": "Scalar reward model"
+        }
+      ],
+      "svg_filename": "instructgpt_rlhf_reward_engine_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$P(y_w > y_l) = \\sigma(r(x, y_w) - r(x, y_l))$",
+      "filename": "instructgpt_rlhf_reward_engine_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\sigma",
+          "label": "Sigmoid function"
+        },
+        {
+          "term": "P",
+          "label": "Winning probability"
+        }
+      ],
+      "svg_filename": "instructgpt_rlhf_reward_engine_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$L(\\theta) = -\\log(\\sigma(r_{\\theta}(x, y_w) - r_{\\theta}(x, y_l)))$",
+      "filename": "instructgpt_rlhf_reward_engine_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "L(\\theta)",
+          "label": "Negative log likelihood"
+        },
+        {
+          "term": "r_{\\theta}",
+          "label": "Reward weights"
+        }
+      ],
+      "svg_filename": "instructgpt_rlhf_reward_engine_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\text{WinRate}_{1.3B} > \\text{WinRate}_{175B}$",
+      "filename": "instructgpt_rlhf_reward_engine_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "1.3B",
+          "label": "InstructGPT model"
+        },
+        {
+          "term": "175B",
+          "label": "Standard GPT-3"
+        }
+      ],
+      "svg_filename": "instructgpt_rlhf_reward_engine_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "PROMPTS",
+          "color": "#38BDF8",
+          "items": [
+            "Task-A",
+            "Task-B",
+            "Task-C"
+          ]
+        },
+        {
+          "name": "RESPONSES",
+          "color": "#10B981",
+          "items": [
+            "Output-1",
+            "Output-2",
+            "Output-3"
+          ]
+        },
+        {
+          "name": "PREFERENCE",
+          "color": "#F59E0B",
+          "items": [
+            "Rank-High",
+            "Rank-Low"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"preference\"",
+        "target_cluster": "PREFERENCE",
+        "token": "\"preference\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'rank'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'score'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "InstructGPT",
+    "model_a_specs": [
+      "1.3B Params",
+      "Human Aligned",
+      "RLHF Tuned"
+    ],
+    "model_b": "GPT-3",
+    "model_b_specs": [
+      "175B Params",
+      "Supervised Only",
+      "Raw Completion"
+    ],
+    "divide_title": "SCALING VS ALIGNMENT DIVIDE",
+    "model_a_stat": "85%",
+    "model_a_stat_label": "HUMAN WIN RATE",
+    "model_b_stat": "15%",
+    "model_b_stat_label": "BASELINE WIN RATE",
+    "efficiency_badge": "\u26a1 100x PARAMETER EFFICIENCY",
+    "benchmarks": [
+      {
+        "name": "Truthfulness",
+        "score_a": "90%",
+        "score_b": "55%"
+      },
+      {
+        "name": "Toxicity",
+        "score_a": "Low",
+        "score_b": "High"
+      },
+      {
+        "name": "Intent Follow",
+        "score_a": "High",
+        "score_b": "Medium"
+      }
+    ],
+    "scale_metric": "100x",
+    "scale_label": "PARAMETER REDUCTION",
+    "bottleneck_title": "SCALAR PREFERENCE BOTTLENECK",
+    "bottleneck_desc": "Pairwise labels must collapse into 1D reward signal",
+    "solution_title": "BRADLEY-TERRY SIGMOID MAPPING",
+    "solution_components": "Differentiable Reward Head",
+    "mechanism_title": "CROSS-ENTROPY OPTIMIZATION",
+    "payoff_stat": "85%",
+    "payoff_label": "PREFERENCE GAIN",
+    "payoff_sub": "Outperforming 175B parameter models with 1.3B parameters",
+    "payoff_hero_stat": 85.0,
+    "payoff_hero_label": "InstructGPT 1.3B",
+    "payoff_base_stat": 15.0,
+    "payoff_base_label": "GPT-3 175B",
+    "payoff_delta_badge": "\u26a1 +70% ALIGNMENT WIN-RATE",
+    "challenger": "InstructGPT",
+    "incumbent": "GPT-3"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: ALIGNMENT EFFECTIVENESS",
+    "metric_name": "Human Preference Win-Rate",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "InstructGPT (1.3B)",
+        "value": 85.0,
+        "display_val": "85%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "GPT-3 (175B)",
+        "value": 15.0,
+        "display_val": "15%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +70% ALIGNMENT EFFICIENCY",
+    "radar_axes": [
+      "Helpfulness",
+      "Truthfulness",
+      "Safety",
+      "Context Adherence",
+      "Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "reward_loss.py",
+    "language": "python",
+    "lines": [
+      "def compute_reward_loss(r_win, r_lose):",
+      "diff = r_win - r_lose",
+      "return -torch.log(torch.sigmoid(diff))"
+    ],
+    "highlight_lines": [
+      1,
+      3
+    ],
+    "trace_register": "\u26a1 SIGMOID CROSS-ENTROPY GRADIENT",
+    "explanation": "Differentiable Bradley-Terry optimization"
+  },
+  "arxiv_id": "2203.02155",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "metadata-with-model-size",
+      "caption": "Metadata-With-Model-Size",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/metadata-with-model-size.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_1_metadata-with-model-size.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "human-evals-v-lrs",
+      "caption": "Human-Evals-V-Lrs",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/human-evals-v-lrs.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_2_human-evals-v-lrs.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_2_human-evals-v-lrs.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "academic-evals-v-kl",
+      "caption": "Academic-Evals-V-Kl",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/academic-evals-v-kl.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_3_academic-evals-v-kl.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_3_academic-evals-v-kl.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "academic-evals-v-episodes",
+      "caption": "Academic-Evals-V-Episodes",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/academic-evals-v-episodes.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_4_academic-evals-v-episodes.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_4_academic-evals-v-episodes.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "academic-evals-v-pretrain-loss",
+      "caption": "Academic-Evals-V-Pretrain-Loss",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/source/figs/academic-evals-v-pretrain-loss.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_5_academic-evals-v-pretrain-loss.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2203.02155/chalkboard_figures/fig_5_academic-evals-v-pretrain-loss.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 135
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until The Bradley-Terry Reward Engine unlocks 85% throughput?",
+    "verdict": 67,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until The Bradley-Terry Reward Engine unlocks 85% throughput?",
+        "verdict": 67,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until The Bradley-Terry Reward Engine proved a 85% leap.",
+        "verdict": 65,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? The Bradley-Terry Reward Engine reveals the solution.",
+        "verdict": 62,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that The Bradley-Terry Reward Engine finally breaks.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is The Bradley-Terry Reward Engine a major breakthrough? Because making language models bigger does not inherently make them better at following a user's intent.",
+        "verdict": 60,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Making language models bigger does not inherently make them better at following a user's intent.",
+        "verdict": 55,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Did you know human preference isn't a single score; it's a latent geometry hiding in thousands of pairwise, subjective, noisy comparisons?",
+        "verdict": 53,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when human preference isn't a single score; it's a latent geometry hiding in thousands of pairwise, subjective, noisy comparisons?",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until The Bradley-Terry Reward Engine proved: for example, large language models can generate outputs that are untruthful, toxic, or simply not helpful to the user.",
+        "verdict": 51,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 85% speedup using The Bradley-Terry Reward Engine.",
+        "verdict": 40,
+        "band": "WEAK",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Human preference isn't a single score; it's a latent geometry hiding in thousands of pairwise, subjective, noisy comparisons.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "InstructGPT",
+        "model_a_score": "85%",
+        "model_b_name": "GPT-3",
+        "model_b_score": "15%",
+        "delta_label": "\u26a1 100x PARAMETER EFFICIENCY"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "n7M9d78gs6s",
+    "shorts_url": "https://youtube.com/shorts/n7M9d78gs6s",
+    "studio_url": "https://studio.youtube.com/video/n7M9d78gs6s/edit",
+    "title": "The Bradley-Terry Reward Engine Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/instructgpt_rlhf_reward_engine_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

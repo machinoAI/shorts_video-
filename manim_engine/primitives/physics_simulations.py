@@ -23,7 +23,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(PROJECT_ROOT))
 
 from pipeline.config import FONT_HELVETICA
-from manim_engine.primitives.typography import CleanText
+from manim_engine.primitives.typography import CleanText, trim_words
 from manim_engine.primitives.visual_compositions import (
     BaseBlueprintComposition,
     COLOR_CYAN, COLOR_MINT, COLOR_AMBER, COLOR_CORAL,
@@ -97,14 +97,14 @@ class SimulationVectorField(BaseBlueprintComposition):
             corner_radius=0.12, width=2.4, height=0.55,
             color=COLOR_CORAL, fill_color=COLOR_PANEL_BG, fill_opacity=0.92, stroke_width=1.8
         ).move_to([-1.8, -2.8, 0])
-        src_lbl = CleanText(source_label[:20].upper(), font=FONT_HELVETICA, font_size=9, color=COLOR_CORAL, weight=BOLD).move_to(src_capsule)
+        src_lbl = CleanText(trim_words(source_label, 20).upper(), font=FONT_HELVETICA, font_size=9, color=COLOR_CORAL, weight=BOLD).move_to(src_capsule)
         src_grp = VGroup(src_capsule, src_lbl)
 
         tgt_capsule = RoundedRectangle(
             corner_radius=0.12, width=2.4, height=0.55,
             color=COLOR_MINT, fill_color=COLOR_PANEL_BG, fill_opacity=0.92, stroke_width=1.8
         ).move_to([1.8, 3.4, 0])
-        tgt_lbl = CleanText(target_label[:20].upper(), font=FONT_HELVETICA, font_size=9, color=COLOR_MINT, weight=BOLD).move_to(tgt_capsule)
+        tgt_lbl = CleanText(trim_words(target_label, 20).upper(), font=FONT_HELVETICA, font_size=9, color=COLOR_MINT, weight=BOLD).move_to(tgt_capsule)
         tgt_grp = VGroup(tgt_capsule, tgt_lbl)
 
         # 5. Math Vector Velocity Chip (Placed cleanly at bottom of grid)
@@ -112,16 +112,60 @@ class SimulationVectorField(BaseBlueprintComposition):
             corner_radius=0.1, width=3.4, height=0.45,
             color=COLOR_SLATE, fill_color=COLOR_PANEL_BG, fill_opacity=0.92, stroke_width=1.5
         ).move_to([0, -2.35, 0])
-        vel_txt = CleanText(stream_formula[:28], font=FONT_HELVETICA, font_size=10, color=COLOR_WHITE, weight=BOLD).move_to(vel_chip)
-        vel_grp = VGroup(vel_chip, vel_txt)
+        if str(stream_formula or "").strip():
+            vel_txt = CleanText(trim_words(stream_formula, 28), font=FONT_HELVETICA, font_size=10, color=COLOR_WHITE, weight=BOLD).move_to(vel_chip)
+            vel_grp = VGroup(vel_chip, vel_txt)
+        else:
+            vel_grp = VGroup()  # no formula given: no chip (the old default formula was diffusion-specific)
         self.grid_plane = grid_plane
         self.src_grp = src_grp
         self.tgt_grp = tgt_grp
         self.vel_grp = vel_grp
 
+        # Each particle travels along its own streamline during holds (see start_continuous_motion)
+        self._particle_alphas = [0.20 + (i * 0.15) for i in range(len(self.particles))]
+        self.focus_target = tgt_grp
+
         self.content_group.add(grid_plane, self.streamlines, self.particles, src_grp, tgt_grp, vel_grp)
         self.kinetic_elements.add(self.streamlines, self.particles)
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Plane -> source + streamlines drawn -> particles + target -> velocity formula."""
+        return [
+            [self.grid_plane],
+            {"mobjects": [self.src_grp, self.streamlines],
+             "animate": lambda rt: AnimationGroup(
+                 FadeIn(self.src_grp, shift=UP * 0.1),
+                 LaggedStart(*[Create(s) for s in self.streamlines], lag_ratio=0.15), run_time=rt)},
+            [self.particles, self.tgt_grp],
+        ] + ([[self.vel_grp]] if len(self.vel_grp.submobjects) > 0 else [])
+
+    def start_continuous_motion(self, speed: float = 0.07):
+        """Particles drift along their streamlines (source -> target) for the rest of the beat."""
+        for i, p in enumerate(self.particles):
+            curve = self.streamlines[i][0]
+
+            def _flow(mob, dt, idx=i, c=curve):
+                a = self._particle_alphas[idx] + speed * dt
+                if a > 0.97:
+                    a = 0.05
+                self._particle_alphas[idx] = a
+                mob.move_to(c.point_from_proportion(a))
+            p.add_updater(_flow)
+
+    def stop_continuous_motion(self):
+        for p in self.particles:
+            p.clear_updaters()
+
+    def get_focus_animation(self, run_time: float = 1.0):
+        flashes = [ShowPassingFlash(s[0].copy().set_stroke(color=YELLOW, width=6, opacity=1.0), time_width=0.5)
+                   for s in self.streamlines]
+        return AnimationGroup(
+            LaggedStart(*flashes, lag_ratio=0.12),
+            Circumscribe(self.tgt_grp, color=COLOR_MINT, time_width=0.6),
+            run_time=run_time,
+        )
 
     def get_entrance_animation(self, run_time: float = 1.0) -> Animation:
         """Progressive build: plane and capsules appear, streamlines draw into view."""
@@ -234,15 +278,43 @@ class SimulationNeuralActivation(BaseBlueprintComposition):
                     self.active_synapses.add(glow_syn)
 
         # Layer Labels at Top
-        lbl_in = CleanText(input_label[:18].upper(), font=FONT_HELVETICA, font_size=10, color=COLOR_CYAN, weight=BOLD).move_to([-2.2, 3.4, 0])
-        lbl_hid = CleanText(hidden_label[:18].upper(), font=FONT_HELVETICA, font_size=10, color=accent_color, weight=BOLD).move_to([0.0, 3.4, 0])
-        lbl_out = CleanText(output_label[:18].upper(), font=FONT_HELVETICA, font_size=10, color=COLOR_MINT, weight=BOLD).move_to([2.2, 3.4, 0])
+        lbl_in = CleanText(trim_words(input_label, 18).upper(), font=FONT_HELVETICA, font_size=10, color=COLOR_CYAN, weight=BOLD).move_to([-2.2, 3.4, 0])
+        lbl_hid = CleanText(trim_words(hidden_label, 18).upper(), font=FONT_HELVETICA, font_size=10, color=accent_color, weight=BOLD).move_to([0.0, 3.4, 0])
+        lbl_out = CleanText(trim_words(output_label, 18).upper(), font=FONT_HELVETICA, font_size=10, color=COLOR_MINT, weight=BOLD).move_to([2.2, 3.4, 0])
 
         self.layer_labels = VGroup(lbl_in, lbl_hid, lbl_out)
+
+        self.focus_target = self.neuron_groups[-1]
 
         self.content_group.add(self.synapses, self.active_synapses, self.neurons, lbl_in, lbl_hid, lbl_out)
         self.kinetic_elements.add(self.active_synapses, self.neurons)
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Input layer -> hidden layer + connections -> output layer -> strongest pathways light up."""
+        lbl_in, lbl_hid, lbl_out = self.layer_labels
+        return [
+            {"mobjects": [self.neuron_groups[0], lbl_in],
+             "animate": lambda rt: AnimationGroup(FadeIn(lbl_in), LaggedStart(*[GrowFromCenter(n) for n in self.neuron_groups[0]], lag_ratio=0.15), run_time=rt)},
+            {"mobjects": [self.synapses, self.neuron_groups[1], lbl_hid],
+             "animate": lambda rt: AnimationGroup(FadeIn(self.synapses), FadeIn(lbl_hid), LaggedStart(*[GrowFromCenter(n) for n in self.neuron_groups[1]], lag_ratio=0.1), run_time=rt)},
+            {"mobjects": [self.neuron_groups[2], lbl_out],
+             "animate": lambda rt: AnimationGroup(FadeIn(lbl_out), LaggedStart(*[GrowFromCenter(n) for n in self.neuron_groups[2]], lag_ratio=0.15), run_time=rt)},
+            {"mobjects": [self.active_synapses],
+             "animate": lambda rt: LaggedStart(*[Create(s) for s in self.active_synapses], lag_ratio=0.08, run_time=rt)},
+        ]
+
+    def get_focus_animation(self, run_time: float = 1.0):
+        """A signal travels input -> hidden -> output along the strongest connections."""
+        half = max(1, len(self.active_synapses) // 2)
+        first = [ShowPassingFlash(s.copy().set_stroke(color=YELLOW, width=5), time_width=0.6) for s in self.active_synapses[:half]]
+        second = [ShowPassingFlash(s.copy().set_stroke(color=YELLOW, width=5), time_width=0.6) for s in self.active_synapses[half:]]
+        phases = [AnimationGroup(*first)] + ([AnimationGroup(*second)] if second else [])
+        return AnimationGroup(
+            Succession(*phases),
+            Circumscribe(self.neuron_groups[-1], color=COLOR_MINT, time_width=0.6),
+            run_time=run_time,
+        )
 
     def get_entrance_animation(self, run_time: float = 1.0) -> Animation:
         """Progressive build: layers grow from center and synapses draw."""
@@ -305,7 +377,7 @@ class SimulationAttentionPrism(BaseBlueprintComposition):
             start=[0, 3.2, 0], end=[0, 1.8, 0],
             color=COLOR_WHITE, stroke_width=5.0
         )
-        in_lbl = CleanText(token_label[:20].upper(), font=FONT_HELVETICA, font_size=9, color=COLOR_WHITE, weight=BOLD).next_to(self.in_beam, UP, buff=0.1)
+        in_lbl = CleanText(trim_words(token_label, 20).upper(), font=FONT_HELVETICA, font_size=9, color=COLOR_WHITE, weight=BOLD).next_to(self.in_beam, UP, buff=0.1)
 
         # 2. Translucent Optical Prism (Hexagonal Glass Core)
         self.prism = RegularPolygon(
@@ -335,8 +407,8 @@ class SimulationAttentionPrism(BaseBlueprintComposition):
                 cell = Square(side_length=cell_size, color=COLOR_DARK_SLATE, stroke_width=1.2, fill_color=col, fill_opacity=0.88).move_to(
                     [col_centers[c], grid_start_y - r * cell_size, 0]
                 )
-                txt = CleanText(f"{val:.1f}", font=FONT_HELVETICA, font_size=9, color=COLOR_WHITE if val > 0.5 else COLOR_SLATE).move_to(cell)
-                self.heatmap.add(VGroup(cell, txt))
+                # Illustrative weights are shown by colour intensity only (no made-up numbers).
+                self.heatmap.add(VGroup(cell))
 
         # Refracted Output Beams landing directly on top of each heatmap column
         self.beam_q = Line(start=[0, 0.85, 0], end=[col_centers[0], grid_start_y + 0.45, 0], color=COLOR_CYAN, stroke_width=3.5)
@@ -346,15 +418,39 @@ class SimulationAttentionPrism(BaseBlueprintComposition):
 
         # Clean bottom title badge
         mat_badge = RoundedRectangle(corner_radius=0.1, width=3.2, height=0.42, color=COLOR_AMBER, fill_color=COLOR_PANEL_BG, fill_opacity=0.92, stroke_width=1.5).next_to(self.heatmap, DOWN, buff=0.22)
-        mat_txt = CleanText(matrix_title[:24].upper(), font=FONT_HELVETICA, font_size=9, color=COLOR_AMBER, weight=BOLD).move_to(mat_badge)
+        mat_txt = CleanText(trim_words(matrix_title, 24).upper(), font=FONT_HELVETICA, font_size=9, color=COLOR_AMBER, weight=BOLD).move_to(mat_badge)
         mat_grp = VGroup(mat_badge, mat_txt)
         self.in_lbl = in_lbl
         self.prism_lbl = prism_lbl
         self.mat_grp = mat_grp
 
+        self.focus_target = self.heatmap
+
         self.content_group.add(self.in_beam, in_lbl, self.prism, prism_lbl, self.refracted_beams, self.heatmap, mat_grp)
         self.kinetic_elements.add(self.in_beam, self.refracted_beams, self.heatmap)
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Token beam -> prism -> splits into Q/K/V -> attention matrix fills in."""
+        return [
+            [self.in_beam, self.in_lbl],
+            [self.prism, self.prism_lbl],
+            {"mobjects": [self.refracted_beams],
+             "animate": lambda rt: LaggedStart(*[Create(b) for b in self.refracted_beams], lag_ratio=0.2, run_time=rt)},
+            {"mobjects": [self.heatmap, self.mat_grp],
+             "animate": lambda rt: AnimationGroup(
+                 LaggedStart(*[FadeIn(c, scale=0.7) for c in self.heatmap], lag_ratio=0.08),
+                 FadeIn(self.mat_grp, shift=UP * 0.1), run_time=rt)},
+        ]
+
+    def get_focus_animation(self, run_time: float = 1.0):
+        """Light travels through the prism into the matrix; the strongest scores are outlined."""
+        beam = ShowPassingFlash(self.in_beam.copy().set_stroke(color=YELLOW, width=8), time_width=0.6)
+        split = AnimationGroup(*[ShowPassingFlash(b.copy().set_stroke(color=YELLOW, width=6), time_width=0.6)
+                                 for b in self.refracted_beams])
+        diag = LaggedStart(*[Circumscribe(self.heatmap[i], color=COLOR_AMBER, time_width=0.7)
+                             for i in (0, 4, 8) if i < len(self.heatmap)], lag_ratio=0.3)
+        return Succession(beam, split, diag, run_time=run_time)
 
     def get_entrance_animation(self, run_time: float = 1.0) -> Animation:
         """Progressive build: incoming beam hits prism and splits into heatmap."""
@@ -440,8 +536,9 @@ class SimulationOptimizationLandscape(BaseBlueprintComposition):
         self.trajectory_line.set_points_smoothly([np.array(p) for p in traj_points])
 
         # 3. Optimization Sphere (Ball rolling down gradient)
-        ball_glow = Dot(point=center_pt, radius=0.25, color=COLOR_MINT, fill_opacity=0.3)
-        ball_core = Dot(point=center_pt, radius=0.12, color=COLOR_WHITE, fill_opacity=1.0)
+        start_pt = traj_points[0]
+        ball_glow = Dot(point=start_pt, radius=0.25, color=COLOR_MINT, fill_opacity=0.3)
+        ball_core = Dot(point=start_pt, radius=0.12, color=COLOR_WHITE, fill_opacity=1.0)
         self.opt_ball = VGroup(ball_glow, ball_core)
 
         # 4. Global Minimum Target Pin & Badge
@@ -450,7 +547,7 @@ class SimulationOptimizationLandscape(BaseBlueprintComposition):
             Polygon([center_pt[0], center_pt[1] + 0.9, 0], [center_pt[0] + 0.8, center_pt[1] + 0.65, 0], [center_pt[0], center_pt[1] + 0.4, 0], color=COLOR_MINT, fill_color=COLOR_MINT, fill_opacity=0.85)
         )
         min_badge = RoundedRectangle(corner_radius=0.1, width=2.8, height=0.45, color=COLOR_MINT, fill_color=COLOR_PANEL_BG, fill_opacity=0.92, stroke_width=1.5).move_to([center_pt[0] + 1.8, center_pt[1] + 0.9, 0])
-        min_txt = CleanText(optima_label[:20].upper(), font=FONT_HELVETICA, font_size=9, color=COLOR_MINT, weight=BOLD).move_to(min_badge)
+        min_txt = CleanText(trim_words(optima_label, 20).upper(), font=FONT_HELVETICA, font_size=9, color=COLOR_MINT, weight=BOLD).move_to(min_badge)
         min_grp = VGroup(min_flag, min_badge, min_txt)
 
         # 5. Gradient Descent Vectors (Arrows pointing inward)
@@ -473,10 +570,31 @@ class SimulationOptimizationLandscape(BaseBlueprintComposition):
             self.grad_arrows.add(arr)
 
         self.min_grp = min_grp
+        self.focus_target = min_grp
 
         self.content_group.add(self.contours, self.grad_arrows, self.trajectory_line, min_grp, self.opt_ball)
         self.kinetic_elements.add(self.opt_ball, self.trajectory_line, self.contours)
         self.add(self.title, self.sub, self.content_group)
+
+    def get_build_steps(self):
+        """Contours -> gradient arrows -> optimisation path + minimum -> the ball appears at the start."""
+        return [
+            {"mobjects": [self.contours],
+             "animate": lambda rt: LaggedStart(*[GrowFromCenter(c) for c in self.contours], lag_ratio=0.15, run_time=rt)},
+            {"mobjects": [self.grad_arrows],
+             "animate": lambda rt: LaggedStart(*[GrowArrow(a) for a in self.grad_arrows], lag_ratio=0.15, run_time=rt)},
+            {"mobjects": [self.trajectory_line, self.min_grp],
+             "animate": lambda rt: AnimationGroup(Create(self.trajectory_line), FadeIn(self.min_grp, shift=UP * 0.1), run_time=rt)},
+            {"mobjects": [self.opt_ball], "animate": lambda rt: GrowFromCenter(self.opt_ball, run_time=rt)},
+        ]
+
+    def get_focus_animation(self, run_time: float = 1.0):
+        """The ball rolls down the optimisation path into the minimum."""
+        end_pt = self.trajectory_line.get_end()
+        return Succession(
+            MoveAlongPath(self.opt_ball, self.trajectory_line, rate_func=smooth, run_time=0.8 * run_time),
+            Flash(end_pt, color=COLOR_MINT, line_length=0.3, num_lines=10, run_time=0.2 * run_time),
+        )
 
     def get_entrance_animation(self, run_time: float = 1.0) -> Animation:
         """Progressive build: contour rings expand and optimization sphere descends."""

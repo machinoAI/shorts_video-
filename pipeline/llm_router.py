@@ -229,7 +229,7 @@ def enforce_script_schema(
         r"$\mathbf{L}_{\mathrm{bottleneck}} = \sum_{i=1}^M \alpha_i \mathbf{v}_i$",
         r"$\mathbf{y} = \mathrm{LayerNorm}(\mathbf{W}_p \mathbf{x} + \mathbf{b})$",
         r"$\mathrm{TopK}(\sigma(\mathbf{W}_g \mathbf{x})) = \mathbf{e}^*$",
-        r"$\mathrm{Throughput}_{\mathrm{SOTA}} \ge 2.5\times$"
+        r"$\mathrm{Speedup} = T_{\mathrm{base}} / T_{\mathrm{new}}$"
     ]
 
     math_formulas = []
@@ -281,48 +281,24 @@ def enforce_script_schema(
             {"timestamp": 38.0, "sound_type": "chime", "volume": 0.40}
         ]
 
-    # Ensure metadata
+    # Ensure metadata. Quantitative fields (scale_metric, payoff_stat, ...) are NOT
+    # backfilled: a missing number must stay missing rather than become an invented one.
     if not isinstance(clean_spec.get("metadata"), dict):
         clean_spec["metadata"] = {}
     meta = clean_spec["metadata"]
+    for key in [k for k, v in meta.items() if v is None]:
+        del meta[key]  # null placeholders would defeat `.get(key, default)` in consumers
     if "visual_metaphor" not in meta:
         meta["visual_metaphor"] = "hardware_memory_hierarchy"
-    if "scale_metric" not in meta:
-        meta["scale_metric"] = "10x"
-    if "scale_label" not in meta:
-        meta["scale_label"] = "Speedup"
-    if "payoff_stat" not in meta:
-        meta["payoff_stat"] = "98.2%"
-    if "payoff_label" not in meta:
-        meta["payoff_label"] = "Efficiency SOTA"
 
-    # Ensure benchmark comparison
-    if not isinstance(clean_spec.get("benchmark_comparison"), dict):
-        clean_spec["benchmark_comparison"] = {
-            "title": "BENCHMARK PERFORMANCE COMPARISON",
-            "metric_name": "Throughput",
-            "unit": "TFLOPS",
-            "contestants": [
-                {"name": topic[:20], "value": 1180.0, "display_val": "1,180 TFLOPS", "is_hero": True, "color": "#10B981"},
-                {"name": "Standard Baseline", "value": 450.0, "display_val": "450 TFLOPS", "is_hero": False, "color": "#EF4444"}
-            ],
-            "delta_badge": "⚡ +2.6x SPEEDUP",
-            "radar_axes": ["Throughput", "VRAM Efficiency", "Accuracy", "Context Length", "Cost Efficiency"]
-        }
+    # Benchmark comparison is optional: drop it when the model returned null or junk
+    # instead of inventing contestants.
+    if not isinstance(clean_spec.get("benchmark_comparison"), dict) or not clean_spec["benchmark_comparison"].get("contestants"):
+        clean_spec.pop("benchmark_comparison", None)
 
-    # Ensure code snippet
+    # Code snippets are never backfilled: only real repository code may be shown.
     if not isinstance(clean_spec.get("code_snippet"), dict):
-        clean_spec["code_snippet"] = {
-            "filename": "kernel.py",
-            "language": "python",
-            "lines": [
-                "def forward_pass(input_tensor):",
-                "    return fused_kernel_op(input_tensor)"
-            ],
-            "highlight_lines": [1],
-            "trace_register": "⚡ HARDWARE FUSED DISPATCH",
-            "explanation": "Zero-latency pipeline operation"
-        }
+        clean_spec.pop("code_snippet", None)
 
     return clean_spec
 

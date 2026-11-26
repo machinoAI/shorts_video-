@@ -231,14 +231,20 @@ class TestRetentionEvolution(unittest.TestCase):
             "visual_focus": "Horizontal bars comparing throughput",
             "svo_action": {"subject": "Hardware", "action_verb": "races", "direct_object": "Throughput"}
         }
-        bp = director.synthesize_visual_blueprint(beat_showdown, topic="CUDA Attention", beat_id=5)
+        # Race bars are only offered when real benchmark numbers exist.
+        from pipeline.benchmark_extractor import BenchmarkExtractor
+        verified = BenchmarkExtractor().extract_verified({"benchmark_comparison": {
+            "metric_name": "Throughput", "unit": "TFLOPS",
+            "contestants": [{"name": "Ours", "value": 740.0, "is_hero": True}, {"name": "Baseline", "value": 350.0}],
+        }})
+        bp = director.synthesize_visual_blueprint(beat_showdown, topic="CUDA Attention", beat_id=5, verified_benchmark=verified)
         from pipeline.retention_genome import retention_genome
         chosen_mult = retention_genome.get_blueprint_multiplier(bp["layout"])
         self.assertGreaterEqual(chosen_mult, 1.25)
         self.assertIn(bp["layout"], ["chalkboard_code_block", "horizontal_race_bars"])
 
         # When top layout is already used, chooses next highest
-        bp_next = director.synthesize_visual_blueprint(beat_showdown, topic="CUDA Attention", beat_id=5, used_layouts={bp["layout"]})
+        bp_next = director.synthesize_visual_blueprint(beat_showdown, topic="CUDA Attention", beat_id=5, used_layouts={bp["layout"]}, verified_benchmark=verified)
         next_mult = retention_genome.get_blueprint_multiplier(bp_next["layout"])
         self.assertGreaterEqual(next_mult, 1.20)
 

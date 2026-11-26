@@ -214,7 +214,8 @@ def _get_beat_midpoint(spec: Dict[str, Any], beat_id: int) -> float:
         if b.get("beat_id") == beat_id:
             start = float(b.get("start", 0.0))
             slot = float(b.get("slot_duration", b.get("duration", 8.0)))
-            return start + slot * 0.52
+            frac = 0.52 if os.environ.get("ANIMATION_ENGINE", "timeline").lower() == "legacy" else 0.85
+            return start + slot * frac
     # Fallback: divide 60s evenly
     total = 60.0
     slot = total / max(len(beats), 6)

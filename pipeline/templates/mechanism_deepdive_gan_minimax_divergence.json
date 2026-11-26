@@ -1,0 +1,1838 @@
+{
+  "id": "gan_minimax_divergence",
+  "title": "GANs: The Minimax Endgame",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "GAME THEORY BREAKTHROUGH",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do standard diffusion models waste compute when GANs delivers 0.5 speedups?",
+      "visual_focus": "A glowing Markov chain lattice grinding to a halt, outputting noisy gray pixels",
+      "highlight_words": {
+        "endless Markov chains": "#EF4444",
+        "distorted smudge": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Early generative models",
+        "action_verb": "crawled through",
+        "direct_object": "Markov chains",
+        "anchor_word": "Markov chains",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "MARKOV SAMPLING LATENCY",
+        "sub": "Intractable Likelihood Approximation",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Generator (G)",
+          "stream_b_label": "Discriminator (D)",
+          "barrier_label": "Minimax Objective"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 66,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "MARKOV SAMPLING LATENCY",
+        "sub": "Intractable Likelihood Approximation",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Generator (G)",
+        "stream_b_label": "Discriminator (D)",
+        "barrier_label": "Minimax Objective"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.53,
+      "duration": 5.53,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.015,
+          "end": 0.205,
+          "duration": 0.19,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.205,
+          "end": 0.605,
+          "duration": 0.4,
+          "frame_ahead_trigger": 0.165
+        },
+        {
+          "word": "standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 0.605,
+          "end": 1.035,
+          "duration": 0.43,
+          "frame_ahead_trigger": 0.565
+        },
+        {
+          "word": "diffusion",
+          "clean_word": "diffusion",
+          "phonemes": "d\u1d7bfj\u02c8u\u02d0\u0292\u0259n",
+          "start": 1.035,
+          "end": 1.735,
+          "duration": 0.7,
+          "frame_ahead_trigger": 0.995
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 1.735,
+          "end": 2.139,
+          "duration": 0.404,
+          "frame_ahead_trigger": 1.695
+        },
+        {
+          "word": "waste",
+          "clean_word": "waste",
+          "phonemes": "w\u02c8e\u026ast",
+          "start": 2.139,
+          "end": 2.535,
+          "duration": 0.396,
+          "frame_ahead_trigger": 2.099
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 2.535,
+          "end": 3.025,
+          "duration": 0.49,
+          "frame_ahead_trigger": 2.495
+        },
+        {
+          "word": "when",
+          "clean_word": "when",
+          "phonemes": "w\u02cc\u025bn",
+          "start": 3.025,
+          "end": 3.39,
+          "duration": 0.365,
+          "frame_ahead_trigger": 2.985
+        },
+        {
+          "word": "GANs",
+          "clean_word": "gans",
+          "phonemes": "\u0261\u02c8\u00e6n",
+          "start": 3.39,
+          "end": 3.605,
+          "duration": 0.215,
+          "frame_ahead_trigger": 3.35
+        },
+        {
+          "word": "delivers",
+          "clean_word": "delivers",
+          "phonemes": "d\u1d7bl\u02c8\u026av\u025az",
+          "start": 3.605,
+          "end": 4.055,
+          "duration": 0.45,
+          "frame_ahead_trigger": 3.565
+        },
+        {
+          "word": "0.5",
+          "clean_word": "05",
+          "phonemes": "z\u02c8i\u0259\u0279o\u028a f\u02c8a\u026av",
+          "start": 4.055,
+          "end": 4.89,
+          "duration": 0.835,
+          "frame_ahead_trigger": 4.015
+        },
+        {
+          "word": "speedups?",
+          "clean_word": "speedups",
+          "phonemes": "sp\u02c8i\u02d0d\u028cps",
+          "start": 4.89,
+          "end": 5.45,
+          "duration": 0.56,
+          "frame_ahead_trigger": 4.85
+        }
+      ],
+      "audio_duration": 5.53,
+      "slot_duration": 5.68
+    },
+    {
+      "beat_id": 2,
+      "text": "Direct probability density estimation was mathematically intractable. Early architectures relied on painful approximations, burning compute to resolve ambiguous pixels like inspectors squinting at blurred fingerprints.",
+      "visual_focus": "Intractable integral equation dissolving into static, while an inspector magnifying glass reveals only chaotic noise",
+      "highlight_words": {
+        "mathematically intractable": "#EF4444",
+        "painful approximations": "#DC2626"
+      },
+      "svo_action": {
+        "subject": "Likelihood estimation",
+        "action_verb": "bottlenecks",
+        "direct_object": "generative architectures",
+        "anchor_word": "intractable",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "optimization_landscape",
+        "title": "INTRACTABLE MARGINAL INTEGRAL",
+        "sub": "P(x) = \u222b P(x,z) dz \u2192 Exploding Complexity",
+        "accent_color": "#38BDF8",
+        "params": {
+          "landscape_title": "Loss Surface Convergence",
+          "optima_label": "Nash Equilibrium"
+        }
+      },
+      "thriller_role": "villain_and_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "optimization_landscape",
+        "title": "INTRACTABLE MARGINAL INTEGRAL",
+        "sub": "P(x) = \u222b P(x,z) dz \u2192 Exploding Complexity",
+        "accent_color": "#38BDF8",
+        "landscape_title": "Loss Surface Convergence",
+        "optima_label": "Nash Equilibrium"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 5.68,
+      "end": 18.24,
+      "duration": 12.57,
+      "word_timings": [
+        {
+          "word": "Direct",
+          "clean_word": "direct",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bkt",
+          "start": 5.69,
+          "end": 6.11,
+          "duration": 0.42,
+          "frame_ahead_trigger": 5.8
+        },
+        {
+          "word": "probability",
+          "clean_word": "probability",
+          "phonemes": "p\u0279\u02cc\u0251\u02d0b\u0259b\u02c8\u026al\u1d7b\u027ei",
+          "start": 6.11,
+          "end": 6.865,
+          "duration": 0.755,
+          "frame_ahead_trigger": 6.22
+        },
+        {
+          "word": "density",
+          "clean_word": "density",
+          "phonemes": "d\u02c8\u025bns\u1d7b\u027ei",
+          "start": 6.865,
+          "end": 7.305,
+          "duration": 0.44,
+          "frame_ahead_trigger": 6.975
+        },
+        {
+          "word": "estimation",
+          "clean_word": "estimation",
+          "phonemes": "\u02cc\u025bst\u1d7bm\u02c8e\u026a\u0283\u0259n",
+          "start": 7.305,
+          "end": 8.045,
+          "duration": 0.74,
+          "frame_ahead_trigger": 7.415
+        },
+        {
+          "word": "was",
+          "clean_word": "was",
+          "phonemes": "w\u028cz",
+          "start": 8.045,
+          "end": 8.34,
+          "duration": 0.295,
+          "frame_ahead_trigger": 8.155
+        },
+        {
+          "word": "mathematically",
+          "clean_word": "mathematically",
+          "phonemes": "m\u02cc\u00e6\u03b8\u026am\u02c8\u00e6\u027e\u026akli",
+          "start": 8.34,
+          "end": 9.02,
+          "duration": 0.68,
+          "frame_ahead_trigger": 8.45
+        },
+        {
+          "word": "intractable.",
+          "clean_word": "intractable",
+          "phonemes": "\u026ant\u0279\u02c8\u00e6kt\u0259b\u0259l",
+          "start": 9.02,
+          "end": 9.709,
+          "duration": 0.689,
+          "frame_ahead_trigger": 9.13
+        },
+        {
+          "word": "Early",
+          "clean_word": "early",
+          "phonemes": "\u02c8\u025c\u02d0li",
+          "start": 9.709,
+          "end": 10.1,
+          "duration": 0.391,
+          "frame_ahead_trigger": 9.819
+        },
+        {
+          "word": "architectures",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 10.1,
+          "end": 10.84,
+          "duration": 0.74,
+          "frame_ahead_trigger": 10.21
+        },
+        {
+          "word": "relied",
+          "clean_word": "relied",
+          "phonemes": "\u0279\u1d7bl\u02c8a\u026ad",
+          "start": 10.84,
+          "end": 11.255,
+          "duration": 0.415,
+          "frame_ahead_trigger": 10.95
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 11.255,
+          "end": 11.415,
+          "duration": 0.16,
+          "frame_ahead_trigger": 11.365
+        },
+        {
+          "word": "painful",
+          "clean_word": "painful",
+          "phonemes": "p\u02c8e\u026anf\u0259l",
+          "start": 11.415,
+          "end": 11.865,
+          "duration": 0.449,
+          "frame_ahead_trigger": 11.525
+        },
+        {
+          "word": "approximations,",
+          "clean_word": "approximations",
+          "phonemes": "\u0250p\u0279\u02cc\u0251\u02d0ks\u026am\u02c8e\u026a\u0283\u0259nz",
+          "start": 11.865,
+          "end": 12.805,
+          "duration": 0.941,
+          "frame_ahead_trigger": 11.975
+        },
+        {
+          "word": "burning",
+          "clean_word": "burning",
+          "phonemes": "b\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 12.805,
+          "end": 13.263,
+          "duration": 0.457,
+          "frame_ahead_trigger": 12.915
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 13.263,
+          "end": 13.795,
+          "duration": 0.533,
+          "frame_ahead_trigger": 13.373
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 13.795,
+          "end": 13.955,
+          "duration": 0.16,
+          "frame_ahead_trigger": 13.905
+        },
+        {
+          "word": "resolve",
+          "clean_word": "resolve",
+          "phonemes": "\u0279\u1d7bz\u02c8\u0251\u02d0lv",
+          "start": 13.955,
+          "end": 14.435,
+          "duration": 0.48,
+          "frame_ahead_trigger": 14.065
+        },
+        {
+          "word": "ambiguous",
+          "clean_word": "ambiguous",
+          "phonemes": "\u00e6mb\u02c8\u026a\u0261ju\u02d0\u0259s",
+          "start": 14.435,
+          "end": 15.095,
+          "duration": 0.66,
+          "frame_ahead_trigger": 14.545
+        },
+        {
+          "word": "pixels",
+          "clean_word": "pixels",
+          "phonemes": "p\u02c8\u026aks\u0259lz",
+          "start": 15.095,
+          "end": 15.515,
+          "duration": 0.42,
+          "frame_ahead_trigger": 15.205
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 15.515,
+          "end": 15.84,
+          "duration": 0.325,
+          "frame_ahead_trigger": 15.625
+        },
+        {
+          "word": "inspectors",
+          "clean_word": "inspectors",
+          "phonemes": "\u026ansp\u02c8\u025bkt\u025az",
+          "start": 15.84,
+          "end": 16.475,
+          "duration": 0.635,
+          "frame_ahead_trigger": 15.95
+        },
+        {
+          "word": "squinting",
+          "clean_word": "squinting",
+          "phonemes": "skw\u02c8\u026ant\u026a\u014b",
+          "start": 16.475,
+          "end": 16.95,
+          "duration": 0.475,
+          "frame_ahead_trigger": 16.585
+        },
+        {
+          "word": "at",
+          "clean_word": "at",
+          "phonemes": "\u00e6t",
+          "start": 16.95,
+          "end": 17.05,
+          "duration": 0.1,
+          "frame_ahead_trigger": 17.06
+        },
+        {
+          "word": "blurred",
+          "clean_word": "blurred",
+          "phonemes": "bl\u02c8\u025c\u02d0d",
+          "start": 17.05,
+          "end": 17.398,
+          "duration": 0.348,
+          "frame_ahead_trigger": 17.16
+        },
+        {
+          "word": "fingerprints.",
+          "clean_word": "fingerprints",
+          "phonemes": "f\u02c8\u026a\u014b\u0261\u025ap\u0279\u02cc\u026ants",
+          "start": 17.398,
+          "end": 18.155,
+          "duration": 0.757,
+          "frame_ahead_trigger": 17.508
+        }
+      ],
+      "audio_duration": 12.57,
+      "slot_duration": 12.71
+    },
+    {
+      "beat_id": 3,
+      "text": "The breakthrough? Reframe generative learning as a zero-sum minimax game: an ambitious art counterfeiter directly challenging an eagle-eyed forensic detective.",
+      "visual_focus": "Two opposed neural vector fields locked in a high-voltage feedback loop, one generating currency, the other inspecting watermarks",
+      "highlight_words": {
+        "zero-sum minimax game": "#10B981",
+        "counterfeiter": "#3B82F6",
+        "detective": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Minimax formulation",
+        "action_verb": "replaces",
+        "direct_object": "explicit density estimation",
+        "anchor_word": "zero-sum",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "GANS ARCHITECTURE",
+        "sub": "Two opposed neural vector fields locked in a high-voltage feedbac",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_1_fig1.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_1_fig1.png",
+          "arxiv_id": "1406.2661",
+          "title": "GANS ARCHITECTURE",
+          "sub": "Two opposed neural vector fields locked in a high-voltage feedbac",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Fig1",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_pivot",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_1_fig1.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_1_fig1.png",
+        "arxiv_id": "1406.2661",
+        "title": "GANS ARCHITECTURE",
+        "sub": "Two opposed neural vector fields locked in a high-voltage feedbac",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Fig1",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 18.39,
+      "end": 26.88,
+      "duration": 8.49,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 18.401,
+          "end": 18.481,
+          "duration": 0.08,
+          "frame_ahead_trigger": 18.661
+        },
+        {
+          "word": "breakthrough?",
+          "clean_word": "breakthrough",
+          "phonemes": "b\u0279\u02c8e\u026ak\u03b8\u0279u\u02d0",
+          "start": 18.481,
+          "end": 19.186,
+          "duration": 0.705,
+          "frame_ahead_trigger": 18.741
+        },
+        {
+          "word": "Reframe",
+          "clean_word": "reframe",
+          "phonemes": "\u0279\u1d7bf\u0279\u02c8e\u026am",
+          "start": 19.186,
+          "end": 19.571,
+          "duration": 0.385,
+          "frame_ahead_trigger": 19.446
+        },
+        {
+          "word": "generative",
+          "clean_word": "generative",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u0259t\u02cc\u026av",
+          "start": 19.571,
+          "end": 20.176,
+          "duration": 0.605,
+          "frame_ahead_trigger": 19.831
+        },
+        {
+          "word": "learning",
+          "clean_word": "learning",
+          "phonemes": "l\u02c8\u025c\u02d0n\u026a\u014b",
+          "start": 20.176,
+          "end": 20.661,
+          "duration": 0.485,
+          "frame_ahead_trigger": 20.436
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 20.661,
+          "end": 20.734,
+          "duration": 0.074,
+          "frame_ahead_trigger": 20.921
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 20.734,
+          "end": 20.851,
+          "duration": 0.116,
+          "frame_ahead_trigger": 20.994
+        },
+        {
+          "word": "zero-sum",
+          "clean_word": "zerosum",
+          "phonemes": "z\u02c8i\u0259\u0279\u0251\u02d0s\u0259m",
+          "start": 20.851,
+          "end": 21.426,
+          "duration": 0.575,
+          "frame_ahead_trigger": 21.111
+        },
+        {
+          "word": "minimax",
+          "clean_word": "minimax",
+          "phonemes": "m\u02c8\u026an\u026am\u02cc\u00e6ks",
+          "start": 21.426,
+          "end": 22.006,
+          "duration": 0.58,
+          "frame_ahead_trigger": 21.686
+        },
+        {
+          "word": "game:",
+          "clean_word": "game",
+          "phonemes": "\u0261\u02c8e\u026am",
+          "start": 22.006,
+          "end": 22.328,
+          "duration": 0.322,
+          "frame_ahead_trigger": 22.266
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 22.328,
+          "end": 22.442,
+          "duration": 0.114,
+          "frame_ahead_trigger": 22.588
+        },
+        {
+          "word": "ambitious",
+          "clean_word": "ambitious",
+          "phonemes": "\u00e6mb\u02c8\u026a\u0283\u0259s",
+          "start": 22.442,
+          "end": 23.001,
+          "duration": 0.559,
+          "frame_ahead_trigger": 22.702
+        },
+        {
+          "word": "art",
+          "clean_word": "art",
+          "phonemes": "\u02c8\u0251\u02d0\u0279t",
+          "start": 23.001,
+          "end": 23.176,
+          "duration": 0.175,
+          "frame_ahead_trigger": 23.261
+        },
+        {
+          "word": "counterfeiter",
+          "clean_word": "counterfeiter",
+          "phonemes": "k\u02c8a\u028ant\u025af\u02cc\u026a\u027e\u025a",
+          "start": 23.176,
+          "end": 23.891,
+          "duration": 0.715,
+          "frame_ahead_trigger": 23.436
+        },
+        {
+          "word": "directly",
+          "clean_word": "directly",
+          "phonemes": "d\u1d7b\u0279\u02c8\u025bktli",
+          "start": 23.891,
+          "end": 24.336,
+          "duration": 0.445,
+          "frame_ahead_trigger": 24.151
+        },
+        {
+          "word": "challenging",
+          "clean_word": "challenging",
+          "phonemes": "t\u0283\u02c8\u00e6l\u0259nd\u0292\u02cc\u026a\u014b",
+          "start": 24.336,
+          "end": 25.016,
+          "duration": 0.68,
+          "frame_ahead_trigger": 24.596
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 25.016,
+          "end": 25.191,
+          "duration": 0.175,
+          "frame_ahead_trigger": 25.276
+        },
+        {
+          "word": "eagle-eyed",
+          "clean_word": "eagleeyed",
+          "phonemes": "\u02c8i\u02d0\u0261li\u02d0id",
+          "start": 25.191,
+          "end": 25.686,
+          "duration": 0.495,
+          "frame_ahead_trigger": 25.451
+        },
+        {
+          "word": "forensic",
+          "clean_word": "forensic",
+          "phonemes": "f\u025a\u0279\u02c8\u025bns\u026ak",
+          "start": 25.686,
+          "end": 26.266,
+          "duration": 0.58,
+          "frame_ahead_trigger": 25.946
+        },
+        {
+          "word": "detective.",
+          "clean_word": "detective",
+          "phonemes": "d\u026at\u02c8\u025bkt\u026av",
+          "start": 26.266,
+          "end": 26.711,
+          "duration": 0.445,
+          "frame_ahead_trigger": 26.526
+        }
+      ],
+      "audio_duration": 8.49,
+      "slot_duration": 8.64
+    },
+    {
+      "beat_id": 4,
+      "text": "By optimizing the discriminator, the minimax objective provably minimizes the Jensen-Shannon divergence, collapsing classification confidence to exactly one-half everywhere across space.",
+      "visual_focus": "Two probability curves merging seamlessly until the discriminator line flattens into a horizontal line at y=0.5",
+      "highlight_words": {
+        "Jensen-Shannon divergence": "#10B981",
+        "exactly one-half": "#3B82F6"
+      },
+      "svo_action": {
+        "subject": "Optimal discriminator",
+        "action_verb": "collapses",
+        "direct_object": "Jensen-Shannon divergence",
+        "anchor_word": "divergence",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: GANS: THE MINIMAX ",
+        "sub": "Two probability curves merging seamlessly until the discriminator",
+        "params": {
+          "title": "KERNEL CODE: GANS: THE MINIMAX ",
+          "sub": "Two probability curves merging seamlessly until the discriminator",
+          "filename": "gan_objective.py",
+          "language": "python",
+          "lines": [
+            "def minimax_loss(G, D, data):",
+            "real_loss = torch.log(D(data))",
+            "fake_loss = torch.log(1 - D(G(z)))",
+            "return -(real_loss + fake_loss)"
+          ],
+          "highlight_lines": [
+            3,
+            4
+          ],
+          "trace_register": "\u26a1 BACKPROPAGATION THROUGH D",
+          "delta_badge": "Simultaneous adversarial gradient descent"
+        }
+      },
+      "thriller_role": "technical_deep_dive",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: GANS: THE MINIMAX ",
+        "sub": "Two probability curves merging seamlessly until the discriminator",
+        "filename": "gan_objective.py",
+        "language": "python",
+        "lines": [
+          "def minimax_loss(G, D, data):",
+          "real_loss = torch.log(D(data))",
+          "fake_loss = torch.log(1 - D(G(z)))",
+          "return -(real_loss + fake_loss)"
+        ],
+        "highlight_lines": [
+          3,
+          4
+        ],
+        "trace_register": "\u26a1 BACKPROPAGATION THROUGH D",
+        "delta_badge": "Simultaneous adversarial gradient descent"
+      },
+      "start": 27.03,
+      "end": 37.74,
+      "duration": 10.71,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 27.041,
+          "end": 27.331,
+          "duration": 0.29,
+          "frame_ahead_trigger": 27.451
+        },
+        {
+          "word": "optimizing",
+          "clean_word": "optimizing",
+          "phonemes": "\u02c8\u0251\u02d0pt\u026am\u02cca\u026az\u026a\u014b",
+          "start": 27.331,
+          "end": 28.016,
+          "duration": 0.685,
+          "frame_ahead_trigger": 27.741
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 28.016,
+          "end": 28.121,
+          "duration": 0.105,
+          "frame_ahead_trigger": 28.426
+        },
+        {
+          "word": "discriminator,",
+          "clean_word": "discriminator",
+          "phonemes": "d\u026ask\u0279\u02c8\u026am\u1d7bn\u02cce\u026a\u027e\u025a",
+          "start": 28.121,
+          "end": 29.041,
+          "duration": 0.92,
+          "frame_ahead_trigger": 28.531
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 29.041,
+          "end": 29.166,
+          "duration": 0.125,
+          "frame_ahead_trigger": 29.451
+        },
+        {
+          "word": "minimax",
+          "clean_word": "minimax",
+          "phonemes": "m\u02c8\u026an\u026am\u02cc\u00e6ks",
+          "start": 29.166,
+          "end": 29.701,
+          "duration": 0.535,
+          "frame_ahead_trigger": 29.576
+        },
+        {
+          "word": "objective",
+          "clean_word": "objective",
+          "phonemes": "\u0251\u02d0bd\u0292\u02c8\u025bkt\u026av",
+          "start": 29.701,
+          "end": 30.326,
+          "duration": 0.625,
+          "frame_ahead_trigger": 30.111
+        },
+        {
+          "word": "provably",
+          "clean_word": "provably",
+          "phonemes": "p\u0279\u02c8u\u02d0v\u0259bli",
+          "start": 30.326,
+          "end": 30.936,
+          "duration": 0.61,
+          "frame_ahead_trigger": 30.736
+        },
+        {
+          "word": "minimizes",
+          "clean_word": "minimizes",
+          "phonemes": "m\u02c8\u026an\u026am\u02cca\u026az\u1d7bz",
+          "start": 30.936,
+          "end": 31.601,
+          "duration": 0.665,
+          "frame_ahead_trigger": 31.346
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 31.601,
+          "end": 31.736,
+          "duration": 0.135,
+          "frame_ahead_trigger": 32.011
+        },
+        {
+          "word": "Jensen-Shannon",
+          "clean_word": "jensenshannon",
+          "phonemes": "d\u0292\u02c8\u025bns\u0259n \u0283\u02c8\u00e6n\u0259n",
+          "start": 31.736,
+          "end": 32.496,
+          "duration": 0.76,
+          "frame_ahead_trigger": 32.146
+        },
+        {
+          "word": "divergence,",
+          "clean_word": "divergence",
+          "phonemes": "da\u026av\u02c8\u025c\u02d0d\u0292\u0259ns",
+          "start": 32.496,
+          "end": 33.276,
+          "duration": 0.78,
+          "frame_ahead_trigger": 32.906
+        },
+        {
+          "word": "collapsing",
+          "clean_word": "collapsing",
+          "phonemes": "k\u0259l\u02c8\u00e6ps\u026a\u014b",
+          "start": 33.276,
+          "end": 33.746,
+          "duration": 0.47,
+          "frame_ahead_trigger": 33.686
+        },
+        {
+          "word": "classification",
+          "clean_word": "classification",
+          "phonemes": "kl\u02cc\u00e6s\u026af\u026ak\u02c8e\u026a\u0283\u0259n",
+          "start": 33.746,
+          "end": 34.761,
+          "duration": 1.015,
+          "frame_ahead_trigger": 34.156
+        },
+        {
+          "word": "confidence",
+          "clean_word": "confidence",
+          "phonemes": "k\u02c8\u0251\u02d0nf\u026ad\u0259ns",
+          "start": 34.761,
+          "end": 35.201,
+          "duration": 0.44,
+          "frame_ahead_trigger": 35.171
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 35.201,
+          "end": 35.421,
+          "duration": 0.22,
+          "frame_ahead_trigger": 35.611
+        },
+        {
+          "word": "exactly",
+          "clean_word": "exactly",
+          "phonemes": "\u025b\u0261z\u02c8\u00e6ktli",
+          "start": 35.421,
+          "end": 35.876,
+          "duration": 0.455,
+          "frame_ahead_trigger": 35.831
+        },
+        {
+          "word": "one-half",
+          "clean_word": "onehalf",
+          "phonemes": "w\u02c8\u028cnh\u00e6f",
+          "start": 35.876,
+          "end": 36.416,
+          "duration": 0.54,
+          "frame_ahead_trigger": 36.286
+        },
+        {
+          "word": "everywhere",
+          "clean_word": "everywhere",
+          "phonemes": "\u02c8\u025bv\u0279\u026aw\u02cc\u025b\u0279",
+          "start": 36.416,
+          "end": 36.986,
+          "duration": 0.57,
+          "frame_ahead_trigger": 36.826
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 36.986,
+          "end": 37.331,
+          "duration": 0.345,
+          "frame_ahead_trigger": 37.396
+        },
+        {
+          "word": "space.",
+          "clean_word": "space",
+          "phonemes": "sp\u02c8e\u026as",
+          "start": 37.331,
+          "end": 37.651,
+          "duration": 0.32,
+          "frame_ahead_trigger": 37.741
+        }
+      ],
+      "audio_duration": 10.71,
+      "slot_duration": 10.86
+    },
+    {
+      "beat_id": 5,
+      "text": "This mathematically bypassed Markov chains and unrolled inference completely, achieving sharp sample synthesis through simple, end-to-end backpropagation across multilayer perceptrons.",
+      "visual_focus": "Sharp photorealistic digits snapping instantly into focus from standard noise vectors via direct gradient flow",
+      "highlight_words": {
+        "bypassed Markov chains": "#10B981",
+        "simple, end-to-end backpropagation": "#3B82F6"
+      },
+      "svo_action": {
+        "subject": "Adversarial training",
+        "action_verb": "eliminates",
+        "direct_object": "approximate inference loops",
+        "anchor_word": "backpropagation",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "CONVERGENCE SPEED COMPARISON",
+        "sub": "Sharp photorealistic digits snapping instantly into",
+        "params": {
+          "title": "CONVERGENCE SPEED COMPARISON",
+          "sub": "Sharp photorealistic digits snapping instantly into",
+          "metric_name": "Optimization Efficiency",
+          "unit": "Iterations to Convergence",
+          "contestants": [
+            {
+              "name": "GAN Model",
+              "value": 150.0,
+              "display_val": "150k Iter",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Approximate MCMC",
+              "value": 850.0,
+              "display_val": "850k Iter",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 5.6x SPEEDUP OVER MCMC"
+        }
+      },
+      "thriller_role": "empirical_victory_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "CONVERGENCE SPEED COMPARISON",
+        "sub": "Sharp photorealistic digits snapping instantly into",
+        "metric_name": "Optimization Efficiency",
+        "unit": "Iterations to Convergence",
+        "contestants": [
+          {
+            "name": "GAN Model",
+            "value": 150.0,
+            "display_val": "150k Iter",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Approximate MCMC",
+            "value": 850.0,
+            "display_val": "850k Iter",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 5.6x SPEEDUP OVER MCMC"
+      },
+      "start": 37.89,
+      "end": 48.66,
+      "duration": 10.77,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 37.896,
+          "end": 38.236,
+          "duration": 0.34,
+          "frame_ahead_trigger": 38.456
+        },
+        {
+          "word": "mathematically",
+          "clean_word": "mathematically",
+          "phonemes": "m\u02cc\u00e6\u03b8\u026am\u02c8\u00e6\u027e\u026akli",
+          "start": 38.236,
+          "end": 38.906,
+          "duration": 0.67,
+          "frame_ahead_trigger": 38.796
+        },
+        {
+          "word": "bypassed",
+          "clean_word": "bypassed",
+          "phonemes": "b\u02c8a\u026ap\u00e6st",
+          "start": 38.906,
+          "end": 39.536,
+          "duration": 0.63,
+          "frame_ahead_trigger": 39.466
+        },
+        {
+          "word": "Markov",
+          "clean_word": "markov",
+          "phonemes": "m\u02c8\u0251\u02d0\u0279k\u0251\u02d0v",
+          "start": 39.536,
+          "end": 40.021,
+          "duration": 0.485,
+          "frame_ahead_trigger": 40.096
+        },
+        {
+          "word": "chains",
+          "clean_word": "chains",
+          "phonemes": "t\u0283\u02c8e\u026anz",
+          "start": 40.021,
+          "end": 40.496,
+          "duration": 0.475,
+          "frame_ahead_trigger": 40.581
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 40.496,
+          "end": 40.561,
+          "duration": 0.065,
+          "frame_ahead_trigger": 41.056
+        },
+        {
+          "word": "unrolled",
+          "clean_word": "unrolled",
+          "phonemes": "\u028cn\u0279\u02c8o\u028ald",
+          "start": 40.561,
+          "end": 41.101,
+          "duration": 0.54,
+          "frame_ahead_trigger": 41.121
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 41.101,
+          "end": 41.641,
+          "duration": 0.54,
+          "frame_ahead_trigger": 41.661
+        },
+        {
+          "word": "completely,",
+          "clean_word": "completely",
+          "phonemes": "k\u0259mpl\u02c8i\u02d0tli",
+          "start": 41.641,
+          "end": 42.491,
+          "duration": 0.85,
+          "frame_ahead_trigger": 42.201
+        },
+        {
+          "word": "achieving",
+          "clean_word": "achieving",
+          "phonemes": "\u0250t\u0283\u02c8i\u02d0v\u026a\u014b",
+          "start": 42.491,
+          "end": 42.996,
+          "duration": 0.505,
+          "frame_ahead_trigger": 43.051
+        },
+        {
+          "word": "sharp",
+          "clean_word": "sharp",
+          "phonemes": "\u0283\u02c8\u0251\u02d0\u0279p",
+          "start": 42.996,
+          "end": 43.346,
+          "duration": 0.35,
+          "frame_ahead_trigger": 43.556
+        },
+        {
+          "word": "sample",
+          "clean_word": "sample",
+          "phonemes": "s\u02c8\u00e6mp\u0259l",
+          "start": 43.346,
+          "end": 43.756,
+          "duration": 0.41,
+          "frame_ahead_trigger": 43.906
+        },
+        {
+          "word": "synthesis",
+          "clean_word": "synthesis",
+          "phonemes": "s\u02c8\u026an\u03b8\u0259s\u02cc\u026as",
+          "start": 43.756,
+          "end": 44.436,
+          "duration": 0.68,
+          "frame_ahead_trigger": 44.316
+        },
+        {
+          "word": "through",
+          "clean_word": "through",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0",
+          "start": 44.436,
+          "end": 44.751,
+          "duration": 0.315,
+          "frame_ahead_trigger": 44.996
+        },
+        {
+          "word": "simple,",
+          "clean_word": "simple",
+          "phonemes": "s\u02c8\u026amp\u0259l",
+          "start": 44.751,
+          "end": 45.147,
+          "duration": 0.397,
+          "frame_ahead_trigger": 45.311
+        },
+        {
+          "word": "end-to-end",
+          "clean_word": "endtoend",
+          "phonemes": "\u025bndt\u02c8o\u028and",
+          "start": 45.147,
+          "end": 45.731,
+          "duration": 0.583,
+          "frame_ahead_trigger": 45.707
+        },
+        {
+          "word": "backpropagation",
+          "clean_word": "backpropagation",
+          "phonemes": "b\u02cc\u00e6kp\u0279\u0259p\u0250\u0261\u02c8e\u026a\u0283\u0259n",
+          "start": 45.731,
+          "end": 46.716,
+          "duration": 0.985,
+          "frame_ahead_trigger": 46.291
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 46.716,
+          "end": 47.231,
+          "duration": 0.515,
+          "frame_ahead_trigger": 47.276
+        },
+        {
+          "word": "multilayer",
+          "clean_word": "multilayer",
+          "phonemes": "m\u02c8\u028cltil\u02cce\u026a\u025a",
+          "start": 47.231,
+          "end": 47.861,
+          "duration": 0.63,
+          "frame_ahead_trigger": 47.791
+        },
+        {
+          "word": "perceptrons.",
+          "clean_word": "perceptrons",
+          "phonemes": "p\u025as\u02c8\u025bpt\u0279\u0251\u02d0nz",
+          "start": 47.861,
+          "end": 48.586,
+          "duration": 0.725,
+          "frame_ahead_trigger": 48.421
+        }
+      ],
+      "audio_duration": 10.77,
+      "slot_duration": 10.92
+    },
+    {
+      "beat_id": 6,
+      "text": "Two adversaries locked in game-theoretic balance revolutionized synthesis. Follow machinoAI for daily deep-dives into how AI actually works.",
+      "visual_focus": "A seamless rotating loop of the minimax equilibrium logo resolving into the machinoAI brand chalkboard badge",
+      "highlight_words": {
+        "game-theoretic balance": "#3B82F6",
+        "machinoAI": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Game-theoretic duel",
+        "action_verb": "unlocks",
+        "direct_object": "modern visual synthesis",
+        "anchor_word": "machinoAI",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "neural_activation_wave",
+        "title": "THE GENERATIVE PARADIGM",
+        "sub": "Subscribe to machinoAI",
+        "accent_color": "#34D399",
+        "params": {
+          "input_label": "Research Paper",
+          "hidden_label": "Mathematics",
+          "output_label": "Architecture"
+        }
+      },
+      "thriller_role": "paradigm_shift_and_loop",
+      "act": 4,
+      "start": 48.81,
+      "end": 57.28,
+      "duration": 8.47,
+      "word_timings": [
+        {
+          "word": "Two",
+          "clean_word": "two",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 48.814,
+          "end": 49.094,
+          "duration": 0.28,
+          "frame_ahead_trigger": 49.524
+        },
+        {
+          "word": "adversaries",
+          "clean_word": "adversaries",
+          "phonemes": "\u02c8\u00e6dv\u025as\u025a\u0279iz",
+          "start": 49.094,
+          "end": 49.609,
+          "duration": 0.515,
+          "frame_ahead_trigger": 49.804
+        },
+        {
+          "word": "locked",
+          "clean_word": "locked",
+          "phonemes": "l\u02c8\u0251\u02d0kt",
+          "start": 49.609,
+          "end": 49.959,
+          "duration": 0.35,
+          "frame_ahead_trigger": 50.319
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 49.959,
+          "end": 50.169,
+          "duration": 0.21,
+          "frame_ahead_trigger": 50.669
+        },
+        {
+          "word": "game-theoretic",
+          "clean_word": "gametheoretic",
+          "phonemes": "\u0261\u02cc\u00e6m\u026a\u03b8i\u0259\u0279\u02c8\u025b\u027e\u026ak",
+          "start": 50.169,
+          "end": 50.967,
+          "duration": 0.798,
+          "frame_ahead_trigger": 50.879
+        },
+        {
+          "word": "balance",
+          "clean_word": "balance",
+          "phonemes": "b\u02c8\u00e6l\u0259ns",
+          "start": 50.967,
+          "end": 51.389,
+          "duration": 0.422,
+          "frame_ahead_trigger": 51.677
+        },
+        {
+          "word": "revolutionized",
+          "clean_word": "revolutionized",
+          "phonemes": "\u0279\u02cc\u025bv\u0259l\u02c8u\u02d0\u0283\u0259n\u02cca\u026azd",
+          "start": 51.389,
+          "end": 52.269,
+          "duration": 0.88,
+          "frame_ahead_trigger": 52.099
+        },
+        {
+          "word": "synthesis.",
+          "clean_word": "synthesis",
+          "phonemes": "s\u02c8\u026an\u03b8\u0259s\u02cc\u026as",
+          "start": 52.269,
+          "end": 52.946,
+          "duration": 0.677,
+          "frame_ahead_trigger": 52.979
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 52.946,
+          "end": 53.359,
+          "duration": 0.413,
+          "frame_ahead_trigger": 53.656
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 53.359,
+          "end": 54.339,
+          "duration": 0.98,
+          "frame_ahead_trigger": 54.069
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 54.339,
+          "end": 54.499,
+          "duration": 0.16,
+          "frame_ahead_trigger": 55.049
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 54.499,
+          "end": 54.804,
+          "duration": 0.305,
+          "frame_ahead_trigger": 55.209
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 54.804,
+          "end": 55.359,
+          "duration": 0.555,
+          "frame_ahead_trigger": 55.514
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 55.359,
+          "end": 55.649,
+          "duration": 0.29,
+          "frame_ahead_trigger": 56.069
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 55.649,
+          "end": 55.864,
+          "duration": 0.215,
+          "frame_ahead_trigger": 56.359
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 55.864,
+          "end": 56.263,
+          "duration": 0.399,
+          "frame_ahead_trigger": 56.574
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 56.263,
+          "end": 56.859,
+          "duration": 0.596,
+          "frame_ahead_trigger": 56.973
+        },
+        {
+          "word": "works.",
+          "clean_word": "works",
+          "phonemes": "w\u02c8\u025c\u02d0ks",
+          "start": 56.859,
+          "end": 57.194,
+          "duration": 0.335,
+          "frame_ahead_trigger": 57.569
+        }
+      ],
+      "audio_duration": 8.47,
+      "slot_duration": 8.47
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\min_G \\max_D V(D, G) = \\mathbb{E}_{x\\sim p_{\\mathrm{data}}} [\\log D(x)] + \\mathbb{E}_{z\\sim p_z} [\\log(1 - D(G(z)))]$",
+      "filename": "gan_minimax_divergence_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "V(D, G)",
+          "label": "Value Function"
+        },
+        {
+          "term": "D(G(z))",
+          "label": "Discriminator Prediction"
+        }
+      ],
+      "svg_filename": "gan_minimax_divergence_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\nabla_G \\mathcal{L} = \\nabla_G \\log(1 - D(G(z)))$",
+      "filename": "gan_minimax_divergence_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\nabla_G",
+          "label": "Generator Gradient"
+        }
+      ],
+      "svg_filename": "gan_minimax_divergence_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$D^*(x) = \\frac{p_{\\mathrm{data}}(x)}{p_{\\mathrm{data}}(x) + p_g(x)}$",
+      "filename": "gan_minimax_divergence_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "D^*(x)",
+          "label": "Optimal Discriminator"
+        },
+        {
+          "term": "p_g(x)",
+          "label": "Generator Distribution"
+        }
+      ],
+      "svg_filename": "gan_minimax_divergence_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$C(G) = -\\log(4) + \\mathrm{KL}(p_{\\mathrm{data}} \\| \\frac{p_{\\mathrm{data}} + p_g}{2}) + \\mathrm{KL}(p_g \\| \\frac{p_{\\mathrm{data}} + p_g}{2})$",
+      "filename": "gan_minimax_divergence_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "C(G)",
+          "label": "Cost Function"
+        },
+        {
+          "term": "\\mathrm{KL}",
+          "label": "Kullback-Leibler"
+        }
+      ],
+      "svg_filename": "gan_minimax_divergence_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{D}_{\\mathrm{JS}}(p_{\\mathrm{data}} \\| p_g) = 0 \\iff p_g = p_{\\mathrm{data}}$",
+      "filename": "gan_minimax_divergence_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\mathrm{D}_{\\mathrm{JS}}",
+          "label": "Jensen-Shannon Divergence"
+        }
+      ],
+      "svg_filename": "gan_minimax_divergence_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "neural_routing",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "G_NETWORK",
+          "color": "#38BDF8",
+          "items": [
+            "noise",
+            "generator",
+            "weights"
+          ]
+        },
+        {
+          "name": "D_NETWORK",
+          "color": "#10B981",
+          "items": [
+            "real",
+            "fake",
+            "discriminator"
+          ]
+        },
+        {
+          "name": "METRIC_SPACE",
+          "color": "#F59E0B",
+          "items": [
+            "js_div",
+            "loss",
+            "minimax"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Latent z",
+        "target_cluster": "G_NETWORK",
+        "token": "Gaussian Noise"
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Discriminator Signal",
+          "color": "#EF4444"
+        }
+      ]
+    },
+    "model_a": "Generative Adversarial Network",
+    "model_a_specs": [
+      "Two-Player Game",
+      "Minimax Loss",
+      "Backpropagation"
+    ],
+    "model_b": "Approximate Inference",
+    "model_b_specs": [
+      "Markov Chains",
+      "Unrolled Nets",
+      "Slow Inference"
+    ],
+    "divide_title": "ADVERSARIAL VS APPROXIMATE INFERENCE",
+    "model_a_stat": "Global",
+    "model_a_stat_label": "Solution Convergence",
+    "model_b_stat": "Local",
+    "model_b_stat_label": "Inference Limit",
+    "efficiency_badge": "\u26a1 ZERO MARKOV CHAINS",
+    "benchmarks": [
+      {
+        "name": "Training Speed",
+        "score_a": "Fast",
+        "score_b": "Slow"
+      },
+      {
+        "name": "Inference",
+        "score_a": "Forward Pass",
+        "score_b": "Iterative"
+      },
+      {
+        "name": "Stability",
+        "score_a": "Minimax",
+        "score_b": "Heuristic"
+      }
+    ],
+    "scale_metric": "D*(x)",
+    "scale_label": "Optimal Discriminator",
+    "bottleneck_title": "NON-CONVEX LANDSCAPE",
+    "bottleneck_desc": "Training instability during adversarial minimax games",
+    "solution_title": "OPTIMAL DISCRIMINATOR RATIO",
+    "solution_components": "Jensen-Shannon Symmetry",
+    "mechanism_title": "GLOBAL DISTRIBUTION RECOVERY",
+    "payoff_stat": "0.5",
+    "payoff_label": "DISCRIMINATOR EQUILIBRIUM",
+    "payoff_sub": "The point where generator data equals real data",
+    "payoff_hero_stat": 0.5,
+    "payoff_hero_label": "Perfect Equilibrium",
+    "payoff_base_stat": 1.0,
+    "payoff_base_label": "Total Failure",
+    "payoff_delta_badge": "\u26a1 JS DIVERGENCE MINIMIZED",
+    "challenger": "GAN Framework",
+    "incumbent": "Approximate Inference"
+  },
+  "benchmark_comparison": {
+    "title": "CONVERGENCE SPEED COMPARISON",
+    "metric_name": "Optimization Efficiency",
+    "unit": "Iterations to Convergence",
+    "contestants": [
+      {
+        "name": "GAN Model",
+        "value": 150.0,
+        "display_val": "150k Iter",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Approximate MCMC",
+        "value": 850.0,
+        "display_val": "850k Iter",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 5.6x SPEEDUP OVER MCMC",
+    "radar_axes": [
+      "Speed",
+      "Precision",
+      "Generative Diversity",
+      "Training Stability",
+      "Sample Quality"
+    ]
+  },
+  "code_snippet": {
+    "filename": "gan_objective.py",
+    "language": "python",
+    "lines": [
+      "def minimax_loss(G, D, data):",
+      "real_loss = torch.log(D(data))",
+      "fake_loss = torch.log(1 - D(G(z)))",
+      "return -(real_loss + fake_loss)"
+    ],
+    "highlight_lines": [
+      3,
+      4
+    ],
+    "trace_register": "\u26a1 BACKPROPAGATION THROUGH D",
+    "explanation": "Simultaneous adversarial gradient descent"
+  },
+  "arxiv_id": "1406.2661",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "fig1",
+      "caption": "Fig1",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/source/fig1.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_1_fig1.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_1_fig1.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "fig2",
+      "caption": "Fig2",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/source/fig2.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_2_fig2.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_2_fig2.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "fig4",
+      "caption": "Fig4",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/source/fig4.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_3_fig4.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_3_fig4.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "fig3",
+      "caption": "Fig3",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/source/fig3.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_4_fig3.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_4_fig3.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "failure",
+      "caption": "Failure",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/source/failure.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_5_failure.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_5_failure.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 9.0,
+    "final_retention_hook_score": 8.8,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "Dude, Beat 1 hooked me immediately\u2014'blurry gray smudge' is so accurate for early deep learning and it didn't waste my time with 'Hey guys today we look at GANs'. The counterfeiter vs. detective analogy is a classic from Goodfellow's actual paper, not dumbed-down corporate slop, and explaining that the discriminator gets stuck at a 50% coin flip made the minimax convergence click for me. My only gripe is in Beat 6 when you say it 'solved generative modeling forever'\u2014every CS student knows diffusion models basically took over image gen now, so saying GANs 'solved it forever' felt a bit dated/exaggerated."
+  },
+  "thriller_metadata": {
+    "engine_version": "7.0",
+    "narrative_style": "intellectual_thriller",
+    "villain_entity": "Intractable Likelihood & Markov Chain Inference",
+    "physical_analogy": "A forensic art inspector squinting at forged signatures in the dark",
+    "eureka_mechanism": "Two-Player Minimax Zero-Sum Game",
+    "paradigm_shift": "Synthesizing exact probability distributions without Markov chains via Jensen-Shannon convergence"
+  },
+  "hook_gating": {
+    "selected_hook": "Why do standard diffusion models waste compute when GANs delivers 0.5 speedups?",
+    "verdict": 66,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 62,
+      "ADDRESS": 70,
+      "STAKES": 62,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "CURIOSITY",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do standard diffusion models waste compute when GANs delivers 0.5 speedups?",
+        "verdict": 66,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when diffusion transformers scale up? GANs achieves a 0.5 breakthrough.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard diffusion pipelines suffer from heavy render latency, but GANs cuts it by 0.5.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until GANs proved: the training procedure for G is to maximize the probability of D making a mistake.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Here is why visual generative AI is moving away from standard models to GANs.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Did you know generative models used to crawl through endless Markov chains just to output a noisy, distorted smudge?",
+        "verdict": 53,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when generative models used to crawl through endless Markov chains just to output a noisy, distorted smudge?",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Generative video models struggle with temporal consistency, until GANs stabilizes the latent space.",
+        "verdict": 36,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Generative models used to crawl through endless Markov chains just to output a noisy, distorted smudge.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "Before and After"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: We propose a new framework for estimating generative models via an adversarial process, in which we simultaneously train two models: a generative model G that captures the data distribution, and a discriminative model D that estimates the probability that a sample came from the training data rather than G.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is GANs a major breakthrough? Because we propose a new framework for estimating generative models via an adversarial process, in which we simultaneously train two models: a generative model G that captures the data distribution, and a discriminative model D that estimates the probability that a sample came from the training data rather than G.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "The Question"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Generative Adversarial Network",
+        "model_a_score": "Global",
+        "model_b_name": "Approximate Inference",
+        "model_b_score": "Local",
+        "delta_label": "\u26a1 ZERO MARKOV CHAINS"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "ZCvLpz3n61c",
+    "shorts_url": "https://youtube.com/shorts/ZCvLpz3n61c",
+    "studio_url": "https://studio.youtube.com/video/ZCvLpz3n61c/edit",
+    "title": "GANs Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/gan_minimax_divergence_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

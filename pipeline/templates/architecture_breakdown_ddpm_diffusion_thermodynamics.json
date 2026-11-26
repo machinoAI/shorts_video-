@@ -1,0 +1,1737 @@
+{
+  "id": "ddpm_diffusion_thermodynamics",
+  "title": "Denoising Diffusion Probabilistic Models",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "neural_attention",
+  "hook_tag": "DIFFUSION PROBABILISTIC ARCHITECTURE",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Training GANs to generate high-fidelity images is like trying to balance a house of cards in a hurricane.",
+      "visual_focus": "Chaotic adversarial landscape vs calm gradient flow.",
+      "highlight_words": {
+        "GANs": "#EF4444",
+        "house of cards": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Adversarial Min-Max Game",
+        "action_verb": "collapses",
+        "direct_object": "latent manifold stability",
+        "anchor_word": "hurricane",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "optimization_landscape",
+        "title": "THE ADVERSARIAL TRAP",
+        "sub": "Min-max games suffer from mode collapse in high-entropy regimes",
+        "accent_color": "#EF4444",
+        "params": {
+          "landscape_title": "NON-CONVERGENT ADVERSARIAL LOSS",
+          "optima_label": "Unstable Equilibrium"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 52,
+      "hook_band": "WORKABLE",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "optimization_landscape",
+        "title": "THE ADVERSARIAL TRAP",
+        "sub": "Min-max games suffer from mode collapse in high-entropy regimes",
+        "accent_color": "#EF4444",
+        "landscape_title": "NON-CONVERGENT ADVERSARIAL LOSS",
+        "optima_label": "Unstable Equilibrium"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.97,
+      "duration": 5.97,
+      "word_timings": [
+        {
+          "word": "Training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 0.03,
+          "end": 0.4,
+          "duration": 0.37,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "GANs",
+          "clean_word": "gans",
+          "phonemes": "\u0261\u02c8\u00e6n",
+          "start": 0.4,
+          "end": 0.755,
+          "duration": 0.355,
+          "frame_ahead_trigger": 0.36
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 0.755,
+          "end": 0.858,
+          "duration": 0.103,
+          "frame_ahead_trigger": 0.715
+        },
+        {
+          "word": "generate",
+          "clean_word": "generate",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u02cce\u026at",
+          "start": 0.858,
+          "end": 1.455,
+          "duration": 0.597,
+          "frame_ahead_trigger": 0.818
+        },
+        {
+          "word": "high-fidelity",
+          "clean_word": "highfidelity",
+          "phonemes": "h\u02cca\u026af\u1d7bd\u02c8\u025bl\u1d7b\u027ei",
+          "start": 1.455,
+          "end": 2.22,
+          "duration": 0.765,
+          "frame_ahead_trigger": 1.415
+        },
+        {
+          "word": "images",
+          "clean_word": "images",
+          "phonemes": "\u02c8\u026am\u026ad\u0292\u1d7bz",
+          "start": 2.22,
+          "end": 2.625,
+          "duration": 0.405,
+          "frame_ahead_trigger": 2.18
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 2.625,
+          "end": 2.815,
+          "duration": 0.19,
+          "frame_ahead_trigger": 2.585
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 2.815,
+          "end": 3.01,
+          "duration": 0.195,
+          "frame_ahead_trigger": 2.775
+        },
+        {
+          "word": "trying",
+          "clean_word": "trying",
+          "phonemes": "t\u0279\u02c8a\u026a\u026a\u014b",
+          "start": 3.01,
+          "end": 3.35,
+          "duration": 0.34,
+          "frame_ahead_trigger": 2.97
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 3.35,
+          "end": 3.555,
+          "duration": 0.205,
+          "frame_ahead_trigger": 3.31
+        },
+        {
+          "word": "balance",
+          "clean_word": "balance",
+          "phonemes": "b\u02c8\u00e6l\u0259ns",
+          "start": 3.555,
+          "end": 3.93,
+          "duration": 0.375,
+          "frame_ahead_trigger": 3.515
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 3.93,
+          "end": 4.13,
+          "duration": 0.2,
+          "frame_ahead_trigger": 3.89
+        },
+        {
+          "word": "house",
+          "clean_word": "house",
+          "phonemes": "h\u02c8a\u028as",
+          "start": 4.13,
+          "end": 4.38,
+          "duration": 0.25,
+          "frame_ahead_trigger": 4.09
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 4.38,
+          "end": 4.56,
+          "duration": 0.18,
+          "frame_ahead_trigger": 4.34
+        },
+        {
+          "word": "cards",
+          "clean_word": "cards",
+          "phonemes": "k\u02c8\u0251\u02d0\u0279dz",
+          "start": 4.56,
+          "end": 4.887,
+          "duration": 0.327,
+          "frame_ahead_trigger": 4.52
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 4.887,
+          "end": 5.095,
+          "duration": 0.208,
+          "frame_ahead_trigger": 4.847
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 5.095,
+          "end": 5.24,
+          "duration": 0.145,
+          "frame_ahead_trigger": 5.055
+        },
+        {
+          "word": "hurricane.",
+          "clean_word": "hurricane",
+          "phonemes": "h\u02c8\u025c\u02d0\u0279\u1d7bk\u02cce\u026an",
+          "start": 5.24,
+          "end": 5.825,
+          "duration": 0.585,
+          "frame_ahead_trigger": 5.2
+        }
+      ],
+      "audio_duration": 5.97,
+      "slot_duration": 6.12
+    },
+    {
+      "beat_id": 2,
+      "text": "The bottleneck? Standard models crave instant gratification, ignoring the thermal decay that naturally turns order into pure, unrecoverable noise.",
+      "visual_focus": "Entropy increasing in a diffusion pipeline.",
+      "highlight_words": {
+        "thermal decay": "#EF4444",
+        "noise": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "System Entropy",
+        "action_verb": "erodes",
+        "direct_object": "image pixel coherence",
+        "anchor_word": "noise",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "THE ENTROPY BOTTLENECK",
+        "sub": "Information degradation through Gaussian corruption steps",
+        "accent_color": "#EF4444",
+        "params": {
+          "stage_1_label": "Clean Image",
+          "stage_1_sub": "T=0",
+          "stage_2_label": "Forward Diffusion",
+          "stage_2_sub": "T=T",
+          "stage_3_label": "Isotropic Noise",
+          "stage_3_sub": "T=Max"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "THE ENTROPY BOTTLENECK",
+        "sub": "Information degradation through Gaussian corruption steps",
+        "accent_color": "#EF4444",
+        "stage_1_label": "Clean Image",
+        "stage_1_sub": "T=0",
+        "stage_2_label": "Forward Diffusion",
+        "stage_2_sub": "T=T",
+        "stage_3_label": "Isotropic Noise",
+        "stage_3_sub": "T=Max"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.12,
+      "end": 14.42,
+      "duration": 8.3,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 6.133,
+          "end": 6.208,
+          "duration": 0.075,
+          "frame_ahead_trigger": 6.243
+        },
+        {
+          "word": "bottleneck?",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 6.208,
+          "end": 6.906,
+          "duration": 0.698,
+          "frame_ahead_trigger": 6.318
+        },
+        {
+          "word": "Standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 6.906,
+          "end": 7.448,
+          "duration": 0.542,
+          "frame_ahead_trigger": 7.016
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 7.448,
+          "end": 7.903,
+          "duration": 0.455,
+          "frame_ahead_trigger": 7.558
+        },
+        {
+          "word": "crave",
+          "clean_word": "crave",
+          "phonemes": "k\u0279\u02c8e\u026av",
+          "start": 7.903,
+          "end": 8.163,
+          "duration": 0.26,
+          "frame_ahead_trigger": 8.013
+        },
+        {
+          "word": "instant",
+          "clean_word": "instant",
+          "phonemes": "\u02c8\u026anst\u0259nt",
+          "start": 8.163,
+          "end": 8.723,
+          "duration": 0.56,
+          "frame_ahead_trigger": 8.273
+        },
+        {
+          "word": "gratification,",
+          "clean_word": "gratification",
+          "phonemes": "\u0261\u0279\u02cc\u00e6\u027e\u026af\u026ak\u02c8e\u026a\u0283\u0259n",
+          "start": 8.723,
+          "end": 9.582,
+          "duration": 0.858,
+          "frame_ahead_trigger": 8.833
+        },
+        {
+          "word": "ignoring",
+          "clean_word": "ignoring",
+          "phonemes": "\u026a\u0261n\u02c8\u0254\u02d0\u0279\u026a\u014b",
+          "start": 9.582,
+          "end": 10.058,
+          "duration": 0.477,
+          "frame_ahead_trigger": 9.692
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 10.058,
+          "end": 10.213,
+          "duration": 0.155,
+          "frame_ahead_trigger": 10.168
+        },
+        {
+          "word": "thermal",
+          "clean_word": "thermal",
+          "phonemes": "\u03b8\u02c8\u025c\u02d0m\u0259l",
+          "start": 10.213,
+          "end": 10.723,
+          "duration": 0.51,
+          "frame_ahead_trigger": 10.323
+        },
+        {
+          "word": "decay",
+          "clean_word": "decay",
+          "phonemes": "d\u1d7bk\u02c8e\u026a",
+          "start": 10.723,
+          "end": 11.009,
+          "duration": 0.285,
+          "frame_ahead_trigger": 10.833
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 11.009,
+          "end": 11.263,
+          "duration": 0.255,
+          "frame_ahead_trigger": 11.119
+        },
+        {
+          "word": "naturally",
+          "clean_word": "naturally",
+          "phonemes": "n\u02c8\u00e6t\u0283\u025a\u0279\u0259li",
+          "start": 11.263,
+          "end": 11.818,
+          "duration": 0.555,
+          "frame_ahead_trigger": 11.373
+        },
+        {
+          "word": "turns",
+          "clean_word": "turns",
+          "phonemes": "t\u02c8\u025c\u02d0nz",
+          "start": 11.818,
+          "end": 12.123,
+          "duration": 0.305,
+          "frame_ahead_trigger": 11.928
+        },
+        {
+          "word": "order",
+          "clean_word": "order",
+          "phonemes": "\u02c8\u0254\u02d0\u0279d\u025a",
+          "start": 12.123,
+          "end": 12.598,
+          "duration": 0.475,
+          "frame_ahead_trigger": 12.233
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 12.598,
+          "end": 12.852,
+          "duration": 0.254,
+          "frame_ahead_trigger": 12.708
+        },
+        {
+          "word": "pure,",
+          "clean_word": "pure",
+          "phonemes": "pj\u02c8\u028a\u0279",
+          "start": 12.852,
+          "end": 13.073,
+          "duration": 0.221,
+          "frame_ahead_trigger": 12.962
+        },
+        {
+          "word": "unrecoverable",
+          "clean_word": "unrecoverable",
+          "phonemes": "\u02cc\u028cn\u0279\u1d7bk\u02c8\u028cv\u025a\u0279\u0259b\u0259l",
+          "start": 13.073,
+          "end": 14.041,
+          "duration": 0.968,
+          "frame_ahead_trigger": 13.183
+        },
+        {
+          "word": "noise.",
+          "clean_word": "noise",
+          "phonemes": "n\u02c8\u0254\u026az",
+          "start": 14.041,
+          "end": 14.338,
+          "duration": 0.297,
+          "frame_ahead_trigger": 14.151
+        }
+      ],
+      "audio_duration": 8.3,
+      "slot_duration": 8.45
+    },
+    {
+      "beat_id": 3,
+      "text": "DDPM reverses this thermodynamic arrow, training a neural network to subtract precise increments of noise at each Markov chain step.",
+      "visual_focus": "Gaussian denoising trajectory mapping.",
+      "highlight_words": {
+        "reverses": "#34D399",
+        "Markov chain": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Denoising Kernel",
+        "action_verb": "estimates",
+        "direct_object": "inverse diffusion gradient",
+        "anchor_word": "reverses",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "DENOISING DIFFUSIO ARCHITECTURE",
+        "sub": "Gaussian denoising trajectory mapping.",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_1_pgm_diagram_xarrow_small.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_1_pgm_diagram_xarrow_small.png",
+          "arxiv_id": "2006.11239",
+          "title": "DENOISING DIFFUSIO ARCHITECTURE",
+          "sub": "Gaussian denoising trajectory mapping.",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Pgm Diagram Xarrow Small",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_1_pgm_diagram_xarrow_small.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_1_pgm_diagram_xarrow_small.png",
+        "arxiv_id": "2006.11239",
+        "title": "DENOISING DIFFUSIO ARCHITECTURE",
+        "sub": "Gaussian denoising trajectory mapping.",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Pgm Diagram Xarrow Small",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 14.57,
+      "end": 22.59,
+      "duration": 8.02,
+      "word_timings": [
+        {
+          "word": "DDPM",
+          "clean_word": "ddpm",
+          "phonemes": "d\u02cci\u02d0d\u02cci\u02d0p\u02cci\u02d0\u02c8\u025bm",
+          "start": 14.587,
+          "end": 15.412,
+          "duration": 0.825,
+          "frame_ahead_trigger": 14.847
+        },
+        {
+          "word": "reverses",
+          "clean_word": "reverses",
+          "phonemes": "\u0279\u1d7bv\u02c8\u025c\u02d0s\u1d7bz",
+          "start": 15.412,
+          "end": 16.017,
+          "duration": 0.605,
+          "frame_ahead_trigger": 15.672
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 16.017,
+          "end": 16.132,
+          "duration": 0.115,
+          "frame_ahead_trigger": 16.277
+        },
+        {
+          "word": "thermodynamic",
+          "clean_word": "thermodynamic",
+          "phonemes": "\u03b8\u02cc\u025c\u02d0mo\u028ada\u026an\u02c8\u00e6m\u026ak",
+          "start": 16.132,
+          "end": 17.087,
+          "duration": 0.955,
+          "frame_ahead_trigger": 16.392
+        },
+        {
+          "word": "arrow,",
+          "clean_word": "arrow",
+          "phonemes": "\u02c8\u00e6\u0279o\u028a",
+          "start": 17.087,
+          "end": 17.357,
+          "duration": 0.27,
+          "frame_ahead_trigger": 17.347
+        },
+        {
+          "word": "training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 17.357,
+          "end": 17.817,
+          "duration": 0.46,
+          "frame_ahead_trigger": 17.617
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 17.817,
+          "end": 17.982,
+          "duration": 0.165,
+          "frame_ahead_trigger": 18.077
+        },
+        {
+          "word": "neural",
+          "clean_word": "neural",
+          "phonemes": "n\u02c8\u028a\u0279\u0279\u0259l",
+          "start": 17.982,
+          "end": 18.437,
+          "duration": 0.455,
+          "frame_ahead_trigger": 18.242
+        },
+        {
+          "word": "network",
+          "clean_word": "network",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0k",
+          "start": 18.437,
+          "end": 18.782,
+          "duration": 0.345,
+          "frame_ahead_trigger": 18.697
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 18.782,
+          "end": 19.022,
+          "duration": 0.24,
+          "frame_ahead_trigger": 19.042
+        },
+        {
+          "word": "subtract",
+          "clean_word": "subtract",
+          "phonemes": "s\u028cbt\u0279\u02c8\u00e6kt",
+          "start": 19.022,
+          "end": 19.506,
+          "duration": 0.484,
+          "frame_ahead_trigger": 19.282
+        },
+        {
+          "word": "precise",
+          "clean_word": "precise",
+          "phonemes": "p\u0279\u026as\u02c8a\u026as",
+          "start": 19.506,
+          "end": 19.958,
+          "duration": 0.452,
+          "frame_ahead_trigger": 19.766
+        },
+        {
+          "word": "increments",
+          "clean_word": "increments",
+          "phonemes": "\u02c8\u026a\u014bk\u0279\u026am\u0259nts",
+          "start": 19.958,
+          "end": 20.637,
+          "duration": 0.679,
+          "frame_ahead_trigger": 20.218
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 20.637,
+          "end": 20.693,
+          "duration": 0.056,
+          "frame_ahead_trigger": 20.897
+        },
+        {
+          "word": "noise",
+          "clean_word": "noise",
+          "phonemes": "n\u02c8\u0254\u026az",
+          "start": 20.693,
+          "end": 21.007,
+          "duration": 0.314,
+          "frame_ahead_trigger": 20.953
+        },
+        {
+          "word": "at",
+          "clean_word": "at",
+          "phonemes": "\u00e6t",
+          "start": 21.007,
+          "end": 21.152,
+          "duration": 0.145,
+          "frame_ahead_trigger": 21.267
+        },
+        {
+          "word": "each",
+          "clean_word": "each",
+          "phonemes": "\u02c8i\u02d0t\u0283",
+          "start": 21.152,
+          "end": 21.417,
+          "duration": 0.265,
+          "frame_ahead_trigger": 21.412
+        },
+        {
+          "word": "Markov",
+          "clean_word": "markov",
+          "phonemes": "m\u02c8\u0251\u02d0\u0279k\u0251\u02d0v",
+          "start": 21.417,
+          "end": 21.927,
+          "duration": 0.51,
+          "frame_ahead_trigger": 21.677
+        },
+        {
+          "word": "chain",
+          "clean_word": "chain",
+          "phonemes": "t\u0283\u02c8e\u026an",
+          "start": 21.927,
+          "end": 22.262,
+          "duration": 0.335,
+          "frame_ahead_trigger": 22.187
+        },
+        {
+          "word": "step.",
+          "clean_word": "step",
+          "phonemes": "st\u02c8\u025bp",
+          "start": 22.262,
+          "end": 22.502,
+          "duration": 0.24,
+          "frame_ahead_trigger": 22.522
+        }
+      ],
+      "audio_duration": 8.02,
+      "slot_duration": 8.17
+    },
+    {
+      "beat_id": 4,
+      "text": "By aligning our loss function with Langevin dynamics, we stop predicting the image and start predicting the score of the noise.",
+      "visual_focus": "Score matching gradient vectors.",
+      "highlight_words": {
+        "Langevin dynamics": "#38BDF8",
+        "score": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Score Network",
+        "action_verb": "computes",
+        "direct_object": "noise density gradient",
+        "anchor_word": "score",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: DENOISING DIFFUSIO",
+        "sub": "Score matching gradient vectors.",
+        "params": {
+          "title": "KERNEL CODE: DENOISING DIFFUSIO",
+          "sub": "Score matching gradient vectors.",
+          "filename": "ddpm_denoise.py",
+          "language": "python",
+          "lines": [
+            "def p_sample(model, x, t):",
+            "beta_t = extract(betas, t, x.shape)",
+            "alpha_t = extract(alphas, t, x.shape)",
+            "mean = (1 / sqrt(alpha_t)) * (x - (1-alpha_t)/sqrt(1-alpha_bar_t) * model(x, t))",
+            "return mean + noise * sigma"
+          ],
+          "highlight_lines": [
+            3,
+            4
+          ],
+          "trace_register": "\u26a1 REVERSE LANGEVIN DENOISING STEP",
+          "delta_badge": "Calculates reverse Gaussian trajectory using learned"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: DENOISING DIFFUSIO",
+        "sub": "Score matching gradient vectors.",
+        "filename": "ddpm_denoise.py",
+        "language": "python",
+        "lines": [
+          "def p_sample(model, x, t):",
+          "beta_t = extract(betas, t, x.shape)",
+          "alpha_t = extract(alphas, t, x.shape)",
+          "mean = (1 / sqrt(alpha_t)) * (x - (1-alpha_t)/sqrt(1-alpha_bar_t) * model(x, t))",
+          "return mean + noise * sigma"
+        ],
+        "highlight_lines": [
+          3,
+          4
+        ],
+        "trace_register": "\u26a1 REVERSE LANGEVIN DENOISING STEP",
+        "delta_badge": "Calculates reverse Gaussian trajectory using learned"
+      },
+      "start": 22.74,
+      "end": 29.14,
+      "duration": 6.4,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 22.748,
+          "end": 22.923,
+          "duration": 0.175,
+          "frame_ahead_trigger": 23.158
+        },
+        {
+          "word": "aligning",
+          "clean_word": "aligning",
+          "phonemes": "\u0250l\u02c8a\u026an\u026a\u014b",
+          "start": 22.923,
+          "end": 23.438,
+          "duration": 0.515,
+          "frame_ahead_trigger": 23.333
+        },
+        {
+          "word": "our",
+          "clean_word": "our",
+          "phonemes": "\u02cca\u028a\u025a",
+          "start": 23.438,
+          "end": 23.663,
+          "duration": 0.225,
+          "frame_ahead_trigger": 23.848
+        },
+        {
+          "word": "loss",
+          "clean_word": "loss",
+          "phonemes": "l\u02c8\u0254s",
+          "start": 23.663,
+          "end": 23.778,
+          "duration": 0.115,
+          "frame_ahead_trigger": 24.073
+        },
+        {
+          "word": "function",
+          "clean_word": "function",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259n",
+          "start": 23.778,
+          "end": 24.258,
+          "duration": 0.48,
+          "frame_ahead_trigger": 24.188
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 24.258,
+          "end": 24.437,
+          "duration": 0.179,
+          "frame_ahead_trigger": 24.668
+        },
+        {
+          "word": "Langevin",
+          "clean_word": "langevin",
+          "phonemes": "l\u02c8\u00e6nd\u0292\u026av\u02cc\u026an",
+          "start": 24.437,
+          "end": 24.988,
+          "duration": 0.551,
+          "frame_ahead_trigger": 24.847
+        },
+        {
+          "word": "dynamics,",
+          "clean_word": "dynamics",
+          "phonemes": "da\u026an\u02c8\u00e6m\u026aks",
+          "start": 24.988,
+          "end": 25.581,
+          "duration": 0.593,
+          "frame_ahead_trigger": 25.398
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 25.581,
+          "end": 25.763,
+          "duration": 0.182,
+          "frame_ahead_trigger": 25.991
+        },
+        {
+          "word": "stop",
+          "clean_word": "stop",
+          "phonemes": "st\u02c8\u0251\u02d0p",
+          "start": 25.763,
+          "end": 25.963,
+          "duration": 0.2,
+          "frame_ahead_trigger": 26.173
+        },
+        {
+          "word": "predicting",
+          "clean_word": "predicting",
+          "phonemes": "p\u0279\u026ad\u02c8\u026akt\u026a\u014b",
+          "start": 25.963,
+          "end": 26.608,
+          "duration": 0.645,
+          "frame_ahead_trigger": 26.373
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 26.608,
+          "end": 26.708,
+          "duration": 0.1,
+          "frame_ahead_trigger": 27.018
+        },
+        {
+          "word": "image",
+          "clean_word": "image",
+          "phonemes": "\u02c8\u026am\u026ad\u0292",
+          "start": 26.708,
+          "end": 27.003,
+          "duration": 0.295,
+          "frame_ahead_trigger": 27.118
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 27.003,
+          "end": 27.193,
+          "duration": 0.19,
+          "frame_ahead_trigger": 27.413
+        },
+        {
+          "word": "start",
+          "clean_word": "start",
+          "phonemes": "st\u02c8\u0251\u02d0\u0279t",
+          "start": 27.193,
+          "end": 27.583,
+          "duration": 0.39,
+          "frame_ahead_trigger": 27.603
+        },
+        {
+          "word": "predicting",
+          "clean_word": "predicting",
+          "phonemes": "p\u0279\u026ad\u02c8\u026akt\u026a\u014b",
+          "start": 27.583,
+          "end": 28.188,
+          "duration": 0.605,
+          "frame_ahead_trigger": 27.993
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 28.188,
+          "end": 28.251,
+          "duration": 0.063,
+          "frame_ahead_trigger": 28.598
+        },
+        {
+          "word": "score",
+          "clean_word": "score",
+          "phonemes": "sk\u02c8\u0254\u02d0\u0279",
+          "start": 28.251,
+          "end": 28.533,
+          "duration": 0.282,
+          "frame_ahead_trigger": 28.661
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 28.533,
+          "end": 28.633,
+          "duration": 0.1,
+          "frame_ahead_trigger": 28.943
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 28.633,
+          "end": 28.796,
+          "duration": 0.163,
+          "frame_ahead_trigger": 29.043
+        },
+        {
+          "word": "noise.",
+          "clean_word": "noise",
+          "phonemes": "n\u02c8\u0254\u026az",
+          "start": 28.796,
+          "end": 29.068,
+          "duration": 0.272,
+          "frame_ahead_trigger": 29.206
+        }
+      ],
+      "audio_duration": 6.4,
+      "slot_duration": 6.55
+    },
+    {
+      "beat_id": 5,
+      "text": "The result is absolute empirical clarity, achieving an FID of 3.17, crushing previous GAN-based generators on the CIFAR10 dataset.",
+      "visual_focus": "Comparison bar chart showing FID scores.",
+      "highlight_words": {
+        "3.17": "#F59E0B",
+        "crushing": "#34D399"
+      },
+      "svo_action": {
+        "subject": "DDPM Performance",
+        "action_verb": "surpasses",
+        "direct_object": "ProgressiveGAN FID scores",
+        "anchor_word": "3.17",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: FID SCORE",
+        "sub": "Comparison bar chart showing FID scores.",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: FID SCORE",
+          "sub": "Comparison bar chart showing FID scores.",
+          "metric_name": "Frechet Inception Distance",
+          "unit": "FID",
+          "contestants": [
+            {
+              "name": "DDPM",
+              "value": 3.17,
+              "display_val": "3.17",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "ProgGAN",
+              "value": 16.3,
+              "display_val": "16.3",
+              "is_hero": false,
+              "color": "#38BDF8"
+            },
+            {
+              "name": "Vanilla GAN",
+              "value": 25.5,
+              "display_val": "25.5",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +80.5% QUALITY GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: FID SCORE",
+        "sub": "Comparison bar chart showing FID scores.",
+        "metric_name": "Frechet Inception Distance",
+        "unit": "FID",
+        "contestants": [
+          {
+            "name": "DDPM",
+            "value": 3.17,
+            "display_val": "3.17",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "ProgGAN",
+            "value": 16.3,
+            "display_val": "16.3",
+            "is_hero": false,
+            "color": "#38BDF8"
+          },
+          {
+            "name": "Vanilla GAN",
+            "value": 25.5,
+            "display_val": "25.5",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +80.5% QUALITY GAIN"
+      },
+      "start": 29.29,
+      "end": 38.32,
+      "duration": 9.02,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 29.308,
+          "end": 29.488,
+          "duration": 0.18,
+          "frame_ahead_trigger": 29.868
+        },
+        {
+          "word": "result",
+          "clean_word": "result",
+          "phonemes": "\u0279\u026az\u02c8\u028clt",
+          "start": 29.488,
+          "end": 29.848,
+          "duration": 0.36,
+          "frame_ahead_trigger": 30.048
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 29.848,
+          "end": 29.918,
+          "duration": 0.07,
+          "frame_ahead_trigger": 30.408
+        },
+        {
+          "word": "absolute",
+          "clean_word": "absolute",
+          "phonemes": "\u02c8\u00e6bs\u0259l\u02ccu\u02d0t",
+          "start": 29.918,
+          "end": 30.588,
+          "duration": 0.67,
+          "frame_ahead_trigger": 30.478
+        },
+        {
+          "word": "empirical",
+          "clean_word": "empirical",
+          "phonemes": "\u025bmp\u02c8\u026a\u0279\u026ak\u0259l",
+          "start": 30.588,
+          "end": 31.083,
+          "duration": 0.495,
+          "frame_ahead_trigger": 31.148
+        },
+        {
+          "word": "clarity,",
+          "clean_word": "clarity",
+          "phonemes": "kl\u02c8\u00e6\u0279\u1d7b\u027ei",
+          "start": 31.083,
+          "end": 31.549,
+          "duration": 0.466,
+          "frame_ahead_trigger": 31.643
+        },
+        {
+          "word": "achieving",
+          "clean_word": "achieving",
+          "phonemes": "\u0250t\u0283\u02c8i\u02d0v\u026a\u014b",
+          "start": 31.549,
+          "end": 32.098,
+          "duration": 0.549,
+          "frame_ahead_trigger": 32.109
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 32.098,
+          "end": 32.173,
+          "duration": 0.075,
+          "frame_ahead_trigger": 32.658
+        },
+        {
+          "word": "FID",
+          "clean_word": "fid",
+          "phonemes": "f\u02c8\u026ad",
+          "start": 32.173,
+          "end": 32.488,
+          "duration": 0.315,
+          "frame_ahead_trigger": 32.733
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 32.488,
+          "end": 32.526,
+          "duration": 0.037,
+          "frame_ahead_trigger": 33.048
+        },
+        {
+          "word": "3.17,",
+          "clean_word": "317",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0h\u02c8\u028cnd\u0279\u026ad s\u02c8\u025bv\u0259nt\u02cci\u02d0n",
+          "start": 32.526,
+          "end": 33.943,
+          "duration": 1.418,
+          "frame_ahead_trigger": 33.086
+        },
+        {
+          "word": "crushing",
+          "clean_word": "crushing",
+          "phonemes": "k\u0279\u02c8\u028c\u0283\u026a\u014b",
+          "start": 33.943,
+          "end": 34.458,
+          "duration": 0.515,
+          "frame_ahead_trigger": 34.503
+        },
+        {
+          "word": "previous",
+          "clean_word": "previous",
+          "phonemes": "p\u0279\u02c8i\u02d0vi\u0259s",
+          "start": 34.458,
+          "end": 34.868,
+          "duration": 0.41,
+          "frame_ahead_trigger": 35.018
+        },
+        {
+          "word": "GAN-based",
+          "clean_word": "ganbased",
+          "phonemes": "d\u0292\u02cci\u02d0\u02c8e\u026a \u02c8\u025bnb\u02c8e\u026ast",
+          "start": 34.868,
+          "end": 35.943,
+          "duration": 1.075,
+          "frame_ahead_trigger": 35.428
+        },
+        {
+          "word": "generators",
+          "clean_word": "generators",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u02cce\u026a\u027e\u025az",
+          "start": 35.943,
+          "end": 36.668,
+          "duration": 0.725,
+          "frame_ahead_trigger": 36.503
+        },
+        {
+          "word": "on",
+          "clean_word": "on",
+          "phonemes": "\u02c8\u0254n",
+          "start": 36.668,
+          "end": 36.808,
+          "duration": 0.14,
+          "frame_ahead_trigger": 37.228
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 36.808,
+          "end": 36.908,
+          "duration": 0.1,
+          "frame_ahead_trigger": 37.368
+        },
+        {
+          "word": "CIFAR10",
+          "clean_word": "cifar10",
+          "phonemes": "s\u02c8\u026af\u0251\u02d0\u0279 t\u02c8\u025bn",
+          "start": 36.908,
+          "end": 37.639,
+          "duration": 0.73,
+          "frame_ahead_trigger": 37.468
+        },
+        {
+          "word": "dataset.",
+          "clean_word": "dataset",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259s\u02cc\u025bt",
+          "start": 37.639,
+          "end": 38.213,
+          "duration": 0.575,
+          "frame_ahead_trigger": 38.199
+        }
+      ],
+      "audio_duration": 9.02,
+      "slot_duration": 9.18
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into the entropy-defying architecture powering our modern generative reality.",
+      "visual_focus": "Smooth loop animation connecting noise to clean image.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Creative Director",
+        "action_verb": "invites",
+        "direct_object": "technical discourse",
+        "anchor_word": "machinoAI",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "catalog_routing",
+        "title": "ENTROPY-DEFYING SYSTEMS",
+        "sub": "Looping architecture back to foundation",
+        "accent_color": "#34D399",
+        "params": {
+          "index_label": "DDPM",
+          "drawer_a_label": "Thermodynamics",
+          "drawer_b_label": "Langevin Dynamics",
+          "drawer_c_label": "Generative Loops"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 38.47,
+      "end": 45.38,
+      "duration": 6.91,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 38.467,
+          "end": 38.902,
+          "duration": 0.435,
+          "frame_ahead_trigger": 39.177
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 38.902,
+          "end": 39.877,
+          "duration": 0.975,
+          "frame_ahead_trigger": 39.612
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 39.877,
+          "end": 40.047,
+          "duration": 0.17,
+          "frame_ahead_trigger": 40.587
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 40.047,
+          "end": 40.372,
+          "duration": 0.325,
+          "frame_ahead_trigger": 40.757
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 40.372,
+          "end": 40.917,
+          "duration": 0.545,
+          "frame_ahead_trigger": 41.082
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 40.917,
+          "end": 41.252,
+          "duration": 0.335,
+          "frame_ahead_trigger": 41.627
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 41.252,
+          "end": 41.357,
+          "duration": 0.105,
+          "frame_ahead_trigger": 41.962
+        },
+        {
+          "word": "entropy-defying",
+          "clean_word": "entropydefying",
+          "phonemes": "\u02c8\u025bnt\u0279\u0259p\u02cca\u026adfa\u026a\u026a\u014b",
+          "start": 41.357,
+          "end": 42.337,
+          "duration": 0.98,
+          "frame_ahead_trigger": 42.067
+        },
+        {
+          "word": "architecture",
+          "clean_word": "architecture",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025a",
+          "start": 42.337,
+          "end": 42.997,
+          "duration": 0.66,
+          "frame_ahead_trigger": 43.047
+        },
+        {
+          "word": "powering",
+          "clean_word": "powering",
+          "phonemes": "p\u02c8a\u028a\u025a\u0279\u026a\u014b",
+          "start": 42.997,
+          "end": 43.462,
+          "duration": 0.465,
+          "frame_ahead_trigger": 43.707
+        },
+        {
+          "word": "our",
+          "clean_word": "our",
+          "phonemes": "\u02cca\u028a\u025a",
+          "start": 43.462,
+          "end": 43.697,
+          "duration": 0.235,
+          "frame_ahead_trigger": 44.172
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 43.697,
+          "end": 44.132,
+          "duration": 0.435,
+          "frame_ahead_trigger": 44.407
+        },
+        {
+          "word": "generative",
+          "clean_word": "generative",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u0259t\u02cc\u026av",
+          "start": 44.132,
+          "end": 44.782,
+          "duration": 0.65,
+          "frame_ahead_trigger": 44.842
+        },
+        {
+          "word": "reality.",
+          "clean_word": "reality",
+          "phonemes": "\u0279\u026a\u02c8\u00e6l\u1d7b\u027ei",
+          "start": 44.782,
+          "end": 45.262,
+          "duration": 0.48,
+          "frame_ahead_trigger": 45.492
+        }
+      ],
+      "audio_duration": 6.91,
+      "slot_duration": 6.91
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$p(x_0) = \\int p(x_0, x_1, \\dots, x_T) dx_{1:T}$",
+      "filename": "ddpm_diffusion_thermodynamics_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "p(x_0)",
+          "label": "Data Distribution"
+        },
+        {
+          "term": "dx_{1:T}",
+          "label": "Diffusion Path"
+        }
+      ],
+      "svg_filename": "ddpm_diffusion_thermodynamics_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$q(x_t | x_{t-1}) = \\mathcal{N}(x_t; \\sqrt{1-\\beta_t} x_{t-1}, \\beta_t I)$",
+      "filename": "ddpm_diffusion_thermodynamics_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\beta_t",
+          "label": "Variance Schedule"
+        },
+        {
+          "term": "q",
+          "label": "Forward Kernel"
+        }
+      ],
+      "svg_filename": "ddpm_diffusion_thermodynamics_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$p_{\\theta}(x_{t-1} | x_t) = \\mathcal{N}(x_{t-1}; \\mu_{\\theta}(x_t, t), \\Sigma_{\\theta}(x_t, t))$",
+      "filename": "ddpm_diffusion_thermodynamics_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\mu_{\\theta}",
+          "label": "Denoising Mean"
+        },
+        {
+          "term": "\\theta",
+          "label": "Neural Weights"
+        }
+      ],
+      "svg_filename": "ddpm_diffusion_thermodynamics_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$L_t = || \\epsilon - \\epsilon_{\\theta}(\\sqrt{\\bar{\\alpha}_t} x_0 + \\sqrt{1-\\bar{\\alpha}_t} \\epsilon, t) ||^2$",
+      "filename": "ddpm_diffusion_thermodynamics_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "\\epsilon",
+          "label": "Gaussian Noise"
+        },
+        {
+          "term": "\\epsilon_{\\theta}",
+          "label": "Score Estimator"
+        }
+      ],
+      "svg_filename": "ddpm_diffusion_thermodynamics_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{FID} = ||\\mu_r - \\mu_g||^2 + \\mathrm{Tr}(\\Sigma_r + \\Sigma_g - 2(\\Sigma_r \\Sigma_g)^{1/2})$",
+      "filename": "ddpm_diffusion_thermodynamics_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\mu, \\Sigma",
+          "label": "Feature Statistics"
+        },
+        {
+          "term": "r, g",
+          "label": "Real vs Generated"
+        }
+      ],
+      "svg_filename": "ddpm_diffusion_thermodynamics_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "attention_flow",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Diffusion",
+          "color": "#38BDF8",
+          "items": [
+            "Markov",
+            "Langevin",
+            "Score"
+          ]
+        },
+        {
+          "name": "Thermodynamics",
+          "color": "#10B981",
+          "items": [
+            "Entropy",
+            "Variance",
+            "Equilibrium"
+          ]
+        },
+        {
+          "name": "Architecture",
+          "color": "#F59E0B",
+          "items": [
+            "U-Net",
+            "Reverse",
+            "Denoising"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Diffusion\"",
+        "target_cluster": "Diffusion",
+        "token": "\"Diffusion\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'Noise'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'Collapse'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "DDPM",
+    "model_a_specs": [
+      "Markov Chain",
+      "Langevin Dynamics",
+      "3.17 FID"
+    ],
+    "model_b": "ProgressiveGAN",
+    "model_b_specs": [
+      "Adversarial Min-Max",
+      "Mode Collapse",
+      "16.3 FID"
+    ],
+    "divide_title": "STOCHASTIC DIFFUSION VS ADVERSARIAL GAMES",
+    "model_a_stat": "3.17",
+    "model_a_stat_label": "FID SCORE (LOWER IS BETTER)",
+    "model_b_stat": "16.3",
+    "model_b_stat_label": "BASELINE GAN FID",
+    "efficiency_badge": "\u26a1 +80% FID PERFORMANCE IMPROVEMENT",
+    "benchmarks": [
+      {
+        "name": "CIFAR10",
+        "score_a": "3.17",
+        "score_b": "16.3"
+      },
+      {
+        "name": "Stability",
+        "score_a": "High",
+        "score_b": "Low"
+      },
+      {
+        "name": "Mode Collapse",
+        "score_a": "None",
+        "score_b": "Frequent"
+      }
+    ],
+    "scale_metric": "3.17",
+    "scale_label": "FID DISTANCE",
+    "bottleneck_title": "ADVERSARIAL INSTABILITY",
+    "bottleneck_desc": "Training instability leads to mode collapse and poor sample diversity",
+    "solution_title": "THERMODYNAMIC REVERSAL",
+    "solution_components": "Markov denoising chain via Langevin score matching",
+    "mechanism_title": "GAUSSIAN GRADIENT FLOW",
+    "payoff_stat": "3.17",
+    "payoff_label": "FID DISTANCE",
+    "payoff_sub": "State-of-the-art results on CIFAR10 synthesis",
+    "payoff_hero_stat": 3.17,
+    "payoff_hero_label": "DDPM FID Score",
+    "payoff_base_stat": 16.3,
+    "payoff_base_label": "Standard Baseline",
+    "payoff_delta_badge": "\u26a1 +80.5% FID REDUCTION",
+    "challenger": "DDPM",
+    "incumbent": "ProgressiveGAN"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: FID SCORE",
+    "metric_name": "Frechet Inception Distance",
+    "unit": "FID",
+    "contestants": [
+      {
+        "name": "DDPM",
+        "value": 3.17,
+        "display_val": "3.17",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "ProgGAN",
+        "value": 16.3,
+        "display_val": "16.3",
+        "is_hero": false,
+        "color": "#38BDF8"
+      },
+      {
+        "name": "Vanilla GAN",
+        "value": 25.5,
+        "display_val": "25.5",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +80.5% QUALITY GAIN",
+    "radar_axes": [
+      "Sample Quality",
+      "Training Stability",
+      "Mode Diversity",
+      "Gradient Flow",
+      "Computational Cost"
+    ]
+  },
+  "code_snippet": {
+    "filename": "ddpm_denoise.py",
+    "language": "python",
+    "lines": [
+      "def p_sample(model, x, t):",
+      "beta_t = extract(betas, t, x.shape)",
+      "alpha_t = extract(alphas, t, x.shape)",
+      "mean = (1 / sqrt(alpha_t)) * (x - (1-alpha_t)/sqrt(1-alpha_bar_t) * model(x, t))",
+      "return mean + noise * sigma"
+    ],
+    "highlight_lines": [
+      3,
+      4
+    ],
+    "trace_register": "\u26a1 REVERSE LANGEVIN DENOISING STEP",
+    "explanation": "Calculates reverse Gaussian trajectory using learned score estimator"
+  },
+  "arxiv_id": "2006.11239",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "pgm_diagram_xarrow_small",
+      "caption": "Pgm Diagram Xarrow Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/source/images/pgm_diagram_xarrow_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_1_pgm_diagram_xarrow_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_1_pgm_diagram_xarrow_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "interp_coarse_to_fine_jpg_small",
+      "caption": "Interp Coarse To Fine Jpg Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/source/images/interp_coarse_to_fine_jpg_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_2_interp_coarse_to_fine_jpg_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_2_interp_coarse_to_fine_jpg_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "lsun_church_layout",
+      "caption": "Lsun Church Layout",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/source/images/lsun_church_layout.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_3_lsun_church_layout.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "interp_with_diagram",
+      "caption": "Interp With Diagram",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/source/images/interp_with_diagram.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_4_interp_with_diagram.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 95
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "cifar10_eps-fixedlarge-mse_20_nninception",
+      "caption": "Cifar10 Eps-Fixedlarge-Mse 20 Nninception",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/source/images/cifar10_eps-fixedlarge-mse_20_nninception.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2006.11239/chalkboard_figures/fig_5_cifar10_eps-fixedlarge-mse_20_nninception.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 95
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Training GANs to generate high-fidelity images is like trying to balance a house of cards in a hurricane.",
+    "verdict": 52,
+    "band": "WORKABLE",
+    "formula": "Unclassified",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "attention_grid",
+      "entity_type": "attention_grid",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "wX7z8RZFxLY",
+    "shorts_url": "https://youtube.com/shorts/wX7z8RZFxLY",
+    "studio_url": "https://studio.youtube.com/video/wX7z8RZFxLY/edit",
+    "title": "How AI Creates Images From TV Static #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/ddpm_diffusion_thermodynamics_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

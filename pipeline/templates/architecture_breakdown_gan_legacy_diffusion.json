@@ -1,0 +1,1799 @@
+{
+  "id": "gan_legacy_diffusion",
+  "title": "How GAN Latent Interpolation Paved the Way for Modern Diffusion",
+  "category": "architecture_breakdown",
+  "domain_taxonomy": "neural_sae",
+  "hook_tag": "GAN LEGACY",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Imagine a generator that never sees real images, yet somehow learns to paint photorealistic cats.",
+      "visual_focus": "Blackboard shows a latent noise cloud morphing into a cat silhouette as the word paint is spoken.",
+      "highlight_words": {
+        "generator": "#34D399",
+        "paint": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Generator G",
+        "action_verb": "synthesizes",
+        "direct_object": "Photorealistic Cat Image",
+        "anchor_word": "paint",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "HOW GAN LATENT: GENERATOR G",
+        "sub": "Blackboard shows a latent noise cloud morphing into a cat",
+        "accent_color": "#38BDF8",
+        "stage_1_label": "STAGE 1: GENERATOR G",
+        "stage_2_label": "STAGE 2: SYNTHESIZES ENGINE",
+        "stage_3_label": "STAGE 3: PHOTOREALISTIC CAT"
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 37,
+      "hook_band": "WEAK",
+      "hook_formula": "The Impossible Claim",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "HOW GAN LATENT: GENERATOR G",
+        "sub": "Blackboard shows a latent noise cloud morphing into a cat",
+        "accent_color": "#38BDF8",
+        "stage_1_label": "STAGE 1: GENERATOR G",
+        "stage_2_label": "STAGE 2: SYNTHESIZES ENGINE",
+        "stage_3_label": "STAGE 3: PHOTOREALISTIC CAT",
+        "stage_1_sub": " ",
+        "stage_2_sub": " ",
+        "stage_3_sub": " "
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.63,
+      "duration": 5.63,
+      "word_timings": [
+        {
+          "word": "Imagine",
+          "clean_word": "imagine",
+          "phonemes": "\u026am\u02c8\u00e6d\u0292\u026an",
+          "start": 0.01,
+          "end": 0.5,
+          "duration": 0.49,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 0.5,
+          "end": 0.68,
+          "duration": 0.18,
+          "frame_ahead_trigger": 0.46
+        },
+        {
+          "word": "generator",
+          "clean_word": "generator",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u02cce\u026a\u027e\u025a",
+          "start": 0.68,
+          "end": 1.37,
+          "duration": 0.69,
+          "frame_ahead_trigger": 0.64
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 1.37,
+          "end": 1.475,
+          "duration": 0.105,
+          "frame_ahead_trigger": 1.33
+        },
+        {
+          "word": "never",
+          "clean_word": "never",
+          "phonemes": "n\u02c8\u025bv\u025a",
+          "start": 1.475,
+          "end": 1.805,
+          "duration": 0.33,
+          "frame_ahead_trigger": 1.435
+        },
+        {
+          "word": "sees",
+          "clean_word": "sees",
+          "phonemes": "s\u02c8i\u02d0z",
+          "start": 1.805,
+          "end": 2.13,
+          "duration": 0.325,
+          "frame_ahead_trigger": 1.765
+        },
+        {
+          "word": "real",
+          "clean_word": "real",
+          "phonemes": "\u0279\u02c8i\u02d0\u0259l",
+          "start": 2.13,
+          "end": 2.37,
+          "duration": 0.24,
+          "frame_ahead_trigger": 2.09
+        },
+        {
+          "word": "images,",
+          "clean_word": "images",
+          "phonemes": "\u02c8\u026am\u026ad\u0292\u1d7bz",
+          "start": 2.37,
+          "end": 2.833,
+          "duration": 0.463,
+          "frame_ahead_trigger": 2.33
+        },
+        {
+          "word": "yet",
+          "clean_word": "yet",
+          "phonemes": "j\u02c8\u025bt",
+          "start": 2.833,
+          "end": 3.0,
+          "duration": 0.167,
+          "frame_ahead_trigger": 2.793
+        },
+        {
+          "word": "somehow",
+          "clean_word": "somehow",
+          "phonemes": "s\u02c8\u028cmha\u028a",
+          "start": 3.0,
+          "end": 3.525,
+          "duration": 0.525,
+          "frame_ahead_trigger": 2.96
+        },
+        {
+          "word": "learns",
+          "clean_word": "learns",
+          "phonemes": "l\u02c8\u025c\u02d0nz",
+          "start": 3.525,
+          "end": 3.835,
+          "duration": 0.31,
+          "frame_ahead_trigger": 3.485
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 3.835,
+          "end": 3.955,
+          "duration": 0.12,
+          "frame_ahead_trigger": 3.795
+        },
+        {
+          "word": "paint",
+          "clean_word": "paint",
+          "phonemes": "p\u02c8e\u026ant",
+          "start": 3.955,
+          "end": 4.295,
+          "duration": 0.34,
+          "frame_ahead_trigger": 3.915
+        },
+        {
+          "word": "photorealistic",
+          "clean_word": "photorealistic",
+          "phonemes": "f\u02cco\u028a\u027eo\u028a\u0279i\u02d0\u0259l\u02c8\u026ast\u026ak",
+          "start": 4.295,
+          "end": 5.268,
+          "duration": 0.973,
+          "frame_ahead_trigger": 4.255
+        },
+        {
+          "word": "cats.",
+          "clean_word": "cats",
+          "phonemes": "k\u02c8\u00e6ts",
+          "start": 5.268,
+          "end": 5.545,
+          "duration": 0.277,
+          "frame_ahead_trigger": 5.228
+        }
+      ],
+      "audio_duration": 5.63,
+      "slot_duration": 5.78
+    },
+    {
+      "beat_id": 2,
+      "text": "Beat 2 explaining GANs: Generative Adversarial Networks: Part 5 - The Generative Legacy: How Adversarial Modeling Paved the Way for Modern Diffusion with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 2.",
+      "highlight_words": {
+        "GANs: Generativ": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "LATENT TRAJECTORY BOTTLENECK",
+        "sub": "Memory Bandwidth Limits",
+        "accent_color": "#38BDF8",
+        "params": {
+          "field_title": "How GAN Latent Interpolation",
+          "source_label": "System Core",
+          "target_label": "Computation",
+          "stream_formula": " "
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "LATENT TRAJECTORY BOTTLENECK",
+        "sub": "Memory Bandwidth Limits",
+        "accent_color": "#38BDF8",
+        "param_key_1": "metric_a",
+        "param_key_2": "metric_b",
+        "field_title": "How GAN Latent Interpolation",
+        "source_label": "System Core",
+        "target_label": "Computation",
+        "stream_formula": " "
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 5.78,
+      "end": 17.45,
+      "duration": 11.67,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 5.797,
+          "end": 6.067,
+          "duration": 0.27,
+          "frame_ahead_trigger": 5.907
+        },
+        {
+          "word": "2",
+          "clean_word": "2",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 6.067,
+          "end": 6.392,
+          "duration": 0.325,
+          "frame_ahead_trigger": 6.177
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 6.392,
+          "end": 7.057,
+          "duration": 0.665,
+          "frame_ahead_trigger": 6.502
+        },
+        {
+          "word": "GANs:",
+          "clean_word": "gans",
+          "phonemes": "\u0261\u02c8\u00e6n",
+          "start": 7.057,
+          "end": 7.242,
+          "duration": 0.185,
+          "frame_ahead_trigger": 7.167
+        },
+        {
+          "word": "Generative",
+          "clean_word": "generative",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u0259t\u02cc\u026av",
+          "start": 7.242,
+          "end": 8.032,
+          "duration": 0.79,
+          "frame_ahead_trigger": 7.352
+        },
+        {
+          "word": "Adversarial",
+          "clean_word": "adversarial",
+          "phonemes": "\u02cc\u00e6dv\u025as\u02c8\u025b\u0279\u026a\u0259l",
+          "start": 8.032,
+          "end": 8.767,
+          "duration": 0.735,
+          "frame_ahead_trigger": 8.142
+        },
+        {
+          "word": "Networks:",
+          "clean_word": "networks",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0ks",
+          "start": 8.767,
+          "end": 9.342,
+          "duration": 0.575,
+          "frame_ahead_trigger": 8.877
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 9.342,
+          "end": 9.715,
+          "duration": 0.373,
+          "frame_ahead_trigger": 9.452
+        },
+        {
+          "word": "5",
+          "clean_word": "5",
+          "phonemes": "f\u02c8a\u026av",
+          "start": 9.715,
+          "end": 10.012,
+          "duration": 0.297,
+          "frame_ahead_trigger": 9.825
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 10.012,
+          "end": 10.088,
+          "duration": 0.076,
+          "frame_ahead_trigger": 10.122
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 10.088,
+          "end": 10.327,
+          "duration": 0.239,
+          "frame_ahead_trigger": 10.198
+        },
+        {
+          "word": "Generative",
+          "clean_word": "generative",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u0259t\u02cc\u026av",
+          "start": 10.327,
+          "end": 11.037,
+          "duration": 0.71,
+          "frame_ahead_trigger": 10.437
+        },
+        {
+          "word": "Legacy:",
+          "clean_word": "legacy",
+          "phonemes": "l\u02c8\u025b\u0261\u0259si",
+          "start": 11.037,
+          "end": 11.322,
+          "duration": 0.285,
+          "frame_ahead_trigger": 11.147
+        },
+        {
+          "word": "How",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 11.322,
+          "end": 11.612,
+          "duration": 0.29,
+          "frame_ahead_trigger": 11.432
+        },
+        {
+          "word": "Adversarial",
+          "clean_word": "adversarial",
+          "phonemes": "\u02cc\u00e6dv\u025as\u02c8\u025b\u0279\u026a\u0259l",
+          "start": 11.612,
+          "end": 12.467,
+          "duration": 0.855,
+          "frame_ahead_trigger": 11.722
+        },
+        {
+          "word": "Modeling",
+          "clean_word": "modeling",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l\u026a\u014b",
+          "start": 12.467,
+          "end": 12.967,
+          "duration": 0.5,
+          "frame_ahead_trigger": 12.577
+        },
+        {
+          "word": "Paved",
+          "clean_word": "paved",
+          "phonemes": "p\u02c8e\u026avd",
+          "start": 12.967,
+          "end": 13.322,
+          "duration": 0.355,
+          "frame_ahead_trigger": 13.077
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 13.322,
+          "end": 13.482,
+          "duration": 0.16,
+          "frame_ahead_trigger": 13.432
+        },
+        {
+          "word": "Way",
+          "clean_word": "way",
+          "phonemes": "w\u02c8e\u026a",
+          "start": 13.482,
+          "end": 13.582,
+          "duration": 0.1,
+          "frame_ahead_trigger": 13.592
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 13.582,
+          "end": 13.982,
+          "duration": 0.4,
+          "frame_ahead_trigger": 13.692
+        },
+        {
+          "word": "Modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 13.982,
+          "end": 14.322,
+          "duration": 0.34,
+          "frame_ahead_trigger": 14.092
+        },
+        {
+          "word": "Diffusion",
+          "clean_word": "diffusion",
+          "phonemes": "d\u1d7bfj\u02c8u\u02d0\u0292\u0259n",
+          "start": 14.322,
+          "end": 15.017,
+          "duration": 0.695,
+          "frame_ahead_trigger": 14.432
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 15.017,
+          "end": 15.127,
+          "duration": 0.11,
+          "frame_ahead_trigger": 15.127
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 15.127,
+          "end": 15.317,
+          "duration": 0.19,
+          "frame_ahead_trigger": 15.237
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 15.317,
+          "end": 16.052,
+          "duration": 0.735,
+          "frame_ahead_trigger": 15.427
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 16.052,
+          "end": 16.212,
+          "duration": 0.16,
+          "frame_ahead_trigger": 16.162
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 16.212,
+          "end": 16.732,
+          "duration": 0.52,
+          "frame_ahead_trigger": 16.322
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 16.732,
+          "end": 17.302,
+          "duration": 0.57,
+          "frame_ahead_trigger": 16.842
+        }
+      ],
+      "audio_duration": 11.67,
+      "slot_duration": 11.82
+    },
+    {
+      "beat_id": 3,
+      "text": "Beat 3 explaining GANs: Generative Adversarial Networks: Part 5 - The Generative Legacy: How Adversarial Modeling Paved the Way for Modern Diffusion with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 3.",
+      "highlight_words": {
+        "GANs: Generativ": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "HOW GAN LATENT: FIGURE",
+        "sub": "Detailed chalkboard visual illustrating beat 3.",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_1_fig1.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_1_fig1.png",
+          "arxiv_id": "1406.2661",
+          "title": "HOW GAN LATENT: FIGURE",
+          "sub": "Detailed chalkboard visual illustrating beat 3.",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Fig1",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_1_fig1.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_1_fig1.png",
+        "arxiv_id": "1406.2661",
+        "title": "HOW GAN LATENT: FIGURE",
+        "sub": "Detailed chalkboard visual illustrating beat 3.",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Fig1",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 17.6,
+      "end": 29.29,
+      "duration": 11.69,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 17.611,
+          "end": 17.921,
+          "duration": 0.31,
+          "frame_ahead_trigger": 17.871
+        },
+        {
+          "word": "3",
+          "clean_word": "3",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0",
+          "start": 17.921,
+          "end": 18.236,
+          "duration": 0.315,
+          "frame_ahead_trigger": 18.181
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 18.236,
+          "end": 18.906,
+          "duration": 0.67,
+          "frame_ahead_trigger": 18.496
+        },
+        {
+          "word": "GANs:",
+          "clean_word": "gans",
+          "phonemes": "\u0261\u02c8\u00e6n",
+          "start": 18.906,
+          "end": 19.081,
+          "duration": 0.175,
+          "frame_ahead_trigger": 19.166
+        },
+        {
+          "word": "Generative",
+          "clean_word": "generative",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u0259t\u02cc\u026av",
+          "start": 19.081,
+          "end": 19.901,
+          "duration": 0.82,
+          "frame_ahead_trigger": 19.341
+        },
+        {
+          "word": "Adversarial",
+          "clean_word": "adversarial",
+          "phonemes": "\u02cc\u00e6dv\u025as\u02c8\u025b\u0279\u026a\u0259l",
+          "start": 19.901,
+          "end": 20.636,
+          "duration": 0.735,
+          "frame_ahead_trigger": 20.161
+        },
+        {
+          "word": "Networks:",
+          "clean_word": "networks",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0ks",
+          "start": 20.636,
+          "end": 21.201,
+          "duration": 0.565,
+          "frame_ahead_trigger": 20.896
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 21.201,
+          "end": 21.601,
+          "duration": 0.4,
+          "frame_ahead_trigger": 21.461
+        },
+        {
+          "word": "5",
+          "clean_word": "5",
+          "phonemes": "f\u02c8a\u026av",
+          "start": 21.601,
+          "end": 21.89,
+          "duration": 0.289,
+          "frame_ahead_trigger": 21.861
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 21.89,
+          "end": 21.952,
+          "duration": 0.062,
+          "frame_ahead_trigger": 22.15
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 21.952,
+          "end": 22.171,
+          "duration": 0.219,
+          "frame_ahead_trigger": 22.212
+        },
+        {
+          "word": "Generative",
+          "clean_word": "generative",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u0259t\u02cc\u026av",
+          "start": 22.171,
+          "end": 22.881,
+          "duration": 0.71,
+          "frame_ahead_trigger": 22.431
+        },
+        {
+          "word": "Legacy:",
+          "clean_word": "legacy",
+          "phonemes": "l\u02c8\u025b\u0261\u0259si",
+          "start": 22.881,
+          "end": 23.171,
+          "duration": 0.29,
+          "frame_ahead_trigger": 23.141
+        },
+        {
+          "word": "How",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 23.171,
+          "end": 23.456,
+          "duration": 0.285,
+          "frame_ahead_trigger": 23.431
+        },
+        {
+          "word": "Adversarial",
+          "clean_word": "adversarial",
+          "phonemes": "\u02cc\u00e6dv\u025as\u02c8\u025b\u0279\u026a\u0259l",
+          "start": 23.456,
+          "end": 24.311,
+          "duration": 0.855,
+          "frame_ahead_trigger": 23.716
+        },
+        {
+          "word": "Modeling",
+          "clean_word": "modeling",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l\u026a\u014b",
+          "start": 24.311,
+          "end": 24.811,
+          "duration": 0.5,
+          "frame_ahead_trigger": 24.571
+        },
+        {
+          "word": "Paved",
+          "clean_word": "paved",
+          "phonemes": "p\u02c8e\u026avd",
+          "start": 24.811,
+          "end": 25.166,
+          "duration": 0.355,
+          "frame_ahead_trigger": 25.071
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 25.166,
+          "end": 25.246,
+          "duration": 0.08,
+          "frame_ahead_trigger": 25.426
+        },
+        {
+          "word": "Way",
+          "clean_word": "way",
+          "phonemes": "w\u02c8e\u026a",
+          "start": 25.246,
+          "end": 25.549,
+          "duration": 0.303,
+          "frame_ahead_trigger": 25.506
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 25.549,
+          "end": 25.826,
+          "duration": 0.277,
+          "frame_ahead_trigger": 25.809
+        },
+        {
+          "word": "Modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 25.826,
+          "end": 26.171,
+          "duration": 0.345,
+          "frame_ahead_trigger": 26.086
+        },
+        {
+          "word": "Diffusion",
+          "clean_word": "diffusion",
+          "phonemes": "d\u1d7bfj\u02c8u\u02d0\u0292\u0259n",
+          "start": 26.171,
+          "end": 26.866,
+          "duration": 0.695,
+          "frame_ahead_trigger": 26.431
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 26.866,
+          "end": 26.971,
+          "duration": 0.105,
+          "frame_ahead_trigger": 27.126
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 26.971,
+          "end": 27.286,
+          "duration": 0.315,
+          "frame_ahead_trigger": 27.231
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 27.286,
+          "end": 27.896,
+          "duration": 0.61,
+          "frame_ahead_trigger": 27.546
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 27.896,
+          "end": 28.051,
+          "duration": 0.155,
+          "frame_ahead_trigger": 28.156
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 28.051,
+          "end": 28.576,
+          "duration": 0.525,
+          "frame_ahead_trigger": 28.311
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 28.576,
+          "end": 29.146,
+          "duration": 0.57,
+          "frame_ahead_trigger": 28.836
+        }
+      ],
+      "audio_duration": 11.69,
+      "slot_duration": 11.84
+    },
+    {
+      "beat_id": 4,
+      "text": "Beat 4 explaining GANs: Generative Adversarial Networks: Part 5 - The Generative Legacy: How Adversarial Modeling Paved the Way for Modern Diffusion with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 4.",
+      "highlight_words": {
+        "GANs: Generativ": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "MECHANICAL SECRET SAUCE",
+        "sub": "Zero-Copy State Pruning",
+        "accent_color": "#38BDF8",
+        "params": {
+          "grid_title": "System Core",
+          "active_cell_label": "Computation",
+          "efficiency_label": "GANs: Generativ"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "MECHANICAL SECRET SAUCE",
+        "sub": "Zero-Copy State Pruning",
+        "accent_color": "#38BDF8",
+        "param_key_1": "metric_a",
+        "param_key_2": "metric_b",
+        "grid_title": "System Core",
+        "active_cell_label": "Computation",
+        "efficiency_label": "GANs: Generativ"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 29.44,
+      "end": 41.15,
+      "duration": 11.71,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 29.457,
+          "end": 29.797,
+          "duration": 0.34,
+          "frame_ahead_trigger": 29.867
+        },
+        {
+          "word": "4",
+          "clean_word": "4",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279",
+          "start": 29.797,
+          "end": 30.047,
+          "duration": 0.25,
+          "frame_ahead_trigger": 30.207
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 30.047,
+          "end": 30.772,
+          "duration": 0.725,
+          "frame_ahead_trigger": 30.457
+        },
+        {
+          "word": "GANs:",
+          "clean_word": "gans",
+          "phonemes": "\u0261\u02c8\u00e6n",
+          "start": 30.772,
+          "end": 30.952,
+          "duration": 0.18,
+          "frame_ahead_trigger": 31.182
+        },
+        {
+          "word": "Generative",
+          "clean_word": "generative",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u0259t\u02cc\u026av",
+          "start": 30.952,
+          "end": 31.742,
+          "duration": 0.79,
+          "frame_ahead_trigger": 31.362
+        },
+        {
+          "word": "Adversarial",
+          "clean_word": "adversarial",
+          "phonemes": "\u02cc\u00e6dv\u025as\u02c8\u025b\u0279\u026a\u0259l",
+          "start": 31.742,
+          "end": 32.477,
+          "duration": 0.735,
+          "frame_ahead_trigger": 32.152
+        },
+        {
+          "word": "Networks:",
+          "clean_word": "networks",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0ks",
+          "start": 32.477,
+          "end": 33.042,
+          "duration": 0.565,
+          "frame_ahead_trigger": 32.887
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 33.042,
+          "end": 33.442,
+          "duration": 0.4,
+          "frame_ahead_trigger": 33.452
+        },
+        {
+          "word": "5",
+          "clean_word": "5",
+          "phonemes": "f\u02c8a\u026av",
+          "start": 33.442,
+          "end": 33.744,
+          "duration": 0.302,
+          "frame_ahead_trigger": 33.852
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 33.744,
+          "end": 33.806,
+          "duration": 0.062,
+          "frame_ahead_trigger": 34.154
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 33.806,
+          "end": 34.027,
+          "duration": 0.221,
+          "frame_ahead_trigger": 34.216
+        },
+        {
+          "word": "Generative",
+          "clean_word": "generative",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u0259t\u02cc\u026av",
+          "start": 34.027,
+          "end": 34.747,
+          "duration": 0.72,
+          "frame_ahead_trigger": 34.437
+        },
+        {
+          "word": "Legacy:",
+          "clean_word": "legacy",
+          "phonemes": "l\u02c8\u025b\u0261\u0259si",
+          "start": 34.747,
+          "end": 35.032,
+          "duration": 0.285,
+          "frame_ahead_trigger": 35.157
+        },
+        {
+          "word": "How",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 35.032,
+          "end": 35.322,
+          "duration": 0.29,
+          "frame_ahead_trigger": 35.442
+        },
+        {
+          "word": "Adversarial",
+          "clean_word": "adversarial",
+          "phonemes": "\u02cc\u00e6dv\u025as\u02c8\u025b\u0279\u026a\u0259l",
+          "start": 35.322,
+          "end": 36.177,
+          "duration": 0.855,
+          "frame_ahead_trigger": 35.732
+        },
+        {
+          "word": "Modeling",
+          "clean_word": "modeling",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l\u026a\u014b",
+          "start": 36.177,
+          "end": 36.677,
+          "duration": 0.5,
+          "frame_ahead_trigger": 36.587
+        },
+        {
+          "word": "Paved",
+          "clean_word": "paved",
+          "phonemes": "p\u02c8e\u026avd",
+          "start": 36.677,
+          "end": 37.032,
+          "duration": 0.355,
+          "frame_ahead_trigger": 37.087
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 37.032,
+          "end": 37.192,
+          "duration": 0.16,
+          "frame_ahead_trigger": 37.442
+        },
+        {
+          "word": "Way",
+          "clean_word": "way",
+          "phonemes": "w\u02c8e\u026a",
+          "start": 37.192,
+          "end": 37.292,
+          "duration": 0.1,
+          "frame_ahead_trigger": 37.602
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 37.292,
+          "end": 37.692,
+          "duration": 0.4,
+          "frame_ahead_trigger": 37.702
+        },
+        {
+          "word": "Modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 37.692,
+          "end": 38.037,
+          "duration": 0.345,
+          "frame_ahead_trigger": 38.102
+        },
+        {
+          "word": "Diffusion",
+          "clean_word": "diffusion",
+          "phonemes": "d\u1d7bfj\u02c8u\u02d0\u0292\u0259n",
+          "start": 38.037,
+          "end": 38.732,
+          "duration": 0.695,
+          "frame_ahead_trigger": 38.447
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 38.732,
+          "end": 38.842,
+          "duration": 0.11,
+          "frame_ahead_trigger": 39.142
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 38.842,
+          "end": 39.148,
+          "duration": 0.306,
+          "frame_ahead_trigger": 39.252
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 39.148,
+          "end": 39.762,
+          "duration": 0.614,
+          "frame_ahead_trigger": 39.558
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 39.762,
+          "end": 39.922,
+          "duration": 0.16,
+          "frame_ahead_trigger": 40.172
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 39.922,
+          "end": 40.442,
+          "duration": 0.52,
+          "frame_ahead_trigger": 40.332
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 40.442,
+          "end": 41.012,
+          "duration": 0.57,
+          "frame_ahead_trigger": 40.852
+        }
+      ],
+      "audio_duration": 11.71,
+      "slot_duration": 11.86
+    },
+    {
+      "beat_id": 5,
+      "text": "Beat 5 explaining GANs: Generative Adversarial Networks: Part 5 - The Generative Legacy: How Adversarial Modeling Paved the Way for Modern Diffusion with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 5.",
+      "highlight_words": {
+        "GANs: Generativ": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "neural_activation_wave",
+        "title": "SYNAPTIC PROPAGATION: SYSTEM CORE",
+        "sub": "Detailed chalkboard visual illustrating beat 5.",
+        "accent_color": "#A855F7",
+        "input_label": "L1: SYSTEM CORE",
+        "output_label": "L3: COMPUTATION"
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "neural_activation_wave",
+        "title": "SYNAPTIC PROPAGATION: SYSTEM CORE",
+        "sub": "Detailed chalkboard visual illustrating beat 5.",
+        "accent_color": "#A855F7",
+        "input_label": "L1: SYSTEM CORE",
+        "output_label": "L3: COMPUTATION",
+        "hidden_label": "accelerates"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 41.3,
+      "end": 53.08,
+      "duration": 11.78,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 41.319,
+          "end": 41.544,
+          "duration": 0.225,
+          "frame_ahead_trigger": 41.879
+        },
+        {
+          "word": "5",
+          "clean_word": "5",
+          "phonemes": "f\u02c8a\u026av",
+          "start": 41.544,
+          "end": 41.984,
+          "duration": 0.44,
+          "frame_ahead_trigger": 42.104
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 41.984,
+          "end": 42.659,
+          "duration": 0.675,
+          "frame_ahead_trigger": 42.544
+        },
+        {
+          "word": "GANs:",
+          "clean_word": "gans",
+          "phonemes": "\u0261\u02c8\u00e6n",
+          "start": 42.659,
+          "end": 42.829,
+          "duration": 0.17,
+          "frame_ahead_trigger": 43.219
+        },
+        {
+          "word": "Generative",
+          "clean_word": "generative",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u0259t\u02cc\u026av",
+          "start": 42.829,
+          "end": 43.679,
+          "duration": 0.85,
+          "frame_ahead_trigger": 43.389
+        },
+        {
+          "word": "Adversarial",
+          "clean_word": "adversarial",
+          "phonemes": "\u02cc\u00e6dv\u025as\u02c8\u025b\u0279\u026a\u0259l",
+          "start": 43.679,
+          "end": 44.414,
+          "duration": 0.735,
+          "frame_ahead_trigger": 44.239
+        },
+        {
+          "word": "Networks:",
+          "clean_word": "networks",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0ks",
+          "start": 44.414,
+          "end": 44.984,
+          "duration": 0.57,
+          "frame_ahead_trigger": 44.974
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 44.984,
+          "end": 45.379,
+          "duration": 0.395,
+          "frame_ahead_trigger": 45.544
+        },
+        {
+          "word": "5",
+          "clean_word": "5",
+          "phonemes": "f\u02c8a\u026av",
+          "start": 45.379,
+          "end": 45.631,
+          "duration": 0.253,
+          "frame_ahead_trigger": 45.939
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 45.631,
+          "end": 45.694,
+          "duration": 0.062,
+          "frame_ahead_trigger": 46.191
+        },
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 45.694,
+          "end": 45.819,
+          "duration": 0.125,
+          "frame_ahead_trigger": 46.254
+        },
+        {
+          "word": "Generative",
+          "clean_word": "generative",
+          "phonemes": "d\u0292\u02c8\u025bn\u025a\u0279\u0259t\u02cc\u026av",
+          "start": 45.819,
+          "end": 46.519,
+          "duration": 0.7,
+          "frame_ahead_trigger": 46.379
+        },
+        {
+          "word": "Legacy:",
+          "clean_word": "legacy",
+          "phonemes": "l\u02c8\u025b\u0261\u0259si",
+          "start": 46.519,
+          "end": 46.964,
+          "duration": 0.445,
+          "frame_ahead_trigger": 47.079
+        },
+        {
+          "word": "How",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 46.964,
+          "end": 47.259,
+          "duration": 0.295,
+          "frame_ahead_trigger": 47.524
+        },
+        {
+          "word": "Adversarial",
+          "clean_word": "adversarial",
+          "phonemes": "\u02cc\u00e6dv\u025as\u02c8\u025b\u0279\u026a\u0259l",
+          "start": 47.259,
+          "end": 47.924,
+          "duration": 0.665,
+          "frame_ahead_trigger": 47.819
+        },
+        {
+          "word": "Modeling",
+          "clean_word": "modeling",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l\u026a\u014b",
+          "start": 47.924,
+          "end": 48.584,
+          "duration": 0.66,
+          "frame_ahead_trigger": 48.484
+        },
+        {
+          "word": "Paved",
+          "clean_word": "paved",
+          "phonemes": "p\u02c8e\u026avd",
+          "start": 48.584,
+          "end": 48.969,
+          "duration": 0.385,
+          "frame_ahead_trigger": 49.144
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 48.969,
+          "end": 49.049,
+          "duration": 0.08,
+          "frame_ahead_trigger": 49.529
+        },
+        {
+          "word": "Way",
+          "clean_word": "way",
+          "phonemes": "w\u02c8e\u026a",
+          "start": 49.049,
+          "end": 49.229,
+          "duration": 0.18,
+          "frame_ahead_trigger": 49.609
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 49.229,
+          "end": 49.519,
+          "duration": 0.29,
+          "frame_ahead_trigger": 49.789
+        },
+        {
+          "word": "Modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 49.519,
+          "end": 49.974,
+          "duration": 0.455,
+          "frame_ahead_trigger": 50.079
+        },
+        {
+          "word": "Diffusion",
+          "clean_word": "diffusion",
+          "phonemes": "d\u1d7bfj\u02c8u\u02d0\u0292\u0259n",
+          "start": 49.974,
+          "end": 50.669,
+          "duration": 0.695,
+          "frame_ahead_trigger": 50.534
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 50.669,
+          "end": 50.774,
+          "duration": 0.105,
+          "frame_ahead_trigger": 51.229
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 50.774,
+          "end": 50.964,
+          "duration": 0.19,
+          "frame_ahead_trigger": 51.334
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 50.964,
+          "end": 51.699,
+          "duration": 0.735,
+          "frame_ahead_trigger": 51.524
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 51.699,
+          "end": 51.854,
+          "duration": 0.155,
+          "frame_ahead_trigger": 52.259
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 51.854,
+          "end": 52.379,
+          "duration": 0.525,
+          "frame_ahead_trigger": 52.414
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 52.379,
+          "end": 52.944,
+          "duration": 0.565,
+          "frame_ahead_trigger": 52.939
+        }
+      ],
+      "audio_duration": 11.78,
+      "slot_duration": 11.93
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into how modern AI actually works under the hood.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 6.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE PARADIGM SHIFT",
+        "sub": "Closing Outro & Continuity",
+        "accent_color": "#38BDF8",
+        "params": {
+          "param_key_1": "metric_a",
+          "param_key_2": "metric_b"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 53.23,
+      "end": 58.63,
+      "duration": 5.4,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 53.23,
+          "end": 53.665,
+          "duration": 0.435,
+          "frame_ahead_trigger": 53.94
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 53.665,
+          "end": 54.54,
+          "duration": 0.875,
+          "frame_ahead_trigger": 54.375
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 54.54,
+          "end": 54.71,
+          "duration": 0.17,
+          "frame_ahead_trigger": 55.25
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 54.71,
+          "end": 55.035,
+          "duration": 0.325,
+          "frame_ahead_trigger": 55.42
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 55.035,
+          "end": 55.555,
+          "duration": 0.52,
+          "frame_ahead_trigger": 55.745
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 55.555,
+          "end": 55.955,
+          "duration": 0.4,
+          "frame_ahead_trigger": 56.265
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 55.955,
+          "end": 56.165,
+          "duration": 0.21,
+          "frame_ahead_trigger": 56.665
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 56.165,
+          "end": 56.58,
+          "duration": 0.415,
+          "frame_ahead_trigger": 56.875
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 56.58,
+          "end": 56.92,
+          "duration": 0.34,
+          "frame_ahead_trigger": 57.29
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 56.92,
+          "end": 57.475,
+          "duration": 0.555,
+          "frame_ahead_trigger": 57.63
+        },
+        {
+          "word": "works",
+          "clean_word": "works",
+          "phonemes": "w\u02c8\u025c\u02d0ks",
+          "start": 57.475,
+          "end": 57.8,
+          "duration": 0.325,
+          "frame_ahead_trigger": 58.185
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 57.8,
+          "end": 58.21,
+          "duration": 0.41,
+          "frame_ahead_trigger": 58.51
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 58.21,
+          "end": 58.259,
+          "duration": 0.049,
+          "frame_ahead_trigger": 58.92
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 58.259,
+          "end": 58.49,
+          "duration": 0.231,
+          "frame_ahead_trigger": 58.969
+        }
+      ],
+      "audio_duration": 5.4,
+      "slot_duration": 5.4
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\mathcal{O}(N) \\ll \\mathcal{O}(N^2)$",
+      "filename": "gan_legacy_diffusion_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "gan_legacy_diffusion_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathbf{L}_{\\mathrm{bottleneck}} = \\sum_{i=1}^M \\alpha_i \\mathbf{v}_i$",
+      "filename": "gan_legacy_diffusion_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "gan_legacy_diffusion_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{y} = \\mathrm{LayerNorm}(\\mathbf{W}_p \\mathbf{x} + \\mathbf{b})$",
+      "filename": "gan_legacy_diffusion_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "gan_legacy_diffusion_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{TopK}(\\sigma(\\mathbf{W}_g \\mathbf{x})) = \\mathbf{e}^*$",
+      "filename": "gan_legacy_diffusion_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "gan_legacy_diffusion_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Speedup} = T_{\\mathrm{base}} / T_{\\mathrm{new}}$",
+      "filename": "gan_legacy_diffusion_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "gan_legacy_diffusion_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 15.0,
+      "sound_type": "laser",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 25.0,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy"
+  },
+  "script_provider": "groq",
+  "quality_flags": {
+    "scrubbed_fields": [],
+    "ungrounded_narration_numbers": [
+      {
+        "beat_id": 3,
+        "numbers": [
+          "3"
+        ],
+        "text": "Beat 3 explaining GANs: Generative Adversarial Networks: Part 5 - The Generative Legacy: How Adversarial Modeling Paved the Way for Modern Diffusion with high retention and technical precision."
+      },
+      {
+        "beat_id": 4,
+        "numbers": [
+          "4"
+        ],
+        "text": "Beat 4 explaining GANs: Generative Adversarial Networks: Part 5 - The Generative Legacy: How Adversarial Modeling Paved the Way for Modern Diffusion with high retention and technical precision."
+      }
+    ],
+    "leaked_example_values": [],
+    "grounding_source_chars": 1405
+  },
+  "arxiv_id": "1406.2661",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "fig1",
+      "caption": "Fig1",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/source/fig1.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_1_fig1.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_1_fig1.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "fig3",
+      "caption": "Fig3",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/source/fig3.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_2_fig3.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_2_fig3.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "fig4",
+      "caption": "Fig4",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/source/fig4.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_3_fig4.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_3_fig4.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "fig2",
+      "caption": "Fig2",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/source/fig2.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_4_fig2.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_4_fig2.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "failure",
+      "caption": "Failure",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/source/failure.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_5_failure.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/1406.2661/chalkboard_figures/fig_5_failure.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Imagine a generator that never sees real images, yet somehow learns to paint photorealistic cats.",
+    "verdict": 37,
+    "band": "WEAK",
+    "formula": "The Impossible Claim",
+    "properties": {
+      "SPECIFICITY": 34,
+      "ADDRESS": 26,
+      "STAKES": 48,
+      "CURIOSITY": 24,
+      "BREVITY": 100
+    },
+    "weakest_property": "CURIOSITY",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "sae_constellation",
+      "entity_type": "sae_constellation",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "publish_gate": {
+    "decision": "hold",
+    "reasons": [
+      "Beat 3 narration states numbers not found in the paper material: 3.",
+      "Beat 4 narration states numbers not found in the paper material: 4."
+    ],
+    "warnings": [
+      "No vision model audited the keyframes (scores are heuristic placeholders).",
+      "Script critic: \u274c REJECTED: Script reading level is Grade 18.4 (target: Grade 9.0), overall score 5.1/10 is below threshold 8.0."
+    ],
+    "action": {
+      "youtube_upload": true,
+      "privacy": "private",
+      "cross_post": false,
+      "mode": "private"
+    }
+  },
+  "youtube_upload": {
+    "video_id": "mFWrtjP49vg",
+    "shorts_url": "https://youtube.com/shorts/mFWrtjP49vg",
+    "studio_url": "https://studio.youtube.com/video/mFWrtjP49vg/edit",
+    "title": "How AI Creates Images From TV Static #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/gan_legacy_diffusion_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

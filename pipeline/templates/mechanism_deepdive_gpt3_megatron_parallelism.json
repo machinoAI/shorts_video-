@@ -1,0 +1,1817 @@
+{
+  "id": "gpt3_megatron_parallelism",
+  "title": "Scaling the 175B Monster: Megatron Tensor Parallelism",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "HARDWARE BOTTLENECK",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until Scaling the 175B Monster unlocks 4.5x throughput?",
+      "visual_focus": "A glowing 700GB data block crushing a tiny 80GB GPU die on a dark blueprint grid",
+      "highlight_words": {
+        "700 gigabytes": "#EF4444",
+        "barely 80": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "175B Model",
+        "action_verb": "overflows",
+        "direct_object": "GPU VRAM",
+        "anchor_word": "memory",
+        "semantic_role": "capacity_constraint"
+      },
+      "visual_blueprint": {
+        "layout": "grid_memory",
+        "title": "THE VRAM CAPACITY WALL",
+        "sub": "Model Size vs Hardware Limits",
+        "accent_color": "#EF4444",
+        "params": {
+          "total_blocks": 10,
+          "filled_blocks": 2,
+          "overflow_state": true
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 67,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "grid_memory",
+        "title": "THE VRAM CAPACITY WALL",
+        "sub": "Model Size vs Hardware Limits",
+        "accent_color": "#EF4444",
+        "total_blocks": 10,
+        "filled_blocks": 2,
+        "overflow_state": true
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 8.11,
+      "duration": 8.11,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.005,
+          "end": 0.16,
+          "duration": 0.155,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.16,
+          "end": 0.5,
+          "duration": 0.34,
+          "frame_ahead_trigger": 0.12
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.5,
+          "end": 1.065,
+          "duration": 0.565,
+          "frame_ahead_trigger": 0.46
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.065,
+          "end": 1.46,
+          "duration": 0.395,
+          "frame_ahead_trigger": 1.025
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.46,
+          "end": 1.755,
+          "duration": 0.295,
+          "frame_ahead_trigger": 1.42
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 1.755,
+          "end": 2.11,
+          "duration": 0.355,
+          "frame_ahead_trigger": 1.715
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.11,
+          "end": 2.495,
+          "duration": 0.385,
+          "frame_ahead_trigger": 2.07
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 2.495,
+          "end": 3.16,
+          "duration": 0.665,
+          "frame_ahead_trigger": 2.455
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 3.16,
+          "end": 3.42,
+          "duration": 0.26,
+          "frame_ahead_trigger": 3.12
+        },
+        {
+          "word": "Scaling",
+          "clean_word": "scaling",
+          "phonemes": "sk\u02c8e\u026al\u026a\u014b",
+          "start": 3.42,
+          "end": 3.885,
+          "duration": 0.465,
+          "frame_ahead_trigger": 3.38
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 3.885,
+          "end": 3.98,
+          "duration": 0.095,
+          "frame_ahead_trigger": 3.845
+        },
+        {
+          "word": "175B",
+          "clean_word": "175b",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad s\u02c8\u025bv\u0259nti f\u02c8a\u026av b\u02c8i\u02d0",
+          "start": 3.98,
+          "end": 5.68,
+          "duration": 1.7,
+          "frame_ahead_trigger": 3.94
+        },
+        {
+          "word": "Monster",
+          "clean_word": "monster",
+          "phonemes": "m\u02c8\u0254nst\u025a",
+          "start": 5.68,
+          "end": 6.095,
+          "duration": 0.415,
+          "frame_ahead_trigger": 5.64
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 6.095,
+          "end": 6.625,
+          "duration": 0.53,
+          "frame_ahead_trigger": 6.055
+        },
+        {
+          "word": "4.5x",
+          "clean_word": "45x",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279\u027ei f\u02c8a\u026av \u02c8\u025bks",
+          "start": 6.625,
+          "end": 7.55,
+          "duration": 0.925,
+          "frame_ahead_trigger": 6.585
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 7.55,
+          "end": 8.015,
+          "duration": 0.465,
+          "frame_ahead_trigger": 7.51
+        }
+      ],
+      "audio_duration": 8.11,
+      "slot_duration": 8.26
+    },
+    {
+      "beat_id": 2,
+      "text": "Splitting sequential layers across servers creates brutal pipeline bubbles, forcing millions of dollars of compute to sit idle waiting for activations.",
+      "visual_focus": "Timeline chart showing vast empty gray gaps labeled 'PIPELINE BUBBLE' across stacked GPU ranks",
+      "highlight_words": {
+        "pipeline bubbles": "#EF4444",
+        "sit idle": "#94A3B8"
+      },
+      "svo_action": {
+        "subject": "Pipeline Bubbles",
+        "action_verb": "starve",
+        "direct_object": "GPU Compute Cores",
+        "anchor_word": "idle",
+        "semantic_role": "efficiency_drain"
+      },
+      "visual_blueprint": {
+        "layout": "neural_activation_wave",
+        "title": "SYNAPTIC PROPAGATION: PIPELINE BUBBL",
+        "sub": "Timeline chart showing vast empty gray gaps labeled 'PIPELINE BUB",
+        "accent_color": "#A855F7",
+        "input_label": "L1: PIPELINE BUBBL",
+        "hidden_label": "L2: LATENT REASONING",
+        "output_label": "L3: GPU COMPUTE CO"
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "neural_activation_wave",
+        "title": "SYNAPTIC PROPAGATION: PIPELINE BUBBL",
+        "sub": "Timeline chart showing vast empty gray gaps labeled 'PIPELINE BUB",
+        "accent_color": "#A855F7",
+        "input_label": "L1: PIPELINE BUBBL",
+        "hidden_label": "L2: LATENT REASONING",
+        "output_label": "L3: GPU COMPUTE CO"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 8.26,
+      "end": 16.68,
+      "duration": 8.43,
+      "word_timings": [
+        {
+          "word": "Splitting",
+          "clean_word": "splitting",
+          "phonemes": "spl\u02c8\u026a\u027e\u026a\u014b",
+          "start": 8.277,
+          "end": 8.692,
+          "duration": 0.415,
+          "frame_ahead_trigger": 8.387
+        },
+        {
+          "word": "sequential",
+          "clean_word": "sequential",
+          "phonemes": "si\u02d0kw\u02c8\u025bn\u0283\u0259l",
+          "start": 8.692,
+          "end": 9.342,
+          "duration": 0.65,
+          "frame_ahead_trigger": 8.802
+        },
+        {
+          "word": "layers",
+          "clean_word": "layers",
+          "phonemes": "l\u02c8e\u026a\u025az",
+          "start": 9.342,
+          "end": 9.812,
+          "duration": 0.47,
+          "frame_ahead_trigger": 9.452
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 9.812,
+          "end": 10.102,
+          "duration": 0.29,
+          "frame_ahead_trigger": 9.922
+        },
+        {
+          "word": "servers",
+          "clean_word": "servers",
+          "phonemes": "s\u02c8\u025c\u02d0v\u025az",
+          "start": 10.102,
+          "end": 10.572,
+          "duration": 0.47,
+          "frame_ahead_trigger": 10.212
+        },
+        {
+          "word": "creates",
+          "clean_word": "creates",
+          "phonemes": "k\u0279i\u02d0\u02c8e\u026ats",
+          "start": 10.572,
+          "end": 11.022,
+          "duration": 0.45,
+          "frame_ahead_trigger": 10.682
+        },
+        {
+          "word": "brutal",
+          "clean_word": "brutal",
+          "phonemes": "b\u0279\u02c8u\u02d0\u027e\u0259l",
+          "start": 11.022,
+          "end": 11.392,
+          "duration": 0.37,
+          "frame_ahead_trigger": 11.132
+        },
+        {
+          "word": "pipeline",
+          "clean_word": "pipeline",
+          "phonemes": "p\u02c8a\u026apla\u026an",
+          "start": 11.392,
+          "end": 12.082,
+          "duration": 0.69,
+          "frame_ahead_trigger": 11.502
+        },
+        {
+          "word": "bubbles,",
+          "clean_word": "bubbles",
+          "phonemes": "b\u02c8\u028cb\u0259lz",
+          "start": 12.082,
+          "end": 12.41,
+          "duration": 0.329,
+          "frame_ahead_trigger": 12.192
+        },
+        {
+          "word": "forcing",
+          "clean_word": "forcing",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s\u026a\u014b",
+          "start": 12.41,
+          "end": 12.917,
+          "duration": 0.506,
+          "frame_ahead_trigger": 12.52
+        },
+        {
+          "word": "millions",
+          "clean_word": "millions",
+          "phonemes": "m\u02c8\u026ali\u0259nz",
+          "start": 12.917,
+          "end": 13.322,
+          "duration": 0.405,
+          "frame_ahead_trigger": 13.027
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 13.322,
+          "end": 13.472,
+          "duration": 0.15,
+          "frame_ahead_trigger": 13.432
+        },
+        {
+          "word": "dollars",
+          "clean_word": "dollars",
+          "phonemes": "d\u02c8\u0251\u02d0l\u025az",
+          "start": 13.472,
+          "end": 13.852,
+          "duration": 0.38,
+          "frame_ahead_trigger": 13.582
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 13.852,
+          "end": 14.002,
+          "duration": 0.15,
+          "frame_ahead_trigger": 13.962
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 14.002,
+          "end": 14.547,
+          "duration": 0.545,
+          "frame_ahead_trigger": 14.112
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 14.547,
+          "end": 14.662,
+          "duration": 0.115,
+          "frame_ahead_trigger": 14.657
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 14.662,
+          "end": 14.927,
+          "duration": 0.265,
+          "frame_ahead_trigger": 14.772
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 14.927,
+          "end": 15.297,
+          "duration": 0.37,
+          "frame_ahead_trigger": 15.037
+        },
+        {
+          "word": "waiting",
+          "clean_word": "waiting",
+          "phonemes": "w\u02c8e\u026a\u027e\u026a\u014b",
+          "start": 15.297,
+          "end": 15.687,
+          "duration": 0.39,
+          "frame_ahead_trigger": 15.407
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 15.687,
+          "end": 15.812,
+          "duration": 0.125,
+          "frame_ahead_trigger": 15.797
+        },
+        {
+          "word": "activations.",
+          "clean_word": "activations",
+          "phonemes": "\u02cc\u00e6kt\u026av\u02c8e\u026a\u0283\u0259nz",
+          "start": 15.812,
+          "end": 16.602,
+          "duration": 0.79,
+          "frame_ahead_trigger": 15.922
+        }
+      ],
+      "audio_duration": 8.43,
+      "slot_duration": 8.57
+    },
+    {
+      "beat_id": 3,
+      "text": "Enter Megatron tensor slicing. Instead of distributing whole layers, it cleaves individual matrix multiplications across every GPU simultaneously.",
+      "visual_focus": "A giant weight matrix visually sliced into vertical and horizontal shards distributed across parallel chips",
+      "highlight_words": {
+        "Megatron tensor slicing": "#10B981",
+        "cleaves individual matrix multiplications": "#3B82F6"
+      },
+      "svo_action": {
+        "subject": "Megatron-LM",
+        "action_verb": "cleaves",
+        "direct_object": "Matrix Multiplications",
+        "anchor_word": "slicing",
+        "semantic_role": "architectural_pivot"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "SCALING THE 175B M ARCHITECTURE",
+        "sub": "A giant weight matrix visually sliced into vertical and horizonta",
+        "params": {
+          "svg_path": null,
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2005.14165/chalkboard_figures/fig_1_LanguageModelingComputePareto.png",
+          "arxiv_id": "2005.14165",
+          "title": "SCALING THE 175B M ARCHITECTURE",
+          "sub": "A giant weight matrix visually sliced into vertical and horizonta",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Languagemodelingcomputepareto",
+          "preferred_renderer": "raster"
+        }
+      },
+      "thriller_role": "eureka_pivot",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": null,
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2005.14165/chalkboard_figures/fig_1_LanguageModelingComputePareto.png",
+        "arxiv_id": "2005.14165",
+        "title": "SCALING THE 175B M ARCHITECTURE",
+        "sub": "A giant weight matrix visually sliced into vertical and horizonta",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Languagemodelingcomputepareto",
+        "preferred_renderer": "raster"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 16.83,
+      "end": 25.94,
+      "duration": 9.11,
+      "word_timings": [
+        {
+          "word": "Enter",
+          "clean_word": "enter",
+          "phonemes": "\u02c8\u025bnt\u025a",
+          "start": 16.843,
+          "end": 17.083,
+          "duration": 0.24,
+          "frame_ahead_trigger": 17.103
+        },
+        {
+          "word": "Megatron",
+          "clean_word": "megatron",
+          "phonemes": "m\u02c8\u025b\u0261\u0259t\u0279\u02cc\u0251\u02d0n",
+          "start": 17.083,
+          "end": 17.728,
+          "duration": 0.645,
+          "frame_ahead_trigger": 17.343
+        },
+        {
+          "word": "tensor",
+          "clean_word": "tensor",
+          "phonemes": "t\u02c8\u025bns\u025a",
+          "start": 17.728,
+          "end": 18.083,
+          "duration": 0.355,
+          "frame_ahead_trigger": 17.988
+        },
+        {
+          "word": "slicing.",
+          "clean_word": "slicing",
+          "phonemes": "sl\u02c8a\u026as\u026a\u014b",
+          "start": 18.083,
+          "end": 18.568,
+          "duration": 0.485,
+          "frame_ahead_trigger": 18.343
+        },
+        {
+          "word": "Instead",
+          "clean_word": "instead",
+          "phonemes": "\u026anst\u02c8\u025bd",
+          "start": 18.568,
+          "end": 18.971,
+          "duration": 0.403,
+          "frame_ahead_trigger": 18.828
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 18.971,
+          "end": 19.093,
+          "duration": 0.123,
+          "frame_ahead_trigger": 19.231
+        },
+        {
+          "word": "distributing",
+          "clean_word": "distributing",
+          "phonemes": "d\u02c8\u026ast\u0279\u026abj\u02ccu\u02d0\u027e\u026a\u014b",
+          "start": 19.093,
+          "end": 19.983,
+          "duration": 0.89,
+          "frame_ahead_trigger": 19.353
+        },
+        {
+          "word": "whole",
+          "clean_word": "whole",
+          "phonemes": "h\u02c8o\u028al",
+          "start": 19.983,
+          "end": 20.178,
+          "duration": 0.195,
+          "frame_ahead_trigger": 20.243
+        },
+        {
+          "word": "layers,",
+          "clean_word": "layers",
+          "phonemes": "l\u02c8e\u026a\u025az",
+          "start": 20.178,
+          "end": 20.508,
+          "duration": 0.33,
+          "frame_ahead_trigger": 20.438
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 20.508,
+          "end": 20.813,
+          "duration": 0.305,
+          "frame_ahead_trigger": 20.768
+        },
+        {
+          "word": "cleaves",
+          "clean_word": "cleaves",
+          "phonemes": "kl\u02c8i\u02d0vz",
+          "start": 20.813,
+          "end": 21.103,
+          "duration": 0.29,
+          "frame_ahead_trigger": 21.073
+        },
+        {
+          "word": "individual",
+          "clean_word": "individual",
+          "phonemes": "\u02cc\u026and\u1d7bv\u02c8\u026ad\u0292u\u02d0\u0259l",
+          "start": 21.103,
+          "end": 21.938,
+          "duration": 0.835,
+          "frame_ahead_trigger": 21.363
+        },
+        {
+          "word": "matrix",
+          "clean_word": "matrix",
+          "phonemes": "m\u02c8e\u026at\u0279\u026aks",
+          "start": 21.938,
+          "end": 22.358,
+          "duration": 0.42,
+          "frame_ahead_trigger": 22.198
+        },
+        {
+          "word": "multiplications",
+          "clean_word": "multiplications",
+          "phonemes": "m\u02cc\u028clt\u026apl\u026ak\u02c8e\u026a\u0283\u0259nz",
+          "start": 22.358,
+          "end": 23.478,
+          "duration": 1.12,
+          "frame_ahead_trigger": 22.618
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 23.478,
+          "end": 23.793,
+          "duration": 0.315,
+          "frame_ahead_trigger": 23.738
+        },
+        {
+          "word": "every",
+          "clean_word": "every",
+          "phonemes": "\u02c8\u025bv\u0279i",
+          "start": 23.793,
+          "end": 24.018,
+          "duration": 0.225,
+          "frame_ahead_trigger": 24.053
+        },
+        {
+          "word": "GPU",
+          "clean_word": "gpu",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 24.018,
+          "end": 24.833,
+          "duration": 0.815,
+          "frame_ahead_trigger": 24.278
+        },
+        {
+          "word": "simultaneously.",
+          "clean_word": "simultaneously",
+          "phonemes": "s\u02cca\u026am\u0259lt\u02c8e\u026ani\u0259sli",
+          "start": 24.833,
+          "end": 25.813,
+          "duration": 0.98,
+          "frame_ahead_trigger": 25.093
+        }
+      ],
+      "audio_duration": 9.11,
+      "slot_duration": 9.26
+    },
+    {
+      "beat_id": 4,
+      "text": "By pairing column-parallel linear projections with row-parallel multi-head attention, GPUs compute intermediate states locally, requiring only a single all-reduce sync.",
+      "visual_focus": "Column-split QKV projection feeding directly into row-split output projection with one terminal All-Reduce summation bus",
+      "highlight_words": {
+        "column-parallel": "#3B82F6",
+        "row-parallel": "#8B5CF6",
+        "single all-reduce sync": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Dual Sharding",
+        "action_verb": "collapses",
+        "direct_object": "Communication Overhead",
+        "anchor_word": "all-reduce",
+        "semantic_role": "mechanical_optimization"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: SCALING THE 175B M",
+        "sub": "Column-split QKV projection feeding directly into row-split outpu",
+        "params": {
+          "title": "KERNEL CODE: SCALING THE 175B M",
+          "sub": "Column-split QKV projection feeding directly into row-split outpu",
+          "filename": "megatron_parallel.py",
+          "language": "python",
+          "lines": [
+            "def parallel_forward(x):",
+            "shards = split_tensor(x, world_size)",
+            "outputs = [shard.matmul(w) for w in weights]",
+            "return all_reduce(outputs)"
+          ],
+          "highlight_lines": [
+            2,
+            3
+          ],
+          "trace_register": "\u26a1 PARALLEL TENSOR DISPATCH",
+          "delta_badge": "Synchronized tensor sharding across GPU network"
+        }
+      },
+      "thriller_role": "technical_deepdive",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: SCALING THE 175B M",
+        "sub": "Column-split QKV projection feeding directly into row-split outpu",
+        "filename": "megatron_parallel.py",
+        "language": "python",
+        "lines": [
+          "def parallel_forward(x):",
+          "shards = split_tensor(x, world_size)",
+          "outputs = [shard.matmul(w) for w in weights]",
+          "return all_reduce(outputs)"
+        ],
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "trace_register": "\u26a1 PARALLEL TENSOR DISPATCH",
+        "delta_badge": "Synchronized tensor sharding across GPU network"
+      },
+      "start": 26.09,
+      "end": 35.97,
+      "duration": 9.88,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 26.103,
+          "end": 26.398,
+          "duration": 0.295,
+          "frame_ahead_trigger": 26.513
+        },
+        {
+          "word": "pairing",
+          "clean_word": "pairing",
+          "phonemes": "p\u02c8\u025b\u0279\u026a\u014b",
+          "start": 26.398,
+          "end": 26.658,
+          "duration": 0.26,
+          "frame_ahead_trigger": 26.808
+        },
+        {
+          "word": "column-parallel",
+          "clean_word": "columnparallel",
+          "phonemes": "k\u02c8\u0251\u02d0l\u0259mnp\u02cc\u00e6\u0279\u0250l\u02cc\u025bl",
+          "start": 26.658,
+          "end": 27.603,
+          "duration": 0.945,
+          "frame_ahead_trigger": 27.068
+        },
+        {
+          "word": "linear",
+          "clean_word": "linear",
+          "phonemes": "l\u02c8\u026an\u026a\u0279",
+          "start": 27.603,
+          "end": 27.903,
+          "duration": 0.3,
+          "frame_ahead_trigger": 28.013
+        },
+        {
+          "word": "projections",
+          "clean_word": "projections",
+          "phonemes": "p\u0279\u0259d\u0292\u02c8\u025bk\u0283\u0259nz",
+          "start": 27.903,
+          "end": 28.649,
+          "duration": 0.746,
+          "frame_ahead_trigger": 28.313
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 28.649,
+          "end": 28.823,
+          "duration": 0.174,
+          "frame_ahead_trigger": 29.059
+        },
+        {
+          "word": "row-parallel",
+          "clean_word": "rowparallel",
+          "phonemes": "\u0279\u02c8o\u028ap\u0250\u0279\u02cc\u00e6l\u025bl",
+          "start": 28.823,
+          "end": 29.563,
+          "duration": 0.74,
+          "frame_ahead_trigger": 29.233
+        },
+        {
+          "word": "multi-head",
+          "clean_word": "multihead",
+          "phonemes": "m\u02c8\u028clta\u026ah\u02cc\u025bd",
+          "start": 29.563,
+          "end": 30.193,
+          "duration": 0.63,
+          "frame_ahead_trigger": 29.973
+        },
+        {
+          "word": "attention,",
+          "clean_word": "attention",
+          "phonemes": "\u0250t\u02c8\u025bn\u0283\u0259n",
+          "start": 30.193,
+          "end": 30.572,
+          "duration": 0.38,
+          "frame_ahead_trigger": 30.603
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 30.572,
+          "end": 31.413,
+          "duration": 0.84,
+          "frame_ahead_trigger": 30.982
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 31.413,
+          "end": 31.828,
+          "duration": 0.415,
+          "frame_ahead_trigger": 31.823
+        },
+        {
+          "word": "intermediate",
+          "clean_word": "intermediate",
+          "phonemes": "\u02cc\u026ant\u025am\u02c8i\u02d0di\u0259t",
+          "start": 31.828,
+          "end": 32.498,
+          "duration": 0.67,
+          "frame_ahead_trigger": 32.238
+        },
+        {
+          "word": "states",
+          "clean_word": "states",
+          "phonemes": "st\u02c8e\u026ats",
+          "start": 32.498,
+          "end": 32.983,
+          "duration": 0.485,
+          "frame_ahead_trigger": 32.908
+        },
+        {
+          "word": "locally,",
+          "clean_word": "locally",
+          "phonemes": "l\u02c8o\u028ak\u0259li",
+          "start": 32.983,
+          "end": 33.401,
+          "duration": 0.419,
+          "frame_ahead_trigger": 33.393
+        },
+        {
+          "word": "requiring",
+          "clean_word": "requiring",
+          "phonemes": "\u0279\u1d7bkw\u02c8a\u026a\u025a\u0279\u026a\u014b",
+          "start": 33.401,
+          "end": 34.024,
+          "duration": 0.622,
+          "frame_ahead_trigger": 33.811
+        },
+        {
+          "word": "only",
+          "clean_word": "only",
+          "phonemes": "\u02c8o\u028anli",
+          "start": 34.024,
+          "end": 34.343,
+          "duration": 0.319,
+          "frame_ahead_trigger": 34.434
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 34.343,
+          "end": 34.568,
+          "duration": 0.225,
+          "frame_ahead_trigger": 34.753
+        },
+        {
+          "word": "single",
+          "clean_word": "single",
+          "phonemes": "s\u02c8\u026a\u014b\u0261\u0259l",
+          "start": 34.568,
+          "end": 34.998,
+          "duration": 0.43,
+          "frame_ahead_trigger": 34.978
+        },
+        {
+          "word": "all-reduce",
+          "clean_word": "allreduce",
+          "phonemes": "\u0254\u02d0l\u0279\u1d7bd\u02c8u\u02d0s",
+          "start": 34.998,
+          "end": 35.518,
+          "duration": 0.52,
+          "frame_ahead_trigger": 35.408
+        },
+        {
+          "word": "sync.",
+          "clean_word": "sync",
+          "phonemes": "s\u02c8\u026a\u014bk",
+          "start": 35.518,
+          "end": 35.778,
+          "duration": 0.26,
+          "frame_ahead_trigger": 35.928
+        }
+      ],
+      "audio_duration": 9.88,
+      "slot_duration": 10.03
+    },
+    {
+      "beat_id": 5,
+      "text": "This enables the 175-billion parameter monster to hit 145 teraflops per GPU, scaling seamlessly across thousands of compute nodes.",
+      "visual_focus": "High-velocity benchmark gauge surging to 145 TFLOPS with multi-node clusters pulsing in lockstep",
+      "highlight_words": {
+        "145 teraflops per GPU": "#10B981",
+        "thousands of compute nodes": "#3B82F6"
+      },
+      "svo_action": {
+        "subject": "Tensor Slicing",
+        "action_verb": "unlocks",
+        "direct_object": "145 TFLOPS Throughput",
+        "anchor_word": "teraflops",
+        "semantic_role": "empirical_validation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: GPU THROUGHPUT",
+        "sub": "High-velocity benchmark gauge surging to 145 TFLOPS",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: GPU THROUGHPUT",
+          "sub": "High-velocity benchmark gauge surging to 145 TFLOPS",
+          "metric_name": "Compute Throughput",
+          "unit": "TFLOPS",
+          "contestants": [
+            {
+              "name": "Megatron-GPT",
+              "value": 145.0,
+              "display_val": "145 TFLOPS",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Incumbent SOTA",
+              "value": 60.0,
+              "display_val": "60 TFLOPS",
+              "is_hero": false,
+              "color": "#38BDF8"
+            },
+            {
+              "name": "Standard PyTorch",
+              "value": 32.0,
+              "display_val": "32 TFLOPS",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +4.5x SOTA EFFICIENCY GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: GPU THROUGHPUT",
+        "sub": "High-velocity benchmark gauge surging to 145 TFLOPS",
+        "metric_name": "Compute Throughput",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "Megatron-GPT",
+            "value": 145.0,
+            "display_val": "145 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Incumbent SOTA",
+            "value": 60.0,
+            "display_val": "60 TFLOPS",
+            "is_hero": false,
+            "color": "#38BDF8"
+          },
+          {
+            "name": "Standard PyTorch",
+            "value": 32.0,
+            "display_val": "32 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +4.5x SOTA EFFICIENCY GAIN"
+      },
+      "start": 36.12,
+      "end": 46.04,
+      "duration": 9.92,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 36.135,
+          "end": 36.365,
+          "duration": 0.23,
+          "frame_ahead_trigger": 36.695
+        },
+        {
+          "word": "enables",
+          "clean_word": "enables",
+          "phonemes": "\u025bn\u02c8e\u026ab\u0259lz",
+          "start": 36.365,
+          "end": 36.915,
+          "duration": 0.55,
+          "frame_ahead_trigger": 36.925
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 36.915,
+          "end": 36.963,
+          "duration": 0.048,
+          "frame_ahead_trigger": 37.475
+        },
+        {
+          "word": "175-billion",
+          "clean_word": "175billion",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad s\u02c8\u025bv\u0259nti f\u02c8a\u026av b\u02c8\u026ali\u0259n",
+          "start": 36.963,
+          "end": 38.94,
+          "duration": 1.977,
+          "frame_ahead_trigger": 37.523
+        },
+        {
+          "word": "parameter",
+          "clean_word": "parameter",
+          "phonemes": "p\u025a\u0279\u02c8\u00e6m\u026a\u027e\u025a",
+          "start": 38.94,
+          "end": 39.35,
+          "duration": 0.41,
+          "frame_ahead_trigger": 39.5
+        },
+        {
+          "word": "monster",
+          "clean_word": "monster",
+          "phonemes": "m\u02c8\u0254nst\u025a",
+          "start": 39.35,
+          "end": 39.755,
+          "duration": 0.405,
+          "frame_ahead_trigger": 39.91
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 39.755,
+          "end": 39.88,
+          "duration": 0.125,
+          "frame_ahead_trigger": 40.315
+        },
+        {
+          "word": "hit",
+          "clean_word": "hit",
+          "phonemes": "h\u02c8\u026at",
+          "start": 39.88,
+          "end": 40.215,
+          "duration": 0.335,
+          "frame_ahead_trigger": 40.44
+        },
+        {
+          "word": "145",
+          "clean_word": "145",
+          "phonemes": "w\u02c8\u028cnh\u02c8\u028cnd\u0279\u026ad f\u02c8\u0254\u02d0\u0279\u027ei f\u02c8a\u026av",
+          "start": 40.215,
+          "end": 41.72,
+          "duration": 1.505,
+          "frame_ahead_trigger": 40.775
+        },
+        {
+          "word": "teraflops",
+          "clean_word": "teraflops",
+          "phonemes": "t\u02c8\u025b\u0279\u0259fl\u02cc\u0251\u02d0ps",
+          "start": 41.72,
+          "end": 42.235,
+          "duration": 0.515,
+          "frame_ahead_trigger": 42.28
+        },
+        {
+          "word": "per",
+          "clean_word": "per",
+          "phonemes": "p\u025c\u02d0",
+          "start": 42.235,
+          "end": 42.435,
+          "duration": 0.2,
+          "frame_ahead_trigger": 42.795
+        },
+        {
+          "word": "GPU,",
+          "clean_word": "gpu",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 42.435,
+          "end": 43.2,
+          "duration": 0.765,
+          "frame_ahead_trigger": 42.995
+        },
+        {
+          "word": "scaling",
+          "clean_word": "scaling",
+          "phonemes": "sk\u02c8e\u026al\u026a\u014b",
+          "start": 43.2,
+          "end": 43.565,
+          "duration": 0.365,
+          "frame_ahead_trigger": 43.76
+        },
+        {
+          "word": "seamlessly",
+          "clean_word": "seamlessly",
+          "phonemes": "s\u02c8i\u02d0ml\u0259sli",
+          "start": 43.565,
+          "end": 44.055,
+          "duration": 0.49,
+          "frame_ahead_trigger": 44.125
+        },
+        {
+          "word": "across",
+          "clean_word": "across",
+          "phonemes": "\u0259k\u0279\u02c8\u0251\u02d0s",
+          "start": 44.055,
+          "end": 44.475,
+          "duration": 0.42,
+          "frame_ahead_trigger": 44.615
+        },
+        {
+          "word": "thousands",
+          "clean_word": "thousands",
+          "phonemes": "\u03b8\u02c8a\u028az\u0259ndz",
+          "start": 44.475,
+          "end": 45.04,
+          "duration": 0.565,
+          "frame_ahead_trigger": 45.035
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 45.04,
+          "end": 45.155,
+          "duration": 0.115,
+          "frame_ahead_trigger": 45.6
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 45.155,
+          "end": 45.634,
+          "duration": 0.479,
+          "frame_ahead_trigger": 45.715
+        },
+        {
+          "word": "nodes.",
+          "clean_word": "nodes",
+          "phonemes": "n\u02c8o\u028adz",
+          "start": 45.634,
+          "end": 45.965,
+          "duration": 0.331,
+          "frame_ahead_trigger": 46.194
+        }
+      ],
+      "audio_duration": 9.92,
+      "slot_duration": 10.07
+    },
+    {
+      "beat_id": 6,
+      "text": "Giant neural networks finally break the VRAM wall. Follow machinoAI for daily deep-dives into modern AI hardware architectures.",
+      "visual_focus": "A sleek dark chalkboard animation showing the cluster looping seamlessly back to the 700GB memory envelope",
+      "highlight_words": {
+        "VRAM wall": "#EF4444",
+        "machinoAI": "#10B981"
+      },
+      "svo_action": {
+        "subject": "Hardware Architecture",
+        "action_verb": "conquers",
+        "direct_object": "Memory Limits",
+        "anchor_word": "architectures",
+        "semantic_role": "loop_closure"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "FRONTIER HARDWARE ARCHITECTURE",
+        "sub": "Infinite Scale via Intelligent Sharding",
+        "accent_color": "#34D399",
+        "params": {
+          "root_label": "AI Architecture",
+          "optimal_label": "Megatron/Training",
+          "pruned_label": "Legacy Monoliths"
+        }
+      },
+      "thriller_role": "paradigm_shift_loop",
+      "act": 4,
+      "start": 46.19,
+      "end": 54.23,
+      "duration": 8.04,
+      "word_timings": [
+        {
+          "word": "Giant",
+          "clean_word": "giant",
+          "phonemes": "d\u0292\u02c8a\u026a\u0259nt",
+          "start": 46.21,
+          "end": 46.71,
+          "duration": 0.5,
+          "frame_ahead_trigger": 46.92
+        },
+        {
+          "word": "neural",
+          "clean_word": "neural",
+          "phonemes": "n\u02c8\u028a\u0279\u0279\u0259l",
+          "start": 46.71,
+          "end": 47.185,
+          "duration": 0.475,
+          "frame_ahead_trigger": 47.42
+        },
+        {
+          "word": "networks",
+          "clean_word": "networks",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0ks",
+          "start": 47.185,
+          "end": 47.69,
+          "duration": 0.505,
+          "frame_ahead_trigger": 47.895
+        },
+        {
+          "word": "finally",
+          "clean_word": "finally",
+          "phonemes": "f\u02c8a\u026an\u0259li",
+          "start": 47.69,
+          "end": 48.06,
+          "duration": 0.37,
+          "frame_ahead_trigger": 48.4
+        },
+        {
+          "word": "break",
+          "clean_word": "break",
+          "phonemes": "b\u0279\u02c8e\u026ak",
+          "start": 48.06,
+          "end": 48.52,
+          "duration": 0.46,
+          "frame_ahead_trigger": 48.77
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 48.52,
+          "end": 48.599,
+          "duration": 0.079,
+          "frame_ahead_trigger": 49.23
+        },
+        {
+          "word": "VRAM",
+          "clean_word": "vram",
+          "phonemes": "v\u0279\u02c8\u00e6m",
+          "start": 48.599,
+          "end": 48.898,
+          "duration": 0.299,
+          "frame_ahead_trigger": 49.309
+        },
+        {
+          "word": "wall.",
+          "clean_word": "wall",
+          "phonemes": "w\u02c8\u0254\u02d0l",
+          "start": 48.898,
+          "end": 49.197,
+          "duration": 0.299,
+          "frame_ahead_trigger": 49.608
+        },
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 49.197,
+          "end": 49.56,
+          "duration": 0.363,
+          "frame_ahead_trigger": 49.907
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 49.56,
+          "end": 50.571,
+          "duration": 1.011,
+          "frame_ahead_trigger": 50.27
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 50.571,
+          "end": 50.735,
+          "duration": 0.164,
+          "frame_ahead_trigger": 51.281
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 50.735,
+          "end": 51.225,
+          "duration": 0.49,
+          "frame_ahead_trigger": 51.445
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 51.225,
+          "end": 51.655,
+          "duration": 0.43,
+          "frame_ahead_trigger": 51.935
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 51.655,
+          "end": 52.03,
+          "duration": 0.375,
+          "frame_ahead_trigger": 52.365
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 52.03,
+          "end": 52.465,
+          "duration": 0.435,
+          "frame_ahead_trigger": 52.74
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 52.465,
+          "end": 52.781,
+          "duration": 0.316,
+          "frame_ahead_trigger": 53.175
+        },
+        {
+          "word": "hardware",
+          "clean_word": "hardware",
+          "phonemes": "h\u02c8\u0251\u02d0\u0279dw\u025b\u0279",
+          "start": 52.781,
+          "end": 53.375,
+          "duration": 0.594,
+          "frame_ahead_trigger": 53.491
+        },
+        {
+          "word": "architectures.",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 53.375,
+          "end": 54.155,
+          "duration": 0.78,
+          "frame_ahead_trigger": 54.085
+        }
+      ],
+      "audio_duration": 8.04,
+      "slot_duration": 8.04
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$N = 175 \\times 10^9 \\implies \\text{Shard}_i = \\frac{W}{P}$",
+      "filename": "gpt3_megatron_parallelism_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "N",
+          "label": "Total parameters"
+        },
+        {
+          "term": "P",
+          "label": "Parallel shards"
+        }
+      ],
+      "svg_filename": "gpt3_megatron_parallelism_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(T_{sync}) \\gg \\mathcal{O}(T_{calc})$",
+      "filename": "gpt3_megatron_parallelism_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "T_{sync}",
+          "label": "Wait time"
+        },
+        {
+          "term": "T_{calc}",
+          "label": "Compute time"
+        }
+      ],
+      "svg_filename": "gpt3_megatron_parallelism_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$Y = f(A_i, B_i) \\quad \\text{where } A = [A_1, A_2, \\dots, A_P]$",
+      "filename": "gpt3_megatron_parallelism_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "A_i",
+          "label": "Column-parallel weight"
+        }
+      ],
+      "svg_filename": "gpt3_megatron_parallelism_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\text{Comm}(G_i) \\parallel \\text{Comp}(G_i)$",
+      "filename": "gpt3_megatron_parallelism_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "\\parallel",
+          "label": "Asynchronous overlap"
+        }
+      ],
+      "svg_filename": "gpt3_megatron_parallelism_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\text{Speedup} = \\frac{\\text{Tokens/s}_{\\text{Parallel}}}{\\text{Tokens/s}_{\\text{Seq}}} \\approx 4.5$",
+      "filename": "gpt3_megatron_parallelism_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "4.5",
+          "label": "Scaling multiplier"
+        }
+      ],
+      "svg_filename": "gpt3_megatron_parallelism_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Compute",
+          "color": "#38BDF8",
+          "items": [
+            "V100",
+            "CUDA",
+            "Shards"
+          ]
+        },
+        {
+          "name": "Memory",
+          "color": "#10B981",
+          "items": [
+            "VRAM",
+            "Bandwidth",
+            "Buffers"
+          ]
+        },
+        {
+          "name": "Scaling",
+          "color": "#F59E0B",
+          "items": [
+            "Megatron",
+            "Parallel",
+            "AllReduce"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Scale\"",
+        "target_cluster": "Scaling",
+        "token": "\"Scale\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Node Sync",
+          "color": "#EF4444"
+        },
+        {
+          "word": "VRAM Wait",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "Megatron-GPT",
+    "model_a_specs": [
+      "Tensor Parallelism",
+      "Pipeline Sharding",
+      "All-Reduce Overlap"
+    ],
+    "model_b": "Legacy Sequential",
+    "model_b_specs": [
+      "Monolithic Memory",
+      "Single GPU Cap",
+      "High Latency"
+    ],
+    "divide_title": "PARALLEL VS SEQUENTIAL DIVIDE",
+    "model_a_stat": "4.5x",
+    "model_a_stat_label": "THROUGHPUT GAIN",
+    "model_b_stat": "1x",
+    "model_b_stat_label": "BASELINE",
+    "efficiency_badge": "\u26a1 4.5x COMPUTE SATURATION",
+    "benchmarks": [
+      {
+        "name": "VRAM Utilization",
+        "score_a": "98%",
+        "score_b": "22%"
+      },
+      {
+        "name": "Node Scalability",
+        "score_a": "Linear",
+        "score_b": "Stagnant"
+      },
+      {
+        "name": "Epoch Time",
+        "score_a": "Reduced",
+        "score_b": "Baseline"
+      }
+    ],
+    "scale_metric": "175B",
+    "scale_label": "TOTAL PARAMETERS",
+    "bottleneck_title": "MONOLITHIC MEMORY WALL",
+    "bottleneck_desc": "GPU idleness caused by high synchronization latency",
+    "solution_title": "MEGATRON TENSOR PARALLELISM",
+    "solution_components": "Sharded Matrix Projections",
+    "mechanism_title": "LATENCY MASKING PIPELINES",
+    "payoff_stat": "4.5x",
+    "payoff_label": "THROUGHPUT MULTIPLIER",
+    "payoff_sub": "Scalable training for 175B parameters",
+    "payoff_hero_stat": 145.0,
+    "payoff_hero_label": "Megatron TFLOPS",
+    "payoff_base_stat": 32.0,
+    "payoff_base_label": "Naive TFLOPS",
+    "payoff_delta_badge": "\u26a1 +450% HARDWARE UTILIZATION",
+    "challenger": "Megatron-GPT",
+    "incumbent": "Sequential Baseline"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: GPU THROUGHPUT",
+    "metric_name": "Compute Throughput",
+    "unit": "TFLOPS",
+    "contestants": [
+      {
+        "name": "Megatron-GPT",
+        "value": 145.0,
+        "display_val": "145 TFLOPS",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Incumbent SOTA",
+        "value": 60.0,
+        "display_val": "60 TFLOPS",
+        "is_hero": false,
+        "color": "#38BDF8"
+      },
+      {
+        "name": "Standard PyTorch",
+        "value": 32.0,
+        "display_val": "32 TFLOPS",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +4.5x SOTA EFFICIENCY GAIN",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "megatron_parallel.py",
+    "language": "python",
+    "lines": [
+      "def parallel_forward(x):",
+      "shards = split_tensor(x, world_size)",
+      "outputs = [shard.matmul(w) for w in weights]",
+      "return all_reduce(outputs)"
+    ],
+    "highlight_lines": [
+      2,
+      3
+    ],
+    "trace_register": "\u26a1 PARALLEL TENSOR DISPATCH",
+    "explanation": "Synchronized tensor sharding across GPU network"
+  },
+  "arxiv_id": "2005.14165",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "LanguageModelingComputePareto",
+      "caption": "Languagemodelingcomputepareto",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2005.14165/source/graphs/img/LanguageModelingComputePareto.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2005.14165/chalkboard_figures/fig_1_LanguageModelingComputePareto.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 140
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "aggregate_performance",
+      "caption": "Aggregate Performance",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2005.14165/source/graphs/aggregate_performance.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2005.14165/chalkboard_figures/fig_2_aggregate_performance.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 125
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "superglue_--_record_acc",
+      "caption": "Superglue -- Record Acc",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2005.14165/source/graphs/scale_plots/superglue_--_record_acc.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2005.14165/chalkboard_figures/fig_3_superglue_--_record_acc.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 125
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "superglue_--_cb_acc",
+      "caption": "Superglue -- Cb Acc",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2005.14165/source/graphs/scale_plots/superglue_--_cb_acc.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2005.14165/chalkboard_figures/fig_4_superglue_--_cb_acc.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 125
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "lambada_acc_test",
+      "caption": "Lambada Acc Test",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2005.14165/source/graphs/scale_plots/lambada_acc_test.png",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2005.14165/chalkboard_figures/fig_5_lambada_acc_test.png",
+      "original_type": "png",
+      "type": "raster_image",
+      "score": 125
+    }
+  ],
+  "feynman_certification": {
+    "converged_turn": 1,
+    "final_comprehension_score": 8.8,
+    "final_retention_hook_score": 9.3,
+    "ai_slop_eliminated": true,
+    "listener_verdict": "The hook was instant fire. The contrast between needing 700GB and only having an 80GB GPU immediately grabbed me\u2014no textbook fluff, just a brutal hardware reality. Beat 3 explains tensor parallelism cleanly without baby talk. In Beat 4, 'column-parallel linear projections with row-parallel attention blocks' is definitely a mouthful to say in 3 seconds, but tying it directly to needing just one All-Reduce sync saved it. It actually explains the core engineering trick instead of hand-waving."
+  },
+  "thriller_metadata": {
+    "engine_version": "7.0",
+    "narrative_style": "intellectual_thriller",
+    "villain_entity": "The VRAM Memory Wall & Pipeline Bubbles",
+    "physical_analogy": "An idle factory assembly line where each worker stalls waiting for a single delivery crate",
+    "eureka_mechanism": "Intra-Layer Megatron Tensor Parallelism",
+    "paradigm_shift": "Slicing individual weight matrices across GPUs to compute concurrently with minimal inter-node synchronization"
+  },
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until Scaling the 175B Monster unlocks 4.5x throughput?",
+    "verdict": 67,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 10,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until Scaling the 175B Monster unlocks 4.5x throughput?",
+        "verdict": 67,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why should engineers care about Scaling the 175B Monster? Because a 175-billion parameter model requires over 700 gigabytes of memory. Your highest-end GPU holds barely 80.",
+        "verdict": 65,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until Scaling the 175B Monster proved a 4.5x leap.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? Scaling the 175B Monster reveals the solution.",
+        "verdict": 59,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that Scaling the 175B Monster finally breaks.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "A 175-billion parameter model requires over 700 gigabytes of memory. Your highest-end GPU holds barely 80.",
+        "verdict": 46,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until Scaling the 175B Monster proved: while typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples.",
+        "verdict": 40,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 4.5x speedup using Scaling the 175B Monster.",
+        "verdict": 39,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is Scaling the 175B Monster a major breakthrough? Because recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task.",
+        "verdict": 33,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Megatron-GPT",
+        "model_a_score": "4.5x",
+        "model_b_name": "Legacy Sequential",
+        "model_b_score": "1x",
+        "delta_label": "\u26a1 4.5x COMPUTE SATURATION"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "O3flkAaM6hU",
+    "shorts_url": "https://youtube.com/shorts/O3flkAaM6hU",
+    "studio_url": "https://studio.youtube.com/video/O3flkAaM6hU/edit",
+    "title": "Scaling the 175B Monster Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/gpt3_megatron_parallelism_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

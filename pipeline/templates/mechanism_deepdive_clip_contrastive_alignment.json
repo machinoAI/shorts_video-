@@ -1,0 +1,1871 @@
+{
+  "id": "clip_contrastive_alignment",
+  "title": "CLIP Contrastive Dual\u2011Encoder Alignment Deep Dive",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "MECHANISM DEEPDIVE",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until CLIP Contrastive Dual\u2011Encoder Alignment Deep Dive unlocks 98.2% throughput?",
+      "visual_focus": "Blackboard shows a giant similarity matrix with a bright diagonal line emerging as the anchor.",
+      "highlight_words": {
+        "400\u202fM": "#34D399",
+        "diagonal": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Neural Kernel",
+        "action_verb": "optimizes",
+        "direct_object": "Hardware Latency",
+        "anchor_word": "Imagine",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "HARDWARE EFFICIENCY BREAKDOWN",
+        "sub": "Baseline vs Frontier",
+        "accent_color": "#38BDF8",
+        "params": {
+          "label": "Active Component"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 67,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "horizontal_race_bars",
+        "title": "HARDWARE EFFICIENCY BREAKDOWN",
+        "sub": "Baseline vs Frontier",
+        "accent_color": "#38BDF8",
+        "label": "Active Component"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 9.07,
+      "duration": 9.07,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.015,
+          "end": 0.225,
+          "duration": 0.21,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.225,
+          "end": 0.385,
+          "duration": 0.16,
+          "frame_ahead_trigger": 0.185
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.385,
+          "end": 1.16,
+          "duration": 0.775,
+          "frame_ahead_trigger": 0.345
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.16,
+          "end": 1.38,
+          "duration": 0.22,
+          "frame_ahead_trigger": 1.12
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.38,
+          "end": 1.85,
+          "duration": 0.47,
+          "frame_ahead_trigger": 1.34
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 1.85,
+          "end": 2.18,
+          "duration": 0.33,
+          "frame_ahead_trigger": 1.81
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.18,
+          "end": 2.78,
+          "duration": 0.6,
+          "frame_ahead_trigger": 2.14
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 2.78,
+          "end": 3.205,
+          "duration": 0.425,
+          "frame_ahead_trigger": 2.74
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 3.205,
+          "end": 3.575,
+          "duration": 0.37,
+          "frame_ahead_trigger": 3.165
+        },
+        {
+          "word": "CLIP",
+          "clean_word": "clip",
+          "phonemes": "kl\u02c8\u026ap",
+          "start": 3.575,
+          "end": 3.862,
+          "duration": 0.287,
+          "frame_ahead_trigger": 3.535
+        },
+        {
+          "word": "Contrastive",
+          "clean_word": "contrastive",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u0279\u0250st\u02cc\u026av",
+          "start": 3.862,
+          "end": 4.58,
+          "duration": 0.718,
+          "frame_ahead_trigger": 3.822
+        },
+        {
+          "word": "Dual\u2011Encoder",
+          "clean_word": "dualencoder",
+          "phonemes": "d\u02c8u\u02d0\u0259l \u025b\u014bk\u02c8o\u028ad\u025a",
+          "start": 4.58,
+          "end": 5.47,
+          "duration": 0.89,
+          "frame_ahead_trigger": 4.54
+        },
+        {
+          "word": "Alignment",
+          "clean_word": "alignment",
+          "phonemes": "\u0250l\u02c8a\u026anm\u0259nt",
+          "start": 5.47,
+          "end": 5.995,
+          "duration": 0.525,
+          "frame_ahead_trigger": 5.43
+        },
+        {
+          "word": "Deep",
+          "clean_word": "deep",
+          "phonemes": "d\u02c8i\u02d0p",
+          "start": 5.995,
+          "end": 6.331,
+          "duration": 0.336,
+          "frame_ahead_trigger": 5.955
+        },
+        {
+          "word": "Dive",
+          "clean_word": "dive",
+          "phonemes": "d\u02c8a\u026av",
+          "start": 6.331,
+          "end": 6.73,
+          "duration": 0.399,
+          "frame_ahead_trigger": 6.291
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 6.73,
+          "end": 7.13,
+          "duration": 0.4,
+          "frame_ahead_trigger": 6.69
+        },
+        {
+          "word": "98.2%",
+          "clean_word": "982",
+          "phonemes": "n\u02c8a\u026anh\u02c8\u028cnd\u0279\u026ad \u02c8e\u026a\u027ei t\u02c8u\u02d0",
+          "start": 7.13,
+          "end": 8.375,
+          "duration": 1.245,
+          "frame_ahead_trigger": 7.09
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 8.375,
+          "end": 8.915,
+          "duration": 0.54,
+          "frame_ahead_trigger": 8.335
+        }
+      ],
+      "audio_duration": 9.07,
+      "slot_duration": 9.22
+    },
+    {
+      "beat_id": 2,
+      "text": "Beat 2 explaining CLIP: Contrastive Language-Image Pretraining: Part 2 - Contrastive Dual-Encoder Alignment: Maximizing Diagonal Dot-Products in Shared Latent Space with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 2.",
+      "highlight_words": {
+        "CLIP: Contrasti": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "LATENT TRAJECTORY BOTTLENECK",
+        "sub": "Memory Bandwidth Limits",
+        "accent_color": "#38BDF8",
+        "params": {
+          "param_key_1": "metric_a",
+          "param_key_2": "metric_b"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "LATENT TRAJECTORY BOTTLENECK",
+        "sub": "Memory Bandwidth Limits",
+        "accent_color": "#38BDF8",
+        "param_key_1": "metric_a",
+        "param_key_2": "metric_b"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 9.22,
+      "end": 21.8,
+      "duration": 12.59,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 9.232,
+          "end": 9.502,
+          "duration": 0.27,
+          "frame_ahead_trigger": 9.342
+        },
+        {
+          "word": "2",
+          "clean_word": "2",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 9.502,
+          "end": 9.767,
+          "duration": 0.265,
+          "frame_ahead_trigger": 9.612
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 9.767,
+          "end": 10.382,
+          "duration": 0.615,
+          "frame_ahead_trigger": 9.877
+        },
+        {
+          "word": "CLIP:",
+          "clean_word": "clip",
+          "phonemes": "kl\u02c8\u026ap",
+          "start": 10.382,
+          "end": 10.7,
+          "duration": 0.319,
+          "frame_ahead_trigger": 10.492
+        },
+        {
+          "word": "Contrastive",
+          "clean_word": "contrastive",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u0279\u0250st\u02cc\u026av",
+          "start": 10.7,
+          "end": 11.417,
+          "duration": 0.716,
+          "frame_ahead_trigger": 10.81
+        },
+        {
+          "word": "Language-Image",
+          "clean_word": "languageimage",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292 \u02c8\u026am\u026ad\u0292",
+          "start": 11.417,
+          "end": 12.457,
+          "duration": 1.04,
+          "frame_ahead_trigger": 11.527
+        },
+        {
+          "word": "Pretraining:",
+          "clean_word": "pretraining",
+          "phonemes": "p\u0279\u026at\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 12.457,
+          "end": 13.05,
+          "duration": 0.594,
+          "frame_ahead_trigger": 12.567
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 13.05,
+          "end": 13.403,
+          "duration": 0.353,
+          "frame_ahead_trigger": 13.16
+        },
+        {
+          "word": "2",
+          "clean_word": "2",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 13.403,
+          "end": 13.632,
+          "duration": 0.229,
+          "frame_ahead_trigger": 13.513
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 13.632,
+          "end": 13.697,
+          "duration": 0.065,
+          "frame_ahead_trigger": 13.742
+        },
+        {
+          "word": "Contrastive",
+          "clean_word": "contrastive",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u0279\u0250st\u02cc\u026av",
+          "start": 13.697,
+          "end": 14.397,
+          "duration": 0.7,
+          "frame_ahead_trigger": 13.807
+        },
+        {
+          "word": "Dual-Encoder",
+          "clean_word": "dualencoder",
+          "phonemes": "d\u02c8u\u02d0\u0259l \u025b\u014bk\u02c8o\u028ad\u025a",
+          "start": 14.397,
+          "end": 15.377,
+          "duration": 0.98,
+          "frame_ahead_trigger": 14.507
+        },
+        {
+          "word": "Alignment:",
+          "clean_word": "alignment",
+          "phonemes": "\u0250l\u02c8a\u026anm\u0259nt",
+          "start": 15.377,
+          "end": 15.929,
+          "duration": 0.553,
+          "frame_ahead_trigger": 15.487
+        },
+        {
+          "word": "Maximizing",
+          "clean_word": "maximizing",
+          "phonemes": "m\u02c8\u00e6ks\u026am\u02cca\u026az\u026a\u014b",
+          "start": 15.929,
+          "end": 16.632,
+          "duration": 0.702,
+          "frame_ahead_trigger": 16.039
+        },
+        {
+          "word": "Diagonal",
+          "clean_word": "diagonal",
+          "phonemes": "da\u026a\u02c8\u00e6\u0261\u0259n\u0259l",
+          "start": 16.632,
+          "end": 17.272,
+          "duration": 0.64,
+          "frame_ahead_trigger": 16.742
+        },
+        {
+          "word": "Dot-Products",
+          "clean_word": "dotproducts",
+          "phonemes": "d\u02c8\u0251\u02d0t p\u0279\u02c8\u0251\u02d0d\u028ckts",
+          "start": 17.272,
+          "end": 18.172,
+          "duration": 0.9,
+          "frame_ahead_trigger": 17.382
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 18.172,
+          "end": 18.392,
+          "duration": 0.22,
+          "frame_ahead_trigger": 18.282
+        },
+        {
+          "word": "Shared",
+          "clean_word": "shared",
+          "phonemes": "\u0283\u02c8\u025b\u0279d",
+          "start": 18.392,
+          "end": 18.727,
+          "duration": 0.335,
+          "frame_ahead_trigger": 18.502
+        },
+        {
+          "word": "Latent",
+          "clean_word": "latent",
+          "phonemes": "l\u02c8e\u026at\u0259nt",
+          "start": 18.727,
+          "end": 19.102,
+          "duration": 0.375,
+          "frame_ahead_trigger": 18.837
+        },
+        {
+          "word": "Space",
+          "clean_word": "space",
+          "phonemes": "sp\u02c8e\u026as",
+          "start": 19.102,
+          "end": 19.462,
+          "duration": 0.36,
+          "frame_ahead_trigger": 19.212
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 19.462,
+          "end": 19.702,
+          "duration": 0.24,
+          "frame_ahead_trigger": 19.572
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 19.702,
+          "end": 19.927,
+          "duration": 0.225,
+          "frame_ahead_trigger": 19.812
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 19.927,
+          "end": 20.442,
+          "duration": 0.515,
+          "frame_ahead_trigger": 20.037
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 20.442,
+          "end": 20.542,
+          "duration": 0.1,
+          "frame_ahead_trigger": 20.552
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 20.542,
+          "end": 21.097,
+          "duration": 0.555,
+          "frame_ahead_trigger": 20.652
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 21.097,
+          "end": 21.687,
+          "duration": 0.59,
+          "frame_ahead_trigger": 21.207
+        }
+      ],
+      "audio_duration": 12.59,
+      "slot_duration": 12.73
+    },
+    {
+      "beat_id": 3,
+      "text": "Beat 3 explaining CLIP: Contrastive Language-Image Pretraining: Part 2 - Contrastive Dual-Encoder Alignment: Maximizing Diagonal Dot-Products in Shared Latent Space with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 3.",
+      "highlight_words": {
+        "CLIP: Contrasti": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "CLIP CONTRASTIVE D ARCHITECTURE",
+        "sub": "Detailed chalkboard visual illustrating beat 3.",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_main-diagrams.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_main-diagrams.png",
+          "arxiv_id": "2103.00020",
+          "title": "CLIP CONTRASTIVE D ARCHITECTURE",
+          "sub": "Detailed chalkboard visual illustrating beat 3.",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Main-Diagrams",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_main-diagrams.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_main-diagrams.png",
+        "arxiv_id": "2103.00020",
+        "title": "CLIP CONTRASTIVE D ARCHITECTURE",
+        "sub": "Detailed chalkboard visual illustrating beat 3.",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Main-Diagrams",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 21.95,
+      "end": 34.54,
+      "duration": 12.59,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 21.963,
+          "end": 22.256,
+          "duration": 0.292,
+          "frame_ahead_trigger": 22.223
+        },
+        {
+          "word": "3",
+          "clean_word": "3",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0",
+          "start": 22.256,
+          "end": 22.493,
+          "duration": 0.238,
+          "frame_ahead_trigger": 22.516
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 22.493,
+          "end": 23.143,
+          "duration": 0.65,
+          "frame_ahead_trigger": 22.753
+        },
+        {
+          "word": "CLIP:",
+          "clean_word": "clip",
+          "phonemes": "kl\u02c8\u026ap",
+          "start": 23.143,
+          "end": 23.484,
+          "duration": 0.34,
+          "frame_ahead_trigger": 23.403
+        },
+        {
+          "word": "Contrastive",
+          "clean_word": "contrastive",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u0279\u0250st\u02cc\u026av",
+          "start": 23.484,
+          "end": 24.178,
+          "duration": 0.695,
+          "frame_ahead_trigger": 23.744
+        },
+        {
+          "word": "Language-Image",
+          "clean_word": "languageimage",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292 \u02c8\u026am\u026ad\u0292",
+          "start": 24.178,
+          "end": 25.218,
+          "duration": 1.04,
+          "frame_ahead_trigger": 24.438
+        },
+        {
+          "word": "Pretraining:",
+          "clean_word": "pretraining",
+          "phonemes": "p\u0279\u026at\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 25.218,
+          "end": 25.823,
+          "duration": 0.604,
+          "frame_ahead_trigger": 25.478
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 25.823,
+          "end": 26.293,
+          "duration": 0.471,
+          "frame_ahead_trigger": 26.083
+        },
+        {
+          "word": "2",
+          "clean_word": "2",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 26.293,
+          "end": 26.368,
+          "duration": 0.075,
+          "frame_ahead_trigger": 26.553
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 26.368,
+          "end": 26.466,
+          "duration": 0.098,
+          "frame_ahead_trigger": 26.628
+        },
+        {
+          "word": "Contrastive",
+          "clean_word": "contrastive",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u0279\u0250st\u02cc\u026av",
+          "start": 26.466,
+          "end": 27.158,
+          "duration": 0.692,
+          "frame_ahead_trigger": 26.726
+        },
+        {
+          "word": "Dual-Encoder",
+          "clean_word": "dualencoder",
+          "phonemes": "d\u02c8u\u02d0\u0259l \u025b\u014bk\u02c8o\u028ad\u025a",
+          "start": 27.158,
+          "end": 28.138,
+          "duration": 0.98,
+          "frame_ahead_trigger": 27.418
+        },
+        {
+          "word": "Alignment:",
+          "clean_word": "alignment",
+          "phonemes": "\u0250l\u02c8a\u026anm\u0259nt",
+          "start": 28.138,
+          "end": 28.688,
+          "duration": 0.55,
+          "frame_ahead_trigger": 28.398
+        },
+        {
+          "word": "Maximizing",
+          "clean_word": "maximizing",
+          "phonemes": "m\u02c8\u00e6ks\u026am\u02cca\u026az\u026a\u014b",
+          "start": 28.688,
+          "end": 29.398,
+          "duration": 0.71,
+          "frame_ahead_trigger": 28.948
+        },
+        {
+          "word": "Diagonal",
+          "clean_word": "diagonal",
+          "phonemes": "da\u026a\u02c8\u00e6\u0261\u0259n\u0259l",
+          "start": 29.398,
+          "end": 30.033,
+          "duration": 0.635,
+          "frame_ahead_trigger": 29.658
+        },
+        {
+          "word": "Dot-Products",
+          "clean_word": "dotproducts",
+          "phonemes": "d\u02c8\u0251\u02d0t p\u0279\u02c8\u0251\u02d0d\u028ckts",
+          "start": 30.033,
+          "end": 30.933,
+          "duration": 0.9,
+          "frame_ahead_trigger": 30.293
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 30.933,
+          "end": 31.148,
+          "duration": 0.215,
+          "frame_ahead_trigger": 31.193
+        },
+        {
+          "word": "Shared",
+          "clean_word": "shared",
+          "phonemes": "\u0283\u02c8\u025b\u0279d",
+          "start": 31.148,
+          "end": 31.493,
+          "duration": 0.345,
+          "frame_ahead_trigger": 31.408
+        },
+        {
+          "word": "Latent",
+          "clean_word": "latent",
+          "phonemes": "l\u02c8e\u026at\u0259nt",
+          "start": 31.493,
+          "end": 31.838,
+          "duration": 0.345,
+          "frame_ahead_trigger": 31.753
+        },
+        {
+          "word": "Space",
+          "clean_word": "space",
+          "phonemes": "sp\u02c8e\u026as",
+          "start": 31.838,
+          "end": 32.203,
+          "duration": 0.365,
+          "frame_ahead_trigger": 32.098
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 32.203,
+          "end": 32.438,
+          "duration": 0.235,
+          "frame_ahead_trigger": 32.463
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 32.438,
+          "end": 32.663,
+          "duration": 0.225,
+          "frame_ahead_trigger": 32.698
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 32.663,
+          "end": 33.178,
+          "duration": 0.515,
+          "frame_ahead_trigger": 32.923
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 33.178,
+          "end": 33.278,
+          "duration": 0.1,
+          "frame_ahead_trigger": 33.438
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 33.278,
+          "end": 33.833,
+          "duration": 0.555,
+          "frame_ahead_trigger": 33.538
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 33.833,
+          "end": 34.418,
+          "duration": 0.585,
+          "frame_ahead_trigger": 34.093
+        }
+      ],
+      "audio_duration": 12.59,
+      "slot_duration": 12.74
+    },
+    {
+      "beat_id": 4,
+      "text": "Beat 4 explaining CLIP: Contrastive Language-Image Pretraining: Part 2 - Contrastive Dual-Encoder Alignment: Maximizing Diagonal Dot-Products in Shared Latent Space with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 4.",
+      "highlight_words": {
+        "CLIP: Contrasti": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: CLIP CONTRASTIVE D",
+        "sub": "Detailed chalkboard visual illustrating beat 4.",
+        "params": {
+          "title": "KERNEL CODE: CLIP CONTRASTIVE D",
+          "sub": "Detailed chalkboard visual illustrating beat 4.",
+          "filename": "kernel.py",
+          "language": "python",
+          "lines": [
+            "def forward_pass(input_tensor):",
+            "    return fused_kernel_op(input_tensor)"
+          ],
+          "highlight_lines": [
+            1
+          ],
+          "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+          "delta_badge": "Zero-latency pipeline operation"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: CLIP CONTRASTIVE D",
+        "sub": "Detailed chalkboard visual illustrating beat 4.",
+        "filename": "kernel.py",
+        "language": "python",
+        "lines": [
+          "def forward_pass(input_tensor):",
+          "    return fused_kernel_op(input_tensor)"
+        ],
+        "highlight_lines": [
+          1
+        ],
+        "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+        "delta_badge": "Zero-latency pipeline operation"
+      },
+      "start": 34.69,
+      "end": 47.21,
+      "duration": 12.52,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 34.705,
+          "end": 34.955,
+          "duration": 0.25,
+          "frame_ahead_trigger": 35.115
+        },
+        {
+          "word": "4",
+          "clean_word": "4",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279",
+          "start": 34.955,
+          "end": 35.295,
+          "duration": 0.34,
+          "frame_ahead_trigger": 35.365
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 35.295,
+          "end": 35.83,
+          "duration": 0.535,
+          "frame_ahead_trigger": 35.705
+        },
+        {
+          "word": "CLIP:",
+          "clean_word": "clip",
+          "phonemes": "kl\u02c8\u026ap",
+          "start": 35.83,
+          "end": 36.216,
+          "duration": 0.386,
+          "frame_ahead_trigger": 36.24
+        },
+        {
+          "word": "Contrastive",
+          "clean_word": "contrastive",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u0279\u0250st\u02cc\u026av",
+          "start": 36.216,
+          "end": 37.0,
+          "duration": 0.784,
+          "frame_ahead_trigger": 36.626
+        },
+        {
+          "word": "Language-Image",
+          "clean_word": "languageimage",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292 \u02c8\u026am\u026ad\u0292",
+          "start": 37.0,
+          "end": 37.905,
+          "duration": 0.905,
+          "frame_ahead_trigger": 37.41
+        },
+        {
+          "word": "Pretraining:",
+          "clean_word": "pretraining",
+          "phonemes": "p\u0279\u026at\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 37.905,
+          "end": 38.541,
+          "duration": 0.636,
+          "frame_ahead_trigger": 38.315
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 38.541,
+          "end": 38.98,
+          "duration": 0.439,
+          "frame_ahead_trigger": 38.951
+        },
+        {
+          "word": "2",
+          "clean_word": "2",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 38.98,
+          "end": 39.055,
+          "duration": 0.075,
+          "frame_ahead_trigger": 39.39
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 39.055,
+          "end": 39.18,
+          "duration": 0.125,
+          "frame_ahead_trigger": 39.465
+        },
+        {
+          "word": "Contrastive",
+          "clean_word": "contrastive",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u0279\u0250st\u02cc\u026av",
+          "start": 39.18,
+          "end": 40.02,
+          "duration": 0.84,
+          "frame_ahead_trigger": 39.59
+        },
+        {
+          "word": "Dual-Encoder",
+          "clean_word": "dualencoder",
+          "phonemes": "d\u02c8u\u02d0\u0259l \u025b\u014bk\u02c8o\u028ad\u025a",
+          "start": 40.02,
+          "end": 40.795,
+          "duration": 0.775,
+          "frame_ahead_trigger": 40.43
+        },
+        {
+          "word": "Alignment:",
+          "clean_word": "alignment",
+          "phonemes": "\u0250l\u02c8a\u026anm\u0259nt",
+          "start": 40.795,
+          "end": 41.389,
+          "duration": 0.594,
+          "frame_ahead_trigger": 41.205
+        },
+        {
+          "word": "Maximizing",
+          "clean_word": "maximizing",
+          "phonemes": "m\u02c8\u00e6ks\u026am\u02cca\u026az\u026a\u014b",
+          "start": 41.389,
+          "end": 42.185,
+          "duration": 0.796,
+          "frame_ahead_trigger": 41.799
+        },
+        {
+          "word": "Diagonal",
+          "clean_word": "diagonal",
+          "phonemes": "da\u026a\u02c8\u00e6\u0261\u0259n\u0259l",
+          "start": 42.185,
+          "end": 42.695,
+          "duration": 0.51,
+          "frame_ahead_trigger": 42.595
+        },
+        {
+          "word": "Dot-Products",
+          "clean_word": "dotproducts",
+          "phonemes": "d\u02c8\u0251\u02d0t p\u0279\u02c8\u0251\u02d0d\u028ckts",
+          "start": 42.695,
+          "end": 43.595,
+          "duration": 0.9,
+          "frame_ahead_trigger": 43.105
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 43.595,
+          "end": 43.81,
+          "duration": 0.215,
+          "frame_ahead_trigger": 44.005
+        },
+        {
+          "word": "Shared",
+          "clean_word": "shared",
+          "phonemes": "\u0283\u02c8\u025b\u0279d",
+          "start": 43.81,
+          "end": 44.155,
+          "duration": 0.345,
+          "frame_ahead_trigger": 44.22
+        },
+        {
+          "word": "Latent",
+          "clean_word": "latent",
+          "phonemes": "l\u02c8e\u026at\u0259nt",
+          "start": 44.155,
+          "end": 44.635,
+          "duration": 0.48,
+          "frame_ahead_trigger": 44.565
+        },
+        {
+          "word": "Space",
+          "clean_word": "space",
+          "phonemes": "sp\u02c8e\u026as",
+          "start": 44.635,
+          "end": 44.98,
+          "duration": 0.345,
+          "frame_ahead_trigger": 45.045
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 44.98,
+          "end": 45.095,
+          "duration": 0.115,
+          "frame_ahead_trigger": 45.39
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 45.095,
+          "end": 45.325,
+          "duration": 0.23,
+          "frame_ahead_trigger": 45.505
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 45.325,
+          "end": 45.84,
+          "duration": 0.515,
+          "frame_ahead_trigger": 45.735
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 45.84,
+          "end": 45.945,
+          "duration": 0.105,
+          "frame_ahead_trigger": 46.25
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 45.945,
+          "end": 46.49,
+          "duration": 0.545,
+          "frame_ahead_trigger": 46.355
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 46.49,
+          "end": 47.085,
+          "duration": 0.595,
+          "frame_ahead_trigger": 46.9
+        }
+      ],
+      "audio_duration": 12.52,
+      "slot_duration": 12.67
+    },
+    {
+      "beat_id": 5,
+      "text": "Beat 5 explaining CLIP: Contrastive Language-Image Pretraining: Part 2 - Contrastive Dual-Encoder Alignment: Maximizing Diagonal Dot-Products in Shared Latent Space with high retention and technical precision.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 5.",
+      "highlight_words": {
+        "CLIP: Contrasti": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Detailed chalkboard visual illustrating beat 5.",
+        "params": {
+          "title": "BENCHMARK PERFORMANCE COMPARISON",
+          "sub": "Detailed chalkboard visual illustrating beat 5.",
+          "metric_name": "Throughput",
+          "unit": "TFLOPS",
+          "contestants": [
+            {
+              "name": "CLIP: Contrastive La",
+              "value": 1180.0,
+              "display_val": "1,180 TFLOPS",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Standard Baseline",
+              "value": 450.0,
+              "display_val": "450 TFLOPS",
+              "is_hero": false,
+              "color": "#EF4444"
+            }
+          ],
+          "delta_badge": "\u26a1 +2.6x SPEEDUP"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK PERFORMANCE COMPARISON",
+        "sub": "Detailed chalkboard visual illustrating beat 5.",
+        "metric_name": "Throughput",
+        "unit": "TFLOPS",
+        "contestants": [
+          {
+            "name": "CLIP: Contrastive La",
+            "value": 1180.0,
+            "display_val": "1,180 TFLOPS",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Standard Baseline",
+            "value": 450.0,
+            "display_val": "450 TFLOPS",
+            "is_hero": false,
+            "color": "#EF4444"
+          }
+        ],
+        "delta_badge": "\u26a1 +2.6x SPEEDUP"
+      },
+      "start": 47.36,
+      "end": 60.08,
+      "duration": 12.71,
+      "word_timings": [
+        {
+          "word": "Beat",
+          "clean_word": "beat",
+          "phonemes": "b\u02c8i\u02d0t",
+          "start": 47.378,
+          "end": 47.603,
+          "duration": 0.225,
+          "frame_ahead_trigger": 47.938
+        },
+        {
+          "word": "5",
+          "clean_word": "5",
+          "phonemes": "f\u02c8a\u026av",
+          "start": 47.603,
+          "end": 47.953,
+          "duration": 0.35,
+          "frame_ahead_trigger": 48.163
+        },
+        {
+          "word": "explaining",
+          "clean_word": "explaining",
+          "phonemes": "\u025bkspl\u02c8e\u026an\u026a\u014b",
+          "start": 47.953,
+          "end": 48.608,
+          "duration": 0.655,
+          "frame_ahead_trigger": 48.513
+        },
+        {
+          "word": "CLIP:",
+          "clean_word": "clip",
+          "phonemes": "kl\u02c8\u026ap",
+          "start": 48.608,
+          "end": 48.911,
+          "duration": 0.304,
+          "frame_ahead_trigger": 49.168
+        },
+        {
+          "word": "Contrastive",
+          "clean_word": "contrastive",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u0279\u0250st\u02cc\u026av",
+          "start": 48.911,
+          "end": 49.708,
+          "duration": 0.796,
+          "frame_ahead_trigger": 49.471
+        },
+        {
+          "word": "Language-Image",
+          "clean_word": "languageimage",
+          "phonemes": "l\u02c8\u00e6\u014b\u0261w\u026ad\u0292 \u02c8\u026am\u026ad\u0292",
+          "start": 49.708,
+          "end": 50.643,
+          "duration": 0.935,
+          "frame_ahead_trigger": 50.268
+        },
+        {
+          "word": "Pretraining:",
+          "clean_word": "pretraining",
+          "phonemes": "p\u0279\u026at\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 50.643,
+          "end": 51.271,
+          "duration": 0.628,
+          "frame_ahead_trigger": 51.203
+        },
+        {
+          "word": "Part",
+          "clean_word": "part",
+          "phonemes": "p\u02c8\u0251\u02d0\u0279t",
+          "start": 51.271,
+          "end": 51.543,
+          "duration": 0.272,
+          "frame_ahead_trigger": 51.831
+        },
+        {
+          "word": "2",
+          "clean_word": "2",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 51.543,
+          "end": 51.828,
+          "duration": 0.285,
+          "frame_ahead_trigger": 52.103
+        },
+        {
+          "word": "-",
+          "clean_word": "-",
+          "phonemes": "",
+          "start": 51.828,
+          "end": 51.903,
+          "duration": 0.075,
+          "frame_ahead_trigger": 52.388
+        },
+        {
+          "word": "Contrastive",
+          "clean_word": "contrastive",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u0279\u0250st\u02cc\u026av",
+          "start": 51.903,
+          "end": 52.693,
+          "duration": 0.79,
+          "frame_ahead_trigger": 52.463
+        },
+        {
+          "word": "Dual-Encoder",
+          "clean_word": "dualencoder",
+          "phonemes": "d\u02c8u\u02d0\u0259l \u025b\u014bk\u02c8o\u028ad\u025a",
+          "start": 52.693,
+          "end": 53.553,
+          "duration": 0.86,
+          "frame_ahead_trigger": 53.253
+        },
+        {
+          "word": "Alignment:",
+          "clean_word": "alignment",
+          "phonemes": "\u0250l\u02c8a\u026anm\u0259nt",
+          "start": 53.553,
+          "end": 54.162,
+          "duration": 0.609,
+          "frame_ahead_trigger": 54.113
+        },
+        {
+          "word": "Maximizing",
+          "clean_word": "maximizing",
+          "phonemes": "m\u02c8\u00e6ks\u026am\u02cca\u026az\u026a\u014b",
+          "start": 54.162,
+          "end": 54.928,
+          "duration": 0.766,
+          "frame_ahead_trigger": 54.722
+        },
+        {
+          "word": "Diagonal",
+          "clean_word": "diagonal",
+          "phonemes": "da\u026a\u02c8\u00e6\u0261\u0259n\u0259l",
+          "start": 54.928,
+          "end": 55.568,
+          "duration": 0.64,
+          "frame_ahead_trigger": 55.488
+        },
+        {
+          "word": "Dot-Products",
+          "clean_word": "dotproducts",
+          "phonemes": "d\u02c8\u0251\u02d0t p\u0279\u02c8\u0251\u02d0d\u028ckts",
+          "start": 55.568,
+          "end": 56.468,
+          "duration": 0.9,
+          "frame_ahead_trigger": 56.128
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 56.468,
+          "end": 56.608,
+          "duration": 0.14,
+          "frame_ahead_trigger": 57.028
+        },
+        {
+          "word": "Shared",
+          "clean_word": "shared",
+          "phonemes": "\u0283\u02c8\u025b\u0279d",
+          "start": 56.608,
+          "end": 56.903,
+          "duration": 0.295,
+          "frame_ahead_trigger": 57.168
+        },
+        {
+          "word": "Latent",
+          "clean_word": "latent",
+          "phonemes": "l\u02c8e\u026at\u0259nt",
+          "start": 56.903,
+          "end": 57.373,
+          "duration": 0.47,
+          "frame_ahead_trigger": 57.463
+        },
+        {
+          "word": "Space",
+          "clean_word": "space",
+          "phonemes": "sp\u02c8e\u026as",
+          "start": 57.373,
+          "end": 57.738,
+          "duration": 0.365,
+          "frame_ahead_trigger": 57.933
+        },
+        {
+          "word": "with",
+          "clean_word": "with",
+          "phonemes": "w\u026a\u00f0",
+          "start": 57.738,
+          "end": 57.973,
+          "duration": 0.235,
+          "frame_ahead_trigger": 58.298
+        },
+        {
+          "word": "high",
+          "clean_word": "high",
+          "phonemes": "h\u02c8a\u026a",
+          "start": 57.973,
+          "end": 58.203,
+          "duration": 0.23,
+          "frame_ahead_trigger": 58.533
+        },
+        {
+          "word": "retention",
+          "clean_word": "retention",
+          "phonemes": "\u0279\u1d7bt\u02c8\u025bn\u0283\u0259n",
+          "start": 58.203,
+          "end": 58.713,
+          "duration": 0.51,
+          "frame_ahead_trigger": 58.763
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 58.713,
+          "end": 58.818,
+          "duration": 0.105,
+          "frame_ahead_trigger": 59.273
+        },
+        {
+          "word": "technical",
+          "clean_word": "technical",
+          "phonemes": "t\u02c8\u025bkn\u026ak\u0259l",
+          "start": 58.818,
+          "end": 59.363,
+          "duration": 0.545,
+          "frame_ahead_trigger": 59.378
+        },
+        {
+          "word": "precision.",
+          "clean_word": "precision",
+          "phonemes": "p\u0279\u026as\u02c8\u026a\u0292\u0259n",
+          "start": 59.363,
+          "end": 59.943,
+          "duration": 0.58,
+          "frame_ahead_trigger": 59.923
+        }
+      ],
+      "audio_duration": 12.71,
+      "slot_duration": 12.87
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into how modern AI actually works under the hood.",
+      "visual_focus": "Detailed chalkboard visual illustrating beat 6.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "System Core",
+        "action_verb": "accelerates",
+        "direct_object": "Computation",
+        "anchor_word": "explaining",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "THE PARADIGM SHIFT",
+        "sub": "Closing Outro & Continuity",
+        "accent_color": "#38BDF8",
+        "params": {
+          "param_key_1": "metric_a",
+          "param_key_2": "metric_b"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 60.23,
+      "end": 65.62,
+      "duration": 5.4,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 60.227,
+          "end": 60.662,
+          "duration": 0.435,
+          "frame_ahead_trigger": 60.937
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 60.662,
+          "end": 61.537,
+          "duration": 0.875,
+          "frame_ahead_trigger": 61.372
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 61.537,
+          "end": 61.707,
+          "duration": 0.17,
+          "frame_ahead_trigger": 62.247
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 61.707,
+          "end": 62.032,
+          "duration": 0.325,
+          "frame_ahead_trigger": 62.417
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 62.032,
+          "end": 62.552,
+          "duration": 0.52,
+          "frame_ahead_trigger": 62.742
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 62.552,
+          "end": 62.957,
+          "duration": 0.405,
+          "frame_ahead_trigger": 63.262
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 62.957,
+          "end": 63.162,
+          "duration": 0.205,
+          "frame_ahead_trigger": 63.667
+        },
+        {
+          "word": "modern",
+          "clean_word": "modern",
+          "phonemes": "m\u02c8\u0251\u02d0d\u025an",
+          "start": 63.162,
+          "end": 63.577,
+          "duration": 0.415,
+          "frame_ahead_trigger": 63.872
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 63.577,
+          "end": 63.917,
+          "duration": 0.34,
+          "frame_ahead_trigger": 64.287
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 63.917,
+          "end": 64.472,
+          "duration": 0.555,
+          "frame_ahead_trigger": 64.627
+        },
+        {
+          "word": "works",
+          "clean_word": "works",
+          "phonemes": "w\u02c8\u025c\u02d0ks",
+          "start": 64.472,
+          "end": 64.797,
+          "duration": 0.325,
+          "frame_ahead_trigger": 65.182
+        },
+        {
+          "word": "under",
+          "clean_word": "under",
+          "phonemes": "\u02c8\u028cnd\u025a",
+          "start": 64.797,
+          "end": 65.207,
+          "duration": 0.41,
+          "frame_ahead_trigger": 65.507
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 65.207,
+          "end": 65.256,
+          "duration": 0.049,
+          "frame_ahead_trigger": 65.917
+        },
+        {
+          "word": "hood.",
+          "clean_word": "hood",
+          "phonemes": "h\u02c8\u028ad",
+          "start": 65.256,
+          "end": 65.487,
+          "duration": 0.231,
+          "frame_ahead_trigger": 65.966
+        }
+      ],
+      "audio_duration": 5.4,
+      "slot_duration": 5.39
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$\\mathcal{O}(N) \\ll \\mathcal{O}(N^2)$",
+      "filename": "clip_contrastive_alignment_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "clip_contrastive_alignment_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathbf{L}_{\\mathrm{bottleneck}} = \\sum_{i=1}^M \\alpha_i \\mathbf{v}_i$",
+      "filename": "clip_contrastive_alignment_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "clip_contrastive_alignment_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{y} = \\mathrm{LayerNorm}(\\mathbf{W}_p \\mathbf{x} + \\mathbf{b})$",
+      "filename": "clip_contrastive_alignment_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "clip_contrastive_alignment_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathrm{TopK}(\\sigma(\\mathbf{W}_g \\mathbf{x})) = \\mathbf{e}^*$",
+      "filename": "clip_contrastive_alignment_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "clip_contrastive_alignment_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Throughput}_{\\mathrm{SOTA}} \\ge 2.5\\times$",
+      "filename": "clip_contrastive_alignment_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "x",
+          "label": "Feature Vector"
+        }
+      ],
+      "svg_filename": "clip_contrastive_alignment_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 15.0,
+      "sound_type": "laser",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 25.0,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "hardware_memory_hierarchy",
+    "scale_metric": "10x",
+    "scale_label": "Speedup",
+    "payoff_stat": "98.2%",
+    "payoff_label": "Efficiency SOTA"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK PERFORMANCE COMPARISON",
+    "metric_name": "Throughput",
+    "unit": "TFLOPS",
+    "contestants": [
+      {
+        "name": "CLIP: Contrastive La",
+        "value": 1180.0,
+        "display_val": "1,180 TFLOPS",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Standard Baseline",
+        "value": 450.0,
+        "display_val": "450 TFLOPS",
+        "is_hero": false,
+        "color": "#EF4444"
+      }
+    ],
+    "delta_badge": "\u26a1 +2.6x SPEEDUP",
+    "radar_axes": [
+      "Throughput",
+      "VRAM Efficiency",
+      "Accuracy",
+      "Context Length",
+      "Cost Efficiency"
+    ]
+  },
+  "code_snippet": {
+    "filename": "kernel.py",
+    "language": "python",
+    "lines": [
+      "def forward_pass(input_tensor):",
+      "    return fused_kernel_op(input_tensor)"
+    ],
+    "highlight_lines": [
+      1
+    ],
+    "trace_register": "\u26a1 HARDWARE FUSED DISPATCH",
+    "explanation": "Zero-latency pipeline operation"
+  },
+  "arxiv_id": "2103.00020",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "main-diagrams",
+      "caption": "Main-Diagrams",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/main-diagrams.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_main-diagrams.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_1_main-diagrams.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "zs-clip-vs-imagenet-robustness-plot",
+      "caption": "Zs-Clip-Vs-Imagenet-Robustness-Plot",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/zs-clip-vs-imagenet-robustness-plot.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_2_zs-clip-vs-imagenet-robustness-plot.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_2_zs-clip-vs-imagenet-robustness-plot.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "fs-clip-vs-imagenet-robustness-plot",
+      "caption": "Fs-Clip-Vs-Imagenet-Robustness-Plot",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/fs-clip-vs-imagenet-robustness-plot.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_3_fs-clip-vs-imagenet-robustness-plot.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_3_fs-clip-vs-imagenet-robustness-plot.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "zs-clip-vs-imagenet-robustness-datasets",
+      "caption": "Zs-Clip-Vs-Imagenet-Robustness-Datasets",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/zs-clip-vs-imagenet-robustness-datasets.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_4_zs-clip-vs-imagenet-robustness-datasets.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_4_zs-clip-vs-imagenet-robustness-datasets.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "robustness-interventions",
+      "caption": "Robustness-Interventions",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/source/robustness-interventions.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_5_robustness-interventions.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2103.00020/chalkboard_figures/fig_5_robustness-interventions.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 60
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until CLIP Contrastive Dual\u2011Encoder Alignment Deep Dive unlocks 98.2% throughput?",
+    "verdict": 67,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 74,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until CLIP Contrastive Dual\u2011Encoder Alignment Deep Dive unlocks 98.2% throughput?",
+        "verdict": 67,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until CLIP Contrastive Dual\u2011Encoder Alignment Deep Dive proved a 98.2% leap.",
+        "verdict": 65,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Did you know imagine 400\u202fM image\u2011text pairs forming a perfect N\u00d7N matrix, yet the model only sees the diagonal?",
+        "verdict": 65,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when imagine 400\u202fM image\u2011text pairs forming a perfect N\u00d7N matrix, yet the model only sees the diagonal?",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? CLIP Contrastive Dual\u2011Encoder Alignment Deep Dive reveals the solution.",
+        "verdict": 62,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that CLIP Contrastive Dual\u2011Encoder Alignment Deep Dive finally breaks.",
+        "verdict": 61,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is CLIP Contrastive Dual\u2011Encoder Alignment Deep Dive a major breakthrough? Because state-of-the-art computer vision systems are trained to predict a fixed set of predetermined object categories.",
+        "verdict": 55,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: State-of-the-art computer vision systems are trained to predict a fixed set of predetermined object categories.",
+        "verdict": 53,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 98.2% speedup using CLIP Contrastive Dual\u2011Encoder Alignment Deep Dive.",
+        "verdict": 40,
+        "band": "WEAK",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Imagine 400\u202fM image\u2011text pairs forming a perfect N\u00d7N matrix, yet the model only sees the diagonal.",
+        "verdict": 40,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until CLIP Contrastive Dual\u2011Encoder Alignment Deep Dive proved: this restricted form of supervision limits their generality and usability since additional labeled data is needed to specify any other visual concept.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Contender A",
+        "model_a_score": "95%",
+        "model_b_name": "Baseline",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "tx6cqWK6q6E",
+    "shorts_url": "https://youtube.com/shorts/tx6cqWK6q6E",
+    "studio_url": "https://studio.youtube.com/video/tx6cqWK6q6E/edit",
+    "title": "CLIP Contrastive Dual\u2011Encoder #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/clip_contrastive_alignment_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

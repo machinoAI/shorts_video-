@@ -17,7 +17,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(PROJECT_ROOT))
 
 from pipeline.config import FONT_HELVETICA
-from manim_engine.primitives.typography import CleanText
+from manim_engine.primitives.typography import CleanText, trim_words
 from manim_engine.primitives.visual_compositions import BaseBlueprintComposition
 
 # 3b1b Code Execution Palette
@@ -368,6 +368,35 @@ class BlueprintChalkboardCodeBlock(BaseBlueprintComposition):
         anims.append(FadeIn(self.register_group, shift=UP * 0.15))
         anims.append(FadeIn(self.badge, shift=UP * 0.15, rate_func=ease_out_back))
         return AnimationGroup(*anims, run_time=run_time)
+
+    def get_build_steps(self):
+        """Editor window -> code typed in line by line (two halves) -> highlight + register + badge."""
+        lines = list(self.line_mobjects)
+        half = max(1, (len(lines) + 1) // 2)
+
+        def _type(ls, rt):
+            if not ls:
+                return Wait(rt)
+            return LaggedStart(*[FadeIn(l, shift=RIGHT * 0.12) for l in ls], lag_ratio=0.35, run_time=rt)
+
+        steps = [
+            [self.chassis, self.window_header],
+            {"mobjects": lines[:half], "animate": lambda rt: _type(lines[:half], rt)},
+        ]
+        if lines[half:]:
+            steps.append({"mobjects": lines[half:], "animate": lambda rt: _type(lines[half:], rt)})
+        tail = [m for m in (self.active_line_highlights, self.register_group, self.badge) if m is not None and len(m.submobjects) > 0]
+        if tail:
+            steps.append(tail)
+        return steps
+
+    def get_focus_animation(self, run_time: float = 1.0):
+        target = self.active_line_highlights if len(self.active_line_highlights.submobjects) > 0 else self.code_group
+        return AnimationGroup(
+            Circumscribe(target, color=COLOR_CYAN, time_width=0.6),
+            Circumscribe(self.register_group, color=COLOR_GOLD, time_width=0.6),
+            run_time=run_time,
+        )
 
     def get_kinetic_animation(self, run_time: float = 1.8) -> Animation:
         """Focal kinetic action: Active execution line pulses and register updates."""

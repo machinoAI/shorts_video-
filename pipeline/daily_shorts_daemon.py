@@ -129,8 +129,18 @@ def save_topic_queue_archive(archive_data: List[Dict[str, Any]]) -> None:
         json.dump(archive_data, f, indent=2)
 
 
-def mark_queue_item_completed(item_id: str, video_path: str, yt_meta: Optional[Dict[str, Any]] = None) -> bool:
-    """Marks a topic queue item as completed, archives it to topic_queue_archive.json, and removes it from active topic_queue.json."""
+def mark_queue_item_completed(
+    item_id: str,
+    video_path: str,
+    yt_meta: Optional[Dict[str, Any]] = None,
+    status: str = "completed",
+    gate_reasons: Optional[List[str]] = None
+) -> bool:
+    """
+    Marks a topic queue item as done, archives it to topic_queue_archive.json, and removes it
+    from active topic_queue.json. status="held_for_review" records a video the publish gate
+    held back (uploaded privately); it is archived so the slot is not re-produced every run.
+    """
     queue = load_topic_queue()
     archive = load_topic_queue_archive()
     matched_item = None
@@ -138,8 +148,10 @@ def mark_queue_item_completed(item_id: str, video_path: str, yt_meta: Optional[D
 
     for item in queue:
         if item.get("id") == item_id:
-            item["status"] = "completed"
+            item["status"] = status
             item["completed_at"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+            if gate_reasons:
+                item["publish_gate_reasons"] = gate_reasons
             item["video_path"] = str(video_path)
             if yt_meta:
                 item["youtube_id"] = yt_meta.get("video_id")
@@ -781,7 +793,7 @@ class DailyShortsDaemon:
             elif normalized_source == "queue":
                 print(f"\n📋 Step 1: Loading next pending topics from topic queue (data/topic_queue.json)...")
                 queue = load_topic_queue()
-                pending = [item for item in queue if item.get("status") not in ("completed", "done")]
+                pending = [item for item in queue if item.get("status") not in ("completed", "done", "held_for_review")]
                 if not pending:
                     print("🎉 All queued topics in data/topic_queue.json have already been completed!")
                     return []
@@ -895,6 +907,10 @@ class DailyShortsDaemon:
             if video_out:
                 record_paper_production(record_id, title, category, video_out, source=cand_source)
 
+                from pipeline.publish_gate import load_gate_report
+                gate_report = load_gate_report(video_out) or {}
+                held = gate_report.get("decision") == "hold"
+
                 # Extract YouTube upload metadata if published
                 yt_meta = {}
                 upload_info_path = Path(video_out).with_suffix(".upload_info.json")
@@ -909,7 +925,9 @@ class DailyShortsDaemon:
                     mark_queue_item_completed(
                         item_id=top_paper.get("queue_id") or top_paper["id"],
                         video_path=video_out,
-                        yt_meta=yt_meta
+                        yt_meta=yt_meta,
+                        status="held_for_review" if held else "completed",
+                        gate_reasons=gate_report.get("reasons") if held else None
                     )
 
                 report_item = {
@@ -929,7 +947,10 @@ class DailyShortsDaemon:
                     "poster_path": yt_meta.get("poster_path"),
                     "custom_thumbnail_set": yt_meta.get("custom_thumbnail_set", False),
                     "resolution": f"{BROADCAST_WIDTH}x{BROADCAST_HEIGHT} @ {BROADCAST_FPS}fps",
-                    "editorial_notes": notes
+                    "editorial_notes": notes,
+                    "publish_gate": gate_report.get("decision", "unknown"),
+                    "publish_gate_reasons": gate_report.get("reasons", []),
+                    "publish_gate_warnings": gate_report.get("warnings", [])
                 }
                 reports.append(report_item)
 
@@ -976,9 +997,17 @@ class DailyShortsDaemon:
                     except Exception:
                         poster_line = f"\n- **High-CTR Poster:** `{poster}`"
 
+                gate_line = ""
+                if r.get("publish_gate") == "hold":
+                    gate_line = "\n- **⛔ Publish gate: HELD for review** (uploaded private, not cross-posted)" + "".join(
+                        f"\n  - {reason}" for reason in r.get("publish_gate_reasons", [])
+                    )
+                elif r.get("publish_gate") == "publish":
+                    gate_line = "\n- **✅ Publish gate:** passed"
+
                 reels_md.append(f"""### Reel {r['reel_index']}: {r['title']}
 {link_line}
-{yt_line}{poster_line}
+{yt_line}{poster_line}{gate_line}
 - **Content Pillar:** `{r_source}`
 - **Domain Taxonomy:** `{r.get('taxonomy', 'general')}` ({r.get('analytics_multiplier', 1.0):.2f}x velocity)
 - **Category:** `{r['category']}`

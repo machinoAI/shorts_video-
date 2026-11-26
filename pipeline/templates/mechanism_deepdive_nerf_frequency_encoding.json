@@ -1,0 +1,1610 @@
+{
+  "id": "nerf_frequency_encoding",
+  "title": "NeRF: Encoding Frequency for Sharpness",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "general_cs",
+  "hook_tag": "NEURAL RADIANCE FIELDS",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do standard diffusion models waste compute when NeRF delivers 34.8% speedups?",
+      "visual_focus": "A blurry, low-frequency 3D scene rendering gradually losing detail.",
+      "highlight_words": {
+        "raw spatial coordinates": "#38BDF8",
+        "low-pass filter": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Neural Network",
+        "action_verb": "filters",
+        "direct_object": "high-frequency textures",
+        "anchor_word": "filter",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "SPECTRAL BIAS PARADOX",
+        "sub": "Standard MLP struggling to reconstruct high-frequency signals",
+        "accent_color": "#EF4444",
+        "params": {
+          "field_title": "Loss Surface Gradient Flow",
+          "source_label": "Raw Input (x,y,z)",
+          "target_label": "Blurred Geometry",
+          "stream_formula": "f(x) \\approx \\sum \\beta_i \\sin(i \\cdot x)"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 66,
+      "hook_band": "WORKABLE",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "SPECTRAL BIAS PARADOX",
+        "sub": "Standard MLP struggling to reconstruct high-frequency signals",
+        "accent_color": "#EF4444",
+        "field_title": "Loss Surface Gradient Flow",
+        "source_label": "Raw Input (x,y,z)",
+        "target_label": "Blurred Geometry",
+        "stream_formula": "f(x) \\approx \\sum \\beta_i \\sin(i \\cdot x)"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.04,
+      "duration": 6.04,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.015,
+          "end": 0.225,
+          "duration": 0.21,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.225,
+          "end": 0.445,
+          "duration": 0.22,
+          "frame_ahead_trigger": 0.185
+        },
+        {
+          "word": "standard",
+          "clean_word": "standard",
+          "phonemes": "st\u02c8\u00e6nd\u025ad",
+          "start": 0.445,
+          "end": 0.875,
+          "duration": 0.43,
+          "frame_ahead_trigger": 0.405
+        },
+        {
+          "word": "diffusion",
+          "clean_word": "diffusion",
+          "phonemes": "d\u1d7bfj\u02c8u\u02d0\u0292\u0259n",
+          "start": 0.875,
+          "end": 1.415,
+          "duration": 0.54,
+          "frame_ahead_trigger": 0.835
+        },
+        {
+          "word": "models",
+          "clean_word": "models",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259lz",
+          "start": 1.415,
+          "end": 1.92,
+          "duration": 0.505,
+          "frame_ahead_trigger": 1.375
+        },
+        {
+          "word": "waste",
+          "clean_word": "waste",
+          "phonemes": "w\u02c8e\u026ast",
+          "start": 1.92,
+          "end": 2.1,
+          "duration": 0.18,
+          "frame_ahead_trigger": 1.88
+        },
+        {
+          "word": "compute",
+          "clean_word": "compute",
+          "phonemes": "k\u0259mpj\u02c8u\u02d0t",
+          "start": 2.1,
+          "end": 2.735,
+          "duration": 0.635,
+          "frame_ahead_trigger": 2.06
+        },
+        {
+          "word": "when",
+          "clean_word": "when",
+          "phonemes": "w\u02cc\u025bn",
+          "start": 2.735,
+          "end": 2.98,
+          "duration": 0.245,
+          "frame_ahead_trigger": 2.695
+        },
+        {
+          "word": "NeRF",
+          "clean_word": "nerf",
+          "phonemes": "n\u02c8i\u02d0 \u02cc\u0251\u02d0\u0279\u0279\u02c8\u025bf",
+          "start": 2.98,
+          "end": 3.62,
+          "duration": 0.64,
+          "frame_ahead_trigger": 2.94
+        },
+        {
+          "word": "delivers",
+          "clean_word": "delivers",
+          "phonemes": "d\u1d7bl\u02c8\u026av\u025az",
+          "start": 3.62,
+          "end": 4.01,
+          "duration": 0.39,
+          "frame_ahead_trigger": 3.58
+        },
+        {
+          "word": "34.8%",
+          "clean_word": "348",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0h\u02c8\u028cnd\u0279\u026ad f\u02c8\u0254\u02d0\u0279\u027ei \u02c8e\u026at",
+          "start": 4.01,
+          "end": 5.505,
+          "duration": 1.495,
+          "frame_ahead_trigger": 3.97
+        },
+        {
+          "word": "speedups?",
+          "clean_word": "speedups",
+          "phonemes": "sp\u02c8i\u02d0d\u028cps",
+          "start": 5.505,
+          "end": 5.96,
+          "duration": 0.455,
+          "frame_ahead_trigger": 5.465
+        }
+      ],
+      "audio_duration": 6.04,
+      "slot_duration": 6.19
+    },
+    {
+      "beat_id": 2,
+      "text": "The villain is spectral bias; deep networks naturally prefer smooth functions, ignoring sharp textures during the optimization process.",
+      "visual_focus": "A smoothed, overly rounded 3D box model representing the loss of edge detail.",
+      "highlight_words": {
+        "spectral bias": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Spectral Bias",
+        "action_verb": "smooths",
+        "direct_object": "geometric edges",
+        "anchor_word": "smooths",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "optimization_landscape",
+        "title": "THE SPECTRAL BOTTLENECK",
+        "sub": "Optimizer gets trapped in low-frequency basins",
+        "accent_color": "#EF4444",
+        "params": {
+          "landscape_title": "Coordinate Mapping Energy Basin",
+          "optima_label": "Global Minimum (Blurred)"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "optimization_landscape",
+        "title": "THE SPECTRAL BOTTLENECK",
+        "sub": "Optimizer gets trapped in low-frequency basins",
+        "accent_color": "#EF4444",
+        "landscape_title": "Coordinate Mapping Energy Basin",
+        "optima_label": "Global Minimum (Blurred)"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.19,
+      "end": 13.85,
+      "duration": 7.66,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 6.192,
+          "end": 6.272,
+          "duration": 0.08,
+          "frame_ahead_trigger": 6.302
+        },
+        {
+          "word": "villain",
+          "clean_word": "villain",
+          "phonemes": "v\u02c8\u026al\u0259n",
+          "start": 6.272,
+          "end": 6.717,
+          "duration": 0.445,
+          "frame_ahead_trigger": 6.382
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 6.717,
+          "end": 6.847,
+          "duration": 0.13,
+          "frame_ahead_trigger": 6.827
+        },
+        {
+          "word": "spectral",
+          "clean_word": "spectral",
+          "phonemes": "sp\u02c8\u025bkt\u0279\u0259l",
+          "start": 6.847,
+          "end": 7.232,
+          "duration": 0.385,
+          "frame_ahead_trigger": 6.957
+        },
+        {
+          "word": "bias;",
+          "clean_word": "bias",
+          "phonemes": "b\u02c8a\u026a\u0259s",
+          "start": 7.232,
+          "end": 7.682,
+          "duration": 0.449,
+          "frame_ahead_trigger": 7.342
+        },
+        {
+          "word": "deep",
+          "clean_word": "deep",
+          "phonemes": "d\u02c8i\u02d0p",
+          "start": 7.682,
+          "end": 8.087,
+          "duration": 0.406,
+          "frame_ahead_trigger": 7.792
+        },
+        {
+          "word": "networks",
+          "clean_word": "networks",
+          "phonemes": "n\u02c8\u025btw\u025c\u02d0ks",
+          "start": 8.087,
+          "end": 8.497,
+          "duration": 0.41,
+          "frame_ahead_trigger": 8.197
+        },
+        {
+          "word": "naturally",
+          "clean_word": "naturally",
+          "phonemes": "n\u02c8\u00e6t\u0283\u025a\u0279\u0259li",
+          "start": 8.497,
+          "end": 9.157,
+          "duration": 0.66,
+          "frame_ahead_trigger": 8.607
+        },
+        {
+          "word": "prefer",
+          "clean_word": "prefer",
+          "phonemes": "p\u0279\u026af\u02c8\u025c\u02d0",
+          "start": 9.157,
+          "end": 9.617,
+          "duration": 0.46,
+          "frame_ahead_trigger": 9.267
+        },
+        {
+          "word": "smooth",
+          "clean_word": "smooth",
+          "phonemes": "sm\u02c8u\u02d0\u00f0",
+          "start": 9.617,
+          "end": 10.002,
+          "duration": 0.385,
+          "frame_ahead_trigger": 9.727
+        },
+        {
+          "word": "functions,",
+          "clean_word": "functions",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259nz",
+          "start": 10.002,
+          "end": 10.442,
+          "duration": 0.44,
+          "frame_ahead_trigger": 10.112
+        },
+        {
+          "word": "ignoring",
+          "clean_word": "ignoring",
+          "phonemes": "\u026a\u0261n\u02c8\u0254\u02d0\u0279\u026a\u014b",
+          "start": 10.442,
+          "end": 11.002,
+          "duration": 0.56,
+          "frame_ahead_trigger": 10.552
+        },
+        {
+          "word": "sharp",
+          "clean_word": "sharp",
+          "phonemes": "\u0283\u02c8\u0251\u02d0\u0279p",
+          "start": 11.002,
+          "end": 11.312,
+          "duration": 0.31,
+          "frame_ahead_trigger": 11.112
+        },
+        {
+          "word": "textures",
+          "clean_word": "textures",
+          "phonemes": "t\u02c8\u025bkst\u0283\u025az",
+          "start": 11.312,
+          "end": 11.867,
+          "duration": 0.555,
+          "frame_ahead_trigger": 11.422
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 11.867,
+          "end": 12.157,
+          "duration": 0.29,
+          "frame_ahead_trigger": 11.977
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 12.157,
+          "end": 12.392,
+          "duration": 0.235,
+          "frame_ahead_trigger": 12.267
+        },
+        {
+          "word": "optimization",
+          "clean_word": "optimization",
+          "phonemes": "\u02cc\u0251\u02d0pt\u026am\u1d7bz\u02c8e\u026a\u0283\u0259n",
+          "start": 12.392,
+          "end": 13.282,
+          "duration": 0.89,
+          "frame_ahead_trigger": 12.502
+        },
+        {
+          "word": "process.",
+          "clean_word": "process",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0s\u025bs",
+          "start": 13.282,
+          "end": 13.757,
+          "duration": 0.475,
+          "frame_ahead_trigger": 13.392
+        }
+      ],
+      "audio_duration": 7.66,
+      "slot_duration": 7.81
+    },
+    {
+      "beat_id": 3,
+      "text": "We break this bottleneck by projecting inputs into a higher-dimensional space using periodic sinusoidal frequency functions.",
+      "visual_focus": "Input coordinates mapping into a high-dimensional harmonic basis.",
+      "highlight_words": {
+        "higher-dimensional space": "#34D399",
+        "sinusoidal frequency": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Frequency Encoder",
+        "action_verb": "projects",
+        "direct_object": "high-dimensional features",
+        "anchor_word": "projects",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "paper_figure",
+        "title": "NERF ARCHITECTURE",
+        "sub": "Input coordinates mapping into a high-dimensional harmonic basis.",
+        "params": {
+          "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.svg",
+          "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.png",
+          "arxiv_id": "2003.08934",
+          "title": "NERF ARCHITECTURE",
+          "sub": "Input coordinates mapping into a high-dimensional harmonic basis.",
+          "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+          "caption": "Pipeline V2 Small",
+          "preferred_renderer": "vector"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "paper_figure",
+      "motif_params": {
+        "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.svg",
+        "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.png",
+        "arxiv_id": "2003.08934",
+        "title": "NERF ARCHITECTURE",
+        "sub": "Input coordinates mapping into a high-dimensional harmonic basis.",
+        "badge_text": "PRIMARY ARCHITECTURE SPECIFICATION",
+        "caption": "Pipeline V2 Small",
+        "preferred_renderer": "vector"
+      },
+      "kinetic_action": "figure_scan",
+      "start": 14.0,
+      "end": 21.25,
+      "duration": 7.25,
+      "word_timings": [
+        {
+          "word": "We",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 14.006,
+          "end": 14.141,
+          "duration": 0.135,
+          "frame_ahead_trigger": 14.266
+        },
+        {
+          "word": "break",
+          "clean_word": "break",
+          "phonemes": "b\u0279\u02c8e\u026ak",
+          "start": 14.141,
+          "end": 14.411,
+          "duration": 0.27,
+          "frame_ahead_trigger": 14.401
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 14.411,
+          "end": 14.631,
+          "duration": 0.22,
+          "frame_ahead_trigger": 14.671
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 14.631,
+          "end": 15.341,
+          "duration": 0.71,
+          "frame_ahead_trigger": 14.891
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 15.341,
+          "end": 15.506,
+          "duration": 0.165,
+          "frame_ahead_trigger": 15.601
+        },
+        {
+          "word": "projecting",
+          "clean_word": "projecting",
+          "phonemes": "p\u0279\u0259d\u0292\u02c8\u025bkt\u026a\u014b",
+          "start": 15.506,
+          "end": 16.191,
+          "duration": 0.685,
+          "frame_ahead_trigger": 15.766
+        },
+        {
+          "word": "inputs",
+          "clean_word": "inputs",
+          "phonemes": "\u02c8\u026anp\u028ats",
+          "start": 16.191,
+          "end": 16.576,
+          "duration": 0.385,
+          "frame_ahead_trigger": 16.451
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 16.576,
+          "end": 16.781,
+          "duration": 0.205,
+          "frame_ahead_trigger": 16.836
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 16.781,
+          "end": 17.036,
+          "duration": 0.255,
+          "frame_ahead_trigger": 17.041
+        },
+        {
+          "word": "higher-dimensional",
+          "clean_word": "higherdimensional",
+          "phonemes": "h\u02c8a\u026a\u025ad\u1d7bm\u02cc\u025bn\u0283\u0259n\u0259l",
+          "start": 17.036,
+          "end": 18.006,
+          "duration": 0.97,
+          "frame_ahead_trigger": 17.296
+        },
+        {
+          "word": "space",
+          "clean_word": "space",
+          "phonemes": "sp\u02c8e\u026as",
+          "start": 18.006,
+          "end": 18.254,
+          "duration": 0.248,
+          "frame_ahead_trigger": 18.266
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 18.254,
+          "end": 18.621,
+          "duration": 0.367,
+          "frame_ahead_trigger": 18.514
+        },
+        {
+          "word": "periodic",
+          "clean_word": "periodic",
+          "phonemes": "p\u02cci\u0259\u0279\u026a\u02c8\u0251\u02d0d\u026ak",
+          "start": 18.621,
+          "end": 19.301,
+          "duration": 0.68,
+          "frame_ahead_trigger": 18.881
+        },
+        {
+          "word": "sinusoidal",
+          "clean_word": "sinusoidal",
+          "phonemes": "s\u02c8\u026anu\u02d0s\u02cc\u0254\u026ad\u0259l",
+          "start": 19.301,
+          "end": 19.956,
+          "duration": 0.655,
+          "frame_ahead_trigger": 19.561
+        },
+        {
+          "word": "frequency",
+          "clean_word": "frequency",
+          "phonemes": "f\u0279\u02c8i\u02d0kw\u0259nsi",
+          "start": 19.956,
+          "end": 20.681,
+          "duration": 0.725,
+          "frame_ahead_trigger": 20.216
+        },
+        {
+          "word": "functions.",
+          "clean_word": "functions",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259nz",
+          "start": 20.681,
+          "end": 21.161,
+          "duration": 0.48,
+          "frame_ahead_trigger": 20.941
+        }
+      ],
+      "audio_duration": 7.25,
+      "slot_duration": 7.4
+    },
+    {
+      "beat_id": 4,
+      "text": "The MLP now learns a simple function in this high-dimensional domain, effectively recovering fine-grained details during training.",
+      "visual_focus": "The MLP nodes activating rapidly for sharp geometric edge detection.",
+      "highlight_words": {
+        "MLP": "#F59E0B",
+        "fine-grained details": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "MLP Weights",
+        "action_verb": "activates",
+        "direct_object": "high-frequency latent representations",
+        "anchor_word": "activates",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: NERF: ENCODING FRE",
+        "sub": "The MLP nodes activating rapidly for sharp geometric edge detecti",
+        "params": {
+          "title": "KERNEL CODE: NERF: ENCODING FRE",
+          "sub": "The MLP nodes activating rapidly for sharp geometric edge detecti",
+          "filename": "fourier_map.py",
+          "language": "python",
+          "lines": [
+            "def fourier_encode(x, L):",
+            "freqs = 2**torch.arange(L) * math.pi * x",
+            "return torch.cat([torch.sin(freqs), torch.cos(freqs)])"
+          ],
+          "highlight_lines": [
+            2,
+            3
+          ],
+          "trace_register": "\u26a1 HARMONIC BASIS MAPPING",
+          "delta_badge": "Map inputs into sinusoidal domain"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: NERF: ENCODING FRE",
+        "sub": "The MLP nodes activating rapidly for sharp geometric edge detecti",
+        "filename": "fourier_map.py",
+        "language": "python",
+        "lines": [
+          "def fourier_encode(x, L):",
+          "freqs = 2**torch.arange(L) * math.pi * x",
+          "return torch.cat([torch.sin(freqs), torch.cos(freqs)])"
+        ],
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "trace_register": "\u26a1 HARMONIC BASIS MAPPING",
+        "delta_badge": "Map inputs into sinusoidal domain"
+      },
+      "start": 21.4,
+      "end": 28.48,
+      "duration": 7.08,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 21.414,
+          "end": 21.514,
+          "duration": 0.1,
+          "frame_ahead_trigger": 21.824
+        },
+        {
+          "word": "MLP",
+          "clean_word": "mlp",
+          "phonemes": "\u02cc\u025bm\u02cc\u025blp\u02c8i\u02d0",
+          "start": 21.514,
+          "end": 22.089,
+          "duration": 0.575,
+          "frame_ahead_trigger": 21.924
+        },
+        {
+          "word": "now",
+          "clean_word": "now",
+          "phonemes": "n\u02c8a\u028a",
+          "start": 22.089,
+          "end": 22.334,
+          "duration": 0.245,
+          "frame_ahead_trigger": 22.499
+        },
+        {
+          "word": "learns",
+          "clean_word": "learns",
+          "phonemes": "l\u02c8\u025c\u02d0nz",
+          "start": 22.334,
+          "end": 22.694,
+          "duration": 0.36,
+          "frame_ahead_trigger": 22.744
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 22.694,
+          "end": 22.804,
+          "duration": 0.11,
+          "frame_ahead_trigger": 23.104
+        },
+        {
+          "word": "simple",
+          "clean_word": "simple",
+          "phonemes": "s\u02c8\u026amp\u0259l",
+          "start": 22.804,
+          "end": 23.239,
+          "duration": 0.435,
+          "frame_ahead_trigger": 23.214
+        },
+        {
+          "word": "function",
+          "clean_word": "function",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259n",
+          "start": 23.239,
+          "end": 23.639,
+          "duration": 0.4,
+          "frame_ahead_trigger": 23.649
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 23.639,
+          "end": 23.784,
+          "duration": 0.145,
+          "frame_ahead_trigger": 24.049
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 23.784,
+          "end": 24.074,
+          "duration": 0.29,
+          "frame_ahead_trigger": 24.194
+        },
+        {
+          "word": "high-dimensional",
+          "clean_word": "highdimensional",
+          "phonemes": "h\u02c8a\u026ad\u1d7bm\u02cc\u025bn\u0283\u0259n\u0259l",
+          "start": 24.074,
+          "end": 24.874,
+          "duration": 0.8,
+          "frame_ahead_trigger": 24.484
+        },
+        {
+          "word": "domain,",
+          "clean_word": "domain",
+          "phonemes": "d\u0259m\u02c8e\u026an",
+          "start": 24.874,
+          "end": 25.329,
+          "duration": 0.455,
+          "frame_ahead_trigger": 25.284
+        },
+        {
+          "word": "effectively",
+          "clean_word": "effectively",
+          "phonemes": "\u026af\u02c8\u025bkt\u026avli",
+          "start": 25.329,
+          "end": 25.749,
+          "duration": 0.42,
+          "frame_ahead_trigger": 25.739
+        },
+        {
+          "word": "recovering",
+          "clean_word": "recovering",
+          "phonemes": "\u0279\u1d7bk\u02c8\u028cv\u025a\u0279\u026a\u014b",
+          "start": 25.749,
+          "end": 26.381,
+          "duration": 0.632,
+          "frame_ahead_trigger": 26.159
+        },
+        {
+          "word": "fine-grained",
+          "clean_word": "finegrained",
+          "phonemes": "f\u02c8a\u026a\u014b\u0261\u0279e\u026and",
+          "start": 26.381,
+          "end": 26.995,
+          "duration": 0.614,
+          "frame_ahead_trigger": 26.791
+        },
+        {
+          "word": "details",
+          "clean_word": "details",
+          "phonemes": "di\u02d0t\u02c8e\u026alz",
+          "start": 26.995,
+          "end": 27.614,
+          "duration": 0.619,
+          "frame_ahead_trigger": 27.405
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 27.614,
+          "end": 27.979,
+          "duration": 0.365,
+          "frame_ahead_trigger": 28.024
+        },
+        {
+          "word": "training.",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 27.979,
+          "end": 28.334,
+          "duration": 0.355,
+          "frame_ahead_trigger": 28.389
+        }
+      ],
+      "audio_duration": 7.08,
+      "slot_duration": 7.23
+    },
+    {
+      "beat_id": 5,
+      "text": "This transforms neural rendering, pushing peak signal-to-noise ratios higher by capturing sharp textures that were previously impossible.",
+      "visual_focus": "A sharp, highly detailed rendering comparing old blurred vs new sharp results.",
+      "highlight_words": {
+        "peak signal-to-noise": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Frequency Encoding",
+        "action_verb": "boosts",
+        "direct_object": "PSNR output",
+        "anchor_word": "boosts",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: FIDELITY",
+        "sub": "A sharp, highly detailed rendering comparing old",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: FIDELITY",
+          "sub": "A sharp, highly detailed rendering comparing old",
+          "metric_name": "Peak PSNR",
+          "unit": "dB",
+          "contestants": [
+            {
+              "name": "Fourier NeRF",
+              "value": 32.5,
+              "display_val": "32.5 dB",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Baseline",
+              "value": 24.1,
+              "display_val": "24.1 dB",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +34.8% SOTA EFFICIENCY GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: FIDELITY",
+        "sub": "A sharp, highly detailed rendering comparing old",
+        "metric_name": "Peak PSNR",
+        "unit": "dB",
+        "contestants": [
+          {
+            "name": "Fourier NeRF",
+            "value": 32.5,
+            "display_val": "32.5 dB",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Baseline",
+            "value": 24.1,
+            "display_val": "24.1 dB",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +34.8% SOTA EFFICIENCY GAIN"
+      },
+      "start": 28.63,
+      "end": 36.14,
+      "duration": 7.51,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 28.647,
+          "end": 28.802,
+          "duration": 0.155,
+          "frame_ahead_trigger": 29.207
+        },
+        {
+          "word": "transforms",
+          "clean_word": "transforms",
+          "phonemes": "t\u0279\u00e6nsf\u02c8\u0254\u02d0\u0279mz",
+          "start": 28.802,
+          "end": 29.462,
+          "duration": 0.66,
+          "frame_ahead_trigger": 29.362
+        },
+        {
+          "word": "neural",
+          "clean_word": "neural",
+          "phonemes": "n\u02c8\u028a\u0279\u0279\u0259l",
+          "start": 29.462,
+          "end": 29.892,
+          "duration": 0.43,
+          "frame_ahead_trigger": 30.022
+        },
+        {
+          "word": "rendering,",
+          "clean_word": "rendering",
+          "phonemes": "\u0279\u02c8\u025bnd\u025a\u0279\u026a\u014b",
+          "start": 29.892,
+          "end": 30.449,
+          "duration": 0.557,
+          "frame_ahead_trigger": 30.452
+        },
+        {
+          "word": "pushing",
+          "clean_word": "pushing",
+          "phonemes": "p\u02c8\u028a\u0283\u026a\u014b",
+          "start": 30.449,
+          "end": 30.732,
+          "duration": 0.283,
+          "frame_ahead_trigger": 31.009
+        },
+        {
+          "word": "peak",
+          "clean_word": "peak",
+          "phonemes": "p\u02c8i\u02d0k",
+          "start": 30.732,
+          "end": 31.072,
+          "duration": 0.34,
+          "frame_ahead_trigger": 31.292
+        },
+        {
+          "word": "signal-to-noise",
+          "clean_word": "signaltonoise",
+          "phonemes": "s\u02c8\u026a\u0261n\u0250lt\u02cc\u0251\u02d0n\u0254\u026as",
+          "start": 31.072,
+          "end": 31.907,
+          "duration": 0.835,
+          "frame_ahead_trigger": 31.632
+        },
+        {
+          "word": "ratios",
+          "clean_word": "ratios",
+          "phonemes": "\u0279\u02c8e\u026a\u0283\u026a\u02cco\u028az",
+          "start": 31.907,
+          "end": 32.367,
+          "duration": 0.46,
+          "frame_ahead_trigger": 32.467
+        },
+        {
+          "word": "higher",
+          "clean_word": "higher",
+          "phonemes": "h\u02c8a\u026a\u025a",
+          "start": 32.367,
+          "end": 32.707,
+          "duration": 0.34,
+          "frame_ahead_trigger": 32.927
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 32.707,
+          "end": 33.027,
+          "duration": 0.32,
+          "frame_ahead_trigger": 33.267
+        },
+        {
+          "word": "capturing",
+          "clean_word": "capturing",
+          "phonemes": "k\u02c8\u00e6pt\u0283\u025a\u0279\u026a\u014b",
+          "start": 33.027,
+          "end": 33.657,
+          "duration": 0.63,
+          "frame_ahead_trigger": 33.587
+        },
+        {
+          "word": "sharp",
+          "clean_word": "sharp",
+          "phonemes": "\u0283\u02c8\u0251\u02d0\u0279p",
+          "start": 33.657,
+          "end": 33.812,
+          "duration": 0.155,
+          "frame_ahead_trigger": 34.217
+        },
+        {
+          "word": "textures",
+          "clean_word": "textures",
+          "phonemes": "t\u02c8\u025bkst\u0283\u025az",
+          "start": 33.812,
+          "end": 34.367,
+          "duration": 0.555,
+          "frame_ahead_trigger": 34.372
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 34.367,
+          "end": 34.647,
+          "duration": 0.28,
+          "frame_ahead_trigger": 34.927
+        },
+        {
+          "word": "were",
+          "clean_word": "were",
+          "phonemes": "w\u025c\u02d0",
+          "start": 34.647,
+          "end": 34.757,
+          "duration": 0.11,
+          "frame_ahead_trigger": 35.207
+        },
+        {
+          "word": "previously",
+          "clean_word": "previously",
+          "phonemes": "p\u0279\u02c8i\u02d0vi\u0259sli",
+          "start": 34.757,
+          "end": 35.382,
+          "duration": 0.625,
+          "frame_ahead_trigger": 35.317
+        },
+        {
+          "word": "impossible.",
+          "clean_word": "impossible",
+          "phonemes": "\u026amp\u02c8\u0251\u02d0s\u1d7bb\u0259l",
+          "start": 35.382,
+          "end": 36.022,
+          "duration": 0.64,
+          "frame_ahead_trigger": 35.942
+        }
+      ],
+      "audio_duration": 7.51,
+      "slot_duration": 7.66
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for deep-dives into how we represent visual worlds via high-dimensional architectures.",
+      "visual_focus": "A recursive loop showing the input signal transforming into 3D space.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "View Synthesis",
+        "action_verb": "cycles",
+        "direct_object": "input manifold",
+        "anchor_word": "cycles",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "THE NEURAL LOOP",
+        "sub": "Continuous frequency-to-geometry pipeline",
+        "accent_color": "#FFFFFF",
+        "params": {
+          "stage_1_label": "Coordinates",
+          "stage_1_sub": "Raw xyz",
+          "stage_2_label": "Frequency Map",
+          "stage_2_sub": "Sinusoidal Proj",
+          "stage_3_label": "Novel View",
+          "stage_3_sub": "Rendered Frame"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 36.29,
+      "end": 42.73,
+      "duration": 6.44,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 36.306,
+          "end": 36.711,
+          "duration": 0.405,
+          "frame_ahead_trigger": 37.016
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 36.711,
+          "end": 37.681,
+          "duration": 0.97,
+          "frame_ahead_trigger": 37.421
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 37.681,
+          "end": 37.851,
+          "duration": 0.17,
+          "frame_ahead_trigger": 38.391
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 37.851,
+          "end": 38.396,
+          "duration": 0.545,
+          "frame_ahead_trigger": 38.561
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 38.396,
+          "end": 38.726,
+          "duration": 0.33,
+          "frame_ahead_trigger": 39.106
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 38.726,
+          "end": 38.926,
+          "duration": 0.2,
+          "frame_ahead_trigger": 39.436
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 38.926,
+          "end": 39.111,
+          "duration": 0.185,
+          "frame_ahead_trigger": 39.636
+        },
+        {
+          "word": "represent",
+          "clean_word": "represent",
+          "phonemes": "\u0279\u02cc\u025bp\u0279\u1d7bz\u02c8\u025bnt",
+          "start": 39.111,
+          "end": 39.716,
+          "duration": 0.605,
+          "frame_ahead_trigger": 39.821
+        },
+        {
+          "word": "visual",
+          "clean_word": "visual",
+          "phonemes": "v\u02c8\u026a\u0292u\u02d0\u0259l",
+          "start": 39.716,
+          "end": 40.246,
+          "duration": 0.529,
+          "frame_ahead_trigger": 40.426
+        },
+        {
+          "word": "worlds",
+          "clean_word": "worlds",
+          "phonemes": "w\u02c8\u025c\u02d0ldz",
+          "start": 40.246,
+          "end": 40.657,
+          "duration": 0.412,
+          "frame_ahead_trigger": 40.956
+        },
+        {
+          "word": "via",
+          "clean_word": "via",
+          "phonemes": "v\u02c8a\u026a\u0259",
+          "start": 40.657,
+          "end": 40.926,
+          "duration": 0.269,
+          "frame_ahead_trigger": 41.367
+        },
+        {
+          "word": "high-dimensional",
+          "clean_word": "highdimensional",
+          "phonemes": "h\u02c8a\u026ad\u1d7bm\u02cc\u025bn\u0283\u0259n\u0259l",
+          "start": 40.926,
+          "end": 41.876,
+          "duration": 0.95,
+          "frame_ahead_trigger": 41.636
+        },
+        {
+          "word": "architectures.",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 41.876,
+          "end": 42.656,
+          "duration": 0.78,
+          "frame_ahead_trigger": 42.586
+        }
+      ],
+      "audio_duration": 6.44,
+      "slot_duration": 6.44
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$f(x) \\to \\mathrm{low\\text{-}pass}(x)$",
+      "filename": "nerf_frequency_encoding_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "f(x)",
+          "label": "Mapping Function"
+        },
+        {
+          "term": "low-pass",
+          "label": "Spectral Bias"
+        }
+      ],
+      "svg_filename": "nerf_frequency_encoding_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{L} = \\|F_{\\theta}(x) - y\\|_2^2$",
+      "filename": "nerf_frequency_encoding_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "F_{\\theta}",
+          "label": "MLP Model"
+        }
+      ],
+      "svg_filename": "nerf_frequency_encoding_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\gamma(p) = (\\dots, \\sin(2^k \\pi p), \\cos(2^k \\pi p), \\dots)$",
+      "filename": "nerf_frequency_encoding_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\gamma(p)",
+          "label": "Fourier Feature"
+        }
+      ],
+      "svg_filename": "nerf_frequency_encoding_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$F_{\\theta}(\\gamma(p)) \\to \\mathbf{c}, \\sigma$",
+      "filename": "nerf_frequency_encoding_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "\\mathbf{c}, \\sigma",
+          "label": "RGB and Density"
+        }
+      ],
+      "svg_filename": "nerf_frequency_encoding_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{PSNR} = 10 \\log_{10}(\\frac{MAX_I^2}{MSE})$",
+      "filename": "nerf_frequency_encoding_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "MSE",
+          "label": "Mean Squared Error"
+        }
+      ],
+      "svg_filename": "nerf_frequency_encoding_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "semantic_clusters",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "LOW_FREQ",
+          "color": "#38BDF8",
+          "items": [
+            "geometry",
+            "shape",
+            "bias"
+          ]
+        },
+        {
+          "name": "HIGH_FREQ",
+          "color": "#10B981",
+          "items": [
+            "texture",
+            "edge",
+            "fine"
+          ]
+        },
+        {
+          "name": "LATENT_SPACE",
+          "color": "#F59E0B",
+          "items": [
+            "Fourier",
+            "basis",
+            "mapping"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Coordinate (x,y,z)",
+        "target_cluster": "LATENT_SPACE",
+        "token": "x,y,z"
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Spectral",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Bias",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "Frequency-Encoded NeRF",
+    "model_a_specs": [
+      "Fourier Basis",
+      "Coordinate-based",
+      "High-frequency"
+    ],
+    "model_b": "Standard MLP NeRF",
+    "model_b_specs": [
+      "Spatial coords",
+      "Spectral Bias",
+      "Low-frequency"
+    ],
+    "divide_title": "SPECTRAL BIAS DIVIDE",
+    "model_a_stat": "32.5dB",
+    "model_a_stat_label": "PEAK PSNR",
+    "model_b_stat": "24.1dB",
+    "model_b_stat_label": "BASELINE PSNR",
+    "efficiency_badge": "\u26a1 +34.8% SHARPNESS GAIN",
+    "benchmarks": [
+      {
+        "name": "Texture Fidelity",
+        "score_a": "High",
+        "score_b": "Low"
+      },
+      {
+        "name": "Edge Precision",
+        "score_a": "High",
+        "score_b": "Low"
+      },
+      {
+        "name": "Training Time",
+        "score_a": "Equiv",
+        "score_b": "Equiv"
+      }
+    ],
+    "scale_metric": "32.5",
+    "scale_label": "PSNR Improvement",
+    "bottleneck_title": "SPECTRAL BIAS BOTTLENECK",
+    "bottleneck_desc": "MLP smoothing high-frequency signal components",
+    "solution_title": "FOURIER FEATURE MAPPING",
+    "solution_components": "Sinusoidal frequency projection",
+    "mechanism_title": "STRUCTURED LATENT ACTIVATION",
+    "payoff_stat": "34.8%",
+    "payoff_label": "SHARPNESS GAIN",
+    "payoff_sub": "Overcoming spectral bias for clear scenes",
+    "payoff_hero_stat": 32.5,
+    "payoff_hero_label": "Fourier Latents",
+    "payoff_base_stat": 24.1,
+    "payoff_base_label": "Standard MLP",
+    "payoff_delta_badge": "\u26a1 +34.8% SHARPNESS GAIN",
+    "challenger": "Fourier-NeRF",
+    "incumbent": "Base-NeRF"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: FIDELITY",
+    "metric_name": "Peak PSNR",
+    "unit": "dB",
+    "contestants": [
+      {
+        "name": "Fourier NeRF",
+        "value": 32.5,
+        "display_val": "32.5 dB",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Baseline",
+        "value": 24.1,
+        "display_val": "24.1 dB",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +34.8% SOTA EFFICIENCY GAIN",
+    "radar_axes": [
+      "Detail",
+      "Sharpness",
+      "Stability",
+      "Texture",
+      "Geometry"
+    ]
+  },
+  "code_snippet": {
+    "filename": "fourier_map.py",
+    "language": "python",
+    "lines": [
+      "def fourier_encode(x, L):",
+      "freqs = 2**torch.arange(L) * math.pi * x",
+      "return torch.cat([torch.sin(freqs), torch.cos(freqs)])"
+    ],
+    "highlight_lines": [
+      2,
+      3
+    ],
+    "trace_register": "\u26a1 HARMONIC BASIS MAPPING",
+    "explanation": "Map inputs into sinusoidal domain"
+  },
+  "arxiv_id": "2003.08934",
+  "paper_figures": [
+    {
+      "figure_id": "fig_1",
+      "stem": "pipeline_v2_small",
+      "caption": "Pipeline V2 Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/pipeline_v2_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_1_pipeline_v2_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 150
+    },
+    {
+      "figure_id": "fig_2",
+      "stem": "netdiag",
+      "caption": "Netdiag",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/netdiag.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_2_netdiag.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_2_netdiag.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_3",
+      "stem": "teaser_small",
+      "caption": "Teaser Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/teaser_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_3_teaser_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_3_teaser_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_4",
+      "stem": "viewdirs_small",
+      "caption": "Viewdirs Small",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/viewdirs_small.pdf",
+      "svg_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_4_viewdirs_small.svg",
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_4_viewdirs_small.png",
+      "original_type": "pdf",
+      "type": "vector_pdf",
+      "score": 105
+    },
+    {
+      "figure_id": "fig_5",
+      "stem": "llff",
+      "caption": "Llff",
+      "page_num": 0,
+      "source_file": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/source/figs/real_results_new/trex/llff.jpg",
+      "svg_path": null,
+      "image_path": "/home/runner/work/shorts_video-/shorts_video-/public/arxiv_cache/2003.08934/chalkboard_figures/fig_5_llff.png",
+      "original_type": "jpg",
+      "type": "raster_image",
+      "score": 95
+    }
+  ],
+  "hook_gating": {
+    "selected_hook": "Why do standard diffusion models waste compute when NeRF delivers 34.8% speedups?",
+    "verdict": 66,
+    "band": "WORKABLE",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 62,
+      "ADDRESS": 70,
+      "STAKES": 62,
+      "CURIOSITY": 60,
+      "BREVITY": 100
+    },
+    "weakest_property": "CURIOSITY",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do standard diffusion models waste compute when NeRF delivers 34.8% speedups?",
+        "verdict": 66,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when diffusion transformers scale up? NeRF achieves a 34.8% breakthrough.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Standard diffusion pipelines suffer from heavy render latency, but NeRF cuts it by 34.8%.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Statistic"
+      },
+      {
+        "hook": "Here is why visual generative AI is moving away from standard models to NeRF.",
+        "verdict": 58,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Did you know feeding raw spatial coordinates into an MLP causes the network to behave like a low-pass filter?",
+        "verdict": 53,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when feeding raw spatial coordinates into an MLP causes the network to behave like a low-pass filter?",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Generative video models struggle with temporal consistency, until NeRF stabilizes the latent space.",
+        "verdict": 36,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Feeding raw spatial coordinates into an MLP causes the network to behave like a low-pass filter.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Why is NeRF a major breakthrough? Because we present a method that achieves state-of-the-art results for synthesizing novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input views.",
+        "verdict": 33,
+        "band": "WEAK",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: We present a method that achieves state-of-the-art results for synthesizing novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input views.",
+        "verdict": 32,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Everyone thought standard methods were enough, until NeRF proved: our algorithm represents a scene using a fully-connected (non-convolutional) deep network, whose input is a single continuous 5D coordinate (spatial location (x,y,z) and viewing direction (theta, phi)) and whose output is the volume density and view-dependent emitted radiance at that spatial location.",
+        "verdict": 32,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Frequency-Encoded NeRF",
+        "model_a_score": "32.5dB",
+        "model_b_name": "Standard MLP NeRF",
+        "model_b_score": "24.1dB",
+        "delta_label": "\u26a1 +34.8% SHARPNESS GAIN"
+      }
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "qeGdWn3bY1Y",
+    "shorts_url": "https://youtube.com/shorts/qeGdWn3bY1Y",
+    "studio_url": "https://studio.youtube.com/video/qeGdWn3bY1Y/edit",
+    "title": "NeRF Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/nerf_frequency_encoding_poster.png",
+    "custom_thumbnail_set": true
+  }
+}

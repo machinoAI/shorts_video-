@@ -1,0 +1,1642 @@
+{
+  "id": "alphafold_evoformer_engine",
+  "title": "AlphaFold 2: The Evoformer Engine",
+  "category": "mechanism_deepdive",
+  "domain_taxonomy": "neural_attention",
+  "hook_tag": "EVOFORMER ARCHITECTURE BREAKDOWN",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Why do GPUs sit idle during LLM inference until AlphaFold 2 unlocks 92.4 throughput?",
+      "visual_focus": "A linear amino acid sequence suddenly warping into a complex 3D protein fold.",
+      "highlight_words": {
+        "flat text": "#EF4444",
+        "3D protein fold": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Protein Backbone",
+        "action_verb": "warps",
+        "direct_object": "3D folding manifold",
+        "anchor_word": "geometry",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "vector_flow_field",
+        "title": "DIMENSIONALITY COLLAPSE",
+        "sub": "Mapping sequence data to 3D spatial conformations",
+        "accent_color": "#38BDF8",
+        "params": {
+          "field_title": "Protein Folding Manifold",
+          "source_label": "1D Sequence",
+          "target_label": "3D Tertiary Structure",
+          "stream_formula": "S \\to R^3"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 70,
+      "hook_band": "STRONG",
+      "hook_formula": "The Question",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "vector_flow_field",
+        "title": "DIMENSIONALITY COLLAPSE",
+        "sub": "Mapping sequence data to 3D spatial conformations",
+        "accent_color": "#38BDF8",
+        "field_title": "Protein Folding Manifold",
+        "source_label": "1D Sequence",
+        "target_label": "3D Tertiary Structure",
+        "stream_formula": "S \\to R^3"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 6.44,
+      "duration": 6.44,
+      "word_timings": [
+        {
+          "word": "Why",
+          "clean_word": "why",
+          "phonemes": "w\u02c8a\u026a",
+          "start": 0.015,
+          "end": 0.205,
+          "duration": 0.19,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "do",
+          "clean_word": "do",
+          "phonemes": "d\u02c8u\u02d0",
+          "start": 0.205,
+          "end": 0.36,
+          "duration": 0.155,
+          "frame_ahead_trigger": 0.165
+        },
+        {
+          "word": "GPUs",
+          "clean_word": "gpus",
+          "phonemes": "d\u0292\u02cci\u02d0p\u02cci\u02d0j\u02c8u\u02d0",
+          "start": 0.36,
+          "end": 1.135,
+          "duration": 0.775,
+          "frame_ahead_trigger": 0.32
+        },
+        {
+          "word": "sit",
+          "clean_word": "sit",
+          "phonemes": "s\u02c8\u026at",
+          "start": 1.135,
+          "end": 1.355,
+          "duration": 0.22,
+          "frame_ahead_trigger": 1.095
+        },
+        {
+          "word": "idle",
+          "clean_word": "idle",
+          "phonemes": "\u02c8a\u026ad\u0259l",
+          "start": 1.355,
+          "end": 1.53,
+          "duration": 0.175,
+          "frame_ahead_trigger": 1.315
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 1.53,
+          "end": 2.01,
+          "duration": 0.48,
+          "frame_ahead_trigger": 1.49
+        },
+        {
+          "word": "LLM",
+          "clean_word": "llm",
+          "phonemes": "\u02cc\u025bl\u02cc\u025bl\u02c8\u025bm",
+          "start": 2.01,
+          "end": 2.405,
+          "duration": 0.395,
+          "frame_ahead_trigger": 1.97
+        },
+        {
+          "word": "inference",
+          "clean_word": "inference",
+          "phonemes": "\u02c8\u026anf\u025a\u0279\u0259ns",
+          "start": 2.405,
+          "end": 2.952,
+          "duration": 0.547,
+          "frame_ahead_trigger": 2.365
+        },
+        {
+          "word": "until",
+          "clean_word": "until",
+          "phonemes": "\u028cnt\u02c8\u026al",
+          "start": 2.952,
+          "end": 3.325,
+          "duration": 0.373,
+          "frame_ahead_trigger": 2.912
+        },
+        {
+          "word": "AlphaFold",
+          "clean_word": "alphafold",
+          "phonemes": "\u02c8\u00e6lf\u0259 f\u02c8o\u028ald",
+          "start": 3.325,
+          "end": 3.915,
+          "duration": 0.59,
+          "frame_ahead_trigger": 3.285
+        },
+        {
+          "word": "2",
+          "clean_word": "2",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 3.915,
+          "end": 4.22,
+          "duration": 0.305,
+          "frame_ahead_trigger": 3.875
+        },
+        {
+          "word": "unlocks",
+          "clean_word": "unlocks",
+          "phonemes": "\u028cnl\u02c8\u0251\u02d0ks",
+          "start": 4.22,
+          "end": 4.525,
+          "duration": 0.305,
+          "frame_ahead_trigger": 4.18
+        },
+        {
+          "word": "92.4",
+          "clean_word": "924",
+          "phonemes": "n\u02c8a\u026anh\u02c8\u028cnd\u0279\u026ad tw\u02c8\u025bnti f\u02c8\u0254\u02d0\u0279",
+          "start": 4.525,
+          "end": 6.02,
+          "duration": 1.495,
+          "frame_ahead_trigger": 4.485
+        },
+        {
+          "word": "throughput?",
+          "clean_word": "throughput",
+          "phonemes": "\u03b8\u0279\u02c8u\u02d0p\u028at",
+          "start": 6.02,
+          "end": 6.36,
+          "duration": 0.34,
+          "frame_ahead_trigger": 5.98
+        }
+      ],
+      "audio_duration": 6.44,
+      "slot_duration": 6.59
+    },
+    {
+      "beat_id": 2,
+      "text": "The bottleneck is the evolutionary co-variation: trying to reconcile hundreds of aligned species sequences while maintaining a coherent 2D map.",
+      "visual_focus": "A massive, flickering matrix representing sequence alignments, stuttering as it tries to reconcile with a 2D distance grid.",
+      "highlight_words": {
+        "co-variation": "#EF4444",
+        "2D map": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Attention Engine",
+        "action_verb": "reconciles",
+        "direct_object": "Alignment Matrix",
+        "anchor_word": "reconcile",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE ALIGNMENT BOTTLENECK",
+        "sub": "Reconciling sparse sequence data with dense residue interactions",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Multiple Sequence Alignment (MSA)",
+          "stream_b_label": "2D Pair Representation",
+          "barrier_label": "Latent Bottleneck",
+          "barrier_sub": "O(N^2) memory scaling"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE ALIGNMENT BOTTLENECK",
+        "sub": "Reconciling sparse sequence data with dense residue interactions",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Multiple Sequence Alignment (MSA)",
+        "stream_b_label": "2D Pair Representation",
+        "barrier_label": "Latent Bottleneck",
+        "barrier_sub": "O(N^2) memory scaling"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.59,
+      "end": 15.02,
+      "duration": 8.43,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 6.603,
+          "end": 6.678,
+          "duration": 0.075,
+          "frame_ahead_trigger": 6.713
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 6.678,
+          "end": 7.378,
+          "duration": 0.7,
+          "frame_ahead_trigger": 6.788
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 7.378,
+          "end": 7.508,
+          "duration": 0.13,
+          "frame_ahead_trigger": 7.488
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 7.508,
+          "end": 7.557,
+          "duration": 0.05,
+          "frame_ahead_trigger": 7.618
+        },
+        {
+          "word": "evolutionary",
+          "clean_word": "evolutionary",
+          "phonemes": "\u02cc\u025bv\u0259l\u02c8u\u02d0\u0283\u0259n\u02cc\u025b\u0279i",
+          "start": 7.557,
+          "end": 8.493,
+          "duration": 0.935,
+          "frame_ahead_trigger": 7.667
+        },
+        {
+          "word": "co-variation:",
+          "clean_word": "covariation",
+          "phonemes": "k\u02cc\u0251\u02d0v\u025b\u0279\u026a\u02c8e\u026a\u0283\u0259n",
+          "start": 8.493,
+          "end": 9.186,
+          "duration": 0.693,
+          "frame_ahead_trigger": 8.603
+        },
+        {
+          "word": "trying",
+          "clean_word": "trying",
+          "phonemes": "t\u0279\u02c8a\u026a\u026a\u014b",
+          "start": 9.186,
+          "end": 9.568,
+          "duration": 0.382,
+          "frame_ahead_trigger": 9.296
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 9.568,
+          "end": 9.818,
+          "duration": 0.25,
+          "frame_ahead_trigger": 9.678
+        },
+        {
+          "word": "reconcile",
+          "clean_word": "reconcile",
+          "phonemes": "\u0279\u02c8\u025bk\u0259ns\u02cca\u026al",
+          "start": 9.818,
+          "end": 10.253,
+          "duration": 0.435,
+          "frame_ahead_trigger": 9.928
+        },
+        {
+          "word": "hundreds",
+          "clean_word": "hundreds",
+          "phonemes": "h\u02c8\u028cnd\u0279\u026adz",
+          "start": 10.253,
+          "end": 10.878,
+          "duration": 0.625,
+          "frame_ahead_trigger": 10.363
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 10.878,
+          "end": 10.993,
+          "duration": 0.115,
+          "frame_ahead_trigger": 10.988
+        },
+        {
+          "word": "aligned",
+          "clean_word": "aligned",
+          "phonemes": "\u0250l\u02c8a\u026and",
+          "start": 10.993,
+          "end": 11.428,
+          "duration": 0.435,
+          "frame_ahead_trigger": 11.103
+        },
+        {
+          "word": "species",
+          "clean_word": "species",
+          "phonemes": "sp\u02c8i\u02d0si\u02d0z",
+          "start": 11.428,
+          "end": 11.898,
+          "duration": 0.47,
+          "frame_ahead_trigger": 11.538
+        },
+        {
+          "word": "sequences",
+          "clean_word": "sequences",
+          "phonemes": "s\u02c8i\u02d0kw\u0259ns\u1d7bz",
+          "start": 11.898,
+          "end": 12.523,
+          "duration": 0.625,
+          "frame_ahead_trigger": 12.008
+        },
+        {
+          "word": "while",
+          "clean_word": "while",
+          "phonemes": "w\u02c8a\u026al",
+          "start": 12.523,
+          "end": 12.838,
+          "duration": 0.315,
+          "frame_ahead_trigger": 12.633
+        },
+        {
+          "word": "maintaining",
+          "clean_word": "maintaining",
+          "phonemes": "me\u026ant\u02c8e\u026an\u026a\u014b",
+          "start": 12.838,
+          "end": 13.408,
+          "duration": 0.57,
+          "frame_ahead_trigger": 12.948
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 13.408,
+          "end": 13.513,
+          "duration": 0.105,
+          "frame_ahead_trigger": 13.518
+        },
+        {
+          "word": "coherent",
+          "clean_word": "coherent",
+          "phonemes": "ko\u028ah\u02c8\u026a\u0279\u0259nt",
+          "start": 13.513,
+          "end": 14.158,
+          "duration": 0.645,
+          "frame_ahead_trigger": 13.623
+        },
+        {
+          "word": "2D",
+          "clean_word": "2d",
+          "phonemes": "t\u02c8u\u02d0 d\u02c8i\u02d0",
+          "start": 14.158,
+          "end": 14.638,
+          "duration": 0.48,
+          "frame_ahead_trigger": 14.268
+        },
+        {
+          "word": "map.",
+          "clean_word": "map",
+          "phonemes": "m\u02c8\u00e6p",
+          "start": 14.638,
+          "end": 14.858,
+          "duration": 0.22,
+          "frame_ahead_trigger": 14.748
+        }
+      ],
+      "audio_duration": 8.43,
+      "slot_duration": 8.58
+    },
+    {
+      "beat_id": 3,
+      "text": "The Evoformer solves this by treating the sequence and the pair representation as two interacting, dual-stream attention channels.",
+      "visual_focus": "Two distinct streams splitting and cross-communicating via triangular attention updates.",
+      "highlight_words": {
+        "dual-stream": "#34D399",
+        "attention channels": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Evoformer Block",
+        "action_verb": "projects",
+        "direct_object": "Triangular Attention Updates",
+        "anchor_word": "dual-stream",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "chalkboard_code_block",
+        "title": "KERNEL CODE: ALPHAFOLD 2: THE E",
+        "sub": "Two distinct streams splitting and cross-communicating via triang",
+        "params": {
+          "title": "KERNEL CODE: ALPHAFOLD 2: THE E",
+          "sub": "Two distinct streams splitting and cross-communicating via triang",
+          "filename": "evoformer_block.py",
+          "language": "python",
+          "lines": [
+            "def forward(msa, pair):",
+            "msa = msa_attention(msa)",
+            "pair = triangular_update(pair)",
+            "return msa, pair"
+          ],
+          "highlight_lines": [
+            2,
+            3
+          ],
+          "trace_register": "\u26a1 GEOMETRIC ATTENTION KERNEL",
+          "delta_badge": "Dual-stream constraint propagation"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "chalkboard_code_block",
+      "kinetic_action": "pulse",
+      "motif_params": {
+        "title": "KERNEL CODE: ALPHAFOLD 2: THE E",
+        "sub": "Two distinct streams splitting and cross-communicating via triang",
+        "filename": "evoformer_block.py",
+        "language": "python",
+        "lines": [
+          "def forward(msa, pair):",
+          "msa = msa_attention(msa)",
+          "pair = triangular_update(pair)",
+          "return msa, pair"
+        ],
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "trace_register": "\u26a1 GEOMETRIC ATTENTION KERNEL",
+        "delta_badge": "Dual-stream constraint propagation"
+      },
+      "start": 15.17,
+      "end": 22.38,
+      "duration": 7.21,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 15.179,
+          "end": 15.334,
+          "duration": 0.155,
+          "frame_ahead_trigger": 15.439
+        },
+        {
+          "word": "Evoformer",
+          "clean_word": "evoformer",
+          "phonemes": "\u026av\u02c8\u0251\u02d0f\u0254\u02d0\u0279m\u025a",
+          "start": 15.334,
+          "end": 15.869,
+          "duration": 0.535,
+          "frame_ahead_trigger": 15.594
+        },
+        {
+          "word": "solves",
+          "clean_word": "solves",
+          "phonemes": "s\u02c8\u0251\u02d0lvz",
+          "start": 15.869,
+          "end": 16.469,
+          "duration": 0.6,
+          "frame_ahead_trigger": 16.129
+        },
+        {
+          "word": "this",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 16.469,
+          "end": 16.644,
+          "duration": 0.175,
+          "frame_ahead_trigger": 16.729
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 16.644,
+          "end": 16.824,
+          "duration": 0.18,
+          "frame_ahead_trigger": 16.904
+        },
+        {
+          "word": "treating",
+          "clean_word": "treating",
+          "phonemes": "t\u0279\u02c8i\u02d0\u027e\u026a\u014b",
+          "start": 16.824,
+          "end": 17.254,
+          "duration": 0.43,
+          "frame_ahead_trigger": 17.084
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 17.254,
+          "end": 17.464,
+          "duration": 0.21,
+          "frame_ahead_trigger": 17.514
+        },
+        {
+          "word": "sequence",
+          "clean_word": "sequence",
+          "phonemes": "s\u02c8i\u02d0kw\u0259ns",
+          "start": 17.464,
+          "end": 18.019,
+          "duration": 0.555,
+          "frame_ahead_trigger": 17.724
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 18.019,
+          "end": 18.259,
+          "duration": 0.24,
+          "frame_ahead_trigger": 18.279
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 18.259,
+          "end": 18.262,
+          "duration": 0.003,
+          "frame_ahead_trigger": 18.519
+        },
+        {
+          "word": "pair",
+          "clean_word": "pair",
+          "phonemes": "p\u02c8\u025b\u0279",
+          "start": 18.262,
+          "end": 18.519,
+          "duration": 0.257,
+          "frame_ahead_trigger": 18.523
+        },
+        {
+          "word": "representation",
+          "clean_word": "representation",
+          "phonemes": "\u0279\u02cc\u025bp\u0279\u1d7bz\u02c8\u025bnt\u02c8e\u026a\u0283\u0259n",
+          "start": 18.519,
+          "end": 19.589,
+          "duration": 1.07,
+          "frame_ahead_trigger": 18.779
+        },
+        {
+          "word": "as",
+          "clean_word": "as",
+          "phonemes": "\u00e6z",
+          "start": 19.589,
+          "end": 19.626,
+          "duration": 0.037,
+          "frame_ahead_trigger": 19.849
+        },
+        {
+          "word": "two",
+          "clean_word": "two",
+          "phonemes": "t\u02c8u\u02d0",
+          "start": 19.626,
+          "end": 19.854,
+          "duration": 0.228,
+          "frame_ahead_trigger": 19.886
+        },
+        {
+          "word": "interacting,",
+          "clean_word": "interacting",
+          "phonemes": "\u02cc\u026ant\u025a\u0279\u02c8\u00e6kt\u026a\u014b",
+          "start": 19.854,
+          "end": 20.669,
+          "duration": 0.815,
+          "frame_ahead_trigger": 20.114
+        },
+        {
+          "word": "dual-stream",
+          "clean_word": "dualstream",
+          "phonemes": "d\u02c8u\u02d0\u0250lst\u0279\u02cci\u02d0m",
+          "start": 20.669,
+          "end": 21.399,
+          "duration": 0.73,
+          "frame_ahead_trigger": 20.929
+        },
+        {
+          "word": "attention",
+          "clean_word": "attention",
+          "phonemes": "\u0250t\u02c8\u025bn\u0283\u0259n",
+          "start": 21.399,
+          "end": 21.789,
+          "duration": 0.39,
+          "frame_ahead_trigger": 21.659
+        },
+        {
+          "word": "channels.",
+          "clean_word": "channels",
+          "phonemes": "t\u0283\u02c8\u00e6n\u0259lz",
+          "start": 21.789,
+          "end": 22.294,
+          "duration": 0.505,
+          "frame_ahead_trigger": 22.049
+        }
+      ],
+      "audio_duration": 7.21,
+      "slot_duration": 7.36
+    },
+    {
+      "beat_id": 4,
+      "text": "It uses Triangle Multiplicative Updates to force spatial consistency, ensuring that the 2D distances respect triangle inequality constraints.",
+      "visual_focus": "A geometric constraint being applied to a grid where distance indices are forced to align correctly.",
+      "highlight_words": {
+        "Triangle Multiplicative": "#F59E0B",
+        "triangle inequality": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Geometric Kernel",
+        "action_verb": "enforces",
+        "direct_object": "Triangle Inequality Constraint",
+        "anchor_word": "enforcing",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "attention_prism_refraction",
+        "title": "TRIANGULAR CONSISTENCY",
+        "sub": "Geometric constraint injection into attention weights",
+        "accent_color": "#F59E0B",
+        "params": {
+          "token_label": "Triadic Edge (i, j, k)",
+          "matrix_title": "Geometric Pair Constraint Matrix"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "attention_prism_refraction",
+        "title": "TRIANGULAR CONSISTENCY",
+        "sub": "Geometric constraint injection into attention weights",
+        "accent_color": "#F59E0B",
+        "token_label": "Triadic Edge (i, j, k)",
+        "matrix_title": "Geometric Pair Constraint Matrix"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 22.53,
+      "end": 31.08,
+      "duration": 8.55,
+      "word_timings": [
+        {
+          "word": "It",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 22.54,
+          "end": 22.605,
+          "duration": 0.065,
+          "frame_ahead_trigger": 22.95
+        },
+        {
+          "word": "uses",
+          "clean_word": "uses",
+          "phonemes": "j\u02c8u\u02d0s\u1d7bz",
+          "start": 22.605,
+          "end": 22.94,
+          "duration": 0.335,
+          "frame_ahead_trigger": 23.015
+        },
+        {
+          "word": "Triangle",
+          "clean_word": "triangle",
+          "phonemes": "t\u0279\u02c8a\u026a\u00e6\u014b\u0261\u0259l",
+          "start": 22.94,
+          "end": 23.695,
+          "duration": 0.755,
+          "frame_ahead_trigger": 23.35
+        },
+        {
+          "word": "Multiplicative",
+          "clean_word": "multiplicative",
+          "phonemes": "m\u02cc\u028clt\u026apl\u02c8\u026ak\u0259t\u02cc\u026av",
+          "start": 23.695,
+          "end": 24.595,
+          "duration": 0.9,
+          "frame_ahead_trigger": 24.105
+        },
+        {
+          "word": "Updates",
+          "clean_word": "updates",
+          "phonemes": "\u02c8\u028cpde\u026ats",
+          "start": 24.595,
+          "end": 25.04,
+          "duration": 0.445,
+          "frame_ahead_trigger": 25.005
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 25.04,
+          "end": 25.17,
+          "duration": 0.13,
+          "frame_ahead_trigger": 25.45
+        },
+        {
+          "word": "force",
+          "clean_word": "force",
+          "phonemes": "f\u02c8\u0254\u02d0\u0279s",
+          "start": 25.17,
+          "end": 25.51,
+          "duration": 0.34,
+          "frame_ahead_trigger": 25.58
+        },
+        {
+          "word": "spatial",
+          "clean_word": "spatial",
+          "phonemes": "sp\u02c8e\u026a\u0283\u0259l",
+          "start": 25.51,
+          "end": 25.9,
+          "duration": 0.39,
+          "frame_ahead_trigger": 25.92
+        },
+        {
+          "word": "consistency,",
+          "clean_word": "consistency",
+          "phonemes": "k\u0259ns\u02c8\u026ast\u0259nsi",
+          "start": 25.9,
+          "end": 26.67,
+          "duration": 0.77,
+          "frame_ahead_trigger": 26.31
+        },
+        {
+          "word": "ensuring",
+          "clean_word": "ensuring",
+          "phonemes": "\u025bn\u0283\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 26.67,
+          "end": 27.205,
+          "duration": 0.535,
+          "frame_ahead_trigger": 27.08
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 27.205,
+          "end": 27.455,
+          "duration": 0.25,
+          "frame_ahead_trigger": 27.615
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 27.455,
+          "end": 27.513,
+          "duration": 0.058,
+          "frame_ahead_trigger": 27.865
+        },
+        {
+          "word": "2D",
+          "clean_word": "2d",
+          "phonemes": "t\u02c8u\u02d0 d\u02c8i\u02d0",
+          "start": 27.513,
+          "end": 28.045,
+          "duration": 0.532,
+          "frame_ahead_trigger": 27.923
+        },
+        {
+          "word": "distances",
+          "clean_word": "distances",
+          "phonemes": "d\u02c8\u026ast\u0259ns\u1d7bz",
+          "start": 28.045,
+          "end": 28.599,
+          "duration": 0.554,
+          "frame_ahead_trigger": 28.455
+        },
+        {
+          "word": "respect",
+          "clean_word": "respect",
+          "phonemes": "\u0279\u1d7bsp\u02c8\u025bkt",
+          "start": 28.599,
+          "end": 29.115,
+          "duration": 0.516,
+          "frame_ahead_trigger": 29.009
+        },
+        {
+          "word": "triangle",
+          "clean_word": "triangle",
+          "phonemes": "t\u0279\u02c8a\u026a\u00e6\u014b\u0261\u0259l",
+          "start": 29.115,
+          "end": 29.66,
+          "duration": 0.545,
+          "frame_ahead_trigger": 29.525
+        },
+        {
+          "word": "inequality",
+          "clean_word": "inequality",
+          "phonemes": "\u026ani\u02d0kw\u02c8\u0254l\u1d7b\u027ei",
+          "start": 29.66,
+          "end": 30.29,
+          "duration": 0.63,
+          "frame_ahead_trigger": 30.07
+        },
+        {
+          "word": "constraints.",
+          "clean_word": "constraints",
+          "phonemes": "k\u0259nst\u0279\u02c8e\u026ants",
+          "start": 30.29,
+          "end": 31.0,
+          "duration": 0.71,
+          "frame_ahead_trigger": 30.7
+        }
+      ],
+      "audio_duration": 8.55,
+      "slot_duration": 8.7
+    },
+    {
+      "beat_id": 5,
+      "text": "This leads to unprecedented structural accuracy, effectively outperforming older physics-based simulations by an order of magnitude.",
+      "visual_focus": "Race bars comparing Fold accuracy against legacy simulation benchmarks.",
+      "highlight_words": {
+        "unprecedented structural accuracy": "#34D399"
+      },
+      "svo_action": {
+        "subject": "AlphaFold 2",
+        "action_verb": "crushes",
+        "direct_object": "Legacy Simulation Benchmarks",
+        "anchor_word": "outperforming",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "horizontal_race_bars",
+        "title": "BENCHMARK SHOWDOWN: PROTEIN FOLDING",
+        "sub": "Race bars comparing Fold accuracy against legacy",
+        "params": {
+          "title": "BENCHMARK SHOWDOWN: PROTEIN FOLDING",
+          "sub": "Race bars comparing Fold accuracy against legacy",
+          "metric_name": "GDT_TS Accuracy",
+          "unit": "%",
+          "contestants": [
+            {
+              "name": "AlphaFold 2",
+              "value": 92.4,
+              "display_val": "92.4%",
+              "is_hero": true,
+              "color": "#10B981"
+            },
+            {
+              "name": "Physics Simulation",
+              "value": 45.2,
+              "display_val": "45.2%",
+              "is_hero": false,
+              "color": "#38BDF8"
+            }
+          ],
+          "delta_badge": "\u26a1 +104% ACCURACY GAIN"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "motif_type": "horizontal_race_bars",
+      "kinetic_action": "bar_fill",
+      "motif_params": {
+        "title": "BENCHMARK SHOWDOWN: PROTEIN FOLDING",
+        "sub": "Race bars comparing Fold accuracy against legacy",
+        "metric_name": "GDT_TS Accuracy",
+        "unit": "%",
+        "contestants": [
+          {
+            "name": "AlphaFold 2",
+            "value": 92.4,
+            "display_val": "92.4%",
+            "is_hero": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "Physics Simulation",
+            "value": 45.2,
+            "display_val": "45.2%",
+            "is_hero": false,
+            "color": "#38BDF8"
+          }
+        ],
+        "delta_badge": "\u26a1 +104% ACCURACY GAIN"
+      },
+      "start": 31.23,
+      "end": 38.77,
+      "duration": 7.53,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 31.25,
+          "end": 31.385,
+          "duration": 0.135,
+          "frame_ahead_trigger": 31.81
+        },
+        {
+          "word": "leads",
+          "clean_word": "leads",
+          "phonemes": "l\u02c8i\u02d0dz",
+          "start": 31.385,
+          "end": 31.71,
+          "duration": 0.325,
+          "frame_ahead_trigger": 31.945
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 31.71,
+          "end": 32.0,
+          "duration": 0.29,
+          "frame_ahead_trigger": 32.27
+        },
+        {
+          "word": "unprecedented",
+          "clean_word": "unprecedented",
+          "phonemes": "\u028cnp\u0279\u02c8\u025bs\u1d7bd\u0259nt\u1d7bd",
+          "start": 32.0,
+          "end": 32.86,
+          "duration": 0.86,
+          "frame_ahead_trigger": 32.56
+        },
+        {
+          "word": "structural",
+          "clean_word": "structural",
+          "phonemes": "st\u0279\u02c8\u028ckt\u0283\u025a\u0279\u0259l",
+          "start": 32.86,
+          "end": 33.515,
+          "duration": 0.655,
+          "frame_ahead_trigger": 33.42
+        },
+        {
+          "word": "accuracy,",
+          "clean_word": "accuracy",
+          "phonemes": "\u02c8\u00e6kj\u028a\u0279\u0259si",
+          "start": 33.515,
+          "end": 33.986,
+          "duration": 0.472,
+          "frame_ahead_trigger": 34.075
+        },
+        {
+          "word": "effectively",
+          "clean_word": "effectively",
+          "phonemes": "\u026af\u02c8\u025bkt\u026avli",
+          "start": 33.986,
+          "end": 34.535,
+          "duration": 0.548,
+          "frame_ahead_trigger": 34.546
+        },
+        {
+          "word": "outperforming",
+          "clean_word": "outperforming",
+          "phonemes": "a\u028atp\u025af\u02c8\u0254\u02d0\u0279m\u026a\u014b",
+          "start": 34.535,
+          "end": 35.215,
+          "duration": 0.68,
+          "frame_ahead_trigger": 35.095
+        },
+        {
+          "word": "older",
+          "clean_word": "older",
+          "phonemes": "\u02c8o\u028ald\u025a",
+          "start": 35.215,
+          "end": 35.605,
+          "duration": 0.39,
+          "frame_ahead_trigger": 35.775
+        },
+        {
+          "word": "physics-based",
+          "clean_word": "physicsbased",
+          "phonemes": "f\u02c8\u026az\u026aksb\u02cce\u026ast",
+          "start": 35.605,
+          "end": 36.35,
+          "duration": 0.745,
+          "frame_ahead_trigger": 36.165
+        },
+        {
+          "word": "simulations",
+          "clean_word": "simulations",
+          "phonemes": "s\u02cc\u026amj\u028al\u02c8e\u026a\u0283\u0259nz",
+          "start": 36.35,
+          "end": 37.145,
+          "duration": 0.795,
+          "frame_ahead_trigger": 36.91
+        },
+        {
+          "word": "by",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 37.145,
+          "end": 37.455,
+          "duration": 0.31,
+          "frame_ahead_trigger": 37.705
+        },
+        {
+          "word": "an",
+          "clean_word": "an",
+          "phonemes": "\u00e6n",
+          "start": 37.455,
+          "end": 37.58,
+          "duration": 0.125,
+          "frame_ahead_trigger": 38.015
+        },
+        {
+          "word": "order",
+          "clean_word": "order",
+          "phonemes": "\u02c8\u0254\u02d0\u0279d\u025a",
+          "start": 37.58,
+          "end": 37.93,
+          "duration": 0.35,
+          "frame_ahead_trigger": 38.14
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 37.93,
+          "end": 37.977,
+          "duration": 0.048,
+          "frame_ahead_trigger": 38.49
+        },
+        {
+          "word": "magnitude.",
+          "clean_word": "magnitude",
+          "phonemes": "m\u02c8\u00e6\u0261n\u026at\u02ccu\u02d0d",
+          "start": 37.977,
+          "end": 38.605,
+          "duration": 0.627,
+          "frame_ahead_trigger": 38.537
+        }
+      ],
+      "audio_duration": 7.53,
+      "slot_duration": 7.69
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for the deep-dives into how we bridge the gap between abstract sequences and physical reality.",
+      "visual_focus": "The protein fold slowly rotating and resolving into a clear 3D structure.",
+      "highlight_words": {
+        "machinoAI": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Viewer",
+        "action_verb": "follows",
+        "direct_object": "machinoAI deep-dives",
+        "anchor_word": "Follow",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "layer_stack",
+        "title": "THE FOLDING CONTINUUM",
+        "sub": "Looping architecture insights",
+        "accent_color": "#FFFFFF",
+        "params": {
+          "bottom_layer": "Sequence Data",
+          "mid_layer": "Evoformer Latents",
+          "top_layer": "3D Structure"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 38.92,
+      "end": 45.46,
+      "duration": 6.55,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 38.93,
+          "end": 39.35,
+          "duration": 0.42,
+          "frame_ahead_trigger": 39.64
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 39.35,
+          "end": 40.365,
+          "duration": 1.015,
+          "frame_ahead_trigger": 40.06
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 40.365,
+          "end": 40.48,
+          "duration": 0.115,
+          "frame_ahead_trigger": 41.075
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 40.48,
+          "end": 40.6,
+          "duration": 0.12,
+          "frame_ahead_trigger": 41.19
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 40.6,
+          "end": 41.13,
+          "duration": 0.53,
+          "frame_ahead_trigger": 41.31
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 41.13,
+          "end": 41.48,
+          "duration": 0.35,
+          "frame_ahead_trigger": 41.84
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 41.48,
+          "end": 41.675,
+          "duration": 0.195,
+          "frame_ahead_trigger": 42.19
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 41.675,
+          "end": 41.84,
+          "duration": 0.165,
+          "frame_ahead_trigger": 42.385
+        },
+        {
+          "word": "bridge",
+          "clean_word": "bridge",
+          "phonemes": "b\u0279\u02c8\u026ad\u0292",
+          "start": 41.84,
+          "end": 42.28,
+          "duration": 0.44,
+          "frame_ahead_trigger": 42.55
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 42.28,
+          "end": 42.4,
+          "duration": 0.12,
+          "frame_ahead_trigger": 42.99
+        },
+        {
+          "word": "gap",
+          "clean_word": "gap",
+          "phonemes": "\u0261\u02c8\u00e6p",
+          "start": 42.4,
+          "end": 42.576,
+          "duration": 0.176,
+          "frame_ahead_trigger": 43.11
+        },
+        {
+          "word": "between",
+          "clean_word": "between",
+          "phonemes": "b\u1d7btw\u02c8i\u02d0n",
+          "start": 42.576,
+          "end": 43.06,
+          "duration": 0.484,
+          "frame_ahead_trigger": 43.286
+        },
+        {
+          "word": "abstract",
+          "clean_word": "abstract",
+          "phonemes": "\u02c8\u00e6bst\u0279\u00e6kt",
+          "start": 43.06,
+          "end": 43.53,
+          "duration": 0.47,
+          "frame_ahead_trigger": 43.77
+        },
+        {
+          "word": "sequences",
+          "clean_word": "sequences",
+          "phonemes": "s\u02c8i\u02d0kw\u0259ns\u1d7bz",
+          "start": 43.53,
+          "end": 44.155,
+          "duration": 0.625,
+          "frame_ahead_trigger": 44.24
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 44.155,
+          "end": 44.36,
+          "duration": 0.205,
+          "frame_ahead_trigger": 44.865
+        },
+        {
+          "word": "physical",
+          "clean_word": "physical",
+          "phonemes": "f\u02c8\u026az\u026ak\u0259l",
+          "start": 44.36,
+          "end": 44.885,
+          "duration": 0.525,
+          "frame_ahead_trigger": 45.07
+        },
+        {
+          "word": "reality.",
+          "clean_word": "reality",
+          "phonemes": "\u0279\u026a\u02c8\u00e6l\u1d7b\u027ei",
+          "start": 44.885,
+          "end": 45.34,
+          "duration": 0.455,
+          "frame_ahead_trigger": 45.595
+        }
+      ],
+      "audio_duration": 6.55,
+      "slot_duration": 6.54
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$d_{\\mathrm{seq}} = N \\implies d_{\\mathrm{pos}} = N \\times N$",
+      "filename": "alphafold_evoformer_engine_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "N",
+          "label": "Sequence Length"
+        },
+        {
+          "term": "N \\times N",
+          "label": "Pair Matrix Dimensions"
+        }
+      ],
+      "svg_filename": "alphafold_evoformer_engine_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(N_{msa}^2 + N^2)$",
+      "filename": "alphafold_evoformer_engine_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "N_{msa}",
+          "label": "MSA depth"
+        },
+        {
+          "term": "N^2",
+          "label": "Pair Attention cost"
+        }
+      ],
+      "svg_filename": "alphafold_evoformer_engine_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathbf{X}_{t+1} = \\mathrm{Update}(\\mathbf{MSA}_t, \\mathbf{Pair}_t)$",
+      "filename": "alphafold_evoformer_engine_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\mathbf{MSA}_t",
+          "label": "Evoformer MSA State"
+        },
+        {
+          "term": "\\mathbf{Pair}_t",
+          "label": "Distance Map State"
+        }
+      ],
+      "svg_filename": "alphafold_evoformer_engine_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathbf{P}_{ik} = \\sum_{j} \\mathrm{soft}(\\mathbf{P}_{ij}) + \\mathrm{soft}(\\mathbf{P}_{jk})$",
+      "filename": "alphafold_evoformer_engine_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "\\mathbf{P}_{ij}",
+          "label": "Edge potential"
+        },
+        {
+          "term": "soft",
+          "label": "Triangle gating"
+        }
+      ],
+      "svg_filename": "alphafold_evoformer_engine_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{GDT}_{AF2} = 92.4, \\mathrm{GDT}_{Sim} = 45.2$",
+      "filename": "alphafold_evoformer_engine_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "GDT",
+          "label": "Global Distance Test"
+        }
+      ],
+      "svg_filename": "alphafold_evoformer_engine_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "attention_flow",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "MSA_STREAM",
+          "color": "#38BDF8",
+          "items": [
+            "Evolution",
+            "Co-variance",
+            "Species"
+          ]
+        },
+        {
+          "name": "PAIR_STREAM",
+          "color": "#10B981",
+          "items": [
+            "Distances",
+            "Contact",
+            "Geometry"
+          ]
+        },
+        {
+          "name": "EVALUATION",
+          "color": "#F59E0B",
+          "items": [
+            "GDT",
+            "Folding",
+            "Physics"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Residue\"",
+        "target_cluster": "MSA_STREAM",
+        "token": "\"Residue\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'MSA'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'Pair'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "AlphaFold 2",
+    "model_a_specs": [
+      "MSA Attention",
+      "Triangular Updates",
+      "2D Matrix Encoding"
+    ],
+    "model_b": "Physics Simulation",
+    "model_b_specs": [
+      "Molecular Dynamics",
+      "Energy Minimization",
+      "Time-Stepping"
+    ],
+    "divide_title": "MODEL VS SIMULATION DIVIDE",
+    "model_a_stat": "92.4",
+    "model_a_stat_label": "GDT Accuracy",
+    "model_b_stat": "45.2",
+    "model_b_stat_label": "GDT Accuracy",
+    "efficiency_badge": "\u26a1 +104% ACCURACY GAIN",
+    "benchmarks": [
+      {
+        "name": "CASP14",
+        "score_a": "92.4",
+        "score_b": "45.2"
+      },
+      {
+        "name": "Compute",
+        "score_a": "Fast",
+        "score_b": "Slow"
+      },
+      {
+        "name": "Reliability",
+        "score_a": "High",
+        "score_b": "Low"
+      }
+    ],
+    "scale_metric": "92.4",
+    "scale_label": "Average GDT Score",
+    "bottleneck_title": "EVOLUTIONARY BOTTLENECK",
+    "bottleneck_desc": "Entangled sequence co-variation",
+    "solution_title": "TRIANGULAR ATTENTION",
+    "solution_components": "Evoformer Architecture",
+    "mechanism_title": "GEOMETRIC CONSTRAINT INJECTION",
+    "payoff_stat": "92.4",
+    "payoff_label": "STRUCTURAL RECONSTRUCTION",
+    "payoff_sub": "Outperforming physical simulations",
+    "payoff_hero_stat": 92.4,
+    "payoff_hero_label": "AlphaFold 2",
+    "payoff_base_stat": 45.2,
+    "payoff_base_label": "Physics Simulation",
+    "payoff_delta_badge": "\u26a1 +104% ACCURACY GAIN",
+    "challenger": "AlphaFold 2",
+    "incumbent": "Physics Simulation"
+  },
+  "benchmark_comparison": {
+    "title": "BENCHMARK SHOWDOWN: PROTEIN FOLDING",
+    "metric_name": "GDT_TS Accuracy",
+    "unit": "%",
+    "contestants": [
+      {
+        "name": "AlphaFold 2",
+        "value": 92.4,
+        "display_val": "92.4%",
+        "is_hero": true,
+        "color": "#10B981"
+      },
+      {
+        "name": "Physics Simulation",
+        "value": 45.2,
+        "display_val": "45.2%",
+        "is_hero": false,
+        "color": "#38BDF8"
+      }
+    ],
+    "delta_badge": "\u26a1 +104% ACCURACY GAIN",
+    "radar_axes": [
+      "Accuracy",
+      "Speed",
+      "Energy Efficiency",
+      "Generalization",
+      "Robustness"
+    ]
+  },
+  "code_snippet": {
+    "filename": "evoformer_block.py",
+    "language": "python",
+    "lines": [
+      "def forward(msa, pair):",
+      "msa = msa_attention(msa)",
+      "pair = triangular_update(pair)",
+      "return msa, pair"
+    ],
+    "highlight_lines": [
+      2,
+      3
+    ],
+    "trace_register": "\u26a1 GEOMETRIC ATTENTION KERNEL",
+    "explanation": "Dual-stream constraint propagation"
+  },
+  "arxiv_id": "alphafold2_nature_2021",
+  "hook_gating": {
+    "selected_hook": "Why do GPUs sit idle during LLM inference until AlphaFold 2 unlocks 92.4 throughput?",
+    "verdict": 70,
+    "band": "STRONG",
+    "formula": "The Question",
+    "properties": {
+      "SPECIFICITY": 96,
+      "ADDRESS": 70,
+      "STAKES": 55,
+      "CURIOSITY": 76,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "candidates_evaluated": 11,
+    "kept_bespoke": false,
+    "rankings": [
+      {
+        "hook": "Why do GPUs sit idle during LLM inference until AlphaFold 2 unlocks 92.4 throughput?",
+        "verdict": 70,
+        "band": "STRONG",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Everyone assumed standard attention was optimal, until AlphaFold 2 proved a 92.4 leap.",
+        "verdict": 66,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Standard transformer architectures hit an invisible memory wall that AlphaFold 2 finally breaks.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "What happens when your model's memory footprint explodes? AlphaFold 2 reveals the solution.",
+        "verdict": 64,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Why is AlphaFold 2 a major breakthrough? Because how the Evoformer processes evolutionary co-variation across species while updating 2D residue-residue distance matrices in tandem.",
+        "verdict": 63,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Standard systems hit an invisible wall right here: How the Evoformer processes evolutionary co-variation across species while updating 2D residue-residue distance matrices in tandem.",
+        "verdict": 56,
+        "band": "WORKABLE",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "How the Evoformer processes evolutionary co-variation across species while updating 2D residue-residue distance matrices in tandem.",
+        "verdict": 55,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Did you know treating proteins as flat text sequences blinds models to the hidden, multi-dimensional geometry of life?",
+        "verdict": 53,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "What happens when treating proteins as flat text sequences blinds models to the hidden, multi-dimensional geometry of life?",
+        "verdict": 52,
+        "band": "WORKABLE",
+        "formula": "The Question"
+      },
+      {
+        "hook": "Researchers just demonstrated an impressive 92.4 speedup using AlphaFold 2.",
+        "verdict": 41,
+        "band": "WEAK",
+        "formula": "Unclassified"
+      },
+      {
+        "hook": "Treating proteins as flat text sequences blinds models to the hidden, multi-dimensional geometry of life.",
+        "verdict": 34,
+        "band": "WEAK",
+        "formula": "The Insider"
+      }
+    ]
+  },
+  "entity_registry": [
+    {
+      "entity_id": "attention_grid",
+      "entity_type": "attention_grid",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {}
+    }
+  ],
+  "script_driven_visuals": true,
+  "youtube_upload": {
+    "video_id": "VqEWE51S9H8",
+    "shorts_url": "https://youtube.com/shorts/VqEWE51S9H8",
+    "studio_url": "https://studio.youtube.com/video/VqEWE51S9H8/edit",
+    "title": "AlphaFold 2 Explained #Shorts",
+    "poster_path": "/home/runner/work/shorts_video-/shorts_video-/public/thumbnails/alphafold_evoformer_engine_poster.png",
+    "custom_thumbnail_set": true
+  }
+}
