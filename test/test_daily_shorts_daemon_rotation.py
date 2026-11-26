@@ -28,11 +28,15 @@ from pipeline.daily_shorts_daemon import (
     parse_iso_datetime,
     classify_history_entry_pillar,
     get_content_rotation_order,
+    get_content_format_rotation_order,
+    CONTENT_FORMAT_PROFILES,
     fetch_candidates_for_pillar,
     evaluate_pedagogical_viability,
     SLOT_SCHEDULE
 )
 from pipeline.batch_digest import load_history, record_paper_production
+
+REFERENCE_DATE = datetime.date(2026, 10, 11)
 
 
 @pytest.fixture(autouse=True)
@@ -175,6 +179,26 @@ def test_rotation_order_empty_history():
     order = get_content_rotation_order({"processed_papers": {}})
     # Starts with canonical cycle: arxiv -> blogs -> perks
     assert order == ["arxiv", "blogs", "perks"]
+
+
+def test_creative_format_rotation_prioritizes_unseen_formats():
+    """Mixed production must rotate creative treatment independently of source."""
+    order = get_content_format_rotation_order({"processed_papers": {}})
+    assert order == list(CONTENT_FORMAT_PROFILES)
+
+
+def test_creative_format_rotation_moves_recent_format_to_the_back():
+    history = {
+        "processed_papers": {
+            "recent": {
+                "content_format": "character_analogy",
+                "produced_at": "2026-10-10T16:00:00+00:00",
+            }
+        }
+    }
+    order = get_content_format_rotation_order(history)
+    assert order[0] == "tool_reaction"
+    assert order[-1] == "character_analogy"
 
 
 def test_rotation_order_when_only_arxiv_in_history():
@@ -361,6 +385,22 @@ def test_daemon_run_daily_cycle_mixed_count_1(monkeypatch):
     assert report["status"] == "dry_run_success"
 
 
+def test_daemon_queue_exhaustion_falls_back_to_mixed(monkeypatch, tmp_path):
+    """An exhausted default queue must not fail a scheduled quota run."""
+    monkeypatch.setattr("pipeline.daily_shorts_daemon.TOPIC_QUEUE_FILE", tmp_path / "topic_queue.json")
+    monkeypatch.setattr("pipeline.daily_shorts_daemon.TOPIC_QUEUE_ARCHIVE_FILE", tmp_path / "topic_queue_archive.json")
+    (tmp_path / "topic_queue.json").write_text(json.dumps([{"id": "old", "status": "completed"}]))
+    (tmp_path / "topic_queue_archive.json").write_text("[]")
+    monkeypatch.setattr("pipeline.daily_shorts_daemon.load_history", lambda: {"processed_papers": {}})
+    monkeypatch.setattr("pipeline.script_generator.generate_script", _mock_generated_script)
+    monkeypatch.setenv("GEMINI_API_KEY", "")
+
+    result = DailyShortsDaemon().run_daily_cycle(count=1, dry_run=True, source="queue")
+
+    assert len(result) == 1
+    assert result[0]["source"] in {"arxiv", "blogs", "perks"}
+
+
 def test_daemon_run_daily_cycle_mixed_count_3_balances_all_three_pillars(monkeypatch):
     """
     Validates that a multi-reel batch (count=3) under source='mixed'
@@ -432,13 +472,36 @@ def test_daemon_run_daily_cycle_fallback_when_pillar_exhausted(monkeypatch):
     monkeypatch.setattr("pipeline.script_generator.generate_script", _mock_generated_script)
     monkeypatch.setenv("GEMINI_API_KEY", "")
 
+    # Use a fixed history snapshot so the expected rotation is independent of
+    # whatever the local daemon has produced in a previous run.
+    fixed_history = {
+        "processed_papers": {
+            "2610.11287": {
+                "title": "Arxiv Paper",
+                "category": "mechanism_deepdive",
+                "source": "arxiv",
+                "produced_at": "2026-10-10T14:00:00+00:00",
+                "status": "completed",
+            }
+        }
+    }
+    monkeypatch.setattr(
+        "pipeline.daily_shorts_daemon.load_history",
+        lambda: json.loads(json.dumps(fixed_history)),
+    )
+
     # Mock fetch_candidates_for_pillar so 'blogs' has 0 candidates
     real_fetch = fetch_candidates_for_pillar
 
-    def mock_fetch(pillar, limit=10, history=None):
+    def mock_fetch(pillar, limit=10, history=None, reference_date=None):
         if pillar == "blogs":
             return []
-        return real_fetch(pillar, limit=limit, history=history)
+        return real_fetch(
+            pillar,
+            limit=limit,
+            history=history,
+            reference_date=reference_date,
+        )
 
     monkeypatch.setattr("pipeline.daily_shorts_daemon.fetch_candidates_for_pillar", mock_fetch)
     mock_hist = {
@@ -454,7 +517,8 @@ def test_daemon_run_daily_cycle_fallback_when_pillar_exhausted(monkeypatch):
     res = daemon.run_daily_cycle(
         count=1,
         dry_run=True,
-        source="mixed"
+        source="mixed",
+        reference_date=REFERENCE_DATE,
     )
 
     assert len(res) == 1
@@ -467,21 +531,40 @@ def test_daemon_run_daily_cycle_explicit_sources(monkeypatch):
     """Validates that explicit source arguments override rotation and restrict discovery."""
     monkeypatch.setattr("pipeline.script_generator.generate_script", _mock_generated_script)
     monkeypatch.setenv("GEMINI_API_KEY", "")
+    monkeypatch.setattr(
+        "pipeline.daily_shorts_daemon.load_history",
+        lambda: {"processed_papers": {}},
+    )
 
     daemon = DailyShortsDaemon()
 
     # Explicit blogs
-    res_b = daemon.run_daily_cycle(count=1, dry_run=True, source="blogs")
+    res_b = daemon.run_daily_cycle(
+        count=1,
+        dry_run=True,
+        source="blogs",
+        reference_date=REFERENCE_DATE,
+    )
     assert len(res_b) == 1
     assert res_b[0]["source"] == "blogs"
 
     # Explicit perks
-    res_p = daemon.run_daily_cycle(count=1, dry_run=True, source="perks")
+    res_p = daemon.run_daily_cycle(
+        count=1,
+        dry_run=True,
+        source="perks",
+        reference_date=REFERENCE_DATE,
+    )
     assert len(res_p) == 1
     assert res_p[0]["source"] == "perks"
 
     # Explicit arxiv
-    res_a = daemon.run_daily_cycle(count=1, dry_run=True, source="arxiv")
+    res_a = daemon.run_daily_cycle(
+        count=1,
+        dry_run=True,
+        source="arxiv",
+        reference_date=REFERENCE_DATE,
+    )
     assert len(res_a) == 1
     assert res_a[0]["source"] == "arxiv"
 

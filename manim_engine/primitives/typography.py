@@ -15,7 +15,13 @@ sys.path.append(str(PROJECT_ROOT))
 from pipeline.config import FONT_HELVETICA
 
 
-from manim_engine.primitives.text_utils import trim_words  # noqa: F401 (re-export)
+def word_safe_truncate(text: str, max_chars: int) -> str:
+    """Shorten labels without cutting a word in half."""
+    value = " ".join(str(text or "").split())
+    if len(value) <= max_chars:
+        return value
+    clipped = value[: max_chars + 1].rsplit(" ", 1)[0].rstrip(" ,;:-")
+    return (clipped or value[:max_chars].rstrip()) + "…"
 
 
 class CleanText(Text):
@@ -97,4 +103,4 @@ def fit_text_to_container(text_mobj: Mobject, container: Mobject, padding: float
     return text_mobj
 
 
-__all__ = ["CleanText", "clean_text", "fit_text_to_container"]
+__all__ = ["CleanText", "clean_text", "fit_text_to_container", "word_safe_truncate"]

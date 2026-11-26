@@ -701,6 +701,20 @@ class DailyShortsDaemon:
             }]
         else:
             normalized_source = (source or "mixed").lower()
+
+            # Scheduled GitHub Actions runs default to the custom queue.  Once the
+            # queue is drained, treating that as a hard failure makes the whole
+            # production pipeline stop even though the discovery pillars may still
+            # have eligible candidates.  Fall back to the normal rotation so the
+            # requested quota can still be fulfilled.  An explicit --queue-id is
+            # handled above and remains strict about the requested item.
+            if normalized_source == "queue":
+                queue = load_topic_queue()
+                pending = [item for item in queue if item.get("status") not in ("completed", "done")]
+                if not pending:
+                    print("⚠️ Topic queue is exhausted; falling back to mixed content discovery to satisfy the quota.")
+                    normalized_source = "mixed"
+
             if normalized_source in ("mixed", "auto"):
                 print(f"\n🔄 Step 1: Content Diversification Rotation (Source: {normalized_source.upper()})...")
                 history = load_history()
