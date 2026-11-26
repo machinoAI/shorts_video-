@@ -1,0 +1,1399 @@
+{
+  "id": "stop_uploading_test_data",
+  "title": "The Benchmark Leakage Crisis",
+  "category": "benchmark_news",
+  "domain_taxonomy": "quantitative_benchmark",
+  "hook_tag": "BENCHMARK NEWS",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Your model isn't reasoning\u2014it\u2019s just memorizing the test set you uploaded in plain text to GitHub.",
+      "visual_focus": "A glowing test dataset file being absorbed into a neural network's weights.",
+      "highlight_words": {
+        "memorizing": "#EF4444",
+        "plain text": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Large Language Model",
+        "action_verb": "ingests",
+        "direct_object": "contaminated evaluation benchmark",
+        "anchor_word": "memorizing",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "CONTAMINATION PIPELINE",
+        "sub": "Raw data leaking into the training corpus",
+        "accent_color": "#EF4444",
+        "params": {
+          "stage_1_label": "Public Benchmark",
+          "stage_2_label": "Automated Crawl",
+          "stage_3_label": "Memorized Evaluation"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 42,
+      "hook_band": "WEAK",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "CONTAMINATION PIPELINE",
+        "sub": "Raw data leaking into the training corpus",
+        "accent_color": "#EF4444",
+        "stage_1_label": "Public Benchmark",
+        "stage_2_label": "Automated Crawl",
+        "stage_3_label": "Memorized Evaluation"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.23,
+      "duration": 5.23,
+      "word_timings": [
+        {
+          "word": "Your",
+          "clean_word": "your",
+          "phonemes": "j\u028a\u0279",
+          "start": 0.01,
+          "end": 0.215,
+          "duration": 0.205,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 0.215,
+          "end": 0.495,
+          "duration": 0.28,
+          "frame_ahead_trigger": 0.175
+        },
+        {
+          "word": "isn't",
+          "clean_word": "isnt",
+          "phonemes": "\u02c8\u026asnt",
+          "start": 0.495,
+          "end": 0.845,
+          "duration": 0.35,
+          "frame_ahead_trigger": 0.455
+        },
+        {
+          "word": "reasoning\u2014it\u2019s",
+          "clean_word": "reasoningits",
+          "phonemes": "\u0279\u02c8i\u02d0z\u0259n\u02cc\u026a\u014b\u0261\u026ats",
+          "start": 0.845,
+          "end": 1.51,
+          "duration": 0.665,
+          "frame_ahead_trigger": 0.805
+        },
+        {
+          "word": "just",
+          "clean_word": "just",
+          "phonemes": "d\u0292\u02c8\u028cst",
+          "start": 1.51,
+          "end": 1.835,
+          "duration": 0.325,
+          "frame_ahead_trigger": 1.47
+        },
+        {
+          "word": "memorizing",
+          "clean_word": "memorizing",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279\u02cca\u026az\u026a\u014b",
+          "start": 1.835,
+          "end": 2.485,
+          "duration": 0.65,
+          "frame_ahead_trigger": 1.795
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 2.485,
+          "end": 2.62,
+          "duration": 0.135,
+          "frame_ahead_trigger": 2.445
+        },
+        {
+          "word": "test",
+          "clean_word": "test",
+          "phonemes": "t\u02c8\u025bst",
+          "start": 2.62,
+          "end": 2.84,
+          "duration": 0.22,
+          "frame_ahead_trigger": 2.58
+        },
+        {
+          "word": "set",
+          "clean_word": "set",
+          "phonemes": "s\u02c8\u025bt",
+          "start": 2.84,
+          "end": 3.15,
+          "duration": 0.31,
+          "frame_ahead_trigger": 2.8
+        },
+        {
+          "word": "you",
+          "clean_word": "you",
+          "phonemes": "ju\u02d0",
+          "start": 3.15,
+          "end": 3.214,
+          "duration": 0.064,
+          "frame_ahead_trigger": 3.11
+        },
+        {
+          "word": "uploaded",
+          "clean_word": "uploaded",
+          "phonemes": "\u02c8\u028cplo\u028ad\u1d7bd",
+          "start": 3.214,
+          "end": 3.655,
+          "duration": 0.441,
+          "frame_ahead_trigger": 3.174
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 3.655,
+          "end": 3.75,
+          "duration": 0.095,
+          "frame_ahead_trigger": 3.615
+        },
+        {
+          "word": "plain",
+          "clean_word": "plain",
+          "phonemes": "pl\u02c8e\u026an",
+          "start": 3.75,
+          "end": 4.265,
+          "duration": 0.515,
+          "frame_ahead_trigger": 3.71
+        },
+        {
+          "word": "text",
+          "clean_word": "text",
+          "phonemes": "t\u02c8\u025bkst",
+          "start": 4.265,
+          "end": 4.47,
+          "duration": 0.205,
+          "frame_ahead_trigger": 4.225
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 4.47,
+          "end": 4.6,
+          "duration": 0.13,
+          "frame_ahead_trigger": 4.43
+        },
+        {
+          "word": "GitHub.",
+          "clean_word": "github",
+          "phonemes": "\u0261\u02c8\u026at h\u02c8\u028cb",
+          "start": 4.6,
+          "end": 5.105,
+          "duration": 0.505,
+          "frame_ahead_trigger": 4.56
+        }
+      ],
+      "audio_duration": 5.23,
+      "slot_duration": 5.38
+    },
+    {
+      "beat_id": 2,
+      "text": "The bottleneck is static, public benchmarks that act like open-book exams\u2014models simply look up the answers during pretraining.",
+      "visual_focus": "A model looking at a cheat sheet while taking an exam.",
+      "highlight_words": {
+        "bottleneck": "#EF4444",
+        "open-book": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Pretraining Corpus",
+        "action_verb": "collides",
+        "direct_object": "test set answers",
+        "anchor_word": "bottleneck",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE KNOWLEDGE LEAK",
+        "sub": "Isolation vs leakage of test solutions",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Training Data",
+          "stream_b_label": "Test Benchmarks",
+          "barrier_label": "None",
+          "barrier_sub": "Open connectivity"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE KNOWLEDGE LEAK",
+        "sub": "Isolation vs leakage of test solutions",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Training Data",
+        "stream_b_label": "Test Benchmarks",
+        "barrier_label": "None",
+        "barrier_sub": "Open connectivity"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 5.38,
+      "end": 12.4,
+      "duration": 7.02,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 5.387,
+          "end": 5.457,
+          "duration": 0.07,
+          "frame_ahead_trigger": 5.497
+        },
+        {
+          "word": "bottleneck",
+          "clean_word": "bottleneck",
+          "phonemes": "b\u02c8\u0251\u02d0t\u0259ln\u02cc\u025bk",
+          "start": 5.457,
+          "end": 6.212,
+          "duration": 0.755,
+          "frame_ahead_trigger": 5.567
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 6.212,
+          "end": 6.261,
+          "duration": 0.049,
+          "frame_ahead_trigger": 6.322
+        },
+        {
+          "word": "static,",
+          "clean_word": "static",
+          "phonemes": "st\u02c8\u00e6\u027e\u026ak",
+          "start": 6.261,
+          "end": 6.667,
+          "duration": 0.406,
+          "frame_ahead_trigger": 6.371
+        },
+        {
+          "word": "public",
+          "clean_word": "public",
+          "phonemes": "p\u02c8\u028cbl\u026ak",
+          "start": 6.667,
+          "end": 7.007,
+          "duration": 0.34,
+          "frame_ahead_trigger": 6.777
+        },
+        {
+          "word": "benchmarks",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 7.007,
+          "end": 7.722,
+          "duration": 0.715,
+          "frame_ahead_trigger": 7.117
+        },
+        {
+          "word": "that",
+          "clean_word": "that",
+          "phonemes": "\u00f0\u02c8\u00e6t",
+          "start": 7.722,
+          "end": 8.057,
+          "duration": 0.335,
+          "frame_ahead_trigger": 7.832
+        },
+        {
+          "word": "act",
+          "clean_word": "act",
+          "phonemes": "\u02c8\u00e6kt",
+          "start": 8.057,
+          "end": 8.342,
+          "duration": 0.285,
+          "frame_ahead_trigger": 8.167
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 8.342,
+          "end": 8.527,
+          "duration": 0.185,
+          "frame_ahead_trigger": 8.452
+        },
+        {
+          "word": "open-book",
+          "clean_word": "openbook",
+          "phonemes": "\u02c8o\u028ap\u0259nb\u02cc\u028ak",
+          "start": 8.527,
+          "end": 9.115,
+          "duration": 0.589,
+          "frame_ahead_trigger": 8.637
+        },
+        {
+          "word": "exams\u2014models",
+          "clean_word": "examsmodels",
+          "phonemes": "\u025b\u0261z\u02c8\u00e6msm\u0251\u02d0d\u0259lz",
+          "start": 9.115,
+          "end": 10.027,
+          "duration": 0.911,
+          "frame_ahead_trigger": 9.225
+        },
+        {
+          "word": "simply",
+          "clean_word": "simply",
+          "phonemes": "s\u02c8\u026ampli",
+          "start": 10.027,
+          "end": 10.287,
+          "duration": 0.26,
+          "frame_ahead_trigger": 10.137
+        },
+        {
+          "word": "look",
+          "clean_word": "look",
+          "phonemes": "l\u02c8\u028ak",
+          "start": 10.287,
+          "end": 10.587,
+          "duration": 0.3,
+          "frame_ahead_trigger": 10.397
+        },
+        {
+          "word": "up",
+          "clean_word": "up",
+          "phonemes": "\u02c8\u028cp",
+          "start": 10.587,
+          "end": 10.717,
+          "duration": 0.13,
+          "frame_ahead_trigger": 10.697
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 10.717,
+          "end": 10.857,
+          "duration": 0.14,
+          "frame_ahead_trigger": 10.827
+        },
+        {
+          "word": "answers",
+          "clean_word": "answers",
+          "phonemes": "\u02c8\u00e6ns\u025az",
+          "start": 10.857,
+          "end": 11.182,
+          "duration": 0.325,
+          "frame_ahead_trigger": 10.967
+        },
+        {
+          "word": "during",
+          "clean_word": "during",
+          "phonemes": "d\u02c8\u028a\u0279\u0279\u026a\u014b",
+          "start": 11.182,
+          "end": 11.621,
+          "duration": 0.439,
+          "frame_ahead_trigger": 11.292
+        },
+        {
+          "word": "pretraining.",
+          "clean_word": "pretraining",
+          "phonemes": "p\u0279\u026at\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 11.621,
+          "end": 12.262,
+          "duration": 0.641,
+          "frame_ahead_trigger": 11.731
+        }
+      ],
+      "audio_duration": 7.02,
+      "slot_duration": 7.17
+    },
+    {
+      "beat_id": 3,
+      "text": "The pivot is shifting to cryptographically-protected benchmarks, where keys are required to decrypt evaluation data post-training.",
+      "visual_focus": "A locked digital vault containing benchmark tasks opening via a public key.",
+      "highlight_words": {
+        "cryptographically-protected": "#34D399",
+        "keys": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Public Key Encryption",
+        "action_verb": "seals",
+        "direct_object": "evaluation test sets",
+        "anchor_word": "cryptographically-protected",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "catalog_routing",
+        "title": "SECURE EVALUATION",
+        "sub": "Access control for test benchmarks",
+        "accent_color": "#34D399",
+        "params": {
+          "index_label": "Public Key",
+          "drawer_a_label": "Encrypted Test Data",
+          "drawer_b_label": "Training Data",
+          "drawer_c_label": "Model Weights"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "catalog_routing",
+        "title": "SECURE EVALUATION",
+        "sub": "Access control for test benchmarks",
+        "accent_color": "#34D399",
+        "index_label": "Public Key",
+        "drawer_a_label": "Encrypted Test Data",
+        "drawer_b_label": "Training Data",
+        "drawer_c_label": "Model Weights"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 12.55,
+      "end": 19.59,
+      "duration": 7.04,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 12.555,
+          "end": 12.645,
+          "duration": 0.09,
+          "frame_ahead_trigger": 12.815
+        },
+        {
+          "word": "pivot",
+          "clean_word": "pivot",
+          "phonemes": "p\u02c8\u026av\u0259t",
+          "start": 12.645,
+          "end": 13.04,
+          "duration": 0.395,
+          "frame_ahead_trigger": 12.905
+        },
+        {
+          "word": "is",
+          "clean_word": "is",
+          "phonemes": "\u026az",
+          "start": 13.04,
+          "end": 13.107,
+          "duration": 0.066,
+          "frame_ahead_trigger": 13.3
+        },
+        {
+          "word": "shifting",
+          "clean_word": "shifting",
+          "phonemes": "\u0283\u02c8\u026aft\u026a\u014b",
+          "start": 13.107,
+          "end": 13.465,
+          "duration": 0.359,
+          "frame_ahead_trigger": 13.367
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 13.465,
+          "end": 13.68,
+          "duration": 0.215,
+          "frame_ahead_trigger": 13.725
+        },
+        {
+          "word": "cryptographically-protected",
+          "clean_word": "cryptographicallyprotected",
+          "phonemes": "k\u0279\u02cc\u026apt\u0259\u0261\u0279\u02c8\u00e6f\u026ak\u02cc\u0254\u02d0l\u026ap\u0279\u0259t\u02cc\u025bkt\u1d7bd",
+          "start": 13.68,
+          "end": 15.235,
+          "duration": 1.555,
+          "frame_ahead_trigger": 13.94
+        },
+        {
+          "word": "benchmarks,",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 15.235,
+          "end": 16.015,
+          "duration": 0.78,
+          "frame_ahead_trigger": 15.495
+        },
+        {
+          "word": "where",
+          "clean_word": "where",
+          "phonemes": "w\u02c8\u025b\u0279",
+          "start": 16.015,
+          "end": 16.175,
+          "duration": 0.16,
+          "frame_ahead_trigger": 16.275
+        },
+        {
+          "word": "keys",
+          "clean_word": "keys",
+          "phonemes": "k\u02c8i\u02d0z",
+          "start": 16.175,
+          "end": 16.38,
+          "duration": 0.205,
+          "frame_ahead_trigger": 16.435
+        },
+        {
+          "word": "are",
+          "clean_word": "are",
+          "phonemes": "\u0251\u02d0\u0279",
+          "start": 16.38,
+          "end": 16.515,
+          "duration": 0.135,
+          "frame_ahead_trigger": 16.64
+        },
+        {
+          "word": "required",
+          "clean_word": "required",
+          "phonemes": "\u0279\u1d7bkw\u02c8a\u026a\u025ad",
+          "start": 16.515,
+          "end": 17.06,
+          "duration": 0.545,
+          "frame_ahead_trigger": 16.775
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 17.06,
+          "end": 17.205,
+          "duration": 0.145,
+          "frame_ahead_trigger": 17.32
+        },
+        {
+          "word": "decrypt",
+          "clean_word": "decrypt",
+          "phonemes": "d\u1d7bk\u0279\u02c8\u026apt",
+          "start": 17.205,
+          "end": 17.635,
+          "duration": 0.43,
+          "frame_ahead_trigger": 17.465
+        },
+        {
+          "word": "evaluation",
+          "clean_word": "evaluation",
+          "phonemes": "\u026av\u02cc\u00e6lju\u02d0\u02c8e\u026a\u0283\u0259n",
+          "start": 17.635,
+          "end": 18.515,
+          "duration": 0.88,
+          "frame_ahead_trigger": 17.895
+        },
+        {
+          "word": "data",
+          "clean_word": "data",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259",
+          "start": 18.515,
+          "end": 18.76,
+          "duration": 0.245,
+          "frame_ahead_trigger": 18.775
+        },
+        {
+          "word": "post-training.",
+          "clean_word": "posttraining",
+          "phonemes": "p\u02c8o\u028ast\u0279e\u026an\u026a\u014b",
+          "start": 18.76,
+          "end": 19.445,
+          "duration": 0.685,
+          "frame_ahead_trigger": 19.02
+        }
+      ],
+      "audio_duration": 7.04,
+      "slot_duration": 7.19
+    },
+    {
+      "beat_id": 4,
+      "text": "By enforcing training exclusion controls and linking internet-derived data to its original web-page context, we break the memorization loop.",
+      "visual_focus": "A provenance map linking benchmark data back to its specific source URL.",
+      "highlight_words": {
+        "exclusion controls": "#F59E0B",
+        "context": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Exclusion Controls",
+        "action_verb": "filters",
+        "direct_object": "benchmark data ingestion",
+        "anchor_word": "exclusion controls",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "DATA PROVENANCE",
+        "sub": "Linking benchmarks to origin",
+        "accent_color": "#F59E0B",
+        "params": {
+          "root_label": "Test Data",
+          "optimal_label": "Web Context",
+          "pruned_label": "Exclusion Tag"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "tree_hierarchy",
+        "title": "DATA PROVENANCE",
+        "sub": "Linking benchmarks to origin",
+        "accent_color": "#F59E0B",
+        "root_label": "Test Data",
+        "optimal_label": "Web Context",
+        "pruned_label": "Exclusion Tag"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 19.74,
+      "end": 27.74,
+      "duration": 8.0,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 19.74,
+          "end": 20.025,
+          "duration": 0.285,
+          "frame_ahead_trigger": 20.15
+        },
+        {
+          "word": "enforcing",
+          "clean_word": "enforcing",
+          "phonemes": "\u025bnf\u02c8\u0254\u02d0\u0279s\u026a\u014b",
+          "start": 20.025,
+          "end": 20.465,
+          "duration": 0.44,
+          "frame_ahead_trigger": 20.435
+        },
+        {
+          "word": "training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 20.465,
+          "end": 20.955,
+          "duration": 0.49,
+          "frame_ahead_trigger": 20.875
+        },
+        {
+          "word": "exclusion",
+          "clean_word": "exclusion",
+          "phonemes": "\u025bkskl\u02c8u\u02d0\u0292\u0259n",
+          "start": 20.955,
+          "end": 21.54,
+          "duration": 0.585,
+          "frame_ahead_trigger": 21.365
+        },
+        {
+          "word": "controls",
+          "clean_word": "controls",
+          "phonemes": "k\u0259nt\u0279\u02c8o\u028alz",
+          "start": 21.54,
+          "end": 22.04,
+          "duration": 0.5,
+          "frame_ahead_trigger": 21.95
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 22.04,
+          "end": 22.35,
+          "duration": 0.31,
+          "frame_ahead_trigger": 22.45
+        },
+        {
+          "word": "linking",
+          "clean_word": "linking",
+          "phonemes": "l\u02c8\u026a\u014bk\u026a\u014b",
+          "start": 22.35,
+          "end": 22.68,
+          "duration": 0.33,
+          "frame_ahead_trigger": 22.76
+        },
+        {
+          "word": "internet-derived",
+          "clean_word": "internetderived",
+          "phonemes": "\u02cc\u026ant\u025an\u02c8\u025btd\u025a\u0279\u02cca\u026avd",
+          "start": 22.68,
+          "end": 23.695,
+          "duration": 1.015,
+          "frame_ahead_trigger": 23.09
+        },
+        {
+          "word": "data",
+          "clean_word": "data",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259",
+          "start": 23.695,
+          "end": 23.925,
+          "duration": 0.23,
+          "frame_ahead_trigger": 24.105
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 23.925,
+          "end": 24.15,
+          "duration": 0.225,
+          "frame_ahead_trigger": 24.335
+        },
+        {
+          "word": "its",
+          "clean_word": "its",
+          "phonemes": "\u026ats",
+          "start": 24.15,
+          "end": 24.315,
+          "duration": 0.165,
+          "frame_ahead_trigger": 24.56
+        },
+        {
+          "word": "original",
+          "clean_word": "original",
+          "phonemes": "\u025a\u0279\u02c8\u026ad\u0292\u026an\u0259l",
+          "start": 24.315,
+          "end": 24.935,
+          "duration": 0.62,
+          "frame_ahead_trigger": 24.725
+        },
+        {
+          "word": "web-page",
+          "clean_word": "webpage",
+          "phonemes": "w\u02c8\u025bbpe\u026ad\u0292",
+          "start": 24.935,
+          "end": 25.295,
+          "duration": 0.36,
+          "frame_ahead_trigger": 25.345
+        },
+        {
+          "word": "context,",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 25.295,
+          "end": 25.948,
+          "duration": 0.652,
+          "frame_ahead_trigger": 25.705
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 25.948,
+          "end": 26.205,
+          "duration": 0.258,
+          "frame_ahead_trigger": 26.358
+        },
+        {
+          "word": "break",
+          "clean_word": "break",
+          "phonemes": "b\u0279\u02c8e\u026ak",
+          "start": 26.205,
+          "end": 26.365,
+          "duration": 0.16,
+          "frame_ahead_trigger": 26.615
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 26.365,
+          "end": 26.635,
+          "duration": 0.27,
+          "frame_ahead_trigger": 26.775
+        },
+        {
+          "word": "memorization",
+          "clean_word": "memorization",
+          "phonemes": "m\u02cc\u025bm\u025a\u0279\u1d7bz\u02c8e\u026a\u0283\u0259n",
+          "start": 26.635,
+          "end": 27.345,
+          "duration": 0.71,
+          "frame_ahead_trigger": 27.045
+        },
+        {
+          "word": "loop.",
+          "clean_word": "loop",
+          "phonemes": "l\u02c8u\u02d0p",
+          "start": 27.345,
+          "end": 27.625,
+          "duration": 0.28,
+          "frame_ahead_trigger": 27.755
+        }
+      ],
+      "audio_duration": 8.0,
+      "slot_duration": 8.15
+    },
+    {
+      "beat_id": 5,
+      "text": "These three strategies turn the evaluation process from a guessing game into a genuine measurement of generalization.",
+      "visual_focus": "A radar chart normalizing generalization across test sets.",
+      "highlight_words": {
+        "generalization": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Benchmark Metrics",
+        "action_verb": "quantify",
+        "direct_object": "model intelligence",
+        "anchor_word": "generalization",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "radar_pareto_plot",
+        "title": "GENERALIZATION FRONTIER",
+        "sub": "Impact of mitigation strategies",
+        "accent_color": "#34D399",
+        "params": {
+          "axes": [
+            "Robustness",
+            "Cleanliness",
+            "Security"
+          ],
+          "delta_badge": "3 Strategies"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "start": 27.89,
+      "end": 33.94,
+      "duration": 6.06,
+      "word_timings": [
+        {
+          "word": "These",
+          "clean_word": "these",
+          "phonemes": "\u00f0\u02c8i\u02d0z",
+          "start": 27.89,
+          "end": 28.12,
+          "duration": 0.23,
+          "frame_ahead_trigger": 28.45
+        },
+        {
+          "word": "three",
+          "clean_word": "three",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0",
+          "start": 28.12,
+          "end": 28.42,
+          "duration": 0.3,
+          "frame_ahead_trigger": 28.68
+        },
+        {
+          "word": "strategies",
+          "clean_word": "strategies",
+          "phonemes": "st\u0279\u02c8\u00e6\u027e\u0259d\u0292iz",
+          "start": 28.42,
+          "end": 28.98,
+          "duration": 0.56,
+          "frame_ahead_trigger": 28.98
+        },
+        {
+          "word": "turn",
+          "clean_word": "turn",
+          "phonemes": "t\u02c8\u025c\u02d0n",
+          "start": 28.98,
+          "end": 29.19,
+          "duration": 0.21,
+          "frame_ahead_trigger": 29.54
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 29.19,
+          "end": 29.355,
+          "duration": 0.165,
+          "frame_ahead_trigger": 29.75
+        },
+        {
+          "word": "evaluation",
+          "clean_word": "evaluation",
+          "phonemes": "\u026av\u02cc\u00e6lju\u02d0\u02c8e\u026a\u0283\u0259n",
+          "start": 29.355,
+          "end": 30.165,
+          "duration": 0.81,
+          "frame_ahead_trigger": 29.915
+        },
+        {
+          "word": "process",
+          "clean_word": "process",
+          "phonemes": "p\u0279\u02c8\u0251\u02d0s\u025bs",
+          "start": 30.165,
+          "end": 30.455,
+          "duration": 0.29,
+          "frame_ahead_trigger": 30.725
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 30.455,
+          "end": 30.655,
+          "duration": 0.2,
+          "frame_ahead_trigger": 31.015
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 30.655,
+          "end": 30.8,
+          "duration": 0.145,
+          "frame_ahead_trigger": 31.215
+        },
+        {
+          "word": "guessing",
+          "clean_word": "guessing",
+          "phonemes": "\u0261\u02c8\u025bs\u026a\u014b",
+          "start": 30.8,
+          "end": 31.04,
+          "duration": 0.24,
+          "frame_ahead_trigger": 31.36
+        },
+        {
+          "word": "game",
+          "clean_word": "game",
+          "phonemes": "\u0261\u02c8e\u026am",
+          "start": 31.04,
+          "end": 31.41,
+          "duration": 0.369,
+          "frame_ahead_trigger": 31.6
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 31.41,
+          "end": 31.715,
+          "duration": 0.306,
+          "frame_ahead_trigger": 31.97
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 31.715,
+          "end": 31.824,
+          "duration": 0.108,
+          "frame_ahead_trigger": 32.275
+        },
+        {
+          "word": "genuine",
+          "clean_word": "genuine",
+          "phonemes": "d\u0292\u02c8\u025bnju\u02d0\u026an",
+          "start": 31.824,
+          "end": 32.42,
+          "duration": 0.597,
+          "frame_ahead_trigger": 32.384
+        },
+        {
+          "word": "measurement",
+          "clean_word": "measurement",
+          "phonemes": "m\u02c8\u025b\u0292\u025am\u0259nt",
+          "start": 32.42,
+          "end": 32.855,
+          "duration": 0.435,
+          "frame_ahead_trigger": 32.98
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 32.855,
+          "end": 32.911,
+          "duration": 0.055,
+          "frame_ahead_trigger": 33.415
+        },
+        {
+          "word": "generalization.",
+          "clean_word": "generalization",
+          "phonemes": "d\u0292\u02cc\u025bn\u025a\u0279\u0259l\u1d7bz\u02c8e\u026a\u0283\u0259n",
+          "start": 32.911,
+          "end": 33.79,
+          "duration": 0.88,
+          "frame_ahead_trigger": 33.471
+        }
+      ],
+      "audio_duration": 6.06,
+      "slot_duration": 6.2
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for deep-dives into how we actually build robust, verifiable AI foundations.",
+      "visual_focus": "The machinoAI logo rotating into the secure key icon.",
+      "highlight_words": {
+        "verifiable": "#34D399"
+      },
+      "svo_action": {
+        "subject": "machinoAI",
+        "action_verb": "analyzes",
+        "direct_object": "AI architecture",
+        "anchor_word": "machinoAI",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "layer_stack",
+        "title": "NEXT FRONTIER",
+        "sub": "Engineering verifiable systems",
+        "accent_color": "#FFFFFF",
+        "params": {
+          "bottom_layer": "Data Provenance",
+          "mid_layer": "Cryptographic Control",
+          "top_layer": "Verifiable Models"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 34.09,
+      "end": 40.2,
+      "duration": 6.1,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 34.109,
+          "end": 34.504,
+          "duration": 0.395,
+          "frame_ahead_trigger": 34.819
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 34.504,
+          "end": 35.454,
+          "duration": 0.95,
+          "frame_ahead_trigger": 35.214
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 35.454,
+          "end": 35.674,
+          "duration": 0.22,
+          "frame_ahead_trigger": 36.164
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 35.674,
+          "end": 36.254,
+          "duration": 0.58,
+          "frame_ahead_trigger": 36.384
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 36.254,
+          "end": 36.524,
+          "duration": 0.27,
+          "frame_ahead_trigger": 36.964
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 36.524,
+          "end": 36.799,
+          "duration": 0.275,
+          "frame_ahead_trigger": 37.234
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 36.799,
+          "end": 36.964,
+          "duration": 0.165,
+          "frame_ahead_trigger": 37.509
+        },
+        {
+          "word": "actually",
+          "clean_word": "actually",
+          "phonemes": "\u02c8\u00e6kt\u0283u\u02d0\u0259li",
+          "start": 36.964,
+          "end": 37.559,
+          "duration": 0.595,
+          "frame_ahead_trigger": 37.674
+        },
+        {
+          "word": "build",
+          "clean_word": "build",
+          "phonemes": "b\u02c8\u026ald",
+          "start": 37.559,
+          "end": 37.719,
+          "duration": 0.16,
+          "frame_ahead_trigger": 38.269
+        },
+        {
+          "word": "robust,",
+          "clean_word": "robust",
+          "phonemes": "\u0279o\u028ab\u02c8\u028cst",
+          "start": 37.719,
+          "end": 38.296,
+          "duration": 0.577,
+          "frame_ahead_trigger": 38.429
+        },
+        {
+          "word": "verifiable",
+          "clean_word": "verifiable",
+          "phonemes": "v\u02c8\u025b\u0279\u026af\u02cca\u026a\u0259b\u0259l",
+          "start": 38.296,
+          "end": 39.119,
+          "duration": 0.823,
+          "frame_ahead_trigger": 39.006
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 39.119,
+          "end": 39.459,
+          "duration": 0.34,
+          "frame_ahead_trigger": 39.829
+        },
+        {
+          "word": "foundations.",
+          "clean_word": "foundations",
+          "phonemes": "fa\u028and\u02c8e\u026a\u0283\u0259nz",
+          "start": 39.459,
+          "end": 40.124,
+          "duration": 0.665,
+          "frame_ahead_trigger": 40.169
+        }
+      ],
+      "audio_duration": 6.1,
+      "slot_duration": 6.11
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$I_{\\mathrm{test}} \\subset \\mathcal{D}_{\\mathrm{train}}$",
+      "filename": "stop_uploading_test_data_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "I_{test}",
+          "label": "Test Benchmarks"
+        },
+        {
+          "term": "\\mathcal{D}_{train}",
+          "label": "Training Data"
+        }
+      ],
+      "svg_filename": "stop_uploading_test_data_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{P}(x|w) \\approx \\mathrm{memorized}$",
+      "filename": "stop_uploading_test_data_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "\\mathcal{P}(x|w)",
+          "label": "Model Probability"
+        }
+      ],
+      "svg_filename": "stop_uploading_test_data_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathcal{E}(x, K_p) \\to \\mathrm{Ciphertext}$",
+      "filename": "stop_uploading_test_data_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "K_p",
+          "label": "Public Key"
+        }
+      ],
+      "svg_filename": "stop_uploading_test_data_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathcal{C} = \\{u \\mid u \\notin \\mathcal{D}_{\\mathrm{train}}\\}$",
+      "filename": "stop_uploading_test_data_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "\\mathcal{C}",
+          "label": "Clean Data Pool"
+        }
+      ],
+      "svg_filename": "stop_uploading_test_data_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Gen} = \\frac{1}{N} \\sum_{i=1}^N \\mathrm{Score}(i)$",
+      "filename": "stop_uploading_test_data_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "\\mathrm{Gen}",
+          "label": "Generalization Metric"
+        }
+      ],
+      "svg_filename": "stop_uploading_test_data_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "semantic_clusters",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "CONTAMINATED",
+          "color": "#EF4444",
+          "items": [
+            "Github",
+            "Public Crawl"
+          ]
+        },
+        {
+          "name": "SECURE",
+          "color": "#34D399",
+          "items": [
+            "Encryption",
+            "Key Access"
+          ]
+        },
+        {
+          "name": "PROVENANCE",
+          "color": "#F59E0B",
+          "items": [
+            "Web Context",
+            "URL"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Benchmark\"",
+        "target_cluster": "CONTAMINATED",
+        "token": "\"Benchmark\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'Test'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'Answer'",
+          "color": "#EF4444"
+        }
+      ]
+    },
+    "model_a": "Secure Benchmark Strategy",
+    "model_a_specs": [
+      "Public Key Encrypted",
+      "Exclusion Controls",
+      "Context Linked"
+    ],
+    "model_b": "Plain Text Baseline",
+    "model_b_specs": [
+      "Open Access",
+      "Crawlable",
+      "Memorization-prone"
+    ],
+    "divide_title": "LEAKED VS SECURE EVALUATION",
+    "efficiency_badge": "3 Strategies",
+    "bottleneck_title": "MONOLITHIC BENCHMARK LEAKAGE",
+    "bottleneck_desc": "Entangled evaluation sets in training data",
+    "solution_title": "CRYPTOGRAPHIC EVALUATION PROTECTION",
+    "solution_components": "Public Key Keys & Web Provenance",
+    "mechanism_title": "EXCLUSION CONTROL PIPELINES",
+    "payoff_sub": "Quantifying model generalization without contamination",
+    "payoff_hero_label": "Secure Method",
+    "payoff_base_label": "Unprotected Baseline",
+    "challenger": "Secure Benchmark",
+    "incumbent": "Plain Text Leakage"
+  },
+  "script_provider": "gemini",
+  "quality_flags": {
+    "scrubbed_fields": [
+      "beats[5].visual_blueprint.params.models",
+      "metadata.benchmarks"
+    ],
+    "ungrounded_narration_numbers": [],
+    "leaked_example_values": [],
+    "grounding_source_chars": 1455
+  },
+  "arxiv_id": "2305.10160",
+  "hook_gating": {
+    "selected_hook": "Your model isn't reasoning\u2014it\u2019s just memorizing the test set you uploaded in plain text to GitHub.",
+    "verdict": 42,
+    "band": "WEAK",
+    "formula": "Unclassified",
+    "properties": {
+      "SPECIFICITY": 35,
+      "ADDRESS": 96,
+      "STAKES": 22,
+      "CURIOSITY": 24,
+      "BREVITY": 100
+    },
+    "weakest_property": "STAKES",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Secure Benchmark Strategy",
+        "model_a_score": "95%",
+        "model_b_name": "Plain Text Baseline",
+        "model_b_score": "45%",
+        "delta_label": "3 Strategies"
+      }
+    }
+  ]
+}
