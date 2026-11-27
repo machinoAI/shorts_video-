@@ -1,0 +1,1491 @@
+{
+  "id": "data_contamination_mitigation",
+  "title": "THE BENCHMARK LEAKAGE CRISIS",
+  "category": "benchmark_news",
+  "domain_taxonomy": "quantitative_benchmark",
+  "hook_tag": "BENCHMARK NEWS",
+  "beats": [
+    {
+      "beat_id": 1,
+      "text": "Your model isn't smarter; it just memorized the test set because those benchmarks live in plain text online.",
+      "visual_focus": "A glowing neural network layer rapidly illuminating nodes from a text-dump dataset.",
+      "highlight_words": {
+        "memorized": "#EF4444",
+        "plain text": "#38BDF8"
+      },
+      "svo_action": {
+        "subject": "Large Language Model",
+        "action_verb": "memorizes",
+        "direct_object": "Open Benchmark Dataset",
+        "anchor_word": "memorized",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "pipeline_stages",
+        "title": "THE MEMORIZATION PARADOX",
+        "sub": "Raw data ingestion versus benchmark contamination",
+        "accent_color": "#EF4444",
+        "params": {
+          "stage_1_label": "Pre-training Crawl",
+          "stage_2_label": "Test Data Ingestion",
+          "stage_3_label": "Memorization"
+        }
+      },
+      "thriller_role": "pattern_interrupt_hook",
+      "act": 1,
+      "hook_score": 30,
+      "hook_band": "WEAK",
+      "hook_formula": "Unclassified",
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "pipeline_stages",
+        "title": "THE MEMORIZATION PARADOX",
+        "sub": "Raw data ingestion versus benchmark contamination",
+        "accent_color": "#EF4444",
+        "stage_1_label": "Pre-training Crawl",
+        "stage_2_label": "Test Data Ingestion",
+        "stage_3_label": "Memorization"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 0.0,
+      "end": 5.99,
+      "duration": 5.99,
+      "word_timings": [
+        {
+          "word": "Your",
+          "clean_word": "your",
+          "phonemes": "j\u028a\u0279",
+          "start": 0.015,
+          "end": 0.21,
+          "duration": 0.195,
+          "frame_ahead_trigger": 0.0
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 0.21,
+          "end": 0.55,
+          "duration": 0.34,
+          "frame_ahead_trigger": 0.17
+        },
+        {
+          "word": "isn't",
+          "clean_word": "isnt",
+          "phonemes": "\u02c8\u026asnt",
+          "start": 0.55,
+          "end": 0.81,
+          "duration": 0.26,
+          "frame_ahead_trigger": 0.51
+        },
+        {
+          "word": "smarter;",
+          "clean_word": "smarter",
+          "phonemes": "sm\u02c8\u0251\u02d0\u0279\u027e\u025a",
+          "start": 0.81,
+          "end": 1.308,
+          "duration": 0.498,
+          "frame_ahead_trigger": 0.77
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 1.308,
+          "end": 1.535,
+          "duration": 0.227,
+          "frame_ahead_trigger": 1.268
+        },
+        {
+          "word": "just",
+          "clean_word": "just",
+          "phonemes": "d\u0292\u02c8\u028cst",
+          "start": 1.535,
+          "end": 1.83,
+          "duration": 0.295,
+          "frame_ahead_trigger": 1.495
+        },
+        {
+          "word": "memorized",
+          "clean_word": "memorized",
+          "phonemes": "m\u02c8\u025bm\u025a\u0279\u02cca\u026azd",
+          "start": 1.83,
+          "end": 2.445,
+          "duration": 0.615,
+          "frame_ahead_trigger": 1.79
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 2.445,
+          "end": 2.488,
+          "duration": 0.043,
+          "frame_ahead_trigger": 2.405
+        },
+        {
+          "word": "test",
+          "clean_word": "test",
+          "phonemes": "t\u02c8\u025bst",
+          "start": 2.488,
+          "end": 2.85,
+          "duration": 0.362,
+          "frame_ahead_trigger": 2.448
+        },
+        {
+          "word": "set",
+          "clean_word": "set",
+          "phonemes": "s\u02c8\u025bt",
+          "start": 2.85,
+          "end": 2.955,
+          "duration": 0.105,
+          "frame_ahead_trigger": 2.81
+        },
+        {
+          "word": "because",
+          "clean_word": "because",
+          "phonemes": "b\u026ak\u02c8\u028cz",
+          "start": 2.955,
+          "end": 3.3,
+          "duration": 0.345,
+          "frame_ahead_trigger": 2.915
+        },
+        {
+          "word": "those",
+          "clean_word": "those",
+          "phonemes": "\u00f0\u02c8o\u028az",
+          "start": 3.3,
+          "end": 3.612,
+          "duration": 0.312,
+          "frame_ahead_trigger": 3.26
+        },
+        {
+          "word": "benchmarks",
+          "clean_word": "benchmarks",
+          "phonemes": "b\u02c8\u025bnt\u0283m\u0251\u02d0\u0279ks",
+          "start": 3.612,
+          "end": 4.3,
+          "duration": 0.688,
+          "frame_ahead_trigger": 3.572
+        },
+        {
+          "word": "live",
+          "clean_word": "live",
+          "phonemes": "l\u02c8a\u026av",
+          "start": 4.3,
+          "end": 4.6,
+          "duration": 0.3,
+          "frame_ahead_trigger": 4.26
+        },
+        {
+          "word": "in",
+          "clean_word": "in",
+          "phonemes": "\u02c8\u026an",
+          "start": 4.6,
+          "end": 4.765,
+          "duration": 0.165,
+          "frame_ahead_trigger": 4.56
+        },
+        {
+          "word": "plain",
+          "clean_word": "plain",
+          "phonemes": "pl\u02c8e\u026an",
+          "start": 4.765,
+          "end": 5.09,
+          "duration": 0.325,
+          "frame_ahead_trigger": 4.725
+        },
+        {
+          "word": "text",
+          "clean_word": "text",
+          "phonemes": "t\u02c8\u025bkst",
+          "start": 5.09,
+          "end": 5.375,
+          "duration": 0.285,
+          "frame_ahead_trigger": 5.05
+        },
+        {
+          "word": "online.",
+          "clean_word": "online",
+          "phonemes": "\u02c8\u0251\u02d0nla\u026an",
+          "start": 5.375,
+          "end": 5.86,
+          "duration": 0.485,
+          "frame_ahead_trigger": 5.335
+        }
+      ],
+      "audio_duration": 5.99,
+      "slot_duration": 6.14
+    },
+    {
+      "beat_id": 2,
+      "text": "This contamination villain functions like a student peeking at the exam answer key before the ink has even dried.",
+      "visual_focus": "A transparent answer sheet sliding into the model's processing buffer.",
+      "highlight_words": {
+        "contamination": "#EF4444"
+      },
+      "svo_action": {
+        "subject": "Contamination Villain",
+        "action_verb": "pollutes",
+        "direct_object": "Token Latency Metrics",
+        "anchor_word": "contamination",
+        "semantic_role": "causal_elimination"
+      },
+      "visual_blueprint": {
+        "layout": "barrier_separation",
+        "title": "THE LEAKAGE BOTTLE NECK",
+        "sub": "Information flow from training set to test evaluation",
+        "accent_color": "#EF4444",
+        "params": {
+          "stream_a_label": "Hidden Test Data",
+          "stream_b_label": "Training Corpus",
+          "barrier_label": "Data Contamination",
+          "barrier_sub": "Implicit Knowledge Leak"
+        }
+      },
+      "thriller_role": "villain_bottleneck",
+      "act": 2,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "barrier_separation",
+        "title": "THE LEAKAGE BOTTLE NECK",
+        "sub": "Information flow from training set to test evaluation",
+        "accent_color": "#EF4444",
+        "stream_a_label": "Hidden Test Data",
+        "stream_b_label": "Training Corpus",
+        "barrier_label": "Data Contamination",
+        "barrier_sub": "Implicit Knowledge Leak"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 6.14,
+      "end": 12.22,
+      "duration": 6.08,
+      "word_timings": [
+        {
+          "word": "This",
+          "clean_word": "this",
+          "phonemes": "\u00f0\u02c8\u026as",
+          "start": 6.16,
+          "end": 6.31,
+          "duration": 0.15,
+          "frame_ahead_trigger": 6.27
+        },
+        {
+          "word": "contamination",
+          "clean_word": "contamination",
+          "phonemes": "k\u0259nt\u02cc\u00e6m\u1d7bn\u02c8e\u026a\u0283\u0259n",
+          "start": 6.31,
+          "end": 7.295,
+          "duration": 0.985,
+          "frame_ahead_trigger": 6.42
+        },
+        {
+          "word": "villain",
+          "clean_word": "villain",
+          "phonemes": "v\u02c8\u026al\u0259n",
+          "start": 7.295,
+          "end": 7.45,
+          "duration": 0.155,
+          "frame_ahead_trigger": 7.405
+        },
+        {
+          "word": "functions",
+          "clean_word": "functions",
+          "phonemes": "f\u02c8\u028c\u014bk\u0283\u0259nz",
+          "start": 7.45,
+          "end": 8.085,
+          "duration": 0.635,
+          "frame_ahead_trigger": 7.56
+        },
+        {
+          "word": "like",
+          "clean_word": "like",
+          "phonemes": "l\u02c8a\u026ak",
+          "start": 8.085,
+          "end": 8.3,
+          "duration": 0.215,
+          "frame_ahead_trigger": 8.195
+        },
+        {
+          "word": "a",
+          "clean_word": "a",
+          "phonemes": "\u02c8e\u026a",
+          "start": 8.3,
+          "end": 8.555,
+          "duration": 0.255,
+          "frame_ahead_trigger": 8.41
+        },
+        {
+          "word": "student",
+          "clean_word": "student",
+          "phonemes": "st\u02c8u\u02d0d\u0259nt",
+          "start": 8.555,
+          "end": 9.03,
+          "duration": 0.475,
+          "frame_ahead_trigger": 8.665
+        },
+        {
+          "word": "peeking",
+          "clean_word": "peeking",
+          "phonemes": "p\u02c8i\u02d0k\u026a\u014b",
+          "start": 9.03,
+          "end": 9.355,
+          "duration": 0.325,
+          "frame_ahead_trigger": 9.14
+        },
+        {
+          "word": "at",
+          "clean_word": "at",
+          "phonemes": "\u00e6t",
+          "start": 9.355,
+          "end": 9.505,
+          "duration": 0.15,
+          "frame_ahead_trigger": 9.465
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 9.505,
+          "end": 9.73,
+          "duration": 0.225,
+          "frame_ahead_trigger": 9.615
+        },
+        {
+          "word": "exam",
+          "clean_word": "exam",
+          "phonemes": "\u025b\u0261z\u02c8\u00e6m",
+          "start": 9.73,
+          "end": 9.91,
+          "duration": 0.18,
+          "frame_ahead_trigger": 9.84
+        },
+        {
+          "word": "answer",
+          "clean_word": "answer",
+          "phonemes": "\u02c8\u00e6ns\u025a",
+          "start": 9.91,
+          "end": 10.23,
+          "duration": 0.32,
+          "frame_ahead_trigger": 10.02
+        },
+        {
+          "word": "key",
+          "clean_word": "key",
+          "phonemes": "k\u02c8i\u02d0",
+          "start": 10.23,
+          "end": 10.453,
+          "duration": 0.223,
+          "frame_ahead_trigger": 10.34
+        },
+        {
+          "word": "before",
+          "clean_word": "before",
+          "phonemes": "b\u1d7bf\u02c8\u0254\u02d0\u0279",
+          "start": 10.453,
+          "end": 10.82,
+          "duration": 0.367,
+          "frame_ahead_trigger": 10.563
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 10.82,
+          "end": 10.96,
+          "duration": 0.14,
+          "frame_ahead_trigger": 10.93
+        },
+        {
+          "word": "ink",
+          "clean_word": "ink",
+          "phonemes": "\u02c8\u026a\u014bk",
+          "start": 10.96,
+          "end": 11.275,
+          "duration": 0.315,
+          "frame_ahead_trigger": 11.07
+        },
+        {
+          "word": "has",
+          "clean_word": "has",
+          "phonemes": "h\u02c8\u00e6z",
+          "start": 11.275,
+          "end": 11.395,
+          "duration": 0.12,
+          "frame_ahead_trigger": 11.385
+        },
+        {
+          "word": "even",
+          "clean_word": "even",
+          "phonemes": "\u02c8i\u02d0v\u0259n",
+          "start": 11.395,
+          "end": 11.705,
+          "duration": 0.31,
+          "frame_ahead_trigger": 11.505
+        },
+        {
+          "word": "dried.",
+          "clean_word": "dried",
+          "phonemes": "d\u0279\u02c8a\u026ad",
+          "start": 11.705,
+          "end": 12.07,
+          "duration": 0.365,
+          "frame_ahead_trigger": 11.815
+        }
+      ],
+      "audio_duration": 6.08,
+      "slot_duration": 6.23
+    },
+    {
+      "beat_id": 3,
+      "text": "The eureka pivot demands we lock the data using public key encryption before releasing it to the public domain.",
+      "visual_focus": "Data packets being wrapped in digital cryptographic shells.",
+      "highlight_words": {
+        "public key encryption": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Cryptographic Protocol",
+        "action_verb": "secures",
+        "direct_object": "Public Benchmark",
+        "anchor_word": "encryption",
+        "semantic_role": "state_transition"
+      },
+      "visual_blueprint": {
+        "layout": "catalog_routing",
+        "title": "CRYPTOGRAPHIC LOCKDOWN",
+        "sub": "Strategies for secure evaluation release",
+        "accent_color": "#34D399",
+        "params": {
+          "index_label": "Raw Test Data",
+          "drawer_a_label": "Public Key Encryption",
+          "drawer_b_label": "Usage Licensing",
+          "drawer_c_label": "Exclusion Controls"
+        }
+      },
+      "thriller_role": "eureka_mechanism",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "catalog_routing",
+        "title": "CRYPTOGRAPHIC LOCKDOWN",
+        "sub": "Strategies for secure evaluation release",
+        "accent_color": "#34D399",
+        "index_label": "Raw Test Data",
+        "drawer_a_label": "Public Key Encryption",
+        "drawer_b_label": "Usage Licensing",
+        "drawer_c_label": "Exclusion Controls"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 12.37,
+      "end": 18.48,
+      "duration": 6.1,
+      "word_timings": [
+        {
+          "word": "The",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 12.385,
+          "end": 12.57,
+          "duration": 0.185,
+          "frame_ahead_trigger": 12.645
+        },
+        {
+          "word": "eureka",
+          "clean_word": "eureka",
+          "phonemes": "ju\u02d0\u0279\u02c8i\u02d0k\u0250",
+          "start": 12.57,
+          "end": 12.91,
+          "duration": 0.34,
+          "frame_ahead_trigger": 12.83
+        },
+        {
+          "word": "pivot",
+          "clean_word": "pivot",
+          "phonemes": "p\u02c8\u026av\u0259t",
+          "start": 12.91,
+          "end": 13.325,
+          "duration": 0.415,
+          "frame_ahead_trigger": 13.17
+        },
+        {
+          "word": "demands",
+          "clean_word": "demands",
+          "phonemes": "d\u1d7bm\u02c8\u00e6ndz",
+          "start": 13.325,
+          "end": 13.785,
+          "duration": 0.46,
+          "frame_ahead_trigger": 13.585
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 13.785,
+          "end": 13.915,
+          "duration": 0.13,
+          "frame_ahead_trigger": 14.045
+        },
+        {
+          "word": "lock",
+          "clean_word": "lock",
+          "phonemes": "l\u02c8\u0251\u02d0k",
+          "start": 13.915,
+          "end": 14.22,
+          "duration": 0.305,
+          "frame_ahead_trigger": 14.175
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 14.22,
+          "end": 14.35,
+          "duration": 0.13,
+          "frame_ahead_trigger": 14.48
+        },
+        {
+          "word": "data",
+          "clean_word": "data",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259",
+          "start": 14.35,
+          "end": 14.67,
+          "duration": 0.32,
+          "frame_ahead_trigger": 14.61
+        },
+        {
+          "word": "using",
+          "clean_word": "using",
+          "phonemes": "j\u02c8u\u02d0z\u026a\u014b",
+          "start": 14.67,
+          "end": 15.15,
+          "duration": 0.48,
+          "frame_ahead_trigger": 14.93
+        },
+        {
+          "word": "public",
+          "clean_word": "public",
+          "phonemes": "p\u02c8\u028cbl\u026ak",
+          "start": 15.15,
+          "end": 15.51,
+          "duration": 0.36,
+          "frame_ahead_trigger": 15.41
+        },
+        {
+          "word": "key",
+          "clean_word": "key",
+          "phonemes": "k\u02c8i\u02d0",
+          "start": 15.51,
+          "end": 15.7,
+          "duration": 0.19,
+          "frame_ahead_trigger": 15.77
+        },
+        {
+          "word": "encryption",
+          "clean_word": "encryption",
+          "phonemes": "\u025b\u014bk\u0279\u02c8\u026ap\u0283\u0259n",
+          "start": 15.7,
+          "end": 16.258,
+          "duration": 0.558,
+          "frame_ahead_trigger": 15.96
+        },
+        {
+          "word": "before",
+          "clean_word": "before",
+          "phonemes": "b\u1d7bf\u02c8\u0254\u02d0\u0279",
+          "start": 16.258,
+          "end": 16.615,
+          "duration": 0.357,
+          "frame_ahead_trigger": 16.518
+        },
+        {
+          "word": "releasing",
+          "clean_word": "releasing",
+          "phonemes": "\u0279\u1d7bl\u02c8i\u02d0s\u026a\u014b",
+          "start": 16.615,
+          "end": 17.19,
+          "duration": 0.575,
+          "frame_ahead_trigger": 16.875
+        },
+        {
+          "word": "it",
+          "clean_word": "it",
+          "phonemes": "\u026at",
+          "start": 17.19,
+          "end": 17.34,
+          "duration": 0.15,
+          "frame_ahead_trigger": 17.45
+        },
+        {
+          "word": "to",
+          "clean_word": "to",
+          "phonemes": "tu\u02d0",
+          "start": 17.34,
+          "end": 17.455,
+          "duration": 0.115,
+          "frame_ahead_trigger": 17.6
+        },
+        {
+          "word": "the",
+          "clean_word": "the",
+          "phonemes": "\u00f0\u0259",
+          "start": 17.455,
+          "end": 17.55,
+          "duration": 0.095,
+          "frame_ahead_trigger": 17.715
+        },
+        {
+          "word": "public",
+          "clean_word": "public",
+          "phonemes": "p\u02c8\u028cbl\u026ak",
+          "start": 17.55,
+          "end": 17.93,
+          "duration": 0.38,
+          "frame_ahead_trigger": 17.81
+        },
+        {
+          "word": "domain.",
+          "clean_word": "domain",
+          "phonemes": "d\u0259m\u02c8e\u026an",
+          "start": 17.93,
+          "end": 18.335,
+          "duration": 0.405,
+          "frame_ahead_trigger": 18.19
+        }
+      ],
+      "audio_duration": 6.1,
+      "slot_duration": 6.26
+    },
+    {
+      "beat_id": 4,
+      "text": "We demand training exclusion controls from API providers and strip internet-derived data of its accidental test-answer context.",
+      "visual_focus": "A filter pruning non-essential tokens from a web-crawled document.",
+      "highlight_words": {
+        "exclusion controls": "#F59E0B"
+      },
+      "svo_action": {
+        "subject": "Evaluation Protocol",
+        "action_verb": "prunes",
+        "direct_object": "Contextual Noise",
+        "anchor_word": "pruning",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "tree_hierarchy",
+        "title": "EXCLUSIONARY ARCHITECTURE",
+        "sub": "Refining evaluation purity",
+        "accent_color": "#F59E0B",
+        "params": {
+          "root_label": "Dataset Filter",
+          "optimal_label": "Clean Evaluation",
+          "pruned_label": "Contaminated Noise"
+        }
+      },
+      "thriller_role": "technical_secret_sauce",
+      "act": 3,
+      "motif_type": "visual_composition",
+      "motif_params": {
+        "layout": "tree_hierarchy",
+        "title": "EXCLUSIONARY ARCHITECTURE",
+        "sub": "Refining evaluation purity",
+        "accent_color": "#F59E0B",
+        "root_label": "Dataset Filter",
+        "optimal_label": "Clean Evaluation",
+        "pruned_label": "Contaminated Noise"
+      },
+      "kinetic_action": "blueprint_transform",
+      "start": 18.63,
+      "end": 26.33,
+      "duration": 7.7,
+      "word_timings": [
+        {
+          "word": "We",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 18.631,
+          "end": 18.766,
+          "duration": 0.135,
+          "frame_ahead_trigger": 19.041
+        },
+        {
+          "word": "demand",
+          "clean_word": "demand",
+          "phonemes": "d\u1d7bm\u02c8\u00e6nd",
+          "start": 18.766,
+          "end": 19.251,
+          "duration": 0.485,
+          "frame_ahead_trigger": 19.176
+        },
+        {
+          "word": "training",
+          "clean_word": "training",
+          "phonemes": "t\u0279\u02c8e\u026an\u026a\u014b",
+          "start": 19.251,
+          "end": 19.591,
+          "duration": 0.34,
+          "frame_ahead_trigger": 19.661
+        },
+        {
+          "word": "exclusion",
+          "clean_word": "exclusion",
+          "phonemes": "\u025bkskl\u02c8u\u02d0\u0292\u0259n",
+          "start": 19.591,
+          "end": 20.307,
+          "duration": 0.716,
+          "frame_ahead_trigger": 20.001
+        },
+        {
+          "word": "controls",
+          "clean_word": "controls",
+          "phonemes": "k\u0259nt\u0279\u02c8o\u028alz",
+          "start": 20.307,
+          "end": 20.891,
+          "duration": 0.584,
+          "frame_ahead_trigger": 20.717
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 20.891,
+          "end": 21.011,
+          "duration": 0.12,
+          "frame_ahead_trigger": 21.301
+        },
+        {
+          "word": "API",
+          "clean_word": "api",
+          "phonemes": "\u02cce\u026ap\u02cci\u02d0\u02c8a\u026a",
+          "start": 21.011,
+          "end": 21.681,
+          "duration": 0.67,
+          "frame_ahead_trigger": 21.421
+        },
+        {
+          "word": "providers",
+          "clean_word": "providers",
+          "phonemes": "p\u0279\u0259v\u02c8a\u026ad\u025az",
+          "start": 21.681,
+          "end": 22.306,
+          "duration": 0.625,
+          "frame_ahead_trigger": 22.091
+        },
+        {
+          "word": "and",
+          "clean_word": "and",
+          "phonemes": "\u00e6nd",
+          "start": 22.306,
+          "end": 22.556,
+          "duration": 0.25,
+          "frame_ahead_trigger": 22.716
+        },
+        {
+          "word": "strip",
+          "clean_word": "strip",
+          "phonemes": "st\u0279\u02c8\u026ap",
+          "start": 22.556,
+          "end": 22.791,
+          "duration": 0.235,
+          "frame_ahead_trigger": 22.966
+        },
+        {
+          "word": "internet-derived",
+          "clean_word": "internetderived",
+          "phonemes": "\u02cc\u026ant\u025an\u02c8\u025btd\u025a\u0279\u02cca\u026avd",
+          "start": 22.791,
+          "end": 23.774,
+          "duration": 0.983,
+          "frame_ahead_trigger": 23.201
+        },
+        {
+          "word": "data",
+          "clean_word": "data",
+          "phonemes": "d\u02c8e\u026a\u027e\u0259",
+          "start": 23.774,
+          "end": 24.061,
+          "duration": 0.287,
+          "frame_ahead_trigger": 24.184
+        },
+        {
+          "word": "of",
+          "clean_word": "of",
+          "phonemes": "\u028cv",
+          "start": 24.061,
+          "end": 24.216,
+          "duration": 0.155,
+          "frame_ahead_trigger": 24.471
+        },
+        {
+          "word": "its",
+          "clean_word": "its",
+          "phonemes": "\u026ats",
+          "start": 24.216,
+          "end": 24.471,
+          "duration": 0.255,
+          "frame_ahead_trigger": 24.626
+        },
+        {
+          "word": "accidental",
+          "clean_word": "accidental",
+          "phonemes": "\u02cc\u00e6ks\u026ad\u02c8\u025bnt\u0259l",
+          "start": 24.471,
+          "end": 25.131,
+          "duration": 0.66,
+          "frame_ahead_trigger": 24.881
+        },
+        {
+          "word": "test-answer",
+          "clean_word": "testanswer",
+          "phonemes": "t\u02c8\u025bst\u00e6ns\u025a",
+          "start": 25.131,
+          "end": 25.586,
+          "duration": 0.455,
+          "frame_ahead_trigger": 25.541
+        },
+        {
+          "word": "context.",
+          "clean_word": "context",
+          "phonemes": "k\u02c8\u0251\u02d0nt\u025bkst",
+          "start": 25.586,
+          "end": 26.201,
+          "duration": 0.615,
+          "frame_ahead_trigger": 25.996
+        }
+      ],
+      "audio_duration": 7.7,
+      "slot_duration": 7.85
+    },
+    {
+      "beat_id": 5,
+      "text": "By enforcing these three strategies, researchers can finally distinguish genuine model generalization from high-frequency memorization patterns.",
+      "visual_focus": "A scatter plot showing the convergence of model performance to ground truth.",
+      "highlight_words": {
+        "generalization": "#34D399"
+      },
+      "svo_action": {
+        "subject": "Research Methodology",
+        "action_verb": "validates",
+        "direct_object": "Generalization Capacity",
+        "anchor_word": "generalization",
+        "semantic_role": "metric_evaluation"
+      },
+      "visual_blueprint": {
+        "layout": "optimization_landscape",
+        "title": "THE GENERALIZATION PAYOFF",
+        "sub": "Separating model capability from data leakage",
+        "accent_color": "#34D399",
+        "params": {
+          "landscape_title": "Performance Surface",
+          "optima_label": "True Generalization"
+        }
+      },
+      "thriller_role": "empirical_payoff",
+      "act": 4,
+      "start": 26.48,
+      "end": 34.46,
+      "duration": 7.98,
+      "word_timings": [
+        {
+          "word": "By",
+          "clean_word": "by",
+          "phonemes": "b\u02c8a\u026a",
+          "start": 26.482,
+          "end": 26.787,
+          "duration": 0.305,
+          "frame_ahead_trigger": 27.042
+        },
+        {
+          "word": "enforcing",
+          "clean_word": "enforcing",
+          "phonemes": "\u025bnf\u02c8\u0254\u02d0\u0279s\u026a\u014b",
+          "start": 26.787,
+          "end": 27.317,
+          "duration": 0.53,
+          "frame_ahead_trigger": 27.347
+        },
+        {
+          "word": "these",
+          "clean_word": "these",
+          "phonemes": "\u00f0\u02c8i\u02d0z",
+          "start": 27.317,
+          "end": 27.607,
+          "duration": 0.29,
+          "frame_ahead_trigger": 27.877
+        },
+        {
+          "word": "three",
+          "clean_word": "three",
+          "phonemes": "\u03b8\u0279\u02c8i\u02d0",
+          "start": 27.607,
+          "end": 27.907,
+          "duration": 0.3,
+          "frame_ahead_trigger": 28.167
+        },
+        {
+          "word": "strategies,",
+          "clean_word": "strategies",
+          "phonemes": "st\u0279\u02c8\u00e6\u027e\u0259d\u0292iz",
+          "start": 27.907,
+          "end": 28.44,
+          "duration": 0.532,
+          "frame_ahead_trigger": 28.467
+        },
+        {
+          "word": "researchers",
+          "clean_word": "researchers",
+          "phonemes": "\u0279\u1d7bs\u02c8\u025c\u02d0t\u0283\u025az",
+          "start": 28.44,
+          "end": 28.997,
+          "duration": 0.558,
+          "frame_ahead_trigger": 29.0
+        },
+        {
+          "word": "can",
+          "clean_word": "can",
+          "phonemes": "k\u02c8\u00e6n",
+          "start": 28.997,
+          "end": 29.272,
+          "duration": 0.275,
+          "frame_ahead_trigger": 29.557
+        },
+        {
+          "word": "finally",
+          "clean_word": "finally",
+          "phonemes": "f\u02c8a\u026an\u0259li",
+          "start": 29.272,
+          "end": 29.732,
+          "duration": 0.46,
+          "frame_ahead_trigger": 29.832
+        },
+        {
+          "word": "distinguish",
+          "clean_word": "distinguish",
+          "phonemes": "d\u026ast\u02c8\u026a\u014b\u0261w\u026a\u0283",
+          "start": 29.732,
+          "end": 30.322,
+          "duration": 0.59,
+          "frame_ahead_trigger": 30.292
+        },
+        {
+          "word": "genuine",
+          "clean_word": "genuine",
+          "phonemes": "d\u0292\u02c8\u025bnju\u02d0\u026an",
+          "start": 30.322,
+          "end": 30.767,
+          "duration": 0.445,
+          "frame_ahead_trigger": 30.882
+        },
+        {
+          "word": "model",
+          "clean_word": "model",
+          "phonemes": "m\u02c8\u0251\u02d0d\u0259l",
+          "start": 30.767,
+          "end": 31.247,
+          "duration": 0.48,
+          "frame_ahead_trigger": 31.327
+        },
+        {
+          "word": "generalization",
+          "clean_word": "generalization",
+          "phonemes": "d\u0292\u02cc\u025bn\u025a\u0279\u0259l\u1d7bz\u02c8e\u026a\u0283\u0259n",
+          "start": 31.247,
+          "end": 32.287,
+          "duration": 1.04,
+          "frame_ahead_trigger": 31.807
+        },
+        {
+          "word": "from",
+          "clean_word": "from",
+          "phonemes": "f\u0279\u028cm",
+          "start": 32.287,
+          "end": 32.447,
+          "duration": 0.16,
+          "frame_ahead_trigger": 32.847
+        },
+        {
+          "word": "high-frequency",
+          "clean_word": "highfrequency",
+          "phonemes": "h\u02c8a\u026af\u0279i\u02d0kw\u0259nsi",
+          "start": 32.447,
+          "end": 33.152,
+          "duration": 0.705,
+          "frame_ahead_trigger": 33.007
+        },
+        {
+          "word": "memorization",
+          "clean_word": "memorization",
+          "phonemes": "m\u02cc\u025bm\u025a\u0279\u1d7bz\u02c8e\u026a\u0283\u0259n",
+          "start": 33.152,
+          "end": 33.902,
+          "duration": 0.75,
+          "frame_ahead_trigger": 33.712
+        },
+        {
+          "word": "patterns.",
+          "clean_word": "patterns",
+          "phonemes": "p\u02c8\u00e6t\u025anz",
+          "start": 33.902,
+          "end": 34.367,
+          "duration": 0.465,
+          "frame_ahead_trigger": 34.462
+        }
+      ],
+      "audio_duration": 7.98,
+      "slot_duration": 8.13
+    },
+    {
+      "beat_id": 6,
+      "text": "Follow machinoAI for daily deep-dives into how we keep frontier AI architectures honest.",
+      "visual_focus": "The machinoAI logo glowing with a neural network pulse.",
+      "highlight_words": {
+        "honest": "#34D399"
+      },
+      "svo_action": {
+        "subject": "machinoAI",
+        "action_verb": "audits",
+        "direct_object": "Frontier Architectures",
+        "anchor_word": "honest",
+        "semantic_role": "agent_action"
+      },
+      "visual_blueprint": {
+        "layout": "neural_activation_wave",
+        "title": "STAY HONEST",
+        "sub": "Daily deep-dives into AI engineering",
+        "accent_color": "#34D399",
+        "params": {
+          "input_label": "Follow",
+          "hidden_label": "machinoAI",
+          "output_label": "Subscribe"
+        }
+      },
+      "thriller_role": "open_loop_outro",
+      "act": 4,
+      "start": 34.61,
+      "end": 40.34,
+      "duration": 5.74,
+      "word_timings": [
+        {
+          "word": "Follow",
+          "clean_word": "follow",
+          "phonemes": "f\u02c8\u0251\u02d0lo\u028a",
+          "start": 34.621,
+          "end": 35.036,
+          "duration": 0.415,
+          "frame_ahead_trigger": 35.331
+        },
+        {
+          "word": "machinoAI",
+          "clean_word": "machinoai",
+          "phonemes": "m\u0259\u0283\u02c8i\u02d0no\u028a \u02cce\u026a\u02c8a\u026a",
+          "start": 35.036,
+          "end": 36.066,
+          "duration": 1.03,
+          "frame_ahead_trigger": 35.746
+        },
+        {
+          "word": "for",
+          "clean_word": "for",
+          "phonemes": "f\u0254\u02d0\u0279",
+          "start": 36.066,
+          "end": 36.246,
+          "duration": 0.18,
+          "frame_ahead_trigger": 36.776
+        },
+        {
+          "word": "daily",
+          "clean_word": "daily",
+          "phonemes": "d\u02c8e\u026ali",
+          "start": 36.246,
+          "end": 36.611,
+          "duration": 0.365,
+          "frame_ahead_trigger": 36.956
+        },
+        {
+          "word": "deep-dives",
+          "clean_word": "deepdives",
+          "phonemes": "d\u02c8i\u02d0pd\u026avz",
+          "start": 36.611,
+          "end": 37.121,
+          "duration": 0.51,
+          "frame_ahead_trigger": 37.321
+        },
+        {
+          "word": "into",
+          "clean_word": "into",
+          "phonemes": "\u02cc\u026ant\u028a",
+          "start": 37.121,
+          "end": 37.391,
+          "duration": 0.27,
+          "frame_ahead_trigger": 37.831
+        },
+        {
+          "word": "how",
+          "clean_word": "how",
+          "phonemes": "h\u02c8a\u028a",
+          "start": 37.391,
+          "end": 37.661,
+          "duration": 0.27,
+          "frame_ahead_trigger": 38.101
+        },
+        {
+          "word": "we",
+          "clean_word": "we",
+          "phonemes": "wi\u02d0",
+          "start": 37.661,
+          "end": 37.771,
+          "duration": 0.11,
+          "frame_ahead_trigger": 38.371
+        },
+        {
+          "word": "keep",
+          "clean_word": "keep",
+          "phonemes": "k\u02c8i\u02d0p",
+          "start": 37.771,
+          "end": 38.133,
+          "duration": 0.362,
+          "frame_ahead_trigger": 38.481
+        },
+        {
+          "word": "frontier",
+          "clean_word": "frontier",
+          "phonemes": "f\u0279\u028cnt\u02c8\u026a\u0279",
+          "start": 38.133,
+          "end": 38.556,
+          "duration": 0.423,
+          "frame_ahead_trigger": 38.843
+        },
+        {
+          "word": "AI",
+          "clean_word": "ai",
+          "phonemes": "\u02cce\u026a\u02c8a\u026a",
+          "start": 38.556,
+          "end": 39.051,
+          "duration": 0.495,
+          "frame_ahead_trigger": 39.266
+        },
+        {
+          "word": "architectures",
+          "clean_word": "architectures",
+          "phonemes": "\u02c8\u0251\u02d0\u0279k\u026at\u02cc\u025bkt\u0283\u025az",
+          "start": 39.051,
+          "end": 39.816,
+          "duration": 0.765,
+          "frame_ahead_trigger": 39.761
+        },
+        {
+          "word": "honest.",
+          "clean_word": "honest",
+          "phonemes": "\u02c8\u0251\u02d0n\u026ast",
+          "start": 39.816,
+          "end": 40.216,
+          "duration": 0.4,
+          "frame_ahead_trigger": 40.526
+        }
+      ],
+      "audio_duration": 5.74,
+      "slot_duration": 5.73
+    }
+  ],
+  "math_formulas": [
+    {
+      "beat_id": 1,
+      "latex": "$P(\\mathrm{memorization}) \\propto \\mathrm{Crawl}_{\\mathrm{data}}$",
+      "filename": "data_contamination_mitigation_beat1_formula.svg",
+      "fontsize": 24,
+      "color": "#38BDF8",
+      "term_annotations": [
+        {
+          "term": "P",
+          "label": "Probability of leakage"
+        },
+        {
+          "term": "Crawl",
+          "label": "Unfiltered crawl"
+        }
+      ],
+      "svg_filename": "data_contamination_mitigation_beat1_formula.svg"
+    },
+    {
+      "beat_id": 2,
+      "latex": "$\\mathcal{O}(\\mathrm{leak}) = \\frac{\\text{Test Answers}}{\\text{Internet Content}}$",
+      "filename": "data_contamination_mitigation_beat2_formula.svg",
+      "fontsize": 24,
+      "color": "#EF4444",
+      "term_annotations": [
+        {
+          "term": "leak",
+          "label": "Complexity of contamination"
+        }
+      ],
+      "svg_filename": "data_contamination_mitigation_beat2_formula.svg"
+    },
+    {
+      "beat_id": 3,
+      "latex": "$\\mathcal{E} = \\mathrm{Public\\_Key}(D_{\\mathrm{test}})$",
+      "filename": "data_contamination_mitigation_beat3_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "E",
+          "label": "Encrypted dataset"
+        }
+      ],
+      "svg_filename": "data_contamination_mitigation_beat3_formula.svg"
+    },
+    {
+      "beat_id": 4,
+      "latex": "$\\mathcal{F}(\\mathrm{context}) = \\mathbb{1}_{\\mathrm{exclude}}(\\mathrm{data})$",
+      "filename": "data_contamination_mitigation_beat4_formula.svg",
+      "fontsize": 24,
+      "color": "#F59E0B",
+      "term_annotations": [
+        {
+          "term": "F",
+          "label": "Exclusion filter"
+        }
+      ],
+      "svg_filename": "data_contamination_mitigation_beat4_formula.svg"
+    },
+    {
+      "beat_id": 5,
+      "latex": "$\\mathrm{Generalization} = \\mathrm{Accuracy} - \\mathrm{Contamination}$",
+      "filename": "data_contamination_mitigation_beat5_formula.svg",
+      "fontsize": 24,
+      "color": "#34D399",
+      "term_annotations": [
+        {
+          "term": "Generalization",
+          "label": "Unbiased performance"
+        }
+      ],
+      "svg_filename": "data_contamination_mitigation_beat5_formula.svg"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "timestamp": 0.8,
+      "sound_type": "sub_impact",
+      "volume": 0.45
+    },
+    {
+      "timestamp": 5.2,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 13.5,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 21.5,
+      "sound_type": "sub_impact",
+      "volume": 0.4
+    },
+    {
+      "timestamp": 29.5,
+      "sound_type": "sub_impact",
+      "volume": 0.5
+    },
+    {
+      "timestamp": 37.0,
+      "sound_type": "whoosh",
+      "volume": 0.35
+    },
+    {
+      "timestamp": 38.0,
+      "sound_type": "chime",
+      "volume": 0.4
+    }
+  ],
+  "metadata": {
+    "visual_metaphor": "semantic_clusters",
+    "visual_entities": {
+      "clusters": [
+        {
+          "name": "Memorized",
+          "color": "#38BDF8",
+          "items": [
+            "Test Data",
+            "Web Crawl",
+            "Leakage"
+          ]
+        },
+        {
+          "name": "Clean",
+          "color": "#10B981",
+          "items": [
+            "Encrypted",
+            "Licensed",
+            "Filtered"
+          ]
+        },
+        {
+          "name": "Process",
+          "color": "#F59E0B",
+          "items": [
+            "Exclusion",
+            "Evaluation",
+            "Audit"
+          ]
+        }
+      ],
+      "incoming_token": {
+        "label": "Token: \"Benchmark\"",
+        "target_cluster": "Memorized",
+        "token": "\"Benchmark\""
+      },
+      "bottleneck_tokens": [
+        {
+          "word": "Token 'Answer'",
+          "color": "#EF4444"
+        },
+        {
+          "word": "Token 'Prompt'",
+          "color": "#F59E0B"
+        }
+      ]
+    },
+    "model_a": "Benchmark Security",
+    "model_a_specs": [
+      "Public Key Encryption",
+      "Training Exclusion",
+      "Web Context Removal"
+    ],
+    "model_b": "Plain Text Evaluation",
+    "model_b_specs": [
+      "Unencrypted",
+      "Full Crawl",
+      "No Exclusion"
+    ],
+    "divide_title": "STRATEGIC LEAKAGE MITIGATION",
+    "bottleneck_title": "MONOLITHIC DATA CONTAMINATION",
+    "bottleneck_desc": "Entangled benchmark test sets in open web corpora.",
+    "solution_title": "CRYPTOGRAPHIC DATA SEGREGATION",
+    "solution_components": "Encrypted Test Sets",
+    "mechanism_title": "EXCLUSIONARY EVALUATION CONTROLS",
+    "challenger": "Secure Evaluation",
+    "incumbent": "Open Text Benchmarks"
+  },
+  "script_provider": "gemini",
+  "quality_flags": {
+    "scrubbed_fields": [
+      "metadata.benchmarks"
+    ],
+    "ungrounded_narration_numbers": [],
+    "leaked_example_values": [],
+    "grounding_source_chars": 1455
+  },
+  "arxiv_id": "2305.10160",
+  "hook_gating": {
+    "selected_hook": "Your model isn't smarter; it just memorized the test set because those benchmarks live in plain text online.",
+    "verdict": 30,
+    "band": "WEAK",
+    "formula": "Unclassified",
+    "properties": {
+      "SPECIFICITY": 29,
+      "ADDRESS": 76,
+      "STAKES": 22,
+      "CURIOSITY": 6,
+      "BREVITY": 100
+    },
+    "weakest_property": "CURIOSITY",
+    "kept_bespoke": true,
+    "candidates_evaluated": 1
+  },
+  "entity_registry": [
+    {
+      "entity_id": "dual_metric_gauge",
+      "entity_type": "dual_metric",
+      "z_index": 10,
+      "initial_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_scale": 1.0,
+      "initial_opacity": 1.0,
+      "parameters": {
+        "model_a_name": "Benchmark Security",
+        "model_a_score": "95%",
+        "model_b_name": "Plain Text Evaluation",
+        "model_b_score": "45%",
+        "delta_label": "+50% Efficiency"
+      }
+    }
+  ],
+  "layout_overrides": {
+    "1": {
+      "hero_visual": {
+        "dx": 0.0,
+        "dy": 0.738,
+        "scale_multiplier": 1.0
+      },
+      "math_formula": {
+        "dx": 0.0,
+        "dy": -2.462,
+        "scale_multiplier": 1.0
+      }
+    },
+    "2": {
+      "hero_visual": {
+        "dx": 0.0,
+        "dy": 0.738,
+        "scale_multiplier": 1.0
+      },
+      "math_formula": {
+        "dx": 0.0,
+        "dy": -2.462,
+        "scale_multiplier": 1.0
+      }
+    },
+    "3": {
+      "hero_visual": {
+        "dx": 0.0,
+        "dy": 0.738,
+        "scale_multiplier": 1.0
+      },
+      "math_formula": {
+        "dx": 0.0,
+        "dy": -2.462,
+        "scale_multiplier": 1.0
+      }
+    },
+    "4": {
+      "hero_visual": {
+        "dx": 0.0,
+        "dy": 0.738,
+        "scale_multiplier": 1.0
+      },
+      "math_formula": {
+        "dx": 0.0,
+        "dy": -2.462,
+        "scale_multiplier": 1.0
+      }
+    },
+    "5": {
+      "hero_visual": {
+        "dx": 0.0,
+        "dy": 0.738,
+        "scale_multiplier": 1.0
+      },
+      "math_formula": {
+        "dx": 0.0,
+        "dy": -2.462,
+        "scale_multiplier": 1.0
+      }
+    },
+    "6": {
+      "hero_visual": {
+        "dx": 0.0,
+        "dy": 0.738,
+        "scale_multiplier": 1.0
+      },
+      "math_formula": {
+        "dx": 0.0,
+        "dy": -2.462,
+        "scale_multiplier": 1.0
+      }
+    }
+  }
+}
