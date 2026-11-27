@@ -383,8 +383,19 @@ def auto_produce(
         avg_score = audit_report.get('average_score', 0.0)
         print(f"   📊 Initial VLM Quality Score: {avg_score:.2f}/10.0")
 
-        # Self-Healing Loop if score < 8.5 (and not skip_repair)
-        needs_repair = (not audit_report.get("passed_quality_gate", True)) and (not skip_repair)
+        # Self-Healing Loop if score < 8.5 (and not skip_repair).
+        # Only worth running when a vision model actually scored the frames: heuristic
+        # placeholder scores never change, so "repairs" would just shift the layout blindly
+        # and re-render every beat for nothing.
+        vision_verified = audit_report.get("vision_verified", True)
+        if not vision_verified:
+            print("   ℹ️ No vision model inspected the keyframes (Gemini/Ollama unavailable); "
+                  "skipping layout self-healing.")
+        needs_repair = (
+            (not audit_report.get("passed_quality_gate", True))
+            and (not skip_repair)
+            and vision_verified
+        )
         repair_iteration = 0
         max_repair_iterations = 2
         patches_applied = False
@@ -499,15 +510,23 @@ def auto_produce(
             print("   ✅ Master render and keyframes updated with patched layout.")
 
         production_publish = publish or publish_instagram or publish_x or publish_linkedin
-        require_vlm_qa = os.getenv(
-            "REQUIRE_VLM_QA",
-            "true" if production_publish else "false",
-        ).lower() in {"1", "true", "yes"}
+        vision_verified = audit_report.get("vision_verified", True)
+        explicit_require = os.getenv("REQUIRE_VLM_QA")
+        if explicit_require is not None:
+            require_vlm_qa = explicit_require.lower() in {"1", "true", "yes"}
+        else:
+            # Default: block only when a real vision model looked at the frames and failed
+            # them. When no vision model was reachable, the publish gate decides instead
+            # (PUBLISH_GATE_REQUIRE_VLM: warn and publish, or hold as private).
+            require_vlm_qa = production_publish and vision_verified
 
         if audit_report.get("passed_quality_gate"):
             print("   ✅ VLM Critic Quality Gate: PASSED (Broadcast Quality)")
         else:
             print("   ℹ️ VLM Critic Quality Gate: Best-effort self-healing completed.")
+            if not vision_verified:
+                print("   ⚠️ Vision QA unavailable: no vision model inspected the frames; "
+                      "deferring to the publish gate.")
             if require_vlm_qa:
                 raise RuntimeError("VLM quality gate did not pass; production publishing is blocked.")
     except Exception as e:

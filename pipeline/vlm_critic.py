@@ -252,10 +252,13 @@ class VLMCritic:
                                 "pedagogical_clarity_score": 9.0,
                                 "primary_observation": "Ollama Vision inspected keyframe successfully.",
                                 "detected_entities": parsed_payload,
-                                "suggested_patches": []
+                                "suggested_patches": [],
+                                "unverified": True  # scores above are placeholders, not model output
                             }
                         elif isinstance(parsed_payload, dict):
                             data = dict(parsed_payload)
+                            if "overall_score" not in data and "visual_score" not in data:
+                                data["unverified"] = True  # model returned no score; defaults below are placeholders
                             if "overall_score" not in data:
                                 data["overall_score"] = float(data.get("visual_score", 9.0))
                             if "passed" not in data:
@@ -298,6 +301,7 @@ class VLMCritic:
                             data["overall_score"] = min(max(fallback_score, 1.0), 6.0)
                             data["passed"] = False
                             data["primary_observation"] = "Vision provider unavailable; deterministic fallback did not inspect image semantics."
+                            data["unverified"] = True
                             quota_tracker.record_exhausted("ollama_vision", "Ollama vision unreachable; used heuristic fallback")
                         else:
                             quota_tracker.record_success("ollama_vision")
@@ -322,7 +326,8 @@ class VLMCritic:
                 "suggested_patches": [],
                 "image_file": img_path.name,
                 "beat_id": beat_id,
-                "model_used": "deterministic_layout_heuristics"
+                "model_used": "deterministic_layout_heuristics",
+                "unverified": True  # no vision model looked at this frame
             }
 
         # Deterministic Geometry Verification via layout_solver
@@ -508,7 +513,13 @@ class VLMCritic:
         else:
             print(f"🎨 [Visual Diversity Audit] PASSED: {len(layout_counts)} distinct visual layouts across beats with verified empirical payoff.")
 
+        # Scores from heuristic fallbacks are placeholders; callers (self-healing loop,
+        # publish gate) need to know whether any vision model actually looked at the frames.
+        verified_results = [r for r in results if not r.get("unverified")]
+
         summary = {
+            "vision_verified": bool(verified_results),
+            "unverified_beats": [r.get("beat_id") for r in results if r.get("unverified")],
             "project_title": spec.get("title", ""),
             "frames_directory": str(frames_dir),
             "average_score": avg_score,
