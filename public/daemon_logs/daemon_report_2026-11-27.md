@@ -1,18 +1,19 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-27 | **Timestamp:** 2026-11-27 05:19:40 UTC
+**Date:** 2026-11-27 | **Timestamp:** 2026-11-27 09:02:41 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Attention Is All You Need: Part 1 - The Death of Recurrence: Why LSTMs Hit the Parallelism Wall
-- **Topic Queue Part:** `goat_transformer_part_1` (arXiv: [1706.03762](https://arxiv.org/abs/1706.03762))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/D1PwR8iPo90](https://youtube.com/shorts/D1PwR8iPo90) (`D1PwR8iPo90`)
-- **High-CTR Poster:** [attention_is_all_you_need_1_poster.png](public/thumbnails/attention_is_all_you_need_1_poster.png)
-- **✅ Publish gate:** passed
+### Reel 1: ResNet: Deep Residual Learning: Part 1 - The Degradation Paradox: Why Deeper Networks Became Stupider
+- **Topic Queue Part:** `goat_resnet_part_1` (arXiv: [1512.03385](https://arxiv.org/abs/1512.03385))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/LQ6e-28xVMI](https://youtube.com/shorts/LQ6e-28xVMI) (`LQ6e-28xVMI`)
+- **High-CTR Poster:** [resnet_deep_residual_learning_part_1_-_the_degradation_paradox_why_deeper_networks_became_stupider_poster.png](public/thumbnails/resnet_deep_residual_learning_part_1_-_the_degradation_paradox_why_deeper_networks_became_stupider_poster.png)
+- **⛔ Publish gate: HELD for review** (uploaded private, not cross-posted)
+  - Script came from the deterministic fallback (all LLM providers failed).
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
 - **Category:** `architecture_breakdown`
-- **Editorial Hook:** *GOAT Papers: Attention Is All You Need Mini-Series 1/5: Attention Is All You Need: Part 1 - The Death of Recurrence: Why LSTMs Hit the Parallelism Wall*
-- **Everyday Analogy:** *Why sequential token passing throttled GPU parallelism, and how self-attention unlocked simultaneous matrix computation across entire documents.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_attention_is_all_you_need_1_architecture_breakdown.mp4`
+- **Editorial Hook:** *GOAT Papers: ResNet: Deep Residual Learning Mini-Series 1/5: ResNet: Deep Residual Learning: Part 1 - The Degradation Paradox: Why Deeper Networks Became Stupider*
+- **Everyday Analogy:** *The counter-intuitive discovery that deeper vanilla networks had higher training error than shallow ones, and why vanishing gradients were the culprit.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_resnet_deep_residual_learning_part_1_-_the_degradation_paradox_why_deeper_networks_became_stupider_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
