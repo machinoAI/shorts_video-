@@ -1,18 +1,18 @@
 # 🤖 machinoAI — Daily Shorts Production Report
-**Date:** 2026-11-27 | **Timestamp:** 2026-11-27 04:32:42 UTC
+**Date:** 2026-11-27 | **Timestamp:** 2026-11-27 05:19:40 UTC
 **Total Reels Produced:** 1 / 1
 
-### Reel 1: Data Contamination: Are AI Models Truly Smarter or Just Memorizing?
-- **Topic Queue Part:** `data_contamination_eval_leakage_crisis` (arXiv: [2305.10160](https://arxiv.org/abs/2305.10160))
-- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/zQhGinI9l10](https://youtube.com/shorts/zQhGinI9l10) (`zQhGinI9l10`)
-- **High-CTR Poster:** [benchmark_contamination_mitigation_poster.png](public/thumbnails/benchmark_contamination_mitigation_poster.png)
+### Reel 1: Attention Is All You Need: Part 1 - The Death of Recurrence: Why LSTMs Hit the Parallelism Wall
+- **Topic Queue Part:** `goat_transformer_part_1` (arXiv: [1706.03762](https://arxiv.org/abs/1706.03762))
+- **YouTube Shorts:** 🚀 [https://youtube.com/shorts/D1PwR8iPo90](https://youtube.com/shorts/D1PwR8iPo90) (`D1PwR8iPo90`)
+- **High-CTR Poster:** [attention_is_all_you_need_1_poster.png](public/thumbnails/attention_is_all_you_need_1_poster.png)
 - **✅ Publish gate:** passed
 - **Content Pillar:** `queue`
 - **Domain Taxonomy:** `rag_architectures` (1.35x velocity)
-- **Category:** `benchmark_news`
-- **Editorial Hook:** *AI Evals Mini-Series 1/1: Data Contamination: Are AI Models Truly Smarter or Just Memorizing?*
-- **Everyday Analogy:** *The benchmark leakage crisis: how token perplexity dips uncover memorized test sets vs genuine generalization in modern frontier LLMs.*
-- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_benchmark_contamination_mitigation_benchmark_news.mp4`
+- **Category:** `architecture_breakdown`
+- **Editorial Hook:** *GOAT Papers: Attention Is All You Need Mini-Series 1/5: Attention Is All You Need: Part 1 - The Death of Recurrence: Why LSTMs Hit the Parallelism Wall*
+- **Everyday Analogy:** *Why sequential token passing throttled GPU parallelism, and how self-attention unlocked simultaneous matrix computation across entire documents.*
+- **Local Master Video:** `/home/runner/work/shorts_video-/shorts_video-/final_attention_is_all_you_need_1_architecture_breakdown.mp4`
 - **Resolution:** `1440x2560 @ 60fps`
 
 ## 🎬 Production & Broadcast Specs
