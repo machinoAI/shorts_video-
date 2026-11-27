@@ -452,25 +452,38 @@ class ScriptDrivenScene(MovingCameraScene):
                 if not visual_blueprint or curr_layout in ["comparative_bars", "benchmark_bars", "comparison_side_by_side", None] or not motif_params.get("contestants"):
                     from pipeline.benchmark_extractor import BenchmarkExtractor
                     b_comp = BenchmarkExtractor().extract_or_fallback(self.spec)
-                    motif_type = "visual_composition"
-                    motif_params["layout"] = "horizontal_race_bars"
-                    motif_params["contestants"] = [
-                        {
-                            "name": c.name,
-                            "value": c.value,
-                            "display_val": c.raw_str,
-                            "is_hero": c.is_hero,
-                            "color": c.color
-                        }
-                        for c in b_comp.contestants
-                    ]
-                    motif_params["metric_name"] = b_comp.metric_name
-                    motif_params["unit"] = b_comp.unit
-                    motif_params["delta_badge"] = b_comp.delta_badge
-                    if not motif_params.get("title") or motif_params.get("title") in ["THE PERFORMANCE GAP", "ARCHITECTURAL OVERVIEW"]:
-                        motif_params["title"] = b_comp.title
-                    if not motif_params.get("sub"):
-                        motif_params["sub"] = "Quantitative empirical evaluation against frontier baselines"
+                    if b_comp is not None:
+                        motif_type = "visual_composition"
+                        motif_params["layout"] = "horizontal_race_bars"
+                        motif_params["contestants"] = [
+                            {
+                                "name": c.name,
+                                "value": c.value,
+                                "display_val": c.raw_str,
+                                "is_hero": c.is_hero,
+                                "color": c.color
+                            }
+                            for c in b_comp.contestants
+                        ]
+                        motif_params["metric_name"] = b_comp.metric_name
+                        motif_params["unit"] = b_comp.unit
+                        motif_params["delta_badge"] = b_comp.delta_badge
+                        if not motif_params.get("title") or motif_params.get("title") in ["THE PERFORMANCE GAP", "ARCHITECTURAL OVERVIEW"]:
+                            motif_params["title"] = b_comp.title
+                        if not motif_params.get("sub"):
+                            motif_params["sub"] = "Quantitative empirical evaluation against frontier baselines"
+                    else:
+                        # Benchmark extraction is intentionally strict: never invent
+                        # numeric contestants when the paper has no grounded results.
+                        # Use a non-numeric mechanism composition for the payoff beat.
+                        motif_type = "visual_composition"
+                        motif_params["layout"] = "pipeline_stages"
+                        motif_params.pop("contestants", None)
+                        motif_params.pop("metric_name", None)
+                        motif_params.pop("unit", None)
+                        motif_params.pop("delta_badge", None)
+                        motif_params["title"] = motif_params.get("title") or "THE MECHANISM, STEP BY STEP"
+                        motif_params["sub"] = motif_params.get("sub") or "The paper's grounded mechanism, without invented metrics"
                 else:
                     motif_type = "visual_composition"
             elif motif_type == "visual_composition" or motif_type in BLUEPRINT_COMPOSITION_REGISTRY:
